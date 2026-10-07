@@ -134,14 +134,33 @@ export default function ContentManager({ kind }: { kind: "note" | "video" }) {
     if (!file) return;
     setBusy(true);
     try {
-      const form = new FormData();
-      form.append("file", file);
-      const res = await fetch("/api/admin/content", {
+      if (
+        !["application/pdf", "image/jpeg", "image/png", "video/mp4"].includes(
+          file.type,
+        ) ||
+        !file.size ||
+        file.size > 50 * 1024 * 1024
+      )
+        throw new Error("Choose a PDF, JPG, PNG, or MP4 up to 50 MB.");
+      const res = await fetch("/api/admin/content/upload", {
         method: "POST",
-        body: form,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ contentType: file.type, size: file.size }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error);
+      const uploaded = await fetch(data.signedUrl, {
+        method: "PUT",
+        credentials: "omit",
+        headers: {
+          "Content-Type": file.type,
+          "Cache-Control": "max-age=3600",
+          "x-upsert": "false",
+        },
+        body: file,
+      });
+      if (!uploaded.ok)
+        throw new Error("File upload failed. Please try again.");
       setResourceUrl(data.url);
       if (notes) setFileType(file.type === "application/pdf" ? "pdf" : "image");
       else setEmbedType("mp4");

@@ -6,6 +6,8 @@ The backend supports permanent Supabase storage for student accounts, passwords,
 
 ## Local setup
 
+For frontend and backend cloud hosting with the existing Supabase database, see [Vercel deployment](docs/VERCEL_DEPLOYMENT.md).
+
 Use Node.js 24 and npm. Run `npm ci`, copy `.env.example` to `.env.local`, run `npm run ai:setup` once on Windows x64, then run `npm run dev`. The website starts local Gemma automatically. Open `http://localhost:3000`. After `npm run build`, `npm start` also starts the model automatically. See [local model setup](docs/LOCAL_AI_SETUP.md) for other hosts and web-only startup.
 
 This workspace already contains the full textbook PDFs. On a new checkout, run `npm run books:download` once to save the official library before using the in-site readers. The PDFs are about 2.20 GiB and are excluded from source control; copy `public/textbooks` when moving this installation. Reader worker/font assets are recreated by `npm ci` and `npm run build`.

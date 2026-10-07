@@ -2,9 +2,25 @@ import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import savedCatalog from "./textbooks-catalog.json";
 import type { TextbookCatalog } from "./textbooks";
+import { officialTextbookRewrite } from "./textbook-delivery";
 
 export async function getTextbookCatalog(): Promise<TextbookCatalog> {
   let catalog = savedCatalog as TextbookCatalog;
+  if (process.env.TEXTBOOK_DELIVERY === "official") {
+    return {
+      ...catalog,
+      books: catalog.books.map((book) =>
+        officialTextbookRewrite(book)
+          ? { ...book, downloadError: null }
+          : {
+              ...book,
+              localPath: null,
+              status: "unavailable" as const,
+              downloadError: "Use the official source link for this textbook.",
+            },
+      ),
+    };
+  }
   try {
     catalog = JSON.parse(
       await readFile(
