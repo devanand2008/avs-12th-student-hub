@@ -82,6 +82,7 @@ async function all<T>(
       );
     for (const [key, value] of Object.entries(filters))
       query = query.eq(key, value);
+    if (table === "avs_curriculum") query = query.order("id");
     const { data, error } = await query.range(offset, offset + 999);
     if (error) throw databaseError(error);
     values.push(...(data || []).map((row) => row.data as T));

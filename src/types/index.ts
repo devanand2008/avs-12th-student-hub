@@ -266,6 +266,7 @@ export interface AIKnowledgeChunk {
   chunkText: string;
   chunkTextTamil?: string;
   sourceType:
+    | "Textbook"
     | "Handwritten Note"
     | "Syllabus Concept"
     | "Explanation"
