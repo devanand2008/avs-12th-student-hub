@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.env*
+!.env.example
+test-results
+playwright-report
+coverage
+*.tsbuildinfo
+*-report.json
+lint-latest.json
+audit-production.json
+.local
+local ai model/*.gguf
+local ai model/*.part

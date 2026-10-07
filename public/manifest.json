@@ -1,0 +1,68 @@
+{
+  "name": "AVS 12th Learning Hub",
+  "short_name": "AVS 12 Hub",
+  "description": "AVS Engineering College Class 12 Higher Secondary Learning Portal - Handwritten Notes, NotebookLM Videos, 1-Mark Practice & Grounded AI Helper",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#071A3D",
+  "theme_color": "#1b3574",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "categories": ["education", "books", "productivity"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Handwritten Notes",
+      "short_name": "Notes",
+      "description": "Read verified Class 12 handwritten subject notes",
+      "url": "/notes",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "1-Mark MCQ Practice",
+      "short_name": "Practice",
+      "description": "Practice unit-wise one mark questions with instant feedback",
+      "url": "/practice",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Video Lessons",
+      "short_name": "Videos",
+      "description": "Watch NotebookLM audio-visual lesson summaries",
+      "url": "/videos",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "AI Study Helper",
+      "short_name": "AI Helper",
+      "description": "Ask syllabus-grounded questions to your AI tutor",
+      "url": "/ai-helper",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
+

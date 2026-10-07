@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: avs-12-hub
+    env: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start:web
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_INITIAL_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ENABLE_DEMO_DATA
+        value: "false"
+      - key: APP_ORIGIN
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SECRET_KEY
+        sync: false
+      - key: PORT
+        value: 10000

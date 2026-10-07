@@ -1,0 +1,145 @@
+import { phoneLoginPath } from "@/lib/auth/phone";
+import { studentActivationMode } from "@/lib/auth/activation";
+import { registerStudent } from "@/lib/db";
+import { checkRateLimit } from "@/lib/rate-limit";
+import { BackendUnavailableError } from "@/lib/supabase/server";
+import { normalizePhone } from "@/lib/db/user-data";
+import { NextResponse } from "next/server";
+import { z } from "zod";
+import { randomBytes } from "node:crypto";
+
+const registerSchema = z.object({
+  studentName: z
+    .string()
+    .trim()
+    .min(2, "Please enter your full name (at least 2 characters).")
+    .max(100),
+  phone: z
+    .string()
+    .trim()
+    .max(20)
+    .transform(normalizePhone)
+    .refine(
+      (phone) => /^[6-9]\d{9}$/.test(phone),
+      "Please enter a valid Indian mobile number.",
+    ),
+  schoolName: z
+    .string()
+    .trim()
+    .min(2, "Please enter your school name.")
+    .max(200),
+  standard: z.literal("12th Standard").default("12th Standard"),
+  medium: z.enum(["English", "Tamil"]).default("English"),
+  email: z.string().trim().email().max(254).optional(),
+  stream: z.enum(["Computer Science", "Biology"], {
+    message: "Please choose either Computer Science or Biology stream.",
+  }),
+  studentId: z
+    .string()
+    .trim()
+    .max(40)
+    .optional()
+    .transform((val) => (val && val.length > 0 ? val : undefined)),
+  password: z
+    .string()
+    .min(6, "Password must be at least 6 characters long.")
+    .refine(
+      (password) => Buffer.byteLength(password, "utf8") <= 72,
+      "Password cannot exceed 72 UTF-8 bytes.",
+    )
+    .optional(),
+});
+
+export async function POST(request: Request) {
+  try {
+    const ip = request.headers.get("x-forwarded-for") || "local";
+    const rl = await checkRateLimit(`register_${ip}`, 15, 60);
+    if (!rl.success) {
+      return NextResponse.json(
+        {
+          error:
+            "Too many registration requests. Please wait a moment and try again.",
+        },
+        { status: 429 },
+      );
+    }
+
+    const body = await request.json();
+    const result = registerSchema.safeParse(body);
+
+    if (!result.success) {
+      const firstError =
+        result.error.issues[0]?.message || "Invalid registration details.";
+      return NextResponse.json({ error: firstError }, { status: 400 });
+    }
+
+    const {
+      studentName,
+      phone,
+      schoolName,
+      standard,
+      medium,
+      email,
+      stream,
+      studentId,
+      password,
+    } = result.data;
+
+    if (studentActivationMode() === "sms" && !password)
+      return NextResponse.json(
+        { error: "A password is required for registration." },
+        { status: 400 },
+      );
+
+    const { student, user } = await registerStudent({
+      studentName,
+      phone,
+      schoolName,
+      standard,
+      medium,
+      email,
+      stream,
+      studentId,
+      password:
+        studentActivationMode() === "admin"
+          ? randomBytes(32).toString("base64url")
+          : password!,
+    });
+
+    return NextResponse.json({
+      success: true,
+      message:
+        studentActivationMode() === "admin"
+          ? "Registration received. Ask your administrator to approve your account and provide a temporary password."
+          : "Account created. Verify your mobile number to finish your first login.",
+      requiresPhoneVerification: studentActivationMode() === "sms",
+      requiresAdminApproval: studentActivationMode() === "admin",
+      user: {
+        id: user.id,
+        role: user.role,
+        studentId: student.studentId,
+        studentName: student.studentName,
+        stream: student.stream,
+        schoolName: student.schoolName,
+        phone: student.studentPhone,
+        email: user.email,
+        medium: student.medium,
+      },
+      redirectTo:
+        studentActivationMode() === "admin"
+          ? "/login?approval=pending&studentId=" +
+            encodeURIComponent(student.studentId)
+          : phoneLoginPath(student.studentPhone),
+    });
+  } catch (error) {
+    return NextResponse.json(
+      {
+        error:
+          error instanceof Error
+            ? error.message
+            : "Failed to create student account. Please try again.",
+      },
+      { status: error instanceof BackendUnavailableError ? 503 : 400 },
+    );
+  }
+}

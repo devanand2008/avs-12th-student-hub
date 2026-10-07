@@ -1,0 +1,81 @@
+.control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+  color: #1b3574;
+  background: #eff6ff;
+  cursor: pointer;
+}
+
+.control:hover:enabled {
+  background: #dbeafe;
+}
+.control:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.control:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+.page {
+  position: relative;
+  margin-inline: auto;
+  background: white;
+  box-shadow: 0 4px 20px #0f172a20;
+}
+
+/* Text-layer layout follows Mozilla PDF.js (Apache-2.0). The embedded text
+   stays selectable and accessible over the rendered original page. */
+.textLayer {
+  position: absolute;
+  inset: 0;
+  overflow: clip;
+  text-align: initial;
+  line-height: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  --min-font-size: 1;
+  --text-scale-factor: calc(var(--total-scale-factor) * var(--min-font-size));
+  --min-font-size-inv: calc(1 / var(--min-font-size));
+}
+
+.textLayer :is(span, br) {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0 0;
+  user-select: text;
+}
+.textLayer > :not(:global(.markedContent)),
+.textLayer :global(.markedContent) span:not(:global(.markedContent)) {
+  z-index: 1;
+  --font-height: 0;
+  font-size: calc(var(--text-scale-factor) * var(--font-height));
+  --scale-x: 1;
+  --rotate: 0deg;
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x))
+    scale(var(--min-font-size-inv));
+}
+.textLayer :global(.markedContent) {
+  display: contents;
+}
+.textLayer ::selection {
+  color: transparent;
+  background: #2563eb55;
+}
+
+@media (max-width: 600px) {
+  .control {
+    min-width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,4 @@
+# Downloaded official PDFs stay on this computer. Recreate them with the
+# idempotent importer instead of adding more than 2 GB to source control.
+*.pdf
+*.part
