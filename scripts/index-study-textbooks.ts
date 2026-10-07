@@ -57,6 +57,8 @@ async function main() {
           .filter((item) => "str" in item)
           .map((item) => ("str" in item ? item.str : ""))
           .join(" ")
+          .toWellFormed()
+          .replaceAll("\u0000", " ")
           .replace(/\s+/gu, " ")
           .trim();
         page.cleanup();
@@ -110,6 +112,10 @@ async function main() {
       `${book.subject} (${book.sourceMedium}): ${excerpts} verified excerpts from ${pages} pages.`,
     );
   }
+  await writeFile(
+    ".local/textbook-knowledge-prepared.json",
+    JSON.stringify({ rows, sources }),
+  );
   if (!dryRun) {
     const client = requireSupabase();
     for (let offset = 0; offset < rows.length; offset += 75) {
@@ -117,7 +123,9 @@ async function main() {
         .from("avs_curriculum")
         .upsert(rows.slice(offset, offset + 75), { onConflict: "kind,id" });
       if (error)
-        throw new Error("Could not save the verified textbook excerpts.");
+        throw new Error(
+          `Could not save textbook excerpts at row ${offset}: ${error.code || "request"} — ${error.message}`,
+        );
     }
     const { count, error } = await client
       .from("avs_curriculum")
