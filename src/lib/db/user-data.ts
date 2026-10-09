@@ -21,6 +21,7 @@ export type StudentRegistration = {
   studentName: string;
   phone: string;
   schoolName: string;
+  registerNumber?: string;
   standard?: string;
   stream: Student["stream"];
   medium?: Student["medium"];
@@ -68,5 +69,6 @@ export function validateRegistration(data: StudentRegistration) {
     throw new Error(
       "Use at least 6 characters and no more than 72 UTF-8 bytes for your password.",
     );
-  return { phone, studentId, email };
+  const registerNumber = data.registerNumber?.trim() || undefined;
+  return { phone, studentId, email, registerNumber };
 }

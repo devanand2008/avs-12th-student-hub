@@ -178,27 +178,45 @@ export async function getUserByLoginId(
   loginId: string,
 ): Promise<{ user: User; student?: Student } | null> {
   await initDatabase();
+  const trimmed = loginId.trim();
+
+  // 1. Direct email lookup (primary for Gmail login)
+  const userByEmail = await one<User>("avs_users", "email", trimmed.toLowerCase());
+  if (userByEmail) {
+    const student =
+      userByEmail.role === "student" ? await getStudentByUserId(userByEmail.id) : null;
+    return { user: userByEmail, student: student || undefined };
+  }
+
+  // 2. Student ID lookup
   let student = await one<Student>(
     "avs_students",
     "student_id",
-    loginId.trim().toUpperCase(),
+    trimmed.toUpperCase(),
   );
-  if (!student && /^[+\d\s()-]+$/.test(loginId.trim())) {
-    const phone = normalizePhone(loginId);
+
+  // 3. School register number lookup
+  if (!student) {
+    student = await one<Student>(
+      "avs_students",
+      "register_number",
+      trimmed.toLowerCase(),
+    );
+  }
+
+  // 4. Phone number lookup
+  if (!student && /^[+\d\s()-]+$/.test(trimmed)) {
+    const phone = normalizePhone(trimmed);
     if (phone.length === 10)
       student = await one<Student>("avs_students", "student_phone", phone);
   }
-  const user = student
-    ? await getUserById(student.userId)
-    : await one<User>("avs_users", "email", loginId.trim().toLowerCase());
-  if (!user) return null;
-  return {
-    user,
-    student:
-      student ||
-      (user.role === "student" ? await getStudentByUserId(user.id) : null) ||
-      undefined,
-  };
+
+  if (student) {
+    const user = await getUserById(student.userId);
+    if (user) return { user, student };
+  }
+
+  return null;
 }
 export async function getUserById(id: string) {
   await initDatabase();
@@ -295,6 +313,7 @@ export async function registerStudent(
       studentName: data.studentName.trim(),
       studentId: normalized.studentId,
       studentEmail: normalized.email,
+      registerNumber: normalized.registerNumber || normalized.studentId,
       schoolName: data.schoolName.trim(),
       standard: data.standard?.trim() || "12th Standard",
       stream: data.stream,

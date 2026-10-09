@@ -66,8 +66,7 @@ export default function Navbar() {
                 TN CLASS 12
               </span>
               <span className="truncate text-blue-100 text-[11px] sm:text-xs">
-                AVS Engineering College (Autonomous), Salem • Class 12 Higher
-                Secondary Learning Portal
+                SkillUp • Class 12 Higher Secondary Learning Portal
               </span>
             </div>
             <div className="hidden sm:flex items-center gap-3 text-blue-200 text-xs">
@@ -94,16 +93,18 @@ export default function Navbar() {
           href={user ? (user.role === "admin" ? "/admin" : "/dashboard") : "/"}
           className="flex min-w-0 items-center gap-2 sm:gap-3 touch-target group"
         >
-          <BrandLogo />
+          <BrandLogo size={40} />
           <div>
             <div className="flex items-center gap-1.5">
-              <span className="whitespace-nowrap font-heading font-extrabold text-sm sm:text-lg text-[#1b3574] tracking-tight">
-                AVS 12th Hub
+              <span className="whitespace-nowrap font-heading font-extrabold text-base sm:text-xl text-[#1b3574] tracking-tight group-hover:text-blue-600 transition-colors">
+                SkillUp
+              </span>
+              <span className="rounded-md bg-blue-100 px-1.5 py-0.5 text-[9px] font-extrabold text-blue-700 uppercase tracking-wide hidden xs:inline-block">
+                12th Hub
               </span>
             </div>
             <p className="text-[10px] text-slate-500 font-medium hidden sm:block">
-              <span className="text-blue-600 font-bold">AVS ENGG COLLEGE</span>{" "}
-              · AUTONOMOUS
+              Class 12 Learning Platform
             </p>
           </div>
         </Link>
@@ -429,7 +430,7 @@ export default function Navbar() {
                 className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"
               >
                 <Sparkles className="w-4 h-4 text-[#38BDF8]" />
-                <span>AVS AI Study Helper</span>
+                <span>SkillUp AI Study Helper</span>
               </Link>
               <Link
                 href="/models"

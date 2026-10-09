@@ -1,10 +1,12 @@
 import type { Student } from "@/types";
 import { isPhoneVerified, requiresFirstPhoneOtp } from "./phone";
 
-export type StudentActivationMode = "admin" | "sms";
+export type StudentActivationMode = "admin" | "sms" | "direct";
 
 export function studentActivationMode(): StudentActivationMode {
-  return process.env.STUDENT_ACTIVATION_MODE === "admin" ? "admin" : "sms";
+  if (process.env.STUDENT_ACTIVATION_MODE === "sms") return "sms";
+  if (process.env.STUDENT_ACTIVATION_MODE === "admin") return "admin";
+  return "direct";
 }
 
 export function isAdminApproved(student: Student): boolean {
@@ -12,6 +14,7 @@ export function isAdminApproved(student: Student): boolean {
 }
 
 export function isStudentActivated(student: Student): boolean {
+  if (studentActivationMode() === "direct") return true;
   return (
     isPhoneVerified(student) ||
     (studentActivationMode() === "admin" && isAdminApproved(student))
@@ -19,7 +22,9 @@ export function isStudentActivated(student: Student): boolean {
 }
 
 export function requiresStudentActivation(student: Student): boolean {
-  return studentActivationMode() === "admin"
+  const mode = studentActivationMode();
+  if (mode === "direct") return false;
+  return mode === "admin"
     ? !isStudentActivated(student)
     : requiresFirstPhoneOtp(student);
 }

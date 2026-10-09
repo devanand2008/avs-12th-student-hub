@@ -40,7 +40,7 @@ interface ModelStatus {
 const welcome: Message = {
   id: "welcome",
   sender: "assistant",
-  text: "Vanakkam! Let’s make your next chapter a little clearer. Ask about Computer Science or Biology in English or Tamil. I use the study excerpts available in AVS 12 Hub and show the sources with each answer.",
+  text: "Vanakkam! Let’s make your next chapter a little clearer. Ask about Computer Science or Biology in English or Tamil. I use the study excerpts available in SkillUp and show the sources with each answer.",
 };
 const samplePrompts = [
   { text: "What are Pure and Impure functions in Chapter 1?", category: "CS" },
@@ -213,7 +213,7 @@ export default function AIStudyHelperPage() {
           <div className="mt-4 flex flex-wrap items-end justify-between gap-4">
             <div className="min-w-0 flex-1">
               <h1 className="font-heading text-xl sm:text-3xl font-bold tracking-tight">
-                AVS AI Study Assistant
+                SkillUp AI Study Assistant
               </h1>
               <p className="mt-2 text-xs sm:text-sm text-blue-100/80">
                 Understand a concept. Find your source. Keep learning.

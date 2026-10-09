@@ -175,7 +175,7 @@ export default function DashboardPage() {
               <span className="font-mono font-bold text-slate-700">
                 {data.user.studentId || "Student"}
               </span>{" "}
-              · AVS 12th Learning Hub
+              · SkillUp Learning Hub
             </p>
           </div>
 

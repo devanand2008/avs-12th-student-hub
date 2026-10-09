@@ -1,0 +1,33 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="su-bg" x1="4" y1="4" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="0.5" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="su-spark" x1="38" y1="12" x2="52" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE047"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="su-glow" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background Squircle with subtle border -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#su-bg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="16" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+  <!-- SkillUp Symbol: Dynamic Level-Up Arrow + Geometric 'S' Wave -->
+  <g filter="url(#su-glow)">
+    <!-- Graduation / Level Up Cap & Arrow -->
+    <!-- Upward Trend Arrow -->
+    <path d="M34 16H46V28" stroke="url(#su-spark)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45 17L30 32" stroke="url(#su-spark)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Stylized Modern S Loop -->
+    <path d="M33 22H24C19.5817 22 16 25.5817 16 30C16 34.4183 19.5817 38 24 38H38C42.4183 38 46 41.5817 46 46C46 50.4183 42.4183 54 38 54H20" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sparkle Accent -->
+  <path d="M48 10L49 13L52 14L49 15L48 18L47 15L44 14L47 13L48 10Z" fill="#FDE047"/>
+</svg>

@@ -264,8 +264,8 @@ export default function ProfilePage() {
               </div>
               <p className="text-xs text-slate-500 mt-1 max-w-md leading-relaxed">
                 {isInstalled || isStandalone
-                  ? "AVS 12th Hub is running in standalone app mode with instant local caching enabled."
-                  : "Install AVS 12th Hub on your mobile phone or tablet for 1-tap study access, offline handwritten notes, and a clean full-screen view."}
+                  ? "SkillUp is running in standalone app mode with instant local caching enabled."
+                  : "Install SkillUp on your mobile phone or tablet for 1-tap study access, offline handwritten notes, and a clean full-screen view."}
               </p>
             </div>
 

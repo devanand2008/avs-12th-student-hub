@@ -59,7 +59,7 @@ export default function PwaInstallModal() {
             <div className="relative w-14 h-14 rounded-2xl bg-white p-1.5 shadow-lg flex-shrink-0 border border-blue-200/50">
               <Image
                 src="/icon-192.png"
-                alt="AVS 12 Hub App Icon"
+                alt="SkillUp App Icon"
                 width={56}
                 height={56}
                 className="w-full h-full object-contain rounded-xl"
@@ -68,13 +68,13 @@ export default function PwaInstallModal() {
             <div>
               <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-500/25 border border-blue-400/30 text-[10px] font-bold text-cyan-200 uppercase tracking-wider mb-1">
                 <ShieldCheck className="w-3 h-3 text-cyan-300" />
-                AVS Official PWA
+                SkillUp Official PWA
               </div>
               <h2
                 id="pwa-install-title"
                 className="text-lg sm:text-xl font-extrabold text-white leading-snug"
               >
-                Install AVS 12th Hub
+                Install SkillUp
               </h2>
               <p className="text-xs text-blue-200/90 font-medium">
                 Install on your phone for lightning-fast 1-tap study access.
@@ -113,7 +113,7 @@ export default function PwaInstallModal() {
                 Already Installed!
               </h3>
               <p className="text-xs text-slate-500 max-w-sm mx-auto">
-                AVS 12th Hub is already installed on this device. You can launch
+                SkillUp is already installed on this device. You can launch
                 it anytime from your home screen or app drawer.
               </p>
             </div>
@@ -163,7 +163,7 @@ export default function PwaInstallModal() {
                       </span>
                     </p>
                     <p className="text-slate-500 mt-0.5 text-[11px]">
-                      This saves AVS 12th Hub as a standalone application on your
+                      This saves SkillUp as a standalone application on your
                       iPhone.
                     </p>
                   </div>
@@ -203,7 +203,7 @@ export default function PwaInstallModal() {
                   <span>One-Click Android & Mobile Install</span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  No Play Store download required! AVS 12th Hub uses standard
+                  No Play Store download required! SkillUp uses standard
                   Progressive Web App technology to install directly to your app
                   drawer, taking less than 2 MB of storage.
                 </p>
@@ -216,7 +216,7 @@ export default function PwaInstallModal() {
                 className="w-full py-3.5 px-5 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white rounded-2xl font-bold text-sm shadow-electric flex items-center justify-center gap-2 transition-transform active:scale-98 touch-target cursor-pointer"
               >
                 <Download className="w-4 h-4" />
-                <span>Install AVS 12th Hub Now</span>
+                <span>Install SkillUp Now</span>
               </button>
 
               <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-[11px] text-slate-600 space-y-1">
@@ -234,7 +234,7 @@ export default function PwaInstallModal() {
         {/* Modal Footer */}
         <div className="p-4 sm:p-5 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-3 text-xs">
           <span className="text-[11px] text-slate-500 font-medium">
-            AVS Engineering College (Autonomous)
+            SkillUp Class 12 Learning Hub
           </span>
           <button
             onClick={closeInstallGuide}

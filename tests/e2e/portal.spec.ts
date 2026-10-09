@@ -376,13 +376,13 @@ test("admin sign-in reaches the panel after a guest prefetch redirect", async ({
   expect((await guestPrefetch).status()).toBe(307);
 
   await page
-    .getByLabel("Student ID / Phone / Admin Email")
+    .getByLabel("Gmail / Email Address")
     .fill("qa-admin@example.test");
   await page
     .getByLabel("Password", { exact: true })
     .fill("QA-only-changed-password");
   await page
-    .getByRole("button", { name: "Sign In to Learning Hub", exact: true })
+    .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(page).toHaveURL(/\/admin$/);
   await expect(
@@ -398,18 +398,18 @@ test("login rejects bad credentials and opens an honest student dashboard", asyn
 }) => {
   await page.goto("/login");
   await page
-    .getByLabel("Student ID / Phone / Admin Email")
+    .getByLabel("Gmail / Email Address")
     .fill("AVSCS26-0001");
   await page.getByLabel("Password", { exact: true }).fill("incorrect-password");
   await page
-    .getByRole("button", { name: "Sign In to Learning Hub", exact: true })
+    .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(
     page.getByText("Student ID or password is incorrect.", { exact: true }),
   ).toBeVisible();
   await page.getByLabel("Password", { exact: true }).fill("Student@2026");
   await page
-    .getByRole("button", { name: "Sign In to Learning Hub", exact: true })
+    .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(page).toHaveURL(/dashboard/);
   await expect(
@@ -953,7 +953,7 @@ test("manifest icons exist and the offline shell does not cache account pages", 
 }) => {
   const manifestResponse = await api(page, "get", "/manifest.json");
   const manifest = await manifestResponse.json();
-  expect(manifest.name).toBe("AVS 12 Learning Hub");
+  expect(manifest.name).toBe("SkillUp Learning Hub");
   for (const icon of manifest.icons)
     expect((await api(page, "get", icon.src)).status()).toBe(200);
   await page.goto("/");
@@ -1018,14 +1018,14 @@ test("admin creates a permanent student login and student changes their first pa
   ).toBeVisible();
   await api(page, "post", "/api/auth/logout");
   await page.goto("/login?studentId=" + credentials.student.studentId);
-  await expect(page.getByLabel("Student ID / Phone / Admin Email")).toHaveValue(
+  await expect(page.getByLabel("Gmail / Email Address")).toHaveValue(
     credentials.student.studentId,
   );
   await page
     .getByLabel("Password", { exact: true })
     .fill(credentials.temporaryPassword);
   await page
-    .getByRole("button", { name: "Sign In to Learning Hub", exact: true })
+    .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(page).toHaveURL(/login\/mobile/);
   await expect(page.getByLabel("Mobile number", { exact: true })).toHaveValue(

@@ -15,7 +15,7 @@ export function useStudentActivation() {
         const data = await response.json();
         if (
           !controller.signal.aborted &&
-          ["admin", "sms"].includes(data.studentActivationMode)
+          ["admin", "sms", "direct"].includes(data.studentActivationMode)
         )
           setMode(data.studentActivationMode);
       })

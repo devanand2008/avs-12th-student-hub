@@ -91,7 +91,7 @@ test("chat shows local status, explanations and sources on desktop and mobile", 
   });
   await page.goto("/ai-helper");
   await expect(
-    page.getByRole("heading", { name: "AVS AI Study Assistant" }),
+    page.getByRole("heading", { name: "SkillUp AI Study Assistant" }),
   ).toBeVisible();
   await expect(
     page.getByText("Gemma · running locally", { exact: true }),

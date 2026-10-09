@@ -40,7 +40,7 @@ export default function PwaInstallBanner() {
         <div className="relative w-11 h-11 rounded-xl bg-[#071A3D] p-1 flex-shrink-0 shadow-sm border border-blue-100 flex items-center justify-center">
           <Image
             src="/icon-192.png"
-            alt="AVS Hub"
+            alt="SkillUp"
             width={40}
             height={40}
             className="w-full h-full object-contain rounded-lg"
@@ -55,7 +55,7 @@ export default function PwaInstallBanner() {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-1.5">
             <span className="font-heading font-extrabold text-xs sm:text-sm text-[#071A3D] truncate">
-              Install AVS 12th Hub
+              Install SkillUp
             </span>
             <span className="hidden xs:inline-flex items-center px-1.5 py-0.2 rounded text-[9px] font-bold bg-blue-50 text-blue-700 uppercase">
               Free App

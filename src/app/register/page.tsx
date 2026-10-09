@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useStudentActivation } from "@/components/auth/useStudentActivation";
 import {
   ShieldCheck,
@@ -14,24 +13,28 @@ import {
   Lock,
   Eye,
   EyeOff,
-  Sparkles,
+  Mail,
+  Hash,
   ArrowRight,
   CheckCircle2,
   BookOpen,
   Video,
   Target,
+  Sparkles,
   Building2,
 } from "lucide-react";
 
 export default function RegisterPage() {
   const activationMode = useStudentActivation();
-  const router = useRouter();
 
   // Form State
   const [studentName, setStudentName] = useState("");
+  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [schoolName, setSchoolName] = useState("");
-  const [standard, setStandard] = useState("12th Standard");
+  const [registerNumber, setRegisterNumber] = useState("");
+  const standard = "12th Standard";
+  const [medium, setMedium] = useState<"English" | "Tamil">("English");
   const [stream, setStream] = useState<"Computer Science" | "Biology">(
     "Computer Science",
   );
@@ -52,28 +55,37 @@ export default function RegisterPage() {
 
     // Validations
     if (!studentName.trim() || studentName.trim().length < 2) {
-      setError("Please enter your full name.");
+      setError("Please enter your full name (at least 2 characters).");
+      return;
+    }
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+      setError("Please enter a valid Gmail / email address.");
+      return;
+    }
+    if (!activationMode) {
+      setError("Registration settings are loading. Please try again shortly.");
+      return;
+    }
+    if (activationMode !== "admin" && password.length < 6) {
+      setError("Password must be at least 6 characters long.");
+      return;
+    }
+    if (activationMode !== "admin" && password !== confirmPassword) {
+      setError("Passwords do not match. Please re-enter.");
       return;
     }
     const cleanPhone = phone.trim().replace(/\D/g, "");
     if (cleanPhone.length < 10) {
-      setError("Please enter a valid 10-digit phone number.");
+      setError("Please enter a valid 10-digit mobile number.");
       return;
     }
     if (!schoolName.trim() || schoolName.trim().length < 2) {
       setError("Please enter your school name.");
       return;
     }
-    if (!activationMode) {
-      setError("Account setup is still loading. Please try again.");
-      return;
-    }
-    if (activationMode === "sms" && password.length < 6) {
-      setError("Password must be at least 6 characters long.");
-      return;
-    }
-    if (activationMode === "sms" && password !== confirmPassword) {
-      setError("Passwords do not match. Please re-enter.");
+    if (!registerNumber.trim()) {
+      setError("Please enter your school register number or roll number.");
       return;
     }
 
@@ -85,12 +97,15 @@ export default function RegisterPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           studentName: studentName.trim(),
+          email: cleanEmail,
+          password: activationMode === "admin" ? undefined : password,
           phone: cleanPhone,
           schoolName: schoolName.trim(),
+          registerNumber: registerNumber.trim(),
           standard,
+          medium,
           stream,
           studentId: studentId.trim() || undefined,
-          password: activationMode === "sms" ? password : undefined,
         }),
       });
 
@@ -103,11 +118,10 @@ export default function RegisterPage() {
       }
 
       setSuccess(true);
-      setSuccessMessage(data.message || "Registration received.");
+      setSuccessMessage(data.message || "Account created successfully! Logging you in...");
       setTimeout(() => {
-        router.push(data.redirectTo || "/login/mobile");
-        router.refresh();
-      }, 1000);
+        window.location.assign(data.redirectTo || "/dashboard");
+      }, 900);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong.");
       setLoading(false);
@@ -125,7 +139,7 @@ export default function RegisterPage() {
         <div className="space-y-4 relative z-10">
           <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 text-cyan-200 text-xs font-bold border border-white/15 backdrop-blur-md">
             <Building2 className="w-3.5 h-3.5 text-cyan-300" />
-            <span>AVS ENGINEERING COLLEGE · SALEM</span>
+            <span>SKILLUP · CLASS 12 HUB</span>
           </div>
 
           <h1 className="text-3xl lg:text-4xl font-black font-heading leading-tight tracking-tight text-white">
@@ -133,66 +147,56 @@ export default function RegisterPage() {
           </h1>
 
           <p className="text-xs sm:text-sm text-blue-100/90 leading-relaxed max-w-md">
-            Join the official Tamil Nadu Class 12 Higher Secondary learning hub.
+            Join the SkillUp Class 12 Higher Secondary learning hub.
             Register to access complete curriculum notes, videos, textbooks, and
             one-mark MCQ test engines.
           </p>
 
-          {/* 4 Colorful Feature Cards */}
+          {/* 4 Feature Highlights */}
           <div className="space-y-3 pt-3">
             {[
               {
                 icon: BookOpen,
                 title: "Handwritten Faculty Notes",
-                desc: "High-yield chapter notes with derivations & diagrams",
-                gradient: "from-blue-600 to-cyan-500",
-                badgeColor: "text-blue-300",
+                desc: "Curated derivations, labeled diagrams & formulas",
+                color: "text-amber-300",
               },
               {
                 icon: Target,
-                title: "Book-In & Book-Out MCQs",
-                desc: "Practice with instant scoring and Tamil explanation",
-                gradient: "from-emerald-500 to-teal-500",
-                badgeColor: "text-emerald-300",
+                title: "Unit-Wise 1-Mark MCQ Engine",
+                desc: "Practice with instant explanations & timer mode",
+                color: "text-cyan-300",
               },
               {
                 icon: Video,
-                title: "NotebookLM Video Lessons",
-                desc: "Bite-sized audio & video breakdown for every unit",
-                gradient: "from-amber-500 to-orange-500",
-                badgeColor: "text-amber-300",
+                title: "Curated Video Summaries",
+                desc: "Quick chapter breakdowns and key question walkthroughs",
+                color: "text-emerald-300",
               },
               {
                 icon: Sparkles,
-                title: "Grounded AI Study Assistant",
-                desc: "Ask any doubt in English or Tamil with textbook citations",
-                gradient: "from-purple-600 to-fuchsia-600",
-                badgeColor: "text-purple-300",
+                title: "AI Study Assistant",
+                desc: "24/7 bilingual doubt solver in English & Tamil",
+                color: "text-fuchsia-300",
               },
-            ].map((feature, i) => (
+            ].map((f, i) => (
               <div
                 key={i}
-                className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 hover:bg-white/15 transition-all"
+                className="flex items-start gap-3 p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xs"
               >
-                <div
-                  className={`p-2.5 rounded-xl bg-gradient-to-br ${feature.gradient} text-white shrink-0 shadow-md`}
-                >
-                  <feature.icon className="w-4 h-4" />
+                <div className="p-2 rounded-xl bg-white/10 shrink-0">
+                  <f.icon className={`w-4 h-4 ${f.color}`} />
                 </div>
                 <div>
-                  <h4 className="text-xs font-black text-white">
-                    {feature.title}
-                  </h4>
-                  <p className="text-[11px] text-blue-100/80 leading-relaxed mt-0.5">
-                    {feature.desc}
-                  </p>
+                  <p className="text-xs font-bold text-white">{f.title}</p>
+                  <p className="text-[11px] text-blue-200/80">{f.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Institutional Patron Contact Box */}
+        {/* Institutional Contact Box */}
         <div className="my-6 relative z-10 p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 space-y-1.5 text-xs text-blue-100">
           <div className="flex items-center justify-between">
             <span className="font-black uppercase tracking-wider text-cyan-300 text-[10px]">
@@ -214,7 +218,7 @@ export default function RegisterPage() {
         </div>
 
         <div className="relative z-10 flex items-center justify-between text-[11px] text-blue-200/80 pt-3 border-t border-white/10">
-          <span>Free Educational Initiative</span>
+          <span>Free Educational Platform</span>
           <span>•</span>
           <span>TN SCERT 2024-2025 Syllabus</span>
         </div>
@@ -226,14 +230,13 @@ export default function RegisterPage() {
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200 mb-2">
               <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
-              <span>NEW STUDENT ENROLLMENT</span>
+              <span>STUDENT REGISTRATION</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
               Create Your Free Account
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 mt-1">
-              Fill in your details below to get immediate access to study notes,
-              videos, and practice tests.
+              Enter your details to register for the learning hub.
             </p>
           </div>
 
@@ -266,13 +269,13 @@ export default function RegisterPage() {
                 <button
                   type="button"
                   onClick={() => setStream("Computer Science")}
-                  className={`p-3.5 rounded-2xl border text-left transition-all flex items-center gap-2.5 ${
+                  className={`p-3.5 rounded-2xl border text-left transition-all flex items-center gap-2.5 cursor-pointer ${
                     stream === "Computer Science"
                       ? "bg-indigo-600 text-white border-indigo-600 shadow-lg shadow-indigo-600/25"
                       : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
                   }`}
                 >
-                  <Code2 className="w-4 h-4 text-cyan-300" />
+                  <Code2 className="w-4 h-4 text-cyan-300 shrink-0" />
                   <div>
                     <div className="text-xs font-bold">Computer Science</div>
                     <div
@@ -290,13 +293,13 @@ export default function RegisterPage() {
                 <button
                   type="button"
                   onClick={() => setStream("Biology")}
-                  className={`p-3.5 rounded-2xl border text-left transition-all flex items-center gap-2.5 ${
+                  className={`p-3.5 rounded-2xl border text-left transition-all flex items-center gap-2.5 cursor-pointer ${
                     stream === "Biology"
                       ? "bg-emerald-600 text-white border-emerald-600 shadow-lg shadow-emerald-600/25"
                       : "bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100"
                   }`}
                 >
-                  <Dna className="w-4 h-4 text-emerald-200" />
+                  <Dna className="w-4 h-4 text-emerald-200 shrink-0" />
                   <div>
                     <div className="text-xs font-bold">Biology Stream</div>
                     <div
@@ -309,6 +312,37 @@ export default function RegisterPage() {
                       Botany & Zoology · 22 Units
                     </div>
                   </div>
+                </button>
+              </div>
+            </div>
+
+            {/* Medium Selector */}
+            <div>
+              <label className="block text-xs font-bold text-slate-700 mb-1">
+                Study Medium <span className="text-rose-500">*</span>
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setMedium("English")}
+                  className={`py-2 px-3 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
+                    medium === "English"
+                      ? "bg-blue-600 text-white border-blue-600 shadow-sm"
+                      : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100"
+                  }`}
+                >
+                  English Medium
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMedium("Tamil")}
+                  className={`py-2 px-3 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
+                    medium === "Tamil"
+                      ? "bg-blue-600 text-white border-blue-600 shadow-sm"
+                      : "bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100"
+                  }`}
+                >
+                  தமிழ் வழி (Tamil Medium)
                 </button>
               </div>
             </div>
@@ -335,8 +369,146 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            {/* Phone Number & Standard */}
+            {/* Gmail / Email Address */}
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-xs font-bold text-slate-700 mb-1"
+              >
+                Gmail / Email Address <span className="text-rose-500">*</span>
+              </label>
+              <div className="relative">
+                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  id="email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="e.g. yourname@gmail.com"
+                  required
+                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+              <p className="mt-1 text-[11px] text-blue-600 font-medium">
+                ★ Use this Gmail address to log in to SkillUp every time
+              </p>
+            </div>
+
+            {/* Password & Confirm Password */}
+            {activationMode !== "admin" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label
+                  htmlFor="password"
+                  className="block text-xs font-bold text-slate-700 mb-1"
+                >
+                  Create Password <span className="text-rose-500">*</span>
+                </label>
+                <div className="relative">
+                  <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    id="password"
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Min 6 characters"
+                    required
+                    minLength={6}
+                    className="w-full pl-10 pr-10 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    aria-label={showPassword ? "Hide password" : "Show password"}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1 cursor-pointer"
+                  >
+                    {showPassword ? (
+                      <EyeOff className="w-4 h-4" />
+                    ) : (
+                      <Eye className="w-4 h-4" />
+                    )}
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="confirmPassword"
+                  className="block text-xs font-bold text-slate-700 mb-1"
+                >
+                  Confirm Password <span className="text-rose-500">*</span>
+                </label>
+                <div className="relative">
+                  <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    id="confirmPassword"
+                    type={showPassword ? "text" : "password"}
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    placeholder="Re-enter password"
+                    required
+                    minLength={6}
+                    className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
+                  />
+                </div>
+              </div>
+            </div>
+
+            )}
+
+            {activationMode === "admin" && (
+              <p className="rounded-xl bg-blue-50 p-3 text-sm text-blue-800">
+                Your administrator will review your registration and provide a
+                temporary password after approval. You will choose your own
+                password at first sign-in.
+              </p>
+            )}
+
+            {/* School Name */}
+            <div>
+              <label
+                htmlFor="schoolName"
+                className="block text-xs font-bold text-slate-700 mb-1"
+              >
+                School Name <span className="text-rose-500">*</span>
+              </label>
+              <div className="relative">
+                <School className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  id="schoolName"
+                  type="text"
+                  value={schoolName}
+                  onChange={(e) => setSchoolName(e.target.value)}
+                  placeholder="e.g. Government Model HSS, Salem / St. Mary's HSS"
+                  required
+                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            {/* School Register Number & Phone Number */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label
+                  htmlFor="registerNumber"
+                  className="block text-xs font-bold text-slate-700 mb-1"
+                >
+                  School Reg. No / Roll No <span className="text-rose-500">*</span>
+                </label>
+                <div className="relative">
+                  <Hash className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                  <input
+                    id="registerNumber"
+                    type="text"
+                    value={registerNumber}
+                    onChange={(e) => setRegisterNumber(e.target.value)}
+                    placeholder="e.g. 120424 or REG-2026"
+                    required
+                    className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
+                  />
+                </div>
+              </div>
+
               <div>
                 <label
                   htmlFor="phone"
@@ -358,50 +530,6 @@ export default function RegisterPage() {
                   />
                 </div>
               </div>
-
-              <div>
-                <label
-                  htmlFor="standard"
-                  className="block text-xs font-bold text-slate-700 mb-1"
-                >
-                  Standard / Class <span className="text-rose-500">*</span>
-                </label>
-                <select
-                  id="standard"
-                  value={standard}
-                  onChange={(e) => setStandard(e.target.value)}
-                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
-                >
-                  <option value="12th Standard">
-                    12th Standard (Higher Secondary)
-                  </option>
-                  <option value="11th Standard">
-                    11th Standard (Higher Secondary)
-                  </option>
-                </select>
-              </div>
-            </div>
-
-            {/* School Name */}
-            <div>
-              <label
-                htmlFor="schoolName"
-                className="block text-xs font-bold text-slate-700 mb-1"
-              >
-                School Name <span className="text-rose-500">*</span>
-              </label>
-              <div className="relative">
-                <School className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                <input
-                  id="schoolName"
-                  type="text"
-                  value={schoolName}
-                  onChange={(e) => setSchoolName(e.target.value)}
-                  placeholder="e.g. Government Model HSS, Salem / AVS Matriculation"
-                  required
-                  className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
-                />
-              </div>
             </div>
 
             {/* Optional Custom Account ID */}
@@ -411,11 +539,11 @@ export default function RegisterPage() {
                   htmlFor="studentId"
                   className="block text-xs font-bold text-slate-700"
                 >
-                  Account ID / Student ID{" "}
+                  Custom Account ID{" "}
                   <span className="text-slate-400 font-normal">(Optional)</span>
                 </label>
                 <span className="text-[10px] text-blue-600 font-bold">
-                  Auto-generated if left blank
+                  Auto-generated if left empty
                 </span>
               </div>
               <input
@@ -423,76 +551,11 @@ export default function RegisterPage() {
                 type="text"
                 value={studentId}
                 onChange={(e) => setStudentId(e.target.value.toUpperCase())}
-                placeholder={`e.g. ${stream === "Computer Science" ? "AVSCS26-0042" : "AVSBIO26-0042"}`}
+                placeholder={`e.g. ${stream === "Computer Science" ? "SKILLCS26-0042" : "SKILLBIO26-0042"}`}
                 maxLength={30}
                 className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-mono uppercase focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
               />
             </div>
-
-            {/* Password & Confirm Password */}
-            {activationMode === "sms" && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label
-                    htmlFor="password"
-                    className="block text-xs font-bold text-slate-700 mb-1"
-                  >
-                    Create Password <span className="text-rose-500">*</span>
-                  </label>
-                  <div className="relative">
-                    <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                    <input
-                      id="password"
-                      type={showPassword ? "text" : "password"}
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      placeholder="Min 6 characters"
-                      required
-                      className="w-full pl-10 pr-10 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
-                    />
-                    <button
-                      type="button"
-                      onClick={() => setShowPassword(!showPassword)}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
-                    >
-                      {showPassword ? (
-                        <EyeOff className="w-4 h-4" />
-                      ) : (
-                        <Eye className="w-4 h-4" />
-                      )}
-                    </button>
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="confirmPassword"
-                    className="block text-xs font-bold text-slate-700 mb-1"
-                  >
-                    Confirm Password <span className="text-rose-500">*</span>
-                  </label>
-                  <div className="relative">
-                    <Lock className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                    <input
-                      id="confirmPassword"
-                      type={showPassword ? "text" : "password"}
-                      value={confirmPassword}
-                      onChange={(e) => setConfirmPassword(e.target.value)}
-                      placeholder="Re-enter password"
-                      required
-                      className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
-                    />
-                  </div>
-                </div>
-              </div>
-            )}
-            {activationMode === "admin" && (
-              <p className="rounded-xl bg-blue-50 p-3 text-sm text-blue-800">
-                Your administrator will review your registration and provide a
-                temporary password after approval. You will choose your own
-                password at first sign-in.
-              </p>
-            )}
 
             {/* Submit Button */}
             <button
@@ -508,8 +571,10 @@ export default function RegisterPage() {
                 <span>Creating your account...</span>
               ) : success ? (
                 <span className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4" /> Account Ready! Entering
-                  App...
+                  <CheckCircle2 className="w-4 h-4" />
+                  {activationMode === "admin"
+                    ? "Registration received"
+                    : "Account Created! Entering App..."}
                 </span>
               ) : (
                 <>
@@ -528,7 +593,7 @@ export default function RegisterPage() {
                 href="/login"
                 className="font-bold text-blue-600 hover:text-blue-800 underline"
               >
-                Sign In here
+                Sign In with your Gmail here
               </Link>
             </p>
           </div>

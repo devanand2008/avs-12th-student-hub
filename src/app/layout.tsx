@@ -8,14 +8,14 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AVS 12th Learning Hub | Handwritten Notes & One Mark Practice",
+  title: "SkillUp | Handwritten Notes & One Mark Practice",
   description:
-    "AVS 12th Learning Hub by AVS Engineering College (Autonomous), Salem. Comprehensive handwritten notes, unit-wise one-mark MCQs, NotebookLM videos, and AI Study Assistant for 12th standard students.",
+    "SkillUp Class 12 Learning Portal. Comprehensive handwritten notes, unit-wise one-mark MCQs, NotebookLM videos, and AI Study Assistant for 12th standard students.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "AVS 12th Hub",
+    title: "SkillUp",
   },
   icons: {
     icon: [
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   },
   other: {
     "mobile-web-app-capable": "yes",
-    "application-name": "AVS 12th Hub",
+    "application-name": "SkillUp",
   },
   keywords: [
-    "AVS Engineering College",
+    "SkillUp",
     "12th standard",
     "handwritten notes",
     "one mark MCQ",
@@ -64,9 +64,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/icon-192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="apple-mobile-web-app-title" content="AVS 12th Hub" />
+        <meta name="apple-mobile-web-app-title" content="SkillUp" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="AVS 12th Hub" />
+        <meta name="application-name" content="SkillUp" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

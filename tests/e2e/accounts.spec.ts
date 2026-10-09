@@ -20,6 +20,7 @@ test("public registration persists the profile and authenticates by ID, email an
   const phone = info.project.name === "mobile" ? "9880000002" : "9880000001";
   const email = `${info.project.name}.registered@example.test`;
   const password = "Registered-personal-password";
+  const registerNumber = `SCHOOL-${studentId}`;
   const registered = await request("post", "/api/auth/register", {
     studentName: "Registered " + info.project.name + " Student",
     phone: "+91 " + phone,
@@ -29,6 +30,7 @@ test("public registration persists the profile and authenticates by ID, email an
     medium: "Tamil",
     email,
     studentId,
+    registerNumber,
     password,
     role: "admin",
   });
@@ -59,7 +61,7 @@ test("public registration persists the profile and authenticates by ID, email an
   expect((await me.json()).user.studentId).toBe(studentId);
   expect((await request("get", "/api/admin/users")).status()).toBe(403);
   await request("post", "/api/auth/logout");
-  for (const loginId of [studentId, email, "+91 " + phone]) {
+  for (const loginId of [studentId, email, registerNumber, "+91 " + phone]) {
     const login = await request("post", "/api/auth/login", {
       loginId,
       password,
@@ -74,6 +76,7 @@ test("public registration persists the profile and authenticates by ID, email an
   );
   const duplicate = await request("post", "/api/auth/register", {
     studentName: "Duplicate Student",
+    email,
     phone,
     schoolName: "Registration Test School",
     stream: "Biology",

@@ -128,7 +128,7 @@ export default function NotesPage() {
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
               Step-by-step derivations, neatly labeled diagrams, formula sheets,
-              and chapter definitions curated by senior AVS teachers.
+              and chapter definitions curated by senior subject faculty.
             </p>
           </div>
           <span className="text-xs font-extrabold text-blue-700 bg-blue-50 px-3.5 py-1.5 rounded-xl border border-blue-200 shadow-xs">

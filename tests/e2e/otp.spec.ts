@@ -27,7 +27,7 @@ test("unavailable mobile verification offers password sign-in without authentica
     "/login?studentId=" + phone,
   );
   await passwordLink.click();
-  await expect(page.getByLabel("Student ID / Phone / Admin Email")).toHaveValue(
+  await expect(page.getByLabel("Gmail / Email Address")).toHaveValue(
     phone,
   );
   expect((await page.request.get("/api/auth/me")).status()).toBe(401);
@@ -61,7 +61,7 @@ test("already verified mobile accounts return to password sign-in without authen
   );
   await page.getByRole("button", { name: "Send OTP", exact: true }).click();
   await expect(page).toHaveURL(/\/login\?studentId=9890000092$/);
-  await expect(page.getByLabel("Student ID / Phone / Admin Email")).toHaveValue(
+  await expect(page.getByLabel("Gmail / Email Address")).toHaveValue(
     phone,
   );
   expect((await page.request.get("/api/auth/me")).status()).toBe(401);
@@ -91,6 +91,7 @@ test("OTP rejects missing challenges, expired codes, resend floods and excessive
       "98900000" + (info.project.name === "mobile" ? "3" : "4") + suffix;
     const registered = await authRequest(page, "/api/auth/register", {
       studentName: "OTP Boundary Test Student",
+      email: `otp.${phone}@example.test`,
       phone,
       schoolName: "OTP Test School",
       stream: "Computer Science",

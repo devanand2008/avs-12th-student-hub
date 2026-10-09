@@ -4,6 +4,7 @@ import { registerStudent } from "@/lib/db";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { BackendUnavailableError } from "@/lib/supabase/server";
 import { normalizePhone } from "@/lib/db/user-data";
+import { createSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { randomBytes } from "node:crypto";
@@ -14,6 +15,19 @@ const registerSchema = z.object({
     .trim()
     .min(2, "Please enter your full name (at least 2 characters).")
     .max(100),
+  email: z
+    .string()
+    .trim()
+    .email("Please enter a valid Gmail / email address.")
+    .max(254),
+  password: z
+    .string()
+    .min(6, "Password must be at least 6 characters long.")
+    .refine(
+      (password) => Buffer.byteLength(password, "utf8") <= 72,
+      "Password cannot exceed 72 UTF-8 bytes.",
+    )
+    .optional(),
   phone: z
     .string()
     .trim()
@@ -21,16 +35,21 @@ const registerSchema = z.object({
     .transform(normalizePhone)
     .refine(
       (phone) => /^[6-9]\d{9}$/.test(phone),
-      "Please enter a valid Indian mobile number.",
+      "Please enter a valid 10-digit Indian mobile number.",
     ),
   schoolName: z
     .string()
     .trim()
     .min(2, "Please enter your school name.")
     .max(200),
+  registerNumber: z
+    .string()
+    .trim()
+    .max(50)
+    .optional()
+    .transform((val) => (val && val.length > 0 ? val : undefined)),
   standard: z.literal("12th Standard").default("12th Standard"),
   medium: z.enum(["English", "Tamil"]).default("English"),
-  email: z.string().trim().email().max(254).optional(),
   stream: z.enum(["Computer Science", "Biology"], {
     message: "Please choose either Computer Science or Biology stream.",
   }),
@@ -40,20 +59,12 @@ const registerSchema = z.object({
     .max(40)
     .optional()
     .transform((val) => (val && val.length > 0 ? val : undefined)),
-  password: z
-    .string()
-    .min(6, "Password must be at least 6 characters long.")
-    .refine(
-      (password) => Buffer.byteLength(password, "utf8") <= 72,
-      "Password cannot exceed 72 UTF-8 bytes.",
-    )
-    .optional(),
 });
 
 export async function POST(request: Request) {
   try {
     const ip = request.headers.get("x-forwarded-for") || "local";
-    const rl = await checkRateLimit(`register_${ip}`, 15, 60);
+    const rl = await checkRateLimit(`register_${ip}`, 25, 60);
     if (!rl.success) {
       return NextResponse.json(
         {
@@ -75,17 +86,20 @@ export async function POST(request: Request) {
 
     const {
       studentName,
+      email,
+      password,
       phone,
       schoolName,
+      registerNumber,
       standard,
       medium,
-      email,
       stream,
       studentId,
-      password,
     } = result.data;
 
-    if (studentActivationMode() === "sms" && !password)
+    const mode = studentActivationMode();
+
+    if (mode !== "admin" && !password)
       return NextResponse.json(
         { error: "A password is required for registration." },
         { status: 400 },
@@ -95,25 +109,49 @@ export async function POST(request: Request) {
       studentName,
       phone,
       schoolName,
+      registerNumber: registerNumber || studentId,
       standard,
       medium,
-      email,
+      email: email.toLowerCase(),
       stream,
       studentId,
       password:
-        studentActivationMode() === "admin"
+        mode === "admin"
           ? randomBytes(32).toString("base64url")
           : password!,
     });
 
+    // In direct mode (default): instant active account and direct sign-in session
+    if (mode === "direct") {
+      await createSession(user, student);
+      return NextResponse.json({
+        success: true,
+        message: "Account created successfully! Welcome to SkillUp.",
+        requiresPhoneVerification: false,
+        requiresAdminApproval: false,
+        user: {
+          id: user.id,
+          role: user.role,
+          studentId: student.studentId,
+          studentName: student.studentName,
+          stream: student.stream,
+          schoolName: student.schoolName,
+          phone: student.studentPhone,
+          email: user.email,
+          medium: student.medium,
+        },
+        redirectTo: "/dashboard",
+      });
+    }
+
     return NextResponse.json({
       success: true,
       message:
-        studentActivationMode() === "admin"
+        mode === "admin"
           ? "Registration received. Ask your administrator to approve your account and provide a temporary password."
           : "Account created. Verify your mobile number to finish your first login.",
-      requiresPhoneVerification: studentActivationMode() === "sms",
-      requiresAdminApproval: studentActivationMode() === "admin",
+      requiresPhoneVerification: mode === "sms",
+      requiresAdminApproval: mode === "admin",
       user: {
         id: user.id,
         role: user.role,
@@ -126,7 +164,7 @@ export async function POST(request: Request) {
         medium: student.medium,
       },
       redirectTo:
-        studentActivationMode() === "admin"
+        mode === "admin"
           ? "/login?approval=pending&studentId=" +
             encodeURIComponent(student.studentId)
           : phoneLoginPath(student.studentPhone),

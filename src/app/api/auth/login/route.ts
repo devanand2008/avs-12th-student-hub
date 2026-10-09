@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       Buffer.byteLength(password, "utf8") > 72
     ) {
       return NextResponse.json(
-        { error: "Please enter your Student ID / Email and password." },
+        { error: "Please enter your Gmail address and password." },
         { status: 400 },
       );
     }
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     const authResult = await authenticateUser(loginId, password);
     if (!authResult.success || !authResult.user) {
       return NextResponse.json(
-        { error: authResult.error || "Student ID or password is incorrect." },
+        { error: authResult.error || "Gmail or password is incorrect." },
         { status: 401 },
       );
     }

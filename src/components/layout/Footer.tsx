@@ -12,10 +12,10 @@ export default function Footer() {
               <BrandLogo />
               <div>
                 <p className="font-heading text-xl font-extrabold tracking-tight text-slate-900">
-                  AVS 12th Learning Hub
+                  SkillUp Learning Hub
                 </p>
                 <p className="mt-1 text-[10px] font-bold text-blue-600">
-                  AVS ENGINEERING COLLEGE (AUTONOMOUS), SALEM
+                  TAMIL NADU CLASS 12 LEARNING PLATFORM
                 </p>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function Footer() {
                 ["One-Mark Practice", "/practice"],
                 ["Video Revision Guides", "/videos"],
                 ["Official Textbooks", "/textbooks"],
-                ["AVS AI Study Tutor", "/ai-helper"],
+                ["SkillUp AI Study Tutor", "/ai-helper"],
               ].map(([label, href]) => (
                 <li key={href}>
                   <Link href={href} className="hover:text-blue-600">
@@ -78,7 +78,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-7 text-[11px]">
-          <p>© 2026 AVS 12th Learning Hub · Salem, Tamil Nadu</p>
+          <p>© 2026 SkillUp · Tamil Nadu</p>
           <span>Learn in Tamil & English</span>
         </div>
       </div>

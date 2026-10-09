@@ -98,7 +98,7 @@ const features = [
   },
   {
     index: "05",
-    title: "AVS AI Study Assistant",
+    title: "SkillUp AI Study Assistant",
     tag: "24/7 BILINGUAL TUTOR",
     icon: Sparkles,
     href: "/ai-helper",
@@ -244,20 +244,20 @@ export default function HomePage() {
         <div className="reference-grid absolute inset-0 opacity-25 pointer-events-none" />
 
         <div className="relative mx-auto max-w-6xl z-10">
-          {/* Institutional Badge */}
+          {/* Brand Badge */}
           <div className="mb-8 inline-flex items-center gap-3.5 px-5 py-2.5 rounded-3xl bg-white/90 border-2 border-blue-200/80 backdrop-blur-md shadow-lg shadow-blue-900/5 text-left transition-all hover:scale-[1.02]">
             <div className="w-10 h-10 rounded-2xl bg-white border border-blue-200/90 p-1 flex items-center justify-center shadow-xs shrink-0">
               <BrandLogo size={34} />
             </div>
             <div>
               <p className="text-xs font-black text-slate-800 tracking-tight flex items-center gap-1.5">
-                AVS Engineering College
+                SkillUp Learning Hub
                 <span className="px-2 py-0.5 rounded-full bg-blue-600 text-white text-[9px] font-black uppercase tracking-wider shadow-xs">
-                  AUTONOMOUS
+                  CLASS 12
                 </span>
               </p>
               <p className="text-[10px] font-bold text-blue-600 mt-0.5">
-                Salem, Tamil Nadu · 12th Standard Academic Initiative
+                Tamil Nadu · Higher Secondary Academic Initiative
               </p>
             </div>
           </div>
@@ -564,7 +564,7 @@ export default function HomePage() {
                   </span>
                 </h2>
                 <p className="text-sm text-blue-100/90 leading-relaxed max-w-xl">
-                  Install AVS 12th Hub directly to your phone’s home screen with zero storage overhead. No App Store or Play Store login required — works on both Android and iPhone.
+                  Install SkillUp directly to your phone’s home screen with zero storage overhead. No App Store or Play Store login required — works on both Android and iPhone.
                 </p>
 
                 {/* 3 Mobile Badges */}
@@ -614,11 +614,11 @@ export default function HomePage() {
                   <div className="rounded-[2rem] bg-[#eff5ff] p-4 text-slate-900 pt-8 space-y-3 overflow-hidden shadow-inner">
                     <div className="flex items-center justify-between pb-2 border-b border-blue-100">
                       <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
-                          AVS
+                        <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
+                          SU
                         </div>
                         <span className="font-extrabold text-xs text-[#071A3D]">
-                          AVS 12th Hub
+                          SkillUp
                         </span>
                       </div>
                       <span className="px-1.5 py-0.5 rounded text-[8px] font-bold bg-emerald-100 text-emerald-800">
@@ -666,8 +666,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-5xl">
           <div className="rounded-3xl border border-blue-200/90 bg-gradient-to-r from-blue-50/60 via-indigo-50/40 to-cyan-50/60 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-subtle">
             <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-[#071a3d] text-white flex items-center justify-center font-black text-xl shadow-md shrink-0">
-                AVS
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#071a3d] to-blue-900 text-white flex items-center justify-center font-black text-xl shadow-md shrink-0">
+                SU
               </div>
               <div>
                 <span className="text-[10px] font-black uppercase tracking-wider text-blue-600">

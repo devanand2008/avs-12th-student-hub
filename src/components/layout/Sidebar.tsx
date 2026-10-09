@@ -113,7 +113,7 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
         <button
           onClick={promptInstall}
           className="mx-1 mt-4 flex items-center justify-between rounded-xl bg-blue-50/80 hover:bg-blue-100/90 border border-blue-200/90 px-3 py-2 text-xs font-bold text-blue-700 transition-all active:scale-98 text-left cursor-pointer"
-          title="Install AVS 12th Hub on this device"
+          title="Install SkillUp on this device"
         >
           <div className="flex items-center gap-2">
             <Download className="w-3.5 h-3.5 text-blue-600" />
@@ -127,9 +127,9 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
 
       <div className="mt-auto px-3 pt-6 text-[11px] leading-5 text-slate-400">
 
-        AVS Engineering College (Autonomous)
+        SkillUp Class 12 Portal
         <br />
-        Salem, Tamil Nadu · Class 12
+        Tamil Nadu · Academic Platform
       </div>
     </aside>
   );

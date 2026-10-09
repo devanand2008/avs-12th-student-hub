@@ -1,7 +1,7 @@
 {
-  "name": "AVS 12th Learning Hub",
-  "short_name": "AVS 12 Hub",
-  "description": "AVS Engineering College Class 12 Higher Secondary Learning Portal - Handwritten Notes, NotebookLM Videos, 1-Mark Practice & Grounded AI Helper",
+  "name": "SkillUp Learning Hub",
+  "short_name": "SkillUp",
+  "description": "SkillUp Class 12 Higher Secondary Learning Portal - Handwritten Notes, NotebookLM Videos, 1-Mark Practice & Grounded AI Helper",
   "start_url": "/",
   "scope": "/",
   "id": "/",

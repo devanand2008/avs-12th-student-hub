@@ -278,6 +278,17 @@ export async function getUserByLoginId(
     }
   }
 
+  if (!user) {
+    // Search students by school register number
+    for (const s of dbState.students.values()) {
+      if (s.registerNumber && s.registerNumber.trim().toLowerCase() === normalized) {
+        user = dbState.users.get(s.userId);
+        matchedStudent = s;
+        break;
+      }
+    }
+  }
+
   if (!user) return null;
 
   if (user.role === "student") {
@@ -617,7 +628,7 @@ export async function registerStudent(
     userId,
     studentId,
     studentName: data.studentName.trim(),
-    registerNumber: studentId,
+    registerNumber: data.registerNumber?.trim() || studentId,
     schoolName: data.schoolName.trim(),
     standard: data.standard?.trim() || "12th Standard",
     studentEmail: user.email,

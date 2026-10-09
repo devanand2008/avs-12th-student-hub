@@ -47,6 +47,8 @@ test("registration waits for admin approval, then password setup opens the learn
   await expect(page.locator('button[type="submit"]')).toBeEnabled();
   await expect(page.locator("#password")).toHaveCount(0);
   await page.locator("#studentName").fill(studentName);
+  await page.locator("#email").fill(`${info.project.name}.approval@example.test`);
+  await page.locator("#registerNumber").fill(`SCHOOL-${studentId}`);
   await page.locator("#phone").fill(phone);
   await page.locator("#schoolName").fill("Approval Test School");
   await page.locator("#studentId").fill(studentId);
@@ -114,7 +116,7 @@ test("registration waits for admin approval, then password setup opens the learn
     .getByLabel("Password", { exact: true })
     .fill(approved.temporaryPassword);
   await page
-    .getByRole("button", { name: "Sign In to Learning Hub", exact: true })
+    .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(page).toHaveURL(/change-password/);
   expect((await authenticatedGet(page, "/api/performance")).status()).toBe(403);

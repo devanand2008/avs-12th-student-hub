@@ -42,7 +42,7 @@ export default function InstallButton({
       <button
         onClick={promptInstall}
         className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100/90 border border-blue-200/90 transition-all active:scale-95 cursor-pointer ${className}`}
-        title="Install AVS 12th Hub on this device"
+        title="Install SkillUp on this device"
       >
         <Download className="w-3.5 h-3.5 text-blue-600" />
         <span>Install App</span>
@@ -61,7 +61,7 @@ export default function InstallButton({
           </div>
           <div>
             <h3 className="font-extrabold text-sm text-white">
-              Install AVS Mobile App
+              Install SkillUp Mobile App
             </h3>
             <p className="text-[11px] text-blue-200">
               Offline notes & quick 1-tap practice
