@@ -156,14 +156,14 @@ export interface Question {
   chapterId: string;
   topicId?: string;
   questionText: string;
-  questionTextTamil: string;
+  questionTextTamil?: string;
   optionA: string;
   optionB: string;
   optionC: string;
   optionD: string;
   correctAnswer: "A" | "B" | "C" | "D";
   explanation: string;
-  explanationTamil: string;
+  explanationTamil?: string;
   difficulty: DifficultyLevel;
   sourceType: QuestionSource;
   status: QuestionStatus;

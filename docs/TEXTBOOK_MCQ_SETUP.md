@@ -41,3 +41,7 @@ npx playwright test tests/e2e/direct-accounts.spec.ts
 ```
 
 Tests use isolated PostgreSQL fixtures and test-only credentials. They do not alter real student profiles. Teacher review of academic answers, edition confirmation and ongoing content maintenance are separate from software testing.
+
+## Generated questions
+
+Generated question files are unverified review drafts. Estimated page numbers and model-written explanations do not establish an answer source. The review gate strips those citation claims and prevents drafts from entering student quizzes or published counts. Use the admin review/import flow to check and correct their text and answers before publication. `scripts/publish-textbook-candidates.ts` intentionally rejects bulk publication from generated answers; printed keys are imported by `npm run mcqs:import`.
