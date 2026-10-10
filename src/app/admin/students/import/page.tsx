@@ -148,7 +148,7 @@ export default function BulkStudentImportPage() {
                   const { default: ExcelJS } = await import("exceljs");
                   const workbook = new ExcelJS.Workbook();
                   await workbook.xlsx.load(await file.arrayBuffer());
-                  const sheet = workbook.worksheets[0];
+                  const sheet = workbook.getWorksheet("Students") || workbook.worksheets[0];
                   if (!sheet || sheet.rowCount > 501)
                     throw new Error("Use a sheet with 1–500 student records.");
                   const lines: string[] = [];

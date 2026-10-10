@@ -1,7 +1,8 @@
 "use client";
 
 import Sidebar from "@/components/layout/Sidebar";
-import { Question } from "@/types";
+import { Question, Subject, Chapter } from "@/types";
+import Link from "next/link";
 import { Eye, HelpCircle, PlusCircle } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
@@ -10,6 +11,19 @@ export default function AdminQuestionsPage() {
   const [filterSource, setFilterSource] = useState<string>("all");
   const [filterStatus, setFilterStatus] = useState<string>("all");
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [error, setError] = useState("");
+  const [subjects, setSubjects] = useState<
+    (Subject & { chapters: Chapter[] })[]
+  >([]);
+  const [filterSubject, setFilterSubject] = useState("all");
+  useEffect(() => {
+    fetch("/api/subjects?library=all")
+      .then((response) => response.json())
+      .then((data) => setSubjects(data.subjects || []))
+      .catch(() => setError("Could not load chapters. Refresh to try again."));
+  }, []);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [previewQuestion, setPreviewQuestion] = useState<Question | null>(null);
 
@@ -35,12 +49,18 @@ export default function AdminQuestionsPage() {
     const params = new URLSearchParams();
     if (filterSource !== "all") params.set("sourceType", filterSource);
     if (filterStatus !== "all") params.set("status", filterStatus);
+    if (filterSubject !== "all") params.set("subjectId", filterSubject);
+    params.set("page", String(page));
     return fetch("/api/admin/questions?" + params.toString())
       .then((response) => response.json())
-      .then((data) => setQuestions(data.questions || []))
-      .catch((error) => console.error(error))
+      .then((data) => {
+        if (data.error) throw new Error(data.error);
+        setQuestions(data.questions || []);
+        setTotal(data.total || 0);
+      })
+      .catch((error) => setError(error.message))
       .finally(() => setLoading(false));
-  }, [filterSource, filterStatus]);
+  }, [filterSource, filterStatus, filterSubject, page]);
 
   useEffect(() => {
     void fetchQuestions();
@@ -96,6 +116,9 @@ export default function AdminQuestionsPage() {
       setOptD("");
       setExplanation("");
       fetchQuestions();
+    } else {
+      const data = await res.json();
+      setError(data.error || "Could not create the question.");
     }
   };
 
@@ -144,11 +167,50 @@ export default function AdminQuestionsPage() {
         </div>
 
         {/* Filter Bar */}
+        {error && (
+          <p role="alert" className="rounded-xl bg-rose-50 p-4 text-rose-800">
+            {error}
+          </p>
+        )}
+        <div className="flex flex-wrap items-center gap-3">
+          <label className="text-sm">
+            Filter subject
+            <select
+              value={filterSubject}
+              onChange={(event) => {
+                setPage(1);
+                setFilterSubject(event.target.value);
+              }}
+            >
+              <option value="all">All subjects</option>
+              {subjects.map((subject) => (
+                <option key={subject.id} value={subject.id}>
+                  {subject.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <Link
+            href="/admin/textbook-questions"
+            className="btn-secondary text-sm"
+          >
+            Review imported textbook MCQs
+          </Link>
+          <Link
+            href="/admin/questions/import"
+            className="btn-secondary text-sm"
+          >
+            Import MCQ spreadsheet
+          </Link>
+        </div>
         <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-xs flex flex-wrap items-center justify-between gap-3 text-xs">
           <div className="flex items-center gap-2">
             <span className="font-bold text-slate-600">Category:</span>
             <button
-              onClick={() => setFilterSource("all")}
+              onClick={() => {
+                setPage(1);
+                setFilterSource("all");
+              }}
               className={`px-3 py-1.5 rounded-lg font-bold ${
                 filterSource === "all"
                   ? "bg-[#2563EB] text-white"
@@ -158,7 +220,10 @@ export default function AdminQuestionsPage() {
               All
             </button>
             <button
-              onClick={() => setFilterSource("Book-In")}
+              onClick={() => {
+                setPage(1);
+                setFilterSource("Book-In");
+              }}
               className={`px-3 py-1.5 rounded-lg font-bold ${
                 filterSource === "Book-In"
                   ? "bg-emerald-600 text-white"
@@ -168,7 +233,10 @@ export default function AdminQuestionsPage() {
               Book-In (Textbook)
             </button>
             <button
-              onClick={() => setFilterSource("Book-Out")}
+              onClick={() => {
+                setPage(1);
+                setFilterSource("Book-Out");
+              }}
               className={`px-3 py-1.5 rounded-lg font-bold ${
                 filterSource === "Book-Out"
                   ? "bg-purple-600 text-white"
@@ -183,7 +251,10 @@ export default function AdminQuestionsPage() {
             <span className="font-bold text-slate-600">Workflow Status:</span>
             <select
               value={filterStatus}
-              onChange={(e) => setFilterStatus(e.target.value)}
+              onChange={(e) => {
+                setPage(1);
+                setFilterStatus(e.target.value);
+              }}
               className="py-1.5 px-3 bg-slate-50 border border-slate-200 rounded-lg font-medium"
             >
               <option value="all">All Statuses</option>
@@ -287,6 +358,28 @@ export default function AdminQuestionsPage() {
         </div>
 
         {/* Create Question Modal */}
+        <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+          <p>
+            {total} questions · Page {page} of{" "}
+            {Math.max(1, Math.ceil(total / 50))}
+          </p>
+          <div className="flex gap-2">
+            <button
+              className="btn-secondary"
+              disabled={page <= 1}
+              onClick={() => setPage((value) => value - 1)}
+            >
+              Previous
+            </button>
+            <button
+              className="btn-secondary"
+              disabled={page * 50 >= total}
+              onClick={() => setPage((value) => value + 1)}
+            >
+              Next
+            </button>
+          </div>
+        </div>
         {showCreateModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm overflow-y-auto">
             <div className="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 my-8 space-y-4">
@@ -304,15 +397,15 @@ export default function AdminQuestionsPage() {
                     onChange={(e) => setChapterId(e.target.value)}
                     className="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl"
                   >
-                    <option value="cs-ch-1">CS Ch 1: Function</option>
-                    <option value="cs-ch-7">CS Ch 7: Python Functions</option>
-                    <option value="cs-ch-12">CS Ch 12: SQL Concepts</option>
-                    <option value="bot-ch-1">
-                      Botany Ch 1: Plant Reproduction
-                    </option>
-                    <option value="zoo-ch-2">
-                      Zoology Ch 2: Human Reproduction
-                    </option>
+                    {subjects.map((subject) => (
+                      <optgroup key={subject.id} label={subject.name}>
+                        {subject.chapters.map((chapter) => (
+                          <option key={chapter.id} value={chapter.id}>
+                            {chapter.chapterNumber}. {chapter.title}
+                          </option>
+                        ))}
+                      </optgroup>
+                    ))}
                   </select>
                 </div>
 

@@ -71,6 +71,11 @@ export async function POST(request: Request) {
       optionD: q.optionD,
       difficulty: q.difficulty,
       sourceType: q.sourceType,
+      sourceTextbookId: q.sourceTextbookId,
+      sourcePage: q.sourcePage,
+      sourceQuestionNumber: q.sourceQuestionNumber,
+      language: q.language,
+      answerVerification: q.answerVerification,
       // For practice mode, send correct answer and explanation for instant feedback
       ...(isExamMode
         ? {}

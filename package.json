@@ -27,6 +27,8 @@
     "books:verify": "node scripts/import-textbooks.mjs --verify",
     "books:sync": "node scripts/import-textbooks.mjs --verify --sync-db",
     "books:index": "tsx scripts/index-study-textbooks.ts",
+    "mcqs:prepare": "tsx scripts/import-textbook-mcqs.ts --dry-run",
+    "mcqs:import": "tsx scripts/import-textbook-mcqs.ts",
     "materials:scan": "tsx scripts/import-learning-materials.ts --dry-run",
     "materials:import": "tsx scripts/import-learning-materials.ts",
     "materials:verify": "tsx scripts/import-learning-materials.ts --verify"

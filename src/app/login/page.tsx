@@ -59,7 +59,7 @@ function LoginForm() {
         return;
       }
       if (!response.ok)
-        throw new Error(data.error || "Gmail or password is incorrect.");
+        throw new Error(data.error || "Email or password is incorrect.");
       const redirect = params.get("redirect");
       const safeRedirect =
         redirect?.startsWith("/") &&
@@ -119,7 +119,7 @@ function LoginForm() {
             id="login-heading"
             className="mt-3 font-heading text-2xl font-black tracking-tight text-slate-900"
           >
-            Sign In with Gmail
+            Sign In to SkillUp
           </h1>
           <p className="mt-1 text-xs leading-relaxed text-slate-500">
             SkillUp • Tamil Nadu Class 12 Higher Secondary Portal
@@ -167,7 +167,7 @@ function LoginForm() {
               htmlFor="login-id"
               className="mb-1.5 block text-xs font-bold text-slate-700"
             >
-              Gmail / Email Address
+              Email Address
             </label>
             <div className="relative">
               <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
@@ -179,12 +179,12 @@ function LoginForm() {
                 type="text"
                 placeholder="e.g. yourname@gmail.com"
                 required
-                maxLength={200}
+                maxLength={254}
                 className="w-full rounded-xl border border-slate-300 bg-slate-50 pl-10 pr-4 py-3 text-sm text-slate-800 outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 font-medium"
               />
             </div>
             <p className="mt-1 text-[10px] text-slate-400">
-              Sign in with your Gmail (Student ID or phone also accepted)
+              Your Student ID or mobile number also works.
             </p>
           </div>
 
@@ -205,7 +205,7 @@ function LoginForm() {
                 autoComplete="current-password"
                 placeholder="Enter your password"
                 required
-                maxLength={200}
+                maxLength={254}
                 className="w-full rounded-xl border border-slate-300 bg-slate-50 pl-10 pr-12 py-3 text-sm outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 font-medium"
               />
               <button

@@ -42,7 +42,7 @@ export function filterUserDirectory(
   });
 }
 
-export function userDirectoryCsv(users: AdminUserData[]): string {
+export function userDirectoryRows(users: AdminUserData[]) {
   const columns = [
     "Account ID",
     "Role",
@@ -103,9 +103,15 @@ export function userDirectoryCsv(users: AdminUserData[]): string {
       learning?.videosWatched,
       learning?.bookmarksCount,
       learning?.lastActiveAt,
-    ]
-      .map((value) => csvCell(String(value ?? "")))
-      .join(",");
+    ];
   });
+  return { columns, rows };
+}
+
+export function userDirectoryCsv(users: AdminUserData[]): string {
+  const { columns, rows: values } = userDirectoryRows(users);
+  const rows = values.map((row) =>
+    row.map((value) => csvCell(String(value ?? ""))).join(","),
+  );
   return "\uFEFF" + [columns.map(csvCell).join(","), ...rows].join("\r\n");
 }

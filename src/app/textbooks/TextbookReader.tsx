@@ -28,13 +28,21 @@ import styles from "./TextbookReader.module.css";
 
 const assetBase = `/pdfjs/${pdfjsPackage.version}/`;
 
-function PdfPages({ url, title }: { url: string; title: string }) {
+function PdfPages({
+  url,
+  title,
+  initialPage = 1,
+}: {
+  url: string;
+  title: string;
+  initialPage?: number;
+}) {
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [pageError, setPageError] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
-  const [pageNumber, setPageNumber] = useState(1);
-  const [pageInput, setPageInput] = useState("1");
+  const [pageNumber, setPageNumber] = useState(initialPage);
+  const [pageInput, setPageInput] = useState(String(initialPage));
   const [zoom, setZoom] = useState(1);
   const [width, setWidth] = useState(0);
   const [renderedPage, setRenderedPage] = useState(0);
@@ -71,7 +79,12 @@ function PdfPages({ url, title }: { url: string; title: string }) {
             setProgress(Math.min(100, Math.round((loaded / total) * 100)));
         };
         const loaded = await task.promise;
-        if (active) setPdf(loaded);
+        if (active) {
+          const page = Math.min(initialPage, loaded.numPages);
+          setPageNumber(page);
+          setPageInput(String(page));
+          setPdf(loaded);
+        }
       } catch {
         if (active)
           setLoadError(
@@ -84,7 +97,7 @@ function PdfPages({ url, title }: { url: string; title: string }) {
       active = false;
       void task?.destroy().catch(() => {});
     };
-  }, [url, retry]);
+  }, [url, retry, initialPage]);
 
   useEffect(() => {
     const viewer = viewerRef.current;
@@ -345,9 +358,11 @@ function PdfPages({ url, title }: { url: string; title: string }) {
 export default function TextbookReader({
   book,
   isAdmin = false,
+  initialPage = 1,
 }: {
   book: Textbook;
   isAdmin?: boolean;
+  initialPage?: number;
 }) {
   return (
     <div className="flex min-w-0 flex-1">
@@ -393,7 +408,11 @@ export default function TextbookReader({
           </div>
         </div>
         {book.localPath ? (
-          <PdfPages url={book.localPath} title={book.title} />
+          <PdfPages
+            url={book.localPath}
+            title={book.title}
+            initialPage={initialPage}
+          />
         ) : (
           <div
             role="alert"

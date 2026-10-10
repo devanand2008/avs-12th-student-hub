@@ -124,7 +124,7 @@ export async function authenticateUser(
 }> {
   const match = await getUserByLoginId(loginId);
   if (!match) {
-    return { success: false, error: "Student ID or password is incorrect." };
+    return { success: false, error: "Email or password is incorrect." };
   }
 
   const { user, student } = match;
@@ -139,13 +139,13 @@ export async function authenticateUser(
     return {
       success: false,
       error:
-        "This student account is currently deactivated. Please contact Dr. Joshua / Vice Principal Office.",
+        "This account is inactive. Please contact your administrator.",
     };
   }
 
   const isValid = await bcrypt.compare(plainPass, user.passwordHash);
   if (!isValid) {
-    return { success: false, error: "Student ID or password is incorrect." };
+    return { success: false, error: "Email or password is incorrect." };
   }
 
   return { success: true, user, student };

@@ -376,7 +376,7 @@ test("admin sign-in reaches the panel after a guest prefetch redirect", async ({
   expect((await guestPrefetch).status()).toBe(307);
 
   await page
-    .getByLabel("Gmail / Email Address")
+    .getByLabel("Email Address")
     .fill("qa-admin@example.test");
   await page
     .getByLabel("Password", { exact: true })
@@ -398,14 +398,14 @@ test("login rejects bad credentials and opens an honest student dashboard", asyn
 }) => {
   await page.goto("/login");
   await page
-    .getByLabel("Gmail / Email Address")
+    .getByLabel("Email Address")
     .fill("AVSCS26-0001");
   await page.getByLabel("Password", { exact: true }).fill("incorrect-password");
   await page
     .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(
-    page.getByText("Student ID or password is incorrect.", { exact: true }),
+    page.getByText("Email or password is incorrect.", { exact: true }),
   ).toBeVisible();
   await page.getByLabel("Password", { exact: true }).fill("Student@2026");
   await page
@@ -1018,7 +1018,7 @@ test("admin creates a permanent student login and student changes their first pa
   ).toBeVisible();
   await api(page, "post", "/api/auth/logout");
   await page.goto("/login?studentId=" + credentials.student.studentId);
-  await expect(page.getByLabel("Gmail / Email Address")).toHaveValue(
+  await expect(page.getByLabel("Email Address")).toHaveValue(
     credentials.student.studentId,
   );
   await page

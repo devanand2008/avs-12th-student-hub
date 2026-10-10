@@ -17,6 +17,13 @@ export class OtpError extends Error {
   }
 }
 export async function pendingPhoneStudent(phone: string) {
+  if (studentActivationMode() === "direct")
+    throw new OtpError(
+      "Sign in with your email address and the password you created. SMS verification is not required.",
+      409,
+      "PASSWORD_LOGIN_ENABLED",
+      "/login",
+    );
   if (studentActivationMode() === "admin")
     throw new OtpError(
       "Student accounts use administrator approval. Ask your administrator for approval and a temporary password, then sign in.",

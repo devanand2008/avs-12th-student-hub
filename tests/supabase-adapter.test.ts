@@ -32,6 +32,7 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
     "ENABLE_DEMO_DATA",
     "ADMIN_EMAIL",
     "ADMIN_INITIAL_PASSWORD",
+    "STUDENT_ACTIVATION_MODE",
   ];
   const original = Object.fromEntries(
     keys.map((key) => [key, process.env[key]]),
@@ -46,6 +47,7 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
       ENABLE_DEMO_DATA: "false",
       ADMIN_EMAIL: "adapter-admin@example.test",
       ADMIN_INITIAL_PASSWORD: "Adapter-admin-password",
+      STUDENT_ACTIVATION_MODE: "sms",
     });
     await db.initDatabase();
     const bucket =

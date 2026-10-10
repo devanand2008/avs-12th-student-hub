@@ -7,6 +7,7 @@ import {
   userDirectoryCsv,
 } from "../src/components/admin/user-directory";
 import type { AdminUserData } from "../src/lib/db";
+import { createUserWorkbook } from "../src/lib/user-workbook";
 
 const student: AdminUserData = {
   id: "user-student",
@@ -55,6 +56,32 @@ const filters = {
   stream: "all",
   medium: "all",
 };
+
+test("Excel export contains literal text, a reusable roster and no credentials", async () => {
+  const unsafe = {
+    ...student,
+    passwordHash: "private-hash",
+    temporaryPassword: "private-password",
+  };
+  const bytes = await createUserWorkbook([unsafe, admin]);
+  assert.equal(Buffer.from(bytes).subarray(0, 2).toString(), "PK");
+  const workbook = new ExcelJS.Workbook();
+  await workbook.xlsx.load(bytes as unknown as ExcelJS.Buffer);
+  const users = workbook.getWorksheet("Users")!;
+  const headers = users.getRow(1).values as string[];
+  const value = (name: string) =>
+    users.getRow(2).getCell(headers.indexOf(name)).value;
+  assert.equal(value("Name"), student.student!.studentName);
+  assert.equal(value("School"), student.student!.schoolName);
+  const roster = workbook.getWorksheet("Students")!;
+  assert.equal(roster.getRow(1).getCell(1).value, "student_name");
+  assert.equal(roster.getRow(2).getCell(1).value, student.student!.studentName);
+  assert.equal(roster.getRow(2).getCell(6).value, "9876543210");
+  const contents = JSON.stringify(workbook.model);
+  assert.ok(!contents.includes("private-hash"));
+  assert.ok(!contents.includes("private-password"));
+  assert.ok(!contents.includes('"formula":'));
+});
 
 test("user directory finds phone/contact details and combines role, status, stream, medium filters", () => {
   const users = [student, admin];

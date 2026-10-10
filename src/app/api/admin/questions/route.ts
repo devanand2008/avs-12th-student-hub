@@ -42,8 +42,27 @@ export async function GET(request: Request) {
     (searchParams.get("sourceType") as Question["sourceType"]) || undefined;
   const status = searchParams.get("status") || undefined;
 
-  const questions = await getQuestions({ chapterId, sourceType, status });
-  return NextResponse.json({ questions });
+  const subjectId = searchParams.get("subjectId") || undefined;
+  const page = Math.max(
+    1,
+    Math.min(10000, Math.trunc(Number(searchParams.get("page")) || 1)),
+  );
+  const pageSize = 50;
+  const questions = await getQuestions({
+    chapterId,
+    subjectId,
+    sourceType,
+    status,
+  });
+  return NextResponse.json(
+    {
+      questions: questions.slice((page - 1) * pageSize, page * pageSize),
+      total: questions.length,
+      page,
+      pageSize,
+    },
+    { headers: { "Cache-Control": "private, no-store" } },
+  );
 }
 
 export async function POST(request: Request) {

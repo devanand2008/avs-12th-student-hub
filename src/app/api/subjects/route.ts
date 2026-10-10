@@ -1,5 +1,5 @@
 import { listResources } from "@/lib/content";
-import { getChaptersBySubject, getSubjects, getQuestions } from "@/lib/db";
+import { getAllChapters, getSubjects, getQuestions } from "@/lib/db";
 import { StreamType } from "@/types";
 import { NextResponse } from "next/server";
 
@@ -7,15 +7,19 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const stream = searchParams.get("stream") as StreamType | null;
 
-  const subjects = await getSubjects(stream || undefined);
-  const [notes, videos] = await Promise.all([
+  const includeTextbooks = searchParams.get("library") === "all";
+  const subjects = (await getSubjects(stream || undefined)).filter(
+    (subject) => includeTextbooks || !subject.id.startsWith("tb-"),
+  );
+  const [notes, videos, allChapters, questions] = await Promise.all([
     listResources("note"),
     listResources("video"),
+    getAllChapters(),
+    getQuestions({ status: "Published" }),
   ]);
-  const questions = await getQuestions({ status: "Published" });
-  const enrichedSubjects = await Promise.all(
-    subjects.map(async (subj) => {
-      const chapters = await getChaptersBySubject(subj.id);
+  const enrichedSubjects = subjects.map((subj) => {
+      const chapters = allChapters.filter((chapter) => chapter.subjectId === subj.id)
+        .sort((a, b) => a.chapterNumber - b.chapterNumber);
       return {
         ...subj,
         chapters: chapters.map((chapter) => ({
@@ -29,8 +33,7 @@ export async function GET(request: Request) {
           ).length,
         })),
       };
-    }),
-  );
+    });
 
   return NextResponse.json({ subjects: enrichedSubjects });
 }

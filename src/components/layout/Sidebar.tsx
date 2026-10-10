@@ -44,6 +44,7 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
           icon: BookOpen,
         },
         { label: "Question bank", href: "/admin/questions", icon: Target },
+        { label: "Textbook MCQ review", href: "/admin/textbook-questions", icon: BookOpen },
       ]
     : [
         { label: "Overview", href: "/dashboard", icon: LayoutDashboard },
@@ -53,6 +54,7 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
         { label: "Video lessons", href: "/videos", icon: Video },
         { label: "3D learning lab", href: "/models", icon: Box },
         { label: "One-mark practice", href: "/practice", icon: Target },
+        { label: "Textbook MCQs", href: "/textbook-practice", icon: BookOpen },
         { label: "AI study helper", href: "/ai-helper", icon: Sparkles },
         { label: "My performance", href: "/performance", icon: BarChart3 },
         { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },

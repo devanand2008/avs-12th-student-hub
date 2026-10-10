@@ -30,8 +30,11 @@ async function main() {
         GEMINI_API_KEY: "",
         AI_PROVIDER:
           process.env.AVS_TEST_LOCAL_AI === "true" ? "local" : "excerpts",
-        STUDENT_ACTIVATION_MODE:
-          process.env.AVS_TEST_ACTIVATION_MODE === "admin" ? "admin" : "sms",
+        STUDENT_ACTIVATION_MODE: ["admin", "sms", "direct"].includes(
+          process.env.AVS_TEST_ACTIVATION_MODE || "",
+        )
+          ? process.env.AVS_TEST_ACTIVATION_MODE
+          : "sms",
         NEXT_PUBLIC_SUPABASE_ANON_KEY: "qa-service-key",
         NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: "",
       },

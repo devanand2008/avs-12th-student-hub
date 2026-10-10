@@ -4,7 +4,6 @@ import { registerStudent } from "@/lib/db";
 import { checkRateLimit } from "@/lib/rate-limit";
 import { BackendUnavailableError } from "@/lib/supabase/server";
 import { normalizePhone } from "@/lib/db/user-data";
-import { createSession } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { randomBytes } from "node:crypto";
@@ -22,7 +21,7 @@ const registerSchema = z.object({
     .max(254),
   password: z
     .string()
-    .min(6, "Password must be at least 6 characters long.")
+    .min(10, "Use at least 10 characters for your password.")
     .refine(
       (password) => Buffer.byteLength(password, "utf8") <= 72,
       "Password cannot exceed 72 UTF-8 bytes.",
@@ -105,6 +104,12 @@ export async function POST(request: Request) {
         { status: 400 },
       );
 
+    if (mode === "direct" && !registerNumber)
+      return NextResponse.json(
+        { error: "Please enter your school register number or roll number." },
+        { status: 400 },
+      );
+
     const { student, user } = await registerStudent({
       studentName,
       phone,
@@ -116,17 +121,15 @@ export async function POST(request: Request) {
       stream,
       studentId,
       password:
-        mode === "admin"
-          ? randomBytes(32).toString("base64url")
-          : password!,
+        mode === "admin" ? randomBytes(32).toString("base64url") : password!,
     });
 
-    // In direct mode (default): instant active account and direct sign-in session
+    // Students use their own password and sign in on the login page.
     if (mode === "direct") {
-      await createSession(user, student);
       return NextResponse.json({
         success: true,
-        message: "Account created successfully! Welcome to SkillUp.",
+        message:
+          "Account created. Sign in with your email address and the password you chose.",
         requiresPhoneVerification: false,
         requiresAdminApproval: false,
         user: {
@@ -140,7 +143,8 @@ export async function POST(request: Request) {
           email: user.email,
           medium: student.medium,
         },
-        redirectTo: "/dashboard",
+        redirectTo:
+          "/login?registered=1&email=" + encodeURIComponent(user.email),
       });
     }
 

@@ -65,9 +65,9 @@ export function validateRegistration(data: StudentRegistration) {
     throw new Error("Please enter your name and school.");
   if (data.standard && data.standard !== "12th Standard")
     throw new Error("Only 12th Standard registration is available.");
-  if (data.password.length < 6 || Buffer.byteLength(data.password, "utf8") > 72)
+  if (data.password.length < 10 || Buffer.byteLength(data.password, "utf8") > 72)
     throw new Error(
-      "Use at least 6 characters and no more than 72 UTF-8 bytes for your password.",
+      "Use at least 10 characters and no more than 72 UTF-8 bytes for your password.",
     );
   const registerNumber = data.registerNumber?.trim() || undefined;
   return { phone, studentId, email, registerNumber };

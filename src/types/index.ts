@@ -145,6 +145,11 @@ export type QuestionStatus =
 
 export interface Question {
   id: string;
+  sourceTextbookId?: string;
+  sourcePage?: number;
+  sourceQuestionNumber?: number;
+  language?: MediumType;
+  answerVerification?: "Textbook Answer Key" | "Teacher Review";
   chapterId: string;
   topicId?: string;
   questionText: string;

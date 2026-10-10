@@ -416,6 +416,8 @@ export default function Navbar() {
                 <Video className="w-4 h-4 text-purple-600" />
                 <span>NotebookLM Videos</span>
               </Link>
+              <Link href="/textbook-practice" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"><CheckSquare className="h-4 w-4 text-blue-600" /> Textbook MCQs</Link>
+              {user.role === "admin" && <Link href="/admin/textbook-questions" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"><ShieldCheck className="h-4 w-4 text-blue-600" /> Review textbook MCQs</Link>}
               <Link
                 href="/practice"
                 onClick={() => setMobileMenuOpen(false)}

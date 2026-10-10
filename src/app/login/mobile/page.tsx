@@ -53,12 +53,16 @@ function MobileForm() {
         title={
           activationMode === "admin"
             ? "Administrator approval required"
-            : "Checking account activation"
+            : activationMode === "direct"
+              ? "Sign in with your email and password"
+              : "Checking account activation"
         }
         description={
           activationMode === "admin"
             ? "Ask your administrator to approve your account and provide a temporary password. Then sign in with your Student ID and choose your own password."
-            : "Please wait while we check how to activate your account."
+            : activationMode === "direct"
+              ? "Use the email address and password you chose when creating your account. SMS verification is not required."
+              : "Please wait while we check how to activate your account."
         }
       >
         <Link href={passwordLoginPath} className="btn-primary">

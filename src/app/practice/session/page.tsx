@@ -606,6 +606,20 @@ function PracticeContent() {
         </div>
 
         {/* Question Text */}
+        {question.sourceTextbookId && (
+          <Link
+            href={`/textbooks/${question.sourceTextbookId}?page=${question.sourcePage || 1}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700"
+          >
+            <BookOpen size={16} /> Original textbook
+            {question.sourcePage ? ` · PDF page ${question.sourcePage}` : ""}
+            {question.sourceQuestionNumber
+              ? ` · Question ${question.sourceQuestionNumber}`
+              : ""}
+          </Link>
+        )}
         <div className="space-y-3">
           <h1 className="text-base sm:text-lg font-bold text-[#071A3D] leading-relaxed font-heading">
             {question.questionText}
@@ -632,6 +646,8 @@ function PracticeContent() {
                 ("option" + key) as
                   "optionA" | "optionB" | "optionC" | "optionD"
               ];
+
+            if (!optionText) return null;
 
             return (
               <label

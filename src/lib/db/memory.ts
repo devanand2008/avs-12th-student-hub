@@ -744,6 +744,11 @@ export async function getSubjectById(id: string): Promise<Subject | null> {
   return dbState.subjects.get(id) || null;
 }
 
+export async function getAllChapters(): Promise<Chapter[]> {
+  await ensureInit();
+  return Array.from(dbState.chapters.values());
+}
+
 export async function getChaptersBySubject(
   subjectId: string,
 ): Promise<Chapter[]> {

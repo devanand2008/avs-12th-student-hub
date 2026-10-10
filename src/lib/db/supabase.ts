@@ -393,6 +393,11 @@ export async function getSubjectById(id: string) {
   await initDatabase();
   return one<Subject>("avs_curriculum", "id", id, "subject");
 }
+export async function getAllChapters() {
+  await initDatabase();
+  return all<Chapter>("avs_curriculum", { kind: "chapter" });
+}
+
 export async function getChaptersBySubject(id: string) {
   await initDatabase();
   return (await all<Chapter>("avs_curriculum", { kind: "chapter" }))

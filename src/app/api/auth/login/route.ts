@@ -30,11 +30,11 @@ export async function POST(request: Request) {
       typeof password !== "string" ||
       !loginId ||
       !password ||
-      loginId.length > 200 ||
+      loginId.length > 254 ||
       Buffer.byteLength(password, "utf8") > 72
     ) {
       return NextResponse.json(
-        { error: "Please enter your Gmail address and password." },
+        { error: "Please enter your email address and password." },
         { status: 400 },
       );
     }
@@ -42,7 +42,7 @@ export async function POST(request: Request) {
     const authResult = await authenticateUser(loginId, password);
     if (!authResult.success || !authResult.user) {
       return NextResponse.json(
-        { error: authResult.error || "Gmail or password is incorrect." },
+        { error: authResult.error || "Email or password is incorrect." },
         { status: 401 },
       );
     }

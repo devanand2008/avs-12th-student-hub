@@ -119,6 +119,10 @@ export async function getSubjectById(
 ): Promise<Awaited<ReturnType<typeof memory.getSubjectById>>> {
   return driver().getSubjectById(...args);
 }
+export async function getAllChapters(): Promise<Awaited<ReturnType<typeof memory.getAllChapters>>> {
+  return driver().getAllChapters();
+}
+
 export async function getChaptersBySubject(
   ...args: Parameters<typeof memory.getChaptersBySubject>
 ): Promise<Awaited<ReturnType<typeof memory.getChaptersBySubject>>> {

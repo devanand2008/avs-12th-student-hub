@@ -11,6 +11,7 @@ import {
   INITIAL_KNOWLEDGE_CHUNKS,
 } from "../../src/lib/db/initial-seed";
 import bcrypt from "bcryptjs";
+import { seedTextbookBank } from "./textbook-bank";
 const tables = new Set([
   "avs_schema_versions",
   "avs_users",
@@ -27,6 +28,8 @@ const tables = new Set([
   "avs_rate_limits",
   "learning_resources",
   "textbooks",
+  "textbook_mcq_candidates",
+  "textbook_mcq_imports",
 ]);
 function identifier(value: string) {
   if (!/^[a-z_]+$/.test(value)) throw new Error("Invalid SQL identifier");
@@ -80,7 +83,14 @@ export async function startPostgrestFixture(
       "utf8",
     ),
   );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261010_textbook_mcq_bank.sql",
+      "utf8",
+    ),
+  );
   if (seedDemo) {
+    await seedTextbookBank(db);
     await db.query("select public.avs_bootstrap_admin($1)", [
       JSON.stringify({
         id: "qa-admin",
@@ -360,6 +370,17 @@ export async function startPostgrestFixture(
               details: `The result contains ${result.rows.length} rows`,
             });
           return send(200, result.rows[0]);
+        }
+        if (String(request.headers.prefer).includes("count=exact")) {
+          const counted = await db.query<{ count: number }>(
+            `select count(*)::integer as count from public.${identifier(name)}${where}`,
+            params,
+          );
+          const offset = Number(url.searchParams.get("offset") || 0);
+          response.setHeader(
+            "Content-Range",
+            `${offset}-${offset + Math.max(0, result.rows.length - 1)}/${counted.rows[0].count}`,
+          );
         }
         return send(200, result.rows);
       }

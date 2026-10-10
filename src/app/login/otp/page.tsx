@@ -99,9 +99,15 @@ export default function OtpLoginPage() {
         title={
           activationMode === "admin"
             ? "Administrator approval required"
-            : "Checking account activation"
+            : activationMode === "direct"
+              ? "Sign in with your email and password"
+              : "Checking account activation"
         }
-        description="Ask your administrator for approval and a temporary password, then sign in with your Student ID."
+        description={
+          activationMode === "direct"
+            ? "Use the email address and password you chose when creating your account. SMS verification is not required."
+            : "Ask your administrator for approval and a temporary password, then sign in with your Student ID."
+        }
       >
         <Link href="/login" className="btn-primary">
           Sign in with password

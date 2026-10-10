@@ -220,7 +220,13 @@ export default function AdminStudentsPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            <button
+          <a
+            href={"/api/admin/users/export?" + new URLSearchParams({ ...filters }).toString()}
+            className="btn-secondary text-xs"
+          >
+            <Download size={14} /> Download Excel
+          </a>
+          <button
               className="btn-secondary"
               disabled={loading || !filtered.length}
               onClick={exportCsv}

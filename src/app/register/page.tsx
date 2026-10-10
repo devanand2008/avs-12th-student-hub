@@ -60,15 +60,15 @@ export default function RegisterPage() {
     }
     const cleanEmail = email.trim().toLowerCase();
     if (!cleanEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
-      setError("Please enter a valid Gmail / email address.");
+      setError("Please enter a valid email address.");
       return;
     }
     if (!activationMode) {
       setError("Registration settings are loading. Please try again shortly.");
       return;
     }
-    if (activationMode !== "admin" && password.length < 6) {
-      setError("Password must be at least 6 characters long.");
+    if (activationMode !== "admin" && password.length < 10) {
+      setError("Use at least 10 characters for your password.");
       return;
     }
     if (activationMode !== "admin" && password !== confirmPassword) {
@@ -220,7 +220,7 @@ export default function RegisterPage() {
         <div className="relative z-10 flex items-center justify-between text-[11px] text-blue-200/80 pt-3 border-t border-white/10">
           <span>Free Educational Platform</span>
           <span>•</span>
-          <span>TN SCERT 2024-2025 Syllabus</span>
+          <span>Official Tamil Nadu Class 12 textbooks</span>
         </div>
       </section>
 
@@ -369,13 +369,13 @@ export default function RegisterPage() {
               </div>
             </div>
 
-            {/* Gmail / Email Address */}
+            {/* Email Address */}
             <div>
               <label
                 htmlFor="email"
                 className="block text-xs font-bold text-slate-700 mb-1"
               >
-                Gmail / Email Address <span className="text-rose-500">*</span>
+                Email Address <span className="text-rose-500">*</span>
               </label>
               <div className="relative">
                 <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
@@ -390,7 +390,7 @@ export default function RegisterPage() {
                 />
               </div>
               <p className="mt-1 text-[11px] text-blue-600 font-medium">
-                ★ Use this Gmail address to log in to SkillUp every time
+                Use this email address and your password to sign in.
               </p>
             </div>
 
@@ -411,9 +411,9 @@ export default function RegisterPage() {
                     type={showPassword ? "text" : "password"}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Min 6 characters"
+                    placeholder="At least 10 characters"
                     required
-                    minLength={6}
+                    minLength={10}
                     className="w-full pl-10 pr-10 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
                   />
                   <button
@@ -447,7 +447,7 @@ export default function RegisterPage() {
                     onChange={(e) => setConfirmPassword(e.target.value)}
                     placeholder="Re-enter password"
                     required
-                    minLength={6}
+                    minLength={10}
                     className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-xs sm:text-sm font-medium focus:ring-2 focus:ring-blue-600/20 focus:border-blue-600 focus:outline-none"
                   />
                 </div>
@@ -574,7 +574,7 @@ export default function RegisterPage() {
                   <CheckCircle2 className="w-4 h-4" />
                   {activationMode === "admin"
                     ? "Registration received"
-                    : "Account Created! Entering App..."}
+                    : "Account created! Opening sign-in..."}
                 </span>
               ) : (
                 <>
@@ -593,7 +593,7 @@ export default function RegisterPage() {
                 href="/login"
                 className="font-bold text-blue-600 hover:text-blue-800 underline"
               >
-                Sign In with your Gmail here
+                Sign In here
               </Link>
             </p>
           </div>

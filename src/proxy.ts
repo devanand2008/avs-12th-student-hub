@@ -34,6 +34,7 @@ export function proxy(request: NextRequest) {
     "/notes",
     "/videos",
     "/practice",
+    "/textbook-practice",
     "/performance",
     "/profile",
     "/bookmarks",

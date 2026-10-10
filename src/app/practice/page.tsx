@@ -14,6 +14,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function PracticeHubPage() {
@@ -87,11 +88,20 @@ export default function PracticeHubPage() {
             Real-Time Practice & Timed Exams
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
-            Practice with instant explanations or test yourself under exam conditions. Choose between standard SCERT Book-In questions and original Book-Out application problems.
+            Practice with instant explanations or test yourself under exam
+            conditions. Choose between standard SCERT Book-In questions and
+            original Book-Out application problems.
           </p>
         </div>
 
         {/* 1. SEPARATED BOOK-IN vs BOOK-OUT CATEGORY SELECTOR */}
+        <Link
+          href="/textbook-practice"
+          className="flex items-center justify-between gap-3 rounded-2xl border border-blue-200 bg-blue-50 p-5 font-semibold text-blue-900"
+        >
+          Practise official textbook MCQs by subject and chapter{" "}
+          <ArrowRight className="h-5 w-5 shrink-0" />
+        </Link>
         <section className="bg-white/95 rounded-3xl border border-blue-100/90 p-5 sm:p-7 shadow-sm space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-xs font-black uppercase tracking-wider text-slate-400">
@@ -123,7 +133,8 @@ export default function PracticeHubPage() {
                 </span>
               </div>
               <div className="text-xs text-slate-500 mt-2 leading-relaxed">
-                Comprehensive mix of SCERT textbook questions and conceptual application drills.
+                Comprehensive mix of SCERT textbook questions and conceptual
+                application drills.
               </div>
             </button>
 
@@ -147,7 +158,8 @@ export default function PracticeHubPage() {
                 </span>
               </div>
               <div className="text-xs text-slate-500 mt-2 leading-relaxed">
-                Official SCERT textbook back exercises, in-text questions, and core syllabus definitions.
+                Official SCERT textbook back exercises, in-text questions, and
+                core syllabus definitions.
               </div>
             </button>
 
@@ -171,7 +183,8 @@ export default function PracticeHubPage() {
                 </span>
               </div>
               <div className="text-xs text-slate-500 mt-2 leading-relaxed">
-                Original conceptual drills, code trace problems, higher-order reasoning, and board exam edge cases.
+                Original conceptual drills, code trace problems, higher-order
+                reasoning, and board exam edge cases.
               </div>
             </button>
           </div>
@@ -230,7 +243,8 @@ export default function PracticeHubPage() {
                 ))}
               </select>
               <p className="mt-2 text-[11px] text-slate-400 font-medium">
-                Leave as &quot;All Chapters Combined&quot; for a full subject mock test.
+                Leave as &quot;All Chapters Combined&quot; for a full subject
+                mock test.
               </p>
             </div>
           </div>
@@ -294,7 +308,9 @@ export default function PracticeHubPage() {
                       : "border-slate-200 hover:border-blue-300 bg-white"
                   }`}
                 >
-                  <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${m.gradient}`} />
+                  <div
+                    className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${m.gradient}`}
+                  />
                   <div className="w-8 h-8 rounded-xl bg-slate-50 flex items-center justify-center mb-2">
                     <Icon className={`w-4 h-4 ${m.color}`} />
                   </div>
@@ -339,7 +355,9 @@ export default function PracticeHubPage() {
             onClick={startPractice}
             disabled={loading}
             className="w-full sm:w-auto touch-target px-8 py-3.5 text-white rounded-2xl font-bold text-sm shadow-electric hover:shadow-glow-blue transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 disabled:opacity-50"
-            style={{ background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)" }}
+            style={{
+              background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
+            }}
           >
             {loading ? (
               <span>Preparing Question Session...</span>
