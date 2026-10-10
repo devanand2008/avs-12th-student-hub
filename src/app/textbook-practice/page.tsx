@@ -18,6 +18,9 @@ export default function TextbookPracticePage() {
   const [count, setCount] = useState(10);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const selectedChapter = coverage
+    .find((item) => item.bookId === bookId)
+    ?.chapters.find((item) => item.id === chapterId);
   useEffect(() => {
     fetch("/api/textbook-practice", { cache: "no-store" })
       .then(async (response) => {
@@ -57,7 +60,8 @@ export default function TextbookPracticePage() {
           <h1 className="page-title">One-mark MCQs by subject and chapter</h1>
           <p className="mt-2 text-sm text-slate-600">
             Choose a textbook and practise questions checked against its printed
-            answer key or reviewed by a teacher.
+            answer key or reviewed by a teacher. You can practise again at any
+            time, or read the original exercises for every book.
           </p>
         </div>
         {error && (
@@ -139,11 +143,14 @@ export default function TextbookPracticePage() {
                     value={count}
                     onChange={(event) => setCount(Number(event.target.value))}
                   >
-                    {[5, 10, 20, 25, 50].map((value) => (
+                    {[5, 10, 20, 25, 50, 100].map((value) => (
                       <option key={value} value={value}>
                         {value}
                       </option>
                     ))}
+                    <option value={500}>
+                      All available questions (up to 500)
+                    </option>
                   </select>
                 </label>
               </div>
@@ -172,8 +179,11 @@ export default function TextbookPracticePage() {
               Start textbook practice <ArrowRight size={16} />
             </button>
             {book && (
-              <Link href={`/textbooks/${book.id}`} className="btn-secondary">
-                <BookOpen size={16} /> Read this textbook
+              <Link
+                href={`/textbooks/${book.id}?page=${selectedChapter?.exercisePage || selectedChapter?.page || 1}`}
+                className="btn-secondary"
+              >
+                <BookOpen size={16} /> Read original exercises
               </Link>
             )}
           </div>
@@ -183,6 +193,48 @@ export default function TextbookPracticePage() {
           records. Questions without a verified answer stay in the teacher
           review queue.
         </p>
+        {selected && (
+          <section className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3">
+            <h2 className="text-lg font-bold">
+              Chapter practice and original exercises
+            </h2>
+            <p className="text-sm text-slate-600">
+              Open any chapter to read every printed question. Automatic answer
+              checking is available for questions with verified answers.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {selected.chapters.map((chapter) => (
+                <div
+                  key={chapter.id}
+                  className="rounded-xl border border-slate-200 p-3 space-y-2"
+                >
+                  <h3 className="font-semibold">
+                    {chapter.number}. {chapter.title}
+                  </h3>
+                  <p className="text-xs text-slate-600">
+                    {chapter.published} verified questions available
+                  </p>
+                  <div className="flex flex-wrap gap-3 text-sm">
+                    {!!chapter.published && (
+                      <Link
+                        className="font-semibold text-blue-700"
+                        href={`/practice/session?${new URLSearchParams({ subjectId: selected.subjectId, chapterId: chapter.id, mode: "chapter", sourceFilter: "Book-In", count: String(Math.min(chapter.published, 500)) })}`}
+                      >
+                        Practise this chapter
+                      </Link>
+                    )}
+                    <Link
+                      className="text-blue-700 underline"
+                      href={`/textbooks/${bookId}?page=${chapter.exercisePage || chapter.page}`}
+                    >
+                      Original exercises
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
       </main>
     </div>
   );

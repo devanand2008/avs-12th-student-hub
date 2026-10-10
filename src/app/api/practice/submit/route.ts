@@ -89,6 +89,10 @@ export async function POST(request: Request) {
           explanationTamil: q.explanationTamil,
           sourceType: q.sourceType,
           difficulty: q.difficulty,
+          sourceTextbookId: q.sourceTextbookId,
+          sourcePage: q.sourcePage,
+          sourceAnswerPage: q.sourceAnswerPage,
+          sourceQuestionNumber: q.sourceQuestionNumber,
         });
       }
     }

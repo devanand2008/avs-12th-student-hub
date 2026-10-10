@@ -29,6 +29,7 @@
     "books:index": "tsx scripts/index-study-textbooks.ts",
     "mcqs:prepare": "tsx scripts/import-textbook-mcqs.ts --dry-run",
     "mcqs:import": "tsx scripts/import-textbook-mcqs.ts",
+    "mcqs:audit": "tsx scripts/audit-textbook-mcqs.ts",
     "materials:scan": "tsx scripts/import-learning-materials.ts --dry-run",
     "materials:import": "tsx scripts/import-learning-materials.ts",
     "materials:verify": "tsx scripts/import-learning-materials.ts --verify"

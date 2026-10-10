@@ -1,0 +1,6146 @@
+{
+  "extractionVersion": 2,
+  "checkedAt": "2026-10-10T06:24:52.663Z",
+  "booksAnalysed": 82,
+  "verifiedQuestions": 1869,
+  "pendingCandidates": 10299,
+  "note": "This extraction audit is not an assertion that every exercise or academic answer is complete. Raw text with unreadable glyphs or formulas is displayed using the original PDF page. Missing or conflicting answers are not invented.",
+  "books": [
+    {
+      "id": "12-accountancy-english-c0f4ded3",
+      "subject": "Accountancy",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "31ed97ceda947f4c310c63b6f8ca97953242ae9132d63dc869871dde351e040b",
+      "pages": 368,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 38,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 2,
+          "page": 47,
+          "exercisePage": 77,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 3,
+          "page": 89,
+          "exercisePage": 118,
+          "verifiedQuestions": 9
+        },
+        {
+          "number": 4,
+          "page": 127,
+          "exercisePage": 139,
+          "verifiedQuestions": 8
+        },
+        {
+          "number": 5,
+          "page": 145,
+          "exercisePage": 179,
+          "verifiedQuestions": 9
+        },
+        {
+          "number": 6,
+          "page": 191,
+          "exercisePage": 223,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 7,
+          "page": 233,
+          "exercisePage": 263,
+          "verifiedQuestions": 9
+        },
+        {
+          "number": 8,
+          "page": 271,
+          "exercisePage": 293,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 9,
+          "page": 301,
+          "exercisePage": 326,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 10,
+          "page": 335,
+          "exercisePage": 363,
+          "verifiedQuestions": 10
+        }
+      ],
+      "extractedCandidates": 156,
+      "verifiedQuestions": 95,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 61,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "9cf9b965f1543976822025888045511e81e0c65e6c26ef56cd33335f2db04686",
+      "pages": 368,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 23,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 2,
+          "page": 47,
+          "exercisePage": 77,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 3,
+          "page": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 127,
+          "exercisePage": 139,
+          "verifiedQuestions": 8
+        },
+        {
+          "number": 5,
+          "page": 145,
+          "exercisePage": 179,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 6,
+          "page": 191,
+          "exercisePage": 227,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 233,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 271,
+          "exercisePage": 293,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 9,
+          "page": 301,
+          "exercisePage": 308,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 335,
+          "exercisePage": 363,
+          "verifiedQuestions": 10
+        }
+      ],
+      "extractedCandidates": 157,
+      "verifiedQuestions": 58,
+      "originalPageQuestions": 58,
+      "unkeyedBookBackCandidates": 12,
+      "pendingCandidates": 99,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-advanced-tamil-tamil-6679b417",
+      "subject": "Advanced Tamil",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "fdc2d6f11ad5444674a99288ce507de391a6d3d47122a8bc95cb7103364acf77",
+      "pages": 288,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 1,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 98,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 98,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-agricultural-science-tamil-1d871464",
+      "subject": "Agricultural Science",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "72c20567a95323d8252a9aaa55dfb7633b7c2b8be226488c509c517845b0d6ff",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 34,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 77,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 112,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 121,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 142,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 166,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 177,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 184,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 198,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 218,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 234,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 247,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 147,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 147,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-auditing-english-cb18c74c",
+      "subject": "Auditing",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "29dd2f8eecc18c8d434c277467a3673199bd76e216a4efa0df8f0bd9c09ede2d",
+      "pages": 184,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 15,
+          "exercisePage": 30,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 2,
+          "page": 33,
+          "exercisePage": 44,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 3,
+          "page": 47,
+          "exercisePage": 55,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 58,
+          "exercisePage": 73,
+          "verifiedQuestions": 30
+        },
+        {
+          "number": 5,
+          "page": 78,
+          "exercisePage": 94,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 98,
+          "exercisePage": 110,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 7,
+          "page": 112,
+          "exercisePage": 125,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 8,
+          "page": 128,
+          "exercisePage": 138,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 9,
+          "page": 141,
+          "exercisePage": 157,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 161,
+          "exercisePage": 174,
+          "verifiedQuestions": 17
+        }
+      ],
+      "extractedCandidates": 155,
+      "verifiedQuestions": 93,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 47,
+      "pendingCandidates": 62,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-auditing-tamil-e1982513",
+      "subject": "Auditing",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "e54a907e2c9753e1a5616fc97329abc5295ea22557aec4d76d9878c2ada763c9",
+      "pages": 200,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 13,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 32,
+          "exercisePage": 45,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 48,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 59,
+          "exercisePage": 76,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 79,
+          "exercisePage": 92,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 104,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 121,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 139,
+          "exercisePage": 151,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 154,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 176,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 129,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 51,
+      "pendingCandidates": 129,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-automobile-engineering-english-69f8e9f9",
+      "subject": "Basic Automobile Engineering",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "fcfe738f7f364c0f50686603e3b42093603065887bfdc1527984a85cde5b1780",
+      "pages": 280,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 19,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 21,
+          "exercisePage": 34,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 36,
+          "exercisePage": 59,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 61,
+          "exercisePage": 77,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 80,
+          "exercisePage": 95,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 97,
+          "exercisePage": 127,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 129,
+          "exercisePage": 149,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 151,
+          "exercisePage": 170,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 173,
+          "exercisePage": 188,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 190,
+          "exercisePage": 223,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 112,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 95,
+      "pendingCandidates": 112,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-automobile-engineering-tamil-e76f29d2",
+      "subject": "Basic Automobile Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "9a301d53fdbbb14c110dc5980d0d3b74e970e83225c8be661d6316eceb99fcf0",
+      "pages": 288,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 23,
+          "exercisePage": 38,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 39,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 66,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 85,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 102,
+          "exercisePage": 134,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 137,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 160,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 183,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 201,
+          "exercisePage": 239,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 100,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 28,
+      "pendingCandidates": 100,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-civil-engineering-english-fc2d4128",
+      "subject": "Basic Civil Engineering",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "7de88b9a95f13d2bf3564ecfe3a5b21c5d35cca998286a75e26d6fe1f69da37a",
+      "pages": 248,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 24,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 2,
+          "page": 25,
+          "exercisePage": 42,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 3,
+          "page": 43,
+          "exercisePage": 66,
+          "verifiedQuestions": 7
+        },
+        {
+          "number": 4,
+          "page": 68,
+          "exercisePage": 92,
+          "verifiedQuestions": 7
+        },
+        {
+          "number": 5,
+          "page": 93,
+          "exercisePage": 115,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 6,
+          "page": 116,
+          "exercisePage": 141,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 7,
+          "page": 142,
+          "exercisePage": 161,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 8,
+          "page": 162,
+          "exercisePage": 171,
+          "verifiedQuestions": 4
+        }
+      ],
+      "extractedCandidates": 104,
+      "verifiedQuestions": 47,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 29,
+      "pendingCandidates": 57,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-civil-engineering-tamil-122addb5",
+      "subject": "Basic Civil Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "3d467abcb1354f51c88419e852347a0163fdf2bf5ef65cfa2bded52ec96af6a0",
+      "pages": 280,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 28,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 49,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 78,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 109,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 136,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 168,
+          "exercisePage": 189,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 8,
+          "page": 191,
+          "exercisePage": 250,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 91,
+      "verifiedQuestions": 6,
+      "originalPageQuestions": 6,
+      "unkeyedBookBackCandidates": 29,
+      "pendingCandidates": 85,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-electrical-engineering-english-13c7fc7b",
+      "subject": "Basic Electrical Engineering",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "658ff33459fc8fc03904fd0a1d4cb743835fb8b6daf06101d064de12dd46dd35",
+      "pages": 216,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 24,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 28,
+          "exercisePage": 42,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 45,
+          "exercisePage": 58,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 62,
+          "exercisePage": 78,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 83,
+          "exercisePage": 91,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 94,
+          "exercisePage": 107,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 111,
+          "exercisePage": 122,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 125,
+          "exercisePage": 137,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 141,
+          "exercisePage": 157,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 161,
+          "exercisePage": 174,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 182,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 154,
+      "pendingCandidates": 182,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-electrical-engineering-tamil-029f513a",
+      "subject": "Basic Electrical Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "049b6c664b8a25cc31d00703b2e34f8c16dd71a4ead7e6cbb384a982b9ffcdc5",
+      "pages": 232,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 30,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 49,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 67,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 91,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 102,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 120,
+          "exercisePage": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 134,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 152,
+          "exercisePage": 170,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 174,
+          "exercisePage": 191,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 170,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 52,
+      "pendingCandidates": 170,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-electronics-engineering-english-983efd90",
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "bbefb2b33c907589f4308d304d1db09f81d51bea83bd8e95ad360430e36911dd",
+      "pages": 304,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 37,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 2,
+          "page": 39,
+          "exercisePage": 54,
+          "verifiedQuestions": 3
+        },
+        {
+          "number": 3,
+          "page": 57,
+          "exercisePage": 87,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 4,
+          "page": 90,
+          "exercisePage": 120,
+          "verifiedQuestions": 14
+        },
+        {
+          "number": 5,
+          "page": 123,
+          "exercisePage": 142,
+          "verifiedQuestions": 12
+        },
+        {
+          "number": 6,
+          "page": 144,
+          "exercisePage": 162,
+          "verifiedQuestions": 8
+        },
+        {
+          "number": 7,
+          "page": 165,
+          "exercisePage": 185,
+          "verifiedQuestions": 8
+        },
+        {
+          "number": 8,
+          "page": 188,
+          "exercisePage": 203,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 9,
+          "page": 205,
+          "exercisePage": 232,
+          "verifiedQuestions": 3
+        },
+        {
+          "number": 10,
+          "page": 234,
+          "exercisePage": 257,
+          "verifiedQuestions": 3
+        }
+      ],
+      "extractedCandidates": 142,
+      "verifiedQuestions": 81,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 13,
+      "pendingCandidates": 61,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "subject": "Basic Electronics Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "b824741c6fa93677649ecb1c16055cdd93198fcf532f6bcf65758fdd8317003a",
+      "pages": 352,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 42,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 64,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 101,
+          "exercisePage": 142,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 144,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 171,
+          "exercisePage": 193,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 7,
+          "page": 196,
+          "exercisePage": 222,
+          "verifiedQuestions": 15
+        },
+        {
+          "number": 8,
+          "page": 225,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 246,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 277,
+          "exercisePage": 306,
+          "verifiedQuestions": 4
+        }
+      ],
+      "extractedCandidates": 151,
+      "verifiedQuestions": 39,
+      "originalPageQuestions": 39,
+      "unkeyedBookBackCandidates": 38,
+      "pendingCandidates": 112,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-mechanical-engineering-english-e15ca391",
+      "subject": "Basic Mechanical Engineering",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "a3c0961d0b96ffdcb62bba702003d725bb0d161b77a5f3504d0f5079cfa6b5de",
+      "pages": 224,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 15,
+          "exercisePage": 43,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 45,
+          "exercisePage": 69,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 71,
+          "exercisePage": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 91,
+          "exercisePage": 111,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 113,
+          "exercisePage": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 133,
+          "exercisePage": 140,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 141,
+          "exercisePage": 153,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 155,
+          "exercisePage": 168,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 169,
+          "exercisePage": 177,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 179,
+          "exercisePage": 191,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 95,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 44,
+      "pendingCandidates": 95,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-basic-mechanical-engineering-tamil-49be34e2",
+      "subject": "Basic Mechanical Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "aca67575f322408a7eca7a4b7f3c3fec271ae7f09e6aaf3b254b2e1d9115495c",
+      "pages": 248,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 15,
+          "exercisePage": 48,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 50,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 79,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 100,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 125,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 148,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 157,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 173,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 189,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 200,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 99,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 4,
+      "pendingCandidates": 99,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-bio-botany-english-f15d4524",
+      "subject": "Bio-Botany",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+      "pages": 248,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 32,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 37,
+          "exercisePage": 52,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 56,
+          "exercisePage": 71,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 74,
+          "exercisePage": 95,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 102,
+          "exercisePage": 111,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 115,
+          "exercisePage": 136,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 140,
+          "exercisePage": 157,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 161,
+          "exercisePage": 174,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 177,
+          "exercisePage": 187,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 191,
+          "exercisePage": 207,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 303,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 174,
+      "pendingCandidates": 303,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-bio-botany-tamil-51160855",
+      "subject": "Bio-Botany",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "95a9480f472864af360aa5fc9552159ff76095ded7dbd7d0276c7a4a124b7fa5",
+      "pages": 272,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 39,
+          "exercisePage": 56,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 59,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 79,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 110,
+          "exercisePage": 120,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 124,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 152,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 174,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 191,
+          "exercisePage": 202,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 207,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 308,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 47,
+      "pendingCandidates": 308,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-bio-zoology-english-7e848813",
+      "subject": "Bio-Zoology",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "ee5428d73469d242a0090aa021b895b561a0b34517ea985dbd60912a5c795852",
+      "pages": 264,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 16,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 19,
+          "exercisePage": 36,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 40,
+          "exercisePage": 50,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 53,
+          "exercisePage": 63,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 66,
+          "exercisePage": 92,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 97,
+          "exercisePage": 112,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 115,
+          "exercisePage": 142,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 146,
+          "exercisePage": 153,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 155,
+          "exercisePage": 167,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 170,
+          "exercisePage": 186,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 189,
+          "exercisePage": 206,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 209,
+          "exercisePage": 224,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 229,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 198,
+      "pendingCandidates": 229,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-bio-zoology-tamil-2631f8e3",
+      "subject": "Bio-Zoology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "7b4a1946571dfe8901540a980e0fedc19eefd86cc4ba1ad230efd66edb9f9b64",
+      "pages": 312,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 20,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 43,
+          "exercisePage": 56,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 60,
+          "exercisePage": 72,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 76,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 112,
+          "exercisePage": 131,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 134,
+          "exercisePage": 166,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 170,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 182,
+          "exercisePage": 197,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 200,
+          "exercisePage": 220,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 224,
+          "exercisePage": 246,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 250,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 238,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 85,
+      "pendingCandidates": 238,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-biochemistry-english-dfd867ac",
+      "subject": "Biochemistry",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "900c475e48aebf1f2015a1c98ed4ed6d2028cf53020defac3a99c834f4f5fdf4",
+      "pages": 304,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "exercisePage": 30,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 35,
+          "exercisePage": 65,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 72,
+          "exercisePage": 97,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 103,
+          "exercisePage": 120,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 126,
+          "exercisePage": 144,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 149,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 177,
+          "exercisePage": 192,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 197,
+          "exercisePage": 213,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 216,
+          "exercisePage": 233,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 238,
+          "exercisePage": 269,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 146,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 145,
+      "pendingCandidates": 146,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-biochemistry-tamil-910cca11",
+      "subject": "Biochemistry",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "5f70ea733750f9399efa8b95310d25eb754c9b97d22c3ede1829640e0394ce0f",
+      "pages": 320,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 37,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 75,
+          "exercisePage": 103,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 108,
+          "exercisePage": 125,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 132,
+          "exercisePage": 151,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 156,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 186,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 206,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 227,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 250,
+          "exercisePage": 284,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 150,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 65,
+      "pendingCandidates": 150,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-botany-english-da5635aa",
+      "subject": "Botany",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "5cb2a3196ce3ce47cda0ee6f10f0935391b068d0d4d5db943cb72ed456b2135d",
+      "pages": 304,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 36,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 41,
+          "exercisePage": 57,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 60,
+          "exercisePage": 85,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 90,
+          "exercisePage": 111,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 118,
+          "exercisePage": 128,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 131,
+          "exercisePage": 152,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 157,
+          "exercisePage": 182,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 186,
+          "exercisePage": 204,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 207,
+          "exercisePage": 219,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 224,
+          "exercisePage": 252,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 354,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 193,
+      "pendingCandidates": 354,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-botany-tamil-37a9b740",
+      "subject": "Botany",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "5fade5f9be15a4658b56a98d02f79b3b80cbd6b28bc8d7a7802bc3301a33d926",
+      "pages": 320,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 43,
+          "exercisePage": 60,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 63,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 96,
+          "exercisePage": 120,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 127,
+          "exercisePage": 137,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 141,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 169,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 199,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 221,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 239,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 340,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 37,
+      "pendingCandidates": 340,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "7645d74c21841badb410139040928c21ccdd328d73b1d51af46669f67879f6b2",
+      "pages": 296,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 26,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 2,
+          "page": 32,
+          "exercisePage": 59,
+          "verifiedQuestions": 26
+        },
+        {
+          "number": 3,
+          "page": 66,
+          "exercisePage": 81,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 4,
+          "page": 86,
+          "exercisePage": 105,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 5,
+          "page": 110,
+          "exercisePage": 126,
+          "verifiedQuestions": 12
+        },
+        {
+          "number": 6,
+          "page": 130,
+          "exercisePage": 147,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 155,
+          "exercisePage": 175,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 181,
+          "exercisePage": 201,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 206,
+          "exercisePage": 235,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 10,
+          "page": 244,
+          "exercisePage": 266,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 244,
+      "verifiedQuestions": 138,
+      "originalPageQuestions": 138,
+      "unkeyedBookBackCandidates": 101,
+      "pendingCandidates": 106,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "9a244bcae84bedb863293d71abd29347df3787fd8380e5d6a7774f4ef5244b57",
+      "pages": 312,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 33,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 69,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 90,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 114,
+          "exercisePage": 130,
+          "verifiedQuestions": 12
+        },
+        {
+          "number": 6,
+          "page": 134,
+          "exercisePage": 144,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 161,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 188,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 217,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 255,
+          "exercisePage": 278,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 241,
+      "verifiedQuestions": 12,
+      "originalPageQuestions": 12,
+      "unkeyedBookBackCandidates": 18,
+      "pendingCandidates": 229,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "sourceSha256": "8537d519cc6d527211acd65b7dbdde3830ef08035bab86e9a8def9eb362acb2b",
+      "pages": 296,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "exercisePage": 30,
+          "verifiedQuestions": 24
+        },
+        {
+          "number": 2,
+          "page": 36,
+          "exercisePage": 63,
+          "verifiedQuestions": 17
+        },
+        {
+          "number": 3,
+          "page": 66,
+          "exercisePage": 106,
+          "verifiedQuestions": 18
+        },
+        {
+          "number": 4,
+          "page": 110,
+          "exercisePage": 135,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 5,
+          "page": 140,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 186,
+          "exercisePage": 207,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 214,
+          "exercisePage": 236,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 156,
+      "verifiedQuestions": 78,
+      "originalPageQuestions": 78,
+      "unkeyedBookBackCandidates": 65,
+      "pendingCandidates": 78,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "sourceSha256": "b40069c9db73b09309dcfc55e166e81871bd82958cd5e44ae1cf024454664f34",
+      "pages": 328,
+      "chapters": [
+        {
+          "number": 8,
+          "page": 5,
+          "exercisePage": 32,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 37,
+          "exercisePage": 66,
+          "verifiedQuestions": 21
+        },
+        {
+          "number": 10,
+          "page": 73,
+          "exercisePage": 104,
+          "verifiedQuestions": 18
+        },
+        {
+          "number": 11,
+          "page": 108,
+          "exercisePage": 143,
+          "verifiedQuestions": 16
+        },
+        {
+          "number": 12,
+          "page": 149,
+          "exercisePage": 193,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 13,
+          "page": 200,
+          "exercisePage": 233,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 241,
+          "exercisePage": 272,
+          "verifiedQuestions": 23
+        },
+        {
+          "number": 15,
+          "page": 276,
+          "exercisePage": 298,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 180,
+      "verifiedQuestions": 98,
+      "originalPageQuestions": 98,
+      "unkeyedBookBackCandidates": 63,
+      "pendingCandidates": 82,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-chemistry-tamil-v1-5fcd65a9",
+      "subject": "Chemistry",
+      "medium": "Tamil",
+      "volume": "1",
+      "sourceSha256": "0790040ba75b63eb2e0dfb201106753adc1e49115fe3274ccceca7079479faa4",
+      "pages": 328,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "exercisePage": 32,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 39,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 74,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 121,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 156,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 205,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 237,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 151,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 22,
+      "pendingCandidates": 151,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-chemistry-tamil-v2-52192807",
+      "subject": "Chemistry",
+      "medium": "Tamil",
+      "volume": "2",
+      "sourceSha256": "aa22ac7d960334a9ec8ee78375c14d9136b2980ec8936dfd0f7cc762f5f72f76",
+      "pages": 344,
+      "chapters": [
+        {
+          "number": 8,
+          "page": 5,
+          "exercisePage": 33,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 39,
+          "exercisePage": 49,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 77,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 114,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 156,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 209,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 250,
+          "exercisePage": 285,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 289,
+          "exercisePage": 315,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 177,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 85,
+      "pendingCandidates": 177,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-commerce-english-4f83c61b",
+      "subject": "Commerce",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "5ba4d9ae017f77fa978ad956e22967df00f08bd4b6d193d9f942ec0641190839",
+      "pages": 288,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 13,
+          "exercisePage": 22,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 2,
+          "page": 23,
+          "exercisePage": 27,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 3,
+          "page": 28,
+          "exercisePage": 33,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 4,
+          "page": 34,
+          "exercisePage": 39,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 5,
+          "page": 40,
+          "exercisePage": 45,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 6,
+          "page": 47,
+          "exercisePage": 54,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 7,
+          "page": 56,
+          "exercisePage": 70,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 8,
+          "page": 71,
+          "exercisePage": 79,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 9,
+          "page": 80,
+          "exercisePage": 85,
+          "verifiedQuestions": 3
+        },
+        {
+          "number": 10,
+          "page": 86,
+          "exercisePage": 90,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 11,
+          "page": 91,
+          "exercisePage": 100,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 12,
+          "page": 101,
+          "exercisePage": 110,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 13,
+          "page": 112,
+          "exercisePage": 118,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 14,
+          "page": 120,
+          "exercisePage": 126,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 15,
+          "page": 128,
+          "exercisePage": 136,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 16,
+          "page": 137,
+          "exercisePage": 148,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 17,
+          "page": 150,
+          "exercisePage": 156,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 18,
+          "page": 157,
+          "exercisePage": 163,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 19,
+          "page": 165,
+          "exercisePage": 174,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 20,
+          "page": 175,
+          "exercisePage": 182,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 21,
+          "page": 183,
+          "exercisePage": 196,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 22,
+          "page": 197,
+          "exercisePage": 210,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 23,
+          "page": 211,
+          "exercisePage": 226,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 24,
+          "page": 227,
+          "exercisePage": 234,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 25,
+          "page": 235,
+          "exercisePage": 243,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 26,
+          "page": 244,
+          "exercisePage": 254,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 27,
+          "page": 256,
+          "exercisePage": 271,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 28,
+          "page": 272,
+          "exercisePage": 281,
+          "verifiedQuestions": 5
+        }
+      ],
+      "extractedCandidates": 155,
+      "verifiedQuestions": 137,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 1,
+      "pendingCandidates": 18,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-commerce-tamil-d9e013d8",
+      "subject": "Commerce",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "e7244f3467b554b7b0c246a66da17681bab6b3b9f463ad3d38bae25db4472bbf",
+      "pages": 288,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 15,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 25,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 36,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 41,
+          "exercisePage": 46,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 48,
+          "exercisePage": 55,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 57,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 72,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 81,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 87,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 92,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 102,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 113,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 129,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 17,
+          "page": 151,
+          "exercisePage": 175,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 20,
+          "page": 176,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 21,
+          "page": 184,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 22,
+          "page": 198,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 23,
+          "page": 212,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 24,
+          "page": 228,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 26,
+          "page": 245,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 27,
+          "page": 257,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 28,
+          "page": 273,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 132,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 12,
+      "pendingCandidates": 132,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-communicative-english-english-10e4b8ba",
+      "subject": "Communicative English",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "bc544aceca54c86d24ede83f668f1f1b9706ba0f7df6d453038d69e595331ff9",
+      "pages": 192,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 20,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 41,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 57,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 98,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 120,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 95,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 95,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pages": 304,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 21,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 23,
+          "exercisePage": 60,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 63,
+          "exercisePage": 88,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 90,
+          "exercisePage": 101,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 104,
+          "exercisePage": 109,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 111,
+          "exercisePage": 115,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 118,
+          "exercisePage": 122,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 125,
+          "exercisePage": 130,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 132,
+          "exercisePage": 137,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 139,
+          "exercisePage": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 153,
+          "exercisePage": 166,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 168,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 183,
+          "exercisePage": 196,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 199,
+          "exercisePage": 205,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 207,
+          "exercisePage": 226,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 16,
+          "page": 228,
+          "exercisePage": 243,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 17,
+          "page": 245,
+          "exercisePage": 256,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 18,
+          "page": 258,
+          "exercisePage": 267,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 182,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 142,
+      "pendingCandidates": 182,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-applications-english-ccd483a9",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "0592decb1003da59c333e683990fe251ac676e1000b89163f6bf66352238222d",
+      "pages": 304,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 21,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 23,
+          "exercisePage": 60,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 63,
+          "exercisePage": 88,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 90,
+          "exercisePage": 101,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 104,
+          "exercisePage": 109,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 111,
+          "exercisePage": 115,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 118,
+          "exercisePage": 122,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 125,
+          "exercisePage": 130,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 132,
+          "exercisePage": 137,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 139,
+          "exercisePage": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 153,
+          "exercisePage": 166,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 168,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 183,
+          "exercisePage": 196,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 199,
+          "exercisePage": 205,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 207,
+          "exercisePage": 226,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 16,
+          "page": 228,
+          "exercisePage": 243,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 17,
+          "page": 245,
+          "exercisePage": 256,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 18,
+          "page": 258,
+          "exercisePage": 267,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 182,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 142,
+      "pendingCandidates": 182,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "pages": 352,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 29,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 73,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 105,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 119,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 127,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 133,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 140,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 151,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 158,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 177,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 194,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 211,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 226,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 235,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 16,
+          "page": 263,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 17,
+          "page": 285,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 18,
+          "page": 300,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 181,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 181,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-applications-tamil-f43670d1",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "6a996d2f03b39af0272b59550cb60ec96c04b2995587416344c640d1556f20ca",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 29,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 73,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 105,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 119,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 127,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 133,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 140,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 148,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 155,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 170,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 187,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 204,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 219,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 228,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 16,
+          "page": 251,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 17,
+          "page": 271,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 18,
+          "page": 286,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 182,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 182,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-science-english-37bdae5b",
+      "subject": "Computer Science",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "1188418306ef6128f16712d2ac32576cc62c6be00570e9429a6aee6a59fb5af2",
+      "pages": 360,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 14,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 17,
+          "exercisePage": 24,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 27,
+          "exercisePage": 34,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 37,
+          "exercisePage": 49,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 53,
+          "exercisePage": 71,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 73,
+          "exercisePage": 92,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 95,
+          "exercisePage": 117,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 120,
+          "exercisePage": 135,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 138,
+          "exercisePage": 173,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 176,
+          "exercisePage": 192,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 195,
+          "exercisePage": 209,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 211,
+          "exercisePage": 236,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 238,
+          "exercisePage": 270,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 273,
+          "exercisePage": 294,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 297,
+          "exercisePage": 323,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 16,
+          "page": 326,
+          "exercisePage": 336,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 151,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 145,
+      "pendingCandidates": 151,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-science-tamil-d5aa7dd4",
+      "subject": "Computer Science",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "4b30dcadc6963d081d1513462bc5429788cfeb4c4d0d051994a0bb5ba87ed031",
+      "pages": 360,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 15,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 18,
+          "exercisePage": 26,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 28,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 38,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 55,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 77,
+          "exercisePage": 96,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 99,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 124,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 142,
+          "exercisePage": 177,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 180,
+          "exercisePage": 195,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 198,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 214,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 242,
+          "exercisePage": 274,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 277,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 301,
+          "exercisePage": 326,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 16,
+          "page": 329,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 151,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 73,
+      "pendingCandidates": 151,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-technology-english-293bf656",
+      "subject": "Computer Technology",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "4a3d2c43b8b210bc803c44b67e1708487e8473fc33dce6d9df8fee6ada863359",
+      "pages": 256,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 44,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 47,
+          "exercisePage": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 91,
+          "exercisePage": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 135,
+          "exercisePage": 149,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 151,
+          "exercisePage": 173,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 175,
+          "exercisePage": 212,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 74,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 46,
+      "pendingCandidates": 74,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-technology-english-cf787554",
+      "subject": "Computer Technology",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "2488718702d87e18eb2a277e2b5e1bbaa07a77e505b6f0356efee258f41a84dc",
+      "pages": 256,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 44,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 47,
+          "exercisePage": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 91,
+          "exercisePage": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 135,
+          "exercisePage": 149,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 151,
+          "exercisePage": 173,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 175,
+          "exercisePage": 212,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 74,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 46,
+      "pendingCandidates": 74,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "pages": 272,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 51,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 99,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 145,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 163,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 189,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 72,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 72,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-computer-technology-tamil-cff5867a",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "045b35dc7ced4473a54419dfe7e3a6ae384ffdfda1b797df6f877465ad42691d",
+      "pages": 272,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 51,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 99,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 145,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 163,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 189,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 72,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 72,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "31f8c2a5d99b6e0e8de6eaa8a9440937ed184cf557038767122a800fd909d2f2",
+      "pages": 296,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 21,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 2,
+          "page": 25,
+          "exercisePage": 38,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 3,
+          "page": 43,
+          "exercisePage": 54,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 4,
+          "page": 58,
+          "exercisePage": 79,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 82,
+          "exercisePage": 97,
+          "verifiedQuestions": 14
+        },
+        {
+          "number": 6,
+          "page": 101,
+          "exercisePage": 127,
+          "verifiedQuestions": 15
+        },
+        {
+          "number": 7,
+          "page": 131,
+          "exercisePage": 155,
+          "verifiedQuestions": 17
+        },
+        {
+          "number": 8,
+          "page": 160,
+          "exercisePage": 178,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 9,
+          "page": 182,
+          "exercisePage": 186,
+          "verifiedQuestions": 13
+        },
+        {
+          "number": 10,
+          "page": 218,
+          "exercisePage": 239,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 11,
+          "page": 243,
+          "exercisePage": 260,
+          "verifiedQuestions": 18
+        },
+        {
+          "number": 12,
+          "page": 263,
+          "exercisePage": 284,
+          "verifiedQuestions": 15
+        }
+      ],
+      "extractedCandidates": 248,
+      "verifiedQuestions": 190,
+      "originalPageQuestions": 1,
+      "unkeyedBookBackCandidates": 22,
+      "pendingCandidates": 58,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-economics-tamil-c7590e3f",
+      "subject": "Economics",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "b002d13407d6bee55c37d5f01dc1492fa1c5535910c2413fa817006c2f39a4cb",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 29,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 50,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 68,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 94,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 117,
+          "exercisePage": 131,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 153,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 186,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 212,
+          "exercisePage": 217,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 251,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 280,
+          "exercisePage": 301,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 12,
+          "page": 305,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 248,
+      "verifiedQuestions": 20,
+      "originalPageQuestions": 20,
+      "unkeyedBookBackCandidates": 15,
+      "pendingCandidates": 228,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-english-english-b9d1c4c3",
+      "subject": "English",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "d7051ea2cf293e34d5689c750ba25788c83e009572a78be9fcddc7fa56c8c395",
+      "pages": 248,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 8,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 41,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 74,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 118,
+          "exercisePage": 141,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 149,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 185,
+          "exercisePage": 201,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 91,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 9,
+      "pendingCandidates": 91,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+      "subject": "Ethics and Indian Culture",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "f60943f8d8c2e66ec380b611474298e2ddd1b61f9a197548fcef1d0f46259570",
+      "pages": 264,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 1,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 92,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 92,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-food-service-management-english-111451e7",
+      "subject": "Food Service Management",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "cba449b282567bcbaee4cffc90a4720e06ef94964a19ee78ed7d9860157043bc",
+      "pages": 264,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "exercisePage": 29,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 32,
+          "exercisePage": 52,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 55,
+          "exercisePage": 84,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 88,
+          "exercisePage": 117,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 120,
+          "exercisePage": 141,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 144,
+          "exercisePage": 152,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 155,
+          "exercisePage": 169,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 172,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 182,
+          "exercisePage": 205,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 164,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 149,
+      "pendingCandidates": 164,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-food-service-management-tamil-e2061fb1",
+      "subject": "Food Service Management",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "9c845c862a3e25c114a9e45ac05ca8393d500c1d4b0f03a5b273f98f4485811e",
+      "pages": 328,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 36,
+          "exercisePage": 63,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 66,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 109,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 150,
+          "exercisePage": 177,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 180,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 192,
+          "exercisePage": 209,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 213,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 226,
+          "exercisePage": 312,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 148,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 52,
+      "pendingCandidates": 148,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-general-nursing-english-5c87aafc",
+      "subject": "General Nursing",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "9bd81da9edd519668e7827efa462a6a197e18ab49dd9e6abd5a0f05b2d50c9ab",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 5,
+          "exercisePage": 42,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 46,
+          "exercisePage": 88,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 92,
+          "exercisePage": 103,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 106,
+          "exercisePage": 112,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 113,
+          "exercisePage": 144,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 146,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 152,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 182,
+          "exercisePage": 200,
+          "verifiedQuestions": 16
+        },
+        {
+          "number": 9,
+          "page": 202,
+          "exercisePage": 220,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 222,
+          "exercisePage": 247,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 248,
+          "exercisePage": 271,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 274,
+          "exercisePage": 289,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 291,
+          "exercisePage": 297,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 193,
+      "verifiedQuestions": 16,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 154,
+      "pendingCandidates": 177,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-general-nursing-tamil-b39f5ab1",
+      "subject": "General Nursing",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "f054ab744b8f6095b20f10bae078f73b8942c507c907d23dfa55b4159b00847d",
+      "pages": 360,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 49,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 54,
+          "exercisePage": 99,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 104,
+          "exercisePage": 116,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 118,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 126,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 158,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 165,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 197,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 218,
+          "exercisePage": 233,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 237,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 268,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 298,
+          "exercisePage": 312,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 314,
+          "exercisePage": 354,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 179,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 101,
+      "pendingCandidates": 179,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-geography-english-24059775",
+      "subject": "Geography",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "d3ab1a7333649c1e5a15eb63bae65ac7097229ae237b338c4a70ab543c933a77",
+      "pages": 216,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 5,
+          "exercisePage": 25,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 30,
+          "exercisePage": 45,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 49,
+          "exercisePage": 65,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 70,
+          "exercisePage": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 94,
+          "exercisePage": 114,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 118,
+          "exercisePage": 135,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 138,
+          "exercisePage": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 153,
+          "exercisePage": 164,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 167,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 172,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 185,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 194,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 203,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 86,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 75,
+      "pendingCandidates": 86,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-geography-tamil-ba849e46",
+      "subject": "Geography",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "0d3ef3d4f074d4cca8b0ae4fb51f7606f43453d5ef098b9c365f28c9404713a7",
+      "pages": 232,
+      "chapters": [
+        {
+          "number": 2,
+          "page": 5,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 11,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 56,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 78,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 103,
+          "exercisePage": 125,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 129,
+          "exercisePage": 146,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 149,
+          "exercisePage": 162,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 165,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 182,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 188,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 200,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 209,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 219,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 82,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 47,
+      "pendingCandidates": 82,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-history-english-3cd2e4c2",
+      "subject": "History",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "3b25e16a93fcb84cd7df18298dea3f7ed479068a2838e8ffecec7f3170ec28d5",
+      "pages": 272,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 5,
+          "exercisePage": 16,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 20,
+          "exercisePage": 32,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 35,
+          "exercisePage": 43,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 46,
+          "exercisePage": 61,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 65,
+          "exercisePage": 75,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 77,
+          "exercisePage": 85,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 88,
+          "exercisePage": 101,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 104,
+          "exercisePage": 116,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 119,
+          "exercisePage": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 134,
+          "exercisePage": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 155,
+          "exercisePage": 176,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 180,
+          "exercisePage": 195,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 199,
+          "exercisePage": 219,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 223,
+          "exercisePage": 243,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 248,
+          "exercisePage": 264,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 174,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 130,
+      "pendingCandidates": 174,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-history-tamil-3c88c869",
+      "subject": "History",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "e1c21e7cdd584a17270b7e6f29d34234e24b1136ce2a5512d3599a19b5723632",
+      "pages": 312,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 5,
+          "exercisePage": 18,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 21,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 38,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 51,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 72,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 86,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 97,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 115,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 174,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 204,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 226,
+          "exercisePage": 250,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 255,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 284,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 205,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 31,
+      "pendingCandidates": 205,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-home-science-english-e5c3e008",
+      "subject": "Home Science",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "f258a0786feea67e8106bb5f121428e0be8413362dea6409e37126e9aab1d77d",
+      "pages": 248,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 50,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 57,
+          "exercisePage": 81,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 84,
+          "exercisePage": 96,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 99,
+          "exercisePage": 126,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 129,
+          "exercisePage": 162,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 166,
+          "exercisePage": 183,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 186,
+          "exercisePage": 203,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 206,
+          "exercisePage": 223,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 94,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 88,
+      "pendingCandidates": 94,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-home-science-tamil-0cbbe34e",
+      "subject": "Home Science",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "0e7deea7b938d38dcb5d766374980e4c83d0345c0cff1d2f99b5abf073eb2fda",
+      "pages": 272,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 62,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 93,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 110,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 144,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 186,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 209,
+          "exercisePage": 228,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 231,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 87,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 10,
+      "pendingCandidates": 87,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "sourceSha256": "66a3cfa31dbcbb1ffb77dd6bf7126384c60955b110a96d88c29b3f7ded60be13",
+      "pages": 304,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 56,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 2,
+          "page": 60,
+          "exercisePage": 101,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 3,
+          "page": 105,
+          "exercisePage": 135,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 4,
+          "page": 137,
+          "exercisePage": 174,
+          "verifiedQuestions": 17
+        },
+        {
+          "number": 5,
+          "page": 180,
+          "exercisePage": 223,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 6,
+          "page": 229,
+          "exercisePage": 284,
+          "verifiedQuestions": 22
+        }
+      ],
+      "extractedCandidates": 125,
+      "verifiedQuestions": 124,
+      "originalPageQuestions": 124,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 1,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-mathematics-english-v2-d4925ec0",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "2",
+      "sourceSha256": "d8aa29fee449784be6b95cf6c8ffb89f2810adda0be6b9a4e6ee9be50f36aee6",
+      "pages": 272,
+      "chapters": [
+        {
+          "number": 7,
+          "page": 5,
+          "exercisePage": 58,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 8,
+          "page": 62,
+          "exercisePage": 91,
+          "verifiedQuestions": 15
+        },
+        {
+          "number": 9,
+          "page": 94,
+          "exercisePage": 143,
+          "verifiedQuestions": 18
+        },
+        {
+          "number": 10,
+          "page": 148,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 183,
+          "exercisePage": 222,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 12,
+          "page": 228,
+          "exercisePage": 253,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 118,
+      "verifiedQuestions": 72,
+      "originalPageQuestions": 72,
+      "unkeyedBookBackCandidates": 41,
+      "pendingCandidates": 46,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-mathematics-tamil-v1-96fc1e8d",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "1",
+      "sourceSha256": "48868cf63d1eece283122db822ffa68d760751a10561c554c7636b6dbd1ec657",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 61,
+          "verifiedQuestions": 25
+        },
+        {
+          "number": 2,
+          "page": 66,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 111,
+          "exercisePage": 147,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 4,
+          "page": 150,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 197,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 249,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 124,
+      "verifiedQuestions": 35,
+      "originalPageQuestions": 35,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 89,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-mathematics-tamil-v2-f8732624",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "2",
+      "sourceSha256": "a3d4f4e6055740aeed55b9899ebdbdfd90472b7326a0ba4ec095f812d6346d60",
+      "pages": 288,
+      "chapters": [
+        {
+          "number": 7,
+          "page": 5,
+          "exercisePage": 61,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 8,
+          "page": 65,
+          "exercisePage": 95,
+          "verifiedQuestions": 15
+        },
+        {
+          "number": 9,
+          "page": 98,
+          "exercisePage": 150,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 10,
+          "page": 155,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 194,
+          "exercisePage": 235,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 12,
+          "page": 241,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 117,
+      "verifiedQuestions": 74,
+      "originalPageQuestions": 74,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 43,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-microbiology-english-6a36a404",
+      "subject": "Microbiology",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "feb8e522d8651107c55f2f74a81123b0cbda8a6e2e699079e98b943e31a466a5",
+      "pages": 320,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 5,
+          "exercisePage": 14,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 16,
+          "exercisePage": 31,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 32,
+          "exercisePage": 47,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 49,
+          "exercisePage": 70,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 72,
+          "exercisePage": 87,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 89,
+          "exercisePage": 115,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 118,
+          "exercisePage": 153,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 155,
+          "exercisePage": 190,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 192,
+          "exercisePage": 208,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 210,
+          "exercisePage": 232,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 234,
+          "exercisePage": 251,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 253,
+          "exercisePage": 291,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 129,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 85,
+      "pendingCandidates": 129,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-microbiology-tamil-a879259a",
+      "subject": "Microbiology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "9d569731e580301fd9369d407b69ffcfaf1661289b65f2360b7a1d66dfe7faaf",
+      "pages": 312,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 5,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 14,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 30,
+          "exercisePage": 45,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 47,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 71,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 118,
+          "exercisePage": 153,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 155,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 193,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 211,
+          "exercisePage": 233,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 235,
+          "exercisePage": 253,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 254,
+          "exercisePage": 289,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 123,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 56,
+      "pendingCandidates": 123,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-nursing-vocational-english-6c60782a",
+      "subject": "Nursing Vocational",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "ec076fabff6272d86ac531d97d8483d176d3d824dcbfa4c517e1a4fed358f5d9",
+      "pages": 344,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 11,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 33,
+          "exercisePage": 62,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 64,
+          "exercisePage": 111,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 113,
+          "exercisePage": 149,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 151,
+          "exercisePage": 187,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 190,
+          "exercisePage": 216,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 218,
+          "exercisePage": 226,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 238,
+          "exercisePage": 249,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 251,
+          "exercisePage": 270,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 272,
+          "exercisePage": 285,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 287,
+          "exercisePage": 300,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 112,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 83,
+      "pendingCandidates": 112,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-nursing-vocational-tamil-7f44a760",
+      "subject": "Nursing Vocational",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "ad3872ca4f99e18356c49daca6ac50501550179eafda2294d99df3e110066e24",
+      "pages": 360,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 34,
+          "exercisePage": 64,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 66,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 118,
+          "exercisePage": 132,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 156,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 203,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 235,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 255,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 269,
+          "exercisePage": 287,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 289,
+          "exercisePage": 303,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 305,
+          "exercisePage": 322,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 121,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 49,
+      "pendingCandidates": 121,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-nutrition-and-dietetics-english-3d2e918e",
+      "subject": "Nutrition and Dietetics",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "d331f67f41d62e4a890fc5ac7e2d753ed2da6f1bf7dca3f2ea8b2c87b18c903c",
+      "pages": 240,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 23,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 50,
+          "exercisePage": 73,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 77,
+          "exercisePage": 87,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 88,
+          "exercisePage": 102,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 103,
+          "exercisePage": 115,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 116,
+          "exercisePage": 128,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 129,
+          "exercisePage": 147,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 148,
+          "exercisePage": 166,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 167,
+          "exercisePage": 179,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 181,
+          "exercisePage": 195,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 197,
+          "exercisePage": 208,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 84,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 73,
+      "pendingCandidates": 84,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-office-management-secretaryship-typography-english-6b7b27b2",
+      "subject": "Office Management, Secretaryship & Typography",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "b0e66fe8a98edca382a51907283a54a73f96ffee919254944355a7cd376fe737",
+      "pages": 208,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 19,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 21,
+          "exercisePage": 26,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 34,
+          "exercisePage": 53,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 56,
+          "exercisePage": 64,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 67,
+          "exercisePage": 75,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 78,
+          "exercisePage": 87,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 89,
+          "exercisePage": 107,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 110,
+          "exercisePage": 121,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 124,
+          "exercisePage": 133,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 135,
+          "exercisePage": 142,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 107,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 54,
+      "pendingCandidates": 107,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-office-management-secretaryship-typography-tamil-241b6edf",
+      "subject": "Office Management, Secretaryship & Typography",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "4d20c25f157d550175fbafbcd580f3fade695784f1a14d11026c18caff15af3e",
+      "pages": 224,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 24,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 38,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 64,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 76,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 89,
+          "exercisePage": 100,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 102,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 124,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 141,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 152,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 101,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 2,
+      "pendingCandidates": 101,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "sourceSha256": "1eaa2d3831d57cedbfe356a495721de266d17f2a888e27bb4716ae6315ad114b",
+      "pages": 352,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 79,
+          "verifiedQuestions": 13
+        },
+        {
+          "number": 2,
+          "page": 88,
+          "exercisePage": 126,
+          "verifiedQuestions": 14
+        },
+        {
+          "number": 3,
+          "page": 133,
+          "exercisePage": 197,
+          "verifiedQuestions": 14
+        },
+        {
+          "number": 4,
+          "page": 203,
+          "exercisePage": 266,
+          "verifiedQuestions": 13
+        },
+        {
+          "number": 5,
+          "page": 274,
+          "exercisePage": 290,
+          "verifiedQuestions": 15
+        }
+      ],
+      "extractedCandidates": 76,
+      "verifiedQuestions": 69,
+      "originalPageQuestions": 69,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 7,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "sourceSha256": "a0138e5a020d3a7c538193c503cac385cfc307072a617b7247d2fc4579933271",
+      "pages": 296,
+      "chapters": [
+        {
+          "number": 6,
+          "page": 9,
+          "exercisePage": 56,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 7,
+          "page": 61,
+          "exercisePage": 110,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 8,
+          "page": 116,
+          "exercisePage": 143,
+          "verifiedQuestions": 9
+        },
+        {
+          "number": 9,
+          "page": 149,
+          "exercisePage": 197,
+          "verifiedQuestions": 11
+        },
+        {
+          "number": 10,
+          "page": 203,
+          "exercisePage": 254,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 11,
+          "page": 261,
+          "exercisePage": 290,
+          "verifiedQuestions": 10
+        }
+      ],
+      "extractedCandidates": 79,
+      "verifiedQuestions": 45,
+      "originalPageQuestions": 45,
+      "unkeyedBookBackCandidates": 9,
+      "pendingCandidates": 34,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-physics-tamil-v1-c1623725",
+      "subject": "Physics",
+      "medium": "Tamil",
+      "volume": "1",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "pages": 352,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 1,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 88,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 133,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 203,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 275,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 295,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 352,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 73,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 73,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-physics-tamil-v2-fb1fa4de",
+      "subject": "Physics",
+      "medium": "Tamil",
+      "volume": "2",
+      "sourceSha256": "8351d4f42293db61e632a0a381936f7b86157175b4290b2663372cbb7b41bf85",
+      "pages": 312,
+      "chapters": [
+        {
+          "number": 6,
+          "page": 9,
+          "exercisePage": 57,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 61,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 116,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 149,
+          "exercisePage": 197,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 203,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 242,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 261,
+          "exercisePage": 290,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 86,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 30,
+      "pendingCandidates": 86,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-political-science-english-db4a2e0c",
+      "subject": "Political Science",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "2d46ff542d6a20fa44197cda263c80ceaf81555b2cbefa4a42f77453c0400398",
+      "pages": 328,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 22,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 25,
+          "exercisePage": 47,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 50,
+          "exercisePage": 68,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 71,
+          "exercisePage": 89,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 92,
+          "exercisePage": 112,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 115,
+          "exercisePage": 137,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 141,
+          "exercisePage": 165,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 168,
+          "exercisePage": 193,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 196,
+          "exercisePage": 214,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 216,
+          "exercisePage": 254,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 257,
+          "exercisePage": 282,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 285,
+          "exercisePage": 307,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 143,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 138,
+      "pendingCandidates": 143,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-political-science-tamil-5da94964",
+      "subject": "Political Science",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "93203de6ccd349283ae4c9d5b219d6e3f98803c7a56d1875a4fae8f006d903fb",
+      "pages": 360,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 27,
+          "exercisePage": 51,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 55,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 76,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 101,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 124,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 149,
+          "exercisePage": 173,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 176,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 208,
+          "exercisePage": 231,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 234,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 279,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 312,
+          "exercisePage": 338,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 148,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 44,
+      "pendingCandidates": 148,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "f84eef562802a041e390ddcd31a8fbf2c2d1ddd6f670edcafdf77d51cdad1868",
+      "pages": 280,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "exercisePage": 34,
+          "verifiedQuestions": 18
+        },
+        {
+          "number": 2,
+          "page": 43,
+          "exercisePage": 76,
+          "verifiedQuestions": 16
+        },
+        {
+          "number": 3,
+          "page": 83,
+          "exercisePage": 105,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 4,
+          "page": 112,
+          "exercisePage": 129,
+          "verifiedQuestions": 20
+        },
+        {
+          "number": 5,
+          "page": 135,
+          "exercisePage": 154,
+          "verifiedQuestions": 18
+        },
+        {
+          "number": 6,
+          "page": 159,
+          "exercisePage": 182,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 7,
+          "page": 188,
+          "exercisePage": 207,
+          "verifiedQuestions": 15
+        },
+        {
+          "number": 8,
+          "page": 214,
+          "exercisePage": 245,
+          "verifiedQuestions": 19
+        },
+        {
+          "number": 9,
+          "page": 253,
+          "exercisePage": 258,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 155,
+      "verifiedQuestions": 135,
+      "originalPageQuestions": 135,
+      "unkeyedBookBackCandidates": 9,
+      "pendingCandidates": 20,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-statistics-tamil-c1143d1d",
+      "subject": "Statistics",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "ec20589fd710023ab6e5752fdf563e067e0822ba90985b81395340d64db795ce",
+      "pages": 296,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 7,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 48,
+          "exercisePage": 83,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 90,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 121,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 145,
+          "exercisePage": 164,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 169,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 200,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 226,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 269,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 159,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 36,
+      "pendingCandidates": 159,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-tamil-tamil-7db1698f",
+      "subject": "Tamil",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "5e21979f1bd5423a518e814c5eb995967e7820912300f3d8171caeb78eb4a00f",
+      "pages": 240,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 1,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 67,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 0,
+      "pendingCandidates": 67,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "911d53e8d327f91271e36bbf441d9c8ad660fc6a65b62ccda20b4e49b53d9e76",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 33,
+          "exercisePage": 49,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 3,
+          "page": 50,
+          "exercisePage": 65,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 4,
+          "page": 67,
+          "exercisePage": 79,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 5,
+          "page": 81,
+          "exercisePage": 103,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 6,
+          "page": 104,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 133,
+          "exercisePage": 140,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 8,
+          "page": 142,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 166,
+          "exercisePage": 193,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 10,
+          "page": 195,
+          "exercisePage": 213,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 11,
+          "page": 215,
+          "exercisePage": 226,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 12,
+          "page": 228,
+          "exercisePage": 248,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 13,
+          "page": 250,
+          "exercisePage": 270,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 14,
+          "page": 271,
+          "exercisePage": 281,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 15,
+          "page": 283,
+          "exercisePage": 296,
+          "verifiedQuestions": 17
+        }
+      ],
+      "extractedCandidates": 104,
+      "verifiedQuestions": 71,
+      "originalPageQuestions": 71,
+      "unkeyedBookBackCandidates": 4,
+      "pendingCandidates": 33,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "subject": "Textiles and Dress Designing",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "2b7c051e9de91a995b7a501be07c25c886ac6ad9c9ec0401f4424c34746aaf26",
+      "pages": 288,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 25,
+          "verifiedQuestions": 3
+        },
+        {
+          "number": 2,
+          "page": 28,
+          "exercisePage": 40,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 3,
+          "page": 42,
+          "exercisePage": 54,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 4,
+          "page": 55,
+          "exercisePage": 64,
+          "verifiedQuestions": 3
+        },
+        {
+          "number": 5,
+          "page": 65,
+          "exercisePage": 82,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 6,
+          "page": 83,
+          "exercisePage": 106,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 7,
+          "page": 108,
+          "exercisePage": 113,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 8,
+          "page": 115,
+          "exercisePage": 133,
+          "verifiedQuestions": 10
+        },
+        {
+          "number": 9,
+          "page": 135,
+          "exercisePage": 157,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 10,
+          "page": 159,
+          "exercisePage": 173,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 11,
+          "page": 175,
+          "exercisePage": 183,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 12,
+          "page": 185,
+          "exercisePage": 203,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 13,
+          "page": 204,
+          "exercisePage": 221,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 14,
+          "page": 222,
+          "exercisePage": 230,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 15,
+          "page": 231,
+          "exercisePage": 240,
+          "verifiedQuestions": 6
+        }
+      ],
+      "extractedCandidates": 104,
+      "verifiedQuestions": 65,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 9,
+      "pendingCandidates": 39,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "e4b3f82813fc6900ac4c612750895396de824c7e5cdfc23459502e61fee2e66b",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 33,
+          "exercisePage": 49,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 3,
+          "page": 50,
+          "exercisePage": 65,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 4,
+          "page": 67,
+          "exercisePage": 79,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 5,
+          "page": 81,
+          "exercisePage": 103,
+          "verifiedQuestions": 6
+        },
+        {
+          "number": 6,
+          "page": 104,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 133,
+          "exercisePage": 140,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 8,
+          "page": 142,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 166,
+          "exercisePage": 193,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 10,
+          "page": 195,
+          "exercisePage": 213,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 11,
+          "page": 215,
+          "exercisePage": 226,
+          "verifiedQuestions": 4
+        },
+        {
+          "number": 12,
+          "page": 228,
+          "exercisePage": 248,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 13,
+          "page": 250,
+          "exercisePage": 270,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 14,
+          "page": 271,
+          "exercisePage": 281,
+          "verifiedQuestions": 5
+        },
+        {
+          "number": 15,
+          "page": 283,
+          "exercisePage": 296,
+          "verifiedQuestions": 17
+        }
+      ],
+      "extractedCandidates": 104,
+      "verifiedQuestions": 71,
+      "originalPageQuestions": 71,
+      "unkeyedBookBackCandidates": 4,
+      "pendingCandidates": 33,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-zoology-english-788d2d32",
+      "subject": "Zoology",
+      "medium": "English",
+      "volume": null,
+      "sourceSha256": "8f1ea789e87dfa209eff3a96c42514f49b0ab8b3ecc208c3385877437ae890be",
+      "pages": 280,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "exercisePage": 16,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 19,
+          "exercisePage": 36,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 40,
+          "exercisePage": 50,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 53,
+          "exercisePage": 65,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 69,
+          "exercisePage": 95,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 100,
+          "exercisePage": 117,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 120,
+          "exercisePage": 134,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 137,
+          "exercisePage": 152,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 156,
+          "exercisePage": 163,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 165,
+          "exercisePage": 181,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 184,
+          "exercisePage": 201,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 205,
+          "exercisePage": 224,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 227,
+          "exercisePage": 242,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 249,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 212,
+      "pendingCandidates": 249,
+      "answerSource": "Printed original textbook keys only"
+    },
+    {
+      "id": "12-zoology-tamil-3c154dab",
+      "subject": "Zoology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceSha256": "d53dae561c2f2c9e96f4956f4ac6a7c1e7cf6066a3d2ca3f4bda9a3607f7615f",
+      "pages": 336,
+      "chapters": [
+        {
+          "number": 1,
+          "page": 9,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 2,
+          "page": 20,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 3,
+          "page": 44,
+          "exercisePage": 57,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 4,
+          "page": 61,
+          "exercisePage": 77,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 5,
+          "page": 81,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 6,
+          "page": 117,
+          "exercisePage": 139,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 7,
+          "page": 142,
+          "exercisePage": 158,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 8,
+          "page": 161,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 9,
+          "page": 184,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 10,
+          "page": 196,
+          "exercisePage": 216,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 11,
+          "page": 219,
+          "exercisePage": 241,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 12,
+          "page": 245,
+          "exercisePage": 270,
+          "verifiedQuestions": 0
+        },
+        {
+          "number": 13,
+          "page": 273,
+          "verifiedQuestions": 0
+        }
+      ],
+      "extractedCandidates": 261,
+      "verifiedQuestions": 0,
+      "originalPageQuestions": 0,
+      "unkeyedBookBackCandidates": 87,
+      "pendingCandidates": 261,
+      "answerSource": "Printed original textbook keys only"
+    }
+  ]
+}

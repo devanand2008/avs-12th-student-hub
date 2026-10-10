@@ -20,7 +20,7 @@ const input = z.object({
     ])
     .default("quick"),
   sourceFilter: z.enum(["All", "Book-In", "Book-Out"]).default("All"),
-  limit: z.number().int().min(1).max(100).optional(),
+  limit: z.number().int().min(1).max(500).optional(),
 });
 
 export async function POST(request: Request) {
@@ -73,6 +73,8 @@ export async function POST(request: Request) {
       sourceType: q.sourceType,
       sourceTextbookId: q.sourceTextbookId,
       sourcePage: q.sourcePage,
+      sourceEndPage: q.sourceEndPage,
+      sourcePresentation: q.sourcePresentation,
       sourceQuestionNumber: q.sourceQuestionNumber,
       language: q.language,
       answerVerification: q.answerVerification,
@@ -83,6 +85,7 @@ export async function POST(request: Request) {
             correctAnswer: q.correctAnswer,
             explanation: q.explanation,
             explanationTamil: q.explanationTamil,
+            sourceAnswerPage: q.sourceAnswerPage,
           }),
     }));
 

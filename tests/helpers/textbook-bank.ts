@@ -76,6 +76,14 @@ export async function seedTextbookBank(db: PGlite) {
             ...candidate,
             sourceTextbookId: book.id,
             sourcePage: 12,
+            ...(i === 2
+              ? {
+                  sourcePresentation: "Original PDF",
+                  sourcePage: 38,
+                  sourceEndPage: 39,
+                  sourceAnswerPage: 39,
+                }
+              : {}),
             sourceQuestionNumber: i,
             optionA: candidate.options[0],
             optionB: candidate.options[1],

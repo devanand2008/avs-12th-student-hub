@@ -17,6 +17,7 @@ loadEnvConfig(process.cwd());
 const dryRun = process.argv.includes("--dry-run");
 const catalog = catalogJson as TextbookCatalog;
 const directory = ".local/textbook-text";
+const extractionVersion = 2;
 async function retry<
   T extends { error: { code?: string } | null; status?: number },
 >(operation: () => PromiseLike<T>): Promise<T> {
@@ -122,7 +123,8 @@ async function main() {
       const previous = JSON.parse(
         await readFile(".local/textbook-mcq-import-report.json", "utf8"),
       );
-      if (!previous.dryRun) completed = previous.books || [];
+      if (!previous.dryRun && previous.extractionVersion === extractionVersion)
+        completed = previous.books || [];
     } catch {}
   }
   const client = dryRun ? null : requireSupabase();
@@ -182,13 +184,31 @@ async function main() {
           id: candidate.id,
           chapterId: candidate.chapterId,
           subjectId,
-          questionText: candidate.questionText,
+          questionText:
+            candidate.presentation === "Original PDF"
+              ? `Read question ${candidate.number}${candidate.exercise ? ` in Exercise ${candidate.exercise}` : ""} on the textbook page below.`
+              : candidate.questionText,
           questionTextTamil:
-            book.sourceMedium === "Tamil" ? candidate.questionText : "",
-          optionA: candidate.options[0],
-          optionB: candidate.options[1],
-          optionC: candidate.options[2] || "",
-          optionD: candidate.options[3] || "",
+            book.sourceMedium === "Tamil" &&
+            candidate.presentation !== "Original PDF"
+              ? candidate.questionText
+              : "",
+          optionA:
+            candidate.presentation === "Original PDF"
+              ? "First printed option (a / அ / 1)"
+              : candidate.options[0],
+          optionB:
+            candidate.presentation === "Original PDF"
+              ? "Second printed option (b / ஆ / 2)"
+              : candidate.options[1],
+          optionC:
+            candidate.presentation === "Original PDF"
+              ? "Third printed option (c / இ / 3)"
+              : candidate.options[2] || "",
+          optionD:
+            candidate.presentation === "Original PDF"
+              ? "Fourth printed option (d / ஈ / 4)"
+              : candidate.options[3] || "",
           correctAnswer: candidate.correctAnswer!,
           explanation: `Printed textbook answer key: PDF page ${candidate.keyPage}, question ${candidate.number}.`,
           explanationTamil: "",
@@ -199,6 +219,9 @@ async function main() {
           createdAt: new Date().toISOString(),
           sourceTextbookId: book.id,
           sourcePage: candidate.page,
+          sourceEndPage: candidate.endPage,
+          sourceAnswerPage: candidate.keyPage,
+          sourcePresentation: candidate.presentation || "Text",
           sourceQuestionNumber: candidate.number,
           language: book.sourceMedium,
           answerVerification: "Textbook Answer Key",
@@ -206,6 +229,7 @@ async function main() {
         return { id: data.id, data };
       });
     const report: TextbookMcqCoverage = {
+      extractionVersion,
       bookId: book.id,
       subjectId,
       chapters,
@@ -236,6 +260,28 @@ async function main() {
       // Preserve every teacher-reviewed record and its published correction on
       // repeated imports. Source IDs contain the textbook hash.
       const reviewed = new Set<string>();
+      const existingQuestions = new Map<string, Question>();
+      const { data: savedQuestions, error: savedQuestionsError } = await retry(
+        () =>
+          client
+            .from("avs_questions")
+            .select("id,data")
+            .eq("data->>sourceTextbookId", book.id),
+      );
+      if (savedQuestionsError)
+        throw new Error(`Could not read existing questions for ${book.id}.`);
+      for (const row of savedQuestions || [])
+        existingQuestions.set(row.id, row.data as Question);
+      for (const question of published) {
+        const existing = existingQuestions.get(question.id);
+        if (
+          existing?.answerVerification === "Textbook Answer Key" &&
+          existing.correctAnswer !== question.data.correctAnswer
+        )
+          throw new Error(
+            `A changed printed key requires review for question ${question.id}.`,
+          );
+      }
       for (let offset = 0; ; offset += 1000) {
         const { data: existing, error } = await retry(() =>
           client
@@ -278,13 +324,40 @@ async function main() {
             `Could not save verified questions for ${book.id}: ${error.code}`,
           );
       }
+      // Add the original-page presentation to automatically imported questions
+      // without changing a teacher's answer, correction or publication status.
+      await save(
+        "avs_questions",
+        published
+          .filter((row) => {
+            const existing = existingQuestions.get(row.id);
+            return (
+              !reviewed.has(row.id) &&
+              existing?.status === "Published" &&
+              existing.answerVerification === "Textbook Answer Key" &&
+              existing.correctAnswer === row.data.correctAnswer
+            );
+          })
+          .map((row) => ({
+            id: row.id,
+            data: {
+              ...row.data,
+              createdAt: existingQuestions.get(row.id)!.createdAt,
+            },
+          })),
+      );
       await save("textbook_mcq_imports", [{ book_id: book.id, data: report }]);
     }
     reports.push(report);
     await writeFile(
       ".local/textbook-mcq-import-report.json",
       JSON.stringify(
-        { dryRun, books: reports, checkedAt: new Date().toISOString() },
+        {
+          dryRun,
+          extractionVersion,
+          books: reports,
+          checkedAt: new Date().toISOString(),
+        },
         null,
         2,
       ),

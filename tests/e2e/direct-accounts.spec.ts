@@ -94,10 +94,76 @@ test("students choose a password, sign in with email and see their profile in th
     page.getByRole("heading", { name: "One-mark MCQs by subject and chapter" }),
   ).toBeVisible();
   await page.getByLabel("Subject and textbook").selectOption(fixtureBook.id);
+  await page.getByLabel("Questions in this practice").selectOption("500");
   await expect(
     page.getByRole("button", { name: "Start textbook practice" }),
   ).toBeEnabled();
+  const fullPractice = page.waitForResponse(
+    (r) =>
+      r.url().endsWith("/api/practice/start") &&
+      r.request().method() === "POST",
+  );
   await page.getByRole("button", { name: "Start textbook practice" }).click();
+  const allQuestions = await (await fullPractice).json();
+  const originalIndex = allQuestions.questions.findIndex(
+    (q: { sourcePresentation?: string }) =>
+      q.sourcePresentation === "Original PDF",
+  );
+  expect(originalIndex).toBeGreaterThanOrEqual(0);
+  await page
+    .getByRole("button", {
+      name: `Jump to question ${originalIndex + 1}`,
+      exact: true,
+    })
+    .click();
+  await expect(page.getByTestId("pdf-page")).toHaveAttribute(
+    "data-rendered-page",
+    "38",
+    { timeout: 30000 },
+  );
+  await page.getByRole("button", { name: "Next page", exact: true }).click();
+  await expect(page.getByTestId("pdf-page")).toHaveAttribute(
+    "data-rendered-page",
+    "39",
+  );
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await page.getByRole("radio").nth(1).check({ force: true });
+  await expect(
+    page.getByRole("link", {
+      name: "View the printed answer key",
+      exact: true,
+    }),
+  ).toHaveAttribute("href", `/textbooks/${fixtureBook.id}?page=39`);
+  const lastQuestion = page.getByRole("button", {
+    name: `Jump to question ${allQuestions.questions.length}`,
+    exact: true,
+  });
+  await lastQuestion.evaluate((element) =>
+    element.scrollIntoView({ block: "center", behavior: "instant" }),
+  );
+  await lastQuestion.click();
+  await page
+    .getByRole("button", { name: "Submit Practice Test", exact: true })
+    .click();
+  await expect(
+    page.getByRole("heading", { name: "Practice Performance Summary" }),
+  ).toBeVisible();
+  const retryPractice = page.waitForResponse(
+    (r) =>
+      r.url().endsWith("/api/practice/start") &&
+      r.request().method() === "POST",
+  );
+  await page
+    .getByRole("button", { name: "Practice Again", exact: true })
+    .click();
+  const retried = await (await retryPractice).json();
+  expect(retried.session.id).not.toBe(allQuestions.session.id);
+  expect(retried.session.subjectId).toBe(allQuestions.session.subjectId);
+  expect(retried.questions.length).toBe(allQuestions.questions.length);
   await expect(
     page.getByRole("link", { name: /^Original textbook/ }),
   ).toBeVisible();
@@ -114,6 +180,22 @@ test("students choose a password, sign in with email and see their profile in th
   expect(
     quiz.questions.every((q: Record<string, unknown>) => !q.correctAnswer),
   ).toBe(true);
+  const beforeSubmit = await get(
+    page,
+    "/api/practice/session?id=" + quiz.session.id,
+  );
+  const restoredBefore = await beforeSubmit.json();
+  expect(
+    restoredBefore.questions.every(
+      (q: Record<string, unknown>) =>
+        !q.correctAnswer && !q.explanation && !q.sourceAnswerPage,
+    ),
+  ).toBe(true);
+  expect(
+    restoredBefore.questions.every(
+      (q: Record<string, unknown>) => q.sourceTextbookId === fixtureBook.id,
+    ),
+  ).toBe(true);
   const scored = await authRequest(page, "/api/practice/submit", {
     sessionId: quiz.session.id,
     answers: Object.fromEntries(
@@ -122,6 +204,15 @@ test("students choose a password, sign in with email and see their profile in th
   });
   expect(scored.status()).toBe(200);
   expect((await scored.json()).accuracy).toBe(100);
+  const restored = await get(
+    page,
+    "/api/practice/session?id=" + quiz.session.id,
+  );
+  expect(
+    (await restored.json()).questions.every(
+      (q: Record<string, unknown>) => q.correctAnswer === "B",
+    ),
+  ).toBe(true);
   await page.goto(`/textbooks/${fixtureBook.id}?page=12`);
   await expect(page.getByTestId("pdf-page")).toHaveAttribute(
     "data-rendered-page",

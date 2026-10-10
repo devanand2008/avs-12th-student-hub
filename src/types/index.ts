@@ -147,6 +147,9 @@ export interface Question {
   id: string;
   sourceTextbookId?: string;
   sourcePage?: number;
+  sourceEndPage?: number;
+  sourceAnswerPage?: number;
+  sourcePresentation?: "Text" | "Original PDF";
   sourceQuestionNumber?: number;
   language?: MediumType;
   answerVerification?: "Textbook Answer Key" | "Teacher Review";

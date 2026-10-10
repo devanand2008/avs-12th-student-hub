@@ -525,7 +525,7 @@ export async function startQuizSession(
   questions = questions.slice(
     0,
     Math.min(
-      100,
+      500,
       Math.max(1, params.limit || (params.mode === "daily25" ? 25 : 10)),
     ),
   );

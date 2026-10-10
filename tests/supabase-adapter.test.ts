@@ -315,6 +315,32 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
       (await db.getStudentQuizHistory(created.student.studentId)).length,
       1,
     );
+    const chapterBank = Array.from({ length: 120 }, (_, index) => {
+      const data = {
+        ...question,
+        id: `full-chapter-${index}`,
+        chapterId: "cs-ch-2",
+        questionText: `Full chapter question ${index + 1}`,
+      };
+      return { id: data.id, data };
+    });
+    const bankInsert = await requireSupabase()
+      .from("avs_questions")
+      .insert(chapterBank);
+    assert.equal(bankInsert.error, null);
+    const fullChapter = await db.startQuizSession({
+      studentId: created.student.studentId,
+      subjectId: "sub-cs",
+      chapterId: "cs-ch-2",
+      mode: "quick",
+      limit: 500,
+    });
+    assert.equal(fullChapter.questions.length, 120);
+    assert.equal(fullChapter.session.questionIds.length, 120);
+    assert.equal(
+      (await db.getQuizQuestions(fullChapter.session.id)).length,
+      120,
+    );
     await saveResource("note", {
       id: "adapter-note",
       chapterId: "cs-ch-1",

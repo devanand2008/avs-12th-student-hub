@@ -973,7 +973,7 @@ export async function startQuizSession(params: {
   }
   const selected = availableQuestions.slice(
     0,
-    Math.min(100, Math.max(1, count)),
+    Math.min(500, Math.max(1, count)),
   );
   if (!selected.length)
     throw new Error(

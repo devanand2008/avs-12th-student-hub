@@ -13,16 +13,17 @@ Apply all existing migrations, then `supabase/migrations/20261010_textbook_mcq_b
 ```sh
 npm run books:sync
 npm run mcqs:prepare
+npm run mcqs:audit
 npm run mcqs:import
 ```
 
-The MCQ importer runs locally against verified PDF checksums and caches extracted text under ignored `.local/textbook-text`. It creates book subjects/chapters, source-page references, review candidates and import coverage in Supabase. Raw PDFs and extraction caches are excluded from deployment. Report: `.local/textbook-mcq-import-report.json`. Repeated imports skip existing published questions and preserve administrator-reviewed candidates.
+The MCQ importer runs locally against verified PDF checksums and caches extracted text under ignored `.local/textbook-text`. It creates book subjects/chapters, source-page references, review candidates and import coverage in Supabase. Raw PDFs and extraction caches are excluded from deployment. Report: `.local/textbook-mcq-import-report.json`. The maintained per-book extraction audit is `docs/textbook-question-audit.json`. Version 2 recognizes inline, tabular, numeric, explained, Tamil and book-end exercise/unit answer keys, and maps them to their source chapters. `--resume` only reuses a completed version-2 import report. Repeated imports preserve administrator reviews and withdrawn questions. Source metadata can refresh previously imported questions only when their verified answer is unchanged.
 
-Printed exercise numbers and choice labels must match a complete, unambiguous printed answer key before automatic publication. Extraction defects, duplicate choices, missing keys and mathematical layout problems are held for review. Extracted candidates are not a complete, independently verified answer bank. Some books lack structured MCQs; the full exercises remain accessible in the reader. No answer is filled in arbitrarily.
+Printed exercise numbers and choice labels must match an unambiguous printed answer key before automatic publication. Missing and conflicting keys are held for review. When a verified question's letters or formulas cannot be extracted accurately, the quiz displays its original PDF page with choices corresponding to the four printed options. Original pages are also used for Tamil and mathematical/science notation. Answer-key references identify the actual printed key page for each question. Extracted candidates are not a complete, independently verified answer bank. Some books lack structured MCQs; the full exercises remain accessible in the reader. No answer is filled in arbitrarily.
 
 ## Student and administrator routes
 
-Students open `/textbook-practice`, find their subject, select the book medium and chapter, then start a quiz. Only published questions appear; an honest empty state explains when review is pending. Question references open the exact PDF page. Existing practice modes and server-side scoring continue to apply.
+Students open `/textbook-practice`, find their subject, select the book medium and chapter, then start a quiz. They can select up to 100 questions or all available questions (up to 500 per attempt). Each chapter offers its original exercises, including chapters whose answers are pending review. Only published questions enter scored quizzes. PDF questions include page navigation and continuation notices. Practice reveals the printed answer-key link after answering; timed exams keep answers hidden until submission. Results link to the original question and key. **Practice Again** starts a new session with the same subject, chapter and count, so students can repeat practice at any time. Existing save/resume and server-side scoring continue to apply.
 
 Administrators open `/admin/textbook-questions`, select the book/chapter/status, inspect the exercise and printed answer-key pages, correct text/options and choose the verified answer. Publishing saves both the review record and quiz question together. Review dialogs support keyboard focus and Escape. Admin APIs and tables are inaccessible to student and anonymous sessions.
 

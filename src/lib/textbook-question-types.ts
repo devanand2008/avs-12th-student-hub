@@ -12,6 +12,9 @@ export interface TextbookMcqCandidate {
   options: string[];
   correctAnswer: McqAnswer | null;
   keyPage?: number;
+  exercise?: string;
+  endPage?: number;
+  presentation?: "Text" | "Original PDF";
   status: "Published" | "Needs Review";
   qualityFlags: string[];
   sourceSha256: string;
@@ -23,10 +26,12 @@ export interface TextbookMcqChapter {
   number: number;
   title: string;
   page: number;
+  exercisePage?: number;
   published: number;
   review: number;
 }
 export interface TextbookMcqCoverage {
+  extractionVersion?: number;
   bookId: string;
   subjectId: string;
   chapters: TextbookMcqChapter[];

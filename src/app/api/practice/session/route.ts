@@ -29,6 +29,13 @@ export async function GET(request: Request) {
         optionD: q.optionD,
         difficulty: q.difficulty,
         sourceType: q.sourceType,
+        sourceTextbookId: q.sourceTextbookId,
+        sourcePage: q.sourcePage,
+        sourceEndPage: q.sourceEndPage,
+        sourcePresentation: q.sourcePresentation,
+        sourceQuestionNumber: q.sourceQuestionNumber,
+        language: q.language,
+        answerVerification: q.answerVerification,
       };
     });
   const answers = Object.fromEntries(

@@ -14,8 +14,19 @@ import {
   Target,
 } from "lucide-react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
+import textbooks from "@/lib/textbooks-catalog.json";
+
+const OriginalPage = dynamic(
+  () =>
+    import("@/app/textbooks/TextbookReader").then((module) => module.PdfPages),
+  {
+    ssr: false,
+    loading: () => <p role="status">Loading the original textbook page…</p>,
+  },
+);
 
 type Answer = "A" | "B" | "C" | "D";
 type PracticeQuestion = Omit<Question, "correctAnswer" | "explanation"> & {
@@ -30,6 +41,10 @@ interface Review {
   correctAnswer: Answer;
   explanation: string;
   isCorrect: boolean;
+  sourceTextbookId?: string;
+  sourcePage?: number;
+  sourceAnswerPage?: number;
+  sourceQuestionNumber?: number;
 }
 
 interface Result {
@@ -40,6 +55,7 @@ interface Result {
 }
 
 function PracticeContent() {
+  const router = useRouter();
   const params = useSearchParams();
   const query = params.toString();
   const [quiz, setQuiz] = useState<QuizSession | null>(null);
@@ -403,12 +419,16 @@ function PracticeContent() {
               </div>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
-                <Link
-                  href="/practice"
+                <button
+                  onClick={() => {
+                    const next = new URLSearchParams(query);
+                    next.set("attempt", String(Date.now()));
+                    router.push(`/practice/session?${next}`);
+                  }}
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-sm transition-all"
                 >
                   <RotateCcw size={14} /> Practice Again
-                </Link>
+                </button>
                 <Link
                   href="/dashboard"
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all"
@@ -490,6 +510,26 @@ function PracticeContent() {
                       {rev.explanation}
                     </div>
                   )}
+                  {rev.sourceTextbookId && (
+                    <div className="mt-3 flex flex-wrap gap-3 text-sm text-blue-700">
+                      <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={`/textbooks/${rev.sourceTextbookId}?page=${rev.sourcePage || 1}`}
+                      >
+                        Original question {rev.sourceQuestionNumber || ""}
+                      </Link>
+                      {rev.sourceAnswerPage && (
+                        <Link
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={`/textbooks/${rev.sourceTextbookId}?page=${rev.sourceAnswerPage}`}
+                        >
+                          Printed answer key
+                        </Link>
+                      )}
+                    </div>
+                  )}
                 </div>
               ))}
           </div>
@@ -504,7 +544,11 @@ function PracticeContent() {
       {/* Top Header Controls */}
       <div className="flex items-center justify-between">
         <Link
-          href="/practice"
+          href={
+            params.get("subjectId")?.startsWith("tb-")
+              ? "/textbook-practice"
+              : "/practice"
+          }
           className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-blue-600 transition-colors"
         >
           <ArrowLeft size={15} />
@@ -637,6 +681,32 @@ function PracticeContent() {
         </div>
 
         {/* 4 Options Grid */}
+        {question.sourcePresentation === "Original PDF" &&
+          question.sourceTextbookId &&
+          (() => {
+            const book = textbooks.books.find(
+              (book) => book.id === question.sourceTextbookId,
+            );
+            return book ? (
+              <div className="space-y-2">
+                <p className="text-sm text-slate-600">
+                  Read printed question {question.sourceQuestionNumber} and its
+                  four choices. Select the matching option below.
+                  {question.sourceEndPage &&
+                  question.sourceEndPage > (question.sourcePage || 1)
+                    ? ` The choices continue on PDF page ${question.sourceEndPage}; use Next page in the reader.`
+                    : ""}
+                </p>
+                <OriginalPage
+                  url={book.localPath!}
+                  title={book.title}
+                  initialPage={question.sourcePage || 1}
+                />
+              </div>
+            ) : (
+              <p role="alert">The source book could not be found.</p>
+            );
+          })()}
         <fieldset className="space-y-3 pt-2">
           <legend className="sr-only">Choose your answer</legend>
           {(["A", "B", "C", "D"] as const).map((key) => {
@@ -707,6 +777,16 @@ function PracticeContent() {
             </div>
             {question.explanation && (
               <p className="text-xs text-slate-700">{question.explanation}</p>
+            )}
+            {question.sourceAnswerPage && question.sourceTextbookId && (
+              <Link
+                className="mt-2 inline-block font-semibold text-blue-700 underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`/textbooks/${question.sourceTextbookId}?page=${question.sourceAnswerPage}`}
+              >
+                View the printed answer key
+              </Link>
             )}
           </div>
         )}
@@ -780,7 +860,7 @@ function PracticeContent() {
             const isFlagged = !!flags[q.id];
 
             let dotClasses =
-              "w-8 h-8 rounded-xl text-xs font-bold flex items-center justify-center transition-all relative ";
+              "w-11 h-11 scroll-mt-40 scroll-mb-32 rounded-xl text-xs font-bold flex items-center justify-center transition-all relative ";
 
             if (isCurrent) {
               dotClasses +=
@@ -817,6 +897,11 @@ function PracticeContent() {
   );
 }
 
+function PracticeAttempt() {
+  const params = useSearchParams();
+  return <PracticeContent key={params.toString()} />;
+}
+
 export default function PracticeSessionPage() {
   return (
     <Suspense
@@ -826,7 +911,7 @@ export default function PracticeSessionPage() {
         </main>
       }
     >
-      <PracticeContent />
+      <PracticeAttempt />
     </Suspense>
   );
 }

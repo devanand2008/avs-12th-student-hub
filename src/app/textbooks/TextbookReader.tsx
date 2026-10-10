@@ -28,7 +28,7 @@ import styles from "./TextbookReader.module.css";
 
 const assetBase = `/pdfjs/${pdfjsPackage.version}/`;
 
-function PdfPages({
+export function PdfPages({
   url,
   title,
   initialPage = 1,
