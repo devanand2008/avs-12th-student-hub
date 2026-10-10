@@ -12,7 +12,12 @@ export const ZOOLOGY_QUESTIONS = rawZoology.map(holdGeneratedQuestion);
 export const MATHS_QUESTIONS = rawMaths.map(holdGeneratedQuestion);
 
 export const ALL_PRACTICE_QUESTIONS: Question[] = [
-  ...ORIGINAL_PRACTICE_QUESTIONS,
+  ...ORIGINAL_PRACTICE_QUESTIONS.map((question): Question => ({
+    ...question,
+    status: "Teacher Review",
+    questionOrigin: "Legacy Sample",
+    reviewStatus: "needs_teacher_review",
+  })),
   ...CS_QUESTIONS,
   ...BOTANY_QUESTIONS,
   ...ZOOLOGY_QUESTIONS,

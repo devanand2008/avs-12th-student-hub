@@ -1,0 +1,63 @@
+{
+  "readOnly": true,
+  "checkedAt": "2026-10-10T16:14:10.831007+00:00",
+  "legacyHeld": 12,
+  "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+  "practiceSessions": 13,
+  "accountancyStates": [
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-42e237db61052c82",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-e8e65aa13932879d",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-6e601acb8bb509ed",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-d6cbb9d7e9458688",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-9bfcf43750156b57",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-6c0d6092b408cf98",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-4d8fffb87c938789",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-e44d737bb25e2222",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-928eaa235d035b17",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-da7909cf7574e838",
+      "reviewState": "needs_teacher_review",
+      "historyEvents": 0
+    }
+  ],
+  "publishedTextbooks": 995,
+  "accountancyDecisions": 0,
+  "publishedTextbookDigest": "aecf15201d2b74487dd91d790ec215a9",
+  "originalExtractionDigest": "af709d432bf396495f002c94d05890ad"
+}

@@ -96,19 +96,19 @@ test("students choose a password, sign in with email and see their profile in th
   expect((await otp.json()).code).toBe("PASSWORD_LOGIN_ENABLED");
   await page.goto("/textbook-practice");
   await expect(
-    page.getByRole("heading", { name: "One-mark MCQs by subject and chapter" }),
+    page.getByRole("heading", { name: "Book-Back One-Mark MCQ Practice" }),
   ).toBeVisible();
   await page.getByLabel("Subject and textbook").selectOption(fixtureBook.id);
   await page.getByLabel("Questions in this practice").selectOption("500");
   await expect(
-    page.getByRole("button", { name: "Start textbook practice" }),
+    page.getByRole("button", { name: "Start Practice Session" }),
   ).toBeEnabled();
   const fullPractice = page.waitForResponse(
     (r) =>
       r.url().endsWith("/api/practice/start") &&
       r.request().method() === "POST",
   );
-  await page.getByRole("button", { name: "Start textbook practice" }).click();
+  await page.getByRole("button", { name: "Start Practice Session" }).click();
   const allQuestions = await (await fullPractice).json();
   const codeIndex = allQuestions.questions.findIndex(
     (q: { questionText: string }) => q.questionText === fixtureCodeQuestion,
@@ -171,12 +171,9 @@ test("students choose a password, sign in with email and see their profile in th
     ),
   ).toBe(true);
   await page.getByRole("radio").nth(1).check({ force: true });
-  await expect(
-    page.getByRole("link", {
-      name: "View the printed answer key",
-      exact: true,
-    }),
-  ).toHaveAttribute("href", `/textbooks/${fixtureBook.id}?page=39`);
+  await expect(page.getByTestId("source-reference")).toContainText(
+    "Printed answer key: source PDF page 39",
+  );
   const lastQuestion = page.getByRole("button", {
     name: `Jump to question ${allQuestions.questions.length}`,
     exact: true,
@@ -340,6 +337,12 @@ test("admin reviews unknown answers and imports duplicate-safe chapter MCQs", as
     dialog.getByRole("button", { name: "Publish reviewed MCQ" }),
   ).toBeDisabled();
   await dialog.getByLabel("Verified correct answer").selectOption("B");
+  await expect(
+    dialog.getByRole("button", { name: "Publish reviewed MCQ" }),
+  ).toBeDisabled();
+  await dialog
+    .getByRole("checkbox", { name: /I checked the original question/ })
+    .check();
   await dialog.getByRole("button", { name: "Publish reviewed MCQ" }).click();
   await expect(dialog).toHaveCount(0);
   await expect(page.getByRole("status")).toContainText("published");

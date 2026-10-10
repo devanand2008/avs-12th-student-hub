@@ -153,6 +153,10 @@ export interface Question {
   sourceQuestionNumber?: number;
   language?: MediumType;
   answerVerification?: "Textbook Answer Key" | "Teacher Review";
+  questionOrigin?: "Legacy Sample" | "Test Fixture";
+  reviewStatus?: "needs_teacher_review" | "approved" | "rejected";
+  reviewedBy?: string;
+  reviewedAt?: string;
   chapterId: string;
   topicId?: string;
   questionText: string;

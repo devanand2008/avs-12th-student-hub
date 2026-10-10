@@ -1,21 +1,32 @@
 "use client";
 
 import Sidebar from "@/components/layout/Sidebar";
+import textbookCatalog from "@/lib/textbooks-catalog.json";
 import { Chapter, PracticeMode, Subject } from "@/types";
 import {
   ArrowRight,
+  BookOpen,
+  Calculator,
   CheckSquare,
   Clock,
   Code2,
   Dna,
   Flame,
+  History,
   Leaf,
+  RotateCcw,
   Sparkles,
+  Trash2,
   Zap,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import {
+  getPracticeHistory,
+  clearPracticeHistory,
+  type PracticeAttemptRecord,
+} from "@/lib/practice-history";
 
 export default function PracticeHubPage() {
   const router = useRouter();
@@ -31,18 +42,46 @@ export default function PracticeHubPage() {
   const [selectedMode, setSelectedMode] = useState<PracticeMode>("quick");
   const [questionCount, setQuestionCount] = useState<number>(10);
   const [loading, setLoading] = useState(false);
+  const [history, setHistory] = useState<PracticeAttemptRecord[]>([]);
+  const [historyOwner, setHistoryOwner] = useState("");
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("/api/subjects")
-      .then((res) => res.json())
-      .then((data) => {
+    let disposed = false;
+    Promise.all([
+      fetch("/api/subjects").then(async (res) => {
+        const data = await res.json();
+        if (!res.ok)
+          throw new Error(data.error || "Could not load practice subjects.");
+        return data;
+      }),
+      fetch("/api/auth/me", { cache: "no-store" }).then((res) => res.json()),
+    ])
+      .then(([data, auth]) => {
+        if (disposed) return;
         if (data.subjects && data.subjects.length > 0) {
           setSubjects(data.subjects);
           setSelectedSubjectId(data.subjects[0].id);
           setChapters(data.subjects[0].chapters || []);
         }
+        if (auth.authenticated && auth.user?.id) {
+          setHistoryOwner(auth.user.id);
+          setHistory(getPracticeHistory(auth.user.id));
+        }
+      })
+      .catch((error) => {
+        if (!disposed)
+          setError(error.message || "Could not load practice subjects.");
       });
+    return () => {
+      disposed = true;
+    };
   }, []);
+
+  const handleClearHistory = () => {
+    clearPracticeHistory(historyOwner);
+    setHistory([]);
+  };
 
   const handleSubjectChange = (subjectId: string) => {
     setSelectedSubjectId(subjectId);
@@ -66,11 +105,19 @@ export default function PracticeHubPage() {
     });
     router.push(`/practice/session?${query.toString()}`);
   };
+  const readyQuestions =
+    selectedChapterId === "all"
+      ? chapters.reduce((count, chapter) => count + (chapter.totalMcqs || 0), 0)
+      : chapters.find((chapter) => chapter.id === selectedChapterId)
+          ?.totalMcqs || 0;
 
   const getSubjectIcon = (name: string) => {
-    if (name.toLowerCase().includes("computer")) return Code2;
-    if (name.toLowerCase().includes("botany")) return Leaf;
-    return Dna;
+    const lower = name.toLowerCase();
+    if (lower.includes("computer")) return Code2;
+    if (lower.includes("botany")) return Leaf;
+    if (lower.includes("zoology")) return Dna;
+    if (lower.includes("math")) return Calculator;
+    return BookOpen;
   };
 
   return (
@@ -78,6 +125,14 @@ export default function PracticeHubPage() {
       <Sidebar />
 
       <main className="flex-1 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-7">
+        {error && (
+          <p
+            role="alert"
+            className="rounded-xl border border-rose-200 bg-rose-50 p-4 text-sm text-rose-800"
+          >
+            {error}
+          </p>
+        )}
         {/* Header */}
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-2 border border-blue-200 shadow-xs">
@@ -201,7 +256,7 @@ export default function PracticeHubPage() {
               <label className="block text-xs font-bold text-slate-700 mb-2">
                 Select Subject
               </label>
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {subjects.map((s) => {
                   const Icon = getSubjectIcon(s.name);
                   const isSelected = selectedSubjectId === s.id;
@@ -238,7 +293,7 @@ export default function PracticeHubPage() {
                 </option>
                 {chapters.map((ch) => (
                   <option key={ch.id} value={ch.id}>
-                    Ch {ch.chapterNumber}: {ch.title}
+                    Ch {ch.chapterNumber}: {ch.title} ({ch.totalMcqs ?? 0} MCQs)
                   </option>
                 ))}
               </select>
@@ -330,7 +385,7 @@ export default function PracticeHubPage() {
             <span className="text-xs font-bold text-slate-700">
               Questions Count:
             </span>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               {[5, 10, 15, 25].map((cnt) => (
                 <button
                   key={cnt}
@@ -353,7 +408,7 @@ export default function PracticeHubPage() {
         <div className="flex justify-end pt-2">
           <button
             onClick={startPractice}
-            disabled={loading}
+            disabled={loading || !!error || !subjects.length || !readyQuestions}
             className="w-full sm:w-auto touch-target px-8 py-3.5 text-white rounded-2xl font-bold text-sm shadow-electric hover:shadow-glow-blue transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95 disabled:opacity-50"
             style={{
               background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
@@ -369,6 +424,132 @@ export default function PracticeHubPage() {
             )}
           </button>
         </div>
+
+        {subjects.length > 0 && !readyQuestions && (
+          <p role="status" className="text-sm text-slate-600">
+            This selection has no published practice questions yet. Choose
+            another chapter or textbook while it awaits review.
+          </p>
+        )}
+        {/* 4. ATTEMPT HISTORY & RECENT PRACTICE TESTS */}
+        {history.length > 0 && (
+          <section className="bg-white/95 rounded-3xl border border-blue-100/90 p-5 sm:p-7 shadow-sm space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <History className="w-4 h-4 text-blue-600" />
+                <span className="text-xs font-black uppercase tracking-wider text-slate-400">
+                  Your Recent Practice Attempts ({history.length})
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={handleClearHistory}
+                className="min-h-[44px] scroll-mt-32 scroll-mb-40 text-xs text-slate-400 hover:text-rose-600 transition-colors flex items-center gap-1 cursor-pointer"
+                title="Clear local practice history"
+              >
+                <Trash2 size={13} />
+                <span>Clear History</span>
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {history.slice(0, 6).map((attempt) => {
+                const subj = subjects.find((s) => s.id === attempt.subjectId);
+                const textbook = textbookCatalog.books.find(
+                  (book) => `tb-${book.id}` === attempt.subjectId,
+                );
+                const subjName =
+                  subj?.name ||
+                  attempt.subjectName ||
+                  (textbook
+                    ? `${textbook.subject}${textbook.volume ? ` · Volume ${textbook.volume}` : ""} (${textbook.sourceMedium})`
+                    : "Subject unavailable");
+                const dateStr = new Date(attempt.timestamp).toLocaleDateString(
+                  undefined,
+                  {
+                    month: "short",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                  },
+                );
+                const retakeQuery = new URLSearchParams({
+                  subjectId: attempt.subjectId,
+                  ...(attempt.chapterId && attempt.chapterId !== "all"
+                    ? { chapterId: attempt.chapterId }
+                    : {}),
+                  mode: attempt.mode as PracticeMode,
+                  sourceFilter: attempt.sourceFilter || "All",
+                  count: String(attempt.totalQuestions),
+                });
+                return (
+                  <div
+                    key={attempt.id}
+                    className="p-4 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-blue-200 transition-all space-y-2.5"
+                  >
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="min-w-0 break-words font-bold text-slate-800">
+                        {subjName}
+                      </span>
+                      <span
+                        className={`px-2 py-0.5 rounded-full text-[10px] font-extrabold ${
+                          attempt.accuracy >= 80
+                            ? "bg-emerald-100 text-emerald-800"
+                            : attempt.accuracy >= 50
+                              ? "bg-blue-100 text-blue-800"
+                              : "bg-rose-100 text-rose-800"
+                        }`}
+                      >
+                        {attempt.accuracy}%
+                      </span>
+                    </div>
+
+                    <div className="flex items-center justify-between text-xs text-slate-500">
+                      <span>
+                        Score:{" "}
+                        <strong className="text-slate-800">
+                          {attempt.score}/{attempt.totalQuestions}
+                        </strong>
+                      </span>
+                      <span className="text-[11px] text-slate-400">
+                        {dateStr}
+                      </span>
+                    </div>
+
+                    <div className="pt-1 flex items-center justify-between border-t border-slate-100">
+                      <span className="text-[10px] uppercase font-bold text-slate-400">
+                        {attempt.mode}
+                      </span>
+                      <Link
+                        href={`/practice/session?${retakeQuery}`}
+                        onClick={(event) => {
+                          if (
+                            event.ctrlKey ||
+                            event.metaKey ||
+                            event.shiftKey ||
+                            event.altKey
+                          )
+                            return;
+                          event.preventDefault();
+                          const fresh = new URLSearchParams(retakeQuery);
+                          fresh.set("attempt", crypto.randomUUID());
+                          router.push(`/practice/session?${fresh}`);
+                        }}
+                        className="min-h-[44px] scroll-mt-32 scroll-mb-40 text-xs font-bold text-blue-600 hover:text-blue-700 inline-flex items-center gap-1"
+                      >
+                        <RotateCcw size={12} /> Re-take
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            <p className="text-[11px] text-slate-400">
+              Practice history is saved locally in this browser so you can track
+              your accuracy and repeat exercises anytime.
+            </p>
+          </section>
+        )}
       </main>
     </div>
   );

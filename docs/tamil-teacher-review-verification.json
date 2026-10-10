@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-10-10T15:48:30.009Z",
+  "commands": {
+    "unit": {
+      "path": ".local/tamil-unit-tests.log",
+      "exitCode": 0,
+      "sha256": "01963bb91384c672a01d6b95cb156325ba8df1b07ef2f03bd1c904703b92d82e"
+    },
+    "browser": {
+      "path": ".local/tamil-browser-tests.log",
+      "exitCode": 0,
+      "sha256": "1c414cd8a0b7f2c39ad30a90305f04caa902bb0e3f9d6a85ecdcd028a9851e18"
+    },
+    "build": {
+      "path": ".local/tamil-build.log",
+      "exitCode": 0,
+      "sha256": "2614ce70f46f3f71beadd04c58af749a97e14e8a99b943431b087d70d2cebc80"
+    },
+    "lint": {
+      "path": ".local/tamil-lint.log",
+      "exitCode": 0,
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    "typecheck": {
+      "path": ".local/tamil-typecheck.log",
+      "exitCode": 0,
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    "audit": {
+      "path": ".local/tamil-review-audit.log",
+      "exitCode": 0,
+      "sha256": "7a347ead73182203dfb3395e4c450986ba90e60b161566ec3e073b1445c584c8"
+    }
+  },
+  "unit": {
+    "tests": 87,
+    "passed": 87,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "passed": 56,
+    "failed": 0,
+    "skipped": 12,
+    "projects": [
+      "desktop",
+      "mobile"
+    ],
+    "note": "Default suite; activation-specific, real-book and local-Gemma opt-ins skipped. Focused Tamil workflow also passed twice; these are repeats, not additional unique scenarios."
+  },
+  "build": {
+    "complete": true,
+    "generatedPages": 74
+  },
+  "liveSummary": {
+    "tamilBooks": 42,
+    "preparedBooks": 9,
+    "batches": 43,
+    "chapters": 42,
+    "prepared": 386,
+    "pending": 386,
+    "reviewed": 0,
+    "approved": 0,
+    "rejected": 0,
+    "keyMatched": 212,
+    "ambiguous": 174,
+    "unknownPrintedPages": 100,
+    "allTamilCandidates": 6206,
+    "unpreparedTamilPending": 5820,
+    "publishedAllTextbooks": 995,
+    "publishedTamil": 0,
+    "legacyHeld": 12,
+    "legacyPublished": 0
+  },
+  "liveChecks": {
+    "metadataMismatches": [],
+    "packetMismatches": [],
+    "evidenceMissing": [],
+    "decisionAuditIssues": [],
+    "unsafePublished": [],
+    "legacyPublished": []
+  },
+  "databaseGuards": {
+    "historyUnchanged": true,
+    "publishedTextbooksUnchanged": true,
+    "extractionUnchanged": true
+  },
+  "limitations": [
+    "No production redeployment or live teacher decisions.",
+    "Existing English printed-key publications are retained; they are not retroactively labelled human-reviewed.",
+    "Teacher access currently requires an authorised admin account; no separate teacher role.",
+    "Chapter inventories remain parser-derived and incomplete.",
+    "Reference CSV has no decision importer.",
+    "Supabase advisors retain the existing leaked-password-protection warning."
+  ],
+  "failuresFixed": [
+    "Test fixture SQL identifier validation previously rejected sha256.",
+    "HTTP fixture API requests needed explicit production secure-cookie headers.",
+    "Exact native label locators included option text; tests now use accessible combobox roles.",
+    "Review could reopen a stale row during refresh; review actions now wait for refresh and filters wait for save completion.",
+    "Equal question wording across test candidates required candidate-ID targeting rather than the first matching stem."
+  ]
+}

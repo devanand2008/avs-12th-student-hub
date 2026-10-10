@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-10T14:26:13.051Z",
+  "newReviewFunctionsPubliclyExecutable": 0,
+  "securityDefinerAdded": false,
+  "advisories": [
+    {
+      "name": "rls_enabled_no_policy",
+      "level": "INFO",
+      "count": 18,
+      "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+    },
+    {
+      "name": "auth_leaked_password_protection",
+      "level": "WARN",
+      "count": 1,
+      "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection"
+    }
+  ],
+  "notes": "RLS with no browser policies is intentional for these server-only tables; anon/authenticated grants are revoked. The Supabase Auth leaked-password warning predates this migration; this application currently uses its own server password login. Authentication configuration was not changed."
+}

@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-10-10T16:21:15.736Z",
+  "readOnly": true,
+  "unit": {
+    "total": 87,
+    "passed": 87,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "moderation": 4,
+    "actualExtractedPractice": 2
+  },
+  "generatedBuildPages": 74,
+  "receipts": [
+    {
+      "name": "coverage-audit",
+      "path": ".local/accountancy-coverage-audit.log",
+      "exitCode": 0,
+      "sha256": "6a95dc7f0bc0e4ff110e0c8277711a5eae0da57ff7d21fba45d7cf6fbfe54792"
+    },
+    {
+      "name": "followup",
+      "path": ".local/accountancy-followup.log",
+      "exitCode": 0,
+      "sha256": "c4116dea5ab47ae8699a85b587b0bc0c076002e65dccf38c4aec10fc15796032"
+    },
+    {
+      "name": "tamil-review",
+      "path": ".local/accountancy-tamil-review.log",
+      "exitCode": 0,
+      "sha256": "15150c725137e2eb6d90ba0e4f17b579be8039c18b504e35ca4d364da979a221"
+    },
+    {
+      "name": "backlog",
+      "path": ".local/accountancy-backlog.log",
+      "exitCode": 0,
+      "sha256": "676d39d460c4aeb7fa56abacd5b7cc1d672203170e8b8cfe7377d1fda6459ea2"
+    },
+    {
+      "name": "unit-tests",
+      "path": ".local/accountancy-unit-tests.log",
+      "exitCode": 0,
+      "sha256": "457a4d92454cdbe1f2fd89eca2a52e045c3d6fce548929a67cc647b28e1833e6"
+    },
+    {
+      "name": "typecheck",
+      "path": ".local/accountancy-typecheck.log",
+      "exitCode": 0,
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "path": ".local/accountancy-lint.log",
+      "exitCode": 0,
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "path": ".local/accountancy-build.log",
+      "exitCode": 0,
+      "sha256": "792fed40f9876456b107c29afe92f057a5a1f9b527fad4b852c15c8db5ad9186"
+    },
+    {
+      "name": "browser-tests",
+      "path": ".local/accountancy-browser-tests.log",
+      "exitCode": 0,
+      "sha256": "e38fd703b667cc2be4c20072dd9adc1e51d37a5ce19ceb2f79853ddb7d3b6c89"
+    },
+    {
+      "name": "practice-tests",
+      "path": ".local/accountancy-practice-tests.log",
+      "exitCode": 0,
+      "sha256": "94cf953711f9ac69b1ba791a0ddb1e084e5beaecf262aff8027dd81fba694a07"
+    },
+    {
+      "name": "visual-evidence",
+      "path": ".local/accountancy-visual-evidence.log",
+      "exitCode": 0,
+      "sha256": "0cfedd671f6c46dde8122ad01366588da5a32b9c82be5f850646606feb81ed52"
+    }
+  ],
+  "preserved": {
+    "practiceHistory": true,
+    "publishedTextbooks": true,
+    "originalExtraction": true
+  },
+  "sourceInspection": [
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 9,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "58ba45d00266f93c0cdfe67cbfe7eb62e10da22755a8929bd225a2120ed078cc"
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 38,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "8c3d0873bf6d3ae6467b43e62b9534657e73869bb7caaeebf27c8e329c6fc41f"
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 39,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "45b6d8aa4fe78adc5dbf7a93388f7100230271b8c258d08512527a09debcc609"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "page": 27,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "ac3c3c005fa575bb4374e4890ef6bc9976e4c3f091eb156626e3a0c7d0b2bc42"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "page": 117,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "76d3516ada2ba41db622858bebbef541c3753cc3f197142bb94df6cdbb77fb8b"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "page": 167,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "9105597e4d8124a7368da9c53055b7ebcdd1ff21e960d02ab9aa968929d8b679"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "page": 48,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "9a8145297927a5f7d7c3dcdb2ac5fc4275369098e4c9e5c96afa1d7363654f34"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "page": 79,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "99d8c023d17c9fa67e39042e9122e74a1a95cc9efe0811290fb6301f1951f445"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "page": 81,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "5600ea839326d51b849920e7c72fac0eb4f9038cc34012ccfce4953aafbe028c"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "page": 126,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "44f087492e64ef414ff9466cace2ff720bd56f54c274f994a69f9e07936459e1"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "page": 197,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "45e98de74fea61123daa4d7482d2a0a6f75e14b0256d3d1b43631ea6ea8d8ffe"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "page": 267,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "5077f8d4757a3e2082bc9fd07566a2aee2f550f0b8a2bafa992c4ca3c1d8d064"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "page": 291,
+      "method": "Original PDF rendered locally and visually inspected by the coding agent; not teacher verification",
+      "sha256": "1ba171ecd24550ab6a2405c35fae919cde3dfcd58d654eb68044ce41a5566257"
+    }
+  ],
+  "limits": [
+    "No real teacher decisions exist for the ten Accountancy Chapter 1 candidates. Browser moderation decisions use isolated PostgreSQL fixtures only.",
+    "Practice tests import actual extracted Accountancy, Commerce and Chemistry records from the fresh read-only snapshot into an isolated fixture. No production student session was created.",
+    "This turn ran the two moderation files (four cases) and actual-book practice file (two cases), not the complete browser suite.",
+    "Original page text/provenance and representative visual checks do not approve any question or establish complete textbook coverage.",
+    "No candidate record, question bank, practice history, schema, Auth setting or deployment was modified."
+  ]
+}

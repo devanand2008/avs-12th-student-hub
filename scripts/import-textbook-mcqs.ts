@@ -292,7 +292,12 @@ async function main() {
         if (error)
           throw new Error("Apply the textbook MCQ migration before importing.");
         for (const row of existing || [])
-          if (row.data.reviewedAt) reviewed.add(row.id);
+          if (
+            row.data.reviewedAt ||
+            row.data.reviewPreparation ||
+            row.data.reviewStatus
+          )
+            reviewed.add(row.id);
         if (!existing || existing.length < 1000) break;
       }
       await save("avs_curriculum", curriculum);
@@ -303,7 +308,14 @@ async function main() {
           .map((candidate) => ({
             id: candidate.id,
             book_id: book.id,
-            data: candidate,
+            data:
+              existingQuestions.get(candidate.id)?.status === "Published"
+                ? candidate
+                : {
+                    ...candidate,
+                    status: "Needs Review",
+                    reviewStatus: "needs_teacher_review",
+                  },
           })),
       );
       // Existing published questions may have been moderated in the admin panel.
@@ -313,7 +325,11 @@ async function main() {
           client.from("avs_questions").upsert(
             published
               .slice(start, start + 50)
-              .filter((question) => !reviewed.has(question.id)),
+              .filter(
+                (question) =>
+                  !reviewed.has(question.id) &&
+                  existingQuestions.get(question.id)?.status === "Published",
+              ),
             { onConflict: "id", ignoreDuplicates: true },
           ),
         );
@@ -373,6 +389,27 @@ async function main() {
             data: { ...question, status: "Teacher Review" },
           })),
       );
+      // Eligibility is not approval. Count actual published rows after updates,
+      // and leave every newly imported candidate for explicit human review.
+      const actual = await client
+        .from("avs_questions")
+        .select("data", { count: "exact" })
+        .eq("data->>sourceTextbookId", book.id)
+        .eq("status", "Published");
+      if (actual.error || actual.data?.length !== actual.count)
+        throw new Error(`Incomplete published count for ${book.id}`);
+      const approved = actual.data.map((row) => row.data as Question);
+      report.published = approved.length;
+      report.review = candidates.filter(
+        (c) => !approved.some((q) => q.id === c.id),
+      ).length;
+      report.chapters = report.chapters.map((ch) => ({
+        ...ch,
+        published: approved.filter((q) => q.chapterId === ch.id).length,
+        review: candidates.filter(
+          (c) => c.chapterId === ch.id && !approved.some((q) => q.id === c.id),
+        ).length,
+      }));
       await save("textbook_mcq_imports", [{ book_id: book.id, data: report }]);
     }
     reports.push(report);

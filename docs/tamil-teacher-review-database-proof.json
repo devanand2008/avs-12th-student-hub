@@ -1,0 +1,14 @@
+{
+  "readOnly": true,
+  "checked_at": "2026-10-10 15:33:24.833892+00",
+  "published": 995,
+  "legacy_held": 12,
+  "quiz_sessions": 13,
+  "history_digest": "04520dda7b3e51eeb21c5e3a4dff4783",
+  "published_textbook_digest": "aecf15201d2b74487dd91d790ec215a9",
+  "extraction_digest": "af709d432bf396495f002c94d05890ad",
+  "prepared": 896,
+  "held_pending": 896,
+  "teacher_review_audits": 0,
+  "browser_callable_review_functions": 0
+}

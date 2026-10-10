@@ -14,6 +14,10 @@ Create or open a project in the Supabase dashboard. In its SQL editor, run these
 6. `supabase/migrations/20261008_learning_video_uploads.sql`
 7. `supabase/migrations/20261007_material_library_uploads.sql` (50 MiB notes/video uploads; run after the preceding migrations)
 8. `supabase/migrations/20261007144717_admin_student_approval.sql` (administrator approval and temporary-password activation)
+9. `supabase/migrations/20261010_textbook_mcq_bank.sql`
+10. `supabase/migrations/20261010_textbook_mcq_text_only.sql`
+11. `supabase/migrations/20261010_textbook_chapter_consistency.sql` (consistent catalog counts and the guarded Electronics chapter correction; no question approvals)
+12. `supabase/migrations/20261010140320_textbook_teacher_review.sql` (holds 12 unverified legacy samples; private evidence batches and individual approval/edit/reject with before/after audits; existing quiz snapshots are untouched)
 
 The scripts are additive and can be rerun. They create the content bucket, account and learning tables, textbook metadata table, uniqueness constraints, transactional database functions, and access restrictions. They do not import the previous temporary memory data. Downloaded textbook PDFs remain in `public/textbooks`; the catalogue import saves their source, language, local path and file information in Supabase.
 

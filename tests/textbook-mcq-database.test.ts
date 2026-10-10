@@ -67,6 +67,14 @@ test("MCQ review and spreadsheet imports are atomic, administrator-only and upda
     assert.equal(published.sourcePage, 12);
     assert.equal(published.sourcePresentation, "Text");
     assert.equal(published.answerVerification, "Teacher Review");
+    assert.equal(published.reviewStatus, "approved");
+    assert.equal(published.reviewedBy, "review-admin");
+    const reviewAudit = (
+      await db.query<{ data: { before: unknown; after: unknown } }>(
+        "select data from public.avs_audit_logs where data->>'action'='REVIEW_TEXTBOOK_MCQ'",
+      )
+    ).rows[0].data;
+    assert.ok(reviewAudit.before && reviewAudit.after);
     assert.equal(
       (
         await db.query<{ data: { presentation: string } }>(

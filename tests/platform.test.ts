@@ -53,6 +53,26 @@ test("platform security and learning behaviour", async (t) => {
         match.user.passwordHash,
         process.env.ADMIN_INITIAL_PASSWORD,
       );
+      for (let index = 0; index < 2; index++) {
+        await createQuestion({
+          chapterId: "cs-ch-1",
+          subjectId: "sub-cs",
+          questionText: `Controlled scoring fixture ${index + 1}?`,
+          optionA: "First",
+          optionB: "Second",
+          optionC: "Third",
+          optionD: "Fourth",
+          correctAnswer: "A",
+          explanation: "Isolated test fixture",
+          difficulty: "Easy",
+          sourceType: "Book-In",
+          status: "Published",
+          stream: "Computer Science",
+          questionOrigin: "Test Fixture",
+          reviewStatus: "approved",
+          answerVerification: "Teacher Review",
+        });
+      }
     },
   );
   await t.test(

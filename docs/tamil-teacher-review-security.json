@@ -1,0 +1,22 @@
+{
+  "readOnly": true,
+  "source": "Supabase security advisors",
+  "checkedAt": "2026-10-10 15:43:34 UTC",
+  "lints": [
+    {
+      "name": "rls_enabled_no_policy",
+      "level": "INFO",
+      "title": "RLS Enabled No Policy",
+      "description": "Detects cases where row level security (RLS) has been enabled on a table but no RLS policies have been created.",
+      "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+    },
+    {
+      "name": "auth_leaked_password_protection",
+      "level": "WARN",
+      "title": "Leaked Password Protection Disabled",
+      "description": "Leaked password protection is currently disabled.",
+      "remediation": "https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection"
+    }
+  ],
+  "note": "Existing leaked-password protection warning retained. No Auth settings, grants or schema were changed in this task. AVS sessions use the application's authenticated user records."
+}

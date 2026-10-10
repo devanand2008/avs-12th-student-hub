@@ -26,6 +26,9 @@ export default function AdminQuestionsPage() {
   }, []);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [previewQuestion, setPreviewQuestion] = useState<Question | null>(null);
+  const [legacyConfirmed, setLegacyConfirmed] = useState<
+    Record<string, boolean>
+  >({});
 
   // Form state
   const [newQText, setNewQText] = useState("");
@@ -70,12 +73,23 @@ export default function AdminQuestionsPage() {
     questionId: string,
     newStatus: Question["status"],
   ) => {
-    await fetch("/api/admin/questions", {
+    const response = await fetch("/api/admin/questions", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "update-status", questionId, newStatus }),
+      body: JSON.stringify({
+        action: "update-status",
+        questionId,
+        newStatus,
+        humanConfirmed: legacyConfirmed[questionId] === true,
+      }),
     });
-    fetchQuestions();
+    const data = await response.json();
+    if (!response.ok) {
+      setError(data.error || "Could not update question status.");
+      return;
+    }
+    setError("");
+    await fetchQuestions();
   };
 
   const handleCreate = async (e: React.FormEvent) => {
@@ -327,6 +341,22 @@ export default function AdminQuestionsPage() {
                       </span>
                     </td>
                     <td className="py-3.5 px-4 text-right space-x-1.5">
+                      {q.questionOrigin === "Legacy Sample" &&
+                        q.status !== "Published" && (
+                          <label className="block text-xs text-left mb-2">
+                            <input
+                              type="checkbox"
+                              checked={!!legacyConfirmed[q.id]}
+                              onChange={(event) =>
+                                setLegacyConfirmed((values) => ({
+                                  ...values,
+                                  [q.id]: event.target.checked,
+                                }))
+                              }
+                            />{" "}
+                            I verified this legacy question and answer.
+                          </label>
+                        )}
                       <button
                         onClick={() => setPreviewQuestion(q)}
                         className="p-1.5 text-slate-500 hover:text-[#2563EB] rounded-lg hover:bg-blue-50"
@@ -336,6 +366,10 @@ export default function AdminQuestionsPage() {
                       </button>
                       {q.status !== "Published" ? (
                         <button
+                          disabled={
+                            q.questionOrigin === "Legacy Sample" &&
+                            !legacyConfirmed[q.id]
+                          }
                           onClick={() => updateStatus(q.id, "Published")}
                           className="px-2 py-1 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 rounded-lg font-bold text-[10px]"
                         >

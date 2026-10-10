@@ -12,6 +12,7 @@ import {
 } from "../../src/lib/db/initial-seed";
 import bcrypt from "bcryptjs";
 import { seedTextbookBank } from "./textbook-bank";
+import { ORIGINAL_PRACTICE_QUESTIONS } from "../../src/lib/data/questions/original";
 const tables = new Set([
   "avs_schema_versions",
   "avs_users",
@@ -32,7 +33,8 @@ const tables = new Set([
   "textbook_mcq_imports",
 ]);
 function identifier(value: string) {
-  if (!/^[a-z_]+$/.test(value)) throw new Error("Invalid SQL identifier");
+  if (!/^[a-z_][a-z0-9_]*$/.test(value))
+    throw new Error("Invalid SQL identifier");
   return '"' + value + '"';
 }
 export async function startPostgrestFixture(
@@ -95,6 +97,18 @@ export async function startPostgrestFixture(
       "utf8",
     ),
   );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261010_textbook_chapter_consistency.sql",
+      "utf8",
+    ),
+  );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261010140320_textbook_teacher_review.sql",
+      "utf8",
+    ),
+  );
   if (seedDemo) {
     await seedTextbookBank(db);
     await db.query("select public.avs_bootstrap_admin($1)", [
@@ -140,7 +154,24 @@ export async function startPostgrestFixture(
         hash,
       ]);
     }
-    for (const data of INITIAL_QUESTIONS)
+    // Controlled examples exist only in the isolated integration fixture.
+    // The product seed holds all legacy examples for human review.
+    const fixtures = INITIAL_QUESTIONS.map((question) => {
+      const example = ORIGINAL_PRACTICE_QUESTIONS.find(
+        (item) => item.id === question.id,
+      );
+      return example
+        ? {
+            ...question,
+            status: "Published",
+            questionOrigin: "Test Fixture",
+            reviewStatus: "approved",
+            reviewedBy: "local-test-fixture",
+            answerVerification: "Teacher Review",
+          }
+        : question;
+    });
+    for (const data of fixtures)
       await db.query(
         "insert into public.avs_questions(id,data) values($1,$2)",
         [data.id, JSON.stringify(data)],
@@ -338,11 +369,16 @@ export async function startPostgrestFixture(
         const dot = value.indexOf(".");
         const operator = value.slice(0, dot);
         const operand = value.slice(dot + 1);
+        if (value === "not.is.null") {
+          clauses.push(identifier(key) + " is not null");
+          continue;
+        }
         if (!["eq", "gt", "gte"].includes(operator))
           throw new Error("Unsupported filter");
         params.push(operand);
+        const jsonField = key.match(/^data->>([a-zA-Z]+)$/);
         clauses.push(
-          identifier(key) +
+          (jsonField ? `"data"->>'${jsonField[1]}'` : identifier(key)) +
             { eq: "=", gt: ">", gte: ">=" }[operator] +
             "$" +
             params.length,
@@ -394,6 +430,7 @@ export async function startPostgrestFixture(
         const rows = Array.isArray(body) ? body : [body];
         const result: unknown[] = [];
         const pk: { [key: string]: string[] } = {
+          textbook_mcq_imports: ["book_id"],
           avs_curriculum: ["kind", "id"],
           avs_progress: ["student_id", "chapter_id"],
           avs_activity: ["student_id", "kind", "resource_id"],

@@ -501,11 +501,30 @@ export async function createQuestion(
 export async function updateQuestionStatus(
   id: string,
   status: Question["status"],
+  reviewerId?: string,
 ) {
   const q = await getQuestionById(id);
   if (!q) return false;
-  await put("avs_questions", { ...q, status });
-  await logAudit("admin", "UPDATE_QUESTION_STATUS", "question", id, { status });
+  const updated = {
+    ...q,
+    status,
+    ...(reviewerId && status === "Published"
+      ? {
+          reviewStatus: "approved" as const,
+          reviewedBy: reviewerId,
+          reviewedAt: new Date().toISOString(),
+          answerVerification: "Teacher Review" as const,
+        }
+      : {}),
+  };
+  await put("avs_questions", updated);
+  await logAudit(
+    reviewerId || "admin",
+    "UPDATE_QUESTION_STATUS",
+    "question",
+    id,
+    { before: q, after: updated },
+  );
   return true;
 }
 export async function getAllTests() {

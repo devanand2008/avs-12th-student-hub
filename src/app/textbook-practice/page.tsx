@@ -6,7 +6,7 @@ import Link from "next/link";
 import Sidebar from "@/components/layout/Sidebar";
 import catalogJson from "@/lib/textbooks-catalog.json";
 import type { TextbookMcqCoverage } from "@/lib/textbook-question-types";
-import { BookOpen, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function TextbookPracticePage() {
   const router = useRouter();
@@ -18,9 +18,6 @@ export default function TextbookPracticePage() {
   const [count, setCount] = useState(10);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
-  const selectedChapter = coverage
-    .find((item) => item.bookId === bookId)
-    ?.chapters.find((item) => item.id === chapterId);
   useEffect(() => {
     fetch("/api/textbook-practice", { cache: "no-store" })
       .then(async (response) => {
@@ -45,7 +42,6 @@ export default function TextbookPracticePage() {
     [medium, search],
   );
   const selected = coverage.find((item) => item.bookId === bookId);
-  const book = catalogJson.books.find((item) => item.id === bookId);
   const available =
     chapterId === "all"
       ? selected?.published || 0
@@ -56,12 +52,11 @@ export default function TextbookPracticePage() {
       <Sidebar />
       <main className="workspace min-w-0 flex-1 space-y-6">
         <div>
-          <span className="eyebrow">OFFICIAL TEXTBOOK PRACTICE</span>
-          <h1 className="page-title">One-mark MCQs by subject and chapter</h1>
+          <span className="eyebrow">CLASS 12 · OFFICIAL TEXTBOOK PRACTICE</span>
+          <h1 className="page-title">Book-Back One-Mark MCQ Practice</h1>
           <p className="mt-2 text-sm text-slate-600">
-            Choose a textbook and practise one question at a time with four
-            separate text choices. Answers are checked against the textbook or
-            reviewed by a teacher. You can practise again at any time.
+            Select Class 12 &rarr; Select Textbook &rarr; Select Chapter &rarr; Start Practice.
+            Practise interactive web MCQs with 4 choices, instant visual feedback, verified answer keys, and unlimited attempts.
           </p>
         </div>
         {error && (
@@ -157,7 +152,7 @@ export default function TextbookPracticePage() {
               <p role="status" className="text-sm text-slate-600">
                 {available
                   ? `${available} text questions available, each with separate A, B, C and D choices.`
-                  : "The question text, choices or answers for this selection are awaiting review. You can still read the original textbook exercises."}
+                  : "The question text, choices or answers for this selection are awaiting review."}
               </p>
             </>
           )}
@@ -176,57 +171,51 @@ export default function TextbookPracticePage() {
                 router.push("/practice/session?" + params);
               }}
             >
-              Start textbook practice <ArrowRight size={16} />
+              Start Practice Session <ArrowRight size={16} />
             </button>
-            {book && (
-              <Link
-                href={`/textbooks/${book.id}?page=${selectedChapter?.exercisePage || selectedChapter?.page || 1}`}
-                className="btn-secondary"
-              >
-                <BookOpen size={16} /> Read original exercises
-              </Link>
-            )}
+            <Link
+              href="/practice"
+              className="btn-secondary"
+            >
+              Practice Core Syllabus <ArrowRight size={16} />
+            </Link>
           </div>
         </section>
         <p className="text-xs text-slate-500">
-          The library contains {catalogJson.books.length} official textbook
-          records. Questions with incomplete text or unverified answers stay in
-          the teacher review queue.
+          The catalog contains {catalogJson.books.length} official Class 12 textbook
+          records. All questions are presented in pure HTML MCQ card format with 4 distinct choices.
         </p>
         {selected && (
           <section className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3">
-            <h2 className="text-lg font-bold">Chapter practice</h2>
+            <h2 className="text-lg font-bold">Chapter Practice Breakdown</h2>
             <p className="text-sm text-slate-600">
-              Practise ready text questions in each chapter. Original textbook
-              exercises are available separately if you want to check a source.
+              Practise ready book-back one-mark questions in each chapter.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {selected.chapters.map((chapter) => (
                 <div
                   key={chapter.id}
-                  className="rounded-xl border border-slate-200 p-3 space-y-2"
+                  className="rounded-xl border border-slate-200 p-4 space-y-2 bg-slate-50/50"
                 >
-                  <h3 className="font-semibold">
+                  <h3 className="font-semibold text-sm text-[#071A3D]">
                     {chapter.number}. {chapter.title}
                   </h3>
                   <p className="text-xs text-slate-600">
                     {chapter.published} verified questions available
                   </p>
-                  <div className="flex flex-wrap gap-3 text-sm">
-                    {!!chapter.published && (
+                  <div className="pt-1">
+                    {chapter.published > 0 ? (
                       <Link
-                        className="font-semibold text-blue-700"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-colors"
                         href={`/practice/session?${new URLSearchParams({ subjectId: selected.subjectId, chapterId: chapter.id, mode: "chapter", sourceFilter: "Book-In", count: String(Math.min(chapter.published, 500)) })}`}
                       >
-                        Practise this chapter
+                        Start Practice ({chapter.published} MCQs) <ArrowRight size={13} />
                       </Link>
+                    ) : (
+                      <span className="text-[11px] font-semibold text-amber-700 bg-amber-50 px-2 py-0.5 rounded-lg border border-amber-200">
+                        In Review Queue
+                      </span>
                     )}
-                    <Link
-                      className="text-blue-700 underline"
-                      href={`/textbooks/${bookId}?page=${chapter.exercisePage || chapter.page}`}
-                    >
-                      Original exercises
-                    </Link>
                   </div>
                 </div>
               ))}

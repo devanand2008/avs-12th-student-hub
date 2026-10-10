@@ -27,7 +27,18 @@ test("generated drafts cannot publish guesses or estimated textbook citations", 
   }
   assert.deepEqual(
     ALL_PRACTICE_QUESTIONS.filter((q) => q.status === "Published"),
-    ORIGINAL_PRACTICE_QUESTIONS,
+    [],
+  );
+  const samples = ALL_PRACTICE_QUESTIONS.filter(
+    (q) => q.questionOrigin === "Legacy Sample",
+  );
+  assert.equal(samples.length, ORIGINAL_PRACTICE_QUESTIONS.length);
+  assert.ok(
+    samples.every(
+      (q) =>
+        q.status === "Teacher Review" &&
+        q.reviewStatus === "needs_teacher_review",
+    ),
   );
   assert.equal(QUESTION_COUNTS_BY_CHAPTER["maths-ch-1"] ?? 0, 0);
 });

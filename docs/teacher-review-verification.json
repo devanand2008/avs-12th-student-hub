@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-10-10T15:09:25.762Z",
+  "unit": {
+    "passed": 85,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "4320d61915117ec53a8c21523fddd3c56abcc98da36b73754b0cc26ec47fb500"
+  },
+  "typecheck": {
+    "exitCode": 0,
+    "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+  },
+  "lint": {
+    "exitCode": 0,
+    "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+  },
+  "build": {
+    "completed": true,
+    "logSha256": "a434a4ac859942f2e49c042523a9cecd5fc572f3df495344c2d649de13b0723e"
+  },
+  "browsers": {
+    "default": {
+      "passed": 54,
+      "skipped": 12,
+      "logSha256": "e22c2f93bd19e337bb4e016d14595bcf5022af055bcf0d79cfc564e851ab0292"
+    },
+    "directAccounts": {
+      "passed": 4,
+      "skipped": 0,
+      "logSha256": "9a3f593baed4be9d9d9ea8d0562dfa40233303941debdf71720431bce9716b08"
+    },
+    "adminApproval": {
+      "passed": 4,
+      "skipped": 0,
+      "logSha256": "2b14dece071b69104341ca1533c31e5b81df905544e48fcd5e50874dcbd05b27"
+    },
+    "realTextbookPractice": {
+      "passed": 2,
+      "skipped": 0,
+      "logSha256": "9186637c2cf1d4ae4e0d288dc07a0c559602456c33fb1ef7095b7535f00d2256"
+    },
+    "reviewAfterFinalCountFix": {
+      "passed": 6,
+      "skipped": 0,
+      "logSha256": "12322988394eb90bc7b1d15973f5cda21db7179cbc28f9e6335a2018a1d024df"
+    }
+  },
+  "uniqueCompletedBrowserScenarios": 64,
+  "source": {
+    "books": 82,
+    "studentReady": 995,
+    "candidates": 12229,
+    "held": 11234,
+    "prepared": 896,
+    "legacyHeld": 12,
+    "rejected": 0,
+    "candidatePacketBooks": 23,
+    "candidatePacketChapters": 101,
+    "batches": 110,
+    "pagesChecked": 273,
+    "sourceMatched": 896,
+    "keyMatched": 411,
+    "keyUncertain": 485,
+    "keyMismatch": 0,
+    "tamil": 386,
+    "duplicatesFlagged": 4,
+    "lastPreparationUpdated": 0,
+    "lastPreparationSkipped": 896
+  },
+  "database": {
+    "checkedAt": "2026-10-10T15:02:38.065Z",
+    "published": 995,
+    "legacy_held": 12,
+    "quiz_sessions": 13,
+    "history_digest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "published_textbook_digest": "aecf15201d2b74487dd91d790ec215a9",
+    "extraction_digest": "af709d432bf396495f002c94d05890ad",
+    "prepared": 896,
+    "batches": 110,
+    "held_pending": 896,
+    "human_approvals": 0,
+    "original_changes": 0,
+    "exposed_privileged_functions": 0,
+    "historyUnchanged": true,
+    "publishedTextbooksUnchanged": true,
+    "extractionUnchanged": true
+  },
+  "adminReviewCounts": {
+    "published": 995,
+    "pending": 11234,
+    "rejected": 0
+  },
+  "limitations": [
+    "No new human approvals; all 896 source packets await individual teacher review.",
+    "64 distinct browser scenarios passed; six relevant review/account scenarios passed again after the final admin count fix.",
+    "Browser tests use isolated PostgreSQL/PGlite and test-only accounts, including actual extracted questions from three subjects. No live student accounts were mutated by tests.",
+    "The two local-Gemma inference opt-ins remain unrun.",
+    "No deployment configuration change or production redeployment.",
+    "Parser chapter inventory and PDF text checks do not establish complete academic or visual textbook verification."
+  ]
+}

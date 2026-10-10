@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-10T15:02:35.756Z",
+  "before": {
+    "published": 995,
+    "legacy_held": 12,
+    "quiz_sessions": 13,
+    "history_digest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "published_textbook_digest": "aecf15201d2b74487dd91d790ec215a9",
+    "candidates": 12229,
+    "extraction_digest": "af709d432bf396495f002c94d05890ad"
+  },
+  "after": {
+    "published": 995,
+    "legacy_held": 12,
+    "quiz_sessions": 13,
+    "history_digest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "published_textbook_digest": "aecf15201d2b74487dd91d790ec215a9",
+    "candidates": 12229,
+    "extraction_digest": "af709d432bf396495f002c94d05890ad"
+  },
+  "historyUnchanged": true,
+  "publishedTextbooksUnchanged": true,
+  "extractionUnchanged": true,
+  "preparationVerification": {
+    "checkedAt": "2026-10-10T15:02:38.065Z",
+    "published": 995,
+    "legacy_held": 12,
+    "quiz_sessions": 13,
+    "history_digest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "published_textbook_digest": "aecf15201d2b74487dd91d790ec215a9",
+    "extraction_digest": "af709d432bf396495f002c94d05890ad",
+    "prepared": 896,
+    "batches": 110,
+    "held_pending": 896,
+    "human_approvals": 0,
+    "original_changes": 0,
+    "exposed_privileged_functions": 0,
+    "historyUnchanged": true,
+    "publishedTextbooksUnchanged": true,
+    "extractionUnchanged": true
+  },
+  "legacyHoldAudit": {
+    "held_rows": 12,
+    "published_to_review": 12,
+    "unchanged_question_content": 12,
+    "held_at": "2026-10-10 14:14:06.090869+00",
+    "question_ids": [
+      "q-bot-101",
+      "q-cs-101",
+      "q-cs-102",
+      "q-cs-103",
+      "q-cs-104",
+      "q-cs-105",
+      "q-cs-701",
+      "q-cs-702",
+      "q-cs-703",
+      "q-zoo-201",
+      "q-zoo-202",
+      "q-zoo-203"
+    ]
+  },
+  "adminReviewCounts": {
+    "published": 995,
+    "pending": 11234,
+    "rejected": 0
+  }
+}

@@ -914,12 +914,21 @@ export async function createQuestion(
 export async function updateQuestionStatus(
   id: string,
   status: Question["status"],
+  reviewerId?: string,
 ): Promise<boolean> {
   await ensureInit();
   const q = dbState.questions.get(id);
   if (!q) return false;
   q.status = status;
-  logAudit("admin", "UPDATE_QUESTION_STATUS", "question", id, { status });
+  if (reviewerId && status === "Published") {
+    q.reviewStatus = "approved";
+    q.reviewedBy = reviewerId;
+    q.reviewedAt = new Date().toISOString();
+    q.answerVerification = "Teacher Review";
+  }
+  logAudit(reviewerId || "admin", "UPDATE_QUESTION_STATUS", "question", id, {
+    status,
+  });
   return true;
 }
 

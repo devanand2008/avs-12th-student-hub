@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-10-10T13:36:04.795Z",
+  "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+  "migration": "20261010_textbook_chapter_consistency.sql",
+  "questionsCorrected": 10,
+  "pendingApproved": 0,
+  "sourceChecks": [
+    {
+      "page": 55,
+      "printedChapter": 2,
+      "freshTextMatches": true
+    },
+    {
+      "page": 121,
+      "printedChapter": 4,
+      "freshTextMatches": true
+    }
+  ],
+  "changes": [
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-17f5a55810b75b89",
+      "sourcePage": 55,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-2",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-321e11ff280bf48c",
+      "sourcePage": 121,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-4",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-3d3220a7bcaa1b71",
+      "sourcePage": 121,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-4",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5af0907d440a8fb2",
+      "sourcePage": 121,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-4",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-72ee75c5f7cbeed1",
+      "sourcePage": 55,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-2",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-9cc4d3dd53d75721",
+      "sourcePage": 55,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-2",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-a3f19eff30025340",
+      "sourcePage": 55,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-2",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-b45f276ec40a7c8c",
+      "sourcePage": 121,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-4",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ec54bc0ec08a8b5a",
+      "sourcePage": 55,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-2",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ffb031446294e6a0",
+      "sourcePage": 121,
+      "previousChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "correctedChapter": "tb-12-basic-electronics-engineering-english-983efd90-ch-4",
+      "statusUnchanged": true,
+      "wordingOptionsAnswerAndSourceUnchanged": true
+    }
+  ]
+}

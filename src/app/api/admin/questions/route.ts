@@ -82,6 +82,17 @@ export async function POST(request: Request) {
             { error: "Question not found." },
             { status: 404 },
           );
+        if (
+          question.questionOrigin === "Legacy Sample" &&
+          body.humanConfirmed !== true
+        )
+          return NextResponse.json(
+            {
+              error:
+                "Explicitly verify this legacy question and answer before approval.",
+            },
+            { status: 400 },
+          );
         if (!isTextPracticeQuestion(question))
           return NextResponse.json(
             {
@@ -91,7 +102,11 @@ export async function POST(request: Request) {
             { status: 400 },
           );
       }
-      const ok = await updateQuestionStatus(questionId, newStatus);
+      const ok = await updateQuestionStatus(
+        questionId,
+        newStatus,
+        session.userId,
+      );
       return NextResponse.json({ success: ok });
     }
 

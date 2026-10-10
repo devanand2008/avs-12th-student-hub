@@ -4,6 +4,7 @@ import type { Question, QuizSession } from "@/types";
 import {
   ArrowLeft,
   ArrowRight,
+  Award,
   BookOpen,
   Check,
   CheckCircle2,
@@ -12,12 +13,14 @@ import {
   RotateCcw,
   Sparkles,
   Target,
+  X,
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import PracticeText from "@/components/learning/PracticeText";
 import { isTextPracticeQuestion } from "@/lib/practice-question-text";
+import { savePracticeAttempt } from "@/lib/practice-history";
 
 type Answer = "A" | "B" | "C" | "D";
 type PracticeQuestion = Omit<Question, "correctAnswer" | "explanation"> & {
@@ -109,6 +112,7 @@ function PracticeContent() {
   const [wrongOnly, setWrongOnly] = useState(false);
 
   const storageKey = useRef("");
+  const historyOwner = useRef("");
   const answerRef = useRef<Record<string, Answer>>({});
   const flagRef = useRef<Record<string, boolean>>({});
   const busyRef = useRef(false);
@@ -118,6 +122,9 @@ function PracticeContent() {
     async function load() {
       try {
         const auth = await fetch("/api/auth/me").then((r) => r.json());
+        if (!auth.authenticated || !auth.user?.id)
+          throw new Error("Please sign in to practise.");
+        historyOwner.current = auth.user.id;
         storageKey.current = "avs_practice_" + auth.user?.id + "_" + query;
         const p = new URLSearchParams(query);
         let stored: {
@@ -245,6 +252,20 @@ function PracticeContent() {
       try {
         localStorage.removeItem(storageKey.current);
       } catch {}
+      savePracticeAttempt(historyOwner.current, {
+        id: data.session.id,
+        subjectId: data.session.subjectId,
+        chapterId: data.session.chapterId || "all",
+        mode: quiz.mode,
+        score: data.session.score,
+        totalQuestions: data.session.totalQuestions,
+        correctCount: data.session.correctCount,
+        wrongCount: data.session.wrongCount,
+        unansweredCount: data.session.unansweredCount,
+        accuracy: Math.round(data.accuracy),
+        durationSeconds: data.session.timeTakenSeconds,
+        sourceFilter: data.session.sourceFilter || "All",
+      });
       setResult(data);
     } catch (err) {
       setError(
@@ -255,6 +276,27 @@ function PracticeContent() {
       setBusy(false);
     }
   }, [quiz]);
+
+  const retryCurrentPractice = () => {
+    if (!quiz) return;
+    try {
+      localStorage.removeItem(storageKey.current);
+    } catch {}
+    const next = new URLSearchParams(query);
+    next.set("attempt", crypto.randomUUID());
+    setLoading(true);
+    setQuiz(null);
+    setError("");
+    setAnswers({});
+    answerRef.current = {};
+    setFlags({});
+    flagRef.current = {};
+    setIndex(0);
+    setResult(null);
+    setSeconds(0);
+    setWrongOnly(false);
+    router.push(`/practice/session?${next}`);
+  };
 
   useEffect(() => {
     if (!quiz || result) return;
@@ -340,6 +382,10 @@ function PracticeContent() {
   const question = questions[index];
   const exam = quiz.mode === "timed";
   const selected = answers[question?.id];
+  const currentMarks = Object.entries(answers).filter(([qId, ans]) => {
+    const q = questions.find((item) => item.id === qId);
+    return q && q.correctAnswer === ans;
+  }).length;
   const remaining = quiz.expiresAt
     ? Math.max(
         0,
@@ -457,20 +503,22 @@ function PracticeContent() {
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <button
-                  onClick={() => {
-                    const next = new URLSearchParams(query);
-                    next.set("attempt", String(Date.now()));
-                    router.push(`/practice/session?${next}`);
-                  }}
+                  onClick={retryCurrentPractice}
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-all"
+                >
+                  <RotateCcw size={14} /> Retry Practice
+                </button>
+                <button
+                  onClick={retryCurrentPractice}
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-sm transition-all"
                 >
                   <RotateCcw size={14} /> Practice Again
                 </button>
                 <Link
-                  href="/dashboard"
+                  href="/practice"
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all"
                 >
-                  Dashboard <ArrowRight size={14} />
+                  Practice Another Chapter <ArrowRight size={14} />
                 </Link>
               </div>
             </div>
@@ -550,24 +598,11 @@ function PracticeContent() {
                       <PracticeText text={rev.explanation} />
                     </div>
                   )}
-                  {rev.sourceTextbookId && (
-                    <div className="mt-3 flex flex-wrap gap-3 text-sm text-blue-700">
-                      <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={`/textbooks/${rev.sourceTextbookId}?page=${rev.sourcePage || 1}`}
-                      >
-                        Original question {rev.sourceQuestionNumber || ""}
-                      </Link>
-                      {rev.sourceAnswerPage && (
-                        <Link
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          href={`/textbooks/${rev.sourceTextbookId}?page=${rev.sourceAnswerPage}`}
-                        >
-                          Printed answer key
-                        </Link>
-                      )}
+                  {rev.sourcePage && (
+                    <div className="mt-3 text-xs text-slate-500 font-medium bg-slate-50 p-2.5 rounded-xl border border-slate-100">
+                      Textbook Reference: Book-Back Question #
+                      {rev.sourceQuestionNumber || "—"} · Source PDF Page{" "}
+                      {rev.sourcePage}
                     </div>
                   )}
                 </div>
@@ -617,23 +652,35 @@ function PracticeContent() {
           <span>Exit to Practice Hub</span>
         </Link>
 
-        {/* Timer Pill */}
-        <div
-          className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold border transition-colors ${
-            exam && remaining <= 60
-              ? "bg-rose-50 border-rose-300 text-rose-700 animate-pulse"
-              : "bg-white border-slate-200 text-slate-700 shadow-2xs"
-          }`}
-        >
-          <Clock
-            size={14}
-            className={
-              exam && remaining <= 60 ? "text-rose-600" : "text-slate-500"
-            }
-          />
-          <span>
-            {exam ? "Time Left: " : "Timer: "} {time}
-          </span>
+        <div className="flex items-center gap-2.5">
+          {/* Running Marks Indicator */}
+          {!exam && (
+            <div className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold border border-emerald-200 bg-emerald-50 text-emerald-800 shadow-2xs">
+              <Award size={14} className="text-emerald-600" />
+              <span>
+                Marks: {currentMarks} / {questions.length}
+              </span>
+            </div>
+          )}
+
+          {/* Timer Pill */}
+          <div
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold border transition-colors ${
+              exam && remaining <= 60
+                ? "bg-rose-50 border-rose-300 text-rose-700 animate-pulse"
+                : "bg-white border-slate-200 text-slate-700 shadow-2xs"
+            }`}
+          >
+            <Clock
+              size={14}
+              className={
+                exam && remaining <= 60 ? "text-rose-600" : "text-slate-500"
+              }
+            />
+            <span>
+              {exam ? "Time Left: " : "Timer: "} {time}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -743,14 +790,38 @@ function PracticeContent() {
 
             if (!optionText) return null;
 
+            // In practice mode (non-exam), provide immediate green/red feedback once selected
+            const hasSelected = !!selected;
+            const isCorrect =
+              !exam && hasSelected && key === question.correctAnswer;
+            const isIncorrectSelection =
+              !exam && isThisSelected && key !== question.correctAnswer;
+
+            let cardStyle =
+              "border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 bg-white";
+            let pillStyle =
+              "bg-slate-100 text-slate-600 border border-slate-200";
+
+            if (isCorrect) {
+              cardStyle =
+                "border-emerald-500 bg-emerald-50/90 shadow-xs ring-1 ring-emerald-500 text-emerald-950 font-semibold";
+              pillStyle =
+                "bg-emerald-600 text-white border border-emerald-600 font-bold";
+            } else if (isIncorrectSelection) {
+              cardStyle =
+                "border-rose-500 bg-rose-50/90 shadow-xs ring-1 ring-rose-500 text-rose-950 font-semibold";
+              pillStyle =
+                "bg-rose-600 text-white border border-rose-600 font-bold";
+            } else if (isThisSelected) {
+              cardStyle =
+                "border-blue-600 bg-blue-50/70 shadow-xs ring-1 ring-blue-600";
+              pillStyle = "bg-blue-600 text-white";
+            }
+
             return (
               <label
                 key={key}
-                className={`flex min-h-[52px] cursor-pointer items-center gap-3.5 rounded-2xl border px-4 py-3 transition-all ${
-                  isThisSelected
-                    ? "border-blue-600 bg-blue-50/70 shadow-xs ring-1 ring-blue-600"
-                    : "border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 bg-white"
-                }`}
+                className={`flex min-h-[52px] cursor-pointer items-center gap-3.5 rounded-2xl border px-4 py-3 transition-all ${cardStyle}`}
               >
                 <input
                   type="radio"
@@ -762,11 +833,7 @@ function PracticeContent() {
                   className="sr-only"
                 />
                 <span
-                  className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold shrink-0 transition-colors ${
-                    isThisSelected
-                      ? "bg-blue-600 text-white"
-                      : "bg-slate-100 text-slate-600 border border-slate-200"
-                  }`}
+                  className={`w-7 h-7 rounded-lg flex items-center justify-center text-xs shrink-0 transition-colors ${pillStyle}`}
                 >
                   {key}
                 </span>
@@ -774,10 +841,19 @@ function PracticeContent() {
                 <PracticeText
                   text={optionText}
                   testId="option-text"
-                  className="text-xs sm:text-sm font-medium text-slate-800 leading-snug"
+                  className="text-xs sm:text-sm font-medium leading-snug"
                 />
 
-                {isThisSelected && (
+                {isCorrect && (
+                  <CheckCircle2
+                    size={18}
+                    className="ml-auto shrink-0 text-emerald-600"
+                  />
+                )}
+                {isIncorrectSelection && (
+                  <X size={18} className="ml-auto shrink-0 text-rose-600" />
+                )}
+                {isThisSelected && exam && (
                   <Check size={16} className="ml-auto shrink-0 text-blue-600" />
                 )}
               </label>
@@ -798,7 +874,7 @@ function PracticeContent() {
               <BookOpen size={16} />
               <span>
                 {selected === question.correctAnswer
-                  ? "Correct Answer! Well done."
+                  ? "Correct Answer! Well done (1 mark earned)."
                   : `Incorrect. The correct answer is Option ${question.correctAnswer}.`}
               </span>
             </div>
@@ -808,28 +884,20 @@ function PracticeContent() {
                 className="text-xs text-slate-700"
               />
             )}
-            {question.sourceAnswerPage && question.sourceTextbookId && (
-              <Link
-                className="mt-2 inline-block font-semibold text-blue-700 underline"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`/textbooks/${question.sourceTextbookId}?page=${question.sourceAnswerPage}`}
+            {question.sourcePage && (
+              <p
+                data-testid="source-reference"
+                className="mt-2 text-[11px] text-slate-500 font-medium"
               >
-                View the printed answer key
-              </Link>
+                Textbook Reference: Chapter Exercise Question #
+                {question.sourceQuestionNumber || "—"} · Source PDF Page{" "}
+                {question.sourcePage}
+                {question.sourceAnswerPage
+                  ? ` · Printed answer key: source PDF page ${question.sourceAnswerPage}`
+                  : ""}
+              </p>
             )}
           </div>
-        )}
-
-        {question.sourceTextbookId && !exam && (
-          <Link
-            href={`/textbooks/${question.sourceTextbookId}?page=${question.sourcePage || 1}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs text-slate-500 hover:text-blue-700"
-          >
-            <BookOpen size={14} /> View textbook source (optional)
-          </Link>
         )}
 
         {/* Bottom Card Navigation */}
@@ -846,29 +914,40 @@ function PracticeContent() {
             <ArrowLeft size={14} /> Previous
           </button>
 
-          {index < questions.length - 1 ? (
-            <button
-              type="button"
-              onClick={() => {
-                setIndex(index + 1);
-                persist(index + 1);
-              }}
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs transition-colors"
-            >
-              <span>Next Question</span>
-              <ArrowRight size={14} />
-            </button>
-          ) : (
+          <div className="flex items-center gap-2.5">
             <button
               type="button"
               disabled={busy}
               onClick={() => void submit()}
-              className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md shadow-emerald-500/20 transition-all"
+              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 transition-colors"
             >
-              <span>{busy ? "Submitting..." : "Submit Practice Test"}</span>
-              <Check size={15} />
+              <span>Finish Practice</span>
             </button>
-          )}
+
+            {index < questions.length - 1 ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setIndex(index + 1);
+                  persist(index + 1);
+                }}
+                className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs transition-colors"
+              >
+                <span>Next Question</span>
+                <ArrowRight size={14} />
+              </button>
+            ) : (
+              <button
+                type="button"
+                disabled={busy}
+                onClick={() => void submit()}
+                className="inline-flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md shadow-emerald-500/20 transition-all"
+              >
+                <span>{busy ? "Submitting..." : "Submit Practice Test"}</span>
+                <Check size={15} />
+              </button>
+            )}
+          </div>
         </div>
       </section>
 

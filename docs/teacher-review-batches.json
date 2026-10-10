@@ -1,0 +1,4266 @@
+{
+  "checkedAt": "2026-10-10T14:29:53.194Z",
+  "mode": "applied",
+  "candidateCount": 896,
+  "books": 23,
+  "chapters": 101,
+  "batches": [
+    {
+      "batchId": "tb-12-accountancy-english-c0f4ded3-ch-5-review-01",
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "subject": "Accountancy",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-english-c0f4ded3-ch-5",
+      "chapter": "Chapter 5",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 1,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-accountancy-english-c0f4ded3-46634a90fcbba95b"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-english-c0f4ded3-ch-8-review-01",
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "subject": "Accountancy",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-english-c0f4ded3-ch-8",
+      "chapter": "Chapter 8",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-accountancy-english-c0f4ded3-8cc7528061435c20"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-1",
+      "chapter": "Chapter 1",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-accountancy-tamil-6e7f5476-6e601acb8bb509ed",
+        "textbook-q-12-accountancy-tamil-6e7f5476-d6cbb9d7e9458688",
+        "textbook-q-12-accountancy-tamil-6e7f5476-9bfcf43750156b57",
+        "textbook-q-12-accountancy-tamil-6e7f5476-6c0d6092b408cf98",
+        "textbook-q-12-accountancy-tamil-6e7f5476-4d8fffb87c938789",
+        "textbook-q-12-accountancy-tamil-6e7f5476-e44d737bb25e2222",
+        "textbook-q-12-accountancy-tamil-6e7f5476-928eaa235d035b17",
+        "textbook-q-12-accountancy-tamil-6e7f5476-da7909cf7574e838",
+        "textbook-q-12-accountancy-tamil-6e7f5476-42e237db61052c82",
+        "textbook-q-12-accountancy-tamil-6e7f5476-e8e65aa13932879d"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-10-review-01",
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-10",
+      "chapter": "Chapter 10",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-accountancy-tamil-6e7f5476-12af142f2b700a5e",
+        "textbook-q-12-accountancy-tamil-6e7f5476-d0457ca38e2cd558",
+        "textbook-q-12-accountancy-tamil-6e7f5476-4fb46821339637b3",
+        "textbook-q-12-accountancy-tamil-6e7f5476-2218881cd2bd4cb5",
+        "textbook-q-12-accountancy-tamil-6e7f5476-8f59766477e566c7",
+        "textbook-q-12-accountancy-tamil-6e7f5476-3fe313bedbf5f1c8",
+        "textbook-q-12-accountancy-tamil-6e7f5476-046fec826641f56e",
+        "textbook-q-12-accountancy-tamil-6e7f5476-61842ee06337faa8",
+        "textbook-q-12-accountancy-tamil-6e7f5476-9ae1c85b8abfda1d",
+        "textbook-q-12-accountancy-tamil-6e7f5476-383fdf99857f4bfc"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-2-review-01",
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-2",
+      "chapter": "Chapter 2",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 10,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-accountancy-tamil-6e7f5476-b6a45a5d2e0a0586",
+        "textbook-q-12-accountancy-tamil-6e7f5476-5abed0b912d78e26",
+        "textbook-q-12-accountancy-tamil-6e7f5476-a1f3ac4f9f23c885",
+        "textbook-q-12-accountancy-tamil-6e7f5476-049ebad7eb551d94",
+        "textbook-q-12-accountancy-tamil-6e7f5476-c283cf230dcad219",
+        "textbook-q-12-accountancy-tamil-6e7f5476-73001581807c58bc",
+        "textbook-q-12-accountancy-tamil-6e7f5476-932038dc810cdd89",
+        "textbook-q-12-accountancy-tamil-6e7f5476-8d28a75c946d2860",
+        "textbook-q-12-accountancy-tamil-6e7f5476-d7e84e72ca67e1a7",
+        "textbook-q-12-accountancy-tamil-6e7f5476-51def98084aa5292"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-4-review-01",
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-4",
+      "chapter": "Chapter 4",
+      "total": 8,
+      "sourceMatched": 8,
+      "keyMatched": 8,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 8,
+      "candidateIds": [
+        "textbook-q-12-accountancy-tamil-6e7f5476-22fccc4fd8d0ccf7",
+        "textbook-q-12-accountancy-tamil-6e7f5476-f7175851fac3fb28",
+        "textbook-q-12-accountancy-tamil-6e7f5476-20e3b7f79618114b",
+        "textbook-q-12-accountancy-tamil-6e7f5476-95f5845f4128ef04",
+        "textbook-q-12-accountancy-tamil-6e7f5476-217dff002bf17fb4",
+        "textbook-q-12-accountancy-tamil-6e7f5476-554fb383c750eb47",
+        "textbook-q-12-accountancy-tamil-6e7f5476-3e61d8e440c2a482",
+        "textbook-q-12-accountancy-tamil-6e7f5476-e2235a87ae5780ef"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-5-review-01",
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-5",
+      "chapter": "Chapter 5",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-accountancy-tamil-6e7f5476-2988d4250e051c04",
+        "textbook-q-12-accountancy-tamil-6e7f5476-f21fc04673a8755a",
+        "textbook-q-12-accountancy-tamil-6e7f5476-91fe28214644647b",
+        "textbook-q-12-accountancy-tamil-6e7f5476-d66833a5784ae196",
+        "textbook-q-12-accountancy-tamil-6e7f5476-d1685b8e6e17a12a",
+        "textbook-q-12-accountancy-tamil-6e7f5476-f273dc1424500824",
+        "textbook-q-12-accountancy-tamil-6e7f5476-6e0d1d6ab04820e9",
+        "textbook-q-12-accountancy-tamil-6e7f5476-073317995a8a7dd5",
+        "textbook-q-12-accountancy-tamil-6e7f5476-fc7eefaf591c6243",
+        "textbook-q-12-accountancy-tamil-6e7f5476-728f62f4efa0f21f"
+      ]
+    },
+    {
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-8-review-01",
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-8",
+      "chapter": "Chapter 8",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 10,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-accountancy-tamil-6e7f5476-1cdebf7373451ffc",
+        "textbook-q-12-accountancy-tamil-6e7f5476-92ff0d97e3bccf8a",
+        "textbook-q-12-accountancy-tamil-6e7f5476-c6bac432084e32f3",
+        "textbook-q-12-accountancy-tamil-6e7f5476-6a4d0406d18bd4bf",
+        "textbook-q-12-accountancy-tamil-6e7f5476-c48b9432430b17d1",
+        "textbook-q-12-accountancy-tamil-6e7f5476-9f1b38ca84ef2688",
+        "textbook-q-12-accountancy-tamil-6e7f5476-464e3fd8bda631fd",
+        "textbook-q-12-accountancy-tamil-6e7f5476-fa4b4997a56c0e25",
+        "textbook-q-12-accountancy-tamil-6e7f5476-8ce3308db1da5f9f",
+        "textbook-q-12-accountancy-tamil-6e7f5476-9d6a21ca06e4508e"
+      ]
+    },
+    {
+      "batchId": "tb-12-auditing-english-cb18c74c-ch-4-review-01",
+      "bookId": "12-auditing-english-cb18c74c",
+      "subject": "Auditing",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-auditing-english-cb18c74c-ch-4",
+      "chapter": "Chapter 4",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-auditing-english-cb18c74c-c53b1f4ababc008e"
+      ]
+    },
+    {
+      "batchId": "tb-12-auditing-english-cb18c74c-ch-8-review-01",
+      "bookId": "12-auditing-english-cb18c74c",
+      "subject": "Auditing",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-auditing-english-cb18c74c-ch-8",
+      "chapter": "Chapter 8",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-auditing-english-cb18c74c-39418752a97b9d4b"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-civil-engineering-tamil-122addb5-ch-7-review-01",
+      "bookId": "12-basic-civil-engineering-tamil-122addb5",
+      "subject": "Basic Civil Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-basic-civil-engineering-tamil-122addb5-ch-7",
+      "chapter": "Chapter 7",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 6,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-basic-civil-engineering-tamil-122addb5-ba1849e47e788f54",
+        "textbook-q-12-basic-civil-engineering-tamil-122addb5-c254ea355ffe3d70",
+        "textbook-q-12-basic-civil-engineering-tamil-122addb5-cfae8eb3be80d5ee",
+        "textbook-q-12-basic-civil-engineering-tamil-122addb5-cb8822dfbd4f96e8",
+        "textbook-q-12-basic-civil-engineering-tamil-122addb5-d8a3cd8743acd253",
+        "textbook-q-12-basic-civil-engineering-tamil-122addb5-cd5c72e7aefc66b3"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-english-983efd90-ch-1-review-01",
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-english-983efd90-ch-1",
+      "chapter": "Digital Circuit Applications",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-english-983efd90-84a974599adb55e1"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-english-983efd90-ch-6-review-01",
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-english-983efd90-ch-6",
+      "chapter": "Chapter 6",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-english-983efd90-24964445f88f23cd"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-english-983efd90-ch-8-review-01",
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-english-983efd90-ch-8",
+      "chapter": "Chapter 8",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 1,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-english-983efd90-eb91c4fb1acd61b5"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-english-983efd90-ch-9-review-01",
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-english-983efd90-ch-9",
+      "chapter": "Chapter 9",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 1,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-english-983efd90-f97f37a71850aca9"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2-ch-10-review-01",
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "subject": "Basic Electronics Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2-ch-10",
+      "chapter": "Chapter 10",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 4,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-2c03d9a31dd565f7",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-de9b3c08c09ef27c",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-9ba10f772fbf5b66",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-f618f6ea33663abf"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2-ch-6-review-01",
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "subject": "Basic Electronics Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2-ch-6",
+      "chapter": "Chapter 6",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-6b6538c69b68f8cf",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-e04a569160e8f34b",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-fed0645c28f79146",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-5229142b2c88b882",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-4b744c281df42fe4",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-66648a81cbe1c92b",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-5dd1a2430ebc87de",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-31f35d0a30abba9f",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-3e699a942b5231d9",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-18fd0f9b868a58e2",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-a4f4784bfbc75c49",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-216e2545194c61d8",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-46d75d2c41222a84",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-34160dfd07cf2ddc",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-4a48398b28fd1d54",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-197a1238ff33311f",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-49f7a401d96b60d6",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-6b2a4a8ce8b251aa",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-545f90147f2cddab",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-068440d211e5e0dc"
+      ]
+    },
+    {
+      "batchId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2-ch-7-review-01",
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "subject": "Basic Electronics Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2-ch-7",
+      "chapter": "Chapter 7",
+      "total": 15,
+      "sourceMatched": 15,
+      "keyMatched": 15,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 15,
+      "candidateIds": [
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-d4884f35a30a5536",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-7158ffdd132c0a56",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-64b7a311797bf774",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-46da48950bc15b36",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-bef2204c89f776f9",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-16cfdb536eb4e415",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-cd709d576a9d3eed",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-e96a0b4a39ae7d07",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-50a10cad0818c821",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-d6c9de6e4654ae2c",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-af4290c671645ee3",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-6ee1d1d0162a0f79",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-41be74dc0de5d30d",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-d053907c75f3b474",
+        "textbook-q-12-basic-electronics-engineering-tamil-96fcb4f2-8442532608a1ee82"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-1-review-01",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-1",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 1",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 20,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-217df122212d39a2",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-938256346511f626",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ea4204e12e76bf57",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ab5f74c48a7a1781",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-30f63582ebac3fc9",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d5519f06ad6c270b",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ff67e1d3d85a3039",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-de782b335dffa8d3",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-006dd231a9e64398",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-3b85b6e92e19400e",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d8b7c391ef616c0f",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c83eef80df20ddc3",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-3fdbfee718e87664",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c7129fc9fdecedfc",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-66e0b5818df003fb",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-29732ef336842c65",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-799ec7084cb3c516",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-e1aaaa435ed7696a",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d2a3eb7c7582072c",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-126e2fd54c3d1923"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-1-review-02",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-1",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 1",
+      "total": 2,
+      "sourceMatched": 2,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 2,
+      "duplicateCandidates": 0,
+      "pending": 2,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-30d815d7d68383ee",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d875c21a8a3c3b7a"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-2-review-01",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-2",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 2",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 20,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d7789e7fd280c0a2",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ec330ac4d80e7e15",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d6f87f3788cba20c",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-87539f5494183f00",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d8ceb017df3b3b44",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-30d3bb8498d4a11e",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-bf6461c767aefdca",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-0dcae68c76f81a65",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ff9900d23c6218cf",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c6311129370b11ab",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-363f3a4125009133",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-dfd9afc5065131c1",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c0a4df7b96d49d24",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-9fca2d348cd24d8e",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-b4a6fde66eb429bd",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d45c20422e738dca",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c79ab06dc9c4870d",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-70e078e85a6ce18a",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c9511185a9659bcf",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-b644025b0020251e"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-2-review-02",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-2",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 2",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 0,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-37eb305bd36ad5d4",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d614d39780df5c89",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-cc4941ded96bad03",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-6cb9513035df41c0",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-98f253ffcaa70e28",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ce1f779a9adb61fb"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-3-review-01",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-3",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 3",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 20,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-a56945f7700895b3",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d6f3b679619b1ace",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d3b06b02598d292e",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-60c059625b766884",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-9100252f7ee296c5",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-6b9525a7bb7a1089",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-825529554c771ee2",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-b3c9ab77102d4c30",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-fc58d6d3eeed5930",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d6c6d811c350d5f2",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-ae1ca733a66da48e",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-b07b63f5e478a3fc",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-9ab170adb7a7c0e5",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-07754481d53dcde3",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-a377b9e18ace5da6",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-1426441cc18e3340",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-b245b3ec125937f9",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-4eba63027b41ff07",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-f11ccc065b45eb60",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-36c4d336289583e0"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-3-review-02",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-3",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 3",
+      "total": 3,
+      "sourceMatched": 3,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 3,
+      "duplicateCandidates": 0,
+      "pending": 3,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c9f577fc46907c57",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-9b8408d3b7357e35",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c3d25643d759150d"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-4-review-01",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-4",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 4",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 20,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-3f03ff97d57be390",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d030cd97402e08d7",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-599495392a889571",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-355ce5dfa9feea0a",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-acfa836a94b10043",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-6c8b14292dfa09b4",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-7b9ec8c91a210267",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-bed8d14bfab082c7",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-caa3d2f6f6be2240",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-2d0c1e24c30edb2b",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-854b47421e204b15",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-f7a463cf50c86819",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-53b9e0518bfbb782",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-10368cbaff36961b",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-767b38b1a85b48b7",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-7e0cb6d73c332e82",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-be839eaa3d43b5d8",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-97358ad8be62cd08",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-553d4fbee1eaa7e2",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-448b9ce2d083e646"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-4-review-02",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-4",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 4",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-6f02bac9434fcdf9",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-5cfd7ba4757692d3",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-87fa5d14858df576",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-2d08f1e9c53bfefe",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-9e77b3360682fb3f"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-5-review-01",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-5",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 5",
+      "total": 11,
+      "sourceMatched": 11,
+      "keyMatched": 11,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 11,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-46f03e41ecd6ce85",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c631098fd3fd8b1a",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c078ed0168100a25",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-12a90a469c2c1dad",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-167d133ff52425dc",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-fc638180d57cba87",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-71f95659d01194cd",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-734314e24a81812a",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-c2999b1b4e1bca90",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-a7a23ecac482e275",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-3d4a9d6b695ae3bb"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-9-review-01",
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-english-5710bd23-ch-9",
+      "chapter": "XII Std - Business Maths & Stat EM Chapter 9",
+      "total": 3,
+      "sourceMatched": 3,
+      "keyMatched": 3,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 3,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-d866a2d9cd87107c",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-885d98f9d79ef929",
+        "textbook-q-12-business-mathematics-statistics-english-5710bd23-e42e9379ed06d2dc"
+      ]
+    },
+    {
+      "batchId": "tb-12-business-mathematics-statistics-tamil-a77e8ce0-ch-5-review-01",
+      "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-business-mathematics-statistics-tamil-a77e8ce0-ch-5",
+      "chapter": "XII Std - Business Maths & Stat TM Chapter 5",
+      "total": 12,
+      "sourceMatched": 12,
+      "keyMatched": 12,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 12,
+      "candidateIds": [
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-8ba0fbb6b95ef814",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-bfd8b4025260edcc",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-e32c288bd45673ac",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-e89fcf4e4286847f",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-b68badcd602c3616",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-73d48d4c4ff75303",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-1cf2050d3093b62a",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-d9746a953ed91d4c",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-78992fff316bf473",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-9d5e8019c5c81d9e",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-4cf89bb8fbe68bb4",
+        "textbook-q-12-business-mathematics-statistics-tamil-a77e8ce0-7f628bdc5abee2df"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v1-2d0e27cb-ch-1-review-01",
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-chemistry-english-v1-2d0e27cb-ch-1",
+      "chapter": "XII U1 Metallurgy - Jerald",
+      "total": 14,
+      "sourceMatched": 14,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 14,
+      "duplicateCandidates": 0,
+      "pending": 14,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-d8c504b03ffa500a",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-1fc9f087d4552d01",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-5a549706e345c25f",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-17d1168c25064d50",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-08a6fc7b1029adec",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-3321b19d3f920b89",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-0afe6aaaa510dc1b",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-c5768b25796e5fd6",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-660038b9f9f3ca3a",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-a667d312c75bc930",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-a63504c3d74e6cfe",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-9b4289597bbcfa3c",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-a970608de943752b",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-cd1f19e7a6106c42"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v1-2d0e27cb-ch-2-review-01",
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-chemistry-english-v1-2d0e27cb-ch-2",
+      "chapter": "XII U2-P-Block",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-1654d89e7ce5eb67",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-e881150f1831d1ab",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-61794f7581e4db92",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-4d51476bc407c246",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-9d25771dfa0c6684"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v1-2d0e27cb-ch-3-review-01",
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-chemistry-english-v1-2d0e27cb-ch-3",
+      "chapter": "XII U3-P-block",
+      "total": 12,
+      "sourceMatched": 12,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 12,
+      "duplicateCandidates": 0,
+      "pending": 12,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-511d2a0044497b7a",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-28fdcb73b3b889ef",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-23a4aade9bc40e1b",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-b2083e88fd8e933a",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-26ae0f4fc317d7a0",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-bed16e3685743e81",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-b518cdafc92bde65",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-67a75dd245673e76",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-9b3b34c8d33b6aa2",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-89d9767cab89aac2",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-6d5d82e3c954870a",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-965bdf4af5b9403c"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v1-2d0e27cb-ch-4-review-01",
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-chemistry-english-v1-2d0e27cb-ch-4",
+      "chapter": "XII U4-D-Block-Jerald Folder",
+      "total": 12,
+      "sourceMatched": 12,
+      "keyMatched": 2,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 12,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-f9f38dd289d5bcc6",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-a65df9970c8f81d3",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-8767ad0e65eb825d",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-024f0102b21ab010",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-e7436e2b9fbae9dc",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-a0198082ea4287e0",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-2d85d256b88688c0",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-a55393792f99ff8f",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-985f14840375cb09",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-f6f192b0b4d3c405",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-94b8207743c9b31b",
+        "textbook-q-12-chemistry-english-v1-2d0e27cb-61ef776e187296de"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v2-0010d706-ch-10-review-01",
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-chemistry-english-v2-0010d706-ch-10",
+      "chapter": "XII U10-Surface Chemistry",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v2-0010d706-dbe2eb2e0b17ce44",
+        "textbook-q-12-chemistry-english-v2-0010d706-0d22abb63064b82e",
+        "textbook-q-12-chemistry-english-v2-0010d706-1dc2d3f94cda3a29",
+        "textbook-q-12-chemistry-english-v2-0010d706-3fe67e2c8002a07d",
+        "textbook-q-12-chemistry-english-v2-0010d706-aa11c47a8b4a6e4a",
+        "textbook-q-12-chemistry-english-v2-0010d706-24961efea0a5be4d",
+        "textbook-q-12-chemistry-english-v2-0010d706-36697889cb15d052",
+        "textbook-q-12-chemistry-english-v2-0010d706-94e541f16ebaa3a0",
+        "textbook-q-12-chemistry-english-v2-0010d706-8409737c34dfe92a",
+        "textbook-q-12-chemistry-english-v2-0010d706-2931fc6103078d6f"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v2-0010d706-ch-11-review-01",
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-chemistry-english-v2-0010d706-ch-11",
+      "chapter": "XII U11-Hydroxy compounds",
+      "total": 9,
+      "sourceMatched": 9,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 9,
+      "duplicateCandidates": 0,
+      "pending": 9,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v2-0010d706-655d3fdcf5c67b0e",
+        "textbook-q-12-chemistry-english-v2-0010d706-fc6496d7c85f617b",
+        "textbook-q-12-chemistry-english-v2-0010d706-0bd2d0f1a4419cd2",
+        "textbook-q-12-chemistry-english-v2-0010d706-7e58e8d278c06e4e",
+        "textbook-q-12-chemistry-english-v2-0010d706-b4401a82c0999cdd",
+        "textbook-q-12-chemistry-english-v2-0010d706-d982f55c53ed5738",
+        "textbook-q-12-chemistry-english-v2-0010d706-71b5189eb0f51a19",
+        "textbook-q-12-chemistry-english-v2-0010d706-bdb6d06c20773653",
+        "textbook-q-12-chemistry-english-v2-0010d706-b6a17baf5e0a3e5f"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v2-0010d706-ch-12-review-01",
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-chemistry-english-v2-0010d706-ch-12",
+      "chapter": "XII U12-Carbonyl Compounds",
+      "total": 7,
+      "sourceMatched": 7,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 7,
+      "duplicateCandidates": 0,
+      "pending": 7,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v2-0010d706-b2bf6233dfb4dc6c",
+        "textbook-q-12-chemistry-english-v2-0010d706-8f77b5a97f30de6d",
+        "textbook-q-12-chemistry-english-v2-0010d706-ce0571b6d6e7bc50",
+        "textbook-q-12-chemistry-english-v2-0010d706-8dcd10fae8631571",
+        "textbook-q-12-chemistry-english-v2-0010d706-ff83f648b2d25075",
+        "textbook-q-12-chemistry-english-v2-0010d706-65da1b99ff688ee6",
+        "textbook-q-12-chemistry-english-v2-0010d706-bc908f332dee156c"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v2-0010d706-ch-14-review-01",
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-chemistry-english-v2-0010d706-ch-14",
+      "chapter": "XII U14-Biomolecules New",
+      "total": 3,
+      "sourceMatched": 3,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 3,
+      "duplicateCandidates": 0,
+      "pending": 3,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v2-0010d706-be9c15ad8c7fecab",
+        "textbook-q-12-chemistry-english-v2-0010d706-32853347809361e3",
+        "textbook-q-12-chemistry-english-v2-0010d706-f1756a9fbc90bd2d"
+      ]
+    },
+    {
+      "batchId": "tb-12-chemistry-english-v2-0010d706-ch-9-review-01",
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-chemistry-english-v2-0010d706-ch-9",
+      "chapter": "XII U9 Electro Chemistry",
+      "total": 17,
+      "sourceMatched": 17,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 17,
+      "duplicateCandidates": 0,
+      "pending": 17,
+      "candidateIds": [
+        "textbook-q-12-chemistry-english-v2-0010d706-81c886f7655170f2",
+        "textbook-q-12-chemistry-english-v2-0010d706-d06e23bded55beda",
+        "textbook-q-12-chemistry-english-v2-0010d706-5e78ecb11e698b38",
+        "textbook-q-12-chemistry-english-v2-0010d706-06def12eff461c00",
+        "textbook-q-12-chemistry-english-v2-0010d706-ba6f0af1641b3d20",
+        "textbook-q-12-chemistry-english-v2-0010d706-849479baa361dd60",
+        "textbook-q-12-chemistry-english-v2-0010d706-464a876a5fc1c458",
+        "textbook-q-12-chemistry-english-v2-0010d706-613e661abd74a91b",
+        "textbook-q-12-chemistry-english-v2-0010d706-aa1ab43124e03af2",
+        "textbook-q-12-chemistry-english-v2-0010d706-cd7e7ea6c1e165f4",
+        "textbook-q-12-chemistry-english-v2-0010d706-791422d57c521602",
+        "textbook-q-12-chemistry-english-v2-0010d706-494c36a593f2720a",
+        "textbook-q-12-chemistry-english-v2-0010d706-b29d509e3fecb8be",
+        "textbook-q-12-chemistry-english-v2-0010d706-f9fa9c6e7a2833c1",
+        "textbook-q-12-chemistry-english-v2-0010d706-c0b1fb9233592849",
+        "textbook-q-12-chemistry-english-v2-0010d706-2e0d70b79bf48f48",
+        "textbook-q-12-chemistry-english-v2-0010d706-1d96576c98ebab0d"
+      ]
+    },
+    {
+      "batchId": "tb-12-commerce-english-4f83c61b-ch-19-review-01",
+      "bookId": "12-commerce-english-4f83c61b",
+      "subject": "Commerce",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-commerce-english-4f83c61b-ch-19",
+      "chapter": "Chapter 19",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-commerce-english-4f83c61b-38d7e452cb8d2777"
+      ]
+    },
+    {
+      "batchId": "tb-12-commerce-english-4f83c61b-ch-2-review-01",
+      "bookId": "12-commerce-english-4f83c61b",
+      "subject": "Commerce",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-commerce-english-4f83c61b-ch-2",
+      "chapter": "FUNCTIONS OF MANAGEMENT",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-commerce-english-4f83c61b-f7a38be8b50f8fb5"
+      ]
+    },
+    {
+      "batchId": "tb-12-economics-english-5418ce45-ch-10-review-01",
+      "bookId": "12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-economics-english-5418ce45-ch-10",
+      "chapter": "Chapter 10",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-economics-english-5418ce45-a882e32e8943b45a"
+      ]
+    },
+    {
+      "batchId": "tb-12-economics-english-5418ce45-ch-12-review-01",
+      "bookId": "12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-economics-english-5418ce45-ch-12",
+      "chapter": "Chapter 12",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-economics-english-5418ce45-15111661912078e9"
+      ]
+    },
+    {
+      "batchId": "tb-12-economics-english-5418ce45-ch-2-review-01",
+      "bookId": "12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-economics-english-5418ce45-ch-2",
+      "chapter": "Chapter 2",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-economics-english-5418ce45-5d31d947124947b4"
+      ]
+    },
+    {
+      "batchId": "tb-12-economics-english-5418ce45-ch-6-review-01",
+      "bookId": "12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-economics-english-5418ce45-ch-6",
+      "chapter": "Chapter 6",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-economics-english-5418ce45-9e0330501c3260fc"
+      ]
+    },
+    {
+      "batchId": "tb-12-economics-english-5418ce45-ch-9-review-01",
+      "bookId": "12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-economics-english-5418ce45-ch-9",
+      "chapter": "Chapter 9",
+      "total": 3,
+      "sourceMatched": 3,
+      "keyMatched": 3,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 3,
+      "candidateIds": [
+        "textbook-q-12-economics-english-5418ce45-0bc0ea17983b1df7",
+        "textbook-q-12-economics-english-5418ce45-a33732712b6e34a5",
+        "textbook-q-12-economics-english-5418ce45-9b4a518489daeccd"
+      ]
+    },
+    {
+      "batchId": "tb-12-economics-tamil-c7590e3f-ch-11-review-01",
+      "bookId": "12-economics-tamil-c7590e3f",
+      "subject": "Economics",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-economics-tamil-c7590e3f-ch-11",
+      "chapter": "Chapter 11",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-economics-tamil-c7590e3f-bf2651a3888a371c",
+        "textbook-q-12-economics-tamil-c7590e3f-6c8055d3a17cbdf8",
+        "textbook-q-12-economics-tamil-c7590e3f-f84098cfd897721f",
+        "textbook-q-12-economics-tamil-c7590e3f-71f110cbb7da2006",
+        "textbook-q-12-economics-tamil-c7590e3f-0e908032c6394dcb",
+        "textbook-q-12-economics-tamil-c7590e3f-b83887f59d025a03",
+        "textbook-q-12-economics-tamil-c7590e3f-8c4680368fa98f0d",
+        "textbook-q-12-economics-tamil-c7590e3f-9a8ddb60df4a7d86",
+        "textbook-q-12-economics-tamil-c7590e3f-766efa00c9a4aa7b",
+        "textbook-q-12-economics-tamil-c7590e3f-f4130f3c474f23cb",
+        "textbook-q-12-economics-tamil-c7590e3f-a5df8d9994f759ca",
+        "textbook-q-12-economics-tamil-c7590e3f-1448c03f038f7db3",
+        "textbook-q-12-economics-tamil-c7590e3f-95e0b2b2c540ebec",
+        "textbook-q-12-economics-tamil-c7590e3f-4ab4cfe2af04c393",
+        "textbook-q-12-economics-tamil-c7590e3f-8c8a28f5c7b9ef65",
+        "textbook-q-12-economics-tamil-c7590e3f-4e55ca4cfa2e0bbe",
+        "textbook-q-12-economics-tamil-c7590e3f-f38f1087c5f98e5d",
+        "textbook-q-12-economics-tamil-c7590e3f-34ad70e054776c94",
+        "textbook-q-12-economics-tamil-c7590e3f-9a263329cb0bbcb5",
+        "textbook-q-12-economics-tamil-c7590e3f-3668a0434b2f06a9"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-1-review-01",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-1",
+      "chapter": "Chapter 1 Matrices  Final",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-de7da8025a1db13b",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-546424fda2d33f03",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-abc0d7da2697b887",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-bb5b6cd0a368e66a",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-6994743bba0218a5",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d67aabf432a78e05",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-92c0ac983a436fbd",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-7a3398ec99f1b33d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-15f1fdc739aa7691",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-79b68071839f0c85",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-68966fb78791dae8",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a5ccb5bf29ba1327",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-41efd9e65a2ecf08",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c37546258cfe8755",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a26c702a0dbf73a9",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a6c2bc12e2b285b7",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-fc657dbbb492273e",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c2cd0fbd35236099",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-2683a5bd27e211a7",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-e1e1f6052383158f"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-1-review-02",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-1",
+      "chapter": "Chapter 1 Matrices  Final",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1a70e5f644e07e90",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-2335d97864ef1154",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c97ff12338112e8a",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-81380bb078fc5ae2",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-dfd20949fe18b63a"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-2-review-01",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-2",
+      "chapter": "Chapter 2 Complex Numbers",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-46215557c00e4dce",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-0ea26978aae50813",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-b8b3a7a6b791f2dc",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-84cba0c39fc38af3",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-38f403c4e6fc2cff",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-6beabea83d81cefa",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d4cddf92550d9ee3",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-e1b104425d02f989",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-e8070d35b045a093",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a1e33a88ec33dc74",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-458388b98e81feb1",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-53964d89bdd1821a",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-4d02a1316e534a9d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-4681b10787001b44",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-7daf564cd12d445a",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-899df0f1988a3d1f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-61057aad78431524",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-8c76f1ebdc2193b6",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-bd3684e6f70768f6",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-3229bf819f2204ce"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-2-review-02",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-2",
+      "chapter": "Chapter 2 Complex Numbers",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d8f9c9b0482b7acd",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-ab5a9a9be8ea9e00",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-746c65ad4226978f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-652faba9de594db1",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-f5c01a118ca8c0de"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-3-review-01",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-3",
+      "chapter": "Chapter 3 Theory of Equation",
+      "total": 9,
+      "sourceMatched": 9,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 9,
+      "duplicateCandidates": 0,
+      "pending": 9,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-cbd751d8ae5ccd17",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-e89e956ed6e10f9c",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-efa1653f244cb6e7",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-be8f6f6585ce10f8",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-dd4cfc6a55e53df5",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c9baa58d3defa377",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-41458119356af21e",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-b157b6e4ce26294c",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d8ba4b2c6465ca83"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-4-review-01",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-4",
+      "chapter": "Chapter 4 Inverse Trigonometry",
+      "total": 17,
+      "sourceMatched": 17,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 17,
+      "duplicateCandidates": 0,
+      "pending": 17,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1fa4bfcc12c27c3d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1127a46ec1f06b25",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-59c0a9cc7848d679",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-833cf3c3380336db",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c7cf2baf7ab46683",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d96f162e75520915",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-60959856cab4e215",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a80f4847ec4b41ae",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-b01502f23d7dcec1",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a006a5fda09827a6",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-8c246f4bb198271b",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-f42e6ef19d45a749",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a0520504d1e6c0cd",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-ab0e9836157b2e3b",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-10cfd4ea009821ca",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a78b6cd7e02da00b",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-8914295da8c7515e"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-5-review-01",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-5",
+      "chapter": "Chapter 5 Analytical Geometry",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-b569396bce7e17b9",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-ea0acd6b2b310eb7",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-4b1a1518f9979d46",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-6ded62bd9b73be0f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-82749378faa61abf",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-edd7c8def1424f1f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-0f98ba5d9c9ed28e",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1505ea8ff7951dd8",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-bb41c1f5ad908494",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-a3229a84c1e0fbcc",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-530e0662e104d908",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-67d7c7639f015b56",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-54b5e45b574db5f4",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-628433571dbbb219",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-ed45a303b9979d8d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-867686fec611d1e2",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d8b7e246a017e1a6",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-fddf36e8e12fc94d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-2d29b2c36495fc75",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-ca1028310518ad12"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-5-review-02",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-5",
+      "chapter": "Chapter 5 Analytical Geometry",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1b684211c8df9ed1",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c4b2359c4847f0b1",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-3aff4e17380fbab6",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1b803d4d9505983c",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-701b6bf7ce13375f"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-6-review-01",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-6",
+      "chapter": "Chapter 6 Vector Algebra",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1e1096d5994ca584",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-c68de49bc904de6f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-61de7e58746e71f1",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-617e96520f9b8536",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-4d7c5efb3264b23d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-0936653eb144f39d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-594632c11fa0208d",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-64cdddbe8f4efd4e",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-2139e09e457c1640",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-8884e35fee11a769",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-2d7ee0c12a57a752",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-9836a0c84930e9dd",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-945039cdd0c0dc5f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-73bc884b7d48b6af",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-f89811c2606e4fb7",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-1d4c36f9673d9145",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-d03674d83e16a091",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-907c1f61f50ab5f0",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-91cb24c0a85e5f0f",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-26065c0f9ef69b6b"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v1-e33ceed7-ch-6-review-02",
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-english-v1-e33ceed7-ch-6",
+      "chapter": "Chapter 6 Vector Algebra",
+      "total": 2,
+      "sourceMatched": 2,
+      "keyMatched": 2,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 2,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v1-e33ceed7-4ce64daa9bf109ad",
+        "textbook-q-12-mathematics-english-v1-e33ceed7-f189e9f317eae8b2"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v2-d4925ec0-ch-11-review-01",
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-english-v2-d4925ec0-ch-11",
+      "chapter": "Chapter 11 Probability Distributions Print",
+      "total": 14,
+      "sourceMatched": 14,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 14,
+      "duplicateCandidates": 0,
+      "pending": 14,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v2-d4925ec0-ede698c414d2b2d9",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-7e3ffdc1d1eb20d1",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-211e84f66f4297a5",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-55b2433343aa1c42",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-72fbd92a6b1b2e78",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-8d87ff561b10e9ef",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-f18b01710eba4132",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-3dbc85aaacdb7c85",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-7c6dc9405dbc0b66",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-4aa559f4ac218e76",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-01192072e34efae7",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-7c232a36fbd8d015",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-1a4cfa5287c52cd0",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-310e11aacbac64db"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v2-d4925ec0-ch-7-review-01",
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-english-v2-d4925ec0-ch-7",
+      "chapter": "Chapter 7 Differential Calculus Print 16 02",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v2-d4925ec0-29a249ac903c8f52",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-e1a8fead1a080233",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-9e6fa80c26fd6d93",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-86beb79fdd5463f6",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-b130febe2a81d426",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-212300ca69b9c6fe",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-367e1c078d144ffe",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-c8fe849a56e17ffc",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-08a53b5e495501b6",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-17486411405f9e0a",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-8c754283f2996e00",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-5c9df057c03ae4f9",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-3a2bdc3462560eeb",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-5a6a37a202ce5306",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-cee83ee43a2ce359",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-4f999ed323c41294",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-3cfa83a7485cf484",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-f3cf327fb699743b",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-cfb8eb452a2ac0d5",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-180acc839952070d"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v2-d4925ec0-ch-8-review-01",
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-english-v2-d4925ec0-ch-8",
+      "chapter": "Chapter 8 Differentials and Partial Derivatives Print",
+      "total": 13,
+      "sourceMatched": 13,
+      "keyMatched": 13,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 13,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v2-d4925ec0-6ecee864d5c56f0d",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-e52cf38914628188",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-c43aa6b12bc02046",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-9d71f77032123834",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-456601f3343fb4b3",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-afdaab5366c44463",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-7657dd694b034ace",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-d2c32873fd8e0930",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-ee93dc165d3d72e9",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-473526e70336f3b4",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-a9a184f1aebad62a",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-504a06e819b649e6",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-7f6931cfd127b66d"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-english-v2-d4925ec0-ch-9-review-01",
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-english-v2-d4925ec0-ch-9",
+      "chapter": "Chapter 9 Application of Integrations Print",
+      "total": 19,
+      "sourceMatched": 19,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 19,
+      "duplicateCandidates": 0,
+      "pending": 19,
+      "candidateIds": [
+        "textbook-q-12-mathematics-english-v2-d4925ec0-945aa2eee4fd202f",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-61db428d0384cdc0",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-fca6370dd31ec20f",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-dc49b6c84d9a4977",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-70ab2dd05c332d56",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-82e0e00786fce00c",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-19e16d65f25ec657",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-f44d920a7ce04e0e",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-b22aef364721b78e",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-de45a52d57ea0f9b",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-c6b95cb1577671e8",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-56b0b2247d230812",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-a2edbeb5026c0e0f",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-ded51d9174d306a4",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-fbecc0f253b12493",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-bb7442a036e9e70e",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-68de3d94944573e8",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-b3afb654168a4adf",
+        "textbook-q-12-mathematics-english-v2-d4925ec0-2d5ed9196fa7b3fb"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v1-96fc1e8d-ch-1-review-01",
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-tamil-v1-96fc1e8d-ch-1",
+      "chapter": "Chapter 1 Matrices",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-3bf01e61b354bfed",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-4641f4bbd20325b0",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-53f4df019e8a7cab",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-cf5c6ab8eb29e463",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-b9342b02e566956c",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-6f95f923c862c888",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-dd6c7f31d55a47d4",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-b5f8c54a292bddec",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-333a61033d434d31",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-a8b6c0022c2cda74",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-66c142a61af92519",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-14485b1e622a4a0d",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-bea554f8ae1f1a6a",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-791984f175c3ff82",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-9c19de7bf5e3fa14",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-a98c2b01e6abcd3d",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-1b3dbf7fcb888cdd",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-102ae97082427fb0",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-488a0e377cc10224",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-666570cf89e2f89a"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v1-96fc1e8d-ch-1-review-02",
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-tamil-v1-96fc1e8d-ch-1",
+      "chapter": "Chapter 1 Matrices",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-54e1278730257c9e",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-f63a09263b425c01",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-99fa7d9ea6fdaf94",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-e217525e0a4a510d",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-cac75ffb7b8bee8a"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v1-96fc1e8d-ch-3-review-01",
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "1",
+      "chapterId": "tb-12-mathematics-tamil-v1-96fc1e8d-ch-3",
+      "chapter": "Chapter 3 Theory of Equation",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-7d6c2964c386247a",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-cfb70c265623ddd0",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-fc6b82ca0bf3082e",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-398b5f786b11b0bd",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-4f9de99df177f7a8",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-5908b4460f7687ef",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-c30b03d54bedb256",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-df9891316a1f78af",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-d1cc39b59fcc15cc",
+        "textbook-q-12-mathematics-tamil-v1-96fc1e8d-5e06daa925cb106d"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v2-f8732624-ch-11-review-01",
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-tamil-v2-f8732624-ch-11",
+      "chapter": "Chapter 11 Probability",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 20,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v2-f8732624-1d37d2a0bdee6fdf",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-14f8ec4ef0146081",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-5b6e9c0334af2a40",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-74f207161a6270d5",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-20525f1314d0e88d",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-0805b7007d99c9b4",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-9ae41303b64494ae",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6a141517e04fc8de",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-b50e30ee65be5763",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-d17812a0a81b46eb",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-d314bd43a5549335",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-46af09059c9b038e",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-8d018e1f2ddd8ba9",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-7f13833b03ca2050",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-afb70ed0263be9bf",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-f57976ed38041100",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-be3f2cc3af16ae88",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-ca1770b89b82e1d7",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-1ed22c74c08dfac3",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-ccd6062398efbafb"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v2-f8732624-ch-7-review-01",
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-tamil-v2-f8732624-ch-7",
+      "chapter": "Chapter 7 Applications of Diff Calculus1",
+      "total": 20,
+      "sourceMatched": 20,
+      "keyMatched": 20,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 20,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v2-f8732624-e2bfb91312d9026d",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-2deac1bfd4678970",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-0cc723d6adcdbbc7",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-7ba91fbb48b6bc86",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-72713e451873b238",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-ec785a112dd1434a",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-4af335c5b759286c",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-632a27c9c6a5c0bb",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-d18d34af4adc060f",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6df9e31c2d004d94",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-b7d5c63d55b9585d",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-aebbedbba876cfa3",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-868abdc1ab63c6bd",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-fb192d0358411fbd",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6f2a3b1de063227f",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-eb5bda01852838b0",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-788dfc40dbc5333b",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-cfaa700d4c82df5f",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-566c6e6ad033c209",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-19c534c2f193e8ba"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v2-f8732624-ch-8-review-01",
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-tamil-v2-f8732624-ch-8",
+      "chapter": "Chapter 8 Differentials and Partial Derivatives",
+      "total": 15,
+      "sourceMatched": 15,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 15,
+      "duplicateCandidates": 0,
+      "pending": 15,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v2-f8732624-3ed61b530432d9c0",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-59849ccc69fde50e",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-3cc25d6a8003d621",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-24e3ccd0dae38802",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-9e175c3c4b585a16",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-ea45836a9c9ed272",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6ab88a119370609c",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-a3d9b649785678ea",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-9b6c2a22a053874c",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-871b1b1fb28eaae3",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-727913d9d49666da",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-134296759be56b72",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-2aec366db015921c",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6676261cbeaf5121",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-e3138510917fb832"
+      ]
+    },
+    {
+      "batchId": "tb-12-mathematics-tamil-v2-f8732624-ch-9-review-01",
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "2",
+      "chapterId": "tb-12-mathematics-tamil-v2-f8732624-ch-9",
+      "chapter": "Chapter 9 Applications of Integration",
+      "total": 19,
+      "sourceMatched": 19,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 19,
+      "duplicateCandidates": 0,
+      "pending": 19,
+      "candidateIds": [
+        "textbook-q-12-mathematics-tamil-v2-f8732624-a9390ecf1bc82fde",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6973cd4b98fce177",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-d02cdbb6d4ddf87e",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-f4458d58668f34e3",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-86fc526953656064",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-6b35018a47d228f9",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-a5660626a41c50ca",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-79ee0cefc642860c",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-78be04c24eadcb3e",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-e64b6c4ddf4a2561",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-b0902ae56cbe2aca",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-706955750c17a551",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-eac680a034f220a9",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-e9e3b185a7249ebf",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-7bdfac7ddd825a9a",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-13fafcbedb8bafbb",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-481150e5fc6b6a7f",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-a4c4927bea670b59",
+        "textbook-q-12-mathematics-tamil-v2-f8732624-57232d3aecac4afb"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v1-1b1de8f8-ch-1-review-01",
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-physics-english-v1-1b1de8f8-ch-1",
+      "chapter": "UNIT-1(XII-Physics Vol-1)",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v1-1b1de8f8-bd589fcc2e6495f1",
+        "textbook-q-12-physics-english-v1-1b1de8f8-7a097c8d78bcf45a",
+        "textbook-q-12-physics-english-v1-1b1de8f8-73d4edb20e602e78",
+        "textbook-q-12-physics-english-v1-1b1de8f8-202f072eec554de1",
+        "textbook-q-12-physics-english-v1-1b1de8f8-2892e04749e7ac1c",
+        "textbook-q-12-physics-english-v1-1b1de8f8-dbd942835b93ac06",
+        "textbook-q-12-physics-english-v1-1b1de8f8-3e35af776f6b4d5a",
+        "textbook-q-12-physics-english-v1-1b1de8f8-66db1fae432b75aa",
+        "textbook-q-12-physics-english-v1-1b1de8f8-e6037f41d16f7c16",
+        "textbook-q-12-physics-english-v1-1b1de8f8-910c77bf3229457d"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v1-1b1de8f8-ch-2-review-01",
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-physics-english-v1-1b1de8f8-ch-2",
+      "chapter": "UNIT-2(XII-Physics Vol-1)",
+      "total": 10,
+      "sourceMatched": 10,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 10,
+      "duplicateCandidates": 0,
+      "pending": 10,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v1-1b1de8f8-e3233234322e3667",
+        "textbook-q-12-physics-english-v1-1b1de8f8-e32d0df8d71b6f42",
+        "textbook-q-12-physics-english-v1-1b1de8f8-0f1b614f07b35762",
+        "textbook-q-12-physics-english-v1-1b1de8f8-21bc36ffc37d5cfa",
+        "textbook-q-12-physics-english-v1-1b1de8f8-b2fbe718e1acb41f",
+        "textbook-q-12-physics-english-v1-1b1de8f8-9ca76090ded51ad4",
+        "textbook-q-12-physics-english-v1-1b1de8f8-02740dbfebfbf574",
+        "textbook-q-12-physics-english-v1-1b1de8f8-367f7020083cd76f",
+        "textbook-q-12-physics-english-v1-1b1de8f8-c5a93c0286b32af4",
+        "textbook-q-12-physics-english-v1-1b1de8f8-83ed98e230267b9c"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v1-1b1de8f8-ch-3-review-01",
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-physics-english-v1-1b1de8f8-ch-3",
+      "chapter": "UNIT-3(XII-Physics Vol-1)",
+      "total": 13,
+      "sourceMatched": 13,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 13,
+      "duplicateCandidates": 0,
+      "pending": 13,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v1-1b1de8f8-960616cbbe89fba2",
+        "textbook-q-12-physics-english-v1-1b1de8f8-69a32b952aa01e67",
+        "textbook-q-12-physics-english-v1-1b1de8f8-32d7a026388110c7",
+        "textbook-q-12-physics-english-v1-1b1de8f8-271cc8fa00b01a3e",
+        "textbook-q-12-physics-english-v1-1b1de8f8-899c65bb32095165",
+        "textbook-q-12-physics-english-v1-1b1de8f8-9aeb2b4ebaaf73e2",
+        "textbook-q-12-physics-english-v1-1b1de8f8-de786a02e3604e9b",
+        "textbook-q-12-physics-english-v1-1b1de8f8-514e0cdbd26d71be",
+        "textbook-q-12-physics-english-v1-1b1de8f8-6d3427f594658508",
+        "textbook-q-12-physics-english-v1-1b1de8f8-40729cb9b50feb44",
+        "textbook-q-12-physics-english-v1-1b1de8f8-a47fff7eac9059c0",
+        "textbook-q-12-physics-english-v1-1b1de8f8-c8e9c3ae613031c4",
+        "textbook-q-12-physics-english-v1-1b1de8f8-d73829bc0c3729b2"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v1-1b1de8f8-ch-4-review-01",
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-physics-english-v1-1b1de8f8-ch-4",
+      "chapter": "UNIT-4(XII-Physics Vol-1)",
+      "total": 9,
+      "sourceMatched": 9,
+      "keyMatched": 9,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 9,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v1-1b1de8f8-fa2b2e0354016a85",
+        "textbook-q-12-physics-english-v1-1b1de8f8-367eaa6ef8582f54",
+        "textbook-q-12-physics-english-v1-1b1de8f8-13630a10505c85a2",
+        "textbook-q-12-physics-english-v1-1b1de8f8-2b140e976e4d269d",
+        "textbook-q-12-physics-english-v1-1b1de8f8-8b9e3dbdffd052a7",
+        "textbook-q-12-physics-english-v1-1b1de8f8-9788f4caee32179a",
+        "textbook-q-12-physics-english-v1-1b1de8f8-2111e1d3868afadc",
+        "textbook-q-12-physics-english-v1-1b1de8f8-dfc1f5447a046356",
+        "textbook-q-12-physics-english-v1-1b1de8f8-2bc9c33ac6eb4ccd"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v1-1b1de8f8-ch-5-review-01",
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "chapterId": "tb-12-physics-english-v1-1b1de8f8-ch-5",
+      "chapter": "UNIT-5(XII-Physics Vol-1)",
+      "total": 7,
+      "sourceMatched": 7,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 7,
+      "duplicateCandidates": 0,
+      "pending": 7,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v1-1b1de8f8-fb102136b9b48bc1",
+        "textbook-q-12-physics-english-v1-1b1de8f8-9c82c299e2310b16",
+        "textbook-q-12-physics-english-v1-1b1de8f8-840d36286cdb4545",
+        "textbook-q-12-physics-english-v1-1b1de8f8-304042968ce0ee6b",
+        "textbook-q-12-physics-english-v1-1b1de8f8-09e1142221c38f24",
+        "textbook-q-12-physics-english-v1-1b1de8f8-692623301f6fae47",
+        "textbook-q-12-physics-english-v1-1b1de8f8-94ba486f437116dd"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v2-0ce6704c-ch-10-review-01",
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "chapter": "UNIT-10 XII-Physics Vol-2 Part 1",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 1,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v2-0ce6704c-65fb88baaa0fdc47"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v2-0ce6704c-ch-6-review-01",
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-6",
+      "chapter": "UNIT-6(XII-Physics Vol-2) new",
+      "total": 2,
+      "sourceMatched": 2,
+      "keyMatched": 2,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 2,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v2-0ce6704c-cdc9ebf1bc98c64c",
+        "textbook-q-12-physics-english-v2-0ce6704c-c473271a9e2a7755"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v2-0ce6704c-ch-7-review-01",
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "chapter": "UNIT-7(XII-Physics Vol-2) new",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v2-0ce6704c-10c3484c8e8771ad"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v2-0ce6704c-ch-8-review-01",
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "chapter": "UNIT-8(XII-Physics Vol-2) New",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 0,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v2-0ce6704c-9a43bbcb6de095d2",
+        "textbook-q-12-physics-english-v2-0ce6704c-221b6180312927d9",
+        "textbook-q-12-physics-english-v2-0ce6704c-9eb06efde657ea3b",
+        "textbook-q-12-physics-english-v2-0ce6704c-e1d383fc3415a8e5",
+        "textbook-q-12-physics-english-v2-0ce6704c-823bb3171451a947",
+        "textbook-q-12-physics-english-v2-0ce6704c-254e105d4a54763b"
+      ]
+    },
+    {
+      "batchId": "tb-12-physics-english-v2-0ce6704c-ch-9-review-01",
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "chapter": "UNIT-9(XII-Physics Vol-2) New",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 4,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-physics-english-v2-0ce6704c-8d69492d2853af4c",
+        "textbook-q-12-physics-english-v2-0ce6704c-6ea4526f0748b71c",
+        "textbook-q-12-physics-english-v2-0ce6704c-f234e0dafcbe8d80",
+        "textbook-q-12-physics-english-v2-0ce6704c-0cc39ff6213c349c",
+        "textbook-q-12-physics-english-v2-0ce6704c-01cb5aab2637328c",
+        "textbook-q-12-physics-english-v2-0ce6704c-62c35422e4045d57"
+      ]
+    },
+    {
+      "batchId": "tb-12-statistics-english-1489a12e-ch-1-review-01",
+      "bookId": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-statistics-english-1489a12e-ch-1",
+      "chapter": "Chapter 1",
+      "total": 12,
+      "sourceMatched": 12,
+      "keyMatched": 12,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 12,
+      "candidateIds": [
+        "textbook-q-12-statistics-english-1489a12e-d5a9deb86f2889ca",
+        "textbook-q-12-statistics-english-1489a12e-d5fd28b4bd9fb4c9",
+        "textbook-q-12-statistics-english-1489a12e-bcc26d3aeeb1eac5",
+        "textbook-q-12-statistics-english-1489a12e-5d7316edc6adad16",
+        "textbook-q-12-statistics-english-1489a12e-a6201069743e1248",
+        "textbook-q-12-statistics-english-1489a12e-9e94fdc255e19d56",
+        "textbook-q-12-statistics-english-1489a12e-9036875baa0454c7",
+        "textbook-q-12-statistics-english-1489a12e-a14b294bac882036",
+        "textbook-q-12-statistics-english-1489a12e-40feb118d54dd36c",
+        "textbook-q-12-statistics-english-1489a12e-5eeb28fabc78af62",
+        "textbook-q-12-statistics-english-1489a12e-6f52f34b778a42f0",
+        "textbook-q-12-statistics-english-1489a12e-dd8c23341099b4ec"
+      ]
+    },
+    {
+      "batchId": "tb-12-statistics-english-1489a12e-ch-2-review-01",
+      "bookId": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-statistics-english-1489a12e-ch-2",
+      "chapter": "Chapter 2",
+      "total": 9,
+      "sourceMatched": 9,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 9,
+      "duplicateCandidates": 0,
+      "pending": 9,
+      "candidateIds": [
+        "textbook-q-12-statistics-english-1489a12e-efb303de89774a38",
+        "textbook-q-12-statistics-english-1489a12e-c6ee56f6be550ee0",
+        "textbook-q-12-statistics-english-1489a12e-62997eaf6d6f89df",
+        "textbook-q-12-statistics-english-1489a12e-2bb4d5bc88cf28a8",
+        "textbook-q-12-statistics-english-1489a12e-5cd0d1789edd97b7",
+        "textbook-q-12-statistics-english-1489a12e-80ef25a4d022a0e6",
+        "textbook-q-12-statistics-english-1489a12e-c4560aa861cab3f0",
+        "textbook-q-12-statistics-english-1489a12e-ebcb8561d9282799",
+        "textbook-q-12-statistics-english-1489a12e-7ee46ec30c27e77c"
+      ]
+    },
+    {
+      "batchId": "tb-12-statistics-english-1489a12e-ch-3-review-01",
+      "bookId": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-statistics-english-1489a12e-ch-3",
+      "chapter": "Chapter 3",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 6,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-statistics-english-1489a12e-99ec5c2ebf41a9f6",
+        "textbook-q-12-statistics-english-1489a12e-d6b5589f0acb914c",
+        "textbook-q-12-statistics-english-1489a12e-0509e0bc78f1adaf",
+        "textbook-q-12-statistics-english-1489a12e-b040af7cfaea0b8a",
+        "textbook-q-12-statistics-english-1489a12e-cccda334ec142974",
+        "textbook-q-12-statistics-english-1489a12e-d658463e79f578bd"
+      ]
+    },
+    {
+      "batchId": "tb-12-statistics-english-1489a12e-ch-4-review-01",
+      "bookId": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-statistics-english-1489a12e-ch-4",
+      "chapter": "Chapter 4",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 4,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-statistics-english-1489a12e-c005da72b4681154",
+        "textbook-q-12-statistics-english-1489a12e-8fc9a6b3bc7cd7e1",
+        "textbook-q-12-statistics-english-1489a12e-1defd07d5583a6c6",
+        "textbook-q-12-statistics-english-1489a12e-9bae72e9d6470c11"
+      ]
+    },
+    {
+      "batchId": "tb-12-statistics-english-1489a12e-ch-5-review-01",
+      "bookId": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-statistics-english-1489a12e-ch-5",
+      "chapter": "Chapter 5",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 4,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-statistics-english-1489a12e-c1703312896e1f67",
+        "textbook-q-12-statistics-english-1489a12e-b49bb6f9006602fa",
+        "textbook-q-12-statistics-english-1489a12e-2861d3a8768a9278",
+        "textbook-q-12-statistics-english-1489a12e-484a386d3b564191"
+      ]
+    },
+    {
+      "batchId": "tb-12-statistics-english-1489a12e-ch-6-review-01",
+      "bookId": "12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-statistics-english-1489a12e-ch-6",
+      "chapter": "Chapter 6",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-statistics-english-1489a12e-855e9b5bcb058844"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-10-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-10",
+      "chapter": "Chapter 10",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 4,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-c70809aaeff08df4",
+        "textbook-q-12-textile-technology-tamil-648797c8-c8f30946f2fb97ca",
+        "textbook-q-12-textile-technology-tamil-648797c8-5f11d7fb8b462114",
+        "textbook-q-12-textile-technology-tamil-648797c8-5b6288782486608d"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-11-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-11",
+      "chapter": "Chapter 11",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 4,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-971f43e87db5d935",
+        "textbook-q-12-textile-technology-tamil-648797c8-8214f1c5499a08e6",
+        "textbook-q-12-textile-technology-tamil-648797c8-bee337b56663ae0c",
+        "textbook-q-12-textile-technology-tamil-648797c8-99cb428005464c02"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-12-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-12",
+      "chapter": "Chapter 12",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-11125e6b5aa7e6e3",
+        "textbook-q-12-textile-technology-tamil-648797c8-9ab3480b79519c66",
+        "textbook-q-12-textile-technology-tamil-648797c8-80a8948df9c9c7ff",
+        "textbook-q-12-textile-technology-tamil-648797c8-bb6857255d72cd24",
+        "textbook-q-12-textile-technology-tamil-648797c8-1325569230351da2"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-13-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-13",
+      "chapter": "Chapter 13",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-1bb71e87ca6c0b3c",
+        "textbook-q-12-textile-technology-tamil-648797c8-8d8bb5b6535d53cb",
+        "textbook-q-12-textile-technology-tamil-648797c8-9e6d9634eaa1bad3",
+        "textbook-q-12-textile-technology-tamil-648797c8-069e0d300bb3e0f8",
+        "textbook-q-12-textile-technology-tamil-648797c8-41928c4133272f16"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-14-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-14",
+      "chapter": "Chapter 14",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-61d56af61321c49a",
+        "textbook-q-12-textile-technology-tamil-648797c8-51d8ab5bad45ac42",
+        "textbook-q-12-textile-technology-tamil-648797c8-54f10dc055be4be9",
+        "textbook-q-12-textile-technology-tamil-648797c8-2984c2dd5a5c9a95",
+        "textbook-q-12-textile-technology-tamil-648797c8-13f6b3f307142ec5"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-15-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-15",
+      "chapter": "Chapter 15",
+      "total": 17,
+      "sourceMatched": 17,
+      "keyMatched": 11,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 0,
+      "pending": 17,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-c1f8bc17ae96fa07",
+        "textbook-q-12-textile-technology-tamil-648797c8-6b02ba98db18e498",
+        "textbook-q-12-textile-technology-tamil-648797c8-f2bcab1619d6fbe1",
+        "textbook-q-12-textile-technology-tamil-648797c8-117c06361a170098",
+        "textbook-q-12-textile-technology-tamil-648797c8-a2c733ed8eac6137",
+        "textbook-q-12-textile-technology-tamil-648797c8-23e96bba2b9113c7",
+        "textbook-q-12-textile-technology-tamil-648797c8-a67b23ee9590165e",
+        "textbook-q-12-textile-technology-tamil-648797c8-65d9d14aa6a510db",
+        "textbook-q-12-textile-technology-tamil-648797c8-ee86fa46908d2833",
+        "textbook-q-12-textile-technology-tamil-648797c8-190e446b3d9756b8",
+        "textbook-q-12-textile-technology-tamil-648797c8-d4b532b017310f87",
+        "textbook-q-12-textile-technology-tamil-648797c8-f78b37a9b08cb01c",
+        "textbook-q-12-textile-technology-tamil-648797c8-60e4599bd2f153a6",
+        "textbook-q-12-textile-technology-tamil-648797c8-e0904e1243c3f4e1",
+        "textbook-q-12-textile-technology-tamil-648797c8-9223b138a4386364",
+        "textbook-q-12-textile-technology-tamil-648797c8-a6436a7f0e2dc318",
+        "textbook-q-12-textile-technology-tamil-648797c8-413f8cbdc24d896c"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-2-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-2",
+      "chapter": "Chapter 2",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-179689c66d546dde",
+        "textbook-q-12-textile-technology-tamil-648797c8-1b9a863f01830c74",
+        "textbook-q-12-textile-technology-tamil-648797c8-a988c5304563d692",
+        "textbook-q-12-textile-technology-tamil-648797c8-5c87461222d22b84",
+        "textbook-q-12-textile-technology-tamil-648797c8-f538b60a67566184"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-3-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-3",
+      "chapter": "Chapter 3",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-6003aa179e2a1cda",
+        "textbook-q-12-textile-technology-tamil-648797c8-13bbeb2d0aa876de",
+        "textbook-q-12-textile-technology-tamil-648797c8-a009522694116717",
+        "textbook-q-12-textile-technology-tamil-648797c8-e46db26d59d0a790",
+        "textbook-q-12-textile-technology-tamil-648797c8-5592974e26e03c3a"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-4-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-4",
+      "chapter": "Chapter 4",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-88fad3562fc6e5ee",
+        "textbook-q-12-textile-technology-tamil-648797c8-dc9000ed7dba83e1",
+        "textbook-q-12-textile-technology-tamil-648797c8-edf9eda4bf35d8a9",
+        "textbook-q-12-textile-technology-tamil-648797c8-1fd8a74af6209637",
+        "textbook-q-12-textile-technology-tamil-648797c8-383362337d25e81f"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-5-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-5",
+      "chapter": "Chapter 5",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 0,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-401a46e89ac251d8",
+        "textbook-q-12-textile-technology-tamil-648797c8-726ba50e3ec33dd2",
+        "textbook-q-12-textile-technology-tamil-648797c8-768701d1f1b7d3f0",
+        "textbook-q-12-textile-technology-tamil-648797c8-a230eacec2d01214",
+        "textbook-q-12-textile-technology-tamil-648797c8-70e418cbb0c55330",
+        "textbook-q-12-textile-technology-tamil-648797c8-36bb70c9361b313a"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-7-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-7",
+      "chapter": "Chapter 7",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-dce1a0bebc78007d",
+        "textbook-q-12-textile-technology-tamil-648797c8-2eb6068b350e69ac",
+        "textbook-q-12-textile-technology-tamil-648797c8-5b71c0a626ac7890",
+        "textbook-q-12-textile-technology-tamil-648797c8-448d336e0fe529b0",
+        "textbook-q-12-textile-technology-tamil-648797c8-26f285a5bcc490f4"
+      ]
+    },
+    {
+      "batchId": "tb-12-textile-technology-tamil-648797c8-ch-9-review-01",
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textile-technology-tamil-648797c8-ch-9",
+      "chapter": "Chapter 9",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textile-technology-tamil-648797c8-403bf04c361c290a",
+        "textbook-q-12-textile-technology-tamil-648797c8-f1508c5aae50a91f",
+        "textbook-q-12-textile-technology-tamil-648797c8-929c48ff6ecc9b51",
+        "textbook-q-12-textile-technology-tamil-648797c8-19696f41a7155f0b",
+        "textbook-q-12-textile-technology-tamil-648797c8-7a4f95b9f9a09481"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe-ch-6-review-01",
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "subject": "Textiles and Dress Designing",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe-ch-6",
+      "chapter": "Chapter 6",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-0ea1350442b7aa2e"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe-ch-7-review-01",
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "subject": "Textiles and Dress Designing",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe-ch-7",
+      "chapter": "Chapter 7",
+      "total": 2,
+      "sourceMatched": 2,
+      "keyMatched": 2,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 2,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-ed70d31bc3397eff",
+        "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-8cb1920d4f95de82"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe-ch-8-review-01",
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "subject": "Textiles and Dress Designing",
+      "medium": "English",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe-ch-8",
+      "chapter": "Chapter 8",
+      "total": 1,
+      "sourceMatched": 1,
+      "keyMatched": 1,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 1,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-5d3d5675342b54b7"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-10-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-10",
+      "chapter": "Chapter 10",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 4,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-3e0cd38182b3f028",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-87f7abae24de4546",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-e5ca3a6b8e2717a0",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c08105b17e7817d9"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-11-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-11",
+      "chapter": "Chapter 11",
+      "total": 4,
+      "sourceMatched": 4,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 4,
+      "duplicateCandidates": 0,
+      "pending": 4,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-34e55499e70495da",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-9ca45f587cdbb118",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-704bbbe1e75293a9",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c4536d8516fcd255"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-12-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-12",
+      "chapter": "Chapter 12",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-43e2c1084e5b93d6",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-a65bd5651f9d36be",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-b6ae63c6cd124864",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-7d608024f529ca3e",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-01d37250f23b7b0f"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-13-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-13",
+      "chapter": "Chapter 13",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-842c4cfde0fdaa51",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-ed7931fa7f0b4688",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-7c12f1adbd6d0a8c",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-4477c0abad3807f2",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-ae891e08d9a3be77"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-14-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-14",
+      "chapter": "Chapter 14",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-970938783f0cc9af",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-3b6bb684e2400e8f",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-821b42b786d1aecc",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-11d01d46c7e04f41",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-17d4723cfad5e56b"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-15-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-15",
+      "chapter": "Chapter 15",
+      "total": 17,
+      "sourceMatched": 17,
+      "keyMatched": 11,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 0,
+      "pending": 17,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-ee9f4afea6428ad5",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-a2bcff293e6ac1ea",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c7791245206aa542",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c72427b1b05d3163",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-bf0d8fc6c520dd84",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-1db1d566fc9e3cfd",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c9c50709b494d145",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-79912aeaee7434b8",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-ddcf5d2edd3aad07",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-8e00029562d22933",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-8cb3a41f8e357747",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-eaab0463fc185b0b",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-bed37d6484b46214",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-fce0be2cb12e5325",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-a3541650f791792a",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-d7fc3f2aeab7adb7",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-5cfaf4815645d24f"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-2-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-2",
+      "chapter": "Chapter 2",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-ad19788a33bb6f6a",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-4156c27b622a95c3",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-2a55e3f16f32d598",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-6662461a778ab764",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-0d70f8c2ef39ba6d"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-3-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-3",
+      "chapter": "Chapter 3",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-6e692c3bda165a6d",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-9a3ff38fec444ebf",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-61d0678dee8941ed",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-cf4cda37d710154c",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-010a5133383c5ce2"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-4-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-4",
+      "chapter": "Chapter 4",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 5,
+      "keyMismatch": 0,
+      "uncertain": 0,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-d3adefb56b71997e",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-a4ff08cd72f873c1",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-7a8fbabf8e5b15a8",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-54c6bbfdcc8483a7",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-e41be8f43f1e728c"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-5-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-5",
+      "chapter": "Chapter 5",
+      "total": 6,
+      "sourceMatched": 6,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 6,
+      "duplicateCandidates": 0,
+      "pending": 6,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-1d17949141313960",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-5894bf18a7df2730",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-ffc8b5dc9c288a0c",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-50d352b6a908fe3f",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c7f769a1440bd82c",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-05a9248a450ba8da"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-7-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-7",
+      "chapter": "Chapter 7",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-7b53e2153e829d71",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-344a3299ccdfa8c8",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-6076c6fd3ccc89b4",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-0ed14b2cac6c1f20",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-a845e87ecb0e076d"
+      ]
+    },
+    {
+      "batchId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-9-review-01",
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterId": "tb-12-textiles-and-dress-designing-tamil-3650ec00-ch-9",
+      "chapter": "Chapter 9",
+      "total": 5,
+      "sourceMatched": 5,
+      "keyMatched": 0,
+      "keyMismatch": 0,
+      "uncertain": 5,
+      "duplicateCandidates": 0,
+      "pending": 5,
+      "candidateIds": [
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-5d452963764eb2c1",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-3dbc7187f34ffa7e",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-21b557ef4b72fa89",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-c848c337283ce9c1",
+        "textbook-q-12-textiles-and-dress-designing-tamil-3650ec00-69551add2a8d5372"
+      ]
+    }
+  ],
+  "pagesChecked": 273,
+  "pageMismatches": 0,
+  "tamil": 386,
+  "english": 510,
+  "sourceMatched": 896,
+  "keyMatched": 411,
+  "keyMismatch": 0,
+  "keyUncertain": 485,
+  "printedPageIdentified": 710,
+  "duplicateCandidates": 4,
+  "applied": 0,
+  "skipped": 896,
+  "humanApprovals": 0,
+  "method": "Fresh original PDF text extraction and hash checks; source parse comparison and conservative page-wide printed-key parsing. Matching source text is not visual/academic verification. All prepared questions remain needs_teacher_review; chapter/exercise key scope, wording, notation, diagrams and page labels require human confirmation.",
+  "pageChecks": [
+    {
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "page": 179,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "page": 180,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "page": 293,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "page": 294,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 38,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 39,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 77,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 78,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 139,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 140,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 179,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 180,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 293,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 294,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 363,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "page": 364,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-auditing-english-cb18c74c",
+      "page": 75,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-auditing-english-cb18c74c",
+      "page": 76,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-auditing-english-cb18c74c",
+      "page": 138,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-auditing-english-cb18c74c",
+      "page": 139,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-civil-engineering-tamil-122addb5",
+      "page": 189,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-civil-engineering-tamil-122addb5",
+      "page": 190,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 37,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 38,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 162,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 164,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 203,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 204,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 232,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "page": 233,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 193,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 194,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 195,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 222,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 223,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 224,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 306,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "page": 307,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 26,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 27,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 28,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 59,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 60,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 61,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 81,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 82,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 83,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 105,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 106,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 107,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 126,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 127,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 236,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 272,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 274,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 276,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 277,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 278,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "page": 284,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "page": 130,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "page": 131,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "page": 290,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 30,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 31,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 32,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 33,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 63,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 64,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 106,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 107,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 108,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 135,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 136,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 137,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 138,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 244,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 245,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 246,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "page": 247,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 66,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 67,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 68,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 69,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 104,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 105,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 106,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 143,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 144,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 145,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 193,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 194,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 196,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 272,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 273,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 274,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "page": 323,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-commerce-english-4f83c61b",
+      "page": 27,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-commerce-english-4f83c61b",
+      "page": 174,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 39,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 40,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 128,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 186,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 187,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 216,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 240,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 285,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "page": 286,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-tamil-c7590e3f",
+      "page": 301,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-tamil-c7590e3f",
+      "page": 302,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-economics-tamil-c7590e3f",
+      "page": 303,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 56,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 57,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 58,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 59,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 101,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 102,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 103,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 104,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 135,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 136,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 174,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 175,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 176,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 223,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 224,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 225,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 226,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 284,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 285,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 286,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 291,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 292,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 293,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 295,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 297,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "page": 299,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 58,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 59,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 60,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 91,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 92,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 93,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 143,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 144,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 145,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 222,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 223,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 224,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 260,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 261,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 262,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "page": 266,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 61,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 62,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 63,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 64,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 65,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 147,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 148,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 149,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 319,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "page": 321,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 61,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 62,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 63,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 95,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 96,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 97,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 150,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 151,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 152,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 235,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 236,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 237,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 238,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 277,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 278,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "page": 282,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 79,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 80,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 81,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 126,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 127,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 197,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 198,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 199,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 266,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 267,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 268,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 290,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "page": 291,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 56,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 57,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 110,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 111,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 143,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 144,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 197,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 198,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 254,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "page": 255,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 34,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 35,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 36,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 41,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 76,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 77,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 81,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 106,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 107,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 110,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 129,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 130,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 133,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 154,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 155,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 158,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 183,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "page": 187,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 49,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 65,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 66,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 79,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 80,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 103,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 140,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 141,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 193,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 194,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 213,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 214,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 226,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 227,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 248,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 249,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 270,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 281,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 282,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 296,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 297,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 303,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 304,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "page": 305,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "page": 106,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "page": 107,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "page": 113,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "page": 114,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "page": 133,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "page": 134,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 49,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 65,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 66,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 79,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 80,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 103,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 140,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 141,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 193,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 194,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 213,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 214,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 226,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 227,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 248,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 249,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 270,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 281,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 282,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 296,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 297,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 303,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 304,
+      "matchesCache": true
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "page": 305,
+      "matchesCache": true
+    }
+  ]
+}

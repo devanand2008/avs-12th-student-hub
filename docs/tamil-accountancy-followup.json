@@ -1,0 +1,2168 @@
+{
+  "startedAt": "2026-10-10T16:18:53.062Z",
+  "liveReadAt": "2026-10-10T16:19:02.685Z",
+  "checkedAt": "2026-10-10T16:19:48.018Z",
+  "readOnly": true,
+  "method": "Fresh live records, decision audits, metadata and original PDF page extraction. Target PDFs checked on every page. Bookmarks explicitly labelled UNIT/CHAPTER define academic ranges; Roman section-I Tamil headings locate provisional one-mark exercise spans. No teacher decision or official answer is inferred.",
+  "book": {
+    "id": "12-accountancy-tamil-6e7f5476",
+    "title": "Accountancy",
+    "subject": "Accountancy",
+    "source_medium": "Tamil",
+    "volume": null,
+    "local_path": "/textbooks/12-accountancy-tamil-6e7f5476.pdf",
+    "sha256": "9cf9b965f1543976822025888045511e81e0c65e6c26ef56cd33335f2db04686"
+  },
+  "chapterId": "tb-12-accountancy-tamil-6e7f5476-ch-1",
+  "summary": {
+    "candidates": 10,
+    "reviewed": 0,
+    "pending": 10,
+    "approved": 0,
+    "rejected": 0,
+    "decisionAudits": 0,
+    "chapterStudentReady": 0,
+    "publishedAllTextbooks": 995,
+    "publishedTamil": 0,
+    "heldLegacySamples": 12,
+    "targetBooks": 5,
+    "targetAcademicChapterRecords": 53,
+    "targetChapterRecordsWithoutPublished": 53,
+    "targetPagesChecked": 1584,
+    "targetUnprocessedPages": 0
+  },
+  "scopedPrintedKey": {
+    "sourcePdfPage": 39,
+    "sourcePrintedPage": 31,
+    "lines": [
+      "1 . ( இ ) 2 . ( ஆ ) 3 . ( அ ) 4 . ( இ ) 5 . ( இ ) 6 . ( அ ) 7 .( இ ) 8 . ( ஈ ) 9 . ( அ ) 10 .( ஈ )"
+    ],
+    "conflict": false,
+    "wholePageConflict": true,
+    "scopeWarning": "A source-key correspondence is evidence, not a teacher decision. Damaged Tamil text/options still need manual transcription."
+  },
+  "outcomes": [
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-6e601acb8bb509ed",
+      "number": 1,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "C",
+      "scopedPrintedKeyEvidence": "C",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-d6cbb9d7e9458688",
+      "number": 2,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "B",
+      "scopedPrintedKeyEvidence": "B",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-9bfcf43750156b57",
+      "number": 3,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "A",
+      "scopedPrintedKeyEvidence": "A",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-6c0d6092b408cf98",
+      "number": 4,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "C",
+      "scopedPrintedKeyEvidence": "C",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-4d8fffb87c938789",
+      "number": 5,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "C",
+      "scopedPrintedKeyEvidence": "C",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-e44d737bb25e2222",
+      "number": 6,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "A",
+      "scopedPrintedKeyEvidence": "A",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-928eaa235d035b17",
+      "number": 7,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "C",
+      "scopedPrintedKeyEvidence": "C",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-da7909cf7574e838",
+      "number": 8,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "D",
+      "scopedPrintedKeyEvidence": "D",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-42e237db61052c82",
+      "number": 9,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 38,
+      "printedPage": 30,
+      "keyPage": 39,
+      "proposedAnswer": "A",
+      "scopedPrintedKeyEvidence": "A",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe the original question and all four choices",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    },
+    {
+      "id": "textbook-q-12-accountancy-tamil-6e7f5476-e8e65aa13932879d",
+      "number": 10,
+      "batchId": "tb-12-accountancy-tamil-6e7f5476-ch-1-review-01",
+      "reviewState": "needs_teacher_review",
+      "reviewed": false,
+      "historyEvents": 0,
+      "decisionAuditIds": [],
+      "history": [],
+      "sourcePage": 39,
+      "printedPage": 31,
+      "keyPage": 39,
+      "proposedAnswer": "D",
+      "scopedPrintedKeyEvidence": "D",
+      "storedKeyCheck": "uncertain",
+      "originalMatched": true,
+      "packetMatched": true,
+      "chapterMatched": true,
+      "published": false,
+      "approvalRecorded": false,
+      "validBankText": false,
+      "eligibleAfterRecordedApproval": false,
+      "unresolved": [
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Key page is ambiguous or contains multiple exercise keys; proposed answer is not independently confirmed.",
+        "Printed key mapping is ambiguous; verify the chapter/exercise and answer manually."
+      ],
+      "integrityIssues": []
+    }
+  ],
+  "measured": [
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "pages": 368,
+      "sha256": "9cf9b965f1543976822025888045511e81e0c65e6c26ef56cd33335f2db04686",
+      "hashMatches": true,
+      "cacheMismatches": [],
+      "unprocessedPages": [],
+      "sparsePages": []
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "pages": 352,
+      "sha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "hashMatches": true,
+      "cacheMismatches": [],
+      "unprocessedPages": [],
+      "sparsePages": [
+        10,
+        312,
+        349,
+        350,
+        351,
+        352
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "pages": 336,
+      "sha256": "6a996d2f03b39af0272b59550cb60ec96c04b2995587416344c640d1556f20ca",
+      "hashMatches": true,
+      "cacheMismatches": [],
+      "unprocessedPages": [],
+      "sparsePages": [
+        10,
+        298,
+        335,
+        336
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "pages": 272,
+      "sha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "hashMatches": true,
+      "cacheMismatches": [],
+      "unprocessedPages": [],
+      "sparsePages": [
+        270,
+        271,
+        272
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "pages": 272,
+      "sha256": "045b35dc7ced4473a54419dfe7e3a6ae384ffdfda1b797df6f877465ad42691d",
+      "hashMatches": true,
+      "cacheMismatches": [],
+      "unprocessedPages": [],
+      "sparsePages": [
+        270,
+        271,
+        272
+      ]
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "pages": 352,
+      "sha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "hashMatches": true,
+      "cacheMismatches": [],
+      "unprocessedPages": [],
+      "sparsePages": [
+        295
+      ]
+    }
+  ],
+  "inventory": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 1,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-1",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 01",
+      "startPage": 11,
+      "endPage": 28,
+      "oneMarkStartPages": [
+        27
+      ],
+      "oneMarkPages": [
+        27,
+        28
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 27,
+          "line": "I. ெ ரியான வி ரடரய த் நைர் ்ந் ை டுத்து எழுதுக"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 2,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 02",
+      "startPage": 29,
+      "endPage": 72,
+      "oneMarkStartPages": [
+        70
+      ],
+      "oneMarkPages": [
+        70,
+        71
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 70,
+          "line": "I. சரியான வி கடகய த்"
+        }
+      ],
+      "candidates": 12,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 3,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-3",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 03",
+      "startPage": 73,
+      "endPage": 104,
+      "oneMarkStartPages": [
+        103
+      ],
+      "oneMarkPages": [
+        103,
+        104
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 103,
+          "line": "I. சரியான வி ணடணய த் ்"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 4,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-4",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 04",
+      "startPage": 105,
+      "endPage": 118,
+      "oneMarkStartPages": [
+        117
+      ],
+      "oneMarkPages": [
+        117,
+        118
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 117,
+          "line": "\u0007 I. \u0007\u0007 \u0007 ே ரியான \u0007 வி வடவய த் \u0007 ்்த"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 5,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-5",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 05",
+      "startPage": 119,
+      "endPage": 126,
+      "oneMarkStartPages": [
+        125
+      ],
+      "oneMarkPages": [
+        125,
+        126
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 125,
+          "line": "I. ெ ரிய கா ன வி ர்டரயத த ்தர் ்ந ச்த டு த து எழுதுக"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 6,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-6",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 06",
+      "startPage": 127,
+      "endPage": 132,
+      "oneMarkStartPages": [
+        130
+      ],
+      "oneMarkPages": [
+        130,
+        131,
+        132
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 130,
+          "line": "I. சரியா ை வி ள்டளய த்"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 7,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-7",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 07",
+      "startPage": 133,
+      "endPage": 139,
+      "oneMarkStartPages": [
+        137
+      ],
+      "oneMarkPages": [
+        137,
+        138,
+        139
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 137,
+          "line": "I. சரியா ை வி மடமய த்"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 8,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-8",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 08",
+      "startPage": 140,
+      "endPage": 150,
+      "oneMarkStartPages": [
+        148
+      ],
+      "oneMarkPages": [
+        148,
+        149
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 148,
+          "line": "I. ெ ரியான விடை டயத"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 9,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-9",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 09",
+      "startPage": 151,
+      "endPage": 157,
+      "oneMarkStartPages": [
+        155
+      ],
+      "oneMarkPages": [
+        155,
+        156,
+        157
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 155,
+          "line": "I. ெ ரியான வி ள்டளய த் மத ர்ந சத டுத்து எழுதுக"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 10,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-10",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 10",
+      "startPage": 158,
+      "endPage": 176,
+      "oneMarkStartPages": [
+        174
+      ],
+      "oneMarkPages": [
+        174,
+        175
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 174,
+          "line": "I. சரியான வி ணடணய த்"
+        }
+      ],
+      "candidates": 16,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 11,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-11",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 11",
+      "startPage": 177,
+      "endPage": 193,
+      "oneMarkStartPages": [
+        192
+      ],
+      "oneMarkPages": [
+        192,
+        193
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 192,
+          "line": "I. ெ ரியான வி லடலய த்"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 12,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-12",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 12",
+      "startPage": 194,
+      "endPage": 210,
+      "oneMarkStartPages": [
+        207
+      ],
+      "oneMarkPages": [
+        207,
+        208,
+        209
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 207,
+          "line": "I. சரியான வி றடறய த்"
+        }
+      ],
+      "candidates": 16,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 13,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-13",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 13",
+      "startPage": 211,
+      "endPage": 225,
+      "oneMarkStartPages": [
+        224
+      ],
+      "oneMarkPages": [
+        224,
+        225
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 224,
+          "line": "I. சரியான வி லடலயத"
+        }
+      ],
+      "candidates": 12,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 14,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-14",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 14",
+      "startPage": 226,
+      "endPage": 234,
+      "oneMarkStartPages": [
+        233
+      ],
+      "oneMarkPages": [
+        233,
+        234
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 233,
+          "line": "I. ெ ரிய ோ ன வி ழடழய த்"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 15,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-15",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 15",
+      "startPage": 235,
+      "endPage": 262,
+      "oneMarkStartPages": [
+        260
+      ],
+      "oneMarkPages": [
+        260,
+        261,
+        262
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 260,
+          "line": "I. சரிய ொ ன வி மடமய த் ்"
+        }
+      ],
+      "candidates": 5,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 16,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-16",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 16",
+      "startPage": 263,
+      "endPage": 284,
+      "oneMarkStartPages": [
+        282
+      ],
+      "oneMarkPages": [
+        282,
+        283,
+        284
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 282,
+          "line": "I. ெ ரியா ்ன வி றடறயத ந்த ர நச்த டு த து எழுதுக"
+        }
+      ],
+      "candidates": 11,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 17,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-17",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 17",
+      "startPage": 285,
+      "endPage": 299,
+      "oneMarkStartPages": [
+        298
+      ],
+      "oneMarkPages": [
+        298,
+        299
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 298,
+          "line": "I. சரிய ோ ன வி தடதயத"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 18,
+      "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-18",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 18",
+      "startPage": 300,
+      "endPage": 311,
+      "oneMarkStartPages": [
+        310
+      ],
+      "oneMarkPages": [
+        310,
+        311
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 310,
+          "line": "I. சரிய ோ்ன வி கடகய த்"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 1,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-1",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 01",
+      "startPage": 11,
+      "endPage": 28,
+      "oneMarkStartPages": [
+        27
+      ],
+      "oneMarkPages": [
+        27,
+        28
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 27,
+          "line": "I. ெ ரியான வி ரடரய த் நைர் ்ந் ை டுத்து எழுதுக"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 2,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-2",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 02",
+      "startPage": 29,
+      "endPage": 72,
+      "oneMarkStartPages": [
+        70
+      ],
+      "oneMarkPages": [
+        70,
+        71
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 70,
+          "line": "I. சரியான வி கடகய த்"
+        }
+      ],
+      "candidates": 12,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 3,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-3",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 03",
+      "startPage": 73,
+      "endPage": 104,
+      "oneMarkStartPages": [
+        103
+      ],
+      "oneMarkPages": [
+        103,
+        104
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 103,
+          "line": "I. சரியான வி ் ட்ய த்"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 4,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-4",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 04",
+      "startPage": 105,
+      "endPage": 118,
+      "oneMarkStartPages": [
+        117
+      ],
+      "oneMarkPages": [
+        117,
+        118
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 117,
+          "line": "\u0007 I. \u0007\u0007 \u0007 ே ரியான \u0007 வி வடவய த் \u0007 ்்த"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 5,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-5",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 05",
+      "startPage": 119,
+      "endPage": 126,
+      "oneMarkStartPages": [
+        125
+      ],
+      "oneMarkPages": [
+        125,
+        126
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 125,
+          "line": "I. ெ ரிய கா ன வி ர்டரயத த ்தர் ்ந ச்த டு த து எழுதுக"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 6,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-6",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 06",
+      "startPage": 127,
+      "endPage": 132,
+      "oneMarkStartPages": [
+        130
+      ],
+      "oneMarkPages": [
+        130,
+        131,
+        132
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 130,
+          "line": "I. சரியா ை வி ள்டளய த்"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 7,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-7",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 07",
+      "startPage": 133,
+      "endPage": 139,
+      "oneMarkStartPages": [
+        137
+      ],
+      "oneMarkPages": [
+        137,
+        138,
+        139
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 137,
+          "line": "I. சரியா ை வி மடமய த்"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 8,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-8",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 08",
+      "startPage": 140,
+      "endPage": 147,
+      "oneMarkStartPages": [
+        145
+      ],
+      "oneMarkPages": [
+        145,
+        146,
+        147
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 145,
+          "line": "I. ெ ரியான விடை டயத கதைர் ்ந வதை டு த து எழுதுக"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 9,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 09",
+      "startPage": 148,
+      "endPage": 154,
+      "oneMarkStartPages": [
+        152
+      ],
+      "oneMarkPages": [
+        152,
+        153
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 152,
+          "line": "I. ெ ரியான வி ள்டளய த் மத ர்ந சத டுத்து எழுதுக"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 10,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-10",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 10",
+      "startPage": 155,
+      "endPage": 169,
+      "oneMarkStartPages": [
+        167
+      ],
+      "oneMarkPages": [
+        167,
+        168,
+        169
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 167,
+          "line": "\u0007 I. \u0007\u0007 \u0007 ே ரியான \u0007 வி ல்டலய த் \u0007"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 11,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-11",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 11",
+      "startPage": 170,
+      "endPage": 186,
+      "oneMarkStartPages": [
+        185
+      ],
+      "oneMarkPages": [
+        185,
+        186
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 185,
+          "line": "I. ெ ரியான வி லடலய த்"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 12,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-12",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 12",
+      "startPage": 187,
+      "endPage": 203,
+      "oneMarkStartPages": [
+        200
+      ],
+      "oneMarkPages": [
+        200,
+        201,
+        202
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 200,
+          "line": "I. சரியான வி றடறய த்"
+        }
+      ],
+      "candidates": 16,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 13,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-13",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 13",
+      "startPage": 204,
+      "endPage": 218,
+      "oneMarkStartPages": [
+        217
+      ],
+      "oneMarkPages": [
+        217,
+        218
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 217,
+          "line": "I. சரியான வி லடலயத"
+        }
+      ],
+      "candidates": 12,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 14,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-14",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 14",
+      "startPage": 219,
+      "endPage": 227,
+      "oneMarkStartPages": [
+        226
+      ],
+      "oneMarkPages": [
+        226,
+        227
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 226,
+          "line": "I. ெ ரிய ோ ன வி ழடழய த்"
+        }
+      ],
+      "candidates": 9,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 15,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-15",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 15",
+      "startPage": 228,
+      "endPage": 250,
+      "oneMarkStartPages": [
+        249
+      ],
+      "oneMarkPages": [
+        249,
+        250
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 249,
+          "line": "I. சரிய ொ ன வி மடமய த் ்"
+        }
+      ],
+      "candidates": 7,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 16,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-16",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 16",
+      "startPage": 251,
+      "endPage": 270,
+      "oneMarkStartPages": [
+        268
+      ],
+      "oneMarkPages": [
+        268,
+        269,
+        270
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 268,
+          "line": "I. ெ ரியா ்ன வி றடறயத ந்த ர நச்த டு த து எழுதுக"
+        }
+      ],
+      "candidates": 11,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 17,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-17",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 17",
+      "startPage": 271,
+      "endPage": 285,
+      "oneMarkStartPages": [
+        284
+      ],
+      "oneMarkPages": [
+        284,
+        285
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 284,
+          "line": "I. சரிய ோ ன வி தடதயத"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "textbook": "Computer Applications",
+      "volume": null,
+      "chapter": 18,
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-18",
+      "bookmark": "XII CompApp_Tamil version CHAPTER 18",
+      "startPage": 286,
+      "endPage": 297,
+      "oneMarkStartPages": [
+        296
+      ],
+      "oneMarkPages": [
+        296,
+        297
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 296,
+          "line": "I. சரிய ோ்ன வி கடகய த்"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 1,
+      "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 01",
+      "startPage": 7,
+      "endPage": 50,
+      "oneMarkStartPages": [
+        48
+      ],
+      "oneMarkPages": [
+        48,
+        49
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 48,
+          "line": "I. சரியான வி கடகய த்"
+        }
+      ],
+      "candidates": 12,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 2,
+      "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-2",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 02",
+      "startPage": 51,
+      "endPage": 98,
+      "oneMarkStartPages": [
+        96
+      ],
+      "oneMarkPages": [
+        96,
+        97,
+        98
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 96,
+          "line": "I. ை ரி ை ா ை வி சடச ைத்"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 3,
+      "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-3",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 03",
+      "startPage": 99,
+      "endPage": 144,
+      "oneMarkStartPages": [
+        142
+      ],
+      "oneMarkPages": [
+        142,
+        143
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 142,
+          "line": "I. � ரியா ை வி ரடரயத கதர்ந்நத டு த து எழுது �"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 4,
+      "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-4",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 04",
+      "startPage": 145,
+      "endPage": 162,
+      "oneMarkStartPages": [
+        161
+      ],
+      "oneMarkPages": [
+        161,
+        162
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 161,
+          "line": "I. ெ ரியான வி ரடரய த் நைர் ்ந் ை டுத்து எழுதுக"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 5,
+      "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-5",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 05",
+      "startPage": 163,
+      "endPage": 188,
+      "oneMarkStartPages": [
+        187
+      ],
+      "oneMarkPages": [
+        187,
+        188
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 187,
+          "line": "I. சரி ை ான வி ரடர ைத்"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 6,
+      "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-6",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 06",
+      "startPage": 189,
+      "endPage": 231,
+      "oneMarkStartPages": [
+        230
+      ],
+      "oneMarkPages": [
+        230
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 230,
+          "line": "I. சரியான வி ரடரய த் ்"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 1,
+      "chapterId": "tb-12-computer-technology-tamil-cff5867a-ch-1",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 01",
+      "startPage": 7,
+      "endPage": 50,
+      "oneMarkStartPages": [
+        48
+      ],
+      "oneMarkPages": [
+        48,
+        49
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 48,
+          "line": "I. சரியான வி கடகய த்"
+        }
+      ],
+      "candidates": 12,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 2,
+      "chapterId": "tb-12-computer-technology-tamil-cff5867a-ch-2",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 02",
+      "startPage": 51,
+      "endPage": 98,
+      "oneMarkStartPages": [
+        96
+      ],
+      "oneMarkPages": [
+        96,
+        97,
+        98
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 96,
+          "line": "I. ை ரி ை ா ை வி சடச ைத்"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 3,
+      "chapterId": "tb-12-computer-technology-tamil-cff5867a-ch-3",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 03",
+      "startPage": 99,
+      "endPage": 144,
+      "oneMarkStartPages": [
+        142
+      ],
+      "oneMarkPages": [
+        142,
+        143
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 142,
+          "line": "I. � ரியா ை வி ரடரயத கதர்ந்நத டு த து எழுது �"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 4,
+      "chapterId": "tb-12-computer-technology-tamil-cff5867a-ch-4",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 04",
+      "startPage": 145,
+      "endPage": 162,
+      "oneMarkStartPages": [
+        161
+      ],
+      "oneMarkPages": [
+        161,
+        162
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 161,
+          "line": "I. ெ ரியான வி ரடரய த் நைர் ்ந் ை டுத்து எழுதுக"
+        }
+      ],
+      "candidates": 10,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 5,
+      "chapterId": "tb-12-computer-technology-tamil-cff5867a-ch-5",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 05",
+      "startPage": 163,
+      "endPage": 188,
+      "oneMarkStartPages": [
+        187
+      ],
+      "oneMarkPages": [
+        187,
+        188
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 187,
+          "line": "I. சரி ை ான வி ரடர ைத்"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "textbook": "Computer Technology",
+      "volume": null,
+      "chapter": 6,
+      "chapterId": "tb-12-computer-technology-tamil-cff5867a-ch-6",
+      "bookmark": "XII CompTech_Tamil version CHAPTER 06",
+      "startPage": 189,
+      "endPage": 231,
+      "oneMarkStartPages": [
+        230
+      ],
+      "oneMarkPages": [
+        230
+      ],
+      "keyEvidencePages": [],
+      "markerEvidence": [
+        {
+          "page": 230,
+          "line": "I. சரியான வி ரடரய த் ்"
+        }
+      ],
+      "candidates": 8,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "No numbered option-key line detected; do not infer an official answer."
+      ]
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "textbook": "Physics",
+      "volume": "1",
+      "chapter": 1,
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "bookmark": "2_UNIT-1(XII-Physics_Vol-1)_Tamil",
+      "startPage": 9,
+      "endPage": 87,
+      "oneMarkStartPages": [
+        79
+      ],
+      "oneMarkPages": [
+        79,
+        80,
+        81
+      ],
+      "keyEvidencePages": [
+        81
+      ],
+      "markerEvidence": [
+        {
+          "page": 79,
+          "line": "I ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "Numbered key evidence is provisional and must be scoped to the exact exercise; no answer was approved."
+      ]
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "textbook": "Physics",
+      "volume": "1",
+      "chapter": 2,
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+      "bookmark": "3_UNIT-2(XII-Physics_Vol-1)_Tamil",
+      "startPage": 88,
+      "endPage": 132,
+      "oneMarkStartPages": [
+        126
+      ],
+      "oneMarkPages": [
+        126,
+        127
+      ],
+      "keyEvidencePages": [
+        127
+      ],
+      "markerEvidence": [
+        {
+          "page": 126,
+          "line": "I ை ரியான வி ச்டசய த் ந்த ர நக்த டுத்து"
+        }
+      ],
+      "candidates": 13,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "Numbered key evidence is provisional and must be scoped to the exact exercise; no answer was approved."
+      ]
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "textbook": "Physics",
+      "volume": "1",
+      "chapter": 3,
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+      "bookmark": "4_UNIT-3(XII-Physics_Vol-1)_Tamil",
+      "startPage": 133,
+      "endPage": 202,
+      "oneMarkStartPages": [
+        197
+      ],
+      "oneMarkPages": [
+        197,
+        198,
+        199
+      ],
+      "keyEvidencePages": [
+        199
+      ],
+      "markerEvidence": [
+        {
+          "page": 197,
+          "line": "I ை ரியான வி ரடரய ந்த ர நக்த டுத்து"
+        }
+      ],
+      "candidates": 15,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "Numbered key evidence is provisional and must be scoped to the exact exercise; no answer was approved."
+      ]
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "textbook": "Physics",
+      "volume": "1",
+      "chapter": 4,
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+      "bookmark": "5_UNIT-4(XII-Physics_Vol-1)_Tamil",
+      "startPage": 203,
+      "endPage": 274,
+      "oneMarkStartPages": [
+        267
+      ],
+      "oneMarkPages": [
+        267,
+        268,
+        269
+      ],
+      "keyEvidencePages": [
+        269
+      ],
+      "markerEvidence": [
+        {
+          "page": 267,
+          "line": "I ை ரியான வி ச்டசய த் ந்த ர நக்த டுத்து"
+        }
+      ],
+      "candidates": 14,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "Numbered key evidence is provisional and must be scoped to the exact exercise; no answer was approved."
+      ]
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "textbook": "Physics",
+      "volume": "1",
+      "chapter": 5,
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+      "bookmark": "6_UNIT-5(XII-Physics_Vol-1)_Tamil",
+      "startPage": 275,
+      "endPage": 294,
+      "oneMarkStartPages": [
+        291
+      ],
+      "oneMarkPages": [
+        291,
+        292
+      ],
+      "keyEvidencePages": [
+        292
+      ],
+      "markerEvidence": [
+        {
+          "page": 291,
+          "line": "I சரியான வி ்ட்ய ந்த ர நக்த டு த து"
+        }
+      ],
+      "candidates": 16,
+      "bookBackCandidates": 0,
+      "published": 0,
+      "issues": [
+        "No source-approved book-back questions are published for this chapter; existing candidates require section mapping and individual teacher review.",
+        "Numbered key evidence is provisional and must be scoped to the exact exercise; no answer was approved."
+      ]
+    }
+  ],
+  "excludedBookmarks": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "title": "1_XII CompApp_Tamil version FM",
+      "page": 1,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "title": "z_XII CompApp_Tamil version Practicals",
+      "page": 312,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "title": "FM-viii-ix",
+      "page": 1,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "title": "z_XII CompApp_Tamil version Practicals",
+      "page": 298,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "title": "1_XII CompTech_Tamil version FM",
+      "page": 1,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "title": "z_XII CompTech_Tamil version Practicals",
+      "page": 232,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "title": "1_XII CompTech_Tamil version FM",
+      "page": 1,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "title": "z_XII CompTech_Tamil version Practicals",
+      "page": 232,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "title": "1_PHYSICS_FM_Tamil",
+      "page": 1,
+      "existingParserChapter": 1
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "title": "7_XII - PHYSICS PRACTICAL SECOND YEAR",
+      "page": 295,
+      "existingParserChapter": 7
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "title": "8_Appendix-1",
+      "page": 330,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "title": "9_Glossary",
+      "page": 339,
+      "existingParserChapter": null
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "title": "10_PH XI Std Acknowledgement",
+      "page": 352,
+      "existingParserChapter": 10
+    }
+  ],
+  "issues": []
+}
