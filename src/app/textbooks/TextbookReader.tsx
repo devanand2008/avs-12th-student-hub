@@ -194,7 +194,7 @@ export function PdfPages({
       className="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm"
     >
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 p-3 sm:p-4">
-        <div className="flex items-center gap-2">
+        <div className="flex min-w-0 flex-wrap items-center gap-2">
           <button
             aria-label="Previous page"
             title="Previous page"
@@ -206,7 +206,7 @@ export function PdfPages({
           </button>
           <form
             onSubmit={jumpToPage}
-            className="flex items-center gap-2 text-sm"
+            className="flex min-w-0 flex-wrap items-center gap-2 text-sm"
           >
             <label htmlFor="book-page" className="text-slate-600">
               Page

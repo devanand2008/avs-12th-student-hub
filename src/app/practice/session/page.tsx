@@ -322,7 +322,7 @@ function PracticeContent() {
     const offset = circumference - (accuracy / 100) * circumference;
 
     return (
-      <main className="max-w-4xl mx-auto px-4 py-8 sm:py-12 space-y-7">
+      <main className="w-full min-w-0 max-w-4xl mx-auto px-4 py-8 sm:py-12 space-y-7">
         <div className="text-center">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200 mb-2">
             <CheckCircle2 size={14} className="text-emerald-600" />
@@ -540,7 +540,7 @@ function PracticeContent() {
 
   // ACTIVE QUESTION RUNNER SCREEN
   return (
-    <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
+    <main className="w-full min-w-0 max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8 space-y-6">
       {/* Top Header Controls */}
       <div className="flex items-center justify-between">
         <Link

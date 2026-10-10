@@ -126,6 +126,18 @@ test("students choose a password, sign in with email and see their profile in th
     "data-rendered-page",
     "39",
   );
+  if (info.project.name === "desktop") {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await expect
+      .poll(() =>
+        page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+      )
+      .toBe(true);
+    await expect(
+      page.getByRole("button", { name: "Next page", exact: true }),
+    ).toBeInViewport();
+    await page.setViewportSize({ width: 1440, height: 1000 });
+  }
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
