@@ -1,0 +1,14 @@
+[
+  {
+    "sourceSha256": "8537d519cc6d527211acd65b7dbdde3830ef08035bab86e9a8def9eb362acb2b",
+    "page": 107,
+    "questionNumber": 13,
+    "reason": "Suspected printed-key erratum: the question asks for the most easily liquefiable gas, but the printed key selects helium. A subject teacher must verify the answer before publication.",
+    "questionPage": 107,
+    "keyPage": 245,
+    "references": [
+      "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7440597&Mask=5",
+      "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7439909&Mask=35&Units=CAL"
+    ]
+  }
+]

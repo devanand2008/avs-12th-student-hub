@@ -1,9 +1,9 @@
 {
   "extractionVersion": 2,
-  "checkedAt": "2026-10-10T06:24:52.663Z",
+  "checkedAt": "2026-10-10T06:39:58.671Z",
   "booksAnalysed": 82,
-  "verifiedQuestions": 1869,
-  "pendingCandidates": 10299,
+  "verifiedQuestions": 1868,
+  "pendingCandidates": 10300,
   "note": "This extraction audit is not an assertion that every exercise or academic answer is complete. Raw text with unreadable glyphs or formulas is displayed using the original PDF page. Missing or conflicting answers are not invented.",
   "books": [
     {
@@ -1885,7 +1885,7 @@
           "number": 3,
           "page": 66,
           "exercisePage": 106,
-          "verifiedQuestions": 18
+          "verifiedQuestions": 17
         },
         {
           "number": 4,
@@ -1913,10 +1913,10 @@
         }
       ],
       "extractedCandidates": 156,
-      "verifiedQuestions": 78,
-      "originalPageQuestions": 78,
-      "unkeyedBookBackCandidates": 65,
-      "pendingCandidates": 78,
+      "verifiedQuestions": 77,
+      "originalPageQuestions": 77,
+      "unkeyedBookBackCandidates": 66,
+      "pendingCandidates": 79,
       "answerSource": "Printed original textbook keys only"
     },
     {

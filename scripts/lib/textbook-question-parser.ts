@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { chapterNumber, parsePrintedAnswerKey } from "./textbook-answer-keys";
+import reviewHolds from "./textbook-review-holds.json";
 import type { Textbook } from "../../src/lib/textbooks";
 import type {
   McqAnswer,
@@ -668,6 +669,17 @@ export function extractBookMcqs(book: Textbook, extracted: ExtractedBook) {
           ? "Original PDF"
           : "Text";
       question.status = "Published";
+    }
+    const hold = reviewHolds.find(
+      (entry) =>
+        entry.sourceSha256 === question.sourceSha256 &&
+        entry.page === question.page &&
+        entry.questionNumber === question.number,
+    );
+    if (hold) {
+      question.status = "Needs Review";
+      question.correctAnswer = null;
+      question.qualityFlags.push(hold.reason);
     }
     return question;
   });

@@ -7,6 +7,7 @@ import {
 import type { Textbook } from "../src/lib/textbooks";
 import { parseQuestionCsv } from "../src/lib/question-import";
 import { parsePrintedAnswerKey } from "../scripts/lib/textbook-answer-keys";
+import reviewHolds from "../scripts/lib/textbook-review-holds.json";
 const book = {
   id: "fixture-book",
   subject: "Commerce",
@@ -81,6 +82,31 @@ test("missing and conflicting keys are withheld; damaged text uses the original 
     /checksum/,
   );
 });
+test("a known printed-key erratum stays in teacher review despite a complete key", () => {
+  const hold = reviewHolds[0];
+  const source = { ...book, sha256: hold.sourceSha256 };
+  const numbers = Array.from({ length: 13 }, (_, index) => index + 1);
+  const result = extractBookMcqs(source, {
+    id: source.id,
+    sha256: source.sha256!,
+    outline: [{ title: "Chapter 3", page: hold.page }],
+    pages: [
+      {
+        page: hold.page,
+        text: `Choose the correct answer\n${numbers.map((number) => `${number}. Question number ${number}\na) First\nb) Second\nc) Third\nd) Fourth`).join("\n")}\nAnswers\n${numbers.join(" ")}\n${numbers.map(() => "c").join(" ")}\nII Short answer`,
+      },
+    ],
+  });
+  const suspect = result.candidates.find((question) => question.number === 13)!;
+  assert.equal(suspect.status, "Needs Review");
+  assert.equal(suspect.correctAnswer, null);
+  assert.ok(suspect.qualityFlags.includes(hold.reason));
+  assert.equal(
+    result.candidates.filter((q) => q.status === "Published").length,
+    12,
+  );
+});
+
 test("numeric and explained keys keep source offsets and reject contradictory codes", () => {
   const numeric = parsePrintedAnswerKey("1 2 3 4 ---\n(4) (3) (2) (1) ---");
   assert.equal(numeric.complete, true);
