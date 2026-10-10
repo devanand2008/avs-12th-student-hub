@@ -12,6 +12,9 @@ test("MCQ review and spreadsheet imports are atomic, administrator-only and upda
   try {
     const db = fixture.db;
     await seedTextbookBank(db);
+    await db.query(
+      "update public.textbook_mcq_candidates set data=data || '{\"presentation\":\"Original PDF\"}'::jsonb where id='fixture-textbook-q-3'",
+    );
     const hash = await bcrypt.hash("Fixture-only-admin-password", 10);
     await db.query("select public.avs_bootstrap_admin($1)", [
       JSON.stringify({
@@ -62,7 +65,16 @@ test("MCQ review and spreadsheet imports are atomic, administrator-only and upda
     ).rows[0].data;
     assert.equal(published.correctAnswer, "B");
     assert.equal(published.sourcePage, 12);
+    assert.equal(published.sourcePresentation, "Text");
     assert.equal(published.answerVerification, "Teacher Review");
+    assert.equal(
+      (
+        await db.query<{ data: { presentation: string } }>(
+          "select data from public.textbook_mcq_candidates where id='fixture-textbook-q-3'",
+        )
+      ).rows[0].data.presentation,
+      "Text",
+    );
     const row = {
       id: "import-q-unit",
       chapterId: fixtureChapterId,

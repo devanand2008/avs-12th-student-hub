@@ -27,6 +27,7 @@ import {
   INITIAL_TOPICS,
 } from "./initial-seed";
 import bcrypt from "bcryptjs";
+import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 import { studentActivationMode } from "@/lib/auth/activation";
 import { randomBytes, randomInt, randomUUID } from "node:crypto";
 import {
@@ -181,10 +182,16 @@ export async function getUserByLoginId(
   const trimmed = loginId.trim();
 
   // 1. Direct email lookup (primary for Gmail login)
-  const userByEmail = await one<User>("avs_users", "email", trimmed.toLowerCase());
+  const userByEmail = await one<User>(
+    "avs_users",
+    "email",
+    trimmed.toLowerCase(),
+  );
   if (userByEmail) {
     const student =
-      userByEmail.role === "student" ? await getStudentByUserId(userByEmail.id) : null;
+      userByEmail.role === "student"
+        ? await getStudentByUserId(userByEmail.id)
+        : null;
     return { user: userByEmail, student: student || undefined };
   }
 
@@ -518,6 +525,7 @@ export async function startQuizSession(
     status: "Published",
     sourceType: params.sourceFilter === "All" ? undefined : params.sourceFilter,
   });
+  questions = questions.filter(isTextPracticeQuestion);
   for (let i = questions.length - 1; i > 0; i--) {
     const j = randomInt(i + 1);
     [questions[i], questions[j]] = [questions[j], questions[i]];

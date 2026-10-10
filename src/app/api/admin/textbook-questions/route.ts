@@ -1,8 +1,8 @@
 import { getSession } from "@/lib/auth";
 import { requireSupabase } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
-import { z } from "zod";
 import { checkRateLimit } from "@/lib/rate-limit";
+import { textbookReviewInput } from "@/lib/question-publishing";
 
 export async function GET(request: Request) {
   if ((await getSession())?.role !== "admin")
@@ -48,18 +48,6 @@ export async function GET(request: Request) {
   );
 }
 
-const reviewInput = z
-  .object({
-    id: z.string().min(1).max(180),
-    questionText: z.string().trim().min(8).max(2500),
-    options: z.array(z.string().trim().min(1).max(1000)).min(2).max(4),
-    correctAnswer: z.enum(["A", "B", "C", "D"]),
-  })
-  .refine(
-    (value) => "ABCD".indexOf(value.correctAnswer) < value.options.length,
-    { message: "Choose one of the provided options as the answer." },
-  );
-
 export async function POST(request: Request) {
   const session = await getSession();
   if (session?.role !== "admin")
@@ -82,7 +70,7 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
-  const parsed = reviewInput.safeParse(body);
+  const parsed = textbookReviewInput.safeParse(body);
   if (!parsed.success)
     return NextResponse.json(
       { error: parsed.error.issues[0].message },

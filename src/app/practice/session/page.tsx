@@ -16,17 +16,8 @@ import {
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useCallback, useEffect, useRef, useState } from "react";
-import dynamic from "next/dynamic";
-import textbooks from "@/lib/textbooks-catalog.json";
-
-const OriginalPage = dynamic(
-  () =>
-    import("@/app/textbooks/TextbookReader").then((module) => module.PdfPages),
-  {
-    ssr: false,
-    loading: () => <p role="status">Loading the original textbook page…</p>,
-  },
-);
+import PracticeText from "@/components/learning/PracticeText";
+import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 
 type Answer = "A" | "B" | "C" | "D";
 type PracticeQuestion = Omit<Question, "correctAnswer" | "explanation"> & {
@@ -52,6 +43,52 @@ interface Result {
   accuracy: number;
   recommendation: string;
   reviewDetails: Review[];
+}
+
+function ReviewQuestion({
+  review,
+  question,
+}: {
+  review: Review;
+  question?: PracticeQuestion;
+}) {
+  if (!question || !isTextPracticeQuestion(question)) {
+    return (
+      <p className="mt-2 text-sm text-slate-600">
+        This earlier attempt used a textbook page question. Its score is saved;
+        start a new practice for separate text questions and choices.
+      </p>
+    );
+  }
+  return (
+    <>
+      <h3 className="mt-2 text-sm font-bold text-[#071A3D] leading-snug">
+        <PracticeText text={question.questionText} />
+      </h3>
+      <ol aria-label="Answer options" className="mt-3 space-y-2">
+        {(["A", "B", "C", "D"] as const).map((answer) => {
+          const optionText =
+            question[
+              `option${answer}` as "optionA" | "optionB" | "optionC" | "optionD"
+            ];
+          if (!optionText?.trim()) return null;
+          return (
+            <li
+              key={answer}
+              className={`flex gap-3 rounded-xl border p-3 text-sm ${
+                answer === review.correctAnswer
+                  ? "border-emerald-200 bg-emerald-50 text-emerald-950"
+                  : "border-slate-200 bg-white text-slate-700"
+              }`}
+            >
+              <strong className="shrink-0">{answer}.</strong>
+              <PracticeText text={optionText} />
+            </li>
+          );
+        })}
+      </ol>
+    </>
+  );
 }
 
 function PracticeContent() {
@@ -481,9 +518,12 @@ function PracticeContent() {
                     </span>
                   </div>
 
-                  <h3 className="mt-2 text-sm font-bold text-[#071A3D] leading-snug">
-                    {rev.questionText}
-                  </h3>
+                  <ReviewQuestion
+                    review={rev}
+                    question={questions.find(
+                      (item) => item.id === rev.questionId,
+                    )}
+                  />
 
                   <div className="mt-3 flex flex-wrap gap-4 text-xs">
                     <div>
@@ -507,7 +547,7 @@ function PracticeContent() {
                   {rev.explanation && (
                     <div className="mt-3 pt-3 border-t border-slate-100 text-xs text-slate-600 leading-relaxed bg-slate-50/70 p-3 rounded-xl">
                       <strong className="text-slate-800">Explanation: </strong>
-                      {rev.explanation}
+                      <PracticeText text={rev.explanation} />
                     </div>
                   )}
                   {rev.sourceTextbookId && (
@@ -534,6 +574,28 @@ function PracticeContent() {
               ))}
           </div>
         </section>
+      </main>
+    );
+  }
+
+  if (!question || !isTextPracticeQuestion(question)) {
+    return (
+      <main className="w-full min-w-0 max-w-4xl mx-auto px-4 py-12">
+        <div className="rounded-3xl border border-slate-200 bg-white p-8 text-center">
+          <h1 className="text-xl font-bold text-[#071A3D]">
+            Start a new text practice
+          </h1>
+          <p role="alert" className="mt-3 text-sm text-slate-600">
+            This saved attempt used textbook pages. Choose a new practice with
+            separate text questions and answer choices.
+          </p>
+          <Link
+            href="/textbook-practice"
+            className="btn-primary mt-6 inline-flex"
+          >
+            Choose a chapter
+          </Link>
+        </div>
       </main>
     );
   }
@@ -650,23 +712,9 @@ function PracticeContent() {
         </div>
 
         {/* Question Text */}
-        {question.sourceTextbookId && (
-          <Link
-            href={`/textbooks/${question.sourceTextbookId}?page=${question.sourcePage || 1}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-blue-700"
-          >
-            <BookOpen size={16} /> Original textbook
-            {question.sourcePage ? ` · PDF page ${question.sourcePage}` : ""}
-            {question.sourceQuestionNumber
-              ? ` · Question ${question.sourceQuestionNumber}`
-              : ""}
-          </Link>
-        )}
         <div className="space-y-3">
           <h1 className="text-base sm:text-lg font-bold text-[#071A3D] leading-relaxed font-heading">
-            {question.questionText}
+            <PracticeText text={question.questionText} testId="question-text" />
           </h1>
 
           {/* Bilingual Tamil Question */}
@@ -675,38 +723,14 @@ function PracticeContent() {
               <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">
                 தமிழ் வடிவம்:
               </div>
-              <p lang="ta">{question.questionTextTamil}</p>
+              <p lang="ta">
+                <PracticeText text={question.questionTextTamil} />
+              </p>
             </div>
           )}
         </div>
 
         {/* 4 Options Grid */}
-        {question.sourcePresentation === "Original PDF" &&
-          question.sourceTextbookId &&
-          (() => {
-            const book = textbooks.books.find(
-              (book) => book.id === question.sourceTextbookId,
-            );
-            return book ? (
-              <div className="space-y-2">
-                <p className="text-sm text-slate-600">
-                  Read printed question {question.sourceQuestionNumber} and its
-                  four choices. Select the matching option below.
-                  {question.sourceEndPage &&
-                  question.sourceEndPage > (question.sourcePage || 1)
-                    ? ` The choices continue on PDF page ${question.sourceEndPage}; use Next page in the reader.`
-                    : ""}
-                </p>
-                <OriginalPage
-                  url={book.localPath!}
-                  title={book.title}
-                  initialPage={question.sourcePage || 1}
-                />
-              </div>
-            ) : (
-              <p role="alert">The source book could not be found.</p>
-            );
-          })()}
         <fieldset className="space-y-3 pt-2">
           <legend className="sr-only">Choose your answer</legend>
           {(["A", "B", "C", "D"] as const).map((key) => {
@@ -731,6 +755,7 @@ function PracticeContent() {
                 <input
                   type="radio"
                   name={question.id}
+                  value={key}
                   checked={isThisSelected}
                   onChange={() => choose(key)}
                   disabled={busy}
@@ -746,9 +771,11 @@ function PracticeContent() {
                   {key}
                 </span>
 
-                <span className="text-xs sm:text-sm font-medium text-slate-800 leading-snug">
-                  {optionText}
-                </span>
+                <PracticeText
+                  text={optionText}
+                  testId="option-text"
+                  className="text-xs sm:text-sm font-medium text-slate-800 leading-snug"
+                />
 
                 {isThisSelected && (
                   <Check size={16} className="ml-auto shrink-0 text-blue-600" />
@@ -776,7 +803,10 @@ function PracticeContent() {
               </span>
             </div>
             {question.explanation && (
-              <p className="text-xs text-slate-700">{question.explanation}</p>
+              <PracticeText
+                text={question.explanation}
+                className="text-xs text-slate-700"
+              />
             )}
             {question.sourceAnswerPage && question.sourceTextbookId && (
               <Link
@@ -789,6 +819,17 @@ function PracticeContent() {
               </Link>
             )}
           </div>
+        )}
+
+        {question.sourceTextbookId && !exam && (
+          <Link
+            href={`/textbooks/${question.sourceTextbookId}?page=${question.sourcePage || 1}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-xs text-slate-500 hover:text-blue-700"
+          >
+            <BookOpen size={14} /> View textbook source (optional)
+          </Link>
         )}
 
         {/* Bottom Card Navigation */}

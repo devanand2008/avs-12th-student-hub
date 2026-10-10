@@ -5,6 +5,17 @@ export const fixtureBook = catalog.books.find(
 )!;
 export const fixtureSubjectId = `tb-${fixtureBook.id}`;
 export const fixtureChapterId = `${fixtureSubjectId}-ch-1`;
+export const fixtureCodeQuestion =
+  "Which Python function returns twice the supplied value?\n" +
+  "def twice(value):\n" +
+  "    return value * 2\n" +
+  "print(twice(3))";
+export const fixtureCodeOptions = [
+  "def twice(value):\n    return value + 2",
+  "def twice(value):\n    return value * 2",
+  "def twice(value):\n    return value / 2",
+  "def twice(value):\n    return value - 2",
+];
 export async function seedTextbookBank(db: PGlite) {
   const book = fixtureBook;
   await db.query(
@@ -56,8 +67,15 @@ export async function seedTextbookBank(db: PGlite) {
       number: i,
       page: 12,
       section: "Book-back",
-      questionText: `Fixture account question number ${i}: choose the correct value.`,
-      options: ["First value", "Second value", "Third value", "Fourth value"],
+      questionText:
+        i === 2
+          ? fixtureCodeQuestion
+          : `Fixture account question number ${i}: choose the correct value.`,
+      options:
+        i === 2
+          ? fixtureCodeOptions
+          : ["First value", "Second value", "Third value", "Fourth value"],
+      presentation: "Text",
       correctAnswer: i === 3 ? null : "B",
       status: i === 3 ? "Needs Review" : "Published",
       qualityFlags: [],
@@ -78,7 +96,7 @@ export async function seedTextbookBank(db: PGlite) {
             sourcePage: 12,
             ...(i === 2
               ? {
-                  sourcePresentation: "Original PDF",
+                  sourcePresentation: "Text",
                   sourcePage: 38,
                   sourceEndPage: 39,
                   sourceAnswerPage: 39,

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { isTextPracticeQuestion } from "./practice-question-text";
 
 export const questionImportSchema = z
   .object({
@@ -38,10 +39,19 @@ export const questionImportSchema = z
         code: "custom",
         message: "Options must be distinct.",
       });
-    if (/\uFFFD/.test(row.question + options.join("")))
+    if (
+      !isTextPracticeQuestion({
+        questionText: row.question,
+        optionA: row.option_a,
+        optionB: row.option_b,
+        optionC: row.option_c,
+        optionD: row.option_d,
+      })
+    )
       context.addIssue({
         code: "custom",
-        message: "Correct damaged PDF text before importing.",
+        message:
+          "Enter the full question and actual answer choices as readable text before importing.",
       });
   });
 

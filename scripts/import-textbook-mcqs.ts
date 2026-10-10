@@ -12,12 +12,17 @@ import { requireSupabase } from "../src/lib/supabase/server";
 import type { TextbookCatalog } from "../src/lib/textbooks";
 import type { Question, Chapter, Subject } from "../src/types";
 import type { TextbookMcqCoverage } from "../src/lib/textbook-question-types";
+import { isTextPracticeQuestion } from "../src/lib/practice-question-text";
 
 loadEnvConfig(process.cwd());
 const dryRun = process.argv.includes("--dry-run");
 const catalog = catalogJson as TextbookCatalog;
 const directory = ".local/textbook-text";
-const extractionVersion = 2;
+const extractionVersion = 3;
+const bookFlag = process.argv.indexOf("--book-id");
+const selectedBookId = bookFlag < 0 ? undefined : process.argv[bookFlag + 1];
+if (bookFlag >= 0 && !catalog.books.some((book) => book.id === selectedBookId))
+  throw new Error("Choose a textbook ID from the catalog.");
 async function retry<
   T extends { error: { code?: string } | null; status?: number },
 >(operation: () => PromiseLike<T>): Promise<T> {
@@ -118,7 +123,7 @@ async function main() {
   await mkdir(directory, { recursive: true });
   const reports: TextbookMcqCoverage[] = [];
   let completed: TextbookMcqCoverage[] = [];
-  if (!dryRun && process.argv.includes("--resume")) {
+  if (!dryRun && (process.argv.includes("--resume") || selectedBookId)) {
     try {
       const previous = JSON.parse(
         await readFile(".local/textbook-mcq-import-report.json", "utf8"),
@@ -132,7 +137,11 @@ async function main() {
     const previous = completed.find(
       (item) => item.bookId === book.id && item.sourceSha256 === book.sha256,
     );
-    if (previous) {
+    if (selectedBookId && book.id !== selectedBookId) {
+      if (previous) reports.push(previous);
+      continue;
+    }
+    if (previous && !selectedBookId) {
       reports.push(previous);
       console.log(
         `${book.title} (${book.sourceMedium}): previous completed import retained.`,
@@ -184,31 +193,13 @@ async function main() {
           id: candidate.id,
           chapterId: candidate.chapterId,
           subjectId,
-          questionText:
-            candidate.presentation === "Original PDF"
-              ? `Read question ${candidate.number}${candidate.exercise ? ` in Exercise ${candidate.exercise}` : ""} on the textbook page below.`
-              : candidate.questionText,
+          questionText: candidate.questionText,
           questionTextTamil:
-            book.sourceMedium === "Tamil" &&
-            candidate.presentation !== "Original PDF"
-              ? candidate.questionText
-              : "",
-          optionA:
-            candidate.presentation === "Original PDF"
-              ? "First printed option (a / அ / 1)"
-              : candidate.options[0],
-          optionB:
-            candidate.presentation === "Original PDF"
-              ? "Second printed option (b / ஆ / 2)"
-              : candidate.options[1],
-          optionC:
-            candidate.presentation === "Original PDF"
-              ? "Third printed option (c / இ / 3)"
-              : candidate.options[2] || "",
-          optionD:
-            candidate.presentation === "Original PDF"
-              ? "Fourth printed option (d / ஈ / 4)"
-              : candidate.options[3] || "",
+            book.sourceMedium === "Tamil" ? candidate.questionText : "",
+          optionA: candidate.options[0],
+          optionB: candidate.options[1],
+          optionC: candidate.options[2] || "",
+          optionD: candidate.options[3] || "",
           correctAnswer: candidate.correctAnswer!,
           explanation: `Printed textbook answer key: PDF page ${candidate.keyPage}, question ${candidate.number}.`,
           explanationTamil: "",
@@ -221,11 +212,18 @@ async function main() {
           sourcePage: candidate.page,
           sourceEndPage: candidate.endPage,
           sourceAnswerPage: candidate.keyPage,
-          sourcePresentation: candidate.presentation || "Text",
+          sourcePresentation: "Text",
           sourceQuestionNumber: candidate.number,
           language: book.sourceMedium,
           answerVerification: "Textbook Answer Key",
         };
+        if (
+          candidate.presentation === "Original PDF" ||
+          !isTextPracticeQuestion(data)
+        )
+          throw new Error(
+            `Correct the text before publishing ${candidate.id}.`,
+          );
         return { id: data.id, data };
       });
     const report: TextbookMcqCoverage = {
@@ -324,7 +322,7 @@ async function main() {
             `Could not save verified questions for ${book.id}: ${error.code}`,
           );
       }
-      // Add the original-page presentation to automatically imported questions
+      // Refresh real text in automatically imported questions
       // without changing a teacher's answer, correction or publication status.
       await save(
         "avs_questions",
@@ -344,6 +342,35 @@ async function main() {
               ...row.data,
               createdAt: existingQuestions.get(row.id)!.createdAt,
             },
+          })),
+      );
+      const freshTextIds = new Set(published.map((row) => row.id));
+      const sourceCandidates = new Map(
+        candidates.map((candidate) => [candidate.id, candidate]),
+      );
+      // Older image-based records remain available to administrators for
+      // transcription. Existing quiz snapshots and scores are never rewritten.
+      await save(
+        "avs_questions",
+        [...existingQuestions.values()]
+          .filter(
+            (question) =>
+              !reviewed.has(question.id) &&
+              question.status === "Published" &&
+              question.answerVerification === "Textbook Answer Key" &&
+              !freshTextIds.has(question.id) &&
+              (!isTextPracticeQuestion(question) ||
+                sourceCandidates
+                  .get(question.id)
+                  ?.qualityFlags.some((flag) =>
+                    /Transcribe|PDF text needs|Options are not distinct|option boundaries|question boundaries|original choices|mathematical formatting/i.test(
+                      flag,
+                    ),
+                  )),
+          )
+          .map((question) => ({
+            id: question.id,
+            data: { ...question, status: "Teacher Review" },
           })),
       );
       await save("textbook_mcq_imports", [{ book_id: book.id, data: report }]);
@@ -366,6 +393,21 @@ async function main() {
       `${book.title} (${book.sourceMedium}): ${candidates.length} extracted; ${published.length} with verified keys; ${report.review} for review.`,
     );
   }
+  // A targeted refresh can occur before retained books later in the catalog.
+  // Persist the complete report after those records have also been collected.
+  await writeFile(
+    ".local/textbook-mcq-import-report.json",
+    JSON.stringify(
+      {
+        dryRun,
+        extractionVersion,
+        books: reports,
+        checkedAt: new Date().toISOString(),
+      },
+      null,
+      2,
+    ),
+  );
   console.log(
     JSON.stringify({
       books: reports.length,

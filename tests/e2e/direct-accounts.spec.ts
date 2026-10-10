@@ -1,7 +1,12 @@
 import { expect, test, type Page } from "@playwright/test";
 import ExcelJS from "exceljs";
 import { authRequest } from "../helpers/otp-browser";
-import { fixtureBook, fixtureChapterId } from "../helpers/textbook-bank";
+import {
+  fixtureBook,
+  fixtureChapterId,
+  fixtureCodeOptions,
+  fixtureCodeQuestion,
+} from "../helpers/textbook-bank";
 test.skip(
   process.env.AVS_TEST_ACTIVATION_MODE !== "direct",
   "Uses email/password registration without SMS.",
@@ -105,27 +110,47 @@ test("students choose a password, sign in with email and see their profile in th
   );
   await page.getByRole("button", { name: "Start textbook practice" }).click();
   const allQuestions = await (await fullPractice).json();
-  const originalIndex = allQuestions.questions.findIndex(
-    (q: { sourcePresentation?: string }) =>
-      q.sourcePresentation === "Original PDF",
+  const codeIndex = allQuestions.questions.findIndex(
+    (q: { questionText: string }) => q.questionText === fixtureCodeQuestion,
   );
-  expect(originalIndex).toBeGreaterThanOrEqual(0);
+  expect(codeIndex).toBeGreaterThanOrEqual(0);
+  expect(
+    allQuestions.questions.every(
+      (q: { sourcePresentation?: string }) =>
+        q.sourcePresentation !== "Original PDF",
+    ),
+  ).toBe(true);
   await page
     .getByRole("button", {
-      name: `Jump to question ${originalIndex + 1}`,
+      name: `Jump to question ${codeIndex + 1}`,
       exact: true,
     })
     .click();
-  await expect(page.getByTestId("pdf-page")).toHaveAttribute(
-    "data-rendered-page",
-    "38",
-    { timeout: 30000 },
-  );
-  await page.getByRole("button", { name: "Next page", exact: true }).click();
-  await expect(page.getByTestId("pdf-page")).toHaveAttribute(
-    "data-rendered-page",
-    "39",
-  );
+  const questionText = page.getByTestId("question-text");
+  await expect(questionText).toHaveText(fixtureCodeQuestion);
+  expect(await questionText.textContent()).toBe(fixtureCodeQuestion);
+  expect(
+    await questionText.evaluate(
+      (element) => getComputedStyle(element).whiteSpace,
+    ),
+  ).toBe("pre-wrap");
+  await expect(page.getByRole("radio")).toHaveCount(4);
+  await expect(page.getByTestId("option-text")).toHaveCount(4);
+  for (let index = 0; index < fixtureCodeOptions.length; index++) {
+    const option = page.getByTestId("option-text").nth(index);
+    expect(await option.textContent()).toBe(fixtureCodeOptions[index]);
+    expect(
+      await option.evaluate((element) => getComputedStyle(element).whiteSpace),
+    ).toBe("pre-wrap");
+    await expect(page.getByRole("radio").nth(index)).toHaveAttribute(
+      "value",
+      "ABCD"[index],
+    );
+  }
+  await expect(page.getByTestId("pdf-page")).toHaveCount(0);
+  await expect(
+    page.locator("main canvas, main iframe, main embed"),
+  ).toHaveCount(0);
   if (info.project.name === "desktop") {
     await page.setViewportSize({ width: 390, height: 844 });
     await expect
@@ -133,9 +158,11 @@ test("students choose a password, sign in with email and see their profile in th
         page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
       )
       .toBe(true);
-    await expect(
-      page.getByRole("button", { name: "Next page", exact: true }),
-    ).toBeInViewport();
+    const firstChoice = page.getByTestId("option-text").first().locator("..");
+    await firstChoice.scrollIntoViewIfNeeded();
+    await expect(firstChoice).toBeInViewport();
+    await firstChoice.click();
+    await expect(page.getByRole("radio").first()).toBeChecked();
     await page.setViewportSize({ width: 1440, height: 1000 });
   }
   expect(
@@ -164,6 +191,24 @@ test("students choose a password, sign in with email and see their profile in th
   await expect(
     page.getByRole("heading", { name: "Practice Performance Summary" }),
   ).toBeVisible();
+  await expect(page.getByTestId("pdf-page")).toHaveCount(0);
+  await expect(
+    page.locator("main canvas, main iframe, main embed"),
+  ).toHaveCount(0);
+  const reviewedCode = page.getByRole("heading", {
+    name: /^Which Python function returns twice/,
+  });
+  await expect(reviewedCode).toBeVisible();
+  expect(await reviewedCode.textContent()).toBe(fixtureCodeQuestion);
+  const reviewedChoices = reviewedCode
+    .locator("..")
+    .getByRole("list", { name: "Answer options" })
+    .getByRole("listitem");
+  await expect(reviewedChoices).toHaveCount(4);
+  for (let index = 0; index < fixtureCodeOptions.length; index++)
+    expect(await reviewedChoices.nth(index).locator("span").textContent()).toBe(
+      fixtureCodeOptions[index],
+    );
   const retryPractice = page.waitForResponse(
     (r) =>
       r.url().endsWith("/api/practice/start") &&
@@ -176,9 +221,7 @@ test("students choose a password, sign in with email and see their profile in th
   expect(retried.session.id).not.toBe(allQuestions.session.id);
   expect(retried.session.subjectId).toBe(allQuestions.session.subjectId);
   expect(retried.questions.length).toBe(allQuestions.questions.length);
-  await expect(
-    page.getByRole("link", { name: /^Original textbook/ }),
-  ).toBeVisible();
+  await expect(page.getByTestId("pdf-page")).toHaveCount(0);
   const started = await authRequest(page, "/api/practice/start", {
     subjectId: `tb-${fixtureBook.id}`,
     chapterId: fixtureChapterId,

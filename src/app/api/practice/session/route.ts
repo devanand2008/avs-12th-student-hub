@@ -1,6 +1,7 @@
 import { getSession } from "@/lib/auth";
 import { getQuizQuestions, getQuizSessionById } from "@/lib/db";
 import { NextResponse } from "next/server";
+import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 export async function GET(request: Request) {
   const user = await getSession();
   if (!user)
@@ -14,6 +15,17 @@ export async function GET(request: Request) {
       { status: 404 },
     );
   const questions = await getQuizQuestions(quiz.id);
+  if (
+    !quiz.isCompleted &&
+    questions.some((q) => !q || !isTextPracticeQuestion(q))
+  )
+    return NextResponse.json(
+      {
+        error:
+          "This earlier attempt used textbook page images. Start a new attempt to practise with text questions and separate answer choices. Your previous activity is preserved.",
+      },
+      { status: 409 },
+    );
   const safe = questions
     .filter((q) => q !== null)
     .map((q) => {

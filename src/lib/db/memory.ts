@@ -18,6 +18,7 @@ import {
   VideoLesson,
 } from "@/types";
 import bcrypt from "bcryptjs";
+import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 import { studentActivationMode } from "@/lib/auth/activation";
 import {
   normalizePhone,
@@ -281,7 +282,10 @@ export async function getUserByLoginId(
   if (!user) {
     // Search students by school register number
     for (const s of dbState.students.values()) {
-      if (s.registerNumber && s.registerNumber.trim().toLowerCase() === normalized) {
+      if (
+        s.registerNumber &&
+        s.registerNumber.trim().toLowerCase() === normalized
+      ) {
         user = dbState.users.get(s.userId);
         matchedStudent = s;
         break;
@@ -945,7 +949,10 @@ export async function startQuizSession(params: {
 
   // Fetch relevant questions
   let availableQuestions = Array.from(dbState.questions.values()).filter(
-    (q) => q.status === "Published" && q.subjectId === params.subjectId,
+    (q) =>
+      q.status === "Published" &&
+      q.subjectId === params.subjectId &&
+      isTextPracticeQuestion(q),
   );
 
   if (params.chapterId) {

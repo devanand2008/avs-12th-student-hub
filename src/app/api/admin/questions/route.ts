@@ -5,27 +5,12 @@ import {
   updateQuestionStatus,
   getChapterById,
   getSubjectById,
+  getQuestionById,
 } from "@/lib/db";
 import { Question } from "@/types";
 import { NextResponse } from "next/server";
-import { z } from "zod";
-const questionInput = z.object({
-  chapterId: z.string().min(1),
-  questionText: z.string().trim().min(3).max(3000),
-  questionTextTamil: z.string().max(3000).default(""),
-  optionA: z.string().trim().min(1).max(1000),
-  optionB: z.string().trim().min(1).max(1000),
-  optionC: z.string().trim().min(1).max(1000),
-  optionD: z.string().trim().min(1).max(1000),
-  correctAnswer: z.enum(["A", "B", "C", "D"]),
-  explanation: z.string().max(4000).default(""),
-  explanationTamil: z.string().max(4000).default(""),
-  difficulty: z.enum(["Easy", "Medium", "Hard"]).default("Medium"),
-  sourceType: z.enum(["Book-In", "Book-Out"]).default("Book-In"),
-  status: z
-    .enum(["Draft", "Teacher Review", "Approved", "Published"])
-    .default("Draft"),
-});
+import { questionInput } from "@/lib/question-publishing";
+import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 
 export async function GET(request: Request) {
   const session = await getSession();
@@ -90,6 +75,22 @@ export async function POST(request: Request) {
           { error: "Invalid question status." },
           { status: 400 },
         );
+      if (newStatus === "Published") {
+        const question = await getQuestionById(questionId);
+        if (!question)
+          return NextResponse.json(
+            { error: "Question not found." },
+            { status: 404 },
+          );
+        if (!isTextPracticeQuestion(question))
+          return NextResponse.json(
+            {
+              error:
+                "Correct the question text and answer choices before publishing.",
+            },
+            { status: 400 },
+          );
+      }
       const ok = await updateQuestionStatus(questionId, newStatus);
       return NextResponse.json({ success: ok });
     }

@@ -1,10 +1,10 @@
 {
-  "extractionVersion": 2,
-  "checkedAt": "2026-10-10T06:39:58.671Z",
+  "extractionVersion": 3,
+  "checkedAt": "2026-10-10T11:25:12.499Z",
   "booksAnalysed": 82,
-  "verifiedQuestions": 1868,
-  "pendingCandidates": 10300,
-  "note": "This extraction audit is not an assertion that every exercise or academic answer is complete. Raw text with unreadable glyphs or formulas is displayed using the original PDF page. Missing or conflicting answers are not invented.",
+  "verifiedQuestions": 985,
+  "pendingCandidates": 11244,
+  "note": "Only readable text questions with four real choices and a matching printed key are automatically published. Damaged glyphs, ambiguous formula layouts and image-dependent questions require transcription review. No textbook page images or placeholder choices appear in practice. Missing or conflicting answers are not invented.",
   "books": [
     {
       "id": "12-accountancy-english-c0f4ded3",
@@ -60,7 +60,7 @@
           "number": 8,
           "page": 271,
           "exercisePage": 293,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 9
         },
         {
           "number": 9,
@@ -75,11 +75,11 @@
           "verifiedQuestions": 10
         }
       ],
-      "extractedCandidates": 156,
-      "verifiedQuestions": 95,
-      "originalPageQuestions": 0,
+      "extractedCandidates": 160,
+      "verifiedQuestions": 94,
+      "textQuestions": 94,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 61,
+      "pendingCandidates": 66,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -94,13 +94,13 @@
           "number": 1,
           "page": 9,
           "exercisePage": 23,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 0
         },
         {
           "number": 2,
           "page": 47,
           "exercisePage": 77,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 0
         },
         {
           "number": 3,
@@ -111,13 +111,13 @@
           "number": 4,
           "page": 127,
           "exercisePage": 139,
-          "verifiedQuestions": 8
+          "verifiedQuestions": 0
         },
         {
           "number": 5,
           "page": 145,
           "exercisePage": 179,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 0
         },
         {
           "number": 6,
@@ -134,7 +134,7 @@
           "number": 8,
           "page": 271,
           "exercisePage": 293,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 0
         },
         {
           "number": 9,
@@ -146,14 +146,14 @@
           "number": 10,
           "page": 335,
           "exercisePage": 363,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 157,
-      "verifiedQuestions": 58,
-      "originalPageQuestions": 58,
-      "unkeyedBookBackCandidates": 12,
-      "pendingCandidates": 99,
+      "extractedCandidates": 161,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 14,
+      "pendingCandidates": 161,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -172,7 +172,7 @@
       ],
       "extractedCandidates": 98,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 98,
       "answerSource": "Printed original textbook keys only"
@@ -258,7 +258,7 @@
       ],
       "extractedCandidates": 147,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 147,
       "answerSource": "Printed original textbook keys only"
@@ -293,7 +293,7 @@
           "number": 4,
           "page": 58,
           "exercisePage": 73,
-          "verifiedQuestions": 30
+          "verifiedQuestions": 29
         },
         {
           "number": 5,
@@ -317,7 +317,7 @@
           "number": 8,
           "page": 128,
           "exercisePage": 138,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 9
         },
         {
           "number": 9,
@@ -333,10 +333,10 @@
         }
       ],
       "extractedCandidates": 155,
-      "verifiedQuestions": 93,
-      "originalPageQuestions": 0,
+      "verifiedQuestions": 91,
+      "textQuestions": 91,
       "unkeyedBookBackCandidates": 47,
-      "pendingCandidates": 62,
+      "pendingCandidates": 64,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -402,11 +402,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 129,
+      "extractedCandidates": 140,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 51,
-      "pendingCandidates": 129,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 55,
+      "pendingCandidates": 140,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -480,7 +480,7 @@
       ],
       "extractedCandidates": 112,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 95,
       "pendingCandidates": 112,
       "answerSource": "Printed original textbook keys only"
@@ -547,11 +547,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 100,
+      "extractedCandidates": 102,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 28,
-      "pendingCandidates": 100,
+      "pendingCandidates": 102,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -613,7 +613,7 @@
       ],
       "extractedCandidates": 104,
       "verifiedQuestions": 47,
-      "originalPageQuestions": 0,
+      "textQuestions": 47,
       "unkeyedBookBackCandidates": 29,
       "pendingCandidates": 57,
       "answerSource": "Printed original textbook keys only"
@@ -660,7 +660,7 @@
           "number": 7,
           "page": 168,
           "exercisePage": 189,
-          "verifiedQuestions": 6
+          "verifiedQuestions": 0
         },
         {
           "number": 8,
@@ -669,11 +669,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 91,
-      "verifiedQuestions": 6,
-      "originalPageQuestions": 6,
+      "extractedCandidates": 94,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 29,
-      "pendingCandidates": 85,
+      "pendingCandidates": 94,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -747,7 +747,7 @@
       ],
       "extractedCandidates": 182,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 154,
       "pendingCandidates": 182,
       "answerSource": "Printed original textbook keys only"
@@ -816,7 +816,7 @@
       ],
       "extractedCandidates": 170,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 52,
       "pendingCandidates": 170,
       "answerSource": "Printed original textbook keys only"
@@ -833,7 +833,7 @@
           "number": 1,
           "page": 9,
           "exercisePage": 37,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 13
         },
         {
           "number": 2,
@@ -875,7 +875,7 @@
           "number": 8,
           "page": 188,
           "exercisePage": 203,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 9
         },
         {
           "number": 9,
@@ -890,9 +890,9 @@
           "verifiedQuestions": 3
         }
       ],
-      "extractedCandidates": 142,
-      "verifiedQuestions": 81,
-      "originalPageQuestions": 0,
+      "extractedCandidates": 144,
+      "verifiedQuestions": 83,
+      "textQuestions": 83,
       "unkeyedBookBackCandidates": 13,
       "pendingCandidates": 61,
       "answerSource": "Printed original textbook keys only"
@@ -935,13 +935,13 @@
           "number": 6,
           "page": 171,
           "exercisePage": 193,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 0
         },
         {
           "number": 7,
           "page": 196,
           "exercisePage": 222,
-          "verifiedQuestions": 15
+          "verifiedQuestions": 0
         },
         {
           "number": 8,
@@ -957,14 +957,14 @@
           "number": 10,
           "page": 277,
           "exercisePage": 306,
-          "verifiedQuestions": 4
+          "verifiedQuestions": 0
         }
       ],
       "extractedCandidates": 151,
-      "verifiedQuestions": 39,
-      "originalPageQuestions": 39,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 38,
-      "pendingCandidates": 112,
+      "pendingCandidates": 151,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1038,7 +1038,7 @@
       ],
       "extractedCandidates": 95,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 44,
       "pendingCandidates": 95,
       "answerSource": "Printed original textbook keys only"
@@ -1103,11 +1103,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 99,
+      "extractedCandidates": 100,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 4,
-      "pendingCandidates": 99,
+      "pendingCandidates": 100,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1179,11 +1179,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 303,
+      "extractedCandidates": 304,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 174,
-      "pendingCandidates": 303,
+      "pendingCandidates": 304,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1250,7 +1250,7 @@
       ],
       "extractedCandidates": 308,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 47,
       "pendingCandidates": 308,
       "answerSource": "Printed original textbook keys only"
@@ -1338,7 +1338,7 @@
       ],
       "extractedCandidates": 229,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 198,
       "pendingCandidates": 229,
       "answerSource": "Printed original textbook keys only"
@@ -1421,7 +1421,7 @@
       ],
       "extractedCandidates": 238,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 85,
       "pendingCandidates": 238,
       "answerSource": "Printed original textbook keys only"
@@ -1496,7 +1496,7 @@
       ],
       "extractedCandidates": 146,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 145,
       "pendingCandidates": 146,
       "answerSource": "Printed original textbook keys only"
@@ -1566,7 +1566,7 @@
       ],
       "extractedCandidates": 150,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 65,
       "pendingCandidates": 150,
       "answerSource": "Printed original textbook keys only"
@@ -1640,11 +1640,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 354,
+      "extractedCandidates": 355,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 193,
-      "pendingCandidates": 354,
+      "pendingCandidates": 355,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1711,7 +1711,7 @@
       ],
       "extractedCandidates": 340,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 37,
       "pendingCandidates": 340,
       "answerSource": "Printed original textbook keys only"
@@ -1728,31 +1728,31 @@
           "number": 1,
           "page": 7,
           "exercisePage": 26,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 3
         },
         {
           "number": 2,
           "page": 32,
           "exercisePage": 59,
-          "verifiedQuestions": 26
+          "verifiedQuestions": 0
         },
         {
           "number": 3,
           "page": 66,
           "exercisePage": 81,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 2
         },
         {
           "number": 4,
           "page": 86,
           "exercisePage": 105,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 0
         },
         {
           "number": 5,
           "page": 110,
           "exercisePage": 126,
-          "verifiedQuestions": 12
+          "verifiedQuestions": 1
         },
         {
           "number": 6,
@@ -1776,7 +1776,7 @@
           "number": 9,
           "page": 206,
           "exercisePage": 235,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 22
         },
         {
           "number": 10,
@@ -1785,11 +1785,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 244,
-      "verifiedQuestions": 138,
-      "originalPageQuestions": 138,
-      "unkeyedBookBackCandidates": 101,
-      "pendingCandidates": 106,
+      "extractedCandidates": 245,
+      "verifiedQuestions": 28,
+      "textQuestions": 28,
+      "unkeyedBookBackCandidates": 102,
+      "pendingCandidates": 217,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1824,7 +1824,7 @@
           "number": 5,
           "page": 114,
           "exercisePage": 130,
-          "verifiedQuestions": 12
+          "verifiedQuestions": 0
         },
         {
           "number": 6,
@@ -1854,11 +1854,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 241,
-      "verifiedQuestions": 12,
-      "originalPageQuestions": 12,
+      "extractedCandidates": 242,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 18,
-      "pendingCandidates": 229,
+      "pendingCandidates": 242,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1873,25 +1873,25 @@
           "number": 1,
           "page": 11,
           "exercisePage": 30,
-          "verifiedQuestions": 24
+          "verifiedQuestions": 10
         },
         {
           "number": 2,
           "page": 36,
           "exercisePage": 63,
-          "verifiedQuestions": 17
+          "verifiedQuestions": 12
         },
         {
           "number": 3,
           "page": 66,
           "exercisePage": 106,
-          "verifiedQuestions": 17
+          "verifiedQuestions": 5
         },
         {
           "number": 4,
           "page": 110,
           "exercisePage": 135,
-          "verifiedQuestions": 19
+          "verifiedQuestions": 7
         },
         {
           "number": 5,
@@ -1912,11 +1912,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 156,
-      "verifiedQuestions": 77,
-      "originalPageQuestions": 77,
-      "unkeyedBookBackCandidates": 66,
-      "pendingCandidates": 79,
+      "extractedCandidates": 161,
+      "verifiedQuestions": 34,
+      "textQuestions": 34,
+      "unkeyedBookBackCandidates": 71,
+      "pendingCandidates": 127,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -1937,25 +1937,25 @@
           "number": 9,
           "page": 37,
           "exercisePage": 66,
-          "verifiedQuestions": 21
+          "verifiedQuestions": 5
         },
         {
           "number": 10,
           "page": 73,
           "exercisePage": 104,
-          "verifiedQuestions": 18
+          "verifiedQuestions": 8
         },
         {
           "number": 11,
           "page": 108,
           "exercisePage": 143,
-          "verifiedQuestions": 16
+          "verifiedQuestions": 7
         },
         {
           "number": 12,
           "page": 149,
           "exercisePage": 193,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 14
         },
         {
           "number": 13,
@@ -1967,7 +1967,7 @@
           "number": 14,
           "page": 241,
           "exercisePage": 272,
-          "verifiedQuestions": 23
+          "verifiedQuestions": 20
         },
         {
           "number": 15,
@@ -1976,11 +1976,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 180,
-      "verifiedQuestions": 98,
-      "originalPageQuestions": 98,
+      "extractedCandidates": 181,
+      "verifiedQuestions": 54,
+      "textQuestions": 54,
       "unkeyedBookBackCandidates": 63,
-      "pendingCandidates": 82,
+      "pendingCandidates": 127,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -2025,14 +2025,15 @@
         {
           "number": 7,
           "page": 237,
+          "exercisePage": 285,
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 151,
+      "extractedCandidates": 156,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 22,
-      "pendingCandidates": 151,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 23,
+      "pendingCandidates": 156,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -2088,11 +2089,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 177,
+      "extractedCandidates": 178,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 85,
-      "pendingCandidates": 177,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 86,
+      "pendingCandidates": 178,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -2113,7 +2114,7 @@
           "number": 2,
           "page": 23,
           "exercisePage": 27,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 4
         },
         {
           "number": 3,
@@ -2215,7 +2216,7 @@
           "number": 19,
           "page": 165,
           "exercisePage": 174,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 4
         },
         {
           "number": 20,
@@ -2273,10 +2274,10 @@
         }
       ],
       "extractedCandidates": 155,
-      "verifiedQuestions": 137,
-      "originalPageQuestions": 0,
+      "verifiedQuestions": 135,
+      "textQuestions": 135,
       "unkeyedBookBackCandidates": 1,
-      "pendingCandidates": 18,
+      "pendingCandidates": 20,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -2317,6 +2318,7 @@
         {
           "number": 7,
           "page": 57,
+          "exercisePage": 60,
           "verifiedQuestions": 0
         },
         {
@@ -2401,11 +2403,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 132,
+      "extractedCandidates": 133,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 12,
-      "pendingCandidates": 132,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 13,
+      "pendingCandidates": 133,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -2449,7 +2451,7 @@
       ],
       "extractedCandidates": 95,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 95,
       "answerSource": "Printed original textbook keys only"
@@ -2573,7 +2575,7 @@
       ],
       "extractedCandidates": 182,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 142,
       "pendingCandidates": 182,
       "answerSource": "Printed original textbook keys only"
@@ -2697,7 +2699,7 @@
       ],
       "extractedCandidates": 182,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 142,
       "pendingCandidates": 182,
       "answerSource": "Printed original textbook keys only"
@@ -2801,11 +2803,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 181,
+      "extractedCandidates": 182,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 181,
+      "pendingCandidates": 182,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -2907,11 +2909,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 182,
+      "extractedCandidates": 183,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 182,
+      "pendingCandidates": 183,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -3019,11 +3021,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 151,
+      "extractedCandidates": 153,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 145,
-      "pendingCandidates": 151,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 147,
+      "pendingCandidates": 153,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -3122,11 +3124,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 151,
+      "extractedCandidates": 152,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 73,
-      "pendingCandidates": 151,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 74,
+      "pendingCandidates": 152,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -3176,7 +3178,7 @@
       ],
       "extractedCandidates": 74,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 46,
       "pendingCandidates": 74,
       "answerSource": "Printed original textbook keys only"
@@ -3228,7 +3230,7 @@
       ],
       "extractedCandidates": 74,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 46,
       "pendingCandidates": 74,
       "answerSource": "Printed original textbook keys only"
@@ -3274,7 +3276,7 @@
       ],
       "extractedCandidates": 72,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 72,
       "answerSource": "Printed original textbook keys only"
@@ -3320,7 +3322,7 @@
       ],
       "extractedCandidates": 72,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 72,
       "answerSource": "Printed original textbook keys only"
@@ -3343,7 +3345,7 @@
           "number": 2,
           "page": 25,
           "exercisePage": 38,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 19
         },
         {
           "number": 3,
@@ -3367,7 +3369,7 @@
           "number": 6,
           "page": 101,
           "exercisePage": 127,
-          "verifiedQuestions": 15
+          "verifiedQuestions": 14
         },
         {
           "number": 7,
@@ -3385,7 +3387,7 @@
           "number": 9,
           "page": 182,
           "exercisePage": 186,
-          "verifiedQuestions": 13
+          "verifiedQuestions": 12
         },
         {
           "number": 10,
@@ -3403,14 +3405,14 @@
           "number": 12,
           "page": 263,
           "exercisePage": 284,
-          "verifiedQuestions": 15
+          "verifiedQuestions": 14
         }
       ],
       "extractedCandidates": 248,
-      "verifiedQuestions": 190,
-      "originalPageQuestions": 1,
+      "verifiedQuestions": 186,
+      "textQuestions": 186,
       "unkeyedBookBackCandidates": 22,
-      "pendingCandidates": 58,
+      "pendingCandidates": 62,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -3477,7 +3479,7 @@
           "number": 11,
           "page": 280,
           "exercisePage": 301,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 0
         },
         {
           "number": 12,
@@ -3486,10 +3488,10 @@
         }
       ],
       "extractedCandidates": 248,
-      "verifiedQuestions": 20,
-      "originalPageQuestions": 20,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 15,
-      "pendingCandidates": 228,
+      "pendingCandidates": 248,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -3535,7 +3537,7 @@
       ],
       "extractedCandidates": 91,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 9,
       "pendingCandidates": 91,
       "answerSource": "Printed original textbook keys only"
@@ -3556,7 +3558,7 @@
       ],
       "extractedCandidates": 92,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 92,
       "answerSource": "Printed original textbook keys only"
@@ -3626,7 +3628,7 @@
       ],
       "extractedCandidates": 164,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 149,
       "pendingCandidates": 164,
       "answerSource": "Printed original textbook keys only"
@@ -3691,7 +3693,7 @@
       ],
       "extractedCandidates": 148,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 52,
       "pendingCandidates": 148,
       "answerSource": "Printed original textbook keys only"
@@ -3784,7 +3786,7 @@
       ],
       "extractedCandidates": 193,
       "verifiedQuestions": 16,
-      "originalPageQuestions": 0,
+      "textQuestions": 16,
       "unkeyedBookBackCandidates": 154,
       "pendingCandidates": 177,
       "answerSource": "Printed original textbook keys only"
@@ -3871,7 +3873,7 @@
       ],
       "extractedCandidates": 179,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 101,
       "pendingCandidates": 179,
       "answerSource": "Printed original textbook keys only"
@@ -3960,7 +3962,7 @@
       ],
       "extractedCandidates": 86,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 75,
       "pendingCandidates": 86,
       "answerSource": "Printed original textbook keys only"
@@ -4045,7 +4047,7 @@
       ],
       "extractedCandidates": 82,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 47,
       "pendingCandidates": 82,
       "answerSource": "Printed original textbook keys only"
@@ -4149,11 +4151,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 174,
+      "extractedCandidates": 175,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 130,
-      "pendingCandidates": 174,
+      "pendingCandidates": 175,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4244,7 +4246,7 @@
       ],
       "extractedCandidates": 205,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 31,
       "pendingCandidates": 205,
       "answerSource": "Printed original textbook keys only"
@@ -4308,7 +4310,7 @@
       ],
       "extractedCandidates": 94,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 88,
       "pendingCandidates": 94,
       "answerSource": "Printed original textbook keys only"
@@ -4363,11 +4365,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 87,
+      "extractedCandidates": 88,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 10,
-      "pendingCandidates": 87,
+      "pendingCandidates": 88,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4382,44 +4384,44 @@
           "number": 1,
           "page": 9,
           "exercisePage": 56,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 0
         },
         {
           "number": 2,
           "page": 60,
           "exercisePage": 101,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 0
         },
         {
           "number": 3,
           "page": 105,
           "exercisePage": 135,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 1
         },
         {
           "number": 4,
           "page": 137,
           "exercisePage": 174,
-          "verifiedQuestions": 17
+          "verifiedQuestions": 0
         },
         {
           "number": 5,
           "page": 180,
           "exercisePage": 223,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 0
         },
         {
           "number": 6,
           "page": 229,
           "exercisePage": 284,
-          "verifiedQuestions": 22
+          "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 125,
-      "verifiedQuestions": 124,
-      "originalPageQuestions": 124,
+      "extractedCandidates": 126,
+      "verifiedQuestions": 1,
+      "textQuestions": 1,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 1,
+      "pendingCandidates": 125,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4434,19 +4436,19 @@
           "number": 7,
           "page": 5,
           "exercisePage": 58,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 0
         },
         {
           "number": 8,
           "page": 62,
           "exercisePage": 91,
-          "verifiedQuestions": 15
+          "verifiedQuestions": 2
         },
         {
           "number": 9,
           "page": 94,
           "exercisePage": 143,
-          "verifiedQuestions": 18
+          "verifiedQuestions": 0
         },
         {
           "number": 10,
@@ -4458,7 +4460,7 @@
           "number": 11,
           "page": 183,
           "exercisePage": 222,
-          "verifiedQuestions": 19
+          "verifiedQuestions": 5
         },
         {
           "number": 12,
@@ -4468,10 +4470,10 @@
         }
       ],
       "extractedCandidates": 118,
-      "verifiedQuestions": 72,
-      "originalPageQuestions": 72,
+      "verifiedQuestions": 7,
+      "textQuestions": 7,
       "unkeyedBookBackCandidates": 41,
-      "pendingCandidates": 46,
+      "pendingCandidates": 111,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4486,7 +4488,7 @@
           "number": 1,
           "page": 9,
           "exercisePage": 61,
-          "verifiedQuestions": 25
+          "verifiedQuestions": 0
         },
         {
           "number": 2,
@@ -4497,7 +4499,7 @@
           "number": 3,
           "page": 111,
           "exercisePage": 147,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 0
         },
         {
           "number": 4,
@@ -4515,11 +4517,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 124,
-      "verifiedQuestions": 35,
-      "originalPageQuestions": 35,
+      "extractedCandidates": 125,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 89,
+      "pendingCandidates": 125,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4534,19 +4536,19 @@
           "number": 7,
           "page": 5,
           "exercisePage": 61,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 0
         },
         {
           "number": 8,
           "page": 65,
           "exercisePage": 95,
-          "verifiedQuestions": 15
+          "verifiedQuestions": 0
         },
         {
           "number": 9,
           "page": 98,
           "exercisePage": 150,
-          "verifiedQuestions": 19
+          "verifiedQuestions": 0
         },
         {
           "number": 10,
@@ -4557,7 +4559,7 @@
           "number": 11,
           "page": 194,
           "exercisePage": 235,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 0
         },
         {
           "number": 12,
@@ -4566,10 +4568,10 @@
         }
       ],
       "extractedCandidates": 117,
-      "verifiedQuestions": 74,
-      "originalPageQuestions": 74,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 43,
+      "pendingCandidates": 117,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4655,7 +4657,7 @@
       ],
       "extractedCandidates": 129,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 85,
       "pendingCandidates": 129,
       "answerSource": "Printed original textbook keys only"
@@ -4734,11 +4736,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 123,
+      "extractedCandidates": 124,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 56,
-      "pendingCandidates": 123,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 57,
+      "pendingCandidates": 124,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -4817,7 +4819,7 @@
       ],
       "extractedCandidates": 112,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 83,
       "pendingCandidates": 112,
       "answerSource": "Printed original textbook keys only"
@@ -4893,7 +4895,7 @@
       ],
       "extractedCandidates": 121,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 49,
       "pendingCandidates": 121,
       "answerSource": "Printed original textbook keys only"
@@ -4975,7 +4977,7 @@
       ],
       "extractedCandidates": 84,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 73,
       "pendingCandidates": 84,
       "answerSource": "Printed original textbook keys only"
@@ -5049,11 +5051,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 107,
+      "extractedCandidates": 108,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 54,
-      "pendingCandidates": 107,
+      "pendingCandidates": 108,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5116,11 +5118,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 101,
+      "extractedCandidates": 102,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 2,
-      "pendingCandidates": 101,
+      "pendingCandidates": 102,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5135,38 +5137,38 @@
           "number": 1,
           "page": 9,
           "exercisePage": 79,
-          "verifiedQuestions": 13
+          "verifiedQuestions": 3
         },
         {
           "number": 2,
           "page": 88,
           "exercisePage": 126,
-          "verifiedQuestions": 14
+          "verifiedQuestions": 4
         },
         {
           "number": 3,
           "page": 133,
           "exercisePage": 197,
-          "verifiedQuestions": 14
+          "verifiedQuestions": 1
         },
         {
           "number": 4,
           "page": 203,
           "exercisePage": 266,
-          "verifiedQuestions": 13
+          "verifiedQuestions": 4
         },
         {
           "number": 5,
           "page": 274,
           "exercisePage": 290,
-          "verifiedQuestions": 15
+          "verifiedQuestions": 8
         }
       ],
       "extractedCandidates": 76,
-      "verifiedQuestions": 69,
-      "originalPageQuestions": 69,
+      "verifiedQuestions": 20,
+      "textQuestions": 20,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 7,
+      "pendingCandidates": 56,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5181,31 +5183,31 @@
           "number": 6,
           "page": 9,
           "exercisePage": 56,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 3
         },
         {
           "number": 7,
           "page": 61,
           "exercisePage": 110,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 4
         },
         {
           "number": 8,
           "page": 116,
           "exercisePage": 143,
-          "verifiedQuestions": 9
+          "verifiedQuestions": 3
         },
         {
           "number": 9,
           "page": 149,
           "exercisePage": 197,
-          "verifiedQuestions": 11
+          "verifiedQuestions": 5
         },
         {
           "number": 10,
           "page": 203,
           "exercisePage": 254,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 4
         },
         {
           "number": 11,
@@ -5214,11 +5216,11 @@
           "verifiedQuestions": 10
         }
       ],
-      "extractedCandidates": 79,
-      "verifiedQuestions": 45,
-      "originalPageQuestions": 45,
+      "extractedCandidates": 80,
+      "verifiedQuestions": 29,
+      "textQuestions": 29,
       "unkeyedBookBackCandidates": 9,
-      "pendingCandidates": 34,
+      "pendingCandidates": 51,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5265,11 +5267,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 73,
+      "extractedCandidates": 76,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
-      "pendingCandidates": 73,
+      "pendingCandidates": 76,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5321,7 +5323,7 @@
       ],
       "extractedCandidates": 86,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 30,
       "pendingCandidates": 86,
       "answerSource": "Printed original textbook keys only"
@@ -5409,7 +5411,7 @@
       ],
       "extractedCandidates": 143,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 138,
       "pendingCandidates": 143,
       "answerSource": "Printed original textbook keys only"
@@ -5446,6 +5448,7 @@
         {
           "number": 5,
           "page": 101,
+          "exercisePage": 109,
           "verifiedQuestions": 0
         },
         {
@@ -5487,11 +5490,11 @@
           "verifiedQuestions": 0
         }
       ],
-      "extractedCandidates": 148,
+      "extractedCandidates": 149,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
-      "unkeyedBookBackCandidates": 44,
-      "pendingCandidates": 148,
+      "textQuestions": 0,
+      "unkeyedBookBackCandidates": 45,
+      "pendingCandidates": 149,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5506,37 +5509,37 @@
           "number": 1,
           "page": 7,
           "exercisePage": 34,
-          "verifiedQuestions": 18
+          "verifiedQuestions": 6
         },
         {
           "number": 2,
           "page": 43,
           "exercisePage": 76,
-          "verifiedQuestions": 16
+          "verifiedQuestions": 7
         },
         {
           "number": 3,
           "page": 83,
           "exercisePage": 105,
-          "verifiedQuestions": 19
+          "verifiedQuestions": 13
         },
         {
           "number": 4,
           "page": 112,
           "exercisePage": 129,
-          "verifiedQuestions": 20
+          "verifiedQuestions": 16
         },
         {
           "number": 5,
           "page": 135,
           "exercisePage": 154,
-          "verifiedQuestions": 18
+          "verifiedQuestions": 14
         },
         {
           "number": 6,
           "page": 159,
           "exercisePage": 182,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 9
         },
         {
           "number": 7,
@@ -5558,10 +5561,10 @@
         }
       ],
       "extractedCandidates": 155,
-      "verifiedQuestions": 135,
-      "originalPageQuestions": 135,
+      "verifiedQuestions": 99,
+      "textQuestions": 99,
       "unkeyedBookBackCandidates": 9,
-      "pendingCandidates": 20,
+      "pendingCandidates": 56,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5622,7 +5625,7 @@
       ],
       "extractedCandidates": 159,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 36,
       "pendingCandidates": 159,
       "answerSource": "Printed original textbook keys only"
@@ -5643,7 +5646,7 @@
       ],
       "extractedCandidates": 67,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 0,
       "pendingCandidates": 67,
       "answerSource": "Printed original textbook keys only"
@@ -5665,25 +5668,25 @@
           "number": 2,
           "page": 33,
           "exercisePage": 49,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 3,
           "page": 50,
           "exercisePage": 65,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 4,
           "page": 67,
           "exercisePage": 79,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 5,
           "page": 81,
           "exercisePage": 103,
-          "verifiedQuestions": 6
+          "verifiedQuestions": 0
         },
         {
           "number": 6,
@@ -5694,7 +5697,7 @@
           "number": 7,
           "page": 133,
           "exercisePage": 140,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 8,
@@ -5705,50 +5708,50 @@
           "number": 9,
           "page": 166,
           "exercisePage": 193,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 10,
           "page": 195,
           "exercisePage": 213,
-          "verifiedQuestions": 4
+          "verifiedQuestions": 0
         },
         {
           "number": 11,
           "page": 215,
           "exercisePage": 226,
-          "verifiedQuestions": 4
+          "verifiedQuestions": 0
         },
         {
           "number": 12,
           "page": 228,
           "exercisePage": 248,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 13,
           "page": 250,
           "exercisePage": 270,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 14,
           "page": 271,
           "exercisePage": 281,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 15,
           "page": 283,
           "exercisePage": 296,
-          "verifiedQuestions": 17
+          "verifiedQuestions": 0
         }
       ],
       "extractedCandidates": 104,
-      "verifiedQuestions": 71,
-      "originalPageQuestions": 71,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 4,
-      "pendingCandidates": 33,
+      "pendingCandidates": 104,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5793,19 +5796,19 @@
           "number": 6,
           "page": 83,
           "exercisePage": 106,
-          "verifiedQuestions": 4
+          "verifiedQuestions": 3
         },
         {
           "number": 7,
           "page": 108,
           "exercisePage": 113,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 3
         },
         {
           "number": 8,
           "page": 115,
           "exercisePage": 133,
-          "verifiedQuestions": 10
+          "verifiedQuestions": 9
         },
         {
           "number": 9,
@@ -5851,10 +5854,10 @@
         }
       ],
       "extractedCandidates": 104,
-      "verifiedQuestions": 65,
-      "originalPageQuestions": 0,
+      "verifiedQuestions": 61,
+      "textQuestions": 61,
       "unkeyedBookBackCandidates": 9,
-      "pendingCandidates": 39,
+      "pendingCandidates": 43,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -5874,25 +5877,25 @@
           "number": 2,
           "page": 33,
           "exercisePage": 49,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 3,
           "page": 50,
           "exercisePage": 65,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 4,
           "page": 67,
           "exercisePage": 79,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 5,
           "page": 81,
           "exercisePage": 103,
-          "verifiedQuestions": 6
+          "verifiedQuestions": 0
         },
         {
           "number": 6,
@@ -5903,7 +5906,7 @@
           "number": 7,
           "page": 133,
           "exercisePage": 140,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 8,
@@ -5914,50 +5917,50 @@
           "number": 9,
           "page": 166,
           "exercisePage": 193,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 10,
           "page": 195,
           "exercisePage": 213,
-          "verifiedQuestions": 4
+          "verifiedQuestions": 0
         },
         {
           "number": 11,
           "page": 215,
           "exercisePage": 226,
-          "verifiedQuestions": 4
+          "verifiedQuestions": 0
         },
         {
           "number": 12,
           "page": 228,
           "exercisePage": 248,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 13,
           "page": 250,
           "exercisePage": 270,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 14,
           "page": 271,
           "exercisePage": 281,
-          "verifiedQuestions": 5
+          "verifiedQuestions": 0
         },
         {
           "number": 15,
           "page": 283,
           "exercisePage": 296,
-          "verifiedQuestions": 17
+          "verifiedQuestions": 0
         }
       ],
       "extractedCandidates": 104,
-      "verifiedQuestions": 71,
-      "originalPageQuestions": 71,
+      "verifiedQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 4,
-      "pendingCandidates": 33,
+      "pendingCandidates": 104,
       "answerSource": "Printed original textbook keys only"
     },
     {
@@ -6049,7 +6052,7 @@
       ],
       "extractedCandidates": 249,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 212,
       "pendingCandidates": 249,
       "answerSource": "Printed original textbook keys only"
@@ -6137,7 +6140,7 @@
       ],
       "extractedCandidates": 261,
       "verifiedQuestions": 0,
-      "originalPageQuestions": 0,
+      "textQuestions": 0,
       "unkeyedBookBackCandidates": 87,
       "pendingCandidates": 261,
       "answerSource": "Printed original textbook keys only"

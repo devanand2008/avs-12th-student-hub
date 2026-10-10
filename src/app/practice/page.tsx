@@ -88,9 +88,9 @@ export default function PracticeHubPage() {
             Real-Time Practice & Timed Exams
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
-            Practice with instant explanations or test yourself under exam
-            conditions. Choose between standard SCERT Book-In questions and
-            original Book-Out application problems.
+            Answer one text question at a time with separate A, B, C and D
+            choices. Practise with instant explanations or test yourself under
+            exam conditions using Book-In or Book-Out questions.
           </p>
         </div>
 

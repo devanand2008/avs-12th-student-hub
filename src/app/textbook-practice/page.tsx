@@ -59,9 +59,9 @@ export default function TextbookPracticePage() {
           <span className="eyebrow">OFFICIAL TEXTBOOK PRACTICE</span>
           <h1 className="page-title">One-mark MCQs by subject and chapter</h1>
           <p className="mt-2 text-sm text-slate-600">
-            Choose a textbook and practise questions checked against its printed
-            answer key or reviewed by a teacher. You can practise again at any
-            time, or read the original exercises for every book.
+            Choose a textbook and practise one question at a time with four
+            separate text choices. Answers are checked against the textbook or
+            reviewed by a teacher. You can practise again at any time.
           </p>
         </div>
         {error && (
@@ -156,8 +156,8 @@ export default function TextbookPracticePage() {
               </div>
               <p role="status" className="text-sm text-slate-600">
                 {available
-                  ? `${available} questions available. Each answer includes its textbook source.`
-                  : "Questions for this selection are awaiting review. You can still read the original textbook exercises."}
+                  ? `${available} text questions available, each with separate A, B, C and D choices.`
+                  : "The question text, choices or answers for this selection are awaiting review. You can still read the original textbook exercises."}
               </p>
             </>
           )}
@@ -190,17 +190,15 @@ export default function TextbookPracticePage() {
         </section>
         <p className="text-xs text-slate-500">
           The library contains {catalogJson.books.length} official textbook
-          records. Questions without a verified answer stay in the teacher
-          review queue.
+          records. Questions with incomplete text or unverified answers stay in
+          the teacher review queue.
         </p>
         {selected && (
           <section className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3">
-            <h2 className="text-lg font-bold">
-              Chapter practice and original exercises
-            </h2>
+            <h2 className="text-lg font-bold">Chapter practice</h2>
             <p className="text-sm text-slate-600">
-              Open any chapter to read every printed question. Automatic answer
-              checking is available for questions with verified answers.
+              Practise ready text questions in each chapter. Original textbook
+              exercises are available separately if you want to check a source.
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               {selected.chapters.map((chapter) => (

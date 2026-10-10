@@ -89,6 +89,12 @@ export async function startPostgrestFixture(
       "utf8",
     ),
   );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261010_textbook_mcq_text_only.sql",
+      "utf8",
+    ),
+  );
   if (seedDemo) {
     await seedTextbookBank(db);
     await db.query("select public.avs_bootstrap_admin($1)", [

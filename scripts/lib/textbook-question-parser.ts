@@ -1,6 +1,10 @@
 import { createHash } from "node:crypto";
 import { chapterNumber, parsePrintedAnswerKey } from "./textbook-answer-keys";
 import reviewHolds from "./textbook-review-holds.json";
+import {
+  extractReadableMcqText,
+  mcqOptionMatches,
+} from "./textbook-question-text";
 import type { Textbook } from "../../src/lib/textbooks";
 import type {
   McqAnswer,
@@ -228,11 +232,22 @@ export function extractBookMcqs(book: Textbook, extracted: ExtractedBook) {
       .split(
         /\n\s*(?:Answers?(?:\s*key)?|KEY|விடைகள்|விடை\s*குறிப்பு)\s*:?\s*(?=\n|\d)/iu,
       )[0];
-    const optionMatches = [
+    // Preserve the original canonical extraction for existing IDs. A stricter
+    // matcher can additionally recover code whose closing arguments looked
+    // like option labels; display text is checked separately below.
+    let optionMatches = [
       ...raw.matchAll(
         /(?:^|[\s(])([abcdஅஆஇஈ])\s*[).]\s*|(?:^|\s)\(\s*([1-4])\s*\)\s*/giu,
       ),
     ];
+    if (
+      optionMatches.length < 2 ||
+      optionMatches.length > 4 ||
+      optionMatches
+        .map((m) => letters[(m[1] || m[2]).toLowerCase()])
+        .join("") !== "ABCD".slice(0, optionMatches.length)
+    )
+      optionMatches = mcqOptionMatches(raw);
     if (
       optionMatches.length < 2 ||
       optionMatches.length > 4 ||
@@ -648,26 +663,33 @@ export function extractBookMcqs(book: Textbook, extracted: ExtractedBook) {
     }
   }
   const extractedCandidates = questions.map(({ offset, end, ...question }) => {
-    void offset;
-    void end;
-    const pdfFlags = new Set([
+    const sourceStart = starts.find((start) => start.index === offset);
+    const recovered = extractReadableMcqText(
+      text.slice(offset + (sourceStart?.[0].length || 0), end),
+      book.subject,
+    );
+    // IDs remain based on the original extraction, so existing answers and
+    // practice history retain their source identity. Presentation is separate.
+    if (recovered.text) Object.assign(question, recovered.text);
+    const replacedFlags = new Set([
       "PDF text needs correction",
       "Options are not distinct",
       "Check mathematical formatting against the PDF",
+      "Check the option boundaries",
+      "Confirm that all original choices were extracted",
     ]);
+    question.qualityFlags = [
+      ...question.qualityFlags.filter((flag) => !replacedFlags.has(flag)),
+      ...recovered.flags,
+    ];
+    question.presentation = "Text";
+    question.status = "Needs Review";
     if (
       question.correctAnswer &&
       question.options.length === 4 &&
       question.section === "Book-back" &&
-      question.qualityFlags.every((flag) => pdfFlags.has(flag))
+      question.qualityFlags.length === 0
     ) {
-      question.presentation =
-        question.presentation === "Original PDF" ||
-        book.sourceMedium === "Tamil" ||
-        /mathematics|statistics|physics|chemistry/i.test(book.subject) ||
-        question.qualityFlags.length
-          ? "Original PDF"
-          : "Text";
       question.status = "Published";
     }
     const hold = reviewHolds.find(

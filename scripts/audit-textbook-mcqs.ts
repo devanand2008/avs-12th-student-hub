@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import assert from "node:assert/strict";
 import catalogJson from "../src/lib/textbooks-catalog.json";
 import type { TextbookCatalog } from "../src/lib/textbooks";
+import { isTextPracticeQuestion } from "../src/lib/practice-question-text";
 import {
   extractBookMcqs,
   type ExtractedBook,
@@ -15,6 +16,22 @@ async function main() {
     const { candidates, chapters } = extractBookMcqs(book, extracted);
     const published = candidates.filter((q) => q.status === "Published");
     for (const question of published) {
+      assert.equal(
+        question.presentation,
+        "Text",
+        `${question.id}: text-only publication`,
+      );
+      assert.ok(
+        isTextPracticeQuestion({
+          questionText: question.questionText,
+          optionA: question.options[0],
+          optionB: question.options[1],
+          optionC: question.options[2],
+          optionD: question.options[3],
+          sourcePresentation: "Text",
+        }),
+        `${question.id}: substantive text and choices`,
+      );
       assert.equal(question.options.length, 4, `${question.id}: four choices`);
       assert.ok(question.correctAnswer, `${question.id}: verified answer`);
       assert.equal(question.section, "Book-back", `${question.id}: exercise`);
@@ -49,9 +66,7 @@ async function main() {
       })),
       extractedCandidates: candidates.length,
       verifiedQuestions: published.length,
-      originalPageQuestions: published.filter(
-        (q) => q.presentation === "Original PDF",
-      ).length,
+      textQuestions: published.length,
       unkeyedBookBackCandidates: candidates.filter(
         (q) => q.section === "Book-back" && !q.correctAnswer,
       ).length,
@@ -60,12 +75,12 @@ async function main() {
     });
   }
   const report = {
-    extractionVersion: 2,
+    extractionVersion: 3,
     checkedAt: new Date().toISOString(),
     booksAnalysed: books.length,
     verifiedQuestions: books.reduce((n, b) => n + b.verifiedQuestions, 0),
     pendingCandidates: books.reduce((n, b) => n + b.pendingCandidates, 0),
-    note: "This extraction audit is not an assertion that every exercise or academic answer is complete. Raw text with unreadable glyphs or formulas is displayed using the original PDF page. Missing or conflicting answers are not invented.",
+    note: "Only readable text questions with four real choices and a matching printed key are automatically published. Damaged glyphs, ambiguous formula layouts and image-dependent questions require transcription review. No textbook page images or placeholder choices appear in practice. Missing or conflicting answers are not invented.",
     books,
   };
   await writeFile(
