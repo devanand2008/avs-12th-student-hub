@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-12T15:28:54.686Z",
+  "mode": "Offline only; no Supabase connections",
+  "snapshot": {
+    "file": ".local/independent-live-content.json",
+    "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "capturedAt": "2026-10-10T15:56:21.193Z",
+    "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+    "totalRows": 3039,
+    "studentReadyEnglish": 995,
+    "studentReadyTamil": 0,
+    "publishedTextbooks": 995,
+    "legacyHeld": 12,
+    "legacyPublished": 0,
+    "invalidAnswerOrSourceIds": [],
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "matchesPriorProof": true,
+    "alternativeLocaleDigest": "ab8f548a063dc422577be0bba6537058"
+  },
+  "physicsCandidates": {
+    "count": 15,
+    "uniqueIds": 15,
+    "queueMatchesPacket": true,
+    "allHeld": true,
+    "publishedPhysicsIds": [],
+    "decisionCounts": {
+      "pending": 15
+    },
+    "historyEvents": 0,
+    "question10": {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4bb323c633421f60",
+      "decision": "pending",
+      "completeTextOptions": false
+    }
+  },
+  "practice": {
+    "rawCurrentSessionSnapshotAvailable": false,
+    "lastSavedProof": "docs/teacher-decision-audit-database-proof.json",
+    "proofCapturedAt": "2026-10-12T15:07:42.350Z",
+    "lastReportedSessions": 13,
+    "lastReportedPracticeDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "independentlyRemeasuredThisTurn": false
+  },
+  "limitations": "995 English records and legacy exclusion are verified from the saved local snapshot, not fresh production. Current live state and the 13 raw practice sessions cannot be independently reread under this task’s production-connection prohibition. The local review workflow cannot modify those tables; preservation is checked by file hashes and isolated fixture tests.",
+  "productionConnections": 0,
+  "productionWrites": 0
+}

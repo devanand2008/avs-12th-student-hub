@@ -1,11 +1,16 @@
 services:
   - type: web
     name: avs-12-hub
-    env: node
+    runtime: node
     plan: starter
+    repo: https://github.com/devanand2008/avs-12th-student-hub
+    branch: main
     buildCommand: npm ci && npm run build
     startCommand: npm run start:web
+    healthCheckPath: /
     envVars:
+      - key: NODE_VERSION
+        value: 24.19.0
       - key: NODE_ENV
         value: production
       - key: ADMIN_EMAIL
@@ -16,6 +21,14 @@ services:
         generateValue: true
       - key: ENABLE_DEMO_DATA
         value: "false"
+      - key: NEXT_PUBLIC_ENABLE_DEMO_LOGIN
+        value: "false"
+      - key: STUDENT_ACTIVATION_MODE
+        sync: false
+      - key: TEXTBOOK_DELIVERY
+        value: official
+      - key: AI_PROVIDER
+        value: excerpts
       - key: APP_ORIGIN
         sync: false
       - key: SUPABASE_URL

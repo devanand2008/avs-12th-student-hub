@@ -49,7 +49,7 @@ export default function PwaInstallModal() {
           {/* Close button */}
           <button
             onClick={closeInstallGuide}
-            className="absolute top-4 right-4 p-2 rounded-full text-blue-200 hover:text-white hover:bg-white/10 transition-colors touch-target"
+            className="absolute top-4 right-4 z-10 p-2 rounded-full text-blue-200 hover:text-white hover:bg-white/10 transition-colors touch-target"
             aria-label="Close dialog"
           >
             <X className="w-5 h-5" />
@@ -58,7 +58,7 @@ export default function PwaInstallModal() {
           <div className="relative flex items-center gap-3.5 pr-8">
             <div className="relative w-14 h-14 rounded-2xl bg-white p-1.5 shadow-lg flex-shrink-0 border border-blue-200/50">
               <Image
-                src="/icon-192.png"
+                src="/skillup-logo.png"
                 alt="SkillUp App Icon"
                 width={56}
                 height={56}

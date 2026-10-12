@@ -1,5 +1,37 @@
 # Next Tamil extraction inventory
 
+## Local teacher review ready (October 12, 2026)
+
+The Unit 1 held packet now has a [dedicated local teacher review workflow](LOCAL_TAMIL_PHYSICS_REVIEW.md), separate from the production Supabase admin panel. Run `npm run mcqs:physics-review` and open `http://127.0.0.1:4312`. The project owner must provision each actual teacher using `-- --add-reviewer teacher@example.com --name "Actual teacher name"`; sign in with those private local credentials. No real teacher was provisioned by the coding agent.
+
+All 15 questions can be selected individually, with original extraction/options separated from proposed Tamil, actual locally rendered PDF pages, printed/PDF references and printed-key evidence. Teacher notes and pending/correction/rejection/approval decisions persist in `.local/teacher-review/physics-unit1-workflow/decisions.json`, separately from the held queue. Approval requires explicit source/key and diagram checks and resolved issues; Question 10 cannot be approved while graph choices are incomplete. There is no automatic wording correction, graph reconstruction or publication.
+
+**Actual outcome: pending 15, reviewed 0, approved 0, rejected 0, decision events 0.** Export decision manifest downloads all stable IDs, source references/hashes, reviewer decisions, correction notes, warnings and history. All candidate records remain held even after a local reference approval; export never imports anything. Authentication and same-origin/host checks apply to decisions, queue, images and exports. Existing production admin code is unchanged and must not be used to submit this local batch.
+
+**Validation passed:** 96 automated tests (0 failures/skips), including all 15 questions in desktop/mobile browsers, actual rendered image loading, protected routes, explicit diagram checks, blocked graph approval, save/reload/export, stale-action rejection and restart persistence. Two actual extraction reruns preserve saved isolated-fixture decisions and add no duplicate candidates. Typecheck, lint (0 warnings), build (74/74 pages), bounded extraction audit and global parser audit passed. The full Next.js browser suite was not rerun. No test decisions were inserted in the real manifest. Source packet/queue/transcription and live-admin code hashes remain unchanged.
+
+Production was **not accessed, written or deployed** in this task. The October 10 live baseline (995 English questions, Tamil 0, 13 practice sessions) is historical and was not remeasured. Next priority remains real teacher verification of this Unit 1 packet and resolving its seven diagram-dependent questions, especially Question 10's incomplete graph choices; no next extraction batch was started.
+
+[Local workflow guide](LOCAL_TAMIL_PHYSICS_REVIEW.md) · [Verification receipts](local-physics-review-verification.json) · [Preservation checks](local-physics-review-preservation.json)
+
+## Completed local extraction: Physics Volume 1 Unit 1
+
+October 10, 2026: freshly extracted and visually inspected PDF **9, 79, 80, 81** of `12-physics-tamil-v1-c1623725`, source `12th_Std_Physics_Vol_1_TM_optimised.pdf`. Live metadata confirms Physics / Tamil / Volume 1; source SHA-256 `300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba`. Unit 1 is **நிலை மின்னியல்**, starting PDF 9 / printed 1; Unit 2 starts PDF 88. This resolves the local proposal's front-matter chapter title without changing production mapping.
+
+The real section contains **15 MCQs**: questions 1–6 start on PDF 79 / printed 71; questions 7–12 on PDF 80 / printed 72; questions 13–15 on PDF 81 / printed 73. Question 6's diagram/options continue onto PDF 80. The printed numbered answer key on PDF 81 precedes section II and agrees with all 15 proposed letters. **Pending 15; reviewed 0; approved 0; rejected 0; published 0.** All remain held for teacher verification.
+
+Eleven records retain existing candidate IDs; four missed questions (8, 10, 13, 14) have new local IDs. Raw/source text and options remain separate from proposed visual Tamil transcription. Source filename/hash, question numbers, printed/PDF pages, scoped key and per-question uncertainties are preserved. Seven diagram-dependent questions (1, 3, 5, 6, 8, 10, 14) require faithful representation; question 10 retains graph labels only and has **incomplete text options**. Damaged Tamil/notation remains flagged in every record. Printed inconsistencies or conditions in 7, 8, 9 and 13 require teacher resolution; no wording/answer is academically corrected by the coding agent.
+
+Run `npm run mcqs:physics-unit1` to reproduce the local packet, or add `-- --render` to render the source images again. Queue: `.local/teacher-review/tamil-physics-unit1.json`, batch `tb-12-physics-tamil-v1-c1623725-ch-1-review-01`. The command has no database client or production import switch. Reruns add 0 duplicates and preserve existing local edits/history. **No records were imported into Supabase or the live admin queue.** The historical inventory below still describes the actual production candidate population, including 14 Physics Unit 1 parser rows and 0 book-back classifications; 11 of those overlap this packet and three outside the bounded section remain untouched.
+
+Validation: **92 unit tests passed, 0 failed/skipped**, plus a repeated run of the five new focused cases after the final notation transcription fix; typecheck, lint (0 warnings), build (74/74 pages), bounded extraction and existing global parser audits passed. Source hash/pages and key mappings validate; 15 questions remain held. Browser end-to-end suites were not rerun. Read-only before/after database proofs match: **995 existing English publications, Tamil 0, 12 held legacy samples, 13 unchanged practice sessions**, with identical complete question/candidate digests.
+
+[Per-question teacher review packet](TAMIL_PHYSICS_UNIT1_REVIEW.md) · [Candidates with original evidence](tamil-physics-unit1-candidates.json) · [Extraction audit](tamil-physics-unit1-extraction-audit.json) · [Validation receipts](tamil-physics-unit1-verification.json) · [Preservation proof](tamil-physics-unit1-database-proof.json)
+
+**Next priority:** teacher verification and faithful diagram/graph representation for these 15 local Unit 1 candidates, followed by authorised reconciliation of the retained IDs. Unit 1 extraction is bounded and complete as a held packet, not complete student coverage. Physics Units 2–5 and the computer books remain unprocessed at the MCQ transcription/reconciliation stage; no next batch was started in this task.
+
+## Previous inventory snapshot
+
 Original PDFs checked 2026-10-10T16:19:48.018Z; live publication snapshot 2026-10-10T16:19:02.685Z. Selection uses actual database subject, volume and source_medium metadata. Each distinct PDF ID/hash is preserved, including optimised/full computer-book editions.
 
 **5 PDF records; 53 academic chapter records; 1584 freshly extracted pages; 0 failed/unprocessed pages; 53 chapter records with zero published questions.** Text extraction is not a claim of complete/readable MCQ transcription. Sparse/diagram pages and cache checks are listed per book in the JSON.
@@ -82,6 +114,6 @@ The inventory excludes front matter, practicals, appendices, glossary and acknow
 
 ## Priority
 
-Start Tamil Physics Volume 1 Unit 1 at the section-I pages listed above: preserve mathematical symbols/diagrams, delimit the printed key, and prepare held text candidates. Follow with Units 2–5, Computer Applications chapters 1–18 in each PDF record, and Computer Technology chapters 1–6 in each record. None currently has published questions. This inventory adds no questions or approvals.
+The original Unit 1 extraction priority is now completed as the 15-record local held packet above. The immediate remaining work is teacher verification, resolution of the source ambiguities and faithful diagram/graph representation, followed by an authorised reconciliation/import. Physics Units 2–5, Computer Applications chapters 1–18 in each PDF record and Computer Technology chapters 1–6 in each record remain subsequent extraction work. No subsequent batch was processed, no question was approved, and none of these books has published Tamil questions.
 
 [Machine-readable candidate/source checks](tamil-accountancy-followup.json) · [chapter CSV](tamil-next-extraction-inventory.csv)

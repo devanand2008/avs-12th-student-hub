@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-12T14:19:40.073Z",
+  "files": [
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/data/tamil-physics-unit1-transcription.json",
+      "sha256": "94924d137a9e8952ce1ce41cf86d1f5f839aaabcde331c93b8db2e84e58785d6",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/supabase/server.ts",
+      "sha256": "b3b8d71360e0d00c1c571c961918f3af6a7b4947620a59c4f1c74bdfb56811fc",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/api/admin/textbook-questions/route.ts",
+      "sha256": "1a6f53ac57e4408d30c3954e8f4bec64dba32b5e91395d37d6f75c6e2275f082",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/admin/textbook-questions/page.tsx",
+      "sha256": "f841e5972821b65d523bd30da0388a7b44ba817bc6e975c0cdaa4eba0752f4f9",
+      "unchanged": true
+    }
+  ],
+  "localEntries": 15,
+  "localReviewed": 0,
+  "localApproved": 0,
+  "localRejected": 0,
+  "localPending": 15,
+  "localAccounts": 0,
+  "productionDatabaseAccessed": false,
+  "productionWrites": 0,
+  "productionDeployments": 0
+}

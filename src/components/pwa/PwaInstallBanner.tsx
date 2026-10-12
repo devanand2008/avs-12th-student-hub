@@ -39,7 +39,7 @@ export default function PwaInstallBanner() {
         {/* App Icon */}
         <div className="relative w-11 h-11 rounded-xl bg-[#071A3D] p-1 flex-shrink-0 shadow-sm border border-blue-100 flex items-center justify-center">
           <Image
-            src="/icon-192.png"
+            src="/skillup-logo.png"
             alt="SkillUp"
             width={40}
             height={40}

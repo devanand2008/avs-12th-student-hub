@@ -1,8 +1,9 @@
-const CACHE_NAME = "avs-public-shell-v3";
+const CACHE_NAME = "avs-public-shell-v4";
 const PRECACHE_ASSETS = [
   "/",
   "/offline.html",
   "/manifest.json",
+  "/skillup-logo.png",
   "/icon-192.png",
   "/icon-512.png",
   "/icon-maskable.png",

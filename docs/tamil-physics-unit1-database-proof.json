@@ -1,0 +1,28 @@
+{
+  "beforeReadAt": "2026-10-10T16:48:32.742329+00:00",
+  "afterReadAt": "2026-10-10T17:00:17.427791+00:00",
+  "before": {
+    "legacyHeld": 12,
+    "candidateCount": 12229,
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "publishedTamil": 0,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "candidateDigest": "a783492490561808b733a2329fd57d05",
+    "practiceSessions": 13,
+    "publishedTextbooks": 995
+  },
+  "after": {
+    "legacyHeld": 12,
+    "candidateCount": 12229,
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "publishedTamil": 0,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "candidateDigest": "a783492490561808b733a2329fd57d05",
+    "practiceSessions": 13,
+    "publishedTextbooks": 995
+  },
+  "unchanged": true,
+  "physicsUnit1CandidatesUnchanged": true,
+  "productionWritesPerformed": 0,
+  "teacherDecisionsMade": 0
+}

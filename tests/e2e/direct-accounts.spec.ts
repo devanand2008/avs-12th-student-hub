@@ -345,7 +345,11 @@ test("admin reviews unknown answers and imports duplicate-safe chapter MCQs", as
     .check();
   await dialog.getByRole("button", { name: "Publish reviewed MCQ" }).click();
   await expect(dialog).toHaveCount(0);
-  await expect(page.getByRole("status")).toContainText("published");
+  await expect(
+    page
+      .getByRole("status")
+      .filter({ hasText: "Reviewed question published." }),
+  ).toContainText("published");
   await page.goto("/admin/questions/import");
   const csv = `chapter_id,question,option_a,option_b,option_c,option_d,correct_answer\n${fixtureChapterId},Reviewed upload ${info.project.name} question?,One,Two,,,B`;
   await page.getByLabel("Question CSV").fill(csv);

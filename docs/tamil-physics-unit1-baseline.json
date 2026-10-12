@@ -1,0 +1,421 @@
+{
+  "book": {
+    "id": "12-physics-tamil-v1-c1623725",
+    "class": 12,
+    "pages": 352,
+    "title": "Physics — Volume 1",
+    "medium": "Tamil",
+    "sha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+    "status": "downloaded",
+    "volume": "1",
+    "edition": null,
+    "subject": "Physics",
+    "category": "Science",
+    "local_path": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+    "size_bytes": 64422323,
+    "source_url": "https://d1e5r329t7a85t.cloudfront.net/12th_Std_Physics_Vol_1_TM_optimised.pdf",
+    "source_file": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+    "source_page": "https://scert.tnschools.gov.in/textbook",
+    "verified_at": "2026-10-10T04:10:12.093+00:00",
+    "source_title": "12th Std Physics Vol-1 Tamil Medium.pdf",
+    "downloaded_at": "2026-10-06T17:37:20.114+00:00",
+    "source_medium": "Tamil",
+    "download_error": null
+  },
+  "proof": {
+    "legacyHeld": 12,
+    "candidateCount": 12229,
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "publishedTamil": 0,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "candidateDigest": "a783492490561808b733a2329fd57d05",
+    "practiceSessions": 13,
+    "publishedTextbooks": 995
+  },
+  "checkedAt": "2026-10-10T16:48:32.742329+00:00",
+  "candidates": [
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-470ce1dbbb03a306",
+      "page": 45,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 1,
+      "status": "Needs Review",
+      "endPage": 45,
+      "options": [
+        "வில், θ = 0 ˚. எ ்னமவ , Φ E E A EA = ⋅ =   படம் 1 . 31",
+        "வில், θ = 90 ˚. எ ்னமவ , Φ E E A = ⋅ =   0 38 அலகு 1 நிலைமின்னியல் எடுத் து க் காட டு 1 . 1 7 100 N C –1 மதிப்பு லட ய சீ ரா ்ன மின்புலம் நிலவும் பகுதியில் லவக்கப்பட டு ள் ை 5 cm மற்றும் 10 cm ப க்கங்க ள் ் காண்ட ் ை வ வ க த் ல்த க் கடக்கும் மி ன்பா ய த் ல்த க் கணக்கிடுக. ் கா டு க் கப்ப ட ட மகா ணம் θ = 60 ˚ . ஒரு மவல ை θ சுழி எனில், மி ன்பா யம் எ ன் ்ன ? பர\u001d\u001c A \u001f E \u001e \u001f\u001e\u001e\u001e\u001e தீ ர வு மி ன்பா யம் Φ E E A EA = ⋅ = = × × × × − \u001f \u001f \u001e cos cos θ 100 5 10 10 60 4 Φ E = − 0 25 . Nm C 2 1 θ = 0 o எனில் Φ E E A EA = ⋅ = = × × × = − −   100 5 10 10 0 5"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe the original question and all four choices"
+      ],
+      "questionText": "31 ]. இந்த வ லர ய ல் யின் படி, Φ E E A = ⋅   . ம ம லும் ( 1 . 53 ) மற்றும் ( 1 . 54 ) ஆகிய ை ம ன் பா டுக ல ை இ ்த ன் சி ் ப் பு மந ர் வுக ை ாக ் ப் முடியும். படம் 1 . 31",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-cf4d0da24caa53f3",
+      "page": 79,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 1,
+      "status": "Needs Review",
+      "endPage": 79,
+      "options": [
+        "A 1 மற்றும் A 2",
+        "B 1 மற்றும் B 2",
+        "இரு தி ல ைகளிலும்",
+        "ை மநில ல யில் இரு க்கா து"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "–q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி மின்துக ள் க ள் படத்தில் உ ள் ை வாறு லவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P எ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது மின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து அம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில் சிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள் நக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து தி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q ஆ ்ன து ை மநில ல யில் இருக்கும் ? - q - q + q A 1 A 2 B 2 B 1 P – – +",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4ffcd19d0869c262",
+      "page": 79,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 2,
+      "status": "Needs Review",
+      "endPage": 79,
+      "options": [
+        "புள்ளி மின்துகள்",
+        "சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி",
+        "சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா ை ம ்தை ம்",
+        "சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication"
+      ],
+      "questionText": "பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ ரா ்ன மின்புல த் ல்த உருவாக்கும்?",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-08ccc72e718307ac",
+      "page": 79,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 3,
+      "status": "Needs Review",
+      "endPage": 79,
+      "options": [
+        "1 5",
+        "25 11",
+        "5",
+        "11 25"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "பி ன்வ ரும் மின்புலக் மகா டுகளின் வடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின் மின்னூட ட விகி ்த ம் q q 1 2 எ ன் ்ன ? q 1 q 2",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-0f9024994b5a82aa",
+      "page": 79,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 4,
+      "status": "Needs Review",
+      "endPage": 79,
+      "options": [
+        "4 mC",
+        "8 mC",
+        "5 mC",
+        "7 mC"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚ ஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன ஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ் ை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm . மின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில் அதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட எ ண்ம திப்பு",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-fdf332e27b51c0fe",
+      "page": 79,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 5,
+      "status": "Needs Review",
+      "endPage": 79,
+      "options": [
+        "D < C < B < A",
+        "A < B = C < D",
+        "C < A = B < D",
+        "D > C > B > A"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன . ஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும் மி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக. + +2q A B C D + +q –q –",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-7f9eac73f82061f8",
+      "page": 79,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 6,
+      "status": "Needs Review",
+      "endPage": 80,
+      "options": [
+        "80 0 q e",
+        "q 40 0 e",
+        "q 80 0 e",
+        "q 160 0 e"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe unreadable PDF glyphs before text publication",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ் மாத் ்த மி ன் பா ய மதிப்பு __________ 72 அலகு 1 நிலைமின்னியல் + + + + + + + + + + + + + + + + + + + + + – – – – – – – +q q +2q q q q – – –q q q \u001f\u001e",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-77bb20ae29d73420",
+      "page": 80,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 7,
+      "status": "Needs Review",
+      "endPage": 80,
+      "options": [
+        "மு ன்லப விடக் கு ல் வாக இருக்கும்",
+        "அ ம்த ய ை வு இருக்கும்",
+        "மு ன்லப விட அதிகமாக இருக்கும்",
+        "சுழி"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ் காண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப் ப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில் பிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல் ஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர் அ ம்த இ லட்வ ளியில் பிரித்து லவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு இ லடமய யா ்ன வி ல ை ( NSEP 04–05 )",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-c115828aa60d2fa0",
+      "page": 80,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 9,
+      "status": "Needs Review",
+      "endPage": 80,
+      "options": [
+        "10 V",
+        "– 20 V",
+        "+20 V",
+        "-10 V"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe unreadable PDF glyphs before text publication",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-6517797416f91930",
+      "page": 80,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 11,
+      "status": "Needs Review",
+      "endPage": 80,
+      "options": [
+        "8.80 × 10 –17 J",
+        "–8.80 × 10 –17 J",
+        "4.40 × 10 –17 J",
+        "5.80 × 10 –17 J"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V மற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப் ப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50 எல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும் மவ ல ல",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-fcc19d549e9a07d5",
+      "page": 80,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 12,
+      "status": "Needs Review",
+      "endPage": 80,
+      "options": [
+        "Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்",
+        "Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்",
+        "C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்",
+        "Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும் 73 அ ை கு 1 நிலைமின்னியல்"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication"
+      ],
+      "questionText": "ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த மவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து எனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன முடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-effb8e5227365f1e",
+      "page": 81,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 15,
+      "status": "Needs Review",
+      "endPage": 81,
+      "options": [
+        "3 × 10 -2 C",
+        "4 × 10 -2 C",
+        "1 × 10 -2 C",
+        "2 × 10 -2 C வி ல்ட்க ள் :"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication"
+      ],
+      "questionText": "1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக் மகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும் 5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட மின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு மகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால் இ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில், இறுதியாக இருக்கும் மின்னூட ட மதிப்பு ( AIIPMT - 2012 )",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-756a37b8948123c5",
+      "page": 83,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 4,
+      "status": "Needs Review",
+      "endPage": 83,
+      "options": [
+        "புவிக்கும் நிலவிற்கும் இ லடமய உ ள் ை ஈர்ப்பு வி ல ை லய ஈடு ் ைய்ய மவ ண்டு ் ம னில் q இன் மதி ப் லப க் கணக்கிடுக.",
+        "புவிக்கும் நிலவிற்கும் இ லடப்ப ட ட ்்த ா ல ல வு பாதியா ்ன ால், q ன் மதிப்பு மாறுமா? ( m E = 5.9 × 10 24 kg , m M = 7.9 × 10 22 kg எ ்ன லவக்க வும்) வி லட : ( அ ) q ≈ +5.87 × 10 13 C , ( ஆ ) மா ் ாது"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe the original question and all four choices"
+      ],
+      "questionText": "+ q அ ை வு ள்ை மின்னூட ட ம் ் காண்ட மின்துக ள் க ள் புவியின் பரப்பிலும் இ ன் ் ்ன ா ரு + q மின்னூட ட ம் ் காண்ட மின்துகள் நிலவின் பரப்பிலும் லவக்கப்ப டுவ ்த ாகக் ் காள்ம வ ா ம்.",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-2b6e0862eb62de35",
+      "page": 84,
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "number": 7,
+      "status": "Needs Review",
+      "endPage": 84,
+      "options": [
+        "அதில் ் ந டு க் லக த் ( vertical ) தி ல ையில் அ லம ந்த ் ை வ வ கப் பரப்பு",
+        "ை ா ய் வா்ன பரப்பு மற்றும்",
+        "் மாத் ்த பரப்பு ஆகியவ ற் ல் க் கடக்கும் மி ன்பா ய த்ல்த க் கணக்கிடுக. வி லட : ( அ ) 15 Nm 2 C -1 ( ஆ ) 15 Nm 2 C -1 ( இ ) சுழி"
+      ],
+      "section": "In-text",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterTitle": "1 PHYSICS FM Tamil",
+      "presentation": "Text",
+      "qualityFlags": [
+        "Confirm whether this is a one-mark exercise",
+        "Transcribe the original question and all four choices"
+      ],
+      "questionText": "E = 2 × 10 3 N C -1 வலி லம யு லட ய மின்புலம் ஒன்றில் மூட ப் ப ட ட பர ப் லப யு லட ய மு க் ம க ா ணப் ் பட டி லவக்கப்பட டு ை ள் து 5cm 15cm E → 60°",
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "correctAnswer": null
+    }
+  ]
+}

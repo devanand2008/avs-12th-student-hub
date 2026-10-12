@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-12T15:38:11.139Z",
+  "preparedAt": "2026-10-10T16:54:11.470Z",
+  "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+  "bookId": "12-physics-tamil-v1-c1623725",
+  "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+  "candidates": 15,
+  "reusedIds": 11,
+  "newLocalIds": 4,
+  "scopedPrintedKeyMatches": 15,
+  "sourceTranscriptionsRequiringTeacherReview": 15,
+  "diagramDependent": 7,
+  "incompleteGraphChoiceSets": 1,
+  "pending": 15,
+  "approved": 0,
+  "rejected": 0,
+  "published": 0,
+  "existingLocalRows": 15,
+  "insertedLocalRows": 0,
+  "localQueueRows": 15,
+  "rerunInsertedRows": 0,
+  "excludedBaselineRows": [
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-470ce1dbbb03a306",
+      "page": 45,
+      "number": 1,
+      "reason": "Outside the bounded Unit 1 section-I pages; unchanged"
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-756a37b8948123c5",
+      "page": 83,
+      "number": 4,
+      "reason": "Outside the bounded Unit 1 section-I pages; unchanged"
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-2b6e0862eb62de35",
+      "page": 84,
+      "number": 7,
+      "reason": "Outside the bounded Unit 1 section-I pages; unchanged"
+    }
+  ],
+  "pageChecks": [
+    {
+      "pdfPage": 9,
+      "printedPage": 1,
+      "cacheMatches": true,
+      "freshTextSha256": "261f754c6a42093a58cbfc0e85e5cb306aa53c3e7d93699e2827ca008d4ac2c2"
+    },
+    {
+      "pdfPage": 79,
+      "printedPage": 71,
+      "cacheMatches": true,
+      "freshTextSha256": "67e547c7907cd8dea18aa0503be77b0d7dc6ce9fd6173da6f24d3f6e9cd71272"
+    },
+    {
+      "pdfPage": 80,
+      "printedPage": 72,
+      "cacheMatches": true,
+      "freshTextSha256": "c6c69ef942bc1dc52d7b1f51f1198d00da5f17a3d30c21aaf41d97c057213c81"
+    },
+    {
+      "pdfPage": 81,
+      "printedPage": 73,
+      "cacheMatches": true,
+      "freshTextSha256": "5d004d73e3a0837dbf7405a23ce28028686af80d062421468b74f777ebf1ce25"
+    }
+  ],
+  "productionWrites": 0,
+  "teacherDecisionsMade": 0,
+  "limits": "15 source MCQs are identified; 11 existing IDs retained and 4 missing questions have new local IDs. Every candidate is held. Graph-choice labels are incomplete and cannot be considered student-ready. Printed-key agreement is evidence only; raw source and proposed transcription are separate. No production imports or approvals."
+}

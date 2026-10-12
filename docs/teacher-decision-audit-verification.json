@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-12T15:11:44.915Z",
+  "checks": [
+    {
+      "name": "audit",
+      "command": "npm run mcqs:decision-audit",
+      "exitCode": 0,
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "name": "focused-tests",
+      "command": "npx tsx --test tests/teacher-decision-manifest-audit.test.ts",
+      "exitCode": 0,
+      "logSha256": "5b80b950387d1f4a2699b39570f8a47b5e24ce0a43c5e1865cdd9d583cbec41e",
+      "tests": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "logSha256": "b07eb45669edec7fe575b94532e41e424e5c2fa5e8feae8114fe653e4636d265",
+      "tests": 103,
+      "passed": 103,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    }
+  ],
+  "exportLocated": false,
+  "exportAuditOutcome": "Not auditable until the actual unchanged export is identified. No export was fabricated.",
+  "localStoreCounts": {
+    "approved": 0,
+    "needs_correction": 0,
+    "rejected": 0,
+    "pending": 15,
+    "invalid": 0
+  },
+  "localReviewed": 0,
+  "historyEvents": 0,
+  "sourceImagesComparedToFreshOriginalRenderings": [
+    {
+      "pdfPage": 79,
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png",
+      "sha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+      "freshSha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+      "matchesFreshRendering": true
+    },
+    {
+      "pdfPage": 81,
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png",
+      "sha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+      "freshSha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+      "matchesFreshRendering": true
+    },
+    {
+      "pdfPage": 80,
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png",
+      "sha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+      "freshSha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+      "matchesFreshRendering": true
+    }
+  ],
+  "preservedFiles": [
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "unchanged": true
+    },
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/data/tamil-physics-unit1-transcription.json",
+      "sha256": "94924d137a9e8952ce1ce41cf86d1f5f839aaabcde331c93b8db2e84e58785d6",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/supabase/server.ts",
+      "sha256": "b3b8d71360e0d00c1c571c961918f3af6a7b4947620a59c4f1c74bdfb56811fc",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/api/admin/textbook-questions/route.ts",
+      "sha256": "1a6f53ac57e4408d30c3954e8f4bec64dba32b5e91395d37d6f75c6e2275f082",
+      "unchanged": true
+    }
+  ],
+  "localHandoff": {
+    "file": ".local/teacher-review/decision-audit/review-package.json",
+    "records": 0,
+    "ready": false
+  },
+  "productionProof": "teacher-decision-audit-database-proof.json",
+  "productionWrites": 0,
+  "productionDeployments": 0,
+  "limits": "103 automated tests passed, including the seven new audit cases; the seven focused cases are repeats, not 110 unique tests. All approvals/corrections/rejections used in tests are isolated in-memory or temporary fixtures, not actual teacher decisions. Production verification used SELECT-only reads before and after checks and matched the October 10 whole-bank and practice-snapshot digests. No production build or full Next.js browser-suite rerun occurred. The user indicated another export location but supplied no path; its existence or outcomes are not inferred."
+}

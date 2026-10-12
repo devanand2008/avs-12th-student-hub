@@ -1,0 +1,1884 @@
+{
+  "preparedAt": "2026-10-10T16:54:11.470Z",
+  "scope": "local-only; not imported into Supabase or visible in the live admin queue",
+  "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+  "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+  "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+  "metadataSource": "Read-only public.textbooks snapshot",
+  "baselineReadAt": "2026-10-10T16:48:32.742329+00:00",
+  "chapter": {
+    "number": 1,
+    "title": "நிலை மின்னியல்",
+    "pdfStart": 9,
+    "pdfEnd": 87
+  },
+  "sourcePages": [
+    {
+      "page": 9,
+      "text": "1 1\nஅலகு\n1 நில ல மின்னியல்\nஇந்த அலகில் மாணவர்கள் அறி ந து க ்க ாள்வ து\n• மின்னியல் மற்றும் காந்தவியலின் வரலாற்றுப் பி ன் ்ன ணி\n• நம் அ ன் ் ா ட வாழ்வில் நில ல மின் வி ல ையின் பங்கு\n• கூலூம் விதி மற்றும் ம மற் ் ப ா ரு ந து ்த ல் ்த த் துவம்\n• மின்புலம், அ ்த ன் கருத்துரு\n• ப ல்மவ று மின்துகள் கட டலம ப் புகளுக்கு மின்புல த் ல்த க் கணக்கிடு ்த ல்\n• நில ல மி ன் ்ன ழு த் ்தம் மற்றும் நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல்\n• மின் இருமு ல்ன மற்றும் இருமு ல்ன திருப்புத்தி ் ன்\n• மின் இருமு ல்ன யின் மின்புலம் மற்றும் நில ல மி ன் ்ன ழு த் ்தம்\n• மி ன்பா யம்\n• காஸ் விதியும் அ ்த ன் ப ல் மவ று பய ன் பா டுகளும்\n• கடத்திகள் மற்றும் மி ன் கா ப் புப் ் பா ரு ள்க ளின் நில ல மின்னியல் பண்புகள்\n• மின்மு ல்ன வா க்க ம்\n• ்்த ா டரி லண ப் பு மற்றும் ப க் க இ லண ப்பில் மி ன் ம்த க் கிகள்\n• மி ன்கா ப் பி ்ன ால் மி ன் ம்த க் கியில் ஏ ற் ப டும் வி ல ைவு\n• கடத்திகளில் மின்துக ள் க ளின் பரவல் மற்றும் ஒளிவட ட மின்னி ்க் க ம்\n• வான் டி கிராப் மின்இயற்றி ் ை ய ல் ப டும் வி ்த ம்\nமின்சாரம் என்பது முறைப்படுத்தப்பட்ட மின்னலே\n– ஜார்ஜ் கார்லின் ்க\nற்றலின் ந� ா க்கங்கள்:\n1.1\nஅறிமு ்க ம்\nமி ன் கா ந்தவியல் எ ன் ப து இயற்பியலின் மிக\nமுக்கியமா ்ன பிரிவுகளில் ஒ ன் ் ா கும். 21 ஆம்\nநூ ற் ் ா ண் டின் ்்த ா ழில்நுட ப வ ை ர்ச் சிகள் பலவும்\nமி ன் கா ந்தவியல ல ப் பற்றிய நமது புரி ்த லி ்ன ால்\nஏ ற் ப ட டலவமய .\nஅ ன் ் ா ட வாழ்வில் நாம் காணும் வி ல ைகளுள்,\nஈர்ப்பு வி ல ை லய த் ்த விர பி ் அ ல்ன த் து வி ல ைகளும்\nமி ன்கா ந்த இயல்பு ் காண்டல வமய . +1 வகுப்பில்,\nஈர்ப்பு வி ல ை, இழுவி ல ை, உராய்வு வி ல ை, ்\nை ங் குத்து வி ல ை உள்ளிட ட வி ல ைக ல ைப் பற்றி\nநாம் க ற் ம்ா ம் . அ லவ ஒவ்வ ான்ல் யும் ்த னி த் ்த\nஇயல்பு லட ய வி ல ையாகவும் ஒ ன் ல்்யா ன் று\nை ா ர்ந ்த லவ அ ல் ல என்றும் நியூட ட ன் கருதி ்ன ார்.\nஅ ப் ப டி ்ய னில் இ வ வி ல ைகளின் ம்தாற்் மூலம் ்த\nான் எ ன் ்ன ? ்தற் ம ப ால்த ய புரி ்தல் ப டி, நம் அ ன் ் ா ட\nவாழ்வில் நாம் எதி ர் ் க ா ள்ளும் வி ல ைகளுள் ஈர்ப்பு\nவி ல ை லய த் ்த விர பி ் வி ல ைகள் அ ல்ன த் தும்\n(கம்பியின் இழுவி ல ை, பரப்பின் ் ை ங் குத்து வி ல ை,\nஉராய்வு வி ல ை உள்ளிட டலவ ) அணு க் க ளுக்கு\nஇ லடமய ம்தா ன் றும் மி ன் கா ந்த வி ல ைக மை . சில\nஎடுத்து க் காட டுகள் கீ ம ே ்த ர ப்பட டு ள் ை து:"
+    },
+    {
+      "page": 79,
+      "text": "71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________"
+    },
+    {
+      "page": 80,
+      "text": "72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்"
+    },
+    {
+      "page": 81,
+      "text": "73 அ ை கு 1 நிலைமின்னியல்\n13 . இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த\nமவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட\nமின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின்\nபர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த\nா ல ல வும் இருமட ங்கா்ன ால்\nபி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.\n(a) மின் ம்த க் குத்தி ் ன்\n(b) மின்துகள்\n(c) மி ன் ்ன ழு த் ்த மவ றுபாடு\n(d) ஆ ற்் ல் அடர்த்தி\n1 4. மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு\nமு க்ம க ா ண வடிவ அ லம ப்பில்\nஇ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய\nபுள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று\nமி ன்ம்த க் குத்தி ் ன்\n2μF\n2μF\n1μF\nA B\nC\n(a) 1μF (b) 2 μF\n(c) 3 μF (d) 1\n4 μ F\n15 . 1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக்\nமகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும்\n5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட\nமின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு\nமகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால்\nஇ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில்,\nஇறுதியாக இருக்கும் மின்னூட ட மதிப்பு\n( AIIPMT - 2012 )\n(a) 3 × 10 -2 C\n(b) 4 × 10 -2 C\n(c) 1 × 10 -2 C\n(d) 2 × 10 -2 C\nவி ல்ட்க ள் :\n1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a\nII சிறு வினாக்கள்\n1. மின்னூட ட த்தின் குவா ண் ட மா க்க ல் எ ன் ் ா ல்\nஎ ன் ்ன ?\n2. கூலூம் விதியின் ் வக்ட ர் வடிவ த்ல்த எழுதி\nஅதிலு ள் ை ஒவ்வ ா ரு குறியீடும் எ ல்த ச்\nசு ட டுகி ன்் து எ ன்பல்த க் கூறுக.\n3. கூலூம் வி ல ைக்கும் புவிஈர்ப்பு வி ல ைக்கும்\nஇ லடமய யா ்ன மவ றுபாடுக ல ைக் கூறுக.\n4. ம மற் ் ப ா ரு ந து ்த ல் ்த த் துவ த் ல்த ப் பற்றி சிறு\nகுறிப்பு வ லர க.\n5. மின்புலம் – வ லர யறு.\n6. மின்புலக் மகா டுகள் எ ன் ் ா ல் எ ன் ்ன ?\n7. மின்புலக் மகா டுகள் ஒ ன் ல்்யா ன் று ் வட டிக் ்\nகாள்ைா து நிறுவுக.\n8. மின் இருமு ல்ன – வ லர யறு. அ ்த ன் மின்\nஇருமு ல்ன திருப்புத்தி ் னின் எண்\nமதிப்பி ற் கா்ன ை ம ன் பா டு மற்றும் தி ல ை\nஆகியவ ற் ல் குறிப்பிடவும்.\n9. புள்ளி மின் துகளின் ்்த ா குப்பி ற் கா்ன மின்\nஇருமு ல்ன திருப்புத்தி ் னின் ் பா துவா ்ன\nவ லர ய ல் ்த ருக.\n10. நில ல மி ன் ்ன ழு த் ்தம் – வ லர யறு.\n11. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பு எ ன் ் ா ல் எ ன் ்ன ?\n12. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பின் பண்புகள் யா லவ ?\n13. மின்புலம், நில ல மி ன் ்ன ழு த் ்தம் – இ லட யிலா ்ன ்்த\nா ட ர்லப த் ்த ருக.\n14. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் – வ லர யறு.\n15. மி ன்பா யம் – வ லர யறு.\n16. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் அடர்த்தி எ ன் ் ா ல்\nஎ ன் ்ன ?"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-cf4d0da24caa53f3",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 1,
+      "page": 79,
+      "endPage": 79,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "−q மின்னூட்ட மதிப்புள்ள இரு புள்ளி மின்துகள்கள் படத்தில் உள்ளவாறு வைக்கப்பட்டுள்ளன. இவற்றுக்கு நடுவில் P என்ற புள்ளியில் +q மதிப்புள்ள மூன்றாவது மின்துகள் வைக்கப்படுகிறது. P லிருந்து அம்புக்குறியிட்டு காட்டப்பட்டுள்ள திசைகளில் சிறிய தொலைவுகளுக்கு +q மின்துகள் நகர்த்தப்பட்டால் எந்தத் திசை அல்லது திசைகளில், இடப்பெயர்ச்சியைப் பொறுத்து, +q ஆனது சமநிலையில் இருக்கும்?",
+      "options": [
+        "A₁ மற்றும் A₂",
+        "B₁ மற்றும் B₂",
+        "இரு திசைகளிலும்",
+        "சமநிலையில் இருக்காது"
+      ],
+      "correctAnswer": "B",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Diagram directions A₁/A₂/B₁/B₂ must be represented faithfully before any student publication.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-cf4d0da24caa53f3",
+        "page": 79,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 1,
+        "status": "Needs Review",
+        "endPage": 79,
+        "options": [
+          "A 1 மற்றும் A 2",
+          "B 1 மற்றும் B 2",
+          "இரு தி ல ைகளிலும்",
+          "ை மநில ல யில் இரு க்கா து"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe the figure-dependent question before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "–q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி மின்துக ள் க ள் படத்தில் உ ள் ை வாறு லவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P எ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது மின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து அம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில் சிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள் நக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து தி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q ஆ ்ன து ை மநில ல யில் இருக்கும் ? - q - q + q A 1 A 2 B 2 B 1 P – – +",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 71,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 79; fresh extracted page header also contains 71. End page printed label: 71.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "–q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி மின்துக ள் க ள் படத்தில் உ ள் ை வாறு லவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P எ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது மின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து அம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில் சிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள் நக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து தி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q ஆ ்ன து ை மநில ல யில் இருக்கும் ? - q - q + q A 1 A 2 B 2 B 1 P – – +",
+        "sourceOptions": [
+          "A 1 மற்றும் A 2",
+          "B 1 மற்றும் B 2",
+          "இரு தி ல ைகளிலும்",
+          "ை மநில ல யில் இரு க்கா து"
+        ],
+        "englishText": null,
+        "tamilText": "–q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி மின்துக ள் க ள் படத்தில் உ ள் ை வாறு லவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P எ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது மின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து அம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில் சிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள் நக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து தி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q ஆ ்ன து ை மநில ல யில் இருக்கும் ? - q - q + q A 1 A 2 B 2 B 1 P – – +",
+        "sourcePageText": "PDF 79\n71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "B",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe the figure-dependent question before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Diagram directions A₁/A₂/B₁/B₂ must be represented faithfully before any student publication.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 78,
+        "printedPages": [
+          71
+        ],
+        "originalRawSpan": "–q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து",
+        "proposedTranscription": {
+          "questionText": "−q மின்னூட்ட மதிப்புள்ள இரு புள்ளி மின்துகள்கள் படத்தில் உள்ளவாறு வைக்கப்பட்டுள்ளன. இவற்றுக்கு நடுவில் P என்ற புள்ளியில் +q மதிப்புள்ள மூன்றாவது மின்துகள் வைக்கப்படுகிறது. P லிருந்து அம்புக்குறியிட்டு காட்டப்பட்டுள்ள திசைகளில் சிறிய தொலைவுகளுக்கு +q மின்துகள் நகர்த்தப்பட்டால் எந்தத் திசை அல்லது திசைகளில், இடப்பெயர்ச்சியைப் பொறுத்து, +q ஆனது சமநிலையில் இருக்கும்?",
+          "options": [
+            "A₁ மற்றும் A₂",
+            "B₁ மற்றும் B₂",
+            "இரு திசைகளிலும்",
+            "சமநிலையில் இருக்காது"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": true,
+        "diagramEvidence": "PDF 79, left column: two −q charges on a horizontal line, +q at midpoint P; arrows A₁ left, A₂ right, B₁ up, B₂ down.",
+        "printedKeyEntry": "1) b",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4ffcd19d0869c262",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 2,
+      "page": 79,
+      "endPage": 79,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "பின்வரும் மின்துகள் நிலையமைப்புகளில் எது சீரான மின்புலத்தை உருவாக்கும்?",
+      "options": [
+        "புள்ளி மின்துகள்",
+        "சீரான மின்னூட்டம் பெற்ற முடிவிலா கம்பி",
+        "சீரான மின்னூட்டம் பெற்ற முடிவிலா சமதளம்",
+        "சீரான மின்னூட்டம் பெற்ற கோளகக் கூடு"
+      ],
+      "correctAnswer": "C",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication"
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-4ffcd19d0869c262",
+        "page": 79,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 2,
+        "status": "Needs Review",
+        "endPage": 79,
+        "options": [
+          "புள்ளி மின்துகள்",
+          "சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி",
+          "சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா ை ம ்தை ம்",
+          "சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication"
+        ],
+        "questionText": "பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ ரா ்ன மின்புல த் ல்த உருவாக்கும்?",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 71,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 79; fresh extracted page header also contains 71. End page printed label: 71.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ ரா ்ன மின்புல த் ல்த உருவாக்கும்?",
+        "sourceOptions": [
+          "புள்ளி மின்துகள்",
+          "சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி",
+          "சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா ை ம ்தை ம்",
+          "சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு"
+        ],
+        "englishText": null,
+        "tamilText": "பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ ரா ்ன மின்புல த் ல்த உருவாக்கும்?",
+        "sourcePageText": "PDF 79\n71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "C",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication"
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 78,
+        "printedPages": [
+          71
+        ],
+        "originalRawSpan": "பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு",
+        "proposedTranscription": {
+          "questionText": "பின்வரும் மின்துகள் நிலையமைப்புகளில் எது சீரான மின்புலத்தை உருவாக்கும்?",
+          "options": [
+            "புள்ளி மின்துகள்",
+            "சீரான மின்னூட்டம் பெற்ற முடிவிலா கம்பி",
+            "சீரான மின்னூட்டம் பெற்ற முடிவிலா சமதளம்",
+            "சீரான மின்னூட்டம் பெற்ற கோளகக் கூடு"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "2) c",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-08ccc72e718307ac",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 3,
+      "page": 79,
+      "endPage": 79,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "பின்வரும் மின்புலக் கோடுகளின் வடிவமைப்பிலிருந்து இம்மின்துகள்களின் மின்னூட்ட விகிதம் |q₁/q₂| என்ன?",
+      "options": [
+        "1/5",
+        "25/11",
+        "5",
+        "11/25"
+      ],
+      "correctAnswer": "D",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Raw extraction loses the absolute-value bars and fraction structure. Visual transcription preserves |q₁/q₂| and option fractions.",
+        "Do not infer field-line counts from damaged text; teacher must inspect the original diagram.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-08ccc72e718307ac",
+        "page": 79,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 3,
+        "status": "Needs Review",
+        "endPage": 79,
+        "options": [
+          "1 5",
+          "25 11",
+          "5",
+          "11 25"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "பி ன்வ ரும் மின்புலக் மகா டுகளின் வடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின் மின்னூட ட விகி ்த ம் q q 1 2 எ ன் ்ன ? q 1 q 2",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 71,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 79; fresh extracted page header also contains 71. End page printed label: 71.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "பி ன்வ ரும் மின்புலக் மகா டுகளின் வடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின் மின்னூட ட விகி ்த ம் q q 1 2 எ ன் ்ன ? q 1 q 2",
+        "sourceOptions": [
+          "1 5",
+          "25 11",
+          "5",
+          "11 25"
+        ],
+        "englishText": null,
+        "tamilText": "பி ன்வ ரும் மின்புலக் மகா டுகளின் வடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின் மின்னூட ட விகி ்த ம் q q 1 2 எ ன் ்ன ? q 1 q 2",
+        "sourcePageText": "PDF 79\n71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "D",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Raw extraction loses the absolute-value bars and fraction structure. Visual transcription preserves |q₁/q₂| and option fractions.",
+          "Do not infer field-line counts from damaged text; teacher must inspect the original diagram.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 78,
+        "printedPages": [
+          71
+        ],
+        "originalRawSpan": "பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25",
+        "proposedTranscription": {
+          "questionText": "பின்வரும் மின்புலக் கோடுகளின் வடிவமைப்பிலிருந்து இம்மின்துகள்களின் மின்னூட்ட விகிதம் |q₁/q₂| என்ன?",
+          "options": [
+            "1/5",
+            "25/11",
+            "5",
+            "11/25"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": true,
+        "diagramEvidence": "PDF 79, bottom left: field-line drawing between q₁ (left) and q₂ (right), arrows and line counts are part of the question.",
+        "printedKeyEntry": "3) d",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-0f9024994b5a82aa",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 4,
+      "page": 79,
+      "endPage": 79,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "2 × 10⁵ N C⁻¹ மதிப்புள்ள மின்புலத்தில் 30° ஒருங்கமைப்புக் கோணத்தில் மின் இருமுனை ஒன்று வைக்கப்பட்டுள்ளது. அதன்மீது செயல்படும் திருப்புவிசையின் மதிப்பு 8 Nm. மின் இருமுனையின் நீளம் 1 cm எனில் அதிலுள்ள ஒரு மின்துகளின் மின்னூட்ட எண்மதிப்பு",
+      "options": [
+        "4 mC",
+        "8 mC",
+        "5 mC",
+        "7 mC"
+      ],
+      "correctAnswer": "B",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm 10⁵, C⁻¹, 30°, 8 Nm and 1 cm against PDF 79; no numerical values were corrected."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-0f9024994b5a82aa",
+        "page": 79,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 4,
+        "status": "Needs Review",
+        "endPage": 79,
+        "options": [
+          "4 mC",
+          "8 mC",
+          "5 mC",
+          "7 mC"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚ ஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன ஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ் ை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm . மின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில் அதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட எ ண்ம திப்பு",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 71,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 79; fresh extracted page header also contains 71. End page printed label: 71.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚ ஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன ஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ் ை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm . மின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில் அதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட எ ண்ம திப்பு",
+        "sourceOptions": [
+          "4 mC",
+          "8 mC",
+          "5 mC",
+          "7 mC"
+        ],
+        "englishText": null,
+        "tamilText": "2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚ ஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன ஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ் ை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm . மின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில் அதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட எ ண்ம திப்பு",
+        "sourcePageText": "PDF 79\n71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "B",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Teacher must confirm 10⁵, C⁻¹, 30°, 8 Nm and 1 cm against PDF 79; no numerical values were corrected."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 78,
+        "printedPages": [
+          71
+        ],
+        "originalRawSpan": "2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC",
+        "proposedTranscription": {
+          "questionText": "2 × 10⁵ N C⁻¹ மதிப்புள்ள மின்புலத்தில் 30° ஒருங்கமைப்புக் கோணத்தில் மின் இருமுனை ஒன்று வைக்கப்பட்டுள்ளது. அதன்மீது செயல்படும் திருப்புவிசையின் மதிப்பு 8 Nm. மின் இருமுனையின் நீளம் 1 cm எனில் அதிலுள்ள ஒரு மின்துகளின் மின்னூட்ட எண்மதிப்பு",
+          "options": [
+            "4 mC",
+            "8 mC",
+            "5 mC",
+            "7 mC"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "4) b",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-fdf332e27b51c0fe",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 5,
+      "page": 79,
+      "endPage": 79,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "மின்துகள்களை உள்ளடக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட்டப்பட்டுள்ளன. ஒவ்வொரு காஸியன் பரப்பையும் கடக்கும் மின்பாய மதிப்புகளைத் தரவரிசையில் எழுதுக.",
+      "options": [
+        "D < C < B < A",
+        "A < B = C < D",
+        "C < A = B < D",
+        "D > C > B > A"
+      ],
+      "correctAnswer": "A",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm which charges each Gaussian surface encloses; text alone does not preserve surface geometry.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-fdf332e27b51c0fe",
+        "page": 79,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 5,
+        "status": "Needs Review",
+        "endPage": 79,
+        "options": [
+          "D < C < B < A",
+          "A < B = C < D",
+          "C < A = B < D",
+          "D > C > B > A"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe the figure-dependent question before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன . ஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும் மி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக. + +2q A B C D + +q –q –",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 71,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 79; fresh extracted page header also contains 71. End page printed label: 71.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன . ஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும் மி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக. + +2q A B C D + +q –q –",
+        "sourceOptions": [
+          "D < C < B < A",
+          "A < B = C < D",
+          "C < A = B < D",
+          "D > C > B > A"
+        ],
+        "englishText": null,
+        "tamilText": "மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன . ஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும் மி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக. + +2q A B C D + +q –q –",
+        "sourcePageText": "PDF 79\n71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "A",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe the figure-dependent question before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Teacher must confirm which charges each Gaussian surface encloses; text alone does not preserve surface geometry.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 78,
+        "printedPages": [
+          71
+        ],
+        "originalRawSpan": "மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A",
+        "proposedTranscription": {
+          "questionText": "மின்துகள்களை உள்ளடக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட்டப்பட்டுள்ளன. ஒவ்வொரு காஸியன் பரப்பையும் கடக்கும் மின்பாய மதிப்புகளைத் தரவரிசையில் எழுதுக.",
+          "options": [
+            "D < C < B < A",
+            "A < B = C < D",
+            "C < A = B < D",
+            "D > C > B > A"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": true,
+        "diagramEvidence": "PDF 79, right column: overlapping Gaussian surfaces labelled A, B, C, D and charges +2q, −q, +q. Surface membership must be checked visually; no membership was inferred from extracted label order.",
+        "printedKeyEntry": "5) a",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-7f9eac73f82061f8",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 6,
+      "page": 79,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "நீருக்குள் வைக்கப்பட்டுள்ள மூடிய பரப்பின் மொத்த மின்பாய மதிப்பு __________",
+      "options": [
+        "80q/ε₀",
+        "q/(40ε₀)",
+        "q/(80ε₀)",
+        "q/(160ε₀)"
+      ],
+      "correctAnswer": "B",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe unreadable PDF glyphs before text publication",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Cross-page question: PDF 79/printed 71 stem; PDF 80/printed 72 diagram/options.",
+        "Raw extraction loses ε₀, numerator/denominator order and includes control glyphs. Teacher must confirm every fraction from PDF 80.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-7f9eac73f82061f8",
+        "page": 79,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 6,
+        "status": "Needs Review",
+        "endPage": 80,
+        "options": [
+          "80 0 q e",
+          "q 40 0 e",
+          "q 80 0 e",
+          "q 160 0 e"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ் மாத் ்த மி ன் பா ய மதிப்பு __________ 72 அலகு 1 நிலைமின்னியல் + + + + + + + + + + + + + + + + + + + + + – – – – – – – +q q +2q q q q – – –q q q \u001f\u001e",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 71,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 79; fresh extracted page header also contains 71. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ் மாத் ்த மி ன் பா ய மதிப்பு __________ 72 அலகு 1 நிலைமின்னியல் + + + + + + + + + + + + + + + + + + + + + – – – – – – – +q q +2q q q q – – –q q q \u001f\u001e",
+        "sourceOptions": [
+          "80 0 q e",
+          "q 40 0 e",
+          "q 80 0 e",
+          "q 160 0 e"
+        ],
+        "englishText": null,
+        "tamilText": "நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ் மாத் ்த மி ன் பா ய மதிப்பு __________ 72 அலகு 1 நிலைமின்னியல் + + + + + + + + + + + + + + + + + + + + + – – – – – – – +q q +2q q q q – – –q q q \u001f\u001e",
+        "sourcePageText": "PDF 79\n71 அ ை கு 1 நிலைமின்னியல்\nபயி ற சி வினாக்கள்\nI ்ச ரியான வி ல்டலய த் ந்த ர நக்த டுத்து\nஎழுது ்க .\n1. –q மின்னூட ட மதிப்பு ள் ை இரு புள்ளி\nமின்துக ள் க ள் படத்தில் உ ள் ை வாறு\nலவக்கப்பட டு ள்ை்ன . இவற்றுக்கு நடுவில் P\nஎ ன்் புள்ளியில் +q மதிப்பு ள் ை மூ ன் ் ா வது\nமின்துகள் லவக்கப்ப டுகி ் து. P லிரு ந து\nஅம்புக்குறியி ட டு காட டப்பட டு ள்ை தி ல ைகளில்\nசிறிய ்்த ா ல ல வுகளுக்கு +q மின்துகள்\nநக ர்த் ்த ப் ப ட டா ல் எந்தத் தி ல ை அ ல் ல து\nதி ல ைகளில், இட ப் ் ப யர்ச்சி லய ப் ் பா ருத்து, +q\nஆ ்ன து ை மநில ல யில் இருக்கும் ?\n- q - q\n+ q\nA 1 A 2\nB 2\nB 1\nP\n– – +\n(a) A 1 மற்றும் A 2 (b) B 1 மற்றும் B 2\n(c) இரு தி ல ைகளிலும்\n(d) ை மநில ல யில் இரு க்கா து\n2. பி ன்வ ரும் மின்துகள் நில ல ய லம ப்புகளில் எது சீ\nரா ்ன மின்புல த் ல்த உருவாக்கும்?\n(a) புள்ளி மின்துகள்\n(b) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா கம்பி\n(c) சீ ரா ்ன மின்னூட ட ம் ் பற்் முடிவிலா\nை ம ்தை ம்\n(d) சீ ரா ்ன மின்னூட ட ம் ் பற்் மகாை கக் கூடு\n3. பி ன்வ ரும் மின்புலக் மகா டுகளின்\nவடிவ லம ப் பிலிரு ந து இம்மின்துக ள் க ளின்\nமின்னூட ட விகி ்த ம் q\nq\n1\n2\nஎ ன் ்ன ?\nq 1 q 2\n(a) 1\n5 (b) 25\n11\n(c) 5 (d) 11\n25\n4. 2 × 10 5 N C –1 மதிப்பு ள் ை மின்புலத்தில் 30 ˚\nஒரு ங் கலம ப் பு மகா ணத்தில் மின் இருமு ல்ன\nஒன்று லவக்கப்பட டு ள் ை து. அ ்த ன்மீ து ்\nை ய ல்ப டும் திருப்புவி ல ையின் மதிப்பு 8 Nm .\nமின் இருமு ல்ன யின் நீ ை ம் 1 cm எனில்\nஅதிலு ள்ை ஒரு மின்துகளின் மின்னூட ட\nஎ ண்ம திப்பு\n(a) 4 mC (b) 8 mC\n(c) 5 mC (d) 7 mC\n5. மின்துக ள் கல ை உ ள்ை டக்கிய நான்கு\nகாஸியன் பரப்புகள் படத்தில் காட டப்பட டு ள் ை்ன .\nஒவ்வ ா ரு காஸியன் பர ப் லப யும் கடக்கும்\nமி ன் பா ய மதிப்புக ல ை ்த ரவரி ல ையில் எழுதுக.\n+\n+2q A\nB\nC\nD\n+\n+q\n–q\n–\n(a) D < C < B < A\n(b)A < B = C < D\n(c) C < A = B < D\n(d) D > C > B > A\n6. நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________\n\nPDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "B",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Cross-page question: PDF 79/printed 71 stem; PDF 80/printed 72 diagram/options.",
+          "Raw extraction loses ε₀, numerator/denominator order and includes control glyphs. Teacher must confirm every fraction from PDF 80.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 78,
+        "printedPages": [
+          71,
+          72
+        ],
+        "originalRawSpan": "நீ ருக்குள் லவக்கப்பட டு ள் ை மூடிய பரப்பின் ்\nமாத் ்த மி ன் பா ய மதிப்பு __________\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e",
+        "proposedTranscription": {
+          "questionText": "நீருக்குள் வைக்கப்பட்டுள்ள மூடிய பரப்பின் மொத்த மின்பாய மதிப்பு __________",
+          "options": [
+            "80q/ε₀",
+            "q/(40ε₀)",
+            "q/(80ε₀)",
+            "q/(160ε₀)"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": true,
+        "diagramEvidence": "Question stem at PDF 79 bottom right; diagram and all four choices at PDF 80 top left. Closed bag in water shows −q, +2q, +q.",
+        "printedKeyEntry": "6) b",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-77bb20ae29d73420",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 7,
+      "page": 80,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "q₁ மற்றும் q₂ ஆகிய நேர் மின்னூட்ட அளவு கொண்ட இரு ஒரே மாதிரியான மின்கடத்துப் பந்துகளின் மையங்கள் r இடைவெளியில் பிரிக்கப்பட்டு உள்ளன. அவற்றை ஒன்றோடொன்று தொடச் செய்துவிட்டு பின்னர் அதே இடைவெளியில் பிரித்து வைக்கப்படுகின்றன, எனில் அவற்றிற்கு இடையேயான விசை (NSEP 04–05)",
+      "options": [
+        "முன்பை விடக் குறைவாக இருக்கும்",
+        "அதேயளவு இருக்கும்",
+        "முன்பை விட அதிகமாக இருக்கும்",
+        "சுழி"
+      ],
+      "correctAnswer": "C",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Preserve printed wording and answer C; teacher should check the equal-charge limiting case rather than silently rewriting the question."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-77bb20ae29d73420",
+        "page": 80,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 7,
+        "status": "Needs Review",
+        "endPage": 80,
+        "options": [
+          "மு ன்லப விடக் கு ல் வாக இருக்கும்",
+          "அ ம்த ய ை வு இருக்கும்",
+          "மு ன்லப விட அதிகமாக இருக்கும்",
+          "சுழி"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ் காண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப் ப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில் பிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல் ஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர் அ ம்த இ லட்வ ளியில் பிரித்து லவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு இ லடமய யா ்ன வி ல ை ( NSEP 04–05 )",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 72,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 80; fresh extracted page header also contains 72. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ் காண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப் ப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில் பிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல் ஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர் அ ம்த இ லட்வ ளியில் பிரித்து லவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு இ லடமய யா ்ன வி ல ை ( NSEP 04–05 )",
+        "sourceOptions": [
+          "மு ன்லப விடக் கு ல் வாக இருக்கும்",
+          "அ ம்த ய ை வு இருக்கும்",
+          "மு ன்லப விட அதிகமாக இருக்கும்",
+          "சுழி"
+        ],
+        "englishText": null,
+        "tamilText": "q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ் காண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப் ப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில் பிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல் ஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர் அ ம்த இ லட்வ ளியில் பிரித்து லவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு இ லடமய யா ்ன வி ல ை ( NSEP 04–05 )",
+        "sourcePageText": "PDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "C",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Preserve printed wording and answer C; teacher should check the equal-charge limiting case rather than silently rewriting the question."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 79,
+        "printedPages": [
+          72
+        ],
+        "originalRawSpan": "q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி",
+        "proposedTranscription": {
+          "questionText": "q₁ மற்றும் q₂ ஆகிய நேர் மின்னூட்ட அளவு கொண்ட இரு ஒரே மாதிரியான மின்கடத்துப் பந்துகளின் மையங்கள் r இடைவெளியில் பிரிக்கப்பட்டு உள்ளன. அவற்றை ஒன்றோடொன்று தொடச் செய்துவிட்டு பின்னர் அதே இடைவெளியில் பிரித்து வைக்கப்படுகின்றன, எனில் அவற்றிற்கு இடையேயான விசை (NSEP 04–05)",
+          "options": [
+            "முன்பை விடக் குறைவாக இருக்கும்",
+            "அதேயளவு இருக்கும்",
+            "முன்பை விட அதிகமாக இருக்கும்",
+            "சுழி"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "7) c",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-703934e2eaacaff1",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 8,
+      "page": 80,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "பின்வரும் மின்துகள் அமைப்புகளின் நிலை மின்னழுத்த ஆற்றல்களை இறங்கு வரிசையில் எழுதுக.",
+      "options": [
+        "1 = 4 < 2 < 3",
+        "2 = 4 < 3 < 1",
+        "2 = 3 < 1 < 4",
+        "3 < 1 < 2 < 4"
+      ],
+      "correctAnswer": "A",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Confirm that all original choices were extracted",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Printed diagram labels are a–d but option comparisons use 1–4; teacher must explicitly verify correspondence.",
+        "Printed stem says descending order while printed comparisons use <. Preserve this source inconsistency; do not rewrite it automatically.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "questionText": "பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4",
+        "options": [],
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 72,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 80; fresh extracted page header also contains 72. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4",
+        "sourceOptions": [],
+        "englishText": null,
+        "tamilText": "பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4",
+        "sourcePageText": "PDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "A",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Confirm that all original choices were extracted",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Printed diagram labels are a–d but option comparisons use 1–4; teacher must explicitly verify correspondence.",
+          "Printed stem says descending order while printed comparisons use <. Preserve this source inconsistency; do not rewrite it automatically.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 79,
+        "printedPages": [
+          72
+        ],
+        "originalRawSpan": "பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4",
+        "proposedTranscription": {
+          "questionText": "பின்வரும் மின்துகள் அமைப்புகளின் நிலை மின்னழுத்த ஆற்றல்களை இறங்கு வரிசையில் எழுதுக.",
+          "options": [
+            "1 = 4 < 2 < 3",
+            "2 = 4 < 3 < 1",
+            "2 = 3 < 1 < 4",
+            "3 < 1 < 2 < 4"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": true,
+        "diagramEvidence": "PDF 80, left: four configurations labelled (a), (b), (c), (d). (a) Q and −Q at r; (b) −Q and −Q at r; (c) −Q and −2Q at r; (d) Q and −2Q at 2r.",
+        "printedKeyEntry": "8) a",
+        "keyPrintedPage": 73,
+        "reusedExistingId": false,
+        "originalMapping": null
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-c115828aa60d2fa0",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 9,
+      "page": 80,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "வெளிப்பரப்பின் ஒரு பகுதியில் மின்புலம், E⃗ = 10x î நிலவுகிறது. மின்னழுத்த வேறுபாடு V = V_o − V_A எனில் (இங்கு V₀ என்பது ஆதிப்புள்ளியில் மின்னழுத்தம்) x = 2 m தொலைவில் மின்னழுத்தம் V_A = ____________",
+      "options": [
+        "10 V",
+        "−20 V",
+        "+20 V",
+        "−10 V"
+      ],
+      "correctAnswer": "C",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe unreadable PDF glyphs before text publication",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Raw extraction contains private-use vector/unit-vector glyphs; E⃗ = 10x î is a proposed Unicode transcription, not a changed formula.",
+        "V_A uses explicit underscore notation to preserve capital A; the source's V_o/V₀ subscripts and positive answer C need teacher confirmation. Do not resolve the apparent sign/reference ambiguity by guessing a different answer."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-c115828aa60d2fa0",
+        "page": 80,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 9,
+        "status": "Needs Review",
+        "endPage": 80,
+        "options": [
+          "10 V",
+          "– 20 V",
+          "+20 V",
+          "-10 V"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 72,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 80; fresh extracted page header also contains 72. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________",
+        "sourceOptions": [
+          "10 V",
+          "– 20 V",
+          "+20 V",
+          "-10 V"
+        ],
+        "englishText": null,
+        "tamilText": "் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________",
+        "sourcePageText": "PDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "C",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Raw extraction contains private-use vector/unit-vector glyphs; E⃗ = 10x î is a proposed Unicode transcription, not a changed formula.",
+          "V_A uses explicit underscore notation to preserve capital A; the source's V_o/V₀ subscripts and positive answer C need teacher confirmation. Do not resolve the apparent sign/reference ambiguity by guessing a different answer."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 79,
+        "printedPages": [
+          72
+        ],
+        "originalRawSpan": "் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V",
+        "proposedTranscription": {
+          "questionText": "வெளிப்பரப்பின் ஒரு பகுதியில் மின்புலம், E⃗ = 10x î நிலவுகிறது. மின்னழுத்த வேறுபாடு V = V_o − V_A எனில் (இங்கு V₀ என்பது ஆதிப்புள்ளியில் மின்னழுத்தம்) x = 2 m தொலைவில் மின்னழுத்தம் V_A = ____________",
+          "options": [
+            "10 V",
+            "−20 V",
+            "+20 V",
+            "−10 V"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "9) c",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4bb323c633421f60",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 10,
+      "page": 80,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "R ஆரமுடைய மின்கடத்துப் பொருளாலான, மெல்லிய கோளகக் கூட்டின் பரப்பில் Q மின்னூட்ட அளவுள்ள மின்துகள்கள் சீராகப் பரவியுள்ளன. எனில், அதனால் ஏற்படும் நிலை மின்னழுத்தத்திற்கான சரியான வரைபடம் எது?",
+      "options": [
+        "(a)",
+        "(b)",
+        "(c)",
+        "(d)"
+      ],
+      "correctAnswer": "B",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Confirm that all original choices were extracted",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "All four printed options are graphs. Stored option strings preserve their printed labels only and are incomplete choices. Hold until a teacher verifies faithful structured graphs; labels alone must never be published as a text MCQ.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "questionText": "R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)",
+        "options": [],
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 72,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 80; fresh extracted page header also contains 72. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)",
+        "sourceOptions": [],
+        "englishText": null,
+        "tamilText": "R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)",
+        "sourcePageText": "PDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "B",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Confirm that all original choices were extracted",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe the figure-dependent question before text publication",
+          "Transcribe mathematical layout before text publication",
+          "All four printed options are graphs. Stored option strings preserve their printed labels only and are incomplete choices. Hold until a teacher verifies faithful structured graphs; labels alone must never be published as a text MCQ.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 79,
+        "printedPages": [
+          72
+        ],
+        "originalRawSpan": "R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)",
+        "proposedTranscription": {
+          "questionText": "R ஆரமுடைய மின்கடத்துப் பொருளாலான, மெல்லிய கோளகக் கூட்டின் பரப்பில் Q மின்னூட்ட அளவுள்ள மின்துகள்கள் சீராகப் பரவியுள்ளன. எனில், அதனால் ஏற்படும் நிலை மின்னழுத்தத்திற்கான சரியான வரைபடம் எது?",
+          "options": [
+            "(a)",
+            "(b)",
+            "(c)",
+            "(d)"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": false,
+        "diagramEvidence": "PDF 80 right: four V-versus-r graph choices with O origin and R on horizontal axis. (a) zero to R then jump and decay; (b) constant to R then decay; (c) linear rise to R then linear fall; (d) linear rise to R then decay. These descriptions are evidence notes, not printed option text or teacher-approved graph reconstructions.",
+        "printedKeyEntry": "10) b",
+        "keyPrintedPage": 73,
+        "reusedExistingId": false,
+        "originalMapping": null
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-6517797416f91930",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 11,
+      "page": 80,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "A மற்றும் B ஆகியஇரு புள்ளிகள் முறையே 7 V மற்றும் −4 V மின்னழுத்தத்தில் வைக்கப்பட்டுள்ளன எனில் A லிருந்து B க்கு 50 எலக்ட்ரான்களை நகர்த்தச் செய்யப்படும் வேலை",
+      "options": [
+        "8.80 × 10⁻¹⁷ J",
+        "−8.80 × 10⁻¹⁷ J",
+        "4.40 × 10⁻¹⁷ J",
+        "5.80 × 10⁻¹⁷ J"
+      ],
+      "correctAnswer": "A",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm minus signs, 50 electrons and exponent −17 against PDF 80. Printed joined word ஆகியஇரு is retained."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-6517797416f91930",
+        "page": 80,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 11,
+        "status": "Needs Review",
+        "endPage": 80,
+        "options": [
+          "8.80 × 10 –17 J",
+          "–8.80 × 10 –17 J",
+          "4.40 × 10 –17 J",
+          "5.80 × 10 –17 J"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V மற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப் ப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50 எல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும் மவ ல ல",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 72,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 80; fresh extracted page header also contains 72. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V மற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப் ப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50 எல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும் மவ ல ல",
+        "sourceOptions": [
+          "8.80 × 10 –17 J",
+          "–8.80 × 10 –17 J",
+          "4.40 × 10 –17 J",
+          "5.80 × 10 –17 J"
+        ],
+        "englishText": null,
+        "tamilText": "A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V மற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப் ப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50 எல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும் மவ ல ல",
+        "sourcePageText": "PDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "A",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Teacher must confirm minus signs, 50 electrons and exponent −17 against PDF 80. Printed joined word ஆகியஇரு is retained."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 79,
+        "printedPages": [
+          72
+        ],
+        "originalRawSpan": "A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J",
+        "proposedTranscription": {
+          "questionText": "A மற்றும் B ஆகியஇரு புள்ளிகள் முறையே 7 V மற்றும் −4 V மின்னழுத்தத்தில் வைக்கப்பட்டுள்ளன எனில் A லிருந்து B க்கு 50 எலக்ட்ரான்களை நகர்த்தச் செய்யப்படும் வேலை",
+          "options": [
+            "8.80 × 10⁻¹⁷ J",
+            "−8.80 × 10⁻¹⁷ J",
+            "4.40 × 10⁻¹⁷ J",
+            "5.80 × 10⁻¹⁷ J"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "11) a",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-fcc19d549e9a07d5",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 12,
+      "page": 80,
+      "endPage": 80,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "ஒரு மின்தேக்கிக்கு அளிக்கப்படும் மின்னழுத்த வேறுபாடு V லிருந்து 2V ஆக அதிகரிக்கப்படுகிறது எனில், பின்வருவனவற்றுள் சரியான முடிவினைத் தேர்ந்தெடுக்க.",
+      "options": [
+        "Q மாறாமலிருக்கும், C இரு மடங்காகும்",
+        "Q இருமடங்காகும், C இருமடங்காகும்",
+        "C மாறாமலிருக்கும், Q இருமடங்காகும்",
+        "Q மற்றும் C இரண்டுமே மாறாமலிருக்கும்"
+      ],
+      "correctAnswer": "C",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Original parser contaminated option D with the next page header; proposed visual options omit that header without replacing the raw extraction."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-fcc19d549e9a07d5",
+        "page": 80,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 12,
+        "status": "Needs Review",
+        "endPage": 80,
+        "options": [
+          "Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்",
+          "Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்",
+          "C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்",
+          "Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும் 73 அ ை கு 1 நிலைமின்னியல்"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication"
+        ],
+        "questionText": "ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த மவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து எனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன முடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 72,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 80; fresh extracted page header also contains 72. End page printed label: 72.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த மவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து எனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன முடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .",
+        "sourceOptions": [
+          "Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்",
+          "Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்",
+          "C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்",
+          "Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும் 73 அ ை கு 1 நிலைமின்னியல்"
+        ],
+        "englishText": null,
+        "tamilText": "ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த மவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து எனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன முடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .",
+        "sourcePageText": "PDF 80\n72 அலகு 1 நிலைமின்னியல்\n+ + + + + + + + + +\n+ + + + + + + + + + + – – – – – – –\n+q q\n+2q q q q – – –q q q\n\u001f\u001e\n(a) 80\n0\nq\ne (b) q\n40 0 e\n(c) q\n80 0 e (d) q\n160 0 e\n7. q 1 மற்றும் q 2 ஆகிய மந ர் மின்னூட ட அ ை வு ்\nகாண்ட இரு ஒ மர மாதிரியா ்ன மி ன்க டத்துப்\nப ந துகளின் லம ய ங்க ள் r இ லட்வ ளியில்\nபிரி க்கப்பட டு உ ள்ை்ன . அவ ற் ல்\nஒ ன்ம்ா்டா ன் று ்்த ா டச் ் ை ய் துவி ட டு பி ன் ்னர்\nஅ ம்த இ லட்வ ளியில் பிரித்து\nலவக்கப்ப டுகி ன்்்ன , எனில் அவற்றிற்கு\nஇ லடமய யா ்ன வி ல ை ( NSEP 04–05 )\n(a) மு ன்லப விடக் கு ல் வாக இருக்கும்\n(b) அ ம்த ய ை வு இருக்கும்\n(c) மு ன்லப விட அதிகமாக இருக்கும்\n(d) சுழி\n8. பி ன் வ ரும் மின்துகள் அ லம ப்புகளின் நில ல\nமி ன் ்ன ழு த் ்த ஆ ற்்ல் கல ை இ ் ங் கு வரி ல ையில்\nஎழுதுக.\nQ Q -Q -Q -Q -Q -2Q -2Q r r\n(a) (b) (d) (c)\n2r – – – – r – + – +\n(a) 1 = 4 < 2 < 3 (b) 2 = 4 < 3 < 1\n(c) 2 = 3 < 1 < 4 (d) 3 < 1 < 2 < 4\n9. ் வ ளி ப் ப ரப்பின் ஒரு பகுதியில் மின்புலம், \nE x i = 10  நிலவுகி ் து. மி ன் ்ன ழு த் ்த மவ றுபாடு\nV = V o – V A எனில் (இங்கு V 0 எ ன்ப து\nஆதிப்புள்ளியில் மி ன் ்ன ழு த் ்தம் ) x = 2 m ்்த\nா ல ல வில் மி ன் ்ன ழு த் ்தம் V A = ____________\n(a) 10 V (b) – 20 V\n(c) +20 V (d) -10 V\n10 . R ஆரமு லட ய மி ன் க டத்துப் ் பா ரு ை ாலா ்ன , ்\nம ல் லிய மகாை கக் கூ ட டின் பரப்பில் Q\nமின்னூட ட அ ை வு ள்ை மின்துக ள் க ள் சீ ராகப்\nபரவியு ள்ை்ன . எனில், அ ்த்ன ால் ஏ ற் ப டும் நில ல\nமி ன் ்ன ழு த் ்தத் தி ற் கா்ன ை ரியா ்ன வ லர படம்\nஎது?\nV V V\nO O O\nR R R r r\n(b) (a)\nV V V V\nO O O O\nR R R R r r r r\n(b) (c) (d) (a)\n11 . A மற்றும் B ஆகியஇரு புள்ளிகள் மு ல்மய 7 V\nமற்றும் –4 V மி ன் ்ன ழு த் ்தத் தில் லவக்க ப்\nப ட டு ள்ை்ன எனில் A லிரு ந து B க் கு 50\nஎல க்டரான்கல ை நக ர்த் ்தச் ் ைய்யப்ப டும்\nமவ ல ல\n(a) 8.80 × 10 –17 J\n(b) –8.80 × 10 –17 J\n(c) 4.40 × 10 –17 J\n(d) 5.80 × 10 –17 J\n12 . ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "C",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Original parser contaminated option D with the next page header; proposed visual options omit that header without replacing the raw extraction."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 79,
+        "printedPages": [
+          72
+        ],
+        "originalRawSpan": "ஒரு மி ன் ம்த க் கிக்கு அளி க் கப்ப டும் மி ன் ்ன ழு த் ்த\nமவ றுபாடு V லிரு ந து 2 V ஆக அதிகரி க் கப்ப டுகி ் து\nஎனில், பி ன் வ ருவ ்ன வற்றுள் ை ரியா ்ன\nமுடிவி ல்ன த் ம்தர்ந ் ்த டு க் க .\n(a) Q மா ் ாமலிருக்கும் , C இரு மட ங் கா கும்\n(b) Q இரு மட ங் கா கும் , C இரு மட ங் கா கும்\n(c) C மா ் ாமலிருக்கும் , Q இரு மட ங் கா கும்\n(d) Q மற்றும் C இரண்டும ம மா ் ாமலிருக்கும்\n73 அ ை கு 1 நிலைமின்னியல்",
+        "proposedTranscription": {
+          "questionText": "ஒரு மின்தேக்கிக்கு அளிக்கப்படும் மின்னழுத்த வேறுபாடு V லிருந்து 2V ஆக அதிகரிக்கப்படுகிறது எனில், பின்வருவனவற்றுள் சரியான முடிவினைத் தேர்ந்தெடுக்க.",
+          "options": [
+            "Q மாறாமலிருக்கும், C இரு மடங்காகும்",
+            "Q இருமடங்காகும், C இருமடங்காகும்",
+            "C மாறாமலிருக்கும், Q இருமடங்காகும்",
+            "Q மற்றும் C இரண்டுமே மாறாமலிருக்கும்"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "12) c",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-170cc1728036ca0e",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 13,
+      "page": 81,
+      "endPage": 81,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "இணைத்தட்டு மின்தேக்கி ஒன்று V மின்னழுத்த வேறுபாட்டில் Q அளவு மின்னூட்டம் கொண்ட மின்துகள்களைச் சேமிக்கிறது. தட்டுகளின் பரப்பளவும் தட்டுகளுக்கு இடையேயான தொலைவும் இருமடங்கானால் பின்வருவனவற்றில் எந்த அளவு மாறுபடும்.",
+      "options": [
+        "மின் தேக்குத்திறன்",
+        "மின்துகள்",
+        "மின்னழுத்த வேறுபாடு",
+        "ஆற்றல் அடர்த்தி"
+      ],
+      "correctAnswer": "D",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Option B literally prints மின்துகள்; do not replace it with a presumed quantity. Teacher must verify the intended conditions and wording."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "questionText": "இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த மவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட மின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின் பர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த ா ல ல வும் இருமட ங்கா்ன ால் பி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.",
+        "options": [
+          "மின் ம்த க் குத்தி ் ன்",
+          "மின்துகள்",
+          "மி ன் ்ன ழு த் ்த மவ றுபாடு",
+          "ஆ ற்் ல் அடர்த்தி"
+        ],
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 73,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 81; fresh extracted page header also contains 73. End page printed label: 73.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த மவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட மின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின் பர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த ா ல ல வும் இருமட ங்கா்ன ால் பி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.",
+        "sourceOptions": [
+          "மின் ம்த க் குத்தி ் ன்",
+          "மின்துகள்",
+          "மி ன் ்ன ழு த் ்த மவ றுபாடு",
+          "ஆ ற்் ல் அடர்த்தி"
+        ],
+        "englishText": null,
+        "tamilText": "இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த மவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட மின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின் பர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த ா ல ல வும் இருமட ங்கா்ன ால் பி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.",
+        "sourcePageText": "PDF 81\n73 அ ை கு 1 நிலைமின்னியல்\n13 . இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த\nமவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட\nமின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின்\nபர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த\nா ல ல வும் இருமட ங்கா்ன ால்\nபி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.\n(a) மின் ம்த க் குத்தி ் ன்\n(b) மின்துகள்\n(c) மி ன் ்ன ழு த் ்த மவ றுபாடு\n(d) ஆ ற்் ல் அடர்த்தி\n1 4. மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு\nமு க்ம க ா ண வடிவ அ லம ப்பில்\nஇ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய\nபுள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று\nமி ன்ம்த க் குத்தி ் ன்\n2μF\n2μF\n1μF\nA B\nC\n(a) 1μF (b) 2 μF\n(c) 3 μF (d) 1\n4 μ F\n15 . 1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக்\nமகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும்\n5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட\nமின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு\nமகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால்\nஇ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில்,\nஇறுதியாக இருக்கும் மின்னூட ட மதிப்பு\n( AIIPMT - 2012 )\n(a) 3 × 10 -2 C\n(b) 4 × 10 -2 C\n(c) 1 × 10 -2 C\n(d) 2 × 10 -2 C\nவி ல்ட்க ள் :\n1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a\nII சிறு வினாக்கள்\n1. மின்னூட ட த்தின் குவா ண் ட மா க்க ல் எ ன் ் ா ல்\nஎ ன் ்ன ?\n2. கூலூம் விதியின் ் வக்ட ர் வடிவ த்ல்த எழுதி\nஅதிலு ள் ை ஒவ்வ ா ரு குறியீடும் எ ல்த ச்\nசு ட டுகி ன்் து எ ன்பல்த க் கூறுக.\n3. கூலூம் வி ல ைக்கும் புவிஈர்ப்பு வி ல ைக்கும்\nஇ லடமய யா ்ன மவ றுபாடுக ல ைக் கூறுக.\n4. ம மற் ் ப ா ரு ந து ்த ல் ்த த் துவ த் ல்த ப் பற்றி சிறு\nகுறிப்பு வ லர க.\n5. மின்புலம் – வ லர யறு.\n6. மின்புலக் மகா டுகள் எ ன் ் ா ல் எ ன் ்ன ?\n7. மின்புலக் மகா டுகள் ஒ ன் ல்்யா ன் று ் வட டிக் ்\nகாள்ைா து நிறுவுக.\n8. மின் இருமு ல்ன – வ லர யறு. அ ்த ன் மின்\nஇருமு ல்ன திருப்புத்தி ் னின் எண்\nமதிப்பி ற் கா்ன ை ம ன் பா டு மற்றும் தி ல ை\nஆகியவ ற் ல் குறிப்பிடவும்.\n9. புள்ளி மின் துகளின் ்்த ா குப்பி ற் கா்ன மின்\nஇருமு ல்ன திருப்புத்தி ் னின் ் பா துவா ்ன\nவ லர ய ல் ்த ருக.\n10. நில ல மி ன் ்ன ழு த் ்தம் – வ லர யறு.\n11. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பு எ ன் ் ா ல் எ ன் ்ன ?\n12. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பின் பண்புகள் யா லவ ?\n13. மின்புலம், நில ல மி ன் ்ன ழு த் ்தம் – இ லட யிலா ்ன ்்த\nா ட ர்லப த் ்த ருக.\n14. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் – வ லர யறு.\n15. மி ன்பா யம் – வ லர யறு.\n16. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் அடர்த்தி எ ன் ் ா ல்\nஎ ன் ்ன ?",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "D",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Option B literally prints மின்துகள்; do not replace it with a presumed quantity. Teacher must verify the intended conditions and wording."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 80,
+        "printedPages": [
+          73
+        ],
+        "originalRawSpan": "இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த\nமவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட\nமின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின்\nபர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த\nா ல ல வும் இருமட ங்கா்ன ால்\nபி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.\n(a) மின் ம்த க் குத்தி ் ன்\n(b) மின்துகள்\n(c) மி ன் ்ன ழு த் ்த மவ றுபாடு\n(d) ஆ ற்் ல் அடர்த்தி",
+        "proposedTranscription": {
+          "questionText": "இணைத்தட்டு மின்தேக்கி ஒன்று V மின்னழுத்த வேறுபாட்டில் Q அளவு மின்னூட்டம் கொண்ட மின்துகள்களைச் சேமிக்கிறது. தட்டுகளின் பரப்பளவும் தட்டுகளுக்கு இடையேயான தொலைவும் இருமடங்கானால் பின்வருவனவற்றில் எந்த அளவு மாறுபடும்.",
+          "options": [
+            "மின் தேக்குத்திறன்",
+            "மின்துகள்",
+            "மின்னழுத்த வேறுபாடு",
+            "ஆற்றல் அடர்த்தி"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "13) d",
+        "keyPrintedPage": 73,
+        "reusedExistingId": false,
+        "originalMapping": null
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-b197738191f091ef",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 14,
+      "page": 81,
+      "endPage": 81,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "மூன்று மின்தேக்கிகள் படத்தில் உள்ளவாறு முக்கோண வடிவ அமைப்பில் இணைக்கப்பட்டுள்ளன. A மற்றும் C ஆகிய புள்ளிகளுக்கிடையே உள்ள இணைமாற்று மின்தேக்குத்திறன்",
+      "options": [
+        "1 μF",
+        "2 μF",
+        "3 μF",
+        "(1/4) μF"
+      ],
+      "correctAnswer": "B",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Raw extraction splits printed number 14 as 1 4 and loses the 1/4 option fraction. Teacher must verify circuit topology and μF notation.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "questionText": "மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு மு க்ம க ா ண வடிவ அ லம ப்பில் இ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய புள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று மி ன்ம்த க் குத்தி ் ன் 2μF 2μF 1μF A B C",
+        "options": [
+          "1μF",
+          "2 μF",
+          "3 μF",
+          "1 4 μ F"
+        ],
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 73,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 81; fresh extracted page header also contains 73. End page printed label: 73.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு மு க்ம க ா ண வடிவ அ லம ப்பில் இ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய புள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று மி ன்ம்த க் குத்தி ் ன் 2μF 2μF 1μF A B C",
+        "sourceOptions": [
+          "1μF",
+          "2 μF",
+          "3 μF",
+          "1 4 μ F"
+        ],
+        "englishText": null,
+        "tamilText": "மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு மு க்ம க ா ண வடிவ அ லம ப்பில் இ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய புள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று மி ன்ம்த க் குத்தி ் ன் 2μF 2μF 1μF A B C",
+        "sourcePageText": "PDF 81\n73 அ ை கு 1 நிலைமின்னியல்\n13 . இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த\nமவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட\nமின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின்\nபர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த\nா ல ல வும் இருமட ங்கா்ன ால்\nபி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.\n(a) மின் ம்த க் குத்தி ் ன்\n(b) மின்துகள்\n(c) மி ன் ்ன ழு த் ்த மவ றுபாடு\n(d) ஆ ற்் ல் அடர்த்தி\n1 4. மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு\nமு க்ம க ா ண வடிவ அ லம ப்பில்\nஇ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய\nபுள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று\nமி ன்ம்த க் குத்தி ் ன்\n2μF\n2μF\n1μF\nA B\nC\n(a) 1μF (b) 2 μF\n(c) 3 μF (d) 1\n4 μ F\n15 . 1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக்\nமகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும்\n5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட\nமின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு\nமகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால்\nஇ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில்,\nஇறுதியாக இருக்கும் மின்னூட ட மதிப்பு\n( AIIPMT - 2012 )\n(a) 3 × 10 -2 C\n(b) 4 × 10 -2 C\n(c) 1 × 10 -2 C\n(d) 2 × 10 -2 C\nவி ல்ட்க ள் :\n1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a\nII சிறு வினாக்கள்\n1. மின்னூட ட த்தின் குவா ண் ட மா க்க ல் எ ன் ் ா ல்\nஎ ன் ்ன ?\n2. கூலூம் விதியின் ் வக்ட ர் வடிவ த்ல்த எழுதி\nஅதிலு ள் ை ஒவ்வ ா ரு குறியீடும் எ ல்த ச்\nசு ட டுகி ன்் து எ ன்பல்த க் கூறுக.\n3. கூலூம் வி ல ைக்கும் புவிஈர்ப்பு வி ல ைக்கும்\nஇ லடமய யா ்ன மவ றுபாடுக ல ைக் கூறுக.\n4. ம மற் ் ப ா ரு ந து ்த ல் ்த த் துவ த் ல்த ப் பற்றி சிறு\nகுறிப்பு வ லர க.\n5. மின்புலம் – வ லர யறு.\n6. மின்புலக் மகா டுகள் எ ன் ் ா ல் எ ன் ்ன ?\n7. மின்புலக் மகா டுகள் ஒ ன் ல்்யா ன் று ் வட டிக் ்\nகாள்ைா து நிறுவுக.\n8. மின் இருமு ல்ன – வ லர யறு. அ ்த ன் மின்\nஇருமு ல்ன திருப்புத்தி ் னின் எண்\nமதிப்பி ற் கா்ன ை ம ன் பா டு மற்றும் தி ல ை\nஆகியவ ற் ல் குறிப்பிடவும்.\n9. புள்ளி மின் துகளின் ்்த ா குப்பி ற் கா்ன மின்\nஇருமு ல்ன திருப்புத்தி ் னின் ் பா துவா ்ன\nவ லர ய ல் ்த ருக.\n10. நில ல மி ன் ்ன ழு த் ்தம் – வ லர யறு.\n11. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பு எ ன் ் ா ல் எ ன் ்ன ?\n12. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பின் பண்புகள் யா லவ ?\n13. மின்புலம், நில ல மி ன் ்ன ழு த் ்தம் – இ லட யிலா ்ன ்்த\nா ட ர்லப த் ்த ருக.\n14. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் – வ லர யறு.\n15. மி ன்பா யம் – வ லர யறு.\n16. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் அடர்த்தி எ ன் ் ா ல்\nஎ ன் ்ன ?",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "B",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe the figure-dependent question before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Raw extraction splits printed number 14 as 1 4 and loses the 1/4 option fraction. Teacher must verify circuit topology and μF notation.",
+          "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 80,
+        "printedPages": [
+          73
+        ],
+        "originalRawSpan": "மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு\nமு க்ம க ா ண வடிவ அ லம ப்பில்\nஇ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய\nபுள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று\nமி ன்ம்த க் குத்தி ் ன்\n2μF\n2μF\n1μF\nA B\nC\n(a) 1μF (b) 2 μF\n(c) 3 μF (d) 1\n4 μ F",
+        "proposedTranscription": {
+          "questionText": "மூன்று மின்தேக்கிகள் படத்தில் உள்ளவாறு முக்கோண வடிவ அமைப்பில் இணைக்கப்பட்டுள்ளன. A மற்றும் C ஆகிய புள்ளிகளுக்கிடையே உள்ள இணைமாற்று மின்தேக்குத்திறன்",
+          "options": [
+            "1 μF",
+            "2 μF",
+            "3 μF",
+            "(1/4) μF"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": true,
+        "completeTextOptions": true,
+        "diagramEvidence": "PDF 81 left: triangle vertices A top left, B top right, C bottom; AB = 2 μF, BC = 2 μF, AC = 1 μF. The connection topology is source evidence requiring teacher verification.",
+        "printedKeyEntry": "14) b",
+        "keyPrintedPage": 73,
+        "reusedExistingId": false,
+        "originalMapping": null
+      }
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-effb8e5227365f1e",
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+      "chapterTitle": "நிலை மின்னியல்",
+      "number": 15,
+      "page": 81,
+      "endPage": 81,
+      "section": "Book-back",
+      "exercise": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+      "questionText": "1 cm மற்றும் 3 cm ஆரமுள்ள இரு உலோகக் கோளங்களுக்கு முறையே −1 × 10⁻² C மற்றும் 5 × 10⁻² C அளவு மின்னூட்டங்கள் கொண்ட மின்துகள்கள் அளிக்கப்பட்டுள்ளன. இவ்விரு கோளங்களும் ஒரு மின்கடத்து கம்பியினால் இணைக்கப்பட்டால் பெரிய கோளத்தில், இறுதியாக இருக்கும் மின்னூட்ட மதிப்பு (AIIPMT –2012)",
+      "options": [
+        "3 × 10⁻² C",
+        "4 × 10⁻² C",
+        "1 × 10⁻² C",
+        "2 × 10⁻² C"
+      ],
+      "correctAnswer": "A",
+      "keyPage": 81,
+      "presentation": "Text",
+      "status": "Needs Review",
+      "reviewStatus": "needs_teacher_review",
+      "practicePublished": false,
+      "qualityFlags": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm radii, charge signs and exponent −2. Printed AIIPMT attribution retained; key heading removed from proposed option D, retained in raw source."
+      ],
+      "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "originalExtraction": {
+        "id": "textbook-q-12-physics-tamil-v1-c1623725-effb8e5227365f1e",
+        "page": 81,
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "number": 15,
+        "status": "Needs Review",
+        "endPage": 81,
+        "options": [
+          "3 × 10 -2 C",
+          "4 × 10 -2 C",
+          "1 × 10 -2 C",
+          "2 × 10 -2 C வி ல்ட்க ள் :"
+        ],
+        "section": "In-text",
+        "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-1",
+        "subjectId": "tb-12-physics-tamil-v1-c1623725",
+        "chapterTitle": "1 PHYSICS FM Tamil",
+        "presentation": "Text",
+        "qualityFlags": [
+          "Confirm whether this is a one-mark exercise",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication"
+        ],
+        "questionText": "1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக் மகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும் 5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட மின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு மகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால் இ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில், இறுதியாக இருக்கும் மின்னூட ட மதிப்பு ( AIIPMT - 2012 )",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "correctAnswer": null
+      },
+      "reviewHistory": [],
+      "reviewPreparation": {
+        "batchId": "tb-12-physics-tamil-v1-c1623725-ch-1-review-01",
+        "preparedAt": "2026-10-10T16:54:11.470Z",
+        "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+        "subject": "Physics",
+        "title": "Physics — Volume 1",
+        "medium": "Tamil",
+        "volume": "1",
+        "printedPage": 73,
+        "printedPageEvidence": "Visible footer in fresh rendered PDF 81; fresh extracted page header also contains 73. End page printed label: 73.",
+        "sourceCheck": "uncertain",
+        "keyCheck": "matched",
+        "sourceQuestionText": "1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக் மகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும் 5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட மின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு மகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால் இ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில், இறுதியாக இருக்கும் மின்னூட ட மதிப்பு ( AIIPMT - 2012 )",
+        "sourceOptions": [
+          "3 × 10 -2 C",
+          "4 × 10 -2 C",
+          "1 × 10 -2 C",
+          "2 × 10 -2 C வி ல்ட்க ள் :"
+        ],
+        "englishText": null,
+        "tamilText": "1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக் மகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும் 5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட மின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு மகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால் இ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில், இறுதியாக இருக்கும் மின்னூட ட மதிப்பு ( AIIPMT - 2012 )",
+        "sourcePageText": "PDF 81\n73 அ ை கு 1 நிலைமின்னியல்\n13 . இ லணத் ்த ட டு மி ன் ம்த க் கி ஒன்று V மி ன் ்ன ழு த் ்த\nமவ றுபா ட டில் Q அ ை வு மின்னூட ட ம் ் காண்ட\nமின்துக ள் கல ை மை மிக்கி ் து. ்த ட டுகளின்\nபர ப்பை வும் ்த ட டுகளுக்கு இ லடமய யா ்ன ்்த\nா ல ல வும் இருமட ங்கா்ன ால்\nபி ன்வ ருவ ்ன வற்றுள் எந்த அ ை வு மாறுபடும்.\n(a) மின் ம்த க் குத்தி ் ன்\n(b) மின்துகள்\n(c) மி ன் ்ன ழு த் ்த மவ றுபாடு\n(d) ஆ ற்் ல் அடர்த்தி\n1 4. மூன்று மி ன் ம்த க் கிகள் படத்தில் உ ள் ை வாறு\nமு க்ம க ா ண வடிவ அ லம ப்பில்\nஇ லணக்கப்பட டு ள்ை்ன . A மற்றும் C ஆகிய\nபுள்ளிகளுக்கி லடமய உ ள்ை இ லண மாற்று\nமி ன்ம்த க் குத்தி ் ன்\n2μF\n2μF\n1μF\nA B\nC\n(a) 1μF (b) 2 μF\n(c) 3 μF (d) 1\n4 μ F\n15 . 1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக்\nமகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும்\n5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட\nமின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு\nமகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால்\nஇ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில்,\nஇறுதியாக இருக்கும் மின்னூட ட மதிப்பு\n( AIIPMT - 2012 )\n(a) 3 × 10 -2 C\n(b) 4 × 10 -2 C\n(c) 1 × 10 -2 C\n(d) 2 × 10 -2 C\nவி ல்ட்க ள் :\n1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a\nII சிறு வினாக்கள்\n1. மின்னூட ட த்தின் குவா ண் ட மா க்க ல் எ ன் ் ா ல்\nஎ ன் ்ன ?\n2. கூலூம் விதியின் ் வக்ட ர் வடிவ த்ல்த எழுதி\nஅதிலு ள் ை ஒவ்வ ா ரு குறியீடும் எ ல்த ச்\nசு ட டுகி ன்் து எ ன்பல்த க் கூறுக.\n3. கூலூம் வி ல ைக்கும் புவிஈர்ப்பு வி ல ைக்கும்\nஇ லடமய யா ்ன மவ றுபாடுக ல ைக் கூறுக.\n4. ம மற் ் ப ா ரு ந து ்த ல் ்த த் துவ த் ல்த ப் பற்றி சிறு\nகுறிப்பு வ லர க.\n5. மின்புலம் – வ லர யறு.\n6. மின்புலக் மகா டுகள் எ ன் ் ா ல் எ ன் ்ன ?\n7. மின்புலக் மகா டுகள் ஒ ன் ல்்யா ன் று ் வட டிக் ்\nகாள்ைா து நிறுவுக.\n8. மின் இருமு ல்ன – வ லர யறு. அ ்த ன் மின்\nஇருமு ல்ன திருப்புத்தி ் னின் எண்\nமதிப்பி ற் கா்ன ை ம ன் பா டு மற்றும் தி ல ை\nஆகியவ ற் ல் குறிப்பிடவும்.\n9. புள்ளி மின் துகளின் ்்த ா குப்பி ற் கா்ன மின்\nஇருமு ல்ன திருப்புத்தி ் னின் ் பா துவா ்ன\nவ லர ய ல் ்த ருக.\n10. நில ல மி ன் ்ன ழு த் ்தம் – வ லர யறு.\n11. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பு எ ன் ் ா ல் எ ன் ்ன ?\n12. ை ம மி ன் ்ன ழு த் ்த ப் ப ரப்பின் பண்புகள் யா லவ ?\n13. மின்புலம், நில ல மி ன் ்ன ழு த் ்தம் – இ லட யிலா ்ன ்்த\nா ட ர்லப த் ்த ருக.\n14. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் – வ லர யறு.\n15. மி ன்பா யம் – வ லர யறு.\n16. நில ல மி ன் ்ன ழு த் ்த ஆ ற்் ல் அடர்த்தி எ ன் ் ா ல்\nஎ ன் ்ன ?",
+        "keyPageText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+        "parsedAnswer": "A",
+        "warnings": [
+          "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+          "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+          "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Transcribe mathematical layout before text publication",
+          "Teacher must confirm radii, charge signs and exponent −2. Printed AIIPMT attribution retained; key heading removed from proposed option D, retained in raw source."
+        ],
+        "duplicateIds": []
+      },
+      "extractionEvidence": {
+        "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+        "localPdf": "/textbooks/12-physics-tamil-v1-c1623725.pdf",
+        "pdfPageIndex": 80,
+        "printedPages": [
+          73
+        ],
+        "originalRawSpan": "1 cm மற்றும் 3 cm ஆரமு ள்ை இரு உ மலா கக்\nமகாைங்க ளுக்கு மு ல்மய - 1 × 10 -2 C மற்றும்\n5 × 10 -2 C அ ை வு மின்னூட டங்க ள் ் காண்ட\nமின்துக ள் க ள் அளி க் கப்ப டுகி ன்்்ன . இ வ விரு\nமகாைங்க ளும் ஒரு மி ன் க டத்து கம்பியி ்ன ால்\nஇ லணக்கப்ப ட டா ல் ் ப ரிய மகாை த்தில்,\nஇறுதியாக இருக்கும் மின்னூட ட மதிப்பு\n( AIIPMT - 2012 )\n(a) 3 × 10 -2 C\n(b) 4 × 10 -2 C\n(c) 1 × 10 -2 C\n(d) 2 × 10 -2 C\nவி ல்ட்க ள் :",
+        "proposedTranscription": {
+          "questionText": "1 cm மற்றும் 3 cm ஆரமுள்ள இரு உலோகக் கோளங்களுக்கு முறையே −1 × 10⁻² C மற்றும் 5 × 10⁻² C அளவு மின்னூட்டங்கள் கொண்ட மின்துகள்கள் அளிக்கப்பட்டுள்ளன. இவ்விரு கோளங்களும் ஒரு மின்கடத்து கம்பியினால் இணைக்கப்பட்டால் பெரிய கோளத்தில், இறுதியாக இருக்கும் மின்னூட்ட மதிப்பு (AIIPMT –2012)",
+          "options": [
+            "3 × 10⁻² C",
+            "4 × 10⁻² C",
+            "1 × 10⁻² C",
+            "2 × 10⁻² C"
+          ]
+        },
+        "transcriptionMethod": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+        "requiresDiagram": false,
+        "completeTextOptions": true,
+        "diagramEvidence": null,
+        "printedKeyEntry": "15) a",
+        "keyPrintedPage": 73,
+        "reusedExistingId": true,
+        "originalMapping": {
+          "chapterTitle": "1 PHYSICS FM Tamil",
+          "section": "In-text"
+        }
+      }
+    }
+  ]
+}

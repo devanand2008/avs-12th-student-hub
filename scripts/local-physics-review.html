@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Local Tamil Physics teacher review</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font:
+          16px/1.55 system-ui,
+          sans-serif;
+        margin: 0;
+        color: #172638;
+        background: #f2f5f9;
+      }
+      header,
+      main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+      header {
+        background: #172638;
+        color: white;
+        max-width: none;
+      }
+      header > div {
+        max-width: 1160px;
+        margin: auto;
+      }
+      h1 {
+        margin: 0;
+        font-size: 25px;
+      }
+      h2 {
+        font-size: 21px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+      .banner {
+        background: #fff3cd;
+        padding: 14px;
+        border-radius: 8px;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        border: 1px solid #d4dbe5;
+        border-radius: 10px;
+        margin: 16px 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .text {
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+      }
+      label {
+        display: block;
+        margin: 12px 0;
+      }
+      input,
+      select,
+      textarea,
+      button {
+        font: inherit;
+      }
+      input:not([type="checkbox"]),
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #8190a3;
+        border-radius: 5px;
+      }
+      textarea {
+        min-height: 110px;
+      }
+      button,
+      a.button {
+        padding: 10px 14px;
+        background: #184f85;
+        color: white;
+        border: 0;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-block;
+      }
+      button:disabled {
+        background: #8190a3;
+        cursor: not-allowed;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      a {
+        color: #184f85;
+      }
+      header a {
+        color: white;
+      }
+      small {
+        display: block;
+        overflow-wrap: anywhere;
+      }
+      .error {
+        color: #a01818;
+      }
+      .success {
+        color: #116037;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #a2afbe;
+      }
+      figure {
+        margin: 18px 0;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+      [hidden] {
+        display: none !important;
+      }
+      @media (max-width: 700px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        main,
+        header {
+          padding: 12px;
+        }
+        .card {
+          padding: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Local Tamil Physics · Volume 1 · Unit 1</h1>
+        <p>
+          Teacher decisions are local reference records. All source candidates
+          stay held. No Supabase connection, import or publication.
+        </p>
+      </div>
+    </header>
+    <main>
+      <section id="login" class="card">
+        <h2>Authorised local reviewer sign-in</h2>
+        <p>
+          Each teacher needs a separately provisioned local account. These
+          credentials are independent of the website admin login.
+        </p>
+        <p>
+          Project owner: provision the actual teacher with
+          <code
+            >npm run mcqs:physics-review -- --add-reviewer teacher@example.com
+            --name "Teacher name"</code
+          >, then start <code>npm run mcqs:physics-review</code>. Give the
+          private credentials to that teacher.
+        </p>
+        <form id="loginForm">
+          <label
+            >Email<input
+              id="email"
+              type="email"
+              autocomplete="username"
+              required /></label
+          ><label
+            >Password<input
+              id="password"
+              type="password"
+              autocomplete="current-password"
+              required /></label
+          ><button>Sign in locally</button>
+        </form>
+      </section>
+      <p id="message" role="status" aria-live="polite"></p>
+      <section id="review" hidden>
+        <div class="card">
+          <p id="identity"></p>
+          <nav>
+            <button id="export">Export decision manifest</button>
+            <button id="logout">Sign out</button>
+          </nav>
+          <p id="counts"></p>
+          <label>Question<select id="question"></select></label>
+          <nav>
+            <button id="previous">Previous</button
+            ><button id="next">Next</button>
+          </nav>
+        </div>
+        <article class="card">
+          <h2 id="title"></h2>
+          <small id="references"></small>
+          <p class="banner" id="incomplete" hidden>
+            Question 10 has graph-only choices. Labels (a)–(d) are incomplete
+            text options. Approval is blocked. Record Needs correction,
+            Rejected, or Still pending review.
+          </p>
+          <div class="grid">
+            <section>
+              <h3>Original extracted Tamil — unchanged</h3>
+              <p id="original" class="text" lang="ta"></p>
+              <h3>All original extracted options</h3>
+              <ol id="originalOptions" type="A" lang="ta"></ol>
+              <details>
+                <summary>Original raw source span</summary>
+                <pre id="raw" class="text" lang="ta"></pre>
+              </details>
+            </section>
+            <section>
+              <h3>Proposed Tamil transcription — unverified</h3>
+              <p id="proposed" class="text" lang="ta"></p>
+              <h3>Proposed options in printed order</h3>
+              <ol id="proposedOptions" type="A" lang="ta"></ol>
+              <p id="answer"></p>
+              <h3>Printed answer-key evidence</h3>
+              <pre id="key" class="text"></pre>
+              <p id="diagramEvidence"></p>
+            </section>
+          </div>
+          <h3>Source and unresolved warnings</h3>
+          <ul id="warnings"></ul>
+          <h3>Original locally rendered textbook pages</h3>
+          <p>
+            Open the full-size image to inspect symbols, graph choices and Tamil
+            text. Confirm each page only after checking it.
+          </p>
+          <div id="images"></div>
+          <form id="decisionForm">
+            <h3>Individual teacher decision</h3>
+            <label
+              >Decision<select id="decision">
+                <option value="pending">Still pending review</option>
+                <option value="needs_correction">Needs correction</option>
+                <option value="rejected">Rejected, with a reason</option>
+                <option value="approved">
+                  Approved after verification (local only)
+                </option>
+              </select></label
+            >
+            <label
+              >Teacher notes / correction details / rejection reason<textarea
+                id="notes"
+                maxlength="12000"
+              ></textarea></label
+            ><label
+              >Unresolved issues (one per line; clear only after resolving and
+              explaining in notes)<textarea id="issues"></textarea>
+            </label>
+            <label
+              ><input type="checkbox" id="textConfirmed" /> I verified every
+              proposed Tamil word, symbol and printed option against the
+              source.</label
+            ><label
+              ><input type="checkbox" id="keyConfirmed" /> I checked this
+              question's printed answer-key entry and answer mapping.</label
+            ><label id="diagramLabel"
+              ><input type="checkbox" id="diagramConfirmed" /> I inspected the
+              actual original diagram/graphs and verified their
+              interpretation.</label
+            >
+            <button id="save">Save this individual local decision</button>
+          </form>
+          <h3>Local decision history</h3>
+          <div id="history"></div>
+          <p>
+            Saving approval records a local verification decision only. It never
+            changes the held candidate or the student bank.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="/review.js" defer></script>
+  </body>
+</html>

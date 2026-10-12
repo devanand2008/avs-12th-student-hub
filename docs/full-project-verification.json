@@ -1,0 +1,193 @@
+{
+  "checkedAt": "2026-10-12T16:18:57.918Z",
+  "overall": "PARTIAL",
+  "checks": [
+    {
+      "name": "tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "logSha256": "db3c9c4ddcab3f4bbf099329cf3d793a6de49d1bc399156285df4f32f3dde4b9",
+      "tests": 106,
+      "passed": 106,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "0d1f6be7c1e431192bf2dd09d660e2c08ea76ee71ddc8a4b660055d9dd7213be",
+      "generatedPages": 74
+    },
+    {
+      "name": "extraction",
+      "command": "npm run mcqs:physics-unit1",
+      "exitCode": 0,
+      "logSha256": "dd6df4c13b3f096998abfbf488a861a37f550e0654c12ecf3ad12982916edf4d"
+    },
+    {
+      "name": "manifest",
+      "command": "npm run mcqs:decision-audit",
+      "exitCode": 0,
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "name": "audit-regression",
+      "command": "npx tsx --test tests/teacher-decision-manifest-audit.test.ts tests/teacher-manifest-discovery.test.ts",
+      "exitCode": 0,
+      "logSha256": "2d5b25d2dc4b7c255363042d975fad285c48af4fd8a1b34431eec59753fdd432",
+      "tests": 10,
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "browser",
+      "command": "npx playwright test tests/e2e/independent-practice.spec.ts tests/e2e/teacher-review.spec.ts tests/e2e/tamil-teacher-review.spec.ts",
+      "exitCode": 0,
+      "logSha256": "6329b673050006dd5ccdf5bbbd868524044759af2a71fefa740214a196be349e",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "all-browser",
+      "command": "npm run test:e2e (SMS fixture mode)",
+      "exitCode": 0,
+      "logSha256": "6dd1ad8dfa0aa9bcf969e982b5019ea4ed266ce456ead930c71e9cf643457da6",
+      "passed": 56,
+      "failed": 0,
+      "skipped": 12
+    },
+    {
+      "name": "direct-browser",
+      "command": "npx playwright test tests/e2e/direct-accounts.spec.ts (direct fixture mode)",
+      "exitCode": 0,
+      "logSha256": "c10fc30471de16d55aac9167b5a57f8a8f403a39090fdeb2d4adc63983223539",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "approval-browser",
+      "command": "npx playwright test tests/e2e/admin-approval.spec.ts (admin fixture mode)",
+      "exitCode": 0,
+      "logSha256": "e10377c52b953932aa17ccdd7f44dd651afdfc9321c5888173424948bdd413ad",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "uniquePassingBrowserCases": 66,
+  "browserCaseTotal": 68,
+  "remainingBrowserOptIns": 2,
+  "unrun": [
+    "Two installed-Gemma inference browser opt-ins (AVS_TEST_LOCAL_AI not enabled)",
+    "Current production database/user authentication deliberately not accessed",
+    "Raw 13-session history not locally available for an independent recount",
+    "Actual teacher sign-in/decisions/export unavailable because real reviewer count is zero"
+  ],
+  "initialIssues": {
+    "wrongActivationFixture": {
+      "passed": 27,
+      "failed": 7,
+      "skipped": 5,
+      "interrupted": true,
+      "remainingNotRun": 29
+    },
+    "directReviewLocator": {
+      "beforeFixPassed": 2,
+      "beforeFixFailed": 2,
+      "rootCause": "Generic status locator matched both publication success and queue refresh. Narrowed to the actual publication message; final direct suite passes."
+    },
+    "buildOverlap": {
+      "testsRun": 0,
+      "rootCause": "Browser startup overlapped a rebuild; rerun after completed build passed."
+    },
+    "typecheck": {
+      "resolved": true,
+      "rootCause": "New audit-record comparison needed an explicit array type; final typecheck/build pass."
+    }
+  },
+  "localService": {
+    "url": "http://127.0.0.1:4312",
+    "homeStatus": 200,
+    "guestExportStatus": 401,
+    "realExportExists": false,
+    "reviewed": 0,
+    "approved": 0,
+    "needsCorrection": 0,
+    "rejected": 0,
+    "pending": 15,
+    "historyEvents": 0,
+    "importableDecisions": 0
+  },
+  "preservedFiles": [
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/data/tamil-physics-unit1-transcription.json",
+      "sha256": "94924d137a9e8952ce1ce41cf86d1f5f839aaabcde331c93b8db2e84e58785d6",
+      "unchanged": true
+    },
+    {
+      "file": ".local/independent-live-content.json",
+      "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+      "unchanged": true
+    },
+    {
+      "file": "docs/teacher-decision-audit-database-proof.json",
+      "sha256": "317ab02a47db94a3d61141c53582e3742d6160adafc5a5a8605d134457709554",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/db/supabase.ts",
+      "sha256": "82d1c8a520c998ed99cb8316e48aae5dad7affa7c941cac4b1cb877aa6114a86",
+      "unchanged": true
+    },
+    {
+      "file": "src/lib/practice-history.ts",
+      "sha256": "fdc372b6fc9abd4f655ffc81d0ee80130524dc58a61c2f23942db9369cfae071",
+      "unchanged": true
+    },
+    {
+      "file": "src/app/api/admin/textbook-questions/route.ts",
+      "sha256": "1a6f53ac57e4408d30c3954e8f4bec64dba32b5e91395d37d6f75c6e2275f082",
+      "unchanged": true
+    }
+  ],
+  "production": {
+    "connections": 0,
+    "writes": 0,
+    "deployed": false,
+    "countsVerifiedFromSavedSnapshotOnly": true
+  },
+  "offlineDataProof": "full-project-local-data-audit.json",
+  "safety": "Node checks/build use a loopback-only network guard and isolated environment; .env.local is unchanged. All synthetic test teacher decisions, approvals and exports are temporary fixtures, never real local/production decisions.",
+  "limits": "Full default browser suite passes 56 with 12 mode/opt-in skips. Separate direct/admin suites each pass 4; two real-book practice cases pass in the six-case focused run. Four focused teacher cases overlap the default suite. Total distinct passing browser cases is 66, not 70; two Gemma inference opt-ins remain unrun. Regression subsets and repeated unit runs are not summed as extra unique tests. No actual teacher export was fabricated."
+}

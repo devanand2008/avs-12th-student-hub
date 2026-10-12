@@ -247,7 +247,7 @@ export default function HomePage() {
           {/* Brand Badge */}
           <div className="mb-8 inline-flex items-center gap-3.5 px-5 py-2.5 rounded-3xl bg-white/90 border-2 border-blue-200/80 backdrop-blur-md shadow-lg shadow-blue-900/5 text-left transition-all hover:scale-[1.02]">
             <div className="w-10 h-10 rounded-2xl bg-white border border-blue-200/90 p-1 flex items-center justify-center shadow-xs shrink-0">
-              <BrandLogo size={34} />
+              <BrandLogo size={30} />
             </div>
             <div>
               <p className="text-xs font-black text-slate-800 tracking-tight flex items-center gap-1.5">
@@ -709,7 +709,7 @@ export default function HomePage() {
 
         <div className="relative mx-auto flex max-w-2xl flex-col items-center z-10">
           <div className="w-16 h-16 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-2 flex items-center justify-center shadow-lg">
-            <BrandLogo size={52} />
+            <BrandLogo size={46} />
           </div>
           <span className="mt-6 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[10px] font-black tracking-widest uppercase">
             FREE FOR ALL 12TH STUDENTS

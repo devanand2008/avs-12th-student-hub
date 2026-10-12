@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-10-10T17:03:37.525Z",
+  "checks": [
+    {
+      "name": "audit",
+      "command": "npm run mcqs:physics-unit1",
+      "exitCode": 0,
+      "logSha256": "9f36304e2978cd1dad8148eb4658b3ca2adbea261b9779c63b25dc3e4e8c7d4a"
+    },
+    {
+      "name": "global-audit",
+      "command": "npm run mcqs:audit",
+      "exitCode": 0,
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057",
+      "parserCounts": {
+        "books": 82,
+        "verified": 985,
+        "pending": 11244
+      }
+    },
+    {
+      "name": "tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "logSha256": "1f08d3f3dcc1f57e7a901522a19aafc1664405beb807077848b3ee26a28f476f",
+      "tests": 92,
+      "passed": 92,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "focused-tests",
+      "command": "npx tsx --test tests/tamil-physics-unit1.test.ts",
+      "exitCode": 0,
+      "logSha256": "a26c1d7c1daac2bd4f0d1ff09c6e7799bb27afc62523fe7024fa426ca2aaae24",
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "effee8c4ad8f4fca49a7d80ce9f07ad735fca0fba61a76fc10b86e884e2413ac",
+      "generatedPages": 74
+    }
+  ],
+  "source": {
+    "sha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+    "pages": [
+      {
+        "pdfPage": 9,
+        "printedPage": 1,
+        "cacheMatches": true,
+        "freshTextSha256": "261f754c6a42093a58cbfc0e85e5cb306aa53c3e7d93699e2827ca008d4ac2c2"
+      },
+      {
+        "pdfPage": 79,
+        "printedPage": 71,
+        "cacheMatches": true,
+        "freshTextSha256": "67e547c7907cd8dea18aa0503be77b0d7dc6ce9fd6173da6f24d3f6e9cd71272"
+      },
+      {
+        "pdfPage": 80,
+        "printedPage": 72,
+        "cacheMatches": true,
+        "freshTextSha256": "c6c69ef942bc1dc52d7b1f51f1198d00da5f17a3d30c21aaf41d97c057213c81"
+      },
+      {
+        "pdfPage": 81,
+        "printedPage": 73,
+        "cacheMatches": true,
+        "freshTextSha256": "5d004d73e3a0837dbf7405a23ce28028686af80d062421468b74f777ebf1ce25"
+      }
+    ],
+    "renderedPagesInspected": [
+      {
+        "pdfPage": 9,
+        "printedPage": 1,
+        "sha256": "669987043dcee9defb9ba4f6d5b6a0a33e1dd2efa3a7d6fdb99f1e4462c125a4",
+        "file": ".local/physics-unit1-page-9.png"
+      },
+      {
+        "pdfPage": 79,
+        "printedPage": 71,
+        "sha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+        "file": ".local/physics-unit1-page-79.png"
+      },
+      {
+        "pdfPage": 80,
+        "printedPage": 72,
+        "sha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+        "file": ".local/physics-unit1-page-80.png"
+      },
+      {
+        "pdfPage": 81,
+        "printedPage": 73,
+        "sha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+        "file": ".local/physics-unit1-page-81.png"
+      }
+    ],
+    "method": "Coding-agent visual comparison of rendered original pages; not teacher approval."
+  },
+  "localQueueMatchesVersionedPacket": true,
+  "localCandidates": 15,
+  "productionWritesPerformed": 0,
+  "productionDeploymentsPerformed": 0,
+  "teacherDecisionsMade": 0,
+  "databaseProof": "tamil-physics-unit1-database-proof.json",
+  "limits": "92 unit tests passed; the five new focused cases were rerun after preserving capital A in the final proposed formula transcription. These are repeats, not 97 distinct tests. Browser end-to-end tests were not rerun for this offline extraction task. Existing parser audit counts exclude this local packet and are extraction classifications, not student-ready counts. The parser audit output was retained privately; the previous global report was preserved. All 15 candidates remain held, including seven diagram-dependent questions and one incomplete graph-choice set."
+}

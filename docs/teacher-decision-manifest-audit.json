@@ -1,0 +1,591 @@
+{
+  "checkedAt": "2026-10-12T16:10:16.497Z",
+  "exportLocated": false,
+  "exportFiles": [],
+  "conflictingExports": false,
+  "searchedRoots": [
+    "D:\\avs-12-hub",
+    "C:\\Users\\acer\\Downloads",
+    "C:\\Users\\acer\\Desktop",
+    "C:\\Users\\acer\\Documents"
+  ],
+  "searchHits": [
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\docs\\teacher-decision-audit-database-proof.json",
+      "classification": "other_artifact",
+      "reason": "Report/dataset lacks the workflow manifest envelope; filename alone is not evidence."
+    },
+    {
+      "file": "D:\\avs-12-hub\\docs\\teacher-decision-audit-verification.json",
+      "classification": "other_artifact",
+      "reason": "Report/dataset lacks the workflow manifest envelope; filename alone is not evidence."
+    },
+    {
+      "file": "D:\\avs-12-hub\\docs\\teacher-decision-manifest-audit.json",
+      "classification": "other_artifact",
+      "reason": "Report/dataset lacks the workflow manifest envelope; filename alone is not evidence."
+    }
+  ],
+  "searchLimitations": [],
+  "persistedStore": {
+    "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+    "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+    "valid": true,
+    "counts": {
+      "approved": 0,
+      "needs_correction": 0,
+      "rejected": 0,
+      "pending": 15,
+      "invalid": 0
+    },
+    "reviewed": 0,
+    "historyEvents": 0,
+    "missingIds": [],
+    "duplicateIds": [],
+    "unknownIds": [],
+    "issues": []
+  },
+  "exportCounts": null,
+  "confirmedDecisionCounts": null,
+  "confirmedHandoffRecords": 0,
+  "question10": {
+    "id": "textbook-q-12-physics-tamil-v1-c1623725-4bb323c633421f60",
+    "completeTextOptions": false,
+    "localDecision": "pending",
+    "approvalAllowed": false
+  },
+  "evidence": [
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-cf4d0da24caa53f3",
+      "number": 1,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 79,
+          "printedPage": 71,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Diagram directions A₁/A₂/B₁/B₂ must be represented faithfully before any student publication.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4ffcd19d0869c262",
+      "number": 2,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 79,
+          "printedPage": 71,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication"
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-08ccc72e718307ac",
+      "number": 3,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 79,
+          "printedPage": 71,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Raw extraction loses the absolute-value bars and fraction structure. Visual transcription preserves |q₁/q₂| and option fractions.",
+        "Do not infer field-line counts from damaged text; teacher must inspect the original diagram.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-0f9024994b5a82aa",
+      "number": 4,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 79,
+          "printedPage": 71,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm 10⁵, C⁻¹, 30°, 8 Nm and 1 cm against PDF 79; no numerical values were corrected."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-fdf332e27b51c0fe",
+      "number": 5,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 79,
+          "printedPage": 71,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm which charges each Gaussian surface encloses; text alone does not preserve surface geometry.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-7f9eac73f82061f8",
+      "number": 6,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 79,
+          "printedPage": 71,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png"
+        },
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe unreadable PDF glyphs before text publication",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Cross-page question: PDF 79/printed 71 stem; PDF 80/printed 72 diagram/options.",
+        "Raw extraction loses ε₀, numerator/denominator order and includes control glyphs. Teacher must confirm every fraction from PDF 80.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-77bb20ae29d73420",
+      "number": 7,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Preserve printed wording and answer C; teacher should check the equal-charge limiting case rather than silently rewriting the question."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-703934e2eaacaff1",
+      "number": 8,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 0,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Confirm that all original choices were extracted",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Printed diagram labels are a–d but option comparisons use 1–4; teacher must explicitly verify correspondence.",
+        "Printed stem says descending order while printed comparisons use <. Preserve this source inconsistency; do not rewrite it automatically.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-c115828aa60d2fa0",
+      "number": 9,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe unreadable PDF glyphs before text publication",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Raw extraction contains private-use vector/unit-vector glyphs; E⃗ = 10x î is a proposed Unicode transcription, not a changed formula.",
+        "V_A uses explicit underscore notation to preserve capital A; the source's V_o/V₀ subscripts and positive answer C need teacher confirmation. Do not resolve the apparent sign/reference ambiguity by guessing a different answer."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4bb323c633421f60",
+      "number": 10,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 0,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": false,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Confirm that all original choices were extracted",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "All four printed options are graphs. Stored option strings preserve their printed labels only and are incomplete choices. Hold until a teacher verifies faithful structured graphs; labels alone must never be published as a text MCQ.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-6517797416f91930",
+      "number": 11,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm minus signs, 50 electrons and exponent −17 against PDF 80. Printed joined word ஆகியஇரு is retained."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-fcc19d549e9a07d5",
+      "number": 12,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 80,
+          "printedPage": 72,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png"
+        },
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Original parser contaminated option D with the next page header; proposed visual options omit that header without replacing the raw extraction."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-170cc1728036ca0e",
+      "number": 13,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Option B literally prints மின்துகள்; do not replace it with a presumed quantity. Teacher must verify the intended conditions and wording."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-b197738191f091ef",
+      "number": 14,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": true,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe the figure-dependent question before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Raw extraction splits printed number 14 as 1 4 and loses the 1/4 option fraction. Teacher must verify circuit topology and μF notation.",
+        "Diagram-dependent: hold until the original geometry/graph is faithfully represented and teacher-verified."
+      ]
+    },
+    {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-effb8e5227365f1e",
+      "number": 15,
+      "originalExtractionSeparate": true,
+      "proposedTranscriptionSeparate": true,
+      "originalOptionCount": 4,
+      "proposedOptionCount": 4,
+      "diagramDependent": false,
+      "completeTextOptions": true,
+      "keyPdfPage": 81,
+      "keyPrintedPage": 73,
+      "sourceImages": [
+        {
+          "pdfPage": 81,
+          "printedPage": 73,
+          "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png"
+        }
+      ],
+      "warnings": [
+        "Pending individual authenticated teacher review; visual transcription and printed-key agreement are not approval.",
+        "Original PDF Tamil extraction is damaged; compare every proposed Tamil character and option against the original page.",
+        "Existing chapter title points to front matter; proposed Unit 1 mapping is confirmed by PDF 9–87. Live mapping was not changed.",
+        "Transcribe separated Tamil letter marks before text publication",
+        "Transcribe fragmented Tamil words before text publication",
+        "Transcribe mathematical layout before text publication",
+        "Teacher must confirm radii, charge signs and exponent −2. Printed AIIPMT attribution retained; key heading removed from proposed option D, retained in raw source."
+      ]
+    }
+  ],
+  "sourceImageChecks": [
+    {
+      "pdfPage": 79,
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png",
+      "sha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+      "freshSha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+      "matchesFreshRendering": true
+    },
+    {
+      "pdfPage": 81,
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png",
+      "sha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+      "freshSha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+      "matchesFreshRendering": true
+    },
+    {
+      "pdfPage": 80,
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png",
+      "sha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+      "freshSha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+      "matchesFreshRendering": true
+    }
+  ],
+  "sourcePdfHashMatches": true,
+  "productionWrites": 0,
+  "productionDeployments": 0,
+  "limits": "Export contents are checked against actual held candidates, provisioned local reviewer identities and exact authoritative local records/history. These manifests have no cryptographic signature; a matching unsigned file alone is not independent proof of human identity. No export was created by this audit. When no export is located, only the local pending state is reported, and the handoff remains blocked."
+}

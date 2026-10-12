@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-12T14:23:47.640Z",
+  "checks": [
+    {
+      "name": "tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "logSha256": "22e7bed2caa53fa93c1b1f56b47b71fc1228b90eae7de5cade180ee7fae1fc88",
+      "tests": 96,
+      "passed": 96,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "2a551b648899ca278525543def4e3faf3cd7239191d606ec4762e69bf6bbdc11",
+      "generatedPages": 74
+    },
+    {
+      "name": "extraction",
+      "command": "npm run mcqs:physics-unit1",
+      "exitCode": 0,
+      "logSha256": "b7ff6f66e8a092de2efa2b7eb7bc9c687af072d7feb1e62ee2dd8593f2e895ed"
+    },
+    {
+      "name": "global-audit",
+      "command": "npm run mcqs:audit",
+      "exitCode": 0,
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057",
+      "parserCounts": {
+        "books": 82,
+        "verified": 985,
+        "pending": 11244
+      }
+    }
+  ],
+  "localService": {
+    "url": "http://127.0.0.1:4312",
+    "homeStatus": 200,
+    "guestExportStatus": 401,
+    "reviewed": 0,
+    "approved": 0,
+    "rejected": 0,
+    "pending": 15,
+    "decisionEvents": 0
+  },
+  "browserVerification": {
+    "includedInAutomatedTests": true,
+    "viewports": [
+      "1440×1000",
+      "390×844"
+    ],
+    "questionsPerViewport": 15,
+    "actualSourcePages": [
+      79,
+      80,
+      81
+    ],
+    "externalRequests": 0,
+    "browserErrors": 0,
+    "saveReloadDownloadVerified": true,
+    "mode": "Temporary isolated test accounts and decisions; actual local manifest remains untouched"
+  },
+  "extractionReruns": {
+    "realScriptRunsInIsolatedFixture": 2,
+    "savedManifestUnchanged": true,
+    "duplicateRows": 0,
+    "realQueueHashUnchanged": true
+  },
+  "production": {
+    "accessed": false,
+    "writes": 0,
+    "deployed": false,
+    "baseline": "October 10 proof only: 995 English publications, Tamil 0, 13 practice sessions. Not reread in this task."
+  },
+  "preservationProof": "local-physics-review-preservation.json",
+  "limits": "No teacher verification occurred. All actual candidates remain held. Authenticated local decisions are reference-only and cannot import/publish. Full Next.js browser suite was not rerun. The browser case is included within the 96 tests, not extra unit-test counts. An initial locator assertion and a Windows test-loader URL error were fixed and the final full suite passed. Original global parser report was preserved."
+}

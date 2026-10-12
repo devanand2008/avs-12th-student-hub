@@ -1,5 +1,7 @@
 # Tamil-medium teacher verification queue
 
+**New local evidence packet (October 10, 2026):** [Tamil Physics Volume 1 Unit 1](TAMIL_PHYSICS_UNIT1_REVIEW.md) has 15 held source transcriptions, 11 retained IDs and 4 new local IDs; reviewed/approved/rejected/published 0. All proposed letters match the scoped key, but damaged raw Tamil, diagrams and printed ambiguities still require individual teacher verification. The packet was **not imported into Supabase** and is not part of the prepared live queue counts below. Its schema-compatible dataset and `.local/teacher-review/tamil-physics-unit1.json` preserve raw/source text separately from the proposed visual transcription. No teacher decision or production change occurred during extraction.
+
 Read-only live database audit: 2026-10-10T16:13:50.936Z. Medium is joined from **public.textbooks.source_medium**, not inferred from filenames. Catalog/packet inconsistencies: 0/0.
 
 **386 prepared questions / 43 batches / 42 detected chapters / 9 textbooks.** Pending 386; reviewed 0; approved 0; rejected 0. Page-wide key matches 212; ambiguous 174. No automated match constitutes teacher approval.
@@ -16,7 +18,7 @@ Read the original question/options, PDF source link, PDF and printed-page labels
 
 Teachers currently require an authorised admin account; the app has no separate teacher role. Each reviewer should use their own authorised account for attribution. Do not share credentials in a CSV or report. CSV exports are reference-only; there is no decision importer. A teacher's spreadsheet entry does not change database state.
 
-The updated filter/export UI is local and **has not been deployed to production**. Admin evidence may open the PDF; student practice displays text MCQs only.
+The medium filter/export UI was deployed in the preceding authorised release, commit `1f2d3ff`. The new Physics Unit 1 packet remains local and is **not in the live admin queue**. Admin evidence may open the PDF; student practice displays text MCQs only.
 
 ## All Tamil textbooks
 

@@ -1,0 +1,245 @@
+{
+  "bookId": "12-physics-tamil-v1-c1623725",
+  "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+  "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+  "chapterTitle": "நிலை மின்னியல்",
+  "chapterStartPdfPage": 9,
+  "chapterEndPdfPage": 87,
+  "exerciseHeading": "பயிற்சி வினாக்கள் — I சரியான விடையைத் தேர்ந்தெடுத்து எழுதுக.",
+  "keyHeading": "விடைகள்:",
+  "keyPdfPage": 81,
+  "keyPrintedPage": 73,
+  "visualKeyText": "1) b 2) c 3) d 4) b 5) a\n6) b 7) c 8) a 9) c 10) b\n11) a 12) c 13) d 14) b 15) a",
+  "method": "Proposed source transcription from freshly rendered original PDF pages 9 and 79–81. This is coding-agent visual comparison, not a teacher decision. Raw PDF text is retained separately. No academic correction of printed wording or answers.",
+  "questions": [
+    {
+      "number": 1,
+      "page": 79,
+      "endPage": 79,
+      "printedPage": 71,
+      "questionText": "−q மின்னூட்ட மதிப்புள்ள இரு புள்ளி மின்துகள்கள் படத்தில் உள்ளவாறு வைக்கப்பட்டுள்ளன. இவற்றுக்கு நடுவில் P என்ற புள்ளியில் +q மதிப்புள்ள மூன்றாவது மின்துகள் வைக்கப்படுகிறது. P லிருந்து அம்புக்குறியிட்டு காட்டப்பட்டுள்ள திசைகளில் சிறிய தொலைவுகளுக்கு +q மின்துகள் நகர்த்தப்பட்டால் எந்தத் திசை அல்லது திசைகளில், இடப்பெயர்ச்சியைப் பொறுத்து, +q ஆனது சமநிலையில் இருக்கும்?",
+      "options": [
+        "A₁ மற்றும் A₂",
+        "B₁ மற்றும் B₂",
+        "இரு திசைகளிலும்",
+        "சமநிலையில் இருக்காது"
+      ],
+      "requiresDiagram": true,
+      "diagramEvidence": "PDF 79, left column: two −q charges on a horizontal line, +q at midpoint P; arrows A₁ left, A₂ right, B₁ up, B₂ down.",
+      "warnings": [
+        "Diagram directions A₁/A₂/B₁/B₂ must be represented faithfully before any student publication."
+      ]
+    },
+    {
+      "number": 2,
+      "page": 79,
+      "endPage": 79,
+      "printedPage": 71,
+      "questionText": "பின்வரும் மின்துகள் நிலையமைப்புகளில் எது சீரான மின்புலத்தை உருவாக்கும்?",
+      "options": [
+        "புள்ளி மின்துகள்",
+        "சீரான மின்னூட்டம் பெற்ற முடிவிலா கம்பி",
+        "சீரான மின்னூட்டம் பெற்ற முடிவிலா சமதளம்",
+        "சீரான மின்னூட்டம் பெற்ற கோளகக் கூடு"
+      ],
+      "requiresDiagram": false,
+      "warnings": []
+    },
+    {
+      "number": 3,
+      "page": 79,
+      "endPage": 79,
+      "printedPage": 71,
+      "questionText": "பின்வரும் மின்புலக் கோடுகளின் வடிவமைப்பிலிருந்து இம்மின்துகள்களின் மின்னூட்ட விகிதம் |q₁/q₂| என்ன?",
+      "options": ["1/5", "25/11", "5", "11/25"],
+      "requiresDiagram": true,
+      "diagramEvidence": "PDF 79, bottom left: field-line drawing between q₁ (left) and q₂ (right), arrows and line counts are part of the question.",
+      "warnings": [
+        "Raw extraction loses the absolute-value bars and fraction structure. Visual transcription preserves |q₁/q₂| and option fractions.",
+        "Do not infer field-line counts from damaged text; teacher must inspect the original diagram."
+      ]
+    },
+    {
+      "number": 4,
+      "page": 79,
+      "endPage": 79,
+      "printedPage": 71,
+      "questionText": "2 × 10⁵ N C⁻¹ மதிப்புள்ள மின்புலத்தில் 30° ஒருங்கமைப்புக் கோணத்தில் மின் இருமுனை ஒன்று வைக்கப்பட்டுள்ளது. அதன்மீது செயல்படும் திருப்புவிசையின் மதிப்பு 8 Nm. மின் இருமுனையின் நீளம் 1 cm எனில் அதிலுள்ள ஒரு மின்துகளின் மின்னூட்ட எண்மதிப்பு",
+      "options": ["4 mC", "8 mC", "5 mC", "7 mC"],
+      "requiresDiagram": false,
+      "warnings": [
+        "Teacher must confirm 10⁵, C⁻¹, 30°, 8 Nm and 1 cm against PDF 79; no numerical values were corrected."
+      ]
+    },
+    {
+      "number": 5,
+      "page": 79,
+      "endPage": 79,
+      "printedPage": 71,
+      "questionText": "மின்துகள்களை உள்ளடக்கிய நான்கு காஸியன் பரப்புகள் படத்தில் காட்டப்பட்டுள்ளன. ஒவ்வொரு காஸியன் பரப்பையும் கடக்கும் மின்பாய மதிப்புகளைத் தரவரிசையில் எழுதுக.",
+      "options": [
+        "D < C < B < A",
+        "A < B = C < D",
+        "C < A = B < D",
+        "D > C > B > A"
+      ],
+      "requiresDiagram": true,
+      "diagramEvidence": "PDF 79, right column: overlapping Gaussian surfaces labelled A, B, C, D and charges +2q, −q, +q. Surface membership must be checked visually; no membership was inferred from extracted label order.",
+      "warnings": [
+        "Teacher must confirm which charges each Gaussian surface encloses; text alone does not preserve surface geometry."
+      ]
+    },
+    {
+      "number": 6,
+      "page": 79,
+      "endPage": 80,
+      "printedPage": 71,
+      "questionText": "நீருக்குள் வைக்கப்பட்டுள்ள மூடிய பரப்பின் மொத்த மின்பாய மதிப்பு __________",
+      "options": ["80q/ε₀", "q/(40ε₀)", "q/(80ε₀)", "q/(160ε₀)"],
+      "requiresDiagram": true,
+      "diagramEvidence": "Question stem at PDF 79 bottom right; diagram and all four choices at PDF 80 top left. Closed bag in water shows −q, +2q, +q.",
+      "warnings": [
+        "Cross-page question: PDF 79/printed 71 stem; PDF 80/printed 72 diagram/options.",
+        "Raw extraction loses ε₀, numerator/denominator order and includes control glyphs. Teacher must confirm every fraction from PDF 80."
+      ]
+    },
+    {
+      "number": 7,
+      "page": 80,
+      "endPage": 80,
+      "printedPage": 72,
+      "questionText": "q₁ மற்றும் q₂ ஆகிய நேர் மின்னூட்ட அளவு கொண்ட இரு ஒரே மாதிரியான மின்கடத்துப் பந்துகளின் மையங்கள் r இடைவெளியில் பிரிக்கப்பட்டு உள்ளன. அவற்றை ஒன்றோடொன்று தொடச் செய்துவிட்டு பின்னர் அதே இடைவெளியில் பிரித்து வைக்கப்படுகின்றன, எனில் அவற்றிற்கு இடையேயான விசை (NSEP 04–05)",
+      "options": [
+        "முன்பை விடக் குறைவாக இருக்கும்",
+        "அதேயளவு இருக்கும்",
+        "முன்பை விட அதிகமாக இருக்கும்",
+        "சுழி"
+      ],
+      "requiresDiagram": false,
+      "warnings": [
+        "Preserve printed wording and answer C; teacher should check the equal-charge limiting case rather than silently rewriting the question."
+      ]
+    },
+    {
+      "number": 8,
+      "page": 80,
+      "endPage": 80,
+      "printedPage": 72,
+      "questionText": "பின்வரும் மின்துகள் அமைப்புகளின் நிலை மின்னழுத்த ஆற்றல்களை இறங்கு வரிசையில் எழுதுக.",
+      "options": [
+        "1 = 4 < 2 < 3",
+        "2 = 4 < 3 < 1",
+        "2 = 3 < 1 < 4",
+        "3 < 1 < 2 < 4"
+      ],
+      "requiresDiagram": true,
+      "diagramEvidence": "PDF 80, left: four configurations labelled (a), (b), (c), (d). (a) Q and −Q at r; (b) −Q and −Q at r; (c) −Q and −2Q at r; (d) Q and −2Q at 2r.",
+      "warnings": [
+        "Printed diagram labels are a–d but option comparisons use 1–4; teacher must explicitly verify correspondence.",
+        "Printed stem says descending order while printed comparisons use <. Preserve this source inconsistency; do not rewrite it automatically."
+      ]
+    },
+    {
+      "number": 9,
+      "page": 80,
+      "endPage": 80,
+      "printedPage": 72,
+      "questionText": "வெளிப்பரப்பின் ஒரு பகுதியில் மின்புலம், E⃗ = 10x î நிலவுகிறது. மின்னழுத்த வேறுபாடு V = V_o − V_A எனில் (இங்கு V₀ என்பது ஆதிப்புள்ளியில் மின்னழுத்தம்) x = 2 m தொலைவில் மின்னழுத்தம் V_A = ____________",
+      "options": ["10 V", "−20 V", "+20 V", "−10 V"],
+      "requiresDiagram": false,
+      "warnings": [
+        "Raw extraction contains private-use vector/unit-vector glyphs; E⃗ = 10x î is a proposed Unicode transcription, not a changed formula.",
+        "V_A uses explicit underscore notation to preserve capital A; the source's V_o/V₀ subscripts and positive answer C need teacher confirmation. Do not resolve the apparent sign/reference ambiguity by guessing a different answer."
+      ]
+    },
+    {
+      "number": 10,
+      "page": 80,
+      "endPage": 80,
+      "printedPage": 72,
+      "questionText": "R ஆரமுடைய மின்கடத்துப் பொருளாலான, மெல்லிய கோளகக் கூட்டின் பரப்பில் Q மின்னூட்ட அளவுள்ள மின்துகள்கள் சீராகப் பரவியுள்ளன. எனில், அதனால் ஏற்படும் நிலை மின்னழுத்தத்திற்கான சரியான வரைபடம் எது?",
+      "options": ["(a)", "(b)", "(c)", "(d)"],
+      "requiresDiagram": true,
+      "diagramEvidence": "PDF 80 right: four V-versus-r graph choices with O origin and R on horizontal axis. (a) zero to R then jump and decay; (b) constant to R then decay; (c) linear rise to R then linear fall; (d) linear rise to R then decay. These descriptions are evidence notes, not printed option text or teacher-approved graph reconstructions.",
+      "warnings": [
+        "All four printed options are graphs. Stored option strings preserve their printed labels only and are incomplete choices. Hold until a teacher verifies faithful structured graphs; labels alone must never be published as a text MCQ."
+      ]
+    },
+    {
+      "number": 11,
+      "page": 80,
+      "endPage": 80,
+      "printedPage": 72,
+      "questionText": "A மற்றும் B ஆகியஇரு புள்ளிகள் முறையே 7 V மற்றும் −4 V மின்னழுத்தத்தில் வைக்கப்பட்டுள்ளன எனில் A லிருந்து B க்கு 50 எலக்ட்ரான்களை நகர்த்தச் செய்யப்படும் வேலை",
+      "options": [
+        "8.80 × 10⁻¹⁷ J",
+        "−8.80 × 10⁻¹⁷ J",
+        "4.40 × 10⁻¹⁷ J",
+        "5.80 × 10⁻¹⁷ J"
+      ],
+      "requiresDiagram": false,
+      "warnings": [
+        "Teacher must confirm minus signs, 50 electrons and exponent −17 against PDF 80. Printed joined word ஆகியஇரு is retained."
+      ]
+    },
+    {
+      "number": 12,
+      "page": 80,
+      "endPage": 80,
+      "printedPage": 72,
+      "questionText": "ஒரு மின்தேக்கிக்கு அளிக்கப்படும் மின்னழுத்த வேறுபாடு V லிருந்து 2V ஆக அதிகரிக்கப்படுகிறது எனில், பின்வருவனவற்றுள் சரியான முடிவினைத் தேர்ந்தெடுக்க.",
+      "options": [
+        "Q மாறாமலிருக்கும், C இரு மடங்காகும்",
+        "Q இருமடங்காகும், C இருமடங்காகும்",
+        "C மாறாமலிருக்கும், Q இருமடங்காகும்",
+        "Q மற்றும் C இரண்டுமே மாறாமலிருக்கும்"
+      ],
+      "requiresDiagram": false,
+      "warnings": [
+        "Original parser contaminated option D with the next page header; proposed visual options omit that header without replacing the raw extraction."
+      ]
+    },
+    {
+      "number": 13,
+      "page": 81,
+      "endPage": 81,
+      "printedPage": 73,
+      "questionText": "இணைத்தட்டு மின்தேக்கி ஒன்று V மின்னழுத்த வேறுபாட்டில் Q அளவு மின்னூட்டம் கொண்ட மின்துகள்களைச் சேமிக்கிறது. தட்டுகளின் பரப்பளவும் தட்டுகளுக்கு இடையேயான தொலைவும் இருமடங்கானால் பின்வருவனவற்றில் எந்த அளவு மாறுபடும்.",
+      "options": [
+        "மின் தேக்குத்திறன்",
+        "மின்துகள்",
+        "மின்னழுத்த வேறுபாடு",
+        "ஆற்றல் அடர்த்தி"
+      ],
+      "requiresDiagram": false,
+      "warnings": [
+        "Option B literally prints மின்துகள்; do not replace it with a presumed quantity. Teacher must verify the intended conditions and wording."
+      ]
+    },
+    {
+      "number": 14,
+      "page": 81,
+      "endPage": 81,
+      "printedPage": 73,
+      "questionText": "மூன்று மின்தேக்கிகள் படத்தில் உள்ளவாறு முக்கோண வடிவ அமைப்பில் இணைக்கப்பட்டுள்ளன. A மற்றும் C ஆகிய புள்ளிகளுக்கிடையே உள்ள இணைமாற்று மின்தேக்குத்திறன்",
+      "options": ["1 μF", "2 μF", "3 μF", "(1/4) μF"],
+      "requiresDiagram": true,
+      "diagramEvidence": "PDF 81 left: triangle vertices A top left, B top right, C bottom; AB = 2 μF, BC = 2 μF, AC = 1 μF. The connection topology is source evidence requiring teacher verification.",
+      "warnings": [
+        "Raw extraction splits printed number 14 as 1 4 and loses the 1/4 option fraction. Teacher must verify circuit topology and μF notation."
+      ]
+    },
+    {
+      "number": 15,
+      "page": 81,
+      "endPage": 81,
+      "printedPage": 73,
+      "questionText": "1 cm மற்றும் 3 cm ஆரமுள்ள இரு உலோகக் கோளங்களுக்கு முறையே −1 × 10⁻² C மற்றும் 5 × 10⁻² C அளவு மின்னூட்டங்கள் கொண்ட மின்துகள்கள் அளிக்கப்பட்டுள்ளன. இவ்விரு கோளங்களும் ஒரு மின்கடத்து கம்பியினால் இணைக்கப்பட்டால் பெரிய கோளத்தில், இறுதியாக இருக்கும் மின்னூட்ட மதிப்பு (AIIPMT –2012)",
+      "options": ["3 × 10⁻² C", "4 × 10⁻² C", "1 × 10⁻² C", "2 × 10⁻² C"],
+      "requiresDiagram": false,
+      "warnings": [
+        "Teacher must confirm radii, charge signs and exponent −2. Printed AIIPMT attribution retained; key heading removed from proposed option D, retained in raw source."
+      ]
+    }
+  ]
+}
