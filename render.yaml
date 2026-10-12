@@ -2,7 +2,7 @@ services:
   - type: web
     name: avs-12-hub
     runtime: node
-    plan: starter
+    plan: free
     repo: https://github.com/devanand2008/avs-12th-student-hub
     branch: main
     buildCommand: npm ci && npm run build

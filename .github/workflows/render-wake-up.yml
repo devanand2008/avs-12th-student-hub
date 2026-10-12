@@ -1,0 +1,38 @@
+name: Render wake-up
+
+on:
+  schedule:
+    - cron: "3-53/10 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: render-wake-up
+  cancel-in-progress: false
+
+jobs:
+  wake-up:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      RENDER_APP_URL: https://avs-12-hub.onrender.com
+    steps:
+      - name: Request the public app configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location \
+            --connect-timeout 15 --max-time 180 \
+            --retry 2 --retry-delay 10 --retry-max-time 240 \
+            --output "$RUNNER_TEMP/render-health.json" \
+            --write-out 'Render response: HTTP %{http_code}\n' \
+            "$RENDER_APP_URL/api/auth/config"
+          python - "$RUNNER_TEMP/render-health.json" <<'PY'
+          import json, sys
+          with open(sys.argv[1], encoding="utf-8") as response:
+              config = json.load(response)
+          if config.get("studentActivationMode") not in {"admin", "direct", "sms"}:
+              raise SystemExit("Unexpected app configuration response")
+          print("SkillUp backend responded successfully.")
+          PY
