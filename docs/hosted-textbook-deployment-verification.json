@@ -1,0 +1,1507 @@
+{
+  "checkedAt": "2026-10-13T08:53:55.776Z",
+  "applicationCommit": "a68220c28089cd8908f2d3b56940f083e1d4cbb5",
+  "results": [
+    {
+      "host": "avs-12-hub.onrender.com",
+      "routes": {
+        "checkedAt": "2026-10-13T08:52:44.853Z",
+        "verified": true,
+        "books": 82,
+        "uniqueIds": 82,
+        "unknownBookRejected": true,
+        "invalidRangeRejected": true,
+        "headVerified": true,
+        "anonymousAccessRejected": true,
+        "files": [
+          {
+            "id": "12-accountancy-tamil-6e7f5476",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 16608957
+          },
+          {
+            "id": "12-agricultural-science-tamil-1d871464",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 20720017
+          },
+          {
+            "id": "12-accountancy-english-c0f4ded3",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13332543
+          },
+          {
+            "id": "12-advanced-tamil-tamil-6679b417",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9339966
+          },
+          {
+            "id": "12-auditing-english-cb18c74c",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 6481812
+          },
+          {
+            "id": "12-auditing-tamil-e1982513",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14011982
+          },
+          {
+            "id": "12-basic-automobile-engineering-tamil-e76f29d2",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14514413
+          },
+          {
+            "id": "12-basic-automobile-engineering-english-69f8e9f9",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 11107196
+          },
+          {
+            "id": "12-basic-civil-engineering-english-fc2d4128",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9968987
+          },
+          {
+            "id": "12-basic-electrical-engineering-english-13c7fc7b",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8035205
+          },
+          {
+            "id": "12-basic-electrical-engineering-tamil-029f513a",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8345039
+          },
+          {
+            "id": "12-basic-civil-engineering-tamil-122addb5",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13931887
+          },
+          {
+            "id": "12-basic-electronics-engineering-tamil-96fcb4f2",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 21294991
+          },
+          {
+            "id": "12-basic-electronics-engineering-english-983efd90",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14423757
+          },
+          {
+            "id": "12-basic-mechanical-engineering-english-e15ca391",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12723668
+          },
+          {
+            "id": "12-basic-mechanical-engineering-tamil-49be34e2",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 16833188
+          },
+          {
+            "id": "12-bio-botany-english-f15d4524",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 110622979
+          },
+          {
+            "id": "12-bio-botany-tamil-51160855",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 111006309
+          },
+          {
+            "id": "12-bio-zoology-english-7e848813",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 37158816
+          },
+          {
+            "id": "12-bio-zoology-tamil-2631f8e3",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 38977764
+          },
+          {
+            "id": "12-biochemistry-english-dfd867ac",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 49003863
+          },
+          {
+            "id": "12-biochemistry-tamil-910cca11",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 52646997
+          },
+          {
+            "id": "12-botany-tamil-37a9b740",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 91478334
+          },
+          {
+            "id": "12-botany-english-da5635aa",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 115600679
+          },
+          {
+            "id": "12-business-mathematics-statistics-tamil-a77e8ce0",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14308257
+          },
+          {
+            "id": "12-business-mathematics-statistics-english-5710bd23",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12687571
+          },
+          {
+            "id": "12-chemistry-english-v1-2d0e27cb",
+            "medium": "English",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 26035667
+          },
+          {
+            "id": "12-chemistry-english-v2-0010d706",
+            "medium": "English",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 17362245
+          },
+          {
+            "id": "12-chemistry-tamil-v2-52192807",
+            "medium": "Tamil",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 23127358
+          },
+          {
+            "id": "12-commerce-english-4f83c61b",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 15848402
+          },
+          {
+            "id": "12-chemistry-tamil-v1-5fcd65a9",
+            "medium": "Tamil",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 20591379
+          },
+          {
+            "id": "12-commerce-tamil-d9e013d8",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 23114763
+          },
+          {
+            "id": "12-communicative-english-english-10e4b8ba",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9503960
+          },
+          {
+            "id": "12-computer-applications-english-627c1490",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 62743327
+          },
+          {
+            "id": "12-computer-applications-english-ccd483a9",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9911039
+          },
+          {
+            "id": "12-computer-applications-tamil-e51fbdf6",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 62473146
+          },
+          {
+            "id": "12-computer-science-english-37bdae5b",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 5374707
+          },
+          {
+            "id": "12-computer-applications-tamil-f43670d1",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 15111554
+          },
+          {
+            "id": "12-computer-science-tamil-d5aa7dd4",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 7340473
+          },
+          {
+            "id": "12-computer-technology-english-293bf656",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8961568
+          },
+          {
+            "id": "12-computer-technology-tamil-c66e9089",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13108187
+          },
+          {
+            "id": "12-computer-technology-english-cf787554",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 125851735
+          },
+          {
+            "id": "12-economics-english-5418ce45",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8040810
+          },
+          {
+            "id": "12-computer-technology-tamil-cff5867a",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 68531454
+          },
+          {
+            "id": "12-economics-tamil-c7590e3f",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 10846676
+          },
+          {
+            "id": "12-english-english-b9d1c4c3",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 17083029
+          },
+          {
+            "id": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 10585620
+          },
+          {
+            "id": "12-food-service-management-english-111451e7",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 11284251
+          },
+          {
+            "id": "12-food-service-management-tamil-e2061fb1",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13863313
+          },
+          {
+            "id": "12-general-nursing-english-5c87aafc",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18577579
+          },
+          {
+            "id": "12-general-nursing-tamil-b39f5ab1",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 20432413
+          },
+          {
+            "id": "12-geography-english-24059775",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 88099739
+          },
+          {
+            "id": "12-history-english-3cd2e4c2",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13404150
+          },
+          {
+            "id": "12-geography-tamil-ba849e46",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 92525207
+          },
+          {
+            "id": "12-history-tamil-3c88c869",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 17720323
+          },
+          {
+            "id": "12-home-science-english-e5c3e008",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14523925
+          },
+          {
+            "id": "12-mathematics-english-v1-e33ceed7",
+            "medium": "English",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 21729684
+          },
+          {
+            "id": "12-home-science-tamil-0cbbe34e",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 19203885
+          },
+          {
+            "id": "12-mathematics-tamil-v1-96fc1e8d",
+            "medium": "Tamil",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 23446136
+          },
+          {
+            "id": "12-mathematics-english-v2-d4925ec0",
+            "medium": "English",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18188393
+          },
+          {
+            "id": "12-mathematics-tamil-v2-f8732624",
+            "medium": "Tamil",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18648623
+          },
+          {
+            "id": "12-microbiology-english-6a36a404",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18668042
+          },
+          {
+            "id": "12-microbiology-tamil-a879259a",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 22169940
+          },
+          {
+            "id": "12-nursing-vocational-english-6c60782a",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 33874888
+          },
+          {
+            "id": "12-nutrition-and-dietetics-english-3d2e918e",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 19073996
+          },
+          {
+            "id": "12-nursing-vocational-tamil-7f44a760",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 33033726
+          },
+          {
+            "id": "12-office-management-secretaryship-typography-english-6b7b27b2",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 5970572
+          },
+          {
+            "id": "12-office-management-secretaryship-typography-tamil-241b6edf",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 7241531
+          },
+          {
+            "id": "12-physics-english-v1-1b1de8f8",
+            "medium": "English",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 60113330
+          },
+          {
+            "id": "12-physics-english-v2-0ce6704c",
+            "medium": "English",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 43403236
+          },
+          {
+            "id": "12-physics-tamil-v1-c1623725",
+            "medium": "Tamil",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 64422323
+          },
+          {
+            "id": "12-physics-tamil-v2-fb1fa4de",
+            "medium": "Tamil",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 49831193
+          },
+          {
+            "id": "12-political-science-english-db4a2e0c",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12822047
+          },
+          {
+            "id": "12-political-science-tamil-5da94964",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 15227970
+          },
+          {
+            "id": "12-statistics-english-1489a12e",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 7689756
+          },
+          {
+            "id": "12-statistics-tamil-c1143d1d",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9101786
+          },
+          {
+            "id": "12-tamil-tamil-7db1698f",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12139366
+          },
+          {
+            "id": "12-textile-technology-tamil-648797c8",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 19434552
+          },
+          {
+            "id": "12-textiles-and-dress-designing-english-1ceb8fbe",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 11570689
+          },
+          {
+            "id": "12-zoology-english-788d2d32",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 36995975
+          },
+          {
+            "id": "12-textiles-and-dress-designing-tamil-3650ec00",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 40832589
+          },
+          {
+            "id": "12-zoology-tamil-3c154dab",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 39699481
+          }
+        ]
+      },
+      "browser": {
+        "verified": true,
+        "checkedAt": "2026-10-13T08:52:54.850Z",
+        "cases": [
+          {
+            "id": "12-computer-science-english-37bdae5b",
+            "subject": "Computer Science",
+            "medium": "English",
+            "volume": null,
+            "mobile": false,
+            "renderedPages": [
+              1,
+              2
+            ],
+            "nonBlankCanvas": true
+          },
+          {
+            "id": "12-mathematics-english-v1-e33ceed7",
+            "subject": "Mathematics",
+            "medium": "English",
+            "volume": "1",
+            "mobile": true,
+            "renderedPages": [
+              1,
+              2
+            ],
+            "nonBlankCanvas": true
+          },
+          {
+            "id": "12-physics-tamil-v1-c1623725",
+            "subject": "Physics",
+            "medium": "Tamil",
+            "volume": "1",
+            "mobile": true,
+            "renderedPages": [
+              79,
+              80
+            ],
+            "nonBlankCanvas": true
+          }
+        ],
+        "errors": []
+      }
+    },
+    {
+      "host": "avs-12th-student-hub.vercel.app",
+      "routes": {
+        "checkedAt": "2026-10-13T08:51:44.873Z",
+        "verified": true,
+        "books": 82,
+        "uniqueIds": 82,
+        "unknownBookRejected": true,
+        "invalidRangeRejected": true,
+        "headVerified": true,
+        "anonymousAccessRejected": true,
+        "files": [
+          {
+            "id": "12-accountancy-english-c0f4ded3",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13332543
+          },
+          {
+            "id": "12-advanced-tamil-tamil-6679b417",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9339966
+          },
+          {
+            "id": "12-accountancy-tamil-6e7f5476",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 16608957
+          },
+          {
+            "id": "12-agricultural-science-tamil-1d871464",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 20720017
+          },
+          {
+            "id": "12-auditing-english-cb18c74c",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 6481812
+          },
+          {
+            "id": "12-auditing-tamil-e1982513",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14011982
+          },
+          {
+            "id": "12-basic-automobile-engineering-english-69f8e9f9",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 11107196
+          },
+          {
+            "id": "12-basic-automobile-engineering-tamil-e76f29d2",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14514413
+          },
+          {
+            "id": "12-basic-civil-engineering-english-fc2d4128",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9968987
+          },
+          {
+            "id": "12-basic-civil-engineering-tamil-122addb5",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13931887
+          },
+          {
+            "id": "12-basic-electrical-engineering-english-13c7fc7b",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8035205
+          },
+          {
+            "id": "12-basic-electrical-engineering-tamil-029f513a",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8345039
+          },
+          {
+            "id": "12-basic-electronics-engineering-english-983efd90",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14423757
+          },
+          {
+            "id": "12-basic-electronics-engineering-tamil-96fcb4f2",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 21294991
+          },
+          {
+            "id": "12-basic-mechanical-engineering-english-e15ca391",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12723668
+          },
+          {
+            "id": "12-basic-mechanical-engineering-tamil-49be34e2",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 16833188
+          },
+          {
+            "id": "12-bio-botany-english-f15d4524",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 110622979
+          },
+          {
+            "id": "12-bio-botany-tamil-51160855",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 111006309
+          },
+          {
+            "id": "12-bio-zoology-english-7e848813",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 37158816
+          },
+          {
+            "id": "12-bio-zoology-tamil-2631f8e3",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 38977764
+          },
+          {
+            "id": "12-biochemistry-english-dfd867ac",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 49003863
+          },
+          {
+            "id": "12-biochemistry-tamil-910cca11",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 52646997
+          },
+          {
+            "id": "12-botany-english-da5635aa",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 115600679
+          },
+          {
+            "id": "12-botany-tamil-37a9b740",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 91478334
+          },
+          {
+            "id": "12-business-mathematics-statistics-english-5710bd23",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12687571
+          },
+          {
+            "id": "12-business-mathematics-statistics-tamil-a77e8ce0",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14308257
+          },
+          {
+            "id": "12-chemistry-english-v1-2d0e27cb",
+            "medium": "English",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 26035667
+          },
+          {
+            "id": "12-chemistry-english-v2-0010d706",
+            "medium": "English",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 17362245
+          },
+          {
+            "id": "12-chemistry-tamil-v1-5fcd65a9",
+            "medium": "Tamil",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 20591379
+          },
+          {
+            "id": "12-chemistry-tamil-v2-52192807",
+            "medium": "Tamil",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 23127358
+          },
+          {
+            "id": "12-commerce-english-4f83c61b",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 15848402
+          },
+          {
+            "id": "12-commerce-tamil-d9e013d8",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 23114763
+          },
+          {
+            "id": "12-communicative-english-english-10e4b8ba",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9503960
+          },
+          {
+            "id": "12-computer-applications-english-627c1490",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 62743327
+          },
+          {
+            "id": "12-computer-applications-english-ccd483a9",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9911039
+          },
+          {
+            "id": "12-computer-applications-tamil-e51fbdf6",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 62473146
+          },
+          {
+            "id": "12-computer-science-english-37bdae5b",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 5374707
+          },
+          {
+            "id": "12-computer-applications-tamil-f43670d1",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 15111554
+          },
+          {
+            "id": "12-computer-technology-english-293bf656",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8961568
+          },
+          {
+            "id": "12-computer-science-tamil-d5aa7dd4",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 7340473
+          },
+          {
+            "id": "12-computer-technology-english-cf787554",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 125851735
+          },
+          {
+            "id": "12-computer-technology-tamil-c66e9089",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13108187
+          },
+          {
+            "id": "12-economics-english-5418ce45",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 8040810
+          },
+          {
+            "id": "12-economics-tamil-c7590e3f",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 10846676
+          },
+          {
+            "id": "12-computer-technology-tamil-cff5867a",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 68531454
+          },
+          {
+            "id": "12-english-english-b9d1c4c3",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 17083029
+          },
+          {
+            "id": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 10585620
+          },
+          {
+            "id": "12-food-service-management-english-111451e7",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 11284251
+          },
+          {
+            "id": "12-food-service-management-tamil-e2061fb1",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13863313
+          },
+          {
+            "id": "12-general-nursing-english-5c87aafc",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18577579
+          },
+          {
+            "id": "12-geography-english-24059775",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 88099739
+          },
+          {
+            "id": "12-general-nursing-tamil-b39f5ab1",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 20432413
+          },
+          {
+            "id": "12-geography-tamil-ba849e46",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 92525207
+          },
+          {
+            "id": "12-history-english-3cd2e4c2",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 13404150
+          },
+          {
+            "id": "12-history-tamil-3c88c869",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 17720323
+          },
+          {
+            "id": "12-home-science-english-e5c3e008",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 14523925
+          },
+          {
+            "id": "12-home-science-tamil-0cbbe34e",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 19203885
+          },
+          {
+            "id": "12-mathematics-english-v1-e33ceed7",
+            "medium": "English",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 21729684
+          },
+          {
+            "id": "12-mathematics-english-v2-d4925ec0",
+            "medium": "English",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18188393
+          },
+          {
+            "id": "12-mathematics-tamil-v1-96fc1e8d",
+            "medium": "Tamil",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 23446136
+          },
+          {
+            "id": "12-microbiology-english-6a36a404",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18668042
+          },
+          {
+            "id": "12-mathematics-tamil-v2-f8732624",
+            "medium": "Tamil",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 18648623
+          },
+          {
+            "id": "12-microbiology-tamil-a879259a",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 22169940
+          },
+          {
+            "id": "12-nursing-vocational-tamil-7f44a760",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 33033726
+          },
+          {
+            "id": "12-nutrition-and-dietetics-english-3d2e918e",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 19073996
+          },
+          {
+            "id": "12-nursing-vocational-english-6c60782a",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 33874888
+          },
+          {
+            "id": "12-office-management-secretaryship-typography-english-6b7b27b2",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 5970572
+          },
+          {
+            "id": "12-physics-english-v2-0ce6704c",
+            "medium": "English",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 43403236
+          },
+          {
+            "id": "12-physics-english-v1-1b1de8f8",
+            "medium": "English",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 60113330
+          },
+          {
+            "id": "12-office-management-secretaryship-typography-tamil-241b6edf",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 7241531
+          },
+          {
+            "id": "12-physics-tamil-v1-c1623725",
+            "medium": "Tamil",
+            "volume": "1",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 64422323
+          },
+          {
+            "id": "12-political-science-english-db4a2e0c",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12822047
+          },
+          {
+            "id": "12-physics-tamil-v2-fb1fa4de",
+            "medium": "Tamil",
+            "volume": "2",
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 49831193
+          },
+          {
+            "id": "12-political-science-tamil-5da94964",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 15227970
+          },
+          {
+            "id": "12-statistics-english-1489a12e",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 7689756
+          },
+          {
+            "id": "12-statistics-tamil-c1143d1d",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 9101786
+          },
+          {
+            "id": "12-tamil-tamil-7db1698f",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 12139366
+          },
+          {
+            "id": "12-textile-technology-tamil-648797c8",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 19434552
+          },
+          {
+            "id": "12-textiles-and-dress-designing-english-1ceb8fbe",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 11570689
+          },
+          {
+            "id": "12-textiles-and-dress-designing-tamil-3650ec00",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 40832589
+          },
+          {
+            "id": "12-zoology-tamil-3c154dab",
+            "medium": "Tamil",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 39699481
+          },
+          {
+            "id": "12-zoology-english-788d2d32",
+            "medium": "English",
+            "volume": null,
+            "status": 206,
+            "pdfSignature": true,
+            "sizeBytes": 36995975
+          }
+        ]
+      },
+      "browser": {
+        "verified": true,
+        "checkedAt": "2026-10-13T08:52:09.699Z",
+        "cases": [
+          {
+            "id": "12-computer-science-english-37bdae5b",
+            "subject": "Computer Science",
+            "medium": "English",
+            "volume": null,
+            "mobile": false,
+            "renderedPages": [
+              1,
+              2
+            ],
+            "nonBlankCanvas": true
+          },
+          {
+            "id": "12-mathematics-english-v1-e33ceed7",
+            "subject": "Mathematics",
+            "medium": "English",
+            "volume": "1",
+            "mobile": true,
+            "renderedPages": [
+              1,
+              2
+            ],
+            "nonBlankCanvas": true
+          },
+          {
+            "id": "12-physics-tamil-v1-c1623725",
+            "subject": "Physics",
+            "medium": "Tamil",
+            "volume": "1",
+            "mobile": true,
+            "renderedPages": [
+              79,
+              80
+            ],
+            "nonBlankCanvas": true
+          }
+        ],
+        "errors": []
+      }
+    }
+  ],
+  "vercelStage": {
+    "verified": true,
+    "stagedUrl": "avs-12th-student-lpib3qfbi-devanands2008-7426s-projects.vercel.app",
+    "productionOrigin": "https://avs-12th-student-hub.vercel.app",
+    "supabaseProject": "rqsymozgslwwupxmyido",
+    "checks": [
+      {
+        "name": "frontend pages render",
+        "passed": true
+      },
+      {
+        "name": "email/password registration enabled and guests blocked",
+        "passed": true
+      },
+      {
+        "name": "student login and secure session",
+        "passed": true
+      },
+      {
+        "name": "existing sample student can also sign in by school register number",
+        "passed": true
+      },
+      {
+        "name": "admin login and secure session",
+        "passed": true
+      },
+      {
+        "name": "deployed backend connects to the intended Supabase project",
+        "passed": true
+      },
+      {
+        "name": "official textbook question bank is connected",
+        "passed": true,
+        "books": 82,
+        "published": 995
+      },
+      {
+        "name": "student cannot access administrator operations",
+        "passed": true
+      },
+      {
+        "name": "13 notes and 5 videos available; online PDF and video range requests work",
+        "passed": true
+      },
+      {
+        "name": "82 textbooks available; in-site mirrored PDF delivery works",
+        "passed": true
+      },
+      {
+        "name": "study helper returns grounded excerpts and citations",
+        "passed": true
+      },
+      {
+        "name": "upload size validation and cross-site protection work",
+        "passed": true
+      },
+      {
+        "name": "student and administrator sessions remain valid across function calls",
+        "passed": true
+      }
+    ],
+    "checkedAt": "2026-10-13T08:48:26.841Z"
+  },
+  "vercelPromotion": {
+    "verified": true,
+    "url": "https://avs-12th-student-hub.vercel.app",
+    "deploymentId": "dpl_5S2g5Y9jMQRfDLDpSsEUzQfUkD3q",
+    "commit": "a68220c28089cd8908f2d3b56940f083e1d4cbb5",
+    "state": "READY",
+    "checkedAt": "2026-10-13T08:50:57.724Z"
+  },
+  "renderDeploymentId": "dep-db6v0gs9v7es739tr7vg",
+  "scope": "PDF hosting only; no question import, teacher decision, or practice submission"
+}
