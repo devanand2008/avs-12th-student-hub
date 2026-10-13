@@ -3,9 +3,29 @@ import path from "node:path";
 import savedCatalog from "./textbooks-catalog.json";
 import type { TextbookCatalog } from "./textbooks";
 import { officialTextbookRewrite } from "./textbook-delivery";
+import { hostedTextbookUrl } from "./hosted-textbooks";
 
 export async function getTextbookCatalog(): Promise<TextbookCatalog> {
   let catalog = savedCatalog as TextbookCatalog;
+  if (process.env.TEXTBOOK_DELIVERY === "github-release") {
+    return {
+      ...catalog,
+      books: catalog.books.map((book) =>
+        hostedTextbookUrl(book)
+          ? {
+              ...book,
+              localPath: `/api/textbooks/${book.id}/pdf`,
+              downloadError: null,
+            }
+          : {
+              ...book,
+              localPath: null,
+              status: "unavailable" as const,
+              downloadError: "This textbook has no verified hosted file.",
+            },
+      ),
+    };
+  }
   if (process.env.TEXTBOOK_DELIVERY === "official") {
     return {
       ...catalog,
