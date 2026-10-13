@@ -1,0 +1,33 @@
+name: Verify and mirror textbook PDFs
+
+on:
+  workflow_dispatch:
+    inputs:
+      probe_only:
+        description: Check official source access without uploading files
+        type: boolean
+        default: true
+
+permissions: {}
+
+concurrency:
+  group: verified-textbook-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Verify original source access
+        run: node scripts/mirror-textbook-release.mjs --probe
+      - name: Upload only verified original PDFs to the draft release
+        if: ${{ !inputs.probe_only }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/mirror-textbook-release.mjs --upload
