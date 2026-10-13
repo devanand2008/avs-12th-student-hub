@@ -1,0 +1,676 @@
+{
+  "checkedAt": "2026-10-13T08:39:32.274Z",
+  "repository": "devanand2008/avs-12th-student-hub",
+  "releaseId": 411223329,
+  "tag": "textbooks-2026-10-13",
+  "draft": false,
+  "releaseUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/tag/textbooks-2026-10-13",
+  "books": 82,
+  "totalBytes": 2361676885,
+  "allRemoteDigestsMatchCatalog": true,
+  "files": [
+    {
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "assetId": 635753921,
+      "filename": "12-accountancy-english-c0f4ded3.pdf",
+      "sizeBytes": 13332543,
+      "sha256": "31ed97ceda947f4c310c63b6f8ca97953242ae9132d63dc869871dde351e040b",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-accountancy-english-c0f4ded3.pdf"
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "assetId": 635744362,
+      "filename": "12-accountancy-tamil-6e7f5476.pdf",
+      "sizeBytes": 16608957,
+      "sha256": "9cf9b965f1543976822025888045511e81e0c65e6c26ef56cd33335f2db04686",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-accountancy-tamil-6e7f5476.pdf"
+    },
+    {
+      "bookId": "12-advanced-tamil-tamil-6679b417",
+      "assetId": 635744364,
+      "filename": "12-advanced-tamil-tamil-6679b417.pdf",
+      "sizeBytes": 9339966,
+      "sha256": "fdc2d6f11ad5444674a99288ce507de391a6d3d47122a8bc95cb7103364acf77",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-advanced-tamil-tamil-6679b417.pdf"
+    },
+    {
+      "bookId": "12-agricultural-science-tamil-1d871464",
+      "assetId": 635746834,
+      "filename": "12-agricultural-science-tamil-1d871464.pdf",
+      "sizeBytes": 20720017,
+      "sha256": "72c20567a95323d8252a9aaa55dfb7633b7c2b8be226488c509c517845b0d6ff",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-agricultural-science-tamil-1d871464.pdf"
+    },
+    {
+      "bookId": "12-auditing-english-cb18c74c",
+      "assetId": 635749706,
+      "filename": "12-auditing-english-cb18c74c.pdf",
+      "sizeBytes": 6481812,
+      "sha256": "29dd2f8eecc18c8d434c277467a3673199bd76e216a4efa0df8f0bd9c09ede2d",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-auditing-english-cb18c74c.pdf"
+    },
+    {
+      "bookId": "12-auditing-tamil-e1982513",
+      "assetId": 635750551,
+      "filename": "12-auditing-tamil-e1982513.pdf",
+      "sizeBytes": 14011982,
+      "sha256": "e54a907e2c9753e1a5616fc97329abc5295ea22557aec4d76d9878c2ada763c9",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-auditing-tamil-e1982513.pdf"
+    },
+    {
+      "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+      "assetId": 635750617,
+      "filename": "12-basic-automobile-engineering-english-69f8e9f9.pdf",
+      "sizeBytes": 11107196,
+      "sha256": "fcfe738f7f364c0f50686603e3b42093603065887bfdc1527984a85cde5b1780",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-automobile-engineering-english-69f8e9f9.pdf"
+    },
+    {
+      "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+      "assetId": 635753923,
+      "filename": "12-basic-automobile-engineering-tamil-e76f29d2.pdf",
+      "sizeBytes": 14514413,
+      "sha256": "9a301d53fdbbb14c110dc5980d0d3b74e970e83225c8be661d6316eceb99fcf0",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-automobile-engineering-tamil-e76f29d2.pdf"
+    },
+    {
+      "bookId": "12-basic-civil-engineering-english-fc2d4128",
+      "assetId": 635754531,
+      "filename": "12-basic-civil-engineering-english-fc2d4128.pdf",
+      "sizeBytes": 9968987,
+      "sha256": "7de88b9a95f13d2bf3564ecfe3a5b21c5d35cca998286a75e26d6fe1f69da37a",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-civil-engineering-english-fc2d4128.pdf"
+    },
+    {
+      "bookId": "12-basic-civil-engineering-tamil-122addb5",
+      "assetId": 635754771,
+      "filename": "12-basic-civil-engineering-tamil-122addb5.pdf",
+      "sizeBytes": 13931887,
+      "sha256": "3d467abcb1354f51c88419e852347a0163fdf2bf5ef65cfa2bded52ec96af6a0",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-civil-engineering-tamil-122addb5.pdf"
+    },
+    {
+      "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+      "assetId": 635754864,
+      "filename": "12-basic-electrical-engineering-english-13c7fc7b.pdf",
+      "sizeBytes": 8035205,
+      "sha256": "658ff33459fc8fc03904fd0a1d4cb743835fb8b6daf06101d064de12dd46dd35",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-electrical-engineering-english-13c7fc7b.pdf"
+    },
+    {
+      "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+      "assetId": 635755613,
+      "filename": "12-basic-electrical-engineering-tamil-029f513a.pdf",
+      "sizeBytes": 8345039,
+      "sha256": "049b6c664b8a25cc31d00703b2e34f8c16dd71a4ead7e6cbb384a982b9ffcdc5",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-electrical-engineering-tamil-029f513a.pdf"
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "assetId": 635755950,
+      "filename": "12-basic-electronics-engineering-english-983efd90.pdf",
+      "sizeBytes": 14423757,
+      "sha256": "bbefb2b33c907589f4308d304d1db09f81d51bea83bd8e95ad360430e36911dd",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-electronics-engineering-english-983efd90.pdf"
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "assetId": 635756102,
+      "filename": "12-basic-electronics-engineering-tamil-96fcb4f2.pdf",
+      "sizeBytes": 21294991,
+      "sha256": "b824741c6fa93677649ecb1c16055cdd93198fcf532f6bcf65758fdd8317003a",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-electronics-engineering-tamil-96fcb4f2.pdf"
+    },
+    {
+      "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+      "assetId": 635756602,
+      "filename": "12-basic-mechanical-engineering-english-e15ca391.pdf",
+      "sizeBytes": 12723668,
+      "sha256": "a3c0961d0b96ffdcb62bba702003d725bb0d161b77a5f3504d0f5079cfa6b5de",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-mechanical-engineering-english-e15ca391.pdf"
+    },
+    {
+      "bookId": "12-basic-mechanical-engineering-tamil-49be34e2",
+      "assetId": 635757258,
+      "filename": "12-basic-mechanical-engineering-tamil-49be34e2.pdf",
+      "sizeBytes": 16833188,
+      "sha256": "aca67575f322408a7eca7a4b7f3c3fec271ae7f09e6aaf3b254b2e1d9115495c",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-basic-mechanical-engineering-tamil-49be34e2.pdf"
+    },
+    {
+      "bookId": "12-bio-botany-english-f15d4524",
+      "assetId": 635757323,
+      "filename": "12-bio-botany-english-f15d4524.pdf",
+      "sizeBytes": 110622979,
+      "sha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-bio-botany-english-f15d4524.pdf"
+    },
+    {
+      "bookId": "12-bio-botany-tamil-51160855",
+      "assetId": 635757581,
+      "filename": "12-bio-botany-tamil-51160855.pdf",
+      "sizeBytes": 111006309,
+      "sha256": "95a9480f472864af360aa5fc9552159ff76095ded7dbd7d0276c7a4a124b7fa5",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-bio-botany-tamil-51160855.pdf"
+    },
+    {
+      "bookId": "12-bio-zoology-english-7e848813",
+      "assetId": 636347318,
+      "filename": "12-bio-zoology-english-7e848813.pdf",
+      "sizeBytes": 37158816,
+      "sha256": "ee5428d73469d242a0090aa021b895b561a0b34517ea985dbd60912a5c795852",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-bio-zoology-english-7e848813.pdf"
+    },
+    {
+      "bookId": "12-bio-zoology-tamil-2631f8e3",
+      "assetId": 635765041,
+      "filename": "12-bio-zoology-tamil-2631f8e3.pdf",
+      "sizeBytes": 38977764,
+      "sha256": "7b4a1946571dfe8901540a980e0fedc19eefd86cc4ba1ad230efd66edb9f9b64",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-bio-zoology-tamil-2631f8e3.pdf"
+    },
+    {
+      "bookId": "12-biochemistry-english-dfd867ac",
+      "assetId": 635769947,
+      "filename": "12-biochemistry-english-dfd867ac.pdf",
+      "sizeBytes": 49003863,
+      "sha256": "900c475e48aebf1f2015a1c98ed4ed6d2028cf53020defac3a99c834f4f5fdf4",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-biochemistry-english-dfd867ac.pdf"
+    },
+    {
+      "bookId": "12-biochemistry-tamil-910cca11",
+      "assetId": 635772929,
+      "filename": "12-biochemistry-tamil-910cca11.pdf",
+      "sizeBytes": 52646997,
+      "sha256": "5f70ea733750f9399efa8b95310d25eb754c9b97d22c3ede1829640e0394ce0f",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-biochemistry-tamil-910cca11.pdf"
+    },
+    {
+      "bookId": "12-botany-english-da5635aa",
+      "assetId": 635773777,
+      "filename": "12-botany-english-da5635aa.pdf",
+      "sizeBytes": 115600679,
+      "sha256": "5cb2a3196ce3ce47cda0ee6f10f0935391b068d0d4d5db943cb72ed456b2135d",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-botany-english-da5635aa.pdf"
+    },
+    {
+      "bookId": "12-botany-tamil-37a9b740",
+      "assetId": 636410714,
+      "filename": "12-botany-tamil-37a9b740.pdf",
+      "sizeBytes": 91478334,
+      "sha256": "5fade5f9be15a4658b56a98d02f79b3b80cbd6b28bc8d7a7802bc3301a33d926",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-botany-tamil-37a9b740.pdf"
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "assetId": 636400421,
+      "filename": "12-business-mathematics-statistics-english-5710bd23.pdf",
+      "sizeBytes": 12687571,
+      "sha256": "7645d74c21841badb410139040928c21ccdd328d73b1d51af46669f67879f6b2",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-business-mathematics-statistics-english-5710bd23.pdf"
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "assetId": 636402239,
+      "filename": "12-business-mathematics-statistics-tamil-a77e8ce0.pdf",
+      "sizeBytes": 14308257,
+      "sha256": "9a244bcae84bedb863293d71abd29347df3787fd8380e5d6a7774f4ef5244b57",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-business-mathematics-statistics-tamil-a77e8ce0.pdf"
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "assetId": 636344016,
+      "filename": "12-chemistry-english-v1-2d0e27cb.pdf",
+      "sizeBytes": 26035667,
+      "sha256": "8537d519cc6d527211acd65b7dbdde3830ef08035bab86e9a8def9eb362acb2b",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-chemistry-english-v1-2d0e27cb.pdf"
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "assetId": 636334212,
+      "filename": "12-chemistry-english-v2-0010d706.pdf",
+      "sizeBytes": 17362245,
+      "sha256": "b40069c9db73b09309dcfc55e166e81871bd82958cd5e44ae1cf024454664f34",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-chemistry-english-v2-0010d706.pdf"
+    },
+    {
+      "bookId": "12-chemistry-tamil-v1-5fcd65a9",
+      "assetId": 636339485,
+      "filename": "12-chemistry-tamil-v1-5fcd65a9.pdf",
+      "sizeBytes": 20591379,
+      "sha256": "0790040ba75b63eb2e0dfb201106753adc1e49115fe3274ccceca7079479faa4",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-chemistry-tamil-v1-5fcd65a9.pdf"
+    },
+    {
+      "bookId": "12-chemistry-tamil-v2-52192807",
+      "assetId": 636342638,
+      "filename": "12-chemistry-tamil-v2-52192807.pdf",
+      "sizeBytes": 23127358,
+      "sha256": "aa22ac7d960334a9ec8ee78375c14d9136b2980ec8936dfd0f7cc762f5f72f76",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-chemistry-tamil-v2-52192807.pdf"
+    },
+    {
+      "bookId": "12-commerce-english-4f83c61b",
+      "assetId": 636328686,
+      "filename": "12-commerce-english-4f83c61b.pdf",
+      "sizeBytes": 15848402,
+      "sha256": "5ba4d9ae017f77fa978ad956e22967df00f08bd4b6d193d9f942ec0641190839",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-commerce-english-4f83c61b.pdf"
+    },
+    {
+      "bookId": "12-commerce-tamil-d9e013d8",
+      "assetId": 636342542,
+      "filename": "12-commerce-tamil-d9e013d8.pdf",
+      "sizeBytes": 23114763,
+      "sha256": "e7244f3467b554b7b0c246a66da17681bab6b3b9f463ad3d38bae25db4472bbf",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-commerce-tamil-d9e013d8.pdf"
+    },
+    {
+      "bookId": "12-communicative-english-english-10e4b8ba",
+      "assetId": 636280017,
+      "filename": "12-communicative-english-english-10e4b8ba.pdf",
+      "sizeBytes": 9503960,
+      "sha256": "bc544aceca54c86d24ede83f668f1f1b9706ba0f7df6d453038d69e595331ff9",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-communicative-english-english-10e4b8ba.pdf"
+    },
+    {
+      "bookId": "12-computer-applications-english-627c1490",
+      "assetId": 636402546,
+      "filename": "12-computer-applications-english-627c1490.pdf",
+      "sizeBytes": 62743327,
+      "sha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-applications-english-627c1490.pdf"
+    },
+    {
+      "bookId": "12-computer-applications-english-ccd483a9",
+      "assetId": 636279739,
+      "filename": "12-computer-applications-english-ccd483a9.pdf",
+      "sizeBytes": 9911039,
+      "sha256": "0592decb1003da59c333e683990fe251ac676e1000b89163f6bf66352238222d",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-applications-english-ccd483a9.pdf"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "assetId": 636402307,
+      "filename": "12-computer-applications-tamil-e51fbdf6.pdf",
+      "sizeBytes": 62473146,
+      "sha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-applications-tamil-e51fbdf6.pdf"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "assetId": 636326329,
+      "filename": "12-computer-applications-tamil-f43670d1.pdf",
+      "sizeBytes": 15111554,
+      "sha256": "6a996d2f03b39af0272b59550cb60ec96c04b2995587416344c640d1556f20ca",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-applications-tamil-f43670d1.pdf"
+    },
+    {
+      "bookId": "12-computer-science-english-37bdae5b",
+      "assetId": 636269784,
+      "filename": "12-computer-science-english-37bdae5b.pdf",
+      "sizeBytes": 5374707,
+      "sha256": "1188418306ef6128f16712d2ac32576cc62c6be00570e9429a6aee6a59fb5af2",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-science-english-37bdae5b.pdf"
+    },
+    {
+      "bookId": "12-computer-science-tamil-d5aa7dd4",
+      "assetId": 636274164,
+      "filename": "12-computer-science-tamil-d5aa7dd4.pdf",
+      "sizeBytes": 7340473,
+      "sha256": "4b30dcadc6963d081d1513462bc5429788cfeb4c4d0d051994a0bb5ba87ed031",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-science-tamil-d5aa7dd4.pdf"
+    },
+    {
+      "bookId": "12-computer-technology-english-293bf656",
+      "assetId": 636278693,
+      "filename": "12-computer-technology-english-293bf656.pdf",
+      "sizeBytes": 8961568,
+      "sha256": "4a3d2c43b8b210bc803c44b67e1708487e8473fc33dce6d9df8fee6ada863359",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-technology-english-293bf656.pdf"
+    },
+    {
+      "bookId": "12-computer-technology-english-cf787554",
+      "assetId": 636416704,
+      "filename": "12-computer-technology-english-cf787554.pdf",
+      "sizeBytes": 125851735,
+      "sha256": "2488718702d87e18eb2a277e2b5e1bbaa07a77e505b6f0356efee258f41a84dc",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-technology-english-cf787554.pdf"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "assetId": 636401495,
+      "filename": "12-computer-technology-tamil-c66e9089.pdf",
+      "sizeBytes": 13108187,
+      "sha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-technology-tamil-c66e9089.pdf"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "assetId": 636404897,
+      "filename": "12-computer-technology-tamil-cff5867a.pdf",
+      "sizeBytes": 68531454,
+      "sha256": "045b35dc7ced4473a54419dfe7e3a6ae384ffdfda1b797df6f877465ad42691d",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-computer-technology-tamil-cff5867a.pdf"
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "assetId": 636278031,
+      "filename": "12-economics-english-5418ce45.pdf",
+      "sizeBytes": 8040810,
+      "sha256": "31f8c2a5d99b6e0e8de6eaa8a9440937ed184cf557038767122a800fd909d2f2",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-economics-english-5418ce45.pdf"
+    },
+    {
+      "bookId": "12-economics-tamil-c7590e3f",
+      "assetId": 636398374,
+      "filename": "12-economics-tamil-c7590e3f.pdf",
+      "sizeBytes": 10846676,
+      "sha256": "b002d13407d6bee55c37d5f01dc1492fa1c5535910c2413fa817006c2f39a4cb",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-economics-tamil-c7590e3f.pdf"
+    },
+    {
+      "bookId": "12-english-english-b9d1c4c3",
+      "assetId": 636330128,
+      "filename": "12-english-english-b9d1c4c3.pdf",
+      "sizeBytes": 17083029,
+      "sha256": "d7051ea2cf293e34d5689c750ba25788c83e009572a78be9fcddc7fa56c8c395",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-english-english-b9d1c4c3.pdf"
+    },
+    {
+      "bookId": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+      "assetId": 636280914,
+      "filename": "12-ethics-and-indian-culture-tamil-f49cc8fe.pdf",
+      "sizeBytes": 10585620,
+      "sha256": "f60943f8d8c2e66ec380b611474298e2ddd1b61f9a197548fcef1d0f46259570",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-ethics-and-indian-culture-tamil-f49cc8fe.pdf"
+    },
+    {
+      "bookId": "12-food-service-management-english-111451e7",
+      "assetId": 636398375,
+      "filename": "12-food-service-management-english-111451e7.pdf",
+      "sizeBytes": 11284251,
+      "sha256": "cba449b282567bcbaee4cffc90a4720e06ef94964a19ee78ed7d9860157043bc",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-food-service-management-english-111451e7.pdf"
+    },
+    {
+      "bookId": "12-food-service-management-tamil-e2061fb1",
+      "assetId": 636401759,
+      "filename": "12-food-service-management-tamil-e2061fb1.pdf",
+      "sizeBytes": 13863313,
+      "sha256": "9c845c862a3e25c114a9e45ac05ca8393d500c1d4b0f03a5b273f98f4485811e",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-food-service-management-tamil-e2061fb1.pdf"
+    },
+    {
+      "bookId": "12-general-nursing-english-5c87aafc",
+      "assetId": 636335775,
+      "filename": "12-general-nursing-english-5c87aafc.pdf",
+      "sizeBytes": 18577579,
+      "sha256": "9bd81da9edd519668e7827efa462a6a197e18ab49dd9e6abd5a0f05b2d50c9ab",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-general-nursing-english-5c87aafc.pdf"
+    },
+    {
+      "bookId": "12-general-nursing-tamil-b39f5ab1",
+      "assetId": 636339230,
+      "filename": "12-general-nursing-tamil-b39f5ab1.pdf",
+      "sizeBytes": 20432413,
+      "sha256": "f054ab744b8f6095b20f10bae078f73b8942c507c907d23dfa55b4159b00847d",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-general-nursing-tamil-b39f5ab1.pdf"
+    },
+    {
+      "bookId": "12-geography-english-24059775",
+      "assetId": 636405144,
+      "filename": "12-geography-english-24059775.pdf",
+      "sizeBytes": 88099739,
+      "sha256": "d3ab1a7333649c1e5a15eb63bae65ac7097229ae237b338c4a70ab543c933a77",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-geography-english-24059775.pdf"
+    },
+    {
+      "bookId": "12-geography-tamil-ba849e46",
+      "assetId": 636414127,
+      "filename": "12-geography-tamil-ba849e46.pdf",
+      "sizeBytes": 92525207,
+      "sha256": "0d3ef3d4f074d4cca8b0ae4fb51f7606f43453d5ef098b9c365f28c9404713a7",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-geography-tamil-ba849e46.pdf"
+    },
+    {
+      "bookId": "12-history-english-3cd2e4c2",
+      "assetId": 636401648,
+      "filename": "12-history-english-3cd2e4c2.pdf",
+      "sizeBytes": 13404150,
+      "sha256": "3b25e16a93fcb84cd7df18298dea3f7ed479068a2838e8ffecec7f3170ec28d5",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-history-english-3cd2e4c2.pdf"
+    },
+    {
+      "bookId": "12-history-tamil-3c88c869",
+      "assetId": 636334612,
+      "filename": "12-history-tamil-3c88c869.pdf",
+      "sizeBytes": 17720323,
+      "sha256": "e1c21e7cdd584a17270b7e6f29d34234e24b1136ce2a5512d3599a19b5723632",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-history-tamil-3c88c869.pdf"
+    },
+    {
+      "bookId": "12-home-science-english-e5c3e008",
+      "assetId": 636326332,
+      "filename": "12-home-science-english-e5c3e008.pdf",
+      "sizeBytes": 14523925,
+      "sha256": "f258a0786feea67e8106bb5f121428e0be8413362dea6409e37126e9aab1d77d",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-home-science-english-e5c3e008.pdf"
+    },
+    {
+      "bookId": "12-home-science-tamil-0cbbe34e",
+      "assetId": 636338203,
+      "filename": "12-home-science-tamil-0cbbe34e.pdf",
+      "sizeBytes": 19203885,
+      "sha256": "0e7deea7b938d38dcb5d766374980e4c83d0345c0cff1d2f99b5abf073eb2fda",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-home-science-tamil-0cbbe34e.pdf"
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "assetId": 636340641,
+      "filename": "12-mathematics-english-v1-e33ceed7.pdf",
+      "sizeBytes": 21729684,
+      "sha256": "66a3cfa31dbcbb1ffb77dd6bf7126384c60955b110a96d88c29b3f7ded60be13",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-mathematics-english-v1-e33ceed7.pdf"
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "assetId": 636334696,
+      "filename": "12-mathematics-english-v2-d4925ec0.pdf",
+      "sizeBytes": 18188393,
+      "sha256": "d8aa29fee449784be6b95cf6c8ffb89f2810adda0be6b9a4e6ee9be50f36aee6",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-mathematics-english-v2-d4925ec0.pdf"
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "assetId": 636343784,
+      "filename": "12-mathematics-tamil-v1-96fc1e8d.pdf",
+      "sizeBytes": 23446136,
+      "sha256": "48868cf63d1eece283122db822ffa68d760751a10561c554c7636b6dbd1ec657",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-mathematics-tamil-v1-96fc1e8d.pdf"
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "assetId": 636335892,
+      "filename": "12-mathematics-tamil-v2-f8732624.pdf",
+      "sizeBytes": 18648623,
+      "sha256": "a3d4f4e6055740aeed55b9899ebdbdfd90472b7326a0ba4ec095f812d6346d60",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-mathematics-tamil-v2-f8732624.pdf"
+    },
+    {
+      "bookId": "12-microbiology-english-6a36a404",
+      "assetId": 636337578,
+      "filename": "12-microbiology-english-6a36a404.pdf",
+      "sizeBytes": 18668042,
+      "sha256": "feb8e522d8651107c55f2f74a81123b0cbda8a6e2e699079e98b943e31a466a5",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-microbiology-english-6a36a404.pdf"
+    },
+    {
+      "bookId": "12-microbiology-tamil-a879259a",
+      "assetId": 636340973,
+      "filename": "12-microbiology-tamil-a879259a.pdf",
+      "sizeBytes": 22169940,
+      "sha256": "9d569731e580301fd9369d407b69ffcfaf1661289b65f2360b7a1d66dfe7faaf",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-microbiology-tamil-a879259a.pdf"
+    },
+    {
+      "bookId": "12-nursing-vocational-english-6c60782a",
+      "assetId": 636345337,
+      "filename": "12-nursing-vocational-english-6c60782a.pdf",
+      "sizeBytes": 33874888,
+      "sha256": "ec076fabff6272d86ac531d97d8483d176d3d824dcbfa4c517e1a4fed358f5d9",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-nursing-vocational-english-6c60782a.pdf"
+    },
+    {
+      "bookId": "12-nursing-vocational-tamil-7f44a760",
+      "assetId": 636345197,
+      "filename": "12-nursing-vocational-tamil-7f44a760.pdf",
+      "sizeBytes": 33033726,
+      "sha256": "ad3872ca4f99e18356c49daca6ac50501550179eafda2294d99df3e110066e24",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-nursing-vocational-tamil-7f44a760.pdf"
+    },
+    {
+      "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+      "assetId": 636337697,
+      "filename": "12-nutrition-and-dietetics-english-3d2e918e.pdf",
+      "sizeBytes": 19073996,
+      "sha256": "d331f67f41d62e4a890fc5ac7e2d753ed2da6f1bf7dca3f2ea8b2c87b18c903c",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-nutrition-and-dietetics-english-3d2e918e.pdf"
+    },
+    {
+      "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+      "assetId": 636269778,
+      "filename": "12-office-management-secretaryship-typography-english-6b7b27b2.pdf",
+      "sizeBytes": 5970572,
+      "sha256": "b0e66fe8a98edca382a51907283a54a73f96ffee919254944355a7cd376fe737",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-office-management-secretaryship-typography-english-6b7b27b2.pdf"
+    },
+    {
+      "bookId": "12-office-management-secretaryship-typography-tamil-241b6edf",
+      "assetId": 636274160,
+      "filename": "12-office-management-secretaryship-typography-tamil-241b6edf.pdf",
+      "sizeBytes": 7241531,
+      "sha256": "4d20c25f157d550175fbafbcd580f3fade695784f1a14d11026c18caff15af3e",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-office-management-secretaryship-typography-tamil-241b6edf.pdf"
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "assetId": 636356183,
+      "filename": "12-physics-english-v1-1b1de8f8.pdf",
+      "sizeBytes": 60113330,
+      "sha256": "1eaa2d3831d57cedbfe356a495721de266d17f2a888e27bb4716ae6315ad114b",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-physics-english-v1-1b1de8f8.pdf"
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "assetId": 636353710,
+      "filename": "12-physics-english-v2-0ce6704c.pdf",
+      "sizeBytes": 43403236,
+      "sha256": "a0138e5a020d3a7c538193c503cac385cfc307072a617b7247d2fc4579933271",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-physics-english-v2-0ce6704c.pdf"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "assetId": 636403543,
+      "filename": "12-physics-tamil-v1-c1623725.pdf",
+      "sizeBytes": 64422323,
+      "sha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-physics-tamil-v1-c1623725.pdf"
+    },
+    {
+      "bookId": "12-physics-tamil-v2-fb1fa4de",
+      "assetId": 636353737,
+      "filename": "12-physics-tamil-v2-fb1fa4de.pdf",
+      "sizeBytes": 49831193,
+      "sha256": "8351d4f42293db61e632a0a381936f7b86157175b4290b2663372cbb7b41bf85",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-physics-tamil-v2-fb1fa4de.pdf"
+    },
+    {
+      "bookId": "12-political-science-english-db4a2e0c",
+      "assetId": 636400442,
+      "filename": "12-political-science-english-db4a2e0c.pdf",
+      "sizeBytes": 12822047,
+      "sha256": "2d46ff542d6a20fa44197cda263c80ceaf81555b2cbefa4a42f77453c0400398",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-political-science-english-db4a2e0c.pdf"
+    },
+    {
+      "bookId": "12-political-science-tamil-5da94964",
+      "assetId": 636328507,
+      "filename": "12-political-science-tamil-5da94964.pdf",
+      "sizeBytes": 15227970,
+      "sha256": "93203de6ccd349283ae4c9d5b219d6e3f98803c7a56d1875a4fae8f006d903fb",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-political-science-tamil-5da94964.pdf"
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "assetId": 636279239,
+      "filename": "12-statistics-english-1489a12e.pdf",
+      "sizeBytes": 7689756,
+      "sha256": "f84eef562802a041e390ddcd31a8fbf2c2d1ddd6f670edcafdf77d51cdad1868",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-statistics-english-1489a12e.pdf"
+    },
+    {
+      "bookId": "12-statistics-tamil-c1143d1d",
+      "assetId": 636279197,
+      "filename": "12-statistics-tamil-c1143d1d.pdf",
+      "sizeBytes": 9101786,
+      "sha256": "ec20589fd710023ab6e5752fdf563e067e0822ba90985b81395340d64db795ce",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-statistics-tamil-c1143d1d.pdf"
+    },
+    {
+      "bookId": "12-tamil-tamil-7db1698f",
+      "assetId": 636399314,
+      "filename": "12-tamil-tamil-7db1698f.pdf",
+      "sizeBytes": 12139366,
+      "sha256": "5e21979f1bd5423a518e814c5eb995967e7820912300f3d8171caeb78eb4a00f",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-tamil-tamil-7db1698f.pdf"
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "assetId": 636338503,
+      "filename": "12-textile-technology-tamil-648797c8.pdf",
+      "sizeBytes": 19434552,
+      "sha256": "911d53e8d327f91271e36bbf441d9c8ad660fc6a65b62ccda20b4e49b53d9e76",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-textile-technology-tamil-648797c8.pdf"
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "assetId": 636399258,
+      "filename": "12-textiles-and-dress-designing-english-1ceb8fbe.pdf",
+      "sizeBytes": 11570689,
+      "sha256": "2b7c051e9de91a995b7a501be07c25c886ac6ad9c9ec0401f4424c34746aaf26",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-textiles-and-dress-designing-english-1ceb8fbe.pdf"
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "assetId": 636350748,
+      "filename": "12-textiles-and-dress-designing-tamil-3650ec00.pdf",
+      "sizeBytes": 40832589,
+      "sha256": "e4b3f82813fc6900ac4c612750895396de824c7e5cdfc23459502e61fee2e66b",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-textiles-and-dress-designing-tamil-3650ec00.pdf"
+    },
+    {
+      "bookId": "12-zoology-english-788d2d32",
+      "assetId": 636347217,
+      "filename": "12-zoology-english-788d2d32.pdf",
+      "sizeBytes": 36995975,
+      "sha256": "8f1ea789e87dfa209eff3a96c42514f49b0ab8b3ecc208c3385877437ae890be",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-zoology-english-788d2d32.pdf"
+    },
+    {
+      "bookId": "12-zoology-tamil-3c154dab",
+      "assetId": 636351645,
+      "filename": "12-zoology-tamil-3c154dab.pdf",
+      "sizeBytes": 39699481,
+      "sha256": "d53dae561c2f2c9e96f4956f4ac6a7c1e7cf6066a3d2ca3f4bda9a3607f7615f",
+      "downloadUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/textbooks-2026-10-13/12-zoology-tamil-3c154dab.pdf"
+    }
+  ],
+  "publicRangeChecks": {
+    "checkedAt": "2026-10-13T08:40:19.001Z",
+    "books": 82,
+    "status": 206,
+    "range": "bytes=0-4",
+    "pdfSignatureVerified": true
+  }
+}

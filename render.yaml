@@ -26,7 +26,7 @@ services:
       - key: STUDENT_ACTIVATION_MODE
         sync: false
       - key: TEXTBOOK_DELIVERY
-        value: official
+        value: github-release
       - key: AI_PROVIDER
         value: excerpts
       - key: APP_ORIGIN
