@@ -1,5 +1,15 @@
 # Class 12 MCQ platform — Tamil Physics Volume 1 Unit 1 extraction
 
+## Render deployment and production checks (October 12, 2026)
+
+The app is live at **https://avs-12-hub.onrender.com**, using the existing Supabase project. GitHub `main` includes the Skill Up badge, local teacher-review/audit tools and Render configuration. Render's free Node service is in Singapore. Its build requires `npm ci --include=dev && npm run build`; the first builds failed because production installation omitted Tailwind/PostCSS, and the corrected build completed. Student activation is `direct`, checked against the existing live site's configuration, with demo accounts disabled. The separate local Tamil Physics review workflow and its private decisions remain on the laptop.
+
+**Live checks confirmed:** existing student password login; student rejection from administrator APIs; existing administrator login and admin page; Supabase connected status; notes/video pages; textbook and chapter practice selection; registration form with a chosen password; shared logo bytes matching the committed asset. The authenticated practice coverage API reports **995 English publications, 0 Tamil publications, across 82 catalog coverage records**. Verification did not start/submit practice sessions, import questions or make teacher decisions. Prior automated validation passed **106/106 tests**; the reader fallback change also passes typecheck, lint and production build.
+
+**Remaining failure:** in-site textbook PDF rendering on Render. The official CloudFront server returns HTTP 403 and explicitly blocks requests from Render's country; the same official source returns PDF range data from the laptop in India. Fixed **Open original PDF** to point directly to the catalog's official source instead of repeating the blocked Render proxy. This fallback does not establish working in-site rendering or complete textbook coverage. An authorised hosting source available to the deployment is still needed for reliable in-site cloud PDF reading.
+
+The GitHub **Render wake-up** workflow schedules a public configuration request every ten minutes and its manual verification run returned HTTP 200 with valid JSON. Scheduled runs are best effort and may be delayed. Render autodeploy is enabled for this repository's `main` branch. [Hosting setup and limitations](docs/RENDER_DEPLOYMENT.md).
+
 ## Full project and teacher-export check (October 12, 2026)
 
 **Overall: PARTIAL.** The local workflow and automated checks work; real teacher review and an authentic export are still absent. This turn made **zero production connections**, writes, imports, publications or deployments. All current user changes, held candidates, original/proposed text and saved review history were preserved. Every requested project/documentation file exists and was inspected; README's old 1,007 count was corrected to the saved 995-publication baseline with its date and limitations.

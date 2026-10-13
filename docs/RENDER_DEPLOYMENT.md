@@ -8,6 +8,10 @@ Private `SUPABASE_URL`, `SUPABASE_SECRET_KEY`, a separate generated `SESSION_SEC
 
 The Tamil Physics teacher review remains a separate loopback-only laptop workflow. Its private decisions, identities and source-page images are excluded from Git and deployment. The 15 candidates remain held and are not automatically imported or published by the web start command.
 
+## Textbook restriction found in the live check
+
+The official CloudFront PDF source returns **HTTP 403** to Render's Singapore region: its error explicitly says access from that country is blocked. The same source responds with PDF range data from the laptop in India. The in-site reader therefore cannot load this source through Render. **Open original PDF** links directly to the catalog's official source, so students whose location is allowed can open the book in their browser. This is a fallback; it does not fix or verify in-site rendering on Render. Reliable in-site cloud reading needs an authorised textbook hosting source available to this deployment. No PDF was uploaded to a new service or substituted with another book.
+
 `.github/workflows/render-wake-up.yml` requests `/api/auth/config` every ten minutes, at minutes 3, 13, 23, 33, 43 and 53. It can also be run from GitHub Actions using **Run workflow**. It needs no passwords or database keys and validates the JSON response. GitHub scheduled runs can be delayed or disabled after prolonged repository inactivity, so this is a best-effort wake-up schedule, not an uptime guarantee. [GitHub scheduling documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) and [Render free-service limits](https://render.com/docs/free) describe these limits.
 
 To redeploy the exact pushed revision after CLI sign-in:

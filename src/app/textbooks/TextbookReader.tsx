@@ -389,7 +389,7 @@ export default function TextbookReader({
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <a
-              href={book.localPath || book.sourceUrl}
+              href={book.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-lg bg-white/15 px-3 py-2 text-xs font-semibold hover:bg-white/25"
