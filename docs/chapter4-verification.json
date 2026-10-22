@@ -1,0 +1,1614 @@
+{
+  "checkedAt": "2026-10-16T06:04:56.391Z",
+  "scope": "Local source preparation only; no production connection/write, import, publication, Git push or deployment",
+  "targets": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+      "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "chapterNumber": 4,
+      "chapterTitle": "அறிமுகம் – மீஉரை முன்செயலி (PHP)",
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-4",
+      "sourceBatchId": "tb-12-computer-applications-tamil-e51fbdf6-ch-4-source-bounded-01",
+      "sourcePdfPages": [
+        117,
+        118
+      ],
+      "printedPages": [
+        107,
+        108
+      ],
+      "additionalInspectedPages": [
+        105,
+        119
+      ],
+      "inventoried": 9,
+      "answerEvidence": "No printed key on visually inspected PDF 117, 118; next chapter starts on PDF 119. Whole-book answer-key absence not asserted. Answers remain unknown.",
+      "knownAnswers": 0,
+      "printedKeyMatches": 0,
+      "nonemptyFourOptionPositions": 9,
+      "incompleteRequiredContent": [
+        6
+      ],
+      "duplicateOptionQuestions": [
+        3
+      ],
+      "reusedCandidateIds": 9,
+      "newlyRecoveredCandidateIds": 0,
+      "requiresTamilCorrection": 9,
+      "diagramDependent": 0,
+      "excludedItems": [
+        {
+          "numbers": [],
+          "page": 118,
+          "kind": "Sections II–IV are open responses, not four-choice MCQs; retained in source-page evidence only"
+        }
+      ],
+      "manifestPath": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 9,
+      "published": 0,
+      "candidates": [
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-81a92366982a31bf",
+          "number": 1,
+          "pdfPage": 117,
+          "pdfEndPage": 117,
+          "printedPages": [
+            107
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "்த னிப ப ட்ட முக ப பு பக க ம் (Personal Home Page)",
+            "மீ உ ணர முன தச யலி தநே றியுரு த் ்தம் (Hyper text Preprocessor)",
+            "மு ன உ ணர மீ உ ணர முன தச யலி தநே றியுரு த் ்தம் (Pretext Hyper text preprocessor)",
+            "மு ன உ ணர முக ப பு பக க ம் (Pre – Processor Home Page)"
+          ],
+          "proposedText": "PHP – ன விரிவாக க ம் என ன ?",
+          "originalExtraction": {
+            "questionText": "PHP – ன விரிவாக க ம் என ன ?",
+            "options": [
+              "்த னிப ப ட்ட முக ப பு பக க ம் (Personal Home Page)",
+              "மீ உ ணர முன தச யலி தநே றியுரு த் ்தம் (Hyper text Preprocessor)",
+              "மு ன உ ணர மீ உ ணர முன தச யலி தநே றியுரு த் ்தம் (Pretext Hyper text preprocessor)",
+              "மு ன உ ணர முக ப பு பக க ம் (Pre – Processor Home Page)"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "PHP – ன விரிவாக க ம் என ன ?",
+            "options": [
+              "்த னிப ப ட்ட முக ப பு பக க ம் (Personal Home Page)",
+              "மீ உ ணர முன தச யலி தநே றியுரு த் ்தம் (Hyper text Preprocessor)",
+              "மு ன உ ணர மீ உ ணர முன தச யலி தநே றியுரு த் ்தம் (Pretext Hyper text preprocessor)",
+              "மு ன உ ணர முக ப பு பக க ம் (Pre – Processor Home Page)"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "fb02d5fac5a3ed0414b1ac384445111e8eabeadb28881fd29881a5c46908bd90",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-062b2ed3821d7058",
+          "number": 2,
+          "pdfPage": 117,
+          "pdfEndPage": 117,
+          "printedPages": [
+            107
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "html",
+            "xml",
+            "php",
+            "ph"
+          ],
+          "proposedText": "PHP சகாப புகளி ன தகா்ட ாநி ணல சகாப புகளி ன நீ ட டி ப பு என ன ?",
+          "originalExtraction": {
+            "questionText": "PHP சகாப புகளி ன தகா்ட ாநி ணல சகாப புகளி ன நீ ட டி ப பு என ன ?",
+            "options": [
+              "html",
+              "xml",
+              "php",
+              "ph"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "PHP சகாப புகளி ன தகா்ட ாநி ணல சகாப புகளி ன நீ ட டி ப பு என ன ?",
+            "options": [
+              "html",
+              "xml",
+              "php",
+              "ph"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "0c681091afd675b5bdf7a500bad6259f4405dc3fa9b4b74ab9be8ac234c1ad05",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-68c38db17d08b189",
+          "number": 3,
+          "pdfPage": 117,
+          "pdfEndPage": 117,
+          "printedPages": [
+            107
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "<php>",
+            "<?php?>",
+            "<??>",
+            "<?php?>"
+          ],
+          "proposedText": "ஒரு PHP ஸ் கிரி பட ______ல ஆரம்பித்து ______ ல் முடியும்.",
+          "originalExtraction": {
+            "questionText": "ஒரு PHP ஸ் கிரி பட ______ல ஆரம்பித்து ______ ல் முடியும்.",
+            "options": [
+              "<php>",
+              "<?php?>",
+              "<??>",
+              "<?php?>"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "ஒரு PHP ஸ் கிரி பட ______ல ஆரம்பித்து ______ ல் முடியும்.",
+            "options": [
+              "<php>",
+              "<?php?>",
+              "<??>",
+              "<?php?>"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "d81d3478645e4832e5a144fde1dc1a2d4179d481a0aa6956d8961d2fcf5a9b86",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Options are not distinct",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Printed options B and D both show <?php?>; preserve duplicate choices and require source/teacher reconciliation",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-188b56ea26c3e3fb",
+          "number": 4,
+          "pdfPage": 117,
+          "pdfEndPage": 117,
+          "printedPages": [
+            107
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "Adobe",
+            "windows",
+            "Apache",
+            "IIS"
+          ],
+          "proposedText": "PHP ஸ் கிரிப டண்ட இயக க உ ங் க ள் கணினியில் பின வ ருவனவ ற் ண் எவ ற் ண் நிருவ சவ ண் டும்?",
+          "originalExtraction": {
+            "questionText": "PHP ஸ் கிரிப டண்ட இயக க உ ங் க ள் கணினியில் பின வ ருவனவ ற் ண் எவ ற் ண் நிருவ சவ ண் டும்?",
+            "options": [
+              "Adobe",
+              "windows",
+              "Apache",
+              "IIS"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "PHP ஸ் கிரிப டண்ட இயக க உ ங் க ள் கணினியில் பின வ ருவனவ ற் ண் எவ ற் ண் நிருவ சவ ண் டும்?",
+            "options": [
+              "Adobe",
+              "windows",
+              "Apache",
+              "IIS"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "894cc80b27f0f83e948c2addd464024af937aaf914a14a079063af1fea35032e",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe fragmented Tamil words before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-fa4ff5efbfd23d14",
+          "number": 5,
+          "pdfPage": 117,
+          "pdfEndPage": 117,
+          "printedPages": [
+            107
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "(ii) only",
+            "(i), (iii) and (iv)",
+            "(ii), (iii) and (iv)",
+            "both (ii) and (iv)"
+          ],
+          "proposedText": "ஒ ற் ண் வரி குறி ப பு ணர கூற்று க கு நே ாம் எ ண்த பயன ப டுத்து சவா ம் ? i) /? ii) // iii)# iv) **/",
+          "originalExtraction": {
+            "questionText": "ஒ ற் ண் வரி குறி ப பு ணர கூற்று க கு நே ாம் எ ண்த பயன ப டுத்து சவா ம் ? i) /? ii) // iii)# iv) **/",
+            "options": [
+              "(ii) only",
+              "(i), (iii) and (iv)",
+              "(ii), (iii) and (iv)",
+              "both (ii) and (iv) 107 பாடம் \u0007 04 அறிமுகம் \u0007 – \u0007 மீ உ வர\u0007 மு ன் மே யலி \u0007 (PHP) வினாக க ள்"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "ஒ ற் ண் வரி குறி ப பு ணர கூற்று க கு நே ாம் எ ண்த பயன ப டுத்து சவா ம் ? i) /? ii) // iii)# iv) **/",
+            "options": [
+              "(ii) only",
+              "(i), (iii) and (iv)",
+              "(ii), (iii) and (iv)",
+              "both (ii) and (iv)"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "288d47cf6d35f893827a07c36436334d8c0b7832858a96e32a6b5011f935f60e",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Preserve the printed comment symbols and roman subitem references; no inferred correction",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-5a25aca7ab8f5c25",
+          "number": 6,
+          "pdfPage": 118,
+          "pdfEndPage": 118,
+          "printedPages": [
+            108
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "3",
+            "1+ 2",
+            "1. + .2",
+            "Error"
+          ],
+          "proposedText": "பின வ ரும் PHP கூற்றி ன தவ ளியீடு என ன வாக இரு க கும்Pgm",
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP கூற்றி ன தவ ளியீடு என ன வாக இரு க கும்Pgm",
+            "options": [
+              "3",
+              "1+ 2",
+              "1. + .2",
+              "Error"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "பின வ ரும் PHP கூற்றி ன தவ ளியீடு என ன வாக இரு க கும்Pgm",
+            "options": [
+              "3",
+              "1+ 2",
+              "1. + .2",
+              "Error"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "b895fa2c81f1ecda41d396e8b21e949fddc92ae7b0369ab55c9f83bd8bdaf62f",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Source itself refers to a PHP program (Pgm) but supplies no program on the printed page; required question content is missing",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": false,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-4f1ef180c059530f",
+          "number": 7,
+          "pdfPage": 118,
+          "pdfEndPage": 118,
+          "printedPages": [
+            108
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "echo (“Hello world”)",
+            "print (“Hello world”)",
+            "Printf (“Hello world”)",
+            "sprint (“Hello world”)"
+          ],
+          "proposedText": "பின வ ரும் எ ்ந ்த கூற்று Hello World எ ன னும் தவ ளியீட ண்ட தி ணர யில் காண்பி க கும்",
+          "originalExtraction": {
+            "questionText": "பின வ ரும் எ ்ந ்த கூற்று Hello World எ ன னும் தவ ளியீட ண்ட தி ணர யில் காண்பி க கும்",
+            "options": [
+              "echo (“Hello world”)",
+              "print (“Hello world”)",
+              "Printf (“Hello world”)",
+              "sprint (“Hello world”)"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "பின வ ரும் எ ்ந ்த கூற்று Hello World எ ன னும் தவ ளியீட ண்ட தி ணர யில் காண்பி க கும்",
+            "options": [
+              "echo (“Hello world”)",
+              "print (“Hello world”)",
+              "Printf (“Hello world”)",
+              "sprint (“Hello world”)"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "1c6017385b91c5e816f870c61ce975d6a4564f4c352e2d5918d519f8c45d6152",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-32c0384064ed712e",
+          "number": 8,
+          "pdfPage": 118,
+          "pdfEndPage": 118,
+          "printedPages": [
+            108
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "echo “\\$x’’",
+            "echo “ \\$$x”",
+            "echo “/$x”",
+            "echo “$x”"
+          ],
+          "proposedText": "எ ்ந ்த கூற்று தி ணர யில் $x என ் தவ ளியீட ண்ட கா ட டும்?",
+          "originalExtraction": {
+            "questionText": "எ ்ந ்த கூற்று தி ணர யில் $x என ் தவ ளியீட ண்ட கா ட டும்?",
+            "options": [
+              "echo “\\$x’’",
+              "echo “ \\$$x”",
+              "echo “/$x”",
+              "echo “$x”"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "எ ்ந ்த கூற்று தி ணர யில் $x என ் தவ ளியீட ண்ட கா ட டும்?",
+            "options": [
+              "echo “\\$x’’",
+              "echo “ \\$$x”",
+              "echo “/$x”",
+              "echo “$x”"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "cfb5c51606e76d8d38f2cb090cb6930ad0bffeafc9401a3d465e25f97d7dd668",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Preserve printed dollar signs, backslashes and quote punctuation; do not execute or normalize code",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-568857361e2c1204",
+          "number": 9,
+          "pdfPage": 118,
+          "pdfEndPage": 118,
+          "printedPages": [
+            108
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "\\r;",
+            "\\n;",
+            "/n;",
+            "/r;"
+          ],
+          "proposedText": "கீ சை தகா டுக க ப பட டு ள் ை குறியீடுகளில் எது புதிய வரி ணய உருவாக க பயன ப டுவது எது?",
+          "originalExtraction": {
+            "questionText": "கீ சை தகா டுக க ப பட டு ள் ை குறியீடுகளில் எது புதிய வரி ணய உருவாக க பயன ப டுவது எது?",
+            "options": [
+              "\\r;",
+              "\\n;",
+              "/n;",
+              "/r; பகுதி \u0007 – \u0007 ஆ \u0007"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "கீ சை தகா டுக க ப பட டு ள் ை குறியீடுகளில் எது புதிய வரி ணய உருவாக க பயன ப டுவது எது?",
+            "options": [
+              "\\r;",
+              "\\n;",
+              "/n;",
+              "/r;"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+          "evidenceSha256": "068d42fb4c2f27da18a0a8e3518fff774ba92ebf2fae0d4a5480732bf505d5fd",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Glossary above the exercise is excluded",
+            "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+            "PHP punctuation and printed technical inconsistencies require teacher verification",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        }
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+      "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "chapterNumber": 4,
+      "chapterTitle": "பல்லூடகம் மற்றும் கணிப்பொறிப் பதிப்பகம்",
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-4",
+      "sourceBatchId": "tb-12-computer-technology-tamil-c66e9089-ch-4-source-bounded-01",
+      "sourcePdfPages": [
+        161,
+        162
+      ],
+      "printedPages": [
+        155,
+        156
+      ],
+      "additionalInspectedPages": [
+        145,
+        163
+      ],
+      "inventoried": 10,
+      "answerEvidence": "No printed key on visually inspected PDF 161, 162; next chapter starts on PDF 163. Whole-book answer-key absence not asserted. Answers remain unknown.",
+      "knownAnswers": 0,
+      "printedKeyMatches": 0,
+      "nonemptyFourOptionPositions": 10,
+      "incompleteRequiredContent": [],
+      "duplicateOptionQuestions": [],
+      "reusedCandidateIds": 10,
+      "newlyRecoveredCandidateIds": 0,
+      "requiresTamilCorrection": 10,
+      "diagramDependent": 0,
+      "excludedItems": [
+        {
+          "numbers": [],
+          "page": 162,
+          "kind": "Sections II–IV are open responses, not four-choice MCQs; retained in source-page evidence only"
+        }
+      ],
+      "manifestPath": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 10,
+      "published": 0,
+      "candidates": [
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-bb071bdb1a7fbb73",
+          "number": 1,
+          "pdfPage": 161,
+          "pdfEndPage": 161,
+          "printedPages": [
+            155
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "நிறை ் வற்ைப்ப டும் ் கா ப் பு",
+            "கணினி பதி ப் ப கம்",
+            "பல்லூடகம்",
+            "மீ வு ற ை"
+          ],
+          "proposedText": "_________ என ப்த ஒ ன றிற்கு ் மற்ப ட ட ஊடக வ றக யான உ ற ை, ்த ற ைக ற ை, ஒளி க் காட சி, அ றெ வூட ட ல் மற்றும் ஒலி ஆகியவற்றில் ஏ ்்த னும் ஒரு வ றக ப் பயன பா ட றட க் குறிக்கும்.",
+          "originalExtraction": {
+            "questionText": "_________ என ப்த ஒ ன றிற்கு ் மற்ப ட ட ஊடக வ றக யான உ ற ை, ்த ற ைக ற ை, ஒளி க் காட சி, அ றெ வூட ட ல் மற்றும் ஒலி ஆகியவற்றில் ஏ ்்த னும் ஒரு வ றக ப் பயன பா ட றட க் குறிக்கும்.",
+            "options": [
+              "நிறை ் வற்ைப்ப டும் ் கா ப் பு",
+              "கணினி பதி ப் ப கம்",
+              "பல்லூடகம்",
+              "மீ வு ற ை"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "_________ என ப்த ஒ ன றிற்கு ் மற்ப ட ட ஊடக வ றக யான உ ற ை, ்த ற ைக ற ை, ஒளி க் காட சி, அ றெ வூட ட ல் மற்றும் ஒலி ஆகியவற்றில் ஏ ்்த னும் ஒரு வ றக ப் பயன பா ட றட க் குறிக்கும்.",
+            "options": [
+              "நிறை ் வற்ைப்ப டும் ் கா ப் பு",
+              "கணினி பதி ப் ப கம்",
+              "பல்லூடகம்",
+              "மீ வு ற ை"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "788ffeb99a0d39f9bdf13d6e125c917a6a9e787421af77c75e6e4a66bc8dc2e7",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-32d70a455edc7d41",
+          "number": 2,
+          "pdfPage": 161,
+          "pdfEndPage": 161,
+          "printedPages": [
+            155
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "வி ற ை",
+            "ஒ த து ப் ் ப ா்த ல்",
+            "பயன பா டு",
+            "ெ ா ர பியல்பு"
+          ],
+          "proposedText": "பல்லூடக த தி ன குறைபாடுகளில் ஒ ன று அ ்த னு றட ய _________",
+          "originalExtraction": {
+            "questionText": "பல்லூடக த தி ன குறைபாடுகளில் ஒ ன று அ ்த னு றட ய _________",
+            "options": [
+              "வி ற ை",
+              "ஒ த து ப் ் ப ா்த ல்",
+              "பயன பா டு",
+              "ெ ா ர பியல்பு"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "பல்லூடக த தி ன குறைபாடுகளில் ஒ ன று அ ்த னு றட ய _________",
+            "options": [
+              "வி ற ை",
+              "ஒ த து ப் ் ப ா்த ல்",
+              "பயன பா டு",
+              "ெ ா ர பியல்பு"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "24284deaee337a065d94d0f20f825637474f70b6dacb2d896ec2eb4efa56eea3",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-6a2317e946c0c945",
+          "number": 3,
+          "pdfPage": 161,
+          "pdfEndPage": 161,
+          "printedPages": [
+            155
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "Joint Photo exports gross",
+            "Joint Photographic experts group",
+            "Joint processor experts group",
+            "Joint Photographic expression group"
+          ],
+          "proposedText": "விரிவா க் க ம் JPEG",
+          "originalExtraction": {
+            "questionText": "விரிவா க் க ம் JPEG",
+            "options": [
+              "Joint Photo exports gross",
+              "Joint Photographic experts group",
+              "Joint processor experts group",
+              "Joint Photographic expression group"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "விரிவா க் க ம் JPEG",
+            "options": [
+              "Joint Photo exports gross",
+              "Joint Photographic experts group",
+              "Joint processor experts group",
+              "Joint Photographic expression group"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "3daeaca3384823c0aaf677987177cc6d4d8647670243218fb49853ab058379f8",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-f48ce5b631165614",
+          "number": 4,
+          "pdfPage": 161,
+          "pdfEndPage": 161,
+          "printedPages": [
+            155
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "வ ற ைய றம ப் பு",
+            "CD இயக்கி",
+            "ந ல் ை ் யாெறன",
+            "நி ைை ா க் க தி ைன"
+          ],
+          "proposedText": "பல்லூடகத ற்த உருவா க் க நமக்கு ்்த றவ யான றவ : வன ச ப ா ருள், சம ன ச ப ா ருள் மற்றும் _________",
+          "originalExtraction": {
+            "questionText": "பல்லூடகத ற்த உருவா க் க நமக்கு ்்த றவ யான றவ : வன ச ப ா ருள், சம ன ச ப ா ருள் மற்றும் _________",
+            "options": [
+              "வ ற ைய றம ப் பு",
+              "CD இயக்கி",
+              "ந ல் ை ் யாெறன",
+              "நி ைை ா க் க தி ைன"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "பல்லூடகத ற்த உருவா க் க நமக்கு ்்த றவ யான றவ : வன ச ப ா ருள், சம ன ச ப ா ருள் மற்றும் _________",
+            "options": [
+              "வ ற ைய றம ப் பு",
+              "CD இயக்கி",
+              "ந ல் ை ் யாெறன",
+              "நி ைை ா க் க தி ைன"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "c9d3a222e53ab298fb736addb8e98d547e962d2403de86c605787b83e3dcf831",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-section-12-computer-technology-tamil-c66e9089-81e76f80326995f0",
+          "number": 5,
+          "pdfPage": 161,
+          "pdfEndPage": 161,
+          "printedPages": [
+            155
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "1, 2, 3, 4",
+            "2, 3, 4, 1",
+            "4, 1, 2, 3",
+            "3, 4, 1, 2"
+          ],
+          "proposedText": "ெ ரியான ஒன றைத ்்த ர நச்த டு த து பின வ ருவனவ ற் றை சபா ரு த துக. 1. உ ற ை - TGA 3. ஒலி - MPEG 2. நிழ ற் ப டம் - MIDI 4. ஒளி - RTF",
+          "originalExtraction": {
+            "questionText": "ெ ரியான ஒன றைத ்்த ர நச்த டு த து பின வ ருவனவ ற் றை சபா ரு த துக.\n",
+            "options": [],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "ெ ரியான ஒன றைத ்்த ர நச்த டு த து பின வ ருவனவ ற் றை சபா ரு த துக. 1. உ ற ை - TGA 3. ஒலி - MPEG 2. நிழ ற் ப டம் - MIDI 4. ஒளி - RTF",
+            "options": [
+              "1, 2, 3, 4",
+              "2, 3, 4, 1",
+              "4, 1, 2, 3",
+              "3, 4, 1, 2"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "ff23f7152e09a3110fc7a93bc57c488a4bbca1c3d13b4b2807a2446ccd7de336",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-e87454081c906cf1",
+          "number": 6,
+          "pdfPage": 162,
+          "pdfEndPage": 162,
+          "printedPages": [
+            156
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "TIFF",
+            "BMP",
+            "RTF",
+            "JPEG"
+          ],
+          "proposedText": "பின வ ருவனவற்றில் சபா ருந ்த ா்த ஒன றை க் கண்டுபிடி க் க வும்.",
+          "originalExtraction": {
+            "questionText": "பின வ ருவனவற்றில் சபா ருந ்த ா்த ஒன றை க் கண்டுபிடி க் க வும்.",
+            "options": [
+              "TIFF",
+              "BMP",
+              "RTF",
+              "JPEG"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "பின வ ருவனவற்றில் சபா ருந ்த ா்த ஒன றை க் கண்டுபிடி க் க வும்.",
+            "options": [
+              "TIFF",
+              "BMP",
+              "RTF",
+              "JPEG"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "e5f39240c5208294cc69723a353078971e43e86eb3fae0069735d0bd47c5d7f0",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-fe2299073d0aa02e",
+          "number": 7,
+          "pdfPage": 162,
+          "pdfEndPage": 162,
+          "printedPages": [
+            156
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "உ ற ை வடிவம்",
+            "ஒலி",
+            "MP3",
+            "அ றெ வூட ட ல்"
+          ],
+          "proposedText": "_________ என ப து அ றெ யா நிழ ற் ப டங கற ை ச்தா ட ர ச் சியான இய க் க மாக கா ட சி ப் ப டு த தும் செயல்.",
+          "originalExtraction": {
+            "questionText": "_________ என ப து அ றெ யா நிழ ற் ப டங கற ை ச்தா ட ர ச் சியான இய க் க மாக கா ட சி ப் ப டு த தும் செயல்.",
+            "options": [
+              "உ ற ை வடிவம்",
+              "ஒலி",
+              "MP3",
+              "அ றெ வூட ட ல்"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "_________ என ப து அ றெ யா நிழ ற் ப டங கற ை ச்தா ட ர ச் சியான இய க் க மாக கா ட சி ப் ப டு த தும் செயல்.",
+            "options": [
+              "உ ற ை வடிவம்",
+              "ஒலி",
+              "MP3",
+              "அ றெ வூட ட ல்"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "8708b950226013ceb7033615e59039eaf3d02f010091b725ab293b8fc3305f73",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-5d2b997f95773ecb",
+          "number": 8,
+          "pdfPage": 162,
+          "pdfEndPage": 162,
+          "printedPages": [
+            156
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "வ ற ை ஒளி ப் பை ப் பு",
+            "வ ற ை ச்தா கு ப் பாைர",
+            "்த ை வு றக யாளு ்த ல்",
+            "இவற்றில் ஏதும் இ ல் றை"
+          ],
+          "proposedText": "இ றண ய த தி ன மூ ை ம் நிக ழ் ் நை நிகழ்ச்சிக ற ை ் நை டியாக ஒளி ப் பை ப் புவ ற்த _________ எ ன கி ் ைா ம் .",
+          "originalExtraction": {
+            "questionText": "இ றண ய த தி ன மூ ை ம் நிக ழ் ் நை நிகழ்ச்சிக ற ை ் நை டியாக ஒளி ப் பை ப் புவ ற்த _________ எ ன கி ் ைா ம் .",
+            "options": [
+              "வ ற ை ஒளி ப் பை ப் பு",
+              "வ ற ை ச்தா கு ப் பாைர",
+              "்த ை வு றக யாளு ்த ல்",
+              "இவற்றில் ஏதும் இ ல் றை"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "இ றண ய த தி ன மூ ை ம் நிக ழ் ் நை நிகழ்ச்சிக ற ை ் நை டியாக ஒளி ப் பை ப் புவ ற்த _________ எ ன கி ் ைா ம் .",
+            "options": [
+              "வ ற ை ஒளி ப் பை ப் பு",
+              "வ ற ை ச்தா கு ப் பாைர",
+              "்த ை வு றக யாளு ்த ல்",
+              "இவற்றில் ஏதும் இ ல் றை"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "563082cb6c99f3cf6aeec92861d2094a444fc53bde64f61e14745231a6c4dc95",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-1669bf38f99ff322",
+          "number": 9,
+          "pdfPage": 162,
+          "pdfEndPage": 162,
+          "printedPages": [
+            156
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "8 பி ட",
+            "8KB",
+            "8 MB",
+            "8GB"
+          ],
+          "proposedText": "GIF பயன ப டு த தும் வ ண் ண ்்த டல் அட ட வ றண _________",
+          "originalExtraction": {
+            "questionText": "GIF பயன ப டு த தும் வ ண் ண ்்த டல் அட ட வ றண _________",
+            "options": [
+              "8 பி ட",
+              "8KB",
+              "8 MB",
+              "8GB"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "GIF பயன ப டு த தும் வ ண் ண ்்த டல் அட ட வ றண _________",
+            "options": [
+              "8 பி ட",
+              "8KB",
+              "8 MB",
+              "8GB"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "9cbd1783b2b9e39cb395546dac2f1a92761326b6c9df530cc27aae43153c85cd",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-4abd24f992ac5beb",
+          "number": 10,
+          "pdfPage": 162,
+          "pdfEndPage": 162,
+          "printedPages": [
+            156
+          ],
+          "answer": null,
+          "reusedId": true,
+          "options": [
+            "TCS",
+            "Micorsoft",
+            "Apple",
+            "IBM"
+          ],
+          "proposedText": "RTF ் கா ப் பு வடிவத ற்த அறிமுக ப் ப டு த தியது _________",
+          "originalExtraction": {
+            "questionText": "RTF ் கா ப் பு வடிவத ற்த அறிமுக ப் ப டு த தியது _________",
+            "options": [
+              "TCS",
+              "Micorsoft",
+              "Apple",
+              "IBM"
+            ],
+            "correctAnswer": null
+          },
+          "proposedSourceSpan": {
+            "questionText": "RTF ் கா ப் பு வடிவத ற்த அறிமுக ப் ப டு த தியது _________",
+            "options": [
+              "TCS",
+              "Micorsoft",
+              "Apple",
+              "IBM"
+            ]
+          },
+          "reviewDecision": "pending",
+          "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+          "evidenceSha256": "8d1116a73ca868895b8c966f62a85c3125e2e66f2fe9f828aca2656da0e20ca0",
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+            "The glossary above the exercise is not question content",
+            "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ],
+          "completeRequiredTextOptions": true,
+          "status": "Needs Review",
+          "practicePublished": false
+        }
+      ]
+    }
+  ],
+  "previousReviewRecordsPreserved": 128,
+  "totalLocalReviewerItems": 147,
+  "stores": [
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-2/decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-3/decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-4/decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-5/decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-applications-tamil-e51fbdf6-ch-2/decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d",
+      "entries": 12,
+      "counts": {
+        "pending": 12,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-technology-tamil-c66e9089-ch-2/decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5",
+      "entries": 12,
+      "counts": {
+        "pending": 12,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-applications-tamil-e51fbdf6-ch-3/decisions.json",
+      "sha256": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb",
+      "entries": 10,
+      "counts": {
+        "pending": 10,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-technology-tamil-c66e9089-ch-3/decisions.json",
+      "sha256": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178",
+      "entries": 14,
+      "counts": {
+        "pending": 14,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-applications-tamil-e51fbdf6-ch-4/decisions.json",
+      "sha256": "faf0f0793007bd61e81a2a2226600e4233ebda90fd7a590e864a73ebcd1cc8b0",
+      "entries": 9,
+      "counts": {
+        "pending": 9,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-technology-tamil-c66e9089-ch-4/decisions.json",
+      "sha256": "eb037dd880a0e220a934d1c565db9d2fd396b45e8d291858cec5f52a5903740e",
+      "entries": 10,
+      "counts": {
+        "pending": 10,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/commerce-12-commerce-tamil-d9e013d8-ch-27/decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e",
+      "entries": 5,
+      "counts": {
+        "pending": 5,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    }
+  ],
+  "sourceDefinitions": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+      "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "chapterNumber": 4,
+      "chapterTitle": "அறிமுகம் – மீஉரை முன்செயலி (PHP)",
+      "chapterStartPdfPage": 105,
+      "chapterEndPdfPage": 118,
+      "pages": [
+        {
+          "page": 117,
+          "printedPage": 107,
+          "first": 1,
+          "last": 5,
+          "contentTopFraction": 0.55
+        },
+        {
+          "page": 118,
+          "printedPage": 108,
+          "first": 6,
+          "last": 9,
+          "contentTopFraction": 0.08
+        }
+      ],
+      "inspectedEndingPages": [
+        119
+      ],
+      "stopBeforeQuestion": null,
+      "excludedItems": [
+        {
+          "numbers": [],
+          "page": 118,
+          "kind": "Sections II–IV are open responses, not four-choice MCQs; retained in source-page evidence only"
+        }
+      ],
+      "keyEvidence": "No printed key on visually inspected PDF 117, 118; next chapter starts on PDF 119. Whole-book answer-key absence not asserted. Answers remain unknown.",
+      "diagramQuestions": [],
+      "sourceWarnings": [
+        "Glossary above the exercise is excluded",
+        "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+        "PHP punctuation and printed technical inconsistencies require teacher verification"
+      ],
+      "incompleteQuestions": [
+        6
+      ],
+      "questionWarnings": {
+        "3": [
+          "Printed options B and D both show <?php?>; preserve duplicate choices and require source/teacher reconciliation"
+        ],
+        "5": [
+          "Preserve the printed comment symbols and roman subitem references; no inferred correction"
+        ],
+        "6": [
+          "Source itself refers to a PHP program (Pgm) but supplies no program on the printed page; required question content is missing"
+        ],
+        "8": [
+          "Preserve printed dollar signs, backslashes and quote punctuation; do not execute or normalize code"
+        ]
+      }
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+      "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "chapterNumber": 4,
+      "chapterTitle": "பல்லூடகம் மற்றும் கணிப்பொறிப் பதிப்பகம்",
+      "chapterStartPdfPage": 145,
+      "chapterEndPdfPage": 162,
+      "pages": [
+        {
+          "page": 161,
+          "printedPage": 155,
+          "first": 1,
+          "last": 5,
+          "contentTopFraction": 0.5,
+          "layout": "single-column"
+        },
+        {
+          "page": 162,
+          "printedPage": 156,
+          "first": 6,
+          "last": 10,
+          "contentTopFraction": 0.08
+        }
+      ],
+      "inspectedEndingPages": [
+        163
+      ],
+      "stopBeforeQuestion": null,
+      "excludedItems": [
+        {
+          "numbers": [],
+          "page": 162,
+          "kind": "Sections II–IV are open responses, not four-choice MCQs; retained in source-page evidence only"
+        }
+      ],
+      "keyEvidence": "No printed key on visually inspected PDF 161, 162; next chapter starts on PDF 163. Whole-book answer-key absence not asserted. Answers remain unknown.",
+      "diagramQuestions": [],
+      "sourceWarnings": [
+        "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+        "The glossary above the exercise is not question content",
+        "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling"
+      ],
+      "embeddedNumberedListQuestions": [
+        5
+      ],
+      "excludedExistingIds": [
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-7932776597725b4e",
+          "reason": "Source PDF 161 proves this parser Q4 is matching Q5 premise 4 (RTF) plus its answer permutations, not the real Q4; saved record retained unchanged"
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "held": 19,
+    "fourOptionPositions": 19,
+    "completeRequiredContent": 18,
+    "missingProgramQuestions": 1,
+    "duplicateOptionQuestions": 1,
+    "printedKeyMatches": 0,
+    "textbookVerifiedAnswers": 0,
+    "unknownAnswers": 19,
+    "reusedIds": 19,
+    "newIds": 0,
+    "reviewed": 0,
+    "approved": 0,
+    "published": 0
+  },
+  "studentBank": {
+    "english": 995,
+    "tamil": 0,
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "snapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "excludedLegacySamples": [
+      "q-bot-101",
+      "q-cs-101",
+      "q-cs-102",
+      "q-cs-103",
+      "q-cs-104",
+      "q-cs-105",
+      "q-cs-701",
+      "q-cs-702",
+      "q-cs-703",
+      "q-zoo-201",
+      "q-zoo-202",
+      "q-zoo-203"
+    ],
+    "measurement": "Hash-preserved saved authoritative snapshot; not a fresh live read"
+  },
+  "inventory": {
+    "pdfs": 82,
+    "detectedEntries": 856,
+    "zeroPublishedEntries": 733,
+    "savedCandidateRecords": 17267,
+    "activeCandidateIds": 12681,
+    "inactiveArtifacts": 4586,
+    "sourceBoundedItems": 132
+  },
+  "preservation": {
+    "file": "docs/chapter4-preservation.json",
+    "sha256": "2dd75f70e7f4f39e97eb4e69f287058742446c56e5bf06cd87cc7d3100d159af",
+    "savedCandidates": 17267,
+    "previousProposals": 113,
+    "protectedFiles": 94,
+    "datedPracticeSessions": 13
+  },
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch4-test.log",
+      "sha256": "1047de3b786a878f8681a7bbb0c4b7a86bc8e451a5e1b1de5021e2a8fdaed03e"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch4-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch4-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch4-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch4-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch4-mcqs-systematic-audit.log",
+      "sha256": "e51f5beddadcbce05b9d40764d39f8e2e4b3834c4b9dd1915e2b30be68b23c8f"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch4-build.log",
+      "sha256": "1c9c1873e923ddbed0c723b81f3ac4027a1fca46060e8a1213fa50ec9783e928"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch4-browser.log",
+      "sha256": "5f3afb42297d0382a980242b7e0e7ff3c472360161772b3ac8d3abc31e802776"
+    },
+    {
+      "check": "decision-audit",
+      "exit": 0,
+      "log": ".local/ch4-decision-audit.log",
+      "sha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "check": "reruns",
+      "exit": 0
+    }
+  ],
+  "fullTests": {
+    "passed": 139,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "focusedChapter4Tests": {
+    "passed": 2,
+    "failed": 0,
+    "log": ".local/ch4-focused.log",
+    "sha256": "6790b6993208f5118a27a11f2600a74335959c58810d3539c4679d60cf92fdba"
+  },
+  "additionalStudentAdminBrowserCases": {
+    "passed": 6,
+    "failed": 0,
+    "subjects": [
+      "Accountancy",
+      "Commerce",
+      "Chemistry"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "reruns": [
+    {
+      "round": 1,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch4-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "8329ec0d9601ed85c4d53f77cfb452ab455c624ec69f95070db9ce3d42b8720f"
+    },
+    {
+      "round": 1,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch4-rerun-1-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch4-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "8329ec0d9601ed85c4d53f77cfb452ab455c624ec69f95070db9ce3d42b8720f"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch4-rerun-2-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    }
+  ],
+  "unresolved": [
+    "All 19 answers unknown; no inspected printed key or separately teacher-verified textbook answer",
+    "All 19 Tamil text/choices require individual correction and source-mapping verification",
+    "Applications Q6 references a PHP program absent from the original page; do not invent it",
+    "Applications Q3 prints duplicate B/D options; preserve and reconcile explicitly",
+    "Technology matching subitems generated a misnumbered saved Q4 artifact; retain original record, exclude it from source mapping using inspected evidence",
+    "733 zero-publication detected entries are not 733 confirmed missing MCQ sections"
+  ],
+  "nextPriority": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "chapter": 5,
+      "topic": "PHP functions and arrays",
+      "startPdfPage": 119,
+      "nextChapterStartPdfPage": 127,
+      "published": 0,
+      "scopedParserSections": 1,
+      "status": "Title/next-chapter boundary verified; exercise not yet source-bounded"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "chapter": 5,
+      "topic": "Adobe Flash Professional CS6",
+      "startPdfPage": 163,
+      "nextChapterStartPdfPage": 189,
+      "published": 0,
+      "scopedParserSections": 1,
+      "status": "Title/next-chapter boundary verified; exercise not yet source-bounded"
+    }
+  ],
+  "initialBrowserRun": {
+    "log": ".local/ch4-browser-initial.log",
+    "sha256": "688b3c4402bf062e560656abe48b009e18a81584587839d1cdc09977176365a1",
+    "exit": 1,
+    "failure": "Desktop direct account test exceeded its 60-second test deadline during a request while checks ran concurrently; final browser rerun is recorded separately",
+    "summary": "1 failed\r\n    [desktop] › tests\\e2e\\direct-accounts.spec.ts:44:5 › students choose a password, sign in with email and see their profile in the admin Excel export \r\n  5 passed (3.7m)\r\n"
+  }
+}

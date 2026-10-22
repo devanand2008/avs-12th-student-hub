@@ -22,6 +22,7 @@ export default function VideosPage() {
   const watchedRef = useRef<Record<string, boolean>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [playbackError, setPlaybackError] = useState("");
   const [bookmarkState, setBookmarkState] = useState<{
     contentId: string;
     saved: boolean;
@@ -239,9 +240,12 @@ export default function VideosPage() {
                     key={active.id}
                     ref={videoRef}
                     src={active.videoUrl}
+                    poster={active.thumbnailUrl || undefined}
                     controls
                     playsInline
                     preload="metadata"
+                    onLoadStart={() => setPlaybackError("")}
+                    onError={() => setPlaybackError("This video could not load. Check your connection and retry.")}
                     className="h-full w-full"
                     onLoadedMetadata={(event) => {
                       try {
@@ -321,6 +325,12 @@ export default function VideosPage() {
               </div>
 
               <div className="p-6 sm:p-7">
+                {playbackError && (
+                  <p role="alert" className="mb-4 text-sm text-rose-700">
+                    {playbackError}{" "}
+                    <button type="button" className="font-bold underline" onClick={() => videoRef.current?.load()}>Retry video</button>
+                  </p>
+                )}
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
                     {active.sourceLabel || "AVS Faculty Lesson"}

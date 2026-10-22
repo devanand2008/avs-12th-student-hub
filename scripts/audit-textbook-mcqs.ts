@@ -80,7 +80,7 @@ async function main() {
     booksAnalysed: books.length,
     verifiedQuestions: books.reduce((n, b) => n + b.verifiedQuestions, 0),
     pendingCandidates: books.reduce((n, b) => n + b.pendingCandidates, 0),
-    note: "Only readable text questions with four real choices and a matching printed key are automatically published. Damaged glyphs, ambiguous formula layouts and image-dependent questions require transcription review. No textbook page images or placeholder choices appear in practice. Missing or conflicting answers are not invented.",
+    note: "Counts describe parser eligibility, not student publication or teacher approval. New candidates remain held for individual review, including printed-key matches. Damaged text, ambiguous formulas, figures, chapter boundaries and missing answers require source verification.",
     books,
   };
   await writeFile(

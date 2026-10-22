@@ -1,0 +1,5137 @@
+{
+  "checkedAt": "2026-10-20T08:27:45.960Z",
+  "scope": "Local-only; no production access, import, publication, push or deployment",
+  "sourceInspection": {
+    "books": [
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "subject": "Bio-Botany",
+        "medium": "English",
+        "volume": null,
+        "sourceFile": "12th_Std_Biology_Botany_EM_Optimised.pdf",
+        "sourceSha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+        "chapterNumber": 6,
+        "chapterTitle": "Principles of Ecology",
+        "chapterStartPdfPage": 115,
+        "chapterEndPdfPage": 139,
+        "pages": [
+          {
+            "page": 136,
+            "printedPage": 130,
+            "first": 1,
+            "last": 8,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          },
+          {
+            "page": 137,
+            "printedPage": 131,
+            "first": 9,
+            "last": 19,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          },
+          {
+            "page": 138,
+            "printedPage": 132,
+            "first": 20,
+            "last": 21,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          }
+        ],
+        "inspectedEndingPages": [
+          139
+        ],
+        "stopBeforeQuestion": 22,
+        "excludedItems": [
+          {
+            "numbers": [],
+            "page": 138,
+            "kind": "Q22 onward are descriptive questions, followed by glossary/learning links. Ordinary lesson paragraphs before Evaluation are excluded. No explicit one-mark allocation printed for this MCQ subset."
+          }
+        ],
+        "keyEvidence": "No question-specific printed answer key identified on the inspected Chapter 6 contents, exercise and chapter-ending pages. Answers remain unknown; this does not assert whole-book key absence.",
+        "diagramQuestions": [
+          9,
+          10,
+          12,
+          19
+        ],
+        "incompleteQuestions": [
+          1
+        ],
+        "sourceWarnings": [
+          "Original ecology/electrical wording, scientific names, symbols, units and table order require individual source verification; no inferred answers or silent source corrections."
+        ],
+        "subjectNeutral": true,
+        "optionLabelPattern": "(?:^|\\s)\\(?([a-dA-D])\\s*\\)",
+        "sectionHeading": "Evaluation — Chapter 6 book-back MCQs (mark allocation unspecified)",
+        "questionWarnings": {
+          "1": [
+            "Printed option A reads Individual organism → Population Landscape → Ecosystem, omitting an arrow between Population and Landscape. Preserve the visible source gap; do not insert a guessed relationship.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q1, PDF 147, printed 141. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-e3c95dc3321d23ed, tb-12-botany-english-da5635aa-ch-6, Q1, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer.",
+            "Tamil counterpart prints its own hierarchy wording/arrows; do not import a missing English separator from the other edition."
+          ],
+          "2": [
+            "Retain the printed wording “Ecology is the study of an individual species is called” and roman statements; no grammatical or ecological answer repair.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q2, PDF 147, printed 141. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-5805c4cdcf5eb6f3, tb-12-botany-english-da5635aa-ch-6, Q2, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "3": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q3, PDF 147, printed 141. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-7f337c0e8ef455fd, tb-12-botany-english-da5635aa-ch-6, Q3, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "4": [
+            "Options C/D continue at the top of the right column on PDF 136. Preserve all four hydrophyte, Viscum, soil-water and temperature statements without silently correcting their scientific claims.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q4, PDF 147, printed 141. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "5": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q5, PDF 147, printed 141. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-1839dcbeaaa2ba8e, tb-12-botany-english-da5635aa-ch-6, Q5, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "6": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q6, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-abc6cfbe1ffec1ac, tb-12-botany-english-da5635aa-ch-6, Q6, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "7": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q7, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "8": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q8, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-612cdace234d3bdf, tb-12-botany-english-da5635aa-ch-6, Q8, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "9": [
+            "Four printed table rows are choices (a)–(d), under columns (i)/(ii)/(iii). Preserve Holard/Echard/Chresard row order; inspect the actual table before verification.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q9, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-f2209cec8441b57e, tb-12-botany-english-da5635aa-ch-6, Q9, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "10": [
+            "Keep both matching columns, four permutation rows and “None of the above”. The printed source has “Slit soil”, “Column IL” and overlapping particle ranges; do not silently replace spelling or measurements.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q10, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-a96f0c572dd00fdc, tb-12-botany-english-da5635aa-ch-6, Q10, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "11": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q11, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-c86da4aef752770b, tb-12-botany-english-da5635aa-ch-6, Q11, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "12": [
+            "The interaction premise table and the four answer rows must remain distinct. Choice B/C print “Mutalism”; preserve spelling. Inspect both source tables.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q12, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "13": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q13, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-39acd2dea8f48d08, tb-12-botany-english-da5635aa-ch-6, Q13, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "14": [
+            "Preserve lowercase chlorella and printed free-living/symbiotic wording; scientific names and ecological claims need teacher verification.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q14, PDF 148, printed 142. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-cfb087c8fb005ea3, tb-12-botany-english-da5635aa-ch-6, Q14, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "15": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q15, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-788d592442b9002f, tb-12-botany-english-da5635aa-ch-6, Q15, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "16": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q16, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-a25814783a45f653, tb-12-botany-english-da5635aa-ch-6, Q16, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "17": [
+            "Preserve printed non-succulent wording, botanical names and option order; do not infer the plant or repair the scientific claim.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q17, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-d50606a106602202, tb-12-botany-english-da5635aa-ch-6, Q17, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "18": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q18, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-aa6cb527c8a690d1, tb-12-botany-english-da5635aa-ch-6, Q18, PDF 153. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "19": [
+            "Matching premises span PDF 137–138: I/II occur at the lower right of 137; III–V and the four answer rows continue at the upper left of 138. Retain both pages and printed “Diaonaea”; do not lose either column or turn Roman premises into MCQs.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q19, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "20": [
+            "Retain printed “Heritier” and the stated spiny-fruit claim; no correction from general botanical knowledge.",
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q20, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-bdb5d6f8604013b7, tb-12-botany-english-da5635aa-ch-6, Q20, PDF 154. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "21": [
+            "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q21, PDF 149, printed 143. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-a70eee4b6b59644a, tb-12-botany-english-da5635aa-ch-6, Q21, PDF 154. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ]
+        },
+        "preserveLineBreakQuestions": [
+          9,
+          10,
+          12,
+          19
+        ],
+        "pdfPagesInspected": [
+          3,
+          115,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140
+        ]
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "subject": "Bio-Botany",
+        "medium": "Tamil",
+        "volume": null,
+        "sourceFile": "12th_Std_Biology_Botany_TM_optimised.pdf",
+        "sourceSha256": "95a9480f472864af360aa5fc9552159ff76095ded7dbd7d0276c7a4a124b7fa5",
+        "chapterNumber": 6,
+        "chapterTitle": "சூழ்நிலையியல் கோட்பாடுகள்",
+        "chapterStartPdfPage": 124,
+        "chapterEndPdfPage": 151,
+        "pages": [
+          {
+            "page": 147,
+            "printedPage": 141,
+            "first": 1,
+            "last": 5,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85,
+            "contentLeftFraction": 0.5
+          },
+          {
+            "page": 148,
+            "printedPage": 142,
+            "first": 6,
+            "last": 14,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          },
+          {
+            "page": 149,
+            "printedPage": 143,
+            "first": 15,
+            "last": 21,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          }
+        ],
+        "inspectedEndingPages": [
+          150,
+          151
+        ],
+        "stopBeforeQuestion": 22,
+        "excludedItems": [
+          {
+            "numbers": [],
+            "page": 149,
+            "kind": "Q22 onward are descriptive questions, followed by glossary/learning links. Ordinary lesson paragraphs before Evaluation are excluded. No explicit one-mark allocation printed for this MCQ subset."
+          }
+        ],
+        "keyEvidence": "No question-specific printed answer key identified on the inspected Chapter 6 contents, exercise and chapter-ending pages. Answers remain unknown; this does not assert whole-book key absence.",
+        "diagramQuestions": [
+          9,
+          10,
+          12,
+          19
+        ],
+        "incompleteQuestions": [
+          9,
+          19
+        ],
+        "sourceWarnings": [
+          "Damaged Tamil PDF glyphs/spacing require complete teacher source-image transcription correction; raw source Unicode remains separate and is not automatically repaired."
+        ],
+        "subjectNeutral": true,
+        "optionLabelPattern": "(?:^|\\s)([அஆஇஈ])\\s*\\)",
+        "sectionHeading": "Evaluation — Chapter 6 book-back MCQs (mark allocation unspecified)",
+        "questionWarnings": {
+          "1": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q1, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "2": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q2, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "3": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q3, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "4": [
+            "Retain all four Tamil ecological statements and four distinct permutations; do not translate or correct them using the English edition.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q4, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "5": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q5, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "6": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q6, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "7": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q7, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "8": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q8, PDF 136, printed 130. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "9": [
+            "Tamil table choices under i/ii/iii require original-image verification. Preserve actual Tamil Holard/Echard/Chresard transliterations, option labels and order; raw glyph damage is unresolved.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q9, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "PDF text misreads the second source table label as another Tamil A (அ); the source image shows the second Tamil option position. Preserve the damaged extracted label separately; teacher must confirm the printed label and all table rows."
+          ],
+          "10": [
+            "Preserve the independent Tamil soil-size matching columns and four row choices. Their original numerical ranges and Tamil component names must not be copied from English.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q10, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "Tamil millimetre-unit glyphs are displaced/fragmented in extracted text; verify each printed numerical range and unit against the original table."
+          ],
+          "11": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q11, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "12": [
+            "Preserve the Tamil interaction premise table separately from the four lettered answer rows. Latin A/B/C/D and plus/minus/zero symbols require image comparison.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q12, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "13": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q13, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "14": [
+            "Q14 starts on PDF 148 but its four options continue at the top of PDF 149. Preserve both source pages and all Tamil scientific-name transliterations.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q14, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "15": [
+            "The printed parenthetical word is “pedagensis”, unlike English “Pedogenesis”; preserve the edition-specific source spelling and raw damaged Tamil.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q15, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "16": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q16, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "17": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q17, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "18": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q18, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "19": [
+            "Five Roman-labelled interaction premises and five Roman-labelled examples precede a separate four-choice permutation table. Preserve the actual Tamil source without reconstructing a translated English table.",
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q19, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+            "The extracted fifth example label is another iv), while the source image shows the fifth Roman example position. Preserve raw extracted label and require teacher transcription/row alignment; do not silently fix to v)."
+          ],
+          "20": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q20, PDF 138, printed 132. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ],
+          "21": [
+            "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q21, PDF 138, printed 132. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence."
+          ]
+        },
+        "preserveLineBreakQuestions": [
+          9,
+          10,
+          12,
+          19
+        ],
+        "printedOptionLabels": {
+          "9": [
+            "அ",
+            "அ",
+            "இ",
+            "ஈ"
+          ]
+        },
+        "pdfPagesInspected": [
+          3,
+          124,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152
+        ]
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "subject": "Basic Electrical Engineering",
+        "medium": "English",
+        "volume": null,
+        "sourceFile": "12th_Std_Basic_Electrical_Enginering_EM_optimised.pdf",
+        "sourceSha256": "658ff33459fc8fc03904fd0a1d4cb743835fb8b6daf06101d064de12dd46dd35",
+        "chapterNumber": 6,
+        "chapterTitle": "Electrical measuring instruments",
+        "chapterStartPdfPage": 94,
+        "chapterEndPdfPage": 110,
+        "pages": [
+          {
+            "page": 107,
+            "printedPage": 99,
+            "first": 1,
+            "last": 8,
+            "contentTopFraction": 0.21,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          },
+          {
+            "page": 108,
+            "printedPage": 100,
+            "first": 9,
+            "last": 17,
+            "contentTopFraction": 0.07,
+            "layout": "two-column",
+            "contentBottomPoints": 85
+          }
+        ],
+        "inspectedEndingPages": [
+          109,
+          110
+        ],
+        "stopBeforeQuestion": null,
+        "excludedItems": [
+          {
+            "numbers": [],
+            "page": 109,
+            "kind": "Parts B/C/D on PDF 109 and references on PDF 110 are not MCQs. Ordinary lesson example on PDF 99 is outside the bounded section and retained only as a prior raw held record."
+          }
+        ],
+        "keyEvidence": "No question-specific printed answer key identified on the inspected Chapter 6 contents, exercise and chapter-ending pages. Answers remain unknown; this does not assert whole-book key absence.",
+        "diagramQuestions": [],
+        "incompleteQuestions": [],
+        "sourceWarnings": [
+          "Original ecology/electrical wording, scientific names, symbols, units and table order require individual source verification; no inferred answers or silent source corrections."
+        ],
+        "subjectNeutral": true,
+        "optionLabelPattern": "(?:^|\\s)([a-d])\\s*\\)",
+        "sectionHeading": "Evaluation — Part A — Choose the correct answer (1 Marks)",
+        "questionWarnings": {
+          "2": [
+            "Retain all four printed alternatives deflecting / controlling / damping / recording, even if subject knowledge suggests more than one essential system. No inferred answer."
+          ],
+          "4": [
+            "Choices C/D continue at top right of PDF 107; preserve DC Measurement / AC measurement / DC/AC measurement / frequency measurement exactly."
+          ],
+          "6": [
+            "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-basic-electrical-engineering-english-13c7fc7b-6027acc50eed1747, tb-12-basic-electrical-engineering-english-13c7fc7b-ch-10, Q9, PDF 181. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer."
+          ],
+          "7": [
+            "Preserve distinct alternatives “pointer will not move at all” and “instrument will indicate zero”; potential conceptual ambiguity requires teacher review."
+          ],
+          "8": [
+            "Q8 starts at the lower right of PDF 107; all four choices continue at upper left of PDF 108. Preserve shunt/multiplier order and both source pages."
+          ],
+          "13": [
+            "Choices C/D continue at the top of the right column on PDF 108; retain voltage/current/both/none moving-coil wording."
+          ],
+          "14": [
+            "Preserve low / medium / high insulation resistance / power options; no fabricated resistance value, scale or diagram."
+          ],
+          "15": [
+            "Preserve the permanent magnet DC generator wording and capitalization of AC Generator; no numerical rating or circuit is present."
+          ]
+        },
+        "preserveLineBreakQuestions": [],
+        "endAtLastPage": true,
+        "sectionEndPattern": "(?!)",
+        "pdfPagesInspected": [
+          7,
+          94,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111
+        ]
+      }
+    ],
+    "files": [
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-106.png",
+        "sha256": "170dbea25ce1fb8b2e0c4c3c8efca8f9328a3ae149ba0aec7ab33e828173d8b9"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-106.txt",
+        "sha256": "0fa2d901b5561163305f93b1e93dedb9586511febe64b2d96108b1bca92d8976"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-107.png",
+        "sha256": "08de0647b596e9ca7032e9385dc9ca01c8f31d4301e21f2748869743d2948918"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-107.txt",
+        "sha256": "9d33bb246132beede04d1769b2c19ccb481675f4d68fa838997e990c369c50ac"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-108.png",
+        "sha256": "a76a6acb184c0b9be921127d3e795b4e5c5bcec1373d70a7f9e9c8561c70e435"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-108.txt",
+        "sha256": "197c204d6f2559cf1efb37858931c5ebc4a556b8c648ada0d4520d9667f2b785"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-109.png",
+        "sha256": "e4790111267fa944848caaf4124fe405e39b18c9530e555056f126773ee67ef0"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-109.txt",
+        "sha256": "6a84ee0694569c92c67c59783b2c3f1687754b2c1957b348991cc3b18e6653b3"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-110.png",
+        "sha256": "a7a52c65c8a5be419d398743cefd75f16a76f1d6d1ada009afda5ab325e2e7ed"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-110.txt",
+        "sha256": "d56f16ba573ca1df6fe7ac7eb6d8c4d4549ddc04051db5c7d80dd3aed747d0dc"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-111.png",
+        "sha256": "ae31a3418c9c60ba95859ca8ef9a85111bc99ab7dd27028e65485054ee012de0"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-111.txt",
+        "sha256": "f20b10a564cd01de49b62cbfdc5580e11b6b77892feb41ac04ac7031d684bd64"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-7.png",
+        "sha256": "fdaeba27e5253b69331c6e28ea9dd11d3304ad1b95aea46c4c9ddf5609df3377"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-7.txt",
+        "sha256": "dbbc13d78d963c57b1001009ef0f9cc4273988190c8602809fc082b4728ef490"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-94.png",
+        "sha256": "560344bd6a7aab5fe588026374ab6e6c3d74950fef7732a8b4452e485263432d"
+      },
+      {
+        "file": ".local/science-ch6-source/12-basic-electrical-engineering-english-13c7fc7b-pdf-94.txt",
+        "sha256": "eed7e0ac0d119e467961cec760b0c58a41f9a09526a048e0c0413dfaa78f1674"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-115.png",
+        "sha256": "2322d4d311506bc10e62dccd5d8f1a0593271236b86ac12587f2949686affef5"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-115.txt",
+        "sha256": "55566eceecc1942cd7973a636d48eb7a9d9b8aa42a9d1421cc6953de0ef84022"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-135.png",
+        "sha256": "f1c4454eff47ab29507701b580d02c79c3ca1408a3e9ea50b391c63bfd4986b8"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-135.txt",
+        "sha256": "63877b25f153756f9919d5f35100b04f6b77a74dca0523d9fafeb42b78eb991c"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-136.png",
+        "sha256": "e2b62019b3dc9a79e525dfed5e05bcbfd027b276aa627fc508eb6aa79a154d2d"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-136.txt",
+        "sha256": "ae79f0b3bf58048e48b1308feb12a28776df150988f9a4fe4a8a89e6f006aa5b"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-137.png",
+        "sha256": "22ebd5d17afe00928f5a89fa29e79724846bce80b2dfe703460cd16df7c6662c"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-137.txt",
+        "sha256": "11c2634682534192e05e36f1dbfb17eb837cfccabf5f00952a6f8710e9eb3bbe"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-138.png",
+        "sha256": "90fcc8915b3fa1c862ef54a99f88915b388344371f18782e9dc712550eee6b11"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-138.txt",
+        "sha256": "bf10f0825634936ffdb1f788934cc43b0b704d7ff89037cabe8d1a8e1faf2d74"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-139.png",
+        "sha256": "a296d14d14b022ad8e08914e0a61556a0d6afcb107afb3ce4910b6ddebcc3440"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-139.txt",
+        "sha256": "821984437fe98516168af3977975d71ff36499740dc2271bdc2eea350e6d4704"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-140.png",
+        "sha256": "9145d009cfce2da6f577063496992276319802f20bd7ff70e23f2140a93192ae"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-140.txt",
+        "sha256": "1dcadf605a4048a3f4413770882cd94cfb52bef3112df5fe0344e41cc3863ca5"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-3.png",
+        "sha256": "7bd98a086c544c3111f0ffddd1815cbb27ac0aee78b509c69cb709e60637b2d9"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-english-f15d4524-pdf-3.txt",
+        "sha256": "ad524f478e22c4f8446f09b2bd5ba516886f429b262e9fc106525a93c02c4361"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-124.png",
+        "sha256": "838760aada8e31f1c24232f53e41d77b1f64442941b63c22f086af6c8829d51e"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-124.txt",
+        "sha256": "5938ded5e0e8c4e6ba6d3516d7b54b4469c74a26c03f5f93edb318437750e6ee"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-143.txt",
+        "sha256": "433fdc175e9f079478e997b4132bed7977575d71ebf0e826e357e967c0c092bc"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-144.txt",
+        "sha256": "554c47c5360908879c172ed0644deafd1d397fa6caee1fd1f1e24e88cb871b9f"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-145.txt",
+        "sha256": "34b615eb6b8b61a29516521951c24dc0abba6c778807c611b644722dd28afdc4"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-146.png",
+        "sha256": "1f84ea2139d70258a2dfba6638b66e73d33b360f5ea7b98f23dd277808a6c668"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-146.txt",
+        "sha256": "195844f57593a5fb8f1530bc4161bae232dd9429364d51d58b4205932879a615"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-147.png",
+        "sha256": "7873d384e05ddc55ad371e6f88ee771a7e19140bc8f6d503924cae8e72b959aa"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-147.txt",
+        "sha256": "c29410e5276ed9a2fc6a2c65798308a8638fb40ad99650344951dedabbcb5717"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-148.png",
+        "sha256": "a447853059c48d46953400c0f90c07f7069e2f28801ecbe20f306ef3e658d8e2"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-148.txt",
+        "sha256": "74a8960812f10ff59be561b5b03984f16b69e85b96947380c63d32fb4648a55c"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-149.png",
+        "sha256": "71b170405d2b0e80a578e799da9c6b0cadc00ef2de3e585d67b200241cd7700d"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-149.txt",
+        "sha256": "59a9fe933556b9aa5f0beb06897583b431084b52a8fc39584a67c8c1e66d2cdb"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-150.png",
+        "sha256": "1a807ceb91fb6733186d099cfc03e681825ebf47d9103c2ddc081b822062fe64"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-150.txt",
+        "sha256": "0f216ecd8a238196ea4bffe8bc5e9b720590dd77b528d60f24c8594a91885fdf"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-151.png",
+        "sha256": "7a7340c08e95dfbaeb4f57ce545644394a8bf92bc8ae96ba04113aff4866a7f9"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-151.txt",
+        "sha256": "e1fd8faaf997c3e967c89fa21fd88bdad7a62e53fdd15b6d0b7ed3131be33b1b"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-152.png",
+        "sha256": "c6c44409b76b9ad2f14e596c0da7901f2a1584022fc31f9b4ecfd6b35e535e96"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-152.txt",
+        "sha256": "72ac6f0e496901c4486be3efd2f84dd328554e570b81a0f8ffd9cc18b49304d3"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-153.txt",
+        "sha256": "50730d0e41142d2e9ffda486ad6f477c6318fcd63e16e1dc6ada2b0264b8d39c"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-3.png",
+        "sha256": "65708d318ea0da2801ac746227a9828732c859e94761831586bfea29f0ee8d59"
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-3.txt",
+        "sha256": "3c87a1634d50eb169d3086b8a77d6a41ef917ae95f859f606210c063f59c9041"
+      }
+    ],
+    "method": "Original contents, chapter headings, complete MCQ page images, next descriptive boundary, glossary/references, next chapter; fresh PDF text compared to original cache; printed footers inspected. Intervening ordinary lesson pages were not fully transcribed.",
+    "renderedPageCount": 25,
+    "textFileCount": 29,
+    "preliminaryTextOnlyLeads": [
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-143.txt",
+        "sha256": "433fdc175e9f079478e997b4132bed7977575d71ebf0e826e357e967c0c092bc",
+        "visuallyInspected": false
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-144.txt",
+        "sha256": "554c47c5360908879c172ed0644deafd1d397fa6caee1fd1f1e24e88cb871b9f",
+        "visuallyInspected": false
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-145.txt",
+        "sha256": "34b615eb6b8b61a29516521951c24dc0abba6c778807c611b644722dd28afdc4",
+        "visuallyInspected": false
+      },
+      {
+        "file": ".local/science-ch6-source/12-bio-botany-tamil-51160855-pdf-153.txt",
+        "sha256": "50730d0e41142d2e9ffda486ad6f477c6318fcd63e16e1dc6ada2b0264b8d39c",
+        "visuallyInspected": false
+      }
+    ]
+  },
+  "batch": {
+    "occurrences": 59,
+    "uniqueIds": 59,
+    "uniqueExactSignatures": 59,
+    "reusedIds": 54,
+    "newSavedIds": 5,
+    "printedKeyMatches": 0,
+    "unknownAnswers": 59,
+    "held": 59,
+    "reviewed": 0,
+    "approved": 0,
+    "rejected": 0,
+    "published": 0,
+    "tamilCorrectionRequired": 21,
+    "fourNonemptyChoicePositions": 59,
+    "completeTextOptionMappings": 56,
+    "incompleteMappings": [
+      {
+        "id": "textbook-q-12-bio-botany-english-f15d4524-cc6556a9c72d1868",
+        "bookId": "12-bio-botany-english-f15d4524",
+        "number": 1,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Source transcription, punctuation, statements, matching tables and all options require individual teacher verification",
+          "Original ecology/electrical wording, scientific names, symbols, units and table order require individual source verification; no inferred answers or silent source corrections.",
+          "Printed option A reads Individual organism → Population Landscape → Ecosystem, omitting an arrow between Population and Landscape. Preserve the visible source gap; do not insert a guessed relationship.",
+          "Cross-medium source correspondence: 12-bio-botany-tamil-51160855 Chapter 6 Q1, PDF 147, printed 141. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+          "Exact normalized stem/ordered-choice overlap with raw candidate textbook-q-12-botany-english-da5635aa-e3c95dc3321d23ed, tb-12-botany-english-da5635aa-ch-6, Q1, PDF 152. Alternate page has not been visually verified in this batch; retain separate provenance, do not merge or infer an answer.",
+          "Tamil counterpart prints its own hierarchy wording/arrows; do not import a missing English separator from the other edition.",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-bounded-12-bio-botany-tamil-51160855-9c73b38f888cf12a",
+        "bookId": "12-bio-botany-tamil-51160855",
+        "number": 9,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Damaged Tamil PDF glyphs/spacing require complete teacher source-image transcription correction; raw source Unicode remains separate and is not automatically repaired.",
+          "Tamil table choices under i/ii/iii require original-image verification. Preserve actual Tamil Holard/Echard/Chresard transliterations, option labels and order; raw glyph damage is unresolved.",
+          "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q9, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+          "PDF text misreads the second source table label as another Tamil A (அ); the source image shows the second Tamil option position. Preserve the damaged extracted label separately; teacher must confirm the printed label and all table rows."
+        ]
+      },
+      {
+        "id": "textbook-q-12-bio-botany-tamil-51160855-923f4b49db66f971",
+        "bookId": "12-bio-botany-tamil-51160855",
+        "number": 19,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "Damaged Tamil PDF glyphs/spacing require complete teacher source-image transcription correction; raw source Unicode remains separate and is not automatically repaired.",
+          "Five Roman-labelled interaction premises and five Roman-labelled examples precede a separate four-choice permutation table. Preserve the actual Tamil source without reconstructing a translated English table.",
+          "Cross-medium source correspondence: 12-bio-botany-english-f15d4524 Chapter 6 Q19, PDF 137, printed 131. Independently compared source topic/number; wording, spellings, tables and notation remain edition-specific. No translation, identity merge or answer evidence.",
+          "The extracted fifth example label is another iv), while the source image shows the fifth Roman example position. Preserve raw extracted label and require teacher transcription/row alignment; do not silently fix to v).",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      }
+    ],
+    "imageDependent": 8,
+    "crossMediumCorrespondences": [
+      {
+        "tamil": 1,
+        "english": 1
+      },
+      {
+        "tamil": 2,
+        "english": 2
+      },
+      {
+        "tamil": 3,
+        "english": 3
+      },
+      {
+        "tamil": 4,
+        "english": 4
+      },
+      {
+        "tamil": 5,
+        "english": 5
+      },
+      {
+        "tamil": 6,
+        "english": 6
+      },
+      {
+        "tamil": 7,
+        "english": 7
+      },
+      {
+        "tamil": 8,
+        "english": 8
+      },
+      {
+        "tamil": 9,
+        "english": 9
+      },
+      {
+        "tamil": 10,
+        "english": 10
+      },
+      {
+        "tamil": 11,
+        "english": 11
+      },
+      {
+        "tamil": 12,
+        "english": 12
+      },
+      {
+        "tamil": 13,
+        "english": 13
+      },
+      {
+        "tamil": 14,
+        "english": 14
+      },
+      {
+        "tamil": 15,
+        "english": 15
+      },
+      {
+        "tamil": 16,
+        "english": 16
+      },
+      {
+        "tamil": 17,
+        "english": 17
+      },
+      {
+        "tamil": 18,
+        "english": 18
+      },
+      {
+        "tamil": 19,
+        "english": 19
+      },
+      {
+        "tamil": 20,
+        "english": 20
+      },
+      {
+        "tamil": 21,
+        "english": 21
+      }
+    ],
+    "crossRecordExactGroups": [
+      {
+        "signature": "8a2b324772713650ac40b873a66a3c139e682e4883a364a2a77a9d2412d2b5b2",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-355da38b2cbc9950",
+            "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+            "chapterId": "tb-12-basic-electrical-engineering-english-13c7fc7b-ch-6",
+            "questionNumber": 6,
+            "pdfPage": 107
+          },
+          {
+            "candidateId": "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-6027acc50eed1747",
+            "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+            "chapterId": "tb-12-basic-electrical-engineering-english-13c7fc7b-ch-10",
+            "questionNumber": 9,
+            "pdfPage": 181
+          }
+        ]
+      },
+      {
+        "signature": "a310a31f2c4569fdd850f2d1a38579121191bb3214409f384fde73c9de4c72a7",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-b7458af8d11ede56",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 5,
+            "pdfPage": 136
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-1839dcbeaaa2ba8e",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 5,
+            "pdfPage": 152
+          }
+        ]
+      },
+      {
+        "signature": "547c40e2a3c69bf2636249de794d1efaa00abce1081e7b17629f2ef0acf6b025",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-debbe217291a69f3",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 6,
+            "pdfPage": 136
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-abc6cfbe1ffec1ac",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 6,
+            "pdfPage": 152
+          }
+        ]
+      },
+      {
+        "signature": "50c9b367ccbe1a9e953a3f83cec1e82b2923ae1530e33515523a21ec8b4aba81",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-3a576fd1aaebe8ea",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 8,
+            "pdfPage": 136
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-612cdace234d3bdf",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 8,
+            "pdfPage": 152
+          }
+        ]
+      },
+      {
+        "signature": "e1dd6df23a8b6eb9e3f7f4005035eb84ac72aa3ab7ccd5243342a7c48333c5c2",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-cc6556a9c72d1868",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 1,
+            "pdfPage": 136
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-e3c95dc3321d23ed",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 1,
+            "pdfPage": 152
+          }
+        ]
+      },
+      {
+        "signature": "c52429fb020f4ddae07292d150c8b9bf031c899e4e4e994426c4146941b274e4",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-b791f91918219995",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 2,
+            "pdfPage": 136
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-5805c4cdcf5eb6f3",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 2,
+            "pdfPage": 152
+          }
+        ]
+      },
+      {
+        "signature": "a14b7851aaa98dac6dc3aa525a4fa5a0ea1b94e2d9a6b7ef9daf82c545f75742",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-1cf67c4e038661fc",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 3,
+            "pdfPage": 136
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-7f337c0e8ef455fd",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 3,
+            "pdfPage": 152
+          }
+        ]
+      },
+      {
+        "signature": "6ab63d128c6fc09ea49464fdbb3d6afcd0f29674384f69f4d57d02911605873f",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-d5682ed0dcb318df",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 13,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-39acd2dea8f48d08",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 13,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "4cc0b284e6bea14626495ef56dd1f9b5ec43371ec80264be9157c82e5a59dab4",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-b56f498a6b7fd444",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 14,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-cfb087c8fb005ea3",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 14,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "fe559852a607de26e1396ff7fa178288e9f10c978c67cca18a9257379c5cbd23",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-a0c96ebfd1cbf77a",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 15,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-788d592442b9002f",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 15,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "9ac94968e34c22905dc2b196ee42006e4a668a9190720586b45dbc015c2b2048",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-bd6df0f97e52fc39",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 16,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-a25814783a45f653",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 16,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "87791b9e9f0fa9f2f3355aa97cee7385e7d80a92224855ec369cd9179f665cbc",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-dc0a028f51aadb96",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 17,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-d50606a106602202",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 17,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "74a57591633c3d81153f4464916d2a1d61c6568ecf7c49a1d67e94ea14863b71",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-392ac8f4f7569747",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 18,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-aa6cb527c8a690d1",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 18,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "89170ee07097364c1a9d2b93d0771cd8b338faac6e16d7dc63f8b18f58ea1cd6",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-db0a152cb9a77e26",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 9,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-f2209cec8441b57e",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 9,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "4b0f3de5d0ae809de0ed63d9eaf8ae842995fddd249fd5f9ee2ec131674a2837",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-8dc28e28b7edda69",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 10,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-a96f0c572dd00fdc",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 10,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "abe0fa8aaaed4a39f0b9456b826741a74c171ecc5f85f92fbd6ccfd20aa26e79",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-e9953fe4b562c377",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 11,
+            "pdfPage": 137
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-c86da4aef752770b",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 11,
+            "pdfPage": 153
+          }
+        ]
+      },
+      {
+        "signature": "e9eb9a85b76a916ec05a4b73a1273698eeba79ffb8ccd574832810bf604b2330",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-1b5976ee7c179bea",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 20,
+            "pdfPage": 138
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-bdb5d6f8604013b7",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 20,
+            "pdfPage": 154
+          }
+        ]
+      },
+      {
+        "signature": "31f86d974e4789e6e8abda1e660314b7c57757e82411c3eaf556d01526bd4356",
+        "sources": [
+          {
+            "candidateId": "textbook-q-12-bio-botany-english-f15d4524-9d149eef9567b3f8",
+            "bookId": "12-bio-botany-english-f15d4524",
+            "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+            "questionNumber": 21,
+            "pdfPage": 138
+          },
+          {
+            "candidateId": "textbook-q-12-botany-english-da5635aa-a70eee4b6b59644a",
+            "bookId": "12-botany-english-da5635aa",
+            "chapterId": "tb-12-botany-english-da5635aa-ch-6",
+            "questionNumber": 21,
+            "pdfPage": 154
+          }
+        ]
+      }
+    ],
+    "batches": [
+      {
+        "id": "source-12-bio-botany-english-f15d4524-ch-6",
+        "title": "Bio-Botany · English · Chapter 6: Principles of Ecology",
+        "questions": 21,
+        "reused": 17,
+        "new": 4,
+        "candidateIds": [
+          "textbook-q-12-bio-botany-english-f15d4524-cc6556a9c72d1868",
+          "textbook-q-12-bio-botany-english-f15d4524-b791f91918219995",
+          "textbook-q-12-bio-botany-english-f15d4524-1cf67c4e038661fc",
+          "textbook-bounded-12-bio-botany-english-f15d4524-6858d196a4c62f05",
+          "textbook-q-12-bio-botany-english-f15d4524-b7458af8d11ede56",
+          "textbook-q-12-bio-botany-english-f15d4524-debbe217291a69f3",
+          "textbook-bounded-12-bio-botany-english-f15d4524-71fa15f56c59d7dd",
+          "textbook-q-12-bio-botany-english-f15d4524-3a576fd1aaebe8ea",
+          "textbook-q-12-bio-botany-english-f15d4524-db0a152cb9a77e26",
+          "textbook-q-12-bio-botany-english-f15d4524-8dc28e28b7edda69",
+          "textbook-q-12-bio-botany-english-f15d4524-e9953fe4b562c377",
+          "textbook-bounded-12-bio-botany-english-f15d4524-5ad2eb366652f852",
+          "textbook-q-12-bio-botany-english-f15d4524-d5682ed0dcb318df",
+          "textbook-q-12-bio-botany-english-f15d4524-b56f498a6b7fd444",
+          "textbook-q-12-bio-botany-english-f15d4524-a0c96ebfd1cbf77a",
+          "textbook-q-12-bio-botany-english-f15d4524-bd6df0f97e52fc39",
+          "textbook-q-12-bio-botany-english-f15d4524-dc0a028f51aadb96",
+          "textbook-q-12-bio-botany-english-f15d4524-392ac8f4f7569747",
+          "textbook-bounded-12-bio-botany-english-f15d4524-5208b5ed3e3a04a8",
+          "textbook-q-12-bio-botany-english-f15d4524-1b5976ee7c179bea",
+          "textbook-q-12-bio-botany-english-f15d4524-9d149eef9567b3f8"
+        ],
+        "decisionFile": ".local/teacher-review/physics-unit1-workflow/source-12-bio-botany-english-f15d4524-ch-6/decisions.json"
+      },
+      {
+        "id": "source-12-bio-botany-tamil-51160855-ch-6",
+        "title": "Bio-Botany · Tamil · Chapter 6: சூழ்நிலையியல் கோட்பாடுகள்",
+        "questions": 21,
+        "reused": 20,
+        "new": 1,
+        "candidateIds": [
+          "textbook-q-12-bio-botany-tamil-51160855-dd138426b24877a5",
+          "textbook-q-12-bio-botany-tamil-51160855-5258aa620c64fdf7",
+          "textbook-q-12-bio-botany-tamil-51160855-eada93221495b77b",
+          "textbook-q-12-bio-botany-tamil-51160855-b9ee86b198b2bd6f",
+          "textbook-q-12-bio-botany-tamil-51160855-5fd699199565342a",
+          "textbook-q-12-bio-botany-tamil-51160855-6b3bd281665cd7a6",
+          "textbook-q-12-bio-botany-tamil-51160855-8f98947cad86f148",
+          "textbook-q-12-bio-botany-tamil-51160855-35729ae3f27f04fd",
+          "textbook-bounded-12-bio-botany-tamil-51160855-9c73b38f888cf12a",
+          "textbook-q-12-bio-botany-tamil-51160855-d31ad8816395d829",
+          "textbook-q-12-bio-botany-tamil-51160855-6e98a3041069c817",
+          "textbook-q-12-bio-botany-tamil-51160855-8c3ccffcec0980a5",
+          "textbook-q-12-bio-botany-tamil-51160855-bf3af060839f0440",
+          "textbook-q-12-bio-botany-tamil-51160855-8f95eb159bea9666",
+          "textbook-q-12-bio-botany-tamil-51160855-6eb00f2de9a5ff28",
+          "textbook-q-12-bio-botany-tamil-51160855-e7dbbac7dbb31b5f",
+          "textbook-q-12-bio-botany-tamil-51160855-fa52c01b2e8dff55",
+          "textbook-q-12-bio-botany-tamil-51160855-6200460c10f46338",
+          "textbook-q-12-bio-botany-tamil-51160855-923f4b49db66f971",
+          "textbook-q-12-bio-botany-tamil-51160855-eba077bf13634b00",
+          "textbook-q-12-bio-botany-tamil-51160855-ab2c529401270a35"
+        ],
+        "decisionFile": ".local/teacher-review/physics-unit1-workflow/source-12-bio-botany-tamil-51160855-ch-6/decisions.json"
+      },
+      {
+        "id": "source-12-basic-electrical-engineering-english-13c7fc7b-ch-6",
+        "title": "Basic Electrical Engineering · English · Chapter 6: Electrical measuring instruments",
+        "questions": 17,
+        "reused": 17,
+        "new": 0,
+        "candidateIds": [
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-c7fd7236ea8de035",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-7b4c507992d62853",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-857dcec5f7e1cc53",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-5638b7f0f3bfbd85",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-d7aee0497c58a19d",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-355da38b2cbc9950",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-bc81b89408d4438a",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-a8ce1fac63d5b6fe",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-c3ffec6a632c97fb",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-eaa5df86e255f785",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-2f72652573d0fb06",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-3782fa357ea827da",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-95eba55658a992aa",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-f251da8ee1d3b968",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-16e6974cd8d811ab",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-3a37c88661a11382",
+          "textbook-q-12-basic-electrical-engineering-english-13c7fc7b-362c3b3d5d12580b"
+        ],
+        "decisionFile": ".local/teacher-review/physics-unit1-workflow/source-12-basic-electrical-engineering-english-13c7fc7b-ch-6/decisions.json"
+      }
+    ]
+  },
+  "inventory": {
+    "pdfs": 82,
+    "checksumVerified": 82,
+    "cachedPages": 24088,
+    "detectedEntries": 856,
+    "zeroPublished": 733,
+    "boundedSections": 55,
+    "inspectionBacklog": 801,
+    "saved": 17313,
+    "active": 12722,
+    "inactive": 4591,
+    "proposals": 699,
+    "fullCollectionComplete": false
+  },
+  "review": {
+    "batches": 56,
+    "pending": 714,
+    "approved": 0,
+    "needsCorrection": 0,
+    "rejected": 0,
+    "reviewed": 0,
+    "historyEvents": 0,
+    "physicsQ10": {
+      "id": "textbook-q-12-physics-tamil-v1-c1623725-4bb323c633421f60",
+      "complete": false,
+      "decision": "pending"
+    },
+    "previousFiveChoice": [
+      {
+        "id": "textbook-bounded-12-bio-botany-english-f15d4524-90085f519f7d06ea",
+        "options": 5,
+        "held": true
+      },
+      {
+        "id": "textbook-bounded-12-bio-botany-tamil-51160855-281e0d48b2bebe2b",
+        "options": 5,
+        "held": true
+      }
+    ]
+  },
+  "studentReady": {
+    "count": 995,
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "snapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "byMedium": {
+      "English": 995,
+      "Tamil": 0
+    }
+  },
+  "excludedLegacySamples": [
+    "q-bot-101",
+    "q-cs-101",
+    "q-cs-102",
+    "q-cs-103",
+    "q-cs-104",
+    "q-cs-105",
+    "q-cs-701",
+    "q-cs-702",
+    "q-cs-703",
+    "q-zoo-201",
+    "q-zoo-202",
+    "q-zoo-203"
+  ],
+  "practiceHistory": {
+    "snapshot": ".local/followup-platform-after-snapshot.json",
+    "snapshotAt": "2026-10-15T08:51:15.976Z",
+    "sessions": 13,
+    "sha256": "f629b6e3ab4279fdd9bfab9f3edd8e736b749707d9538b5cabe8e20d73898a1b"
+  },
+  "sourceAudit": {
+    "checkedAt": "2026-10-20T08:09:19.633Z",
+    "books": 82,
+    "pagesChecked": 713,
+    "mismatches": 0,
+    "method": "Fresh PDF.js text extraction compared exactly to saved cache for every identified exercise-start page, PDF page 8, final page and retained Electronics answer-key pages. This is a sample text/provenance check, not a visual/academic verification of every page or question.",
+    "checks": [
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 38,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 77,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 118,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 139,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 223,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 263,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 293,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 326,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 363,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-english-c0f4ded3",
+        "page": 368,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 23,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 77,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 139,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 227,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 293,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 308,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 363,
+        "matched": true
+      },
+      {
+        "bookId": "12-accountancy-tamil-6e7f5476",
+        "page": 368,
+        "matched": true
+      },
+      {
+        "bookId": "12-advanced-tamil-tamil-6679b417",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-advanced-tamil-tamil-6679b417",
+        "page": 288,
+        "matched": true
+      },
+      {
+        "bookId": "12-agricultural-science-tamil-1d871464",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-agricultural-science-tamil-1d871464",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 30,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 44,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 55,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 73,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 94,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 110,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 125,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 138,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 157,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 174,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-english-cb18c74c",
+        "page": 184,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-tamil-e1982513",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-tamil-e1982513",
+        "page": 45,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-tamil-e1982513",
+        "page": 76,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-tamil-e1982513",
+        "page": 92,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-tamil-e1982513",
+        "page": 151,
+        "matched": true
+      },
+      {
+        "bookId": "12-auditing-tamil-e1982513",
+        "page": 200,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 19,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 34,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 59,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 77,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 95,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 127,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 149,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 170,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 188,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 223,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+        "page": 280,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+        "page": 38,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+        "page": 134,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+        "page": 239,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+        "page": 288,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 24,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 42,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 66,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 92,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 115,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 141,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 161,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 171,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-english-fc2d4128",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-tamil-122addb5",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-tamil-122addb5",
+        "page": 189,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-tamil-122addb5",
+        "page": 250,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-civil-engineering-tamil-122addb5",
+        "page": 280,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 24,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 42,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 58,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 78,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 91,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 107,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 122,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 137,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 157,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 174,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "page": 216,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+        "page": 132,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+        "page": 170,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+        "page": 191,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+        "page": 232,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 37,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 54,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 56,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 87,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 120,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 122,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 142,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 162,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 185,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 203,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 232,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 257,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-english-983efd90",
+        "page": 304,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+        "page": 142,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+        "page": 193,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+        "page": 222,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+        "page": 306,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+        "page": 352,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 43,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 69,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 89,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 111,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 132,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 140,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 153,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 168,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 177,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 191,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+        "page": 224,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-tamil-49be34e2",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-tamil-49be34e2",
+        "page": 48,
+        "matched": true
+      },
+      {
+        "bookId": "12-basic-mechanical-engineering-tamil-49be34e2",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 32,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 52,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 71,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 95,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 111,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 136,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 157,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 174,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 187,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 207,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "page": 56,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "page": 120,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "page": 202,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 16,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 36,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 50,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 63,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 92,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 112,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 142,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 153,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 167,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 186,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 206,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 224,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-english-7e848813",
+        "page": 264,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 56,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 72,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 131,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 166,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 197,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 220,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 246,
+        "matched": true
+      },
+      {
+        "bookId": "12-bio-zoology-tamil-2631f8e3",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 30,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 65,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 97,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 120,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 144,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 192,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 213,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 233,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 269,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-english-dfd867ac",
+        "page": 304,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-tamil-910cca11",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-tamil-910cca11",
+        "page": 103,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-tamil-910cca11",
+        "page": 125,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-tamil-910cca11",
+        "page": 151,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-tamil-910cca11",
+        "page": 284,
+        "matched": true
+      },
+      {
+        "bookId": "12-biochemistry-tamil-910cca11",
+        "page": 320,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 36,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 57,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 85,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 111,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 128,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 152,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 182,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 204,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 219,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 252,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-english-da5635aa",
+        "page": 304,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-tamil-37a9b740",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-tamil-37a9b740",
+        "page": 60,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-tamil-37a9b740",
+        "page": 120,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-tamil-37a9b740",
+        "page": 137,
+        "matched": true
+      },
+      {
+        "bookId": "12-botany-tamil-37a9b740",
+        "page": 320,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 26,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 59,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 81,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 105,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 126,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 147,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 175,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 201,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 235,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 266,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-english-5710bd23",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+        "page": 130,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+        "page": 144,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+        "page": 278,
+        "matched": true
+      },
+      {
+        "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 30,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 63,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 106,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 135,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 207,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 236,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v1-2d0e27cb",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 32,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 66,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 104,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 143,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 193,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 233,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 298,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-english-v2-0010d706",
+        "page": 328,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v1-5fcd65a9",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v1-5fcd65a9",
+        "page": 32,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v1-5fcd65a9",
+        "page": 285,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v1-5fcd65a9",
+        "page": 328,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v2-52192807",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v2-52192807",
+        "page": 33,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v2-52192807",
+        "page": 49,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v2-52192807",
+        "page": 285,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v2-52192807",
+        "page": 315,
+        "matched": true
+      },
+      {
+        "bookId": "12-chemistry-tamil-v2-52192807",
+        "page": 344,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 22,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 27,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 33,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 39,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 45,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 54,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 70,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 79,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 85,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 90,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 100,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 110,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 118,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 126,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 136,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 148,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 156,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 163,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 174,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 182,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 196,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 210,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 226,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 234,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 243,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 254,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 271,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 281,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-english-4f83c61b",
+        "page": 288,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-tamil-d9e013d8",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-tamil-d9e013d8",
+        "page": 46,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-tamil-d9e013d8",
+        "page": 55,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-tamil-d9e013d8",
+        "page": 60,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-tamil-d9e013d8",
+        "page": 175,
+        "matched": true
+      },
+      {
+        "bookId": "12-commerce-tamil-d9e013d8",
+        "page": 288,
+        "matched": true
+      },
+      {
+        "bookId": "12-communicative-english-english-10e4b8ba",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-communicative-english-english-10e4b8ba",
+        "page": 192,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 21,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 60,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 88,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 101,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 109,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 115,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 122,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 130,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 137,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 150,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 166,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 196,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 205,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 226,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 243,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 256,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 267,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-627c1490",
+        "page": 304,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 21,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 60,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 88,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 101,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 109,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 115,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 122,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 130,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 137,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 150,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 166,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 196,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 205,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 226,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 243,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 256,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 267,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-english-ccd483a9",
+        "page": 304,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "page": 352,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 14,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 24,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 34,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 49,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 71,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 92,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 117,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 135,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 173,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 192,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 209,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 236,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 270,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 294,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 323,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-english-37bdae5b",
+        "page": 360,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 15,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 26,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 96,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 177,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 195,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 274,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 326,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-science-tamil-d5aa7dd4",
+        "page": 360,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 44,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 89,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 132,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 149,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 173,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 212,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-293bf656",
+        "page": 256,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 44,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 89,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 132,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 149,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 173,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 212,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-english-cf787554",
+        "page": 256,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-tamil-cff5867a",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-computer-technology-tamil-cff5867a",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 21,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 38,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 54,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 79,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 97,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 127,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 155,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 178,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 186,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 239,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 260,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 284,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-english-5418ce45",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-tamil-c7590e3f",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-tamil-c7590e3f",
+        "page": 131,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-tamil-c7590e3f",
+        "page": 217,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-tamil-c7590e3f",
+        "page": 301,
+        "matched": true
+      },
+      {
+        "bookId": "12-economics-tamil-c7590e3f",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-english-english-b9d1c4c3",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-english-english-b9d1c4c3",
+        "page": 141,
+        "matched": true
+      },
+      {
+        "bookId": "12-english-english-b9d1c4c3",
+        "page": 201,
+        "matched": true
+      },
+      {
+        "bookId": "12-english-english-b9d1c4c3",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+        "page": 264,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 29,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 52,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 84,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 117,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 141,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 152,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 169,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 205,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-english-111451e7",
+        "page": 264,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-tamil-e2061fb1",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-tamil-e2061fb1",
+        "page": 63,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-tamil-e2061fb1",
+        "page": 177,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-tamil-e2061fb1",
+        "page": 209,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-tamil-e2061fb1",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-food-service-management-tamil-e2061fb1",
+        "page": 328,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 42,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 88,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 103,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 112,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 144,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 200,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 220,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 247,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 271,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 289,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 297,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-english-5c87aafc",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 49,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 99,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 116,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 233,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 354,
+        "matched": true
+      },
+      {
+        "bookId": "12-general-nursing-tamil-b39f5ab1",
+        "page": 360,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 25,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 45,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 65,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 89,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 114,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 135,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 150,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 164,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-english-24059775",
+        "page": 216,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-tamil-ba849e46",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-tamil-ba849e46",
+        "page": 11,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-tamil-ba849e46",
+        "page": 125,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-tamil-ba849e46",
+        "page": 146,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-tamil-ba849e46",
+        "page": 162,
+        "matched": true
+      },
+      {
+        "bookId": "12-geography-tamil-ba849e46",
+        "page": 232,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 16,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 32,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 43,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 61,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 75,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 85,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 101,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 116,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 132,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 150,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 176,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 195,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 219,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 243,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 264,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-english-3cd2e4c2",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-tamil-3c88c869",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-tamil-3c88c869",
+        "page": 18,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-tamil-3c88c869",
+        "page": 250,
+        "matched": true
+      },
+      {
+        "bookId": "12-history-tamil-3c88c869",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 50,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 81,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 96,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 126,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 162,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 183,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 203,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 223,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-english-e5c3e008",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-tamil-0cbbe34e",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-tamil-0cbbe34e",
+        "page": 228,
+        "matched": true
+      },
+      {
+        "bookId": "12-home-science-tamil-0cbbe34e",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 56,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 101,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 135,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 174,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 223,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 284,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v1-e33ceed7",
+        "page": 304,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 58,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 91,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 143,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 222,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 253,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-english-v2-d4925ec0",
+        "page": 272,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+        "page": 61,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+        "page": 147,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v2-f8732624",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v2-f8732624",
+        "page": 61,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v2-f8732624",
+        "page": 95,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v2-f8732624",
+        "page": 150,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v2-f8732624",
+        "page": 235,
+        "matched": true
+      },
+      {
+        "bookId": "12-mathematics-tamil-v2-f8732624",
+        "page": 288,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 14,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 31,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 47,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 70,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 87,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 115,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 153,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 190,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 208,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 232,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 251,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 291,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-english-6a36a404",
+        "page": 320,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 45,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 153,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 233,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 253,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 289,
+        "matched": true
+      },
+      {
+        "bookId": "12-microbiology-tamil-a879259a",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 62,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 111,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 149,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 187,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 216,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 226,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 249,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 270,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 285,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 300,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-english-6c60782a",
+        "page": 344,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 64,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 132,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 287,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 303,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 322,
+        "matched": true
+      },
+      {
+        "bookId": "12-nursing-vocational-tamil-7f44a760",
+        "page": 360,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 23,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 73,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 87,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 102,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 115,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 128,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 147,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 166,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 179,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 195,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 208,
+        "matched": true
+      },
+      {
+        "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+        "page": 240,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 19,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 26,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 53,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 64,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 75,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 87,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 107,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 121,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 133,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 142,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+        "page": 208,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-tamil-241b6edf",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-tamil-241b6edf",
+        "page": 100,
+        "matched": true
+      },
+      {
+        "bookId": "12-office-management-secretaryship-typography-tamil-241b6edf",
+        "page": 224,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 79,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 126,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 197,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 266,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 290,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v1-1b1de8f8",
+        "page": 352,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 56,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 110,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 143,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 197,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 254,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 290,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-english-v2-0ce6704c",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v1-c1623725",
+        "page": 352,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v2-fb1fa4de",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v2-fb1fa4de",
+        "page": 57,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v2-fb1fa4de",
+        "page": 197,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v2-fb1fa4de",
+        "page": 290,
+        "matched": true
+      },
+      {
+        "bookId": "12-physics-tamil-v2-fb1fa4de",
+        "page": 312,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 22,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 47,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 68,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 89,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 112,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 137,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 165,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 193,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 214,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 254,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 282,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 307,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-english-db4a2e0c",
+        "page": 328,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 51,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 109,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 173,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 231,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 338,
+        "matched": true
+      },
+      {
+        "bookId": "12-political-science-tamil-5da94964",
+        "page": 360,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 34,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 76,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 105,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 129,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 154,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 182,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 207,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 245,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 258,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-english-1489a12e",
+        "page": 280,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-tamil-c1143d1d",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-tamil-c1143d1d",
+        "page": 83,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-tamil-c1143d1d",
+        "page": 164,
+        "matched": true
+      },
+      {
+        "bookId": "12-statistics-tamil-c1143d1d",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-tamil-tamil-7db1698f",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-tamil-tamil-7db1698f",
+        "page": 240,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 49,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 65,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 79,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 103,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 140,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 193,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 213,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 226,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 270,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 281,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-textile-technology-tamil-648797c8",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 25,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 40,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 54,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 64,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 82,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 106,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 113,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 133,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 157,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 173,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 183,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 203,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 221,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 230,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 240,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+        "page": 288,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 49,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 65,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 79,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 103,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 140,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 193,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 213,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 226,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 248,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 270,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 281,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 296,
+        "matched": true
+      },
+      {
+        "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+        "page": 336,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 16,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 36,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 50,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 65,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 95,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 117,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 134,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 152,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 163,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 181,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 201,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 224,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 242,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-english-788d2d32",
+        "page": 280,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 8,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 57,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 77,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 139,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 158,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 216,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 241,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 270,
+        "matched": true
+      },
+      {
+        "bookId": "12-zoology-tamil-3c154dab",
+        "page": 336,
+        "matched": true
+      }
+    ]
+  },
+  "extraction": {
+    "initial": [
+      {
+        "bookId": "12-bio-botany-english-f15d4524",
+        "added": 4
+      },
+      {
+        "bookId": "12-bio-botany-tamil-51160855",
+        "added": 1
+      },
+      {
+        "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+        "added": 0
+      }
+    ],
+    "rerunBooks": 82,
+    "rerunAddedIds": 0
+  },
+  "tests": {
+    "total": 181,
+    "passed": 181,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "focused": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "browser": {
+    "passed": 6
+  },
+  "checks": [
+    {
+      "name": "assets",
+      "exit": 0,
+      "log": ".local/science-ch6-assets.log",
+      "sha256": "1f2c4aa2701be686d774eb691bb2700e4f9b30d2c440e7ecc4cdc5e75e846ff8"
+    },
+    {
+      "name": "initialise",
+      "exit": 0,
+      "log": ".local/science-ch6-initialise.log",
+      "sha256": "ff0f20ba2eb22796e9dc13ef363cd9edc7088d2708778d87dce0031c7e3aba05"
+    },
+    {
+      "name": "focused",
+      "exit": 0,
+      "log": ".local/science-ch6-focused.log",
+      "sha256": "89e7415672ca037f3b19ef093ae5ef02bb680da17c567768b49a949815aa9b98"
+    },
+    {
+      "name": "rerun",
+      "exit": 0,
+      "log": ".local/science-ch6-rerun.log",
+      "sha256": "a4214df214f8a225ce0859e6991341e4839561637a56e997f07f48b65b74bed5"
+    },
+    {
+      "name": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/science-ch6-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "name": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/science-ch6-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "name": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/science-ch6-mcqs-systematic-audit.log",
+      "sha256": "2f530fe11e9c4ae8566a6b72a6d44170180c03a0d69df010133d28112692ee60"
+    },
+    {
+      "name": "mcqs-progress-audit",
+      "exit": 0,
+      "log": ".local/science-ch6-mcqs-progress-audit.log",
+      "sha256": "9480c9eb0debd411bf2d2638b892e038404a4639b27fd6aa11e0ad9d77ceccca"
+    },
+    {
+      "name": "mcqs-source-audit",
+      "exit": 0,
+      "log": ".local/science-ch6-mcqs-source-audit.log",
+      "sha256": "2c3b554f3c3023cd4fa87460ad322360bab960cbc71e49bb9edaf3fa66732913"
+    },
+    {
+      "name": "test",
+      "exit": 0,
+      "log": ".local/science-ch6-test.log",
+      "sha256": "0b0264d69c2a47ce860019394de8b1295ca118599cb12ee52b7b6ff1e16f22ae"
+    },
+    {
+      "name": "typecheck",
+      "exit": 0,
+      "log": ".local/science-ch6-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "exit": 0,
+      "log": ".local/science-ch6-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "exit": 0,
+      "log": ".local/science-ch6-build.log",
+      "sha256": "db5949936cab5cb4a67094b692db45036f1d659f223f1a630bf4a43c5515154b"
+    },
+    {
+      "name": "browser",
+      "exit": 0,
+      "log": ".local/science-ch6-browser.log",
+      "sha256": "89e02f3b5ebdc83ee20baa18f61725484a36b413c4162f6208b2d5e3b181aff4"
+    }
+  ],
+  "preservation": "docs/science-ch6-preservation.json",
+  "nextExtractionInventory": [
+    {
+      "id": "12-basic-electrical-engineering-english-13c7fc7b",
+      "subject": "Basic Electrical Engineering",
+      "title": "Basic Electrical Engineering",
+      "medium": "English",
+      "class": 12,
+      "volume": null,
+      "edition": null,
+      "sourceFile": "12th_Std_Basic_Electrical_Enginering_EM_optimised.pdf",
+      "sourceSha256": "658ff33459fc8fc03904fd0a1d4cb743835fb8b6daf06101d064de12dd46dd35",
+      "chapterId": "tb-12-basic-electrical-engineering-english-13c7fc7b-ch-7",
+      "chapterNumber": 7,
+      "provisionalChapterTitle": "Chapter 7",
+      "provisionalStartPdfPage": 111,
+      "provisionalExercisePdfPages": [
+        122,
+        123
+      ],
+      "eligiblePublished": 0,
+      "separateLocalReviewItems": 0,
+      "earlierInspectionFindings": [],
+      "priority": 1,
+      "state": "No general source-bounded section in this inventory. Check separate local review items and earlier inspection findings before treating this provisional entry as uninspected or missing."
+    },
+    {
+      "id": "12-bio-botany-english-f15d4524",
+      "subject": "Bio-Botany",
+      "title": "Bio-Botany",
+      "medium": "English",
+      "class": 12,
+      "volume": null,
+      "edition": null,
+      "sourceFile": "12th_Std_Biology_Botany_EM_Optimised.pdf",
+      "sourceSha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-7",
+      "chapterNumber": 7,
+      "provisionalChapterTitle": "Ecosystem",
+      "provisionalStartPdfPage": 140,
+      "provisionalExercisePdfPages": [],
+      "eligiblePublished": 0,
+      "separateLocalReviewItems": 0,
+      "earlierInspectionFindings": [],
+      "priority": 1,
+      "state": "No general source-bounded section in this inventory. Check separate local review items and earlier inspection findings before treating this provisional entry as uninspected or missing."
+    },
+    {
+      "id": "12-bio-botany-tamil-51160855",
+      "subject": "Bio-Botany",
+      "title": "Bio-Botany",
+      "medium": "Tamil",
+      "class": 12,
+      "volume": null,
+      "edition": null,
+      "sourceFile": "12th_Std_Biology_Botany_TM_optimised.pdf",
+      "sourceSha256": "95a9480f472864af360aa5fc9552159ff76095ded7dbd7d0276c7a4a124b7fa5",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-7",
+      "chapterNumber": 7,
+      "provisionalChapterTitle": "Chapter 7",
+      "provisionalStartPdfPage": 152,
+      "provisionalExercisePdfPages": [],
+      "eligiblePublished": 0,
+      "separateLocalReviewItems": 0,
+      "earlierInspectionFindings": [],
+      "priority": 1,
+      "state": "No general source-bounded section in this inventory. Check separate local review items and earlier inspection findings before treating this provisional entry as uninspected or missing."
+    }
+  ],
+  "notRun": [
+    "Fresh production reads/writes",
+    "Genuine teacher verification/corrections/decisions",
+    "Full unrelated browser suite",
+    "Complete transcription of intervening lesson pages or other chapters"
+  ],
+  "reuseIdentityCheck": {
+    "reused": 54,
+    "matchingNormalizedStemPrefixes": 53,
+    "sourceComparedDifferences": [
+      {
+        "id": "textbook-q-12-bio-botany-tamil-51160855-d31ad8816395d829",
+        "bookId": "12-bio-botany-tamil-51160855",
+        "pdfPage": 148,
+        "number": 10,
+        "reason": "Damaged Tamil PDF glyph ordering differs between generic and column-ordered extraction; both show the soil-size matching question on PDF 148, compared to original page image.",
+        "teacherVerified": false
+      }
+    ],
+    "originalRecordsPreserved": true
+  }
+}

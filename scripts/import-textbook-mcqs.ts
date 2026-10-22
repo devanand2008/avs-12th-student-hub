@@ -1,13 +1,8 @@
 import { loadEnvConfig } from "@next/env";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
-import { createHash } from "node:crypto";
-import path from "node:path";
+import { extractText } from "./lib/textbook-pdf-text";
 import catalogJson from "../src/lib/textbooks-catalog.json";
-import {
-  extractBookMcqs,
-  type ExtractedBook,
-} from "./lib/textbook-question-parser";
+import { extractBookMcqs } from "./lib/textbook-question-parser";
 import { requireSupabase } from "../src/lib/supabase/server";
 import type { TextbookCatalog } from "../src/lib/textbooks";
 import type { Question, Chapter, Subject } from "../src/types";
@@ -37,85 +32,6 @@ async function retry<
     )
       return result;
     await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
-  }
-}
-
-async function extractText(
-  book: TextbookCatalog["books"][number],
-): Promise<ExtractedBook> {
-  const cache = path.join(directory, `${book.id}.json`);
-  let saved: (ExtractedBook & { outlineResolved?: boolean }) | undefined;
-  try {
-    saved = JSON.parse(await readFile(cache, "utf8"));
-  } catch {}
-  if (saved?.sha256 === book.sha256 && saved.outlineResolved) return saved;
-  if (!book.localPath || !book.sha256)
-    throw new Error(`Download and verify ${book.id} first.`);
-  const bytes = await readFile(path.join("public", book.localPath));
-  if (createHash("sha256").update(bytes).digest("hex") !== book.sha256)
-    throw new Error(`Source checksum mismatch: ${book.id}`);
-  const task = getDocument({
-    data: new Uint8Array(bytes),
-    verbosity: 0,
-    useSystemFonts: true,
-  });
-  try {
-    const document = await task.promise;
-    async function resolve(
-      items: Awaited<ReturnType<typeof document.getOutline>>,
-    ): Promise<ExtractedBook["outline"]> {
-      return Promise.all(
-        (items || []).map(async (item) => {
-          const dest =
-            typeof item.dest === "string"
-              ? await document.getDestination(item.dest)
-              : item.dest;
-          let page: number | undefined;
-          try {
-            if (dest)
-              page =
-                typeof dest[0] === "number"
-                  ? dest[0] + 1
-                  : (await document.getPageIndex(dest[0])) + 1;
-          } catch {}
-          return {
-            title: item.title,
-            page,
-            items: (await resolve(item.items)) || [],
-          };
-        }),
-      );
-    }
-    const pages = saved?.sha256 === book.sha256 ? saved.pages : [];
-    if (!pages.length)
-      for (let number = 1; number <= document.numPages; number++) {
-        const page = await document.getPage(number);
-        const content = await page.getTextContent();
-        const text = content.items
-          .filter((item) => "str" in item)
-          .map((item) =>
-            "str" in item ? item.str + (item.hasEOL ? "\n" : " ") : "",
-          )
-          .join("")
-          .toWellFormed()
-          .replaceAll("\u0000", " ")
-          .replace(/[^\S\n]+/g, " ")
-          .replace(/ *\n */g, "\n")
-          .trim();
-        pages.push({ page: number, text });
-        page.cleanup();
-      }
-    const result = {
-      id: book.id,
-      sha256: book.sha256,
-      pages,
-      outline: await resolve(await document.getOutline()),
-      outlineResolved: true,
-    };
-    await writeFile(cache, JSON.stringify(result));
-    return result;
-  } finally {
-    await task.destroy();
   }
 }
 

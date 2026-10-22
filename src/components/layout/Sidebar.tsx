@@ -44,11 +44,21 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
           icon: BookOpen,
         },
         { label: "Question bank", href: "/admin/questions", icon: Target },
-        { label: "Textbook MCQ review", href: "/admin/textbook-questions", icon: BookOpen },
+        {
+          label: "Textbook MCQ review",
+          href: "/admin/textbook-questions",
+          icon: BookOpen,
+        },
+        {
+          label: "Extraction coverage",
+          href: "/admin/textbook-extraction",
+          icon: BarChart3,
+        },
       ]
     : [
         { label: "Overview", href: "/dashboard", icon: LayoutDashboard },
         { label: "My subjects", href: "/subjects", icon: BookOpen },
+        { label: "Study Resources", href: "/resources", icon: BookOpen },
         { label: "Handwritten notes", href: "/notes", icon: FileText },
         { label: "Official textbooks", href: "/textbooks", icon: BookOpen },
         { label: "Video lessons", href: "/videos", icon: Video },
@@ -128,7 +138,6 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
       )}
 
       <div className="mt-auto px-3 pt-6 text-[11px] leading-5 text-slate-400">
-
         SkillUp Class 12 Portal
         <br />
         Tamil Nadu · Academic Platform

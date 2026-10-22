@@ -34,6 +34,14 @@ export interface TextbookReviewBatch {
   rejected: number;
 }
 export interface TextbookMcqCandidate {
+  /** Physical order disambiguates printed numbering errors without renumbering. */
+  sourceOccurrence?: {
+    section: string;
+    ordinal: number;
+    printedNumber: number;
+    pdfPage: number;
+    reason: string;
+  };
   id: string;
   bookId: string;
   subjectId: string;

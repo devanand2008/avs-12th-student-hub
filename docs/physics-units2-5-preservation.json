@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-15T09:11:30.714Z",
+  "protectedFiles": [
+    {
+      "file": ".env.local",
+      "sha256": "c930fc727c58df40352ec2d60ad517208ade41fd4b6ff919d004b11ca8635ef4",
+      "unchanged": true
+    },
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "unchanged": true
+    },
+    {
+      "file": ".local/independent-live-content.json",
+      "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+      "unchanged": true
+    }
+  ],
+  "preservedOriginalPhysicsCandidates": 76,
+  "allOriginalPhysicsCandidateFieldsUnchanged": true,
+  "otherBookCandidateArraysUnchanged": true,
+  "otherBooksChecked": 81,
+  "rerunAdded": 0,
+  "rerunCandidateDigestUnchanged": true,
+  "sourceQuestionIds": 60,
+  "uniqueSourceQuestionIds": 60,
+  "allSourceProposalsHeld": true
+}

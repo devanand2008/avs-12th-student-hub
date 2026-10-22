@@ -457,11 +457,13 @@ test("practice restores answers after refresh and scores consistently", async ({
   );
   await expect(page.getByRole("radio").first()).toBeVisible();
   await page.getByRole("radio").first().press("Space");
+  await page.getByRole("button", { name: "Submit Answer", exact: true }).click();
   await expect(page.getByText(/All answers saved/)).toBeVisible();
   await page.reload();
   await expect(page.getByRole("radio").first()).toBeChecked();
   await page.getByRole("button", { name: "Next Question" }).click();
   await page.getByRole("radio").nth(1).press("Space");
+  await page.getByRole("button", { name: "Submit Answer", exact: true }).click();
   await page.getByRole("button", { name: "Submit Practice Test" }).click();
   await expect(
     page.getByRole("heading", { name: "Practice Performance Summary" }),

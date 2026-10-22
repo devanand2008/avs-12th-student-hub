@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-10-15T10:27:18.469Z",
+  "scope": "Local integration and isolated fixtures only; no production query/write, import, publication, Git push or deployment in this task",
+  "integrated": 60,
+  "counts": {
+    "reviewed": 0,
+    "historyEvents": 0,
+    "approved": 0,
+    "needs_correction": 0,
+    "rejected": 0,
+    "pending": 60,
+    "invalid": 0
+  },
+  "combinedUnitCount": 75,
+  "duplicateIds": 0,
+  "optionRecoveryProposals": 10,
+  "diagramCandidatesWithOriginalFigures": 13,
+  "originalFigureCrops": 17,
+  "originalOptionEvidenceCrops": 10,
+  "teacherDiagramConfirmations": 0,
+  "originalIncompleteOptions": 11,
+  "originalDiagramDependent": 13,
+  "overlapCandidateIds": [
+    "textbook-q-12-physics-tamil-v1-c1623725-45a7dd614e9203d3",
+    "textbook-bounded-12-physics-tamil-v1-c1623725-a91049650c17d7e6"
+  ],
+  "optionsStillIncomplete": [
+    "textbook-bounded-12-physics-tamil-v1-c1623725-a91049650c17d7e6"
+  ],
+  "held": 60,
+  "publishedTamil": 0,
+  "retainedEnglish": 995,
+  "excludedLegacySamples": 12,
+  "publicationEvidence": {
+    "sourceSnapshotAt": "2026-10-10T15:56:21.193Z",
+    "sourceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "policy": "995 existing publications retained by explicit user exception; no human approval inferred"
+  },
+  "practiceEvidence": {
+    "checkedAt": "2026-10-15T08:51:15.976Z",
+    "method": "Read-only paginated SELECT and read-only catalog RPC; no mutations",
+    "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+    "questionRows": 3039,
+    "candidateRows": 12229,
+    "practiceSessions": 13,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "writes": 0,
+    "historicalQuestionDigestMatches": true,
+    "historicalPracticeDigestMatches": true,
+    "limitation": "Dated SELECT-only proof preserved; no fresh production read was made during this local-only task"
+  },
+  "unit1": {
+    "pending": 15,
+    "reviewed": 0,
+    "historyEvents": 0,
+    "unchanged": true
+  },
+  "reviewerAccounts": 2,
+  "protectedFiles": [
+    {
+      "file": ".env.local",
+      "sha256": "c930fc727c58df40352ec2d60ad517208ade41fd4b6ff919d004b11ca8635ef4",
+      "unchanged": true
+    },
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "unchanged": true
+    },
+    {
+      "file": ".local/independent-live-content.json",
+      "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+      "unchanged": true
+    },
+    {
+      "file": "public/textbooks/12-physics-tamil-v1-c1623725.pdf",
+      "sha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/79.png",
+      "sha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/80.png",
+      "sha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/source-pages/81.png",
+      "sha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+      "unchanged": true
+    }
+  ],
+  "originalSavedCandidateRecords": 88,
+  "originalRecordsUnchanged": true,
+  "originalProposalsUnchanged": true,
+  "sourceAssetManifestSha256": "1f9521555625bfe762ccdb2ee4fe00856b0ff30247cd27c6da6b51303f66b9d2",
+  "tests": {
+    "tests": 129,
+    "passed": 129,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "includesLocalReviewDesktopAndMobile": true
+  },
+  "additionalStudentAdminBrowserCasesPassed": 6,
+  "checks": [
+    {
+      "name": "test",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-final-test.log",
+      "logSha256": "781544cf4bdd0abb05a9582624f1eb4755cc6c257cc070c86e976be1200a9fcd"
+    },
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-final-typecheck.log",
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-final-lint.log",
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-build.log",
+      "logSha256": "1bb6715e28e9a0396820fad45467195b452df38d98e045f808bae75376deab51"
+    },
+    {
+      "name": "parser-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-mcqs-audit.log",
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "name": "review-batch-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-final-mcqs-physics-review-audit.log",
+      "logSha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "name": "unit1-decision-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-unit1-audit.log",
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "name": "extraction-rerun-1",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-extraction-1.log",
+      "logSha256": "53056d4bb5d0302a5beba933586a76b8ec8d7d1d91ea44082938cf9991498d33"
+    },
+    {
+      "name": "extraction-rerun-2",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-extraction-2.log",
+      "logSha256": "53056d4bb5d0302a5beba933586a76b8ec8d7d1d91ea44082938cf9991498d33"
+    },
+    {
+      "name": "student-admin-browser",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-browser.log",
+      "logSha256": "7d0235fba1b2c813952d24d3007046919b4cac3d5e9a9582151f4adae3b8aabf"
+    },
+    {
+      "name": "manifest-regression",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\physics-integration-final-manifest-regression.log",
+      "logSha256": "c64284275a524632a107a52669f9625499bd0d18b3d2f16d9b56c06dc5392937"
+    }
+  ],
+  "reviewerIdentityLimitation": "Two pre-existing October 14 allowlisted login profiles use placeholder-style display names. Their existence does not establish genuine teacher identity; no decisions are recorded. Existing accounts were preserved."
+}

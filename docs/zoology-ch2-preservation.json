@@ -1,0 +1,75 @@
+{
+  "checkedAt": "2026-10-22T16:57:56.888Z",
+  "baseline": ".local/zoology-ch2-baseline.json",
+  "unchangedOriginalCandidates": 17321,
+  "unchangedEarlierSourceProposals": 906,
+  "protectedFiles": 513,
+  "unchangedEarlierSourceImages": 297,
+  "currentSourceImages": 311,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-bio-zoology-english-7e848813-4abcc15108db936c",
+      "bookId": "12-bio-zoology-english-7e848813",
+      "chapterId": "tb-12-bio-zoology-english-7e848813-ch-2",
+      "page": 36
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-english-7e848813-5c392187a70664df",
+      "bookId": "12-bio-zoology-english-7e848813",
+      "chapterId": "tb-12-bio-zoology-english-7e848813-ch-2",
+      "page": 36
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-english-7e848813-689b0a9c1d689fc5",
+      "bookId": "12-bio-zoology-english-7e848813",
+      "chapterId": "tb-12-bio-zoology-english-7e848813-ch-2",
+      "page": 36
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-english-7e848813-1eecc51b6091736c",
+      "bookId": "12-bio-zoology-english-7e848813",
+      "chapterId": "tb-12-bio-zoology-english-7e848813-ch-2",
+      "page": 36
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-tamil-2631f8e3-5bc7d960f3192865",
+      "bookId": "12-bio-zoology-tamil-2631f8e3",
+      "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-2",
+      "page": 40
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-tamil-2631f8e3-f1d7b749046b8afb",
+      "bookId": "12-bio-zoology-tamil-2631f8e3",
+      "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-2",
+      "page": 40
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-tamil-2631f8e3-9da35c70d4213ac0",
+      "bookId": "12-bio-zoology-tamil-2631f8e3",
+      "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-2",
+      "page": 40
+    },
+    {
+      "id": "textbook-bounded-12-bio-zoology-tamil-2631f8e3-ea6a007fc9e134e4",
+      "bookId": "12-bio-zoology-tamil-2631f8e3",
+      "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-2",
+      "page": 41
+    }
+  ],
+  "removedActiveIds": [],
+  "addedActiveIds": [
+    "textbook-bounded-12-bio-zoology-english-7e848813-4abcc15108db936c",
+    "textbook-bounded-12-bio-zoology-english-7e848813-5c392187a70664df",
+    "textbook-bounded-12-bio-zoology-english-7e848813-689b0a9c1d689fc5",
+    "textbook-bounded-12-bio-zoology-english-7e848813-1eecc51b6091736c",
+    "textbook-bounded-12-bio-zoology-tamil-2631f8e3-5bc7d960f3192865",
+    "textbook-bounded-12-bio-zoology-tamil-2631f8e3-f1d7b749046b8afb",
+    "textbook-bounded-12-bio-zoology-tamil-2631f8e3-9da35c70d4213ac0",
+    "textbook-bounded-12-bio-zoology-tamil-2631f8e3-ea6a007fc9e134e4"
+  ],
+  "reactivatedExistingIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-12T16:10:16.497Z",
+  "checkedAt": "2026-10-15T08:52:43.307Z",
   "exportLocated": false,
   "exportFiles": [],
   "conflictingExports": false,
@@ -14,6 +14,11 @@
       "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
       "classification": "local_store_or_template",
       "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\docs\\final-teacher-decision-verification.json",
+      "classification": "other_artifact",
+      "reason": "Report/dataset lacks the workflow manifest envelope; filename alone is not evidence."
     },
     {
       "file": "D:\\avs-12-hub\\docs\\teacher-decision-audit-database-proof.json",

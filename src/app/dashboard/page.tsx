@@ -24,6 +24,7 @@ import {
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import InstallButton from "@/components/pwa/InstallButton";
+import StudentReadySummary from "@/components/practice/StudentReadySummary";
 
 
 interface DashboardData {
@@ -140,19 +141,6 @@ export default function DashboardPage() {
   const strokeDashoffset =
     circumference - (progressPercent / 100) * circumference;
 
-  const streamSubjects = isCS
-    ? [
-        { name: "Computer Science", code: "CS", color: "from-indigo-600 to-purple-600", tagBg: "bg-indigo-50 text-indigo-700 border-indigo-200", chapters: "16 Chapters", mcqs: "150 MCQs" },
-        { name: "Physics", code: "PHY", color: "from-blue-600 to-cyan-500", tagBg: "bg-blue-50 text-blue-700 border-blue-200", chapters: "10 Units", mcqs: "160 MCQs" },
-        { name: "Chemistry", code: "CHEM", color: "from-emerald-500 to-teal-500", tagBg: "bg-emerald-50 text-emerald-700 border-emerald-200", chapters: "15 Units", mcqs: "210 MCQs" },
-        { name: "Mathematics", code: "MATH", color: "from-amber-500 to-orange-500", tagBg: "bg-amber-50 text-amber-700 border-amber-200", chapters: "12 Units", mcqs: "180 MCQs" },
-      ]
-    : [
-        { name: "Bio-Botany", code: "BOT", color: "from-teal-500 to-emerald-600", tagBg: "bg-teal-50 text-teal-700 border-teal-200", chapters: "10 Chapters", mcqs: "120 MCQs" },
-        { name: "Bio-Zoology", code: "ZOO", color: "from-rose-500 to-pink-600", tagBg: "bg-rose-50 text-rose-700 border-rose-200", chapters: "12 Chapters", mcqs: "130 MCQs" },
-        { name: "Physics", code: "PHY", color: "from-blue-600 to-cyan-500", tagBg: "bg-blue-50 text-blue-700 border-blue-200", chapters: "10 Units", mcqs: "160 MCQs" },
-        { name: "Chemistry", code: "CHEM", color: "from-emerald-500 to-teal-500", tagBg: "bg-emerald-50 text-emerald-700 border-emerald-200", chapters: "15 Units", mcqs: "210 MCQs" },
-      ];
 
   return (
     <div className="flex flex-1 bg-[#eff5ff]">
@@ -376,67 +364,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Dedicated Stream Subjects Quick Access Bar */}
-        <section className="space-y-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="text-lg sm:text-xl font-black text-slate-900 font-heading">
-                Your Stream Core Subjects
-              </h2>
-              <p className="text-xs text-slate-500">
-                Direct access to chapter notes and practice sets for {streamLabel}.
-              </p>
-            </div>
-            <Link
-              href="/subjects"
-              className="text-xs font-extrabold text-blue-600 hover:text-blue-800 flex items-center gap-1"
-            >
-              <span>Explore all</span>
-              <ArrowRight size={13} />
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {streamSubjects.map((s) => (
-              <div
-                key={s.name}
-                className="info-card-capsule group relative flex flex-col justify-between rounded-3xl bg-white/95 border border-blue-100/90 p-5 shadow-sm hover:border-blue-400 transition-all overflow-hidden"
-              >
-                <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${s.color}`} />
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-lg border ${s.tagBg}`}>
-                      {s.code}
-                    </span>
-                    <span className="text-[10px] font-bold text-slate-400">
-                      {s.chapters}
-                    </span>
-                  </div>
-                  <h3 className="font-heading font-extrabold text-sm text-slate-900 group-hover:text-blue-600 transition-colors">
-                    {s.name}
-                  </h3>
-                  <p className="text-[11px] font-bold text-teal-600">
-                    {s.mcqs} available
-                  </p>
-                </div>
-                <div className="pt-3 mt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <Link
-                    href={`/subjects`}
-                    className="font-bold text-blue-600 hover:underline text-[11px]"
-                  >
-                    View Units
-                  </Link>
-                  <Link
-                    href={`/practice`}
-                    className="font-bold text-slate-500 hover:text-slate-800 text-[11px]"
-                  >
-                    MCQs →
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        <StudentReadySummary />
 
         {/* Quick Action Toolkit Tiles */}
         <section className="space-y-4">
@@ -453,7 +381,7 @@ export default function DashboardPage() {
               href="/subjects"
               className="inline-flex items-center gap-1 text-xs font-extrabold text-blue-600 hover:text-blue-800"
             >
-              <span>View All 38 Chapters</span>
+              <span>Explore chapters</span>
               <ArrowUpRight size={14} />
             </Link>
           </div>
@@ -514,10 +442,10 @@ export default function DashboardPage() {
               },
               {
                 label: "One-Mark Practice Hub",
-                text: "Solve Book-In textbook and Book-Out application questions with instant score.",
+                text: "Select a medium, subject, textbook and chapter to practise published questions.",
                 icon: Target,
-                href: "/practice",
-                badge: "500+ MCQs",
+                href: "/textbook-practice",
+                badge: "Published questions",
                 color: "from-amber-500 to-orange-600",
                 borderAccent: "hover:border-amber-400",
               },

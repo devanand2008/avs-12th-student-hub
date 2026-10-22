@@ -14,9 +14,14 @@ export default function PwaInstallBanner() {
     promptInstall,
   } = usePwa();
   const pathname = usePathname();
+  const isPracticeRoute =
+    pathname === "/textbook-practice" ||
+    pathname === "/practice" ||
+    pathname.startsWith("/practice/");
 
-  // If already installed or currently running in standalone PWA mode, don't show the banner
-  if (isInstalled || isStandalone || isBannerDismissed) {
+  // Keep floating installation prompts clear of practice controls and answers.
+  // Installation remains available from the navigation.
+  if (isInstalled || isStandalone || isBannerDismissed || isPracticeRoute) {
     return null;
   }
 

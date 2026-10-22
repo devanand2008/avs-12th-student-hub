@@ -1,0 +1,1741 @@
+[
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 2,
+    "chapterTitle": "அடோப் பேஜ்மேக்கர்",
+    "chapterStartPdfPage": 29,
+    "chapterEndPdfPage": 72,
+    "pages": [
+      {
+        "page": 70,
+        "printedPage": 60,
+        "first": 1,
+        "last": 9,
+        "contentTopFraction": 0.17
+      },
+      {
+        "page": 71,
+        "printedPage": 61,
+        "first": 10,
+        "last": 12,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      72
+    ],
+    "stopBeforeQuestion": 13,
+    "excludedItems": [
+      {
+        "numbers": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "page": 71,
+        "kind": "Fill in the blanks; no printed four-choice options"
+      },
+      {
+        "numbers": [
+          18
+        ],
+        "page": 71,
+        "kind": "Matching table, not four alternative answers"
+      },
+      {
+        "numbers": [
+          19
+        ],
+        "page": 71,
+        "kind": "Find the odd item within four separate lists; not one printed four-option MCQ"
+      },
+      {
+        "numbers": [
+          20,
+          21
+        ],
+        "page": 71,
+        "kind": "Multiple two-statement/two-pair subitems; no printed A–D question mapping"
+      }
+    ],
+    "keyEvidence": "No printed answer key on visually inspected PDF pages 70–72. Whole-book appendices have not been fully visually audited. No answer is inferred from subject knowledge.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Question 5 continues from the left column to options at the top of the right column on PDF 70",
+      "Do not treat Section I items 13–21 as four-option MCQs"
+    ]
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "subject": "Computer Technology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+    "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+    "chapterNumber": 2,
+    "chapterTitle": "அடோப் இன்டிசைன் CC 2019",
+    "chapterStartPdfPage": 51,
+    "chapterEndPdfPage": 98,
+    "pages": [
+      {
+        "page": 96,
+        "printedPage": 90,
+        "first": 1,
+        "last": 3,
+        "contentTopFraction": 0.66
+      },
+      {
+        "page": 97,
+        "printedPage": 91,
+        "first": 4,
+        "last": 12,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      98
+    ],
+    "stopBeforeQuestion": 13,
+    "excludedItems": [
+      {
+        "numbers": [
+          13
+        ],
+        "page": 97,
+        "kind": "Five-row matching table, not a printed four-option MCQ"
+      }
+    ],
+    "keyEvidence": "No printed answer key on visually inspected PDF pages 96–98. Whole-book appendices have not been fully visually audited. No answer is inferred from glossary or lesson prose.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "The glossary above the exercise on PDF 96 is lesson content, not part of Question 1",
+      "Preserve printed spelling Gatter, vaccum, color platte and inter steller; corrections require teacher notes",
+      "Section I item 13 is a matching table and must not become four invented options"
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 3,
+    "chapterTitle": "தரவுதள மேலாண்மை அமைப்பு – அறிமுகம்",
+    "chapterStartPdfPage": 73,
+    "chapterEndPdfPage": 104,
+    "pages": [
+      {
+        "page": 103,
+        "printedPage": 93,
+        "first": 1,
+        "last": 9,
+        "contentTopFraction": 0.17
+      },
+      {
+        "page": 104,
+        "printedPage": 94,
+        "first": 10,
+        "last": 10,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [],
+    "stopBeforeQuestion": null,
+    "excludedItems": [],
+    "keyEvidence": "No printed answer key on visually inspected PDF 103, 104; Section II onwards contains open responses. Whole-book key absence is not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Question 4 options continue at the top of the right column on PDF 103",
+      "Question 6 is printed with two true/false choices only, not four options; retain as a blocked reference item",
+      "Preserve printed Tuble and SQL syntax; do not silently correct source spelling"
+    ],
+    "choiceCounts": {
+      "6": 2
+    }
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "subject": "Computer Technology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+    "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+    "chapterNumber": 3,
+    "chapterTitle": "கோரல்ட்ரா 2018 (CorelDRAW 2018)",
+    "chapterStartPdfPage": 99,
+    "chapterEndPdfPage": 144,
+    "pages": [
+      {
+        "page": 142,
+        "printedPage": 136,
+        "first": 1,
+        "last": 3,
+        "contentTopFraction": 0.68,
+        "layout": "single-column"
+      },
+      {
+        "page": 143,
+        "printedPage": 137,
+        "first": 4,
+        "last": 15,
+        "numbers": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15
+        ],
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      144
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [],
+    "keyEvidence": "No printed answer key on visually inspected PDF 142, 143; Section II onwards contains open responses. Whole-book key absence is not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Printed numbering skips Question 11: source PDF 143 goes directly from 10 to 12; no missing question is invented",
+      "PDF 142 uses full-width exercise lines; preserve option order across the whole line",
+      "Preserve printed Potoshop and Stadard rather than silently correcting spelling"
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 4,
+    "chapterTitle": "அறிமுகம் – மீஉரை முன்செயலி (PHP)",
+    "chapterStartPdfPage": 105,
+    "chapterEndPdfPage": 118,
+    "pages": [
+      {
+        "page": 117,
+        "printedPage": 107,
+        "first": 1,
+        "last": 5,
+        "contentTopFraction": 0.55
+      },
+      {
+        "page": 118,
+        "printedPage": 108,
+        "first": 6,
+        "last": 9,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      119
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 118,
+        "kind": "Sections II–IV are open responses, not four-choice MCQs; retained in source-page evidence only"
+      }
+    ],
+    "keyEvidence": "No printed key on visually inspected PDF 117, 118; next chapter starts on PDF 119. Whole-book answer-key absence not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Glossary above the exercise is excluded",
+      "Damaged Tamil and control characters remain in raw extraction; any whitespace cleanup is separately proposed",
+      "PHP punctuation and printed technical inconsistencies require teacher verification"
+    ],
+    "incompleteQuestions": [
+      6
+    ],
+    "questionWarnings": {
+      "3": [
+        "Printed options B and D both show <?php?>; preserve duplicate choices and require source/teacher reconciliation"
+      ],
+      "5": [
+        "Preserve the printed comment symbols and roman subitem references; no inferred correction"
+      ],
+      "6": [
+        "Source itself refers to a PHP program (Pgm) but supplies no program on the printed page; required question content is missing"
+      ],
+      "8": [
+        "Preserve printed dollar signs, backslashes and quote punctuation; do not execute or normalize code"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "subject": "Computer Technology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+    "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+    "chapterNumber": 4,
+    "chapterTitle": "பல்லூடகம் மற்றும் கணிப்பொறிப் பதிப்பகம்",
+    "chapterStartPdfPage": 145,
+    "chapterEndPdfPage": 162,
+    "pages": [
+      {
+        "page": 161,
+        "printedPage": 155,
+        "first": 1,
+        "last": 5,
+        "contentTopFraction": 0.5,
+        "layout": "single-column"
+      },
+      {
+        "page": 162,
+        "printedPage": 156,
+        "first": 6,
+        "last": 10,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      163
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 162,
+        "kind": "Sections II–IV are open responses, not four-choice MCQs; retained in source-page evidence only"
+      }
+    ],
+    "keyEvidence": "No printed key on visually inspected PDF 161, 162; next chapter starts on PDF 163. Whole-book answer-key absence not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Question 5 is a genuine four-option matching MCQ; preserve all four numbered premises and option permutations",
+      "The glossary above the exercise is not question content",
+      "Preserve printed Photo exports gross and Micorsoft; do not silently repair source spelling"
+    ],
+    "embeddedNumberedListQuestions": [
+      5
+    ],
+    "excludedExistingIds": [
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-7932776597725b4e",
+        "reason": "Source PDF 161 proves this parser Q4 is matching Q5 premise 4 (RTF) plus its answer permutations, not the real Q4; saved record retained unchanged"
+      }
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 5,
+    "chapterTitle": "PHP செயற்கூறுகள் மற்றும் அணிகள்",
+    "chapterStartPdfPage": 119,
+    "chapterEndPdfPage": 126,
+    "pages": [
+      {
+        "page": 125,
+        "printedPage": 115,
+        "first": 1,
+        "last": 6,
+        "contentTopFraction": 0.15,
+        "layout": "single-column"
+      },
+      {
+        "page": 126,
+        "printedPage": 116,
+        "first": 7,
+        "last": 10,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      127
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 126,
+        "kind": "Sections II–IV open responses are not four-option MCQs"
+      }
+    ],
+    "keyEvidence": "No printed key on visually inspected PDF 125, 126; next chapter starts PDF 127. Whole-book key absence is not asserted. All answers remain unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "All Tamil text and programming punctuation require source-faithful teacher correction",
+      "Original code is evidence, not code to execute; answers remain unknown"
+    ],
+    "englishOptionQuestions": [
+      5
+    ],
+    "preserveLineBreakQuestions": [
+      4,
+      5
+    ],
+    "questionWarnings": {
+      "2": [
+        "The source describes a double underscore but prints a dash-like mark; do not invent underscores or silently correct source punctuation"
+      ],
+      "4": [
+        "Preserve all four roman-numbered code statements, dollar signs, spelling and printed quote characters in their original order"
+      ],
+      "5": [
+        "The PHP program is present on original PDF 125; preserve every printed line, quote, array element, arrow and English a–d option. Code/quote fidelity and output mapping require teacher verification; no execution-derived answer is proposed"
+      ],
+      "10": [
+        "Preserve printed count, Sizeof, Array_Count and Count_array capitalization; do not infer a unique correct choice"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "subject": "Computer Technology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+    "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+    "chapterNumber": 5,
+    "chapterTitle": "அடோப் ஃப்ளாஷ் புரொபஷனல் CS6",
+    "chapterStartPdfPage": 163,
+    "chapterEndPdfPage": 188,
+    "pages": [
+      {
+        "page": 187,
+        "printedPage": 181,
+        "first": 1,
+        "last": 10,
+        "contentTopFraction": 0.17
+      },
+      {
+        "page": 188,
+        "printedPage": 182,
+        "first": 11,
+        "last": 12,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      189
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "page": 188,
+        "kind": "Separate Section II fill-in-the-blanks, no printed four-option choices; not imported as MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 188,
+        "kind": "Later Sections II–IV open responses are source evidence only, not MCQs"
+      }
+    ],
+    "keyEvidence": "No printed key on visually inspected PDF 187, 188; next chapter starts PDF 189. Whole-book key absence is not asserted. All answers remain unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "PDF 187 uses two columns; preserve Question 1–5 on the left before 6–10 on the right",
+      "PDF 188 ends MCQs after Q12 at the dotless Section II fill-in heading, before short-answer questions",
+      "Preserve printed navigation arrows and tool names; no answer is inferred from lesson text"
+    ],
+    "sectionEndPattern": "^[ \\t]*II(?:\\s|[.])"
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 6,
+    "chapterTitle": "PHP நிபந்தனை கூற்றுகள்",
+    "chapterStartPdfPage": 127,
+    "chapterEndPdfPage": 132,
+    "pages": [
+      {
+        "page": 130,
+        "printedPage": 120,
+        "first": 1,
+        "last": 3,
+        "contentTopFraction": 0.53
+      },
+      {
+        "page": 131,
+        "printedPage": 121,
+        "first": 4,
+        "last": 8,
+        "contentTopFraction": 0.08
+      },
+      {
+        "page": 132,
+        "printedPage": 122,
+        "first": 9,
+        "last": 9,
+        "contentTopFraction": 0.08,
+        "layout": "single-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      133
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 130,
+        "kind": "Remember/summary lesson box above the exercise is excluded from all question spans"
+      },
+      {
+        "numbers": [],
+        "page": 132,
+        "kind": "Sections II-IV are open responses, not printed four-option MCQs"
+      }
+    ],
+    "keyEvidence": "No printed key found on inspected PDF 130-132; Chapter 7 begins PDF 133. Whole-book key absence not asserted. All answers unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "All Tamil wording, code and punctuation require source-faithful teacher correction",
+      "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+      "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page"
+    ],
+    "preserveLineBreakQuestions": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "questionWarnings": {
+      "1": [
+        "Original saved section ID has an empty options array and summary contamination; preserve it as raw extraction separately from the four source-bounded proposed choices",
+        "Source prints $x; followed by print and else without an if; preserve the printed program, do not invent missing syntax"
+      ],
+      "2": [
+        "Preserve printed $x = 0; and if ($x++) exactly, including quote glyphs"
+      ],
+      "3": [
+        "Program begins on PDF 130 / printed 120 and continues onto PDF 131 / printed 121; both pages must be inspected",
+        "Preserve source hig hello option, uninitialised $x and missing punctuation as printed; do not silently fix or guess output"
+      ],
+      "5": [
+        "Source prints the same question/program/options at Q5 and Q6; retain both numbered occurrences with distinct IDs and flag the printed duplicate",
+        "Preserve printed if else and quote glyphs; do not repair the program or infer an answer"
+      ],
+      "6": [
+        "Source prints the same question/program/options at Q5 and Q6; retain both numbered occurrences with distinct IDs and flag the printed duplicate",
+        "Program continues from the bottom of the left column to the top of the right column on PDF 131"
+      ],
+      "7": [
+        "Preserve $x>$y+$y!=3 operator order exactly as printed; no execution-derived answer"
+      ],
+      "8": [
+        "Preserve $x>$y&&1||1 operator order exactly as printed; no execution-derived answer"
+      ],
+      "9": [
+        "The source prints pring rather than print; preserve it and require teacher verification, not an automatic typo correction"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "subject": "Computer Technology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+    "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+    "chapterNumber": 6,
+    "chapterTitle": "ஆட்டோகேட் 2016",
+    "chapterStartPdfPage": 189,
+    "chapterEndPdfPage": 231,
+    "pages": [
+      {
+        "page": 230,
+        "printedPage": 224,
+        "first": 1,
+        "last": 7,
+        "contentTopFraction": 0.17
+      }
+    ],
+    "inspectedEndingPages": [
+      229,
+      231,
+      232,
+      233
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 229,
+        "kind": "Lesson instructions and glossary are not book-back MCQs"
+      },
+      {
+        "numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "page": 230,
+        "kind": "Following Section II short-answer restart, not the seven Section I MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 231,
+        "kind": "Continuation of Sections II-IV open responses; no printed MCQ options"
+      },
+      {
+        "numbers": [],
+        "page": 232,
+        "kind": "Separate practicals divider; not Chapter 6 MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 233,
+        "kind": "Practical 01 PageMaker task; do not invent MCQs from its numbered steps"
+      }
+    ],
+    "keyEvidence": "No printed key found on inspected PDF 229-233; Chapter 6 ends PDF 231 and practicals start PDF 232. Whole-book key absence not asserted. All answers unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+      "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+      "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs"
+    ],
+    "questionWarnings": {
+      "3": [
+        "The A application icon is named in the question; no missing standalone diagram or diagram-only option is required on the printed MCQ page"
+      ],
+      "5": [
+        "Preserve shortcut-option order Ctrl + 1, Ctrl + 9, Ctrl + 8, Ctrl + 7"
+      ],
+      "7": [
+        "Preserve printed F1, F2, F3, F7 choices; do not replace a possibly incorrect printed option with external AutoCAD knowledge"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 7,
+    "chapterTitle": "மடக்கு அமைப்பு",
+    "chapterStartPdfPage": 133,
+    "chapterEndPdfPage": 139,
+    "pages": [
+      {
+        "page": 137,
+        "printedPage": 127,
+        "first": 1,
+        "last": 3,
+        "contentTopFraction": 0.62
+      },
+      {
+        "page": 138,
+        "printedPage": 128,
+        "first": 4,
+        "last": 9,
+        "contentTopFraction": 0.08
+      },
+      {
+        "page": 139,
+        "printedPage": 129,
+        "first": 9,
+        "last": 9,
+        "numbers": [],
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      8,
+      140
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 137,
+        "kind": "Summary and glossary above Section I are lesson evidence only"
+      },
+      {
+        "numbers": [],
+        "page": 139,
+        "kind": "Section II-IV short/long responses and activity are not four-option MCQs"
+      }
+    ],
+    "keyEvidence": "No printed key on visually inspected PDF 137-139; contents PDF 8 and Chapter 8 heading PDF 140 confirm scope. No whole-book key-absence claim; all answers unknown.",
+    "diagramQuestions": [],
+    "preserveLineBreakQuestions": [
+      4,
+      5,
+      7,
+      8,
+      9
+    ],
+    "sourceWarnings": [
+      "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+      "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers"
+    ],
+    "questionWarnings": {
+      "2": [
+        "Options cross from the bottom of the left column to the top of the right column on PDF 137; retain all four in printed order"
+      ],
+      "4": [
+        "Preserve counter 20, comparison < 10, and printed Cunter/Counder output spellings; do not repair code or infer the answer"
+      ],
+      "5": [
+        "Original printed snippet opens a brace but shows no closing brace before ?>; flag malformed source code, do not insert a brace or invent missing text"
+      ],
+      "7": [
+        "Preserve the printed <? php opening, quote glyphs and 141 output choices; no external calculation or execution is treated as an official answer"
+      ],
+      "8": [
+        "Preserve literal backslash-t and all printed asterisk counts; no reconstructed output or guessed choice"
+      ],
+      "9": [
+        "Program is on PDF 138 / printed 128; four options continue on PDF 139 / printed 129. Both pages must be inspected",
+        "Existing saved section ID has an empty options array; original extraction stays separate from recovered printed option positions",
+        "A separate saved parser Q5 on PDF 139 has incorrectly attached these choices to an open-response stem; keep that artifact unchanged and excluded from this MCQ proposal"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "subject": "Computer Technology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+    "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+    "chapterNumber": 1,
+    "chapterTitle": "அடோப் பேஜ்மேக்கர்",
+    "chapterStartPdfPage": 7,
+    "chapterEndPdfPage": 50,
+    "pages": [
+      {
+        "page": 48,
+        "printedPage": 42,
+        "first": 1,
+        "last": 9,
+        "contentTopFraction": 0.15
+      },
+      {
+        "page": 49,
+        "printedPage": 43,
+        "first": 10,
+        "last": 12,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      6,
+      47,
+      50,
+      51
+    ],
+    "stopBeforeQuestion": 13,
+    "excludedItems": [
+      {
+        "numbers": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "page": 49,
+        "kind": "Five fill-in-the-blank items without printed answer choices; not converted to MCQs"
+      },
+      {
+        "numbers": [
+          18
+        ],
+        "page": 49,
+        "kind": "Matching four terms to shortcuts without four printed answer permutations; no fabricated options"
+      },
+      {
+        "numbers": [
+          19
+        ],
+        "page": 49,
+        "kind": "Composite odd-one-out task with four roman-numbered groups; whether groups are independent subquestions needs teacher format review, not an invented A-D answer mapping"
+      },
+      {
+        "numbers": [
+          20,
+          21
+        ],
+        "page": 49,
+        "kind": "Two composite tasks each have separate binary subitems/pairs; no printed four-option combined mapping"
+      },
+      {
+        "numbers": [],
+        "page": 50,
+        "kind": "Section II-IV open responses, not MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 47,
+        "kind": "Lesson summary and glossary preceding the exercise are excluded"
+      }
+    ],
+    "keyEvidence": "No printed key on inspected PDF 47-50; contents PDF 6 and chapter headings PDF 7 and 51 establish Adobe PageMaker Chapter 1 / printed 1-44. No whole-book answer-key absence claim. Answers unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "All damaged Tamil glyphs require source-faithful teacher correction",
+      "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+      "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+      "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling"
+    ],
+    "questionWarnings": {
+      "5": [
+        "Stem is at bottom of the left column; all four shortcut choices are at top of the right column on PDF 48"
+      ],
+      "12": [
+        "Stop before fill-in Q13; do not absorb subsequent matching, odd-one-out or binary tasks into choice D"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 8,
+    "chapterTitle": "படிவங்கள் மற்றும் கோப்புகள்",
+    "chapterStartPdfPage": 140,
+    "chapterEndPdfPage": 150,
+    "pages": [
+      {
+        "page": 148,
+        "printedPage": 138,
+        "first": 1,
+        "last": 4,
+        "contentTopFraction": 0.5
+      },
+      {
+        "page": 149,
+        "printedPage": 139,
+        "first": 5,
+        "last": 10,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      8,
+      147,
+      150,
+      151
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 147,
+        "kind": "Lesson/program continuation, AJAX and reminder box before the MCQ exercise; not imported"
+      },
+      {
+        "numbers": [],
+        "page": 148,
+        "kind": "Glossary, decorative banner and instructions above Section I; not imported"
+      },
+      {
+        "numbers": [],
+        "page": 149,
+        "kind": "Sections II and III open-response exercises after Q10; not converted to MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 150,
+        "kind": "Section III continuation, Section IV and programming activities without MCQ choices; not imported"
+      }
+    ],
+    "keyEvidence": "No printed answer key on inspected exercise/ending PDF pages 147-150. Contents PDF 8, chapter opening PDF 140 and next chapter PDF 151 establish Chapter 8 / printed 130-140. No whole-book answer-key absence claim. All ten answers unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "All damaged Tamil glyphs require source-faithful teacher correction",
+      "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+      "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording"
+    ],
+    "questionWarnings": {
+      "1": [
+        "Source prints $ -GET rather than an unambiguous $_GET token; do not silently repair"
+      ],
+      "2": [
+        "Source option C prints REGUEST; preserve spelling rather than silently changing to REQUEST"
+      ],
+      "3": [
+        "Source file - uploads / file - upload / file - insert / file -intalic spellings and dash forms retained"
+      ],
+      "4": [
+        "Choice D continues at top left of PDF 149 / printed 139; inspect both source pages",
+        "Printed HTML fragment linput type = \"text\"> is ambiguous/malformed; do not reconstruct an opening bracket"
+      ],
+      "5": [
+        "Source option Janscript retained; no silent spelling correction"
+      ],
+      "6": [
+        "Printed function choices f open (), fr end (), fgdc (), dile () retained literally"
+      ],
+      "8": [
+        "Printed choices A and C are identical on PDF 149; unresolved duplicate options block verification"
+      ],
+      "10": [
+        "Printed function names and dash spacing retained, including file - get-contents(), freed(), readsia(); do not infer answers"
+      ]
+    },
+    "sectionEndPattern": "^[ \\t]*(?:்ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])"
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 9,
+    "chapterTitle": "PHP-உடன் MySQL-ஐ இணைத்தல்",
+    "chapterStartPdfPage": 151,
+    "chapterEndPdfPage": 157,
+    "pages": [
+      {
+        "page": 155,
+        "printedPage": 145,
+        "first": 1,
+        "last": 1,
+        "contentTopFraction": 0.78,
+        "layout": "single-column"
+      },
+      {
+        "page": 156,
+        "printedPage": 146,
+        "first": 2,
+        "last": 9,
+        "contentTopFraction": 0.08,
+        "layout": "single-column"
+      },
+      {
+        "page": 157,
+        "printedPage": 147,
+        "first": 10,
+        "last": 11,
+        "contentTopFraction": 0.08
+      }
+    ],
+    "inspectedEndingPages": [
+      9,
+      150,
+      152,
+      153,
+      154,
+      158
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 151,
+        "kind": "Chapter opening, objectives, ordinary lesson text and Figure 9.1 are not MCQ material"
+      },
+      {
+        "numbers": [],
+        "page": 152,
+        "kind": "Lesson syntax and worked connection program, not book-back MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 153,
+        "kind": "Lesson syntax and worked query/close program, not book-back MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 154,
+        "kind": "Lesson program continuation and technology note, not book-back MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 155,
+        "kind": "Remember box, glossary and decorative exercise banner preceding Section I excluded"
+      },
+      {
+        "numbers": [],
+        "page": 157,
+        "kind": "Sections II-IV open-response questions and two student programming activities excluded; no fabricated choices"
+      }
+    ],
+    "keyEvidence": "Contents PDF 9 / printed ix, Chapter 9 opening PDF 151 / printed 141, Chapter 10 opening PDF 158 / printed 148 and all intervening chapter pages were visually inspected. Section I Q1-11 is PDF 155-157 / printed 145-147. No printed answer key in this inspected chapter. Answers unknown; no whole-book key-absence claim.",
+    "diagramQuestions": [],
+    "englishOptionQuestions": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "sectionEndPattern": "^[ \\t]*(?:்ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "sourceWarnings": [
+      "All damaged Tamil glyphs require source-faithful teacher correction",
+      "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+      "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key"
+    ],
+    "questionWarnings": {
+      "1": [
+        "Previously missing source occurrence on PDF 155; deterministic stable recovery ID, not a teacher approval",
+        "Printed object/variable prefixes and arrow/dash shapes differ between choices; verify exact glyphs against the source, do not normalise to correct PHP",
+        "Extracted C/D contain new.mysqli(); the dot/space/operator shapes require source-image reconciliation, not an automatic code correction"
+      ],
+      "2": [
+        "Retain printed mysql_fetch_row. trailing period and mysql_ prefixes; do not infer an answer from API knowledge"
+      ],
+      "3": [
+        "Retain printed mysqli_create_db and create_db function choices and their exact quote/bracket punctuation"
+      ],
+      "4": [
+        "Retain distinct mysqli_query, query and mysql_query choices; do not rewrite names or infer the correct answer",
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q1, PDF 152, printed 142, candidate textbook-q-12-computer-applications-tamil-f43670d1-dd2569fb0b481f7c. Source stem and four printed choices repeat under different printed numbering; preserve both source identities"
+      ],
+      "5": [
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q2, PDF 152, printed 142, candidate textbook-q-12-computer-applications-tamil-f43670d1-7167f7f3daa06fd1. Source stem and four printed choices repeat under different printed numbering; preserve both source identities"
+      ],
+      "6": [
+        "Inspect printed quotation and closing-parenthesis shapes in every function choice, especially D; damaged text cannot establish syntactically valid PHP",
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q3, PDF 152/153, printed 142/143, candidate textbook-q-12-computer-applications-tamil-f43670d1-7495abd4607b89e1. Its saved choice B is polluted with glossary/footer text; visually compare the cross-page choices, do not copy that raw extraction"
+      ],
+      "7": [
+        "Retain printed Mysqli_connect(), Mysqli_close(), mysqli_select_data() and mysqli_affected_rows() capitalisation/spelling",
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q4, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-045200e715f770cf. Source stem and four printed choices repeat under different printed numbering; preserve both source identities"
+      ],
+      "8": [
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q5, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-e30ee4bb85fa6f5e. Source stem and four printed choices repeat under different printed numbering; preserve both source identities"
+      ],
+      "9": [
+        "Remove footer contamination only in the bounded proposal; original saved extraction remains separate and unchanged",
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q6, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-dc459a60b45d1094. Source stem and four printed choices repeat under different printed numbering; preserve both source identities"
+      ],
+      "10": [
+        "Printed stem repeats the Tamil closing term before (Close); preserve rather than silently rewriting",
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q7, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-b69ed90d3c914183. Source stem and four printed choices repeat under different printed numbering; preserve both source identities"
+      ],
+      "11": [
+        "Stop before Section II heading; do not append damaged heading text to Version 5.0",
+        "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q8, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-f94403f50defa043. Its saved choice D contains a Section II heading; the rendered exercise differs from the polluted raw value"
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 10,
+    "chapterTitle": "கணினி வலையமைப்பு ஓர் அறிமுகம்",
+    "chapterStartPdfPage": 158,
+    "chapterEndPdfPage": 176,
+    "pages": [
+      {
+        "page": 174,
+        "printedPage": 164,
+        "first": 1,
+        "last": 8,
+        "contentTopFraction": 0.18
+      },
+      {
+        "page": 175,
+        "printedPage": 165,
+        "first": 9,
+        "last": 16,
+        "contentTopFraction": 0.07
+      }
+    ],
+    "inspectedEndingPages": [
+      9,
+      173,
+      176,
+      177
+    ],
+    "questionWarnings": {
+      "3": [
+        "Printed four-premise matching table is part of the stem; preserve its dates, protocol names and permutation choices"
+      ],
+      "4": [
+        "Stem and choices are in different columns on PDF 174; compare both against the same source page"
+      ],
+      "16": [
+        "Retain printed mixed Latin a & b reference in option D; no answer inferred"
+      ]
+    },
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 174,
+        "kind": "Glossary, QR code and exercise banner excluded before Section I"
+      },
+      {
+        "numbers": [],
+        "page": 175,
+        "kind": "Sections II-IV and student activities are open responses, not printed four-choice one-mark MCQs; no generated options"
+      }
+    ],
+    "keyEvidence": "Visual source inspection: contents PDF 9, chapter heading PDF 158, exercise PDF 174, 175 and stated ending/neighbor pages. No printed key located on these inspected exercise/ending pages; whole-chapter and whole-book absence not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sectionEndPattern": "^[ \\t]*(?:்?ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "sourceWarnings": [
+      "Tamil glyph damage requires source-faithful teacher correction; proposed reading order is not teacher-approved transcription",
+      "All original printed option positions are preserved; no generated distractors or guessed answers",
+      "Unknown answers block approval even when four option positions were recovered"
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 11,
+    "chapterTitle": "வலையமைப்பு எடுத்துக்காட்டுகள் மற்றும் நெறிமுறைகள்",
+    "chapterStartPdfPage": 177,
+    "chapterEndPdfPage": 193,
+    "pages": [
+      {
+        "page": 192,
+        "printedPage": 182,
+        "first": 1,
+        "last": 8,
+        "contentTopFraction": 0.18
+      },
+      {
+        "page": 193,
+        "printedPage": 183,
+        "first": 9,
+        "last": 10,
+        "contentTopFraction": 0.07
+      }
+    ],
+    "inspectedEndingPages": [
+      9,
+      191,
+      194
+    ],
+    "numberedPremises": [
+      {
+        "question": 3,
+        "count": 4
+      }
+    ],
+    "preserveLineBreakQuestions": [
+      3
+    ],
+    "questionWarnings": {
+      "3": [
+        "Four numbered protocol statements belong to this matching MCQ, not separate exercise questions; choices continue at the top of the right column"
+      ],
+      "7": [
+        "Retain printed expansion choices including Radio Free identification and repeated frequency wording; source wording is not silently corrected"
+      ]
+    },
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 192,
+        "kind": "Glossary, QR code and exercise banner excluded before Section I"
+      },
+      {
+        "numbers": [],
+        "page": 193,
+        "kind": "Sections II-IV and student activities are open responses, not printed four-choice one-mark MCQs; no generated options"
+      }
+    ],
+    "keyEvidence": "Visual source inspection: contents PDF 9, chapter heading PDF 177, exercise PDF 192, 193 and stated ending/neighbor pages. No printed key located on these inspected exercise/ending pages; whole-chapter and whole-book absence not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sectionEndPattern": "^[ \\t]*(?:்?ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "sourceWarnings": [
+      "Tamil glyph damage requires source-faithful teacher correction; proposed reading order is not teacher-approved transcription",
+      "All original printed option positions are preserved; no generated distractors or guessed answers",
+      "Unknown answers block approval even when four option positions were recovered"
+    ],
+    "excludedExistingIds": [
+      {
+        "id": "textbook-section-12-computer-applications-tamil-e51fbdf6-9013013e04d3ac55",
+        "reason": "PDF 192 shows this is numbered premise 3 (SMTP) inside MCQ Q3, not the Q3 parent; retain raw artifact unchanged and reuse the parent ID"
+      }
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 12,
+    "chapterTitle": "களப்பெயர் முறைமை",
+    "chapterStartPdfPage": 194,
+    "chapterEndPdfPage": 210,
+    "pages": [
+      {
+        "page": 207,
+        "printedPage": 197,
+        "first": 1,
+        "last": 2,
+        "contentTopFraction": 0.71
+      },
+      {
+        "page": 208,
+        "printedPage": 198,
+        "first": 3,
+        "last": 14,
+        "contentTopFraction": 0.07
+      },
+      {
+        "page": 209,
+        "printedPage": 199,
+        "first": 15,
+        "last": 15,
+        "contentTopFraction": 0.07
+      }
+    ],
+    "inspectedEndingPages": [
+      9,
+      206,
+      210,
+      211
+    ],
+    "numberedPremises": [
+      {
+        "question": 15,
+        "count": 4
+      }
+    ],
+    "preserveLineBreakQuestions": [
+      13,
+      14,
+      15
+    ],
+    "questionWarnings": {
+      "1": [
+        "Stem and first two options at lower left of PDF 207; last two options at upper right of the exercise region. Glossary above the banner is excluded"
+      ],
+      "13": [
+        "Preserve all four Roman-numbered statements and the printed combined option mappings"
+      ],
+      "14": [
+        "Assertion/reason statements and four printed choices are one MCQ; do not generate new options"
+      ],
+      "15": [
+        "Matching MCQ is on PDF 209 / printed 199, omitted by the generic exercise end detection; preserve four numbered premises and permutation choices"
+      ]
+    },
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 207,
+        "kind": "Glossary, QR code and exercise banner excluded before Section I"
+      },
+      {
+        "numbers": [],
+        "page": 209,
+        "kind": "Sections II-IV and student activities are open responses, not printed four-choice one-mark MCQs; no generated options"
+      }
+    ],
+    "keyEvidence": "Visual source inspection: contents PDF 9, chapter heading PDF 194, exercise PDF 207, 208, 209 and stated ending/neighbor pages. No printed key located on these inspected exercise/ending pages; whole-chapter and whole-book absence not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sectionEndPattern": "^[ \\t]*(?:்?ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "sourceWarnings": [
+      "Tamil glyph damage requires source-faithful teacher correction; proposed reading order is not teacher-approved transcription",
+      "All original printed option positions are preserved; no generated distractors or guessed answers",
+      "Unknown answers block approval even when four option positions were recovered"
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 14,
+    "chapterTitle": "திறந்த மூல கருத்துருக்கள்",
+    "chapterStartPdfPage": 226,
+    "chapterEndPdfPage": 234,
+    "pages": [
+      {
+        "page": 233,
+        "printedPage": 223,
+        "first": 1,
+        "last": 10,
+        "contentTopFraction": 0.18
+      },
+      {
+        "page": 234,
+        "printedPage": 224,
+        "first": 11,
+        "last": 10,
+        "contentTopFraction": 0.07,
+        "numbers": []
+      }
+    ],
+    "inspectedEndingPages": [
+      9,
+      232,
+      235
+    ],
+    "questionWarnings": {
+      "1": [
+        "Source Q1 retains its existing stable ID; damaged Tamil must not be guessed from software knowledge"
+      ],
+      "5": [
+        "Retain all printed numeric choices including 13; no silent source correction"
+      ],
+      "6": [
+        "Retain UNIX & a. C++ and Otcl exactly as extracted, with a warning for source reconciliation"
+      ],
+      "10": [
+        "Q10 appears at bottom right of PDF 233; preserve Balog, Matt Brozowski, David Hustace and All of them without guessing an answer"
+      ]
+    },
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 233,
+        "kind": "Glossary, QR code and exercise banner excluded before Section I"
+      },
+      {
+        "numbers": [],
+        "page": 234,
+        "kind": "Sections II-IV and student activities are open responses, not printed four-choice one-mark MCQs; no generated options"
+      }
+    ],
+    "keyEvidence": "Visual source inspection: contents PDF 9, chapter heading PDF 226, exercise PDF 233, 234 and stated ending/neighbor pages. No printed key located on these inspected exercise/ending pages; whole-chapter and whole-book absence not asserted. Answers remain unknown.",
+    "diagramQuestions": [],
+    "sectionEndPattern": "^[ \\t]*(?:்?ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "sourceWarnings": [
+      "Tamil glyph damage requires source-faithful teacher correction; proposed reading order is not teacher-approved transcription",
+      "All original printed option positions are preserved; no generated distractors or guessed answers",
+      "Unknown answers block approval even when four option positions were recovered"
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 13,
+    "chapterTitle": "வலையமைப்பு வடமிடல்",
+    "chapterStartPdfPage": 211,
+    "chapterEndPdfPage": 225,
+    "pages": [
+      {
+        "page": 224,
+        "printedPage": 214,
+        "first": 1,
+        "last": 10,
+        "contentTopFraction": 0.29,
+        "numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          9,
+          10
+        ]
+      },
+      {
+        "page": 225,
+        "printedPage": 215,
+        "first": 11,
+        "last": 12,
+        "contentTopFraction": 0.07
+      }
+    ],
+    "inspectedEndingPages": [
+      211,
+      223,
+      226
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "page": 224,
+        "numbers": [],
+        "kind": "Lesson wiring summary, exercise banner and QR excluded"
+      },
+      {
+        "page": 225,
+        "numbers": [],
+        "kind": "Sections II–IV are marked longer-answer sections, not one-mark MCQs; no generated options"
+      }
+    ],
+    "keyEvidence": "No printed key located on the visually inspected exercise and adjacent ending pages. Whole-book key absence not established; every answer remains unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Raw damaged Tamil is preserved; source-faithful transcription and answer verification require individual teacher review",
+      "All printed option positions are retained; no generated choices or guessed answers"
+    ],
+    "sectionEndPattern": "^[ \\t]*(?:்?ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "embeddedNumberedListQuestions": [
+      12
+    ],
+    "sourceOccurrences": [
+      {
+        "ordinal": 1,
+        "printedNumber": 1,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-23f4ec7c7f761048",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 2,
+        "printedNumber": 2,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-4bfc5b10c31577e6",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 3,
+        "printedNumber": 3,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-c94744edcb84deca",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 4,
+        "printedNumber": 4,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-dadae6cc5dda0921",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 5,
+        "printedNumber": 5,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-eb7f7e71f0629ee5",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 6,
+        "printedNumber": 6,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-a211c07ad797ea60",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 7,
+        "printedNumber": 7,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-eddee9b7315a6201",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 8,
+        "printedNumber": 9,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-b1fda7f304e58746",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 9,
+        "printedNumber": 9,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-66da55f33a275a50",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 10,
+        "printedNumber": 10,
+        "pdfPage": 224,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-5946803e221b56de",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 11,
+        "printedNumber": 11,
+        "pdfPage": 225,
+        "existingId": "textbook-q-12-computer-applications-tamil-e51fbdf6-4d1441c28422bbb4",
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      },
+      {
+        "ordinal": 12,
+        "printedNumber": 12,
+        "pdfPage": 225,
+        "section": "பகுதி அ · I · printed MCQ section",
+        "reason": "Printed number 8 absent; two different stems labelled 9 within the same section. Ordinal is physical order, never a replacement printed number."
+      }
+    ],
+    "questionWarnings": {
+      "2": [
+        "Four source option positions are printed, but C label/text boundary is lost in the raw PDF text and merged into B. Preserve three extracted spans without inventing the fourth; incomplete and blocked pending source-based correction."
+      ],
+      "5": [
+        "Fresh source inspection corrects the earlier duplicate-choice claim: printed C is ஒளி, D is ஒலி (distinct Tamil words). Raw glyph damage still requires teacher correction; no answer inferred."
+      ],
+      "9": [
+        "Two distinct printed Q9 occurrences on PDF 224: செம்ப் இணைப்பு question, then RJ45 pin-count question. Distinguish stable source occurrence/ID, never merge or relabel as Q8."
+      ],
+      "12": [
+        "Matching question has four numbered premises, not four separate MCQs."
+      ]
+    },
+    "choiceCounts": {
+      "2": 3
+    },
+    "printedOptionLabels": {
+      "2": [
+        "அ",
+        "ஆ",
+        "ஈ"
+      ]
+    },
+    "incompleteQuestions": [
+      2
+    ]
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "chapterNumber": 15,
+    "chapterTitle": "மின்-வணிகம்",
+    "chapterStartPdfPage": 235,
+    "chapterEndPdfPage": 262,
+    "pages": [
+      {
+        "page": 260,
+        "printedPage": 250,
+        "first": 1,
+        "last": 3,
+        "contentTopFraction": 0.62
+      },
+      {
+        "page": 261,
+        "printedPage": 251,
+        "first": 4,
+        "last": 10,
+        "contentTopFraction": 0.07
+      },
+      {
+        "page": 262,
+        "printedPage": 252,
+        "first": 11,
+        "last": 10,
+        "contentTopFraction": 0.07,
+        "numbers": []
+      }
+    ],
+    "inspectedEndingPages": [
+      235,
+      259,
+      263
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "page": 260,
+        "numbers": [],
+        "kind": "Glossary before exercise banner excluded"
+      },
+      {
+        "page": 262,
+        "numbers": [],
+        "kind": "Sections II–IV and activities are longer responses, not one-mark MCQs"
+      }
+    ],
+    "keyEvidence": "No printed key located on the visually inspected exercise and adjacent ending pages. Whole-book key absence not established; every answer remains unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Raw damaged Tamil is preserved; source-faithful transcription and answer verification require individual teacher review",
+      "All printed option positions are retained; no generated choices or guessed answers"
+    ],
+    "sectionEndPattern": "^[ \\t]*(?:்?ப[ \\t]*குதி\\s*[–-]\\s*ஆ|II\\s*[.])",
+    "printedOptionLabels": {
+      "2": [
+        "அ",
+        "அ",
+        "அ",
+        "அ"
+      ]
+    },
+    "questionWarnings": {
+      "2": [
+        "Original source prints all four option labels as அ on PDF 260. Retain physical option order; A/B/C/D are internal positions, not corrected printed labels."
+      ],
+      "5": [
+        "Printed chronology/years retained exactly; factual/source anomalies require teacher review."
+      ],
+      "6": [
+        "Assertion and reason with four printed mappings are one question; no independently inferred answer."
+      ],
+      "7": [
+        "Option A begins at bottom left PDF 261, remaining choices continue top right."
+      ]
+    },
+    "dotlessQuestionNumbers": [
+      10
+    ]
+  },
+  {
+    "bookId": "12-computer-science-tamil-d5aa7dd4",
+    "subject": "Computer Science",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Science_TM_optimised.pdf",
+    "sourceSha256": "4b30dcadc6963d081d1513462bc5429788cfeb4c4d0d051994a0bb5ba87ed031",
+    "chapterNumber": 1,
+    "chapterTitle": "செயற்கூறு",
+    "chapterStartPdfPage": 7,
+    "chapterEndPdfPage": 17,
+    "pages": [
+      {
+        "page": 15,
+        "printedPage": 9,
+        "first": 1,
+        "last": 8,
+        "contentTopFraction": 0.2,
+        "layout": "single-column"
+      },
+      {
+        "page": 16,
+        "printedPage": 10,
+        "first": 9,
+        "last": 10,
+        "contentTopFraction": 0.07,
+        "layout": "single-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      6,
+      7,
+      14,
+      17,
+      18
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "page": 16,
+        "numbers": [],
+        "kind": "Part B and later are explicitly 2/3/5-mark questions; excluded from one-mark bank"
+      }
+    ],
+    "keyEvidence": "No printed key located on the visually inspected exercise and adjacent ending pages. Whole-book key absence not established; every answer remains unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Raw damaged Tamil is preserved; source-faithful transcription and answer verification require individual teacher review",
+      "All printed option positions are retained; no generated choices or guessed answers"
+    ],
+    "parenthesizedTamilOptions": true,
+    "sectionEndPattern": "^[ \\t]*\\u0bcd?\\u0baa[ \\t]*\\u0b95\\u0bc1\\u0ba4\\u0bbf\\s*[–-]\\s*\\u0b86",
+    "questionWarnings": {
+      "6": [
+        "Preserve printed delimiter choices { }, ( ), [ ], < > exactly; these are options, not missing code."
+      ]
+    }
+  },
+  {
+    "bookId": "12-computer-science-tamil-d5aa7dd4",
+    "subject": "Computer Science",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Computer_Science_TM_optimised.pdf",
+    "sourceSha256": "4b30dcadc6963d081d1513462bc5429788cfeb4c4d0d051994a0bb5ba87ed031",
+    "chapterNumber": 2,
+    "chapterTitle": "தரவு அருவமாக்கம்",
+    "chapterStartPdfPage": 18,
+    "chapterEndPdfPage": 27,
+    "pages": [
+      {
+        "page": 26,
+        "printedPage": 20,
+        "first": 1,
+        "last": 10,
+        "contentTopFraction": 0.2,
+        "layout": "single-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      6,
+      18,
+      25,
+      27,
+      28
+    ],
+    "stopBeforeQuestion": null,
+    "excludedItems": [
+      {
+        "page": 26,
+        "numbers": [],
+        "kind": "Part B and later are explicitly 2/3/5-mark questions; excluded from one-mark bank"
+      }
+    ],
+    "keyEvidence": "No printed key located on the visually inspected exercise and adjacent ending pages. Whole-book key absence not established; every answer remains unknown.",
+    "diagramQuestions": [],
+    "sourceWarnings": [
+      "Raw damaged Tamil is preserved; source-faithful transcription and answer verification require individual teacher review",
+      "All printed option positions are retained; no generated choices or guessed answers"
+    ],
+    "parenthesizedTamilOptions": true,
+    "sectionEndPattern": "^[ \\t]*\\u0bcd?\\u0baa[ \\t]*\\u0b95\\u0bc1\\u0ba4\\u0bbf\\s*[–-]\\s*\\u0b86",
+    "questionWarnings": {
+      "5": [
+        "Q5 and Q6 have the same printed wording and options with only punctuation differing. Preserve both source IDs and flag duplicate content; do not silently invent a contrasting stem."
+      ],
+      "6": [
+        "Same source wording/options as Q5; separate printed question retained with duplicate-content warning."
+      ]
+    }
+  }
+]

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Local Tamil Physics teacher review</title>
+    <title>Local textbook teacher review</title>
     <style>
       * {
         box-sizing: border-box;
@@ -150,7 +150,7 @@
   <body>
     <header>
       <div>
-        <h1>Local Tamil Physics · Volume 1 · Unit 1</h1>
+        <h1>Skill Up · Local textbook teacher review</h1>
         <p>
           Teacher decisions are local reference records. All source candidates
           stay held. No Supabase connection, import or publication.
@@ -197,6 +197,7 @@
             <button id="logout">Sign out</button>
           </nav>
           <p id="counts"></p>
+          <label>Unit / review batch<select id="batch"></select></label>
           <label>Question<select id="question"></select></label>
           <nav>
             <button id="previous">Previous</button
@@ -207,13 +208,17 @@
           <h2 id="title"></h2>
           <small id="references"></small>
           <p class="banner" id="incomplete" hidden>
-            Question 10 has graph-only choices. Labels (a)–(d) are incomplete
-            text options. Approval is blocked. Record Needs correction,
-            Rejected, or Still pending review.
+            Required text/graph choices remain incomplete. Approval is blocked.
+            Record Needs correction, Rejected, or Still pending review.
+          </p>
+          <p class="banner" id="answerUnavailable" hidden>
+            Answer evidence is unavailable for this batch. All answers remain
+            unknown and approval is blocked. Record corrections, rejection
+            reasons or pending review locally; do not guess a key.
           </p>
           <div class="grid">
             <section>
-              <h3>Original extracted Tamil — unchanged</h3>
+              <h3>Original extracted source text — unchanged</h3>
               <p id="original" class="text" lang="ta"></p>
               <h3>All original extracted options</h3>
               <ol id="originalOptions" type="A" lang="ta"></ol>
@@ -223,10 +228,11 @@
               </details>
             </section>
             <section>
-              <h3>Proposed Tamil transcription — unverified</h3>
+              <h3>Proposed source transcription — unverified</h3>
               <p id="proposed" class="text" lang="ta"></p>
               <h3>Proposed options in printed order</h3>
               <ol id="proposedOptions" type="A" lang="ta"></ol>
+              <p id="printedLabels"></p>
               <p id="answer"></p>
               <h3>Printed answer-key evidence</h3>
               <pre id="key" class="text"></pre>
@@ -235,14 +241,90 @@
           </div>
           <h3>Source and unresolved warnings</h3>
           <ul id="warnings"></ul>
-          <h3>Original locally rendered textbook pages</h3>
-          <p>
-            Open the full-size image to inspect symbols, graph choices and Tamil
-            text. Confirm each page only after checking it.
-          </p>
-          <div id="images"></div>
+          <section id="sourceTranscriptionSection" hidden>
+            <h3>Separate source-supported transcription proposal — not a teacher decision</h3>
+            <p id="sourceTranscriptionStatus"></p>
+            <p id="sourceTranscriptionText" class="text" lang="ta"></p>
+            <ol id="sourceTranscriptionOptions" type="A" lang="ta"></ol>
+            <ul id="sourceTranscriptionWarnings"></ul>
+            <small>No answer is inferred. This does not replace the original extraction,
+              earlier proposal, saved correction or review history. Compare every character
+              against the source before recording an explicit individual decision.</small>
+          </section>
+          <section id="figureSection" hidden>
+            <h3>Original question figures and printed option evidence</h3>
+            <p>
+              These are literal source crops associated with this candidate ID.
+              No diagram has been redrawn. Attachment is not teacher
+              verification.
+            </p>
+            <div id="figures"></div>
+          </section>
+          <details id="sourceEvidence" open>
+            <summary>
+              Separate full-page source and printed-key evidence
+            </summary>
+            <h3>Original locally rendered textbook pages</h3>
+            <p>
+              Open the full-size image to inspect symbols, graph choices and
+              original text. Confirm each page only after checking it.
+            </p>
+            <div id="images"></div>
+          </details>
           <form id="decisionForm">
             <h3>Individual teacher decision</h3>
+            <fieldset id="correctionFields" hidden>
+              <legend>
+                Teacher's corrected transcription — saved separately in decision
+                history
+              </legend>
+              <p>
+                The proposed extraction is damaged. To approve, enter a complete
+                source-faithful question and all four options. Correction
+                notes alone cannot replace the text. Unresolved graphs remain
+                blocked. You can save corrections with No verified answer;
+                unknown answers still block approval. Two-choice reference items
+                retain only their two printed options and cannot be approved for
+                four-choice practice. Five-choice source items retain all five
+                options in local corrections and remain blocked for four-choice practice.
+              </p>
+              <label
+                >Corrected question<textarea
+                  id="correctedQuestion"
+                  lang="ta"
+                  maxlength="20000"
+                ></textarea>
+              </label>
+              <label
+                >Corrected option A<input id="correctedA" lang="ta"
+              /></label>
+              <label
+                >Corrected option B<input id="correctedB" lang="ta"
+              /></label>
+              <label
+                >Corrected option C<input id="correctedC" lang="ta"
+              /></label>
+              <label
+                >Corrected option D<input id="correctedD" lang="ta"
+              /></label>
+              <label hidden
+                >Corrected option E (five-choice source only)<input id="correctedE" lang="ta"
+              /></label>
+              <label
+                >Verified answer<select id="correctedAnswer">
+                  <option value="">No verified answer</option>
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                  <option>D</option>
+                </select></label
+              >
+              <label
+                ><input type="checkbox" id="mappingConfirmed" /> I reconciled
+                this stable ID's original extraction with the correct textbook,
+                unit, printed question number and source pages.</label
+              >
+            </fieldset>
             <label
               >Decision<select id="decision">
                 <option value="pending">Still pending review</option>
@@ -264,7 +346,7 @@
             </label>
             <label
               ><input type="checkbox" id="textConfirmed" /> I verified every
-              proposed Tamil word, symbol and printed option against the
+              proposed word, symbol and printed option against the
               source.</label
             ><label
               ><input type="checkbox" id="keyConfirmed" /> I checked this

@@ -1,0 +1,1666 @@
+{
+  "checkedAt": "2026-10-17T08:31:10.824Z",
+  "scope": "Local-only textbook extraction and existing review workflow; no production connection, import, publication, push or deployment",
+  "targets": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-applications-tamil-e51fbdf6.pdf",
+      "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+      "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "chapter": 7,
+      "chapterTitle": "மடக்கு அமைப்பு",
+      "chapterPdfRange": [
+        133,
+        139
+      ],
+      "inspectedPdfPages": [
+        8,
+        133,
+        137,
+        138,
+        139,
+        140
+      ],
+      "mcqPdfPages": [
+        137,
+        138,
+        139
+      ],
+      "printedPages": [
+        127,
+        128,
+        129
+      ],
+      "contentsPdfPage": 8,
+      "contentsPrintedPage": "viii",
+      "sectionIdentified": true,
+      "held": 9,
+      "reusedIds": 9,
+      "newIds": [],
+      "printedKeyMatches": 0,
+      "unknownAnswers": 9,
+      "teacherVerifiedAnswers": 0,
+      "diagramDependent": [],
+      "incompleteExtractedChoices": [],
+      "printedCodeIssues": [
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "reviewed": 0,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "historyEvents": 0,
+      "published": 0,
+      "store": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-7\\decisions.json",
+      "keyEvidence": "No printed key on visually inspected PDF 137-139; contents PDF 8 and Chapter 8 heading PDF 140 confirm scope. No whole-book key-absence claim; all answers unknown.",
+      "excludedItems": [
+        {
+          "numbers": [],
+          "page": 137,
+          "kind": "Summary and glossary above Section I are lesson evidence only"
+        },
+        {
+          "numbers": [],
+          "page": 139,
+          "kind": "Section II-IV short/long responses and activity are not four-option MCQs"
+        }
+      ],
+      "sectionCompleteForStudentPractice": false,
+      "candidates": [
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-7feb57072cd30225",
+          "number": 1,
+          "pdfPage": 137,
+          "pdfEndPage": 137,
+          "printedPages": [
+            127
+          ],
+          "originalExtraction": {
+            "questionText": "மிகவும் கடினம ொ ன மடக்கு அம ம ப் பு",
+            "options": [
+              "While",
+              "Do while",
+              "for",
+              "இ மவ ஏதுமி ல் மல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 137\nநி ம ைவில் நகாள்க\n● while மடக்கில் நிப ந் தைமன ெ ரி எனில் க ெய ல் பொட டு த் கதை ொகுதி க ெய ற் ப டு த் தைப்ப டும்.\n● ஸ் கிரி ப் மட எ த் தைமன மு ம ை பய ன் ப டு த் தைப்ப ட ் வண டும் எ ன் பமதை முன்கூ ட டி ் ய\nஅறிந்திருக்கும் ் பொ து for மட க் மக பய ன் ப டு த் தை ல ொ ம் .\n● இது அணிகளுடன் ம ட டு ் ம க ெய ல் ப டும். ் ம லும் அணியில் தி ை வு மதிப்பு இ ம ை மய\nமடக்கினுள் க ெலு த் தை பய ன் ப டுகி ை து\n● Do while மடக்கு மடக்கின் உட ற் ப குதியில் உ ள் ்ள கூற்றுக ம்ள ஒரு மு ம ை\nக ெய ல் ப டுத்தும். அ தை ன் பி ை கு க க ொடு க் கப்ப ட ட நிப ந் தைமன ெ ரி என்று இருக்கும் வ மர\nமடக்கி மன மீ ண டும் மீ ண டும் க ெய ல் ப டுத்தும்.\nமடக்கு அம ம ப் பு நிரல ொக்க ம் க ெய்யும் ் பொ து ஒ ் ர குறிமு ம ை கதை ொகுதி மய மீ ண டும் மீ ண டும்\nக ெய ல் ப டுத்தும் ் பொ்தைொ (அ) அ ந்தை குறிப்பிட ட நிப ந்தைமனமய அ மட யும் ் பொ்தைொ\nமடக்கு அம ம ப்பு பய ன் ப டுகி ை து.\nfor மடக்கு for மடக்கு குறிமு ம ை கதை ொகுதி மய குறிப்பிட ட தை ட மவ க ெய ல்ப டு த் தை உ தை வுகி ை து.\nforeach மடக்கு foreach மடக்கு அணிகளில் பன்மு ம ை மய க ெய ல் ப டு த் தை எளி தைொ ன வழி மய\nவழ ங குகி ை து.\nwhile மடக்கு while மடக்கில் நிப ந் தைமன ெ ரி எனில் குறிமு ம ை கதை ொகுதி க ெய ல்ப டு த்தைப்ப டும்.\nபகுதி – அ\nI. சரியா ை வி மடமய த்\nந ேர்ந நே டுத்து எழுதுக\n1. மிகவும் கடினம ொ ன மடக்கு அம ம ப் பு\nஅ) While ஆ) Do while\nஇ) for ஈ) இ மவ ஏதுமி ல் மல\n2. ஒரு குறிப்பிட ட தை ட மவ\nமடக்கி மன மீ ண டும் மீ ண டும்\nக ெய ல் ப டுத்தும் மடக்கி மன எவ வொ று\nஅ மழக்கப்ப டுகி ை து.\nஅ) வர ம் பற்ை மடக்கு (Unbounded)\nஆ) வரம்புக்குட ப ட ட மடக்கு (Bounded)\nஇ) While மடக்கு\nஈ) for மடக்கு\n3. க க ொடு க் கப்ப ட ட நிப ந் தைமன ்\nகொமவ யின் மதிப்பு பூலியன்( ெ ரி)\nஆக இரு ந் தைொ ல் மடக்கின் கூற்றுகள்\nக ெய ல் ப டு த் தைப்ப டும் தை வறு எனில்\nமடக்கு முடிவுக்கு வரும் எ ந் தை மடக்கு\nஇவ வொ று க ெய ல் ப டுகி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\nவி ை ா க் க ள்\n127 பாடம் 07 மடக்கு அம ம ப் பு\nXII CompApp_Tamil version CHAPTER 07.indd 127 4/10/2019 6:18:58 PM",
+          "proposedTranscription": {
+            "questionText": "மிகவும் கடினம ொ ன மடக்கு அம ம ப் பு",
+            "options": [
+              "While",
+              "Do while",
+              "for",
+              "இ மவ ஏதுமி ல் மல"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-1a942a12ccd082bf",
+          "number": 2,
+          "pdfPage": 137,
+          "pdfEndPage": 137,
+          "printedPages": [
+            127
+          ],
+          "originalExtraction": {
+            "questionText": "ஒரு குறிப்பிட ட தை ட மவ மடக்கி மன மீ ண டும் மீ ண டும் க ெய ல் ப டுத்தும் மடக்கி மன எவ வொ று அ மழக்கப்ப டுகி ை து.",
+            "options": [
+              "வர ம் பற்ை மடக்கு (Unbounded)",
+              "வரம்புக்குட ப ட ட மடக்கு (Bounded)",
+              "While மடக்கு",
+              "for மடக்கு"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 137\nநி ம ைவில் நகாள்க\n● while மடக்கில் நிப ந் தைமன ெ ரி எனில் க ெய ல் பொட டு த் கதை ொகுதி க ெய ற் ப டு த் தைப்ப டும்.\n● ஸ் கிரி ப் மட எ த் தைமன மு ம ை பய ன் ப டு த் தைப்ப ட ் வண டும் எ ன் பமதை முன்கூ ட டி ் ய\nஅறிந்திருக்கும் ் பொ து for மட க் மக பய ன் ப டு த் தை ல ொ ம் .\n● இது அணிகளுடன் ம ட டு ் ம க ெய ல் ப டும். ் ம லும் அணியில் தி ை வு மதிப்பு இ ம ை மய\nமடக்கினுள் க ெலு த் தை பய ன் ப டுகி ை து\n● Do while மடக்கு மடக்கின் உட ற் ப குதியில் உ ள் ்ள கூற்றுக ம்ள ஒரு மு ம ை\nக ெய ல் ப டுத்தும். அ தை ன் பி ை கு க க ொடு க் கப்ப ட ட நிப ந் தைமன ெ ரி என்று இருக்கும் வ மர\nமடக்கி மன மீ ண டும் மீ ண டும் க ெய ல் ப டுத்தும்.\nமடக்கு அம ம ப் பு நிரல ொக்க ம் க ெய்யும் ் பொ து ஒ ் ர குறிமு ம ை கதை ொகுதி மய மீ ண டும் மீ ண டும்\nக ெய ல் ப டுத்தும் ் பொ்தைொ (அ) அ ந்தை குறிப்பிட ட நிப ந்தைமனமய அ மட யும் ் பொ்தைொ\nமடக்கு அம ம ப்பு பய ன் ப டுகி ை து.\nfor மடக்கு for மடக்கு குறிமு ம ை கதை ொகுதி மய குறிப்பிட ட தை ட மவ க ெய ல்ப டு த் தை உ தை வுகி ை து.\nforeach மடக்கு foreach மடக்கு அணிகளில் பன்மு ம ை மய க ெய ல் ப டு த் தை எளி தைொ ன வழி மய\nவழ ங குகி ை து.\nwhile மடக்கு while மடக்கில் நிப ந் தைமன ெ ரி எனில் குறிமு ம ை கதை ொகுதி க ெய ல்ப டு த்தைப்ப டும்.\nபகுதி – அ\nI. சரியா ை வி மடமய த்\nந ேர்ந நே டுத்து எழுதுக\n1. மிகவும் கடினம ொ ன மடக்கு அம ம ப் பு\nஅ) While ஆ) Do while\nஇ) for ஈ) இ மவ ஏதுமி ல் மல\n2. ஒரு குறிப்பிட ட தை ட மவ\nமடக்கி மன மீ ண டும் மீ ண டும்\nக ெய ல் ப டுத்தும் மடக்கி மன எவ வொ று\nஅ மழக்கப்ப டுகி ை து.\nஅ) வர ம் பற்ை மடக்கு (Unbounded)\nஆ) வரம்புக்குட ப ட ட மடக்கு (Bounded)\nஇ) While மடக்கு\nஈ) for மடக்கு\n3. க க ொடு க் கப்ப ட ட நிப ந் தைமன ்\nகொமவ யின் மதிப்பு பூலியன்( ெ ரி)\nஆக இரு ந் தைொ ல் மடக்கின் கூற்றுகள்\nக ெய ல் ப டு த் தைப்ப டும் தை வறு எனில்\nமடக்கு முடிவுக்கு வரும் எ ந் தை மடக்கு\nஇவ வொ று க ெய ல் ப டுகி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\nவி ை ா க் க ள்\n127 பாடம் 07 மடக்கு அம ம ப் பு\nXII CompApp_Tamil version CHAPTER 07.indd 127 4/10/2019 6:18:58 PM",
+          "proposedTranscription": {
+            "questionText": "ஒரு குறிப்பிட ட தை ட மவ மடக்கி மன மீ ண டும் மீ ண டும் க ெய ல் ப டுத்தும் மடக்கி மன எவ வொ று அ மழக்கப்ப டுகி ை து.",
+            "options": [
+              "வர ம் பற்ை மடக்கு (Unbounded)",
+              "வரம்புக்குட ப ட ட மடக்கு (Bounded)",
+              "While மடக்கு",
+              "for மடக்கு"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Options cross from the bottom of the left column to the top of the right column on PDF 137; retain all four in printed order",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-da97268d8dc90c24",
+          "number": 3,
+          "pdfPage": 137,
+          "pdfEndPage": 137,
+          "printedPages": [
+            127
+          ],
+          "originalExtraction": {
+            "questionText": "க க ொடு க் கப்ப ட ட நிப ந் தைமன ் கொமவ யின் மதிப்பு பூலியன்( ெ ரி) ஆக இரு ந் தைொ ல் மடக்கின் கூற்றுகள் க ெய ல் ப டு த் தைப்ப டும் தை வறு எனில் மடக்கு முடிவுக்கு வரும் எ ந் தை மடக்கு இவ வொ று க ெய ல் ப டுகி ை து.",
+            "options": [
+              "for மடக்கு",
+              "while மடக்கு",
+              "foreach மடக்கு",
+              "் மற்க ண ட அ மன த் தும் வி ை ா க் க ள் 127 பாடம் 07 மடக்கு அம ம ப் பு"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 137\nநி ம ைவில் நகாள்க\n● while மடக்கில் நிப ந் தைமன ெ ரி எனில் க ெய ல் பொட டு த் கதை ொகுதி க ெய ற் ப டு த் தைப்ப டும்.\n● ஸ் கிரி ப் மட எ த் தைமன மு ம ை பய ன் ப டு த் தைப்ப ட ் வண டும் எ ன் பமதை முன்கூ ட டி ் ய\nஅறிந்திருக்கும் ் பொ து for மட க் மக பய ன் ப டு த் தை ல ொ ம் .\n● இது அணிகளுடன் ம ட டு ் ம க ெய ல் ப டும். ் ம லும் அணியில் தி ை வு மதிப்பு இ ம ை மய\nமடக்கினுள் க ெலு த் தை பய ன் ப டுகி ை து\n● Do while மடக்கு மடக்கின் உட ற் ப குதியில் உ ள் ்ள கூற்றுக ம்ள ஒரு மு ம ை\nக ெய ல் ப டுத்தும். அ தை ன் பி ை கு க க ொடு க் கப்ப ட ட நிப ந் தைமன ெ ரி என்று இருக்கும் வ மர\nமடக்கி மன மீ ண டும் மீ ண டும் க ெய ல் ப டுத்தும்.\nமடக்கு அம ம ப் பு நிரல ொக்க ம் க ெய்யும் ் பொ து ஒ ் ர குறிமு ம ை கதை ொகுதி மய மீ ண டும் மீ ண டும்\nக ெய ல் ப டுத்தும் ் பொ்தைொ (அ) அ ந்தை குறிப்பிட ட நிப ந்தைமனமய அ மட யும் ் பொ்தைொ\nமடக்கு அம ம ப்பு பய ன் ப டுகி ை து.\nfor மடக்கு for மடக்கு குறிமு ம ை கதை ொகுதி மய குறிப்பிட ட தை ட மவ க ெய ல்ப டு த் தை உ தை வுகி ை து.\nforeach மடக்கு foreach மடக்கு அணிகளில் பன்மு ம ை மய க ெய ல் ப டு த் தை எளி தைொ ன வழி மய\nவழ ங குகி ை து.\nwhile மடக்கு while மடக்கில் நிப ந் தைமன ெ ரி எனில் குறிமு ம ை கதை ொகுதி க ெய ல்ப டு த்தைப்ப டும்.\nபகுதி – அ\nI. சரியா ை வி மடமய த்\nந ேர்ந நே டுத்து எழுதுக\n1. மிகவும் கடினம ொ ன மடக்கு அம ம ப் பு\nஅ) While ஆ) Do while\nஇ) for ஈ) இ மவ ஏதுமி ல் மல\n2. ஒரு குறிப்பிட ட தை ட மவ\nமடக்கி மன மீ ண டும் மீ ண டும்\nக ெய ல் ப டுத்தும் மடக்கி மன எவ வொ று\nஅ மழக்கப்ப டுகி ை து.\nஅ) வர ம் பற்ை மடக்கு (Unbounded)\nஆ) வரம்புக்குட ப ட ட மடக்கு (Bounded)\nஇ) While மடக்கு\nஈ) for மடக்கு\n3. க க ொடு க் கப்ப ட ட நிப ந் தைமன ்\nகொமவ யின் மதிப்பு பூலியன்( ெ ரி)\nஆக இரு ந் தைொ ல் மடக்கின் கூற்றுகள்\nக ெய ல் ப டு த் தைப்ப டும் தை வறு எனில்\nமடக்கு முடிவுக்கு வரும் எ ந் தை மடக்கு\nஇவ வொ று க ெய ல் ப டுகி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\nவி ை ா க் க ள்\n127 பாடம் 07 மடக்கு அம ம ப் பு\nXII CompApp_Tamil version CHAPTER 07.indd 127 4/10/2019 6:18:58 PM",
+          "proposedTranscription": {
+            "questionText": "க க ொடு க் கப்ப ட ட நிப ந் தைமன ் கொமவ யின் மதிப்பு பூலியன்( ெ ரி) ஆக இரு ந் தைொ ல் மடக்கின் கூற்றுகள் க ெய ல் ப டு த் தைப்ப டும் தை வறு எனில் மடக்கு முடிவுக்கு வரும் எ ந் தை மடக்கு இவ வொ று க ெய ல் ப டுகி ை து.",
+            "options": [
+              "for மடக்கு",
+              "while மடக்கு",
+              "foreach மடக்கு",
+              "் மற்க ண ட அ மன த் தும்"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-4ad6927763b3f836",
+          "number": 4,
+          "pdfPage": 138,
+          "pdfEndPage": 138,
+          "printedPages": [
+            128
+          ],
+          "originalExtraction": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>",
+            "options": [
+              "Welcome to Tamilnadu",
+              "Counter is: 20",
+              "Welcome to Tamilnadu Cunter is: 22",
+              "Welcome to Tamilnadu Welcome to Tamilnadu Counder is: 22"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 138\n4. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>\nஅ) Welcome to Tamilnadu\nஆ) Counter is: 20\nஇ) Welcome to Tamilnadu Cunter is:\n22\nஈ) Welcome to Tamilnadu Welcome\nto Tamilnadu Counder is: 22\n5. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>\nஅ) Hello Hello Hello Hello Hello\nஆ) Hello Hello Hello\nஇ) Hello\nஈ) ் மற்க ண ட எதுவும் இ ல் மல\n6. PHP ெொ ன் கு வ மக ய ொ ன மடக்கு\nநுட ப ங கம்ள ஆ தை ரிக்கி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\n7. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>\nஅ) 12 squared 141\nஆ ) 12 squared=141\nஇ) “12 squared=141”\nஈ) இயக்க நேரப்பிழை\n8. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>\nஅ) **********\nஆ) *********\nஇ) ************\nஈ) முடிவி ல் லொ மடக்கு\n9. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM",
+          "proposedTranscription": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>",
+            "options": [
+              "Welcome to Tamilnadu",
+              "Counter is: 20",
+              "Welcome to Tamilnadu Cunter is: 22",
+              "Welcome to Tamilnadu Welcome to Tamilnadu Counder is: 22"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Preserve counter 20, comparison < 10, and printed Cunter/Counder output spellings; do not repair code or infer the answer",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-c5b2eaf4d50bf422",
+          "number": 5,
+          "pdfPage": 138,
+          "pdfEndPage": 138,
+          "printedPages": [
+            128
+          ],
+          "originalExtraction": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ை மய க ெய ல் ப டுத்தும் ் பொ து உலவியில் எவ வொ று ் தைொ ன் றும் <?php for ($counter = 10; $counter < 10; $counter = $counter + 5){ Echo “Hello”; ?>",
+            "options": [
+              "Hello Hello Hello Hello Hello",
+              "Hello Hello Hello",
+              "Hello",
+              "் மற்க ண ட எதுவும் இ ல் மல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 138\n4. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>\nஅ) Welcome to Tamilnadu\nஆ) Counter is: 20\nஇ) Welcome to Tamilnadu Cunter is:\n22\nஈ) Welcome to Tamilnadu Welcome\nto Tamilnadu Counder is: 22\n5. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>\nஅ) Hello Hello Hello Hello Hello\nஆ) Hello Hello Hello\nஇ) Hello\nஈ) ் மற்க ண ட எதுவும் இ ல் மல\n6. PHP ெொ ன் கு வ மக ய ொ ன மடக்கு\nநுட ப ங கம்ள ஆ தை ரிக்கி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\n7. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>\nஅ) 12 squared 141\nஆ ) 12 squared=141\nஇ) “12 squared=141”\nஈ) இயக்க நேரப்பிழை\n8. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>\nஅ) **********\nஆ) *********\nஇ) ************\nஈ) முடிவி ல் லொ மடக்கு\n9. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM",
+          "proposedTranscription": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>",
+            "options": [
+              "Hello Hello Hello Hello Hello",
+              "Hello Hello Hello",
+              "Hello",
+              "் மற்க ண ட எதுவும் இ ல் மல"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Original printed snippet opens a brace but shows no closing brace before ?>; flag malformed source code, do not insert a brace or invent missing text",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-4e8d13a5303e55fd",
+          "number": 6,
+          "pdfPage": 138,
+          "pdfEndPage": 138,
+          "printedPages": [
+            128
+          ],
+          "originalExtraction": {
+            "questionText": "PHP ெொ ன் கு வ மக ய ொ ன மடக்கு நுட ப ங கம்ள ஆ தை ரிக்கி ை து.",
+            "options": [
+              "for மடக்கு",
+              "while மடக்கு",
+              "foreach மடக்கு",
+              "் மற்க ண ட அ மன த் தும்"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 138\n4. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>\nஅ) Welcome to Tamilnadu\nஆ) Counter is: 20\nஇ) Welcome to Tamilnadu Cunter is:\n22\nஈ) Welcome to Tamilnadu Welcome\nto Tamilnadu Counder is: 22\n5. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>\nஅ) Hello Hello Hello Hello Hello\nஆ) Hello Hello Hello\nஇ) Hello\nஈ) ் மற்க ண ட எதுவும் இ ல் மல\n6. PHP ெொ ன் கு வ மக ய ொ ன மடக்கு\nநுட ப ங கம்ள ஆ தை ரிக்கி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\n7. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>\nஅ) 12 squared 141\nஆ ) 12 squared=141\nஇ) “12 squared=141”\nஈ) இயக்க நேரப்பிழை\n8. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>\nஅ) **********\nஆ) *********\nஇ) ************\nஈ) முடிவி ல் லொ மடக்கு\n9. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM",
+          "proposedTranscription": {
+            "questionText": "PHP ெொ ன் கு வ மக ய ொ ன மடக்கு நுட ப ங கம்ள ஆ தை ரிக்கி ை து.",
+            "options": [
+              "for மடக்கு",
+              "while மடக்கு",
+              "foreach மடக்கு",
+              "் மற்க ண ட அ மன த் தும்"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-e3cb0bae8786f55e",
+          "number": 7,
+          "pdfPage": 138,
+          "pdfEndPage": 138,
+          "printedPages": [
+            128
+          ],
+          "originalExtraction": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ைக்கு கவ ளியீடு எ ன் ன வ ொ க இருக்கும்? <? php $count=12; do{ printf(“%d squared=%d<br/>”, $count, pow($count,2)); } while($count<4); ?>",
+            "options": [
+              "12 squared 141",
+              "12 squared=141",
+              "“12 squared=141”",
+              "இயக்க நேரப்பிழை"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 138\n4. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>\nஅ) Welcome to Tamilnadu\nஆ) Counter is: 20\nஇ) Welcome to Tamilnadu Cunter is:\n22\nஈ) Welcome to Tamilnadu Welcome\nto Tamilnadu Counder is: 22\n5. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>\nஅ) Hello Hello Hello Hello Hello\nஆ) Hello Hello Hello\nஇ) Hello\nஈ) ் மற்க ண ட எதுவும் இ ல் மல\n6. PHP ெொ ன் கு வ மக ய ொ ன மடக்கு\nநுட ப ங கம்ள ஆ தை ரிக்கி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\n7. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>\nஅ) 12 squared 141\nஆ ) 12 squared=141\nஇ) “12 squared=141”\nஈ) இயக்க நேரப்பிழை\n8. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>\nஅ) **********\nஆ) *********\nஇ) ************\nஈ) முடிவி ல் லொ மடக்கு\n9. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM",
+          "proposedTranscription": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>",
+            "options": [
+              "12 squared 141",
+              "12 squared=141",
+              "“12 squared=141”",
+              "இயக்க நேரப்பிழை"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Preserve the printed <? php opening, quote glyphs and 141 output choices; no external calculation or execution is treated as an official answer",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-4844f23d32eb5a2d",
+          "number": 8,
+          "pdfPage": 138,
+          "pdfEndPage": 138,
+          "printedPages": [
+            128
+          ],
+          "originalExtraction": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>",
+            "options": [
+              "**********",
+              "*********",
+              "************",
+              "முடிவி ல் லொ மடக்கு"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 138\n4. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>\nஅ) Welcome to Tamilnadu\nஆ) Counter is: 20\nஇ) Welcome to Tamilnadu Cunter is:\n22\nஈ) Welcome to Tamilnadu Welcome\nto Tamilnadu Counder is: 22\n5. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>\nஅ) Hello Hello Hello Hello Hello\nஆ) Hello Hello Hello\nஇ) Hello\nஈ) ் மற்க ண ட எதுவும் இ ல் மல\n6. PHP ெொ ன் கு வ மக ய ொ ன மடக்கு\nநுட ப ங கம்ள ஆ தை ரிக்கி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\n7. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>\nஅ) 12 squared 141\nஆ ) 12 squared=141\nஇ) “12 squared=141”\nஈ) இயக்க நேரப்பிழை\n8. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>\nஅ) **********\nஆ) *********\nஇ) ************\nஈ) முடிவி ல் லொ மடக்கு\n9. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM",
+          "proposedTranscription": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>",
+            "options": [
+              "**********",
+              "*********",
+              "************",
+              "முடிவி ல் லொ மடக்கு"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Preserve literal backslash-t and all printed asterisk counts; no reconstructed output or guessed choice",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-section-12-computer-applications-tamil-e51fbdf6-b37ff2b91a39917e",
+          "number": 9,
+          "pdfPage": 138,
+          "pdfEndPage": 139,
+          "printedPages": [
+            128,
+            129
+          ],
+          "originalExtraction": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM\n",
+            "options": [],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 138\n4. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 20; $counter < 10;\n$counter++){\necho “Welcome to Tamilnadu “;\n}\necho “Counter is: $counter”;\n?>\nஅ) Welcome to Tamilnadu\nஆ) Counter is: 20\nஇ) Welcome to Tamilnadu Cunter is:\n22\nஈ) Welcome to Tamilnadu Welcome\nto Tamilnadu Counder is: 22\n5. பி ன் வ ரும் PHP குறிமு ம ை மய\nக ெய ல் ப டுத்தும் ் பொ து உலவியில்\nஎவ வொ று ் தைொ ன் றும்\n<?php\nfor ($counter = 10; $counter < 10;\n$counter = $counter + 5){\nEcho “Hello”;\n?>\nஅ) Hello Hello Hello Hello Hello\nஆ) Hello Hello Hello\nஇ) Hello\nஈ) ் மற்க ண ட எதுவும் இ ல் மல\n6. PHP ெொ ன் கு வ மக ய ொ ன மடக்கு\nநுட ப ங கம்ள ஆ தை ரிக்கி ை து.\nஅ) for மடக்கு\nஆ) while மடக்கு\nஇ) foreach மடக்கு\nஈ) ் மற்க ண ட அ மன த் தும்\n7. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<? php\n$count=12;\ndo{\nprintf(“%d squared=%d<br/>”,\n$count, pow($count,2));\n} while($count<4);\n?>\nஅ) 12 squared 141\nஆ ) 12 squared=141\nஇ) “12 squared=141”\nஈ) இயக்க நேரப்பிழை\n8. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = 1; $x < 10;++$x)\n{\nprint “*\\t ”;\n}\n?>\nஅ) **********\nஆ) *********\nஇ) ************\nஈ) முடிவி ல் லொ மடக்கு\n9. பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>\nபாடம் 07 மடக்கு அம ம ப் பு 128\nXII CompApp_Tamil version CHAPTER 07.indd 128 4/10/2019 6:18:59 PM\n\nPDF 139\nபகுதி – இ\nIII. ஒரு பத்திய ை வில்\nவி மட யளி க் க வும்\n1. மடக்கு அம ம ப் பின் சி ை ப் பியல்புக ம்ள\nஎழுதுக.\n2. மடக்கு அம ம ப் பின் பய ன் கம்ள\nஎழுதுக.\n3. foreach மற்றும் While மடக்கி மன ்\nவ றுபடுத்துக.\n4. Do while மடக்கி மன பற்றி சிறுகுறிப்பு\nவ மர க.\n5. While மற்றும் Do while மடக்கி மன ்\nவ றுபடுத்துக.\nபகுதி – ஈ\nIV. ஒரு ப க் க அ ை வில்\nவி மட யளி க் க வும்\n1. மடக்கு கட ட ம மப்மப விவரி.\n2. foreach மடக்கி மன விரிவ ொ க விவரி.\n3. Do while மடக்கின் க ெய ல் பொ டுக ம்ள\nவிவரி.\n4. for கூற்றின் கருத்துரு க் கம்ள விவரி.\n5. மடக்கு அம ம ப் பில் உ ள் ்ள அணி மய\nபற்றி விவரி.\nஅ) 123456713910412\nஆ) 123456713910\nஇ) 1234567139104\nஈ) முடிவி ல் லொ மடக்கு\nபகுதி – ஆ\nII. மூன்று வரிகளில் வி மட யளி க் க வும்\n1. மடக்கு கட ட ம மப்மப வ மர யறு.\n2. for மட க் மக வ மர யறு.\n3. foreach மடக்கு எ ன் ப து எ ன் ன ?\n4. மடக்கு அம ம ப் புக ம்ள ப ட டியலிடு.\n5. for மடக்கின் கட டம்ள அம மப்மப\nஎழுதுக.\n6. foreach மடக்கின் கட டம்ள\nஅம மப்மப எழுதுக.\n7. while மடக்கின் கட டம்ள அம மப்மப\nஎழுதுக.\n8. do while மடக்கின் கட டம்ள\nஅம மப்மப எழுதுக.\n9. for மடக்கு மற்றும் foreach\nமடக்கி மன ஒப்பிடுக.\n10. foreach மடக்கின் பயன் எ ன் ன ?\nமாணவ ர நச ய ல் பா டு\n● foreach மட க் மக பய ன் ப டுத்தி ஒரு அணி உறு ப் மப உருவ ொ க் கு மற்றும் அ தை ன்\nமதிப்புக ம்ள க ொட டு\n● மடக்கு அம ம ப் பின ொ ல் அ ன் ைொ ட வ ொ ழ் வில் உ ள் ்ள பய ன் கம்ள விவரி.\n129 பாடம் 07 மடக்கு அம ம ப் பு\nXII CompApp_Tamil version CHAPTER 07.indd 129 4/10/2019 6:18:59 PM",
+          "proposedTranscription": {
+            "questionText": "பி ன் வ ரும் PHP குறிமு ம ைக்கு\nகவ ளியீடு எ ன் ன வ ொ க இருக்கும்?\n<?php\nfor ($x = -1; $x < 10;--$x)\n{\nprint $x;\n}\n?>",
+            "options": [
+              "123456713910412",
+              "123456713910",
+              "1234567139104",
+              "முடிவி ல் லொ மடக்கு"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Tamil wording and programming punctuation require source-faithful individual teacher correction",
+            "Printed PHP syntax and apparent output errors are retained, not executed or repaired to guess official answers",
+            "Program is on PDF 138 / printed 128; four options continue on PDF 139 / printed 129. Both pages must be inspected",
+            "Existing saved section ID has an empty options array; original extraction stays separate from recovered printed option positions",
+            "A separate saved parser Q5 on PDF 139 has incorrectly attached these choices to an open-response stem; keep that artifact unchanged and excluded from this MCQ proposal",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        }
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-technology-tamil-c66e9089.pdf",
+      "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+      "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapter": 1,
+      "chapterTitle": "அடோப் பேஜ்மேக்கர்",
+      "chapterPdfRange": [
+        7,
+        50
+      ],
+      "inspectedPdfPages": [
+        6,
+        7,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "mcqPdfPages": [
+        48,
+        49
+      ],
+      "printedPages": [
+        42,
+        43
+      ],
+      "contentsPdfPage": 6,
+      "contentsPrintedPage": "vi",
+      "sectionIdentified": true,
+      "held": 12,
+      "reusedIds": 12,
+      "newIds": [],
+      "printedKeyMatches": 0,
+      "unknownAnswers": 12,
+      "teacherVerifiedAnswers": 0,
+      "diagramDependent": [],
+      "incompleteExtractedChoices": [],
+      "printedCodeIssues": [],
+      "reviewed": 0,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "historyEvents": 0,
+      "published": 0,
+      "store": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-1\\decisions.json",
+      "keyEvidence": "No printed key on inspected PDF 47-50; contents PDF 6 and chapter headings PDF 7 and 51 establish Adobe PageMaker Chapter 1 / printed 1-44. No whole-book answer-key absence claim. Answers unknown.",
+      "excludedItems": [
+        {
+          "numbers": [
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "page": 49,
+          "kind": "Five fill-in-the-blank items without printed answer choices; not converted to MCQs"
+        },
+        {
+          "numbers": [
+            18
+          ],
+          "page": 49,
+          "kind": "Matching four terms to shortcuts without four printed answer permutations; no fabricated options"
+        },
+        {
+          "numbers": [
+            19
+          ],
+          "page": 49,
+          "kind": "Composite odd-one-out task with four roman-numbered groups; whether groups are independent subquestions needs teacher format review, not an invented A-D answer mapping"
+        },
+        {
+          "numbers": [
+            20,
+            21
+          ],
+          "page": 49,
+          "kind": "Two composite tasks each have separate binary subitems/pairs; no printed four-option combined mapping"
+        },
+        {
+          "numbers": [],
+          "page": 50,
+          "kind": "Section II-IV open responses, not MCQs"
+        },
+        {
+          "numbers": [],
+          "page": 47,
+          "kind": "Lesson summary and glossary preceding the exercise are excluded"
+        }
+      ],
+      "sectionCompleteForStudentPractice": false,
+      "candidates": [
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-2b0024994cf40f8f",
+          "number": 1,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "DTP என பைன விரிவ டா்கக ம் _________",
+            "options": [
+              "Desktop Publishing",
+              "Desktop publication",
+              "Doctor to Patient",
+              "Desktop Printer"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "DTP என பைன விரிவ டா்கக ம் _________",
+            "options": [
+              "Desktop Publishing",
+              "Desktop publication",
+              "Doctor to Patient",
+              "Desktop Printer"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-de41c9dd522e77be",
+          "number": 2,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "_________ என ப து ஒரு DTP டமே ன ட ப டா ருள டா கும்.",
+            "options": [
+              "Lotus 1-2-3",
+              "PageMaker",
+              "Maya",
+              "Flash"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "_________ என ப து ஒரு DTP டமே ன ட ப டா ருள டா கும்.",
+            "options": [
+              "Lotus 1-2-3",
+              "PageMaker",
+              "Maya",
+              "Flash"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-90993d362653644b",
+          "number": 3,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "எந ை பட்டியில் New க ட் ெதள இ ெம்டப ற் று ள் ள து?",
+            "options": [
+              "File menu",
+              "Edit menu",
+              "Layout menu",
+              "Type menu"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "எந ை பட்டியில் New க ட் ெதள இ ெம்டப ற் று ள் ள து?",
+            "options": [
+              "File menu",
+              "Edit menu",
+              "Layout menu",
+              "Type menu"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-8f3abd71b9b2c8bd",
+          "number": 4,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "Page Maker சன்னல் தி த ையில் கருப்பு நி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில் இரு ்க கும் பகுதி _________ எ ்ன அ த ை ்க கப்ப டும்.",
+            "options": [
+              "page",
+              "pasteboard",
+              "blackboard",
+              "dashboard"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "Page Maker சன்னல் தி த ையில் கருப்பு நி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில் இரு ்க கும் பகுதி _________ எ ்ன அ த ை ்க கப்ப டும்.",
+            "options": [
+              "page",
+              "pasteboard",
+              "blackboard",
+              "dashboard"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-section-12-computer-technology-tamil-c66e9089-91294615d59f0f06",
+          "number": 5,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM\nஇ) Paste - (iii) Ctrl+X\nஈ) Undo - (iv) Ctrl+C\n",
+            "options": [],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "PageMaker ஆவண த் தை மூடுவ ைற்கடா்ன வி தசப்ப ல தக குறு ்க கு வழி _________",
+            "options": [
+              "Ctrl+A",
+              "Ctrl +B",
+              "Ctrl+C",
+              "Ctrl+W"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Stem is at bottom of the left column; all four shortcut choices are at top of the right column on PDF 48",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-5bccfb925446573c",
+          "number": 6,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "_________ கருவி ஆவணத்தி ன ஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப் பயன ப டுகி ் து.",
+            "options": [
+              "Text tool",
+              "Line tool",
+              "Zoom tool",
+              "Hand tool"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "_________ கருவி ஆவணத்தி ன ஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப் பயன ப டுகி ் து.",
+            "options": [
+              "Text tool",
+              "Line tool",
+              "Zoom tool",
+              "Hand tool"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-a142fcba8acccc95",
+          "number": 7,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும் கருவி _________",
+            "options": [
+              "Line",
+              "Ellipse",
+              "Rectangle",
+              "Text"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும் கருவி _________",
+            "options": [
+              "Line",
+              "Ellipse",
+              "Rectangle",
+              "Text"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-894c7fa942cac2c4",
+          "number": 8,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "Place க ட் ெதள _________ பட்டியில் இ ெம்டப ற் றிரு ்க கும்.",
+            "options": [
+              "File",
+              "Edit",
+              "Layout",
+              "Window"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "Place க ட் ெதள _________ பட்டியில் இ ெம்டப ற் றிரு ்க கும்.",
+            "options": [
+              "File",
+              "Edit",
+              "Layout",
+              "Window"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-2672eb62e75370fa",
+          "number": 9,
+          "pdfPage": 48,
+          "pdfEndPage": 48,
+          "printedPages": [
+            42
+          ],
+          "originalExtraction": {
+            "questionText": "முழு ஆவண த் தை த் பைர்நடை டு ்க க வி தசப்ப ல தக யில் _________ குறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை அழு த் ை பவ ண் டும்.",
+            "options": [
+              "Ctrl+A",
+              "Ctrl +B",
+              "Ctrl+C",
+              "Ctrl+D பகுதி – அ I. சரியான வி கடகய த் ட்தர் ்ந ட்த டுத்து எழுது ்க"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 48\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+W\n6. _________ கருவி ஆவணத்தி ன\nஒரு பகுதி தய ப் டப ரி ைடா்க கிப் ப டார் ்க க ப்\nபயன ப டுகி ் து.\nஅ) Text tool\nஆ) Line tool\nஇ) Zoom tool\nஈ) Hand tool\n7. டப ட் டிகள் வ த ைவ ை ற் குப் பயன ப டும்\nகருவி _________\nஅ) Line\nஆ) Ellipse\nஇ) Rectangle\nஈ) Text\n8. Place க ட் ெதள _________\nபட்டியில் இ ெம்டப ற் றிரு ்க கும்.\nஅ) File\nஆ) Edit\nஇ) Layout\nஈ) Window\n9. முழு ஆவண த் தை த் பைர்நடை டு ்க க\nவி தசப்ப ல தக யில் _________\nகுறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை\nஅழு த் ை பவ ண் டும்.\nஅ) Ctrl+A\nஆ) Ctrl +B\nஇ) Ctrl+C\nஈ) Ctrl+D\nபகுதி – அ\nI. சரியான வி கடகய த்\nட்தர் ்ந ட்த டுத்து எழுது ்க\n1. DTP என பைன விரிவ டா்கக ம்\n_________\nஅ) Desktop Publishing\nஆ) Desktop publication\nஇ) Doctor to Patient\nஈ) Desktop Printer\n2. _________ என ப து ஒரு DTP\nடமே ன ட ப டா ருள டா கும்.\nஅ) Lotus 1-2-3\nஆ) PageMaker\nஇ) Maya\nஈ) Flash\n3. எந ை பட்டியில் New க ட் ெதள\nஇ ெம்டப ற் று ள் ள து?\nஅ) File menu\nஆ) Edit menu\nஇ) Layout menu\nஈ) Type menu\n4. Page Maker சன்னல் தி த ையில் கருப்பு\nநி ் எ ல் தல்க பகடா ட் டிற்கு டவ ளியில்\nஇரு ்க கும் பகுதி _________ எ ்ன\nஅ த ை ்க கப்ப டும்.\nஅ) page\nஆ) pasteboard\nஇ) blackboard\nஈ) dashboard\n5. PageMaker ஆவண த் தை\nமூடுவ ைற்கடா்ன வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nபாடம் 01 அட டா ப் டப ஜ ட மேக்கர் 42\nவினாக்கள்\nXII CompTech_Tamil version CHAPTER 01.indd 42 4/16/2019 1:19:16 PM",
+          "proposedTranscription": {
+            "questionText": "முழு ஆவண த் தை த் பைர்நடை டு ்க க வி தசப்ப ல தக யில் _________ குறு ்க கு வழி ச டா வி பசர்மேடா்னத்தை அழு த் ை பவ ண் டும்.",
+            "options": [
+              "Ctrl+A",
+              "Ctrl +B",
+              "Ctrl+C",
+              "Ctrl+D"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-3fe7613c09244638",
+          "number": 10,
+          "pdfPage": 49,
+          "pdfEndPage": 49,
+          "printedPages": [
+            43
+          ],
+          "originalExtraction": {
+            "questionText": "எழுத்து வடிவூ ட் ெ ல் கீ ழ்க கண்ெ வற்றில் எந ை பண்புக தள ப் டப ற் றிரு ்க கும்?",
+            "options": [
+              "Bold",
+              "Italic",
+              "Underline",
+              "All of these"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 49\nஇ) Paste - (iii) Ctrl+X\nஈ) Undo - (iv) Ctrl+C\n19. கீ ழ்க கண்ெ வற்றில் டபடா ருந ைடாை\nஒன த் த் பைர்நடை டு.\ni. Adobe PageMaker, QuarkXPress,\nAdoble InDesign, Audacity\nii. File, Edit, Layout, Type, Zip\niii. Pointer Tool, Line Tool, Hide Tool,\nHand Tool\niv. Bold, Italic, Portrait, Underline.\n20. கீ ழ்க கண்ெ வற்றில் சரிய டா்ன\nகூ ற் த் த் பைர்நடை டு.\ni. அ) சுட்டியி ன மூலம் மே ட் டு பமே\nஉ த ை தய த் பைர்நடை டு ்க க\nமுடியும்.\nஆ) சுட்டி மே ற் றும்\nவி தசப்ப ல தக யி ன மூலம்\nஉ த ை தய த் பைர்நடை டு ்க க\nமுடியும்.\nii. அ) DTP என பைன விரிவ டா்கக ம்\nDesktop publishing.\nஆ) DTP என பைன விரிவ டா்கக ம்\nDesktop publication.\n21. கீ ழ்க கண்ெ வற்றில் சரிய டா்ன\nஇ தணதய த் பைர்நடை டு.\ni. அ) Edit Cut\nஆ) Edit New\nii. அ) Undo Copy\nஆ) Undo Redo\nபகுதி – ஆ\nII. மூன்று வரி ்க ளில் வி கட யளிக்கவும்\n1. Desktop publishing என் டா ல் என்ன?\n2. DTP டமே ன ட ப டா ரு ள் க ளு ்க கு\nஎடுத்து ்க கடா ட் டுகள் ை ருக.\n3. ப ப ஜ ப மே ்க க ர் டமே ன ட ப டா ரு தள\nதி ்ப் பைற்கடா்ன வழிமு த் க தள்க\nகூறு.\n10. எழுத்து வடிவூ ட் ெ ல் கீ\nழ்க கண்ெ வற்றில் எந ை\nபண்புக தள ப் டப ற் றிரு ்க கும்?\nஅ) Bold\nஆ) Italic\nஇ) Underline\nஈ) All of these\n11. உ த ை தய பதிப்பி ்க க பயன ப டும்\nகருவி எது?\nஅ) Text tool\nஆ) Type tool\nஇ) Crop tool\nஈ) Hand tool\n12. PageMaker இல் ஆவண த் தை\nஅச்சி ெ ப் பயன ப டும் வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nஅ) Ctrl+A\nஆ) Ctrl +P\nஇ) Ctrl+C\nஈ) Ctrl+V\n13. அ பெடா ப் ப ப ஜ ப மே ்க க ர் என ப து\n_________ டமே ன ட ப டா ருள டா கும்.\n14. _________ ப ட் தெ ப ப ஜ ப மே ்க க ர்\nஆவணத்தி ன பமேல்ப குதியில்\nஇரு ்க கும்.\n15. ஆவண த் தை பமே லும் கீ ழு மேடா கவும்,\nஇ ெ து மே ற் றும் வலது பு ் மேடா கவும் ்\nகர்த்துவதை _________\nஎ ன கி ப்டா ம் .\n16. _________ கருவி வ ட் ெ ம்\nவ த ைவ ை ற் குப் பயன ப டுகி ் து.\n17. _________ பட்டி தய்க கிளி ்க\nடசய து Insert Pages விரு ப் பத்தை ப்\nடப் ல டா ம் .\n18. டபடா ருத்துக.\nஅ) Cut - (i) Ctrl+Z\nஆ) Copy - (ii) Ctrl+V\n43 பாடம் 01 அட டா ப் டப ஜ ட மேக்கர்\nXII CompTech_Tamil version CHAPTER 01.indd 43 4/16/2019 1:19:17 PM",
+          "proposedTranscription": {
+            "questionText": "எழுத்து வடிவூ ட் ெ ல் கீ ழ்க கண்ெ வற்றில் எந ை பண்புக தள ப் டப ற் றிரு ்க கும்?",
+            "options": [
+              "Bold",
+              "Italic",
+              "Underline",
+              "All of these"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-7f72093f6fc06d1c",
+          "number": 11,
+          "pdfPage": 49,
+          "pdfEndPage": 49,
+          "printedPages": [
+            43
+          ],
+          "originalExtraction": {
+            "questionText": "உ த ை தய பதிப்பி ்க க பயன ப டும் கருவி எது?",
+            "options": [
+              "Text tool",
+              "Type tool",
+              "Crop tool",
+              "Hand tool"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 49\nஇ) Paste - (iii) Ctrl+X\nஈ) Undo - (iv) Ctrl+C\n19. கீ ழ்க கண்ெ வற்றில் டபடா ருந ைடாை\nஒன த் த் பைர்நடை டு.\ni. Adobe PageMaker, QuarkXPress,\nAdoble InDesign, Audacity\nii. File, Edit, Layout, Type, Zip\niii. Pointer Tool, Line Tool, Hide Tool,\nHand Tool\niv. Bold, Italic, Portrait, Underline.\n20. கீ ழ்க கண்ெ வற்றில் சரிய டா்ன\nகூ ற் த் த் பைர்நடை டு.\ni. அ) சுட்டியி ன மூலம் மே ட் டு பமே\nஉ த ை தய த் பைர்நடை டு ்க க\nமுடியும்.\nஆ) சுட்டி மே ற் றும்\nவி தசப்ப ல தக யி ன மூலம்\nஉ த ை தய த் பைர்நடை டு ்க க\nமுடியும்.\nii. அ) DTP என பைன விரிவ டா்கக ம்\nDesktop publishing.\nஆ) DTP என பைன விரிவ டா்கக ம்\nDesktop publication.\n21. கீ ழ்க கண்ெ வற்றில் சரிய டா்ன\nஇ தணதய த் பைர்நடை டு.\ni. அ) Edit Cut\nஆ) Edit New\nii. அ) Undo Copy\nஆ) Undo Redo\nபகுதி – ஆ\nII. மூன்று வரி ்க ளில் வி கட யளிக்கவும்\n1. Desktop publishing என் டா ல் என்ன?\n2. DTP டமே ன ட ப டா ரு ள் க ளு ்க கு\nஎடுத்து ்க கடா ட் டுகள் ை ருக.\n3. ப ப ஜ ப மே ்க க ர் டமே ன ட ப டா ரு தள\nதி ்ப் பைற்கடா்ன வழிமு த் க தள்க\nகூறு.\n10. எழுத்து வடிவூ ட் ெ ல் கீ\nழ்க கண்ெ வற்றில் எந ை\nபண்புக தள ப் டப ற் றிரு ்க கும்?\nஅ) Bold\nஆ) Italic\nஇ) Underline\nஈ) All of these\n11. உ த ை தய பதிப்பி ்க க பயன ப டும்\nகருவி எது?\nஅ) Text tool\nஆ) Type tool\nஇ) Crop tool\nஈ) Hand tool\n12. PageMaker இல் ஆவண த் தை\nஅச்சி ெ ப் பயன ப டும் வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nஅ) Ctrl+A\nஆ) Ctrl +P\nஇ) Ctrl+C\nஈ) Ctrl+V\n13. அ பெடா ப் ப ப ஜ ப மே ்க க ர் என ப து\n_________ டமே ன ட ப டா ருள டா கும்.\n14. _________ ப ட் தெ ப ப ஜ ப மே ்க க ர்\nஆவணத்தி ன பமேல்ப குதியில்\nஇரு ்க கும்.\n15. ஆவண த் தை பமே லும் கீ ழு மேடா கவும்,\nஇ ெ து மே ற் றும் வலது பு ் மேடா கவும் ்\nகர்த்துவதை _________\nஎ ன கி ப்டா ம் .\n16. _________ கருவி வ ட் ெ ம்\nவ த ைவ ை ற் குப் பயன ப டுகி ் து.\n17. _________ பட்டி தய்க கிளி ்க\nடசய து Insert Pages விரு ப் பத்தை ப்\nடப் ல டா ம் .\n18. டபடா ருத்துக.\nஅ) Cut - (i) Ctrl+Z\nஆ) Copy - (ii) Ctrl+V\n43 பாடம் 01 அட டா ப் டப ஜ ட மேக்கர்\nXII CompTech_Tamil version CHAPTER 01.indd 43 4/16/2019 1:19:17 PM",
+          "proposedTranscription": {
+            "questionText": "உ த ை தய பதிப்பி ்க க பயன ப டும் கருவி எது?",
+            "options": [
+              "Text tool",
+              "Type tool",
+              "Crop tool",
+              "Hand tool"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-dd00b6a58a2aa981",
+          "number": 12,
+          "pdfPage": 49,
+          "pdfEndPage": 49,
+          "printedPages": [
+            43
+          ],
+          "originalExtraction": {
+            "questionText": "PageMaker இல் ஆவண த் தை அச்சி ெ ப் பயன ப டும் வி தசப்ப ல தக குறு ்க கு வழி _________",
+            "options": [
+              "Ctrl+A",
+              "Ctrl +P",
+              "Ctrl+C",
+              "Ctrl+V"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawPageText": "PDF 49\nஇ) Paste - (iii) Ctrl+X\nஈ) Undo - (iv) Ctrl+C\n19. கீ ழ்க கண்ெ வற்றில் டபடா ருந ைடாை\nஒன த் த் பைர்நடை டு.\ni. Adobe PageMaker, QuarkXPress,\nAdoble InDesign, Audacity\nii. File, Edit, Layout, Type, Zip\niii. Pointer Tool, Line Tool, Hide Tool,\nHand Tool\niv. Bold, Italic, Portrait, Underline.\n20. கீ ழ்க கண்ெ வற்றில் சரிய டா்ன\nகூ ற் த் த் பைர்நடை டு.\ni. அ) சுட்டியி ன மூலம் மே ட் டு பமே\nஉ த ை தய த் பைர்நடை டு ்க க\nமுடியும்.\nஆ) சுட்டி மே ற் றும்\nவி தசப்ப ல தக யி ன மூலம்\nஉ த ை தய த் பைர்நடை டு ்க க\nமுடியும்.\nii. அ) DTP என பைன விரிவ டா்கக ம்\nDesktop publishing.\nஆ) DTP என பைன விரிவ டா்கக ம்\nDesktop publication.\n21. கீ ழ்க கண்ெ வற்றில் சரிய டா்ன\nஇ தணதய த் பைர்நடை டு.\ni. அ) Edit Cut\nஆ) Edit New\nii. அ) Undo Copy\nஆ) Undo Redo\nபகுதி – ஆ\nII. மூன்று வரி ்க ளில் வி கட யளிக்கவும்\n1. Desktop publishing என் டா ல் என்ன?\n2. DTP டமே ன ட ப டா ரு ள் க ளு ்க கு\nஎடுத்து ்க கடா ட் டுகள் ை ருக.\n3. ப ப ஜ ப மே ்க க ர் டமே ன ட ப டா ரு தள\nதி ்ப் பைற்கடா்ன வழிமு த் க தள்க\nகூறு.\n10. எழுத்து வடிவூ ட் ெ ல் கீ\nழ்க கண்ெ வற்றில் எந ை\nபண்புக தள ப் டப ற் றிரு ்க கும்?\nஅ) Bold\nஆ) Italic\nஇ) Underline\nஈ) All of these\n11. உ த ை தய பதிப்பி ்க க பயன ப டும்\nகருவி எது?\nஅ) Text tool\nஆ) Type tool\nஇ) Crop tool\nஈ) Hand tool\n12. PageMaker இல் ஆவண த் தை\nஅச்சி ெ ப் பயன ப டும் வி தசப்ப ல தக\nகுறு ்க கு வழி _________\nஅ) Ctrl+A\nஆ) Ctrl +P\nஇ) Ctrl+C\nஈ) Ctrl+V\n13. அ பெடா ப் ப ப ஜ ப மே ்க க ர் என ப து\n_________ டமே ன ட ப டா ருள டா கும்.\n14. _________ ப ட் தெ ப ப ஜ ப மே ்க க ர்\nஆவணத்தி ன பமேல்ப குதியில்\nஇரு ்க கும்.\n15. ஆவண த் தை பமே லும் கீ ழு மேடா கவும்,\nஇ ெ து மே ற் றும் வலது பு ் மேடா கவும் ்\nகர்த்துவதை _________\nஎ ன கி ப்டா ம் .\n16. _________ கருவி வ ட் ெ ம்\nவ த ைவ ை ற் குப் பயன ப டுகி ் து.\n17. _________ பட்டி தய்க கிளி ்க\nடசய து Insert Pages விரு ப் பத்தை ப்\nடப் ல டா ம் .\n18. டபடா ருத்துக.\nஅ) Cut - (i) Ctrl+Z\nஆ) Copy - (ii) Ctrl+V\n43 பாடம் 01 அட டா ப் டப ஜ ட மேக்கர்\nXII CompTech_Tamil version CHAPTER 01.indd 43 4/16/2019 1:19:17 PM",
+          "proposedTranscription": {
+            "questionText": "PageMaker இல் ஆவண த் தை அச்சி ெ ப் பயன ப டும் வி தசப்ப ல தக குறு ்க கு வழி _________",
+            "options": [
+              "Ctrl+A",
+              "Ctrl +P",
+              "Ctrl+C",
+              "Ctrl+V"
+            ]
+          },
+          "answer": null,
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil glyphs require source-faithful teacher correction",
+            "Original contents PDF 6 lists only six theory chapters; Chapter 1 is Adobe PageMaker, not an inferred Technology Chapter 7",
+            "Only Section I Q1-12 have clear four-option mappings; preserve Q13-21 separately as nonstandard source inventory without invented choices",
+            "Do not infer answers from external PageMaker knowledge or silently repair printed shortcut spelling",
+            "Stop before fill-in Q13; do not absorb subsequent matching, odd-one-out or binary tasks into choice D",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        }
+      ]
+    }
+  ],
+  "preparedOccurrences": 21,
+  "uniqueNewQuestionOptionSignatures": 21,
+  "novelContentSignaturesComparedWithPriorQueue": 9,
+  "contentOverlapExplanation": "Technology Chapter 1 Q1-12 repeat actual PageMaker content from Applications Chapter 2. Separate source-book IDs/references retained; not 12 novel global questions. Source images Applications PDF 70-71 and Technology PDF 48-49 were compared. This diagnostic report does not modify review evidence or saved decisions.",
+  "exactContentDuplicateGroupsWithPreviousProposals": [
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-cdb3f0766cc5527d",
+        "number": 1,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-2b0024994cf40f8f",
+        "number": 1,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-e7717650b8879613",
+        "number": 2,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-de41c9dd522e77be",
+        "number": 2,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-fa3a4597c4fdc9d1",
+        "number": 3,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-90993d362653644b",
+        "number": 3,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-52d10e240e8a2321",
+        "number": 4,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-8f3abd71b9b2c8bd",
+        "number": 4,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-section-12-computer-applications-tamil-e51fbdf6-ba146c9634c41709",
+        "number": 5,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-section-12-computer-technology-tamil-c66e9089-91294615d59f0f06",
+        "number": 5,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-fe5c4b02fd20e121",
+        "number": 6,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-5bccfb925446573c",
+        "number": 6,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-f69cee416f3873fe",
+        "number": 7,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-a142fcba8acccc95",
+        "number": 7,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-b7cda2e81773cd36",
+        "number": 8,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-894c7fa942cac2c4",
+        "number": 8,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-565484e8d1d81b76",
+        "number": 9,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-2672eb62e75370fa",
+        "number": 9,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-45e216feb08bd3eb",
+        "number": 10,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-3fe7613c09244638",
+        "number": 10,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-2844c1f76bf9f5ec",
+        "number": 11,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-7f72093f6fc06d1c",
+        "number": 11,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ],
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-bdbd46438a8b5262",
+        "number": 12,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-2"
+      },
+      {
+        "id": "textbook-q-12-computer-technology-tamil-c66e9089-dd00b6a58a2aa981",
+        "number": 12,
+        "bookId": "12-computer-technology-tamil-c66e9089",
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-1"
+      }
+    ]
+  ],
+  "duplicateAuditScope": "Whitespace-normalized exact question/options signatures; no claim of semantic deduplication",
+  "stores": [
+    {
+      "batchId": "unit-1",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-2\\decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-2\\decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-3",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-3\\decisions.json",
+      "sha256": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-3",
+      "held": 14,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 14,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-3\\decisions.json",
+      "sha256": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-4",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "sha256": "faf0f0793007bd61e81a2a2226600e4233ebda90fd7a590e864a73ebcd1cc8b0"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-4",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "sha256": "eb037dd880a0e220a934d1c565db9d2fd396b45e8d291858cec5f52a5903740e"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-5",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "sha256": "9f93a6484b884c0733e17dd73e8cca693555490e4ada426608901888728822a6"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-5",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "sha256": "0fa97c2244fe89a7b1caea085e78ffd62f346d6f6f70d4e53486cca465b41550"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-6",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "sha256": "61f5a4d078fdd9cd80157eb0e3496d334c694a8ad0589f809282fc646e60e9fa"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-6",
+      "held": 7,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 7,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "sha256": "7b5e3a51fe05597e11c35fed08253a9da96e5bf94bedb8956252af1b4d412868"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-7",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-7\\decisions.json",
+      "sha256": "c09ed82c76134fd3d9400b4c04e9b726efa5e30b80cd1b4da5feadac873d1a70"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-1",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-1\\decisions.json",
+      "sha256": "f9d859fd7838c8b0a6bf33a0a4008cf3b2bf92d0b06756a472962d95c4dee042"
+    },
+    {
+      "batchId": "unit-2",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e"
+    },
+    {
+      "batchId": "unit-3",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d"
+    },
+    {
+      "batchId": "unit-4",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e"
+    },
+    {
+      "batchId": "unit-5",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f"
+    },
+    {
+      "batchId": "commerce-12-commerce-tamil-d9e013d8-ch-27",
+      "held": 5,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 5,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\commerce-12-commerce-tamil-d9e013d8-ch-27\\decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e"
+    }
+  ],
+  "counts": {
+    "held": 206,
+    "pending": 206,
+    "reviewed": 0,
+    "approved": 0,
+    "needsCorrection": 0,
+    "rejected": 0,
+    "historyEvents": 0
+  },
+  "studentBank": {
+    "English": 995,
+    "Tamil": 0,
+    "legacySamplesExcluded": 12,
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "snapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "measurement": "Hash-preserved saved authoritative snapshot, not a fresh production count"
+  },
+  "inventory": {
+    "pdfs": 82,
+    "pages": 24088,
+    "detectedChapters": 856,
+    "zeroPublishedEntries": 733,
+    "savedCandidateRecords": 17268,
+    "sourceBoundedProposals": 191,
+    "activeCandidateIds": 12681,
+    "inactiveArtifacts": 4587
+  },
+  "activeInventoryChange": {
+    "previous": 12682,
+    "current": 12681,
+    "artifactId": "textbook-section-12-computer-technology-tamil-c66e9089-08aed39e520e0670",
+    "reason": "A generic recovered composite odd-one-out item Q19 is outside the newly source-bounded standard-MCQ subset; its original candidate object/ID remains unchanged, excluded from this review batch and student practice"
+  },
+  "preservation": {
+    "file": "docs/chapter7-technology1-preservation.json",
+    "sha256": "e840a33d21f12f6da1ce689e7b4c9fa0f18c879a89e3475af5ffecbf4c1c556c",
+    "previousCandidates": 17268,
+    "previousProposals": 170,
+    "protectedFiles": 129,
+    "practiceSessions": 13
+  },
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch7-tm1-test.log",
+      "sha256": "9674057770b9de7dddfc72edeb665f440be8cddbe7b39215ca02e5bde6c1b67e"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch7-tm1-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch7-tm1-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch7-tm1-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch7-tm1-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch7-tm1-mcqs-systematic-audit.log",
+      "sha256": "18cfe93a46eb07922de37e97e6cb9f09214f710e86b9d6ac98d556b6625c7a98"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch7-tm1-build.log",
+      "sha256": "a2d89d749d0abde58f73a3fbf67e37f0d18e08acc45789ddb5ece3225b7a045b"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch7-tm1-browser.log",
+      "sha256": "b1bcfdfcea086be36543dee825d2155ccde7f54928fe82cf95871e343fbceb5e"
+    }
+  ],
+  "fullTests": {
+    "total": 145,
+    "passed": 145,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "focusedTests": {
+    "passed": 2,
+    "failed": 0,
+    "log": ".local/ch7-tm1-focused.log",
+    "sha256": "8f393e86720707b2403e255d2ac0d670df4d1753925f6d3a7a6d68f2c3cd27ec"
+  },
+  "browserTests": {
+    "passed": 6,
+    "failed": 0,
+    "subjects": [
+      "Accountancy",
+      "Commerce",
+      "Chemistry"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "reruns": [
+    {
+      "round": 1,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch7-tm1-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "95138e8783227e6edf9b946b10858f12c09019577a0724b7ec22d6528eb3e17f"
+    },
+    {
+      "round": 1,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch7-tm1-rerun-1-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch7-tm1-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "95138e8783227e6edf9b946b10858f12c09019577a0724b7ec22d6528eb3e17f"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch7-tm1-rerun-2-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    }
+  ],
+  "nextPriority": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "chapterNumber": 8,
+      "startPdfPage": 140,
+      "provisionalExercisePdfPages": [],
+      "requirement": "Detected inventory entry, not confirmed MCQ coverage. Inspect actual section boundary, non-MCQ formats and scoped answer evidence before extraction; keep edition/hash separate"
+    }
+  ],
+  "notRun": [
+    "Unrelated full Playwright suite",
+    "Separate Unit 1 exported-manifest filesystem search",
+    "Live production reads or writes"
+  ],
+  "unresolved": [
+    "All 21 answers unknown and all Tamil wording/options require teacher correction",
+    "Applications Q5 missing printed closing brace, Q7 printed 141 choices, malformed code and exact punctuation retained",
+    "Applications Q9 spans pages 138-139; saved open-response Q5 artifact with these choices remains unchanged and outside MCQ proposals",
+    "Technology Section I 13-21 are nonstandard source tasks: Q19 composite format is unresolved and not converted to an invented A-D mapping",
+    "Previous Chapter 4 duplicate choices/missing program and Chapter 6 genuine printed duplicate/malformed-code warnings remain unresolved",
+    "733 zero-publication detected entries are not confirmed missing MCQ sections"
+  ]
+}

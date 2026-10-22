@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-20T14:08:51.946Z",
+  "baseline": ".local/science-ch7-baseline.json",
+  "unchangedOriginalCandidates": 17313,
+  "unchangedEarlierSourceProposals": 699,
+  "protectedFiles": 391,
+  "unchangedEarlierSourceImages": 229,
+  "currentSourceImages": 243,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-467db9650c29fbb0",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-7",
+      "page": 170
+    }
+  ],
+  "removedActiveIds": [],
+  "addedActiveIds": [
+    "textbook-bounded-12-bio-botany-tamil-51160855-467db9650c29fbb0"
+  ],
+  "reactivatedExistingIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

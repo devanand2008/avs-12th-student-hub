@@ -1,4 +1,130 @@
+<!-- BEGIN allsubject-20261018 -->
+## Latest all-subject checkpoint — October 18, 2026
+
+**110 held book-back MCQs across ten chapters / four PDFs / three subjects:** English History 1–3 (30), Tamil History 1–2 (21), English Microbiology 1–3 (25), English Political Science 1–2 (34). 103 IDs reused, seven new records; all answers unknown, zero teacher decisions/approvals/publications. Full collection coverage remains incomplete.
+
+Current inventory: **17,281 saved / 12,690 active / 4,591 inactive**, 415 general bounded proposals in 37 sections; with separate Physics Unit 1, **430 pending items / 38 batches / zero history events**. Both 82-book passes completed, rerun added zero IDs. All 17,274 earlier candidate objects, 305 proposals, 218 protected files and 103 earlier images remain unchanged; five false generic short-answer associations are retained as inactive artifacts.
+
+82 PDFs / 24,088 cached pages / 856 detected entries / 733 zero-publication entries. There are 819 entries without a general bounded section, including separately inventoried/prior-inspected artifacts; this is not a confirmed missing-section count. The dated 2026-10-10 publication snapshot remains **995 English / zero Tamil**, twelve legacy samples excluded, 13 saved sessions unchanged. No production/import/publish/push/deploy.
+
+HTML practice now uses explicit Submit Answer, with unanswered solutions withheld by the API; marks, navigation, retries and history use the existing architecture. Admin coverage adds subject/volume/chapter/extraction/answer/review/publication filters. **160/160 unit/integration tests; six scoped browser cases; additional refresh/outage checks passed per device; typecheck/lint/build/audits passed.** Initial source-config/test-wait/type issues, a fixed duplicate error and one desktop loading timeout with successful rerun are documented.
+
+Run npm run mcqs:review → http://127.0.0.1:4312 → authorised local sign-in → select the source subject/chapter batch → review/save/export each question individually. Unknown answers block approval. Next: original section inventory for Bio-Botany Chapter 1 in both media, then Basic Electrical Engineering English Chapter 1; use actual PDF boundaries. [Full source, per-book/subject coverage and teacher instructions](ALL_SUBJECT_EXTRACTION_PROGRESS.md) · [Verification](all-subject-verification.json) · [Preservation](all-subject-preservation.json). Earlier entries below are historical.
+<!-- END allsubject-20261018 -->
+
+<!-- BEGIN reconciliation-20261018 -->
+## Latest local Tamil milestone — October 18, 2026
+
+**42 held source occurrences**: Applications 13 (12), 15 (10), Computer Science Tamil 1 (10), 2 (10); 40 IDs reused, two new IDs, zero new answers/reviews/approvals/publications. Chapter 13 now preserves both printed Q9 labels through explicit source-occurrence metadata rather than renumbering. Q2 remains incomplete; the earlier Q5 duplicate-choice claim is corrected (ஒளி versus ஒலி). The earlier 51 questions have 18 separate proposed Unicode transcriptions and 33 uncertain items, without altering original proposals/decisions.
+
+Current totals **17,274 saved / 12,688 active / 4,586 inactive**, 305 general bounded proposals, 27 sections; **320 pending review items / 28 batches / zero recorded decisions**. The dated 995 English / zero Tamil eligible snapshot, twelve excluded samples and history remain unchanged. Inventory still 82 PDFs / 24,088 cached pages / 856 detected entries / 733 zero-publication detections; full coverage is incomplete. Final **156/156 tests, six scoped browser cases**, typecheck/lint/build/audits passed; two reruns per source added zero IDs. No production/import/publish/push/deploy.
+
+Open the same local queue using `npm run mcqs:physics-review` → http://127.0.0.1:4312 → authorised local sign-in → select the chapter → inspect original/earlier/supplementary text and source pages → record/export one real individual decision. Unknown answers remain blocked. Next: Computer Science Tamil Chapter 3 and Applications Chapter 16 source inventory. [Complete current report and review instructions](TAMIL_CORRECTION_RECONCILIATION.md) · [Verification](reconciliation-verification.json) · [Preservation](reconciliation-preservation.json).
+
+Earlier milestone text below is historical and is superseded where this entry explicitly corrects it.
+<!-- END reconciliation-20261018 -->
+
+<!-- BEGIN collection-20261018 -->
+## Current collection milestone — October 18, 2026
+
+Source-bounded Tamil Applications Chapters **10, 11, 12 and 14** now have **51 held unknown-answer MCQs** (48 reused IDs, 3 new IDs); no approvals/publications. Chapter 13's duplicated printed Q9/missing Q8 is inventoried and unresolved. Local review totals **278 pending items / 24 batches / zero recorded decisions**. General bounded proposals 263; source sections 23. Inventory 82 PDFs / 24,088 cached pages / 856 provisional chapter entries / 733 zero-publication entries. Saved candidates 17,272; active 12,685; inactive 4,587. Saved 2026-10-10 snapshot still **995 English / 0 Tamil**, twelve legacy samples excluded, history/earlier candidates unchanged. This is incomplete extraction coverage, not a live count.
+
+Portal Subject/chapter filtering, count summaries and administrator processing-manifest export are implemented. The mobile installation banner and sticky-header/input-focus obstructions are fixed. Home/dashboard invented totals are replaced with API-backed availability and explicit sign-in/error states. Final checks: **153/153 tests, 6 scoped browser cases**, typecheck/lint/build/audits passed; both 82-book reruns added zero IDs. No production/import/publish/push/deploy. Next resolve Chapter 13 physical numbering, then source-inspect Chapter 15 and Computer Science Chapter 1 in both media.
+
+Run `npm run mcqs:physics-review`, open **http://127.0.0.1:4312**, authenticate as a real authorised local teacher, select Applications Chapter 10/11/12/14, compare raw/proposed text, choices, source images and warnings, then save/export one explicit decision. Unknown answers block approval. [Latest all-book/chapter coverage](CLASS12_PLATFORM_PROGRESS.md) · [Detailed source/review instructions](TAMIL_COMPUTER_NETWORK_REVIEW.md) · [Verification](collection-verification-20261018.json) · [Preservation](collection-preservation-20261018.json).
+
+Earlier dated milestones below are retained as history.
+<!-- END collection-20261018 -->
+
+## Tamil Computer Applications Chapter 9 — October 17, 2026
+
+| Source occurrences | IDs reused / added | Printed-key matches / unknown answers | Held / reviewed / approved / published |
+|---:|---|---|---|
+| 11 | 10 / 1 | 0 / 11 | 11 / 0 / 0 / 0 |
+
+Chapter 9 is PHP-உடன் MySQL-ஐ இணைத்தல், PDF 151–157 / printed 141–147; MCQs PDF 155–157 / printed 145–147. Ten reused IDs and one Q1 recovery; all eleven held/unknown, zero actual decisions. Eight source overlaps with the alternate PDF are retained with separate provenance. Local review has 227 items in 20 batches, all pending. Student snapshot stays 995 English / 0 Tamil, twelve legacy samples excluded; existing records, proposals, decisions and protected history preserved. Full tests 149/149, six scoped browser cases, audits, typecheck, lint and build passed. Run `npm run mcqs:physics-review`, open http://127.0.0.1:4312, authenticate and select Applications Chapter 9. Next inspect Chapter 10 starting PDF 158. [Detailed source and teacher-review report](CHAPTER9_TAMIL_COMPUTER_REVIEW.md) · [Verification and actual log hashes](chapter9-verification.json) · [Preservation proof](chapter9-preservation.json)
+---
+
+## Tamil Computer Applications Chapter 8 — October 17, 2026
+
+| Chapter | MCQ PDF / printed pages | Source occurrences / reused IDs / new IDs | Key matches / unknown | Held / reviewed / approved / published |
+|---|---|---|---|---|
+| 8 · படிவங்கள் மற்றும் கோப்புகள் | 148, 149 / 138, 139 | 10 / 10 / 0 | 0 / 10 | 10 / 0 / 0 / 0 |
+
+All ten existing IDs reused; all answers unknown and all held. Local review now has 216 items in 19 batches, all 216 pending and zero recorded decisions. Student snapshot remains 995 English / 0 Tamil, twelve legacy samples excluded. All previous candidates, 191 source proposals and protected history preserved. Q4 spans two pages; Q8 has duplicate printed A/C; Tamil and printed technical tokens require teacher correction. Open http://127.0.0.1:4312 after `npm run mcqs:physics-review` and select Applications Chapter 8. Full tests 147/147, six scoped Playwright cases, audits, typecheck, lint and build passed. Next source inventory priority: Applications Chapter 9 starting PDF 151; no production work. [Verification and log hashes](chapter8-verification.json) · [Preservation proof](chapter8-preservation.json) · [Teacher review guide](CHAPTER8_TAMIL_COMPUTER_REVIEW.md)
+---
+
+## Applications Chapter 7 and Technology Chapter 1 — October 17, 2026
+
+| Tamil source batch | Chapter PDF range | MCQ PDF / printed pages | Held | IDs reused / added | Key matches / unknown | Reviewed / approved / published |
+|---|---|---|---:|---|---|---|---|
+| Computer Applications · Chapter 7 | 133–139 | 137, 138, 139 / 127, 128, 129 | 9 | 9 / 0 | 0 / 9 | 0 / 0 / 0 |
+| Computer Technology · Chapter 1 | 7–50 | 48, 49 / 42, 43 | 12 | 12 / 0 | 0 / 12 | 0 / 0 / 0 |
+
+All 21 existing IDs reused; no new candidate IDs. Unknown answers and damaged Tamil/code remain held. Applications Q9 spans two pages; Technology Q13–21 remain a separate nonstandard source inventory, not invented MCQs. Existing 17,268 candidate objects, 170 previous source proposals, saved decisions and protected practice snapshots remain intact. Local review now has 206 items in 18 batches, all pending. Saved bank stays 995 English / 0 Tamil, with 12 legacy samples excluded. Open http://127.0.0.1:4312 after `npm run mcqs:physics-review`, authenticate as an authorised teacher, select Applications Chapter 7 or Technology Chapter 1, and save/export individual corrections/decisions. No approval, publication or production changes. Next inspect Applications Chapter 8; no Technology Chapter 7 exists in this contents list. [Full report](SYSTEMATIC_COVERAGE_BATCH.md) · [Verification](chapter7-technology1-verification.json).
+---
+
+## Chapter 6 Tamil computer textbooks — October 17, 2026
+
+| Tamil textbook / Chapter 6 | Chapter PDF range | MCQ PDF / printed pages | Held | IDs reused / added | Key matches / unknown | Reviewed / approved / published |
+|---|---|---|---:|---|---|---|
+| Computer Applications | 127–132 | 130, 131, 132 / 120, 121, 122 | 9 | 9 / 0 | 0 / 9 | 0 / 0 / 0 |
+| Computer Technology | 189–231 | 230 / 224 | 7 | 7 / 0 | 0 / 7 | 0 / 0 / 0 |
+
+All 16 IDs reused; all answers unknown and Tamil/code correction required. Existing 17,268 records, earlier proposals, decisions and dated practice snapshots are preserved. Local reviewer now has 185 items in 16 batches, all pending. Saved student-ready bank stays 995 English / 0 Tamil; held candidates do not increase counts. Review at http://127.0.0.1:4312 after `npm run mcqs:physics-review`; choose the subject's Chapter 6, inspect source/text/options/code, and save/export each individual authorised decision. Q3 spans two pages; Q5/Q6 are an actual printed duplicate pair. No approval, import, production change, push or deployment. Next inspect Applications Chapter 7, then Technology Chapter 1, from actual inventory. [Full report](SYSTEMATIC_COVERAGE_BATCH.md) · [Verification](chapter6-verification.json).
+---
+
+## Chapter 5 Tamil computer textbooks — October 16, 2026
+
+| Tamil textbook / Chapter 5 | Source chapter PDF range | Book-back PDF / printed pages | Held proposals | Existing IDs reused / added | Printed-key matches | Unknown answers | Reviewed / approved / published |
+|---|---|---|---:|---|---:|---:|---|
+| Computer Applications — PHP functions and arrays | 119–126 | 125–126 / 115–116 | 10 | 9 / 1 | 0 | 10 | 0 / 0 / 0 |
+| Computer Technology — Adobe Flash Professional CS6 | 163–188 | 187–188 / 181–182 | 12 | 12 / 0 | 0 | 12 | 0 / 0 / 0 |
+
+All 22 remain held; 21 old IDs reused and Applications Q7 recovered once. All answers unknown and Tamil/code correction required. The same local reviewer has 169 source items in 14 batches. Run `npm run mcqs:physics-review`, open http://127.0.0.1:4312, authenticate with the real teacher identity, select Tamil/subject/Chapter 5, inspect source/text/code/options, and save/export each individual decision. No answer is guessed and nothing is published. Existing Chapter 4 duplicate-choice and missing-program restrictions remain intact. Saved student bank remains 995 English / 0 Tamil. Next: Applications Chapter 6 (starts PDF 127), then Technology Chapter 6 (starts 189). [Current full report](SYSTEMATIC_COVERAGE_BATCH.md) · [Verification](chapter5-verification.json).
+---
+
+## Chapter 4 Tamil computer textbooks — October 16, 2026
+
+| Tamil textbook / Chapter 4 | Chapter PDF range | Book-back PDF / printed pages | Held proposals | Existing IDs reused / added | Printed-key matches | Unknown | Reviewed / approved / published |
+|---|---|---|---:|---|---:|---:|---|
+| Computer Applications — PHP introduction | 105–118 | 117–118 / 107–108 | 9 | 9 / 0 | 0 | 9 | 0 / 0 / 0 |
+| Computer Technology — multimedia and computer publishing | 145–162 | 161–162 / 155–156 | 10 | 10 / 0 | 0 | 10 | 0 / 0 / 0 |
+
+All 19 reuse existing IDs and remain held, with unknown answers and Tamil correction required. Applications Q6 lacks its printed program; Q3 has duplicate choices. Technology Q5's four-option matching question is preserved with all premises. The existing local reviewer now has 147 items in 12 batches. Run `npm run mcqs:physics-review`, open http://127.0.0.1:4312, authenticate as the actual teacher, select Tamil/subject/Chapter 4, then review/save/export individually. No answer is guessed and nothing is published. Saved bank remains 995 English / 0 Tamil. Next extraction: Applications Chapter 5 (starts PDF 119), then Technology Chapter 5 (starts 163). [Full current report](SYSTEMATIC_COVERAGE_BATCH.md) · [Verification](chapter4-verification.json).
+---
+
+## Chapter 3 computer textbook batch — independently checked
+
+| Textbook / Tamil | Chapter | PDF / printed exercise pages | Source items | Four-choice MCQs | Two-choice reference | Reused IDs / new IDs | Printed-key matches | Unknown answers | Held / reviewed / approved / published |
+|---|---:|---|---:|---:|---:|---|---:|---:|---|
+| Computer Applications | 3 | 103, 104 / 93, 94 | 10 | 9 | 1 | 10 / 0 | 0 | 10 | 10 / 0 / 0 / 0 |
+| Computer Technology | 3 | 142, 143 / 136, 137 | 14 | 14 | 0 | 14 / 0 | 0 | 14 | 14 / 0 / 0 / 0 |
+
+24 held proposals reuse existing IDs; no new publications. The exact saved bank remains 995 English / 0 Tamil, and 733 zero-publication detected entries remain provisional rather than a confirmed missing-MCQ count. All answers are unknown. Applications Q6 is a two-choice blocked reference; Technology prints no Q11. Next: Applications Chapter 4 (PDF starts 105), then Technology Chapter 4 (starts 145); inspect real exercise boundaries before extraction. [Current report](SYSTEMATIC_COVERAGE_BATCH.md) · [Verification](chapter3-verification.json).
+---
+
 # Next Tamil extraction inventory
+
+## Current bounded batch — 2026-10-15T17:22:50.593Z
+
+Tamil Computer Applications Chapter 2 (PDF 70–71 / printed 60–61), Computer Technology Chapter 2 (PDF 96–97 / printed 90–91) and Commerce Chapter 27 (PDF 272 / printed 258) now have **29 held proposals**: 24 retained IDs, five new Commerce IDs. Five Commerce answers match the printed key; 24 computer answers remain unknown. All need teacher correction; none was approved or published. The existing Physics 75 candidates, option-recovery proposals, diagram crops and histories remain unchanged.
+
+Next extraction is **Computer Applications Chapter 3**, followed by **Computer Technology Chapter 3**, after checking the actual exercise pages. Computer Technology Chapter 1 duplicates the PageMaker exercise already scoped in Computer Applications 2; its distinct source edition was preserved, not merged or published. No MCQ choices were invented for the inspected practical/fill-in/matching units. [Current batch, source qualifications and review instructions](SYSTEMATIC_COVERAGE_BATCH.md). Earlier inventories below are historical snapshots.
+
+## Follow-up source extraction — October 15, 2026
+
+Tamil Physics Volume 1 Units **2–5 now have 60 individually identified held source proposals**, 15 per unit. Ten original exercise pages were freshly extracted, compared with the saved original cache and visually inspected: PDF **126–127, 197–199, 267–269, 291–292**, printed **118–119, 189–191, 259–261, 283–284**. All 60 numbered key entries match the inspected printed keys. This is source/key evidence, not teacher approval or complete Tamil transcription.
+
+The local preparation reuses **54 existing candidate IDs** and adds **six missing IDs**. Forty-nine have four parsed text-choice positions; **11 have missing/incomplete options** and **13 need source diagrams**. Unit 4 Question 5 contains graph-only choices and has an explicit approval block. Damaged Tamil and mathematical layout remain visible and flagged. Original cached page text, saved extraction and the proposed coordinate reading order remain separate. All 60 are held, with **0 teacher decisions, 0 approvals, 0 publications**.
+
+The existing `.local/teacher-review/extracted-books/12-physics-tamil-v1-c1623725.json` now includes `sourceBoundedProposals` and the four `sourceBoundedQuestionInventory` batches. The candidate array preserves all saved records. Reruns add 0 IDs and preserve original edits/history. All 76 pre-existing Physics candidates and the other 81 books' candidate arrays are unchanged. Six overlapping generic drafts from initial integration are retained as inactive artifacts and excluded from active counts/exports; source precedence is regression-tested.
+
+Open the existing website with `npm run dev:web`, sign in as an authorised administrator, and select **Extraction coverage → Tamil → Physics Volume 1**. The table shows source-inventoried/key counts separately from publication. Download the local reference CSV to compare saved extraction with separate proposed text/options, source/key pages, stable IDs and graph warnings. This does not import into the live moderation queue or record a teacher decision. The original Unit 1 review store, 15 pending candidates and Question 10 graph block remain unchanged.
+
+The 82-book pipeline still has **733 detected chapter entries without published questions**. The student bank remains **995 existing English publications / 0 Tamil publications** under the user's explicit retention policy. New textbook publications require individual recorded teacher approval. Next extraction targets are **Tamil Computer Applications chapters 2–18** and **Computer Technology chapters 1–6**, keeping each physical edition/hash distinct. Physics proposals first need actual teacher correction of Tamil, formulas and figures.
+
+[All 60 source question IDs and issues](TAMIL_PHYSICS_UNITS2_5_REVIEW.md) · [Per-question audit](tamil-physics-units2-5-extraction-audit.json) · [Preservation/rerun receipt](physics-units2-5-preservation.json). Earlier dated inventories below are preserved historical snapshots; their statements that Units 2–5 were unprocessed no longer describe this source-inventory milestone. **Final follow-up checks:** 124/124 unit/integration tests passed, 0 failed/skipped/cancelled; six targeted desktop/mobile browser cases passed on the fresh full rerun. Typecheck, lint, build, parser audit, manifest audit and all-book extraction/rerun exited 0. The first browser run had one sign-in loading failure (5 passed); its isolated rerun and subsequent full six-case run passed. A narrow test typecheck error was fixed. Final CLI evidence matching excludes repeated short-answer numbers on the wrong source page and has regression coverage. No broad unrelated browser suite or teacher academic verification was claimed. [Validation and read-only database receipt](physics-units2-5-verification.json).
 
 ## Local teacher review ready (October 12, 2026)
 

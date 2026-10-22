@@ -27,7 +27,7 @@ import {
   INITIAL_TOPICS,
 } from "./initial-seed";
 import bcrypt from "bcryptjs";
-import { isTextPracticeQuestion } from "@/lib/practice-question-text";
+import { selectPracticeQuestions } from "@/lib/textbook-practice-selection";
 import { studentActivationMode } from "@/lib/auth/activation";
 import { randomBytes, randomInt, randomUUID } from "node:crypto";
 import {
@@ -544,17 +544,40 @@ export async function startQuizSession(
     status: "Published",
     sourceType: params.sourceFilter === "All" ? undefined : params.sourceFilter,
   });
-  questions = questions.filter(isTextPracticeQuestion);
-  for (let i = questions.length - 1; i > 0; i--) {
+  let previousIds: string[] | undefined;
+  if (params.retrySessionId) {
+    const previous = await getQuizSessionById(params.retrySessionId);
+    if (
+      !previous ||
+      previous.studentId !== params.studentId ||
+      !previous.isCompleted ||
+      previous.subjectId !== params.subjectId
+    )
+      throw new Error("Choose one of your completed attempts to retry.");
+    previousIds = previous.questionIds.filter(
+      (id) =>
+        !params.retryIncorrect ||
+        (previous.answers[id]?.selectedAnswer != null &&
+          !previous.answers[id].isCorrect),
+    );
+  }
+  questions = selectPracticeQuestions(questions, {
+    bookId: params.bookId,
+    search: params.search,
+    previousIds,
+  });
+  for (let i = previousIds ? 0 : questions.length - 1; i > 0; i--) {
     const j = randomInt(i + 1);
     [questions[i], questions[j]] = [questions[j], questions[i]];
   }
   questions = questions.slice(
     0,
-    Math.min(
-      500,
-      Math.max(1, params.limit || (params.mode === "daily25" ? 25 : 10)),
-    ),
+    params.allAvailable || previousIds
+      ? questions.length
+      : Math.min(
+          500,
+          Math.max(1, params.limit || (params.mode === "daily25" ? 25 : 10)),
+        ),
   );
   if (!questions.length)
     throw new Error(

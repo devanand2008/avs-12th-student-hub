@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-10-19T14:48:56.532Z",
+  "baseline": ".local/science-ch2-baseline.json",
+  "unchangedOriginalCandidates": 17281,
+  "unchangedEarlierSourceProposals": 468,
+  "protectedFiles": 284,
+  "unchangedEarlierSourceImages": 151,
+  "currentSourceImages": 164,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-a494123204689484",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-2",
+      "page": 53
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-79772f1437e53be1",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-2",
+      "page": 53
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-7a76cc68c296c3a0",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-2",
+      "page": 54
+    }
+  ],
+  "removedActiveIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

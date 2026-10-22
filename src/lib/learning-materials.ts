@@ -1,4 +1,5 @@
 import type { Book, Chapter, Subject } from "@/types";
+import videoLessons from "./video-lessons-catalog.json";
 
 export const LEARNING_UPLOAD_LIMIT = 50 * 1024 * 1024;
 
@@ -22,10 +23,28 @@ export const MATERIAL_SUBJECTS: Subject[] = [
     icon: "book",
     description: "Tamil language video lessons for both streams.",
     orderIndex: 5,
-    totalChapters: 5,
+    totalChapters: 14,
+  },
+  {
+    id: "sub-english",
+    streamId: "Common",
+    name: "English",
+    code: "ENG-12",
+    icon: "book",
+    description: "Class 12 English video lessons and visual guides.",
+    orderIndex: 6,
+    totalChapters: 19,
   },
 ];
 export const MATERIAL_BOOKS: Book[] = [
+  {
+    id: "book-english",
+    subjectId: "sub-english",
+    name: "English - Video Lesson Collection",
+    volume: "Language lessons",
+    description: "The supplied English videos, organised by their visible lesson content.",
+    orderIndex: 1,
+  },
   {
     id: "book-maths",
     subjectId: "sub-maths",
@@ -90,6 +109,10 @@ function chapter(
   };
 }
 export const MATERIAL_CHAPTERS: Chapter[] = [
+  ...videoLessons.map((video) => ({
+    ...chapter(video.subjectName.toLowerCase(), Number(video.chapterId.split("-").at(-1)), video.topic, video.titleTamil),
+    description: `Video lesson collection: ${video.topic}. Lesson numbers organise these videos; they are not textbook chapter mappings.`,
+  })),
   ...mathsTitles.map((title, index) => chapter("maths", index + 1, title)),
   ...tamilTitles.map(([title, tamil], index) =>
     chapter("tamil", index + 1, title, tamil),
@@ -106,6 +129,9 @@ export interface SourceMaterial {
   titleTamil?: string;
   topic: string;
   language: "English" | "Tamil";
+  hostedUrl?: string;
+  sha256?: string;
+  thumbnailUrl?: string;
 }
 function maths(
   file: string,
@@ -139,6 +165,7 @@ function tamil(file: string, number: number): SourceMaterial {
   };
 }
 export const SOURCE_MATERIALS: SourceMaterial[] = [
+  ...videoLessons.map((video) => ({ ...video, kind: "video" as const, language: video.language as "English" | "Tamil" })),
   maths(
     "handwritten_exercises_1.5_to_1.8_complete (2).pdf",
     1,

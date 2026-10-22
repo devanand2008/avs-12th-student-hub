@@ -2,7 +2,21 @@ import { createHash, randomUUID } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
-import type { Unit1Candidate } from "./tamil-physics-unit1";
+import type { PhysicsReviewCandidate } from "./physics-review-batches";
+
+export const teacherCorrection = z
+  .object({
+    questionText: z.string().trim().min(1).max(20000),
+    options: z
+      .array(z.string().trim().min(1))
+      .refine(
+        (v) => v.length === 2 || v.length === 4 || v.length === 5,
+        "Preserve the printed two, four or five choices",
+      ),
+    correctAnswer: z.enum(["A", "B", "C", "D"]).nullable(),
+    sourceMappingConfirmed: z.boolean(),
+  })
+  .strict();
 
 export interface LocalReviewer {
   id: string;
@@ -20,6 +34,7 @@ export const decisionInput = z
     textConfirmed: z.boolean(),
     keyConfirmed: z.boolean(),
     diagramConfirmed: z.boolean(),
+    correction: teacherCorrection.optional(),
   })
   .strict();
 export type LocalDecisionInput = z.infer<typeof decisionInput>;
@@ -36,6 +51,7 @@ export interface DecisionEvent {
   diagramConfirmed: boolean;
   previousDecision: LocalDecisionInput["decision"];
   revision: number;
+  correction?: z.infer<typeof teacherCorrection>;
 }
 export interface LocalReviewEntry {
   id: string;
@@ -52,8 +68,10 @@ export interface LocalReviewEntry {
     pdfPage: number;
     pdfEndPage: number;
     printedPages: number[];
-    keyPdfPage: number;
-    keyPrintedPage: number;
+    sourcePageReferences?: { pdfPage:number; printedPage:number }[];
+    keyPdfPage: number | null;
+    keyPrintedPage: number | null;
+    occurrence?: NonNullable<PhysicsReviewCandidate["sourceOccurrence"]>;
   };
   evidenceSha256: string;
   sourceWarnings: string[];
@@ -82,20 +100,24 @@ export class LocalReviewError extends Error {
     super(message);
   }
 }
-export const evidenceDigest = (c: Unit1Candidate) =>
+export const evidenceDigest = (c: PhysicsReviewCandidate) =>
   createHash("sha256").update(JSON.stringify(c)).digest("hex");
-export const requiredSourcePages = (c: Unit1Candidate) => [
+export const requiredSourcePages = (c: PhysicsReviewCandidate) => {
+  const pages = [
   ...new Set([
     c.page,
     ...Array.from(
       { length: (c.endPage ?? c.page) - c.page + 1 },
       (_, i) => c.page + i,
     ),
-    c.keyPage!,
+    ...(c.keyPage ? [c.keyPage] : []),
+    ...(c.extractionEvidence.sourcePageReferences?.map(p=>p.pdfPage) ?? []),
   ]),
-];
+  ];
+  return c.extractionEvidence.sourcePageReferences ? pages.sort((a,b)=>a-b) : pages;
+};
 
-function emptyEntry(c: Unit1Candidate): LocalReviewEntry {
+function emptyEntry(c: PhysicsReviewCandidate): LocalReviewEntry {
   const prep = c.reviewPreparation!,
     e = c.extractionEvidence;
   return {
@@ -113,8 +135,10 @@ function emptyEntry(c: Unit1Candidate): LocalReviewEntry {
       pdfPage: c.page,
       pdfEndPage: c.endPage ?? c.page,
       printedPages: e.printedPages,
-      keyPdfPage: c.keyPage!,
+      ...(e.sourcePageReferences ? { sourcePageReferences:structuredClone(e.sourcePageReferences) } : {}),
+      keyPdfPage: c.keyPage ?? null,
       keyPrintedPage: e.keyPrintedPage,
+      ...(c.sourceOccurrence ? { occurrence: c.sourceOccurrence } : {}),
     },
     evidenceSha256: evidenceDigest(c),
     sourceWarnings: [...c.qualityFlags],
@@ -133,14 +157,42 @@ function emptyEntry(c: Unit1Candidate): LocalReviewEntry {
 }
 
 export function reconcileManifest(
-  candidates: Unit1Candidate[],
+  candidates: PhysicsReviewCandidate[],
   saved?: LocalReviewManifest,
 ): LocalReviewManifest {
+  const occurrenceOrdered =
+    candidates.length > 0 &&
+    candidates.every(
+      (c, i) =>
+        c.sourceOccurrence?.ordinal === i + 1 &&
+        c.sourceOccurrence.printedNumber === c.number &&
+        c.sourceOccurrence.pdfPage === c.page &&
+        Boolean(c.sourceOccurrence.section.trim()) &&
+        Boolean(c.sourceOccurrence.reason.trim()),
+    );
+  if (candidates.some((c) => c.sourceOccurrence) && !occurrenceOrdered)
+    throw new LocalReviewError(
+      "Physical source occurrence metadata must be complete, unique and source-ordered",
+    );
   if (
-    candidates.length !== 15 ||
-    new Set(candidates.map((c) => c.id)).size !== 15
+    candidates.length === 0 ||
+    new Set(candidates.map((c) => c.id)).size !== candidates.length ||
+    new Set(candidates.map((c) => c.chapterId)).size !== 1 ||
+    (new Set(candidates.map((c) => c.number)).size !== candidates.length &&
+      !occurrenceOrdered) ||
+    candidates.some(
+      (c, i) =>
+        !Number.isInteger(c.number) ||
+        c.number < 1 ||
+        (i > 0 && c.number <= candidates[i - 1].number && !occurrenceOrdered),
+    ) ||
+    (candidates[0].bookId === "12-physics-tamil-v1-c1623725" &&
+      (candidates.length !== 15 ||
+        candidates.some((c, i) => c.number !== i + 1)))
   )
-    throw new LocalReviewError("Expected 15 unique Unit 1 candidates");
+    throw new LocalReviewError(
+      "Expected a unique, source-ordered single-chapter batch (15 consecutive questions for Physics units)",
+    );
   if (
     saved &&
     (saved.schemaVersion !== 1 ||
@@ -182,7 +234,7 @@ export function reconcileManifest(
 
 export function recordDecision(
   manifest: LocalReviewManifest,
-  candidates: Unit1Candidate[],
+  candidates: PhysicsReviewCandidate[],
   input: LocalDecisionInput,
   reviewer: LocalReviewer,
 ): LocalReviewManifest {
@@ -202,10 +254,30 @@ export function recordDecision(
   const pages = requiredSourcePages(c);
   if (data.inspectedPages.some((p) => !pages.includes(p)))
     throw new LocalReviewError("Invalid source page confirmation");
+  if (c.options.length === 5 && data.correction && data.correction.options.length !== 5)
+    throw new LocalReviewError("Preserve all five printed choices in a local correction; do not silently drop the fifth choice");
   if (data.decision === "approved") {
+    if (c.localReviewRequirements?.answerEvidenceUnavailable)
+      throw new LocalReviewError(
+        "Answer evidence is unavailable. Keep this candidate held until a separately evidenced teacher answer verification is prepared.",
+      );
     if (!c.extractionEvidence.completeTextOptions)
       throw new LocalReviewError(
-        "Question 10 cannot be approved: required graph options are incomplete",
+        c.chapterId.endsWith("-ch-1") && c.number === 10
+          ? "Question 10 cannot be approved: required graph options are incomplete"
+          : "Cannot approve: required text/graph options are incomplete",
+      );
+    if (
+      c.localReviewRequirements &&
+      (!data.correction ||
+        data.correction.options.length !== 4 ||
+        !data.correction.correctAnswer ||
+        !data.correction.sourceMappingConfirmed ||
+        data.correction.correctAnswer !==
+          c.localReviewRequirements.proposedPrintedAnswer)
+    )
+      throw new LocalReviewError(
+        "Enter a complete teacher-corrected Tamil transcription, four options and source mapping confirmation. Reconcile answer-key disagreements before approval.",
       );
     if (
       !data.textConfirmed ||
@@ -237,6 +309,9 @@ export function recordDecision(
     diagramConfirmed: data.diagramConfirmed,
     previousDecision: previous.decision,
     revision: previous.revision + 1,
+    ...(data.correction
+      ? { correction: structuredClone(data.correction) }
+      : {}),
   };
   const next = structuredClone(manifest),
     entry = next.entries.find((e) => e.id === data.id)!;

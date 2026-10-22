@@ -1,78 +1,62 @@
-import { getSession } from "@/lib/auth";
-import { getQuizSessionById, saveQuizAnswer } from "@/lib/db";
 import { NextResponse } from "next/server";
+import { z } from "zod";
+import { getSession } from "@/lib/auth";
+import { getQuizQuestions, getQuizSessionById, saveQuizAnswer } from "@/lib/db";
+import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 
+const input = z.object({
+  sessionId: z.string().min(1),
+  questionId: z.string().min(1),
+  answer: z.enum(["A", "B", "C", "D"]).optional(),
+  selectedAnswer: z.enum(["A", "B", "C", "D"]).nullable().optional(),
+  timeSpentSeconds: z.number().min(0).default(0),
+  markedForReview: z.boolean().default(false),
+}).refine((body) => body.answer !== undefined || body.selectedAnswer !== undefined, {
+  message: "Choose an answer or explicitly clear the saved answer.",
+});
+
+/** Preserve the existing individual-save API; explicit practice submission also returns feedback. */
 export async function POST(request: Request) {
+  const user = await getSession();
+  if (!user)
+    return NextResponse.json({ error: "Please sign in." }, { status: 401 });
   try {
-    const user = await getSession();
-    if (!user)
-      return NextResponse.json({ error: "Please sign in." }, { status: 401 });
-    const body = await request.json();
-    const {
-      sessionId,
-      questionId,
-      selectedAnswer,
-      timeSpentSeconds = 0,
-      markedForReview = false,
-    } = body;
-
-    if (!sessionId || !questionId) {
-      return NextResponse.json(
-        { error: "sessionId and questionId are required" },
-        { status: 400 },
-      );
-    }
+    const parsed = input.safeParse(await request.json());
+    if (!parsed.success)
+      return NextResponse.json({ error: "Choose a valid answer." }, { status: 400 });
+    const { sessionId, questionId, timeSpentSeconds, markedForReview } = parsed.data;
+    const wantsFeedback = parsed.data.answer !== undefined;
+    const selectedAnswer = wantsFeedback ? parsed.data.answer! : parsed.data.selectedAnswer!;
     const quiz = await getQuizSessionById(sessionId);
     if (!quiz || quiz.studentId !== (user.studentId || user.userId))
-      return NextResponse.json(
-        { error: "Practice session not found" },
-        { status: 404 },
-      );
-    if (
-      !quiz.questionIds.includes(questionId) ||
-      (selectedAnswer !== null &&
-        !["A", "B", "C", "D"].includes(selectedAnswer))
-    )
-      return NextResponse.json(
-        { error: "Invalid question or answer" },
-        { status: 400 },
-      );
-
-    const updated = await saveQuizAnswer(
-      sessionId,
-      questionId,
-      selectedAnswer,
-      timeSpentSeconds,
-      markedForReview,
-    );
-
-    if (!updated) {
-      return NextResponse.json(
-        { error: "Session not found or already completed" },
-        { status: 404 },
-      );
-    }
-
-    const answer = updated.answers[questionId];
+      return NextResponse.json({ error: "Practice question not found." }, { status: 404 });
+    if (!quiz.questionIds.includes(questionId))
+      return NextResponse.json({ error: "Invalid question or answer." }, { status: 400 });
+    if ((wantsFeedback && quiz.mode === "timed") || quiz.isCompleted || (quiz.expiresAt && Date.now() >= Date.parse(quiz.expiresAt)))
+      return NextResponse.json({ error: "Individual feedback is unavailable for this session." }, { status: wantsFeedback ? 409 : 404 });
+    const question = wantsFeedback ? (await getQuizQuestions(quiz.id)).find((q) => q?.id === questionId) : undefined;
+    if (wantsFeedback && (!question || !isTextPracticeQuestion(question) || !/^[ABCD]$/.test(question.correctAnswer)))
+      return NextResponse.json({ error: "This question has no valid scoring answer." }, { status: 409 });
+    const updated = await saveQuizAnswer(sessionId, questionId, selectedAnswer, timeSpentSeconds, markedForReview);
+    if (!updated)
+      return NextResponse.json({ error: "Session not found or already completed." }, { status: 404 });
+    const saved = updated.answers[questionId];
     return NextResponse.json({
       success: true,
-      savedAnswer:
-        quiz.mode === "timed"
-          ? {
-              questionId: answer.questionId,
-              selectedAnswer: answer.selectedAnswer,
-              markedForReview: answer.markedForReview,
-            }
-          : answer,
+      savedAnswer: quiz.mode === "timed"
+        ? { questionId: saved.questionId, selectedAnswer: saved.selectedAnswer, markedForReview: saved.markedForReview }
+        : saved,
+      ...(question ? {
+        questionId,
+        selectedAnswer,
+        correctAnswer: question.correctAnswer,
+        explanation: question.explanation,
+        explanationTamil: question.explanationTamil,
+        sourceAnswerPage: question.sourceAnswerPage,
+        isCorrect: selectedAnswer === question.correctAnswer,
+      } : {}),
     });
-  } catch (error) {
-    return NextResponse.json(
-      {
-        error:
-          (error instanceof Error ? error.message : undefined) ||
-          "Failed to save answer",
-      },
-      { status: 500 },
-    );
+  } catch {
+    return NextResponse.json({ error: "Could not check the answer. Please retry." }, { status: 503 });
   }
 }

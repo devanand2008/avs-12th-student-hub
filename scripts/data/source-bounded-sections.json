@@ -1,0 +1,71 @@
+[
+  {
+    "bookId": "12-physics-tamil-v1-c1623725",
+    "subject": "Physics",
+    "medium": "Tamil",
+    "volume": "1",
+    "sourceFile": "12th_Std_Physics_Vol_1_TM_optimised.pdf",
+    "sourceSha256": "300fa5cf7d911467dfbc031ca5bb397d7c8d831a11724c64d1a173403a3db9ba",
+    "inventoryMethod": "Rendered exercise pages inspected for section boundaries, printed numbering, option positions, diagrams and printed keys; not teacher approval or full Tamil transcription verification",
+    "sections": [
+      {
+        "chapterNumber": 2,
+        "chapterTitle": "மின்னோட்டவியல்",
+        "chapterStartPdfPage": 88,
+        "chapterEndPdfPage": 132,
+        "pageGroups": [
+          { "page": 126, "printedPage": 118, "first": 1, "last": 7 },
+          { "page": 127, "printedPage": 119, "first": 8, "last": 15 }
+        ],
+        "keyPdfPage": 127,
+        "visualKeyText": "1) a 2) a 3) c 4) b 5) a 6) c 7) d 8) c 9) d 10) c 11) a 12) d 13) b 14) d 15) a",
+        "diagramQuestions": [1, 2, 5, 10, 11],
+        "incompleteGraphQuestions": []
+      },
+      {
+        "chapterNumber": 3,
+        "chapterTitle": "காந்தவியல் மற்றும் மின்னோட்டத்தின் காந்த விளைவுகள்",
+        "chapterStartPdfPage": 133,
+        "chapterEndPdfPage": 202,
+        "pageGroups": [
+          { "page": 197, "printedPage": 189, "first": 1, "last": 7 },
+          { "page": 198, "printedPage": 190, "first": 8, "last": 11 },
+          { "page": 199, "printedPage": 191, "first": 12, "last": 15 }
+        ],
+        "keyPdfPage": 199,
+        "visualKeyText": "1) a 2) d 3) c 4) b 5) b 6) a 7) b 8) a 9) b 10) c 11) c 12) c 13) b 14) d 15) c",
+        "diagramQuestions": [1, 2, 7, 9, 11],
+        "incompleteGraphQuestions": []
+      },
+      {
+        "chapterNumber": 4,
+        "chapterTitle": "மின்காந்தத் தூண்டலும் மாறுதிசை மின்னோட்டமும்",
+        "chapterStartPdfPage": 203,
+        "chapterEndPdfPage": 274,
+        "pageGroups": [
+          { "page": 267, "printedPage": 259, "first": 1, "last": 5 },
+          { "page": 268, "printedPage": 260, "first": 6, "last": 14 },
+          { "page": 269, "printedPage": 261, "first": 15, "last": 15 }
+        ],
+        "keyPdfPage": 269,
+        "visualKeyText": "1) a 2) d 3) b 4) d 5) a 6) a 7) a 8) b 9) c 10) a 11) c 12) c 13) d 14) c 15) d",
+        "diagramQuestions": [1, 2, 5],
+        "incompleteGraphQuestions": [5]
+      },
+      {
+        "chapterNumber": 5,
+        "chapterTitle": "மின்காந்த அலைகள்",
+        "chapterStartPdfPage": 275,
+        "chapterEndPdfPage": 294,
+        "pageGroups": [
+          { "page": 291, "printedPage": 283, "first": 1, "last": 10 },
+          { "page": 292, "printedPage": 284, "first": 11, "last": 15 }
+        ],
+        "keyPdfPage": 292,
+        "visualKeyText": "1) b 2) d 3) d 4) c 5) a 6) b 7) a 8) c 9) b 10) b 11) c 12) a 13) d 14) d 15) a",
+        "diagramQuestions": [],
+        "incompleteGraphQuestions": []
+      }
+    ]
+  }
+]

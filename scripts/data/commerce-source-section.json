@@ -1,0 +1,17 @@
+{
+  "bookId": "12-commerce-tamil-d9e013d8",
+  "subject": "Commerce",
+  "medium": "Tamil",
+  "volume": null,
+  "sourceFile": "12th_Std_Commerce_TM_optimised.pdf",
+  "sourceSha256": "e7244f3467b554b7b0c246a66da17681bab6b3b9f463ad3d38bae25db4472bbf",
+  "chapterNumber": 27,
+  "chapterTitle": "நிறும மேலாண்மை",
+  "chapterStartPdfPage": 257,
+  "chapterEndPdfPage": 272,
+  "pages": [{ "page": 272, "printedPage": 258, "first": 1, "last": 5, "contentTopFraction": 0.20 }],
+  "inspectedEndingPages": [],
+  "excludedItems": [],
+  "visualKeyText": "1 இ 2 ஈ 3 இ 4 ஈ 5 இ",
+  "keyEvidence": "Original printed numbered answer table on PDF 272 / printed 258, between Section I and Section II; visually compared. This is printed-key evidence only, not teacher approval."
+}

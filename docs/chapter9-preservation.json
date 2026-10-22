@@ -1,0 +1,655 @@
+{
+  "checkedAt": "2026-10-17T12:13:39.394Z",
+  "scope": "Task-start local hashes only; no production measurement",
+  "baselineAt": "2026-10-17T11:48:35.049Z",
+  "candidateRecordsPreserved": 17268,
+  "previousProposalsPreserved": 201,
+  "newCandidateRecords": 1,
+  "addedCandidates": [
+    {
+      "id": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-e4384154a00ebe0c",
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "number": 1,
+      "page": 155
+    }
+  ],
+  "newProposals": 11,
+  "addedProposalIds": [
+    "textbook-bounded-12-computer-applications-tamil-e51fbdf6-e4384154a00ebe0c",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-16cbe9e4646c4eeb",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-194f2ad4d4addfeb",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-37aae0f5064c3836",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-0741472853c1f052",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-4a5b25d93b3eb37e",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-845f32041e4c3edc",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-e0e26664dfd58e6d",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-1dd25458aca70c39",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-f626ba2325a6937c",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-bb4517609aa826aa"
+  ],
+  "activeChanges": [
+    {
+      "book": "12-computer-applications-tamil-e51fbdf6.json",
+      "added": [
+        "textbook-bounded-12-computer-applications-tamil-e51fbdf6-e4384154a00ebe0c"
+      ]
+    }
+  ],
+  "protectedFiles": [
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\commerce-12-commerce-tamil-d9e013d8-ch-27\\decisions.json",
+      "sha": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-2\\decisions.json",
+      "sha": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-3\\decisions.json",
+      "sha": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "sha": "faf0f0793007bd61e81a2a2226600e4233ebda90fd7a590e864a73ebcd1cc8b0"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "sha": "9f93a6484b884c0733e17dd73e8cca693555490e4ada426608901888728822a6"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-2\\decisions.json",
+      "sha": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-3\\decisions.json",
+      "sha": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "sha": "eb037dd880a0e220a934d1c565db9d2fd396b45e8d291858cec5f52a5903740e"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "sha": "0fa97c2244fe89a7b1caea085e78ffd62f346d6f6f70d4e53486cca465b41550"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "sha": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\reviewer-access-37724d2c-6af3-42f6-a26e-6708e888fcf5.txt",
+      "sha": "2fa260f0e73e4c4ab85cbf0b0c137c614d6c6b86c3dac6873b4265924b94b873"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\reviewer-access-f8e9c672-314e-4f64-8cb2-20a5a7a1f15f.txt",
+      "sha": "98bb04953728cf333f6281832e3d662d0076b575f00c1fac792aa75c8b8153c3"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\reviewers.json",
+      "sha": "1a69ad03b81daa9d9f87e99222bf8c370b4918986f7b46b5497a8e7c1dffc7e6"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\source-pages\\79.png",
+      "sha": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\source-pages\\80.png",
+      "sha": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\source-pages\\81.png",
+      "sha": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "sha": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "sha": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "sha": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "sha": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-126.png",
+      "sha": "b3173434e1dd54e4cf24faf3e7ce6b3ac2fa5ae7803719beb9d1996a547574fa"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-127.png",
+      "sha": "d78b833fb44a3e31519a6e2047ab2b0853b7151ba335b3a4e8fcdbf2f14ec5ae"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-197.png",
+      "sha": "399045c2a1082aad1d49e34c70f113a6580ceafa4f644bb74b3668ef2fd88749"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-198.png",
+      "sha": "f5f926e4be3070885b04eefb2e55dc2dada09ec999a2f4effcf68f3889ae3e31"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-199.png",
+      "sha": "b24e45393e0d1b313e6f9a79dfe219f7719ddc755d2a153a50cdf8b3a2cdfb1b"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-267.png",
+      "sha": "e74f9ef42fb2a02ec30b0263e772911bdefea0ce781b7b0af5721ecace8e7e71"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-268.png",
+      "sha": "9ee2ba22d06f1983b18dd49d896207b86a09fece5b064a2d84cafc563c60375a"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-269.png",
+      "sha": "4d765c56c51ff58d19ebbdf2eb194d4aa79f6080ed3a2696d29f7827165cd1f3"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-291.png",
+      "sha": "34fba0eae346b067cf5ac6601ee4dee73df7bc36c51be3c61d67af5077d45a76"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-292.png",
+      "sha": "070027e12ac3521c999886b3fb61f1654aca37e942566712811d9f6389432f7b"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\source-assets.json",
+      "sha": "1f9521555625bfe762ccdb2ee4fe00856b0ff30247cd27c6da6b51303f66b9d2"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-1-figure-1.png",
+      "sha": "adda91bbdd8e7e2b74528c06fc56bd3618293f06691003ae4e764ad217e046b1"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-10-figure-1.png",
+      "sha": "c7178fbe88c0116bfc70ac8cc6214869e355129f5ceec3ecb792288541323511"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-11-figure-1.png",
+      "sha": "077f8d5de84cddc4d9776adae18c442960f47ea0befdaafabdfd9f35bb1d373e"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-2-figure-1.png",
+      "sha": "a6bf6c2c6ae9aceeed3a3115f5d8e2a474593278fb7f25747b55d8a072ec8f43"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-5-figure-1.png",
+      "sha": "d6b064772e32309dbaba1279831f01806726d373c141a0dcfeb8812a9912e0ae"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-6-options.png",
+      "sha": "402e4ecebc30d305463876937804ff4476848257ebade1b5ce3e05a8026f068f"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-8-options.png",
+      "sha": "c9b09854392a0be0a60ed698c2f7e0443538fca67603e73e5e34d6e48a555bd4"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-1-figure-1.png",
+      "sha": "f58961523d43129ee4b67fde0eec024a76a6c24e16dde95fe11d163064042301"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-10-options.png",
+      "sha": "1cedcd46e152b4777fe2d6e43927561f0e640ea7a03347d091ecda6a46202f8a"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-11-figure-1.png",
+      "sha": "fbc7b8a1eb79db3704a373b1ee284898f396f7d63039864504cb834d0c85347e"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-2-figure-1.png",
+      "sha": "d43535417e0f89676ea26e76179b4cca1bc74b9fb2a7d25e9a5b5c6e6f612228"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-3-options.png",
+      "sha": "6892ad18e6e60464bb888943ac1159246f15221314c439703f3b3458fdd53f90"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-7-figure-1.png",
+      "sha": "c04a16b3cb8157555b1aa80095af148f7d0aff1e351845b2a4d6c35a5549237f"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-7-options.png",
+      "sha": "45a52717aea4b11c17c44380f1cb0fb9783056728e806f152a4256e1c4dd56d2"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-8-options.png",
+      "sha": "06f2e1873f6ee1a53986360664aa738ec295167f13842863d7a1e751be39bfc7"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-9-figure-1.png",
+      "sha": "eb9de9221a9d01a078af0d9a4f6db196afbc3fdeb162ca5c7d580e629417391b"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-1-figure-1.png",
+      "sha": "89139e44d07a52087236055e2ef9392fafafa8c8a51afe37484ca3f5664a6947"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-10-options.png",
+      "sha": "d29cac4460b939eebc8277451009681a10a654327f51ccea843acaf46690b9b3"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-13-options.png",
+      "sha": "1995355de18d8b99b1d4e20dfe0a8cbd5b235f24d317d5dfb5e0caead8ecb3d2"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-14-options.png",
+      "sha": "6691af6986ba597d05fe7176c90e5816372827dd943c0eb5eb90645a97f64983"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-2-figure-1.png",
+      "sha": "e087db9a0227928b72e093a4b6e752fc1f63ceab5c88b169a488b564d233a4c1"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-1.png",
+      "sha": "c92019e415bfe20f849a1032a16facf901b26a176b1d2891a8487828b27e8b55"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-2.png",
+      "sha": "14577c678ca6bcec3044cbc9857bc051c330ed84d040e0217154cd0e25c0f419"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-3.png",
+      "sha": "f02710d67a6da50c3bfe27f73329f81fd9e3c42a819c5def364f38535bae0002"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-4.png",
+      "sha": "c3a6cc3be618312c36e21f8ca24568276193c7382481760afe13bf9bf4422df9"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-5.png",
+      "sha": "647462e997cea80cda6a26494045eee884715b6cf4d96c3a652c310f03e57fd8"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-9-options.png",
+      "sha": "af07d1b81d8f751689643ea84ab42d3482f8bc83d96b67a8de55298f1582396d"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-biochemistry-english-dfd867ac-pdf-149.png",
+      "sha": "ace5aee0b1f69d3b7c6e97cd0bb8975c949cb547b0ba8c5c7cd41da737711196"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-biochemistry-english-dfd867ac-pdf-173.png",
+      "sha": "0828a0da17ef587ebe0ea67159964b15362dba18930e71bbab4c57b134c70fe9"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-biochemistry-english-dfd867ac-pdf-174.png",
+      "sha": "09ee0e320b1f549f7faeab2a5ce1d47086801744bcd05bc08e35065d83190721"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-biochemistry-english-dfd867ac-pdf-175.png",
+      "sha": "19cc07fa99e2d9a6b2b132ae88842553057811572daf1c38f172959bf0cc3fb6"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-biochemistry-english-dfd867ac-pdf-176.png",
+      "sha": "7e1eaf87f95f7f68250412fa5515f66b4709f4c3da6867544cae5a988ce63820"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-commerce-tamil-d9e013d8-pdf-257.png",
+      "sha": "5c946f7823d43f352295033d03a64b2359a32e9fe528bc44b1aef47099be25ca"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-commerce-tamil-d9e013d8-pdf-272.png",
+      "sha": "a78473f8f7e375b645dbfe7b266651bf53b48ac3303ecddda088b9ea3b572f13"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-103.png",
+      "sha": "c2b3a960fdaec1ff8851a5f606f5a7bb019ff87cd3583fd8dc9270a927c45987"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-104.png",
+      "sha": "39663e023bfd2fcb3d4539968b49c8b3953f0a7348dcc45264f646829eeaf89b"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-105.png",
+      "sha": "c1fa0790239b00908d16adb49fb505bb7adc47cb4d9345dffee99d36f13b9733"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-117.png",
+      "sha": "80861c2ea8173d901e8c60c4bb6c1286cd6d13a211f13a7d24c5856a261e8921"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-118.png",
+      "sha": "805d27a7543e5c2ce7d4d61ab536438c641dd8d732aee5deca7bd6386a9c37e6"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-119.png",
+      "sha": "8981368b921b64d17439e901617164cc89a9bf2a299ad0f80e25af7ab9fdd633"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-125.png",
+      "sha": "c9bea168ce8bc82637022559c69ca3f1fa4f3faabfb3387df3b49787ab66b619"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-126.png",
+      "sha": "d5784a4d8bb47b80d1796be2027dd04d09c2914ce2c8b7a7c8a5c217cd4b2167"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-127.png",
+      "sha": "8eb35456466ca467d0bb7359b8c41e078b7c83479148173ddd3a14506582df4d"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-29.png",
+      "sha": "0883c19d4dd9bc8f8fdf1f6b9c8f5583b42357f6ceeaf7eeff7c830c4f92f6b1"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-70.png",
+      "sha": "7bed0af960b422f4a1449fc69bd5342de8035662f93864c0d62ad4ca9017adc8"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-71.png",
+      "sha": "dbb00421b226e8aa561968694571d21a9198c3628cf80d5da87270a825990783"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-72.png",
+      "sha": "983b62e4d39e3060258449c5b2e45663f6a9a7965d10ca0e8e1f79d2cc0fd76d"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-73.png",
+      "sha": "e22780cbd7d1185be0ebece64b42c8d4af85240d5d20a03275a32d671481dccd"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-142.png",
+      "sha": "4ca339458a350ac4a4570784faa0fc0fa3c7d2ebd956ecad4c6478a59ff991de"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-143.png",
+      "sha": "39876781d301d032c23e6196decd8fa5c0070eea9ffa5e87bcd8ad9a83492114"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-144.png",
+      "sha": "f3f9d50b99d64ecdd6b2ccd57b972058f2aea632615266ab20af6d754ca45ccc"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-145.png",
+      "sha": "2358c336a2340b776e5aeeb392e52ace13a6b026f278a35f8329eb27730d44aa"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-161.png",
+      "sha": "cc7c3b1dc1d06bbc1adae97a3c3d10831eac414bddb2c5b8f334a12533c9550f"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-162.png",
+      "sha": "4adee5e04ae6f427277fc20d84cd09329855f22b8e4fddb2815a4e2ff4c68e49"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-163.png",
+      "sha": "beefddd829ce1aa074e82c8ea6dbc0ab1961e8ca5e3826c00a053f518f8f3fc8"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-187.png",
+      "sha": "d212423923d9143e0596f8d729491d36af202cff06c2eb37bb235f4498d7d19b"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-188.png",
+      "sha": "4acd1d7745b74e0a0319b08d38775f6829ee2c42f00cb9ed1616a5131d1645d4"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-189.png",
+      "sha": "1fd9a5b1ea6ff2d19e4fce4c93c26afd16a92c083170984c5899b7641d0dfa87"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-48.png",
+      "sha": "58a9f8b1e98429770c1891d9ddcfa9e590ef662d7737d83799b148aef5d920a3"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-49.png",
+      "sha": "e0155c9a3640a00ee49b83404d62c2c210309de0f2ebbea4389488f6a8c9586a"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-51.png",
+      "sha": "ce699ecd0e5e29352f3334dd7e72b71b970805860b3f29f3a8fd725e74a9fa14"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-7.png",
+      "sha": "8bbb821fe496db56bc8ea03d9958ed54083677ebd12ad0a2cc765637b6da8511"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-96.png",
+      "sha": "bb6136f1c4f3e384f230c8fcb55a9367a39b2ca609bc55a73e4a9cd86005f136"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-97.png",
+      "sha": "71fe0ef6282b584e2d3e32100c324805686d63133660fdf4f35049f537a55b42"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-98.png",
+      "sha": "16f70acb80685a7006dc651b0e28b4730a9b47028b121ed6fab5629502a8a7ab"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-99.png",
+      "sha": "3b3fd54f19bc60bf9e0431ce119f171747cbdeff6580d4f5ac2a667592abb177"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-geography-english-24059775-pdf-167.png",
+      "sha": "1c9b78b96c133427a4ce2afa091d1031d736ba5c229904774fe160bfaa7b5f44"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-geography-english-24059775-pdf-168.png",
+      "sha": "50f117d7bd583228398cbde8c0796f33260f0bd3920691df71643df33bd14af4"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-geography-english-24059775-pdf-169.png",
+      "sha": "a7e57cf8d3edf0391b36a4dd2bae97a3a5468ce2462cc350559149bcd64a97be"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-geography-english-24059775-pdf-170.png",
+      "sha": "0617c98ecb9b8e25443ad112b6471487b3491c3e306af441ce821ea3611ba96c"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-geography-english-24059775-pdf-171.png",
+      "sha": "d74a407716d02bae7aeeb9c00947fa8a118d4f6800657bec8ce4cdd59c92d55b"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-physics-tamil-v1-c1623725-pdf-352.png",
+      "sha": "ea3cb34feed07fcb57f0fc1566bfe814a48ab095560d2439dbb5ceb1f87b0acc"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\source-pages.json",
+      "sha": "7fd542f9076f225cd3da43f0632dd73015100f3c071cca0cdbd58a74cb53951b",
+      "previousEntries": 56,
+      "appendedEntries": 8
+    },
+    {
+      "file": ".local/independent-live-content.json",
+      "sha": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a"
+    },
+    {
+      "file": ".local/followup-platform-after-snapshot.json",
+      "sha": "f629b6e3ab4279fdd9bfab9f3edd8e736b749707d9538b5cabe8e20d73898a1b"
+    },
+    {
+      "file": ".local/followup-platform-after-database-proof.json",
+      "sha": "b3b0ffc661ee7af6b9e8f2b78509faab4d195c0b9ec7909aa096a13b0fb7ce18"
+    },
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551"
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc"
+    },
+    {
+      "file": "scripts/data/physics-review-source-regions.json",
+      "sha": "7990cce64e2b9ae9da76a2e8c5ffcb90fd097cf78313a343657dddbe7881cb4e"
+    },
+    {
+      "file": "scripts/data/tamil-physics-unit1-transcription.json",
+      "sha": "94924d137a9e8952ce1ce41cf86d1f5f839aaabcde331c93b8db2e84e58785d6"
+    },
+    {
+      "file": "src/lib/textbook-publication-baseline.json",
+      "sha": "77d29d07e1fb979c65d354732a15acd7bdd8f77277a4b841259f4fa8092637a3"
+    },
+    {
+      "file": "docs/chapter5-verification.json",
+      "sha": "e10164373ba2f1aee3aef69381075d717dcd41b47abe875f89ad6b20a17e99b3"
+    },
+    {
+      "file": "docs/chapter5-recheck.json",
+      "sha": "a5b656d8de86df08d7cce6ae38b26caf52938c237ef97314e2929eb8b61758f4"
+    },
+    {
+      "file": "docs/chapter5-preservation.json",
+      "sha": "423e52b77a8387dce54e9e438121b8d879bee3a9259d4a8a77687d97c54a5648"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "sha": "61f5a4d078fdd9cd80157eb0e3496d334c694a8ad0589f809282fc646e60e9fa"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "sha": "7b5e3a51fe05597e11c35fed08253a9da96e5bf94bedb8956252af1b4d412868"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-130.png",
+      "sha": "bd06a014c118f2def91fd0dfd12ce470e654f78f0941329a1769463da6419501"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-131.png",
+      "sha": "e8c57f654b7e1033b04b39f3b3a49d7ed5f97eb15aaf2403cb639d194e4dd3a1"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-132.png",
+      "sha": "3b675315c3637f22304884bdce457e8f378885b4c346cfbd775768e79f2d14d2"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-133.png",
+      "sha": "18e6f15d99a2eebcbbab65dc3b2fc9219fa07d86320c4a8e8c3e28e33f9847ba"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-229.png",
+      "sha": "fd9f024d14c3cb3e855c09255276123331f98f2d21d4a15f93d75a414686fe44"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-230.png",
+      "sha": "0720c7d83bdc4f54161f13049eb8898e3cfa806e080491a56318dd24a687cbc5"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-231.png",
+      "sha": "6365e56d33d70731a771646926fd63d5867e46168c9d56e551932f92aaedbda8"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-232.png",
+      "sha": "ffd9673d06db8bd97319c234aa50cb7937b5d6421bf934270c16f43ed82bd9f1"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-233.png",
+      "sha": "6e64c23efc0304fa592dac14b904900fa7fc4ff6c1b793da071d01f8e1766472"
+    },
+    {
+      "file": "docs/chapter6-verification.json",
+      "sha": "49468f7fda06485eab8a1cc6d93a6b29aed8694a736acf5cdc763b7490434738"
+    },
+    {
+      "file": "docs/chapter6-preservation.json",
+      "sha": "e0f3a20b821eb3de1ea7938a94b35a094fd78dc741b222fd98df672d47bb62af"
+    },
+    {
+      "file": "docs/CHAPTER6_TAMIL_COMPUTER_REVIEW.md",
+      "sha": "32ae16699a3884c670dbeb27c3d0189c7ddf9bb0480724fcb244b0cd3cb1418b"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-7\\decisions.json",
+      "sha": "c09ed82c76134fd3d9400b4c04e9b726efa5e30b80cd1b4da5feadac873d1a70"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-1\\decisions.json",
+      "sha": "f9d859fd7838c8b0a6bf33a0a4008cf3b2bf92d0b06756a472962d95c4dee042"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-137.png",
+      "sha": "119159769c460c6ccb9226e1a1cc6e84849691a8062c6adafed8b05f149e7520"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-138.png",
+      "sha": "030c7271ec038dc32d3e13d12fcdc375bb85ec337bb4fd9bf506a4bff163726f"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-139.png",
+      "sha": "d8bfac50e46cdaf26152e3b77ac7adbe19dbf96bd682c29418ff70f49c6a604c"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-140.png",
+      "sha": "52ff946a4147d0ff601d0bce510275f0ddee7f97e15a9677691f373a730d7bfa"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-8.png",
+      "sha": "c1941744cb30d4e07b2054eb80628fe8f45ffc459b867c2c5de153305f62ce43"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-47.png",
+      "sha": "a3d1d24a22aa4ce3a340a12001fb002018b9c9f50b197bd86755ac8caaa6a457"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-50.png",
+      "sha": "32c8610a74aa2720993b81b927fe9edf2dd8515c640109e65217a4752a720823"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-technology-tamil-c66e9089-pdf-6.png",
+      "sha": "2023fdb8e2234c1bf2419e204e2fb445d34201db25987c235440135ad3f68bec"
+    },
+    {
+      "file": "docs/chapter7-technology1-verification.json",
+      "sha": "9ad768e165b2a0b7c17eb08839604f43b7882ad06aa23b043763d2f3cb4a9ec7"
+    },
+    {
+      "file": "docs/chapter7-technology1-preservation.json",
+      "sha": "e840a33d21f12f6da1ce689e7b4c9fa0f18c879a89e3475af5ffecbf4c1c556c"
+    },
+    {
+      "file": "docs/CHAPTER7_TECHNOLOGY1_TAMIL_REVIEW.md",
+      "sha": "8652bae0f9574f9d37c515b1b043ea022728f13a3f8d25c929158d6d5854f2cd"
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-8\\decisions.json",
+      "sha": "97ee0c39960972f31ec62c22fca5be6614600793c87d52e8bd4343b121c34664"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-147.png",
+      "sha": "95c61b0d648021e2d59612f675697c82537fb1b205ff0e26d198e7b389070917"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-148.png",
+      "sha": "9a5831649980d010fdd6559303e26fd8486234f1cd093002b931998910a252b7"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-149.png",
+      "sha": "6a7216beed6c9546d7e00265ade889750b2395ae8363be6450fcfe24a13d9454"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-150.png",
+      "sha": "5953606f0b31957909e624872d0d337bb2bf684ce280c043c5880b2d5b5d9f00"
+    },
+    {
+      "file": ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\12-computer-applications-tamil-e51fbdf6-pdf-151.png",
+      "sha": "487c555827b7b6d7d1534031e7ce0f5ab9138b12ed8aaeb454a115c31f4e03e6"
+    },
+    {
+      "file": "docs/chapter8-verification.json",
+      "sha": "a9ba55f8bd2e7f8de9bb6914d344efdc65c7cccedb6e3cd107bdadc7b02aeb52"
+    },
+    {
+      "file": "docs/chapter8-preservation.json",
+      "sha": "4ac06f0e5218b051f835e0fd518edc8bca38ba82a3733730afb551c70274f079"
+    },
+    {
+      "file": "docs/CHAPTER8_TAMIL_COMPUTER_REVIEW.md",
+      "sha": "91652f2a72c2ce20b7b079b437dadd8e703dca57c65ace1f8e9702742d8d5f22"
+    },
+    {
+      "file": "tests/computer-chapter8.test.ts",
+      "sha": "bf52bcc0ef25037c03092848d304451a1fe8ece012a86b42e37f41eee2e5fb70"
+    }
+  ],
+  "protectedFileChecks": 152,
+  "uniqueProtectedFiles": 152,
+  "datedPracticeSessions": 13,
+  "publicationSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "previousDefinitionsPreserved": 13
+}

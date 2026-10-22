@@ -1,6 +1,7 @@
 import { getSession } from "@/lib/auth";
 import { startQuizSession } from "@/lib/db";
 import { NextResponse } from "next/server";
+import { practiceQuestionResponse } from "@/lib/practice-question-response";
 import { z } from "zod";
 const input = z.object({
   subjectId: z.string().min(1),
@@ -21,6 +22,14 @@ const input = z.object({
     .default("quick"),
   sourceFilter: z.enum(["All", "Book-In", "Book-Out"]).default("All"),
   limit: z.number().int().min(1).max(500).optional(),
+  bookId: z
+    .string()
+    .regex(/^[a-z0-9-]+$/)
+    .optional(),
+  search: z.string().trim().max(200).optional(),
+  allAvailable: z.boolean().optional(),
+  retrySessionId: z.string().min(1).max(200).optional(),
+  retryIncorrect: z.boolean().optional(),
 });
 
 export async function POST(request: Request) {
@@ -37,8 +46,19 @@ export async function POST(request: Request) {
         { error: "Choose a valid subject, practice mode, and question count." },
         { status: 400 },
       );
-    const { subjectId, chapterId, testId, mode, sourceFilter, limit } =
-      parsed.data;
+    const {
+      subjectId,
+      chapterId,
+      testId,
+      mode,
+      sourceFilter,
+      limit,
+      bookId,
+      search,
+      allAvailable,
+      retrySessionId,
+      retryIncorrect,
+    } = parsed.data;
 
     if (!subjectId) {
       return NextResponse.json(
@@ -55,39 +75,15 @@ export async function POST(request: Request) {
       mode,
       sourceFilter,
       limit,
+      bookId,
+      search,
+      allAvailable,
+      retrySessionId,
+      retryIncorrect,
     });
 
-    // In timed test or exam mode, we do NOT send the correct answers to the client ahead of time!
-    // In practice mode, we can include explanations after each selection or on request.
     const isExamMode = mode === "timed";
-    const sanitizedQuestions = questions.map((q) => ({
-      id: q.id,
-      chapterId: q.chapterId,
-      questionText: q.questionText,
-      questionTextTamil: q.questionTextTamil,
-      optionA: q.optionA,
-      optionB: q.optionB,
-      optionC: q.optionC,
-      optionD: q.optionD,
-      difficulty: q.difficulty,
-      sourceType: q.sourceType,
-      sourceTextbookId: q.sourceTextbookId,
-      sourcePage: q.sourcePage,
-      sourceEndPage: q.sourceEndPage,
-      sourcePresentation: q.sourcePresentation,
-      sourceQuestionNumber: q.sourceQuestionNumber,
-      language: q.language,
-      answerVerification: q.answerVerification,
-      // For practice mode, send correct answer and explanation for instant feedback
-      ...(isExamMode
-        ? {}
-        : {
-            correctAnswer: q.correctAnswer,
-            explanation: q.explanation,
-            explanationTamil: q.explanationTamil,
-            sourceAnswerPage: q.sourceAnswerPage,
-          }),
-    }));
+    const sanitizedQuestions = questions.map((q) => practiceQuestionResponse(q));
 
     return NextResponse.json({
       session: quizSession,

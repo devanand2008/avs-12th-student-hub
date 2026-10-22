@@ -263,11 +263,11 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
       (await db.getSubjects("Computer Science"))
         .map((subject) => subject.id)
         .sort(),
-      ["sub-cs", "sub-maths", "sub-tamil"],
+      ["sub-cs", "sub-english", "sub-maths", "sub-tamil"],
     );
     assert.deepEqual(
       (await db.getSubjects("Biology")).map((subject) => subject.id).sort(),
-      ["sub-botany", "sub-maths", "sub-tamil", "sub-zoology"],
+      ["sub-botany", "sub-english", "sub-maths", "sub-tamil", "sub-zoology"],
     );
     assert.equal(bucket.data?.file_size_limit, 50 * 1024 * 1024);
     assert.equal((await db.getChaptersBySubject("sub-cs")).length, 16);
@@ -315,7 +315,7 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
       (await db.getStudentQuizHistory(created.student.studentId)).length,
       1,
     );
-    const chapterBank = Array.from({ length: 120 }, (_, index) => {
+    const chapterBank = Array.from({ length: 501 }, (_, index) => {
       const data = {
         ...question,
         id: `full-chapter-${index}`,
@@ -334,12 +334,55 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
       chapterId: "cs-ch-2",
       mode: "quick",
       limit: 500,
+      allAvailable: true,
     });
-    assert.equal(fullChapter.questions.length, 120);
-    assert.equal(fullChapter.session.questionIds.length, 120);
+    assert.equal(fullChapter.questions.length, 501);
+    assert.equal(fullChapter.session.questionIds.length, 501);
     assert.equal(
       (await db.getQuizQuestions(fullChapter.session.id)).length,
-      120,
+      501,
+    );
+    const firstId = fullChapter.session.questionIds[0];
+    await db.saveQuizAnswer(fullChapter.session.id, firstId, "B");
+    await db.saveQuizAnswer(fullChapter.session.id, firstId, "B");
+    const completedChapter = await db.submitQuizSession(fullChapter.session.id);
+    assert.equal(completedChapter!.wrongCount, 1);
+    assert.equal(completedChapter!.unansweredCount, 500);
+    const same = await db.startQuizSession({
+      studentId: created.student.studentId,
+      subjectId: "sub-cs",
+      mode: "quick",
+      retrySessionId: fullChapter.session.id,
+    });
+    assert.notEqual(same.session.id, fullChapter.session.id);
+    assert.deepEqual(same.session.questionIds, fullChapter.session.questionIds);
+    const incorrect = await db.startQuizSession({
+      studentId: created.student.studentId,
+      subjectId: "sub-cs",
+      mode: "quick",
+      retrySessionId: fullChapter.session.id,
+      retryIncorrect: true,
+    });
+    assert.deepEqual(incorrect.session.questionIds, [firstId]);
+    await assert.rejects(
+      db.startQuizSession({
+        studentId: "another-student",
+        subjectId: "sub-cs",
+        mode: "quick",
+        retrySessionId: fullChapter.session.id,
+      }),
+      /your completed attempts/,
+    );
+    await db.updateQuestionStatus(firstId, "Teacher Review");
+    await assert.rejects(
+      db.startQuizSession({
+        studentId: created.student.studentId,
+        subjectId: "sub-cs",
+        mode: "quick",
+        retrySessionId: fullChapter.session.id,
+        retryIncorrect: true,
+      }),
+      /published practice questions/,
     );
     await saveResource("note", {
       id: "adapter-note",
@@ -369,17 +412,17 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
     );
     const progress = await db.getStudentProgress(created.student.studentId);
     assert.equal(progress.notesViewed, 1);
-    assert.equal(progress.mcqsAttempted, 1);
-    assert.equal(progress.averageScore, 100);
+    assert.equal(progress.mcqsAttempted, 2);
+    assert.equal(progress.averageScore, 50);
     const report = (await db.getAllUserData(admin!.user.id)).find(
       (u) => u.id === created.student.userId,
     );
     assert.deepEqual(
       { ...report!.learning, lastActiveAt: undefined },
       {
-        quizAttempts: 1,
-        mcqsAttempted: 1,
-        averageScore: 100,
+        quizAttempts: 2,
+        mcqsAttempted: 2,
+        averageScore: 50,
         notesViewed: 1,
         videosWatched: 0,
         bookmarksCount: 1,

@@ -2,6 +2,7 @@ import { getSession } from "@/lib/auth";
 import { getQuizQuestions, getQuizSessionById } from "@/lib/db";
 import { NextResponse } from "next/server";
 import { isTextPracticeQuestion } from "@/lib/practice-question-text";
+import { practiceQuestionResponse } from "@/lib/practice-question-response";
 export async function GET(request: Request) {
   const user = await getSession();
   if (!user)
@@ -29,26 +30,7 @@ export async function GET(request: Request) {
   const safe = questions
     .filter((q) => q !== null)
     .map((q) => {
-      if (quiz.mode !== "timed" || quiz.isCompleted) return q;
-      return {
-        id: q.id,
-        chapterId: q.chapterId,
-        questionText: q.questionText,
-        questionTextTamil: q.questionTextTamil,
-        optionA: q.optionA,
-        optionB: q.optionB,
-        optionC: q.optionC,
-        optionD: q.optionD,
-        difficulty: q.difficulty,
-        sourceType: q.sourceType,
-        sourceTextbookId: q.sourceTextbookId,
-        sourcePage: q.sourcePage,
-        sourceEndPage: q.sourceEndPage,
-        sourcePresentation: q.sourcePresentation,
-        sourceQuestionNumber: q.sourceQuestionNumber,
-        language: q.language,
-        answerVerification: q.answerVerification,
-      };
+      return practiceQuestionResponse(q, quiz.isCompleted || (quiz.mode !== "timed" && Boolean(quiz.answers[q.id]?.selectedAnswer)));
     });
   const answers = Object.fromEntries(
     Object.entries(quiz.answers).map(([id, answer]) => [

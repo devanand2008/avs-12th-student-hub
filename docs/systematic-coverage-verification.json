@@ -1,0 +1,194 @@
+{
+  "checkedAt": "2026-10-15T17:22:50.593Z",
+  "scope": "Local-only source extraction, authenticated local review integration and isolated tests; no production connection, write, publication, Git push or deployment",
+  "extractionPdfCount": 3,
+  "extractionChapters": 3,
+  "sourceInspectionPdfCount": 6,
+  "visuallyInspectedDistinctPages": 24,
+  "freshMcqPdfPages": 5,
+  "uniqueBoundedQuestions": 29,
+  "newStableIds": 5,
+  "reusedStableIds": 24,
+  "proposedPrintedKeyMatches": 5,
+  "unknownAnswers": 24,
+  "held": 29,
+  "decisions": {
+    "reviewed": 0,
+    "historyEvents": 0,
+    "approved": 0,
+    "needs_correction": 0,
+    "rejected": 0,
+    "pending": 29,
+    "invalid": 0
+  },
+  "published": 0,
+  "diagramDependent": 0,
+  "nonemptyFourOptionPositions": 29,
+  "requiringTamilCorrection": 29,
+  "duplicateIds": 0,
+  "duplicateProposedQuestionOptionTexts": 0,
+  "allLocalReviewQuestions": 104,
+  "unit1": {
+    "entries": 15,
+    "reviewed": 0,
+    "unchanged": true
+  },
+  "priorPhysicsUnits2To5": {
+    "entries": 60,
+    "reviewed": 0,
+    "unchanged": true
+  },
+  "bank": {
+    "English": 995,
+    "Tamil": 0
+  },
+  "excludedLegacySamples": 12,
+  "publicationSnapshotAt": "2026-10-10T15:56:21.193Z",
+  "practiceSnapshot": {
+    "file": ".local/followup-platform-after-snapshot.json",
+    "sourceAt": "2026-10-15T08:51:15.976Z",
+    "sessions": 13,
+    "sha256": "f629b6e3ab4279fdd9bfab9f3edd8e736b749707d9538b5cabe8e20d73898a1b"
+  },
+  "filesPreserved": 57,
+  "oldRecordsPreserved": 17262,
+  "totalLocalRecords": 17267,
+  "activeCandidateIds": 12681,
+  "inactiveRecords": 4586,
+  "sourceBoundedInventoriedQuestions": 89,
+  "decisionStorePreservation": [
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-applications-tamil-e51fbdf6-ch-2/decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-technology-tamil-c66e9089-ch-2/decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/commerce-12-commerce-tamil-d9e013d8-ch-27/decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e",
+      "unchanged": true
+    }
+  ],
+  "decisionHashBaselineAt": "2026-10-15T17:15:23.538Z",
+  "tests": {
+    "total": 135,
+    "passed": 135,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "includesDesktopAndMobileLocalReview": true
+  },
+  "additionalStudentAdminBrowserCasesPassed": 6,
+  "checks": [
+    {
+      "name": "test",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-test.log",
+      "logSha256": "30781d580e34796cdd700e0eb9ec7268922d95e4ab69f8825876890c612463aa"
+    },
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-typecheck.log",
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-lint.log",
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "build",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-build.log",
+      "logSha256": "913b5be594e5f857d5255d664d62e9d481852ef70ab29100c0ce31b409ac551a"
+    },
+    {
+      "name": "parser-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-mcqs-audit.log",
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "name": "physics-review-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-mcqs-physics-review-audit.log",
+      "logSha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "name": "systematic-source-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-final-source-audit.log",
+      "logSha256": "b271809d62f15862e5ffa6fe8ff050dcc4f0fa706a5c4411f68bb104db22c477"
+    },
+    {
+      "name": "unit1-decision-audit",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-unit1-audit.log",
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "name": "commerce-source-browser-recheck",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-commerce-final-tests.log",
+      "logSha256": "68090b5ebe7ccff6d7f4bc44a2a8cdcae11f82b8bdc787034b5466bc9bbdfb06"
+    },
+    {
+      "name": "student-admin-browser",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-browser.log",
+      "logSha256": "f0ffb2dc8764757b358b147b15e2e1c23d984a1dd61a72a45216a231fb7e5310"
+    },
+    {
+      "name": "rerun-1-ca",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-rerun-1-ca.log",
+      "logSha256": "8cb76de182b0b4dc0c7ef0e82a9cb1e71960568ccd74f3aa0c64411caeea0029"
+    },
+    {
+      "name": "rerun-1-ct",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-rerun-1-ct.log",
+      "logSha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    },
+    {
+      "name": "rerun-1-commerce",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-rerun-1-commerce.log",
+      "logSha256": "7f4acb41be0e8c8d515df5daca02962d0c12470535622fc54687a378c58cef7f"
+    },
+    {
+      "name": "rerun-2-ca",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-rerun-2-ca.log",
+      "logSha256": "8cb76de182b0b4dc0c7ef0e82a9cb1e71960568ccd74f3aa0c64411caeea0029"
+    },
+    {
+      "name": "rerun-2-ct",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-rerun-2-ct.log",
+      "logSha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    },
+    {
+      "name": "rerun-2-commerce",
+      "exitCode": 0,
+      "log": "D:\\avs-12-hub\\.local\\systematic-rerun-2-commerce.log",
+      "logSha256": "7f4acb41be0e8c8d515df5daca02962d0c12470535622fc54687a378c58cef7f"
+    }
+  ],
+  "resolvedDevelopmentIssues": [
+    "Corrected a new test that read summary instead of summaries[0]; extraction data was unaffected",
+    "Widened inferred empty-array types and added an explicit Playwright response type; final typecheck passes"
+  ],
+  "remainingIssues": [
+    "All 29 Tamil transcriptions require individual teacher correction/verification",
+    "24 computer questions have no answer evidence from the inspected sections",
+    "The 733 zero-publication parser entries include non-MCQ units and non-chapter artifacts; the authentic collection-wide missing-MCQ total remains unknown",
+    "The two existing placeholder-named local login profiles do not establish a real teacher identity; they and their credential files were preserved"
+  ]
+}

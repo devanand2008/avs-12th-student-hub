@@ -9,6 +9,15 @@ import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 import { createCanvas } from "@napi-rs/canvas";
 import type { Unit1Candidate } from "./tamil-physics-unit1";
 import {
+  loadAdditionalPhysicsBatches,
+  type PhysicsReviewBatch,
+} from "./physics-review-batches";
+import { auditTeacherManifest } from "./teacher-decision-audit";
+import { loadComputerReviewBatches } from "./computer-review-batches";
+import { loadCommerceReviewBatches } from "./commerce-review-batches";
+import { loadSharedSourceReviewBatches } from "./shared-source-review";
+import { localTranscriptionProposals } from "./tamil-transcription-proposals";
+import {
   LocalReviewError,
   evidenceDigest,
   readOptionalJson,
@@ -17,6 +26,7 @@ import {
   writeLocalJson,
   type LocalReviewManifest,
   type LocalReviewer,
+  requiredSourcePages,
 } from "./local-physics-review";
 
 export interface ReviewerAccount extends LocalReviewer {
@@ -143,11 +153,82 @@ export async function startLocalPhysicsReview(options: {
       "Actual local candidate queue differs from the extraction packet; reconcile evidence without overwriting local work before starting",
     );
   const manifestFile = path.join(directory, "decisions.json");
-  let manifest = reconcileManifest(
-    candidates,
-    await readOptionalJson<LocalReviewManifest>(manifestFile),
+  const savedUnit1 = await readOptionalJson<LocalReviewManifest>(manifestFile);
+  const manifest = reconcileManifest(candidates, savedUnit1);
+  if (!savedUnit1) await writeLocalJson(manifestFile, manifest);
+  const batches: PhysicsReviewBatch[] = [
+    { id: "unit-1", unit: 1, title: "Unit 1", candidates },
+    ...(await loadAdditionalPhysicsBatches(root)),
+    ...(await loadComputerReviewBatches(root)),
+    ...(await loadCommerceReviewBatches(root)),
+    ...(await loadSharedSourceReviewBatches(root)),
+  ];
+  if (
+    new Set(batches.flatMap((b) => b.candidates.map((c) => c.id))).size !==
+    batches.reduce((n, batch) => n + batch.candidates.length, 0)
+  )
+    throw new LocalReviewError("Duplicate IDs across unit batches");
+  const stores = new Map<
+    string,
+    {
+      batch: PhysicsReviewBatch;
+      manifest: LocalReviewManifest;
+      file: string;
+      directory: string;
+    }
+  >();
+  for (const batch of batches) {
+    const batchDirectory =
+      batch.id === "unit-1" ? directory : path.join(directory, batch.id);
+    const file = path.join(batchDirectory, "decisions.json");
+    const saved =
+      batch.id === "unit-1"
+        ? savedUnit1
+        : await readOptionalJson<LocalReviewManifest>(file);
+    const reconciled =
+      batch.id === "unit-1"
+        ? manifest
+        : reconcileManifest(batch.candidates, saved);
+    if (!saved && batch.id !== "unit-1") await writeLocalJson(file, reconciled);
+    stores.set(batch.id, {
+      batch,
+      manifest: reconciled,
+      file,
+      directory: batchDirectory,
+    });
+  }
+  const assetDirectory = path.join(
+    root,
+    ".local/teacher-review/physics-unit1-workflow/units2-5-source-assets",
   );
-  await writeLocalJson(manifestFile, manifest);
+  if (batches.some((batch) => batch.id.startsWith("unit-") && batch.unit > 1)) {
+    const receipt = await readOptionalJson<{
+      assets: { file: string; sha256: string; candidateId: string }[];
+    }>(path.join(assetDirectory, "source-assets.json"));
+    if (!receipt)
+      throw new LocalReviewError(
+        "Run npx tsx scripts/prepare-physics-review-assets.ts before starting Units 2–5 review",
+      );
+    for (const batch of batches.filter((b) => b.id.startsWith("unit-") && b.unit > 1))
+      for (const c of batch.candidates)
+        for (const asset of [
+          ...c.localReviewRequirements!.figures,
+          ...[c.localReviewRequirements!.optionRecovery].filter(
+            (a) => a !== null,
+          ),
+        ]) {
+          const saved = receipt.assets.find(
+            (r) => r.file === asset.file && r.candidateId === c.id,
+          );
+          if (
+            !saved ||
+            createHash("sha256")
+              .update(await readFile(path.join(assetDirectory, asset.file)))
+              .digest("hex") !== saved.sha256
+          )
+            throw new LocalReviewError(`Source figure mismatch for ${c.id}`);
+        }
+  }
   const sourceDirectory = path.join(directory, "source-pages");
   await renderLocalReviewPages(root, packet, sourceDirectory);
   const html = await readFile(
@@ -257,6 +338,9 @@ export async function startLocalPhysicsReview(options: {
         sessions.delete(token);
         throw new LocalReviewError("Local reviewer sign-in required", 401);
       }
+      const batchId = url.searchParams.get("batch") || "unit-1";
+      const store = stores.get(batchId);
+      if (!store) throw new LocalReviewError("Unknown local review batch", 404);
       if (request.method === "POST" && url.pathname === "/api/logout") {
         sessions.delete(token);
         response.setHeader(
@@ -267,36 +351,96 @@ export async function startLocalPhysicsReview(options: {
         return;
       }
       if (request.method === "GET" && url.pathname === "/api/queue") {
-        send(200, { reviewer: session.reviewer, candidates, manifest });
+        send(200, {
+          reviewer: session.reviewer,
+          candidates: store.batch.candidates,
+          transcriptionProposals: localTranscriptionProposals(
+            store.batch.candidates,
+          ),
+          manifest: store.manifest,
+          batchId,
+          printedOptionLabels: store.batch.printedOptionLabels ?? {},
+          batches: batches.map(({ id, unit, title }) => ({ id, unit, title })),
+        });
         return;
       }
       if (
         request.method === "GET" &&
-        /^\/source\/(79|80|81)\.png$/.test(url.pathname)
+        /^\/source\/\d+\.png$/.test(url.pathname)
       ) {
-        const file = path.join(sourceDirectory, path.basename(url.pathname));
+        const page = Number(path.basename(url.pathname, ".png"));
+        const allowed = new Set(
+          store.batch.candidates.flatMap(requiredSourcePages),
+        );
+        if (!allowed.has(page))
+          throw new LocalReviewError("Unrelated source page", 404);
+        const file = store.batch.sourcePages
+          ? path.join(
+              store.batch.sourcePages.directory,
+              `${store.batch.sourcePages.prefix}${page}.png`,
+            )
+          : store.batch.id === "unit-1"
+            ? path.join(sourceDirectory, `${page}.png`)
+            : path.join(assetDirectory, `pdf-${page}.png`);
         response.writeHead(200, { "Content-Type": "image/png" });
         response.end(await readFile(file));
         return;
       }
+      if (request.method === "GET" && url.pathname.startsWith("/figure/")) {
+        const filename = url.pathname.slice("/figure/".length);
+        const asset = store.batch.candidates
+          .flatMap((c) => [
+            ...(c.localReviewRequirements?.figures || []),
+            ...[c.localReviewRequirements?.optionRecovery].filter(
+              (a) => a != null,
+            ),
+          ])
+          .find((a) => a.file === filename);
+        if (!asset) throw new LocalReviewError("Unrelated source figure", 404);
+        response.writeHead(200, { "Content-Type": "image/png" });
+        response.end(await readFile(path.join(store.batch.figureDirectory ?? assetDirectory, asset.file)));
+        return;
+      }
       if (request.method === "GET" && url.pathname === "/api/export") {
         const exported = {
-          ...manifest,
+          ...store.manifest,
           exportedAt: new Date().toISOString(),
           exportedBy: session.reviewer,
           notice:
             "Reference only. Local decisions do not change candidate status, publish questions or import into Supabase.",
         };
+        const accounts =
+          (await readOptionalJson<ReviewerAccount[]>(
+            path.join(directory, "reviewers.json"),
+          )) || [];
+        const audit = auditTeacherManifest(exported, {
+          candidates: store.batch.candidates,
+          persisted: store.manifest,
+          reviewers: accounts.map(({ id, name, email }) => ({
+            id,
+            name,
+            email,
+          })),
+          requireExport: true,
+        });
+        if (!audit.valid)
+          throw new LocalReviewError(
+            "Manifest audit failed; reconcile local history before exporting",
+            409,
+          );
+        const filename = batchId.startsWith("unit-")
+          ? `tamil-physics-${batchId}-decisions.json`
+          : `textbook-${batchId}-decisions.json`;
         const exportFile = path.join(
-          directory,
+          store.directory,
           "exports",
-          `tamil-physics-unit1-decisions-${exported.exportedAt.replace(/[:.]/g, "-")}-${randomUUID()}.json`,
+          `${batchId.startsWith("unit-") ? `tamil-physics-${batchId.replace("unit-", "unit")}` : `textbook-${batchId}`}-decisions-${exported.exportedAt.replace(/[:.]/g, "-")}-${randomUUID()}.json`,
         );
         await writeLocalJson(exportFile, exported);
         response.setHeader("X-Local-Export-Path", exportFile);
         response.setHeader(
           "Content-Disposition",
-          'attachment; filename="tamil-physics-unit1-decisions.json"',
+          `attachment; filename="${batchId === "unit-1" ? "tamil-physics-unit1-decisions.json" : filename}"`,
         );
         send(200, exported);
         return;
@@ -305,13 +449,13 @@ export async function startLocalPhysicsReview(options: {
         const input = await body(request);
         const operation = queue.then(async () => {
           const next = recordDecision(
-            manifest,
-            candidates,
+            store.manifest,
+            store.batch.candidates,
             input,
             session.reviewer,
           );
-          await writeLocalJson(manifestFile, next);
-          manifest = next;
+          await writeLocalJson(store.file, next);
+          store.manifest = next;
         });
         queue = operation.catch(() => {});
         await operation;
@@ -351,6 +495,7 @@ export async function startLocalPhysicsReview(options: {
     server,
     origin,
     manifestFile,
+    batchIds: batches.map((b) => b.id),
     close: () =>
       new Promise<void>((resolve, reject) =>
         server.close((error) => (error ? reject(error) : resolve())),

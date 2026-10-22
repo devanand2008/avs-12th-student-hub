@@ -3,6 +3,11 @@ import test from "node:test";
 import { materialId, mp4Duration } from "../scripts/lib/material-inspection";
 import { SOURCE_MATERIALS } from "../src/lib/learning-materials";
 import { getSubjects, getChapterById } from "../src/lib/db";
+import { readdir, readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import path from "node:path";
+import videoAliases from "../src/lib/video-source-aliases.json";
+import videoCatalog from "../src/lib/video-lessons-catalog.json";
 
 process.env.DB_DRIVER = "memory";
 process.env.ENABLE_DEMO_DATA = "true";
@@ -10,7 +15,7 @@ process.env.ENABLE_DEMO_DATA = "true";
 test("both student streams can find Mathematics and Tamil materials", async () => {
   for (const stream of ["Computer Science", "Biology"] as const) {
     const subjects = await getSubjects(stream);
-    for (const subjectId of ["sub-maths", "sub-tamil"]) {
+    for (const subjectId of ["sub-maths", "sub-tamil", "sub-english"]) {
       assert.ok(subjects.some((subject) => subject.id === subjectId));
     }
   }
@@ -18,6 +23,50 @@ test("both student streams can find Mathematics and Tamil materials", async () =
     const chapter = await getChapterById(source.chapterId);
     assert.ok(chapter?.isActive, source.file);
     assert.equal(chapter.subjectId, source.subjectId);
+  }
+});
+
+test("every supplied video is catalogued once or linked to a byte-identical existing video", async () => {
+  const root = path.resolve("book's");
+  async function walk(dir: string): Promise<string[]> {
+    const found: string[] = [];
+    for (const entry of await readdir(dir, { withFileTypes: true })) {
+      const file = path.join(dir, entry.name);
+      if (entry.isDirectory()) found.push(...await walk(file));
+      else if (/\.mp4$/i.test(file)) found.push(path.relative(root, file).replaceAll("\\", "/"));
+    }
+    return found;
+  }
+  const videos = SOURCE_MATERIALS.filter((source) => source.kind === "video");
+  assert.deepEqual((await walk(root)).sort(), [...videos.map((v) => v.file), ...videoAliases.map((a) => a.file)].sort());
+  const hashes = new Map<string, string>();
+  for (const video of videos) {
+    const buffer = await readFile(path.join(root, video.file));
+    const sha = createHash("sha256").update(buffer).digest("hex");
+    assert.ok(!hashes.has(sha), `Duplicate playlist item: ${video.file}`);
+    hashes.set(sha, video.file);
+    assert.ok(mp4Duration(buffer) > 0);
+    if (video.hostedUrl) {
+      assert.equal(video.sha256, sha);
+      assert.ok(video.hostedUrl.endsWith(`/${sha}.mp4`));
+    }
+  }
+  for (const alias of videoAliases) {
+    assert.equal(hashes.get(alias.sha256), alias.canonicalFile);
+    assert.equal(createHash("sha256").update(await readFile(path.join(root, alias.file))).digest("hex"), alias.sha256);
+  }
+});
+
+test("new Tamil titles retain Unicode and video lessons have real source thumbnails", async () => {
+  for (const video of videoCatalog) {
+    assert.ok(!video.title.includes("?"), video.file);
+    if (video.language === "Tamil") {
+      assert.match(video.titleTamil, /[\u0b80-\u0bff]/u);
+      assert.ok(!video.titleTamil.includes("?"));
+    }
+    assert.equal(video.subjectName, video.language);
+    const image = await readFile(path.join("public", video.thumbnailUrl));
+    assert.equal(image.readUInt16BE(0), 0xffd8);
   }
 });
 

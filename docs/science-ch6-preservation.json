@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-20T08:27:35.429Z",
+  "baseline": ".local/science-ch6-baseline.json",
+  "unchangedOriginalCandidates": 17308,
+  "unchangedEarlierSourceProposals": 640,
+  "protectedFiles": 369,
+  "unchangedEarlierSourceImages": 213,
+  "currentSourceImages": 229,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-6858d196a4c62f05",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+      "page": 136
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-71fa15f56c59d7dd",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+      "page": 136
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-5ad2eb366652f852",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+      "page": 137
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-5208b5ed3e3a04a8",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-6",
+      "page": 137
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-9c73b38f888cf12a",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-6",
+      "page": 148
+    }
+  ],
+  "removedActiveIds": [],
+  "addedActiveIds": [
+    "textbook-bounded-12-bio-botany-english-f15d4524-6858d196a4c62f05",
+    "textbook-bounded-12-bio-botany-english-f15d4524-71fa15f56c59d7dd",
+    "textbook-bounded-12-bio-botany-english-f15d4524-5ad2eb366652f852",
+    "textbook-bounded-12-bio-botany-english-f15d4524-5208b5ed3e3a04a8",
+    "textbook-bounded-12-bio-botany-tamil-51160855-9c73b38f888cf12a"
+  ],
+  "reactivatedExistingIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

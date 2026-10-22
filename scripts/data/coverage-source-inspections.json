@@ -1,0 +1,324 @@
+[
+  {
+    "bookId": "12-physics-tamil-v1-c1623725",
+    "detectedChapter": 10,
+    "pdfPages": [
+      352
+    ],
+    "printedPages": [
+      344
+    ],
+    "classification": "non-chapter-production-credits",
+    "finding": "The detected Chapter 10 starts on the final textbook production/author credits page, not an academic chapter or book-back exercise. Preserve the parser row as historical evidence; do not count it as a confirmed missing MCQ section."
+  },
+  {
+    "bookId": "12-geography-english-24059775",
+    "detectedChapter": 9,
+    "pdfPages": [
+      167,
+      168,
+      169,
+      170,
+      171
+    ],
+    "printedPages": [
+      159,
+      160,
+      161,
+      162,
+      163
+    ],
+    "classification": "genuine-unit-no-printed-four-choice-mcqs",
+    "finding": "Surveying has practical clinometer/compass exercises and diagrams, not a printed four-option book-back section. All five unit pages were visually inspected. No MCQ choices are manufactured from the practical activities."
+  },
+  {
+    "bookId": "12-biochemistry-english-dfd867ac",
+    "detectedChapter": 6,
+    "pdfPages": [
+      149,
+      173,
+      174,
+      175,
+      176
+    ],
+    "printedPages": [
+      139,
+      163,
+      164,
+      165,
+      166
+    ],
+    "classification": "genuine-unit-non-mcq-evaluation",
+    "finding": "Molecular Biology is a genuine Unit 6. Evaluation pages 173–175 contain printed fill-in/true-false/matching items and open responses; page 176 is a concept map. No four-choice MCQ section was identified in this complete evaluation span. Lesson pages 150–172 were not all visually inspected."
+  },
+  {
+    "bookId": "12-computer-technology-tamil-c66e9089",
+    "detectedChapter": 1,
+    "pdfPages": [
+      7,
+      48,
+      49
+    ],
+    "printedPages": [
+      1,
+      42,
+      43
+    ],
+    "classification": "overlapping-source-content-next-batch-deferred",
+    "finding": "PageMaker Chapter 1 repeats the printed exercise content in Computer Applications Chapter 2. The distinct physical book/hash remains preserved; no cross-book IDs are merged and no duplicated student-ready count is added. InDesign Chapter 2 is selected instead for broader source coverage."
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "detectedChapter": 13,
+    "pdfPages": [
+      211,
+      223,
+      224,
+      225,
+      226
+    ],
+    "printedPages": [
+      201,
+      213,
+      214,
+      215,
+      216
+    ],
+    "classification": "authentic-mcq-section-held-for-printed-numbering-collision",
+    "finding": "Section I spans PDF 224-225 / printed 214-215 with twelve physical four-choice occurrences. Printed labels are 1,2,3,4,5,6,7,9,9,10,11,12: label 8 is absent and 9 is repeated. Do not silently renumber or merge the two distinct 9 stems. Q5 visibly repeats the same Tamil word for choices C/D. Matching Q12 has four numbered premises and printed permutation options. No printed key located on these inspected exercise/ending pages. Existing candidates remain unchanged; the current single-chapter review schema requires unique question numbers, so no new bounded batch is imported until source occurrence identity can preserve this collision. Lesson wiring diagrams on PDF 223 are not standalone MCQ choices."
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "detectedChapter": 13,
+    "pdfPages": [
+      211,
+      223,
+      224,
+      225,
+      226
+    ],
+    "printedPages": [
+      201,
+      213,
+      214,
+      215,
+      216
+    ],
+    "classification": "printed-number-collision-reconciled-as-distinct-source-occurrences",
+    "finding": "Supersedes the earlier structural blocker and incorrect Q5 duplicate-word claim. Both printed Q9 labels are within the same Section I on PDF 224; occurrence 8 asks about the connector called செம்ப் இணைப்பு and occurrence 9 asks RJ45 pin count. Different stems/choices, not duplicate questions or a section reset. Printed 8 remains absent. Existing IDs b1fda7f304e58746 and 66da55f33a275a50 are reused with explicit physical ordinals, printed numbers remain 9. Q5 C ஒளி and D ஒலி are distinct in the original image and raw text. Q2 has four printed choices but the C label/boundary is lost in extraction; three raw spans remain held and incomplete. Twelve occurrences prepared, zero answers known, no approval. Q12 four numbered matching premises are not four questions."
+  },
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "detectedChapter": 15,
+    "pdfPages": [
+      235,
+      259,
+      260,
+      261,
+      262,
+      263
+    ],
+    "printedPages": [
+      225,
+      249,
+      250,
+      251,
+      252,
+      253
+    ],
+    "classification": "authentic-one-mark-section-source-bounded-held",
+    "finding": "Chapter title மின்-வணிகம், PDF 235–262. Section I has ten printed MCQs on PDF 260–261; PDF 262 starts Section II. Q2 prints all four labels as அ; retain physical choice order separately from internal A/B/C/D. Q7 options span columns on PDF 261. Q10 lacks a printed dot after number 10, explicitly inventoried without rewriting original text. No key on inspected exercise/neighbor pages; chronology and wording anomalies held. Glossary and longer-answer/activities excluded."
+  },
+  {
+    "bookId": "12-computer-science-tamil-d5aa7dd4",
+    "detectedChapter": 1,
+    "pdfPages": [
+      6,
+      7,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "printedPages": [
+      1,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "classification": "authentic-one-mark-section-source-bounded-held",
+    "finding": "Contents PDF 6 and chapter headings confirm செயற்கூறு starts PDF 7 / printed 1, next chapter starts PDF 18 / printed 12. Part A explicitly one mark on PDF 15–16 / printed 9–10: ten MCQs with parenthesized Tamil option markers, single-column layout. Preserve delimiter choices and English Pure/impure/Partial/Dynamic tokens. Parts B/C/D are 2/3/5 marks, not non-MCQ one-mark questions. No key found on inspected exercise/ending pages; all answers unknown."
+  },
+  {
+    "bookId": "12-computer-science-tamil-d5aa7dd4",
+    "detectedChapter": 2,
+    "pdfPages": [
+      6,
+      18,
+      25,
+      26,
+      27,
+      28
+    ],
+    "printedPages": [
+      12,
+      19,
+      20,
+      21,
+      22
+    ],
+    "classification": "authentic-one-mark-section-source-bounded-held",
+    "finding": "Contents and headings confirm தரவு அருவமாக்கம், PDF 18–27 / printed 12–21. Part A on PDF 26 / printed 20 has ten MCQs, explicitly one mark. Q5/Q6 repeat the printed question/options with punctuation differences, retained as separate source occurrences and duplicate-content warning. Parts B/C/D are higher-mark responses, excluded. No key found on inspected exercise/ending pages; no generated options/answers."
+  },
+  {
+    "bookId": "12-history-english-3cd2e4c2",
+    "detectedChapter": 1,
+    "pdfPages": [
+      5,
+      16,
+      17
+    ],
+    "printedPages": [
+      12,
+      13
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Rise of Nationalism in India. 13 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-history-english-3cd2e4c2",
+    "detectedChapter": 2,
+    "pdfPages": [
+      20,
+      32,
+      33
+    ],
+    "printedPages": [
+      28
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Rise of Extremism and Swadeshi Movement. 8 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-history-english-3cd2e4c2",
+    "detectedChapter": 3,
+    "pdfPages": [
+      35,
+      43,
+      44
+    ],
+    "printedPages": [
+      39,
+      40
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Impact of World War I on Indian Freedom Movement. 9 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-history-tamil-3c88c869",
+    "detectedChapter": 1,
+    "pdfPages": [
+      5,
+      18,
+      19,
+      20
+    ],
+    "printedPages": [
+      14,
+      15
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: இந்தியாவில் தேசியத்தின் எழுச்சி. 13 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-history-tamil-3c88c869",
+    "detectedChapter": 2,
+    "pdfPages": [
+      21,
+      34,
+      35,
+      36,
+      37
+    ],
+    "printedPages": [
+      30,
+      31
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: தீவிர தேசியவாதத்தின் எழுச்சியும் சுதேசி இயக்கமும். 8 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-microbiology-english-6a36a404",
+    "detectedChapter": 1,
+    "pdfPages": [
+      5,
+      14,
+      15
+    ],
+    "printedPages": [
+      10
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Developments in Microbiology. 5 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-microbiology-english-6a36a404",
+    "detectedChapter": 2,
+    "pdfPages": [
+      16,
+      31
+    ],
+    "printedPages": [
+      27
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Microscopy. 10 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-microbiology-english-6a36a404",
+    "detectedChapter": 3,
+    "pdfPages": [
+      32,
+      47,
+      48
+    ],
+    "printedPages": [
+      43
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Control of Microorganisms by Chemical Methods. 10 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-political-science-english-db4a2e0c",
+    "detectedChapter": 1,
+    "pdfPages": [
+      9,
+      22,
+      23
+    ],
+    "printedPages": [
+      14,
+      15
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Constitution of India. 15 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  },
+  {
+    "bookId": "12-political-science-english-db4a2e0c",
+    "detectedChapter": 2,
+    "pdfPages": [
+      25,
+      47,
+      48
+    ],
+    "printedPages": [
+      39,
+      40
+    ],
+    "classification": "allsubject-book-back-mcq",
+    "finding": "Original heading and complete bounded multiple-choice section inventoried: Legislature. 19 held proposals; printed answers unknown; no teacher verification or publication. Raw wording and original option order retained; matching and statement labels remain in the parent stem. No explicit one-mark allocation on these section headings."
+  }
+]

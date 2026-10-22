@@ -1,0 +1,703 @@
+{
+  "checkedAt": "2026-10-15T17:51:51.121Z",
+  "scope": "Local-only source preparation and preservation; no production access/write, import, publication, Git push or deployment",
+  "studentBank": {
+    "english": 995,
+    "tamil": 0,
+    "measurement": "Unchanged saved authoritative snapshot; not a fresh live measurement",
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "snapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "excludedLegacySamples": 12,
+    "excludedLegacySampleIds": [
+      "q-bot-101",
+      "q-cs-101",
+      "q-cs-102",
+      "q-cs-103",
+      "q-cs-104",
+      "q-cs-105",
+      "q-cs-701",
+      "q-cs-702",
+      "q-cs-703",
+      "q-zoo-201",
+      "q-zoo-202",
+      "q-zoo-203"
+    ]
+  },
+  "targets": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterNumber": 3,
+      "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+      "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "chapterTitle": "தரவுதள மேலாண்மை அமைப்பு – அறிமுகம்",
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-3",
+      "sourcePages": [
+        103,
+        104
+      ],
+      "printedPages": [
+        93,
+        94
+      ],
+      "inspectedPages": [
+        103,
+        104,
+        73
+      ],
+      "sourceItems": 10,
+      "fourChoiceItems": 9,
+      "binaryReferenceItems": 1,
+      "reusedCandidateIds": 10,
+      "newCandidateIds": 0,
+      "printedKeyMatches": 0,
+      "textbookVerifiedAnswers": 0,
+      "unknownAnswers": 10,
+      "tamilCorrectionWarnings": 10,
+      "essentialDiagrams": 0,
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 10,
+      "published": 0,
+      "candidateIds": [
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-c0afcd63a8092855",
+          "number": 1,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-128935bc5a301ba1",
+          "number": 2,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-0f9bca7f8cf1823e",
+          "number": 3,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-section-12-computer-applications-tamil-e51fbdf6-f5a77a72273d067a",
+          "number": 4,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-ecafe3c93236740f",
+          "number": 5,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-4e184829c8066c35",
+          "number": 6,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 2,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-68e6f937b0487937",
+          "number": 7,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-1983175e5564eff7",
+          "number": 8,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-fd1f0e96ba47d0bf",
+          "number": 9,
+          "pdfPage": 103,
+          "pdfEndPage": 103,
+          "printedPages": [
+            93
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-3acaf83feedbd3fc",
+          "number": 10,
+          "pdfPage": 104,
+          "pdfEndPage": 104,
+          "printedPages": [
+            94
+          ],
+          "optionCount": 4,
+          "answer": null
+        }
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "chapterNumber": 3,
+      "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+      "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "chapterTitle": "கோரல்ட்ரா 2018 (CorelDRAW 2018)",
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-3",
+      "sourcePages": [
+        142,
+        143
+      ],
+      "printedPages": [
+        136,
+        137
+      ],
+      "inspectedPages": [
+        142,
+        143,
+        99,
+        144
+      ],
+      "sourceItems": 14,
+      "fourChoiceItems": 14,
+      "binaryReferenceItems": 0,
+      "reusedCandidateIds": 14,
+      "newCandidateIds": 0,
+      "printedKeyMatches": 0,
+      "textbookVerifiedAnswers": 0,
+      "unknownAnswers": 14,
+      "tamilCorrectionWarnings": 14,
+      "essentialDiagrams": 0,
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 14,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 14,
+      "published": 0,
+      "candidateIds": [
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-43323ff7ed9540ce",
+          "number": 1,
+          "pdfPage": 142,
+          "pdfEndPage": 142,
+          "printedPages": [
+            136
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-7af0d77ef898d3df",
+          "number": 2,
+          "pdfPage": 142,
+          "pdfEndPage": 142,
+          "printedPages": [
+            136
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-7fee31a1a08a6ed9",
+          "number": 3,
+          "pdfPage": 142,
+          "pdfEndPage": 142,
+          "printedPages": [
+            136
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-f2f87d2872734355",
+          "number": 4,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-1d8bb6e80fb9885c",
+          "number": 5,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-2d44bba47fb5f47b",
+          "number": 6,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-f5498b9c82cf498f",
+          "number": 7,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-80d5a0f50892adbc",
+          "number": 8,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-00370dcdc5c8f6d5",
+          "number": 9,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-9410d236f53c22c8",
+          "number": 10,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-54a678239e2aaa03",
+          "number": 12,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-76cf27d4178bd444",
+          "number": 13,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-e5ef9d1b7f8bbf9c",
+          "number": 14,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-891b8b697d2c0059",
+          "number": 15,
+          "pdfPage": 143,
+          "pdfEndPage": 143,
+          "printedPages": [
+            137
+          ],
+          "optionCount": 4,
+          "answer": null
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "targetSourceItems": 24,
+    "fourChoiceMcqs": 23,
+    "binaryReferenceItems": 1,
+    "newCandidateIds": 0,
+    "reusedIds": 24,
+    "printedKeyMatches": 0,
+    "unknownAnswers": 24,
+    "held": 24,
+    "reviewed": 0,
+    "approved": 0,
+    "published": 0
+  },
+  "allLocalReviewStores": [
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-2/decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-3/decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-4/decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/unit-5/decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f",
+      "entries": 15,
+      "counts": {
+        "pending": 15,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-applications-tamil-e51fbdf6-ch-2/decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d",
+      "entries": 12,
+      "counts": {
+        "pending": 12,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-technology-tamil-c66e9089-ch-2/decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5",
+      "entries": 12,
+      "counts": {
+        "pending": 12,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-applications-tamil-e51fbdf6-ch-3/decisions.json",
+      "sha256": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb",
+      "entries": 10,
+      "counts": {
+        "pending": 10,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/computer-12-computer-technology-tamil-c66e9089-ch-3/decisions.json",
+      "sha256": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178",
+      "entries": 14,
+      "counts": {
+        "pending": 14,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/commerce-12-commerce-tamil-d9e013d8-ch-27/decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e",
+      "entries": 5,
+      "counts": {
+        "pending": 5,
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0
+      },
+      "historyEvents": 0
+    }
+  ],
+  "totalReviewerItems": 128,
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch3-test.log",
+      "logSha256": "f7ca250e45104fb8a4a72e8501c9dd63f2dc924baa7f21593f3a1a97aadd872a"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch3-typecheck.log",
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch3-lint.log",
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch3-mcqs-audit.log",
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch3-mcqs-physics-review-audit.log",
+      "logSha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch3-mcqs-systematic-audit.log",
+      "logSha256": "13001f7a1c0ab5d260beeb0dea51aef31fc32cf6ad8ce234d2dc5f110d52b2be"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch3-build.log",
+      "logSha256": "15a82e7981f37412a35a724a5a5a10b58012265bd1adcdf04767a5cd18603279"
+    },
+    {
+      "check": "focused-final",
+      "exit": 0,
+      "log": ".local/ch3-focused-final.log",
+      "logSha256": "660d02199a8670728ce0912ec446ccd63aaa9d9421b23335e7d57496fd4bd58a"
+    },
+    {
+      "check": "final-typecheck",
+      "exit": 0,
+      "log": ".local/ch3-final-typecheck.log",
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "final-lint",
+      "exit": 0,
+      "log": ".local/ch3-final-lint.log",
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch3-browser.log",
+      "logSha256": "0b410cdb6eafb9edd77af2c139487a33cd1b9a01756b8c9696a094a30cd2a8c1"
+    },
+    {
+      "check": "decision-audit",
+      "exit": 0,
+      "log": ".local/ch3-decision-audit.log",
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "check": "reruns",
+      "exit": 0
+    }
+  ],
+  "fullTests": {
+    "passed": 137,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "focusedFinalTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "additionalStudentAdminBrowserCases": {
+    "passed": 6,
+    "failed": 0,
+    "subjects": [
+      "Accountancy",
+      "Commerce",
+      "Chemistry"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "reruns": [
+    {
+      "round": 1,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch3-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "8cb76de182b0b4dc0c7ef0e82a9cb1e71960568ccd74f3aa0c64411caeea0029"
+    },
+    {
+      "round": 1,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch3-rerun-1-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch3-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "8cb76de182b0b4dc0c7ef0e82a9cb1e71960568ccd74f3aa0c64411caeea0029"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch3-rerun-2-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f76bd78bc2dec406234cb0350f87622ecaf3d769390a4919028b6c26151c15b8"
+    }
+  ],
+  "preservation": {
+    "file": "docs/chapter3-preservation.json",
+    "sha256": "cce4d236523d07dfd398aa71799a733827cafd676d4d707b3e8b071963801b8d",
+    "records": 17267,
+    "previousProposals": 89,
+    "protectedFiles": 85,
+    "datedPracticeSessions": 13
+  },
+  "inventory": {
+    "pdfs": 82,
+    "detectedEntries": 856,
+    "zeroPublishedEntries": 733,
+    "activeCandidateIds": 12681,
+    "preservedCandidateRecords": 17267,
+    "inactiveRecords": 4586,
+    "sourceBoundedProposals": 113
+  },
+  "unresolved": [
+    "All 24 Tamil stems/options need individual source-faithful teacher correction",
+    "All 24 answers lack inspected printed-key evidence; no textbook-derived answer was guessed",
+    "Computer Applications Q6 has only two printed choices and remains blocked for four-choice approval",
+    "Computer Technology source omits number 11; no fabricated Q11 or renumbering",
+    "Existing IDs are provisional page/number matches requiring teacher reconciliation",
+    "733 zero-publication parser entries are not 733 confirmed missing MCQ sections"
+  ],
+  "nextExtractionPriority": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "chapter": 4,
+      "startPdfPage": 105,
+      "nextChapterStartPdfPage": 119,
+      "subject": "Computer Applications",
+      "topic": "PHP introduction",
+      "scopedSections": 0,
+      "published": 0,
+      "status": "Inventory target only; exercise pages not yet visually established"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "chapter": 4,
+      "startPdfPage": 145,
+      "nextChapterStartPdfPage": 163,
+      "subject": "Computer Technology",
+      "topic": "Multimedia and computer publishing",
+      "scopedSections": 1,
+      "published": 0,
+      "status": "Parser-associated section is provisional; bounded source verification remains"
+    }
+  ]
+}

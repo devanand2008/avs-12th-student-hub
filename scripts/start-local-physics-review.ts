@@ -31,7 +31,7 @@ async function main() {
     port,
   });
   console.log(
-    `Local teacher review: ${app.origin}\nDecision manifest: ${app.manifestFile}\nNo Supabase connection; no publication. Provision each actual teacher separately using --add-reviewer.`,
+    `Local teacher review: ${app.origin}\nAvailable batches: ${app.batchIds.join(", ")}\nUnit 1 manifest: ${app.manifestFile}\nOther batches: <batch-id>/decisions.json under the same workflow directory.\nNo Supabase connection; no publication. Provision each actual teacher separately using --add-reviewer.`,
   );
   for (const signal of ["SIGINT", "SIGTERM"] as const)
     process.on(signal, () => {

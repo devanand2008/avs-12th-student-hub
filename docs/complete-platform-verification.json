@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-10-15T03:32:57.797Z",
+  "scope": "Local implementation, read-only production comparisons and isolated fixture tests; no production writes/imports/publications/deployments",
+  "totals": {
+    "pdfs": 82,
+    "processedPdfs": 82,
+    "pages": 24088,
+    "detectedChapterEntries": 856,
+    "chaptersWithoutPublishedQuestions": 733,
+    "activeCandidateIds": 12671,
+    "parserCandidates": 12229,
+    "parserBookBackCandidates": 6311,
+    "recoveredHeldCandidateIds": 442,
+    "textAndKeyEligible": 985,
+    "preservedLocalCandidateRecords": 17250,
+    "quarantinedInactiveRecords": 4579,
+    "provisionalSections": 418,
+    "newApprovals": 0,
+    "newPublications": 0,
+    "studentReady": 995,
+    "studentReadyByMedium": {
+      "English": 995,
+      "Tamil": 0
+    },
+    "authenticUniqueBookBackTotal": null,
+    "sourceCollectionComplete": false
+  },
+  "databaseBefore": {
+    "checkedAt": "2026-10-14T16:55:04.438Z",
+    "method": "Read-only paginated SELECT and read-only catalog RPC; no mutations",
+    "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+    "questionRows": 3039,
+    "candidateRows": 12229,
+    "practiceSessions": 13,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "writes": 0,
+    "historicalQuestionDigestMatches": true,
+    "historicalPracticeDigestMatches": true
+  },
+  "databaseAfter": {
+    "checkedAt": "2026-10-15T03:17:29.234Z",
+    "method": "Read-only paginated SELECT and read-only catalog RPC; no mutations",
+    "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+    "questionRows": 3039,
+    "candidateRows": 12229,
+    "practiceSessions": 13,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "writes": 0,
+    "historicalQuestionDigestMatches": true,
+    "historicalPracticeDigestMatches": true
+  },
+  "tableComparisons": [
+    {
+      "table": "avs_questions",
+      "before": 3039,
+      "after": 3039,
+      "unchanged": true
+    },
+    {
+      "table": "textbook_mcq_candidates",
+      "before": 12229,
+      "after": 12229,
+      "unchanged": true
+    },
+    {
+      "table": "textbook_mcq_imports",
+      "before": 82,
+      "after": 82,
+      "unchanged": true
+    },
+    {
+      "table": "avs_curriculum",
+      "before": 7222,
+      "after": 7222,
+      "unchanged": true
+    },
+    {
+      "table": "avs_quiz_sessions",
+      "before": 13,
+      "after": 13,
+      "unchanged": true
+    }
+  ],
+  "protectedFiles": [
+    {
+      "file": ".env.local",
+      "sha256": "c930fc727c58df40352ec2d60ad517208ade41fd4b6ff919d004b11ca8635ef4",
+      "unchanged": true
+    },
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "unchanged": true
+    },
+    {
+      "file": "docs/teacher-decision-audit-database-proof.json",
+      "sha256": "317ab02a47db94a3d61141c53582e3742d6160adafc5a5a8605d134457709554",
+      "unchanged": true
+    },
+    {
+      "file": ".local/independent-live-content.json",
+      "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+      "unchanged": true
+    },
+    {
+      "file": "docs/final-teacher-decision-verification.json",
+      "sha256": "789bb40359c3400bc4e55ce245e10a63c52722df593560d3a4b26724132742eb",
+      "unchanged": true
+    }
+  ],
+  "publishedDataValidation": {
+    "rows": 995,
+    "uniqueIds": 995,
+    "invalidTextOptionsAnswerOrSourceReferences": 0,
+    "recordedTeacherApprovals": 0,
+    "retentionPolicy": "User explicitly retains the exact existing 995 publications. This is not teacher approval; every new textbook publication requires individual recorded approval."
+  },
+  "legacyExcludedSamples": 12
+}

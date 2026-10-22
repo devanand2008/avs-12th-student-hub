@@ -19,7 +19,7 @@ test.skip(
 test("actual extracted questions across three subjects: feedback, navigation, retry, history and empty chapters", async ({
   page,
 }, info) => {
-  test.setTimeout(120000);
+  test.setTimeout(240000);
   const snapshot = JSON.parse(readFileSync(snapshotPath, "utf8"));
   const client = createClient("http://127.0.0.1:3101", "qa-service-key", {
     auth: { persistSession: false },
@@ -37,6 +37,14 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     });
   const email = `audit.${project}@example.test`,
     password = "Independent-fixture-password";
+  await page.goto("/");
+  expect((await authRequest(page, "/api/practice/answer", { sessionId: "unknown", questionId: "unknown", answer: "A" })).status()).toBe(401);
+  await expect(
+    page
+      .getByRole("region", { name: "Student-ready book-back practice" })
+      .getByRole("link", { name: "Sign in", exact: true }),
+  ).toBeVisible();
+  await expect(page.locator("body")).not.toContainText("4,500+");
   const registered = await authRequest(page, "/api/auth/register", {
     studentName: `Independent ${project}`,
     email,
@@ -144,9 +152,141 @@ test("actual extracted questions across three subjects: feedback, navigation, re
         .upsert(rows, { onConflict: conflict });
       expect(result.error).toBeNull();
     }
+    // A status-only publication without a human review must not inflate the
+    // chapter count or enter browsing/practice. This row exists only in PGlite.
+    const unreviewedId = `audit-unreviewed-${project}-${book.id}`;
+    const unreviewed = await client.from("avs_questions").upsert({
+      id: unreviewedId,
+      data: {
+        ...questions[0],
+        id: unreviewedId,
+        reviewStatus: undefined,
+        reviewedBy: undefined,
+        reviewedAt: undefined,
+      },
+    });
+    expect(unreviewed.error).toBeNull();
+    const coverageResponse = await get("/api/textbook-practice");
+    expect(coverageResponse.status()).toBe(200);
+    const allCoverage = (await coverageResponse.json()).coverage;
+    const currentCoverage = allCoverage.find(
+      (entry: { bookId: string }) => entry.bookId === book.id,
+    );
+    expect(
+      currentCoverage.chapters.find(
+        (chapter: { id: string }) => chapter.id === chapterId,
+      ).published,
+    ).toBe(3);
+    const readyTotal = allCoverage
+      .filter((entry: { bookId: string }) =>
+        catalog.books.some((book) => book.id === entry.bookId),
+      )
+      .reduce(
+        (n: number, entry: { published: number }) => n + entry.published,
+        0,
+      );
+    for (const path of ["/", "/dashboard"]) {
+      await page.goto(path);
+      const summary = page.getByRole("region", {
+        name: "Student-ready book-back practice",
+      });
+      await expect(summary.getByRole("status")).toContainText(
+        `${readyTotal} student-ready book-back questions.`,
+      );
+      await expect(summary).toContainText(`${subject} · English`);
+      await expect(
+        summary.getByRole("link", {
+          name: "Choose medium, subject and chapter",
+        }),
+      ).toHaveAttribute("href", "/textbook-practice");
+      await expect(page.locator("body")).not.toContainText("500+ MCQs");
+    }
+    if (subject === "Accountancy") {
+      await page.route("**/api/textbook-practice", (route) =>
+        route.fulfill({
+          status: 503,
+          json: { error: "Isolated availability outage" },
+        }),
+      );
+      await page.goto("/");
+      const summary = page.getByRole("region", {
+        name: "Student-ready book-back practice",
+      });
+      await expect(summary.getByRole("alert")).toContainText(
+        "Question availability could not be loaded.",
+      );
+      await page.unroute("**/api/textbook-practice");
+      await summary.getByRole("button", { name: "Try again" }).click();
+      await expect(summary.getByRole("status")).toContainText(
+        `${readyTotal} student-ready book-back questions.`,
+      );
+    }
     await page.goto("/textbook-practice");
+    await page
+      .getByRole("combobox", { name: "Textbook medium", exact: true })
+      .selectOption("English");
+    await page
+      .getByRole("combobox", { name: "Subject", exact: true })
+      .selectOption(subject);
+    const choices = await page
+      .getByLabel("Subject and textbook")
+      .locator("option")
+      .evaluateAll((options) =>
+        options.map((o) => (o as HTMLOptionElement).value).filter(Boolean),
+      );
+    expect(
+      choices.every((id) =>
+        catalog.books.some(
+          (b) =>
+            b.id === id &&
+            b.subject === subject &&
+            b.sourceMedium === "English",
+        ),
+      ),
+    ).toBe(true);
     await page.getByLabel("Subject and textbook").selectOption(book.id);
+    await page
+      .getByLabel("Find a chapter by name or number")
+      .fill("no-such-chapter-for-audit");
+    await expect(
+      page.getByText(
+        "No chapters match this search. Try a chapter number or another name.",
+      ),
+    ).toBeVisible();
+    await page.getByLabel("Find a chapter by name or number").fill("");
     await page.getByLabel(/^Chapter/).selectOption(chapterId);
+    await page.getByLabel("Questions in this practice").selectOption("all");
+    const browse = await get(
+      `/api/textbook-practice/questions?${new URLSearchParams({ bookId: book.id, chapterId })}`,
+    );
+    expect(browse.status()).toBe(200);
+    const browserQuestions = await browse.json();
+    expect(browserQuestions.total).toBe(3);
+    expect(
+      browserQuestions.questions.every(
+        (q: Record<string, unknown>) => !q.correctAnswer && !q.explanation,
+      ),
+    ).toBe(true);
+    const searchText = questions[0].questionText
+      .slice(0, 60)
+      .replace(/\s+/gu, " ")
+      .trim();
+    await page.getByLabel("Search question text or number").fill(searchText);
+    await expect(
+      page.getByText(questions[0].questionText, { exact: true }),
+    ).toBeVisible();
+    await page.getByLabel("Search question text or number").fill("");
+    await expect(
+      page.getByRole("button", { name: "Start Practice Session" }),
+    ).toBeEnabled();
+    await expect(
+      page.getByRole("complementary", { name: "Install mobile app prompt" }),
+    ).toHaveCount(0);
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBe(true);
     const start = page.waitForResponse(
       (response) =>
         response.url().endsWith("/api/practice/start") &&
@@ -158,6 +298,8 @@ test("actual extracted questions across three subjects: feedback, navigation, re
       questions: Question[];
     };
     expect(quiz.questions).toHaveLength(3);
+    expect(quiz.questions.every((q) => !q.correctAnswer && !q.explanation)).toBe(true);
+    const correctFor = (question: Question) => questions.find((q) => q.id === question.id)!.correctAnswer;
     expect(
       quiz.questions.every((question) =>
         questions.some((original) => original.id === question.id),
@@ -182,14 +324,28 @@ test("actual extracted questions across three subjects: feedback, navigation, re
       expect(
         await page.getByTestId("option-text").nth(index).textContent(),
       ).toBe(quiz.questions[0][`option${letter}` as "optionA"]);
-    const select = async (answer: string) =>
-      page
+    const select = async (answer: string, submit = true) => {
+      await page
         .getByTestId("option-text")
         .nth("ABCD".indexOf(answer))
         .locator("..")
         .click();
-    const correct = quiz.questions[0].correctAnswer;
-    await select(correct === "A" ? "B" : "A");
+      const button = page.getByRole("button", { name: "Submit Answer", exact: true });
+      if (submit && await button.isEnabled()) await button.click();
+    };
+    const correct = correctFor(quiz.questions[0]);
+    await select(correct === "A" ? "B" : "A", false);
+    await expect(page.getByText(`Incorrect. The correct answer is Option ${correct}.`)).not.toBeVisible();
+    await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
+    const unanswered = await (await get(`/api/practice/session?id=${quiz.session.id}`)).json();
+    expect(unanswered.questions.every((q: Question) => !q.correctAnswer && !q.explanation)).toBe(true);
+    await page.route("**/api/practice/answer", (route) => route.fulfill({ status: 503, json: { error: "Isolated feedback outage" } }));
+    await page.getByRole("button", { name: "Submit Answer", exact: true }).click();
+    await expect(page.getByRole("alert").filter({ hasText: "Isolated feedback outage" })).toBeVisible();
+    await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
+    await expect(page.getByText(`Incorrect. The correct answer is Option ${correct}.`)).not.toBeVisible();
+    await page.unroute("**/api/practice/answer");
+    await page.getByRole("button", { name: "Submit Answer", exact: true }).click();
     await expect(
       page.getByText(`Incorrect. The correct answer is Option ${correct}.`),
     ).toBeVisible();
@@ -206,8 +362,16 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     await page
       .getByRole("button", { name: "Next Question", exact: true })
       .click();
-    const wrong = quiz.questions[1].correctAnswer === "A" ? "B" : "A";
+    const wrong = correctFor(quiz.questions[1]) === "A" ? "B" : "A";
+    const savedAnswer = page.waitForResponse((response) => response.url().endsWith("/api/practice/save") && response.request().method() === "PUT");
     await select(wrong);
+    expect((await savedAnswer).status()).toBe(200);
+    await page.reload();
+    await expect(page.getByTestId("question-text")).toHaveText(quiz.questions[1].questionText);
+    await expect(page.getByRole("radio").nth("ABCD".indexOf(wrong))).toBeChecked();
+    await expect(page.getByText("Marks: 1 / 3")).toBeVisible();
+    const restoredAnswers = await (await get(`/api/practice/session?id=${quiz.session.id}`)).json();
+    expect(restoredAnswers.questions.find((q: Question) => q.id === quiz.questions[2].id).correctAnswer).toBeUndefined();
     await page.getByRole("button", { name: "Previous", exact: true }).click();
     await expect(
       page.getByRole("radio").nth("ABCD".indexOf(correct)),
@@ -231,7 +395,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     const again = await authRequest(page, "/api/practice/submit", {
       sessionId: quiz.session.id,
       answers: Object.fromEntries(
-        quiz.questions.map((question) => [question.id, question.correctAnswer]),
+        quiz.questions.map((question) => [question.id, correctFor(question)]),
       ),
     });
     expect((await again.json()).session.score).toBe(1);
@@ -260,7 +424,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     );
     await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
     for (let index = 0; index < retried.questions.length; index++) {
-      await select(retried.questions[index].correctAnswer);
+      await select(correctFor(retried.questions[index]));
       if (index < retried.questions.length - 1)
         await page
           .getByRole("button", { name: "Next Question", exact: true })
@@ -290,6 +454,13 @@ test("actual extracted questions across three subjects: feedback, navigation, re
       mode: "timed",
       limit: 3,
     });
+    const timedCopy = await timed.json();
+    expect((await authRequest(page, "/api/practice/answer", { sessionId: timedCopy.session.id, questionId: timedCopy.questions[0].id, answer: "A" })).status()).toBe(409);
+    const legacySave = await authRequest(page, "/api/practice/answer", { sessionId: timedCopy.session.id, questionId: timedCopy.questions[0].id, selectedAnswer: "A", timeSpentSeconds: 2, markedForReview: true });
+    expect(legacySave.status()).toBe(200);
+    const legacySaved = await legacySave.json();
+    expect(legacySaved.savedAnswer).toEqual({ questionId: timedCopy.questions[0].id, selectedAnswer: "A", markedForReview: true });
+    expect(legacySaved.correctAnswer).toBeUndefined();
     const exam = await timed.json();
     expect(
       exam.questions.every(
@@ -353,7 +524,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     ).toBeDisabled();
     await expect(
       page.getByText(
-        "The question text, choices or answers for this selection are awaiting review.",
+        "No published questions for this selection yet. Extraction and teacher review are incomplete; choose another chapter or textbook.",
       ),
     ).toBeVisible();
   }
@@ -439,6 +610,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
   expect(
     (await get("/api/practice/session?id=" + history[0].id)).status(),
   ).toBe(404);
+  expect((await authRequest(page, "/api/practice/answer", { sessionId: history[0].id, questionId: "unknown", answer: "A" })).status()).toBe(404);
   await authRequest(page, "/api/auth/logout");
   await authRequest(page, "/api/auth/login", { loginId: email, password });
   await page.goto("/practice");

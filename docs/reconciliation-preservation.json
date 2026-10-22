@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-18T13:56:34.065Z",
+  "baselineAt": "2026-10-18T06:44:57.371Z",
+  "originalCandidates": 17272,
+  "originalProposals": 263,
+  "newCandidateIds": [
+    {
+      "id": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-a299a929ef762f69",
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "n": 12,
+      "page": 225
+    },
+    {
+      "id": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-a480304eeb6b3fc6",
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "n": 10,
+      "page": 261
+    }
+  ],
+  "newBoundedProposals": 42,
+  "newProposalIds": [
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-23f4ec7c7f761048",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-4bfc5b10c31577e6",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-c94744edcb84deca",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-dadae6cc5dda0921",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-eb7f7e71f0629ee5",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-a211c07ad797ea60",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-eddee9b7315a6201",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-b1fda7f304e58746",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-66da55f33a275a50",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-5946803e221b56de",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-4d1441c28422bbb4",
+    "textbook-bounded-12-computer-applications-tamil-e51fbdf6-a299a929ef762f69",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-3bc61fb7215907bf",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-139f74f6ccc75e55",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-2e879afd7c45b36c",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-89117ce26df5bb27",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-50288a61ab2ce2d7",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-a47bab7d9c5d2631",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-50d9522ea5c264cc",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-21e22d71f5694037",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-706489f05a737581",
+    "textbook-bounded-12-computer-applications-tamil-e51fbdf6-a480304eeb6b3fc6",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-4e78ffd9d6a23390",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-5fc831ddaf173786",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-51ba6ff07ebf7fd6",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-500600cf7bb2b540",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-75dcc0a4b88761d7",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-3ad6c8944070c13c",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-ae4fcc7c63095f47",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-579f04328033fe8f",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-fd7e2c4f3fc89366",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-839b368a89fcceca",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-3c55d0d76519909e",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-75d01946b4d73f0f",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-bf7521417e079cd4",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-e40718f77b30f9bf",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-356e4b07ebbc6242",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-663e11cfcbba0520",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-a541d9bad2b5fefd",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-2da780e6ace8ef86",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-6d8450d7deb74c9d",
+    "textbook-q-12-computer-science-tamil-d5aa7dd4-4ac14696fe7fe8e6"
+  ],
+  "protectedFileChecks": 194,
+  "activeAdded": [
+    "textbook-bounded-12-computer-applications-tamil-e51fbdf6-a299a929ef762f69",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-50d9522ea5c264cc",
+    "textbook-bounded-12-computer-applications-tamil-e51fbdf6-a480304eeb6b3fc6"
+  ],
+  "activeRemoved": [],
+  "reactivatedExistingIds": [
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-50d9522ea5c264cc"
+  ],
+  "sourceImagesBefore": 87,
+  "sourceImagesAfter": 103,
+  "publicationSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "datedPracticeSessions": 13
+}

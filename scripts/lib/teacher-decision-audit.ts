@@ -1,10 +1,10 @@
 import { isDeepStrictEqual } from "node:util";
 import { z } from "zod";
-import type { Unit1Candidate } from "./tamil-physics-unit1";
 import {
   evidenceDigest,
   reconcileManifest,
   requiredSourcePages,
+  teacherCorrection,
   type LocalReviewEntry,
   type LocalReviewer,
 } from "./local-physics-review";
@@ -39,6 +39,7 @@ const event = z
     diagramConfirmed: z.boolean(),
     previousDecision: decision,
     revision: z.number().int().positive(),
+    correction: teacherCorrection.optional(),
   })
   .strict();
 const source = z
@@ -54,8 +55,19 @@ const source = z
     pdfPage: z.number().int().positive(),
     pdfEndPage: z.number().int().positive(),
     printedPages: z.array(z.number().int().positive()),
-    keyPdfPage: z.number().int().positive(),
-    keyPrintedPage: z.number().int().positive(),
+    sourcePageReferences: z.array(z.object({ pdfPage:z.number().int().positive(), printedPage:z.number().int().positive() }).strict()).optional(),
+    keyPdfPage: z.number().int().positive().nullable(),
+    keyPrintedPage: z.number().int().positive().nullable(),
+    occurrence: z
+      .object({
+        section: z.string().trim().min(1),
+        ordinal: z.number().int().positive(),
+        printedNumber: z.number().int().positive(),
+        pdfPage: z.number().int().positive(),
+        reason: z.string().trim().min(1),
+      })
+      .strict()
+      .optional(),
   })
   .strict();
 export const reviewEntrySchema = z
@@ -125,7 +137,7 @@ export function sameManifestRecords(left: unknown, right: unknown): boolean {
 export function auditTeacherManifest(
   input: unknown,
   options: {
-    candidates: Unit1Candidate[];
+    candidates: import("./physics-review-batches").PhysicsReviewCandidate[];
     persisted: unknown;
     reviewers: LocalReviewer[];
     requireExport: boolean;
@@ -203,7 +215,7 @@ export function auditTeacherManifest(
     add(
       id,
       "unknown_id",
-      "Manifest ID is not in the actual Unit 1 candidate packet.",
+      "Manifest ID is not in the selected unit's actual candidate packet.",
     );
   const persistedResult = envelope.safeParse(options.persisted);
   if (!persistedResult.success)
@@ -318,6 +330,8 @@ export function auditTeacherManifest(
           "Non-pending action needs verification/correction notes or a rejection reason.",
         );
       const pages = requiredSourcePages(c);
+      if (c.options.length === 5 && h.correction && h.correction.options.length !== 5)
+        add(e.id, "source_choice_count", "Local correction drops a choice from a five-choice printed source.");
       if (
         new Set(h.inspectedPages).size !== h.inspectedPages.length ||
         h.inspectedPages.some((p) => !pages.includes(p))
@@ -328,11 +342,31 @@ export function auditTeacherManifest(
           "Page confirmations contain duplicates or unrelated pages.",
         );
       if (h.decision === "approved") {
+        if (c.localReviewRequirements?.answerEvidenceUnavailable)
+          add(
+            e.id,
+            "answer_evidence_unavailable",
+            "No prepared answer evidence exists for this held candidate; approval is invalid.",
+          );
+        if (
+          c.localReviewRequirements &&
+          (!h.correction ||
+            h.correction.options.length !== 4 ||
+            !h.correction.correctAnswer ||
+            !h.correction.sourceMappingConfirmed ||
+            h.correction.correctAnswer !==
+              c.localReviewRequirements.proposedPrintedAnswer)
+        )
+          add(
+            e.id,
+            "missing_verified_transcription",
+            "Approval lacks a complete recorded teacher correction, source mapping confirmation or valid printed-key mapping.",
+          );
         if (!c.extractionEvidence.completeTextOptions)
           add(
             e.id,
             "incomplete_graph_approval",
-            "Question 10 graph choices are incomplete; this approval is invalid.",
+            `Question ${c.number} text/graph choices are incomplete; this approval is invalid.`,
           );
         if (
           !h.textConfirmed ||
@@ -389,6 +423,7 @@ export function auditTeacherManifest(
         "An untouched entry must remain pending with original unresolved warnings and no reviewer or notes.",
       );
     if (
+      c.chapterId.endsWith("-ch-1") &&
       e.number === 10 &&
       e.decision === "approved" &&
       !c.extractionEvidence.completeTextOptions

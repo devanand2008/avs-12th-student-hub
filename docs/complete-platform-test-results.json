@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-10-15T03:36:13.909Z",
+  "checks": [
+    {
+      "name": "Unit and integration tests",
+      "command": "npm test",
+      "exitCode": 0,
+      "logSha256": "2bfc640cea7f4c0f84c8888a575a904235bdc2c54cba3bfb281761d86fb3b6e9",
+      "tests": 118,
+      "passed": 118,
+      "failed": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "name": "TypeScript",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "Lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "Build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "6f8cd3d324108f64dab69119b63e7708457f5f5e886f45e86104473a7cf47f7a"
+    },
+    {
+      "name": "Parser audit",
+      "command": "npm run mcqs:audit",
+      "exitCode": 0,
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "name": "All-book local extraction",
+      "command": "npm run mcqs:extract-local -- --snapshot .local/complete-platform-before-snapshot.json",
+      "exitCode": 0,
+      "logSha256": "9b1558236454257e54808836efdcfe1746e1d138f7a61e66a4d5bd84fcbf3b37"
+    },
+    {
+      "name": "Teacher manifest audit",
+      "command": "npm run mcqs:decision-audit",
+      "exitCode": 0,
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "name": "Desktop/mobile practice and account/admin flows",
+      "command": "npx playwright test tests/e2e/independent-practice.spec.ts tests/e2e/direct-accounts.spec.ts",
+      "exitCode": 0,
+      "logSha256": "fd5ee9d0235ca4f5e6711b32df33616279f5ccd69dbb799288501f2b3d6b6bde",
+      "passed": 6
+    },
+    {
+      "name": "Final rebuilt account/admin CSV checks",
+      "command": "npx playwright test tests/e2e/direct-accounts.spec.ts --grep \"students choose a password\"",
+      "exitCode": 0,
+      "logSha256": "f98a7769f6437d2fab5c2b90337c8d3745a9b1e1536009c5456f926c64c316a8",
+      "passed": 2
+    }
+  ],
+  "parserClassification": {
+    "books": 82,
+    "verified": 985,
+    "pending": 11244
+  },
+  "localModeration": {
+    "activeRecords": 12671,
+    "held": 12671,
+    "approved": 0,
+    "published": 0,
+    "reviewHistoryEvents": 0
+  },
+  "teacherDecisionState": {
+    "manifestPath": null,
+    "exportLocated": false,
+    "counts": {
+      "approved": 0,
+      "needs_correction": 0,
+      "rejected": 0,
+      "pending": 15,
+      "invalid": 0
+    },
+    "reviewed": 0,
+    "historyEvents": 0,
+    "productionImportPerformed": false
+  },
+  "rerunPreservedRecords": true,
+  "rerunAdded": 0,
+  "limitations": [
+    "Full browser suite was not run; these are six targeted desktop/mobile cases, with two account/admin cases repeated after the final rebuild.",
+    "Earlier resource-limited test overlap timed out a fixture; limiting unit concurrency to two resolved it.",
+    "Earlier browser runs failed on an obsolete count selector and an exact-label selector; corrected selectors passed subsequent runs.",
+    "All-book page text processing is not a full visual/OCR audit. Authentic source totals and full chapter coverage are unknown."
+  ],
+  "productionWrites": 0,
+  "imports": 0,
+  "newPublications": 0,
+  "deploymentPerformed": false
+}

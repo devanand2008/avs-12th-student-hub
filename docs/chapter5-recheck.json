@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-10-16T14:15:54.380Z",
+  "scope": "Local Chapter 5 recheck of completed extraction; no new extraction scope, no production access/import/publication/push/deployment",
+  "targets": [
+    {
+      "subject": "Computer Applications",
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "medium": "Tamil",
+      "chapter": 5,
+      "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-applications-tamil-e51fbdf6.pdf",
+      "pdfPages": [
+        125,
+        126
+      ],
+      "printedPages": [
+        115,
+        116
+      ],
+      "visuallyInspectedPdfPages": [
+        119,
+        125,
+        126,
+        127
+      ],
+      "held": 10,
+      "reusedIds": 9,
+      "recoveredIds": [
+        "textbook-bounded-12-computer-applications-tamil-e51fbdf6-059b944078bf6118"
+      ],
+      "printedKeyMatches": 0,
+      "unknownAnswers": 10,
+      "decisionsFile": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "decisionsSha256": "9f93a6484b884c0733e17dd73e8cca693555490e4ada426608901888728822a6",
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "reviewed": 0,
+        "historyEvents": 0
+      },
+      "manifestAuditValid": true,
+      "candidateIds": [
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-28d11c52d32b92b7",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-610fb8f8be2a895f",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-76b206e973bd0c81",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-4566737e989e5caa",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-f9e1d616d8bc62fe",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-bdaa61bbe9ca3396",
+        "textbook-bounded-12-computer-applications-tamil-e51fbdf6-059b944078bf6118",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-5a1456fa688b4293",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-b2fa391a3f0af869",
+        "textbook-q-12-computer-applications-tamil-e51fbdf6-6f467138246336f8"
+      ]
+    },
+    {
+      "subject": "Computer Technology",
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "medium": "Tamil",
+      "chapter": 5,
+      "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-technology-tamil-c66e9089.pdf",
+      "pdfPages": [
+        187,
+        188
+      ],
+      "printedPages": [
+        181,
+        182
+      ],
+      "visuallyInspectedPdfPages": [
+        163,
+        187,
+        188,
+        189
+      ],
+      "held": 12,
+      "reusedIds": 12,
+      "recoveredIds": [],
+      "printedKeyMatches": 0,
+      "unknownAnswers": 12,
+      "decisionsFile": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "decisionsSha256": "0fa97c2244fe89a7b1caea085e78ffd62f346d6f6f70d4e53486cca465b41550",
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "reviewed": 0,
+        "historyEvents": 0
+      },
+      "manifestAuditValid": true,
+      "candidateIds": [
+        "textbook-q-12-computer-technology-tamil-c66e9089-f6e209fbf63c4f05",
+        "textbook-q-12-computer-technology-tamil-c66e9089-6909b7e390fb0c03",
+        "textbook-q-12-computer-technology-tamil-c66e9089-63954935ed60d178",
+        "textbook-q-12-computer-technology-tamil-c66e9089-23843d993449f64e",
+        "textbook-q-12-computer-technology-tamil-c66e9089-a382aa78758e7fbd",
+        "textbook-q-12-computer-technology-tamil-c66e9089-daf60cab80cda3de",
+        "textbook-q-12-computer-technology-tamil-c66e9089-7e2668d17e56e846",
+        "textbook-q-12-computer-technology-tamil-c66e9089-6705ba5f37ea7dd2",
+        "textbook-q-12-computer-technology-tamil-c66e9089-b8a8f314677f5bc9",
+        "textbook-q-12-computer-technology-tamil-c66e9089-a0b71e99c6f70853",
+        "textbook-q-12-computer-technology-tamil-c66e9089-43033b849f9eb812",
+        "textbook-q-12-computer-technology-tamil-c66e9089-2b096c804cbf3d0d"
+      ]
+    }
+  ],
+  "extractionAddedThisRecheck": 0,
+  "preservation": {
+    "baselineAt": "2026-10-16T14:07:07.976Z",
+    "candidateRecordsUnchanged": 17268,
+    "sourceBoundedProposalsUnchanged": 154,
+    "protectedFilesUnchanged": 112,
+    "existingEvidenceLogHashesMatch": true,
+    "previousPreservationReceiptHashMatches": true,
+    "datedPracticeSessions": 13
+  },
+  "studentBank": {
+    "english": 995,
+    "tamil": 0,
+    "excludedLegacySamples": 12,
+    "measurement": "Unchanged hash-preserved saved authoritative snapshot; not a fresh live measurement"
+  },
+  "chapter4IssuesPreserved": {
+    "q3DuplicateChoices": true,
+    "q6MissingProgram": true
+  },
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch5-recheck-test.log",
+      "sha256": "e559a8c3451be38ded45db22ff63308de4890b92283475d7318c78ea6b4c32c1"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch5-recheck-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch5-recheck-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch5-recheck-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch5-recheck-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch5-recheck-mcqs-systematic-audit.log",
+      "sha256": "c483b4487eb3d9c717e19cc10b505c59fe8555eb0a43c4d8c4d34f52e7fe40d2"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch5-recheck-build.log",
+      "sha256": "5ac9116995108807c7b8f832da6de57bd9f6a8fea3b8fc104255d7e0b1bbacb7"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch5-recheck-browser.log",
+      "sha256": "ae331684b81199e0623cd6f0bd1fd836fd94afef08227b725cc0284adedacd74"
+    }
+  ],
+  "fullTests": {
+    "passed": 141,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "browserTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "reruns": [
+    {
+      "round": 1,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch5-recheck-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "b1c9226c70dfe50dcf04341087917e72c7d262e4cd82ba42ff8bd55079881287"
+    },
+    {
+      "round": 1,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch5-recheck-rerun-1-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f6467f1ca28b77ab9cd60a46bfec4202043b54702042826f10ec3228941bade8"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch5-recheck-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "b1c9226c70dfe50dcf04341087917e72c7d262e4cd82ba42ff8bd55079881287"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch5-recheck-rerun-2-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f6467f1ca28b77ab9cd60a46bfec4202043b54702042826f10ec3228941bade8"
+    }
+  ],
+  "nextPriority": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "chapter": 6,
+      "topic": "PHP conditional statements",
+      "startPdfPage": 127,
+      "nextChapterStartPdfPage": 133,
+      "published": 0,
+      "scopedParserSections": 1,
+      "status": "Title verified; book-back boundaries not yet source-bounded"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "chapter": 6,
+      "topic": "AutoCAD 2016",
+      "startPdfPage": 189,
+      "nextChapterStartPdfPage": null,
+      "published": 0,
+      "scopedParserSections": 1,
+      "status": "Final detected chapter in this book; title verified, actual ending and book-back boundaries still require source inspection"
+    }
+  ]
+}

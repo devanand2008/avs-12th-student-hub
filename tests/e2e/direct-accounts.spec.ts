@@ -44,10 +44,17 @@ async function admin(page: Page) {
 test("students choose a password, sign in with email and see their profile in the admin Excel export", async ({
   page,
 }, info) => {
+  test.setTimeout(120000);
   const email = `direct.${info.project.name}@example.test`,
     name = `Direct ${info.project.name} Student`,
     password = "Direct-personal-password";
-  await page.goto("/register");
+  let releaseFonts = () => {};
+  const delayedFonts = new Promise<void>((resolve) => { releaseFonts = resolve; });
+  await page.route("https://fonts.googleapis.com/**", async (route) => {
+    await delayedFonts;
+    await route.abort().catch(() => {});
+  });
+  await page.goto("/register", { waitUntil: "commit" });
   await expect(page.locator("#password")).toBeVisible();
   for (const [id, value] of Object.entries({
     studentName: name,
@@ -73,6 +80,7 @@ test("students choose a password, sign in with email and see their profile in th
   expect(data.user.role).toBe("student");
   await expect(page).toHaveURL(/login\?registered=1/);
   await expect(page.locator("#login-id")).toHaveValue(email);
+  releaseFonts();
   await page.locator("#login-password").fill(password);
   await page
     .getByRole("button", { name: "Sign In to SkillUp", exact: true })
@@ -81,6 +89,7 @@ test("students choose a password, sign in with email and see their profile in th
   await expect(page.locator("body")).toContainText(name);
   for (const path of [
     "/api/admin/users/export",
+    "/api/admin/textbook-extraction",
     "/api/admin/textbook-questions?bookId=" + fixtureBook.id,
   ])
     expect((await get(page, path)).status()).toBe(403);
@@ -99,7 +108,7 @@ test("students choose a password, sign in with email and see their profile in th
     page.getByRole("heading", { name: "Book-Back One-Mark MCQ Practice" }),
   ).toBeVisible();
   await page.getByLabel("Subject and textbook").selectOption(fixtureBook.id);
-  await page.getByLabel("Questions in this practice").selectOption("500");
+  await page.getByLabel("Questions in this practice").selectOption("all");
   await expect(
     page.getByRole("button", { name: "Start Practice Session" }),
   ).toBeEnabled();
@@ -171,6 +180,8 @@ test("students choose a password, sign in with email and see their profile in th
     ),
   ).toBe(true);
   await page.getByRole("radio").nth(1).check({ force: true });
+  await expect(page.getByTestId("source-reference")).toHaveCount(0);
+  await page.getByRole("button", { name: "Submit Answer", exact: true }).click();
   await expect(page.getByTestId("source-reference")).toContainText(
     "Printed answer key: source PDF page 39",
   );
@@ -273,6 +284,93 @@ test("students choose a password, sign in with email and see their profile in th
   );
   await authRequest(page, "/api/auth/logout");
   await admin(page);
+  const extractionReport = await get(page, "/api/admin/textbook-extraction");
+  expect(extractionReport.status()).toBe(200);
+  const extraction = await extractionReport.json();
+  expect(extraction.sourceCollectionComplete).toBe(false);
+  expect(extraction.approvedNewCandidates).toBe(0);
+  expect(extraction.publishedNewCandidates).toBe(0);
+  expect(extraction.progressAudit.activeOccurrences).toBeGreaterThan(0);
+  const processing = await get(
+    page,
+    "/api/admin/textbook-extraction?format=manifest",
+  );
+  expect(processing.status()).toBe(200);
+  const manifest = await processing.json();
+  expect(manifest.complete).toBe(false);
+  expect(manifest.summary.activeOccurrences).toBe(
+    extraction.progressAudit.activeOccurrences,
+  );
+  expect(manifest.summary.uniqueContentSignatures).toBeLessThanOrEqual(
+    manifest.summary.activeOccurrences,
+  );
+  expect(manifest.studentReady.byMedium).toEqual({ English: 995, Tamil: 0 });
+  const chapterCsv = await get(
+    page,
+    "/api/admin/textbook-extraction?format=csv",
+  );
+  expect(chapterCsv.status()).toBe(200);
+  expect(await chapterCsv.text()).toContain('"chapterId"');
+  const referenceCsv = await get(
+    page,
+    "/api/admin/textbook-extraction?format=review-csv&bookId=" + fixtureBook.id,
+  );
+  expect(referenceCsv.status()).toBe(200);
+  const referenceText = await referenceCsv.text();
+  expect(referenceText).toContain(
+    '"candidateId","bookId","sourceFile","sourceSha256"',
+  );
+  expect(referenceText).toContain("Held; teacher review required");
+  await page.goto("/admin/textbook-extraction");
+  await expect(
+    page.getByRole("heading", { name: "Textbook extraction coverage" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "Source processing and local review" }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "Download processing manifest" }),
+  ).toBeVisible();
+  await page
+    .getByRole("combobox", { name: "Medium", exact: true })
+    .selectOption("Tamil");
+  await page
+    .getByRole("combobox", { name: "Textbook", exact: true })
+    .selectOption("12-computer-applications-tamil-e51fbdf6");
+  await expect(
+    page.getByRole("link", { name: "Download local candidate reference CSV" }),
+  ).toBeVisible();
+  await expect(page.getByRole("table")).toContainText("Published");
+  await page
+    .getByRole("combobox", { name: "Textbook", exact: true })
+    .selectOption("12-physics-tamil-v1-c1623725");
+  await expect(page.getByRole("table")).toContainText("Source inventoried");
+  const physicsCsv = await get(
+    page,
+    "/api/admin/textbook-extraction?format=review-csv&bookId=12-physics-tamil-v1-c1623725",
+  );
+  expect(physicsCsv.status()).toBe(200);
+  const physicsReference = await physicsCsv.text();
+  expect(physicsReference).toContain(
+    '"proposedQuestionText","proposedOptions","printedKeyEntry"',
+  );
+  expect(physicsReference).toContain(
+    "Approval blocked: graph-only choices are incomplete",
+  );
+  expect(physicsReference).toContain("-ch-4-source-bounded-01");
+  await page.getByRole("combobox", { name: "Subject", exact: true }).selectOption("History");
+  await page.getByRole("combobox", { name: "Volume", exact: true }).selectOption("none");
+  await page.getByRole("combobox", { name: "Textbook", exact: true }).selectOption("12-history-tamil-3c88c869");
+  await page.getByRole("combobox", { name: "Extraction status", exact: true }).selectOption("bounded");
+  await page.getByRole("combobox", { name: "Answer evidence", exact: true }).selectOption("unknown");
+  await page.getByRole("combobox", { name: "Teacher review status", exact: true }).selectOption("pending");
+  await page.getByRole("combobox", { name: "Publication status", exact: true }).selectOption("none");
+  await expect(page.getByRole("status").filter({ hasText: "matching chapter entries" })).toContainText("2 matching chapter entries");
+  await page.getByRole("searchbox", { name: "Chapter", exact: true }).fill("1");
+  await expect(page.getByRole("status").filter({ hasText: "matching chapter entries" })).toContainText("1 matching chapter entries");
+  await expect(page.getByRole("table")).toContainText("13 pending");
+  await page.getByRole("combobox", { name: "Teacher review status", exact: true }).selectOption("approved");
+  await expect(page.getByRole("status").filter({ hasText: "matching chapter entries" })).toContainText("0 matching chapter entries");
   await page.goto("/admin/students");
   await expect(page.getByRole("heading", { name: "All users" })).toBeVisible();
   const exported = await get(

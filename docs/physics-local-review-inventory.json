@@ -1,0 +1,2449 @@
+{
+  "checkedAt": "2026-10-22T15:55:14.157Z",
+  "scope": "Local individual review inventory; no production connection or publication",
+  "integrated": 60,
+  "duplicateIds": 0,
+  "originalIncompleteOptions": 11,
+  "originalDiagramDependent": 13,
+  "overlapCandidateIds": [
+    "textbook-q-12-physics-tamil-v1-c1623725-45a7dd614e9203d3",
+    "textbook-bounded-12-physics-tamil-v1-c1623725-a91049650c17d7e6"
+  ],
+  "optionRecoveryProposals": 10,
+  "graphOptionSetsStillBlocked": 1,
+  "batches": [
+    {
+      "batchId": "unit-2",
+      "unit": 2,
+      "title": "Unit 2 · மின்னோட்டவியல்",
+      "manifestPath": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "manifestSaved": true,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 15,
+      "published": 0,
+      "authenticExportAudited": false,
+      "candidates": [
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-871916e9879cc3e3",
+          "number": 1,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "1) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-2-q-1-figure-1.png",
+              "page": 126,
+              "rect": [
+                103,
+                323,
+                204,
+                200
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "b19da5fbcd9ff7304aec92883b3da075f7a3c2e0148430be4e8dafc7774b9d70",
+          "reviewEvidenceSha256": "95738c7608980f19837ea5b4aca17a6004bff7f6cceedda94db82d42a1706fb8",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-516e078f3cade423",
+          "number": 2,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "2) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-2-q-2-figure-1.png",
+              "page": 126,
+              "rect": [
+                159,
+                737,
+                194,
+                166
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "09de142b699782fb894a2aa7aed8096f5c3ab0f12adde1f882260b783da04005",
+          "reviewEvidenceSha256": "68e8e011f5f63bcaa8eb94cf1a47e69f06ad8d7421588de3e40905774d6b1a1e",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-bc492444ec15df7c",
+          "number": 3,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "3) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "87433815963f9bce91fdb64aa004b5c7fa86b0571b3d8af9519c4ab91737aa26",
+          "reviewEvidenceSha256": "3a5f0e9651626bd4e9a49c9c3238f5ca4e83518d87fb8a51f64ddfe92e67b2e0",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-4a31e38cbab3aa12",
+          "number": 4,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "4) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "a0a0bb511d9349f7c1f10537c1f2acf42453b0897b63c4266e479f915d91dd9f",
+          "reviewEvidenceSha256": "58d38f0c06f0ba3765914c6bdbadf77143b078033c762130d751f58a2e120879",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-3c8f09ca4eb33aae",
+          "number": 5,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "5) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-2-q-5-figure-1.png",
+              "page": 126,
+              "rect": [
+                517,
+                394,
+                175,
+                82
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "65cdf4c3d13f23101c25db0a4841cb4da5def90fe90f380cc3cc1976f800e684",
+          "reviewEvidenceSha256": "8cf91d51d75e8beab04c51c2201040de697b277061e0f35bce5a1a08e6aa3f58",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-eadae2126425ba68",
+          "number": 6,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "6) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "2af7c1452fbe8d238781cdd6029109b496db4eea2e9966ad76476c832afeaabd",
+          "reviewEvidenceSha256": "45bd41b9cb6fd720707133147d3e2c4f61ae674778d0963d21fbea16892f98d5",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-bounded-12-physics-tamil-v1-c1623725-86b819189b25b42a",
+          "number": 7,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            126
+          ],
+          "printedPages": [
+            118
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "7) d",
+          "reusedExistingId": false,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "f076bc741834b3907155c303a9158afc8f2118bc8090fbc247899ed5b774458b",
+          "reviewEvidenceSha256": "ad442a98eecdd6292792d66d889e95c17028456c90f63a065a4a504e4aca0efe",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-545854075ce1d9c6",
+          "number": 8,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "8) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "94eae19d03d4790040240cda0269530d248d3ed92f2f28b5f243c91a11e52037",
+          "reviewEvidenceSha256": "53776aa4ee1a7eb9af7a2c516469ef8212340f5961eb01d650d51bcb0a8271d3",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-fdda534047409748",
+          "number": 9,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "9) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "2e80b692c09bbf07df3c0813f06fb610e70c87796cc050c19bde58c44f1ba44a",
+          "reviewEvidenceSha256": "073b55267d0dbe9aaa9a0b39b3011910a96dfc3299fbd355eb6ace21b7fbdc97",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-0c5231713015c607",
+          "number": 10,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "10) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-2-q-10-figure-1.png",
+              "page": 127,
+              "rect": [
+                125,
+                647,
+                263,
+                184
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "313599796ef10349e586ad3ac994c93dfcf59552a12b7294059688ca4fdc1f1d",
+          "reviewEvidenceSha256": "1a058435b87b2655a9867ecf21402752908f2bf0340edafa4fb593bd65cf32a2",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-bounded-12-physics-tamil-v1-c1623725-6960f411bae1f239",
+          "number": 11,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "11) a",
+          "reusedExistingId": false,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-2-q-11-figure-1.png",
+              "page": 127,
+              "rect": [
+                129,
+                980,
+                254,
+                155
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "d85de5c203a4c193d9311e0053be1dfe9cfd5f92830106bb5f81940264214ae9",
+          "reviewEvidenceSha256": "d0ce21c82ea4a4de27b33531de1ffa1d56a05f07e7ce5d5e59a6b176291e6af5",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-1fc6dc64c8e6d381",
+          "number": 12,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "12) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "a31fc96875d6701a2d26e10e7de3995937d41860014eefc6f5a030dc17be7e2f",
+          "reviewEvidenceSha256": "dfcdf1ba8c8f8b6354bc4d31c15cfb59f389a11b0fe1418acb8d48a479c2e05f",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-481bb88e40fae041",
+          "number": 13,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "13) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "48bdedfc6587f39cd0fe3d8831414e90d20e97636477937f2ab8f5b61d25d87e",
+          "reviewEvidenceSha256": "603cc329fc7ccd4035cab98e98613a9505be214e4cf3e2f9876ca0dc53472429",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-215190d0fbef6f3b",
+          "number": 14,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "14) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "0ae9b0ba5882513a7c8bd8465d2e764073110d7ac0c0dc5eba63236f06c37fa4",
+          "reviewEvidenceSha256": "11612498e43ff982902deeffc2c01705af5c3ecfe82d2a0be2ea6ef565cef201",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-a90caea1441ff829",
+          "number": 15,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-2",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-2-source-bounded-01",
+          "pdfPages": [
+            127
+          ],
+          "printedPages": [
+            119
+          ],
+          "keyPdfPage": 127,
+          "keyPrintedPage": 119,
+          "keyEntry": "15) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "ee7551ee4f637d29827d77a5474a7cfb3c250d4fb86a07490a9c6b2006e4623c",
+          "reviewEvidenceSha256": "cc61673910b0465f96baa02c547c2aac4eb920a5ea44f4d57f8e5594a7252af2",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        }
+      ]
+    },
+    {
+      "batchId": "unit-3",
+      "unit": 3,
+      "title": "Unit 3 · காந்தவியல் மற்றும் மின்னோட்டத்தின் காந்த விளைவுகள்",
+      "manifestPath": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "manifestSaved": true,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 15,
+      "published": 0,
+      "authenticExportAudited": false,
+      "candidates": [
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-910d441ca7e7ae5f",
+          "number": 1,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197
+          ],
+          "printedPages": [
+            189
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "1) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-3-q-1-figure-1.png",
+              "page": 197,
+              "rect": [
+                81,
+                265,
+                349,
+                129
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "021e13ba2c05adcafdeb3314378b9771fc7abce9bcf3535a511b530bb5692107",
+          "reviewEvidenceSha256": "6bbfca1b0e80f8d96056d172d8a3fca835621a084aa33298761c2361d1503d65",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-5996d6402231b523",
+          "number": 2,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197
+          ],
+          "printedPages": [
+            189
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "2) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-3-q-2-figure-1.png",
+              "page": 197,
+              "rect": [
+                80,
+                698,
+                248,
+                181
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "1e8947e4e944433d62d19b56719721226ccd2404fa4eef44a391957b076170ff",
+          "reviewEvidenceSha256": "28a4859497ea6c8049423f74678210cc8e170c328403f1235693be67dfd9506d",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-f9ed753643f1cece",
+          "number": 3,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197
+          ],
+          "printedPages": [
+            189
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "3) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "0a3e22e71932e9abe85b0b6ba0696bb3503b0eae9de96f7045fffbf394dddcf9",
+          "reviewEvidenceSha256": "d9fcb7399b344e342aa46535b64bf08f421dd7bd236514dd2f0f7d97f5d4b9f6",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-19e4f29a72132cbb",
+          "number": 4,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197
+          ],
+          "printedPages": [
+            189
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "4) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "01995be09023d12cc1fee37ab0c34fa56d7a3d5a9a04d3372038f4f2d51e890a",
+          "reviewEvidenceSha256": "cb8f95687e061e70ec360492f763945488ab335edf80e5aaf5ccab9f1d71e637",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-e033793bd5bd678a",
+          "number": 5,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197
+          ],
+          "printedPages": [
+            189
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "5) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "b48cddd1dde6bb984f6db3ff2be9621f8ed1c79f0415892f72346475349e3d13",
+          "reviewEvidenceSha256": "b7550bf48e73841b4d4ed2412c947f26795df7adc8b18864fede683af7a6a219",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-66ffad2e32f1b18c",
+          "number": 6,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197
+          ],
+          "printedPages": [
+            189
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "6) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "06577068732e58cf01c3ec294ec8e605642b8a9303ce761109f72fc3f9b0667d",
+          "reviewEvidenceSha256": "0bd3c4fd29c6d7bab446b91c36a850c8db7bc3bff9f3ff14bc507b5be8c872bb",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-45a7dd614e9203d3",
+          "number": 7,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            197,
+            198
+          ],
+          "printedPages": [
+            189,
+            190
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "7) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-3-q-7-figure-1.png",
+              "page": 198,
+              "rect": [
+                81,
+                148,
+                349,
+                198
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "e8290ec90a3bf1f590561050566af0d30543c3ab09b01398379668e1aefd3b6c",
+          "reviewEvidenceSha256": "d1ad7633a90f0cc4635a06c74ced324049bae5f7b1b3b4b9912ddd86e7aeff76",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-c8916d4d223ca6b5",
+          "number": 8,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            198
+          ],
+          "printedPages": [
+            190
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "8) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "ca246705dfd1930e9f66c23e79d9c8cbcda5e74c96cb72d24ce26e5f73a6a24e",
+          "reviewEvidenceSha256": "3e3b33405168cf530b424b399fee14c23bc62ffe1a55525b548bde6825c470d4",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Confirm that all original choices were extracted",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-bounded-12-physics-tamil-v1-c1623725-a3fbdaf6c773a760",
+          "number": 9,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            198
+          ],
+          "printedPages": [
+            190
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "9) b",
+          "reusedExistingId": false,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-3-q-9-figure-1.png",
+              "page": 198,
+              "rect": [
+                81,
+                907,
+                349,
+                181
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "b0673f1708eb07c55a1f2649e28555fac14fb5cbc1ab3175dd8c172310ecf4f4",
+          "reviewEvidenceSha256": "3b538106694883fd0d73a50bbccf8230623a246b2358a9d6ed955fbebf911cc8",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-b757e302dcec958a",
+          "number": 10,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            198
+          ],
+          "printedPages": [
+            190
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "10) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "4f7c48055719ef7c15bdde8aec3e00c0a68f7e44041cd5fe4eed89e617ec3df7",
+          "reviewEvidenceSha256": "114dd914a91b3c8c7460e389a71df90e518337cbbaf59f6cc067b8923f66555e",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-bounded-12-physics-tamil-v1-c1623725-f2871e53fef840ba",
+          "number": 11,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            198
+          ],
+          "printedPages": [
+            190
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "11) c",
+          "reusedExistingId": false,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-3-q-11-figure-1.png",
+              "page": 198,
+              "rect": [
+                464,
+                652,
+                347,
+                347
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "5ffdf6577b4678db315a4bdb8e9febf6b20a4a0b4fa829636ffda098d427eb43",
+          "reviewEvidenceSha256": "bbc01b150110063586077437eeaa6cc8d762acdef9d7e1d3fabccb6d1d49bd02",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-1efe4d4ead138a39",
+          "number": 12,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            199
+          ],
+          "printedPages": [
+            191
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "12) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "16f00a79385aec17d9e85db8ff696505360c176f377617c886b4311fc61a5336",
+          "reviewEvidenceSha256": "eaf4e527834ee54faf78783990fef1319859c3a2cc4c98d617e8fc3d8b63237f",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-6778bace8504ae4f",
+          "number": 13,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            199
+          ],
+          "printedPages": [
+            191
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "13) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "f440eed36023c46fbd52ab7965d8f024b6708fd7edb1153012fb64f4698ae368",
+          "reviewEvidenceSha256": "159183da98754da26998398829d7b63475dd04f1735442768a63b6055ddb211d",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-5a7ba8ce07d03eaf",
+          "number": 14,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            199
+          ],
+          "printedPages": [
+            191
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "14) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "13d5f6410cc801246d690f49f54c1d571b11429e9ebb4f669152cde77a2ceb84",
+          "reviewEvidenceSha256": "59dc5a8059e148d5c8e5d12f8dfb033f6a1098a18af99f98a2d8c2bf0e39967a",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-193d02e2aa88907b",
+          "number": 15,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-3",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-3-source-bounded-01",
+          "pdfPages": [
+            199
+          ],
+          "printedPages": [
+            191
+          ],
+          "keyPdfPage": 199,
+          "keyPrintedPage": 191,
+          "keyEntry": "15) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "42b9a3a39aa1410b87bea153b9784bf11727e30dc368bdadf8ea642bddd87264",
+          "reviewEvidenceSha256": "09cd8aec0f1d115bbb852e9c211424f8bbe07ec808c981e3830b15971bd2d2c9",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        }
+      ]
+    },
+    {
+      "batchId": "unit-4",
+      "unit": 4,
+      "title": "Unit 4 · மின்காந்தத் தூண்டலும் மாறுதிசை மின்னோட்டமும்",
+      "manifestPath": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "manifestSaved": true,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 15,
+      "published": 0,
+      "authenticExportAudited": false,
+      "candidates": [
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-4231f2288d7e7af5",
+          "number": 1,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            267
+          ],
+          "printedPages": [
+            259
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "1) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-4-q-1-figure-1.png",
+              "page": 267,
+              "rect": [
+                101,
+                353,
+                269,
+                149
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "64af926aaeb3dbeb74e0325295c228cefe56ed9c748c9381b612e3417de95ed5",
+          "reviewEvidenceSha256": "37e11a0ca3ab61320a2182b9a83688cf4e0f43d60ba13df18448503c75448e5d",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-7190f3d556248c9e",
+          "number": 2,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            267
+          ],
+          "printedPages": [
+            259
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "2) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-4-q-2-figure-1.png",
+              "page": 267,
+              "rect": [
+                150,
+                808,
+                211,
+                146
+              ],
+              "option": null
+            }
+          ],
+          "originalProposalSha256": "7aa52c8747947bdefbe9fa678be8786710f4f1477086f69eb09c951fe47e15a6",
+          "reviewEvidenceSha256": "b7f8a1de0111277e32fb77f3037fb37df7446587d0440cce4ef1519d772057a8",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-f46e53fb30e7ba87",
+          "number": 3,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            267
+          ],
+          "printedPages": [
+            259
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "3) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "99538b51e5baaa7ea9b6def27f174230466a98036e749d52dbf1af6323b7a0d5",
+          "reviewEvidenceSha256": "106d900f386f82110e98eff86f9c0cc8d7ff610aa97044ba0ed26d3fa96ec1ce",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-af54ae5e5175cc93",
+          "number": 4,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            267
+          ],
+          "printedPages": [
+            259
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "4) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "a6777e0d544e009e0f774fc7788a13fc62399cb6147ed7ad4eabbc2a9aae793b",
+          "reviewEvidenceSha256": "931796317c6d2e123347c60f4c79918d25452743a4f19b6cf31516f6edb6cc75",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-bounded-12-physics-tamil-v1-c1623725-a91049650c17d7e6",
+          "number": 5,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            267,
+            268
+          ],
+          "printedPages": [
+            259,
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "5) a",
+          "reusedExistingId": false,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": false,
+          "diagramRequired": true,
+          "diagramTeacherVerified": false,
+          "figureFiles": [
+            {
+              "file": "unit-4-q-5-figure-1.png",
+              "page": 267,
+              "rect": [
+                535,
+                727,
+                207,
+                135
+              ],
+              "option": null
+            },
+            {
+              "file": "unit-4-q-5-figure-2.png",
+              "page": 267,
+              "rect": [
+                476,
+                864,
+                168,
+                109
+              ],
+              "option": "A"
+            },
+            {
+              "file": "unit-4-q-5-figure-3.png",
+              "page": 267,
+              "rect": [
+                644,
+                864,
+                168,
+                109
+              ],
+              "option": "B"
+            },
+            {
+              "file": "unit-4-q-5-figure-4.png",
+              "page": 267,
+              "rect": [
+                476,
+                985,
+                168,
+                108
+              ],
+              "option": "C"
+            },
+            {
+              "file": "unit-4-q-5-figure-5.png",
+              "page": 267,
+              "rect": [
+                644,
+                985,
+                168,
+                108
+              ],
+              "option": "D"
+            }
+          ],
+          "originalProposalSha256": "ae56755537cb92f6c6490d9f7066e8cafc6cf98780f8a6c9354e769615e1e7e2",
+          "reviewEvidenceSha256": "f92352d28dad0731923d28da6fb8421310363b2a52980a3e0082a80c3e5b9a5d",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Essential source diagram/graph requires faithful separate representation and teacher inspection",
+            "Approval blocked: graph-only choices are incomplete; extracted axis labels are not complete options",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-f3c16f38e8740751",
+          "number": 6,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "6) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "9acfff066470b347b08a69c12d18c74632db19a03f8b6117a4c0ff8748dcb8e6",
+          "reviewEvidenceSha256": "ba8e9232cd979e492533a54e8e990ae79803f3aad07646a6c880f9d91e0d714f",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-4c99b62781722b12",
+          "number": 7,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "7) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "e597e8d8a8b481514d5d0b123b2f80a076670b7070c471a2a9d31a1ccb1761db",
+          "reviewEvidenceSha256": "a98e12f2c45d714a464bcd1a06216a9da99d2fbee1780ab04e8700456e422b4f",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-aa93014f596e745b",
+          "number": 8,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "8) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "fc483b036f07979631a114fba79dd8b95e12f1a6bd42e535821c2c71dd9b69a7",
+          "reviewEvidenceSha256": "c74c157084290873708d022942a8162a8388f9a6d36f9330bb5e0f7dd816ffe8",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-ad280287d7e04999",
+          "number": 9,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "9) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "c6d8d8065721e425749a1c37fe33f922507cad9cab039af4d335861c2f88c92b",
+          "reviewEvidenceSha256": "ef252a4ba030d9c899ca17600dcb72e7304ff8ae7150c677388f845cf29e81a6",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-bounded-12-physics-tamil-v1-c1623725-5acab9eba39d811c",
+          "number": 10,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "10) a",
+          "reusedExistingId": false,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "9a4e45636e8a91ced7e4ba236903281f4a40f058860a0cadd606953139e9b67f",
+          "reviewEvidenceSha256": "bf245e8c085a629be41a8f1e888c85a2fabe9388a8dd28eee181a674aab33f86",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-8781c83faf62e943",
+          "number": 11,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "11) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "afd118a80bca16fe3337ff65122f4889d51c891c7cf84f0bc8394899310a41d2",
+          "reviewEvidenceSha256": "356aabe7b3a6ecac0750a827e2a067df4450790c8bb6a376ee85d851ca6df338",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-b022f953b4711725",
+          "number": 12,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "12) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "f6adc7383d0ca67eade4a5fa8f52cb5a043509ee9bb34a97d921b485ef5470fe",
+          "reviewEvidenceSha256": "11ffe686faa8f0eb688ae366daf74ee5027c18f1463b264093e4afe910e5c601",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-10f9321638a94ab3",
+          "number": 13,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268
+          ],
+          "printedPages": [
+            260
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "13) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "5c4f8e970598eb99ea24e0c54ead35eee343f9164266c945996b0a9c2e2dd46f",
+          "reviewEvidenceSha256": "708b50a98ffa37139c847aaffcf55c11c47b0100c695defc8756cea8c36d0fa3",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-0153ca5b3c095d6b",
+          "number": 14,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            268,
+            269
+          ],
+          "printedPages": [
+            260,
+            261
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "14) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": true,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "810a73efb0d0c3376807a9ef2666944664f92659bb1252df5e2d5aaf581b9ace",
+          "reviewEvidenceSha256": "7539f016cce395ef23226adda124db35b4b6a96244bcc7bbffa2aa17a9cb358f",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Confirm that all original choices were extracted",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Printed answer is retained as evidence only; complete text/figure options are required before answer assignment",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged",
+            "Separate proposed option recovery from the original printed mathematics; original extraction and incomplete-option warnings are preserved"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-b1637a62d157f644",
+          "number": 15,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-4",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-4-source-bounded-01",
+          "pdfPages": [
+            269
+          ],
+          "printedPages": [
+            261
+          ],
+          "keyPdfPage": 269,
+          "keyPrintedPage": 261,
+          "keyEntry": "15) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "0d3bedce7ffe29fbc8ce16948c6d447d458964a4df98b9755183e164c451ed82",
+          "reviewEvidenceSha256": "a0bbf14fd2013eac43ff250220c07c61dc3afc0ae9f518d4d776ce148dc6696c",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        }
+      ]
+    },
+    {
+      "batchId": "unit-5",
+      "unit": 5,
+      "title": "Unit 5 · மின்காந்த அலைகள்",
+      "manifestPath": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "manifestSaved": true,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "held": 15,
+      "published": 0,
+      "authenticExportAudited": false,
+      "candidates": [
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-662dd70200eeff03",
+          "number": 1,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "1) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "0ad50f5710bada144760c776593e385988176637361afc8933ec629e37439be4",
+          "reviewEvidenceSha256": "b1c020527eba868159171a08297a2f44993473d92a2fd1a0d492b7f7907e7cfb",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Options are not distinct",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-ae6d687351d0b9c6",
+          "number": 2,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "2) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "4b2adba257e812723916713d58ba36194fc2819ec9ab9ed1f93964fe6bd010b9",
+          "reviewEvidenceSha256": "24b333ad5b7d965fa4c7cc749e98055663a1ab077b3965eea36d873876e2d178",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-828644e40fd5f167",
+          "number": 3,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "3) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "83df438cff08e91e184244a5f7209bf625b6ac5415d0503c8ceb0a3723797757",
+          "reviewEvidenceSha256": "91eed4ec97288bb65e4843d843d0b63c7a9bd79ae6be0f562e13e29fb2ddd6b7",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-23f5e090ba91ca6a",
+          "number": 4,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "4) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "3f78aae71e169cbb339386adbcef33bbbe9d7e1d0829060e92b28614e06c02dc",
+          "reviewEvidenceSha256": "2c5be94fac83bffe6430375cfeade2682a263e5ead26fc533783fd6e53002914",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-6e32f9afc6510cca",
+          "number": 5,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "5) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "f69e761c064e9b9b8a8404d389229e7b15ed8718836cb460e884c7aca308d00b",
+          "reviewEvidenceSha256": "db0124938cd5eb3fbb2f5bfc7a6430b57f1a0df14812b751b2cc0722c8acd83e",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-325c4485743fad96",
+          "number": 6,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "6) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "60e8c362efbd9c4aa5e07b169dc8ef2de433aa28c16cc9b248893222488f7034",
+          "reviewEvidenceSha256": "2799036ce91f29d3bfae98ada9e8b06b7e305689504b27fd5aca166857f76983",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-1cbe8c9f02985852",
+          "number": 7,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "7) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "9a748512c54dfdef6b6ebd78a510e552a6171d547375e838c943c647a34cd91e",
+          "reviewEvidenceSha256": "8dd68f565f82747f9a18fa7e1448760bfadc6e5048cefe44c013d1976ec36bbd",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-caee9b70b97c6c34",
+          "number": 8,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "8) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "2b868b7c0c5c21447a4c31f3357bd3df0305cc1fbe565d331137ad0a1f70b7f2",
+          "reviewEvidenceSha256": "ca61fa14591b816860b3b008236bb303bbb6ec849b021070d882355e64df3d25",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-f168df89b32a502f",
+          "number": 9,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "9) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "6b3575d0fbefd5482a0a680d30054dec1a2fbe0b3f71898f1a583ad28879588d",
+          "reviewEvidenceSha256": "306aec5cc3be16398f607036e64013b13347e9e3aa8f6dcf7a1691785a8e88c0",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-2370d4bb23e7800b",
+          "number": 10,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            291
+          ],
+          "printedPages": [
+            283
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "10) b",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "88ef44419fab6fae19fdc8f14b6db1dd2bffc5ca3af6ee09c197d9dafceef336",
+          "reviewEvidenceSha256": "528e08c65736420651b97d35d73857a0efb8f97e5520e20ce01cf85b523b6b01",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-c6227e7193551563",
+          "number": 11,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            292
+          ],
+          "printedPages": [
+            284
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "11) c",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "7f620926a72299b0cf9a22cbf13c4096ec7470da05ca8c8d63c562940c1db2af",
+          "reviewEvidenceSha256": "7926a7612d148fe712aaf4517c6e45488d61121470de873d6796c8ce1fa78978",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-0ac582ac845c9e1a",
+          "number": 12,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            292
+          ],
+          "printedPages": [
+            284
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "12) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "23a4acd73fd7a033856efde6b903e5fe0e75cf5c0e7b977629d7a5b0ef134f43",
+          "reviewEvidenceSha256": "a53bd6ea5e29705ff80189d0dd56cdd1fe23da0206509520e0ef95479b0d3b91",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-ad239ee13da5cb68",
+          "number": 13,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            292
+          ],
+          "printedPages": [
+            284
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "13) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "89ac5869edc6f0655531565a066773c06ec70493f30df1c0f52720d9b53f9cfe",
+          "reviewEvidenceSha256": "477332be472bc60d8a3a3866ef6010829ce08f5a33c986fbf86839085f863975",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Transcribe mathematical layout before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-8959b5ec660b073b",
+          "number": 14,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            292
+          ],
+          "printedPages": [
+            284
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "14) d",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "bb59d85ca75c4d893a4ebd0b54af18793a7b8a288ac522bf405c6b4c179826ff",
+          "reviewEvidenceSha256": "9f9ddf0bfd326404935a46c98b1929a326fa29c87f0058f5e8a22848d000ed84",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        },
+        {
+          "id": "textbook-q-12-physics-tamil-v1-c1623725-89b05031cb2fbd08",
+          "number": 15,
+          "chapterId": "tb-12-physics-tamil-v1-c1623725-ch-5",
+          "batchId": "tb-12-physics-tamil-v1-c1623725-ch-5-source-bounded-01",
+          "pdfPages": [
+            292
+          ],
+          "printedPages": [
+            284
+          ],
+          "keyPdfPage": 292,
+          "keyPrintedPage": 284,
+          "keyEntry": "15) a",
+          "reusedExistingId": true,
+          "decision": "pending",
+          "localReviewHeld": true,
+          "practicePublished": false,
+          "optionsRecoveredProposal": false,
+          "completeTextOptions": true,
+          "diagramRequired": false,
+          "diagramTeacherVerified": false,
+          "figureFiles": [],
+          "originalProposalSha256": "04cf2e593c76caf7f4f06436d73e34787b6e715cdfa3ca4bbd26c6b5da3f09a8",
+          "reviewEvidenceSha256": "64bd8f8303c1797e8ac3340a82ba9f92302fda315e7866c02fd74dbb6abe23cc",
+          "unresolvedIssues": [
+            "Held: individual authenticated teacher verification required; printed-key agreement is not approval",
+            "Proposed reading order only: Tamil characters, words and all mathematical layout require source correction",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "Existing ID is a page/number match; reconcile its saved In-text extraction with this source proposal before import",
+            "Approval requires an explicit teacher-authored complete Tamil transcription and source mapping confirmation; the current extracted wording is damaged"
+          ]
+        }
+      ]
+    }
+  ],
+  "exportAudit": null
+}

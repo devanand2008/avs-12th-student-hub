@@ -1,0 +1,221 @@
+{
+  "checkedAt": "2026-10-15T09:16:01.989Z",
+  "scope": "Local implementation/source extraction, SELECT-only database comparison and isolated browser fixtures; no production writes/imports/publications/deployments",
+  "checks": [
+    {
+      "name": "test",
+      "exitCode": 0,
+      "logSha256": "2849c9ab578619deec96d19dca55db96a384beebaaf7fe3b76268aeb8dbadc45",
+      "tests": 124,
+      "passed": 124,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0
+    },
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "logSha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "name": "lint",
+      "exitCode": 0,
+      "logSha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "name": "mcqs-audit",
+      "exitCode": 0,
+      "logSha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "name": "mcqs-decision-audit",
+      "exitCode": 0,
+      "logSha256": "d1ebe639e6ef97bb083f80920dd3abf0f7a7644aaf57ba9c7a9f511b8af5f8db"
+    },
+    {
+      "name": "build",
+      "exitCode": 0,
+      "logSha256": "a3149502306bebc495a4d9a75ce21bfe8a5ff37c7ad65124fa9112b0caef7446"
+    },
+    {
+      "name": "browser",
+      "exitCode": 0,
+      "logSha256": "14aef3ce5b9237371655e7b0383ba8305dc528d77772767ce7ddbd1826f477c4",
+      "passed": 6
+    },
+    {
+      "name": "desktop-recheck",
+      "exitCode": 0,
+      "logSha256": "0519956b0e78d2cd45b2f3955c2f53a651d6a79f5f4bc19277f5e0039b4efee7"
+    },
+    {
+      "name": "extraction",
+      "exitCode": 0,
+      "logSha256": "43d2fd81df650375622682f549bad56b932c0b98d1907d2e71a2c65cf3e92e57"
+    },
+    {
+      "name": "extraction-rerun",
+      "exitCode": 0,
+      "logSha256": "6841ea03678b5223245a739588888daaebf830d2a403487870310f117f09ceaf"
+    }
+  ],
+  "sourceTotals": {
+    "sourceQuestions": 60,
+    "reusedIds": 54,
+    "newIds": 6,
+    "keyMatches": 60,
+    "fourChoicePositionsParsed": 49,
+    "missingOrIncompleteChoices": 11,
+    "diagramDependent": 13,
+    "teacherReviewed": 0,
+    "teacherApproved": 0,
+    "published": 0
+  },
+  "globalExtraction": {
+    "pdfs": 82,
+    "processed": 82,
+    "pages": 24088,
+    "detectedChapters": 856,
+    "zeroPublishedChapters": 733,
+    "activeCandidates": 12677,
+    "preservedRecords": 17262,
+    "quarantinedInactiveRecords": 4585,
+    "parserBookBackCandidates": 6311,
+    "textAndKeyEligible": 985,
+    "sourceInventoriedQuestions": 60,
+    "authenticCollectionQuestionTotal": null
+  },
+  "databaseBefore": {
+    "checkedAt": "2026-10-15T08:25:08.240Z",
+    "method": "Read-only paginated SELECT and read-only catalog RPC; no mutations",
+    "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+    "questionRows": 3039,
+    "candidateRows": 12229,
+    "practiceSessions": 13,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "writes": 0,
+    "historicalQuestionDigestMatches": true,
+    "historicalPracticeDigestMatches": true
+  },
+  "databaseAfter": {
+    "checkedAt": "2026-10-15T08:51:15.976Z",
+    "method": "Read-only paginated SELECT and read-only catalog RPC; no mutations",
+    "projectHost": "rqsymozgslwwupxmyido.supabase.co",
+    "questionRows": 3039,
+    "candidateRows": 12229,
+    "practiceSessions": 13,
+    "questionDigest": "ab8f548a063dc422577be0bba6537058",
+    "practiceDigest": "04520dda7b3e51eeb21c5e3a4dff4783",
+    "writes": 0,
+    "historicalQuestionDigestMatches": true,
+    "historicalPracticeDigestMatches": true
+  },
+  "tableComparisons": [
+    {
+      "table": "avs_questions",
+      "before": 3039,
+      "after": 3039,
+      "unchanged": true
+    },
+    {
+      "table": "textbook_mcq_candidates",
+      "before": 12229,
+      "after": 12229,
+      "unchanged": true
+    },
+    {
+      "table": "textbook_mcq_imports",
+      "before": 82,
+      "after": 82,
+      "unchanged": true
+    },
+    {
+      "table": "avs_curriculum",
+      "before": 7222,
+      "after": 7222,
+      "unchanged": true
+    },
+    {
+      "table": "avs_quiz_sessions",
+      "before": 13,
+      "after": 13,
+      "unchanged": true
+    }
+  ],
+  "studentReady": {
+    "total": 995,
+    "English": 995,
+    "Tamil": 0,
+    "recordedHumanApprovals": 0,
+    "policy": "Retain the exact 995 existing publications under the explicit user exception. All new textbook rows require individual recorded approval."
+  },
+  "excludedLegacySamples": 12,
+  "teacherManifest": {
+    "exportPath": null,
+    "counts": {
+      "approved": 0,
+      "needs_correction": 0,
+      "rejected": 0,
+      "pending": 15,
+      "invalid": 0
+    },
+    "reviewed": 0,
+    "historyEvents": 0
+  },
+  "preservation": {
+    "checkedAt": "2026-10-15T09:11:30.714Z",
+    "protectedFiles": [
+      {
+        "file": ".env.local",
+        "sha256": "c930fc727c58df40352ec2d60ad517208ade41fd4b6ff919d004b11ca8635ef4",
+        "unchanged": true
+      },
+      {
+        "file": "docs/tamil-physics-unit1-candidates.json",
+        "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+        "unchanged": true
+      },
+      {
+        "file": ".local/teacher-review/tamil-physics-unit1.json",
+        "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+        "unchanged": true
+      },
+      {
+        "file": ".local/teacher-review/physics-unit1-workflow/decisions.json",
+        "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+        "unchanged": true
+      },
+      {
+        "file": ".local/independent-live-content.json",
+        "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+        "unchanged": true
+      }
+    ],
+    "preservedOriginalPhysicsCandidates": 76,
+    "allOriginalPhysicsCandidateFieldsUnchanged": true,
+    "otherBookCandidateArraysUnchanged": true,
+    "otherBooksChecked": 81,
+    "rerunAdded": 0,
+    "rerunCandidateDigestUnchanged": true,
+    "sourceQuestionIds": 60,
+    "uniqueSourceQuestionIds": 60,
+    "allSourceProposalsHeld": true
+  },
+  "earlierFailures": [
+    "An initial typecheck found a regression-test generic inferred too narrowly; an explicit test type fixed it. Final typecheck passes.",
+    "The first browser run passed 5 cases and failed 1 on a sign-in Suspense loading screen. That case passed in isolation, then the fresh full six-case suite passed. Sign-in code was not changed; the transient failure remains documented.",
+    "Initial integration created six overlapping generic drafts. They remain preserved/inactive; source-bounded precedence prevents active duplicates."
+  ],
+  "limits": [
+    "Four-option positions and printed-key matches do not verify damaged Tamil wording, mathematical layout or source figures.",
+    "Existing page/number ID matches must be reconciled with original saved In-text extraction by a teacher before any later import.",
+    "No full unrelated browser suite, full-collection OCR or teacher academic verification is claimed.",
+    "Final build/browser checks cover the unchanged application; the subsequent CLI-only evidence-association refinement also passed final full tests/typecheck/lint."
+  ],
+  "productionWrites": 0,
+  "imports": 0,
+  "newApprovals": 0,
+  "newPublications": 0,
+  "deployed": false
+}

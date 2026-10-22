@@ -93,6 +93,9 @@ export async function seedTextbookBank(db: PGlite) {
           JSON.stringify({
             ...candidate,
             sourceTextbookId: book.id,
+            reviewStatus: "approved",
+            reviewedBy: "isolated-fixture-reviewer",
+            reviewedAt: new Date().toISOString(),
             sourcePage: 12,
             ...(i === 2
               ? {

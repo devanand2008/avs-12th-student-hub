@@ -1,0 +1,1761 @@
+{
+  "schemaVersion": 1,
+  "scope": "local-source-proposals-only-no-teacher-decisions",
+  "entries": [
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-2b5548d4c148cf31",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 1,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "58c931bedd06680d16cc777d602160cf695947802095f839ad025d975184105e",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-d40ed71a17a9a970",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 2,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "a4d9b93c853a3657516f7555f1d0797bcb1061284eef2630347d9e5197050a61",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-2c51b3a59c75e6d8",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 3,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "abee83703e9dfb6525b3a4c1605c0ab1175e759930e94ee7687c4af2ccd433e9",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-da8be1ed58d6a26c",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 4,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "0c01a9a418beb88fd066ab1c609fdf1ae3d4ce84631470fa5e8a99a0d3fc49b4",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-d031defa3ef0c07b",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 5,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "3465ca5c4ca89ce3bab598d8d3c670aaa26232ef3561146e97382320e4996be0",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "Wi-Fi என்பது குறுகிய பெயர்",
+      "proposedOptions": [
+        "நம்பிக்கையான கம்பியில்லா சேவை",
+        "கம்பி இணைப்பு",
+        "கம்பி ஃபைபர் ஆப்டிக்",
+        "வயர்லெஸ் ஃபைபர் பார்வை"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-e2324f6d76c6e7fc",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 6,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "e7d8c9a7d6dabb1a2ae3ce17e42b3134db3b9db3e9bfdc92a647b6c45e640cfc",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-5ca48ff674f8b297",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 7,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "362ab63baf1040dc364a5e92247cf49473751ccca35d0c77fd4b9e446e4382ab",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பின்வரும் எந்த காலகட்டத்தில் ஜிகாபைட் (GB) அளவு வேகத்துடன் தகவல் பரிமாற அனுமதிக்கப்பட்டது?",
+      "proposedOptions": [
+        "SABRE",
+        "SAGE",
+        "NEW FIBRE OPTICS",
+        "ARCNET"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-1ecccc31b62e7cbb",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 8,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          174
+        ],
+        "printedPages": [
+          164
+        ]
+      },
+      "originalProposalSha256": "4a63b0cb33d2df7a42028b38e68dbaccd5f4bb4c1abe50cb0538753c90a099e8",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-75d4d8a65e072566",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 9,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "4dcf966288521ebe39a86d36e1c3739fade270adfa98d3f58e96ebd97b46342d",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-892ef04705726ea7",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 10,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "6324ddf690badba79b5b952b067606690c233ef0c45aef10bdcf21361ea96907",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-15cabced9629412c",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 11,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "215c2f13ac70f7a2790413c5749c0a8937511fc0db1a64dd3df6ae168bb44bdb",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-75a647de01060d70",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 12,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "52471980feeed3e15db03cee62a3f19e10adf5707661cfdd407c494039e7d68a",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பின்வருவனவில் எது ஒரு சமூக ஊடக அல்ல",
+      "proposedOptions": [
+        "gmail",
+        "முகநூல்",
+        "ட்விட்டர்",
+        "Linkedin"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-932afbf4d88ec71f",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 13,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "3bcb95065133770afd60365a28deb221beb72eadd54277de06e8fcf00cc39d48",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பேஸ்புக் உருவாக்கப்பட்டது ______ ஆண்டு",
+      "proposedOptions": [
+        "2002",
+        "2004",
+        "2013",
+        "2010"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-a5a7c5aaea0e7608",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 14,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "d44dd89ca197ec569bec484b78904fd1687eeeb94d2ab7a864a90e9790f3fe74",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-51e1fbd76fb41f13",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 15,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "e290806cc1cd0a01dba8767dfc0618af3c9150cbc756f2cda28158ea11326322",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-bee2c6ac45035a7b",
+      "chapterNumber": 10,
+      "printedQuestionNumber": 16,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          175
+        ],
+        "printedPages": [
+          165
+        ]
+      },
+      "originalProposalSha256": "352a9fcda6bd5971a4f490d887f297421475bb02f2bc8fef813981f4ca04644f",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-361464fb44059fa2",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 1,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "e1d9b9b1cc9ab8fbbe54d691a13c83bd5c5225782e03494e4c32c3c3c8296ffa",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-acc69e77b329696b",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 2,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "f76dceae8dba0f09a89773be4919791d33c516931b421f701feba4b532466d2d",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-section-12-computer-applications-tamil-e51fbdf6-7e9b7b99498d3c78",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 3,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "f933bebc448bdd7df48708df83fa30b8382753c5d66545842c347935a44b58be",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-be969d823641e6af",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 4,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "cf6385080f92c11e1939c741fec95456895eac68f324f8216da2e21807459cf6",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-a2a398c7a06c7e55",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 5,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "b07d7d58fccc742eeca51f0a58e1e64bc4b71f61ee6a12423c3a37f2b4da8fc3",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "Wi-fi-ன் விரிவாக்கம்",
+      "proposedOptions": [
+        "Wireless Fidelity",
+        "wired fidelity",
+        "wired optic fibre",
+        "wireless optic fibre"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-6aa94f1dae6dddd2",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 6,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "0854f127c133de878643db538fd50925b8b9844397a096de06748b0dd71a1f81",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-ef0d04c55e018103",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 7,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "aa92336df1849a10ed7b3a4f6923b42a545758906fd5dc60e90fb17715330f42",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "RFID-ன் விரிவாக்கம்",
+      "proposedOptions": [
+        "Radio Free identification",
+        "real Frequency identity",
+        "Radio Frequency indicators",
+        "Radio Frequency identification."
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-0c6024da4148a42f",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 8,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          192
+        ],
+        "printedPages": [
+          182
+        ]
+      },
+      "originalProposalSha256": "59c3c4e84f3ac4df0abd2c77a09153c63de1658f98c2f052c67b1fdba3ac8b1e",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-8181c6d6f4e4e5c1",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 9,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          193
+        ],
+        "printedPages": [
+          183
+        ]
+      },
+      "originalProposalSha256": "e5c6321ad569948269089e838be9bf617764accc936bc64610b2ec8bfab730a3",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பின்வருவனவற்றுள் பரிமாற்றத்தின் போது தரவைப் பாதுகாப்பது எது?",
+      "proposedOptions": [
+        "HTTPS",
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-6245f642c03ca2bb",
+      "chapterNumber": 11,
+      "printedQuestionNumber": 10,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          193
+        ],
+        "printedPages": [
+          183
+        ]
+      },
+      "originalProposalSha256": "9cb790845fbc0d4c059fe554c4a31f54d76736fb5d1b307acf5ad235903a8155",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "எது மின்னஞ்சல் சேவையை வழங்குகிறது?",
+      "proposedOptions": [
+        "DNS",
+        "TCP",
+        "FTP",
+        "SMTP"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-cef5e32cbdbc49a9",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 1,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          207
+        ],
+        "printedPages": [
+          197
+        ]
+      },
+      "originalProposalSha256": "3637cc6d0318846f7f2c2fc140d5c2dbd2966d128468c46020c0a16a9b24dfc4",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-67528d66295f8250",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 2,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          207
+        ],
+        "printedPages": [
+          197
+        ]
+      },
+      "originalProposalSha256": "2e0f9f215b6863d689296714fbe8a7391ce5358c5b258f034ba85220cc294367",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-17e9cf48a54b64cd",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 3,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "93099dd140378d55db1be1f53a03457addef370dd2536b1a7c996e768ed2cbf0",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "IPv6 முகவரிகளில் எத்தனை பிட்கள் பயன்படுத்தப்படுகின்றன?",
+      "proposedOptions": [
+        "32",
+        "64",
+        "128",
+        "16"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-9b185c94bf8ed043",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 4,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "b4565d0bee9ca4d9365e9dd1d046090fcac82afbda970800f453aa71b8d214d5",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "URL இன் விரிவாக்கம்",
+      "proposedOptions": [
+        "Uniform Resource Location",
+        "Universal Resource Location",
+        "Uniform Resource Locator",
+        "Universal Resource Locator"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-1a82e1fd38b1cc8e",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 5,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "99b226a7147e4b71dd86ec838545cd96b7b09bd11b8fdc1cfdc6df276f4fdff0",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-c9c3ee14d4af8deb",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 6,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "5513a6f1ca0e5f8b5cee042732b8e5981ff203c0889c2413b54a35ffa0f36b8f",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-1f41b0949de2020d",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 7,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "c5898fba560368d7b9572bd5eb520c481ebc364a5f7a71d8e004df9d894d408b",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-8a5bab2963115b07",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 8,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "c70478c186c63e5328e2d8a7317b59113a7d70960c0667a8357bf124fae5ad69",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-9a78df45fcafa5d6",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 9,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "eb0b5c9462a77c7540aaeb9d0393e78115ac8f9b1b0633dffc6ee236e20dbb78",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-36d3b1fc1374c29f",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 10,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "1a36d230771063da5d18528e8686b9fefd55a01811fb740e5572fcfbc2a901a1",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-5a697386907a46f2",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 11,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "710d408bef928ab26e1802986d05e74d1d69fb5d9387bea0addf642c60aac4a9",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "ISP குறிக்கிறது",
+      "proposedOptions": [
+        "International Service provider",
+        "Internet Service Provider",
+        "Internet service Protocol",
+        "Index service provider"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-e4a3052521996aff",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 12,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "e79b972aee4ea39a92453eb696c4e524578a74ba93377ede2215064087c7445e",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "TLD குறிக்கிறது",
+      "proposedOptions": [
+        "Top Level Data",
+        "Top Logical Domain",
+        "Term Level Data",
+        "Top Level Domain"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-19cebbc5417cfc6a",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 13,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "ef120a71add337e54a3efd12b9e8510f91bc6250e86d7d999e866d9619df8095",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-933c9b6c3dae9c92",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 14,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          208
+        ],
+        "printedPages": [
+          198
+        ]
+      },
+      "originalProposalSha256": "542471bd936af38e55d8dce93b7d43b7e1269378da7ce6c6ed0121f7d9d74523",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-f0b2ea6e83a64853",
+      "chapterNumber": 12,
+      "printedQuestionNumber": 15,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          209
+        ],
+        "printedPages": [
+          199
+        ]
+      },
+      "originalProposalSha256": "2765389938f1fe0f6af531bb20d2a8ccb460a6ec22ae2a4dda16a1f8afa5c1c4",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-dc9af36aaae3d481",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 1,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "9ffd317ef99699f6ce3ae78a551ce70e23ab6b5feadb8116881b63e2218d5119",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-054a50fe021a8d9a",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 2,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "efc1a8ec1fc8aeb9781df243611881ad9cc9c251a2fec7cb3a85ba21d486f22d",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பின்வருவனவற்றில் எந்த நிரல் வலையமைப்பின் செயலான பிரதிபலிக்கிறது",
+      "proposedOptions": [
+        "Network software",
+        "Network simulation",
+        "Network testing",
+        "Network calculator"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-99c2bb76f2907dbe",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 3,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "bb7e1edb94baec898e5e57dd40f628739a53b2a72b3906f9d5bc4e33c9cd6dbf",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-f072199c23f70b6b",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 4,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "9dd7707baaa7b3e1d58b507a166a5f366ae71b55cf60b39e872d05c2d2beea00",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "Network simulator மென்பொருளின் எடுத்துக்காட்டு தருக",
+      "proposedOptions": [
+        "simulator",
+        "TCL",
+        "Ns2",
+        "C++"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-01e3513e2251e9e9",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 5,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "6da76efbca375f6763209ac88ec218d879474ee928e899010e4db16a6aea7878",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-78e565468912fc58",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 6,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "60ec42459a8554516c923e2663d6ced8d0405072f36008df3ecc31552d8dc9d6",
+      "status": "source-inspected-uncertain-transcription-held",
+      "proposedQuestionText": null,
+      "proposedOptions": null,
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Raw extraction and original reading-order proposal preserved; damaged Tamil or complex matching/assertion wording remains uncertain",
+        "No complete corrected wording is supplied for this item rather than guessing missing characters"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification",
+        "Complete source-faithful Tamil transcription still required"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-41d9315b0bf09678",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 7,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "d867c0126cea2e4091dca725db83b957eaeac48907d96d5b27fcb51b82ebf487",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பின்வருவனவற்றுள் எது Network Simulation மென்பொருள் இல்லை",
+      "proposedOptions": [
+        "Ns2",
+        "OPNET",
+        "SSFNet",
+        "C++"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-d5bba8a08139eb06",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 8,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "e13c9c62d33e36fa72c2545d3855c8fccadcc473ffeb2fd20397168ccc25ca98",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "பின்வருவனவற்றுள் எது திறந்த மூல வலையமைப்பு மேலாண்மை மென்பொருள்",
+      "proposedOptions": [
+        "C++",
+        "OPNET",
+        "Open NMS",
+        "OMNet++"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-0f272a5702641f2f",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 9,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "5ed2c70fd08c20ae905eb0b3e3c921c9d9c6f0db5955f17a9c5c1d09dca73a3a",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "Open NMS ____ ஆண்டு வெளியிடப்பட்டது",
+      "proposedOptions": [
+        "1999",
+        "2000",
+        "2003",
+        "2004"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    },
+    {
+      "candidateId": "textbook-q-12-computer-applications-tamil-e51fbdf6-a4dfc877c40d4a47",
+      "chapterNumber": 14,
+      "printedQuestionNumber": 10,
+      "source": {
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+        "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+        "pdfPages": [
+          233
+        ],
+        "printedPages": [
+          223
+        ]
+      },
+      "originalProposalSha256": "79c5c0002b2ccebba2dd7445507e07ad5a98f71bd9525a17f5131021747260fb",
+      "status": "proposed-source-transcription-unverified",
+      "proposedQuestionText": "Open NMS குழு யாரால் உருவாக்கப்பட்டது",
+      "proposedOptions": [
+        "Balog",
+        "Matt Brozowski",
+        "David Hustace",
+        "All of them"
+      ],
+      "proposedAnswer": null,
+      "teacherVerified": false,
+      "reviewDecision": null,
+      "method": "Local visual comparison with the original rendered PDF exercise pages; literal wording/technical tokens retained, no generated options or inferred answer",
+      "notes": [
+        "Separate proposed Unicode/spacing transcription only; source spelling/grammar is not silently edited",
+        "A real authorised teacher must compare every character and option to the source before recording a decision"
+      ],
+      "unresolvedIssues": [
+        "Answer unknown: no printed key located in the inspected exercise/ending pages",
+        "Tamil wording/options remain pending individual teacher verification"
+      ]
+    }
+  ]
+}

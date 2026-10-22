@@ -1,6 +1,7 @@
 import BottomNav from "@/components/layout/BottomNav";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import DeferredFonts from "@/components/layout/DeferredFonts";
 import { PwaProvider } from "@/components/pwa/PwaContext";
 import PwaInstallBanner from "@/components/pwa/PwaInstallBanner";
 import PwaInstallModal from "@/components/pwa/PwaInstallModal";
@@ -76,6 +77,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-[#eff5ff] text-slate-900 selection:bg-blue-600 selection:text-white antialiased font-sans">
         <PwaProvider>
+          <DeferredFonts />
           <Navbar />
           <div className="flex-1 flex flex-col">{children}</div>
           <BottomNav />

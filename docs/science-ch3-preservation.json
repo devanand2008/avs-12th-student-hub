@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-19T16:26:01.784Z",
+  "baseline": ".local/science-ch3-baseline.json",
+  "unchangedOriginalCandidates": 17284,
+  "unchangedEarlierSourceProposals": 527,
+  "protectedFiles": 303,
+  "unchangedEarlierSourceImages": 164,
+  "currentSourceImages": 177,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-862ac1355891ea79",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-3",
+      "page": 72
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-b4bcc2b06edc44e7",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-3",
+      "page": 72
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-d7322424b47114f7",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-3",
+      "page": 72
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-938c22d548b00831",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-3",
+      "page": 76
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-b31a42b3fbc8365e",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-3",
+      "page": 77
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-91435390e13e9226",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-3",
+      "page": 77
+    }
+  ],
+  "removedActiveIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

@@ -1,0 +1,1581 @@
+{
+  "checkedAt": "2026-10-22T17:34:46.044Z",
+  "scope": "Local validated registry; no production access or automatic curation decisions",
+  "counts": {
+    "total": 99,
+    "listed": 16,
+    "temporary": 83,
+    "unavailable": 0,
+    "retired": 0
+  },
+  "categories": [
+    {
+      "category": "question-papers",
+      "total": 4,
+      "listed": 4,
+      "temporary": 0,
+      "unavailable": 0,
+      "retired": 0
+    },
+    {
+      "category": "learning-materials",
+      "total": 86,
+      "listed": 4,
+      "temporary": 82,
+      "unavailable": 0,
+      "retired": 0
+    },
+    {
+      "category": "video-lessons",
+      "total": 9,
+      "listed": 8,
+      "temporary": 1,
+      "unavailable": 0,
+      "retired": 0
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "Accountancy",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Advanced Tamil",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Agricultural Science",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Auditing",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Basic Automobile Engineering",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Basic Civil Engineering",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Basic Electrical Engineering",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Basic Electronics Engineering",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Basic Mechanical Engineering",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Bio-Botany",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 3,
+          "listed": 1,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Bio-Zoology",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 3,
+          "listed": 1,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Biochemistry",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Botany",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 3,
+          "listed": 1,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Business Mathematics & Statistics",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Chemistry",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 5,
+          "listed": 1,
+          "temporary": 4,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Commerce",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Communicative English",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 2,
+          "listed": 2,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Computer Applications",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 4,
+          "listed": 0,
+          "temporary": 4,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Computer Science",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Computer Technology",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 2,
+          "listed": 2,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 4,
+          "listed": 0,
+          "temporary": 4,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "subject": "Economics",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 3,
+          "listed": 1,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "English",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Ethics and Indian Culture",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Food Service Management",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "General Nursing",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Geography",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "History",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Home Science",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Mathematics",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 4,
+          "listed": 0,
+          "temporary": 4,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Microbiology",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Nursing Vocational",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Nutrition and Dietetics",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Office Management, Secretaryship & Typography",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Physics",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 5,
+          "listed": 1,
+          "temporary": 4,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 9,
+          "listed": 8,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Political Science",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Statistics",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Tamil",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Textile Technology",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 1,
+          "listed": 0,
+          "temporary": 1,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": []
+    },
+    {
+      "subject": "Textiles and Dress Designing",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 2,
+          "listed": 0,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "subject": "Zoology",
+      "categories": [
+        {
+          "category": "question-papers",
+          "total": 4,
+          "listed": 4,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "learning-materials",
+          "total": 3,
+          "listed": 1,
+          "temporary": 2,
+          "unavailable": 0,
+          "retired": 0
+        },
+        {
+          "category": "video-lessons",
+          "total": 0,
+          "listed": 0,
+          "temporary": 0,
+          "unavailable": 0,
+          "retired": 0
+        }
+      ],
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "id": "dge-hse2-march-2023",
+      "year": 2023,
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Bio-Botany",
+        "Bio-Zoology",
+        "Botany",
+        "Zoology",
+        "History",
+        "Economics",
+        "Commerce",
+        "Accountancy",
+        "Microbiology",
+        "General Nursing",
+        "Home Science",
+        "Business Mathematics & Statistics",
+        "Statistics",
+        "Geography",
+        "Political Science",
+        "Ethics and Indian Culture",
+        "Computer Science",
+        "Computer Applications",
+        "Basic Mechanical Engineering",
+        "Basic Electrical Engineering",
+        "Basic Electronics Engineering",
+        "Basic Civil Engineering",
+        "Basic Automobile Engineering",
+        "Computer Technology",
+        "Textiles and Dress Designing",
+        "Food Service Management",
+        "Tamil"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2023_Mar_HSE_II.pdf"
+    },
+    {
+      "id": "dge-hse2-march-2024",
+      "year": 2024,
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Bio-Botany",
+        "Bio-Zoology",
+        "Botany",
+        "Zoology",
+        "History",
+        "Economics",
+        "Commerce",
+        "Accountancy",
+        "Microbiology",
+        "General Nursing",
+        "Home Science",
+        "Business Mathematics & Statistics",
+        "Statistics",
+        "Geography",
+        "Political Science",
+        "Ethics and Indian Culture",
+        "Computer Science",
+        "Computer Applications",
+        "Basic Mechanical Engineering",
+        "Basic Electrical Engineering",
+        "Basic Electronics Engineering",
+        "Basic Civil Engineering",
+        "Basic Automobile Engineering",
+        "Textiles and Dress Designing",
+        "Food Service Management",
+        "Computer Technology",
+        "Tamil"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "pdfUrl": "https://tnegadge.s3.amazonaws.com/notification/questbank/2200420242.pdf"
+    },
+    {
+      "id": "dge-hse2-march-2025",
+      "year": 2025,
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Bio-Botany",
+        "Bio-Zoology",
+        "Botany",
+        "Zoology",
+        "History",
+        "Economics",
+        "Commerce",
+        "Accountancy",
+        "Microbiology",
+        "General Nursing",
+        "Home Science",
+        "Business Mathematics & Statistics",
+        "Statistics",
+        "Geography",
+        "Political Science",
+        "Ethics and Indian Culture",
+        "Computer Science",
+        "Computer Applications",
+        "Basic Mechanical Engineering",
+        "Basic Electrical Engineering",
+        "Basic Electronics Engineering",
+        "Basic Civil Engineering",
+        "Basic Automobile Engineering",
+        "Textiles and Dress Designing",
+        "Food Service Management",
+        "Communicative English",
+        "Tamil"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "pdfUrl": "https://tnegadge.s3.ap-south-1.amazonaws.com/notification/questbank/2025_MAR_12_QUESTION_PAPER.pdf"
+    },
+    {
+      "id": "dge-hse2-march-2026",
+      "year": 2026,
+      "subjects": [
+        "English",
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Bio-Botany",
+        "Bio-Zoology",
+        "Botany",
+        "Zoology",
+        "History",
+        "Economics",
+        "Commerce",
+        "Accountancy",
+        "Microbiology",
+        "General Nursing",
+        "Home Science",
+        "Business Mathematics & Statistics",
+        "Statistics",
+        "Geography",
+        "Political Science",
+        "Ethics and Indian Culture",
+        "Computer Science",
+        "Computer Applications",
+        "Communicative English",
+        "Basic Mechanical Engineering",
+        "Basic Electrical Engineering",
+        "Basic Electronics Engineering",
+        "Basic Civil Engineering",
+        "Basic Automobile Engineering",
+        "Textiles and Dress Designing",
+        "Food Service Management",
+        "Tamil"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "pdfUrl": "https://tnegadge.s3.ap-south-1.amazonaws.com/notification/questbank/HSE2_2026_Q.pdf"
+    }
+  ],
+  "downloadedNewPdfs": 0,
+  "rights": {
+    "official_access_terms_unclear": 86,
+    "openly_licensed": 4,
+    "external_link_only": 9
+  },
+  "limitations": [
+    "Combined paper collections are not individual papers; heading-based subject indexing does not verify all paper variants.",
+    "Temporary textbook entries retain historical catalogue provenance; fresh source ownership verification remains pending.",
+    "YouTube oEmbed support does not prove successful playback in every browser/region.",
+    "This audit validates recorded evidence; it does not perform fresh network checks or create teacher decisions."
+  ]
+}

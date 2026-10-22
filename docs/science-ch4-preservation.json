@@ -1,0 +1,118 @@
+{
+  "checkedAt": "2026-10-19T17:27:16.539Z",
+  "baseline": ".local/science-ch4-baseline.json",
+  "unchangedOriginalCandidates": 17290,
+  "unchangedEarlierSourceProposals": 565,
+  "protectedFiles": 322,
+  "unchangedEarlierSourceImages": 177,
+  "currentSourceImages": 199,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-1985e93c71f44d74",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-427ad67bc25d9d36",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-90085f519f7d06ea",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-4447058a2284a4ee",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-703505aea2588a8f",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-ce5f6a3c066f091c",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-english-f15d4524-054ebdf2979799dd",
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapterId": "tb-12-bio-botany-english-f15d4524-ch-4",
+      "page": 96
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-eb2a057939983604",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 103
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-412be9655e14f5c9",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 103
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-29269e61a67818e2",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 103
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-ed9215cf56e81b4d",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-593ca88f52f4141a",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-281e0d48b2bebe2b",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-2b22bd725c7e0f23",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-a21737db99aad0f7",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-5c3201fbb464afd2",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    },
+    {
+      "id": "textbook-bounded-12-bio-botany-tamil-51160855-abb793f9e680d73b",
+      "bookId": "12-bio-botany-tamil-51160855",
+      "chapterId": "tb-12-bio-botany-tamil-51160855-ch-4",
+      "page": 104
+    }
+  ],
+  "removedActiveIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

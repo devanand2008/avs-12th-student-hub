@@ -1,0 +1,1803 @@
+{
+  "checkedAt": "2026-10-17T12:15:41.240Z",
+  "scope": "Local extraction, held review stores and preserved authoritative snapshots; no production connection, publication, push or deployment",
+  "target": {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-applications-tamil-e51fbdf6.pdf",
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "chapter": 9,
+    "chapterTitle": "PHP-உடன் MySQL-ஐ இணைத்தல்",
+    "chapterPdfRange": [
+      151,
+      157
+    ],
+    "chapterPrintedRange": [
+      141,
+      147
+    ],
+    "inspectedPdfPages": [
+      8,
+      9,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158
+    ],
+    "inspectedPrintedPages": [
+      "viii",
+      "ix",
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "mcqPdfPages": [
+      155,
+      156,
+      157
+    ],
+    "printedPages": [
+      145,
+      146,
+      147
+    ],
+    "printedQuestionOccurrences": 11,
+    "uniqueContentSignaturesWithinBatch": 11,
+    "reusedIds": 10,
+    "newIds": [
+      "textbook-bounded-12-computer-applications-tamil-e51fbdf6-e4384154a00ebe0c"
+    ],
+    "keyEvidence": "Contents PDF 9 / printed ix, Chapter 9 opening PDF 151 / printed 141, Chapter 10 opening PDF 158 / printed 148 and all intervening chapter pages were visually inspected. Section I Q1-11 is PDF 155-157 / printed 145-147. No printed answer key in this inspected chapter. Answers unknown; no whole-book key-absence claim.",
+    "printedKeyMatches": 0,
+    "unknownAnswers": 11,
+    "held": 11,
+    "reviewed": 0,
+    "counts": {
+      "approved": 0,
+      "needs_correction": 0,
+      "rejected": 0,
+      "pending": 11,
+      "invalid": 0
+    },
+    "historyEvents": 0,
+    "published": 0,
+    "diagramDependent": [],
+    "incompleteChoiceMappings": [],
+    "duplicateOptionQuestions": [],
+    "sourceMcqSectionFullyInventoried": true,
+    "teacherVerificationComplete": false,
+    "store": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-9\\decisions.json",
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 151,
+        "kind": "Chapter opening, objectives, ordinary lesson text and Figure 9.1 are not MCQ material"
+      },
+      {
+        "numbers": [],
+        "page": 152,
+        "kind": "Lesson syntax and worked connection program, not book-back MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 153,
+        "kind": "Lesson syntax and worked query/close program, not book-back MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 154,
+        "kind": "Lesson program continuation and technology note, not book-back MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 155,
+        "kind": "Remember box, glossary and decorative exercise banner preceding Section I excluded"
+      },
+      {
+        "numbers": [],
+        "page": 157,
+        "kind": "Sections II-IV open-response questions and two student programming activities excluded; no fabricated choices"
+      }
+    ],
+    "candidates": [
+      {
+        "id": "textbook-bounded-12-computer-applications-tamil-e51fbdf6-e4384154a00ebe0c",
+        "number": 1,
+        "pdfPage": 155,
+        "pdfEndPage": 155,
+        "printedPages": [
+          145
+        ],
+        "originalExtraction": {
+          "questionText": "பி   ன் ை   ரும் கூ   ற று   ் ளில் எது உடனடிய   கா்   MySQLi   ை குப வ பை உரு ைகா   க் கும்?\nஅ) mysqli = new mysqli()   ஆ) $mysqli = new mysqli()\nஇ) $mysqli->new.mysqli()   ஈ) mysqli->new.mysqli()",
+          "options": [
+            "mysqli = new mysqli()",
+            "$mysqli = new mysqli()",
+            "$mysqli->new.mysqli()",
+            "mysqli->new.mysqli()"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 155\n்ப குதி – அ\nI. ெ ரியான வி ள்டளய த் மத ர்ந சத டுத்து எழுதுக\n1. பி ன் ை ரும் கூ ற று ் ளில் எது உடனடிய கா் MySQLi ை குப வ பை உரு ைகா க் கும்?\nஅ) mysqli = new mysqli() ஆ) $mysqli = new mysqli()\nஇ) $mysqli->new.mysqli() ஈ) mysqli->new.mysqli()\nநி ளன வி ல சகாள்க\n● PHP ஒரு திறந த மூ ் ேற றும் ே மூ ் ஆதரவு ஸ் கிரி ப டிங் பேகா ழிய கா கும்.\n● PHP எ ன் பை து ைவ் ப பைக்் ை டி ைவேப பிற்கான ம ேவைய ் ஸ் கிரி ப டிங் பேகா ழிய கா கும்.\n● எழு பை து ே த ைவ்த தள ங்் ள் PHP ேற றும் MySQL ஆல் ை டி ைவேக்் ப பை ட் டிருக்கிறது.\n● ப பை ரு ம் பைகா்கா ன ைவ் ம ேவைய ்ங்் ள் ஸ் கிரி ப டிங் பேகா ழி வய ஆதரிக்கி ன் ற ன.\n● PHP பேகா ழிக் ்ட் டவள்வள HTML ேற றும் ஸ் கிரி ப டிங் பேகா ழியில் எளிதில்\nஉ ட் பபைகா தி க்் (embed) முடியும்.\n● MySQL தரவுத த ள த துடன் ப் டுதில் இ வ ை க்் ப பை ய ன் பை டும் உ ள் ளவே ந த\nபே ய ற கூறு ் வள (built-in functions) php இல் உ ள் ள ன.\n● PHP ஸ் கிரி ப டிங் பேகா ழி பை் பேன்பபைகா ருள் ்ட் டவேப பு ் ள கா ல் ஆதரி க்் ப பை டுகிறது.\nSQL SQL நிர வ்்த தில் பைன்பை டுத த ப பை டும் ஒரு ் ளம் ேகார்நத பேகா ழிய கா கும். (Domain\nspecific language) இது உறவுத வ்த தரவுத த ள மே ் கா ண வே அ வேப பிலும்\nதரவை ை வை வேக்் வும் மே ் கா ண வே பே ய ய வும் பை ய ன் பை டுகிறது.\nவின ைல்் ள் Queries தரவுத த ள் அ ட் டைவ ை அ ல்் து அ ட்டைவ ை ் ளின் பதகா கு ப பிலிரு ந து தரவு\nஅ ல்் து த ் ைவ்ப ப பை று ை தற்கான ்ட் டவள்மள வின ை ல் ஆகும்.\nMySQL MySQL எ ன் பை து திறந த மூ ் உறவுநி வ் தரவுதள மே ் கா ண வே அ வேப பு ஆகும்.\n(Open source RDBMS)\nServer ம ேவைய ் ம் ம ேவைய ் ம் எ ன் பை து நு ் ர் வு (Clients) எனப பை டும் ் ணினியின் அ ல்் து பிற\nநிர ல்் ளு க் ் கான பே ய ல்பைகா டு ் வள ைை ங் கும் ் ணினி ஆகும்.\nதரவுத த ளம் Database தரவுத த ளம் எ ன் பை து ஒழு ங்் வேக்் ப பைட்ட தரவு ் ளின் பதகா குப பைகா கும். இதில்\nதரவு ் ள் ் ணினியில் மி ன் ன ணு மு வற யில் மத க் கி வை க்் ப பை ட்டு மத வைய கா ன\nமபைகாபதல் ் கா ம் அணு ் ப பை டுகி ன் ற ன.\nவினாக க ள்\n145 ்ப ா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல\nXII CompApp_Tamil version CHAPTER 09.indd 145 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "பி ன் ை ரும் கூ ற று ் ளில் எது உடனடிய கா் MySQLi ை குப வ பை உரு ைகா க் கும்?",
+          "options": [
+            "mysqli = new mysqli()",
+            "$mysqli = new mysqli()",
+            "$mysqli->new.mysqli()",
+            "mysqli->new.mysqli()"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Previously missing source occurrence on PDF 155; deterministic stable recovery ID, not a teacher approval",
+          "Printed object/variable prefixes and arrow/dash shapes differ between choices; verify exact glyphs against the source, do not normalise to correct PHP",
+          "Extracted C/D contain new.mysqli(); the dot/space/operator shapes require source-image reconciliation, not an automatic code correction"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-16cbe9e4646c4eeb",
+        "number": 2,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி எடுப பை த ற கு ே ரிய கா ன ை ழி எது?",
+          "options": [
+            "mysql_fetch_row.",
+            "mysql_fetch_array",
+            "mysql_fetch_object",
+            "All the above"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி எடுப பை த ற கு ே ரிய கா ன ை ழி எது?",
+          "options": [
+            "mysql_fetch_row.",
+            "mysql_fetch_array",
+            "mysql_fetch_object",
+            "All the above"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Retain printed mysql_fetch_row. trailing period and mysql_ prefixes; do not infer an answer from API knowledge",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-194f2ad4d4addfeb",
+        "number": 3,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம் ஒரு தரவுதளத வத உரு ைகாக்் முடியும்?",
+          "options": [
+            "mysqli_create_db(“Database Name”)",
+            "mysqli_create_db(“Data”)",
+            "create_db(“Database Name”)",
+            "create_db(“Data”)"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம் ஒரு தரவுதளத வத உரு ைகாக்் முடியும்?",
+          "options": [
+            "mysqli_create_db(“Database Name”)",
+            "mysqli_create_db(“Data”)",
+            "create_db(“Database Name”)",
+            "create_db(“Data”)"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe unreadable PDF glyphs before text publication",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Retain printed mysqli_create_db and create_db function choices and their exact quote/bracket punctuation",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-37aae0f5064c3836",
+        "number": 4,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?",
+          "options": [
+            "mysqli_query(“Connection Object”,”SQL Query”)",
+            "query(“Connection Object”,”SQL Query”)",
+            "mysql_query(“Connection Object”,”SQL Query”)",
+            "mysql_query(“SQL Query”)"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?",
+          "options": [
+            "mysqli_query(“Connection Object”,”SQL Query”)",
+            "query(“Connection Object”,”SQL Query”)",
+            "mysql_query(“Connection Object”,”SQL Query”)",
+            "mysql_query(“SQL Query”)"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Retain distinct mysqli_query, query and mysql_query choices; do not rewrite names or infer the correct answer",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q1, PDF 152, printed 142, candidate textbook-q-12-computer-applications-tamil-f43670d1-dd2569fb0b481f7c. Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-0741472853c1f052",
+        "number": 5,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?",
+          "options": [
+            "mysqli_close(“Connection Object”);",
+            "close(“Connection Object”);",
+            "mysql_close(“Connection Object”);",
+            "mysqli_close(“Database Object”);"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?",
+          "options": [
+            "mysqli_close(“Connection Object”);",
+            "close(“Connection Object”);",
+            "mysql_close(“Connection Object”);",
+            "mysqli_close(“Database Object”);"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q2, PDF 152, printed 142, candidate textbook-q-12-computer-applications-tamil-f43670d1-7167f7f3daa06fd1. Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-4a5b25d93b3eb37e",
+        "number": 6,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?",
+          "options": [
+            "mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+            "connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+            "mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+            "mysqli_connect (“Database Object”);"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?",
+          "options": [
+            "mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+            "connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+            "mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+            "mysqli_connect (“Database Object”);"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Inspect printed quotation and closing-parenthesis shapes in every function choice, especially D; damaged text cannot establish syntactically valid PHP",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q3, PDF 152/153, printed 142/143, candidate textbook-q-12-computer-applications-tamil-f43670d1-7495abd4607b89e1. Its saved choice B is polluted with glossary/footer text; visually compare the cross-page choices, do not copy that raw extraction",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-845f32041e4c3edc",
+        "number": 7,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?",
+          "options": [
+            "Mysqli_connect() Function",
+            "Mysqli_close() Function",
+            "mysqli_select_data() Function",
+            "mysqli_affected_rows() Function"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?",
+          "options": [
+            "Mysqli_connect() Function",
+            "Mysqli_close() Function",
+            "mysqli_select_data() Function",
+            "mysqli_affected_rows() Function"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Retain printed Mysqli_connect(), Mysqli_close(), mysqli_select_data() and mysqli_affected_rows() capitalisation/spelling",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q4, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-045200e715f770cf. Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-e0e26664dfd58e6d",
+        "number": 8,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q5, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-e30ee4bb85fa6f5e. Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-1dd25458aca70c39",
+        "number": 9,
+        "pdfPage": 156,
+        "pdfEndPage": 156,
+        "printedPages": [
+          146
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5 ்ப ா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146 ்ப குதி – இ"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 156\n2. PHP – வய பை ய ன் பை டு த தி MySQLi –ன் பை ளியீடு ் ளில் இரு ந து �கா ம் தரவை திரும்பி\nஎடுப பை த ற கு ே ரிய கா ன ை ழி எது?\nஅ) mysql_fetch_row. ஆ) mysql_fetch_array\nஇ) mysql_fetch_object ஈ) All the above\n3. PHP ேற றும் MySQLi – வய பை ய ன் பை டு த தி கீ ழ ் ண ட எந த கூற வற பை ய ன் பை டு த தி �கா ம்\nஒரு தரவுதளத வத உரு ைகாக்் முடியும்?\nஅ) mysqli_create_db(“Database Name”)\nஆ) mysqli_create_db(“Data”)\nஇ) create_db(“Database Name”)\nஈ) create_db(“Data”)\n4. PHP – ல் உ ள் ள SQL வின ைல்்வள இய க்் கீ ழ ் ண டைற றுள் எது ே ரிய கா ன\nபே ய ற கூறு?\nஅ) mysqli_query(“Connection Object”,”SQL Query”)\nஆ) query(“Connection Object”,”SQL Query”)\nஇ) mysql_query(“Connection Object”,”SQL Query”)\nஈ) mysql_query(“SQL Query”)\n5. PHP – ல் இ வ ைப வ பை மூடு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_close(“Connection Object”);\nஆ) close(“Connection Object”);\nஇ) mysql_close(“Connection Object”);\nஈ) mysqli_close(“Database Object”);\n6. PHP – ல் இ வ ைப வ பை நிறுவு ை த ற கு கீ ழ ் ண டைற றுள் எது ே ரிய கா ன பே ய ற கூறு?\nஅ) mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஆ) connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஇ) mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);\nஈ) mysqli_connect (“Database Object”);\n7. கீ ழ ் ண டைற றுள் எது PHP – ன் ே ரிய கா ன MySQLi பே ய ற கூறு அ ல்் ?\nஅ) Mysqli_connect() Function ஆ) Mysqli_close() Function\nஇ) mysqli_select_data() Function ஈ) mysqli_affected_rows() Function\n8. PHP – ல் MySQLi இ வ ை க்் (connect) எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5\n9. PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?\na) 2 b) 3 c) 4 d) 5 ்ப\nா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல 146\nXII CompApp_Tamil version CHAPTER 09.indd 146 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ல் MySQLi வினவில் பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Remove footer contamination only in the bounded proposal; original saved extraction remains separate and unchanged",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q6, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-dc459a60b45d1094. Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-f626ba2325a6937c",
+        "number": 10,
+        "pdfPage": 157,
+        "pdfEndPage": 157,
+        "printedPages": [
+          147
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ல் MySQLi மூடுதல் ( மூடுதல் (Close) பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 157\n்ப குதி – இ\nIII. ஒரு ்ப த் திய ை வி ல\nவி ள்ட யளிக க வும்\n1. MySQLi வின ைல்் ளின் ்ட் டவள\nஅ வே ப வ பை எழுதவும்.\n2. MySQLi – ல் உ ள் ள பே ய ற கூறு ் ளின்\nபை ய ன்் வள எழுதவும்.\n3. mysqli_affected_rows() ேற றும்\nmysqli_fetch_assoc() பே ய ற கூறு\nஇ ைற றி ற கி வடமய உ ள் ள\nமை று பைகாட்வட எழுது ் .\n4. MySQLi – வய இ வ ைப பை தற்கான ்ட்\nடவளவய எடு த து க் ் காட்டுடன்\nஎழுது ் .\n5. தரவுதள இ வ ைப வ பை பைற றி குறி ப பு\nஎழுது ் . ்ப\nகுதி – ஈ\nIV. ஒரு ்ப க க அ ை வி ல\nவி ள்ட யளிக க வும்\n1. MySQL – ல் உ ள் ள பே ய ற கூறு ் வள\nஎடு த து க் ் காட்டுடன் வி ை ரி.\n2. PHP – ல் தரவுதள த தில் பி வ ை வய\nவ் ய கா ளும் மு வற ேற றும் தரவுதள\nமே ் கா ண வே பே யல்மு வற பைற றி\nவிரி ைகா் விள க்் வும்.\n3. PHP – ல் MySQL – வய\nஇ வ ைப பை தற்கான மு வற யின்\nைவ்்வள விரி ைகா் விள க்் வும்.\n4. MySQL வின ைல்்வள\nஎடு த து க் ் காட்டுடன் விள க்் வும்.\nை ா ை வ ர செயல ்ப ா டு\n1. PHP ேற றும் MySQL – வய பை ய ன் பை டு த தி ேகாைைர்் ள் த ங்் ள் பை யனப பபை யர்\nேற றும் ் டவு ச் பேகால்வ் ே ரி பைகார்க்் உதவும் எளி வே ய கா ன ேகாைை ர் உள்நு வ ைவு\nபை டி ை த வத (Login Form) உரு ைகாக்் வும். ( ம ேவைய ் பைக்் ே ரி பைகார்தத ல் ). (Server\nside validation)\n2. PHP ேற றும் MySQL – வய பை ய ன் பை டு த தி ேகாைை ர் வி ை ர ங்் ள கா ன ேகாைை ர் ப பை யர்,\nபை யனர் ப பை யர் ேற றும் ் டவு பேகா ல் மபைகான்ற த ் ைல்் ள் அடங்கிய ஒரு எளி வே ய கா ன\nேகாைைர்் ள் வி ை ர ங்் வள பை திவு பேய யும் பை டி ை த வத உரு ைகா க் கு.\n10. PHP – ல் MySQLi மூடுதல் ( மூடுதல்\n(Close) பே ய ற கூறுக்கு எத தவன\nஅளபுரு க்் ள் மத வைப பை டுகிறது?\na) 1 b) 2 c) 3 d) 5\n11. PHP – ன் எந த பை தி ப பு MySQLi\nபே ய ற கூ வற ஆதரிக்கிறது?\na) Version 2.0 b) Version 3.0\nc) Version 4.0 d) Version 5.0 ்ப\nகுதி – ஆ\nII. மூன்று வரிகளி ல வி ள்ட யளிக க வும்\n1. PHP – ல் உ ள் ள MySQLi\nபே ய ற கூறு ் வள கூறு ் .\n2. MySQLi பே ய ற கூறு எ ன் பை து எ ன் ன ?\n3. எத தவன ைவ் ய கா ன MySQLi\nபே ய ற கூறு ் ள் PHP – ல் உ ள் ள ன.\n4. இ வ ைத த ல் (Connection) ேற றும்\nமூடுதல் (Close) பே ய ற கூறு ் வள\nமை று பை டு த து ் .\n5. MySQLi வின ைல்் ளுக்கு சி ்\nஎடு த து க் ் காட்டு ் ள் தரு ் .\n6. இ வ ை ப பு ே ரம் (Connection String)\nஎ ன் றகா ல் எ ன் ன ?\n7. ைவ் ய தரவுதளம் எ ன் றகா ல் எ ன் ன ?\n8. mysqli_fetch_assoc() பே ய ற கூறு\nஎ ன் பை து எ ன் ன ?\n9. mysqli_connect_error() பே ய ற கூ வற\nைவர யறு.\n10. m y s q l i _ a f f e c t e d _ r o w s ( )\nபே ய ற கூ வற ைவர யறு.\n147 ்ப ா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல\nXII CompApp_Tamil version CHAPTER 09.indd 147 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ல் MySQLi மூடுதல் ( மூடுதல் (Close) பே ய ற கூறுக்கு எத தவன அளபுரு க்் ள் மத வைப பை டுகிறது?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Printed stem repeats the Tamil closing term before (Close); preserve rather than silently rewriting",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q7, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-b69ed90d3c914183. Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-bb4517609aa826aa",
+        "number": 11,
+        "pdfPage": 157,
+        "pdfEndPage": 157,
+        "printedPages": [
+          147
+        ],
+        "originalExtraction": {
+          "questionText": "PHP – ன் எந த பை தி ப பு MySQLi பே ய ற கூ வற ஆதரிக்கிறது?",
+          "options": [
+            "Version 2.0",
+            "Version 3.0",
+            "Version 4.0",
+            "Version 5.0 ்ப குதி – ஆ"
+          ],
+          "correctAnswer": null
+        },
+        "originalPageText": "PDF 157\n்ப குதி – இ\nIII. ஒரு ்ப த் திய ை வி ல\nவி ள்ட யளிக க வும்\n1. MySQLi வின ைல்் ளின் ்ட் டவள\nஅ வே ப வ பை எழுதவும்.\n2. MySQLi – ல் உ ள் ள பே ய ற கூறு ் ளின்\nபை ய ன்் வள எழுதவும்.\n3. mysqli_affected_rows() ேற றும்\nmysqli_fetch_assoc() பே ய ற கூறு\nஇ ைற றி ற கி வடமய உ ள் ள\nமை று பைகாட்வட எழுது ் .\n4. MySQLi – வய இ வ ைப பை தற்கான ்ட்\nடவளவய எடு த து க் ் காட்டுடன்\nஎழுது ் .\n5. தரவுதள இ வ ைப வ பை பைற றி குறி ப பு\nஎழுது ் . ்ப\nகுதி – ஈ\nIV. ஒரு ்ப க க அ ை வி ல\nவி ள்ட யளிக க வும்\n1. MySQL – ல் உ ள் ள பே ய ற கூறு ் வள\nஎடு த து க் ் காட்டுடன் வி ை ரி.\n2. PHP – ல் தரவுதள த தில் பி வ ை வய\nவ் ய கா ளும் மு வற ேற றும் தரவுதள\nமே ் கா ண வே பே யல்மு வற பைற றி\nவிரி ைகா் விள க்் வும்.\n3. PHP – ல் MySQL – வய\nஇ வ ைப பை தற்கான மு வற யின்\nைவ்்வள விரி ைகா் விள க்் வும்.\n4. MySQL வின ைல்்வள\nஎடு த து க் ் காட்டுடன் விள க்் வும்.\nை ா ை வ ர செயல ்ப ா டு\n1. PHP ேற றும் MySQL – வய பை ய ன் பை டு த தி ேகாைைர்் ள் த ங்் ள் பை யனப பபை யர்\nேற றும் ் டவு ச் பேகால்வ் ே ரி பைகார்க்் உதவும் எளி வே ய கா ன ேகாைை ர் உள்நு வ ைவு\nபை டி ை த வத (Login Form) உரு ைகாக்் வும். ( ம ேவைய ் பைக்் ே ரி பைகார்தத ல் ). (Server\nside validation)\n2. PHP ேற றும் MySQL – வய பை ய ன் பை டு த தி ேகாைை ர் வி ை ர ங்் ள கா ன ேகாைை ர் ப பை யர்,\nபை யனர் ப பை யர் ேற றும் ் டவு பேகா ல் மபைகான்ற த ் ைல்் ள் அடங்கிய ஒரு எளி வே ய கா ன\nேகாைைர்் ள் வி ை ர ங்் வள பை திவு பேய யும் பை டி ை த வத உரு ைகா க் கு.\n10. PHP – ல் MySQLi மூடுதல் ( மூடுதல்\n(Close) பே ய ற கூறுக்கு எத தவன\nஅளபுரு க்் ள் மத வைப பை டுகிறது?\na) 1 b) 2 c) 3 d) 5\n11. PHP – ன் எந த பை தி ப பு MySQLi\nபே ய ற கூ வற ஆதரிக்கிறது?\na) Version 2.0 b) Version 3.0\nc) Version 4.0 d) Version 5.0 ்ப\nகுதி – ஆ\nII. மூன்று வரிகளி ல வி ள்ட யளிக க வும்\n1. PHP – ல் உ ள் ள MySQLi\nபே ய ற கூறு ் வள கூறு ் .\n2. MySQLi பே ய ற கூறு எ ன் பை து எ ன் ன ?\n3. எத தவன ைவ் ய கா ன MySQLi\nபே ய ற கூறு ் ள் PHP – ல் உ ள் ள ன.\n4. இ வ ைத த ல் (Connection) ேற றும்\nமூடுதல் (Close) பே ய ற கூறு ் வள\nமை று பை டு த து ் .\n5. MySQLi வின ைல்் ளுக்கு சி ்\nஎடு த து க் ் காட்டு ் ள் தரு ் .\n6. இ வ ை ப பு ே ரம் (Connection String)\nஎ ன் றகா ல் எ ன் ன ?\n7. ைவ் ய தரவுதளம் எ ன் றகா ல் எ ன் ன ?\n8. mysqli_fetch_assoc() பே ய ற கூறு\nஎ ன் பை து எ ன் ன ?\n9. mysqli_connect_error() பே ய ற கூ வற\nைவர யறு.\n10. m y s q l i _ a f f e c t e d _ r o w s ( )\nபே ய ற கூ வற ைவர யறு.\n147 ்ப ா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல\nXII CompApp_Tamil version CHAPTER 09.indd 147 15/04/19 7:06 PM",
+        "proposedTranscription": {
+          "questionText": "PHP – ன் எந த பை தி ப பு MySQLi பே ய ற கூ வற ஆதரிக்கிறது?",
+          "options": [
+            "Version 2.0",
+            "Version 3.0",
+            "Version 4.0",
+            "Version 5.0"
+          ]
+        },
+        "correctAnswer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Function names, capitalisation, underscores, operators, quotes and punctuation are retained literally; do not execute or silently repair printed code",
+          "Unknown answers block approval; subject knowledge or lesson examples are not an official answer key",
+          "Stop before Section II heading; do not append damaged heading text to Version 5.0",
+          "Overlap for manual review: alternate Tamil Computer Applications 12-computer-applications-tamil-f43670d1, Q8, PDF 153, printed 143, candidate textbook-q-12-computer-applications-tamil-f43670d1-f94403f50defa043. Its saved choice D contains a Section II heading; the rendered exercise differs from the polluted raw value",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      }
+    ]
+  },
+  "duplicates": {
+    "scope": "Exact whitespace-normalized question/options and exact stem diagnostics across all saved book candidates plus existing review proposals. Source-level overlaps were visually compared separately; no semantic or global novelty claim.",
+    "beforeInsertionPreview": ".local/ch9-duplicate-preview.json",
+    "previewSha256": "13d70ea85b1936f6545ed5e3731bd1268a54f845923b9fd6f066e583720ad3cb",
+    "comparedSavedOtherIds": 17258,
+    "distinctContentSignatures": 11,
+    "signaturesAbsentPriorReviewQueue": 11,
+    "priorReviewQueueMatches": [],
+    "savedRecordMatches": [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-dd2569fb0b481f7c",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 1,
+        "page": 152,
+        "exactTargetNumbers": [
+          4
+        ],
+        "matchingStemTargetNumbers": [
+          4
+        ],
+        "rawOptions": [
+          "mysqli_query(“Connection Object”,”SQL Query”)",
+          "query(“Connection Object”,”SQL Query”)",
+          "mysql_query(“Connection Object”,”SQL Query”)",
+          "mysql_query(“SQL Query”)"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-7167f7f3daa06fd1",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 2,
+        "page": 152,
+        "exactTargetNumbers": [
+          5
+        ],
+        "matchingStemTargetNumbers": [
+          5
+        ],
+        "rawOptions": [
+          "mysqli_close(“Connection Object”);",
+          "close(“Connection Object”);",
+          "mysql_close(“Connection Object”);",
+          "mysqli_close(“Database Object”);"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-7495abd4607b89e1",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 3,
+        "page": 152,
+        "exactTargetNumbers": [],
+        "matchingStemTargetNumbers": [
+          6
+        ],
+        "rawOptions": [
+          "mysqli_connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+          "connect(“Server Name “,”User Name”,”Password”,”DB Name”); SQL SQL நிர வ்்த தில் பைன்பை டுத த ப பை டும் ஒரு ் ளம் ேகார்நத பேகா ழிய கா கும். (Domain specific language) இது உறவுத வ்த தரவுத த ள மே ்கா ண வே அ வேப பிலும் தரவை ை வை வேக்் வும் மே ்கா ண வே பே ய ய வும் பை ய ன் பை டுகிறது. வின ைல்் ள் Queries தரவுத த ள் அ ட் டைவ ை அ ல்் து அ ட்டைவ ை ் ளின் பதகா கு ப பிலிரு ந து தரவு அ ல்் து த ் ைவ்ப ப பை று ை தற்கான ்ட் டவள்மள வின ை ல் ஆகும். MySQL MySQL எ ன்பை து திறந த மூ ் உறவுநி வ் தரவுதள மே ் கா ண வே அ வேப பு ஆகும். (Open source RDBMS) Server ம ேவைய ் ம் ம ேவைய ் ம் எ ன்பை து நு ் ர் வு (Clients) எனப பை டும் ் ணினியின் அ ல்் து பிற நிர ல்் ளு க் ் கான பே ய ல் பைகா டு ் வள ைை ங் கும் ் ணினி ஆகும். தரவுத த ளம் Database தரவுத த ளம் எ ன் பை து ஒழு ங்்வேக்் ப பைட்ட தரவு ் ளின் பதகா குப பைகா கும். இதில் தரவு ் ள் ் ணினியில் மி ன் ன ணு மு வற யில் மத க் கி வை க்் ப பை ட் டு மத வைய கா ன மபைகாபதல் ் கா ம் அணு ் ப பை டுகி ன்ற ன. வினாக க ள் 143 ்ப ா ்ட ம் 09 PHP-உ ்ட ன் MySQL-ஐ இ ள ை த் தல",
+          "mysql_connect(“Server Name “,”User Name”,”Password”,”DB Name”);",
+          "mysqli_connect (“Database Object”);"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-045200e715f770cf",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 4,
+        "page": 153,
+        "exactTargetNumbers": [
+          7
+        ],
+        "matchingStemTargetNumbers": [
+          7
+        ],
+        "rawOptions": [
+          "Mysqli_connect() Function",
+          "Mysqli_close() Function",
+          "mysqli_select_data() Function",
+          "mysqli_affected_rows() Function"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-e30ee4bb85fa6f5e",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 5,
+        "page": 153,
+        "exactTargetNumbers": [
+          8
+        ],
+        "matchingStemTargetNumbers": [
+          8
+        ],
+        "rawOptions": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-dc459a60b45d1094",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 6,
+        "page": 153,
+        "exactTargetNumbers": [
+          9
+        ],
+        "matchingStemTargetNumbers": [
+          9
+        ],
+        "rawOptions": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-b69ed90d3c914183",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 7,
+        "page": 153,
+        "exactTargetNumbers": [
+          10
+        ],
+        "matchingStemTargetNumbers": [
+          10
+        ],
+        "rawOptions": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-f43670d1-f94403f50defa043",
+        "bookId": "12-computer-applications-tamil-f43670d1",
+        "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-9",
+        "number": 8,
+        "page": 153,
+        "exactTargetNumbers": [],
+        "matchingStemTargetNumbers": [
+          11
+        ],
+        "rawOptions": [
+          "Version 2.0",
+          "Version 3.0",
+          "Version 4.0",
+          "Version 5.0 ்ப குதி – ஆ"
+        ],
+        "reviewStatus": "needs_teacher_review",
+        "practicePublished": false
+      }
+    ],
+    "exactRawMatchingOccurrences": 6,
+    "visualSourceOverlapOccurrences": 8,
+    "alternateSource": {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "sourceFile": "12th_Std_Computer_Applications_TM_optimised.pdf",
+      "sourceSha256": "6a996d2f03b39af0272b59550cb60ec96c04b2995587416344c640d1556f20ca",
+      "medium": "Tamil",
+      "pages": [
+        {
+          "pdfPage": 152,
+          "printedPage": 142,
+          "image": ".local/ch9-source-inspection/12-computer-applications-tamil-f43670d1-pdf-152.png",
+          "sha256": "7b1750295fe69a85861ae79711e7e045257fdaa7bd5eb21d778ea5862943e505"
+        },
+        {
+          "pdfPage": 153,
+          "printedPage": 143,
+          "image": ".local/ch9-source-inspection/12-computer-applications-tamil-f43670d1-pdf-153.png",
+          "sha256": "b779716e9c6633d3c54e4dd1eb4d7bc51e3afdf46e41e149e25f8e4baaeb0d9c"
+        }
+      ],
+      "overlaps": [
+        {
+          "targetNumber": 4,
+          "alternateNumber": 1,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-dd2569fb0b481f7c",
+          "pdfPages": [
+            152
+          ],
+          "printedPages": [
+            142
+          ],
+          "finding": "Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 5,
+          "alternateNumber": 2,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-7167f7f3daa06fd1",
+          "pdfPages": [
+            152
+          ],
+          "printedPages": [
+            142
+          ],
+          "finding": "Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 6,
+          "alternateNumber": 3,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-7495abd4607b89e1",
+          "pdfPages": [
+            152,
+            153
+          ],
+          "printedPages": [
+            142,
+            143
+          ],
+          "finding": "Its saved choice B is polluted with glossary/footer text; visually compare the cross-page choices, do not copy that raw extraction",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 7,
+          "alternateNumber": 4,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-045200e715f770cf",
+          "pdfPages": [
+            153
+          ],
+          "printedPages": [
+            143
+          ],
+          "finding": "Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 8,
+          "alternateNumber": 5,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-e30ee4bb85fa6f5e",
+          "pdfPages": [
+            153
+          ],
+          "printedPages": [
+            143
+          ],
+          "finding": "Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 9,
+          "alternateNumber": 6,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-dc459a60b45d1094",
+          "pdfPages": [
+            153
+          ],
+          "printedPages": [
+            143
+          ],
+          "finding": "Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 10,
+          "alternateNumber": 7,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-b69ed90d3c914183",
+          "pdfPages": [
+            153
+          ],
+          "printedPages": [
+            143
+          ],
+          "finding": "Source stem and four printed choices repeat under different printed numbering; preserve both source identities",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        },
+        {
+          "targetNumber": 11,
+          "alternateNumber": 8,
+          "alternateCandidateId": "textbook-q-12-computer-applications-tamil-f43670d1-f94403f50defa043",
+          "pdfPages": [
+            153
+          ],
+          "printedPages": [
+            143
+          ],
+          "finding": "Its saved choice D contains a Section II heading; the rendered exercise differs from the polluted raw value",
+          "visualSourceOverlap": true,
+          "characterExactVerification": false
+        }
+      ],
+      "limitations": "Visual comparison of these two source pages only. Not a teacher verification or semantic deduplication; damaged Tamil and code punctuation remain held. No alternate candidate or prior Chapter 8 evidence changed."
+    }
+  },
+  "stores": [
+    {
+      "batchId": "unit-1",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-2\\decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-2\\decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-3",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-3\\decisions.json",
+      "sha256": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-3",
+      "held": 14,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 14,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-3\\decisions.json",
+      "sha256": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-4",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "sha256": "faf0f0793007bd61e81a2a2226600e4233ebda90fd7a590e864a73ebcd1cc8b0"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-4",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "sha256": "eb037dd880a0e220a934d1c565db9d2fd396b45e8d291858cec5f52a5903740e"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-5",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "sha256": "9f93a6484b884c0733e17dd73e8cca693555490e4ada426608901888728822a6"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-5",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "sha256": "0fa97c2244fe89a7b1caea085e78ffd62f346d6f6f70d4e53486cca465b41550"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-6",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "sha256": "61f5a4d078fdd9cd80157eb0e3496d334c694a8ad0589f809282fc646e60e9fa"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-6",
+      "held": 7,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 7,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "sha256": "7b5e3a51fe05597e11c35fed08253a9da96e5bf94bedb8956252af1b4d412868"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-7",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-7\\decisions.json",
+      "sha256": "c09ed82c76134fd3d9400b4c04e9b726efa5e30b80cd1b4da5feadac873d1a70"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-1",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-1\\decisions.json",
+      "sha256": "f9d859fd7838c8b0a6bf33a0a4008cf3b2bf92d0b06756a472962d95c4dee042"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-8",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-8\\decisions.json",
+      "sha256": "97ee0c39960972f31ec62c22fca5be6614600793c87d52e8bd4343b121c34664"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-9",
+      "held": 11,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 11,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-9\\decisions.json",
+      "sha256": "c3acdab72d18a88996597e1cd29af55bce6125cd1c5d81b00a1ef0ab4a7e3dbc"
+    },
+    {
+      "batchId": "unit-2",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e"
+    },
+    {
+      "batchId": "unit-3",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d"
+    },
+    {
+      "batchId": "unit-4",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e"
+    },
+    {
+      "batchId": "unit-5",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f"
+    },
+    {
+      "batchId": "commerce-12-commerce-tamil-d9e013d8-ch-27",
+      "held": 5,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 5,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\commerce-12-commerce-tamil-d9e013d8-ch-27\\decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e"
+    }
+  ],
+  "counts": {
+    "held": 227,
+    "pending": 227,
+    "reviewed": 0,
+    "approved": 0,
+    "needsCorrection": 0,
+    "rejected": 0,
+    "historyEvents": 0
+  },
+  "studentBank": {
+    "English": 995,
+    "Tamil": 0,
+    "legacySamplesExcluded": 12,
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "snapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "measurement": "Preserved authoritative local snapshot; no fresh production measurement"
+  },
+  "publishedBySubjectAndMedium": [
+    {
+      "subject": "Accountancy",
+      "medium": "English",
+      "books": 1,
+      "published": 94
+    },
+    {
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Advanced Tamil",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Agricultural Science",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Auditing",
+      "medium": "English",
+      "books": 1,
+      "published": 91
+    },
+    {
+      "subject": "Auditing",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Automobile Engineering",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Automobile Engineering",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Civil Engineering",
+      "medium": "English",
+      "books": 1,
+      "published": 47
+    },
+    {
+      "subject": "Basic Civil Engineering",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Electrical Engineering",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Electrical Engineering",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "books": 1,
+      "published": 93
+    },
+    {
+      "subject": "Basic Electronics Engineering",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Mechanical Engineering",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Basic Mechanical Engineering",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Bio-Botany",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Bio-Botany",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Bio-Zoology",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Bio-Zoology",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Biochemistry",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Biochemistry",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Botany",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Botany",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "books": 1,
+      "published": 28
+    },
+    {
+      "subject": "Business Mathematics & Statistics",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Chemistry",
+      "medium": "English",
+      "books": 2,
+      "published": 88
+    },
+    {
+      "subject": "Chemistry",
+      "medium": "Tamil",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Commerce",
+      "medium": "English",
+      "books": 1,
+      "published": 135
+    },
+    {
+      "subject": "Commerce",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Communicative English",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Computer Applications",
+      "medium": "English",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Computer Science",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Computer Science",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Computer Technology",
+      "medium": "English",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Economics",
+      "medium": "English",
+      "books": 1,
+      "published": 186
+    },
+    {
+      "subject": "Economics",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "English",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Ethics and Indian Culture",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Food Service Management",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Food Service Management",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "General Nursing",
+      "medium": "English",
+      "books": 1,
+      "published": 16
+    },
+    {
+      "subject": "General Nursing",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Geography",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Geography",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "History",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "History",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Home Science",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Home Science",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Mathematics",
+      "medium": "English",
+      "books": 2,
+      "published": 8
+    },
+    {
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Microbiology",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Microbiology",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Nursing Vocational",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Nursing Vocational",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Nutrition and Dietetics",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Office Management, Secretaryship & Typography",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Office Management, Secretaryship & Typography",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Physics",
+      "medium": "English",
+      "books": 2,
+      "published": 49
+    },
+    {
+      "subject": "Physics",
+      "medium": "Tamil",
+      "books": 2,
+      "published": 0
+    },
+    {
+      "subject": "Political Science",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Political Science",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Statistics",
+      "medium": "English",
+      "books": 1,
+      "published": 99
+    },
+    {
+      "subject": "Statistics",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Tamil",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Textiles and Dress Designing",
+      "medium": "English",
+      "books": 1,
+      "published": 61
+    },
+    {
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Zoology",
+      "medium": "English",
+      "books": 1,
+      "published": 0
+    },
+    {
+      "subject": "Zoology",
+      "medium": "Tamil",
+      "books": 1,
+      "published": 0
+    }
+  ],
+  "inventory": {
+    "pdfs": 82,
+    "pages": 24088,
+    "detectedChapters": 856,
+    "zeroPublishedEntries": 733,
+    "savedCandidateRecords": 17269,
+    "activeCandidateIds": 12682,
+    "inactiveArtifacts": 4587,
+    "sourceBoundedProposals": 212
+  },
+  "preservation": {
+    "file": "docs/chapter9-preservation.json",
+    "sha256": "b18cbeaabdfb0da8394ec4127e31c8d801b530188d2f0eaeddc2b8922db95d7e",
+    "previousCandidates": 17268,
+    "previousProposals": 201,
+    "uniqueProtectedFiles": 152,
+    "practiceSessions": 13,
+    "previousSourceImages": 56,
+    "appendedSourceImages": 8,
+    "currentSourceImages": 64
+  },
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch9-test.log",
+      "sha256": "9c605213d1cc09a9c00d4d4b7837fd2743ecf2b83a739764d0e4b0509ca0304d"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch9-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch9-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch9-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch9-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch9-mcqs-systematic-audit.log",
+      "sha256": "422e2deb3b7d275cc5a52d3b3f75f7b082594cf9cf6f2aac1442359349c3b412"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch9-build.log",
+      "sha256": "b154b14bde46da17634c6fe3359d9a1f8b215dc9bfbf80d23e5959131f3b3dcb"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch9-browser.log",
+      "sha256": "deec8d430d0991b840519534abae8ecb1c96b90b7ee03a61324314307ae96003"
+    }
+  ],
+  "focusedTests": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "fullTests": {
+    "total": 149,
+    "passed": 149,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "browserTests": {
+    "passed": 6,
+    "failed": 0,
+    "subjects": [
+      "Accountancy",
+      "Commerce",
+      "Chemistry"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ],
+    "scope": "Six selected Playwright cases in isolated local fixtures",
+    "memoryErrorLogged": false,
+    "uncaughtExceptionLogged": false
+  },
+  "initialAdded": 1,
+  "reruns": [
+    {
+      "round": 1,
+      "added": 0,
+      "log": ".local/ch9-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "f409a55626340ec14265ae04dcbcf698527befc7eeee6e6156cd36bc54e26aaa"
+    },
+    {
+      "round": 2,
+      "added": 0,
+      "log": ".local/ch9-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "f409a55626340ec14265ae04dcbcf698527befc7eeee6e6156cd36bc54e26aaa"
+    }
+  ],
+  "nextPriority": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "chapterNumber": 10,
+      "startPdfPage": 158,
+      "provisionalExercisePdfPages": [
+        174,
+        175
+      ],
+      "requirement": "Detected inventory entry, not confirmed MCQ coverage. Inspect actual section boundary, non-MCQ formats and scoped answer evidence before extraction; keep edition/hash separate"
+    }
+  ],
+  "notRun": [
+    "Unrelated full Playwright suite",
+    "Separate Unit 1 exported-manifest filesystem search",
+    "Production queries, imports, writes or deployment"
+  ],
+  "unresolved": [
+    "Eleven unknown answers and damaged Tamil require genuine teacher correction and separately evidenced answer verification",
+    "Q1 extracted punctuation in new.mysqli() and arrows needs visual reconciliation; no guessed corrected PHP",
+    "Printed function names, case, quotes and brackets, especially Q6, remain unverified",
+    "Q4-11 overlap another PDF with different numbering; alternate Q3/Q8 raw records have glossary/heading contamination and remain unchanged",
+    "Chapter 8 duplicate choices/raw-record conflict and all previous Physics/Computer/Commerce warnings remain intact",
+    "733 detected zero-publication entries are not confirmed missing MCQ sections"
+  ],
+  "legacyParserAudit": {
+    "books": 82,
+    "verified": 985,
+    "pending": 11244,
+    "meaning": "Heuristic parser classifications in the existing audit dataset; verified does not mean human approval or student-ready publication. Distinct from the resumable candidate inventory and local source proposals."
+  }
+}

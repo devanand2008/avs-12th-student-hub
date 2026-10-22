@@ -101,6 +101,7 @@ function PracticeContent() {
   const [quiz, setQuiz] = useState<QuizSession | null>(null);
   const [questions, setQuestions] = useState<PracticeQuestion[]>([]);
   const [answers, setAnswers] = useState<Record<string, Answer>>({});
+  const [drafts, setDrafts] = useState<Record<string, Answer>>({});
   const [flags, setFlags] = useState<Record<string, boolean>>({});
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -155,6 +156,11 @@ function PracticeContent() {
               mode: p.get("mode") || "quick",
               sourceFilter: p.get("sourceFilter") || "All",
               limit: Number(p.get("count") || 10),
+              bookId: p.get("bookId") || undefined,
+              search: p.get("search") || undefined,
+              allAvailable: p.get("allAvailable") === "true",
+              retrySessionId: p.get("retrySessionId") || undefined,
+              retryIncorrect: p.get("retryIncorrect") === "true",
             }),
           });
           data = await res.json();
@@ -277,17 +283,24 @@ function PracticeContent() {
     }
   }, [quiz]);
 
-  const retryCurrentPractice = () => {
+  const retryCurrentPractice = (
+    kind: "same" | "fresh" | "incorrect" = "same",
+  ) => {
     if (!quiz) return;
     try {
       localStorage.removeItem(storageKey.current);
     } catch {}
     const next = new URLSearchParams(query);
+    next.delete("retrySessionId");
+    next.delete("retryIncorrect");
+    if (kind !== "fresh") next.set("retrySessionId", quiz.id);
+    if (kind === "incorrect") next.set("retryIncorrect", "true");
     next.set("attempt", crypto.randomUUID());
     setLoading(true);
     setQuiz(null);
     setError("");
     setAnswers({});
+    setDrafts({});
     answerRef.current = {};
     setFlags({});
     flagRef.current = {};
@@ -337,10 +350,47 @@ function PracticeContent() {
   function choose(answer: Answer) {
     if (!quiz || busy || result) return;
     const question = questions[index];
+    if (quiz.mode !== "timed") {
+      setDrafts((previous) => ({ ...previous, [question.id]: answer }));
+      return;
+    }
     answerRef.current = { ...answerRef.current, [question.id]: answer };
     setAnswers(answerRef.current);
     persist();
     void sync().catch(() => {});
+  }
+
+  async function submitAnswer() {
+    if (!quiz || busyRef.current || result) return;
+    const question = questions[index], answer = drafts[question.id];
+    if (!answer) return;
+    busyRef.current = true;
+    setBusy(true);
+    setError("");
+    try {
+      const response = await fetch("/api/practice/answer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ sessionId: quiz.id, questionId: question.id, answer }),
+      });
+      const feedback = await response.json();
+      if (!response.ok) throw new Error(feedback.error || "Could not check your answer.");
+      answerRef.current = { ...answerRef.current, [question.id]: answer };
+      setAnswers(answerRef.current);
+      setQuestions((previous) => previous.map((q) => q.id === question.id ? {
+        ...q,
+        correctAnswer: feedback.correctAnswer,
+        explanation: feedback.explanation,
+        sourceAnswerPage: feedback.sourceAnswerPage,
+      } : q));
+      persist();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not submit your answer. Please retry.");
+    } finally {
+      busyRef.current = false;
+      setBusy(false);
+    }
+    await sync();
   }
 
   if (loading) {
@@ -381,7 +431,9 @@ function PracticeContent() {
 
   const question = questions[index];
   const exam = quiz.mode === "timed";
-  const selected = answers[question?.id];
+  const selected = drafts[question?.id] ?? answers[question?.id];
+  const submitted = answers[question?.id];
+  const showFeedback = Boolean(submitted && selected === submitted && question?.correctAnswer);
   const currentMarks = Object.entries(answers).filter(([qId, ans]) => {
     const q = questions.find((item) => item.id === qId);
     return q && q.correctAnswer === ans;
@@ -503,17 +555,25 @@ function PracticeContent() {
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <button
-                  onClick={retryCurrentPractice}
+                  onClick={() => retryCurrentPractice()}
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-all"
                 >
                   <RotateCcw size={14} /> Retry Practice
                 </button>
                 <button
-                  onClick={retryCurrentPractice}
+                  onClick={() => retryCurrentPractice("fresh")}
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-sm transition-all"
                 >
                   <RotateCcw size={14} /> Practice Again
                 </button>
+                {result.session.wrongCount > 0 && (
+                  <button
+                    className="btn-secondary"
+                    onClick={() => retryCurrentPractice("incorrect")}
+                  >
+                    Retry Incorrect Answers ({result.session.wrongCount})
+                  </button>
+                )}
                 <Link
                   href="/practice"
                   className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all"
@@ -790,12 +850,10 @@ function PracticeContent() {
 
             if (!optionText) return null;
 
-            // In practice mode (non-exam), provide immediate green/red feedback once selected
-            const hasSelected = !!selected;
             const isCorrect =
-              !exam && hasSelected && key === question.correctAnswer;
+              !exam && showFeedback && key === question.correctAnswer;
             const isIncorrectSelection =
-              !exam && isThisSelected && key !== question.correctAnswer;
+              !exam && showFeedback && isThisSelected && key !== question.correctAnswer;
 
             let cardStyle =
               "border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 bg-white";
@@ -861,8 +919,16 @@ function PracticeContent() {
           })}
         </fieldset>
 
-        {/* Instant Answer Feedback (Only in Quick Mode) */}
-        {selected && !exam && (
+        {!exam && (
+          <div className="space-y-2">
+            <button type="button" className="btn-primary" onClick={() => void submitAnswer()} disabled={busy || !drafts[question.id] || (showFeedback && selected === submitted)}>
+              {busy ? "Checking answer…" : "Submit Answer"}
+            </button>
+            <p className="text-xs text-slate-600">Select an option, then submit it for feedback. Unsubmitted choices are skipped when you finish.</p>
+          </div>
+        )}
+        {/* Feedback follows explicit individual submission. */}
+        {showFeedback && !exam && (
           <div
             className={`p-4 rounded-2xl border text-xs sm:text-sm leading-relaxed ${
               selected === question.correctAnswer

@@ -1,0 +1,419 @@
+{
+  "checkedAt": "2026-10-15T03:32:04.705Z",
+  "books": 82,
+  "candidateRecordsUnchanged": true,
+  "addedOnRerun": 0,
+  "savedReviewEvents": 0,
+  "candidateDigests": [
+    {
+      "bookId": "12-accountancy-english-c0f4ded3",
+      "count": 473,
+      "candidateDigest": "b14528626f1350759650cbda46a0b1ed98decc90da1831cc35250c6ded11ad38"
+    },
+    {
+      "bookId": "12-accountancy-tamil-6e7f5476",
+      "count": 161,
+      "candidateDigest": "5afb0cce422fde226039dbd9b2c38d9b792628fcffbd4dff90956c5dec9a4101"
+    },
+    {
+      "bookId": "12-advanced-tamil-tamil-6679b417",
+      "count": 98,
+      "candidateDigest": "4690171bc190fd5295f32c413b6038a09a59a152189ccef66179a7852a2b933c"
+    },
+    {
+      "bookId": "12-agricultural-science-tamil-1d871464",
+      "count": 147,
+      "candidateDigest": "0912a967e3ab132a57727151347f145cdb54ca63ca439e2e7751db1126c1fb4f"
+    },
+    {
+      "bookId": "12-auditing-english-cb18c74c",
+      "count": 187,
+      "candidateDigest": "5d1e0ae379dece578efe1958db6c68ede668a6ef573769597bd49b0d1056afd0"
+    },
+    {
+      "bookId": "12-auditing-tamil-e1982513",
+      "count": 140,
+      "candidateDigest": "20dc9ef34460d6e44d8439a7d1483732e8367b3b5e675de9790fd4b3812eba03"
+    },
+    {
+      "bookId": "12-basic-automobile-engineering-english-69f8e9f9",
+      "count": 434,
+      "candidateDigest": "472f9d593e346bf91456537d605e23676c29f9e41296445bfd7e8e625141f58f"
+    },
+    {
+      "bookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+      "count": 102,
+      "candidateDigest": "25a3198ebabf75aecb508ff7047f5738ee50ff836bd1d5cf023f94a0b0e8e658"
+    },
+    {
+      "bookId": "12-basic-civil-engineering-english-fc2d4128",
+      "count": 232,
+      "candidateDigest": "329a4a7a4a14f43f6c75d559b1c068a1ac0f81967052a3c3e6d42efb7a38548b"
+    },
+    {
+      "bookId": "12-basic-civil-engineering-tamil-122addb5",
+      "count": 94,
+      "candidateDigest": "4dc2b183a37a4989bd4587916bf527f7ce005759710e57c951f891ac78a3fe15"
+    },
+    {
+      "bookId": "12-basic-electrical-engineering-english-13c7fc7b",
+      "count": 418,
+      "candidateDigest": "be1577e2501fb2129eb8c5b2bd77564b9f25381476cdca5c42ec79bfd7edc29d"
+    },
+    {
+      "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+      "count": 170,
+      "candidateDigest": "65e1a15c7bd8863690236caf3c68b115a0877f8015729df1bda4b0c5f660a050"
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-english-983efd90",
+      "count": 163,
+      "candidateDigest": "cf38784bb4da0290c630ddf5e66b2a63acb9460c6e9b8174ecd30180498d0a41"
+    },
+    {
+      "bookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "count": 151,
+      "candidateDigest": "3aa137883930772d3ff42019da5881ec59f86646afb019f92eac4c5cccea12de"
+    },
+    {
+      "bookId": "12-basic-mechanical-engineering-english-e15ca391",
+      "count": 174,
+      "candidateDigest": "12eb2e0d9ce343e900584aebb53034e6300eb5192347a1e828b48ca4c9e6a04a"
+    },
+    {
+      "bookId": "12-basic-mechanical-engineering-tamil-49be34e2",
+      "count": 100,
+      "candidateDigest": "2948cd0d38d86457b6c199edab2fcbc5e0f394cc24a78ffafce667dd76354be3"
+    },
+    {
+      "bookId": "12-bio-botany-english-f15d4524",
+      "count": 317,
+      "candidateDigest": "9111e4383da09596f57b1c99782c8f1c82ea9a406403a64ddd6e16954c6fb8de"
+    },
+    {
+      "bookId": "12-bio-botany-tamil-51160855",
+      "count": 308,
+      "candidateDigest": "d4f94d420585b2df7eff2cee9b7ebfe6aea784a93e1f981dc61509fa51512141"
+    },
+    {
+      "bookId": "12-bio-zoology-english-7e848813",
+      "count": 232,
+      "candidateDigest": "52dba6caba8b3c3e920fa8e21cd247e36c1e027d38fa3c17bb6de0912b1a9bd1"
+    },
+    {
+      "bookId": "12-bio-zoology-tamil-2631f8e3",
+      "count": 238,
+      "candidateDigest": "abaf056708198fcd883a8a44049aab2bd2694e18107ff069c01fd14b2b5e2116"
+    },
+    {
+      "bookId": "12-biochemistry-english-dfd867ac",
+      "count": 151,
+      "candidateDigest": "a3a26bd668505463a268f17411b536540bf852b43967b6c75a6a53fff3573c27"
+    },
+    {
+      "bookId": "12-biochemistry-tamil-910cca11",
+      "count": 169,
+      "candidateDigest": "80247db38a41198bbd5a32b40566a6f6e1868b37ba431348cf2bb10c9f9e84a7"
+    },
+    {
+      "bookId": "12-botany-english-da5635aa",
+      "count": 367,
+      "candidateDigest": "1f25d1346297fa88b9f1d8d85f44f4830c9b1a9e4c9f90f12768073882d7bf3f"
+    },
+    {
+      "bookId": "12-botany-tamil-37a9b740",
+      "count": 340,
+      "candidateDigest": "93557b26554bad05701178f1f7fbc96e11cbb49711fbedb7bd839cbd47b8ba12"
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-english-5710bd23",
+      "count": 594,
+      "candidateDigest": "83924745f548ae4f3e3ac3dec7030ea9545fddd0ef57cac6c06e5ca566b1d1ae"
+    },
+    {
+      "bookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "count": 242,
+      "candidateDigest": "dcce04a9f55bb504a185d039f166078d6875ead0e7b23ac1d86e53510b53a2a2"
+    },
+    {
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "count": 436,
+      "candidateDigest": "2fa9d3dc41484e829d4f41df83a4deb817cb1a983cd40ee64bda59980cf66a3b"
+    },
+    {
+      "bookId": "12-chemistry-english-v2-0010d706",
+      "count": 288,
+      "candidateDigest": "9ecd3bdb03683d34989bbf515df70b4f249b90777638d9a44039d2f759db5251"
+    },
+    {
+      "bookId": "12-chemistry-tamil-v1-5fcd65a9",
+      "count": 156,
+      "candidateDigest": "a01abb0c029c08907edf14d55c62ddda99505afd231bd5799ff8e89909cc508d"
+    },
+    {
+      "bookId": "12-chemistry-tamil-v2-52192807",
+      "count": 178,
+      "candidateDigest": "5f8d16a39016ad64596cd2a26303f858491983a3e90396957ff40aea4937e722"
+    },
+    {
+      "bookId": "12-commerce-english-4f83c61b",
+      "count": 171,
+      "candidateDigest": "d95d8f4ecd4369375bc278b57295dbb80469ecd1fad47510f14574cf1771946d"
+    },
+    {
+      "bookId": "12-commerce-tamil-d9e013d8",
+      "count": 133,
+      "candidateDigest": "0eb72758b26e3952163e84fedaf112285f38554716212d38cdf0176880a24ca4"
+    },
+    {
+      "bookId": "12-communicative-english-english-10e4b8ba",
+      "count": 95,
+      "candidateDigest": "6bd5eddb16df94812d3d4a33fbce55fcfdb6d7e5c9858b2412c00cc12699fce5"
+    },
+    {
+      "bookId": "12-computer-applications-english-627c1490",
+      "count": 531,
+      "candidateDigest": "016a651f71b0ae4065bc326a8a4d10486346d796dd118436382645fb06e7a3f5"
+    },
+    {
+      "bookId": "12-computer-applications-english-ccd483a9",
+      "count": 531,
+      "candidateDigest": "621491e065a52214fda9b42f29044c325aa6f9b7eff60a7ba7029e460d8b330e"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "count": 207,
+      "candidateDigest": "3eeef7009bd32d4c7227107113b6a8f804e4b733029d2dac8f678b1b72ce30d5"
+    },
+    {
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "count": 207,
+      "candidateDigest": "2e850211be93a3637701dc653b9f2c7e6458addf4f8750bd59e1e2661401ef7e"
+    },
+    {
+      "bookId": "12-computer-science-english-37bdae5b",
+      "count": 327,
+      "candidateDigest": "df4ccc7eb6a609c1603b3d5b432cb0b0e2e02d1c197756af0abe680c771a9d40"
+    },
+    {
+      "bookId": "12-computer-science-tamil-d5aa7dd4",
+      "count": 152,
+      "candidateDigest": "9597499b9688aafb2e4a256f297718e1e036183363fb214c2e77e12adaaf175a"
+    },
+    {
+      "bookId": "12-computer-technology-english-293bf656",
+      "count": 238,
+      "candidateDigest": "1366695d5b1f5daa05fd889c44b356c6a12e472c015004b238e3dba8f7735315"
+    },
+    {
+      "bookId": "12-computer-technology-english-cf787554",
+      "count": 238,
+      "candidateDigest": "c03935fc59a3b7c3cc1b9bdcbee5a267ed8eb319be40e194c29144ab1ff831df"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "count": 88,
+      "candidateDigest": "9d2e74fbcc9a1fffa303f7c8c65b98d7e101a64366f2484b25ac749c45babd64"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-cff5867a",
+      "count": 88,
+      "candidateDigest": "9dbf1c0de03df60351cf6b3f7fcac4fa45974044cb327f944e968d7df359e187"
+    },
+    {
+      "bookId": "12-economics-english-5418ce45",
+      "count": 432,
+      "candidateDigest": "e690a1e7e6404840b167eb972270248760329ca322746eb257c617c827aa2380"
+    },
+    {
+      "bookId": "12-economics-tamil-c7590e3f",
+      "count": 248,
+      "candidateDigest": "755a6e7dd94366c4b36e151aa1809db6e4df09db160d59b57a7d473b29098060"
+    },
+    {
+      "bookId": "12-english-english-b9d1c4c3",
+      "count": 100,
+      "candidateDigest": "9f6d462056dc1cd1d4649879159f7dddc53ec81ceb3b2eaa3568fb575329f1cc"
+    },
+    {
+      "bookId": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+      "count": 92,
+      "candidateDigest": "27a9f30e50e42ff1ee002212f83f7e567b1b3c2f44382ee404b61f990e55b424"
+    },
+    {
+      "bookId": "12-food-service-management-english-111451e7",
+      "count": 187,
+      "candidateDigest": "deae82596a525c912d729b01634c5bb87021e93f9ec297c9a7599658b243c5ed"
+    },
+    {
+      "bookId": "12-food-service-management-tamil-e2061fb1",
+      "count": 149,
+      "candidateDigest": "7dddbdc0861e470ffebd882519a545602c5a901674251ea07d4e37689585ecac"
+    },
+    {
+      "bookId": "12-general-nursing-english-5c87aafc",
+      "count": 247,
+      "candidateDigest": "1ed145d2f786a02c9fd6aa41d7917f504c7f901732420a80f1690bccb91837dc"
+    },
+    {
+      "bookId": "12-general-nursing-tamil-b39f5ab1",
+      "count": 205,
+      "candidateDigest": "9307fd9c002b050cd5da313e19ab3f8bf68f443fd4bc26e588d548fd7a6039c2"
+    },
+    {
+      "bookId": "12-geography-english-24059775",
+      "count": 148,
+      "candidateDigest": "72cc9f8b3bec81ee867941c396edab17d971009a1115ec779aaf599305d67cfd"
+    },
+    {
+      "bookId": "12-geography-tamil-ba849e46",
+      "count": 83,
+      "candidateDigest": "d7664c0e37374086585c3cf4fc96522bc632cb6854211798d842cf96fbbe3c3a"
+    },
+    {
+      "bookId": "12-history-english-3cd2e4c2",
+      "count": 230,
+      "candidateDigest": "c18b04c8fa31226369ec303b06aa317b48f86e40d1ada8f45035970111ecb909"
+    },
+    {
+      "bookId": "12-history-tamil-3c88c869",
+      "count": 205,
+      "candidateDigest": "70ef4b7fc9978774df566b8cabc0f5ffc4914d67e2f414a3eb81a6b46a65ddb0"
+    },
+    {
+      "bookId": "12-home-science-english-e5c3e008",
+      "count": 108,
+      "candidateDigest": "527e7c4365bef50be85d349e9ff044fd45f5ebc43a5f9a02f3fb3823bdce8309"
+    },
+    {
+      "bookId": "12-home-science-tamil-0cbbe34e",
+      "count": 88,
+      "candidateDigest": "4e35b4646dfae8ce201b7645d27609223729f80d7f2c7edeab5ac96fdcb6a3d9"
+    },
+    {
+      "bookId": "12-mathematics-english-v1-e33ceed7",
+      "count": 262,
+      "candidateDigest": "d03af991abba3a08eda6b3e62a5d4af9c1e5ad563c51db9664ea88d05df3643a"
+    },
+    {
+      "bookId": "12-mathematics-english-v2-d4925ec0",
+      "count": 218,
+      "candidateDigest": "2861f9ae00a199523444e0c9af616f0915796f12a8cf5a5ee6a57f7bfa677e1f"
+    },
+    {
+      "bookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "count": 125,
+      "candidateDigest": "598a129d7bbbe402c2d718b53594bce5db898626f92fd86e66fd1ecef273fbba"
+    },
+    {
+      "bookId": "12-mathematics-tamil-v2-f8732624",
+      "count": 117,
+      "candidateDigest": "0d1379e8be33c326b694328cb9f5144b7cac4b36f05da835eed9cbee90f22781"
+    },
+    {
+      "bookId": "12-microbiology-english-6a36a404",
+      "count": 317,
+      "candidateDigest": "2ee7a8177064a951990f64240f76f4d0fffb2e24374892f8ba11f05b01e32f5c"
+    },
+    {
+      "bookId": "12-microbiology-tamil-a879259a",
+      "count": 128,
+      "candidateDigest": "c554df0703348317f1ea3ea04a8ae22ca5eeba73f3222a69bb00f195d5e1f0fa"
+    },
+    {
+      "bookId": "12-nursing-vocational-english-6c60782a",
+      "count": 121,
+      "candidateDigest": "0b9e55517a0ecf353208e824235e68f6678413684cb34479539b46a9f9629c88"
+    },
+    {
+      "bookId": "12-nursing-vocational-tamil-7f44a760",
+      "count": 121,
+      "candidateDigest": "4c8cc45ef62bf349353908bb70deb33371b0935999a6b7f05caba4b446c83c06"
+    },
+    {
+      "bookId": "12-nutrition-and-dietetics-english-3d2e918e",
+      "count": 86,
+      "candidateDigest": "bddba392c179db47d6fdae0871885b4a7a8caa459dc9181309c7a24e62a10775"
+    },
+    {
+      "bookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+      "count": 526,
+      "candidateDigest": "bf14ca0f6fa900bcc1cdc30862ae9faf9056c388d197e8864ef943de393c986a"
+    },
+    {
+      "bookId": "12-office-management-secretaryship-typography-tamil-241b6edf",
+      "count": 102,
+      "candidateDigest": "d89f80bd50bbff72d3ecca62cae31bd2ee5c5e4936bfe22f4bb91e087680769c"
+    },
+    {
+      "bookId": "12-physics-english-v1-1b1de8f8",
+      "count": 76,
+      "candidateDigest": "fcebd57abb1d6968cf6629ba4756260601e902934596a5ea6993fdff8f7506b0"
+    },
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "count": 292,
+      "candidateDigest": "c8c26a043b034f5349aa79a629c603f7fdb3edfb29d69445d1f147cce5633443"
+    },
+    {
+      "bookId": "12-physics-tamil-v1-c1623725",
+      "count": 76,
+      "candidateDigest": "79ee98c6243c50b7a694652eb294dfc5adb782aa58a0fa89a8379d6c84b4b858"
+    },
+    {
+      "bookId": "12-physics-tamil-v2-fb1fa4de",
+      "count": 151,
+      "candidateDigest": "a5b931e124f7f7963925d21d979a1431e47c74be6c1395e7a7a8541f9235bfd4"
+    },
+    {
+      "bookId": "12-political-science-english-db4a2e0c",
+      "count": 202,
+      "candidateDigest": "f2c2106f43edd32e672707e5a9546bc5ee9f50597747bfad810bfa47de49e97b"
+    },
+    {
+      "bookId": "12-political-science-tamil-5da94964",
+      "count": 149,
+      "candidateDigest": "11e9a278b4a7f6fb3d1875004cc68d4befeb317b854c436688d8aca061107b8d"
+    },
+    {
+      "bookId": "12-statistics-english-1489a12e",
+      "count": 165,
+      "candidateDigest": "508f4bb28b3ca2ebf0e70cf3bc9ac16a6922f9a79a74671683fb12cace177074"
+    },
+    {
+      "bookId": "12-statistics-tamil-c1143d1d",
+      "count": 159,
+      "candidateDigest": "9f00bdc8bf1803781d025f078e2989d8fc1605750a374cb894f22e56f3d5a8dd"
+    },
+    {
+      "bookId": "12-tamil-tamil-7db1698f",
+      "count": 67,
+      "candidateDigest": "13a820ef958752c50ffcea5c841140da31a3cae220d7162d3e6688076b653596"
+    },
+    {
+      "bookId": "12-textile-technology-tamil-648797c8",
+      "count": 107,
+      "candidateDigest": "1dd04b1cac64e1ff9261343a8163b82880f1c34ed3ea8c2ffd1f143d4f57985c"
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "count": 275,
+      "candidateDigest": "3a7777e28752521e236c3cb4914b92e62c9b01e405d1df6a2a4715c576ec4ccd"
+    },
+    {
+      "bookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "count": 107,
+      "candidateDigest": "c1cb225b60be977b1825fb8669b667e00b7b361cc2fa53dde2c4389691541efa"
+    },
+    {
+      "bookId": "12-zoology-english-788d2d32",
+      "count": 252,
+      "candidateDigest": "4cd58611fd4c0f07486f9f5d4f9cbd09087e208910bc15ac707f4d9411561c70"
+    },
+    {
+      "bookId": "12-zoology-tamil-3c154dab",
+      "count": 261,
+      "candidateDigest": "cc77fa5723a7f35f227cc3821c8241f80721439767c2dafd031c6ccdddcb1d19"
+    }
+  ]
+}

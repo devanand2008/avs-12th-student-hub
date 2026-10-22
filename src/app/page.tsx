@@ -21,9 +21,23 @@ import Image from "next/image";
 import Link from "next/link";
 import BrandLogo from "@/components/layout/BrandLogo";
 import InstallButton from "@/components/pwa/InstallButton";
+import StudentReadySummary from "@/components/practice/StudentReadySummary";
 
 
 const features = [
+  {
+    index: "00",
+    title: "Study Resources",
+    tag: "EXPLORE AND LEARN",
+    icon: BookOpen,
+    href: "/resources",
+    action: "Browse Study Resources",
+    color: "from-blue-700 via-blue-600 to-cyan-600",
+    tagBg: "bg-blue-50 text-blue-700 border-blue-200",
+    iconGradient: "from-blue-700 to-cyan-600",
+    description: "Explore official examination paper collections, useful reading and subject video lessons with clear source information.",
+    highlights: ["Search by subject and medium", "Original publisher links", "Watch lessons inside the app"],
+  },
   {
     index: "01",
     title: "Handwritten Notes",
@@ -44,20 +58,20 @@ const features = [
   },
   {
     index: "02",
-    title: "In-Book & Creative MCQs",
+    title: "Book-Back One-Mark Practice",
     tag: "EXAM QUESTION BANK",
     icon: CheckSquare,
-    href: "/practice",
+    href: "/textbook-practice",
     action: "Practice MCQs",
     color: "from-cyan-500 via-teal-500 to-emerald-500",
     tagBg: "bg-cyan-50 text-teal-700 border-cyan-200",
     iconGradient: "from-cyan-500 to-teal-600",
     description:
-      "Distinctly separated In-Book and Out-of-Book practice sets with full explanations and instant answer modes.",
+      "Choose a medium, subject, textbook and chapter to practise available published questions as web MCQs.",
     highlights: [
-      "Instant feedback & exam modes",
-      "Official TN board answer keys",
-      "Step reasoning for each question",
+      "Instant feedback and marks",
+      "Published questions only",
+      "Unlimited repeat practice",
     ],
   },
   {
@@ -122,8 +136,6 @@ const subjects = [
     name: "Physics",
     image: "physics",
     tag: "SCIENCE · CORE",
-    units: "10 Units",
-    mcqs: "160 MCQs",
     color: "from-blue-600 to-cyan-500",
     tagBg: "bg-blue-50 text-blue-700 border-blue-200",
     borderHover: "hover:border-blue-400",
@@ -136,8 +148,6 @@ const subjects = [
     name: "Chemistry",
     image: "chemistry",
     tag: "SCIENCE · CORE",
-    units: "15 Units",
-    mcqs: "210 MCQs",
     color: "from-emerald-500 to-teal-500",
     tagBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
     borderHover: "hover:border-emerald-400",
@@ -150,8 +160,6 @@ const subjects = [
     name: "Mathematics",
     image: "mathematics",
     tag: "SCIENCE & ENG",
-    units: "12 Units",
-    mcqs: "180 MCQs",
     color: "from-amber-500 to-orange-500",
     tagBg: "bg-amber-50 text-amber-700 border-amber-200",
     borderHover: "hover:border-amber-400",
@@ -164,8 +172,6 @@ const subjects = [
     name: "Computer Science",
     image: "computer-science",
     tag: "CS STREAM",
-    units: "16 Chapters",
-    mcqs: "150 MCQs",
     color: "from-indigo-600 to-purple-600",
     tagBg: "bg-indigo-50 text-indigo-700 border-indigo-200",
     borderHover: "hover:border-indigo-400",
@@ -178,8 +184,6 @@ const subjects = [
     name: "Bio-Botany",
     image: "botany",
     tag: "BIO STREAM",
-    units: "10 Chapters",
-    mcqs: "120 MCQs",
     color: "from-teal-500 to-emerald-600",
     tagBg: "bg-teal-50 text-teal-700 border-teal-200",
     borderHover: "hover:border-teal-400",
@@ -192,8 +196,6 @@ const subjects = [
     name: "Bio-Zoology",
     image: "zoology",
     tag: "BIO STREAM",
-    units: "12 Chapters",
-    mcqs: "130 MCQs",
     color: "from-rose-500 to-pink-600",
     tagBg: "bg-rose-50 text-rose-700 border-rose-200",
     borderHover: "hover:border-rose-400",
@@ -206,8 +208,6 @@ const subjects = [
     name: "பொதுத்தமிழ்",
     image: "tamil",
     tag: "LANGUAGE",
-    units: "8 இயல்கள்",
-    mcqs: "140 MCQs",
     color: "from-red-500 to-rose-600",
     tagBg: "bg-red-50 text-red-700 border-red-200",
     borderHover: "hover:border-red-400",
@@ -220,8 +220,6 @@ const subjects = [
     name: "General English",
     image: "english",
     tag: "LANGUAGE",
-    units: "6 Units",
-    mcqs: "110 MCQs",
     color: "from-sky-500 to-blue-600",
     tagBg: "bg-sky-50 text-sky-700 border-sky-200",
     borderHover: "hover:border-sky-400",
@@ -309,8 +307,8 @@ export default function HomePage() {
           {/* 4 Stat Highlights in Glassmorphic Cards */}
           <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-3.5 sm:grid-cols-4">
             {[
-              { value: "8 Core", label: "Subjects Covered", icon: BookOpen, color: "text-blue-600" },
-              { value: "4,500+", label: "Unit-wise MCQs", icon: CheckSquare, color: "text-teal-600" },
+              { value: "Class 12", label: "Textbook Library", icon: BookOpen, color: "text-blue-600" },
+              { value: "Practice", label: "Published Web MCQs", icon: CheckSquare, color: "text-teal-600" },
               { value: "100%", label: "Handwritten Notes", icon: FileText, color: "text-indigo-600" },
               { value: "AI", label: "Tamil + English Tutor", icon: Languages, color: "text-purple-600" },
             ].map((stat) => (
@@ -330,6 +328,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <div className="mx-auto w-full max-w-7xl px-4 py-8">
+        <StudentReadySummary />
+      </div>
 
       {/* 5 Academic Knowledge Pillars (Colorful Card Design) */}
       <section id="features" className="relative px-4 py-20 sm:py-28 bg-[#f8fbff]">
@@ -503,9 +505,9 @@ export default function HomePage() {
                   <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                     <div className="flex items-center gap-1.5 text-slate-400 font-bold text-[11px]">
                       <Layers className="w-3.5 h-3.5 text-blue-500" />
-                      <span>{subject.units}</span>
+                      <span>Textbook resources</span>
                       <span>·</span>
-                      <span className="text-teal-600">{subject.mcqs}</span>
+                      <span className="text-teal-600">Check availability</span>
                     </div>
                     <span className="inline-flex items-center gap-1 font-bold text-blue-600 group-hover:translate-x-1 transition-transform">
                       <span>Explore</span>
@@ -634,7 +636,7 @@ export default function HomePage() {
                         Physics: Electrostatics
                       </div>
                       <div className="text-[10px] text-slate-500">
-                        160 MCQs · 10 Derivations
+                        Choose an available chapter
                       </div>
                     </div>
 

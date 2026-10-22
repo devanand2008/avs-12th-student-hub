@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-19T06:07:43.168Z",
+  "baseline": ".local/science-batch-baseline.json",
+  "unchangedOriginalCandidates": 17281,
+  "unchangedEarlierSourceProposals": 415,
+  "protectedFiles": 262,
+  "unchangedEarlierSourceImages": 135,
+  "currentSourceImages": 151,
+  "addedCandidateRecords": [],
+  "removedActiveIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

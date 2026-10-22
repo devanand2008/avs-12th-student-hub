@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-10-20T07:43:21.980Z",
+  "inventory": {
+    "physicalVideos": 37,
+    "uniqueVideos": 33,
+    "duplicateCopies": 4,
+    "pdfNotes": 13,
+    "newVideoRecords": 28,
+    "existingVideoRecords": 5,
+    "englishVideos": 19,
+    "tamilVideos": 14
+  },
+  "verification": {
+    "unitTests": {
+      "command": "npm test",
+      "tests": 177,
+      "passed": 177,
+      "failed": 0,
+      "skipped": 0,
+      "sourceLog": ".local/video-catalog/unit-tests-final.log",
+      "priorRun": {
+        "tests": 177,
+        "passed": 176,
+        "failed": 1,
+        "skipped": 0,
+        "sourceLog": ".local/video-catalog/unit-tests.log",
+        "fix": "Exact adapter subject expectations updated to include the new common English subject; isolated adapter and full suite rerun passed."
+      }
+    },
+    "focusedMaterialTests": 5,
+    "typecheck": "passed",
+    "lint": "passed",
+    "localBuild": "passed",
+    "vercelBuild": "passed",
+    "materialScan": "passed",
+    "materialImport": "46 published resources verified",
+    "readOnlyMaterialVerification": "46 resources verified; no metadata writes",
+    "localPlayback": 33,
+    "hostedPlayback": 33,
+    "browserCases": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "login": true,
+        "cards": 33,
+        "englishFilter": 19,
+        "tamilFilter": 14,
+        "englishAndTamilPlayback": true,
+        "tamilSearch": true,
+        "emptySearch": true,
+        "noHorizontalOverflow": true
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "login": true,
+        "cards": 33,
+        "englishFilter": 19,
+        "tamilFilter": 14,
+        "englishAndTamilPlayback": true,
+        "tamilSearch": true,
+        "emptySearch": true,
+        "noHorizontalOverflow": true
+      }
+    ],
+    "fullPlaywrightSuite": "not run; scoped live desktop/mobile browser verification performed"
+  },
+  "preservation": {
+    "checkedAt": "2026-10-20T07:37:56.255Z",
+    "learning_resources": {
+      "before": 18,
+      "after": 46,
+      "existingRowsPreserved": true,
+      "added": 28
+    },
+    "avs_curriculum": {
+      "before": 7222,
+      "after": 7252,
+      "existingRowsPreserved": true,
+      "added": 30
+    },
+    "avs_quiz_sessions": {
+      "count": 13,
+      "unchanged": true
+    },
+    "avs_activity": {
+      "count": 8,
+      "unchanged": true
+    },
+    "textbook_mcq_candidates": {
+      "count": 12229,
+      "unchanged": true
+    },
+    "avs_questions": {
+      "count": 3039,
+      "unchanged": true
+    }
+  },
+  "postBrowserHistory": {
+    "checkedAt": "2026-10-20T07:41:49.600Z",
+    "avs_quiz_sessions": {
+      "unchanged": true,
+      "count": 13
+    },
+    "avs_activity": {
+      "unchanged": true,
+      "count": 8
+    }
+  },
+  "release": {
+    "id": 418091650,
+    "tag": "video-lessons-2026-10-20",
+    "assets": 28,
+    "sourceDigestsMatch": true
+  },
+  "deployment": {
+    "id": "dpl_6Fythrjh7HPmkqBavYubShkYinUv",
+    "project": "avs-12th-student-hub",
+    "projectId": "prj_YASnKdy7xVDdXNHhm4oqa19X2iZX",
+    "productionUrl": "https://avs-12th-student-hub.vercel.app",
+    "videoUrl": "https://avs-12th-student-hub.vercel.app/videos",
+    "promoted": true,
+    "publicAliasVerified": true,
+    "studentLogin": true,
+    "eligiblePracticeQuestions": 995,
+    "gitPushed": false
+  }
+}

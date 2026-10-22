@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-10-18T17:39:56.164Z",
+  "baseline": ".local/allsubject-baseline.json",
+  "unchangedOriginalCandidates": 17274,
+  "unchangedEarlierSourceProposals": 305,
+  "protectedFiles": 218,
+  "unchangedEarlierSourceImages": 103,
+  "currentSourceImages": 135,
+  "addedCandidateRecords": [
+    {
+      "id": "textbook-bounded-12-history-english-3cd2e4c2-c240c175a51a28ac",
+      "bookId": "12-history-english-3cd2e4c2",
+      "chapterId": "tb-12-history-english-3cd2e4c2-ch-1",
+      "page": 17
+    },
+    {
+      "id": "textbook-bounded-12-history-english-3cd2e4c2-a71ebaf04294310f",
+      "bookId": "12-history-english-3cd2e4c2",
+      "chapterId": "tb-12-history-english-3cd2e4c2-ch-2",
+      "page": 32
+    },
+    {
+      "id": "textbook-bounded-12-history-english-3cd2e4c2-a2cfc8f931136789",
+      "bookId": "12-history-english-3cd2e4c2",
+      "chapterId": "tb-12-history-english-3cd2e4c2-ch-2",
+      "page": 32
+    },
+    {
+      "id": "textbook-bounded-12-history-english-3cd2e4c2-27bee71d0534c56a",
+      "bookId": "12-history-english-3cd2e4c2",
+      "chapterId": "tb-12-history-english-3cd2e4c2-ch-3",
+      "page": 43
+    },
+    {
+      "id": "textbook-bounded-12-history-english-3cd2e4c2-81e84330c815a064",
+      "bookId": "12-history-english-3cd2e4c2",
+      "chapterId": "tb-12-history-english-3cd2e4c2-ch-3",
+      "page": 44
+    },
+    {
+      "id": "textbook-bounded-12-history-tamil-3c88c869-eaa4ce9350e8b2f3",
+      "bookId": "12-history-tamil-3c88c869",
+      "chapterId": "tb-12-history-tamil-3c88c869-ch-1",
+      "page": 18
+    },
+    {
+      "id": "textbook-bounded-12-history-tamil-3c88c869-44f4d7e377f27573",
+      "bookId": "12-history-tamil-3c88c869",
+      "chapterId": "tb-12-history-tamil-3c88c869-ch-2",
+      "page": 34
+    }
+  ],
+  "removedActiveIds": [
+    "textbook-section-12-microbiology-english-6a36a404-9adf93c98c8a9a6c",
+    "textbook-section-12-microbiology-english-6a36a404-43b255ce2c623099",
+    "textbook-section-12-microbiology-english-6a36a404-60ff666400c83085",
+    "textbook-section-12-microbiology-english-6a36a404-3b74b73c6bffbd0b",
+    "textbook-section-12-microbiology-english-6a36a404-710382734a6de483"
+  ],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

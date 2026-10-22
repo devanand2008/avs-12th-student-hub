@@ -11,6 +11,7 @@ import {
 } from "../src/lib/learning-materials";
 import type { HandwrittenNote, VideoLesson } from "../src/types";
 import { materialId, mp4Duration } from "./lib/material-inspection";
+import videoAliases from "../src/lib/video-source-aliases.json";
 
 loadEnvConfig(process.cwd());
 const root = path.resolve("book's");
@@ -36,6 +37,14 @@ async function walk(directory: string): Promise<string[]> {
 async function main() {
   const files = await walk(root);
   const known = new Set(SOURCE_MATERIALS.map((item) => item.file));
+  for (const alias of videoAliases) {
+    if (!known.has(alias.canonicalFile)) throw new Error(`Unknown canonical video: ${alias.file}`);
+    const buffer = await readFile(path.join(root, alias.file));
+    const original = await readFile(path.join(root, alias.canonicalFile));
+    if ([buffer, original].some((value) => createHash("sha256").update(value).digest("hex") !== alias.sha256))
+      throw new Error(`Duplicate source changed: ${alias.file}`);
+    known.add(alias.file);
+  }
   const unknown = files.filter((file) => !known.has(file));
   const missing = [...known].filter((file) => !files.includes(file));
   if (unknown.length || missing.length)
@@ -47,9 +56,11 @@ async function main() {
   const inspected = [];
   for (const source of SOURCE_MATERIALS) {
     const buffer = await readFile(path.join(root, source.file));
-    if (!buffer.length || buffer.length > LEARNING_UPLOAD_LIMIT)
+    if (!buffer.length || (!source.hostedUrl && buffer.length > LEARNING_UPLOAD_LIMIT))
       throw new Error(`Invalid file size: ${source.file}. Limit is 50 MiB.`);
     const sha256 = createHash("sha256").update(buffer).digest("hex");
+    if (source.hostedUrl && (source.kind !== "video" || source.sha256 !== sha256 || source.hostedUrl !== `https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/${sha256}.mp4`))
+      throw new Error(`Hosted source integrity mismatch: ${source.file}`);
     let pageCount = 0;
     let durationSeconds = 0;
     if (source.kind === "note") {
@@ -101,45 +112,40 @@ async function main() {
       "Could not read learning_resources. Apply the existing database migrations first.",
     );
   const rows = new Map((existing.data || []).map((row) => [row.id, row]));
-  const bucket = await client.storage.getBucket(bucketName);
-  if (bucket.error || !bucket.data)
-    throw new Error(
-      "The learning-materials bucket is missing. Apply the learning-resources migration first.",
-    );
-  if (
-    !verify &&
-    ((bucket.data.file_size_limit != null &&
-      bucket.data.file_size_limit < LEARNING_UPLOAD_LIMIT) ||
-      !bucket.data.allowed_mime_types?.includes("video/mp4"))
-  ) {
-    const updated = await client.storage.updateBucket(bucketName, {
-      public: bucket.data.public,
-      fileSizeLimit: Math.max(
-        bucket.data.file_size_limit || LEARNING_UPLOAD_LIMIT,
-        LEARNING_UPLOAD_LIMIT,
-      ),
-      allowedMimeTypes: [
-        ...new Set([
-          ...(bucket.data.allowed_mime_types || []),
-          "application/pdf",
-          "image/jpeg",
-          "image/png",
-          "video/mp4",
-        ]),
-      ],
-    });
-    if (updated.error)
-      throw new Error(
-        "Could not enable 50 MiB material uploads in Supabase Storage.",
-      );
-    console.log(
-      "Supabase Storage configured for notes and MP4 videos up to 50 MiB.",
-    );
+  // Existing resources and externally hosted videos need no Storage admin calls.
+  // Only inspect/change the bucket when a missing resource actually needs upload.
+  const needsStorageUpload = !verify && inspected.some(
+    (item) => !item.source.hostedUrl && !rows.has(item.id),
+  );
+  if (needsStorageUpload) {
+    const bucket = await client.storage.getBucket(bucketName);
+    if (bucket.error || !bucket.data)
+      throw new Error("The learning-materials bucket is unavailable. Check the storage service before uploading.");
+    if (!bucket.data.public)
+      throw new Error("This app requires public learning-materials URLs. Review the bucket configuration.");
+    if (
+      (bucket.data.file_size_limit != null &&
+        bucket.data.file_size_limit < LEARNING_UPLOAD_LIMIT) ||
+      !bucket.data.allowed_mime_types?.includes("video/mp4")
+    ) {
+      const updated = await client.storage.updateBucket(bucketName, {
+        public: bucket.data.public,
+        fileSizeLimit: Math.max(
+          bucket.data.file_size_limit || LEARNING_UPLOAD_LIMIT,
+          LEARNING_UPLOAD_LIMIT,
+        ),
+        allowedMimeTypes: [
+          ...new Set([
+            ...(bucket.data.allowed_mime_types || []),
+            "application/pdf", "image/jpeg", "image/png", "video/mp4",
+          ]),
+        ],
+      });
+      if (updated.error)
+        throw new Error("Could not enable 50 MiB material uploads in Supabase Storage.");
+      console.log("Supabase Storage configured for notes and MP4 videos up to 50 MiB.");
+    }
   }
-  if (!bucket.data.public)
-    throw new Error(
-      "This app requires public learning-materials URLs. Review the bucket configuration.",
-    );
 
   const report = [];
   for (const item of inspected) {
@@ -157,12 +163,11 @@ async function main() {
         source.kind === "note" ? "notes/imported" : "videos/imported";
       const fileName = sha256 + (source.kind === "note" ? ".pdf" : ".mp4");
       const storagePath = `${directory}/${fileName}`;
-      const listed = await client.storage
-        .from(bucketName)
-        .list(directory, { search: fileName });
-      if (listed.error)
+      const listed = source.hostedUrl ? null : await client.storage
+        .from(bucketName).list(directory, { search: fileName });
+      if (listed?.error)
         throw new Error(`Could not inspect uploaded files: ${source.file}`);
-      if (!listed.data?.some((file) => file.name === fileName)) {
+      if (!source.hostedUrl && !listed?.data?.some((file) => file.name === fileName)) {
         const buffer = await readFile(path.join(root, source.file));
         if (createHash("sha256").update(buffer).digest("hex") !== sha256)
           throw new Error(`Source changed during import: ${source.file}`);
@@ -179,8 +184,18 @@ async function main() {
             `Upload failed: ${source.file} (${uploaded.error.message}). Rerun to resume.`,
           );
       }
-      const url = client.storage.from(bucketName).getPublicUrl(storagePath)
+      const url = source.hostedUrl || client.storage.from(bucketName).getPublicUrl(storagePath)
         .data.publicUrl;
+      // Do not publish a metadata row until its real remote MP4 is accessible.
+      if (source.hostedUrl) {
+        const check = await fetch(url, { headers: { Range: "bytes=0-31" }, signal: AbortSignal.timeout(60000) });
+        if (check.status !== 206 || check.headers.get("content-range") !== `bytes 0-31/${sizeBytes}`) {
+          await check.body?.cancel();
+          throw new Error(`Hosted video range/size mismatch: ${source.file}`);
+        }
+        const header = Buffer.from(await check.arrayBuffer());
+        if (header.length !== 32 || header.toString("ascii", 4, 8) !== "ftyp") throw new Error(`Hosted video unavailable: ${source.file}`);
+      }
       const common = {
         id,
         chapterId: source.chapterId,
@@ -197,7 +212,7 @@ async function main() {
         description:
           source.kind === "note"
             ? `Class 12 ${source.subjectName}: ${source.topic}. ${item.pageCount} PDF pages of notes and worked questions.`
-            : `Tamil video lesson on ${source.titleTamil}.`,
+            : `Class 12 ${source.subjectName} video lesson: ${source.topic}.`,
         isPublished: true,
       };
       resource =
@@ -217,9 +232,9 @@ async function main() {
               videoUrl: url,
               embedType: "mp4",
               durationSeconds: item.durationSeconds,
-              thumbnailUrl: "",
+              thumbnailUrl: source.thumbnailUrl || "",
               teacherName: "AVS Learning Materials",
-              sourceLabel: "Tamil Video Lesson",
+              sourceLabel: "NotebookLM Video Lesson",
               createdAt: new Date().toISOString(),
             };
       const saved = await client

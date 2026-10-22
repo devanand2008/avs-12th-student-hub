@@ -1,0 +1,344 @@
+[
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 7,
+    "question": 11,
+    "page": 158,
+    "rect": [
+      495,
+      211,
+      148,
+      160
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original English Ecosystem Q11 animal/tree pyramid, including T1–T4 labels; source PDF 158 / printed 152"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 7,
+    "question": 11,
+    "page": 171,
+    "rect": [
+      492,
+      127,
+      151,
+      169
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Tamil சூழல்மண்டலம் Q11 animal/tree pyramid, including T1–T4 labels; source PDF 171 / printed 165"
+  },
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 8,
+    "question": 3,
+    "page": 175,
+    "rect": [
+      103,
+      101,
+      292,
+      224
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original English Environmental Issues Q3 five printed matching pairs A–E; PDF 175 / printed 169"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 8,
+    "question": 3,
+    "page": 189,
+    "rect": [
+      103,
+      103,
+      292,
+      198
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Tamil சுற்றுச்சூழல் பிரச்சினைகள் Q3 five printed matching pairs அ–உ; PDF 189 / printed 183"
+  },
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 9,
+    "question": 4,
+    "page": 187,
+    "rect": [
+      103,
+      601,
+      293,
+      210
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q4 matching columns and four Roman-code alternatives; PDF 187 / printed 181"
+  },
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 9,
+    "question": 14,
+    "page": 187,
+    "rect": [
+      422,
+      702,
+      292,
+      266
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q14 crop/variety matching columns and four answer rows; PDF 187 / printed 181"
+  },
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 9,
+    "question": 16,
+    "page": 188,
+    "rect": [
+      103,
+      204,
+      293,
+      134
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q16 original variety/disease table; PDF 188 / printed 182"
+  },
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 9,
+    "question": 18,
+    "page": 188,
+    "rect": [
+      103,
+      439,
+      293,
+      172
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q18 original organism table and four a/b/c/c answer rows; PDF 188 / printed 182"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 9,
+    "question": 4,
+    "page": 202,
+    "rect": [
+      422,
+      628,
+      292,
+      230
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q4 original Tamil matching columns and answer rows; PDF 202 / printed 196"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 9,
+    "question": 14,
+    "page": 203,
+    "rect": [
+      103,
+      844,
+      292,
+      153
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q14 original Tamil matching table (answer rows separately at top right); PDF 203 / printed 197"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 9,
+    "question": 14,
+    "page": 203,
+    "rect": [
+      422,
+      107,
+      292,
+      96
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q14 original Tamil answer rows continuing in next column; PDF 203 / printed 197",
+    "part": 2
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 9,
+    "question": 16,
+    "page": 203,
+    "rect": [
+      422,
+      311,
+      292,
+      148
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q16 original Tamil variety/disease table; PDF 203 / printed 197"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 9,
+    "question": 18,
+    "page": 203,
+    "rect": [
+      422,
+      563,
+      292,
+      218
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Q18 original Tamil organism table and four answer mappings; PDF 203 / printed 197"
+  },
+  {
+    "bookId": "12-bio-botany-english-f15d4524",
+    "chapterNumber": 10,
+    "question": 9,
+    "page": 207,
+    "rect": [
+      422,
+      807,
+      292,
+      97
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "English Q9 four original plant-use/species pairs; PDF 207 / printed 201"
+  },
+  {
+    "bookId": "12-bio-botany-tamil-51160855",
+    "chapterNumber": 10,
+    "question": 9,
+    "page": 224,
+    "rect": [
+      422,
+      606,
+      292,
+      91
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Tamil Q9 four original plant-use/species pairs (distinct dye species); PDF 224 / printed 218"
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 1,
+    "page": 16,
+    "rect": [
+      444,
+      716,
+      270,
+      124
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original shared A/B/C/D rubric (B is dotless); PDF 16 / printed 8"
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 2,
+    "page": 16,
+    "rect": [
+      444,
+      845,
+      270,
+      129
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Q4.I assertion/reason and response row; PDF 16 / printed 8",
+    "sourceOrdinal": 4
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 3,
+    "page": 17,
+    "rect": [
+      125,
+      105,
+      270,
+      124
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Q4.II assertion/reason and response row; PDF 17 / printed 9",
+    "sourceOrdinal": 5
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 1,
+    "page": 17,
+    "rect": [
+      424,
+      816,
+      290,
+      168
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Tamil shared rubric - first portion; PDF 17 / printed 9"
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 2,
+    "page": 18,
+    "rect": [
+      104,
+      104,
+      290,
+      78
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Tamil shared rubric - continuation; PDF 18 / printed 10"
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 3,
+    "page": 18,
+    "rect": [
+      110,
+      189,
+      285,
+      141
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Tamil Q4.i assertion/reason and response row; PDF 18 / printed 10",
+    "sourceOrdinal": 4
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "chapterNumber": 1,
+    "question": 4,
+    "part": 4,
+    "page": 18,
+    "rect": [
+      110,
+      334,
+      285,
+      122
+    ],
+    "referenceWidth": 818,
+    "referenceHeight": 1102,
+    "label": "Original Tamil Q4.ii assertion/reason and response row; PDF 18 / printed 10",
+    "sourceOrdinal": 5
+  }
+]

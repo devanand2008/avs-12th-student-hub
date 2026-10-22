@@ -1,0 +1,1026 @@
+{
+  "checkedAt": "2026-10-17T08:59:53.064Z",
+  "scope": "Local source extraction, review-store validation and saved authoritative snapshots only; no production connection, import, publication, push or deployment",
+  "target": {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-applications-tamil-e51fbdf6.pdf",
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "subject": "Computer Applications",
+    "medium": "Tamil",
+    "volume": null,
+    "chapter": 8,
+    "chapterTitle": "படிவங்கள் மற்றும் கோப்புகள்",
+    "chapterPdfRange": [
+      140,
+      150
+    ],
+    "chapterPrintedRange": [
+      130,
+      140
+    ],
+    "inspectedPdfPages": [
+      8,
+      140,
+      147,
+      148,
+      149,
+      150,
+      151
+    ],
+    "inspectedPrintedPages": [
+      "viii",
+      130,
+      137,
+      138,
+      139,
+      140,
+      141
+    ],
+    "mcqPdfPages": [
+      148,
+      149
+    ],
+    "printedPages": [
+      138,
+      139
+    ],
+    "sectionIdentified": true,
+    "standardMcqOccurrences": 10,
+    "held": 10,
+    "reusedIds": 10,
+    "newIds": [],
+    "printedKeyMatches": 0,
+    "unknownAnswers": 10,
+    "teacherVerifiedAnswers": 0,
+    "diagramDependent": [],
+    "incompleteExtractedChoices": [],
+    "duplicateOptionQuestions": [
+      8
+    ],
+    "reviewed": 0,
+    "counts": {
+      "approved": 0,
+      "needs_correction": 0,
+      "rejected": 0,
+      "pending": 10,
+      "invalid": 0
+    },
+    "historyEvents": 0,
+    "published": 0,
+    "store": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-8\\decisions.json",
+    "keyEvidence": "No printed answer key on inspected exercise/ending PDF pages 147-150. Contents PDF 8, chapter opening PDF 140 and next chapter PDF 151 establish Chapter 8 / printed 130-140. No whole-book answer-key absence claim. All ten answers unknown.",
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 147,
+        "kind": "Lesson/program continuation, AJAX and reminder box before the MCQ exercise; not imported"
+      },
+      {
+        "numbers": [],
+        "page": 148,
+        "kind": "Glossary, decorative banner and instructions above Section I; not imported"
+      },
+      {
+        "numbers": [],
+        "page": 149,
+        "kind": "Sections II and III open-response exercises after Q10; not converted to MCQs"
+      },
+      {
+        "numbers": [],
+        "page": 150,
+        "kind": "Section III continuation, Section IV and programming activities without MCQ choices; not imported"
+      }
+    ],
+    "sourceMcqOccurrencesInventoried": true,
+    "teacherVerificationComplete": false,
+    "candidates": [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-1134f00dab9fe01b",
+        "number": 1,
+        "pdfPage": 148,
+        "pdfEndPage": 148,
+        "printedPages": [
+          138
+        ],
+        "originalExtraction": {
+          "questionText": "தைை வி ் ை த்ச கரிக க $ -GET மாறியி ் ை நீ ங் க ள் பயன ப டு த தும் தபா து, அ ்ந தை தைை வி ் ை கீ ழ் கண்ட யா ை ால் காணமுடியும்?",
+          "options": [
+            "யாருமி ல் ் ்ல",
+            "நீ ங் க ள் மட்டும்",
+            "எ ல் த்லாை ாலும்",
+            "த தைர் ்ந பதை டுக க ப பட்ட சி ்ல ர் ."
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 148\nHTML (Hypertext mark-up language) என ப து வ ்்ல ப ப க கங்க ள் மற்றும் வ ்்ல\nபயன பா டுக ்்ள உருவா க குவ தைற்காை ப பா துவா ை குறியீட்டு பமா ழியாகும்.\nFORM VALIDATION\n(படிவம் ப்ச ல் லுபடியாக க ல் )\nHTML படிவ த தி ன தைை வி ் ை ப்ச ல் லுபடியாக க ம் என ப து உ ங் க ள் படிவத்தை\nத ேக கர்க ள் மற்றும் ஸ் வம்மர்க ள் பாதுகாப ப தில் மு க கியமா ைதை ாகும்.\nதகாப புக ்்ள ் க யாளு தை ல் தகாப புக ்்ள ் க யாளு தை ல் என ப து எ ்நதை ஒரு வ ்்ல பயன பா ட்டிலும்\nமு க கியமா ை பகுதியாகும்.நீ ங் க ள் ஒரு தகாப பி ் ை ப ல் தவ று\nபணிகளுக கா க தி ்ற க க அ ல் ்ல து ப்ச ய ல் ப டுத தை தவ ண்டியிரு க கும்.\nதகாப பி ் ை பதி தவ ற்று தை ல் பய ைர்க்்ள த்ச்வ யக த திற்கு தகாப புக ்்ள பதி தவற் ்றம்\nப்ச ய ய அனுமதிக க PHP ஸ் கிரிப டாை து HTML படிவ த துட ன\nபயன ப டுத தை ப ப டுகின்றது. ்ப\nகுதி – அ\nI. ெ ரியான விடை டயத\nகதைர் ்ந வதை டு த து எழுதுக\n1. தைை வி ் ை த்ச கரிக க $ -GET\nமாறியி ் ை நீ ங் க ள் பயன ப டு த தும்\nதபா து, அ ்ந தை தைை வி ் ை கீ ழ் கண்ட\nயா ை ால் காணமுடியும்?\nஅ) யாருமி ல் ் ்ல\nஆ) நீ ங் க ள் மட்டும்\nஇ) எ ல் த்லாை ாலும்\nஈ) த தைர் ்ந பதை டுக க ப பட்ட சி ்ல ர் .\n2. கீ ழ் ககண்ட வற்றில் எ தை் ை\nகடவுச ப்சாற்க ள் (password) அ ல் ்ல து\nதவ று (உணர்வுக கா க) மு க கிய\nதை கவ ல் க்்ள அனு ப பும் தபா து\nபயன ப டுத தை கூடாது?\nஅ) GET ஆ) POST\nஇ) REGUEST ஈ) NEXT\n3. கீ ழ் ககண்ட வற்றில் எது\nத்ச்வ ய த திலு ள் ்ள PHP ஸ்\nகிரி ப ட் தகாப புக ்்ள பதி தவற் ்ற\nஅனுமதிக க்ல ாம் என ப்தை தீ ர்\nமா னி க கி ்ற து?\nஅ) file – uploads\nஆ) file – upload\nஇ) file – insert\nஈ) file –intalic\n4. HTML படிவ த தில் linput type = “text”>\nஎன ப து எ தைற்கா க பயன ப டுகின்றது.\nஅ) ஒரு வரி உ ் ை\nஆ) உ ் ை பதைா குதி\nஇ) ஒரு ப த தி\nவினாக க ள் ்ப\nா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள் 138\nXII CompApp_Tamil version CHAPTER 08.indd 138 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "தைை வி ் ை த்ச கரிக க $ -GET மாறியி ் ை நீ ங் க ள் பயன ப டு த தும் தபா து, அ ்ந தை தைை வி ் ை கீ ழ் கண்ட யா ை ால் காணமுடியும்?",
+          "options": [
+            "யாருமி ல் ் ்ல",
+            "நீ ங் க ள் மட்டும்",
+            "எ ல் த்லாை ாலும்",
+            "த தைர் ்ந பதை டுக க ப பட்ட சி ்ல ர் ."
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Source prints $ -GET rather than an unambiguous $_GET token; do not silently repair",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-08c62f6fa519c04f",
+        "number": 2,
+        "pdfPage": 148,
+        "pdfEndPage": 148,
+        "printedPages": [
+          138
+        ],
+        "originalExtraction": {
+          "questionText": "கீ ழ் ககண்ட வற்றில் எ தை் ை கடவுச ப்சாற்க ள் (password) அ ல் ்ல து தவ று (உணர்வுக கா க) மு க கிய தை கவ ல் க்்ள அனு ப பும் தபா து பயன ப டுத தை கூடாது?",
+          "options": [
+            "GET",
+            "POST",
+            "REGUEST",
+            "NEXT"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 148\nHTML (Hypertext mark-up language) என ப து வ ்்ல ப ப க கங்க ள் மற்றும் வ ்்ல\nபயன பா டுக ்்ள உருவா க குவ தைற்காை ப பா துவா ை குறியீட்டு பமா ழியாகும்.\nFORM VALIDATION\n(படிவம் ப்ச ல் லுபடியாக க ல் )\nHTML படிவ த தி ன தைை வி ் ை ப்ச ல் லுபடியாக க ம் என ப து உ ங் க ள் படிவத்தை\nத ேக கர்க ள் மற்றும் ஸ் வம்மர்க ள் பாதுகாப ப தில் மு க கியமா ைதை ாகும்.\nதகாப புக ்்ள ் க யாளு தை ல் தகாப புக ்்ள ் க யாளு தை ல் என ப து எ ்நதை ஒரு வ ்்ல பயன பா ட்டிலும்\nமு க கியமா ை பகுதியாகும்.நீ ங் க ள் ஒரு தகாப பி ் ை ப ல் தவ று\nபணிகளுக கா க தி ்ற க க அ ல் ்ல து ப்ச ய ல் ப டுத தை தவ ண்டியிரு க கும்.\nதகாப பி ் ை பதி தவ ற்று தை ல் பய ைர்க்்ள த்ச்வ யக த திற்கு தகாப புக ்்ள பதி தவற் ்றம்\nப்ச ய ய அனுமதிக க PHP ஸ் கிரிப டாை து HTML படிவ த துட ன\nபயன ப டுத தை ப ப டுகின்றது. ்ப\nகுதி – அ\nI. ெ ரியான விடை டயத\nகதைர் ்ந வதை டு த து எழுதுக\n1. தைை வி ் ை த்ச கரிக க $ -GET\nமாறியி ் ை நீ ங் க ள் பயன ப டு த தும்\nதபா து, அ ்ந தை தைை வி ் ை கீ ழ் கண்ட\nயா ை ால் காணமுடியும்?\nஅ) யாருமி ல் ் ்ல\nஆ) நீ ங் க ள் மட்டும்\nஇ) எ ல் த்லாை ாலும்\nஈ) த தைர் ்ந பதை டுக க ப பட்ட சி ்ல ர் .\n2. கீ ழ் ககண்ட வற்றில் எ தை் ை\nகடவுச ப்சாற்க ள் (password) அ ல் ்ல து\nதவ று (உணர்வுக கா க) மு க கிய\nதை கவ ல் க்்ள அனு ப பும் தபா து\nபயன ப டுத தை கூடாது?\nஅ) GET ஆ) POST\nஇ) REGUEST ஈ) NEXT\n3. கீ ழ் ககண்ட வற்றில் எது\nத்ச்வ ய த திலு ள் ்ள PHP ஸ்\nகிரி ப ட் தகாப புக ்்ள பதி தவற் ்ற\nஅனுமதிக க்ல ாம் என ப்தை தீ ர்\nமா னி க கி ்ற து?\nஅ) file – uploads\nஆ) file – upload\nஇ) file – insert\nஈ) file –intalic\n4. HTML படிவ த தில் linput type = “text”>\nஎன ப து எ தைற்கா க பயன ப டுகின்றது.\nஅ) ஒரு வரி உ ் ை\nஆ) உ ் ை பதைா குதி\nஇ) ஒரு ப த தி\nவினாக க ள் ்ப\nா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள் 138\nXII CompApp_Tamil version CHAPTER 08.indd 138 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "கீ ழ் ககண்ட வற்றில் எ தை் ை கடவுச ப்சாற்க ள் (password) அ ல் ்ல து தவ று (உணர்வுக கா க) மு க கிய தை கவ ல் க்்ள அனு ப பும் தபா து பயன ப டுத தை கூடாது?",
+          "options": [
+            "GET",
+            "POST",
+            "REGUEST",
+            "NEXT"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Source option C prints REGUEST; preserve spelling rather than silently changing to REQUEST",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-1f1edd198db05270",
+        "number": 3,
+        "pdfPage": 148,
+        "pdfEndPage": 148,
+        "printedPages": [
+          138
+        ],
+        "originalExtraction": {
+          "questionText": "கீ ழ் ககண்ட வற்றில் எது த்ச்வ ய த திலு ள் ்ள PHP ஸ் கிரி ப ட் தகாப புக ்்ள பதி தவற் ்ற அனுமதிக க்ல ாம் என ப்தை தீ ர் மா னி க கி ்ற து?",
+          "options": [
+            "file – uploads",
+            "file – upload",
+            "file – insert",
+            "file –intalic"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 148\nHTML (Hypertext mark-up language) என ப து வ ்்ல ப ப க கங்க ள் மற்றும் வ ்்ல\nபயன பா டுக ்்ள உருவா க குவ தைற்காை ப பா துவா ை குறியீட்டு பமா ழியாகும்.\nFORM VALIDATION\n(படிவம் ப்ச ல் லுபடியாக க ல் )\nHTML படிவ த தி ன தைை வி ் ை ப்ச ல் லுபடியாக க ம் என ப து உ ங் க ள் படிவத்தை\nத ேக கர்க ள் மற்றும் ஸ் வம்மர்க ள் பாதுகாப ப தில் மு க கியமா ைதை ாகும்.\nதகாப புக ்்ள ் க யாளு தை ல் தகாப புக ்்ள ் க யாளு தை ல் என ப து எ ்நதை ஒரு வ ்்ல பயன பா ட்டிலும்\nமு க கியமா ை பகுதியாகும்.நீ ங் க ள் ஒரு தகாப பி ் ை ப ல் தவ று\nபணிகளுக கா க தி ்ற க க அ ல் ்ல து ப்ச ய ல் ப டுத தை தவ ண்டியிரு க கும்.\nதகாப பி ் ை பதி தவ ற்று தை ல் பய ைர்க்்ள த்ச்வ யக த திற்கு தகாப புக ்்ள பதி தவற் ்றம்\nப்ச ய ய அனுமதிக க PHP ஸ் கிரிப டாை து HTML படிவ த துட ன\nபயன ப டுத தை ப ப டுகின்றது. ்ப\nகுதி – அ\nI. ெ ரியான விடை டயத\nகதைர் ்ந வதை டு த து எழுதுக\n1. தைை வி ் ை த்ச கரிக க $ -GET\nமாறியி ் ை நீ ங் க ள் பயன ப டு த தும்\nதபா து, அ ்ந தை தைை வி ் ை கீ ழ் கண்ட\nயா ை ால் காணமுடியும்?\nஅ) யாருமி ல் ் ்ல\nஆ) நீ ங் க ள் மட்டும்\nஇ) எ ல் த்லாை ாலும்\nஈ) த தைர் ்ந பதை டுக க ப பட்ட சி ்ல ர் .\n2. கீ ழ் ககண்ட வற்றில் எ தை் ை\nகடவுச ப்சாற்க ள் (password) அ ல் ்ல து\nதவ று (உணர்வுக கா க) மு க கிய\nதை கவ ல் க்்ள அனு ப பும் தபா து\nபயன ப டுத தை கூடாது?\nஅ) GET ஆ) POST\nஇ) REGUEST ஈ) NEXT\n3. கீ ழ் ககண்ட வற்றில் எது\nத்ச்வ ய த திலு ள் ்ள PHP ஸ்\nகிரி ப ட் தகாப புக ்்ள பதி தவற் ்ற\nஅனுமதிக க்ல ாம் என ப்தை தீ ர்\nமா னி க கி ்ற து?\nஅ) file – uploads\nஆ) file – upload\nஇ) file – insert\nஈ) file –intalic\n4. HTML படிவ த தில் linput type = “text”>\nஎன ப து எ தைற்கா க பயன ப டுகின்றது.\nஅ) ஒரு வரி உ ் ை\nஆ) உ ் ை பதைா குதி\nஇ) ஒரு ப த தி\nவினாக க ள் ்ப\nா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள் 138\nXII CompApp_Tamil version CHAPTER 08.indd 138 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "கீ ழ் ககண்ட வற்றில் எது த்ச்வ ய த திலு ள் ்ள PHP ஸ் கிரி ப ட் தகாப புக ்்ள பதி தவற் ்ற அனுமதிக க்ல ாம் என ப்தை தீ ர் மா னி க கி ்ற து?",
+          "options": [
+            "file – uploads",
+            "file – upload",
+            "file – insert",
+            "file –intalic"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Source file - uploads / file - upload / file - insert / file -intalic spellings and dash forms retained",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-36106f7189fae904",
+        "number": 4,
+        "pdfPage": 148,
+        "pdfEndPage": 149,
+        "printedPages": [
+          138,
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "HTML படிவ த தில் linput type = “text”> என ப து எ தைற்கா க பயன ப டுகின்றது.",
+          "options": [
+            "ஒரு வரி உ ் ை",
+            "உ ் ை பதைா குதி",
+            "ஒரு ப த தி வினாக க ள் ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள் 138"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 148\nHTML (Hypertext mark-up language) என ப து வ ்்ல ப ப க கங்க ள் மற்றும் வ ்்ல\nபயன பா டுக ்்ள உருவா க குவ தைற்காை ப பா துவா ை குறியீட்டு பமா ழியாகும்.\nFORM VALIDATION\n(படிவம் ப்ச ல் லுபடியாக க ல் )\nHTML படிவ த தி ன தைை வி ் ை ப்ச ல் லுபடியாக க ம் என ப து உ ங் க ள் படிவத்தை\nத ேக கர்க ள் மற்றும் ஸ் வம்மர்க ள் பாதுகாப ப தில் மு க கியமா ைதை ாகும்.\nதகாப புக ்்ள ் க யாளு தை ல் தகாப புக ்்ள ் க யாளு தை ல் என ப து எ ்நதை ஒரு வ ்்ல பயன பா ட்டிலும்\nமு க கியமா ை பகுதியாகும்.நீ ங் க ள் ஒரு தகாப பி ் ை ப ல் தவ று\nபணிகளுக கா க தி ்ற க க அ ல் ்ல து ப்ச ய ல் ப டுத தை தவ ண்டியிரு க கும்.\nதகாப பி ் ை பதி தவ ற்று தை ல் பய ைர்க்்ள த்ச்வ யக த திற்கு தகாப புக ்்ள பதி தவற் ்றம்\nப்ச ய ய அனுமதிக க PHP ஸ் கிரிப டாை து HTML படிவ த துட ன\nபயன ப டுத தை ப ப டுகின்றது. ்ப\nகுதி – அ\nI. ெ ரியான விடை டயத\nகதைர் ்ந வதை டு த து எழுதுக\n1. தைை வி ் ை த்ச கரிக க $ -GET\nமாறியி ் ை நீ ங் க ள் பயன ப டு த தும்\nதபா து, அ ்ந தை தைை வி ் ை கீ ழ் கண்ட\nயா ை ால் காணமுடியும்?\nஅ) யாருமி ல் ் ்ல\nஆ) நீ ங் க ள் மட்டும்\nஇ) எ ல் த்லாை ாலும்\nஈ) த தைர் ்ந பதை டுக க ப பட்ட சி ்ல ர் .\n2. கீ ழ் ககண்ட வற்றில் எ தை் ை\nகடவுச ப்சாற்க ள் (password) அ ல் ்ல து\nதவ று (உணர்வுக கா க) மு க கிய\nதை கவ ல் க்்ள அனு ப பும் தபா து\nபயன ப டுத தை கூடாது?\nஅ) GET ஆ) POST\nஇ) REGUEST ஈ) NEXT\n3. கீ ழ் ககண்ட வற்றில் எது\nத்ச்வ ய த திலு ள் ்ள PHP ஸ்\nகிரி ப ட் தகாப புக ்்ள பதி தவற் ்ற\nஅனுமதிக க்ல ாம் என ப்தை தீ ர்\nமா னி க கி ்ற து?\nஅ) file – uploads\nஆ) file – upload\nஇ) file – insert\nஈ) file –intalic\n4. HTML படிவ த தில் linput type = “text”>\nஎன ப து எ தைற்கா க பயன ப டுகின்றது.\nஅ) ஒரு வரி உ ் ை\nஆ) உ ் ை பதைா குதி\nஇ) ஒரு ப த தி\nவினாக க ள் ்ப\nா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள் 138\nXII CompApp_Tamil version CHAPTER 08.indd 138 15/04/19 6:11 PM\n\nPDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "HTML படிவ த தில் linput type = “text”> என ப து எ தைற்கா க பயன ப டுகின்றது.",
+          "options": [
+            "ஒரு வரி உ ் ை",
+            "உ ் ை பதைா குதி",
+            "ஒரு ப த தி",
+            "இ ் வதய துமி ல் ் ்ல"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Choice D continues at top left of PDF 149 / printed 139; inspect both source pages",
+          "Printed HTML fragment linput type = \"text\"> is ambiguous/malformed; do not reconstruct an opening bracket",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-080092379e10442c",
+        "number": 5,
+        "pdfPage": 149,
+        "pdfEndPage": 149,
+        "printedPages": [
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "முன தப வ ் ையறுக க ப பட்ட மற்றும் ேம் ் ம பாணிக ்்ள பயன ப டுத தை அனுமதி க கும் HTML இ ைக குழுக க ள் ------- எ ை அ ் ழ க க ப ப டுகின்ற ை .",
+          "options": [
+            "Pseudo இ ைக குழுக க ள்",
+            "CSS இ ைக குழுக க ள்",
+            "Janscript இ ைக குழுக க ள்",
+            "இ ் வதய துமி ல் ் ்ல"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "முன தப வ ் ையறுக க ப பட்ட மற்றும் ேம் ் ம பாணிக ்்ள பயன ப டுத தை அனுமதி க கும் HTML இ ைக குழுக க ள் ------- எ ை அ ் ழ க க ப ப டுகின்ற ை .",
+          "options": [
+            "Pseudo இ ைக குழுக க ள்",
+            "CSS இ ைக குழுக க ள்",
+            "Janscript இ ைக குழுக க ள்",
+            "இ ் வதய துமி ல் ் ்ல"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Source option Janscript retained; no silent spelling correction",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-528e6ecdbc8a5d21",
+        "number": 6,
+        "pdfPage": 149,
+        "pdfEndPage": 149,
+        "printedPages": [
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு தகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க படிக க உ தை வுகின்றது?",
+          "options": [
+            "f open ()",
+            "fr end ()",
+            "fgdc ()",
+            "dile ()"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு தகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க படிக க உ தை வுகின்றது?",
+          "options": [
+            "f open ()",
+            "fr end ()",
+            "fgdc ()",
+            "dile ()"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Printed function choices f open (), fr end (), fgdc (), dile () retained literally",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-f7080eec85093e51",
+        "number": 7,
+        "pdfPage": 149,
+        "pdfEndPage": 149,
+        "printedPages": [
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "PHP என ப து ----- வ ் க பமா ழியாகும்.",
+          "options": [
+            "பய ை ர்",
+            "தை்ளர்வாை",
+            "த்ச்வ யகம்",
+            "அ ் மப பு"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "PHP என ப து ----- வ ் க பமா ழியாகும்.",
+          "options": [
+            "பய ை ர்",
+            "தை்ளர்வாை",
+            "த்ச்வ யகம்",
+            "அ ் மப பு"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-7bd0437167e06e8e",
+        "number": 8,
+        "pdfPage": 149,
+        "pdfEndPage": 149,
+        "printedPages": [
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "fopen() ப்ச யற்கூறு PHP ல் என ை ப்சய கின்றது.",
+          "options": [
+            "PHP ல் தகாப புக ்்ள தி ்ற க க உ தை வுகின்றது.",
+            "பதைா்்ல த்ச்வ யக த தி ் ை தி ்ற க க உ தை வுகின்றது.",
+            "PHP ல் தகாப புக ்்ள தி ்ற க க உ தை வுகின்றது.",
+            "பதைா்்ல கணிப ப ப ா றியி ் ை தி ்ற க க உ தை வுகின்றது."
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "fopen() ப்ச யற்கூறு PHP ல் என ை ப்சய கின்றது.",
+          "options": [
+            "PHP ல் தகாப புக ்்ள தி ்ற க க உ தை வுகின்றது.",
+            "பதைா்்ல த்ச்வ யக த தி ் ை தி ்ற க க உ தை வுகின்றது.",
+            "PHP ல் தகாப புக ்்ள தி ்ற க க உ தை வுகின்றது.",
+            "பதைா்்ல கணிப ப ப ா றியி ் ை தி ்ற க க உ தை வுகின்றது."
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Options are not distinct",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Printed choices A and C are identical on PDF 149; unresolved duplicate options block verification",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-7282d099bc38c232",
+        "number": 9,
+        "pdfPage": 149,
+        "pdfEndPage": 149,
+        "printedPages": [
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "PHP தகாப புக ்்ள எவ வா று அணுக முடியும்?",
+          "options": [
+            "வ ்்ல உ ்ல வி மூ ்ல ம்",
+            "HTML தகாப புகள் மூ ்ல ம்",
+            "வ ்்ல த்ச்வ யகம் மூ ்ல ம்",
+            "இ ் வ அ ் ை த தும் 139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள் ்ப குதி – இ"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "PHP தகாப புக ்்ள எவ வா று அணுக முடியும்?",
+          "options": [
+            "வ ்்ல உ ்ல வி மூ ்ல ம்",
+            "HTML தகாப புகள் மூ ்ல ம்",
+            "வ ்்ல த்ச்வ யகம் மூ ்ல ம்",
+            "இ ் வ அ ் ை த தும்"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-270d9d81811c9742",
+        "number": 10,
+        "pdfPage": 149,
+        "pdfEndPage": 149,
+        "printedPages": [
+          139
+        ],
+        "originalExtraction": {
+          "questionText": "கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு தகாப பிலு ள் ்ள அ ் ை த து உ ள் ்ள டக க த்தையும் படி க கின்றது.",
+          "options": [
+            "fgets()",
+            "file – get-contents()",
+            "freed()",
+            "readsia() ்ப குதி – ஆ"
+          ],
+          "correctAnswer": null
+        },
+        "originalRawPageText": "PDF 149\n10. கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து\nஒரு தகாப பிலு ள் ்ள அ ் ை த து\nஉ ள் ்ள டக க த்தையும் படி க கின்றது.\nஅ) fgets()\nஆ) file – get-contents()\nஇ) freed()\nஈ) readsia() ்ப\nகுதி – ஆ\nII. மூன்று வரிகளில்\nவிடையளிக க வும்\n1. HTML படிவ உறு ப புக ்்ள வ ் ையறு.\n2. PHP ல் உ ள் ்ள படிவத்தை ்\nக யா ள் வ தில் உ ள் ்ள\nவழிமு ்்ற யி ் ை வ ் ையறு.\n3. PHPல் படிவத்தை ப்ச ல் லுபடியாக க ல்\nஎன ்ற ா ல் என ை ?\n4. PHP பமா ழியி ் ை ஆ தை ரி க கும் HTML\nஉறு ப புக ்்ள பட்டியலிடு.\n5. HTML ல் உ ள் ்ள உ ் ைப ப ட் டிக காை\nக ட் ட்்ள அ ் மப பி ் ை எழுது.\n6. PHP ல் படிவத்தை ் க யா ள் வ்தை\nவ ் ையறு.\n7. HTML ல் உ ள் ்ள Browse ப பா த தைா் ை\nவ ் ையறு.\n8. HTML ல் உ ள் ்ள Browse\nப பா த தைா னி ற் காை க ட் ட்்ள\nஅ ் மப பி ் ை எழுது\n9. உ ் ைப பப ட் டி (Textbox) மா ற் ்ற\nஉ ் ைப ைப பு (Textarea ) ஒ ப பிடுக.\n10. தகாப பி ் ை தி ்ற க கும் ப்ச யற்கூறி ன\nபய ன யாது?\nஈ) இ ் வதய துமி ல் ் ்ல\n5. முன தப வ ் ையறுக க ப பட்ட மற்றும்\nேம் ் ம பாணிக ்்ள பயன ப டுத தை\nஅனுமதி க கும் HTML இ ைக குழுக க ள்\n------- எ ை அ ் ழ க க ப ப டுகின்ற ை .\nஅ) Pseudo இ ைக குழுக க ள்\nஆ) CSS இ ைக குழுக க ள்\nஇ) Janscript இ ைக குழுக க ள்\nஈ) இ ் வதய துமி ல் ் ்ல\n6. எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு\nதகாப பி ் ை ஒவ ப வ ா ரு எழுத தைா க\nபடிக க உ தை வுகின்றது?\nஅ) f open ()\nஆ) fr end ()\nஇ) fgdc ()\nஈ) dile ()\n7. PHP என ப து ----- வ ் க\nபமா ழியாகும்.\nஅ) பய ை ர்\nஆ) தை்ளர்வாை\nஇ) த்ச்வ யகம்\nஈ) அ ் மப பு\n8. fopen() ப்ச யற்கூறு PHP ல் என ை\nப்சய கின்றது.\nஅ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஆ) பதைா்்ல த்ச்வ யக த தி ் ை\nதி ்ற க க உ தை வுகின்றது.\nஇ) PHP ல் தகாப புக ்்ள தி ்ற க க\nஉ தை வுகின்றது.\nஈ) பதைா்்ல கணிப ப ப ா றியி ் ை\nதி ்ற க க உ தை வுகின்றது.\n9. PHP தகாப புக ்்ள எவ வா று அணுக\nமுடியும்?\nஅ) வ ்்ல உ ்ல வி மூ ்ல ம்\nஆ) HTML தகாப புகள் மூ ்ல ம்\nஇ) வ ்்ல த்ச்வ யகம் மூ ்ல ம்\nஈ) இ ் வ அ ் ை த தும்\n139 ்ப ா ை ம் 08 ்ப டிவங க ள் ைற றும் க காப புகள்\nXII CompApp_Tamil version CHAPTER 08.indd 139 15/04/19 6:11 PM",
+        "proposedTranscription": {
+          "questionText": "கீ ழ் கண்ட எ ்ந தை ப்ச யற்கூ ்ற ா ை து ஒரு தகாப பிலு ள் ்ள அ ் ை த து உ ள் ்ள டக க த்தையும் படி க கின்றது.",
+          "options": [
+            "fgets()",
+            "file – get-contents()",
+            "freed()",
+            "readsia()"
+          ]
+        },
+        "answer": null,
+        "warnings": [
+          "Held: explicit individual authenticated teacher review required",
+          "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+          "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+          "Transcribe separated Tamil letter marks before text publication",
+          "Transcribe fragmented Tamil words before text publication",
+          "All damaged Tamil glyphs require source-faithful teacher correction",
+          "Inline HTML/PHP and printed function names must remain literal; no execution, spelling repair or inferred answers",
+          "Four printed labels per item do not establish valid distinct options or teacher-verified Tamil wording",
+          "Printed function names and dash spacing retained, including file - get-contents(), freed(), readsia(); do not infer answers",
+          "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+        ]
+      }
+    ]
+  },
+  "preparedOccurrences": 10,
+  "uniqueQuestionOptionSignatures": 10,
+  "novelContentSignaturesComparedWithPriorQueue": 10,
+  "exactContentDuplicateGroupsWithPreviousProposals": [],
+  "duplicateAuditScope": "Exact whitespace-normalized question/options, not semantic deduplication. Existing raw candidate and separate source proposal sharing a stable ID represent the same source occurrence, not an added question.",
+  "stores": [
+    {
+      "batchId": "unit-1",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-2\\decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-2\\decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-3",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-3\\decisions.json",
+      "sha256": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-3",
+      "held": 14,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 14,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-3\\decisions.json",
+      "sha256": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-4",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "sha256": "faf0f0793007bd61e81a2a2226600e4233ebda90fd7a590e864a73ebcd1cc8b0"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-4",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "sha256": "eb037dd880a0e220a934d1c565db9d2fd396b45e8d291858cec5f52a5903740e"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-5",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "sha256": "9f93a6484b884c0733e17dd73e8cca693555490e4ada426608901888728822a6"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-5",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "sha256": "0fa97c2244fe89a7b1caea085e78ffd62f346d6f6f70d4e53486cca465b41550"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-6",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "sha256": "61f5a4d078fdd9cd80157eb0e3496d334c694a8ad0589f809282fc646e60e9fa"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-6",
+      "held": 7,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 7,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "sha256": "7b5e3a51fe05597e11c35fed08253a9da96e5bf94bedb8956252af1b4d412868"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-7",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-7\\decisions.json",
+      "sha256": "c09ed82c76134fd3d9400b4c04e9b726efa5e30b80cd1b4da5feadac873d1a70"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-1",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-1\\decisions.json",
+      "sha256": "f9d859fd7838c8b0a6bf33a0a4008cf3b2bf92d0b06756a472962d95c4dee042"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-8",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-8\\decisions.json",
+      "sha256": "97ee0c39960972f31ec62c22fca5be6614600793c87d52e8bd4343b121c34664"
+    },
+    {
+      "batchId": "unit-2",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e"
+    },
+    {
+      "batchId": "unit-3",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d"
+    },
+    {
+      "batchId": "unit-4",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e"
+    },
+    {
+      "batchId": "unit-5",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f"
+    },
+    {
+      "batchId": "commerce-12-commerce-tamil-d9e013d8-ch-27",
+      "held": 5,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 5,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\commerce-12-commerce-tamil-d9e013d8-ch-27\\decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e"
+    }
+  ],
+  "counts": {
+    "held": 216,
+    "pending": 216,
+    "reviewed": 0,
+    "approved": 0,
+    "needsCorrection": 0,
+    "rejected": 0,
+    "historyEvents": 0
+  },
+  "studentBank": {
+    "English": 995,
+    "Tamil": 0,
+    "legacySamplesExcluded": 12,
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "snapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "measurement": "Hash-preserved authoritative local snapshot; no fresh production measurement"
+  },
+  "inventory": {
+    "pdfs": 82,
+    "pages": 24088,
+    "detectedChapters": 856,
+    "zeroPublishedEntries": 733,
+    "savedCandidateRecords": 17268,
+    "sourceBoundedProposals": 201,
+    "activeCandidateIds": 12681,
+    "inactiveArtifacts": 4587
+  },
+  "preservation": {
+    "file": "docs/chapter8-preservation.json",
+    "sha256": "4ac06f0e5218b051f835e0fd518edc8bca38ba82a3733730afb551c70274f079",
+    "previousCandidates": 17268,
+    "previousProposals": 191,
+    "protectedFiles": 142,
+    "practiceSessions": 13
+  },
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch8-test.log",
+      "sha256": "6a9b4ee5e9eb490f0d0b149d47ac79964b7d641a0aea93bc862d758807bb6752"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch8-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch8-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch8-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch8-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch8-mcqs-systematic-audit.log",
+      "sha256": "d742457eb880c4d1ee9a266fe6a5a43cd5f5af1e75b88dce14ae86c17712e98e"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch8-build.log",
+      "sha256": "5488aa59710fa34c4ad44e7367b5bfe5ad3adfba12dba47200b280ea485f8e80"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch8-browser.log",
+      "sha256": "dc609c6b60934afea485744a7766cd311e4455b7adaf893033099d347e845017"
+    }
+  ],
+  "fullTests": {
+    "total": 147,
+    "passed": 147,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "focusedTests": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "browserTests": {
+    "passed": 6,
+    "failed": 0,
+    "subjects": [
+      "Accountancy",
+      "Commerce",
+      "Chemistry"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ],
+    "scope": "Six explicitly selected Playwright tests against isolated local fixtures"
+  },
+  "reruns": [
+    {
+      "round": 1,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch8-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "0ab39f975254fb559891a19852ac0788925523f108ba6806aa15fe8a09ad14cc"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch8-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "0ab39f975254fb559891a19852ac0788925523f108ba6806aa15fe8a09ad14cc"
+    }
+  ],
+  "nextPriority": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "chapterNumber": 9,
+      "startPdfPage": 151,
+      "provisionalExercisePdfPages": [],
+      "requirement": "Detected inventory entry, not confirmed MCQ coverage. Inspect actual section boundary, non-MCQ formats and scoped answer evidence before extraction; keep edition/hash separate"
+    }
+  ],
+  "notRun": [
+    "Unrelated full Playwright suite",
+    "Separate filesystem search for Unit 1 decision exports",
+    "Fresh production queries or writes"
+  ],
+  "unresolved": [
+    "All ten answers lack printed-key or teacher verification evidence; all Tamil transcriptions require source-faithful teacher correction",
+    "Q8 has identical printed A/C choices; unresolved source defect",
+    "Q1, Q2, Q3, Q4, Q5, Q6 and Q10 retain ambiguous or misspelled printed code/function tokens; no automatic repair",
+    "Chapter 4 duplicate choices/missing program, Chapter 6 duplicates/code issues, Physics Unit 1 Q10 graph options and all prior held decisions remain unchanged",
+    "733 zero-publication detected entries are not confirmed missing MCQ sections"
+  ],
+  "rawCandidateContentOverlaps": [
+    {
+      "id": "textbook-q-12-computer-applications-tamil-f43670d1-339136e21a0e0d53",
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-8",
+      "number": 8,
+      "page": 146,
+      "matchingTargetNumbers": [
+        8
+      ]
+    },
+    {
+      "id": "textbook-q-12-computer-applications-tamil-f43670d1-d7903ed096417da2",
+      "bookId": "12-computer-applications-tamil-f43670d1",
+      "chapterId": "tb-12-computer-applications-tamil-f43670d1-ch-8",
+      "number": 9,
+      "page": 146,
+      "matchingTargetNumbers": [
+        9
+      ]
+    }
+  ],
+  "crossEditionEvidence": {
+    "bookId": "12-computer-applications-tamil-f43670d1",
+    "sourceFile": "12th_Std_Computer_Applications_TM_optimised.pdf",
+    "sourceSha256": "6a996d2f03b39af0272b59550cb60ec96c04b2995587416344c640d1556f20ca",
+    "pdfPage": 146,
+    "printedPage": 136,
+    "renderedPage": ".local/ch8-source-inspection/12-computer-applications-tamil-f43670d1-pdf-146.png",
+    "renderedSha256": "7804ba5954948a619fd442dbe41caa92bfdf10c77b28a971e17eabc71be55d87",
+    "findings": [
+      {
+        "targetNumber": 8,
+        "rawExactMatch": true,
+        "printedQuestionOptionsIdentical": false,
+        "finding": "The alternate PDF rendering has a distinct choice C; the chosen source has identical A/C. The raw candidate exact overlap therefore does not prove a genuine identical source question/options pair. Existing alternate raw candidate requires separate source/transcription audit; unchanged here."
+      },
+      {
+        "targetNumber": 9,
+        "rawExactMatch": true,
+        "printedQuestionOptionsIdentical": true,
+        "finding": "Visual comparison confirms repeated printed question and four options across the two source PDFs. Separate book-specific IDs and source hashes retained; neither record published."
+      }
+    ],
+    "scope": "Only this additional page was visually inspected for duplicate evidence. No alternate-version batch was extracted and no alternate record was modified; no global semantic novelty count is claimed."
+  },
+  "runtimeDiagnostics": {
+    "initialBrowserRun": {
+      "passed": 6,
+      "memoryErrorLogged": true,
+      "uncaughtExceptionLogged": true
+    },
+    "standaloneBrowserRecheck": {
+      "passed": 6,
+      "exit": 0,
+      "memoryErrorLogged": false,
+      "uncaughtExceptionLogged": false,
+      "log": ".local/ch8-browser-recheck.log",
+      "sha256": "66b41067ce6cff08fdc16103497bdc463aa83a580f9e6e6f7144c07f02c8a99c"
+    },
+    "interpretation": "Initial scoped browser tests all passed despite a local test-server memory exception. A standalone rerun was performed to check reproducibility; neither a root cause nor a production failure is inferred from this local runtime event."
+  }
+}

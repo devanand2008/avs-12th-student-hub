@@ -1,0 +1,19 @@
+[
+  {
+    "bookId": "12-computer-applications-tamil-e51fbdf6",
+    "chapterNumber": 1,
+    "pdfPages": [27, 28],
+    "printedPages": [17, 18],
+    "questionNumbers": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "sourceCheck": "Visual section inventory only; not teacher approval or answer verification",
+    "issue": "Question 5 contains a numbered matching table. PDF page 28 is two-column; short-answer text can precede continued one-mark questions in extracted text.",
+    "question5ProposedTranscription": {
+      "questionText": "சரியான ஒன்றைத் தேர்ந்தெடுத்து பின்வருவனவற்றை பொருத்துக.\n1. உரை – TGA\n2. நிழற்படம் – MIDI\n3. ஒலி – MPEG\n4. ஒளி – RTF",
+      "options": ["1, 2, 3, 4", "2, 3, 4, 1", "4, 1, 2, 3", "3, 4, 1, 2"],
+      "correctAnswer": null,
+      "status": "Needs teacher review; faithful table/wording confirmation and answer evidence required"
+    },
+    "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+    "sourceFile": "12th Std Computer Applications Tamil Medium.pdf"
+  }
+]

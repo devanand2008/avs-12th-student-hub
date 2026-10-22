@@ -1,0 +1,3986 @@
+{
+  "snapshotAt": "2026-10-14T16:55:04.438Z",
+  "policy": "User-authorised retention of the existing publications; not a record of teacher approval",
+  "questions": [
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-00010536545a61b3",
+      "fingerprint": "d7fd1764bc5b9bec7a3b8c93da23e2365814dccf56bc941632224a3ac5ed5139"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-0333eb217fc9b64a",
+      "fingerprint": "ecb38702b6b18730d136fdc3851c115bc37040dedf62b92f83f3e3e24731ebcb"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-04b488a28e0f349e",
+      "fingerprint": "71598e48884a7cefa46e2d39a717183b08efd0ec516cdf3461a9f8e2927e28d9"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-08f609c1423369dd",
+      "fingerprint": "e7173b247bad465e1d4a7c82753741ddbb962907f6d1e03aae66e6e5e34d46d4"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-0ae7979549a0a3b7",
+      "fingerprint": "f6465cf51bd25862abd42e5af8d1fb6fdf9ef4a284bab829ded3c4a27e0d8ebf"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-0cc903d4d161aa00",
+      "fingerprint": "1ab44bc07e53992c5dcbf3f7eea457adf0faf0c56139e16339f0aa767c81c574"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-1112f5160b451439",
+      "fingerprint": "9722621cf7cf6e00867d83984f6bac251600e18a4c9b04d0321513b503da6d14"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-11c406343d772990",
+      "fingerprint": "c567542b97aa3218855fe9d8c3e3f58acf2a1826f8c350fb55e461582017e77f"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-129d83aae3ef2b6d",
+      "fingerprint": "a1446fd151e64eb3fcf489d51a4320f5b214a2820d27e8d8836e2312b77f316a"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-13d49b2fc34b27f4",
+      "fingerprint": "89aed9a8909ee783f81d028572034955052e23439cf51c227a6962eb532cbf9f"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-156ed2dd7a42ae0f",
+      "fingerprint": "0c64d9793187cd876f33741f46d956ec1b8d7fa930fba67f8657ed0ad1836c87"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-1846ad292736b8aa",
+      "fingerprint": "eb986528819e3af79ca3d15c199af7c4473e79dfa641e59ad463e344703068bf"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-197219c349a9e322",
+      "fingerprint": "4bc3a503537fc961bc3cecae2a6846c08ea4e966154f914f8ec34c8ff1550548"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-1c97d2e42eb2e650",
+      "fingerprint": "7cb41d7ab821fc1a4413a0fbc6cc618388ad2a4ced929625621518a72a7efdfc"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-1d8c671c01532b78",
+      "fingerprint": "378ff5fce6fd70beee656d349b1fa8334e7575de49435317b7d6cbd3d8850c6f"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-235fe2ede922cb25",
+      "fingerprint": "e1223a018c881bcf2f6913c619b31eb93f5f68f79560b95df2e88c447b866f72"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-292c9933542fad00",
+      "fingerprint": "5139d130f8ad905683ca0c8d04147cdb28d749c4c86c86cda77c2d738d20d43f"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-2e5c130533161008",
+      "fingerprint": "06ff30d940d36f7848c97eaf86c08602f0c488d06ba41918de8fbb70dcf27abd"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-306a51599ea19089",
+      "fingerprint": "c875ba13b750ad56544cbfcd70a76f6ee9ec9021befa09a792850cdcbdb9ac92"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-346397f8a2de7606",
+      "fingerprint": "e7d49335f827920110c5db29d6d4cdf28d6f0486ec3f593f7f63980c389825cf"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-3a71a63d505d075d",
+      "fingerprint": "c0ea6614a2cd1898369e34c509ab7f8b68b288f29282854ac1916853e2fc7e35"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-3dc6080e6c0c4594",
+      "fingerprint": "2571718266a4d25ba7712e8a4179331345d3972b3959566494bc116ba975703c"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-3ded9f4d0143fa5d",
+      "fingerprint": "912fd6782e3406ac1932b0e5cd87b930a31925a9728ead2112240f33cbd9f3e3"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-3e1b3870756a16c9",
+      "fingerprint": "cdd85adb9a82877ecb3e9a49446031b232cc90af4bc03ee28a7488d25db75000"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-465404d6d1a6f4b7",
+      "fingerprint": "1e28cee72c195ea38c613cbd5f384faf5434d34cea939dbdfb44c03d3487414d"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-48cc5baa3dfa5c4d",
+      "fingerprint": "a1ced6b40b9ab7074415ed8ca029d77616eca2e859c878b2419dc3c62d93662a"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-496136b67f0c548d",
+      "fingerprint": "72252cf3aa5468c2fdb358b6142ca815bc1d388cc243fa3a878026a88664b8f0"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-4cc154def3785f7b",
+      "fingerprint": "410cf5048435325e69166698d203d6ea5736f25d84fa2edf1d23dca596c96bbe"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-50d8b71724fe16d0",
+      "fingerprint": "6fd4c0ddeba3beb870e6d1b8a7590cb4e8d833e02de63c35d058918bf33fcea2"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-516a23f4da7f9964",
+      "fingerprint": "a1c123bc66eae28b728947f9853a0334b5645d5900c0628e3627492aaa1d6ed7"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-524c5a083f3b3363",
+      "fingerprint": "3797975e536b861044456f323ecd948f27ac4d44e8192b09de54ddf46fe3157e"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-57265e3f52fb809a",
+      "fingerprint": "1d8da7e696fbbf576b7c91a75c23122e6b5c51b1a3af48fb2d3079e25bb656bb"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-58ba5db59bf6459c",
+      "fingerprint": "067a66fa028bed738c05be14106b24dec66180dff77a73f1a0e601d6964a5462"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-592542bfffaaade7",
+      "fingerprint": "b762961f4ac1453f085f8eefc7db34206955595164d239373f9cdd5ce40c0ebb"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-593e6f90d65c5cc6",
+      "fingerprint": "8c2e241ff8e502989b39b361e1dccc3294d2a39d6cba83f34c629d1da7fa36ac"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-5d13c8ab661a4560",
+      "fingerprint": "5aaf8c7e7c6c2585f782ac1e2cd932e126f2db7426dfdbf66547d6b6925c2452"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-5e96d5ff5f56c7a8",
+      "fingerprint": "21f5163e073697733e14db38629c547d33fc69df46124b00483ff165affc1c87"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-5fe8555b12309a12",
+      "fingerprint": "dbdff3cf26bf91856ec6663d9e4bc4d58d0c11ee6d77c2af303958d8b58c38c2"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-60797d47da351103",
+      "fingerprint": "e2537dd4e04cd0c51417637c3b75d3a20dde79ce870eccac268f95918e5b67e2"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-62224a05a1f900aa",
+      "fingerprint": "0f1b30914d009b837fa6d6d74dc62c4c402441b86eb53104740fb10b9090d410"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-6356b74c527d4f35",
+      "fingerprint": "4668f666214e9594de6f055985df301b3d72a7cf3cb3754ea942e83fca60c982"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-6379675969990161",
+      "fingerprint": "1a6e733d645d0983c948ee73c145d207601c954a29ef7546aced5e0bc12e891c"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-6430ebdfb96950fd",
+      "fingerprint": "fa9a7781566e208ace4141cdfef68dc2b132693fe47ad1310b431cc9c5123b08"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-65b1d0885e7ed678",
+      "fingerprint": "68da68c837521ace0a65c470764c98ec5e75abb71f68b2e132b443e4d5af1fea"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-6b5520fb77605510",
+      "fingerprint": "aa53fae644cf7d9b3f91c5645873214ad427149ebe2b6ce694350beed9c4de44"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-706d77c1dbef70d1",
+      "fingerprint": "76b3df89002e7fcfe55de8cf9db52603e56b1438c5aec1501ce9cb9761ada1a1"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-74d01e5ce131953b",
+      "fingerprint": "d7c00648bb5b96dc1fc0f52d96df9450cec78b2ab35d44c02d3ef1028e7201b1"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-770c5cd3211aa41b",
+      "fingerprint": "94ce7dbf0bc7fbf460de09205ceb1d3fe36d2e0951253bf1d9d3a7ba9b8e5d05"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-772f2c5b6f53a769",
+      "fingerprint": "514389bb016023b47184e61e4e64e9cf7b48314276b48d70a01af298486e3734"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-79da07a2081febc7",
+      "fingerprint": "954eead08f616ace313f77424a421351a7c99f43b67c7758744b6538b374efd4"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-7d3eb48dc31b45a0",
+      "fingerprint": "fb0b17f9ef24d9cf721d14a4ea1e96ae3a4a3bd8911bda48adf69ed398462d70"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-7e324932ad30a920",
+      "fingerprint": "af8ebb596cf352705f563b414cbca553d8112440ef21776545d82f2938131cea"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-7f0d2ec6282364bf",
+      "fingerprint": "07004c3d193d3d72b1b8961b5addb57860174f9948a314cab3de28bb6460f4be"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-7fb658768870540c",
+      "fingerprint": "f5818858acfa7e6a54628d7dbaefb969cb5ba2bb7608a62e3cbd0ed01e7c11d7"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-804c7a1a534834d6",
+      "fingerprint": "9f5fa3b6ef57414bce694ab6d4bbf888a62737296bc88b961b2106e042a76c8f"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-83142b9a48aa97db",
+      "fingerprint": "a138a6b1e9c0873e3b8ad1cd284d5963f7c5996586924e420de7723857f97b38"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-84c102edb2a82727",
+      "fingerprint": "bbc29e40548be89402a4c95da887b6b386d9119cd95c0e48e33746b18dddd1ec"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-8dccee3a9fa9b381",
+      "fingerprint": "b8120270194631095942c7c748dd9623f1b8d389618eaf1f3d0f4796ffc83605"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-8e4168190b212446",
+      "fingerprint": "5d19e912ad3aaea91c2f1f7b86aec6b3cfe0b8d0c33844f0af6068f3e627a3e0"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-8e4fe05ccb2dd256",
+      "fingerprint": "4f186d5c08a1e16ed978d491a1953e38cc5d80e8670a8b8c31855bf4ef028600"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-96e78fc6ac4a9f49",
+      "fingerprint": "9b7e48590ee42b5b67448a24119f2c01cb28c4a009ca92ae6884ba4d763478bc"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-9987d98dd7f501ef",
+      "fingerprint": "d9e406e5a4c841bc12cff864fe213d599568a82b90e587b88d2a1f42ec85c4c0"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-99f556cf085f2c54",
+      "fingerprint": "e494e5f8706382d6f0d1bf51405f4c15579a8e8f7bcca1bfdcf9711cba7d60b4"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-9a2c02180e0890d8",
+      "fingerprint": "0ace0f9ea658be535ade4d5e2e1e48ccfa5c0e7f5b1222382ee77ab7a850ce69"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-9b017ee5d8c5c283",
+      "fingerprint": "2ccc4538a0403f01d78750810888642c4b8cb0a409d325e6dc7d94f49ec2fd20"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-a7215d145198c1c6",
+      "fingerprint": "d9d4df7999c98581e2d5cea4a5da3077442825c33afbbf59c870faaa2e16e7da"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ab18d5cf23063b15",
+      "fingerprint": "35ed882d548644819ee51d3890ee4ee9c19585a3c4b0cda7a07e52b44f5152ad"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ac572c9ca9fea624",
+      "fingerprint": "abed4b8810f39aac1b0031bf550bba8e6991a35927c5fee65b460f2f4941a660"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-afebaf51a97be5b0",
+      "fingerprint": "0ad820326e3e46d5acc5f5b27360a2ac92dda7030809420e724a350c84b76a63"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ba52b06c66fb04f7",
+      "fingerprint": "1b11fd871345da8e042c527b4058e46b86edea4cb1b9fbc415b8dd9490b82e30"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-c27d712ddbaa8f0f",
+      "fingerprint": "26646993a104ff0eff8e39c5c979be7a5564afcdb926c06198deff1cece83e85"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-c363ba60c51806e0",
+      "fingerprint": "edc85cae1d85b773e9c5a259c7049b48bbf675267e9289fe29a137c389348576"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-c4be8a07951f6bcd",
+      "fingerprint": "437c8ed021164b3f832d92edcfd6d870c76393b71ff4420fbe1cad17bd92e77c"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-c577489e75f84e7c",
+      "fingerprint": "5f9cf6fd73f83f878a32dc69326487caa2b3382d16206141a8605768c893a093"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-c68bf4adb91f26ce",
+      "fingerprint": "3de760f9dc7a35ad163cab14610da36dc022665d4c9f61ff7cb1780ec717783b"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-c858b4f1983fa981",
+      "fingerprint": "8a0f9adde9c18269a87c9c4c9aa0810aa537a0d5d70105afc2b6a4d59dcddf21"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-cc199b0e503229a7",
+      "fingerprint": "bdb79815f392be54d8293f2d5a1354b2f659026fb9aefd38e81e38e7a53bcb82"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-cd9e648251f68435",
+      "fingerprint": "7ea597233e97e2930eae94276087cfc705ab75c8cec7b3630bfa238bc4ec5b10"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-d2bec15284b123ed",
+      "fingerprint": "d6efc56249a7e8ceef05b083dc399fa7b0d84cbcefb9855c8834e1bb4438e146"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-d5cdf69a11f23839",
+      "fingerprint": "fbba56e704fcb5d6f95bca200563b666bc7d5d18e99615d981ddac5358ea2775"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-dba51c2a5a7dd85b",
+      "fingerprint": "ca2711bf519740fab383d0acbb7a0f138737fa2699ca00ae00ec24b4e8544115"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-e0777fa9536557c7",
+      "fingerprint": "71c606b1dd57a8ce6dd19d197d9f304cf0111ab9f4977aced151565c2e3e7032"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-e31254d58e98ea9b",
+      "fingerprint": "33863814935cebcbc1fd7a4b54a0f4b1d44be925cf4188f62390c3bdff83b486"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-e3bc6a31e91e0ce4",
+      "fingerprint": "900e38b1c65d0f56a974a9258b82dd9cd50a2d43e5097a59201912a9366a13b7"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-e5af7acc7b7a6c01",
+      "fingerprint": "6a6c5a561638598e50e2bed29f951e7c8a275e05030014c6261c3b2f1357d432"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-e994014ee4e4b3b4",
+      "fingerprint": "2268cc54eea536d9ce4a42efac108a288ce24d01956b8fb55f5138ac58da1cec"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ebf6479f522b9c12",
+      "fingerprint": "cebf8c479fbf87e72ef884257c664e83baa8ba40deafe4dfb3503f65998c919f"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ebfb0fbebcc65029",
+      "fingerprint": "d2842f7bab6988e99df5837bd98e5b01a4e090d5086094c262f15bbb5e5d34ab"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ed2f38080e742d84",
+      "fingerprint": "5a068043abf09d805a2854ab4bf8b0558d5685506894fa20c35136fbde0032e7"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-ef44ac98e87c88c9",
+      "fingerprint": "b524ed33beab422b9189e2fba59a182af84a3b5b3ce6df7638435bf28d82a049"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-f6f368cd0f7dc386",
+      "fingerprint": "618cf38820f5451d565413b796ccff78036671e7bc9e6dc33d3aa70997d40fc9"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-f83281f9b4ac327b",
+      "fingerprint": "a29db76ec8b040baa09f132ee349113a5d04b13cc69b5ea9ba250a0b12ba7473"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-fbfec66f19233f3c",
+      "fingerprint": "bf51829224fc33bf7584c2c37207243dbcba0f4315bffba4bc13c1a24026e459"
+    },
+    {
+      "id": "textbook-q-12-accountancy-english-c0f4ded3-fe79dd19f66282cc",
+      "fingerprint": "b0625886a869255b96ac7dfc19ea1c3c045dd408dce55691fcc9fb1732bdc444"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-036d2b1dde89a241",
+      "fingerprint": "90ba67a938c1d074c8e96563c073f4b401ea200d99e5ae006f029bb5c5ed2987"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-04b431a18c48c151",
+      "fingerprint": "70e0f093e245ca1d6b26caa162e70838f458537b28048cb060c4b3152b5867aa"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-0531aee341d5c5d4",
+      "fingerprint": "8c656953ce438c66b771a761ebd3e6727698f6f3c433b44aeef4d3178c929b8e"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-06255d1f094a0fd1",
+      "fingerprint": "3de58d6871b1195f504facef0b6832a0373af679f7daac8aa883ffe93a961073"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-0798b1b3afb1fc89",
+      "fingerprint": "c471333d1fe758d624c9d48da116f6b62ab3e7c3c6de22714f73c8841255f931"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-07b937f36f0aa80d",
+      "fingerprint": "cc72fc724dc70321370314583ebca76eff1880f14544c1da8ffb4ba2715548fc"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-08112d0e5ec7eb5f",
+      "fingerprint": "0cbe242bf4218cf9a5032572b54ac21a2a5196677de6ef98c4324fc45ec558fa"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-12a0a2d4b9ad803a",
+      "fingerprint": "4efd217d2f052ad75344433bc789e016c88b648e63f15888bd623d2652c8c6f7"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-1e56a24936e4a3b6",
+      "fingerprint": "b708d74fc22e0226a104f75ed7ad0f3b1b1861aecb4208b10db89ec5c1c74200"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-2024b825aca44ce5",
+      "fingerprint": "4ecc9485decdaf80fb97f9814ccda2899e794dc38798991eaa97f33592fe2bfd"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-21e179e17dd3a76d",
+      "fingerprint": "20fd856efaf2e60df44b3dacecf2fad6a897473030949be9219454bba573e61e"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-2471adcce12192cf",
+      "fingerprint": "75029dd215e5740638c11ba9113020e97750e141273a9cc0511b95712707af72"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-25be087a856d9011",
+      "fingerprint": "4e65709834cb595d033bff2983384147ba7d21a5fe27f227dc407ebeb8a89851"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-25d4da08b84b07a5",
+      "fingerprint": "5138313d0342ea5d1c32241b5c86017bf0290b2b105e357e484fbe8ba38f62f9"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-27a0af2620fd5aec",
+      "fingerprint": "48a26038231447d6b08642560bb20d2fd5c2a5d18e484dde648e1a3dc5e164d2"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-27e99690a6e57f43",
+      "fingerprint": "f380fc27603f8cdad715d8aa0b99dec0ffc3b4a03f7e89610815a8d2c11544bb"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-2b114c1c414abd4f",
+      "fingerprint": "6f0795c58e3d96985e1428ea3ddc7a7303afaaab748f0290e1ecc70d87f87596"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-2c4379925255600c",
+      "fingerprint": "68e009c554d8774d11a0cdf5a2fa93fab4fd784bbaf61191749224bd44c75a5e"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-2c8361628f6322cf",
+      "fingerprint": "114f868ce15404b03b0c20914682fa2cb8b4371c6deae7dbe8f9e8ced77be63d"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-2e132202c6f04e91",
+      "fingerprint": "fc080189326b9059abb8d29feffcbacdc0ae78458fbe4e2a1bea30b32415483d"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-326f8d805b5c1711",
+      "fingerprint": "db6a15f8c58727f14cfa0e0a29334c5163c0458c6ca302a878aba116ab875959"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-38368a57db16e24b",
+      "fingerprint": "765857111f82a554fa8a47dc7039d8bd21a9159fdd937209fc8cc12d161135c7"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-3d32e9e2fe57e79d",
+      "fingerprint": "05f304b42962d9bad96674692cbaacf958793f2438998044ce8f73bb9203390a"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-413676a5e18f3144",
+      "fingerprint": "48ec84830a3012192ce364cd2259a5241a77116b14c5cafd1ce0bf3bdadd6c61"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-41c1b85c1c183288",
+      "fingerprint": "e0d5144071ceaab3bc9b2df3d479318420721a015f1e755a57fc08fb2b9eb3e5"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-45d1b624d08fad0b",
+      "fingerprint": "db264ef6daa215e33a1f2e12615b097a12866983f0c92fecd5b921024e0a673f"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-46e06262d07d3d6d",
+      "fingerprint": "95eeeade9fb560e774e710ae1c203d07ac1e22eb73206a4e043953e7d4f0f663"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-5021a2b652deed59",
+      "fingerprint": "946b3185f5cfe88e1c444c0c87b45ed03cc3727a61b6aa21216b19ca6641a98c"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-51a21c50c706a0a1",
+      "fingerprint": "1e17090cb7101483be5514cc09f53f9d53b97a0d2f0dcd679e405fbd2bab4d74"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-5763c80bec66a32c",
+      "fingerprint": "e67970253034276d27ca5448f0ce5f6e0e3c407452c7e551f1680c82d2f9330b"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-5868a8a22e25a08d",
+      "fingerprint": "611b52b6980b7cd5c4df22747450bcc24f0ef3f793f33717c0cf69410ff29504"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-58a69bcac03e29c6",
+      "fingerprint": "c624ec06224b02b7bf427abb348f5c3e3977656c120e1e3a64160b89aff7c486"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-5aefe3bc43e27c56",
+      "fingerprint": "0febc5d575c592aba9d0a0f0f47fd5acd59bd8c5f8de0ca688bdea512dafd166"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-5dbc2fd43b6f0460",
+      "fingerprint": "b1c4fbcf199aa703033bec08f7f0f7a2527c35aef1fe1176e95490ddb2213db2"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-5ef150d32f5701cb",
+      "fingerprint": "78bfe81e681fe019079c344e754e5f1d36fd8f7be9051aabea527809c7f9d648"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-605ae45588657128",
+      "fingerprint": "e7b43ba1836be589142d4dae4a867bd62518da21cca1b4ac67620e71d6df7f2f"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-621b5cebfc4be7c5",
+      "fingerprint": "85437671d652f66d2ae628dd068f8f2c1167910a794385a32a454a3ac136b77e"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-642ede7050c9ff92",
+      "fingerprint": "5c72eec171c75f8b5585ab7d9c748089e8badac7b0441e819d5f81ae70408d82"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-6d64ca4898ee2120",
+      "fingerprint": "c219ffd17d93314983211f92b5f573734ed89b5e5ce85c117c02ad3fa982a102"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-71a1168b661e545f",
+      "fingerprint": "fe29dcf0e4a6555e076a9bb277e803422f1dadffe783081ad00a9f3d87a7c27b"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-7495367d3696aae5",
+      "fingerprint": "c27e5493b149d5cc4343f04e92dd7dfe44a4408f47092212771519b9863088f9"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-7898b18662c26255",
+      "fingerprint": "d6d323539ca6a6bac2c01d1b11a1a30b6e0ea79094d451ead99135546923dc8d"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-7a793baec4bdba53",
+      "fingerprint": "d02aab2a9149c5af88208d439dbdab57de7b4fc1bf733152fa395fedaa7f642c"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-841a9268b4319d21",
+      "fingerprint": "51c3ec078377d4f7261cbe96aba1875d658cba13604b71baf76c4ac60fb45022"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-87c3243c9c1be211",
+      "fingerprint": "f34b2114971fbf6d66d3e9d02885cc076d48bc787f0e9bbc3025ce52865ef8c4"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-901434c1972966ed",
+      "fingerprint": "5296c34ecc558cc85e55dd81eb8f8f2569c6bd2f524f3523f4a096914875aec9"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-905fb245600e25fb",
+      "fingerprint": "a77a1a6dc385cd9b59c83103993f1d2adf64753043d2c13af5e833b841105cf9"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-92379ed06678efc8",
+      "fingerprint": "e366c4222337caf92078d24d7b57e94349b5f6e61633ac78f527cb0df6a2c85c"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-92bb5fefba186ca6",
+      "fingerprint": "b313ace794d629cef575d65f30adf498c3c8d1a8f4309c47ef5ff942b1459a09"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-92fe104a37f1beb1",
+      "fingerprint": "d197d54e672ce970ba01bdb1c89538d81f8a4d4b3e7de666292c6d5c3620cb63"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-93e681fe470d9f12",
+      "fingerprint": "a34a655eb9d207be73d12e17013c72fa53d3efb6ab0f311896ee901a26740365"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-98ea9ea8f45319a9",
+      "fingerprint": "daacaf1e9994418daa6c41f0d166ca06197ab31ff83a37cfd6f77a327c0d3d16"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-9fdfefc2a27b38fb",
+      "fingerprint": "9c7376b857db90782a41f6e688b0acf4140e034266e5c3079ff406012917ec10"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-a19af246f765ff47",
+      "fingerprint": "e0f227deebcd64d8ddd2a97a48713c523fefc0617e52c92d8d4edfd3ff6df871"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-a1b2f531d125c131",
+      "fingerprint": "65f9b63250a36e50bae850e2a208d29b5ad68f07caf32a93a6a90890fd23ec36"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-a2fb0865b25a995c",
+      "fingerprint": "929fc9150a59c19fc970b254139ffdaf97aa0a36b30444aac43d6d7585c40cdd"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-a4e64fee3a4528d4",
+      "fingerprint": "1d5921559faf9cf499e3befe2d8738c5fee22fc978b5103aa1eac0bd8e8473e1"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-a6f78b9c5b9a24b1",
+      "fingerprint": "7a6fe54256801072325dbcab0ba71847742a63f6ca096862fc41931f1cf7a2aa"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-ab1447ab39fb9de4",
+      "fingerprint": "b19686ad03ee62023ba0f2470029928031af16ec790dc7d08cb2b6bab9356945"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-ad272b76bd3a1dd5",
+      "fingerprint": "1a73411ba88b732e25f4836058795a77dc94487828a89dea0e7da7dfcc67cc21"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-b3579a87f643b350",
+      "fingerprint": "95a6fd910305b199966de0397ca98ab954228fce5d433ee8181af91594a4c22c"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-b4f7b11fda78cc3d",
+      "fingerprint": "bfe10c50f8d8daa73f2f2697224dd2871d280bc013b8658866b28cded4f39179"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-b6b0beefc50b57ca",
+      "fingerprint": "f1e4945723c0b8f038f9c1b2dcd9577dbe338e365512afbb5ef71288498ba59f"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-b729057b93f5872e",
+      "fingerprint": "ed267d42666398f3fd5635ed1d94307a56aca09bdd09fe3f1dddf16666409cff"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-b8948a447bb4600b",
+      "fingerprint": "ffe109b7084db2eeeafa68adbeb838d5d0ac8ab201b2c74b123302464e08e9cc"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-bac57641c2f77113",
+      "fingerprint": "0b4e1ff2dcedef350eddf2e339150ee2d0862974b92eb95052d3f1e596f9cdff"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-bad43c5257602ee9",
+      "fingerprint": "f4f2d1e9cab0f345f35c99a38956b0a0e8f9c13b6d788e87d8a0adb33ff8144c"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-bc35b246bcd87a40",
+      "fingerprint": "0f487b6ce48b7928f33ffa169758acaef1ece3eeee80017f046c68139b3c70da"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-be1ac04c65c08876",
+      "fingerprint": "8090944c7f9f081a399ec61b1e29fb0d70aa57031db7347fa10f1a7a40e941e2"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-bfb8efef5c442ac4",
+      "fingerprint": "6bf7fdf00a82d8b302e346987f7505b6859b647b4cb57068361bd2c9820808db"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-c40f190df13f672e",
+      "fingerprint": "f5cb0d6e8f49e8b7afb641e51995e08e609e6b1265b5eaa38012fb2b223edeba"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-c888c04cb78c4863",
+      "fingerprint": "cda086a17cd5cac5a4fe5d6cb0ae077721fb5326ccaed46f9920e10c3ae63484"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-ca24379e5c2980b4",
+      "fingerprint": "3cc3cd867b5882cbd3a2cf185939e8c4dce78d98be666caccc3799e867d37035"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d02cbe555a8597d7",
+      "fingerprint": "44c5279c6c2a7ec5c93df9eba2c6c89a3bc0bf272581ad8f0f0771dcebbe801e"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d4a1ecb56f91a750",
+      "fingerprint": "4fca88676d50063ee01df959a76fa482fcbf6dba76f9b8828323ce8496e75c54"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d5b9005ed0b67aea",
+      "fingerprint": "de324ad4e15ec840f5e85973d21f4b8019d862569abdfa790024aed8c5111fb6"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d73c60a2d179b747",
+      "fingerprint": "8c5d2e4d72230435340509dceefbe53900b84e0beba35631cb59afc2dba248d6"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d7ad236f65d9c77d",
+      "fingerprint": "9d46bcbbfde1a3d1b7650fa5d406eb55e1cac5c7e1dd0a1251deccf1ca0322d4"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d802451e845edd8f",
+      "fingerprint": "af41c5f8243a390b8ed8f6742e7f9dad4ce8a798b491cd56d42070a2bae2b6a1"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-d9d320c7a196a57c",
+      "fingerprint": "61cc80d81c6d2d262772506ea4f2b284d1071fd81649e283b769bc7b62aee895"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-dfbbde1afcafc7ee",
+      "fingerprint": "0ffa9ee83a2ac16e595ee1c8f42172da0c79a80b2c730d4a644086f57efbf7eb"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-e57f6ad61ce3c3f3",
+      "fingerprint": "934751a90f28dafe908b1737b49744640d01a7d5f0866d814d35fa56de177208"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-e93b634bd493c555",
+      "fingerprint": "570fda1f297644425b24306335c5e501df7bb5dae75379c9f1bd58307f8f5b90"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-ea3657fff63db733",
+      "fingerprint": "adb1ab1699fae6508a1a0830e8515a6e9923f6635b59e67ffdf63908be9686f3"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-eb023a2b915184d8",
+      "fingerprint": "dfb213d3b4367aac728db37c47e991740f10ce6560bacb11062b19885c271e68"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-ed0b7ffaafd30608",
+      "fingerprint": "327f848d9be8a4695c180603f68bc5d4587e2d6f8ad3ead27c2ab10820cad34e"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-efdf2ac00758f760",
+      "fingerprint": "ccf2b78a63fc2f17e683eed4fca09dfdf3e6ef624334a7e065eef5a0cdd7818c"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-f17bcd46b72b01ea",
+      "fingerprint": "246ef99261083c4073f8d137a6531cee5c74e5113d4ef94ba823f072703428c3"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-f48ac0c84ab7e7ee",
+      "fingerprint": "579d92f0617460aa0292952700123095a92b5f867be56781bfeab463e17f1d28"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-faee27c7cc800803",
+      "fingerprint": "41b2c1921464c988746704d89410bf97e534855136eee779577e317c776d13a6"
+    },
+    {
+      "id": "textbook-q-12-auditing-english-cb18c74c-fea11c73d1196994",
+      "fingerprint": "d84b2a09740566b835925efa2528f7b911f5183dbf4a6a004a9cd8cd5b3cd097"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-0e48c7880a0f398d",
+      "fingerprint": "86aa51024fc8a42d7705a3796963bec20879d0cb6415954bf85a77a8524bdacd"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-11ee1acaed1335fa",
+      "fingerprint": "25a35ab1d8f421af71a897ad296492afd7e8bd736524e2b0b18419d7ef7e5cbc"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-1993d04711d330d3",
+      "fingerprint": "9565accc517faef12da460e0c8ecaafd2ed44e41a95f5e1eedd5087687db84ae"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-1c8611da010272a0",
+      "fingerprint": "182a0645f9fb8b42f588d3e30982842b5357e7f4fafb6bfd7fb18486dd1f951c"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-2fbf2c293d5b46b4",
+      "fingerprint": "913c31744a3ce84a6a9edd5ccd8cb7c1adc86e87d45c3bc3312796aacb0c7e26"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-318b170a8f90307d",
+      "fingerprint": "625b03951c4a06b1997d8aa30f9e158ab02feb8a8873d87cc4be0e7b4288088c"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-37221b3a90bce2ce",
+      "fingerprint": "775114cd58fad2ed3556ec3a4343bc39c5deac684fbe7e93a941b8da0cae81f7"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-387bf4829cbe18d8",
+      "fingerprint": "d7445c6b01d1a8d6715d7098e9007d8c1efa15c4a4d63be0776947cfc54ffb63"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-3fe4fa5db443f2f3",
+      "fingerprint": "d32d43d5568f271ab2822cdb7c27cedadbd8f22f9db919bca3e4b62d72b6e517"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-415e8f6d3cdfc45a",
+      "fingerprint": "66096bdf3d514128de183492377720d95b9968b52ca7f6bf5479f31fbe92d5b8"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-4d22d9c4887fc012",
+      "fingerprint": "35e944fc7b61b294cf34d4ae09122b12538166849c98ab068b8789380b07b586"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-4d8be9ddc4d20f7e",
+      "fingerprint": "5b0de947510ef5dac0df098cfaeab426a2a3fb806ffc900b539332b181d719f9"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-53740c1d4418e8a5",
+      "fingerprint": "8cc5558f7c2f1f6c4188c30f69e296142389b06313ae1ee3d4e16841111a05cd"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-57c3d28e0d0395b8",
+      "fingerprint": "ec8db19c7ab34d00acab5aeee14de58565d8a1dd1f6b853cbca257c7199e7d2f"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-5e9960babd493ba1",
+      "fingerprint": "51c5935f812b94292e8468c6962ca1bff43632bf59b65688af07f627ac2b13ea"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-6430a9221d542694",
+      "fingerprint": "f7a269a97da14ca117ca78f8fd2d1101b8b61fcf923cfdeeafb2a012e345dd06"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-661063e638488e27",
+      "fingerprint": "974e9959aed0b5db595eadb2165c413eea07d46581a618d869f06d57b1a96328"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-6ca682f25534a636",
+      "fingerprint": "06ff9490048b45884304e76ce95faa5f528f085a24200204a0ac12654c3e553e"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-6d6483dbd4eb52d4",
+      "fingerprint": "c77533056f4e3b3d244dd4f7f6178369c27a2e03b8c2bed6324ff047c5551250"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-70ca8f8438899f8e",
+      "fingerprint": "c6a037c3299282ea9c12da904b7c45c01122715c9285f566b9bdd54b8f7a4b91"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-7b1089db2e9d4a46",
+      "fingerprint": "6bbcf53c11b0a442036b816ba253faddf228ee48ae45aa017cc14682ce71545b"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-805da6c753b35aa2",
+      "fingerprint": "e6eccb29d16df339c1fd25e2dfd5f54574c26cdf87af1393c55b3eeadeb0d290"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-827113a6d704c935",
+      "fingerprint": "a7ce4bc7bc0fecc8f2764e68a942bbd78ec90dd1bfcd152349ed956f936a4956"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-8656336a7d09904e",
+      "fingerprint": "42ac2306b01e01f7b8d7de6d035bf423d9187bc2ff5a85b3ec1359077653d6c2"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-88daf87d4c9fa80c",
+      "fingerprint": "3be7ba6b6d39a8ed7408c5ab378909135ac230bce93994dc8a3ad87f22555495"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-90f6cd51012d46d0",
+      "fingerprint": "293cb9a4645b4cf076995770f1c17a353fce5da3e8ea854d564dc7a8c977d479"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-99bd4215df547a70",
+      "fingerprint": "50cdffb4715a69079c92c5618dd11e29077e7337a9fb6256d9a17fc1b4ab2243"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-a5b488e22546ebdc",
+      "fingerprint": "2d2322288ff1a202c39c81c0d0d3c4d74c92a01186255b141a67c56141eed4ac"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-a65cff172318688c",
+      "fingerprint": "5d7caecdd9b68deff87f55d6a36c93001ac2aed17678c4fcf20f4765a5800b50"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-a88876c8577795a5",
+      "fingerprint": "9338a27c7248e182d2953dda9bc54cc2126f912bd530fe7cb36c2179028371ca"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-a8b5acc75da5efe3",
+      "fingerprint": "f9ef7ea3c9f440ec4d3dd6700687b3b3334094a498caacbabe01d0b2b71a8e71"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-ae723f9ec4ceffc8",
+      "fingerprint": "ed8f015ffdbb21e4e923c7baef00ed22774afae5ad4e75be1d4cd44d45f6df41"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-b553fd76a6c343c7",
+      "fingerprint": "760e09f70f1dc60b1d68417c7fd4f13c9111b9c41752b2981bf5c714c7553ff9"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-bb9bb4eaf155db54",
+      "fingerprint": "b6bfd57069863d6ea73540e154d6f25658ee1690baa8d087855c51f77b59e3d0"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-bf64b35b3f34a2fa",
+      "fingerprint": "f9a38b6630c76e5adbf18fff020e15ab34d030493a5cfc167389caaf2cc34c48"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-c4564aed8f99a69d",
+      "fingerprint": "a70b8903e289886d48d6a943c6beb4fcdd2dae64757b238c7c97de6d384c268f"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-cde472d5562bf158",
+      "fingerprint": "b56b77ed4204c98d5ec029419c467fe0f9d39f2493aef51f6b6acfa997399bac"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-da37777ba99c3097",
+      "fingerprint": "13c14c01848c7f3318e0877dfd1960590de78aacbf41a9bcfe6b0131dd35ab81"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-dac32b9206329ffe",
+      "fingerprint": "c9dc8b10e044d1f9953734be980f34a1b064f95a30a5d645524c5ff924ec06a9"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-df667097157a1a1e",
+      "fingerprint": "d608d179f8ac1fce95e3357d0d6038249b69c22e26b5d3f9f1fe681855f7f5f5"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-e08c37ce9f7b3d37",
+      "fingerprint": "f5a96057e56dcdf7f1e9dca3558414fdc215bfdf0cdd37fc3aaf61b96487014e"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-e6cf6749c686c4d2",
+      "fingerprint": "8bbf61b73865e44ad26e95bd44473e5843c24af1c0deefb8fd55800064401ba0"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-e77614f129776c4c",
+      "fingerprint": "0114a82b038b8583d2e653960c438e2e1fba8e8a28577606132deaa880852a8b"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-ee9c82be49f1c64a",
+      "fingerprint": "5be1533fbbc9bdc19fd5c12bcebf775de8306497b874c528c65e0165d5e5cc9e"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-f07e3368191cff76",
+      "fingerprint": "89a15dd0504d02e80ca5eddedd7bc2dbeca68dfb764c08f32c7f9163f373a3d6"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-f0d8aad87ef7580c",
+      "fingerprint": "e240978a6848e1fcc6014cee1156413853fe2155ef8f36191d2c1a3a3188ec3e"
+    },
+    {
+      "id": "textbook-q-12-basic-civil-engineering-english-fc2d4128-f88e2ecaa73f5395",
+      "fingerprint": "5dc73a1b98775e791c03a917fb195c0365546abe4b19fdb62224a5719598bbdd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-03f22b88e9c91242",
+      "fingerprint": "a9567c6688d537589d84fa7ebc5c147f4f84dfba5c2daabfcaa37762ce555ad1"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-0803ef035d001c8b",
+      "fingerprint": "f56f15a850e81cd9fee0c947a53be21f3849463c3ecc3e043a56e10f01731322"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-0da9afc9e534c259",
+      "fingerprint": "579235df7902241a7526c34f2c49549cb991359397d3e66c76eacd5a63da3a74"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-10a6dafbc0ec7357",
+      "fingerprint": "c7cb21c6302696d466128eed3e74a55221c40941d55e4288239798664d9a11f7"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-14a24a5894684389",
+      "fingerprint": "015fa3f163e6df849e116e1524e2fc17a174b66d6b1f9fa92433994cbf016aa4"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-15eac7c9d86bbf21",
+      "fingerprint": "dc3d73090b7b3acb0428edad3ae7e150516c5460c3e3993044cfe8bce74bd7cd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-17f5a55810b75b89",
+      "fingerprint": "e6f7c3c9f2f424c27a39183cb8aff3ba4fe8bb9703b42f695b9418d01b33e0fc"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-1894b6435dbb0d49",
+      "fingerprint": "9ea753d6d9f1bdaf91c6fe375c0c61d3700303b9a47ba9e2f37dad8ec220c6e3"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-1b77f877704d0e80",
+      "fingerprint": "a1bd0d52f116e33943ac85b740a8dccf0ef1990a1eef3a98b978cec494cf276c"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-2324d896e5cd14dc",
+      "fingerprint": "3606b45b4423bb8dffbc7e39bbc8d793c4ebf047f1d058f43091ef3e20cf251c"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-234ccecdca34d328",
+      "fingerprint": "24d5473da1c4bdb8aa5b92f704202103a03bd4f40aa498d3acc4e1ede405eefc"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-249635b73cb57e4d",
+      "fingerprint": "22c912a7dc98adffcfcd73e51539092b227ef2a54fc8fc6cf3986c9e88d79234"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-25911f0f8b65ea76",
+      "fingerprint": "3c42afe2ca44d7eefe0a5037ee0d48bb2bcce298a0e4bf826e54a4a052d57011"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-26f01bf37829b76d",
+      "fingerprint": "a66f77b8c4b5ec5ba3a1a07b81ddccd555c1d068061000fe7efeab1124bb54e2"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-26f199741f60316b",
+      "fingerprint": "5c278b9c6e5c8f0d5b379a4ca6d2845a7ff9df7c28865b7107b430a22c76e2b6"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-2aa834b3b5166458",
+      "fingerprint": "3624f3ca20e753375287a469313ee46d4eee09e88a57b0e822e909f8e8f6cbfa"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-321e11ff280bf48c",
+      "fingerprint": "a93de670374603011686e3188d3deaa49b3759b822d1db7a6fc074a2f0ea5c5b"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-338a14f3459ab177",
+      "fingerprint": "652929d73f91a921f5fa13e01bdbcef479cd91bd99bb78f80cb5a6a17a8b197f"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-36b000a1f751f98e",
+      "fingerprint": "fcf79076d134a2edecb7c5de0a43638b38d60d4fae0ad72457292b4c5a4e36fe"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-3d3220a7bcaa1b71",
+      "fingerprint": "213082095eb0269402a48b5657df6aa50ecf95d6fe779692172d59a772153cf1"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-400fd426c69cf588",
+      "fingerprint": "e7578f577e78016e756d17d824d5ed8047c1944f7f3608736736fc4aca71e8b2"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-41fe1eb4b4166d59",
+      "fingerprint": "c5b066bc552d1f0d2ca16c097b4e5590ef4f60344271ca52ddb07338ab45fcc1"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-434e4458e3f54c13",
+      "fingerprint": "bf5fd0d80d6dcb581d50f63194f56d6dad7a547475a354f599a2eaf70eb19c17"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-4377faef505e05fa",
+      "fingerprint": "aa69fc2473987953c0e0ee26299d95f5170b3e5ca580cf83d3492ce96f54b821"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-49e307e64949067d",
+      "fingerprint": "6b96c5e60903261095f9c0a1e904026e2dc2fbdb5361ddbddc2197ce99137f67"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-4b60f5b2d8a48c56",
+      "fingerprint": "a268773169c6914facf8329e7f3b26472013e625ff294468a89d482866fa9fce"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-4d753c473bea8dda",
+      "fingerprint": "8adfef5ea03658208d76df6c2af7a5bc5bd45bc1e8320e899796e125fcb18ff7"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-4f4ed912871f80d0",
+      "fingerprint": "63ece5c19f143aaac5f530b9f739722bbd94011211bd70d8a0c8c879f161e549"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5382a6ac92a17976",
+      "fingerprint": "2a369314317be57e96e76a01ef8d93e5b88e0803b7b17530fce8f8108e0a3628"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-538f1d4ef0edbb11",
+      "fingerprint": "c7a8cc41bdec2e48980ba4b153c13b6e08cb66499ac4163f5832b2b713bf4aeb"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-53f9bae6807c7d52",
+      "fingerprint": "02d29e7752296061715846b2c84e93be690074c3acf5872a4c61fff4b4ea8858"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-53ffaa14f2146fee",
+      "fingerprint": "a5c906f2b46fccf244a182a55117ecaafb6955749873fd6a1d2a79c21217b6f7"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-55d8aa4184f17206",
+      "fingerprint": "acc096e9e1d6d9fb106b470b1e663815b41a47440617b5ef6f27a0525514c714"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-56396e130ed5f411",
+      "fingerprint": "f1f8fb438b3f486bfe6d2fe265e607ab6662e0f3caf8230098d309a571f97cd5"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5734da6952a4cc2e",
+      "fingerprint": "697a093849e8e9bf13d2523e925e8d44ee421d3e24985e8af1f08a060f0e7bc5"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5791304e64311022",
+      "fingerprint": "a282a1cde1355c46aee29beb9144b8974701e0c3b0cb2a28a9586fda34d95cf1"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-57c50b36738b2422",
+      "fingerprint": "4c5eb2c632f5b49c752e8af156797ebcdbc460f392d21b23d61a3dcd113f68dd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5af0907d440a8fb2",
+      "fingerprint": "dcf9eca132f4c22230d039f9c2d08d6e06d49061a5778c5ec13c14dc2df95fd1"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5c830c16b71004d0",
+      "fingerprint": "52ab4f2354dd41dc61c3577885e4c7219fa5dd980943ebee44d1999f6dcb1961"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-5c9a0e868de400f1",
+      "fingerprint": "64f8d0811cbf781557f3607eca1dd209f06885fb8d9e3e3a641d5f2bd9dc12a1"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-673e2d78435f2ec1",
+      "fingerprint": "31dbed7d01d4d78fbff14d53d452558dd93f9b65a238bc6aaff0e9fe29fdaae7"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-69ab85a34a019d41",
+      "fingerprint": "320612bf8c3dd680fff5cb4ba90ec6c0ed7a45fb6202e1c2febd10f99757d09e"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-6af76d5d5f8ffb37",
+      "fingerprint": "5b5d9a59080f2157f32e3a2315c45a76a31d1286866647e8c92db6e58e63524f"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-6c1a1767aa9695e4",
+      "fingerprint": "8a97606a43be57eb5dbc3883cf8167f487a212615ec73b7ec1ea32e82d537e3e"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-6de99a6318085509",
+      "fingerprint": "9da2a9f2c0c7473b9b891290de2855b83833c32b419db39e3fafc1da7cf03c08"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-70fc40dee110a137",
+      "fingerprint": "bb926e57e96f57ade95ba40ad4c65cbd255870a7b6edce5fb34f7c35259e474f"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-72ee75c5f7cbeed1",
+      "fingerprint": "81adce1e8807c647ddd09918a8f20f50fe82a929987c6c1585d772f755a07594"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-7646f2185fa67e84",
+      "fingerprint": "2bd06e970c102c44fc3c2782933184ef90e42d209894ac4dd984b20f4420eccd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-7e1b0d4776ef5741",
+      "fingerprint": "eace789d0106dfd15721b7575ee5f633081c1ed735651c1118c45f9aa6eae451"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-86ade6fefa21afab",
+      "fingerprint": "291d6c0c299ddc734aa81517bf121754d03654aa49df565e584972c7601b5d58"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-86e89ba03a62a0ee",
+      "fingerprint": "85051a3380694578757e9193b5facd817dbe2a94e2783c914d468e12d2e6c4e4"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-87fcf8e8a5cd517b",
+      "fingerprint": "be6a21f8868cc02b1f3d2a14b60666a5e2e36de3f3afe40d61679ad305606181"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-8af42439ec2532ae",
+      "fingerprint": "d69abcb8c17c572a0159f540f563d938807a5a634e4db323bbe6f6187a8a3ab4"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-8b882d8a13bcbf0a",
+      "fingerprint": "b4336a94e1ce931678be17c67592b611dd9a82f71006ee492e1489dd63aca063"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-8ebf0f2bb52719bd",
+      "fingerprint": "46f82364d449b15fa21913d034e2968c93f6687672fd474705ff9663398d37b3"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-98f278ae813d969e",
+      "fingerprint": "8877ac98c44f95ac4656570d3d18b6f61f8bc805e6815030efaf24704e81033b"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-9bbff82a75ec534f",
+      "fingerprint": "27200b74cabc8f3014d8101ed0faa05b12d0129110da5a7776d737fcb3c34d70"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-9c76541067246de0",
+      "fingerprint": "1a87e0c206f1c34a9589e53f7acc3c28fdc4c349b3e08613b523fa0f2739e5d2"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-9cc4d3dd53d75721",
+      "fingerprint": "78f14e1b4af05a4a9b517a2abbcc1579344d4203499613ce1fe04208260ec9cf"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-9cf4229a2b17e54e",
+      "fingerprint": "76cc75aa716e126f069e9644a929df4d2fe9456bee6dd8738651d3ace24a8f80"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-a1dd79cbefd5233b",
+      "fingerprint": "404907de7f721dde67c922669339ccee9be54cb4baced0784eb9b192201c6783"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-a3f19eff30025340",
+      "fingerprint": "add7a44ebcd071e83496ec3f42e22bf57bcc1763f5c293ea6ce95e0ee1659942"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-a42bd4b083e736e3",
+      "fingerprint": "5aacd456b8bb07f63ad1c8a689f6b8837b1e32607cd916dddd11eaccde0534be"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-a80a0a3e7a720ae6",
+      "fingerprint": "a4faf34f33d339d65f3023aa328fb247fd121bc62108402754a0521a670db982"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-b2d2b4b38211cfde",
+      "fingerprint": "b3dea0f0efe67156e525f900945b3f8df967b93c9625a4acf7a912cb9fffe5cb"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-b45f276ec40a7c8c",
+      "fingerprint": "7b4c2db86eef7234dfd743d55353ea3d38f4239076eed3ab310aa239f07bf03e"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-b71b852e40755817",
+      "fingerprint": "114af69489124e56caecc01a9cfb7c36d854040264ae6b0f7ac38b9195b4b5ec"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-b8f8f4f3c25ee13e",
+      "fingerprint": "1512dd52f024456971281ca61267b7f6410202e1798fea4fd817ebc3e472bcf7"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-bfa436b8716997ba",
+      "fingerprint": "258b537ba323987778a911f04b4727a0d019bbd8fc0a2f3f8fd5ef298da68486"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-bfbfb13f49e5a32b",
+      "fingerprint": "d8ca6aec057c80d654433b5fb0904b73487d5cfeec8c470b4d85bbbe458abb46"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-c0aa5cb44d47a60c",
+      "fingerprint": "319961b7e86d1289078a9ea4dcb26a94160a583f45f308caa02a0ebde11b92af"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-c46dab8703f169e8",
+      "fingerprint": "33d464f95fd6afb8b49df902927e7008a96063d84cb747cc89ce9a6cff8a8a29"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-c65323cd2140203d",
+      "fingerprint": "e1e61de6535ca9db3c222d67a46e01af60647f3575f5268a1c35cf8e58de1f83"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-c9a52c565b0e1764",
+      "fingerprint": "61659fb86bed4f592f3f0d543a4d44ef36a5b2fc2eb9e4cea7df9cde2b40db14"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-cbac285130f5dcfe",
+      "fingerprint": "f223763fd6204ca7a95fd77f658525861ad04977087cf04862efe385d105fd65"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ced787c8b6f25715",
+      "fingerprint": "c66042cfad934793334cf440eac9140bf2a77708b4eacc43998d6497f876e58c"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-d04a342db1730dca",
+      "fingerprint": "76861aa4b5d2fdf7cccd96d1fae7e64202389c6cad7c80d16b40234a45ff4549"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-d248fcce38ac0ab9",
+      "fingerprint": "f96b50e7f31d2d574bec6de263a331ca710f7cecced8c80b39c9911b50b3c9cd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-db9a2f853704ceef",
+      "fingerprint": "bb67494e4fe9d4bb51c43220ea46458f57c2eb57e6786b03ad79cf9422835482"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-dc78c178bfc34384",
+      "fingerprint": "100e24ef24ea42f40f6984b6f877cad8c99c8cbed801a36fe8ad5509b0d1cf0c"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-de55f19376d5beb8",
+      "fingerprint": "ae790d65e05bf1b334d165e246cea4d718a0b6c3b7a4ce2ace2e6adc53f254cd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-dea57498f4befed3",
+      "fingerprint": "8a85153dec0076b6c8d63945994e2bb37c686be7007e56d06d2a219ee384fddd"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-e3260dec167b01f1",
+      "fingerprint": "28242f2c4719cb66c4e7c65bae1c85bed2f71a1ecd04fb373ded5f8fbc560d1c"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-e4f774518e0fdeee",
+      "fingerprint": "72598effb7d958a89cf19154cb5c204eabf10e426e879c16ab431be36160dc18"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ec54bc0ec08a8b5a",
+      "fingerprint": "82f642807ee1ac8aa42c246f73afb8d44a735d77ab542908cecd71ada65a2023"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ed60c883e25103bb",
+      "fingerprint": "9fd54038562924d1004e74e334011f9bf21f42595480c2e270b1b3419062e13b"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ee4ec3513c457661",
+      "fingerprint": "61d3a54dfffa92d0d253551c976a37201db1cf9ea67792c33886d6b579c6431c"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ee680878f3674191",
+      "fingerprint": "1a50626c87a0c8f22624080720f31af43684dd281c505ff33896f0815b5bcda6"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-f43a8c9d96c9e5a2",
+      "fingerprint": "5a7adb943f0da6675da6c3eec5d4cc298c8758313fbbcebec70041e5e43142d8"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-fb7e0ed678dff411",
+      "fingerprint": "4e8382f624cf45452c7b2c212540a215e50eca4b671497273dab3971b95d5a95"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-fb90c857abb07379",
+      "fingerprint": "381e61e93d65b7804fdacfb0ab980eac91f1f12fe4fd83c33096c8cd8f1b344f"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ffb031446294e6a0",
+      "fingerprint": "008e6e15048f11a51fa3d3b8f59fa1d90dc5e47204c17d9138c947adeca68f9f"
+    },
+    {
+      "id": "textbook-q-12-basic-electronics-engineering-english-983efd90-ffee7a0c146d2f2f",
+      "fingerprint": "1020d57e98881ba99b8d754d3c1e972f18073b581cb629029144f9b23eab9c0c"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-0a414af7c2889770",
+      "fingerprint": "3b6b6ee1756ae55e0d7aaf96cdefa84910abb6169634d57cc75724f1a9f07a08"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-1acfc10703183749",
+      "fingerprint": "524d48c97da653e0c9dca5838998ac9409af35014a4c1ada41da4c8a9d1c168f"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-1c9c3a08c728c413",
+      "fingerprint": "f5741cc6dd29df80eac33ebec58ecbe764ee6865e0d43cca0fb1e3177e5fca30"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-1ced1e4c8f4f23e0",
+      "fingerprint": "8927f66842c83e610f9208f0c4633116b60b8a98117d3b8ece6c971db0a2185f"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-24eaf7bd2b7f17e1",
+      "fingerprint": "c8ee4295fbeb5f80c25d42c781f8914722bb83d59dc9a37dca845899511de1b6"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-32086d03e2131ecd",
+      "fingerprint": "d51977bbe40edf55ef82260cb6be5892a7d4f3174f62cd9b5c451fe5eeafcac7"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-3266274efda5b9c0",
+      "fingerprint": "28c34ba1c4efeac963cf9a77e2ac84172d573b4c639b82f07f9c3c58612e5c89"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-48bd203f401a2e43",
+      "fingerprint": "6cdcb8335d1608a6aadfe87ec82e15b2350ab16717f53338b7f7d78c3a5244ec"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-5355a9106d2956d9",
+      "fingerprint": "ee191cc65a748cdce5f34b123d91cd3591a2cd6e600f6861db592a3ea7395cf0"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-644e6bd84e6c40e1",
+      "fingerprint": "352910af10d1bb0b27515821f95e7841f4df01fe529763be71880d5c5876fb1d"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-6ca27bfaeddd0bbb",
+      "fingerprint": "eae0fd5185cdb08e241d0c862ae51ba335a6c11f1f9784d49744c68a0e31777b"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-6ed66093cde0ad67",
+      "fingerprint": "a35e9357e3c6c8601131c9d29e2e163994f9a54683517ddc07d7aadad8958934"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-72df5f8483f73485",
+      "fingerprint": "b7faa4b95cb6b64e467f62827bb627a7152ebab3c94e798135bdef26c98998f1"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-78a10285d0911a90",
+      "fingerprint": "ea1d1e454733dd809fe1f57fb7932544f1ebbe12e2f855fecb9096355b727417"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-8fd1cc41c266b5f8",
+      "fingerprint": "3ecd058c32065bd7fe24525be8ff30dcc8bd547114807ec045c7df79745d467b"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-99bff02186a2b930",
+      "fingerprint": "3b438afbb7b786bc619c4e323719f85fc982fa9bbd972223b4145282c406d21b"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-9b667f9b66c92c2c",
+      "fingerprint": "e9ae9d2bdf3049d695b8529dd3d12e1bed343b7d347d43a2fa64a5481657b7d7"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-9d232c8cd5062b50",
+      "fingerprint": "ce1df97f549180b7f7d0ed202e28f16a1bc76b80d4af6ddc79b72ac905658391"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-a26f1879eb92c466",
+      "fingerprint": "86ca588239e12d32fc0942b11839a77837a056b444f840a8f16a0f897ebc168f"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-a72732526003ad93",
+      "fingerprint": "d36ddf1da7b44e4b1df654cc55b2f80f08b902e729a8b9e78c9017fcd2facf07"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-a8d3b12980d1c825",
+      "fingerprint": "b53779157f6edafd689090ff60d7c1a6d4c90ee94785ff00a47dc06574eda907"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-c202cbd216b01ca0",
+      "fingerprint": "4802394e7b4f1c015b7d004ef4390d015721ef0fd2070b72962c78515d44232d"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-ca62525758e7bd66",
+      "fingerprint": "1fa7bb110f542c28fb85fbd36bc585bfd037d52951845f75f876a095791cc65b"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-e5fa85f6f253e523",
+      "fingerprint": "10a19ba1e3071d4471d3b3f814a3b2eea1b7cf380f5cbd9ab0f0f2f93868e521"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-f210ab869fdf04e7",
+      "fingerprint": "deab40c9dd6f0158956a3ed22ec05375b4207027d29fb6c5cae492cadcfacb54"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-f6bc745fc82ef5d0",
+      "fingerprint": "f5aa78b669f1f2238be7f1acbd4102cd30ecacacb96e1329733be9fa96062c6f"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-f6dab6ba63b34a45",
+      "fingerprint": "aaa3bd7927a4f8b4a7973a22dca3c2f064e032c5ebb2a25650c10852085baf15"
+    },
+    {
+      "id": "textbook-q-12-business-mathematics-statistics-english-5710bd23-ff2db641443f3963",
+      "fingerprint": "8348477461ac7f379bb8bb3e0a249ec3694b75d1e28585b2e24646fc27705b6c"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-033850f50133f6ab",
+      "fingerprint": "ebbdd48b1a38150fac3655b8632af9f98690d74ea505a51616e45a5bac09a27c"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-03b9b5cd519d2a1d",
+      "fingerprint": "752b5f9bf3630571bb97e6ae19bf7eb8cf925cbe21be90949391080be38b6d9b"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-074dacb15c8d76cd",
+      "fingerprint": "f813e83a3d5225b88d2600c1828a773bc63a7af0b8047ac3f2c55fbeac5654f7"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-16ccd20bb033dbfd",
+      "fingerprint": "490846ba6747df3c99ef8092059ac47d673a1523b1008dca310fd08d936cffc0"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-24a5d6bd19b2a086",
+      "fingerprint": "e1dde79b964b5e5ba7689d4c1d3fad419497391d9ff8068ad82a6bd1fe4c98c4"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-29ff0ad4bf3d781f",
+      "fingerprint": "6dcca64e4f04cad13f015c0856408c2c020589b3b4976ca47e34b40e0085b3fe"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-2d9365ace74edda8",
+      "fingerprint": "1e4a93cda5169314179e012dc10f35c517ba4337be01078a095d837465bb4747"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-2dc3c03ae72c72b3",
+      "fingerprint": "964453bea0ef44c17559e49d9ecc90768fc8ae3d0aeb136965b473057b45ce57"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-33d0c6bfc8321625",
+      "fingerprint": "53c113f5189b765161133bbb546ae014ac2e57491c4081c63175fb758c0fe5e8"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-35680da91e05f3f2",
+      "fingerprint": "9297a981e3f9437a23e7079bab2d26b36d338b5ebde738430c94e0e4bf5d7489"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-3ad5aa420c1a4d02",
+      "fingerprint": "f4305fdbfc5b57c6f2ff86f2b0173c16cf3c4be807111e839b34ffe1f62219d9"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-512bc31f1b80d5b6",
+      "fingerprint": "f695350c6e43302e00540e4ee05e75791bbfc4ce71e6057a7feb1d22dca2b078"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-60be89b8bff69208",
+      "fingerprint": "53b972ca7e5e27eb1ad354e9d8bf77832ce308062586ac90e935d8eb94744b31"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-69d02b2c809d309b",
+      "fingerprint": "e4e51041bd77f9214ba978da22f0f1af2305ff0f30f31c9720bed3e35dae2e3b"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-6a93efa781a5cb09",
+      "fingerprint": "61ded545f6c0bc1b460489fcd8529b0d90a7bbe4e671982d8f9344b70b7f088b"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-6bb62a8108200db1",
+      "fingerprint": "e02e673365e78fa2bf4012e1e769c1b00e51fd267dd25bfb4a33251494d58ffe"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-7367ca39703e5f3a",
+      "fingerprint": "fc2c3674e8c84cf135ab7a3740cd6b3ee3ce028737de0523a4cea0939761ff26"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-74b8aa962bf80eb3",
+      "fingerprint": "ecccaaa66b852bd91861419ffa0ce58f32177e94966defb7d9c87dc61d59add5"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-803a63391551544b",
+      "fingerprint": "649473731601d5d966044f07ba6b42f6831157bf6a3e0a0e443926c4b30ab079"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-820a6da665e1c96c",
+      "fingerprint": "62888772af259ec6de5166e10af4bd483ac44fe3b6a35f0be0fa0f92653287b3"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-8af08373d8aa4403",
+      "fingerprint": "60cf9b3ab94980b1c3c6834402baf052018aaefa3f4238ec9dfce7b3c7102ad9"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-8fb603abd4e1cfec",
+      "fingerprint": "2c081a5bad9ddfb0fbdfbd31ca22ca829a27a2c1585d6505d3afff008970eda1"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-93d50bfb2a8bd286",
+      "fingerprint": "c859911dafe55c960a1258a055e15adc260dd6244906df5cbc60fc7ef182a40a"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-95377112f8a04579",
+      "fingerprint": "2616b790b45bc2f3e579ceb086beb2e9e4347baffc49c5012cfb752a2346ce7e"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-9f9ff7fa1e8da4a1",
+      "fingerprint": "4eb038fc075fd14227eacf3f3f334a7cf9402669f84951585cf190f17eac84f2"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-b72b298aec560314",
+      "fingerprint": "5c73cde72b79784dad93f5a938937999da679bb58cff3a74e72cef5fecdf739e"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-bdf415a487507f11",
+      "fingerprint": "ef2a69bb3ca3e00d3d5667ab2f4df9b38f5e0ba073336a1000a3f7bb8def01cb"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-ca8e60b40b257de7",
+      "fingerprint": "d53cb8028dcec22a3d5e6c11bf4dcc95d3872050f8e98cbcc4bc87ffb46f71ca"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-d65c3f4c85e525f3",
+      "fingerprint": "20d2f38302825f9c953dd6229aad32d1a41e1f18387b0d47ce5ce376ee48f8b2"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-eac1d75bf6fb1292",
+      "fingerprint": "18b66e85bf678ab998d6692377aa0ad3a904776508a01bd988a604bf431a6b71"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-ef7a910b8cd16f2b",
+      "fingerprint": "44c81ace2eee1a19c99f134bb83ae1c6ccf10b75a3b3b6da0b275ca3ba453b2c"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-fcd27b21d10a91cb",
+      "fingerprint": "abd5f7e3529aa841b135fdccee37863ce4a272b12ccce0203e26b8ae98562872"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-fd8fbae0c40f0c12",
+      "fingerprint": "963a5cb0d0ac43aaee209f334ffcd289dc60d58f530784e2b38f980d84831b3c"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v1-2d0e27cb-fe4a3b847ed09a9d",
+      "fingerprint": "7bf041dbd93f03fd7b1582b96234369149ae1054bc7018b1192b4aa32aafa848"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-082c2dbf7c479ba0",
+      "fingerprint": "6c6daa170c80ec0f85c9a09f56c707087afd020069b3b77650f825c46e840101"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-1154a95cacb021a3",
+      "fingerprint": "6ec316dcc20d8c598804d6a8d8f0c37b7190654335133f099f8eb44dd3095143"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-151fb3427e8643f8",
+      "fingerprint": "82de5a7435e96fbc5a075598ec0d98a71f052bd3570c2e8f328304eef0475567"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-234174f035820e0e",
+      "fingerprint": "6ff27b840cb18311a084f065d891d282983ce1d6a0312bd0583660b94f3ff695"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-250b11b40d6523a1",
+      "fingerprint": "525a6f9285c36e68aa6bc15b2af7b4c99220e86182dbd9707bbba305fc10e00d"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-25faaf084dac4691",
+      "fingerprint": "8f37f515289cf1fb63ccc6228d53ac1b25fccbe71956d88cb0bd95e1d3fb4426"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-2cee37e956b6cfbe",
+      "fingerprint": "b2153eeb035e2ad59f9655054cadcfc76eacfa44ede183656d28122ee53bb04a"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-2e77054c3d1a8c11",
+      "fingerprint": "10b1ce7009102471892912190b54298bc436bc2b8371d775ffbfbc9e876cb655"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-2f5cd2fc894d0b2d",
+      "fingerprint": "3e4b51176b745123094761de819c3f7f54478f6b45a96b91f56bc43bec42a9da"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-40c2133e56bf9251",
+      "fingerprint": "3e4441799dce55ad0e46ee1c4173f0bea4c44fd8d9a63784d52655e92aba7858"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-42f447598eaca3d6",
+      "fingerprint": "8e9732f3f5302d1b876b5dcf15f23a5b539acbe5aec6459862e13327ef01cac2"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-48c88f6349cc056c",
+      "fingerprint": "fd1f6336a2257db5c0c93f466b38b78334a01119e8520bd37fdc1b9bc575995a"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-48ec7f92c7f685d0",
+      "fingerprint": "bc8aa37dc8d9ea62f3e3c45fd106e9b1ef189ff85647b85d0f0b779607aa1067"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-4b80428601c6a609",
+      "fingerprint": "f0c337037cb2e2d55d780e12c2977cce4abc74512e9f94e52b14705df2de17ac"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-4c924142a27c8f64",
+      "fingerprint": "2bcad57d72f06044dbb5ba497f171242bcc07ca5187b90152b0b999d25494d89"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-5a72b51abf2089e6",
+      "fingerprint": "82e7502080eb221a180630799d0aec34967cffd67e3915c59ffbbd6296749bfa"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-62769f5439789124",
+      "fingerprint": "7a66cd77f8058285ee1da2d97dc33a29dd28935d91939747b6ea63b75acdad6b"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-691f569e33e59a76",
+      "fingerprint": "3fe596ca5f8b350b5b5170e519eac4cce2cd0658a620d0df446cc2df05e56727"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-717f5e574c998dbb",
+      "fingerprint": "53ad16ed0409ef6fa06fa9f7dda9d950ff85f6d38dab27275c517810734a0d70"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-718fd45387b25c44",
+      "fingerprint": "8ebbf71695e7b1cda0ca5fdc77bd2ba7f0193af2979765cc2be92582f93dfdae"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-71adf1db8a2a904a",
+      "fingerprint": "05743b5bff0236f16b38b2a5e125096ccae6be049a60bd1308246e2fea33ad93"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-76beb446bcc2841e",
+      "fingerprint": "b4f1564ee5ad364011b725f46e7758f890add476ea0894ae46959302065b226d"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-773e333388c9de54",
+      "fingerprint": "673d6f320a03c619bbc0ad9c1069e9519a64e697a5651ebfcf2ec633d8374a60"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-804a627edb51432d",
+      "fingerprint": "46551660ccc29d4e245f359b79b3b5c0c88d7aa02e8dc92eeee197d1512a6bde"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-8119ef7024f68b99",
+      "fingerprint": "0b023f4f7548037d4ea66f4df3853f80493086067fbec65f54a22fb536268fc5"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-828c6c4afb9b4a13",
+      "fingerprint": "4b121a7fc105973e9e2ccf01164354b4a5e367bd609026b51339ddb2c59019cf"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-89804cc7703699d4",
+      "fingerprint": "818aae7d1957e9bc6b25b478e01079ef9ccbda0b91e4b9d3ba6e8c1bc52b9ae5"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-8fa190f4d3a39e9d",
+      "fingerprint": "10463e74ce2340763a573241d62ac931171a3bd40cf3d2ca81d725e392467df5"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-921e6ec6b00b69bd",
+      "fingerprint": "7f3487ca0b3b32f770ce2fb5860261089098bfcbd722f368ccb2a87f3ea27119"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-939696e1b6c2bf83",
+      "fingerprint": "868ea58c97f713e1fd7771f563abe90607444b706aa42c90e81fd27212d6f7bf"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-a015c2f79dee77a5",
+      "fingerprint": "9fde01e9d3495307289ac19f533191225a68d79c1b6dbacbd1a1e1d26f84e6f9"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-a4dd0ba35f977b95",
+      "fingerprint": "04235dc289a6b791f3fb8e78d2e91f3500a7f0f2f43432be18e863bceed68b45"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-affb08103cbaef37",
+      "fingerprint": "e0a449bbee5aa44f7f81e98a5d87963383a01ec198b63433e662c75b07e3a2cb"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-b3f7aae129a669a3",
+      "fingerprint": "8a6d3c8e3fb13ad0479878f2afa475929fbddf0ef96ce9f278ef90764d536d3c"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-b858adbcc57a8d6e",
+      "fingerprint": "48344ef541f8fc5dfe32f349b1f4cc927199a60d608af25c56f14411ec69bb96"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-c1564d372fbd4509",
+      "fingerprint": "5e3145750d49ce67bd48cf66f438f88e2b912e6d5f0b49411f7861b1185bd8ce"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-c4ecaf73946daefc",
+      "fingerprint": "8195d36e273a84b672cd9fb68f85565e11eb4fd8b1fe8df26a5c93f42d14ee27"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-d52b9ee463ce58a3",
+      "fingerprint": "fee4eaa7f68757d135372575b408383b9baf32a43a26748126621e0d0139e37d"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-d7b50a3dfd1ba8e4",
+      "fingerprint": "dc7090d542f4f9850e71f4fbf58f5d66e71bd27331089c03021eeab98ed146bf"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-def58b82af56450e",
+      "fingerprint": "7f914f16f8b8d2012d7516a4d06f3196bc3ade78c6ccffd5aef430b0dda09be3"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-e0b159b5e12bbf57",
+      "fingerprint": "4119f9b9931ac72fc87df8ab97354544bffb2c987cdda84aae20c1583deef7e9"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-e3254e1c36096bbc",
+      "fingerprint": "50e22105622618bdcfc03c74e8f77162a9ce61e3d96bd14a327205cc202f043c"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-e3a051c9ae289f1b",
+      "fingerprint": "a67c3045a44e77a1c1c92e58890276306cd9d87eb73b61baf882e6095cb1432d"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-e57e52164c2f66a5",
+      "fingerprint": "ad9161a167fea26d1528c5546d445c26adfdfec6ebf4c06312aa25467e6c742e"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-e682b0d020f676ed",
+      "fingerprint": "79a8ad806ee0324eb6bd154f3d26d2a985c59bfbaad5b6b04e375b54924f9abd"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-e7674897cf4333e2",
+      "fingerprint": "313fe138672c1d4bde9f45afd62fdc02ce23874de08dc33dc9028afef065943b"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-eb768825c52943af",
+      "fingerprint": "1339d037ada338e74f04bd9586ac03d449ffbc49e47fe396489956bab2d1a1ab"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-ee8a046421e5cd75",
+      "fingerprint": "b3c351e84c4d893ad4f67916aca53812739302a75d8f4fe51b85985f0cf53785"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-f1b4b6ca18d9dd13",
+      "fingerprint": "97ef5785571cc9af97912056dd36fe761e2a20494e100e0faa7040b9f0a34bee"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-f27ad6e5f329cd78",
+      "fingerprint": "a724049dd23b0ab9a00f8f521374a2c8f643ddad8a933b3d16650e0e750970df"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-fb2dd27c9d8b4bd1",
+      "fingerprint": "13b5515b320766aaf09fa704366c2e571e3b212323ad3bf42b887f70737a243a"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-fc30dbf6e7b59c3f",
+      "fingerprint": "96939acbc4d96d8b029094930adf4cd2b34661149bd6f9e2aec2319f9c453449"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-feb7e350e4b7f277",
+      "fingerprint": "2a9d596a352392479f3a63617e1f714a07c5bb87f458a90fd61f9104fc8bf000"
+    },
+    {
+      "id": "textbook-q-12-chemistry-english-v2-0010d706-ff4a76b8e37780c4",
+      "fingerprint": "b772c1a39fc7aec79c74e452bbbae4c039bb507462821b4a0ed65fbc4708356d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-010ae50b9249a1d3",
+      "fingerprint": "a8358a751501bdac781dd240f5cee29eca50d8c8a06fd715b2fc7e5779e11f02"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-0364241d896b893a",
+      "fingerprint": "75a68cb480a3f301fe033f72d28e138dc8380f70e8b830e31e19019c254469e0"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-0582ed84dc5fafb4",
+      "fingerprint": "0b51a39d8671c5b6f9e64e3960527683796e619ad5f00c80793b64c0f723eed9"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-05e3fa5b8c4ad9d6",
+      "fingerprint": "d5b32f7b7a2463995653964c58ed4ab8a1cc3ffefea82338b271719b0f23de1b"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-096d844c747b62e8",
+      "fingerprint": "82b8667f32a99b1f1fab320e34980a1c795f9e7c93589026fb64b046ccc21aff"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-09c23ac9bc939264",
+      "fingerprint": "f7de7d90be90180cfff811eb7a6090de3cbe4f6b5e4019b61ab6b103982e6c82"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-100c8b2b495a79f0",
+      "fingerprint": "df237a9bad5de2c85290c1c127a6785efde957fbd3a9ba829d73698fd13d2ec4"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-13ac40b297059f04",
+      "fingerprint": "d33e55ae3e1a21aca46c6dc8c4741672ba3fabbdcbc6769f56787877423f3ec0"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-15575c6053310ed2",
+      "fingerprint": "1bd8759937c3c503e7cc9fd44b355a82306ed673750e351a8cc3bc39a8f93ffa"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-17720bab38e3f8b0",
+      "fingerprint": "4438d9bc8cddfa7d25deaa836f930dc8deb61c0439cf7cbe0054d74a130179e0"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-1b6a0cc81232835f",
+      "fingerprint": "764329ce90ca35e56f92c61e92f83ce5c4ac85e4891134206dd9a69ac1bb01bb"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-2101cf5d7bcccb4d",
+      "fingerprint": "c22e492bdaf9bafe7ea586d9e40784f9ec06ab63bc7a2d8d508585c822007140"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-2104e9335ab6e2e4",
+      "fingerprint": "3eb328f68f420cbe068d4366279282b64f8e3e726cc520bcf88375d08b325282"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-222cbe30d074b056",
+      "fingerprint": "e7e148ad0f206b6fa025f4f3069824712a6a5f57d8ee83a33e787eefff45253d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-242c6cc7ef628bdd",
+      "fingerprint": "bd912c012f1753643a5c119b0932ee893b357f1e1477520eb47b2dbd71cbf1e1"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-26898372387459a1",
+      "fingerprint": "289905b178a1f12d9aa3e5c0f0f5ecc4da4cec9dd6f2056c676f7c8b6f6b18fc"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-28d63558712630f6",
+      "fingerprint": "1ae969dbbb605f2862426c0a4f54be03fae46eef3dce474c2e20b145fc7d0ffb"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-29e1fb0305dd6818",
+      "fingerprint": "436640c79a0ba931d8679cc1b7225d13e4cf067150b656205caed429705a6cfb"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-2d1741d8abe96b91",
+      "fingerprint": "41845749bd3d07743c9e22023a8ca0ab06c56829da1df6599df46b5a3abef36e"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-316289b0b4ec4449",
+      "fingerprint": "104fe6481dd7967aefb33466a114be06980b3bb70537cf480f98a14e14c9b6ef"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3293b39455a6b6c2",
+      "fingerprint": "5a2f57fe744cd7c59ec60f465abba1b268c4e7c70016ffa69663ca8a8cb30a56"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-34b0c7f5ec23ffa9",
+      "fingerprint": "ba12149b543b59a91dc9c3cb192c74528e7ba17a63871851b247d6f1bc24f81d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-35aeec771fe1ce6b",
+      "fingerprint": "d1cb72235981d4c58d10b8ed44d0dc4b59a5705702937e5654a38dc1de407ab1"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-39e04f2ae6ecd701",
+      "fingerprint": "940d04f8c8f6579151d2df112b0a2c9210aa5d844f9bd73c78ea7973bf9fb67d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3a2846f89b142cb8",
+      "fingerprint": "b64705f575bbdece6d772db6b7e4c938e53cff44dfb5624da4b757bf269f5bad"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3a2e35d6774072ab",
+      "fingerprint": "16cd8e11e628b442d3220874a0c54e58c12737b20aee933c91631e2b8e8d040d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3af059bdd4ac7d4e",
+      "fingerprint": "91948c584b7a5314856151b3df283b895b60e24020de0a8b975c57fe522b4c10"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3af8a24361820c60",
+      "fingerprint": "276ee099045343dee860f0b813ffdecc363cebcc378d9b46b5ac02cac858ab8d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3bcedf1b4ed0f409",
+      "fingerprint": "ed3bce4bfd4c10c29cf6bb17706472233c824837e3fb3444980111842c9c8736"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3e47f4b10f6c2dfb",
+      "fingerprint": "08a970fc03fdc9f2ae38999a655f872c3961c4cd388e89679a21bd6d73fcc543"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3ec56ba1a1321c1a",
+      "fingerprint": "0e4784c32daa2d50e1635f2fb35e0ec1dba8c218dc55f9ec8356f863661a4c62"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-3ef33e0fa624c560",
+      "fingerprint": "0a9d03c285314f34cf0f8c6212b76b1dafcee1369ccd0d66b6df9a32215d45cd"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-4253dd410144d27c",
+      "fingerprint": "2ce21ada5537fe821bbc4a66e5360c6f856dbbaf67ad3226b8b275edf2dde0ba"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-479bcb22675139d7",
+      "fingerprint": "30c1ead964712fc9b69f96a5fb302d69d72dcb44c7c685aba56445c173dc45ce"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-4bd430b593330fcb",
+      "fingerprint": "985e942e43c59bd7b0c05b92e36de378244f495b607f7ea6108352d8a97c9796"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-4d5ab7d06b5959bf",
+      "fingerprint": "0758fac48a2bf49eeed4671628596000981c262b8161c26f9a1062972195e66e"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-4e86b04bd6407f4c",
+      "fingerprint": "443d99cd359ddb3188a5c753a370e6ad2ce91cf138f5bb22578d62a6ca0bd596"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-5052b78f47d039f2",
+      "fingerprint": "28c6eec2651d98856974993c158f9f3ff9683da581e43b7793baecb4cb724fc3"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-528ee57add490c16",
+      "fingerprint": "84f41eeb8a43ec82d45221b727e6df227994dc253b15e468395efff566f71c66"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-536706084aa84342",
+      "fingerprint": "e21c8f0487d5039763087c0a3913f9384532284de33876e355f5d4d2e705b15c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-53c1b6a01f4cecc1",
+      "fingerprint": "fdd68b41423febc9ab939036f4b7e94ac3071e45afd2cae5297bd4a43a6606d0"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-56aec1609fd4cf51",
+      "fingerprint": "57744b35df94901f3b619627c63774f5410f5e3807ee2db5dc6db9ce9102836f"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-5814d58964ff0d71",
+      "fingerprint": "9c6b7adc130aa254adebfeb800d3d5a86f21e3dda757a092c9e287dc1088160a"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-5aada9a3922ffe46",
+      "fingerprint": "42151ec10e04051572810c53b47efe3a815cbb9d17019b9123e0914528702f85"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-5bb04b7e64e8c445",
+      "fingerprint": "4751a4a564fdb9e6084f63dff2130f65bd9c157cbc5186588046273de36dfc82"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-5cbff99bbd6c980a",
+      "fingerprint": "e12400b381d031143e93b64ab4754cc2f1ad71820d892755802cf73c4aa892d7"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-5eb1a2a6a821083e",
+      "fingerprint": "bc796a95dbaa8036a0db88c88f55c28a98b09218e1753eb1525d96f2fb78156a"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-644a62bc5a07a900",
+      "fingerprint": "ec9d53824749f524890ac7071b98f2b0cbc011a48207a811870fc667faa6b559"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-6453a4c1c864ac49",
+      "fingerprint": "13b721163daf8bd9c5b6d644fc916749fc70b19d6e331ab246530fe95a8badc3"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-65ef77c1b5aac0e3",
+      "fingerprint": "ffc8b5fdb83679a61b9e093705546daae7d53b4f22b8b9128ee438399a2ef144"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-6949993c0c6ddb04",
+      "fingerprint": "435a4076e98f3808b234044cb346a816fcd3b86f105a8658f9e52b4334eb2dc9"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-6bf48ab32cb35a6a",
+      "fingerprint": "06f7d61e727d29df610431b8ad5c5a8d81996a5a4b19ddbd897cf1b2eaa00d71"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-6dc01e9aee8dd5b5",
+      "fingerprint": "d2ce7f70dd9b9ca659975958ef5c21c0bb1bd6aacd323878f4bfcecfaf8bb498"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-6f3e37aad4b5f43d",
+      "fingerprint": "89c8fb2759e4119a40898887e459ed1b54bcb9940f25a46f3ece3fafe2de18fe"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-73ed83653beb4290",
+      "fingerprint": "45e079381edfe81deaf8f27c5a057493e7d7bdc3192934aba168d71362d598d4"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-73f8ac2e1fd8df5b",
+      "fingerprint": "92e669592fe0f331b18dfe50be10fd4970778d852a7d1d84d19c0df98e527e30"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-783b4a4976588cc6",
+      "fingerprint": "2087becd131ac8d90708910c218e9c5a48fd78d21efd7f4078b17012fbbac8ed"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-78afca895d3e10d4",
+      "fingerprint": "0a12504c59f629eaf0babe668e0d2ccd3f88ceb05f4a6cd065ad342741188439"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-78ddb2b5dd0368ad",
+      "fingerprint": "0e2b6416cff0ba29be7cd6e6bda6e64baee56d7e0ecc8eb7cc2ecdf374004075"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-7a7bf707e3d7e728",
+      "fingerprint": "d21dc3414ee8bb2bccfc77b7f9a9523a1d828ab273ab8d2d16bce002d504f401"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-7ceded5d9b4d49ba",
+      "fingerprint": "4c861bef0c928140169f8a7336112119ce95d2f9a276cb97d43dfcd8f54e0754"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-7ceed9d5ea773ea9",
+      "fingerprint": "09f5e69d9bf3ff2e41282c066366450fb17215ede206cb978abc478b19a4728c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-7f38f94c63751efb",
+      "fingerprint": "fa911b57f8aee6dd440a0d384ec1b4afcb251e9f8f51f22c4abe1de0fcc0dd6c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-814740afd51d03d2",
+      "fingerprint": "40d0b6cb27c5e6b618967b22b4459211b320b6c6d88450255a879e0efdddeb6c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-83b72a22e66a606b",
+      "fingerprint": "5e691eccf338f34e4bfafe93633b6ec70f59df48aac155aad4b5c55b72fb9e8a"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-83f91f353cfc9e8b",
+      "fingerprint": "01166511005a79a084df2b3c824f2264132e3edc74bb0a459f46409c2b41c440"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-84a696efac6a9cbe",
+      "fingerprint": "23652b0c5a753a4bc5194807fdc2e4504a862ac98f2154111b42b967185459eb"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-85027d26cfbb1b44",
+      "fingerprint": "842f6ce15e6ec362f428d1761d4e3b430e82f99c5df3677d7655905be143b523"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-85e6de984fa5694f",
+      "fingerprint": "dd5d118abf6344e9e293de89f93c29ae160839898bf2caf044051191e1a61c14"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-877b6569cd808226",
+      "fingerprint": "79b9953bd0e877c0c1e59ca9eeb2ded0450c65f6ddd6d4197307f8490ef5b3ef"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-899a4234b856a822",
+      "fingerprint": "1a0665a0aeebf4a6d1fbafe9c16fa3976491e75b61fc5a876b42fe95a32ce7d3"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-8a1623ce8dc66ce3",
+      "fingerprint": "a21da2fcac848be21a7ff866906cdaf75301f8ac5d02b03980c2cce54c683190"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-8adfe3f481941fb4",
+      "fingerprint": "3a0c996670772c515a63e1839e8e166eb5e2d0621741f2421cc835e9b3a6e2a7"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-8de0ac9ed5c25439",
+      "fingerprint": "7b3ac4abc47599275ce03a5e0fd614d1d57743389796c5c9e21bffb484b759c1"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-8debb6a1c330adf5",
+      "fingerprint": "c7c6a4e18ce873a2977b4b6583b8cdbbbf9d7c3a110f70d1bb7d277dac8a7fd9"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-8e10a5255204ca2e",
+      "fingerprint": "c16f90a7e0ad56fa2e7c8d9141e58bb3081434e5a83f9a83c6e33958c4bc2db6"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-8ed6d7ab8b26c320",
+      "fingerprint": "73a8c003d96f960443af633c10d3ffc3a8a85e8e327f68330d90e0869c82a0c0"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-91878daeb1fbd582",
+      "fingerprint": "1d6fc7ca3ef9d326cc6c321e27b8679013680dd3ca9b0c55af3bcd0202c64a98"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-92404de40ce895c5",
+      "fingerprint": "a14764de1044a63eccf922f119f5f81d2b4eface86daceed282b3aec0420cc17"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-943a35cea168c96b",
+      "fingerprint": "f7c03c044c54293b875264e6a187b3a5ac467361b4e1827675a364189407e63c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-9440ac94cac9ba3b",
+      "fingerprint": "2210602914218c305c40b7938e8e302b8c138d21bbb5c747bb99d1ff57ba424b"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-9533082bcb5cbc2c",
+      "fingerprint": "8ef9951d7a24450fc4b0ba3c2a04ed7d218305d7eaed065a5862da2e63566985"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-967460da0fe283f9",
+      "fingerprint": "aeb8bc95816225c14fa33621b807010555554565daf22591705c591de7213eee"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-a148f2b7db00b5fb",
+      "fingerprint": "fc9f2a2a7e36fa42c01c6a48d8014ffb462d0292a332d781b23dd7db4e1afdb7"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-a243e35b42660cb0",
+      "fingerprint": "0e606811702b56e589300411d76026c1f55c6a9d73e4dab27fb18c62b826de8f"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-a30b96376baeb8c0",
+      "fingerprint": "1ff23bfa60f13862db53380b9de57eca1b7c6851f239c48ad38597afe9cb447c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-a3844fc2a0dfa358",
+      "fingerprint": "2f04e2212e1f282db05a0a08033657d88270a5beba38cd63f3721d3786eddc89"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-a5441f8bc16b802e",
+      "fingerprint": "8be9504378330de86755413429bce49d321133eeb00f1196668eddd9b007f2fe"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-a7c481f1a05879a1",
+      "fingerprint": "f6fe23dce1a84470e7399965e8b199dca77914ada53bb59c208a01fc756215d2"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-aa537e7d9154e5ee",
+      "fingerprint": "e970641d3777166268b25229f4952adb09aac866b77350a48a72b519b5cd35dd"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-ad5df9ca906165e7",
+      "fingerprint": "db4fca5de4adea966c52e295dc65aee404be3ab88e2c510cfb9e3ee8d8bb3694"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-aeb27e085e2b3b1d",
+      "fingerprint": "f5b4276b5301078747d629e6553c287e7736b8c056c7256fc48f2395e6dfcbdd"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-aedc668803656c3c",
+      "fingerprint": "65cc24550e63fdab2addeabfc6bd077ffb57d65c2d81442b23e6eed43f277483"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-b33660dcd657d3c1",
+      "fingerprint": "38a45f637a66b093610a319769807c0ebc53455dab3786819c8abd9a9f17a5b8"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-b7c3f95fd9a5d4b2",
+      "fingerprint": "86373d7c2983e69ac67f62e7c9a4d9e1c8b7923266bab1c536c0d6f788471f64"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-b7dabb7f3892b1cd",
+      "fingerprint": "e1e4366ab5c74a389b15593fd5c5f3a8101cd6e09574ef3a17299323af5bd97b"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-bb3e6eaf2d037b04",
+      "fingerprint": "15f682b9c3b1c4764f9df89bcb3cb79b3a145c61834f87880fb157fe93c66136"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-bde11808b865567a",
+      "fingerprint": "5df6cd320cbc9453e5be0cc86a18e77e5677c44fe805308264c7016c74503929"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-bf506ea21d4648a8",
+      "fingerprint": "f2682d9988ff38c2f4e11804ae8061343f8ce4dbf9fc06c12522fe26e5bdda7a"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c06482d4baacbe98",
+      "fingerprint": "fee8a684aa441650139e68bf43e1c00d73e72038148100f5745f06a5f7986fd7"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c09972a0b84601f0",
+      "fingerprint": "e96372be68e0ca20d4e2406e73219b6293705dfe3280cff3bfbd4e87b622905e"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c17c4b7037b6a61f",
+      "fingerprint": "5257313b42ba6e6abf303928e007d2dc11b1cb09405f344dcbf7e491636fe970"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c1b14510369ddda5",
+      "fingerprint": "7614d96ac80c24079a00a47af8b5b9d429c5fef1e78e4f2d7a63420cc175c1c3"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c2374726bda8b7bc",
+      "fingerprint": "5fea25aa96b5cae21fac64382dee464b8b05a892f0dedbb33dc75bf9dd48fcc9"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c49785584f901d27",
+      "fingerprint": "16a026c58a129528a0409d9a0a8433eecc49622fddecad6f12d878297ed58007"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c4dceb4397f108bc",
+      "fingerprint": "9d430807ae182a974ce573237077162e776b8c7e0369474381c30aba5bc52e8c"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c98696f6dea0b643",
+      "fingerprint": "63b072bc594c946cb2a8b517d0c4a5a6dd40d481a9955db13fa10fd51bdb14fa"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-c9fe26e557a3608d",
+      "fingerprint": "a4e12bc23158a3840a4c6b110156c8d533d323138c80a58be78623c2e60b4d2d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-caa2837cfb40eaaf",
+      "fingerprint": "e67b2153f1d95cfee14bf3856dc1afe9e1087ae38fcc60e33180b0b5676cb2a2"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-cdf95fae2e2625e8",
+      "fingerprint": "cddb4cbf20b5aaf1c7e642abdd0e396912ad7db727527ae9f66165a6f8c32ccc"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-d085f54d7643c2b2",
+      "fingerprint": "e7202565921d1c580338d5f7a4f3fc90caf9b5dde626cd8b99a575c3d061d505"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-dcc3754a60a5c9bb",
+      "fingerprint": "5b0bad0f74bda6ade2512882bbe93615c315d85739b310a426e420ba836e4843"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-dcd68e8017842c72",
+      "fingerprint": "2cc008c373f0aa7f526780d9ef15e0c8af59ca0d4d47ea06eb186c8c66850ed0"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-dd0530b0ba811473",
+      "fingerprint": "3d2b9ac8331ed0db6549502f75c681491f9c5d31075e73b55541b79bf4e9d6b8"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-dd27f4247e84f730",
+      "fingerprint": "4dfdff52ac83b021f3019dc696f0d64a87106da4fd8ebbc669665a8c9c1496d3"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-e0b6ca8b9633c243",
+      "fingerprint": "021f0e99c06fed44333b5e71c7388dfc4fdb77046f76d108ceaca708e5acee13"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-e341b840a5a86f8c",
+      "fingerprint": "a230f3236944effea0db3d6cc5113df699b5e5293f0a81d577ee9c013c08feb7"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-e3c09d90a73e827d",
+      "fingerprint": "7775f22bfbc432d36fc0a0b509589af6d5dd993742608c5c7357e231e9b51e68"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-e7ec2ea98b35a512",
+      "fingerprint": "a8716255f0fee89f790eb8b53e9a9b96b2490761fb0e8cd0d133ce17bb9c0fbe"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-e9664acafd78bcdd",
+      "fingerprint": "3745a36ee11607cd593d2bdef4a97f0f7dd3e557dcf4707b29c3b043390dee8a"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-eb16a79039818886",
+      "fingerprint": "617e49b5c3640bf2cdb55f4d272cfd5f2408f32ecfbd900c30d4c306ac3ff85d"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-eb3f17d3ce667c6f",
+      "fingerprint": "233b3f00e7073d3f6fb41d35b89f2405005a3544a0f4c54cfac54730020a8b6e"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-eb469675e2a554d3",
+      "fingerprint": "5fce8d3271dccc74fe42f3d1d2217e043ce7e413b9d8b7d56ce6b3177f3f65d6"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-eb8044c1e58801b7",
+      "fingerprint": "b97ec4cbe8fb7b79de6b2d27138e30b1c628b8bb6387e19dcb514b46ce8e09ac"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-ecdbaad980936cfd",
+      "fingerprint": "89d1cf24ac91bd4272236f84522688648779c15ce1e5b6393f77f2d448531277"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-edfb0ccdb3f7e278",
+      "fingerprint": "ee9956f008e66551919712baf5e27daafd66d98bda77be0cfd3ecac96a6bfc0f"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-f007d8adeb260874",
+      "fingerprint": "25adb3c967b4f557c1520944fbbd2dfb8111bf332a86063b3a69909eb3ac7d6e"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-f09a1fd8046b4bf3",
+      "fingerprint": "c50dee7ef358478fb9fb3096a83512a7163990d6ce4e5b17758506db0e0c548a"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-f133fdf731324b40",
+      "fingerprint": "28ea8b409fb764bce69de487546f32d9f67ffce5a027bff413404f78d67e5ac5"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-f2138c365510bfb8",
+      "fingerprint": "bb971305460fff608d2a76b9c17684d6a7fe2d9719d20e9be0f71016a901146b"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-f244f3a9d63f1f76",
+      "fingerprint": "25671bc56222965dc5221c33abdae525c1abdc6536a9a6b5d7255031bee4dc25"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-f7c5e62abf65d635",
+      "fingerprint": "27d334b306b5a11b0e0c88fe9b139a9b42ffbe072d3d639100ccceff4a9052c6"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-fe797f78c988d2a9",
+      "fingerprint": "9773847954f813ee962290341a0e3497e36262116ef44be9c86082e3d3b95f43"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-ff454d2532d96a80",
+      "fingerprint": "b68f11802388861729432c9e98d9f26b385fc22e131973302fd837ed77876fd5"
+    },
+    {
+      "id": "textbook-q-12-commerce-english-4f83c61b-ffc8f19e61b40c47",
+      "fingerprint": "030faa100d94af7d49ba55512276d1ce57c024122358210c14828104159c3df5"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-005f3ec90e11cb44",
+      "fingerprint": "9b4b83c57f6c644f8c594d29a973b11bc1dc6aa951fd6998a1452440f64437dc"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-00d18f3dbac32347",
+      "fingerprint": "e94906a17e21ce8a93787e345238f0d77a9bdc7cddca6b78171b0bfc6269714f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-00f11893e5ea3924",
+      "fingerprint": "79474390061a763507d7a23582614047e0b77a80c8618adb973dc467238e22d5"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-019f201e7b4edbcc",
+      "fingerprint": "57699352b5767beb676ce63826898ad92dd4dd1045709843de76e1f1253a067a"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-0305ff0ee4f6d9a2",
+      "fingerprint": "22d5cf92e0052eaba9085e89f25f9a7592c25774653980705193eed93a04d208"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-0531effdb4af8916",
+      "fingerprint": "9e7ee79f884ceb929cc8cd2a5c29e04f2f8b31f5e2237b6235e1247abcfb287f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-0697385453dfe02e",
+      "fingerprint": "59c2b86541c12d786ff3d94422d29452cfcce7f2b519d4b3666a614583130ea1"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-06fae74a5b2b3863",
+      "fingerprint": "eef8299bdbe6990719c615ec4c1844506fa18fcb9cddf661ea83aa32964c2ed4"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-08860454a4e1a344",
+      "fingerprint": "7ef3acc127e8e3289dd4832cced92d7300fab0b709706050f787c43a8a2ba6b1"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-08df15d786d4df39",
+      "fingerprint": "a73546e882d01774c21fa3baf5b2714e0c645e4c4ad4290f95fd949047f57a7e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-08e540d409d06333",
+      "fingerprint": "0f70ac0e394e503d4c343de0c84f58065d652636a5c0451adc70ce03fba53a75"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-09ed3c990160e0a2",
+      "fingerprint": "6f7be421459ea746e522ddd486214e4a7993673115087d32d3ad843663a3e4e2"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-0a814623f3590f6a",
+      "fingerprint": "670adec3bba364e924c83418b0803c94f29e4c4b6ad3dc0709b3c21f5155ba41"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-0c49d14b318bea58",
+      "fingerprint": "ae097044359e5ea227e373992e135cba4fb283d495ca186735d19388da92e993"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-106265b6f1cc6e35",
+      "fingerprint": "ee3db2da6adcd13482adab56385ba5745f60b58e94f6960dc4090449b4a666a4"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-113841db8eb511b1",
+      "fingerprint": "63e568f7ffb86c16f19ede87b5eb1671fa88f3b550ce96ec48b5a8f06f6a4923"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1192351d69277ac9",
+      "fingerprint": "aa47fb15bed3e045a739b2e71a3c1fbfeabc368eb16a73bfcb39cd688f162690"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1287faa50f2a3087",
+      "fingerprint": "56d0486d5650fb6255cd153decc351ab55a3524c134f3d9cda2f9e8598db48e7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-12c20698507b3188",
+      "fingerprint": "20ab1a466c06cd1c5e290afd7d5948e5abe4b5c8f12074815cdcbb6aee7878f1"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-134a89b5008a1e1b",
+      "fingerprint": "919a57020600e0a52e5c9eaf2a726ca7f7913605d8c889097c47164bc7d53e2d"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-144095891a16a300",
+      "fingerprint": "80b1e9201ff796d201b5014de4a89a40b5a486facb2523865788f9d3494cbae5"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1613e904587aa5fb",
+      "fingerprint": "71ebe49f01adfe22cf36001b843e7d845fa6299e9ff9f4887b4bc36685bb9b8e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1752a654f9f61133",
+      "fingerprint": "f1082179e7357d972cb362f03a028c9919265a80e7df8d23ca20ab9138375283"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1863e291e00fa4b3",
+      "fingerprint": "18f238dd3292ffb77872fdae0fdeffac2a0a87882adf31eb7c524517e5eb2bfb"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-18933fe5bfb5c0c3",
+      "fingerprint": "20c78abdf5d3646696e89ad095ae9ef3436e4e54e70208cfba3f353dcc174dad"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-18bbf2b3c84076cf",
+      "fingerprint": "2abbbf1fc401350f86d5d2f2fd2e764324f2b32cefcdfd753244021a5d6dce42"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-18fc737dc0160a00",
+      "fingerprint": "964dc876c333b697897b24570960ec2bff9a80b3adb39293a43acb37f49ce51e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1a6ae3720c54e3fe",
+      "fingerprint": "84af3d5d259d31e32402e9335e55f4046ce4fb9c53bae37c23808dd62872af29"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1bcefe2ec51f871c",
+      "fingerprint": "a9ee79607a4688e1ebc31b6e9a72e33b931566d2ba8985c4ba80c416b27574ed"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1da65d46e9f66a01",
+      "fingerprint": "609ff5a7f4f2f85c75ac4c57ecc4aeabc4455b14454122bfbe80fcfc0cbd2969"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1f1430100bec81f6",
+      "fingerprint": "eda08e06e82a07f7843462673327a5f1a47250b9f5ab83aa3de271cc6289a2fd"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-1fbfd77b8375c918",
+      "fingerprint": "343d4b7aaa2016a09417b40532b9f0f2f75c483213ca7becf035a75fee5e34cd"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-217a1f24f59b7d26",
+      "fingerprint": "c179af24bbe9997ed39798c7edb844a3d85f22a2134a0050b560ac2707820fc7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-218d912ab77a4f12",
+      "fingerprint": "0ada1f9155d2c59296118688b385e89a3b061f7caaf2e249012dfacf234105e8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-23fb443c78f79196",
+      "fingerprint": "18a775f748b3b4c771d07eef7159c6002d6d6afea9c63c0560a800c562051151"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-251e6eba1c293e46",
+      "fingerprint": "6e53a3518436060c3c5610b80574a4d75c95a76f71485a375219da419e77bc65"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-2ae5fe35879f729e",
+      "fingerprint": "8411b645d515e7f26b624321248e32d9d1a03c7a15cbce9c8aac2bfc503135f3"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-2f1e363ac158114a",
+      "fingerprint": "b3bbae30d706ba35499cac01787916877e2bc1f54a97c0a8c0faac6636adbdac"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-2f64a06e84d14a8f",
+      "fingerprint": "4c984f5568802d7217811366a025816def333e4090da9567dbab4ddf3510dd96"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-31ecaad52131354b",
+      "fingerprint": "5a700477ff98682d928cda3cefb9b2f00ce23d979e0cd06d8127129a1e6c521e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3295989ab6f48b0a",
+      "fingerprint": "1c26795b227a66c7e155a64ba6e208453e7c9ef6a38bca3d7f2ac89b6ff792da"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-33ccb8af59b1afff",
+      "fingerprint": "f2fe47d266c42176171104578f1d460bb97729c814a0d15292c17d5286d657ca"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3575fe9bb99de48d",
+      "fingerprint": "e13bac24ac9083e962b442bed418ce4eb1cb6bbcd7a0f033909e5f738e1a58c2"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-37c48e9fa026a375",
+      "fingerprint": "b2af8495ab5bfdf926cc6a16fe3284cd6b8dc98c0f1853a3b97cc9efc0494ee9"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-398eb6c4ce591f5b",
+      "fingerprint": "e7f4f06398ae9c4d484af12a2191686330de6c13dcc0ef15cdbc56cbd8144e4a"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-39f21b56999f056a",
+      "fingerprint": "8fe56da3dd173b6db4222659680ae6bed9f6f2246c771b36a4e92641be74cc9d"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3a38ebf442f90195",
+      "fingerprint": "1501c1f873e4f80688d7ed810cf62fcf8699b2e4f0976a38165bce0e6d55759c"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3a92a0e7a74aa688",
+      "fingerprint": "8ecd0ad3a3450c2ce788d7a59ae154271b795334570753a3a437f085175885a8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3bac12963c31b6ec",
+      "fingerprint": "b0361411b097f341923783904dfc9a7169cf861c0d0d7853257a1f1627584b52"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3c1f0acfefa7d806",
+      "fingerprint": "cc4c57f8d8997e4081d0a9a262906bcf07fa673d1b88db7a7994c77496a8e5a8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3c7aae456b22363e",
+      "fingerprint": "94f4db8e37cfd50a8f5e2e019f14bde06d9c6f05e6f6a2922cce369af2b7d2b4"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3cb0b2562733975b",
+      "fingerprint": "8b381286358acff5c41c02ecfa1e0cecfa87a4c049e4cd55c9d6d06769218fcf"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-3f5aadcc59fdb430",
+      "fingerprint": "40f1cff487063150608f4a19f995354454187c76d9618d5e8b35b1f96f34f66d"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-4031443b6221a14f",
+      "fingerprint": "ff175f67380af91ed3ee39a99cff8393064793b0a7970fe31340498a8a0ac8bf"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-40b1b8098681790a",
+      "fingerprint": "d77c795bbe5caf2a46e69897ec00065d712db80ec4aca5a5e3e8c4432c82b4da"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-4133bf87b8d0c49b",
+      "fingerprint": "fdcb0e049ed4623e837f1c9a1b086833d96b6da584ca8643f2dc0469136c3926"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-41f8525fe55206f6",
+      "fingerprint": "d9ab322fb1b430a2631b6db3457a55b368534adc48f0b09e3eba352801f9f9aa"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-43e11251169f8e81",
+      "fingerprint": "743277e76e09c35886f1f7b14264e8b265189421031731bba71760c41cab3730"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-4427a34ad4dc81d2",
+      "fingerprint": "87f849c2c22383afb15bd12872447995b10e468cac8a8615301386426fde6523"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-4584eafade1d2b83",
+      "fingerprint": "4ccdb783740a8651b19f6fc4f09f74a0089a2d1efcc2b2b9ab90e021decc20a7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-470a1bbe609e5197",
+      "fingerprint": "032b9e63e14c506d58fd0636a5a81802b3fc9292d5216bb7c198a69cd5037a0c"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-4858914e4854361d",
+      "fingerprint": "f452c86a2193e12e5df3f7352c8ef28f3cd6bdb03428b36351eb3872894869db"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-492f0f5397aca5cb",
+      "fingerprint": "2ba729d1d78b2d017760a5cb430c21307eb050cc3eb689b8583a0ac2de3fbe50"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-4e1d91a09df1d309",
+      "fingerprint": "4108a191ba527a4b45f1a28752ffc75e6d781412ce1fc4a61d6e41909aa5338b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-538aa66e93765987",
+      "fingerprint": "a45339c217e0d225d6b78a52be574a381894fb3f8aeefeaa75f01cefeacf86a7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-53e7d7b6594f6a6d",
+      "fingerprint": "141c8f77f7e0ae55c005fd48ed1f6970a80191d74abee45a9b164335a884823b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-55f33093e824f302",
+      "fingerprint": "e5bfd4a952c0f85b3147f3bea09f0fa6901ed25c6de5675b1264e8da4e162163"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-567cfcd42292298a",
+      "fingerprint": "a340d3b314577cc7bc01b074fbc71a42aaeb33a2777b0eb67636ad2319e8fd68"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-56c6124ea27a25f9",
+      "fingerprint": "433f03e5a73279898e18b2c510c2482b2f9957c5754ee59c3aaa6f18f6781528"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-572f68f76e0ad486",
+      "fingerprint": "db9980dc02acf1494b164b7d7df6077069f6b8405eb5796d0ec37a05ec9037e3"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-5961241873492784",
+      "fingerprint": "276405803c86b386186b94b8b4da8dedd3dfd217126b9cd09c9bd4325d1ec027"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-59bebfb38a119690",
+      "fingerprint": "6ad4e5db9854a7760251bc164edbf5e4e70ecb719817ed2d71513fb3545398a4"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-5b346cb1de90bcd0",
+      "fingerprint": "9b6f93463d886c8077818885f51f54557f270ae874a990afa1ef8e7e0cb48373"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-5b421715069734b4",
+      "fingerprint": "719fba7527adb976d6eadc6f9cb53addb4d9ad45e64141175e052847c3d8c0e8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-5d920a2b555d2110",
+      "fingerprint": "99921517bda6887ff995857f1f3d7411874cbc35bf39c83f8545490f09da4b01"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-5f351ae9377d86e1",
+      "fingerprint": "b80fcbc5112662174d16c6b3befa4946e7976b46badf11d8458a9ed79462a850"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-5ffec97438bef061",
+      "fingerprint": "46f4b5be6ed21f555b838236a53fe1c5210c0a2b0ef68bfa8d92fb5a534525d9"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-613f7843ec43ff87",
+      "fingerprint": "871e901d69a801e42fbfe74e49f1f4c54af17b88210a2339454d45abdacc1807"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-617fad3225621e39",
+      "fingerprint": "20f4a9e5b6e73114381409d7b0e2e2c409ee50440b4485ec47972c999fd842f0"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-62641debec45d25d",
+      "fingerprint": "d62de19c3a905b06950befb05b65ac606e918e777f7c37c930faa12c2375b272"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-636c0684985b1f1b",
+      "fingerprint": "2dcb263b1bdca69cc16aaba14c057a3ae2b08f3998088d005e6c98e2fc681a31"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-671bf2c9cc4a6aa7",
+      "fingerprint": "47671e52fa1ebd92092827f40e216ec6933b0e46c3de0e769de16b7a95514999"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-67d1b430a8ca3e52",
+      "fingerprint": "bfa86390503f470420715c7859b9f7a01f7a834010e0856f10cb2efbcf1fd01e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-6bf9ebb05041364e",
+      "fingerprint": "e4702ccbc8101df3826bfa81bf733ba104f0b875ca09bc0cf8569f1cd81c52b0"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-6f697e21d1d464c6",
+      "fingerprint": "ed92f0e4a3f628c2d702a36ff79f7b01f4b9004ff6b8d0bbd9c0ed7b6841a1a8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-6fca600c6606f6b6",
+      "fingerprint": "1079ad5ed1eaeac2620e896befb1704f5fb13d41f2b7eb4de166c73c3febbc0a"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7283cca36e3b3dd8",
+      "fingerprint": "8101c810df167de1cdc4272c3a3a4c72151fe82cf4136febbfc4f7081332396c"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-747254ba7616c9ad",
+      "fingerprint": "f74c97a0ca8187717f543c0445f14634b45e658f04047fc2f353099137d1d288"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-78a523c230835b4c",
+      "fingerprint": "9d4af0ec53a3daa76ae07b77262132940351d2446ab8271f9c36fb1adfb5293d"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-79d5010aea2a765d",
+      "fingerprint": "b2c7118a56e0ffdd14e195f55f811c33ac8c73f600fa3af7577f2dc93ecead00"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7a5ed246fc8ba109",
+      "fingerprint": "766b6230d3bda7aed38ecf680d921b05ac9a1f60d7c41492f4ad773c32b36953"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7b87704202868aeb",
+      "fingerprint": "f44c1b1cbb4ba2bfd6f407c57d48fa816f1aad70a5d593376a77e5fea8f19934"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7cb2be766029df9d",
+      "fingerprint": "0faac1805a0fd28b5efee9a977b065a793b83934e117313bc06c2d0af32d0c93"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7cf618bb33d96f8d",
+      "fingerprint": "d126d03be2778739bb00cb2c914d52115adb25e8376efd80106f184ce54a0a99"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7d42ca36f3625bb3",
+      "fingerprint": "bff1a6bc51851e95a0a86cecb37d82918a7d65ceda52ed3efe56fab7d7199512"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-7e1aaece99b0fc4e",
+      "fingerprint": "0a9554e8a05159c423fab63e9b8de9e76f091c6fc41248f4713dce7b6abf6c93"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-801aa0b5111e5f3a",
+      "fingerprint": "a20f217474b502e7e91e2fd27c63c360c232481e994c5d3829f2fd224ecc7a0d"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-81820fd47016f989",
+      "fingerprint": "0ba49cf5d3fd21b4b1f32e6eda0139cdfa2e0a960e51bfb515e66ae5f80af6b9"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-827be3e4868a2a4e",
+      "fingerprint": "4523805586b29468cbb889ebe8638fab9368b9f5f7dca263b029b85e28095c75"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8347a6a4957c7e5f",
+      "fingerprint": "e6ec6e90a75af7a1d1223d66ef7d5e509477c379879d1274ae63c1fb7f51db6f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-84bd18ad09c6bf23",
+      "fingerprint": "7483d85a5a0b1a5f5d59a583239a338bb5d1ff249de6af32017ba6a00eaf3094"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-86e1afed1df1b25b",
+      "fingerprint": "ba8cbe54a54fadf68f850dc3db8c7fce63bbcbb46acca14d9ac008e1ac06ad92"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-871aaa45511d2021",
+      "fingerprint": "421b4074d87e48bdedf47d7fa264b1873a1bc0898ce2c2fe9e7b12d42ea8b059"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-874c0b380cf884a2",
+      "fingerprint": "82603091f796845be008244a5e4b93a6e6848b1255ad76006b299c2a4a23970b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-883a492bc52f2055",
+      "fingerprint": "423fe29795b490d750a23b512e4497403267fd8c0054ade14204c0bea33b3ae6"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8a4e9e6a80f1b17e",
+      "fingerprint": "0574fdeb1393f72671f2db73184735dfe2dfd38ac78d1d6544d429678135e091"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8aa7d676e052d56c",
+      "fingerprint": "65ec4bd6e0e2ad319e8a33b18bacb94df3470f9e2943124ad0962b3b7bd105f0"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8af522b29a8c7993",
+      "fingerprint": "87501e9f407fe428dc4a34748046b2f11ed21602e3fa16762f441cbb4901a380"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8bd0f01e860e93c8",
+      "fingerprint": "fa171724a066d9bbf8a513426fe739e7c13a9aef37b5c978ca567abcb8af3858"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8ca60a24aa3744e3",
+      "fingerprint": "1aa8c7bf7afbbf4e19fdf4522236b1633ab2d057242edd927ee9cb5de65d56cd"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-8e425998fe888c29",
+      "fingerprint": "f2dd988798e9ca149e9ca1588c6165475e462db02b16f37ba23a46593cc603cf"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-9211956dfa913649",
+      "fingerprint": "d37cae7b58859d58ebb49d8cff43532063d3a7d39065b57fe08c3e4120f09a8f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-97420a88cab9c03f",
+      "fingerprint": "6f74882cb5d75bfba2f08b72e23d93b8d5cde48dca7ed750176448d2bdcefa38"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-978af5d34d3ad64b",
+      "fingerprint": "b3ffcc4a7f7605437fc13d798cc12a6e8fa9f1b1f931e62b9de348a613179d73"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-98d599112bba8fc3",
+      "fingerprint": "75f3674ef7bec3ae15eb1a33793f0e5cc9bedb224899e59cdd7cdaa6e9677ec9"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-9b07b91db60ca7a6",
+      "fingerprint": "ab6d8bda4edb1d1ecc90fe8f32cb375a5760cd456e1ad6f30598e3a8686a0b52"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-9e14f974bc8001d2",
+      "fingerprint": "58f94b97f2ae5dff04539d455919e80697247a286557817f9c6198f30ec50822"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-9e97cdecc517b850",
+      "fingerprint": "6506045af4cd007550ce82288e76813b5749f0396746a531eaaea845c9d624fb"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-9ea25ce3b6c757e2",
+      "fingerprint": "401470ee5cde3c2048a9aab08b12261da606cb3e1c5942c7b5566cc41dcaf106"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-9f9fb8e1fd0400db",
+      "fingerprint": "46ecedab6f49a8890c6c4748770a9a5af00fa98dc1b244ff08f961b9b2d5ecfe"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a009e1fa80b210fc",
+      "fingerprint": "a4b57c769b921d156439aa66ec7a479e358cea7047866fb8a0e90f7e47f5ca95"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a031349e3e3a1ce5",
+      "fingerprint": "57aeb197ebf08c4086bce7f713eabc6e002f5dfd2bfb515abf964cbf5a74034e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a0d28f84a0e99546",
+      "fingerprint": "fe59a80285f7107eef48b6ad65bd1c51f187f101991ea451658343d509f28878"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a15a339cac9e445d",
+      "fingerprint": "662544f0a34359c1fd619a555525d13c1b828ced902ed63c57eca02d53d52874"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a2c37e21338bc5ba",
+      "fingerprint": "daa28d87779ead8c8019c0ac300e0b759a19585b9bcff45da7509de99d58e042"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a39fc4a4064177cf",
+      "fingerprint": "17eaf7b36c4fa885c6f04fe6bf8f52377c5ffb0c21926fc6060b3d2553dddd4f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a4a4a3cea7972292",
+      "fingerprint": "f8c835ee77031842dc3dfc8423cd41edf3418b08b17302a54b0067a29bd58e20"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a4d7460bfec7dda5",
+      "fingerprint": "2926edc91704a7a527aa13dec57fc2409733cf106f8d7f69d97ca64eb3e7528b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a63b78a359c9ed09",
+      "fingerprint": "52e2ca8ec69fcdea4b14b063248303fe0fc274f6feca2433b479abdb6d487a61"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a67aa913b32fca6c",
+      "fingerprint": "3107ba2aa40937e497b45c0feb78a45c5fc3e85f9427b664750d1c81ea78f199"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a7f40106a24f028b",
+      "fingerprint": "d34c4ea3eb805b19baa703b562a7fe2bed7d6ede9443c9e166c0bb23c869fc10"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-a90d25036c369e6b",
+      "fingerprint": "12c0ae85f3ff61963a1412e3a8b641f5dd64124147f8674191f0079df5ec7f5b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-aa21ce3fe6957055",
+      "fingerprint": "bb2e57b36c1e56969ece3fb64b33370ed09bb73676a45c7e0ccfe7f73558b3b7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-aa28317ce82a5fc9",
+      "fingerprint": "bdc982b6e24316717d040cc522c6652669390fd3f59d60d6bd6165fda5fe1c37"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-adcfeff03b46afb3",
+      "fingerprint": "7daf3d27cc2fc63847382a76764259c378e1303d947a3a94849a79ca52d1e7cb"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-af184963522343b1",
+      "fingerprint": "878a1c4a6e11ea679b14b09d78500dbc62235784cd69da652f69a2ea0c51f756"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b1e4f68054b49522",
+      "fingerprint": "cfc3d36c4ce81c656c6d9ed1e327493812dd69abac3845401f584d6b090abc23"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b2290a5beacf3414",
+      "fingerprint": "4bbf2f088570c0736d7a3c97473b4cb51758cefac00a595f5d2df49be18aa215"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b24318e1f3ea62f3",
+      "fingerprint": "89e2069dcb9c2b04f3f5d81d18d6ef2973096cf2da12d8ea135e211fcc871c67"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b303cfcb19b84c64",
+      "fingerprint": "1429f63f258eb267a63fa3fa8df257983966676e15c02ad288cc4884a10979a5"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b56bd4e9ab81dc81",
+      "fingerprint": "c478f32b2e0698fe22b83d6f7a6038616b8152a9e132d1e9a13d8e3d7cd5a79c"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b63f2d4af8c44b85",
+      "fingerprint": "45bcbae3a637ba47aac00b59a87c3b7b80f428cef74c733e57f1ecbf83005a0f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-b71325f63c7562b8",
+      "fingerprint": "eff2fa36c05ef3fa34f8e4b70b458d338539213db88cda48a995257caf278f95"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-ba442459200b1a1d",
+      "fingerprint": "35e55da561d550afec2fac0dcfea06dde28dbf1f6da27a07d5c4bea604fc363b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-ba650bbf24a7766e",
+      "fingerprint": "210eaa5d8ec6b10b647319ca68ef8f061677de7b3d2a0c07f2de1a22c09848fc"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-ba80b6943f5f1b9c",
+      "fingerprint": "e64a598d18a3fde6a9ac6adb8f579ed4be7ae812e0e024c089a38b15ea73315f"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-bbc64afa249711a3",
+      "fingerprint": "72428bdccbd9c3b2a33a4358ab41391ca27452f1ffda0dc7aff5fb24424328d9"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-bbdbd93050783060",
+      "fingerprint": "7cbeb3d7e9275057a447baca4d5910c74674656be48aea258fff530561745627"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-be68e0b946c00bca",
+      "fingerprint": "601792a165e0724b13ae1722044ab013ee02fe12bd9c363415f7016766142a66"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-be9daedc66d98319",
+      "fingerprint": "61a3b6eda8812ff705832c2a6732ec3a44985bd94fa26447cdef51780f201003"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-bfabf01be9a78e65",
+      "fingerprint": "d8913e11f24a79e69c9ab5fa43765eb334306b015e487f5989d3767182556ba3"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c0a17c286bd39c7d",
+      "fingerprint": "dfecef32593272a9ea699ff7054920c5720ffb4b874fb3869d088bad9374abfd"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c25a21ced45b90e3",
+      "fingerprint": "7bd1cb16d002560f151f29c1d79ccb04f9286483268b2d5a247de9023fb9345e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c37994c5e8bf4d19",
+      "fingerprint": "8cd864f38b2f3bee3b9fea2051f825164a30ed6467471b0ad33fd52abd4c6e03"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c39fa405e4d7a4dd",
+      "fingerprint": "a30ad0a52ecf041601757304eb778d38a255d6818ae660d6e40a5c19d2552e3e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c5b5dac4620cda4d",
+      "fingerprint": "10996ba6886a8ccdc119b4387f3c58550b9f42aa24a78d41091c12aa329d1fe3"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c6c522709ad48390",
+      "fingerprint": "999617b4043eb8725d7dd1e486b6f6e7aad18b9000007bafab984765190472e2"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c7d2e7e4abe7a44e",
+      "fingerprint": "50714681c971fa7891f79fd7c5253478b139af7bde5a40b2844af07f33ecd70d"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c8af1b6d32bb4b23",
+      "fingerprint": "d63fa7df2e46dafd1fcd5d925d14fd7c80df15b61c71a8a6c30d5257f2715d40"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-c8f32ae62881ce7e",
+      "fingerprint": "325d52d3b6908eec8f86316196d0c0c8147999b5c1b825cf11e44616eafdd5b4"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-cb7609da27f926bd",
+      "fingerprint": "a4382633c79e6716549d6148ba22fda796625709ad57a76ba70ed37dca81cb46"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-ce6879bfa657ee26",
+      "fingerprint": "6e06f76edc020d37e1aa5bda9cc539d74cf65add391b7024d3bea9321bc6220b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-cfc508066d3125da",
+      "fingerprint": "c8845f8608646579a951cb18ace5067c2041fa875b8f3617ee3c89cb3ad626d1"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-d2d916f6ca555f7f",
+      "fingerprint": "c5e9cb3cd6c47a2794e457a519ae47f913113201c47788a05d44f1ac4568323b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-d389b5d3a7c40124",
+      "fingerprint": "ee495913d9e614133000fbad17fc36570e8bafe1c86ac3eaa57ed366c0bbddb8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-d5b0e5c14a6c0de0",
+      "fingerprint": "519b07ca4fa65783ed9b68cf259ed19a1ce7589d45ea2cf722a660633168137e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-d90324a93692d258",
+      "fingerprint": "d14fe62ca923f773233491df93bfd9e1907390fa1f6c6fa041766038eaae4263"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-db159cfb6bb2bc89",
+      "fingerprint": "6a96f320157246c17230a3ca89a20038ed902d39335b8a5eb26ca06d1ba8d629"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-de2630143ed193ac",
+      "fingerprint": "6f51fa7c8f3c68c632fe650b62bd37bc25b2edf371873ff8e7e52bb1e6c45d8a"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-e2e5b3250f9a1ac0",
+      "fingerprint": "83b22fdaed0a2f7ef2b7f4a2a2d54896ed6a4887cee8a77de06f1199e65d9843"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-e3b88faa5a5c464a",
+      "fingerprint": "d9593db2a9b5f0203da8ceec88734ed537f6b2e465102b67491977c38c011bb8"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-e4808738ac77c3bd",
+      "fingerprint": "5e75d1a99c4658e1bd942b7526a4578f9100b6f1132525f564951b6889f32c0e"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-e5f525523d13a8a8",
+      "fingerprint": "8376a896ef53278dae21aa0b10a2cb602493be0ac50a1a1b8c6d28bfdd4b8aa0"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-e990c24438604a92",
+      "fingerprint": "a75051a4b4896a9bc31f74069bf610cf12f8bd62a138ebe5228be0e8949502cd"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-e9ae06162fbaac39",
+      "fingerprint": "be267736452f8a7c9b4659a38e52338c69aa4478b744e3d58a816aa2be7e8b10"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-eb75806e7886a4d2",
+      "fingerprint": "ca30cfa4f5cba8299836f5c57930403460a85b5914e09987ad303bfb9cb07551"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-ed10640e961c5afb",
+      "fingerprint": "c21e06925459c632650531a45a930716c64c60f1e0fbe36e643fc59f3e855b64"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-ee1a727b7481eb09",
+      "fingerprint": "83894f4a0c2d4056d8ea93cd5a38bf34d6a618117c284811bcb296978df8f8e7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-f00b02641b2b5bd9",
+      "fingerprint": "af378d6ad5428b5d8ed725f4cf7dfd42bfcc41aa9a50555e6c76fabc82ba925c"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-f1b3254f28276140",
+      "fingerprint": "d693144818af9b39180ec2480310f977df775e8e8761c68b1dafc400de800d97"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-f67034c72d3d316b",
+      "fingerprint": "9dc915c2f8caa87f9989e0344b6a109a618ea124baf1d7cf10063ba2ca753f91"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-faa46c84f0a2b7ec",
+      "fingerprint": "78c6676840d88f802b9a894832139fbdfc0ecb6aacc3e2e5dc4bf2095bab80e7"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-fb8c5bb109e56589",
+      "fingerprint": "57f1e3d79f7aaf42d341386e050425b16baab6bf3e0922f497c7d8006ca0e631"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-fc18fa4cf6c25ed3",
+      "fingerprint": "7c70491c27b0441f989ef0846954a1f6a7da11739d3ca610bdd96335e2e08e5b"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-fdcca65a6da94a12",
+      "fingerprint": "cd6190a1ca0a75b5e8d4e050c0af223b633ee25fc15a0702e67b54396494b157"
+    },
+    {
+      "id": "textbook-q-12-economics-english-5418ce45-fe3a44cc77a4e136",
+      "fingerprint": "ccd3da15ce38ca97e001563fea1b47a064a4ff543bee137b5c96e77ad60c803d"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-1080f57fa8900cb4",
+      "fingerprint": "04f51649f13127ca41069107339fc6e94fcc7c8c1504a41a8ad4f6fe139238ea"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-222ff89e63a02752",
+      "fingerprint": "93576e262eab1d9662c93b59aaa96f31e66befc49ea9ab77e8347e6a00445150"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-25029e266a63e768",
+      "fingerprint": "5f7aaa130a135861219320142a4f7082c33125959c00d09011683dd84056f27f"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-27f56b3248986912",
+      "fingerprint": "34f50cf00611b9131990640413651beec171f740629207e9fa34d9ec18a5a1c2"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-470bb409b67be8d0",
+      "fingerprint": "c560f97b7d6deccc450944b32421c0126125443c6254d6917ad9939e90e25ccb"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-7e889220c22a34b7",
+      "fingerprint": "e11104a6d53e1c864c2dcf1a38d3ed165a63a9aba6c627a379535a3c086e506e"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-8c13fc9698978f3a",
+      "fingerprint": "6088a4f15f3435260f4c729417624146443cae11ca1d595271a9b6922eca8988"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-ad6e6ff9e92cf380",
+      "fingerprint": "7393266f83c7dece10bfec068a9ce55620eba914355ee700e42c3cbaba2bec62"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-b3fc8a7e3426fd1b",
+      "fingerprint": "37f7c8049fcc3925c17c0e30a7fa43070705931d7bf9bfba38d0511ab31553b8"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-c62fb502c2b0af5a",
+      "fingerprint": "f142c6bea994a0c80d51c54e3dce5e982a4e9d7132df0011535b8f3b7b05963d"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-d1cdf76bf28479f1",
+      "fingerprint": "9d956ba2b7f0e5354174859205fcd5e07d1b40d522aa3f07e0cbdc8bfcfc372f"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-d3a4140de8b97929",
+      "fingerprint": "d51f8f5ed52d2db0898c5783f23e09c3710edba51033e151b3196d082ea0fe7b"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-d8ccb3d834f95a32",
+      "fingerprint": "78a866a303423f46edb67a7261fc9e98d2fc536d9d3d4a3fde9bb25f2becb306"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-da4d2f69a631e6d4",
+      "fingerprint": "b7e23aa99bbb14fe6f5faeb156e2fac6dd708eb95e1e7f2d999805189be1b827"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-dfe268829f365735",
+      "fingerprint": "d31635feb2b79cdc093cb86a0d8a0fdcce46392c7a9ddcb539a75a7bae4ccb59"
+    },
+    {
+      "id": "textbook-q-12-general-nursing-english-5c87aafc-fc486a5258ad0203",
+      "fingerprint": "a9a8120b6848f485f6e1be4366caf6537855c108d8588164185eb104579e7cef"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v1-e33ceed7-5cb8701a5ddd66b5",
+      "fingerprint": "ffbebc5fe01dd83ddebd462b11d03c8d2ce470e90c80e4c82893cc8a9f1c095f"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-070052c78ea4349a",
+      "fingerprint": "abfbfb4dd986cf19a31306bd3f8367da3b6f5f717cd0498a9bf31f46b9704026"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-373184de26ab100b",
+      "fingerprint": "5198b9ee4145703680fd79c471f656a50f40c2c1d1d5a3ca897d971eeea71d1d"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-44c6bb89f9cfb143",
+      "fingerprint": "9f7894721114e4955924701c276dc876fc706f141f977cae32e4e48d2f6b5527"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-68b29df521bd16e4",
+      "fingerprint": "cc13c99b2afaf1b2aaedcac26818642b3dee31bc91f70208bec793f27f5525e7"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-86d14b11d9b5e50e",
+      "fingerprint": "23d8068241d7c21db661331dcabfb8122e26086ff55edb938997e4f900702bec"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-b891587c236a1f46",
+      "fingerprint": "ebe3014315af4959cce7ecb576a00f8eb49cb801f5b23c9ec8ad36ad49cc0a26"
+    },
+    {
+      "id": "textbook-q-12-mathematics-english-v2-d4925ec0-c67642476641e8ce",
+      "fingerprint": "292f5cf7b4b134845c795f43dbc4593f6a499fc83802aaebdf65b5075589166a"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-12f9ffcd06087692",
+      "fingerprint": "42fdfdd1783187dddc51e6c7aca563f53f78764af9c8852119ca5bdcc6ddc5f3"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-1ee3b3650e74be2d",
+      "fingerprint": "aa66de1931d4ac4dd2fe44724a5f81e8de456113a02ab832bc00885d45b5c667"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-309694288c7cd221",
+      "fingerprint": "f027fbd46e3831389ddc0b1c15a3f5b137b242c56d7fbf21baee1546b91504af"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-46f0355aae349b4e",
+      "fingerprint": "40dd965b0e83119211113af77c61865fe84f0c293e77b955fe531d1d1257c0dd"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-4b1547ff3cdfd9ba",
+      "fingerprint": "290d0787e773b41afe4c2a1dead7bcae6afc4f59e511ddad1bcabd4300529b6e"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-5f237754bc9bcf16",
+      "fingerprint": "c1cfaed1185cfb4df5bcfb921eb152185f0873cbf1b29db2bc01353b468ebc3e"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-626b9256ce38dd49",
+      "fingerprint": "a946179f39e02b95bfeef47d72361488a8fe72c7cc65a37585e5476b50191935"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-69dc8fc5b54a73c9",
+      "fingerprint": "079d8a093c8662b46fbe8cab98556accfc0ad46163f6e80f00a1926ed6533f0a"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-737c2d5446deeb80",
+      "fingerprint": "48966fd5b3e1c27696749497ae89ba57f72b2e3e9bf7e06c40fcdd3a5adb9966"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-7e8e34ff89eb6315",
+      "fingerprint": "0f65d973863fd159a711d9092e55882c39745a98edd147f3dc00c5740b012a26"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-840d27eda41e23ff",
+      "fingerprint": "55ad27b138d5397e5a03f05a3175acb220621b59360bddd5a3a5660d29f4bb34"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-85b9cdd221e37c16",
+      "fingerprint": "df641d3c3a5ad3f74307d69fe0b41858c2eda7e737f7a298f5fc53d6a40ffcd6"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-9a070b059e53c511",
+      "fingerprint": "24ca9964ca68d8489e72d703e88473d3ad418797ddd83255e4d23e500cb68a3c"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-9aaa1da41e6c012a",
+      "fingerprint": "1b91ba0009611725f2aa8218d481500f66b4e65691e0a197a434bbfef6f54a79"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-a50514b01c9f5853",
+      "fingerprint": "959170a86ef9b575a143d365ad1db27c36fb996b8b366d127939410d0f5dfd88"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-a9915d0dbf28d7da",
+      "fingerprint": "68886e2ee86fa9fcf6a7a9a6e3dfb1f68872a5df2c7f1cf5bb122e92cce58b6d"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-b29a0db1c5e62a38",
+      "fingerprint": "c9b3af8ac1dcd280546dddde0b0a1c184140ce06127b44cb19423adb8edfe83a"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-ba39966940e77300",
+      "fingerprint": "52b9b1167e87409197e1ccdc2b717c5a4d2aa692f66b17c2c656b20bae7045cf"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-bd134335540d904d",
+      "fingerprint": "3436858a5df9a497dfd4a1b9d1f702603270f4e357e6db31cc8419eea087011d"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v1-1b1de8f8-d3b2e26b0df6f55a",
+      "fingerprint": "1409b81faba79c2ae48ba16500df6e665c257eeecc860d00c748ea2711287482"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-09395bdee0c8b5f8",
+      "fingerprint": "132930c0b4f8c2649b58c8faee3afe9a2d69b38f4e93b84976fe9df918a8d8b2"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-14b352926331fe61",
+      "fingerprint": "a66c6cd73a725d5d28179ca11143c364d63ef92648e92c1dd7ca9a4497f2b4f9"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-16957c06cc2de9a2",
+      "fingerprint": "3e38871d457b2f2d4ed778656aa852bdd6e2ea48820625eda110d0228d27bd9e"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-1be3802120262453",
+      "fingerprint": "33586a670a2b0da7b04eea1ba45436ae91d73b87bb24e3b598728f3b6b4494f9"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-1db5b106849facb3",
+      "fingerprint": "79c4f4b3978e327b575f542b8671e2cd0c1c59ff87beb7b48489f610c7fb1aa7"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-1fb6b7fb0085a82d",
+      "fingerprint": "b66298353509240c6c3696e2a052e1f552e9f24a796b64f54d0b706aa6c6f631"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-38072b19b47dcdbf",
+      "fingerprint": "836f8e7d00538f9ffa7c36cf377c49170d8d349e576053353309cd18b98496cc"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-3b5308ded13bc630",
+      "fingerprint": "d6e5ce2111f35bf22b62c2147ada767c1a8191179a045b4e3487c7dc756a4224"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-3cd7b48c26ee3c58",
+      "fingerprint": "482c38b7c3bbfd3af3e7000546a8057ed55bc7106af8392b2694a0fc009a223a"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-41d7c19dd0fe6e0e",
+      "fingerprint": "36312ae15f6c51c8d3f5070d9b13bce695dd3b3bdbe771cd870a560d7746c1de"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-4d32df276853dc85",
+      "fingerprint": "892ef96923d7be5385c879f8e44b21ff72968e3ca2f4dc096baa4e923ad8fbb7"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-4fddce0731a62617",
+      "fingerprint": "cd3933375c5213ebb489a78af5695b6eb6951a5180e13ba1c7207bf74bccb05e"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-53223d2259a75719",
+      "fingerprint": "897e9b6656f35bae6e64ad8a07b0a57567fa2883b66edb3e39c7b8b3e9b7d6f6"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-58ee50270a9910df",
+      "fingerprint": "639c80bdc3be7653cb3938010df57d277dec2b5501ffe3eab69169d9d70b844a"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-63fae12ca7f16a5c",
+      "fingerprint": "6c53c2cecf080ddc9f18dbfbe5e1054884de6dc9883907e12b84932cbd069d57"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-6af85301a949515f",
+      "fingerprint": "10318fe4d94876968418e456059050c66e4e74c3b41fcc63d392a1c71b5777f7"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-80b415a4121ca2d2",
+      "fingerprint": "e6b90f52fc32af220f0845a40931629d5eec299095204e74e21e6775ec1f42c5"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-915a3d4fa9b53d93",
+      "fingerprint": "29660acd8ff56bcabbc328a207627ebab48af80662872c235dd77e34c0b3699b"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-a1b37aa95114307c",
+      "fingerprint": "31557ebab58601dcfe847ffa773b782d243db66c018d62324e5699651ba3a9c5"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-a218526d2666eea0",
+      "fingerprint": "8dca832d280bc6270dd11fba5b735835638a646df1f1a9b34a3d0685f890c5cd"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-a9bd7aa79e2891ee",
+      "fingerprint": "743b52843e6d6c6a5710e25b41ffd6468f1b00f4d1043c39e59c7ab12942603c"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-b10c5e901d947c9e",
+      "fingerprint": "fca410bde822134bad0eb2b14f2e62ce1c2836fb2507d2759e91a89041c0c9e4"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-b1c26d5b61f18c3c",
+      "fingerprint": "7e1fda0e286dff5c5d23ce5a2a45dbfdb512b11555956f42658746da99163995"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-b9d3365f4989f716",
+      "fingerprint": "4d7e90872d084f39ee82afa2b19bc96ca209510f161b1883c60f9fa01871be9b"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-bf3ded12d05edd2e",
+      "fingerprint": "f96ad564f4df135fe595ddc5ae88aa860c5b4dfc6d8bc5697c3c57e0a5665976"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-cd5902877b435f53",
+      "fingerprint": "a9546a846fd289af5f33299e632e6655b6f212a913824d0a1d1c661608dc8391"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-ce94fc0e90708913",
+      "fingerprint": "41f2b70b08b63ac65920e4100579c06330b417de210f5a6272d566edecd9f9b9"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-eaad3f07e22e85bb",
+      "fingerprint": "a0830d6d95c763724899249ea87031de25cd497c93efafd801d42b7563553040"
+    },
+    {
+      "id": "textbook-q-12-physics-english-v2-0ce6704c-f7a753d348eb6b5f",
+      "fingerprint": "ac1310cdd326ea3113a7913b29df61cf9f99f29c0d450d391bd8ae6ebd3239eb"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-01a825fb953dab49",
+      "fingerprint": "33971f00d50b44b045b263e0341c626046c95fad4092f6f170e94054d34aa9e0"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-0591fc8af2da02da",
+      "fingerprint": "0e5c96bbe6dc9fdf07aae1fedfe1bfa972bf0d55085009f39ff2475c791dd91f"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-1156a5eaea7f407d",
+      "fingerprint": "2450794918a5dc04a8d992805506e4e5d196a39e26db3a63cf3d011766a40121"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-11bc24d0e7855605",
+      "fingerprint": "40f1d65559678b3e4d82b12493f0272a0181df0b0d6ad2a802fbe99f001c88ff"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-169608ada0d16d0f",
+      "fingerprint": "f7b385d22a5e805cbe47e8ad44f0af448446557703de567102de72c750a9f1e5"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-16c51b5c7e5a7e20",
+      "fingerprint": "79a8de32941f71bfc89144921790c0cb30347414ca7f56260d0dede1b89c434c"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-1b29b6f3c1881744",
+      "fingerprint": "52e654a595fbf80edf6e6e08f2b9f85858687ff1bd12f98f596815173a027fc5"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-1e54a7409ae68215",
+      "fingerprint": "4f356e3206e1327038308169dc77760a80b111683c4b8b8fb88c3153d767d766"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-1e91376ed27165c4",
+      "fingerprint": "8cafb0579870f95f974490a785e6d58356bd6c865593f4800d8bdb52128561ff"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-21345da02d62c25e",
+      "fingerprint": "80be94b657abeeced4e242a3b6e372637e70a357ee07d63f5dd19ace4b92fe90"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-22a71a29167c0634",
+      "fingerprint": "1d633bb06bdf92e3df9d645144c3ce95e3a738667cf2dac1a006f88b4344787a"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-2594c68a02c5f531",
+      "fingerprint": "71e852e9d9e79dce1f2d449085b16b9b74014e7743ccc8d971327222b9984242"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-26e1d3ceccc46604",
+      "fingerprint": "dcbcab7bafa08a7a910527b55057e85a83a487ccb89830dcf46e17daad781857"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-2882431123034e8f",
+      "fingerprint": "f7adeee7f9f38c2d599c150b814f2706afe569840c08e57b43909e122600e897"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-297e8b66157c1308",
+      "fingerprint": "02b084c7868edff59f1ecbc61da326e789386b00b941fa67bd6547cdeda57b0b"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-2aa68e3ef47bf393",
+      "fingerprint": "7545cc4c4ce9e4c1846ea99dfe45647f66e4ee61212ecd3252290c51541b78b0"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-2b630a6576d28034",
+      "fingerprint": "6279a955718640070e5a816239d53d7248949a25ce8425305ef07c52f7687dda"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-2fd01018b2e8b4ad",
+      "fingerprint": "dc7195cac1b5dea063a6259d6ad6a345b620f6b384f4652a01b3c9ef752e69af"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-330c03725810bd4e",
+      "fingerprint": "c6d18c451960104f46628f6d6d0fb498331e181cd5de985785fd56c509e29b1c"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-35971c80151f6987",
+      "fingerprint": "bf1b418136d3f18caea9e8e915d136b55942af2c683604564fd728a0531fb87d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-3aa582036cb33d5e",
+      "fingerprint": "612a8ce554feaa462cc076af3557e1ceb016830423dbe45250938254e6bb0b50"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-3cd2d24735bc5d27",
+      "fingerprint": "bcf659448be33e5c4700494b5fbd72484564a7302001cee0e47e3a7e782a8585"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-3d05f6950b5b0280",
+      "fingerprint": "5d5cace2672e8119408fbbdc25a2ca588fa50dd9596f4474c02c1563b4c9123d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-3d3923908055f2b6",
+      "fingerprint": "b1cf44c4c041c790413a4c47a9ce6d58f37c40ab94ccf8f505627612aa791bb3"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-3f775b967ec08a5a",
+      "fingerprint": "dc9437c0d9e902499b3c8e0e55c5af0a6b6a92e1e3d6b980a199d7f4f55d2320"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-46546936abdf9ceb",
+      "fingerprint": "4a112bb62356bfe3942ac684c13a0d1566cd824e93f4fa345c6440b880c2003d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-4716f9f3daa8facc",
+      "fingerprint": "e2849f4a84ade723abac685cfe8a597936543fd4848fd3bc9c85421632409135"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-475e37f935500862",
+      "fingerprint": "7dc4533b86737b3f5dcd91ef963a2893d0d4a1085be96c09d63ec55fdf4214d4"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-4853940b5233833e",
+      "fingerprint": "90dfa14d188b46c040282d8766d83e80bf46ac52b8738227f3ab0ae72ddacf5a"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-4a88407bebc9ed80",
+      "fingerprint": "04eab2ec216c7f639e70ca9720fb59f32bf52c6f622d69b2f3fcdc0530deaa51"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-4b926a7155637c3f",
+      "fingerprint": "cfd5613b21db2d1c0aafd84a6294cf224087524b49be107f11dfddc4e30e1c61"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-4f5de0818052188a",
+      "fingerprint": "defe0d4d47fe83dd7ff483bb913ad3117463894963e230e490dc979943ba43f6"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-578d376fd5d6cb14",
+      "fingerprint": "3746abcc3032848e44c13334442ee3baeb1a7e58d6e74db27bd531a4e8e8d472"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-5b1c3b96d8fcdcbb",
+      "fingerprint": "9aac312a4f50075f58e4d1a6cee14117574a6aeaa541d3a61fb5acc2a2cf9257"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-5d12771f268219ae",
+      "fingerprint": "03227094d148d8277f524ab7c76650f47ce7d8d693123584c5208282071b3a1d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-63388a2a2cef7596",
+      "fingerprint": "5b9002e1faf2230cb080b1b68d096ff8636c2d9cc608c717efe299004cbcf7f2"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-69f7c5f6e6d68959",
+      "fingerprint": "bed1781d4b20b5ae8e815e59f0ff689e3490a9ccc26535a800417d5abdc5edb2"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-6bf999512f7ab862",
+      "fingerprint": "9c0acc7ca1a0784907e5ad4d772820f01ed4ddbdde0acb382016596be72b229b"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-6c52c4eb69d558c0",
+      "fingerprint": "0c231f706a532f0f02776ce9dcd3e5256e01d441bf5e78a693300f21e54c1e98"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-6e24b61d68286e01",
+      "fingerprint": "cb98f7ee46b7782737bf2310e4acd816225f4923b35cb59038eccb24105bb13d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-723c64e3ebd87933",
+      "fingerprint": "6840d0b105100620e383c3615b90fc004bb7ddc8517757e0c089011ac697460d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-746e2deda2f61fd1",
+      "fingerprint": "f42c31fb2cf5325be10da95c4d1e716d37453f3f23687eaec370807132e7b477"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-785f81688bf46b6d",
+      "fingerprint": "d6d8c3866caf95592710708cf40e903c03d24644ca99175521ffff64471484de"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-78e8dd40a7b26e7f",
+      "fingerprint": "5b1e68da9c05a2b1ec32e578514457e4fa8ad6aeac36c8e98abd0ac1a1e726bb"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-7c66fc9107da1830",
+      "fingerprint": "5f27eacd863c1a66181575f88ea59a34b1195d8f4949b3498bdb6e37efbdac5e"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-7edb0351d86a6c50",
+      "fingerprint": "e13981a184819625fb14f40703dbdc279830966d2da25649b535e0c7f4250a6d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-7f7f8538fcbd9804",
+      "fingerprint": "038a6dfa6a811010be1106f93208bc3ada0fd3ab0589c556207abc605c8707b7"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-82e0b2a2d2b04515",
+      "fingerprint": "8253232eafa2bfe47a82336d1667e91df1fcac17639cff1347f8aad69568c5d1"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-88f9d358fffae646",
+      "fingerprint": "578add6e0484cd9b54d107bb1aa3b935e21087a43cc1762cefc4d9710119916d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-896eb46585324e21",
+      "fingerprint": "731c7f8fd93fb61aea8245fd5fbbd1f16b863d51abdc3d6f17d9b08eb9893c8c"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-898e78e1d700e198",
+      "fingerprint": "231cbe56fdd5a5358b63f276a4540cb3aa9b87235813c06aa6b3542d64252830"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-8c242453d9e14589",
+      "fingerprint": "fbecc84f115e8e3e9e3e5c622ebb1d6b1f31407d76c28913e4c8416e4802afd5"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-92da1a2d3177ca61",
+      "fingerprint": "c8df0953602b8db0f3c2a35152d050cd6c3f1fe7a8da3562952688fd65513722"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9627f39f3baf4b60",
+      "fingerprint": "76926c086ebc6aa8368f29049c44578cbfdd07c58ff9528de76be679867289c5"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-97b498c298e26809",
+      "fingerprint": "18c6d31aff56dc242d78bae21c787266885c93dc2c8cbe71348babb97a26e40a"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9b8ff8a49d5e0010",
+      "fingerprint": "d33c55e0dc0d69efa1362a08e55c2e8bae9be9d95d9790c64210592b7fc001f9"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9b9a190f3e7419d3",
+      "fingerprint": "156c7f0adf845cd764452730e4d84a5189445ced7bd810a338921e9343fb5d24"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9d7ef08166932701",
+      "fingerprint": "bfeb2b809e132a4643da57528dce552fb0cf75df9f7749768eb1e80a825b8d47"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9dc5df5c8e942677",
+      "fingerprint": "bcbb36dd3ef1d2c718f3e02ff603d0bcd5c3cae788813f83e9010c83f9e0f3b7"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9e9f2cb5a6cf8ee4",
+      "fingerprint": "93decaacfa3fce37eda71167b3cfff952a93363e01f6ad7e1291b5726d558a36"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-9ed6c23f7c6b0d6d",
+      "fingerprint": "89906fcf9a293fbd2b9812cb8d5ce722b96d2730df94085298117bd2e1c44dd1"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a2686b4897037355",
+      "fingerprint": "cc555dab65e40cf5b5106efd54fdd865d4ca8768bf4c1468ec4fa13cf663755c"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a27ecb5d40ad65b5",
+      "fingerprint": "1bf8f2edd652d003081393424bbd5e10a2ea5e651ecb37d8fe38829de6f6be37"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a2ed353b17c316fb",
+      "fingerprint": "5036bd44d03e12ca22f85f16aa39e9a5314cb103f09c298171e3d046b537282f"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a59f85a14e3b220f",
+      "fingerprint": "7514eca922bd6dbb2fb053bd94121b646af1d33ced73b59dc7ec3a2eab36e46f"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a6c6287207a66417",
+      "fingerprint": "94d0ad420ae31a5f19cc206a82523887eb993411b0198159ca1d00df65757706"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a6f3fca0506d83b2",
+      "fingerprint": "94abf4b4b34d4f537fa8a5e65eae4c5828f7d592a00c1b16fa1826db9b9fd55b"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a7159cb9ee6bf852",
+      "fingerprint": "5f2d5868310a08fd11c5669e9e01f07a52b5440207bab7c076a70e3f1a7d8c56"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a73cf9048a53a059",
+      "fingerprint": "32b55f85023f055de2e83351b0116dc5809545cfb6ceb2927b069932e806f34c"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-a74c0f0bd81ef61b",
+      "fingerprint": "06a057c27c95543b8fdb2949c4176374daf0720671130c009cdb360c1f01845d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-aabe8edd65b46d08",
+      "fingerprint": "7f60735c440c3429a4adba9ff6b653eb7ba3d7fcffb3ae06e7fe589d10f8faf5"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-aad19580a9d5f960",
+      "fingerprint": "e4716ccb4169d603e539deb48d70185f480af28df234c500573743d656fca5bb"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-b0f9c4b933b37939",
+      "fingerprint": "9533a9cadb8fdc176795068975ef458cacb0f620fc8dcec32568c1b5bee5dc71"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-b256c52493faac66",
+      "fingerprint": "6879ba214e4001ae84ec3c293b41b6cd6bfcdf508990b9e2faeed931e1bc5d02"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-b3bed53c4e42414b",
+      "fingerprint": "9bf3f69dff6d2f42a15fdf8a9d2e67c7cc4b68ae2de07f6577d07a88814f4b47"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-b86950fbd9cb85eb",
+      "fingerprint": "49c64b2a0c00c4d3ef31fb35a8a7e765d1f92a2797a49a3fe3449f8d14d1d61d"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-bb5f7cf566503838",
+      "fingerprint": "f9755bfb4e0887dd50c3c12818d3ec057537293b44f3da655ed9e14199896638"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-bf7dda59d9fde153",
+      "fingerprint": "2b0991471c4fcec4f5be6d0b076802cf4bd8a81fee89570990b6f998a3fe4e69"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-c039ad9e9208c323",
+      "fingerprint": "3de0b939bd928482213bd753e27c677d0424cd9642c33134dd47e0d4ce90ab71"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-c16c0cc92faee5bd",
+      "fingerprint": "b2a21bbcd851dd8d02a9750f64507fcdf63f04f732dddace4c3e9418b7b50f06"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-c1b36e456dfb56d2",
+      "fingerprint": "d832737c6cc86b8a9f9885b575086d963084be69e74090ec2aa2ba428092bb5c"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-c377daf50e23e5c9",
+      "fingerprint": "91c08df8b7a74d9377a3edafd945caf69b10ab795562f407be80a3a03b334c26"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-c50d3f285bfab91a",
+      "fingerprint": "4bfb9e9c8f5b83b72bef66df6d6c4c9a2a353b23bd9eb541c1ce1e0a71a67515"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-caf4945aa20fbd3c",
+      "fingerprint": "26608b0270701a990f688143787a2d841c2667671591fd05f1c4f9311a1d8b7f"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-cd7d9db4b6d640d5",
+      "fingerprint": "b08ad9ee15255c06af86a4a951c4ddd79aa6fb2671426a5af8d6269e6415f36a"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-cf90552c6fd3a8ec",
+      "fingerprint": "93dfd9bdc7725abb22f584e6273526a5188e2187c417e0b66d0f5311eab88c6e"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-d85658b403306e58",
+      "fingerprint": "6dbb50df38177dccea3cacc1bd2689ee80e84199c2f23db16922662aed7ec921"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-e3f2272d62027212",
+      "fingerprint": "447d15d817dd8e0c6434f83504e030cb8b693b785c7ba14217b4302e46cc3548"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-e7fa0396d7ad8c89",
+      "fingerprint": "9cca988411a1986f998b5c0ed8311dad94a93bae333b5d28b0fbd2233bd51ddb"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-e90ba4716a91d444",
+      "fingerprint": "3f53d51f7b135d1821a6fa6bc07e690fe65e6b98f20e5338d022c60fdaa3d283"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-ed9cd97b5962ed39",
+      "fingerprint": "77acd2bcb1e37151b4bd76b24874310748a8556b221d48d42f4b34ef3d945c0a"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-f02b13d671e22495",
+      "fingerprint": "5caa08b51994270068c35082a657f2804564e3cb54e9894509536154b383c6b2"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-f255fed862a0015b",
+      "fingerprint": "783e01b4bcde0bcc15f1c5bd043c2f846564eeeff05e61d8a0404dcc5aecc0c8"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-f36f08596d9c4c1c",
+      "fingerprint": "742b4af723f62f3d7f94f9ab897c57eb23b69f23010f0f41c4ec4c2a6b45eeaa"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-f61ea8bdd03e0cbe",
+      "fingerprint": "f0be3323ed2535856f2e145c648f2e12b429a37cc342b38ecfcbf02f594a4021"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-f6d03a5d061bf184",
+      "fingerprint": "ec1ec684fdb11029ffe836c5b357fbcf87c5f475e0ef79c61fb7e0db142a158f"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-f6f2ad4af2a98034",
+      "fingerprint": "3249b33211de78b841286d4ec5dd8a966b97af754ed3cd101ec1e5c8c0d004d3"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-fbc6998edb074fbd",
+      "fingerprint": "6f108f8b491ecc9884dac6d141e43d90dd44b1c79e53e89ff174dfaaf4601464"
+    },
+    {
+      "id": "textbook-q-12-statistics-english-1489a12e-fcc496f76a6e1482",
+      "fingerprint": "a5ac2113a7ba22033bf80efea9b1ee490eeb7eeed0ac5ed0f4925048648eca05"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-0061cba1218d2059",
+      "fingerprint": "9bca928da8d63214821409b18d77e3110009c01495cf91f4ce212bea15daa3a9"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-05a7429f8e266d92",
+      "fingerprint": "0f25362435634b855b4c8037ed7688b31aae97a043fef180819090a3542e489e"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-1809e1d4d5cbeafd",
+      "fingerprint": "204430b25d4ee22197479a55ffc475eed7c232378b161af78f33f43fee41525d"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-1af8856a3137b1f4",
+      "fingerprint": "876bf88e7f9bf22d755148cb556fab08f02a3fbb0ab59483436c30d8ee6ffcd7"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-22dc130f7849818e",
+      "fingerprint": "748cd1011da420be2718eefaa3bfa8063de2f409c46dc38eb115dece5fbaec42"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-247d8f83db58488b",
+      "fingerprint": "1b91a1744b72f3c19a1e6a29ea47b2d9d99360ed39f2510633d5ba13a9fc2efb"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-24d6289cd08406c6",
+      "fingerprint": "bebd305bc1e12019645049f5e49db0d92ed13fbc8777ba7332323fa46b74af4c"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-25bd29602235c28b",
+      "fingerprint": "b534e1c76ca7972dc2c8a2715bb620677bd80ddd11d8d38457fec0d5191508af"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-2c9e518009fb66dc",
+      "fingerprint": "0b7283d118e96d8e37e32d6dfd1b4f68a7bb49456a3c7fb88708802cea0cea47"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-30f2ecfc6a01a63e",
+      "fingerprint": "93f30967a25e910c03d2d5d916310a16df187781ac527354b4aad191d301e055"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-34eae4dc25013d3c",
+      "fingerprint": "3facc74935d6950bc7f403b1d483a61ccdb9b93887449125daf168e4a25f3e34"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-37587ebec8aab204",
+      "fingerprint": "3f5834c22e9d49ec11d2eaf84683a09f1a9fbaf1eb4f318069d8109736719da0"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-3995d2b2c3d294d1",
+      "fingerprint": "4a1d5badb855a9d763eb19684aa4b8faa78cdf06bc622a231eab3726ce5676cf"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-3b1eae7a3038d452",
+      "fingerprint": "570d2328ab0be626baf36d7bb5384d940c65b5ba622e2afb7b410f38a61eaaf6"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-3e08885134ad5632",
+      "fingerprint": "6a7b151c5d1708963eb206db60b871ec0b58a9dfd74cfd38f3810dd58885ab05"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-459399119cbe02b3",
+      "fingerprint": "e252c9e2ed159b573216f9ffa59e02deb52b562cfb4e6c100efa3d12ba34dbe4"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-4b25947a3a7fb5c6",
+      "fingerprint": "813b9d94760cd0ed5679ce49140f748d8188e549c7d18a7395829d5d5d8059f2"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-4f366f18a36bc80c",
+      "fingerprint": "3a792bb772c22e706a881c8d54ad59e2e52828d12fd8e0388fdd41f4ca2571fe"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-58d82dfe05b795dc",
+      "fingerprint": "3a4f2ec9602271e104c8a6c3f832d3fc2741cdfbacc486d30e6b73d2cb1463c6"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-5c283b1876956223",
+      "fingerprint": "a3996369c058cd5ffba173c63b692178ca3f44982a3f3e298b6384896559512f"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-5dedae5323d9f0ef",
+      "fingerprint": "ddebb4693ee5093212ef6fbc0ab0c26895051edf4e25c836b09d716c7e33c49c"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-6452f530d7ea0e7c",
+      "fingerprint": "a2221c9a6f2a4a64a93f1c150913188ede21144cb6de750d3ee0c70c2fe23e95"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-6bd9194ef9f4a273",
+      "fingerprint": "3f15cd41153176a3319b2fcbb8dac4d5202c5f9a7a50e20a8e59c298ef8e103f"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-70a8d582bc2e3962",
+      "fingerprint": "255a9b4101457aa35654e8bbd1094402ed02b5a26192164a578d49184069e307"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-71ec578294faa328",
+      "fingerprint": "ff3d23d0dcd5c80f2673be80a821c389322d779880fbc93ce804acb619bc4e28"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-74bf80354f15f949",
+      "fingerprint": "e3473d56c0dabce4efc9fc1596668cd1bef5674ca6908b1955f2397a0d1d713f"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-7c246585fe327623",
+      "fingerprint": "9abbbe745ba237ea2615ed510c23440004af5cd60a196550eec643030d58bc94"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-7ca36e9403c66809",
+      "fingerprint": "e9f1d6bb6417d7610b42993dcdbd8857dcc3eb1c40d35a04e26692bcef69a549"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-82a00357c125850f",
+      "fingerprint": "2a5cbc302d7ba803e7064ff7b631569b74717a75aa579d6214203d29b96b8064"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-890d552179cb7d4d",
+      "fingerprint": "ad6042138147d8ff1f447a05fd2836a4ea373232cc62072be7f7fa9b2bba750d"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-8941f919d004cd38",
+      "fingerprint": "92afd2eb9ed79d289e1910ab10531ad5e0b56b002d5b111a42b4334323100ecb"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-89c83c019e0653e7",
+      "fingerprint": "807e153ab3cfef11f7c5d12696582256d530bbbd03c7d40febc2e605ca9d6fee"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-8f48d785d9955ea6",
+      "fingerprint": "c6572792f49abf4ed4843a51163f3f5c8a052d234ca064b223da31041fc57d2f"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-91757982a72d1615",
+      "fingerprint": "fce15cb086cefeb89bd6f0786510de50d2761dcab831f9fd2cf21f3a9584bc2f"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-958a3a48ec6964ff",
+      "fingerprint": "a5fb6fc6252c09e6eec6a5e2fdc8b6c67e81e695865129dfb35a22cb16ba1ead"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-9d073dcea6c5b468",
+      "fingerprint": "7c21d57c886ec8f08824795d26f453f3b60b078ff5c5b1be39ef61ea6251b64a"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-a2f032e4146506bc",
+      "fingerprint": "c5ff75e3beee1b5ff1bdfb5f736c42d74f6534d0372f5fb1b055a1fdf91c2f12"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-a3728d43a6b7329d",
+      "fingerprint": "86fd8a62c80dccab423f8cb1dd31c92b61581a22eb09ae6f55a944d23cbdd8d5"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-a4c9160b2970b9bc",
+      "fingerprint": "3d1e0960945f730c201e1b42b20bba7b887e3a866c66d467652b9595c00183ec"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-a5cc085e4dfd522a",
+      "fingerprint": "368ed596e11808eb159de086ee0981debf0f7a3c9c018716b4dc29a1412fe3d3"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-a7388557b2caaf50",
+      "fingerprint": "67fb5b6471b1a70a8b226a20a630b8225eddd2415764c7a4f36b4160a46400d0"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-ac7f44cfed249356",
+      "fingerprint": "b2f32c1ae6409b8dca4532a62a9d9ab92f03754cf48dea6013a8920ec1e45f6a"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-b3d3c67e6ef63187",
+      "fingerprint": "9f647b3bffd2344458bc42be8b1781d290db8589e68e55afb4c12ce947216290"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-b98928a3bed835e4",
+      "fingerprint": "eadf355b33631e767b8212ddb2ec68193057b6a9ecf18c37b7c7762d3d71b425"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-c08d726774757aa0",
+      "fingerprint": "fd4449f5a55a276d51cec5c0bf3ee75552c04a44a2e43e3ef79ad8cb7736893f"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-c150ae1c0b3a8d2c",
+      "fingerprint": "9e806e561163eefd91e83cc1c00ffeb9af7abadb66a877c7a1d554d85eaa4b12"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-ca35ca2499146227",
+      "fingerprint": "1ce0e47d263a240fd1863f01df6238706e607004a9ab9c556221f109b9c42f99"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-ca910ab0bbc4e662",
+      "fingerprint": "da73ec7908a93a1906b2bf0491935527743b490c25ae764cb0e9585029a9fe62"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-cfd6509c3ce4bbe2",
+      "fingerprint": "9f152ad551ad15d73eed15befeb981e51f2ad1bf5bbc2ab97fe4203e05fe6c47"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-d470141c9f4558ba",
+      "fingerprint": "d4d1bc1ead557f1af3a518c5abddb1732934b2dc40c59b2076637c8c6670c542"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-d8b81b9ffbae4894",
+      "fingerprint": "d551de12a7f99181693f1b197a22b21a9bfa2acca02eac90446533942395c6e2"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-de6ba68d22b89938",
+      "fingerprint": "704b028d78f3a70c07bdd053975302ffb13c92e56d1710abf6d1d0fcafc1bd10"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-e8e5eca89c213f77",
+      "fingerprint": "c3dad6add04db6e81765e98a8e3a38a71c929f1235552ed64e26b5c5724ca0af"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-f2694725fdf28b6e",
+      "fingerprint": "ccd8888838b5b3f23ab7b6d880f2375c3f81eb758b2308043cf5b9ace07cd345"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-f5db69cf6a4bfed8",
+      "fingerprint": "0649e4e3bbd1e4b51988ef90fa838fb1fd01bc04c834ce889719accd3ff38b60"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-f6a2385826f07be2",
+      "fingerprint": "7a39d61e264a2487cee90f0157450bc74b0d799a538d46a5180f09c527271a8a"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-f8bc619c0760d84e",
+      "fingerprint": "a8a2dbefadd7a40358f060a8a0a272e8035a61b0fe160c1b9f12caed26253b52"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-f8ed633c81f4c352",
+      "fingerprint": "7fa59792a74ef78a832863c0b87dd3c0180f2b62570a1ab39ec5df1c4ee411ef"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-fa1b7dfe59f2fa14",
+      "fingerprint": "75fef9f97e888883cece5fb7cefb99b42b3d0ebc310eda6cb5e299bf5d3cf306"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-fd01210237461f6d",
+      "fingerprint": "82b245545144fd7e5c00388ae85042f8d624992bd09ce50cb1ce9490118e259d"
+    },
+    {
+      "id": "textbook-q-12-textiles-and-dress-designing-english-1ceb8fbe-feb607c08e4e3653",
+      "fingerprint": "54e6816578799859607a491dc565b74e5720df7d8628d0fe7176a651a9630f4c"
+    }
+  ]
+}

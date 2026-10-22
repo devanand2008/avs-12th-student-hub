@@ -1,6 +1,44 @@
-# AVS 12 Learning Hub
+<!-- BEGIN allsubject-20261018 -->
+## Latest all-subject checkpoint — October 18, 2026
 
-A Tamil Nadu Class 12 learning portal for Computer Science, Bio-Botany, Bio-Zoology, Mathematics and Tamil. The app uses Next.js 16, React, TypeScript and Tailwind, with Three.js for the interactive learning lab.
+**110 held book-back MCQs across ten chapters / four PDFs / three subjects:** English History 1–3 (30), Tamil History 1–2 (21), English Microbiology 1–3 (25), English Political Science 1–2 (34). 103 IDs reused, seven new records; all answers unknown, zero teacher decisions/approvals/publications. Full collection coverage remains incomplete.
+
+Current inventory: **17,281 saved / 12,690 active / 4,591 inactive**, 415 general bounded proposals in 37 sections; with separate Physics Unit 1, **430 pending items / 38 batches / zero history events**. Both 82-book passes completed, rerun added zero IDs. All 17,274 earlier candidate objects, 305 proposals, 218 protected files and 103 earlier images remain unchanged; five false generic short-answer associations are retained as inactive artifacts.
+
+82 PDFs / 24,088 cached pages / 856 detected entries / 733 zero-publication entries. There are 819 entries without a general bounded section, including separately inventoried/prior-inspected artifacts; this is not a confirmed missing-section count. The dated 2026-10-10 publication snapshot remains **995 English / zero Tamil**, twelve legacy samples excluded, 13 saved sessions unchanged. No production/import/publish/push/deploy.
+
+HTML practice now uses explicit Submit Answer, with unanswered solutions withheld by the API; marks, navigation, retries and history use the existing architecture. Admin coverage adds subject/volume/chapter/extraction/answer/review/publication filters. **160/160 unit/integration tests; six scoped browser cases; additional refresh/outage checks passed per device; typecheck/lint/build/audits passed.** Initial source-config/test-wait/type issues, a fixed duplicate error and one desktop loading timeout with successful rerun are documented.
+
+Run npm run mcqs:review → http://127.0.0.1:4312 → authorised local sign-in → select the source subject/chapter batch → review/save/export each question individually. Unknown answers block approval. Next: original section inventory for Bio-Botany Chapter 1 in both media, then Basic Electrical Engineering English Chapter 1; use actual PDF boundaries. [Full source, per-book/subject coverage and teacher instructions](docs/ALL_SUBJECT_EXTRACTION_PROGRESS.md) · [Verification](docs/all-subject-verification.json) · [Preservation](docs/all-subject-preservation.json). Earlier entries below are historical.
+<!-- END allsubject-20261018 -->
+
+<!-- BEGIN reconciliation-20261018 -->
+## Latest local Tamil milestone — October 18, 2026
+
+**42 held source occurrences**: Applications 13 (12), 15 (10), Computer Science Tamil 1 (10), 2 (10); 40 IDs reused, two new IDs, zero new answers/reviews/approvals/publications. Chapter 13 now preserves both printed Q9 labels through explicit source-occurrence metadata rather than renumbering. Q2 remains incomplete; the earlier Q5 duplicate-choice claim is corrected (ஒளி versus ஒலி). The earlier 51 questions have 18 separate proposed Unicode transcriptions and 33 uncertain items, without altering original proposals/decisions.
+
+Current totals **17,274 saved / 12,688 active / 4,586 inactive**, 305 general bounded proposals, 27 sections; **320 pending review items / 28 batches / zero recorded decisions**. The dated 995 English / zero Tamil eligible snapshot, twelve excluded samples and history remain unchanged. Inventory still 82 PDFs / 24,088 cached pages / 856 detected entries / 733 zero-publication detections; full coverage is incomplete. Final **156/156 tests, six scoped browser cases**, typecheck/lint/build/audits passed; two reruns per source added zero IDs. No production/import/publish/push/deploy.
+
+Open the same local queue using `npm run mcqs:physics-review` → http://127.0.0.1:4312 → authorised local sign-in → select the chapter → inspect original/earlier/supplementary text and source pages → record/export one real individual decision. Unknown answers remain blocked. Next: Computer Science Tamil Chapter 3 and Applications Chapter 16 source inventory. [Complete current report and review instructions](docs/TAMIL_CORRECTION_RECONCILIATION.md) · [Verification](docs/reconciliation-verification.json) · [Preservation](docs/reconciliation-preservation.json).
+
+Earlier milestone text below is historical and is superseded where this entry explicitly corrects it.
+<!-- END reconciliation-20261018 -->
+
+<!-- BEGIN collection-20261018 -->
+## Current verified local milestone — October 18, 2026
+
+The saved eligible bank remains **995 English / 0 Tamil**. Portal medium → Subject → book/volume → chapter selection, HTML answers/feedback/scoring, retries and account-scoped history are verified on desktop/mobile. Home/dashboard now show authenticated eligible counts rather than invented marketing totals. Mobile banner/input-focus obstructions were fixed; the admin extraction page now shows processing diagnostics and exports its manifest.
+
+82 PDF checksums / 24,088 cached pages; 856 detected chapter entries, 733 zero-publication entries requiring investigation. **17,272 saved candidate records, 12,685 active IDs, 4,587 inactive artifacts**. **51** Tamil Applications Chapter 10/11/12/14 questions were newly source-bounded (48 IDs reused, three added), all held/unknown. There are **278 local review items in 24 batches**, all pending, zero actual decisions. Full collection extraction and academic verification remain incomplete.
+
+**153/153 tests and 6 scoped browser cases passed**; typecheck/lint/build/audits exited 0; two all-book reruns added zero IDs. No production/import/publish/push/deploy. [Full coverage, real counts, commands and navigation](docs/CLASS12_PLATFORM_PROGRESS.md) · [Teacher source/review guide](docs/TAMIL_COMPUTER_NETWORK_REVIEW.md) · [Verification receipt](docs/collection-verification-20261018.json). Earlier dated results below are historical.
+
+Start the configured app: `$env:AI_PROVIDER="excerpts"; npm run dev:web -- --hostname 127.0.0.1`; open http://127.0.0.1:3000. Start local-only teacher review separately: `npm run mcqs:physics-review`; open http://127.0.0.1:4312. Refresh read-only local processing counts: `npm run mcqs:progress-audit`.
+<!-- END collection-20261018 -->
+
+# Skill Up — Class 12 Learning Hub
+
+A Tamil Nadu Class 12 learning portal with Tamil/English textbook libraries, HTML MCQ practice, notes, videos and teacher moderation. Textbook question coverage is still incomplete. The app uses Next.js 16, React, TypeScript and Tailwind, with Three.js for the interactive learning lab.
 
 The backend supports permanent Supabase storage for student accounts, passwords, questions, attempts, activity and content. A live Supabase project must be configured and the migrations applied before permanent accounts can be created. See [database and student-login setup](docs/SUPABASE_SETUP.md).
 
@@ -22,7 +60,7 @@ Demo logins at `/login`: `AVSCS26-0001` (Computer Science) or `AVSBIO26-0001` (B
 
 ## Implemented features
 
-- Responsive blue gradient home and login matching the supplied reference, the supplied AVS logo, dashboard, libraries and admin content pages, with honest empty states and activity statistics.
+- Responsive home and login, the supplied Skill Up badge, dashboard, libraries and admin content pages, with honest empty states and activity statistics.
 - Three interactive schematic models: DNA double helix, plant cell and binary search tree. Rotate, zoom, select labelled parts, pause rotation, reset and enter fullscreen. Models load on demand and offer a fallback when WebGL is unavailable.
 - Admin draft, publish, archive and delete workflows for PDF/image notes, MP4 uploads up to 50 MiB, YouTube or hosted videos, and NotebookLM links. The supplied 13 PDF notes and 5 Tamil lessons can be published with `npm run materials:import`; see [material import](docs/MATERIAL_IMPORT.md) and [content setup](docs/CONTENT_SETUP.md).
 - Searchable administrator table of all student and admin accounts, profile details, account status and learning totals, with filtered CSV and real Excel exports. The Excel workbook includes an import-ready Students sheet and excludes passwords and password hashes.
@@ -34,15 +72,23 @@ Demo logins at `/login`: `AVSCS26-0001` (Computer Science) or `AVSBIO26-0001` (B
 
 ## Class 12 Book-Back One-Mark MCQ Practice Platform
 
+[Current counts by every textbook and chapter](docs/CURRENT_STUDENT_READY_COVERAGE.md) · [Tamil Physics Units 2–5 source packet](docs/TAMIL_PHYSICS_UNITS2_5_REVIEW.md).
+
 Student practice renders HTML questions and separate text options, with immediate feedback in quick mode, running marks, navigation, server-scored results and fresh retry sessions. It contains no embedded textbook PDF, scanned page, screenshot or PDF canvas. The separate textbook library and administrator source checks remain available.
 
-Coverage is incomplete. The saved October 12, 2026 read-only proof confirms **995 English textbook publications and zero Tamil publications**; the 12 unverified legacy samples are held and excluded. The earlier 1,007 count predates that withdrawal. The 625 generated dataset rows are not an additional published bank: 613 legacy drafts are held for teacher review, and 12 IDs overlap the sample bank. The current local-only audit verifies the saved question snapshot and its digest, without contacting production. Tamil Physics Unit 1's 15 local candidates remain held, with no teacher decisions. See [current status](PROJECT_STATUS.md), [local teacher review](docs/LOCAL_TAMIL_PHYSICS_REVIEW.md), [all 82 textbook records](docs/INDEPENDENT_COVERAGE.md), and [all detected chapter rows](docs/independent-chapter-coverage.csv).
+Coverage is incomplete. The October 15, 2026 read-only comparison confirms **995 English textbook publications and zero Tamil publications**, with unchanged question, candidate and practice tables. The 12 unverified legacy samples remain held and excluded. The earlier 1,007 count predates that withdrawal. The 625 generated dataset rows are not an additional published bank: 613 legacy drafts are held for teacher review, and 12 IDs overlap the sample bank. The user explicitly retained the exact 995 existing publications; they have printed-key evidence but no recorded teacher approval. A saved ID/content fingerprint baseline limits this exception. Every new textbook publication requires individual recorded teacher approval. Tamil Physics Unit 1's 15 canonical candidates remain pending, including the incomplete graph question. See [current status](PROJECT_STATUS.md), [local teacher review](docs/LOCAL_TAMIL_PHYSICS_REVIEW.md), [current all-book audit](docs/COMPLETE_PLATFORM_AUDIT.md), and [all 856 detected chapter rows](docs/book-back-chapter-coverage.csv).
+
+Start locally with `npm run dev:web`, then open `http://localhost:3000`. This starts the existing website without setting up an AI model. Students open **Book-Back MCQs**, choose medium → textbook/volume → chapter or all chapters, select a count or **All available questions**, and click **Start Practice Session**. Search supports books/chapters and published question text, options or printed number. Preview results are paginated and omit answers. Attempts support exact-set retry, fresh practice and retrying incorrect answers; empty selections show their actual unavailable state.
+
+Administrators can open `/admin/textbook-extraction` to filter the read-only extraction inventory and download chapter coverage or a selected book's local candidate reference CSV. Private drafts under `.local/teacher-review/extracted-books/` are separate from the live `/admin/textbook-questions` moderation queue. CSV exports do not import decisions, approve candidates or publish questions. Missing local files produce a setup error. Use the existing individual authenticated moderation workflow only for candidates already in that queue.
 
 Completed attempts are stored on the server in Supabase. The recent-attempt dashboard additionally stores up to 50 validated records locally, separately for each authenticated account under `skillup_practice_history:<encoded-user-id>`. Browser history does not sync across devices; clearing it does not delete server attempts. Old unscoped history is retained but hidden because its owner cannot be established.
 
 ### Textbook PDF location and pipeline
 
 - `public/textbooks/` contains the 82 local PDFs, indexed in `src/lib/textbooks-catalog.json`; availability does not establish complete exercise coverage.
+- `npm run mcqs:extract-local` resumes local page extraction and builds held per-book packets plus the chapter CSV/JSON reports. Optional arguments: `-- --book-id <catalog ID> --snapshot <read-only snapshot path>`. It performs no database import or publication. Current results: 24,088 cached text pages, 856 detected chapter entries, 733 with no published questions; 12,685 active candidate IDs include in-text/damaged extraction (not an approved question count). The authentic unique book-back total remains unknown. All 17,272 local candidate records are preserved, with 4,587 inactive artifacts quarantined from active counts/exports. Saved candidate edits and review history survive reruns; refreshed derived source spans are stored separately.
+- Tamil Physics Volume 1 Units 2–5 now have a bounded source inventory of **60 held questions**: 54 reused IDs and six recovered IDs, with 60 printed-key matches. Only 49 have four parsed text-choice positions; 11 need option correction and 13 need diagrams. All need Tamil/notation and teacher verification. Unit 4 Question 5 remains blocked by incomplete graph choices. The existing Unit 1 packet and blocked Question 10 are unchanged. See [the per-question review report](docs/TAMIL_PHYSICS_UNITS2_5_REVIEW.md). Administrator CSV reference exports now separate saved extraction from proposed coordinate text/options and include key/batch/graph fields. These local proposals are not automatically imported into the live moderation queue.
 - `npm run mcqs:prepare` extracts/caches pages in `.local/textbook-text/` and prepares candidates without database publication.
 - `npm run mcqs:audit` reruns the parser and writes `docs/textbook-question-audit.json` only. Its 985 auto-eligible and 11,244 review counts are extraction classifications, not counts of additional published questions.
 - `npm run mcqs:coverage -- --live` opens and hashes physical PDFs, checks cached page provenance, reads paginated live content tables without mutations, and writes the independent book/chapter coverage artifacts. It needs the private server Supabase configuration. Without `--live`, publication is explicitly unchecked.
@@ -63,6 +109,10 @@ Run the migrations in the order listed in [database setup](docs/SUPABASE_SETUP.m
 Without Supabase, an explicitly enabled demo can save hosted resource links in temporary preview memory. Real backend operations fail with a setup error when configuration is absent. Use `npm run materials:import` to publish the supplied notes and videos. Administrators can create student credentials at `/admin/students/create`, or use `npm run student:create -- --test` after connecting Supabase.
 
 ## Validation
+
+**Final follow-up checks:** 124/124 unit/integration tests passed, 0 failed/skipped/cancelled; six targeted desktop/mobile browser cases passed on the fresh full rerun. Typecheck, lint, build, parser audit, manifest audit and all-book extraction/rerun exited 0. The first browser run had one sign-in loading failure (5 passed); its isolated rerun and subsequent full six-case run passed. A narrow test typecheck error was fixed. Final CLI evidence matching excludes repeated short-answer numbers on the wrong source page and has regression coverage. No broad unrelated browser suite or teacher academic verification was claimed. [Validation and read-only database receipt](docs/physics-units2-5-verification.json).
+
+The October 15 local milestone passed 118 unit/integration tests, six targeted desktop/mobile browser cases, two repeated post-build administrator/CSV checks, typecheck, lint, build and parser/manifest audits. This does not establish complete textbook extraction or teacher verification. See [actual results and log hashes](docs/complete-platform-test-results.json) and [scope/remaining work](docs/COMPLETE_PLATFORM_AUDIT.md).
 
 ```sh
 npm run lint

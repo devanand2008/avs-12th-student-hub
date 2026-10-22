@@ -111,6 +111,7 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center gap-1">
+          <Link href="/resources" aria-current={pathname.startsWith("/resources")?"page":undefined} className="rounded-xl px-3 py-2 text-xs font-bold text-blue-700 hover:bg-blue-50">Study Resources</Link>
           {user ? (
             <>
               <Link
@@ -355,6 +356,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-md px-4 py-4 space-y-2 shadow-xl animate-in slide-in-from-top-2">
+          <Link href="/resources" onClick={()=>setMobileMenuOpen(false)} className="mb-2 flex items-center gap-3 rounded-xl bg-blue-50 px-3 py-3 text-sm font-bold text-blue-800"><BookOpen size={18}/>Study Resources</Link>
           {user ? (
             <>
               <div className="p-3 bg-blue-50/70 rounded-2xl mb-3 flex items-center gap-3">

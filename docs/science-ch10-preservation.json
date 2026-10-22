@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-20T19:35:19.276Z",
+  "baseline": ".local/science-ch10-baseline.json",
+  "unchangedOriginalCandidates": 17317,
+  "unchangedEarlierSourceProposals": 839,
+  "protectedFiles": 466,
+  "unchangedEarlierSourceImages": 272,
+  "currentSourceImages": 284,
+  "addedCandidateRecords": [],
+  "removedActiveIds": [],
+  "addedActiveIds": [],
+  "reactivatedExistingIds": [],
+  "recordDeletionCount": 0,
+  "productionAccess": false,
+  "practiceSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+  "scope": "Local snapshots only; no fresh production assertions"
+}

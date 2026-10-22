@@ -1,0 +1,943 @@
+{
+  "checkedAt": "2026-10-15T17:21:57.203Z",
+  "scope": "Exact baseline hashes and saved authoritative local snapshots; no fresh production access",
+  "protectedFiles": [
+    {
+      "file": ".env.local",
+      "sha256": "c930fc727c58df40352ec2d60ad517208ade41fd4b6ff919d004b11ca8635ef4",
+      "unchanged": true
+    },
+    {
+      "file": ".local/independent-live-content.json",
+      "sha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+      "unchanged": true
+    },
+    {
+      "file": "docs/tamil-physics-unit1-candidates.json",
+      "sha256": "cdf28204d95ae6c6e7c661c3dd7b0104c1186903366b914c82dd937f8b3ce551",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/tamil-physics-unit1.json",
+      "sha256": "de73f0b4ea306ea42dd20cf3663a8de3e1312105c73a9b98e7fbbeb6a913fdbc",
+      "unchanged": true
+    },
+    {
+      "file": ".local/teacher-review/extracted-books/12-physics-tamil-v1-c1623725.json",
+      "sha256": "7ef02345e03604b3e37abd751a97e43790a39b63777c68c7bc9e7b117f8a72fa",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/data/physics-review-source-regions.json",
+      "sha256": "7990cce64e2b9ae9da76a2e8c5ffcb90fd097cf78313a343657dddbe7881cb4e",
+      "unchanged": true
+    },
+    {
+      "file": "scripts/data/tamil-physics-unit1-transcription.json",
+      "sha256": "94924d137a9e8952ce1ce41cf86d1f5f839aaabcde331c93b8db2e84e58785d6",
+      "unchanged": true
+    },
+    {
+      "file": ".local/followup-platform-after-snapshot.json",
+      "sha256": "f629b6e3ab4279fdd9bfab9f3edd8e736b749707d9538b5cabe8e20d73898a1b",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\reviewer-access-37724d2c-6af3-42f6-a26e-6708e888fcf5.txt",
+      "sha256": "2fa260f0e73e4c4ab85cbf0b0c137c614d6c6b86c3dac6873b4265924b94b873",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\reviewer-access-f8e9c672-314e-4f64-8cb2-20a5a7a1f15f.txt",
+      "sha256": "98bb04953728cf333f6281832e3d662d0076b575f00c1fac792aa75c8b8153c3",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\reviewers.json",
+      "sha256": "1a69ad03b81daa9d9f87e99222bf8c370b4918986f7b46b5497a8e7c1dffc7e6",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\source-pages\\79.png",
+      "sha256": "21f8fe3c2e27bd3039bcfa91b11df2061b5575e65b3470509cbe69aee6b7ad25",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\source-pages\\80.png",
+      "sha256": "901a6de39827805254c70d053a53284dc687c814e8269cddc4d4a7b129b4d30d",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\source-pages\\81.png",
+      "sha256": "2418d4719a0cf9cfd886f6186c456c3ef2f2773c3b72e62aeb9baed8b681f396",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-126.png",
+      "sha256": "b3173434e1dd54e4cf24faf3e7ce6b3ac2fa5ae7803719beb9d1996a547574fa",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-127.png",
+      "sha256": "d78b833fb44a3e31519a6e2047ab2b0853b7151ba335b3a4e8fcdbf2f14ec5ae",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-197.png",
+      "sha256": "399045c2a1082aad1d49e34c70f113a6580ceafa4f644bb74b3668ef2fd88749",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-198.png",
+      "sha256": "f5f926e4be3070885b04eefb2e55dc2dada09ec999a2f4effcf68f3889ae3e31",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-199.png",
+      "sha256": "b24e45393e0d1b313e6f9a79dfe219f7719ddc755d2a153a50cdf8b3a2cdfb1b",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-267.png",
+      "sha256": "e74f9ef42fb2a02ec30b0263e772911bdefea0ce781b7b0af5721ecace8e7e71",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-268.png",
+      "sha256": "9ee2ba22d06f1983b18dd49d896207b86a09fece5b064a2d84cafc563c60375a",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-269.png",
+      "sha256": "4d765c56c51ff58d19ebbdf2eb194d4aa79f6080ed3a2696d29f7827165cd1f3",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-291.png",
+      "sha256": "34fba0eae346b067cf5ac6601ee4dee73df7bc36c51be3c61d67af5077d45a76",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\pdf-292.png",
+      "sha256": "070027e12ac3521c999886b3fb61f1654aca37e942566712811d9f6389432f7b",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\source-assets.json",
+      "sha256": "1f9521555625bfe762ccdb2ee4fe00856b0ff30247cd27c6da6b51303f66b9d2",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-1-figure-1.png",
+      "sha256": "adda91bbdd8e7e2b74528c06fc56bd3618293f06691003ae4e764ad217e046b1",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-10-figure-1.png",
+      "sha256": "c7178fbe88c0116bfc70ac8cc6214869e355129f5ceec3ecb792288541323511",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-11-figure-1.png",
+      "sha256": "077f8d5de84cddc4d9776adae18c442960f47ea0befdaafabdfd9f35bb1d373e",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-2-figure-1.png",
+      "sha256": "a6bf6c2c6ae9aceeed3a3115f5d8e2a474593278fb7f25747b55d8a072ec8f43",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-5-figure-1.png",
+      "sha256": "d6b064772e32309dbaba1279831f01806726d373c141a0dcfeb8812a9912e0ae",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-6-options.png",
+      "sha256": "402e4ecebc30d305463876937804ff4476848257ebade1b5ce3e05a8026f068f",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-2-q-8-options.png",
+      "sha256": "c9b09854392a0be0a60ed698c2f7e0443538fca67603e73e5e34d6e48a555bd4",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-1-figure-1.png",
+      "sha256": "f58961523d43129ee4b67fde0eec024a76a6c24e16dde95fe11d163064042301",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-10-options.png",
+      "sha256": "1cedcd46e152b4777fe2d6e43927561f0e640ea7a03347d091ecda6a46202f8a",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-11-figure-1.png",
+      "sha256": "fbc7b8a1eb79db3704a373b1ee284898f396f7d63039864504cb834d0c85347e",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-2-figure-1.png",
+      "sha256": "d43535417e0f89676ea26e76179b4cca1bc74b9fb2a7d25e9a5b5c6e6f612228",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-3-options.png",
+      "sha256": "6892ad18e6e60464bb888943ac1159246f15221314c439703f3b3458fdd53f90",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-7-figure-1.png",
+      "sha256": "c04a16b3cb8157555b1aa80095af148f7d0aff1e351845b2a4d6c35a5549237f",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-7-options.png",
+      "sha256": "45a52717aea4b11c17c44380f1cb0fb9783056728e806f152a4256e1c4dd56d2",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-8-options.png",
+      "sha256": "06f2e1873f6ee1a53986360664aa738ec295167f13842863d7a1e751be39bfc7",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-3-q-9-figure-1.png",
+      "sha256": "eb9de9221a9d01a078af0d9a4f6db196afbc3fdeb162ca5c7d580e629417391b",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-1-figure-1.png",
+      "sha256": "89139e44d07a52087236055e2ef9392fafafa8c8a51afe37484ca3f5664a6947",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-10-options.png",
+      "sha256": "d29cac4460b939eebc8277451009681a10a654327f51ccea843acaf46690b9b3",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-13-options.png",
+      "sha256": "1995355de18d8b99b1d4e20dfe0a8cbd5b235f24d317d5dfb5e0caead8ecb3d2",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-14-options.png",
+      "sha256": "6691af6986ba597d05fe7176c90e5816372827dd943c0eb5eb90645a97f64983",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-2-figure-1.png",
+      "sha256": "e087db9a0227928b72e093a4b6e752fc1f63ceab5c88b169a488b564d233a4c1",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-1.png",
+      "sha256": "c92019e415bfe20f849a1032a16facf901b26a176b1d2891a8487828b27e8b55",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-2.png",
+      "sha256": "14577c678ca6bcec3044cbc9857bc051c330ed84d040e0217154cd0e25c0f419",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-3.png",
+      "sha256": "f02710d67a6da50c3bfe27f73329f81fd9e3c42a819c5def364f38535bae0002",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-4.png",
+      "sha256": "c3a6cc3be618312c36e21f8ca24568276193c7382481760afe13bf9bf4422df9",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-5-figure-5.png",
+      "sha256": "647462e997cea80cda6a26494045eee884715b6cf4d96c3a652c310f03e57fd8",
+      "unchanged": true
+    },
+    {
+      "file": ".local\\teacher-review\\physics-unit1-workflow\\units2-5-source-assets\\unit-4-q-9-options.png",
+      "sha256": "af07d1b81d8f751689643ea84ab42d3482f8bc83d96b67a8de55298f1582396d",
+      "unchanged": true
+    }
+  ],
+  "books": [
+    {
+      "book": "12-accountancy-english-c0f4ded3.json",
+      "originalRecords": 473,
+      "currentRecords": 473,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-accountancy-tamil-6e7f5476.json",
+      "originalRecords": 161,
+      "currentRecords": 161,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-advanced-tamil-tamil-6679b417.json",
+      "originalRecords": 98,
+      "currentRecords": 98,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-agricultural-science-tamil-1d871464.json",
+      "originalRecords": 147,
+      "currentRecords": 147,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-auditing-english-cb18c74c.json",
+      "originalRecords": 187,
+      "currentRecords": 187,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-auditing-tamil-e1982513.json",
+      "originalRecords": 140,
+      "currentRecords": 140,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-automobile-engineering-english-69f8e9f9.json",
+      "originalRecords": 434,
+      "currentRecords": 434,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-automobile-engineering-tamil-e76f29d2.json",
+      "originalRecords": 102,
+      "currentRecords": 102,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-civil-engineering-english-fc2d4128.json",
+      "originalRecords": 232,
+      "currentRecords": 232,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-civil-engineering-tamil-122addb5.json",
+      "originalRecords": 94,
+      "currentRecords": 94,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-electrical-engineering-english-13c7fc7b.json",
+      "originalRecords": 418,
+      "currentRecords": 418,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-electrical-engineering-tamil-029f513a.json",
+      "originalRecords": 170,
+      "currentRecords": 170,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-electronics-engineering-english-983efd90.json",
+      "originalRecords": 163,
+      "currentRecords": 163,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-electronics-engineering-tamil-96fcb4f2.json",
+      "originalRecords": 151,
+      "currentRecords": 151,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-mechanical-engineering-english-e15ca391.json",
+      "originalRecords": 174,
+      "currentRecords": 174,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-basic-mechanical-engineering-tamil-49be34e2.json",
+      "originalRecords": 100,
+      "currentRecords": 100,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-bio-botany-english-f15d4524.json",
+      "originalRecords": 317,
+      "currentRecords": 317,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-bio-botany-tamil-51160855.json",
+      "originalRecords": 308,
+      "currentRecords": 308,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-bio-zoology-english-7e848813.json",
+      "originalRecords": 232,
+      "currentRecords": 232,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-bio-zoology-tamil-2631f8e3.json",
+      "originalRecords": 238,
+      "currentRecords": 238,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-biochemistry-english-dfd867ac.json",
+      "originalRecords": 151,
+      "currentRecords": 151,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-biochemistry-tamil-910cca11.json",
+      "originalRecords": 169,
+      "currentRecords": 169,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-botany-english-da5635aa.json",
+      "originalRecords": 367,
+      "currentRecords": 367,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-botany-tamil-37a9b740.json",
+      "originalRecords": 340,
+      "currentRecords": 340,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-business-mathematics-statistics-english-5710bd23.json",
+      "originalRecords": 594,
+      "currentRecords": 594,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-business-mathematics-statistics-tamil-a77e8ce0.json",
+      "originalRecords": 242,
+      "currentRecords": 242,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-chemistry-english-v1-2d0e27cb.json",
+      "originalRecords": 436,
+      "currentRecords": 436,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-chemistry-english-v2-0010d706.json",
+      "originalRecords": 288,
+      "currentRecords": 288,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-chemistry-tamil-v1-5fcd65a9.json",
+      "originalRecords": 156,
+      "currentRecords": 156,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-chemistry-tamil-v2-52192807.json",
+      "originalRecords": 178,
+      "currentRecords": 178,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-commerce-english-4f83c61b.json",
+      "originalRecords": 171,
+      "currentRecords": 171,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-commerce-tamil-d9e013d8.json",
+      "originalRecords": 133,
+      "currentRecords": 138,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-communicative-english-english-10e4b8ba.json",
+      "originalRecords": 95,
+      "currentRecords": 95,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-applications-english-627c1490.json",
+      "originalRecords": 531,
+      "currentRecords": 531,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-applications-english-ccd483a9.json",
+      "originalRecords": 531,
+      "currentRecords": 531,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-applications-tamil-e51fbdf6.json",
+      "originalRecords": 207,
+      "currentRecords": 207,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-applications-tamil-f43670d1.json",
+      "originalRecords": 207,
+      "currentRecords": 207,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-science-english-37bdae5b.json",
+      "originalRecords": 327,
+      "currentRecords": 327,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-science-tamil-d5aa7dd4.json",
+      "originalRecords": 152,
+      "currentRecords": 152,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-technology-english-293bf656.json",
+      "originalRecords": 238,
+      "currentRecords": 238,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-technology-english-cf787554.json",
+      "originalRecords": 238,
+      "currentRecords": 238,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-technology-tamil-c66e9089.json",
+      "originalRecords": 88,
+      "currentRecords": 88,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-computer-technology-tamil-cff5867a.json",
+      "originalRecords": 88,
+      "currentRecords": 88,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-economics-english-5418ce45.json",
+      "originalRecords": 432,
+      "currentRecords": 432,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-economics-tamil-c7590e3f.json",
+      "originalRecords": 248,
+      "currentRecords": 248,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-english-english-b9d1c4c3.json",
+      "originalRecords": 100,
+      "currentRecords": 100,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-ethics-and-indian-culture-tamil-f49cc8fe.json",
+      "originalRecords": 92,
+      "currentRecords": 92,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-food-service-management-english-111451e7.json",
+      "originalRecords": 187,
+      "currentRecords": 187,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-food-service-management-tamil-e2061fb1.json",
+      "originalRecords": 149,
+      "currentRecords": 149,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-general-nursing-english-5c87aafc.json",
+      "originalRecords": 247,
+      "currentRecords": 247,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-general-nursing-tamil-b39f5ab1.json",
+      "originalRecords": 205,
+      "currentRecords": 205,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-geography-english-24059775.json",
+      "originalRecords": 148,
+      "currentRecords": 148,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-geography-tamil-ba849e46.json",
+      "originalRecords": 83,
+      "currentRecords": 83,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-history-english-3cd2e4c2.json",
+      "originalRecords": 230,
+      "currentRecords": 230,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-history-tamil-3c88c869.json",
+      "originalRecords": 205,
+      "currentRecords": 205,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-home-science-english-e5c3e008.json",
+      "originalRecords": 108,
+      "currentRecords": 108,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-home-science-tamil-0cbbe34e.json",
+      "originalRecords": 88,
+      "currentRecords": 88,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-mathematics-english-v1-e33ceed7.json",
+      "originalRecords": 262,
+      "currentRecords": 262,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-mathematics-english-v2-d4925ec0.json",
+      "originalRecords": 218,
+      "currentRecords": 218,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-mathematics-tamil-v1-96fc1e8d.json",
+      "originalRecords": 125,
+      "currentRecords": 125,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-mathematics-tamil-v2-f8732624.json",
+      "originalRecords": 117,
+      "currentRecords": 117,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-microbiology-english-6a36a404.json",
+      "originalRecords": 317,
+      "currentRecords": 317,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-microbiology-tamil-a879259a.json",
+      "originalRecords": 128,
+      "currentRecords": 128,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-nursing-vocational-english-6c60782a.json",
+      "originalRecords": 121,
+      "currentRecords": 121,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-nursing-vocational-tamil-7f44a760.json",
+      "originalRecords": 121,
+      "currentRecords": 121,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-nutrition-and-dietetics-english-3d2e918e.json",
+      "originalRecords": 86,
+      "currentRecords": 86,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-office-management-secretaryship-typography-english-6b7b27b2.json",
+      "originalRecords": 526,
+      "currentRecords": 526,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-office-management-secretaryship-typography-tamil-241b6edf.json",
+      "originalRecords": 102,
+      "currentRecords": 102,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-physics-english-v1-1b1de8f8.json",
+      "originalRecords": 76,
+      "currentRecords": 76,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-physics-english-v2-0ce6704c.json",
+      "originalRecords": 292,
+      "currentRecords": 292,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-physics-tamil-v1-c1623725.json",
+      "originalRecords": 88,
+      "currentRecords": 88,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-physics-tamil-v2-fb1fa4de.json",
+      "originalRecords": 151,
+      "currentRecords": 151,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-political-science-english-db4a2e0c.json",
+      "originalRecords": 202,
+      "currentRecords": 202,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-political-science-tamil-5da94964.json",
+      "originalRecords": 149,
+      "currentRecords": 149,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-statistics-english-1489a12e.json",
+      "originalRecords": 165,
+      "currentRecords": 165,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-statistics-tamil-c1143d1d.json",
+      "originalRecords": 159,
+      "currentRecords": 159,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-tamil-tamil-7db1698f.json",
+      "originalRecords": 67,
+      "currentRecords": 67,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-textile-technology-tamil-648797c8.json",
+      "originalRecords": 107,
+      "currentRecords": 107,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-textiles-and-dress-designing-english-1ceb8fbe.json",
+      "originalRecords": 275,
+      "currentRecords": 275,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-textiles-and-dress-designing-tamil-3650ec00.json",
+      "originalRecords": 107,
+      "currentRecords": 107,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-zoology-english-788d2d32.json",
+      "originalRecords": 252,
+      "currentRecords": 252,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    },
+    {
+      "book": "12-zoology-tamil-3c154dab.json",
+      "originalRecords": 261,
+      "currentRecords": 261,
+      "unchanged": true,
+      "previousProposalsUnchanged": true
+    }
+  ],
+  "originalCandidateRecords": 17262,
+  "currentCandidateRecords": 17267,
+  "addedCandidateRecords": 5,
+  "currentBatchIds": [
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-cdb3f0766cc5527d",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-e7717650b8879613",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-fa3a4597c4fdc9d1",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-52d10e240e8a2321",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-ba146c9634c41709",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-fe5c4b02fd20e121",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-f69cee416f3873fe",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-b7cda2e81773cd36",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-565484e8d1d81b76",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-45e216feb08bd3eb",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-2844c1f76bf9f5ec",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-bdbd46438a8b5262",
+    "textbook-section-12-computer-technology-tamil-c66e9089-2ff70b7f3f3f32c1",
+    "textbook-q-12-computer-technology-tamil-c66e9089-0a11412789b5ab38",
+    "textbook-q-12-computer-technology-tamil-c66e9089-66e4081534198fb9",
+    "textbook-q-12-computer-technology-tamil-c66e9089-9f09eadec0c0d950",
+    "textbook-q-12-computer-technology-tamil-c66e9089-390ada35f5836d96",
+    "textbook-q-12-computer-technology-tamil-c66e9089-58b9126cb0a393c1",
+    "textbook-q-12-computer-technology-tamil-c66e9089-b6a2daf0a7920d4b",
+    "textbook-q-12-computer-technology-tamil-c66e9089-fb92851c2fcfecbb",
+    "textbook-q-12-computer-technology-tamil-c66e9089-a634651f24381f60",
+    "textbook-q-12-computer-technology-tamil-c66e9089-80f873a4c6a92213",
+    "textbook-q-12-computer-technology-tamil-c66e9089-d4bf5660cec5bede",
+    "textbook-q-12-computer-technology-tamil-c66e9089-0b9a749e5b2d8091",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-77033f8e7b3ad3c6",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-c67e9e877a60233b",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-11d1a5c4d39b3409",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-84d6e587e4fe6c97",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-cca914df566c0333"
+  ],
+  "newCurrentBatchIds": [
+    "textbook-bounded-12-commerce-tamil-d9e013d8-77033f8e7b3ad3c6",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-c67e9e877a60233b",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-11d1a5c4d39b3409",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-84d6e587e4fe6c97",
+    "textbook-bounded-12-commerce-tamil-d9e013d8-cca914df566c0333"
+  ],
+  "existingCurrentBatchIds": [
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-cdb3f0766cc5527d",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-e7717650b8879613",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-fa3a4597c4fdc9d1",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-52d10e240e8a2321",
+    "textbook-section-12-computer-applications-tamil-e51fbdf6-ba146c9634c41709",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-fe5c4b02fd20e121",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-f69cee416f3873fe",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-b7cda2e81773cd36",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-565484e8d1d81b76",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-45e216feb08bd3eb",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-2844c1f76bf9f5ec",
+    "textbook-q-12-computer-applications-tamil-e51fbdf6-bdbd46438a8b5262",
+    "textbook-section-12-computer-technology-tamil-c66e9089-2ff70b7f3f3f32c1",
+    "textbook-q-12-computer-technology-tamil-c66e9089-0a11412789b5ab38",
+    "textbook-q-12-computer-technology-tamil-c66e9089-66e4081534198fb9",
+    "textbook-q-12-computer-technology-tamil-c66e9089-9f09eadec0c0d950",
+    "textbook-q-12-computer-technology-tamil-c66e9089-390ada35f5836d96",
+    "textbook-q-12-computer-technology-tamil-c66e9089-58b9126cb0a393c1",
+    "textbook-q-12-computer-technology-tamil-c66e9089-b6a2daf0a7920d4b",
+    "textbook-q-12-computer-technology-tamil-c66e9089-fb92851c2fcfecbb",
+    "textbook-q-12-computer-technology-tamil-c66e9089-a634651f24381f60",
+    "textbook-q-12-computer-technology-tamil-c66e9089-80f873a4c6a92213",
+    "textbook-q-12-computer-technology-tamil-c66e9089-d4bf5660cec5bede",
+    "textbook-q-12-computer-technology-tamil-c66e9089-0b9a749e5b2d8091"
+  ],
+  "duplicateCurrentBatchIds": 0,
+  "preservedPracticeSnapshot": {
+    "file": ".local/followup-platform-after-snapshot.json",
+    "sourceAt": "2026-10-15T08:51:15.976Z",
+    "sessions": 13,
+    "sha256": "f629b6e3ab4279fdd9bfab9f3edd8e736b749707d9538b5cabe8e20d73898a1b"
+  },
+  "productionWrites": 0,
+  "publishedNewQuestions": 0
+}

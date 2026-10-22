@@ -1,0 +1,1346 @@
+{
+  "checkedAt": "2026-10-17T08:06:24.293Z",
+  "scope": "Local source extraction and authenticated review preparation; no production access, import, publication, Git push or deployment",
+  "targets": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceFile": "12th Std Computer Applications Tamil Medium.pdf",
+      "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-applications-tamil-e51fbdf6.pdf",
+      "sourceSha256": "4a9e2932f822c9aa3f5075743fea3fd6cd54d349ad7fc22e100dc839e093ac26",
+      "chapter": 6,
+      "chapterTitle": "PHP நிபந்தனை கூற்றுகள்",
+      "chapterPdfRange": [
+        127,
+        132
+      ],
+      "inspectedPdfPages": [
+        127,
+        130,
+        131,
+        132,
+        133
+      ],
+      "mcqPdfPages": [
+        130,
+        131,
+        132
+      ],
+      "printedPages": [
+        120,
+        121,
+        122
+      ],
+      "sectionIdentified": true,
+      "sectionIQuestionOccurrences": 9,
+      "existingIdsReused": 9,
+      "newCandidateIds": [],
+      "printedKeyMatches": 0,
+      "textbookVerifiedAnswers": 0,
+      "unknownAnswers": 9,
+      "incompleteRequiredContent": [],
+      "diagramDependent": [],
+      "teacherWordingVerified": false,
+      "keyEvidence": "No printed key found on inspected PDF 130-132; Chapter 7 begins PDF 133. Whole-book key absence not asserted. All answers unknown.",
+      "held": 9,
+      "reviewed": 0,
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "historyEvents": 0,
+      "published": 0,
+      "store": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "sourceBoundedInventory": {
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-6",
+        "chapterNumber": 6,
+        "chapterTitle": "PHP நிபந்தனை கூற்றுகள்",
+        "batchId": "tb-12-computer-applications-tamil-e51fbdf6-ch-6-source-bounded-01",
+        "sourceInventoriedQuestions": 9,
+        "pdfPages": [
+          130,
+          131,
+          132
+        ],
+        "printedPages": [
+          120,
+          121,
+          122
+        ],
+        "keyPdfPage": null,
+        "keyMatched": 0,
+        "completeTextOptionMappings": 9,
+        "diagramDependent": 0,
+        "incompleteGraphQuestions": [],
+        "reusedIds": 9,
+        "newIds": 0,
+        "teacherApproved": 0,
+        "published": 0,
+        "complete": false,
+        "excludedItems": [
+          {
+            "numbers": [],
+            "page": 130,
+            "kind": "Remember/summary lesson box above the exercise is excluded from all question spans"
+          },
+          {
+            "numbers": [],
+            "page": 132,
+            "kind": "Sections II-IV are open responses, not printed four-option MCQs"
+          }
+        ],
+        "inspectedEndingPages": [
+          133
+        ],
+        "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
+      },
+      "candidates": [
+        {
+          "id": "textbook-section-12-computer-applications-tamil-e51fbdf6-a4a847dca4eb5ed2",
+          "number": 1,
+          "pdfPage": 130,
+          "pdfEndPage": 130,
+          "printedPages": [
+            120
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x;\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n● if கூற்றி ல நி ்ப ந தள ை (அ) பூலிய ன மகாளவ அ ள்ட ப் பு குறிகளுக்குள் இருக்கும்.\nஅத ள ை சதா்ட ர் ந து ஒ ன று அல்லது அதற்கு மே ற் ்ப ட்ட வரிகளை சகாண் ்ட குறிமு ளற\nசதா குதி இருக்கும்.\n● if – else கூற்று if கூற்றிற்கு இர ண்்ட ா வது ்ப குதி ளய வ ை ங் குகிறது. அதாவது else\nகூ ற் றா கும். Else கூ ற் ளற சதா்ட ர் ந து if அல்லது elseif கூற்று இரு க் க மவ ண் டும்.\n● else ்ப குதியி ல ேற்ச ற ா ரு நி ்ப ந தள ை ளய மொ தி க் க மவ ண் டு சே னி ல else if கூற்றி ல\nelse கூ ற் ளற சதா்ட ர் ந து if கூற்று வர மவ ண் டும்.\n● நி ்ப ந தள ை கூற்றுகள் நிர ்ல ா க் க சோ ழியி ல ்ப ல மவ று முடிவுகளுக்கு ஏ ற் ்ப ்ப ல மவ று\nசெயல ்ப ா டுகளை செ ய கிறது.\n● IF else Statement நி ்ப ந தள ைகளி ன முடி ளவ அடி ப் ்ப ள்ட யாக சகா ண் டு தீர்\nவுகளை எடு க் க If வழிவ ளக செ ய கிறது.\n● Switch Statement If கூ ற் ளற ம்பா ன மற தா ன Switch கூற்று மவள்ல செ ய கிறது.\nஆ ை ா ல Switch கூற்றி ல ஒ ன றுக்கு மே ற் ்ப ட்ட ே திப்புகளை ஒ மர ம ேரத்தி ல மொ தி க் க\nமுடியும்.\n",
+            "options": [],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 130\nநி ள ைவில் க கா ள க\nபகுதி – அ\nI. சரியா ை வி ள்டளய த்\nதேர்ந கே டுத்து எழுதுக\n1. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x;\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n● if கூற்றி ல நி ்ப ந தள ை (அ) பூலிய ன மகாளவ அ ள்ட ப் பு குறிகளுக்குள் இருக்கும்.\nஅத ள ை சதா்ட ர் ந து ஒ ன று அல்லது அதற்கு மே ற் ்ப ட்ட வரிகளை சகாண் ்ட குறிமு ளற\nசதா குதி இருக்கும்.\n● if – else கூற்று if கூற்றிற்கு இர ண்்ட ா வது ்ப குதி ளய வ ை ங் குகிறது. அதாவது else\nகூ ற் றா கும். Else கூ ற் ளற சதா்ட ர் ந து if அல்லது elseif கூற்று இரு க் க மவ ண் டும்.\n● else ்ப குதியி ல ேற்ச ற ா ரு நி ்ப ந தள ை ளய மொ தி க் க மவ ண் டு சே னி ல else if கூற்றி ல\nelse கூ ற் ளற சதா்ட ர் ந து if கூற்று வர மவ ண் டும்.\n● நி ்ப ந தள ை கூற்றுகள் நிர ்ல ா க் க சோ ழியி ல ்ப ல மவ று முடிவுகளுக்கு ஏ ற் ்ப ்ப ல மவ று\nசெயல ்ப ா டுகளை செ ய கிறது.\n● IF else Statement நி ்ப ந தள ைகளி ன முடி ளவ அடி ப் ்ப ள்ட யாக சகா ண் டு தீர்\nவுகளை எடு க் க If வழிவ ளக செ ய கிறது.\n● Switch Statement If கூ ற் ளற ம்பா ன மற தா ன Switch கூற்று மவள்ல செ ய கிறது.\nஆ ை ா ல Switch கூற்றி ல ஒ ன றுக்கு மே ற் ்ப ட்ட ே திப்புகளை ஒ மர ம ேரத்தி ல மொ தி க் க\nமுடியும்.\n2. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x = 0;\nif ($x++)print “hi”;else\nprint “how are u”;\n?>\nஅ) hi\nஆ) சவ ளியீடு ஏதும் இல ள்ல\nஇ) பி ள ை\nஈ) how are u\n3. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x ;\nவி ை ாக கள\nபா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள 120\nXII CompApp_Tamil version CHAPTER 06.indd 120 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x;\nprint “hi”;\nelse\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Original saved section ID has an empty options array and summary contamination; preserve it as raw extraction separately from the four source-bounded proposed choices",
+            "Source prints $x; followed by print and else without an if; preserve the printed program, do not invent missing syntax",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-90dee5d21756e41a",
+          "number": 2,
+          "pdfPage": 130,
+          "pdfEndPage": 130,
+          "printedPages": [
+            120
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x = 0;\nif ($x++)print “hi”;else\nprint “how are u”;\n?>",
+            "options": [
+              "hi",
+              "சவ ளியீடு ஏதும் இல ள்ல",
+              "பி ள ை",
+              "how are u"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 130\nநி ள ைவில் க கா ள க\nபகுதி – அ\nI. சரியா ை வி ள்டளய த்\nதேர்ந கே டுத்து எழுதுக\n1. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x;\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n● if கூற்றி ல நி ்ப ந தள ை (அ) பூலிய ன மகாளவ அ ள்ட ப் பு குறிகளுக்குள் இருக்கும்.\nஅத ள ை சதா்ட ர் ந து ஒ ன று அல்லது அதற்கு மே ற் ்ப ட்ட வரிகளை சகாண் ்ட குறிமு ளற\nசதா குதி இருக்கும்.\n● if – else கூற்று if கூற்றிற்கு இர ண்்ட ா வது ்ப குதி ளய வ ை ங் குகிறது. அதாவது else\nகூ ற் றா கும். Else கூ ற் ளற சதா்ட ர் ந து if அல்லது elseif கூற்று இரு க் க மவ ண் டும்.\n● else ்ப குதியி ல ேற்ச ற ா ரு நி ்ப ந தள ை ளய மொ தி க் க மவ ண் டு சே னி ல else if கூற்றி ல\nelse கூ ற் ளற சதா்ட ர் ந து if கூற்று வர மவ ண் டும்.\n● நி ்ப ந தள ை கூற்றுகள் நிர ்ல ா க் க சோ ழியி ல ்ப ல மவ று முடிவுகளுக்கு ஏ ற் ்ப ்ப ல மவ று\nசெயல ்ப ா டுகளை செ ய கிறது.\n● IF else Statement நி ்ப ந தள ைகளி ன முடி ளவ அடி ப் ்ப ள்ட யாக சகா ண் டு தீர்\nவுகளை எடு க் க If வழிவ ளக செ ய கிறது.\n● Switch Statement If கூ ற் ளற ம்பா ன மற தா ன Switch கூற்று மவள்ல செ ய கிறது.\nஆ ை ா ல Switch கூற்றி ல ஒ ன றுக்கு மே ற் ்ப ட்ட ே திப்புகளை ஒ மர ம ேரத்தி ல மொ தி க் க\nமுடியும்.\n2. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x = 0;\nif ($x++)print “hi”;else\nprint “how are u”;\n?>\nஅ) hi\nஆ) சவ ளியீடு ஏதும் இல ள்ல\nஇ) பி ள ை\nஈ) how are u\n3. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x ;\nவி ை ாக கள\nபா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள 120\nXII CompApp_Tamil version CHAPTER 06.indd 120 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x = 0;\nif ($x++)print “hi”;else\nprint “how are u”;\n?>",
+            "options": [
+              "hi",
+              "சவ ளியீடு ஏதும் இல ள்ல",
+              "பி ள ை",
+              "how are u"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Preserve printed $x = 0; and if ($x++) exactly, including quote glyphs",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-54fd60b1f3fbc047",
+          "number": 3,
+          "pdfPage": 130,
+          "pdfEndPage": 131,
+          "printedPages": [
+            120,
+            121
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x ;\nவி ை ாக கள\nபா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள 120\n\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>",
+            "options": [
+              "how are u hello",
+              "hig hello",
+              "hi",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 130\nநி ள ைவில் க கா ள க\nபகுதி – அ\nI. சரியா ை வி ள்டளய த்\nதேர்ந கே டுத்து எழுதுக\n1. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x;\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n● if கூற்றி ல நி ்ப ந தள ை (அ) பூலிய ன மகாளவ அ ள்ட ப் பு குறிகளுக்குள் இருக்கும்.\nஅத ள ை சதா்ட ர் ந து ஒ ன று அல்லது அதற்கு மே ற் ்ப ட்ட வரிகளை சகாண் ்ட குறிமு ளற\nசதா குதி இருக்கும்.\n● if – else கூற்று if கூற்றிற்கு இர ண்்ட ா வது ்ப குதி ளய வ ை ங் குகிறது. அதாவது else\nகூ ற் றா கும். Else கூ ற் ளற சதா்ட ர் ந து if அல்லது elseif கூற்று இரு க் க மவ ண் டும்.\n● else ்ப குதியி ல ேற்ச ற ா ரு நி ்ப ந தள ை ளய மொ தி க் க மவ ண் டு சே னி ல else if கூற்றி ல\nelse கூ ற் ளற சதா்ட ர் ந து if கூற்று வர மவ ண் டும்.\n● நி ்ப ந தள ை கூற்றுகள் நிர ்ல ா க் க சோ ழியி ல ்ப ல மவ று முடிவுகளுக்கு ஏ ற் ்ப ்ப ல மவ று\nசெயல ்ப ா டுகளை செ ய கிறது.\n● IF else Statement நி ்ப ந தள ைகளி ன முடி ளவ அடி ப் ்ப ள்ட யாக சகா ண் டு தீர்\nவுகளை எடு க் க If வழிவ ளக செ ய கிறது.\n● Switch Statement If கூ ற் ளற ம்பா ன மற தா ன Switch கூற்று மவள்ல செ ய கிறது.\nஆ ை ா ல Switch கூற்றி ல ஒ ன றுக்கு மே ற் ்ப ட்ட ே திப்புகளை ஒ மர ம ேரத்தி ல மொ தி க் க\nமுடியும்.\n2. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x = 0;\nif ($x++)print “hi”;else\nprint “how are u”;\n?>\nஅ) hi\nஆ) சவ ளியீடு ஏதும் இல ள்ல\nஇ) பி ள ை\nஈ) how are u\n3. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x ;\nவி ை ாக கள\nபா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள 120\nXII CompApp_Tamil version CHAPTER 06.indd 120 15/04/19 7:10 PM\n\nPDF 131\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>\nஅ) how are u hello\nஆ) hig hello\nஇ) hi\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n4. இரண்டு மத ர் வுகளி ல ஒரு\nமத ர் வி ள ை செயல்படு த் த எந த\nகூற்று எழுத ்ப யன்படுகிறது?\nஅ) if கூற்று\nஆ) if else கூற்று\nஇ) then else கூற்று\nஈ) else one கூற்று\n5. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n6. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n7. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n8. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள\nXII CompApp_Tamil version CHAPTER 06.indd 121 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x ;\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>",
+            "options": [
+              "how are u hello",
+              "hig hello",
+              "hi",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Program begins on PDF 130 / printed 120 and continues onto PDF 131 / printed 121; both pages must be inspected",
+            "Preserve source hig hello option, uninitialised $x and missing punctuation as printed; do not silently fix or guess output",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-804eb00e7fe73fab",
+          "number": 4,
+          "pdfPage": 131,
+          "pdfEndPage": 131,
+          "printedPages": [
+            121
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "இரண்டு மத ர் வுகளி ல ஒரு மத ர் வி ள ை செயல்படு த் த எந த கூற்று எழுத ்ப யன்படுகிறது?",
+            "options": [
+              "if கூற்று",
+              "if else கூற்று",
+              "then else கூற்று",
+              "else one கூற்று"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 131\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>\nஅ) how are u hello\nஆ) hig hello\nஇ) hi\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n4. இரண்டு மத ர் வுகளி ல ஒரு\nமத ர் வி ள ை செயல்படு த் த எந த\nகூற்று எழுத ்ப யன்படுகிறது?\nஅ) if கூற்று\nஆ) if else கூற்று\nஇ) then else கூற்று\nஈ) else one கூற்று\n5. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n6. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n7. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n8. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள\nXII CompApp_Tamil version CHAPTER 06.indd 121 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "இரண்டு மத ர் வுகளி ல ஒரு மத ர் வி ள ை செயல்படு த் த எந த கூற்று எழுத ்ப யன்படுகிறது?",
+            "options": [
+              "if கூற்று",
+              "if else கூற்று",
+              "then else கூற்று",
+              "else one கூற்று"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-dd996589de78ec84",
+          "number": 5,
+          "pdfPage": 131,
+          "pdfEndPage": 131,
+          "printedPages": [
+            121
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>",
+            "options": [
+              "All",
+              "some",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 131\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>\nஅ) how are u hello\nஆ) hig hello\nஇ) hi\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n4. இரண்டு மத ர் வுகளி ல ஒரு\nமத ர் வி ள ை செயல்படு த் த எந த\nகூற்று எழுத ்ப யன்படுகிறது?\nஅ) if கூற்று\nஆ) if else கூற்று\nஇ) then else கூற்று\nஈ) else one கூற்று\n5. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n6. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n7. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n8. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள\nXII CompApp_Tamil version CHAPTER 06.indd 121 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>",
+            "options": [
+              "All",
+              "some",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Source prints the same question/program/options at Q5 and Q6; retain both numbered occurrences with distinct IDs and flag the printed duplicate",
+            "Preserve printed if else and quote glyphs; do not repair the program or infer an answer",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-0f703d1a5556c0d7",
+          "number": 6,
+          "pdfPage": 131,
+          "pdfEndPage": 131,
+          "printedPages": [
+            121
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>",
+            "options": [
+              "All",
+              "some",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 131\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>\nஅ) how are u hello\nஆ) hig hello\nஇ) hi\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n4. இரண்டு மத ர் வுகளி ல ஒரு\nமத ர் வி ள ை செயல்படு த் த எந த\nகூற்று எழுத ்ப யன்படுகிறது?\nஅ) if கூற்று\nஆ) if else கூற்று\nஇ) then else கூற்று\nஈ) else one கூற்று\n5. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n6. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n7. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n8. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள\nXII CompApp_Tamil version CHAPTER 06.indd 121 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>",
+            "options": [
+              "All",
+              "some",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Source prints the same question/program/options at Q5 and Q6; retain both numbered occurrences with distinct IDs and flag the printed duplicate",
+            "Program continues from the bottom of the left column to the top of the right column on PDF 131",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-e514d3d62cace31f",
+          "number": 7,
+          "pdfPage": 131,
+          "pdfEndPage": 131,
+          "printedPages": [
+            121
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 131\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>\nஅ) how are u hello\nஆ) hig hello\nஇ) hi\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n4. இரண்டு மத ர் வுகளி ல ஒரு\nமத ர் வி ள ை செயல்படு த் த எந த\nகூற்று எழுத ்ப யன்படுகிறது?\nஅ) if கூற்று\nஆ) if else கூற்று\nஇ) then else கூற்று\nஈ) else one கூற்று\n5. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n6. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n7. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n8. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள\nXII CompApp_Tamil version CHAPTER 06.indd 121 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Preserve $x>$y+$y!=3 operator order exactly as printed; no execution-derived answer",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-ef8776ca2a00a170",
+          "number": 8,
+          "pdfPage": 131,
+          "pdfEndPage": 131,
+          "printedPages": [
+            121
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல 121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 131\nif ($x==0)print “hi”; else\nprint “how are u”;\nprint “hello”\n?>\nஅ) how are u hello\nஆ) hig hello\nஇ) hi\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n4. இரண்டு மத ர் வுகளி ல ஒரு\nமத ர் வி ள ை செயல்படு த் த எந த\nகூற்று எழுத ்ப யன்படுகிறது?\nஅ) if கூற்று\nஆ) if else கூற்று\nஇ) then else கூற்று\nஈ) else one கூற்று\n5. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n6. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$a= “” ;\nif ($a)\nprint “all”;\nif else\nprint “some”;\n?>\nஅ) All\nஆ) some\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n7. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என ை வாக இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y+$y!=3)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n8. பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>\nஅ) how are u\nஆ) hi\nஇ) பி ள ை\nஈ) சவ ளியீடு ஏதும் இல ள்ல\n121 பா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள\nXII CompApp_Tamil version CHAPTER 06.indd 121 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு\nசவ ளியீடு என வா க இருக்கும்?\n<?php\n$x= 10;\n$y= 20;\nif ($x>$y&&1||1)\nprint “hi”;\nelse\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "Preserve $x>$y&&1||1 operator order exactly as printed; no execution-derived answer",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-a2a9c7e6dadbe68e",
+          "number": 9,
+          "pdfPage": 132,
+          "pdfEndPage": 132,
+          "printedPages": [
+            122
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு சவ ளியீடு என ை வாக இருக்கும்?\n<?php\nif (-100)pring “hi”; else\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 132\n9. பின வ ரும் PHP குறிமு ளற க் கு சவ ளியீடு என ை வாக இருக்கும்?\n<?php\nif (-100)pring “hi”; else\nprint “how are u”;\n?>\nஅ) how are u ஆ) hi\nஇ) பி ள ை ஈ) சவ ளியீடு ஏதும் இல ள்ல\nபகுதி – ஆ\nII. மூன்று வரிகளில் வி ள்ட யளிக க வும்\n1. நி ்ப ந தள ை கூ ற் ளற வ ளர யறு\n2. if கூ ற் ளற வ ளர யறு\n3. if else கூற்று என றால என ை ?\n4. நி ்ப ந தள ை கூற்றுகளை ்ப ட டியலிடு\n5. if else கூற்றி ன கட்டளை அ ளேப்ள்ப எழுதுக.\n6. PHP ல if….elseif…..else கூற்றி ள ை வ ளர யறு\n7. Switch கூற்றி ன ்ப ய ன என ை ?\n8. Switch கூற்றி ன கட்டளை எழுதுக.\n9. if and if else கூ ற் ளற மவ று ்ப டுத்துக.\nபகுதி – இ\nIII. ஒரு பத்திய ை வில் வி ள்ட யளிக க வும்\n1. நி ்ப ந தள ை கூற்றி ன சிறப்பிய ல புகளை விவரி\n2. if elseif else கூற்றி ன ்ப யன க ளை எழுதுக.\n4. Switch ே ற் றும் if else கூற்றி ள ை மவ று ்ப டுத்துக.\n5. Switch கூற்றி ள ை ்ப ற் றி சிறு குறிப்பு எழுதுக.\n6. if statement ே ற் றும் if elseif else கூற்றி ள ை மவ று ்ப டுத்துக.\nபகுதி – ஈ\nIV. ஒரு பக க அ ை வில் வி ள்ட யளிக க வும்\n1. செயற்கூறு நி ்ப ந தள ை கூற்றி ன செயல ்ப ாட டி ள ை விவரி\n2. Switch கூற்றி ள ை எடுத்து க் காட டு ்ட ன விரிவாக விவரி\n3. நி ்ப ந தள ை கூற்றி ன செயல ்ப ா டுகளை விவரி\n4. if elseif else கூற்றி ன கருத்துரு க் க ளை விவரி\n5. if else கூற்றி ள ை விவரி\n6. if else கூ ற் ளற ்ப யன்படுத்தி ே ா ை வ ர் க ள் மே ்ல ா ண் ளே ்ப யன ்ப ாட டி ள ை\nஉருவாக்குக.\n7. நி ்ப ந தள ை கூற்றி ை ா ல அன றா்ட வாழ்வி ல உ ள் ை ்ப யன க ளை விவரி\nபா ்ட ம் 06 PHP நிப ்ந ேள ை கூற்றுக ள 122\nXII CompApp_Tamil version CHAPTER 06.indd 122 15/04/19 7:10 PM",
+          "proposedTranscription": {
+            "questionText": "பின வ ரும் PHP குறிமு ளற க் கு சவ ளியீடு என ை வாக இருக்கும்?\n<?php\nif (-100)pring “hi”; else\nprint “how are u”;\n?>",
+            "options": [
+              "how are u",
+              "hi",
+              "பி ள ை",
+              "சவ ளியீடு ஏதும் இல ள்ல"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All Tamil wording, code and punctuation require source-faithful teacher correction",
+            "Do not execute or silently repair printed PHP to infer official answers; no answer key located",
+            "All eight referenced PHP programs are present, including Q3 continued onto the next PDF page",
+            "The source prints pring rather than print; preserve it and require teacher verification, not an automatic typo correction",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        }
+      ]
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "sourceFile": "12th_Std_Computer_Technology_TM_optimised.pdf",
+      "sourcePdf": "D:\\avs-12-hub\\public\\textbooks\\12-computer-technology-tamil-c66e9089.pdf",
+      "sourceSha256": "c40a61dd244ed3d882fdaaf437c42f332892ba4edeea987faf365f66c501a283",
+      "chapter": 6,
+      "chapterTitle": "ஆட்டோகேட் 2016",
+      "chapterPdfRange": [
+        189,
+        231
+      ],
+      "inspectedPdfPages": [
+        189,
+        229,
+        230,
+        231,
+        232,
+        233
+      ],
+      "mcqPdfPages": [
+        230
+      ],
+      "printedPages": [
+        224
+      ],
+      "sectionIdentified": true,
+      "sectionIQuestionOccurrences": 7,
+      "existingIdsReused": 7,
+      "newCandidateIds": [],
+      "printedKeyMatches": 0,
+      "textbookVerifiedAnswers": 0,
+      "unknownAnswers": 7,
+      "incompleteRequiredContent": [],
+      "diagramDependent": [],
+      "teacherWordingVerified": false,
+      "keyEvidence": "No printed key found on inspected PDF 229-233; Chapter 6 ends PDF 231 and practicals start PDF 232. Whole-book key absence not asserted. All answers unknown.",
+      "held": 7,
+      "reviewed": 0,
+      "decisions": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 7,
+        "invalid": 0
+      },
+      "historyEvents": 0,
+      "published": 0,
+      "store": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "sourceBoundedInventory": {
+        "chapterId": "tb-12-computer-technology-tamil-c66e9089-ch-6",
+        "chapterNumber": 6,
+        "chapterTitle": "ஆட்டோகேட் 2016",
+        "batchId": "tb-12-computer-technology-tamil-c66e9089-ch-6-source-bounded-01",
+        "sourceInventoriedQuestions": 7,
+        "pdfPages": [
+          230
+        ],
+        "printedPages": [
+          224
+        ],
+        "keyPdfPage": null,
+        "keyMatched": 0,
+        "completeTextOptionMappings": 7,
+        "diagramDependent": 0,
+        "incompleteGraphQuestions": [],
+        "reusedIds": 7,
+        "newIds": 0,
+        "teacherApproved": 0,
+        "published": 0,
+        "complete": false,
+        "excludedItems": [
+          {
+            "numbers": [],
+            "page": 229,
+            "kind": "Lesson instructions and glossary are not book-back MCQs"
+          },
+          {
+            "numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "page": 230,
+            "kind": "Following Section II short-answer restart, not the seven Section I MCQs"
+          },
+          {
+            "numbers": [],
+            "page": 231,
+            "kind": "Continuation of Sections II-IV open responses; no printed MCQ options"
+          },
+          {
+            "numbers": [],
+            "page": 232,
+            "kind": "Separate practicals divider; not Chapter 6 MCQs"
+          },
+          {
+            "numbers": [],
+            "page": 233,
+            "kind": "Practical 01 PageMaker task; do not invent MCQs from its numbered steps"
+          }
+        ],
+        "inspectedEndingPages": [
+          229,
+          231,
+          232,
+          233
+        ],
+        "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
+      },
+      "candidates": [
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-62cca8051fd41dd4",
+          "number": 1,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "ஆட்டோ ் ே ட என்பது _________ தம ன த்போ ரு ைோ கும்.",
+            "options": [
+              "DTP",
+              "Computer-aided design (CAD) and drafting",
+              "Text Editing",
+              "Video Editing"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "ஆட்டோ ் ே ட என்பது _________ தம ன த்போ ரு ைோ கும்.",
+            "options": [
+              "DTP",
+              "Computer-aided design (CAD) and drafting",
+              "Text Editing",
+              "Video Editing"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-cd2b7351f22aa589",
+          "number": 2,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி வி ற் ்ப டன தேய யும் நிறுவனம் _________",
+            "options": [
+              "Microsoft Corporation",
+              "Adobe, Inc.",
+              "Autodesk, Inc.",
+              "Sun"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி வி ற் ்ப டன தேய யும் நிறுவனம் _________",
+            "options": [
+              "Microsoft Corporation",
+              "Adobe, Inc.",
+              "Autodesk, Inc.",
+              "Sun"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-3e6ae8eebcbdf3e5",
+          "number": 3,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "சிவ ப பு நி ்ற “A” த்போ த �ோடன க் கிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி _________",
+            "options": [
+              "Application",
+              "Edit",
+              "Layout",
+              "Window"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "சிவ ப பு நி ்ற “A” த்போ த �ோடன க் கிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி _________",
+            "options": [
+              "Application",
+              "Edit",
+              "Layout",
+              "Window"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "The A application icon is named in the question; no missing standalone diagram or diagram-only option is required on the printed MCQ page",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-c31f4e7a51b22c01",
+          "number": 4,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப குதியி ல ் �ோ ன றும் ்ப ட டட எது?",
+            "options": [
+              "Menu",
+              "Search",
+              "Toolbar",
+              "Title"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப குதியி ல ் �ோ ன றும் ்ப ட டட எது?",
+            "options": [
+              "Menu",
+              "Search",
+              "Toolbar",
+              "Title"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-911d5d5f00f292fa",
+          "number": 5,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "ே ட டட ைச் ேோைை ம் ் �ோன்றவில டைதய னி ல எ ந் � வி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப யன்படுத � ் வ ண் டும்?",
+            "options": [
+              "Ctrl + 1",
+              "Ctrl + 9",
+              "Ctrl + 8",
+              "Ctrl + 7 வினாக ே ள் பாடம் 06 ஆட்ட ா் ே ட 2016 224"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "ே ட டட ைச் ேோைை ம் ் �ோன்றவில டைதய னி ல எ ந் � வி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப யன்படுத � ் வ ண் டும்?",
+            "options": [
+              "Ctrl + 1",
+              "Ctrl + 9",
+              "Ctrl + 8",
+              "Ctrl + 7"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "Preserve shortcut-option order Ctrl + 1, Ctrl + 9, Ctrl + 8, Ctrl + 7",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-9bb7270f753947da",
+          "number": 6,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "UCS என்பது எ �ன குறு க் ே ம் ?",
+            "options": [
+              "User Coordinate System",
+              "User Currency System",
+              "User Control System",
+              "User Computer System"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "UCS என்பது எ �ன குறு க் ே ம் ?",
+            "options": [
+              "User Coordinate System",
+              "User Currency System",
+              "User Control System",
+              "User Computer System"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        },
+        {
+          "id": "textbook-q-12-computer-technology-tamil-c66e9089-9adafe68f48e10d9",
+          "number": 7,
+          "pdfPage": 230,
+          "pdfEndPage": 230,
+          "printedPages": [
+            224
+          ],
+          "answer": null,
+          "originalExtraction": {
+            "questionText": "ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும், ம ட்றக்ே வும் (ON or OFF) வி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு வி டேடய அழுத � ் வ ண் டும்?",
+            "options": [
+              "F1",
+              "F2",
+              "F3",
+              "F7"
+            ],
+            "correctAnswer": null
+          },
+          "originalRawSource": "PDF 230\n6. UCS என்பது எ �ன குறு க் ே ம் ?\nஅ) User Coordinate System\nஆ) User Currency System\nஇ) User Control System\nஈ) User Computer System\n7. ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும்,\nம ட்றக்ே வும் (ON or OFF)\nவி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு\nவி டேடய அழுத � ் வ ண் டும்?\nஅ) F1 ஆ) F2 இ) F3 ஈ) F7\nபகுதி – ஆ\nII. மூன்று வரி ே ளில் வி ரட யளிக ே வும்\n1. ஆட்டோ ் ேட ட எவ வோ று\nத� ோ டங்குவ ோய ?\n2. ரிப்பனி ல உ ள் ை அ டனத து ப\nத்போ த �ோ ன ேட ையும் எப்படி\nம ட்ற ப ்ப ோய ?\n3. ரிப்பனி ல உ ள் ை ஒரு த்போ த �ோன மீ\nது சு ட டுக்குறி டய நிறு த தும் ்்ப ோது\nஎன ன ் �ோ ன றும்?\n4. UCS ்ப ணிக்குறி டய எவ வோ று நீக்\nகுவ ோய ?\n5. OSNAPஐ ON மற்றும் OFF தே ய வ� ற் கு\nஎ ந் � தே யல ்ப ோட டு வி டேடயப ்ப\nயன்படுத � ் வ ண் டும்?\n6. ட ை ன (LINE) ே ட டட ை டயப ்ப\nயன்படு த தும் ்்ப ோது ்ப\nை்ே ோணத ட� முடி க் ேப ்ப யன்படும்\nவி ட ைவ ோ ன வழிமு ட்றடய க் கூறு.\n7. ட ை ன ே ட டட ை மற்றும் தைக்டோங்ேல\nே ட டட ை டயப ்ப யன்படு த தி\nதே வ வே ம் வ ட ையும் ்்ப ோது ஏ ற் ்ப டும்\nநட ட மு ட்ற சி க் ே ல ேட ைக் கூறு.\nஏ ன ஒன ட்ற வி ட டு ம ற் த்றோ ன ட்றப ்ப\nயன்படுத � ் வ ண் டும்?\nபகுதி – அ\nI. சரியான வி ரடரய த் ்\n�ர்ந்த� டுத்து எழுது ே\n1. ஆட்டோ ் ே ட என்பது _________\nதம ன த்போ ரு ைோ கும்.\nஅ) DTP\nஆ) Computer-aided design (CAD)\nand drafting\nஇ) Text Editing\nஈ) Video Editing\n2. ஆட்டோ ் ே ட 2016ஐ உருவ ோ க் கி\nவி ற் ்ப டன தேய யும் நிறுவனம்\n_________\nஅ) Microsoft Corporation\nஆ) Adobe, Inc.\nஇ) Autodesk, Inc.\nஈ) Sun\n3. சிவ ப பு நி ்ற “A” த்போ த �ோடன க்\nகிளிக் தே ய �ோல ் �ோ ன றும் ்ப ட டி\n_________\nஅ) Application ஆ) Edit\nஇ) Layout ஈ) Window\n4. ்ப யன ்ப ோட டு ப ்ப ட டியி ன ் மல ்ப\nகுதியி ல ் �ோ ன றும் ்ப ட டட எது?\nஅ) Menu ஆ) Search\nஇ) Toolbar ஈ) Title\n5. ே ட டட ைச் ேோைை ம் ்\n�ோன்றவில டைதய னி ல எ ந் �\nவி டே ப்ப ைடே குறுக்குவழி ேட ை ப ்ப\nயன்படுத � ் வ ண் டும்?\nஅ) Ctrl + 1 ஆ) Ctrl + 9\nஇ) Ctrl + 8 ஈ) Ctrl + 7\nவினாக ே ள்\nபாடம் 06 ஆட்ட ா் ே ட 2016 224\nXII CompTech_Tamil version CHAPTER 06.indd 224 4/16/2019 1:28:55 PM",
+          "proposedTranscription": {
+            "questionText": "ே ட டங்ேட ை (grid) ேோ ண் பி க் ே வும், ம ட்றக்ே வும் (ON or OFF) வி டே ப்ப ைடே யி ல எ ந் � தே யல ்ப ோட டு வி டேடய அழுத � ் வ ண் டும்?",
+            "options": [
+              "F1",
+              "F2",
+              "F3",
+              "F7"
+            ]
+          },
+          "warnings": [
+            "Held: explicit individual authenticated teacher review required",
+            "Answer unknown: no printed key located in inspected exercise pages; do not infer from prose or subject knowledge",
+            "Tamil extraction contains damaged/fragmented characters; visually faithful teacher correction required",
+            "Transcribe unreadable PDF glyphs before text publication",
+            "Transcribe separated Tamil letter marks before text publication",
+            "Transcribe fragmented Tamil words before text publication",
+            "All damaged Tamil letters and technical terms require source-faithful teacher correction",
+            "Read PDF 230 left-column Q1-5 before right-column Q6-7; stop at Section II, not the restarted short-answer numbers",
+            "Final theory chapter ends PDF 231; PDF 232 onward is a separate practical section, not additional Chapter 6 MCQs",
+            "Preserve printed F1, F2, F3, F7 choices; do not replace a possibly incorrect printed option with external AutoCAD knowledge",
+            "Retained ID is a provisional page/number match; reconcile the saved extraction with the source question"
+          ]
+        }
+      ]
+    }
+  ],
+  "extractedOccurrences": 16,
+  "uniqueQuestionOptionSignatures": 15,
+  "duplicateGroups": [
+    [
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-dd996589de78ec84",
+        "number": 5,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-6",
+        "page": 131
+      },
+      {
+        "id": "textbook-q-12-computer-applications-tamil-e51fbdf6-0f703d1a5556c0d7",
+        "number": 6,
+        "bookId": "12-computer-applications-tamil-e51fbdf6",
+        "chapterId": "tb-12-computer-applications-tamil-e51fbdf6-ch-6",
+        "page": 131
+      }
+    ]
+  ],
+  "duplicateMeaning": "Two authentic separately numbered printed occurrences Q5/Q6 have identical question/options; IDs are distinct and both held, not an accidental rerun insertion. Exact whitespace-normalized signatures only, not semantic deduplication.",
+  "stores": [
+    {
+      "batchId": "unit-1",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "sha256": "3c5dac2c7bfb31a86f282c37fdf6e301cab47302635beee30c0c6b460907dd38"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-2\\decisions.json",
+      "sha256": "73d033fd1b0acfafcaba5297f9d3edc7b5973f2758f2ee5ab6f60f530998f68d"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-2",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-2\\decisions.json",
+      "sha256": "008f65253711cc7c16e1daf251f214be9dc79edc85b9291f38de49f60c3d54d5"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-3",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-3\\decisions.json",
+      "sha256": "53273558bc3edfdb6ae0c3139452c7baa17f06e3fb8ddea960031f0712ed53fb"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-3",
+      "held": 14,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 14,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-3\\decisions.json",
+      "sha256": "50f183414b7a52843e54854b31339bbaa922cf4c5e8e28341478c5d068e6a178"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-4",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "sha256": "faf0f0793007bd61e81a2a2226600e4233ebda90fd7a590e864a73ebcd1cc8b0"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-4",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "sha256": "eb037dd880a0e220a934d1c565db9d2fd396b45e8d291858cec5f52a5903740e"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-5",
+      "held": 10,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 10,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "sha256": "9f93a6484b884c0733e17dd73e8cca693555490e4ada426608901888728822a6"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-5",
+      "held": 12,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 12,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "sha256": "0fa97c2244fe89a7b1caea085e78ffd62f346d6f6f70d4e53486cca465b41550"
+    },
+    {
+      "batchId": "computer-12-computer-applications-tamil-e51fbdf6-ch-6",
+      "held": 9,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 9,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "sha256": "61f5a4d078fdd9cd80157eb0e3496d334c694a8ad0589f809282fc646e60e9fa"
+    },
+    {
+      "batchId": "computer-12-computer-technology-tamil-c66e9089-ch-6",
+      "held": 7,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 7,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "sha256": "7b5e3a51fe05597e11c35fed08253a9da96e5bf94bedb8956252af1b4d412868"
+    },
+    {
+      "batchId": "unit-2",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "sha256": "9a1394bb0115a820feff29222792b77692e8270e3747e38009a7ed547157a67e"
+    },
+    {
+      "batchId": "unit-3",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "sha256": "1cf7d67ce4a68e6c22501f0a1f77016e33bf06abd80411be465f71fc9d040e7d"
+    },
+    {
+      "batchId": "unit-4",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "sha256": "a2a434fc12b1de877f77cf04f438d542b9ba839a1e2f92eb0a173a8562fb1d0e"
+    },
+    {
+      "batchId": "unit-5",
+      "held": 15,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 15,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
+      "sha256": "23734795e57a822d1b6fe765cce5302bf6f658d2a428ea365bd55ceaddcfd92f"
+    },
+    {
+      "batchId": "commerce-12-commerce-tamil-d9e013d8-ch-27",
+      "held": 5,
+      "counts": {
+        "approved": 0,
+        "needs_correction": 0,
+        "rejected": 0,
+        "pending": 5,
+        "invalid": 0
+      },
+      "reviewed": 0,
+      "historyEvents": 0,
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\commerce-12-commerce-tamil-d9e013d8-ch-27\\decisions.json",
+      "sha256": "a810d43e31b9cac0822f7e93d555ba060fdbe93b6e5fc2b53227543b975f4b7e"
+    }
+  ],
+  "totals": {
+    "held": 185,
+    "reviewed": 0,
+    "historyEvents": 0,
+    "pending": 185,
+    "approved": 0,
+    "needsCorrection": 0,
+    "rejected": 0
+  },
+  "studentBank": {
+    "English": 995,
+    "Tamil": 0,
+    "excludedLegacySamples": 12,
+    "publicationSnapshotSha256": "2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a",
+    "snapshotAt": "2026-10-10T15:56:21.193Z",
+    "measurement": "Hash-preserved saved snapshot, not a fresh live measurement"
+  },
+  "inventory": {
+    "pdfs": 82,
+    "pages": 24088,
+    "detectedChapters": 856,
+    "zeroPublishedDetectedEntries": 733,
+    "savedCandidateRecords": 17268,
+    "activeCandidateIds": 12682,
+    "sourceBoundedProposals": 170
+  },
+  "preservation": {
+    "file": "docs/chapter6-preservation.json",
+    "sha256": "e0f3a20b821eb3de1ea7938a94b35a094fd78dc741b222fd98df672d47bb62af",
+    "previousCandidates": 17268,
+    "previousProposals": 154,
+    "protectedFiles": 115,
+    "datedPracticeSessions": 13
+  },
+  "checks": [
+    {
+      "check": "test",
+      "exit": 0,
+      "log": ".local/ch6-test.log",
+      "sha256": "64eafc177a0b3a6c427cc4c902b833d3605fe93a56a426aaae101c74bd37b8f7"
+    },
+    {
+      "check": "typecheck",
+      "exit": 0,
+      "log": ".local/ch6-typecheck.log",
+      "sha256": "08989a064d22bb36376ecbf696f7897288f9398fd567fa454c61a7cdb4313168"
+    },
+    {
+      "check": "lint",
+      "exit": 0,
+      "log": ".local/ch6-lint.log",
+      "sha256": "759213ad82ae9b9870543699aef988be8e0fb5cea90e6a98a657e34e2e557267"
+    },
+    {
+      "check": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/ch6-mcqs-audit.log",
+      "sha256": "38a147471a235361821a5ab4364c1569c1730035681a8ac5219ecbbd292a2057"
+    },
+    {
+      "check": "mcqs-physics-review-audit",
+      "exit": 0,
+      "log": ".local/ch6-mcqs-physics-review-audit.log",
+      "sha256": "02dd76a3a3648138ce419e7c20b33e09a70faafd58c529d72d51f9cc6fb980e6"
+    },
+    {
+      "check": "mcqs-systematic-audit",
+      "exit": 0,
+      "log": ".local/ch6-mcqs-systematic-audit.log",
+      "sha256": "dc6a2a743f148342fa580f705a7e1ae7d0259d0434942bc2de46eeab511176d6"
+    },
+    {
+      "check": "build",
+      "exit": 0,
+      "log": ".local/ch6-build.log",
+      "sha256": "ce02099cb6ffc42ee0057866f0edc9b23d9419373f06fca15b331470f3ce72b5"
+    },
+    {
+      "check": "browser",
+      "exit": 0,
+      "log": ".local/ch6-browser.log",
+      "sha256": "b524100ba78ab5a5a9fc803121ac9499ab429685522d810fc9bd0dfc61342598"
+    }
+  ],
+  "fullTests": {
+    "total": 143,
+    "passed": 143,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "focusedTests": {
+    "passed": 2,
+    "failed": 0,
+    "log": ".local/ch6-focused.log",
+    "sha256": "c57236ded64881b0f776ea533e0d686a1753f722ea2c36bd21c38fab95521eb2"
+  },
+  "browserTests": {
+    "passed": 6,
+    "failed": 0,
+    "subjects": [
+      "Accountancy",
+      "Commerce",
+      "Chemistry"
+    ],
+    "viewports": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "reruns": [
+    {
+      "round": 1,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch6-rerun-1-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "b1c9226c70dfe50dcf04341087917e72c7d262e4cd82ba42ff8bd55079881287"
+    },
+    {
+      "round": 1,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch6-rerun-1-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f6467f1ca28b77ab9cd60a46bfec4202043b54702042826f10ec3228941bade8"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "added": 0,
+      "log": ".local/ch6-rerun-2-12-computer-applications-tamil-e51fbdf6.log",
+      "sha256": "b1c9226c70dfe50dcf04341087917e72c7d262e4cd82ba42ff8bd55079881287"
+    },
+    {
+      "round": 2,
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "added": 0,
+      "log": ".local/ch6-rerun-2-12-computer-technology-tamil-c66e9089.log",
+      "sha256": "f6467f1ca28b77ab9cd60a46bfec4202043b54702042826f10ec3228941bade8"
+    }
+  ],
+  "initialFailure": {
+    "log": ".local/ch6-test-initial.log",
+    "sha256": "a18ae581cf623066297c41419afed1a9023ce227df19307dc9b4b934febe599e",
+    "result": "142 passed, 1 failed. Existing browser assertion expected each image to have the first printed-page label; Q3 correctly uses printed pages 120 and 121. Fixed the assertion to verify each exact PDF/printed page and image count; app/source data unchanged."
+  },
+  "nextBatch": [
+    {
+      "bookId": "12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "chapterNumber": 7,
+      "startPdfPage": 133,
+      "provisionalExercisePdfPages": [
+        137,
+        138
+      ],
+      "requirement": "Detected inventory entry, not confirmed MCQ coverage. Inspect actual section boundary, non-MCQ formats and scoped answer evidence before extraction; keep edition/hash separate"
+    },
+    {
+      "bookId": "12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "chapterNumber": 1,
+      "startPdfPage": 7,
+      "provisionalExercisePdfPages": [
+        48,
+        49
+      ],
+      "requirement": "Detected inventory entry, not confirmed MCQ coverage. Inspect actual section boundary, non-MCQ formats and scoped answer evidence before extraction; keep edition/hash separate"
+    }
+  ],
+  "remainingIssues": [
+    "All 16 answers remain unknown; no printed key on inspected source pages; no teacher academic verification",
+    "All 16 Tamil transcriptions/options require source-faithful teacher correction",
+    "Preserve incomplete-looking PHP syntax, smart quotes, hig hello, pring and actual source duplicate Q5/Q6 without guessing corrections/answers",
+    "Chapter 4 duplicate choices and missing program remain unresolved",
+    "Zero-publication detected chapters are not a verified count of missing book-back MCQ sections"
+  ],
+  "notRun": [
+    "Full unrelated Playwright suite",
+    "Separate Unit 1 exported-manifest filesystem search",
+    "Any production query, publication, push or deployment"
+  ],
+  "resolvedTypecheckIssue": {
+    "log": ".local/ch6-typecheck-initial.log",
+    "sha256": "3ecf9c670c3c7cb2b8eea791e802baa66bf431edd83b46c1d676d0230093c2b1",
+    "result": "New inventory callback exposed an implicit reports array type. Added an explicit local inventory type; no data changed."
+  },
+  "auditFix": "Next batch recommendation now selects actual detected unprepared chapter entries, rather than inventing Technology Chapter 7 after its final theory chapter."
+}

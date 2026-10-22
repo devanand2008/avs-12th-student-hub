@@ -19,6 +19,7 @@ import {
 } from "@/types";
 import bcrypt from "bcryptjs";
 import { isTextPracticeQuestion } from "@/lib/practice-question-text";
+import { selectPracticeQuestions } from "@/lib/textbook-practice-selection";
 import { studentActivationMode } from "@/lib/auth/activation";
 import {
   normalizePhone,
@@ -953,6 +954,11 @@ export async function startQuizSession(params: {
   mode: QuizSession["mode"];
   sourceFilter?: "All" | "Book-In" | "Book-Out";
   limit?: number;
+  bookId?: string;
+  search?: string;
+  allAvailable?: boolean;
+  retrySessionId?: string;
+  retryIncorrect?: boolean;
 }): Promise<{ session: QuizSession; questions: Question[] }> {
   await ensureInit();
 
@@ -976,11 +982,33 @@ export async function startQuizSession(params: {
     );
   }
 
-  // Shuffle & slice
+  let previousIds: string[] | undefined;
+  if (params.retrySessionId) {
+    const previous = await getQuizSessionById(params.retrySessionId);
+    if (
+      !previous ||
+      previous.studentId !== params.studentId ||
+      !previous.isCompleted ||
+      previous.subjectId !== params.subjectId
+    )
+      throw new Error("Choose one of your completed attempts to retry.");
+    previousIds = previous.questionIds.filter(
+      (id) =>
+        !params.retryIncorrect ||
+        (previous.answers[id]?.selectedAnswer != null &&
+          !previous.answers[id].isCorrect),
+    );
+  }
+  availableQuestions = selectPracticeQuestions(availableQuestions, {
+    bookId: params.bookId,
+    search: params.search,
+    previousIds,
+  });
+  // Exact retries retain the original set/order; fresh attempts are randomized.
   const count =
     params.limit ||
     (params.mode === "daily10" ? 10 : params.mode === "daily25" ? 25 : 10);
-  for (let i = availableQuestions.length - 1; i > 0; i--) {
+  for (let i = previousIds ? 0 : availableQuestions.length - 1; i > 0; i--) {
     const j = randomInt(i + 1);
     [availableQuestions[i], availableQuestions[j]] = [
       availableQuestions[j],
@@ -989,7 +1017,9 @@ export async function startQuizSession(params: {
   }
   const selected = availableQuestions.slice(
     0,
-    Math.min(500, Math.max(1, count)),
+    params.allAvailable || previousIds
+      ? availableQuestions.length
+      : Math.min(500, Math.max(1, count)),
   );
   if (!selected.length)
     throw new Error(

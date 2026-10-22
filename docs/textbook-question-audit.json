@@ -1,10 +1,10 @@
 {
   "extractionVersion": 3,
-  "checkedAt": "2026-10-10T14:18:26.325Z",
+  "checkedAt": "2026-10-22T15:55:11.318Z",
   "booksAnalysed": 82,
   "verifiedQuestions": 985,
   "pendingCandidates": 11244,
-  "note": "Only readable text questions with four real choices and a matching printed key are automatically published. Damaged glyphs, ambiguous formula layouts and image-dependent questions require transcription review. No textbook page images or placeholder choices appear in practice. Missing or conflicting answers are not invented.",
+  "note": "Counts describe parser eligibility, not student publication or teacher approval. New candidates remain held for individual review, including printed-key matches. Damaged text, ambiguous formulas, figures, chapter boundaries and missing answers require source verification.",
   "books": [
     {
       "id": "12-accountancy-english-c0f4ded3",

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 .reference-gradient {
@@ -31,6 +30,31 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 @layer components {
+  .textbook-practice-workspace label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+  }
+  .textbook-practice-workspace input,
+  .textbook-practice-workspace select {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 48px;
+    margin-top: 8px;
+    padding: 11px 13px;
+    border: 1px solid #dce3ee;
+    border-radius: 10px;
+    background: #f8fafc;
+    font-size: 16px;
+    font-weight: 400;
+    color: #0f172a;
+  }
+  .textbook-practice-workspace :is(button, input, select, a) {
+    scroll-margin-block: 8rem 6rem;
+  }
   .login-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
