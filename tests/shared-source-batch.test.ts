@@ -14,6 +14,11 @@ import type { Textbook } from "../src/lib/textbooks";
 import { practiceQuestionResponse } from "../src/lib/practice-question-response";
 import type { Question } from "../src/types";
 const json = async (p: string) => JSON.parse(await fs.readFile(p, "utf8"));
+const reviewDefinitions=definitions.filter(d=>!("preparationStatus" in d)||d.preparationStatus==="source_checked");
+const expectedReviewItems=reviewDefinitions.reduce((total,d)=>total+(
+  "sourceOccurrences" in d && d.sourceOccurrences ? d.sourceOccurrences.length :
+  d.pages.reduce((n,p)=>n+("numbers" in p && Array.isArray(p.numbers) ? p.numbers.length : p.last-p.first+1),0)
+),0);
 
 test("shared source extraction across three subjects and two media is stable, retains nested statements and excludes lesson prose", async () => {
   let count=0;
@@ -49,7 +54,7 @@ test("shared source extraction across three subjects and two media is stable, re
 });
 
 test("all new source candidates have pending individual review and cannot obtain approval from unknown answers", async()=>{
-  const batches=await loadSharedSourceReviewBatches(process.cwd());assert.equal(batches.length,46);
+  const batches=await loadSharedSourceReviewBatches(process.cwd());assert(reviewDefinitions.length>0);assert.equal(batches.length,reviewDefinitions.length);
   for(const batch of batches){const manifest=reconcileManifest(batch.candidates);assert(manifest.entries.every(e=>e.decision==="pending"&&e.history.length===0));
     const c=batch.candidates[0];assert.throws(()=>recordDecision(manifest,batch.candidates,{id:c.id,expectedRevision:0,decision:"approved",notes:"Isolated test fixture only",unresolvedIssues:[],inspectedPages:requiredSourcePages(c),textConfirmed:true,keyConfirmed:true,diagramConfirmed:false,correction:{questionText:c.questionText,options:c.options,correctAnswer:"A",sourceMappingConfirmed:true}},{id:"fixture",name:"Fixture only",email:"fixture@example.test"}),/Answer evidence is unavailable/);
   }
@@ -67,7 +72,7 @@ test("all shared-source items display independently on desktop/mobile with authe
   let app:Awaited<ReturnType<typeof startLocalPhysicsReview>>|undefined;
   try{
     const account=await provisionReviewer(directory,"shared-fixture@example.test","Isolated test fixture"),password=(await fs.readFile(account.credentialsFile,"utf8")).match(/Password: (.+)/)![1];
-    const batches=await loadSharedSourceReviewBatches(root);assert.equal(batches.flatMap(b=>b.candidates).length,648);app=await startLocalPhysicsReview({root,directory,port:0});
+    const batches=await loadSharedSourceReviewBatches(root);assert(expectedReviewItems>0);assert.equal(batches.flatMap(b=>b.candidates).length,expectedReviewItems);app=await startLocalPhysicsReview({root,directory,port:0});
     for(const viewport of [{width:1440,height:1000},{width:390,height:844}]){
       const context=await browser.newContext({viewport}),page=await context.newPage(),errors:string[]=[];
       page.on("pageerror",e=>errors.push(e.message));

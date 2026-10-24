@@ -5,6 +5,7 @@ import {
   type Page,
 } from "@playwright/test";
 import { completeFirstOtp, readTestOtp } from "../helpers/otp-browser";
+import { testAppOrigin } from "../helpers/e2e-urls";
 
 type ApiOptions = NonNullable<Parameters<APIRequestContext["post"]>[1]>;
 async function api(
@@ -235,6 +236,7 @@ test("homepage, navigation and all 3D models render without runtime errors", asy
   await expect(
     page.getByRole("heading", { name: "Adenine–thymine pair", exact: true }),
   ).toBeVisible();
+  await page.getByRole("button", { name: "Resume rotation" }).click();
   await page.getByRole("button", { name: "Pause rotation" }).click();
   await page.getByRole("button", { name: "Reset view" }).click();
   await page.evaluate(() => window.scrollTo(0, 0));
@@ -511,7 +513,7 @@ test("timed-test autosave hides correctness and cross-student access is blocked"
       })
     ).status(),
   ).toBe(400);
-  const other = await browser.newContext({ baseURL: "http://127.0.0.1:3100" });
+  const other = await browser.newContext({ baseURL: testAppOrigin });
   const otherPage = await other.newPage();
   await student(otherPage, true);
   expect(
@@ -633,7 +635,7 @@ test("admin can save draft content, publish it, open the reader and archive it",
   await expect(
     page.getByRole("status").filter({ hasText: "Draft saved" }),
   ).toContainText("Draft saved");
-  const other = await browser.newContext({ baseURL: "http://127.0.0.1:3100" });
+  const other = await browser.newContext({ baseURL: testAppOrigin });
   const learner = await other.newPage();
   await student(learner);
   const unpublished = await (await api(learner, "get", "/api/notes")).json();

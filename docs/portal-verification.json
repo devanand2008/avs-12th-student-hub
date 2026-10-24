@@ -1,0 +1,229 @@
+{
+  "checkedAt": "2026-10-23T18:23:44.623Z",
+  "scope": "Local repository and loopback PostgreSQL/browser fixtures only",
+  "checks": [
+    {
+      "label": "Full unit/integration suite",
+      "key": "tests",
+      "exit": 1,
+      "log": ".local/portal-tests.log",
+      "sha256": "df0fb8949d91083bee3d088a50fd8f5cfd3650ff8316534a19b2886bc51dbd79",
+      "summary": "    expected: [        1,  2,  3,  4,  5,  6,  7,        8,  9, 10, 11, 12, 13, 14,       15, 16, 17, 18, 19, 20, 21     ],     operator: 'deepStrictEqual',     diff: 'simple'   }"
+    },
+    {
+      "label": "New concurrent AI module unit suite",
+      "key": "ai-unit",
+      "exit": 0,
+      "log": ".local/portal-ai-unit.log",
+      "sha256": "b9ca454455c643760f10265f0309d6e9f89507d8f1181c6f15ea2a150689a442",
+      "summary": "ℹ tests 4 ℹ suites 0 ℹ pass 4 ℹ fail 0 ℹ cancelled 0 ℹ skipped 0 ℹ todo 0 ℹ duration_ms 824.7499"
+    },
+    {
+      "label": "Default full Playwright clean isolated run",
+      "key": "e2e-clean",
+      "exit": 0,
+      "log": ".local/portal-e2e-clean.log",
+      "sha256": "fa4689f583187cc4cb6a38a193f4d73b7395f32ae464f791fdf701885c4aa1f2",
+      "summary": "  ok 81 [mobile] › tests\\e2e\\tamil-teacher-review.spec.ts:19:5 › Tamil medium selection, protected CSV and individual decisions retain evidence and audit history (5.1s)   ok 82 [mobile] › tests\\e2e\\teacher-review.spec.ts:25:5 › teacher saves an unpublished draft, explicitly approves, then rejects with a recorded reason (3.0s)   ok 83 [mobile] › tests\\e2e\\textbook-reader.spec.ts:38:5 › full reader renders first, next and last pages, zooms, selects text and runs with all external requests blocked (5.3s)   ok 84 [mobile] › tests\\e2e\\textbook-reader.spec.ts:126:5 › Tamil textbook full reader and unknown-book 404 work (6.0s)   ok 85 [mobile] › tests\\e2e\\textbook-reader.spec.ts:143:5 › reader download failures show a useful fallback and recover after retry (3.1s)   ok 86 [mobile] › tests\\e2e\\textbooks.spec.ts:3:5 › textbook subject links, medium filter and saved PDF route work (2.4s)   12 skipped   74 passed (8.5m)"
+    },
+    {
+      "label": "Playwright run with shared artifact collision",
+      "key": "e2e-final",
+      "exit": 1,
+      "log": ".local/portal-e2e-final.log",
+      "sha256": "c14556b24b9791fbf60972044426abb6a887d74e2859b72dc6d1d73a15c6d88e",
+      "summary": "    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────     test-results\\portal-admin-creates-a-per-3c96a-hanges-their-first-password-desktop\\test-failed-1.png     ────────────────────────────────────────────────────────────────────────────────────────────────   2 failed     [desktop] › tests\\e2e\\portal.spec.ts:479:5 › timed-test autosave hides correctness and cross-student access is blocked      [desktop] › tests\\e2e\\portal.spec.ts:989:5 › admin creates a permanent student login and student changes their first password    12 skipped   72 passed (6.8m)"
+    },
+    {
+      "label": "Default Playwright initial run",
+      "key": "e2e",
+      "exit": 1,
+      "log": ".local/portal-e2e.log",
+      "sha256": "d5a20303173827d024f67ae4d121b957ffa64e8ada543a8cdfc0399901163c57",
+      "summary": "    [desktop] › tests\\e2e\\textbook-reader.spec.ts:143:5 › reader download failures show a useful fallback and recover after retry      [mobile] › tests\\e2e\\interactive-3d.spec.ts:3:5 › 3D source filters, scalar animation, keyboard controls and empty curriculum gaps      [mobile] › tests\\e2e\\portal.spec.ts:187:5 › homepage, navigation and all 3D models render without runtime errors      [mobile] › tests\\e2e\\textbook-reader.spec.ts:38:5 › full reader renders first, next and last pages, zooms, selects text and runs with all external requests blocked      [mobile] › tests\\e2e\\textbook-reader.spec.ts:143:5 › reader download failures show a useful fallback and recover after retry      [mobile] › tests\\e2e\\textbooks.spec.ts:3:5 › textbook subject links, medium filter and saved PDF route work    12 skipped   63 passed (15.2m)"
+    },
+    {
+      "label": "Actual-book and direct-account browser",
+      "key": "direct",
+      "exit": 0,
+      "log": ".local/portal-direct.log",
+      "sha256": "04bf552fc511a5c26938a3e4962eccc874a93f404135baa07e472c81a296ba94",
+      "summary": "  ok 2 [desktop] › tests\\e2e\\direct-accounts.spec.ts:420:5 › admin reviews unknown answers and imports duplicate-safe chapter MCQs (4.3s)   ok 3 [desktop] › tests\\e2e\\independent-practice.spec.ts:20:5 › actual extracted questions across three subjects: feedback, navigation, retry, history and empty chapters (48.8s) (node:5316) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set. (Use `node --trace-warnings ...` to show where the warning was created)   ok 4 [mobile] › tests\\e2e\\direct-accounts.spec.ts:44:5 › students choose a password, sign in with email and see their profile in the admin Excel export (16.4s)   ok 5 [mobile] › tests\\e2e\\direct-accounts.spec.ts:420:5 › admin reviews unknown answers and imports duplicate-safe chapter MCQs (2.9s)   ok 6 [mobile] › tests\\e2e\\independent-practice.spec.ts:20:5 › actual extracted questions across three subjects: feedback, navigation, retry, history and empty chapters (43.2s)   6 passed (3.2m)"
+    },
+    {
+      "label": "Admin-approval browser",
+      "key": "admin",
+      "exit": 0,
+      "log": ".local/portal-admin.log",
+      "sha256": "04276ec8ec75ca9f3d39b800f556ae85bc107708a210f388e65237118478f38e",
+      "summary": "(Use `node --trace-warnings ...` to show where the warning was created)   ok 1 [desktop] › tests\\e2e\\admin-approval.spec.ts:40:5 › registration waits for admin approval, then password setup opens the learning app without SMS (10.6s)   ok 2 [desktop] › tests\\e2e\\admin-approval.spec.ts:151:5 › administrator-created students use temporary passwords and deactivation ends access (2.7s) (node:18908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set. (Use `node --trace-warnings ...` to show where the warning was created)   ok 3 [mobile] › tests\\e2e\\admin-approval.spec.ts:40:5 › registration waits for admin approval, then password setup opens the learning app without SMS (9.5s)   ok 4 [mobile] › tests\\e2e\\admin-approval.spec.ts:151:5 › administrator-created students use temporary passwords and deactivation ends access (2.6s)   4 passed (37.6s)"
+    },
+    {
+      "label": "Typecheck",
+      "key": "typecheck",
+      "exit": 0,
+      "log": ".local/portal-typecheck.log",
+      "sha256": "c61054268073fc2e96b7b61908894ea75f09f9540413408310beebcfa65a8086",
+      "summary": "> avs-12-hub@0.1.0 typecheck > tsc --noEmit"
+    },
+    {
+      "label": "Lint",
+      "key": "lint",
+      "exit": 0,
+      "log": ".local/portal-lint.log",
+      "sha256": "3aa884c9af75413f35e7b1540a7cdc3d7660fffbcaf9c74964481c25b1a7154f",
+      "summary": "> avs-12-hub@0.1.0 lint > eslint src tests scripts"
+    },
+    {
+      "label": "Production build",
+      "key": "build",
+      "exit": 0,
+      "log": ".local/portal-build.log",
+      "sha256": "32a586a61fd7f26e9bf4c28620aedeec57e50cc06266f41648adabc343ddc91f",
+      "summary": "├ ○ /subjects ├ ○ /textbook-practice ├ ƒ /textbooks ├ ƒ /textbooks/[bookId] └ ○ /videos ƒ Proxy (Middleware) ○  (Static)   prerendered as static content ƒ  (Dynamic)  server-rendered on demand"
+    },
+    {
+      "label": "All82 extraction rerun",
+      "key": "all82-rerun",
+      "exit": 0,
+      "log": ".local/portal-all82-rerun.log",
+      "sha256": "9dd6a2e8b398be677b9953c5156c0b830e3338b6cf261672f815075dae3398f0",
+      "summary": "{\"bookId\":\"12-statistics-tamil-c1143d1d\",\"pages\":296,\"candidates\":159,\"added\":0,\"sections\":0,\"held\":true} {\"bookId\":\"12-tamil-tamil-7db1698f\",\"pages\":240,\"candidates\":67,\"added\":0,\"sections\":0,\"held\":true} {\"bookId\":\"12-textile-technology-tamil-648797c8\",\"pages\":336,\"candidates\":107,\"added\":0,\"sections\":6,\"held\":true} {\"bookId\":\"12-textiles-and-dress-designing-english-1ceb8fbe\",\"pages\":288,\"candidates\":275,\"added\":0,\"sections\":15,\"held\":true} {\"bookId\":\"12-textiles-and-dress-designing-tamil-3650ec00\",\"pages\":336,\"candidates\":107,\"added\":0,\"sections\":6,\"held\":true} {\"bookId\":\"12-zoology-english-788d2d32\",\"pages\":280,\"candidates\":252,\"added\":0,\"sections\":2,\"held\":true} {\"bookId\":\"12-zoology-tamil-3c154dab\",\"pages\":336,\"candidates\":261,\"added\":0,\"sections\":0,\"held\":true} {\"discovered\":82,\"processed\":82,\"pages\":24088,\"uniqueCandidates\":12744,\"bookBackCandidates\":6311,\"chapters\":856,\"failures\":0,\"publishedNew\":0}"
+    },
+    {
+      "label": "Source-page comparison",
+      "key": "source-audit",
+      "exit": 0,
+      "log": ".local/portal-source-audit.log",
+      "sha256": "c9fe50af7f7443f0b3a96ac30589e2e7b64a2a44a7fdf2460269c25683ff5f6b",
+      "summary": "> avs-12-hub@0.1.0 mcqs:source-audit > tsx scripts/audit-textbook-source-pages.ts {\"checkedAt\":\"2026-10-23T17:24:10.127Z\",\"books\":82,\"pagesChecked\":713,\"mismatches\":0,\"method\":\"Fresh PDF.js text extraction compared exactly to saved cache for every identified exercise-start page, PDF page 8, final page and retained Electronics answer-key pages. This is a sample text/provenance check, not a visual/academic verification of every page or question.\"}"
+    },
+    {
+      "label": "MCQ parser audit",
+      "key": "mcqs-audit",
+      "exit": 0,
+      "log": ".local/portal-mcqs-audit.log",
+      "sha256": "473fbcf7347f9fdcb028b1850c1ca645a9bbab26a60ffdc19522bf50d018832b",
+      "summary": "> avs-12-hub@0.1.0 mcqs:audit > tsx scripts/audit-textbook-mcqs.ts {\"books\":82,\"verified\":985,\"pending\":11244}"
+    },
+    {
+      "label": "Extraction/decision audit",
+      "key": "progress",
+      "exit": 0,
+      "log": ".local/portal-progress.log",
+      "sha256": "5c3ac9fbcda5e3bb59269d2e3088010fc3ce2cc774096957ff7353375b26824c",
+      "summary": "> avs-12-hub@0.1.0 mcqs:progress-audit > tsx scripts/audit-extraction-progress.ts {\"pdfs\":82,\"pages\":24088,\"savedRecords\":17335,\"activeOccurrences\":12744,\"inactiveArtifacts\":4591,\"sourceBoundedOccurrences\":987,\"uniqueContentSignatures\":11562,\"duplicateOccurrencesBeyondFirst\":1182,\"activeMissingQuestionText\":0,\"activeWithoutFourNonemptyOptions\":1207,\"activeInvalidAnswerMappings\":1,\"activeMissingSourceChecksum\":0,\"activeInvalidPageReference\":0,\"answersUnknown\":10803,\"parserOrProposedAnswersKnown\":1941,\"sourceBoundedPrintedKeyMatches\":60,\"sourceBoundedTamilCorrection\":555,\"sourceBoundedOptionRecovery\":41,\"sourceBoundedDiagramVerification\":52,\"decisions\":{\"pending\":1002,\"approved\":0,\"needsCorrection\":0,\"rejected\":0,\"reviewed\":0,\"historyEvents\":0},\"bank\":{\"count\":995,\"snapshotAt\":\"2026-10-10T15:56:21.193Z\",\"snapshotSha256\":\"2b353c35dabec50c349918da09c19d2c1e74042848efaeb9163ea5a4f0f1bd8a\",\"byMedium\":{\"English\":995,\"Tamil\":0}}}"
+    },
+    {
+      "label": "Physics review audit",
+      "key": "physics-audit",
+      "exit": 0,
+      "log": ".local/portal-physics-audit.log",
+      "sha256": "de82650f92f09f3196251c8301156f59ff370c988f188f1341d9fdec7c570b67",
+      "summary": "> avs-12-hub@0.1.0 mcqs:physics-review-audit > tsx scripts/audit-physics-review-batches.ts {\"integrated\":60,\"counts\":[{\"unit\":2,\"counts\":{\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},\"reviewed\":0},{\"unit\":3,\"counts\":{\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},\"reviewed\":0},{\"unit\":4,\"counts\":{\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},\"reviewed\":0},{\"unit\":5,\"counts\":{\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},\"reviewed\":0}],\"overlap\":2,\"exportAudit\":null}"
+    },
+    {
+      "label": "Teacher decision audit",
+      "key": "decisions",
+      "exit": 0,
+      "log": ".local/portal-decisions.log",
+      "sha256": "a32780e9ccec9425ab8bab97e8923d11d3fb662811fb9730f97cfbd5f2ab5e5f",
+      "summary": "> avs-12-hub@0.1.0 mcqs:decision-audit > tsx scripts/audit-local-teacher-decisions.ts {\"exportLocated\":false,\"storeValid\":true,\"localCounts\":{\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},\"localReviewed\":0,\"historyEvents\":0,\"confirmedHandoffRecords\":0,\"packageReady\":false}"
+    },
+    {
+      "label": "Systematic coverage audit",
+      "key": "systematic",
+      "exit": 0,
+      "log": ".local/portal-systematic.log",
+      "sha256": "4288412dec467fd30f51ae474d8eb62a97c55a9d6386a8bfacec922b80fab113",
+      "summary": "{\"pdfs\":82,\"chapters\":856,\"zeroPublished\":733,\"bank\":{\"English\":995,\"Tamil\":0},\"batch\":927,\"knownAnswers\":11,\"decisions\":[{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":12,\"invalid\":0},{\"subject\":\"Computer Technology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":12,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Technology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":14,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":9,\"invalid\":0},{\"subject\":\"Computer Technology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Technology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":12,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":9,\"invalid\":0},{\"subject\":\"Computer Technology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":7,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":9,\"invalid\":0},{\"subject\":\"Computer Technology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":12,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":11,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":16,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":12,\"invalid\":0},{\"subject\":\"Computer Applications\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Science\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Computer Science\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Commerce\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":5,\"invalid\":0},{\"subject\":\"History\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":13,\"invalid\":0},{\"subject\":\"History\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":8,\"invalid\":0},{\"subject\":\"History\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":9,\"invalid\":0},{\"subject\":\"History\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":13,\"invalid\":0},{\"subject\":\"History\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":8,\"invalid\":0},{\"subject\":\"Microbiology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":5,\"invalid\":0},{\"subject\":\"Microbiology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Microbiology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Political Science\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},{\"subject\":\"Political Science\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":19,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":20,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":20,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":13,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":22,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":22,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":12,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":8,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":18,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":16,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":16,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":8,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":21,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":21,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":17,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":14,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":14,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":10,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":11,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":11,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":22,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":18,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":18,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":22,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":14,\"invalid\":0},{\"subject\":\"Bio-Botany\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":14,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":16,\"invalid\":0},{\"subject\":\"Bio-Zoology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":5,\"invalid\":0},{\"subject\":\"Bio-Zoology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":5,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":13,\"invalid\":0},{\"subject\":\"Bio-Zoology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":16,\"invalid\":0},{\"subject\":\"Bio-Zoology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":16,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":15,\"invalid\":0},{\"subject\":\"Bio-Zoology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":8,\"invalid\":0},{\"subject\":\"Bio-Zoology\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":8,\"invalid\":0},{\"subject\":\"Basic Electrical Engineering\",\"approved\":0,\"needs_correction\":0,\"rejected\":0,\"pending\":18,\"invalid\":0}],\"exportValid\":null}"
+    },
+    {
+      "label": "Resource audit",
+      "key": "resources-audit",
+      "exit": 0,
+      "log": ".local/portal-resources-audit.log",
+      "sha256": "7f7ca0583549b17fb048b7aad4ec2cfca5ead43c48a61121bbc83c5fa106595e",
+      "summary": "> avs-12-hub@0.1.0 resources:audit > tsx scripts/audit-study-resources.ts {\"counts\":{\"total\":103,\"listed\":17,\"temporary\":86,\"unavailable\":0,\"retired\":0},\"categories\":[{\"category\":\"question-papers\",\"total\":6,\"listed\":5,\"temporary\":1,\"unavailable\":0,\"retired\":0},{\"category\":\"learning-materials\",\"total\":86,\"listed\":4,\"temporary\":82,\"unavailable\":0,\"retired\":0},{\"category\":\"video-lessons\",\"total\":11,\"listed\":8,\"temporary\":3,\"unavailable\":0,\"retired\":0}],\"newPdfCopies\":0}"
+    },
+    {
+      "label": "Diff whitespace check",
+      "key": "diff-check",
+      "exit": 0,
+      "log": ".local/portal-diff-check.log",
+      "sha256": "57bec1be378ce8ec8f8179ac934a6392a122d2efc9d60bf156dee1973adfa46d",
+      "summary": "warning: in the working copy of 'scripts/data/shared-source-sections.json', CRLF will be replaced by LF the next time Git touches it warning: in the working copy of 'tsconfig.json', CRLF will be replaced by LF the next time Git touches it"
+    },
+    {
+      "label": "Dependency audit",
+      "key": "npm-audit",
+      "exit": 1,
+      "log": ".local/portal-npm-audit.json",
+      "sha256": "19d551f0e58c9f69e73060dc29caea50b2d4c4dcc34aa144a918612a318b54fc",
+      "summary": "      \"dev\": 411,       \"optional\": 127,       \"peer\": 0,       \"peerOptional\": 0,       \"total\": 682     }   } }"
+    },
+    {
+      "label": "Chapter 2/3/4 reconciliation regression (7 passed)",
+      "exit": 0,
+      "log": ".local/final-lab-focused-final.log",
+      "sha256": "aadeb9681a55419c5004ec28b30fea8d7e0b143ddf442223dc1185b99943151c",
+      "summary": "\u00009! \u0000s\u0000u\u0000i\u0000t\u0000e\u0000s\u0000 \u00000\u0000\r\u0000 \u00009! \u0000p\u0000a\u0000s\u0000s\u0000 \u00007\u0000\r\u0000 \u00009! \u0000f\u0000a\u0000i\u0000l\u0000 \u00000\u0000\r\u0000 \u00009! \u0000c\u0000a\u0000n\u0000c\u0000e\u0000l\u0000l\u0000e\u0000d\u0000 \u00000\u0000\r\u0000 \u00009! \u0000s\u0000k\u0000i\u0000p\u0000p\u0000e\u0000d\u0000 \u00000\u0000\r\u0000 \u00009! \u0000t\u0000o\u0000d\u0000o\u0000 \u00000\u0000\r\u0000 \u00009! \u0000d\u0000u\u0000r\u0000a\u0000t\u0000i\u0000o\u0000n\u0000_\u0000m\u0000s\u0000 \u00007\u00000\u00003\u00004\u00003\u0000.\u00002\u00002\u00002\u00003\u0000\r\u0000 \u0000"
+    },
+    {
+      "label": "Final gallery (4 passed)",
+      "exit": 0,
+      "log": ".local/portal-gallery.log",
+      "sha256": "5b238dd49869e23fb8c336813ddf301fb25faaee42420e321860ea1c4d45c955",
+      "summary": "  ok 1 [desktop] › tests\\e2e\\interactive-3d.spec.ts:3:5 › 3D source filters, scalar animation, keyboard controls and empty curriculum gaps (6.6s)   ok 2 [desktop] › tests\\e2e\\interactive-3d.spec.ts:66:5 › 3D reduced motion and unavailable WebGL retain an accessible description (2.2s) (node:2324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set. (Use `node --trace-warnings ...` to show where the warning was created)   ok 3 [mobile] › tests\\e2e\\interactive-3d.spec.ts:3:5 › 3D source filters, scalar animation, keyboard controls and empty curriculum gaps (4.3s)   ok 4 [mobile] › tests\\e2e\\interactive-3d.spec.ts:66:5 › 3D reduced motion and unavailable WebGL retain an accessible description (2.3s)    4 passed (26.4s)"
+    },
+    {
+      "label": "Source lifecycle (1 passed)",
+      "exit": 0,
+      "log": ".local/portal-lifecycle.log",
+      "sha256": "b088332e51ee606ae8a13b2fff025a99c2bc30c3523776db671086fa4ec771e4",
+      "summary": "ℹ tests 1 ℹ suites 0 ℹ pass 1 ℹ fail 0 ℹ cancelled 0 ℹ skipped 0 ℹ todo 0 ℹ duration_ms 910.0434"
+    },
+    {
+      "label": "Latest integrity audit",
+      "exit": 0,
+      "log": ".local/portal-integrity-final.log",
+      "sha256": "ca95495e30b095b667e3d9f605ef83d1b8a0d61757947c48a1810fa714ab7edc",
+      "summary": "> avs-12-hub@0.1.0 mcqs:portal-integrity > tsx scripts/audit-portal-integrity.ts  {\"at\":\"2026-10-23T18:20:10.352Z\",\"baselineAt\":\"2026-10-23T17:03:47.557Z\",\"preserved\":17329,\"preservedProposals\":953,\"protectedFiles\":468,\"added\":[\"textbook-bounded-12-basic-electrical-engineering-tamil-029f513a-b8a06fec93505ff3\",\"textbook-bounded-12-bio-zoology-english-7e848813-9f6b901d8073a8e8\",\"textbook-bounded-12-bio-zoology-english-7e848813-2bfa576356f19f3c\",\"textbook-bounded-12-bio-zoology-english-7e848813-6a5c8c90e059ac7b\",\"textbook-bounded-12-bio-zoology-english-7e848813-1768cb37df5253e8\",\"textbook-bounded-12-bio-zoology-english-7e848813-0850e6a27d3bae29\",\"textbook-bounded-12-bio-zoology-tamil-2631f8e3-5534d4c744e2fb5f\",\"textbook-bounded-12-bio-zoology-tamil-2631f8e3-60a07e9b0955d998\",\"textbook-bounded-12-bio-zoology-tamil-2631f8e3-eb175cdd92fd2c90\"],\"errors\":[]}"
+    }
+  ],
+  "integrity": {
+    "at": "2026-10-23T18:20:10.352Z",
+    "baselineAt": "2026-10-23T17:03:47.557Z",
+    "preserved": 17329,
+    "preservedProposals": 953,
+    "protectedFiles": 468,
+    "added": [
+      "textbook-bounded-12-basic-electrical-engineering-tamil-029f513a-b8a06fec93505ff3",
+      "textbook-bounded-12-bio-zoology-english-7e848813-9f6b901d8073a8e8",
+      "textbook-bounded-12-bio-zoology-english-7e848813-2bfa576356f19f3c",
+      "textbook-bounded-12-bio-zoology-english-7e848813-6a5c8c90e059ac7b",
+      "textbook-bounded-12-bio-zoology-english-7e848813-1768cb37df5253e8",
+      "textbook-bounded-12-bio-zoology-english-7e848813-0850e6a27d3bae29",
+      "textbook-bounded-12-bio-zoology-tamil-2631f8e3-5534d4c744e2fb5f",
+      "textbook-bounded-12-bio-zoology-tamil-2631f8e3-60a07e9b0955d998",
+      "textbook-bounded-12-bio-zoology-tamil-2631f8e3-eb175cdd92fd2c90"
+    ],
+    "errors": []
+  },
+  "coverageCounts": {
+    "registeredPdfs": 82,
+    "subjects": 40,
+    "englishPdfs": 40,
+    "tamilPdfs": 42,
+    "physicalTextbookPdfs": 82,
+    "otherSourcePdfs": 13,
+    "pages": 24088,
+    "saved": 17338,
+    "active": 12747,
+    "proposals": 1044,
+    "provisionalChapters": 856,
+    "eligibleSnapshot": 995,
+    "teacherReviewed": 0,
+    "historyEvents": 0
+  }
+}

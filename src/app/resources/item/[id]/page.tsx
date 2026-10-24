@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { studyResources } from "@/lib/study-resources";
+import {
+  studyResources,
+  resourceCurriculumReferences,
+} from "@/lib/study-resources";
 import ResourcePlayer from "@/components/resources/ResourcePlayer";
 export default async function ResourceDetail({
   params,
@@ -15,7 +18,7 @@ export default async function ResourceDetail({
   if (!r) notFound();
   const back =
     returnTo &&
-    /^\/resources\/(?:question-papers|learning-materials|video-lessons|temporary)(?:\?[^#]*)?$/.test(
+    /^\/resources\/(?:all|question-papers|learning-materials|video-lessons|temporary)(?:\?[^#]*)?$/.test(
       returnTo,
     )
       ? returnTo
@@ -83,6 +86,17 @@ export default async function ResourceDetail({
             Medium: r.mediums.join(" / "),
             Year: r.year ?? "Not specified",
             Session: r.session ?? "Not specified",
+            Chapter: r.chapter ?? "Chapter mapping not verified",
+            "Textbook volumes":
+              [
+                ...new Set(
+                  resourceCurriculumReferences(r).map(
+                    (b) =>
+                      `${b.subject} (${b.medium})${b.volume ? ` — Volume ${b.volume}` : ""}`,
+                  ),
+                ),
+              ].join(", ") || "Not mapped",
+            "First recorded": r.history[0].at.slice(0, 10),
             Board: r.board ?? "Not specified",
             Source: r.publisher,
             "Last source check": r.checkedAt.slice(0, 10),
@@ -136,6 +150,23 @@ export default async function ResourceDetail({
           )}
         </div>
       </section>
+      {r.markFormats.length > 0 && (
+        <section className="rounded-2xl border border-blue-100 bg-white p-6">
+          <h2 className="font-bold">Printed question formats</h2>
+          <p className="mt-2 text-sm text-slate-600">
+            These are sections within the original PDF, not separately extracted
+            question banks. No other subject or medium format is implied.
+          </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5 text-sm">
+            {r.markFormats.map((f) => (
+              <li key={`${f.subject}-${f.medium}-${f.marks}-${f.pdfPage}`}>
+                {f.subject} · {f.medium} · {f.marks} mark(s) per question · PDF
+                page {f.pdfPage}: {f.evidence}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {r.issues.length > 0 && (
         <section className="rounded-2xl bg-blue-50 p-6">
           <h2 className="font-bold">Source notes</h2>

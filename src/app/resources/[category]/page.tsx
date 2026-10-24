@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ResourceCard from "@/components/resources/ResourceCard";
+import { resourceCategories, visibleResources } from "@/lib/study-resources";
 import {
-  resourceCategories,
-  resourceSubjects,
-  visibleResources,
-} from "@/lib/study-resources";
-import { resourceMatches } from "@/lib/study-resource-schema";
+  resourceMatches,
+  resourceFilterChoices,
+} from "@/lib/study-resource-schema";
 
 export default async function ResourceList({
   params,
@@ -18,28 +17,33 @@ export default async function ResourceList({
   const { category } = await params,
     query = await searchParams,
     temporary = category === "temporary",
+    all = category === "all",
     definition = resourceCategories.find((c) => c.id === category);
-  if (!temporary && !definition) notFound();
+  if (!temporary && !all && !definition) notFound();
   const filters = Object.fromEntries(
-    ["q", "subject", "medium", "year", "type", "source"].map((key) => [
-      key,
-      typeof query[key] === "string" ? query[key] : "",
-    ]),
+    [
+      "q",
+      "subject",
+      "medium",
+      "year",
+      "type",
+      "source",
+      "chapter",
+      "marks",
+      "rights",
+    ].map((key) => [key, typeof query[key] === "string" ? query[key] : ""]),
   ) as Record<string, string>;
   const scope = visibleResources.filter((r) =>
-      temporary
-        ? r.status === "temporary_unverified"
-        : r.category === category && r.status === "listed",
+      all
+        ? true
+        : temporary
+          ? r.status === "temporary_unverified"
+          : r.category === category && r.status === "listed",
     ),
     filtered = scope.filter((r) => resourceMatches(r, filters));
   const url = new URLSearchParams(Object.entries(filters).filter(([, v]) => v)),
     returnTo = `/resources/${category}${url.size ? "?" + url : ""}`;
-  const choices = (key: "mediums" | "resourceType" | "publisher") =>
-    [
-      ...new Set(
-        scope.flatMap((r) => (key === "mediums" ? r.mediums : [r[key]])),
-      ),
-    ].sort();
+  const choices = resourceFilterChoices(scope, filters);
   const select = (key: string, label: string, values: (string | number)[]) => (
     <label className="space-y-2 text-xs font-bold text-slate-700" key={key}>
       <span>{label}</span>
@@ -69,7 +73,7 @@ export default async function ResourceList({
         <Link href="/resources">Study Resources</Link>
         <span>/</span>
         <span className="text-slate-600">
-          {temporary ? "Temporary" : definition!.title}
+          {all ? "All Resources" : temporary ? "Temporary" : definition!.title}
         </span>
       </nav>
       <header>
@@ -77,12 +81,18 @@ export default async function ResourceList({
           Skill Up library
         </p>
         <h1 className="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">
-          {temporary ? "Temporary Learning Resources" : definition!.title}
+          {all
+            ? "All Study Resources"
+            : temporary
+              ? "Temporary Learning Resources"
+              : definition!.title}
         </h1>
         <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
-          {temporary
-            ? "Temporary learning resource. Source relevance and availability may not yet be fully verified. Opens an external educational service."
-            : definition!.description}
+          {all
+            ? "Browse every available resource in the collection. Items awaiting verification keep their temporary labels; check their original source before relying on them."
+            : temporary
+              ? "Temporary learning resource. Source relevance and availability may not yet be fully verified. Opens an external educational service."
+              : definition!.description}
         </p>
         {category === "question-papers" && (
           <p className="mt-2 text-sm text-slate-600">
@@ -106,18 +116,22 @@ export default async function ResourceList({
             className="w-full rounded-xl border border-slate-300 p-3 text-sm font-normal"
           />
         </label>
-        {select("subject", "Subjects", resourceSubjects)}
-        {select("medium", "Mediums", choices("mediums"))}
-        {category === "question-papers" &&
-          select(
-            "year",
-            "Years",
-            [...new Set(scope.flatMap((r) => (r.year ? [r.year] : [])))].sort(
-              (a, b) => b - a,
-            ),
-          )}
-        {select("type", "Types", choices("resourceType"))}
-        {select("source", "Sources", choices("publisher"))}
+        {select("subject", "Subjects", choices.subjects)}
+        {select("medium", "Mediums", choices.mediums)}
+        {choices.years.length > 0 && select("year", "Years", choices.years)}
+        {select("type", "Types", choices.types)}
+        {select("source", "Sources", choices.sources)}
+        {select("rights", "Rights", choices.rights)}
+        {choices.chapters.length > 0 &&
+          select("chapter", "Chapters", choices.chapters)}
+        {choices.marks.length > 0 &&
+          select("marks", "Marks per question", choices.marks)}
+        <p className="text-xs leading-5 text-slate-600 sm:col-span-2 lg:col-span-4">
+          Chapter and mark filters appear only where source evidence is
+          recorded. Mark filters identify printed sections inside a resource,
+          not separate question banks. Select a subject and apply filters to
+          narrow the available formats.
+        </p>
         <div className="flex items-end gap-4">
           <button className="rounded-xl bg-blue-700 px-5 py-3 text-sm font-bold text-white hover:bg-blue-800">
             Apply filters

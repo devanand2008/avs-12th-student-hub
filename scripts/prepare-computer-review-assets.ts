@@ -6,7 +6,7 @@ import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 import { createCanvas } from "@napi-rs/canvas";
 import definitions from "./data/computer-source-sections.json";
 import commerce from "./data/commerce-source-section.json";
-import sharedDefinitions from "./data/shared-source-sections.json";
+import { readySourceDefinitions as sharedDefinitions } from "./lib/shared-source-definitions";
 import figureRegions from "./data/shared-review-source-regions.json";
 import { sourceFigureFile } from "./lib/source-figure-file";
 

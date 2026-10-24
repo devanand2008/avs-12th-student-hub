@@ -4,6 +4,7 @@ import type { ModelId } from "@/lib/models";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { scienceGeometry } from "./science-geometry";
 
 interface Props {
   model: ModelId;
@@ -11,6 +12,7 @@ interface Props {
   rotating: boolean;
   resetKey: number;
   onSelect: (part: string) => void;
+  vectorScale?: number;
 }
 
 export default function ModelCanvas({
@@ -19,13 +21,14 @@ export default function ModelCanvas({
   rotating,
   resetKey,
   onSelect,
+  vectorScale = 1,
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
-  const preferences = useRef({ selected, rotating, onSelect });
+  const preferences = useRef({ selected, rotating, onSelect, vectorScale });
   const [failed, setFailed] = useState(false);
   useEffect(() => {
-    preferences.current = { selected, rotating, onSelect };
-  }, [selected, rotating, onSelect]);
+    preferences.current = { selected, rotating, onSelect, vectorScale };
+  }, [selected, rotating, onSelect, vectorScale]);
 
   useEffect(() => {
     const container = host.current;
@@ -56,6 +59,32 @@ export default function ModelCanvas({
     controls.enablePan = false;
     controls.minDistance = 6;
     controls.maxDistance = 18;
+    renderer.domElement.tabIndex = 0;
+    renderer.domElement.setAttribute("role", "img");
+    const keyboard = (event: KeyboardEvent) => {
+      const angle = 0.12;
+      if (["ArrowLeft", "ArrowRight"].includes(event.key)) {
+        camera.position.applyAxisAngle(
+          new THREE.Vector3(0, 1, 0),
+          event.key === "ArrowLeft" ? -angle : angle,
+        );
+      } else if (["ArrowUp", "ArrowDown"].includes(event.key)) {
+        camera.position.y = THREE.MathUtils.clamp(
+          camera.position.y + (event.key === "ArrowUp" ? 0.5 : -0.5),
+          -8,
+          8,
+        );
+      } else if (["+", "=", "-"].includes(event.key)) {
+        camera.position.multiplyScalar(event.key === "-" ? 1.1 : 0.9);
+        camera.position.clampLength(controls.minDistance, controls.maxDistance);
+      } else if (event.key === "Home") {
+        camera.position.set(0, 1.1, 11);
+        controls.target.set(0, 0, 0);
+      } else return;
+      event.preventDefault();
+      controls.update();
+    };
+    renderer.domElement.addEventListener("keydown", keyboard);
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     scene.add(new THREE.HemisphereLight(0xffffff, 0x475569, 2.8));
     const light = new THREE.DirectionalLight(0xffffff, 3.5);
@@ -115,7 +144,32 @@ export default function ModelCanvas({
       group.add(mesh);
       meshes.push(mesh);
     }
-    if (model === "dna") {
+    if (model === "vectors") {
+      const origin = new THREE.Vector3(-1, -1, 0);
+      for (const [part, end, color] of [
+        ["x", new THREE.Vector3(3, 0, 0), 0xef4444],
+        ["y", new THREE.Vector3(0, 3, 0), 0x22c55e],
+        ["z", new THREE.Vector3(0, 0, 3), 0x3b82f6],
+        ["vector", new THREE.Vector3(2, 2, 1), 0xa855f7],
+      ] as const) {
+        const endpoint = origin.clone().add(end);
+        link(origin, endpoint, color, part, 0.045);
+        if (part === "vector") meshes.at(-1)!.userData.vectorShaft = true;
+        const tip = new THREE.Mesh(
+          new THREE.ConeGeometry(0.13, 0.35, 16),
+          new THREE.MeshStandardMaterial({ color }),
+        );
+        tip.position.copy(endpoint);
+        tip.quaternion.setFromUnitVectors(
+          new THREE.Vector3(0, 1, 0),
+          end.clone().normalize(),
+        );
+        tip.userData.part = part;
+        tip.userData.vectorTip = part === "vector";
+        group.add(tip);
+        meshes.push(tip);
+      }
+    } else if (model === "dna") {
       for (let i = 0; i < 24; i++) {
         const angle = (i * Math.PI) / 5.5;
         const y = (i - 11.5) * 0.22;
@@ -196,7 +250,7 @@ export default function ModelCanvas({
         chloroplast.rotation.z = 0.5;
       }
       group.rotation.y = -0.4;
-    } else {
+    } else if (model === "tree") {
       const nodes = [
         { v: 50, x: 0, y: 1.9, z: 0, p: "root" },
         { v: 25, x: -1.35, y: 0.25, z: 0.15, p: "left" },
@@ -248,6 +302,8 @@ export default function ModelCanvas({
         }
       });
     }
+    if (!["dna", "cell", "tree", "vectors"].includes(model))
+      scienceGeometry(model, group, meshes, sphere, link);
     const raycaster = new THREE.Raycaster();
     let pointerStart = { x: 0, y: 0 };
     const down = (event: PointerEvent) => {
@@ -300,6 +356,17 @@ export default function ModelCanvas({
       controls.autoRotateSpeed = 0.7;
       controls.update(delta);
       meshes.forEach((mesh) => {
+        if (mesh.userData.vectorShaft || mesh.userData.vectorTip) {
+          const t = preferences.current.vectorScale;
+          mesh.visible = t > 0;
+          const endpoint = new THREE.Vector3(2, 2, 1).multiplyScalar(t);
+          mesh.position.copy(
+            new THREE.Vector3(-1, -1, 0).add(
+              endpoint.multiplyScalar(mesh.userData.vectorShaft ? 0.5 : 1),
+            ),
+          );
+          if (mesh.userData.vectorShaft) mesh.scale.y = t;
+        }
         const material = mesh.material as THREE.MeshStandardMaterial;
         material.emissive.set(
           mesh.userData.part === preferences.current.selected
@@ -317,6 +384,7 @@ export default function ModelCanvas({
       controls.dispose();
       renderer.domElement.removeEventListener("pointerdown", down);
       renderer.domElement.removeEventListener("pointerup", pick);
+      renderer.domElement.removeEventListener("keydown", keyboard);
       group.traverse((object) => {
         if (object instanceof THREE.Mesh) {
           object.geometry.dispose();

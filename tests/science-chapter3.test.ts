@@ -39,7 +39,7 @@ test('Chapter 3 distinguishes numbered premises, decimal 0.09, matching tables, 
 
 test('Chapter 3 isolated individual corrections preserve actor/history and cannot turn unknown answers into approval',async()=>{
  const directory=await fs.mkdtemp(path.join(os.tmpdir(),'skillup-science-ch3-decision-fixture-'));
- try{const batches=(await loadSharedSourceReviewBatches(process.cwd())).filter(b=>b.unit===3&&/bio-botany|basic-electrical/.test(b.id));assert.equal(batches.length,3);
+ try{const batches=(await loadSharedSourceReviewBatches(process.cwd())).filter(b=>b.unit===3&&/bio-botany|basic-electrical-engineering-english/.test(b.id));assert.equal(batches.length,3);
   for(const b of batches){const c=b.candidates.find(c=>c.number===(b.id.includes('electrical')?8:b.id.includes('tamil')?2:3))!,manifest=reconcileManifest(b.candidates),reviewer={id:'isolated-fixture',name:'Isolated fixture only',email:'fixture@example.test'};
    const input={id:c.id,expectedRevision:0,decision:'approved' as const,notes:'Isolated fixture; not an authentic teacher decision',unresolvedIssues:[],inspectedPages:requiredSourcePages(c),textConfirmed:true,keyConfirmed:true,diagramConfirmed:true,correction:{questionText:c.questionText,options:c.options,correctAnswer:'A' as const,sourceMappingConfirmed:true}};
    assert.throws(()=>recordDecision(manifest,b.candidates,input,reviewer),/Answer evidence is unavailable/);

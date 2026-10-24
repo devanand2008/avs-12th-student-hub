@@ -303,7 +303,7 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
     assert.equal(
       (await db.saveQuizAnswers(started.session.id, { [question.id]: "B" }))!
         .answers[question.id].isCorrect,
-      false,
+      true,
     );
     assert.equal(
       (await db.saveQuizAnswers(started.session.id, { [question.id]: "A" }))!

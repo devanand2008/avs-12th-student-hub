@@ -1,4 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
+import { testFixtureOrigin, testAppOrigin } from "../helpers/e2e-urls";
 import { createClient } from "@supabase/supabase-js";
 import { readFile } from "node:fs/promises";
 import catalog from "../../src/lib/textbooks-catalog.json";
@@ -20,7 +21,7 @@ test("Tamil medium selection, protected CSV and individual decisions retain evid
   browser,
 }, info) => {
   // This client is deliberately pinned to the isolated test fixture, never Supabase production.
-  const client = createClient("http://127.0.0.1:3101", "qa-service-key", {
+  const client = createClient(testFixtureOrigin, "qa-service-key", {
     auth: { persistSession: false },
   });
   const book = catalog.books.find(
@@ -169,13 +170,13 @@ test("Tamil medium selection, protected CSV and individual decisions retain evid
   expect(
     (
       await anonymous.request.get(
-        "http://127.0.0.1:3100/api/admin/textbook-questions/export?medium=Tamil",
+        `${testAppOrigin}/api/admin/textbook-questions/export?medium=Tamil`,
       )
     ).status(),
   ).toBe(401);
   await anonymous.close();
   const student = await browser.newContext({
-    baseURL: "http://127.0.0.1:3100",
+    baseURL: testAppOrigin,
   });
   const studentPage = await student.newPage();
   expect(

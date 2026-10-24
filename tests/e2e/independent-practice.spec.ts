@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { testFixtureOrigin } from "../helpers/e2e-urls";
 import { createClient } from "@supabase/supabase-js";
 import { existsSync, readFileSync } from "node:fs";
 import catalog from "../../src/lib/textbooks-catalog.json";
@@ -21,7 +22,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
 }, info) => {
   test.setTimeout(240000);
   const snapshot = JSON.parse(readFileSync(snapshotPath, "utf8"));
-  const client = createClient("http://127.0.0.1:3101", "qa-service-key", {
+  const client = createClient(testFixtureOrigin, "qa-service-key", {
     auth: { persistSession: false },
   });
   const errors: string[] = [];
@@ -335,6 +336,9 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     };
     const correct = correctFor(quiz.questions[0]);
     await select(correct === "A" ? "B" : "A", false);
+    await page.getByRole("button", { name: "Clear answer", exact: true }).click();
+    await expect(page.locator('input[type="radio"]:checked')).toHaveCount(0);
+    await select(correct === "A" ? "B" : "A", false);
     await expect(page.getByText(`Incorrect. The correct answer is Option ${correct}.`)).not.toBeVisible();
     await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
     const unanswered = await (await get(`/api/practice/session?id=${quiz.session.id}`)).json();
@@ -356,9 +360,11 @@ test("actual extracted questions across three subjects: feedback, navigation, re
         .nth("ABCD".indexOf(correct))
         .locator(".."),
     ).toHaveClass(/border-emerald-500/);
-    await select(correct);
-    await select(correct);
-    await expect(page.getByText("Marks: 1 / 3")).toBeVisible();
+    await expect(page.getByRole("radio").nth("ABCD".indexOf(correct))).toBeDisabled();
+    await expect(page.getByRole("button", { name: "Submit Answer", exact: true })).toBeDisabled();
+    const resubmission = await authRequest(page, "/api/practice/answer", { sessionId: quiz.session.id, questionId: quiz.questions[0].id, answer: correct });
+    expect((await resubmission.json()).savedAnswer.isCorrect).toBe(false);
+    await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
     await page
       .getByRole("button", { name: "Next Question", exact: true })
       .click();
@@ -369,14 +375,14 @@ test("actual extracted questions across three subjects: feedback, navigation, re
     await page.reload();
     await expect(page.getByTestId("question-text")).toHaveText(quiz.questions[1].questionText);
     await expect(page.getByRole("radio").nth("ABCD".indexOf(wrong))).toBeChecked();
-    await expect(page.getByText("Marks: 1 / 3")).toBeVisible();
+    await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
     const restoredAnswers = await (await get(`/api/practice/session?id=${quiz.session.id}`)).json();
     expect(restoredAnswers.questions.find((q: Question) => q.id === quiz.questions[2].id).correctAnswer).toBeUndefined();
     await page.getByRole("button", { name: "Previous", exact: true }).click();
     await expect(
-      page.getByRole("radio").nth("ABCD".indexOf(correct)),
+      page.getByRole("radio").nth("ABCD".indexOf(correct === "A" ? "B" : "A")),
     ).toBeChecked();
-    await expect(page.getByText("Marks: 1 / 3")).toBeVisible();
+    await expect(page.getByText("Marks: 0 / 3")).toBeVisible();
     const finished = page.waitForResponse((response) =>
       response.url().endsWith("/api/practice/submit"),
     );
@@ -390,7 +396,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
       result.session.wrongCount,
       result.session.unansweredCount,
       result.accuracy,
-    ]).toEqual([1, 1, 1, 1, 33]);
+    ]).toEqual([0, 0, 2, 1, 0]);
     completed++;
     const again = await authRequest(page, "/api/practice/submit", {
       sessionId: quiz.session.id,
@@ -398,7 +404,7 @@ test("actual extracted questions across three subjects: feedback, navigation, re
         quiz.questions.map((question) => [question.id, correctFor(question)]),
       ),
     });
-    expect((await again.json()).session.score).toBe(1);
+    expect((await again.json()).session.score).toBe(0);
     await expect(
       page.getByRole("heading", { name: "Practice Performance Summary" }),
     ).toBeVisible();

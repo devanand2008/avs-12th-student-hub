@@ -5,7 +5,9 @@
 !.env.example
 node_modules
 .next
+.next-portal
 out
+output
 coverage
 playwright-report
 test-results

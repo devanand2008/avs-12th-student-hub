@@ -1,19 +1,19 @@
 {
-  "checkedAt": "2026-10-22T17:34:46.044Z",
+  "checkedAt": "2026-10-23T18:22:49.369Z",
   "scope": "Local validated registry; no production access or automatic curation decisions",
   "counts": {
-    "total": 99,
-    "listed": 16,
-    "temporary": 83,
+    "total": 103,
+    "listed": 17,
+    "temporary": 86,
     "unavailable": 0,
     "retired": 0
   },
   "categories": [
     {
       "category": "question-papers",
-      "total": 4,
-      "listed": 4,
-      "temporary": 0,
+      "total": 6,
+      "listed": 5,
+      "temporary": 1,
       "unavailable": 0,
       "retired": 0
     },
@@ -27,9 +27,9 @@
     },
     {
       "category": "video-lessons",
-      "total": 9,
+      "total": 11,
       "listed": 8,
-      "temporary": 1,
+      "temporary": 3,
       "unavailable": 0,
       "retired": 0
     }
@@ -526,9 +526,9 @@
         },
         {
           "category": "video-lessons",
-          "total": 0,
+          "total": 2,
           "listed": 0,
-          "temporary": 0,
+          "temporary": 2,
           "unavailable": 0,
           "retired": 0
         }
@@ -1156,9 +1156,9 @@
       "categories": [
         {
           "category": "question-papers",
-          "total": 4,
-          "listed": 4,
-          "temporary": 0,
+          "total": 6,
+          "listed": 5,
+          "temporary": 1,
           "unavailable": 0,
           "retired": 0
         },
@@ -1183,7 +1183,9 @@
         2023,
         2024,
         2025,
-        2026
+        2026,
+        2022,
+        2021
       ]
     },
     {
@@ -1261,9 +1263,9 @@
       "categories": [
         {
           "category": "question-papers",
-          "total": 4,
-          "listed": 4,
-          "temporary": 0,
+          "total": 6,
+          "listed": 5,
+          "temporary": 1,
           "unavailable": 0,
           "retired": 0
         },
@@ -1288,7 +1290,9 @@
         2023,
         2024,
         2025,
-        2026
+        2026,
+        2022,
+        2021
       ]
     },
     {
@@ -1434,7 +1438,9 @@
         "Tamil"
       ],
       "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
-      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2023_Mar_HSE_II.pdf"
+      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2023_Mar_HSE_II.pdf",
+      "status": "listed",
+      "markFormats": []
     },
     {
       "id": "dge-hse2-march-2024",
@@ -1477,7 +1483,9 @@
         "Tamil"
       ],
       "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
-      "pdfUrl": "https://tnegadge.s3.amazonaws.com/notification/questbank/2200420242.pdf"
+      "pdfUrl": "https://tnegadge.s3.amazonaws.com/notification/questbank/2200420242.pdf",
+      "status": "listed",
+      "markFormats": []
     },
     {
       "id": "dge-hse2-march-2025",
@@ -1520,7 +1528,9 @@
         "Tamil"
       ],
       "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
-      "pdfUrl": "https://tnegadge.s3.ap-south-1.amazonaws.com/notification/questbank/2025_MAR_12_QUESTION_PAPER.pdf"
+      "pdfUrl": "https://tnegadge.s3.ap-south-1.amazonaws.com/notification/questbank/2025_MAR_12_QUESTION_PAPER.pdf",
+      "status": "listed",
+      "markFormats": []
     },
     {
       "id": "dge-hse2-march-2026",
@@ -1563,14 +1573,3234 @@
         "Tamil"
       ],
       "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
-      "pdfUrl": "https://tnegadge.s3.ap-south-1.amazonaws.com/notification/questbank/HSE2_2026_Q.pdf"
+      "pdfUrl": "https://tnegadge.s3.ap-south-1.amazonaws.com/notification/questbank/HSE2_2026_Q.pdf",
+      "status": "listed",
+      "markFormats": []
+    },
+    {
+      "id": "dge-hse2-2022-archive",
+      "year": 2022,
+      "subjects": [
+        "Tamil",
+        "Physics"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2022_May_HSE_II.pdf",
+      "status": "listed",
+      "markFormats": [
+        {
+          "marks": 1,
+          "subject": "Tamil",
+          "medium": "Tamil",
+          "pdfPage": 1,
+          "evidence": "Printed Part I shows 14 × 1 = 14; visually checked Tamil paper code 5901."
+        }
+      ]
+    },
+    {
+      "id": "dge-hse2-2021-archive",
+      "year": 2021,
+      "subjects": [
+        "Tamil",
+        "Physics"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2021_May_HSE_II.pdf",
+      "status": "temporary_unverified",
+      "markFormats": []
+    }
+  ],
+  "textbookInventory": [
+    {
+      "textbookId": "12-accountancy-english-c0f4ded3",
+      "subjectId": "tb-12-accountancy-english-c0f4ded3",
+      "subject": "Accountancy",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-accountancy-english-c0f4ded3",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-accountancy-tamil-6e7f5476",
+      "subjectId": "tb-12-accountancy-tamil-6e7f5476",
+      "subject": "Accountancy",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-accountancy-tamil-6e7f5476",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-advanced-tamil-tamil-6679b417",
+      "subjectId": "tb-12-advanced-tamil-tamil-6679b417",
+      "subject": "Advanced Tamil",
+      "medium": "Common",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-advanced-tamil-tamil-6679b417",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-agricultural-science-tamil-1d871464",
+      "subjectId": "tb-12-agricultural-science-tamil-1d871464",
+      "subject": "Agricultural Science",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-agricultural-science-tamil-1d871464",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-auditing-english-cb18c74c",
+      "subjectId": "tb-12-auditing-english-cb18c74c",
+      "subject": "Auditing",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-auditing-english-cb18c74c",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-auditing-tamil-e1982513",
+      "subjectId": "tb-12-auditing-tamil-e1982513",
+      "subject": "Auditing",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-auditing-tamil-e1982513",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-automobile-engineering-english-69f8e9f9",
+      "subjectId": "tb-12-basic-automobile-engineering-english-69f8e9f9",
+      "subject": "Basic Automobile Engineering",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-automobile-engineering-english-69f8e9f9",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-automobile-engineering-tamil-e76f29d2",
+      "subjectId": "tb-12-basic-automobile-engineering-tamil-e76f29d2",
+      "subject": "Basic Automobile Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-automobile-engineering-tamil-e76f29d2",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-civil-engineering-english-fc2d4128",
+      "subjectId": "tb-12-basic-civil-engineering-english-fc2d4128",
+      "subject": "Basic Civil Engineering",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-civil-engineering-english-fc2d4128",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-civil-engineering-tamil-122addb5",
+      "subjectId": "tb-12-basic-civil-engineering-tamil-122addb5",
+      "subject": "Basic Civil Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-civil-engineering-tamil-122addb5",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-electrical-engineering-english-13c7fc7b",
+      "subjectId": "tb-12-basic-electrical-engineering-english-13c7fc7b",
+      "subject": "Basic Electrical Engineering",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-electrical-engineering-english-13c7fc7b",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-electrical-engineering-tamil-029f513a",
+      "subjectId": "tb-12-basic-electrical-engineering-tamil-029f513a",
+      "subject": "Basic Electrical Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-electrical-engineering-tamil-029f513a",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-electronics-engineering-english-983efd90",
+      "subjectId": "tb-12-basic-electronics-engineering-english-983efd90",
+      "subject": "Basic Electronics Engineering",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-electronics-engineering-english-983efd90",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-electronics-engineering-tamil-96fcb4f2",
+      "subjectId": "tb-12-basic-electronics-engineering-tamil-96fcb4f2",
+      "subject": "Basic Electronics Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-electronics-engineering-tamil-96fcb4f2",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-mechanical-engineering-english-e15ca391",
+      "subjectId": "tb-12-basic-mechanical-engineering-english-e15ca391",
+      "subject": "Basic Mechanical Engineering",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-mechanical-engineering-english-e15ca391",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-basic-mechanical-engineering-tamil-49be34e2",
+      "subjectId": "tb-12-basic-mechanical-engineering-tamil-49be34e2",
+      "subject": "Basic Mechanical Engineering",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-basic-mechanical-engineering-tamil-49be34e2",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-bio-botany-english-f15d4524",
+      "subjectId": "tb-12-bio-botany-english-f15d4524",
+      "subject": "Bio-Botany",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-biology-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-bio-botany-english-f15d4524",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-bio-botany-tamil-51160855",
+      "subjectId": "tb-12-bio-botany-tamil-51160855",
+      "subject": "Bio-Botany",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-bio-botany-tamil-51160855",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-bio-zoology-english-7e848813",
+      "subjectId": "tb-12-bio-zoology-english-7e848813",
+      "subject": "Bio-Zoology",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-biology-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-bio-zoology-english-7e848813",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-bio-zoology-tamil-2631f8e3",
+      "subjectId": "tb-12-bio-zoology-tamil-2631f8e3",
+      "subject": "Bio-Zoology",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-bio-zoology-tamil-2631f8e3",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-biochemistry-english-dfd867ac",
+      "subjectId": "tb-12-biochemistry-english-dfd867ac",
+      "subject": "Biochemistry",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-biochemistry-english-dfd867ac",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-biochemistry-tamil-910cca11",
+      "subjectId": "tb-12-biochemistry-tamil-910cca11",
+      "subject": "Biochemistry",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-biochemistry-tamil-910cca11",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-botany-english-da5635aa",
+      "subjectId": "tb-12-botany-english-da5635aa",
+      "subject": "Botany",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-biology-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-botany-english-da5635aa",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-botany-tamil-37a9b740",
+      "subjectId": "tb-12-botany-tamil-37a9b740",
+      "subject": "Botany",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-botany-tamil-37a9b740",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-business-mathematics-statistics-english-5710bd23",
+      "subjectId": "tb-12-business-mathematics-statistics-english-5710bd23",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-business-mathematics-statistics-english-5710bd23",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-business-mathematics-statistics-tamil-a77e8ce0",
+      "subjectId": "tb-12-business-mathematics-statistics-tamil-a77e8ce0",
+      "subject": "Business Mathematics & Statistics",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-business-mathematics-statistics-tamil-a77e8ce0",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-chemistry-english-v1-2d0e27cb",
+      "subjectId": "tb-12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-chemistry-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-chemistry-english-v1-2d0e27cb",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-chemistry-english-v2-0010d706",
+      "subjectId": "tb-12-chemistry-english-v2-0010d706",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "2",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-chemistry-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-chemistry-english-v2-0010d706",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-chemistry-tamil-v1-5fcd65a9",
+      "subjectId": "tb-12-chemistry-tamil-v1-5fcd65a9",
+      "subject": "Chemistry",
+      "medium": "Tamil",
+      "volume": "1",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-chemistry-tamil-v1-5fcd65a9",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "youtube-2zlwbnnnc6o",
+          "status": "temporary_unverified",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-avhnvmo7nhg",
+          "status": "temporary_unverified",
+          "category": "video-lessons",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-chemistry-tamil-v2-52192807",
+      "subjectId": "tb-12-chemistry-tamil-v2-52192807",
+      "subject": "Chemistry",
+      "medium": "Tamil",
+      "volume": "2",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-chemistry-tamil-v2-52192807",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "youtube-2zlwbnnnc6o",
+          "status": "temporary_unverified",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-avhnvmo7nhg",
+          "status": "temporary_unverified",
+          "category": "video-lessons",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-commerce-english-4f83c61b",
+      "subjectId": "tb-12-commerce-english-4f83c61b",
+      "subject": "Commerce",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-commerce-english-4f83c61b",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-commerce-tamil-d9e013d8",
+      "subjectId": "tb-12-commerce-tamil-d9e013d8",
+      "subject": "Commerce",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-commerce-tamil-d9e013d8",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-communicative-english-english-10e4b8ba",
+      "subjectId": "tb-12-communicative-english-english-10e4b8ba",
+      "subject": "Communicative English",
+      "medium": "Common",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-communicative-english-english-10e4b8ba",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-applications-english-627c1490",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-applications-english-627c1490",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-applications-english-ccd483a9",
+      "subjectId": "tb-12-computer-applications-english-ccd483a9",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-applications-english-ccd483a9",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-applications-tamil-e51fbdf6",
+      "subjectId": "tb-12-computer-applications-tamil-e51fbdf6",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-applications-tamil-e51fbdf6",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-applications-tamil-f43670d1",
+      "subjectId": "tb-12-computer-applications-tamil-f43670d1",
+      "subject": "Computer Applications",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-applications-tamil-f43670d1",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-science-english-37bdae5b",
+      "subjectId": "tb-12-computer-science-english-37bdae5b",
+      "subject": "Computer Science",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-science-english-37bdae5b",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-science-tamil-d5aa7dd4",
+      "subjectId": "tb-12-computer-science-tamil-d5aa7dd4",
+      "subject": "Computer Science",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-science-tamil-d5aa7dd4",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-technology-english-293bf656",
+      "subjectId": "tb-12-computer-technology-english-293bf656",
+      "subject": "Computer Technology",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-technology-english-293bf656",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-technology-english-cf787554",
+      "subjectId": "tb-12-computer-technology-english-cf787554",
+      "subject": "Computer Technology",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-technology-english-cf787554",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-technology-tamil-c66e9089",
+      "subjectId": "tb-12-computer-technology-tamil-c66e9089",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-technology-tamil-c66e9089",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-computer-technology-tamil-cff5867a",
+      "subjectId": "tb-12-computer-technology-tamil-cff5867a",
+      "subject": "Computer Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-computer-technology-tamil-cff5867a",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-economics-english-5418ce45",
+      "subjectId": "tb-12-economics-english-5418ce45",
+      "subject": "Economics",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-principles-economics-3e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-economics-english-5418ce45",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-economics-tamil-c7590e3f",
+      "subjectId": "tb-12-economics-tamil-c7590e3f",
+      "subject": "Economics",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-economics-tamil-c7590e3f",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-english-english-b9d1c4c3",
+      "subjectId": "tb-12-english-english-b9d1c4c3",
+      "subject": "English",
+      "medium": "Common",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-english-english-b9d1c4c3",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-ethics-and-indian-culture-tamil-f49cc8fe",
+      "subjectId": "tb-12-ethics-and-indian-culture-tamil-f49cc8fe",
+      "subject": "Ethics and Indian Culture",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-ethics-and-indian-culture-tamil-f49cc8fe",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-food-service-management-english-111451e7",
+      "subjectId": "tb-12-food-service-management-english-111451e7",
+      "subject": "Food Service Management",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-food-service-management-english-111451e7",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-food-service-management-tamil-e2061fb1",
+      "subjectId": "tb-12-food-service-management-tamil-e2061fb1",
+      "subject": "Food Service Management",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-food-service-management-tamil-e2061fb1",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-general-nursing-english-5c87aafc",
+      "subjectId": "tb-12-general-nursing-english-5c87aafc",
+      "subject": "General Nursing",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-general-nursing-english-5c87aafc",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-general-nursing-tamil-b39f5ab1",
+      "subjectId": "tb-12-general-nursing-tamil-b39f5ab1",
+      "subject": "General Nursing",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-general-nursing-tamil-b39f5ab1",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-geography-english-24059775",
+      "subjectId": "tb-12-geography-english-24059775",
+      "subject": "Geography",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-geography-english-24059775",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-geography-tamil-ba849e46",
+      "subjectId": "tb-12-geography-tamil-ba849e46",
+      "subject": "Geography",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-geography-tamil-ba849e46",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-history-english-3cd2e4c2",
+      "subjectId": "tb-12-history-english-3cd2e4c2",
+      "subject": "History",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-history-english-3cd2e4c2",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-history-tamil-3c88c869",
+      "subjectId": "tb-12-history-tamil-3c88c869",
+      "subject": "History",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-history-tamil-3c88c869",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-home-science-english-e5c3e008",
+      "subjectId": "tb-12-home-science-english-e5c3e008",
+      "subject": "Home Science",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-home-science-english-e5c3e008",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-home-science-tamil-0cbbe34e",
+      "subjectId": "tb-12-home-science-tamil-0cbbe34e",
+      "subject": "Home Science",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-home-science-tamil-0cbbe34e",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-mathematics-english-v1-e33ceed7",
+      "subjectId": "tb-12-mathematics-english-v1-e33ceed7",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "1",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-mathematics-english-v1-e33ceed7",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-mathematics-english-v2-d4925ec0",
+      "subjectId": "tb-12-mathematics-english-v2-d4925ec0",
+      "subject": "Mathematics",
+      "medium": "English",
+      "volume": "2",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-mathematics-english-v2-d4925ec0",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-mathematics-tamil-v1-96fc1e8d",
+      "subjectId": "tb-12-mathematics-tamil-v1-96fc1e8d",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "1",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-mathematics-tamil-v1-96fc1e8d",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-mathematics-tamil-v2-f8732624",
+      "subjectId": "tb-12-mathematics-tamil-v2-f8732624",
+      "subject": "Mathematics",
+      "medium": "Tamil",
+      "volume": "2",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-mathematics-tamil-v2-f8732624",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-microbiology-english-6a36a404",
+      "subjectId": "tb-12-microbiology-english-6a36a404",
+      "subject": "Microbiology",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-microbiology-english-6a36a404",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-microbiology-tamil-a879259a",
+      "subjectId": "tb-12-microbiology-tamil-a879259a",
+      "subject": "Microbiology",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-microbiology-tamil-a879259a",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-nursing-vocational-english-6c60782a",
+      "subjectId": "tb-12-nursing-vocational-english-6c60782a",
+      "subject": "Nursing Vocational",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-nursing-vocational-english-6c60782a",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-nursing-vocational-tamil-7f44a760",
+      "subjectId": "tb-12-nursing-vocational-tamil-7f44a760",
+      "subject": "Nursing Vocational",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-nursing-vocational-tamil-7f44a760",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-nutrition-and-dietetics-english-3d2e918e",
+      "subjectId": "tb-12-nutrition-and-dietetics-english-3d2e918e",
+      "subject": "Nutrition and Dietetics",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-nutrition-and-dietetics-english-3d2e918e",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-office-management-secretaryship-typography-english-6b7b27b2",
+      "subjectId": "tb-12-office-management-secretaryship-typography-english-6b7b27b2",
+      "subject": "Office Management, Secretaryship & Typography",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-office-management-secretaryship-typography-english-6b7b27b2",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-office-management-secretaryship-typography-tamil-241b6edf",
+      "subjectId": "tb-12-office-management-secretaryship-typography-tamil-241b6edf",
+      "subject": "Office Management, Secretaryship & Typography",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-office-management-secretaryship-typography-tamil-241b6edf",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-physics-english-v1-1b1de8f8",
+      "subjectId": "tb-12-physics-english-v1-1b1de8f8",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "1",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-college-physics-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-physics-english-v1-1b1de8f8",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2022-archive",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2021-archive",
+          "status": "temporary_unverified",
+          "category": "question-papers",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-physics-english-v2-0ce6704c",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-college-physics-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-physics-english-v2-0ce6704c",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2022-archive",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2021-archive",
+          "status": "temporary_unverified",
+          "category": "question-papers",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-physics-tamil-v1-c1623725",
+      "subjectId": "tb-12-physics-tamil-v1-c1623725",
+      "subject": "Physics",
+      "medium": "Tamil",
+      "volume": "1",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-physics-tamil-v1-c1623725",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "youtube-ccbjknssmto",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-diwlqmir1cy",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-hmx9b-lr2fy",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-msnao03i6qc",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-spobwqzuhec",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-vqjlpoho_34",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-wnp6zklrnym",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-xe4tyi4hd0i",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2022-archive",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2021-archive",
+          "status": "temporary_unverified",
+          "category": "question-papers",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-physics-tamil-v2-fb1fa4de",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subject": "Physics",
+      "medium": "Tamil",
+      "volume": "2",
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-physics-tamil-v2-fb1fa4de",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "youtube-ccbjknssmto",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-diwlqmir1cy",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-hmx9b-lr2fy",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-msnao03i6qc",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-spobwqzuhec",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-vqjlpoho_34",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-wnp6zklrnym",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "youtube-xe4tyi4hd0i",
+          "status": "listed",
+          "category": "video-lessons",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2022-archive",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-2021-archive",
+          "status": "temporary_unverified",
+          "category": "question-papers",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-political-science-english-db4a2e0c",
+      "subjectId": "tb-12-political-science-english-db4a2e0c",
+      "subject": "Political Science",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-political-science-english-db4a2e0c",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-political-science-tamil-5da94964",
+      "subjectId": "tb-12-political-science-tamil-5da94964",
+      "subject": "Political Science",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-political-science-tamil-5da94964",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-statistics-english-1489a12e",
+      "subjectId": "tb-12-statistics-english-1489a12e",
+      "subject": "Statistics",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-statistics-english-1489a12e",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-statistics-tamil-c1143d1d",
+      "subjectId": "tb-12-statistics-tamil-c1143d1d",
+      "subject": "Statistics",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-statistics-tamil-c1143d1d",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-tamil-tamil-7db1698f",
+      "subjectId": "tb-12-tamil-tamil-7db1698f",
+      "subject": "Tamil",
+      "medium": "Common",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-tamil-tamil-7db1698f",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-textile-technology-tamil-648797c8",
+      "subjectId": "tb-12-textile-technology-tamil-648797c8",
+      "subject": "Textile Technology",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "textbook-reference-12-textile-technology-tamil-648797c8",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-textiles-and-dress-designing-english-1ceb8fbe",
+      "subjectId": "tb-12-textiles-and-dress-designing-english-1ceb8fbe",
+      "subject": "Textiles and Dress Designing",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-textiles-and-dress-designing-english-1ceb8fbe",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-textiles-and-dress-designing-tamil-3650ec00",
+      "subjectId": "tb-12-textiles-and-dress-designing-tamil-3650ec00",
+      "subject": "Textiles and Dress Designing",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-textiles-and-dress-designing-tamil-3650ec00",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-zoology-english-788d2d32",
+      "subjectId": "tb-12-zoology-english-788d2d32",
+      "subject": "Zoology",
+      "medium": "English",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "openstax-biology-2e",
+          "status": "listed",
+          "category": "learning-materials",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-zoology-english-788d2d32",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
+    },
+    {
+      "textbookId": "12-zoology-tamil-3c154dab",
+      "subjectId": "tb-12-zoology-tamil-3c154dab",
+      "subject": "Zoology",
+      "medium": "Tamil",
+      "volume": null,
+      "edition": null,
+      "resources": [
+        {
+          "id": "dge-hse2-march-2023",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2024",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2025",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "dge-hse2-march-2026",
+          "status": "listed",
+          "category": "question-papers",
+          "chapter": null
+        },
+        {
+          "id": "textbook-reference-12-zoology-tamil-3c154dab",
+          "status": "temporary_unverified",
+          "category": "learning-materials",
+          "chapter": null
+        }
+      ],
+      "limitation": "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant."
     }
   ],
   "downloadedNewPdfs": 0,
   "rights": {
-    "official_access_terms_unclear": 86,
+    "official_access_terms_unclear": 88,
     "openly_licensed": 4,
-    "external_link_only": 9
+    "external_link_only": 11
   },
   "limitations": [
     "Combined paper collections are not individual papers; heading-based subject indexing does not verify all paper variants.",

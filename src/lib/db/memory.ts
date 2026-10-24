@@ -1071,6 +1071,9 @@ export async function saveQuizAnswer(
   if (selectedAnswer !== null && !["A", "B", "C", "D"].includes(selectedAnswer))
     return null;
 
+  if (session.mode !== "timed" && session.answers[questionId]?.selectedAnswer != null)
+    return session;
+
   const question = dbState.questions.get(questionId);
   const isCorrect = question
     ? question.correctAnswer === selectedAnswer

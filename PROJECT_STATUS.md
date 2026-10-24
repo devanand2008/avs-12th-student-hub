@@ -1,3 +1,69 @@
+## MCQ, practice and interactive 3D integration — October 23, 2026
+
+Local integration verified; no production access, deployment, publication or Git push in this task. Added /interactive-3d alongside /models, a coordinate-vector animation, source-context/subject/medium filters and keyboard controls. Inventory is 15 procedural models across Biology, Physics, Chemistry, Mathematics and Computer Science; five source contexts are checked, ten models remain general concepts. Study Resources routes were integrated and tested without rewriting Agent 1's feature.
+
+Practice now locks the first non-timed submitted answer in UI, memory and SQL, preventing post-feedback score replacement. Clear/change before submission, timed drafts, results, retakes and history are tested. Migration 20261023_practice_answer_lock.sql was tested only in isolated local fixtures and remains unapplied to production.
+
+Inventoried 82 registered textbooks, 40 catalog subjects, 24,088 pages and 13 separate handwritten Mathematics PDFs. Chapter 3 processing added 34 held proposals (28 reused/six recovered); concurrent Chapter 4 work reconciled another 57 (54 reused/three recovered). Current totals: 17,338 saved records, 12,747 active, 4,591 inactive; 1,044 bounded proposals across 79 sections; 1,059 pending decisions across 80 batches, zero genuine decisions/history events. All 17,329 baseline candidate objects, 953 proposals and 468 protected files are unchanged. The dated bank remains 995 English/zero Tamil. No new candidate was published.
+
+Build, typecheck, lint, integrity and coverage checks passed. Isolated full browser suite: 74 passed/12 opt-in skipped; additional direct/actual-book 6, admin 4 and final gallery 4 passed. Full Node suite: 212/214 passed while Chapter 4 definitions were changing; all seven affected Chapter 2/3/4 and resumption regressions subsequently passed, plus the lifecycle test. A separate concurrent full rerun is not claimed as completed. npm dependency audit fails on the existing Next.js 16.3.8 advisory; framework upgrade remains outstanding.
+
+All-subject extraction is incomplete: 777 provisional parser entries lack bounded sections, 733 lack dated publications, and no chapter is marked complete_after_verification. Teacher review, uncertain transcription and additional model/medium coverage remain pending. Next inspected chapter openings are Chapter 5, English Zoology PDF66, Tamil Zoology PDF76 and Tamil Electrical PDF91; exercise boundaries still need reconciliation. Full source inventory, counts, limitations, file changes and test receipts: [MCQ/3D/practice report](docs/MCQ_3D_PRACTICE_PORTAL_REPORT.md), [coverage](docs/portal-coverage.json), [integrity](docs/portal-integrity.json), [verification](docs/portal-verification.json). Earlier release notes below are historical and describe work outside this local-only task.
+
+## Learning Lab and Chapter 4 continuation — October 24, 2026 (local only)
+
+Verified existing Chapter 2/3 work and prepared 57 held Chapter 4 source occurrences: English Bio-Zoology 21 (PDF63–64/printed55–56), Tamil Bio-Zoology 21 (PDF72–74/printed64–66), Tamil Electrical 15 (PDF86–88/printed78–80). Reused 54 IDs, recovered three English IDs; all answers remain unknown and no teacher approvals/publications were created. Corrected the old Electrical backlog title against the source: Chapter 4 is இயந்திர மின்சாதனங்கள். Source preparation readiness is distinct from teacher approval.
+
+Current local audit: 17,338 saved / 12,747 active / 4,591 preserved inactive records; 1,044 general bounded proposals; 1,059 pending review entries; zero actual reviewed/approved/rejected decisions. The protected dated student bank remains 995 English / zero Tamil, with legacy samples excluded. All 17,335 earlier raw objects and 987 earlier proposals are unchanged. Of 586 protected file paths, only the source-page receipt changed to include 15 added page images; original PDFs/images, decisions, history, 103-resource catalogue and ten-tool AI metadata remain intact.
+
+Preserved the 15-model lab and added verified model→AI prompt subject/chapter links with validated IDs and working clear filters. Expanded the 82-book/856-provisional-chapter CSV/JSON with inspected-title evidence, source pages, signatures and review outcomes. All-subject completion remains false; 733 entries still lack dated publications. Next source batch: English/Tamil Bio-Zoology Chapter 5 (openings PDF66/76), then Tamil Electrical Chapter 5 (opening PDF91); exercise ranges remain unbounded.
+
+Testing: complete run 219/221 passed with two stale inventory-count assertions failing; fixed both and reran the affected file, 4/4 passed, including all 739 shared-review items at desktop/mobile widths. No third full-suite run is claimed. Focused extraction/review tests 7/7 and selected browser cases 24/24 passed. Final typecheck, lint, build and local audits passed; source sampling matched 713 pages with zero mismatches. Initial preparation/build failures are retained in the report. No production access, migration application, deployment or Git push. [Full report](docs/FINAL_LEARNING_LAB_REPORT.md), [chapter coverage](docs/portal-chapter-coverage.csv), [verification receipts](docs/final-learning-lab-verification.json).
+
+## AI Study Tools hub — October 23, 2026 (local only)
+
+Added `/ai-study-tools` with a Study Resources entry card, 10 external tools (5 AI assistants and 5 conventional subject tools), nine prompt templates, editable subject/chapter prompts, actual clipboard copy/reset, and working task/subject/category/language/access/account filters. References retain the existing 82 textbook subject/medium/volume IDs and 856 detected chapter entries. General chatbot support is not full subject coverage. Product/access evidence was checked for nine records; Copilot remains partially verified. Provider age, privacy and regional-account gaps are explicit, and only Gemini has checked Tamil support in this initial directory. No automatic prompt submission, uploads or paid API integration.
+
+Validation: 15 focused unit/regression tests passed; 14 existing desktop/mobile resource and practice cases passed; the two new hub cases passed after correcting a hidden-option test selector. Final build, typecheck, lint, catalogue audit and diff check passed. The first build's incompatible test regex and the report script's CJS top-level-await issue were corrected. All 198 protected local files matched preservation hashes, including the unchanged 103-resource catalogue and sampled candidate/decision/history snapshots. No production access, publication, deployment or Git push. Full-suite tests were not rerun. See [AI Study Tools report](docs/AI_STUDY_TOOLS_REPORT.md) for all 40 subjects, official sources, limitations and exact test results.
+
+## Fourteen-model Vercel release — October 23, 2026
+
+Promoted production deployment `dpl_3aAkTv3wbT54D5JvoEBgVVSzwkZs` to https://avs-12th-student-hub.vercel.app. The current working tree was uploaded without a Git push. Vercel build passed. Public desktop/mobile verification confirmed 14 models, Biology 6 / Physics 3 / Chemistry 4 filters, rendering of all five new models, pause/reset controls and no page-script errors or horizontal overflow. The 99-resource view retains its 83 temporary labels; five public routes returned HTTP 200. Final receipt: `.local/vercel-models14-public-verification.json`. Initial live attempts encountered a canvas timeout and connection reset; the final rerun passed. No database imports or MCQ publication were performed. This supersedes the local-only status of the additions below.
+
+## Additional subject models — October 23, 2026
+
+Added five schematic models to the existing lab: replicated chromosome and bacterial cell (Biology), electric dipole (Physics), ammonia and carbon dioxide (Chemistry). The local registry now contains 14 models: 6 Biology, 3 Physics, 4 Chemistry and the existing Computer Science tree. All use the existing selection, rotation, zoom, pause/reset and subject-filter interface. Descriptions distinguish dipole moment from electric-field direction, flag omitted molecular lone pairs and explain biological simplifications. No unsupported textbook chapter links were added.
+
+Validation: 21/21 platform tests, scoped lint, production build with TypeScript validation, and 2/2 desktop/mobile browser cases covering all 14 models and their parts passed. Git diff check passed. No database/candidate/history changes. These five additions are local and have not been deployed; the prior live release still contains nine models.
+
+## Vercel resources and science-model release — October 23, 2026
+
+Deployed the current working tree to the existing Vercel project and promoted deployment `dpl_9kiySjdhqvpoowb6QqZGvRtTRUwU` to **https://avs-12th-student-hub.vercel.app**. Vercel production build passed. This deployment includes the all-99-resources view and nine-model lab, including the six new Biology/Physics/Chemistry models. No Git push, database import or MCQ publication was performed.
+
+Fresh public verification passed: home, login, resources hub, all-resources and models returned HTTP 200. Desktop (1440px) and mobile (390px) browser checks confirmed 99 resource entries with 83 temporary labels, Biology/Physics/Chemistry filters, visible 3D canvases, pause/reset controls, no page-script errors and no horizontal overflow. These were public read-only checks; authenticated student/database workflows were not retested. Receipt: `.local/vercel-science-public-verification.json`. Earlier local-only notes below are historical checkpoints superseded by this authorised deployment.
+
+## Science 3D learning lab — October 22, 2026
+
+Expanded the existing `/models` lab from three to nine interactive models. Added animal cell and neuron (Biology), parallel-plate capacitor and solenoid (Physics), water and methane (Chemistry). Existing DNA, plant cell and binary search tree remain; DNA is still the default. Added subject filters, a dynamic model count and a Study Resources link. All new geometry is generated locally with the existing Three.js dependency; no external model assets, subscriptions or database changes.
+
+Each model includes selectable coloured structures, descriptions, rotation/zoom, pause/reset, existing fullscreen and WebGL fallback. Illustrations are explicitly schematic: cell structures are partial, molecular lone pairs are not drawn, capacitor edge effects are omitted, and the solenoid arrow is a reference axis rather than a claimed field direction. New topics have no invented textbook chapter mapping; their link opens the subject browser.
+
+Validation: 21/21 platform tests; typecheck; production build; 2/2 desktop/mobile browser cases exercising all nine models, every part, subject filters, pause/reset and single-canvas cleanup. No page errors or horizontal overflow in those cases. Water rendering screenshot visually inspected. Existing candidate records and practice data were not changed. Local implementation only; not deployed.
+
+## All-resources browsing — October 22, 2026
+
+Added `/resources/all` and a prominent “Browse all 99 resources” hub link. The combined view searches/filters all 16 listed and 83 temporary entries while retaining visible verification labels. Year filters and return navigation preserve the selected all-resources view. The hub also links to existing handwritten notes and English/Tamil video libraries. No resource status, MCQ, database or teacher decision changed.
+
+Validation: 3 resource tests, typecheck, scoped ESLint, production build and 2 desktop/mobile browser cases passed; diff check passed. The first browser attempt started before the production build finished and failed to start; rerun after build completion passed 2/2. Existing fixture emitted a Gzip listener warning, with no failing cases. Local changes only; not deployed.
+
+## Repeated master request: local verification — October 22, 2026
+
+The requested Chapter 2 batches and Study Resources implementation already exist. Fresh checks passed: **5/5 focused tests, typecheck, lint, resource audit, production build and git diff --check**. Earlier full 207/207 and scoped browser 12/12 results were inspected, not rerun in this pass. No application rewrite or duplicate extraction was needed.
+
+Current inventory independently recounted: **17,329 saved / 12,738 active / 4,591 inactive / 953 source proposals**; **47 Chapter 2 questions remain held**, six printed answer mappings and 41 unknown answers, zero teacher decisions/approvals/publications. Preservation checks passed for 513 protected paths and the dated 995-English/0-Tamil bank and 13-session snapshot. Resource audit: **99 entries / 16 listed / 83 temporary / zero local PDF copies**. One actual video playback has prior evidence; nine oEmbed responses are not nine proven playbacks.
+
+All-subject resource coverage remains incomplete. The official DGE listing additionally exposes May 2022 and September 2021 collections that need source inspection, plus gaps in individual paper variants, Tamil licensed references and non-Physics videos. [Full A–H recheck report](docs/STUDY_RESOURCES_MASTER_RECHECK.md). This pass was local-only: no production access, Git push, deployment or publication. The separately authorised earlier Render deployment is not part of these local checks.
+
 <!-- BEGIN zoology-ch2-resources-20261022 -->
 ## Chapter 2 extraction and Study Resources — October 22, 2026
 

@@ -33,6 +33,19 @@ export const resourceSchema = z
     session: z.string().nullable(),
     resourceType: z.string().min(2),
     chapter: z.string().nullable(),
+    markFormats: z
+      .array(
+        z
+          .object({
+            marks: z.number().int().positive().max(100),
+            subject: z.string().min(1),
+            medium: z.enum(["English", "Tamil", "Common"]),
+            pdfPage: z.number().int().positive(),
+            evidence: z.string().min(5),
+          })
+          .strict(),
+      )
+      .default([]),
     publisher: z.string().min(2),
     sourceUrl: httpsUrl,
     originalUrl: httpsUrl,
@@ -113,6 +126,23 @@ export const resourceSchema = z
       issue("Unconfirmed resources must remain temporary or unavailable");
     if (r.editorial === "retired" && r.status !== "retired")
       issue("Retirement must preserve an explicit retired status");
+    if (
+      r.download === "local_permitted" &&
+      (!r.localAsset || r.redistribution !== "permitted")
+    )
+      issue("Local downloads require a permitted local asset");
+    if (r.localAsset?.split("/").includes(".."))
+      issue("Local paths cannot traverse directories");
+    for (const format of r.markFormats) {
+      if (
+        !r.pdfUrl ||
+        !r.subjects.includes(format.subject) ||
+        !r.mediums.includes(format.medium)
+      )
+        issue(
+          "Mark formats require PDF evidence and matching subject/medium metadata",
+        );
+    }
   });
 export type StudyResource = z.infer<typeof resourceSchema>;
 export const resourceManifestSchema = z
@@ -129,7 +159,11 @@ export function validateResourceManifest(value: unknown, subjects: string[]) {
     const identity =
       r.category === "video-lessons"
         ? youtubeEmbedUrl(r.originalUrl)!
-        : new URL(r.pdfUrl || r.originalUrl).href;
+        : (() => {
+            const u = new URL(r.pdfUrl || r.originalUrl);
+            u.hash = "";
+            return u.href;
+          })();
     if (identities.has(identity))
       throw new Error(`Duplicate resource identity: ${r.id}`);
     identities.add(identity);
@@ -164,6 +198,54 @@ export function resourceMatches(
       r.mediums.includes("Common")) &&
     (!filters.year || String(r.year) === filters.year) &&
     (!filters.type || r.resourceType === filters.type) &&
-    (!filters.source || r.publisher === filters.source)
+    (!filters.source || r.publisher === filters.source) &&
+    (!filters.chapter || r.chapter === filters.chapter) &&
+    (!filters.rights || r.rights === filters.rights) &&
+    (!filters.marks ||
+      r.markFormats.some(
+        (f) =>
+          String(f.marks) === filters.marks &&
+          (!filters.subject || f.subject === filters.subject) &&
+          (!filters.medium ||
+            f.medium === filters.medium ||
+            f.medium === "Common"),
+      ))
   );
+}
+
+/** Facets are evidence-backed and scoped to the selected subject/medium. */
+export function resourceFilterChoices(
+  rows: StudyResource[],
+  filters: Record<string, string | undefined> = {},
+) {
+  const unique = (values: string[]) => [...new Set(values)].sort();
+  const scoped = rows.filter((r) =>
+    resourceMatches(r, { subject: filters.subject, medium: filters.medium }),
+  );
+  return {
+    subjects: unique(rows.flatMap((r) => r.subjects)),
+    mediums: unique(rows.flatMap((r) => r.mediums)),
+    years: [...new Set(scoped.flatMap((r) => (r.year ? [r.year] : [])))].sort(
+      (a, b) => b - a,
+    ),
+    types: unique(scoped.map((r) => r.resourceType)),
+    sources: unique(scoped.map((r) => r.publisher)),
+    chapters: unique(scoped.flatMap((r) => (r.chapter ? [r.chapter] : []))),
+    rights: unique(scoped.map((r) => r.rights)),
+    marks: [
+      ...new Set(
+        scoped.flatMap((r) =>
+          r.markFormats
+            .filter(
+              (f) =>
+                (!filters.subject || f.subject === filters.subject) &&
+                (!filters.medium ||
+                  f.medium === filters.medium ||
+                  f.medium === "Common"),
+            )
+            .map((f) => f.marks),
+        ),
+      ),
+    ].sort((a, b) => a - b),
+  };
 }

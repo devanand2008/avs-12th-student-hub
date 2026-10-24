@@ -1,0 +1,18 @@
+{
+  "protectedPaths": 586,
+  "unchangedPaths": 585,
+  "changedPaths": [
+    ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\source-pages.json"
+  ],
+  "priorRecordErrors": [],
+  "addedRawIds": [
+    "textbook-bounded-12-bio-zoology-english-7e848813-6a5c8c90e059ac7b",
+    "textbook-bounded-12-bio-zoology-english-7e848813-1768cb37df5253e8",
+    "textbook-bounded-12-bio-zoology-english-7e848813-0850e6a27d3bae29"
+  ],
+  "counts": {
+    "candidates": 17338,
+    "sourceBoundedProposals": 1044
+  },
+  "note": "Source page receipt is append-only derived metadata; original source PNG/PDF hashes and saved decisions independently retained."
+}

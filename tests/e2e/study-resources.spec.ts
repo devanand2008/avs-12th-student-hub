@@ -1,4 +1,61 @@
 import { test, expect } from "@playwright/test";
+test("printed mark evidence is subject-specific and unverified chapters are not invented", async ({
+  page,
+}) => {
+  await page.goto("/resources/question-papers?subject=Tamil&medium=Tamil");
+  await expect(
+    page.getByLabel("Marks per question", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByLabel("Marks per question").locator("option"),
+  ).toHaveText(["All marks per question", "1"]);
+  await page.getByLabel("Marks per question").selectOption("1");
+  await page.getByRole("button", { name: "Apply filters" }).click();
+  await expect(page.getByRole("status")).toContainText("1 collections found");
+  await page.getByRole("link", { name: "View paper / PDF" }).click();
+  await expect(
+    page.getByRole("heading", { name: "Printed question formats" }),
+  ).toBeVisible();
+  await expect(page.getByText(/Printed Part I shows 14/)).toBeVisible();
+  await page.goto("/resources/question-papers?subject=Physics");
+  await expect(
+    page.getByLabel("Marks per question", { exact: true }),
+  ).toHaveCount(0);
+  await page.goto("/resources/video-lessons");
+  await expect(
+    page.getByLabel("Subjects", { exact: true }).locator("option"),
+  ).toHaveText(["All subjects", "Physics"]);
+  await expect(page.getByLabel("Chapters", { exact: true })).toHaveCount(0);
+  await page.goto("/resources/temporary?q=IUPAC");
+  await expect(page.getByRole("status")).toContainText("1 resources found");
+  await expect(
+    page.getByText("Temporary · check pending", { exact: true }),
+  ).toBeVisible();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+});
+test("all resources keeps temporary labels and returns to filtered results", async ({
+  page,
+}) => {
+  await page.goto("/resources");
+  await page.getByRole("link", { name: "Browse all 103 resources →" }).click();
+  await expect(page.getByRole("status")).toContainText("103 resources found");
+  await expect(
+    page.getByText("Temporary · check pending", { exact: true }),
+  ).toHaveCount(86);
+  await page.getByLabel("Years", { exact: true }).selectOption("2025");
+  await page.getByRole("button", { name: "Apply filters" }).click();
+  await expect(page.getByRole("status")).toContainText("1 resources found");
+  await page.getByRole("link", { name: "View paper / PDF" }).click();
+  await page
+    .getByRole("link", { name: "Back to resources and filters" })
+    .click();
+  await expect(page).toHaveURL(/\/resources\/all\?year=2025/);
+  await expect(page.getByLabel("Years", { exact: true })).toHaveValue("2025");
+});
 test("public study hub, actual paper filters and original PDF fallback preserve navigation", async ({
   page,
 }) => {
@@ -39,7 +96,7 @@ test("public study hub, actual paper filters and original PDF fallback preserve 
     page.getByRole("heading", { name: "No matching resources yet" }),
   ).toBeVisible();
   await page.getByRole("link", { name: "Clear filters" }).first().click();
-  await expect(page.getByRole("status")).toContainText("4 collections");
+  await expect(page.getByRole("status")).toContainText("5 collections");
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= window.innerWidth,
@@ -88,7 +145,7 @@ test("reading resources disclose licences, temporary provenance and unavailable 
   ).toBeVisible();
   await expect(
     page.locator('meta[name="robots"][content*="noindex"]').first(),
-  ).toHaveAttribute("content",/noindex/);
+  ).toHaveAttribute("content", /noindex/);
   await expect(page.locator("iframe")).toHaveCount(0);
   const category = await page.goto("/resources/unsupported");
   expect([200, 404]).toContain(category?.status());

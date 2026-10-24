@@ -189,7 +189,28 @@ export async function startLocalPhysicsReview(options: {
       batch.id === "unit-1"
         ? manifest
         : reconcileManifest(batch.candidates, saved);
-    if (!saved && batch.id !== "unit-1") await writeLocalJson(file, reconciled);
+    if (
+      batch.id !== "unit-1" &&
+      (!saved || saved.entries.length !== reconciled.entries.length)
+    ) {
+      // Source recovery may append a genuinely missing occurrence to an existing
+      // batch. Persist only the new pending entries; every saved decision and
+      // history object must remain exactly as recorded.
+      if (
+        saved &&
+        saved.entries.some(
+          (entry) =>
+            JSON.stringify(entry) !==
+            JSON.stringify(
+              reconciled.entries.find((next) => next.id === entry.id),
+            ),
+        )
+      )
+        throw new LocalReviewError(
+          "Existing decisions changed while appending source occurrences",
+        );
+      await writeLocalJson(file, reconciled);
+    }
     stores.set(batch.id, {
       batch,
       manifest: reconciled,
@@ -209,7 +230,9 @@ export async function startLocalPhysicsReview(options: {
       throw new LocalReviewError(
         "Run npx tsx scripts/prepare-physics-review-assets.ts before starting Units 2–5 review",
       );
-    for (const batch of batches.filter((b) => b.id.startsWith("unit-") && b.unit > 1))
+    for (const batch of batches.filter(
+      (b) => b.id.startsWith("unit-") && b.unit > 1,
+    ))
       for (const c of batch.candidates)
         for (const asset of [
           ...c.localReviewRequirements!.figures,
@@ -398,7 +421,14 @@ export async function startLocalPhysicsReview(options: {
           .find((a) => a.file === filename);
         if (!asset) throw new LocalReviewError("Unrelated source figure", 404);
         response.writeHead(200, { "Content-Type": "image/png" });
-        response.end(await readFile(path.join(store.batch.figureDirectory ?? assetDirectory, asset.file)));
+        response.end(
+          await readFile(
+            path.join(
+              store.batch.figureDirectory ?? assetDirectory,
+              asset.file,
+            ),
+          ),
+        );
         return;
       }
       if (request.method === "GET" && url.pathname === "/api/export") {

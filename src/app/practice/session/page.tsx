@@ -351,6 +351,7 @@ function PracticeContent() {
     if (!quiz || busy || result) return;
     const question = questions[index];
     if (quiz.mode !== "timed") {
+      if (answerRef.current[question.id]) return;
       setDrafts((previous) => ({ ...previous, [question.id]: answer }));
       return;
     }
@@ -363,7 +364,7 @@ function PracticeContent() {
   async function submitAnswer() {
     if (!quiz || busyRef.current || result) return;
     const question = questions[index], answer = drafts[question.id];
-    if (!answer) return;
+    if (!answer || answerRef.current[question.id]) return;
     busyRef.current = true;
     setBusy(true);
     setError("");
@@ -375,7 +376,10 @@ function PracticeContent() {
       });
       const feedback = await response.json();
       if (!response.ok) throw new Error(feedback.error || "Could not check your answer.");
-      answerRef.current = { ...answerRef.current, [question.id]: answer };
+      const recorded = feedback.selectedAnswer as Answer;
+      if (!recorded || !["A", "B", "C", "D"].includes(recorded)) throw new Error("The server did not confirm a submitted answer.");
+      answerRef.current = { ...answerRef.current, [question.id]: recorded };
+      setDrafts(previous => ({ ...previous, [question.id]: recorded }));
       setAnswers(answerRef.current);
       setQuestions((previous) => previous.map((q) => q.id === question.id ? {
         ...q,
@@ -887,7 +891,7 @@ function PracticeContent() {
                   value={key}
                   checked={isThisSelected}
                   onChange={() => choose(key)}
-                  disabled={busy}
+                  disabled={busy || (!exam && Boolean(submitted))}
                   className="sr-only"
                 />
                 <span
@@ -921,10 +925,11 @@ function PracticeContent() {
 
         {!exam && (
           <div className="space-y-2">
-            <button type="button" className="btn-primary" onClick={() => void submitAnswer()} disabled={busy || !drafts[question.id] || (showFeedback && selected === submitted)}>
+            <button type="button" className="btn-primary" onClick={() => void submitAnswer()} disabled={busy || !drafts[question.id] || Boolean(submitted)}>
               {busy ? "Checking answer…" : "Submit Answer"}
             </button>
-            <p className="text-xs text-slate-600">Select an option, then submit it for feedback. Unsubmitted choices are skipped when you finish.</p>
+            <button type="button" className="ml-3 min-h-11 px-3 text-sm font-semibold text-blue-700 disabled:text-slate-400" disabled={busy || !drafts[question.id] || Boolean(submitted)} onClick={() => setDrafts(previous => { const next = {...previous}; delete next[question.id]; return next; })}>Clear answer</button>
+            <p className="text-xs text-slate-600">{submitted ? "Answer submitted and locked for this attempt. Retake practice to try again." : "Select or change an option, then submit it for feedback. Unsubmitted choices are skipped when you finish."}</p>
           </div>
         )}
         {/* Feedback follows explicit individual submission. */}

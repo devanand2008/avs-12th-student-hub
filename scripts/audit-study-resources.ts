@@ -1,5 +1,10 @@
 import fs from "node:fs/promises";
-import { studyResources, resourceSubjects } from "../src/lib/study-resources";
+import {
+  studyResources,
+  resourceSubjects,
+  resourceCurriculumReferences,
+} from "../src/lib/study-resources";
+import catalog from "../src/lib/textbooks-catalog.json";
 async function main() {
   const counts = (rows: typeof studyResources) => ({
     total: rows.length,
@@ -50,7 +55,31 @@ async function main() {
         mediums: r.mediums,
         sourceUrl: r.sourceUrl,
         pdfUrl: r.pdfUrl,
+        status: r.status,
+        markFormats: r.markFormats,
       })),
+    textbookInventory: catalog.books.map((book) => ({
+      textbookId: book.id,
+      subjectId: `tb-${book.id}`,
+      subject: book.subject,
+      medium: book.medium,
+      volume: book.volume,
+      edition: book.edition,
+      resources: studyResources
+        .filter((r) =>
+          resourceCurriculumReferences(r).some(
+            (ref) => ref.textbookId === book.id,
+          ),
+        )
+        .map((r) => ({
+          id: r.id,
+          status: r.status,
+          category: r.category,
+          chapter: r.chapter,
+        })),
+      limitation:
+        "Subject/medium reference, not verified coverage of this volume's chapters or every examination variant.",
+    })),
     downloadedNewPdfs: studyResources.filter((r) => r.localAsset).length,
     rights: studyResources.reduce(
       (out, r) => ({ ...out, [r.rights]: (out[r.rights] ?? 0) + 1 }),

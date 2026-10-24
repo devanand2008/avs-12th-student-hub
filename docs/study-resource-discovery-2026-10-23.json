@@ -1,0 +1,42 @@
+{
+  "checkedOn": "2026-10-23",
+  "scope": "Source discovery and metadata inspection only; no endorsement, publication or licence grant",
+  "paperListing": "https://apply1.tndge.org/dge-notification/questbank",
+  "checks": [
+    {
+      "id": "dge-hse2-2022-archive",
+      "url": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2022_May_HSE_II.pdf",
+      "httpStatus": 200,
+      "bytes": 86935918,
+      "pdfPages": 2362,
+      "inspection": "Parsed in memory; Tamil paper code 5901 on PDF page 1 visually inspected. Part I prints 14x1=14. Physics Tamil/English header located at PDF page 322; additional variants not separately catalogued.",
+      "redistribution": "unclear",
+      "localPdfCopy": false
+    },
+    {
+      "id": "dge-hse2-2021-archive",
+      "url": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2021_May_HSE_II.pdf",
+      "httpStatus": 200,
+      "bytes": 88188489,
+      "pdfPages": 2378,
+      "inspection": "Tamil paper code 4701 on PDF page 1 visually inspected; Physics headers found. Listing labels September, filename labels May; session unset. Temporary pending reconciliation.",
+      "redistribution": "unclear",
+      "localPdfCopy": false
+    }
+  ],
+  "duplicateListing": {
+    "url": "https://apply1.tndge.org/dge-notification/samques",
+    "result": "Class 12 sample V/IV/III links resolve to already recorded March 2025/2024/2023 collections respectively. No duplicate resources created."
+  },
+  "videos": {
+    "discoveryUrl": "https://www.kalvikural.com/2020/12/12.html?m=0",
+    "ids": ["2ZlwBnnNc6o", "avhNvMO7nHg"],
+    "primaryCheck": "YouTube oEmbed HTTP 200 for each; title and channel metadata returned",
+    "author": "Chemistryvideoanbu",
+    "authorUrl": "https://www.youtube.com/@chemistryvideoanbu",
+    "discrepancy": "Discovery site described Kalvi TV, but actual channel metadata differs. Government ownership, content quality and exact current chapter alignment remain unverified.",
+    "status": "temporary_unverified",
+    "realPlaybackTestedThisPass": false,
+    "videoCopied": false
+  }
+}

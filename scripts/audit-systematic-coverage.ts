@@ -4,7 +4,7 @@ import { readFile, writeFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import catalog from "../src/lib/textbooks-catalog.json";
 import definitions from "./data/computer-source-sections.json";
-import sharedDefinitions from "./data/shared-source-sections.json";
+import { readySourceDefinitions as sharedDefinitions } from "./lib/shared-source-definitions";
 import { loadSharedSourceReviewBatches } from "./lib/shared-source-review";
 import {
   commerceReviewDefinition,

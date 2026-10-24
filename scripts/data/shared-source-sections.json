@@ -4832,5 +4832,507 @@
       ]
     },
     "endAtLastPage": true
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "subject": "Bio-Zoology",
+    "medium": "English",
+    "volume": null,
+    "sourceFile": "12th_Std_Biology_Zoology_EM_optimised.pdf",
+    "sourceSha256": "ee5428d73469d242a0090aa021b895b561a0b34517ea985dbd60912a5c795852",
+    "chapterNumber": 3,
+    "chapterTitle": "Reproductive Health",
+    "chapterStartPdfPage": 40,
+    "chapterEndPdfPage": 52,
+    "pages": [
+      {
+        "page": 50,
+        "printedPage": 42,
+        "first": 1,
+        "last": 6,
+        "contentTopFraction": 0.08,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 51,
+        "printedPage": 43,
+        "first": 7,
+        "last": 8,
+        "contentTopFraction": 0.08,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      52,
+      53
+    ],
+    "stopBeforeQuestion": 9,
+    "diagramQuestions": [
+      5,
+      7
+    ],
+    "preserveLineBreakQuestions": [
+      5,
+      7
+    ],
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 51,
+        "kind": "Q9 onward are descriptive, completion diagrams and open assessment; no four-choice MCQs invented. Marks unspecified in Evaluation."
+      }
+    ],
+    "keyEvidence": "No explicit question-specific key in inspected exercise/ending pages. Bold typography is not a key. All answers unknown.",
+    "subjectNeutral": true,
+    "optionLabelPattern": "(?:^|\\s)\\(\\s*([a-d])\\s*\\)",
+    "sourceWarnings": [
+      "Source punctuation, spelling, assertion/reason rubric and temperature notation require individual teacher verification."
+    ],
+    "sectionHeading": "Evaluation — eight authentic four-choice items (marks unspecified)",
+    "questionWarnings": {
+      "5": [
+        "Source table of methods and effects requires original row alignment; retained as a source crop."
+      ],
+      "6": [
+        "Statement and choices span columns/pages. Preserve statement 2 as printed; bold choice is not answer-key evidence."
+      ],
+      "7": [
+        "Matching columns I/II require literal source table; no answer inferred."
+      ],
+      "8": [
+        "Source says spermatogenesis in bold; preserve wording and hold for teacher rather than reasoning a correction."
+      ]
+    }
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "subject": "Bio-Zoology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Biology_Zoology_TM_optimised.pdf",
+    "sourceSha256": "7b4a1946571dfe8901540a980e0fedc19eefd86cc4ba1ad230efd66edb9f9b64",
+    "chapterNumber": 3,
+    "chapterTitle": "இனப்பெருக்க நலன்",
+    "chapterStartPdfPage": 43,
+    "chapterEndPdfPage": 59,
+    "pages": [
+      {
+        "page": 56,
+        "printedPage": 48,
+        "first": 1,
+        "last": 3,
+        "contentTopFraction": 0.08,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 57,
+        "printedPage": 49,
+        "first": 4,
+        "last": 8,
+        "contentTopFraction": 0.08,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      58,
+      59,
+      60
+    ],
+    "stopBeforeQuestion": null,
+    "endAtLastPage": true,
+    "sectionEndPattern": "(?!)",
+    "diagramQuestions": [
+      5,
+      7
+    ],
+    "preserveLineBreakQuestions": [
+      5,
+      7
+    ],
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 58,
+        "kind": "Q9 onward are descriptive, completion diagrams and open assessment; no four-choice MCQs invented. Marks unspecified in Evaluation."
+      }
+    ],
+    "keyEvidence": "No explicit question-specific key in inspected exercise/ending pages. Bold typography is not a key. All answers unknown.",
+    "subjectNeutral": true,
+    "optionLabelPattern": "(?:^|\\s)([அஆஇஈ])\\s*\\)",
+    "sourceWarnings": [
+      "Damaged Tamil Unicode/spacing requires source-image correction; raw extraction preserved separately. No automatic repairs."
+    ],
+    "sectionHeading": "Evaluation — eight authentic four-choice items (marks unspecified)",
+    "questionWarnings": {
+      "5": [
+        "Source table of methods and effects requires original row alignment; retained as a source crop."
+      ],
+      "6": [
+        "Statement and choices span columns/pages. Preserve statement 2 as printed; bold choice is not answer-key evidence."
+      ],
+      "7": [
+        "Matching columns I/II require literal source table; no answer inferred."
+      ],
+      "8": [
+        "Source says spermatogenesis in bold; preserve wording and hold for teacher rather than reasoning a correction."
+      ]
+    },
+    "questionOptionLabelPatterns": {
+      "5": "^[ \\t]*([அஆஇஈ])[ \\t]+"
+    }
+  },
+  {
+    "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+    "subject": "Basic Electrical Engineering",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Basic_Electrical_Enginering_TM_Optimised.pdf",
+    "sourceSha256": "049b6c664b8a25cc31d00703b2e34f8c16dd71a4ead7e6cbb384a982b9ffcdc5",
+    "chapterNumber": 3,
+    "chapterTitle": "மின் வெப்பச் சாதனங்கள்",
+    "chapterStartPdfPage": 49,
+    "chapterEndPdfPage": 66,
+    "pages": [
+      {
+        "page": 63,
+        "printedPage": 55,
+        "first": 1,
+        "last": 6,
+        "contentTopFraction": 0.44,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 64,
+        "printedPage": 56,
+        "first": 7,
+        "last": 17,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 65,
+        "printedPage": 57,
+        "first": 18,
+        "last": 18,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 695,
+        "layout": "two-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      66,
+      67
+    ],
+    "stopBeforeQuestion": null,
+    "endAtLastPage": true,
+    "sectionEndPattern": "(?!)",
+    "diagramQuestions": [],
+    "incompleteQuestions": [
+      8,
+      11
+    ],
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 65,
+        "kind": "Parts B/C/D descriptive items excluded; Part A explicitly one mark."
+      }
+    ],
+    "keyEvidence": "No explicit question-specific key in inspected exercise/ending pages. Bold typography is not a key. All answers unknown.",
+    "subjectNeutral": true,
+    "optionLabelPattern": "(?:^|\\s)([அஆஇஈ])\\s*\\)",
+    "sourceWarnings": [
+      "Damaged Tamil Unicode/spacing requires source-image correction; raw extraction preserved separately. No automatic repairs."
+    ],
+    "sectionHeading": "Evaluation Part A — one-mark questions",
+    "questionWarnings": {
+      "3": [
+        "Final option continues top right of PDF63."
+      ],
+      "8": [
+        "Superscripts in four printed electrical heat formulas need source confirmation. No algebraic repair."
+      ],
+      "11": [
+        "PDF extraction repeats அ for second option, whereas source image prints ஆ. Preserve extraction and crop; correction pending individual teacher review."
+      ]
+    },
+    "printedOptionLabels": {
+      "11": [
+        "அ",
+        "அ",
+        "இ",
+        "ஈ"
+      ]
+    }
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "subject": "Bio-Zoology",
+    "medium": "English",
+    "volume": null,
+    "sourceFile": "12th_Std_Biology_Zoology_EM_optimised.pdf",
+    "sourceSha256": "ee5428d73469d242a0090aa021b895b561a0b34517ea985dbd60912a5c795852",
+    "chapterNumber": 4,
+    "chapterTitle": "Principles of Inheritance and Variation",
+    "chapterStartPdfPage": 53,
+    "chapterEndPdfPage": 65,
+    "pages": [
+      {
+        "page": 63,
+        "printedPage": 55,
+        "first": 1,
+        "last": 12,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 64,
+        "printedPage": 56,
+        "first": 13,
+        "last": 21,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      65,
+      66
+    ],
+    "stopBeforeQuestion": 22,
+    "diagramQuestions": [],
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 64,
+        "kind": "Descriptive questions following the inventoried four-choice section excluded. No answers inferred from bold print."
+      }
+    ],
+    "keyEvidence": "No explicit question-specific printed key located in inspected exercise/ending pages. Bold options are not a key; answers remain unknown.",
+    "subjectNeutral": true,
+    "optionLabelPattern": "(?:^|\\s)([a-d])\\s*\\)",
+    "sourceWarnings": [
+      "Source punctuation, spelling, assertion/reason rubric and temperature notation require individual teacher verification.",
+      "Chromosome/genotype superscripts and Tamil glyphs require teacher/source-image verification; bold options must not be treated as key evidence."
+    ],
+    "sectionHeading": "Evaluation ? four-choice items; marks unspecified",
+    "incompleteQuestions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "questionWarnings": {
+      "3": [
+        "Genotype superscripts require visual confirmation."
+      ],
+      "6": [
+        "Genotype superscripts require visual confirmation."
+      ],
+      "9": [
+        "Genotype superscripts require visual confirmation."
+      ],
+      "12": [
+        "Probabilities and parental genotypes require source verification."
+      ]
+    },
+    "preparationStatus": "source_checked",
+    "preparationBlocker": "",
+    "preparationHistory": [
+      {
+        "status": "in_progress",
+        "blocker": "Unreconciled draft; no source-bounded packet. English Q6 anchor missing and draft Tamil titles contain replacement question marks. Requires original-page verification before source_checked."
+      },
+      {
+        "status": "source_checked",
+        "evidence": "Original source openings/exercises/endings visually inspected; Q6 boundary, UTF-8 title and option-label/cutoff issues reconciled; all 57 held proposals pass fresh stable-rerun tests."
+      }
+    ]
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "subject": "Bio-Zoology",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Biology_Zoology_TM_optimised.pdf",
+    "sourceSha256": "7b4a1946571dfe8901540a980e0fedc19eefd86cc4ba1ad230efd66edb9f9b64",
+    "chapterNumber": 4,
+    "chapterTitle": "மரபுக் கடத்தல் கொள்கைகள் மற்றும் மாறுபாடுகள்",
+    "chapterStartPdfPage": 60,
+    "chapterEndPdfPage": 75,
+    "pages": [
+      {
+        "page": 72,
+        "printedPage": 64,
+        "first": 1,
+        "last": 2,
+        "contentTopFraction": 0.56,
+        "contentBottomPoints": 85,
+        "layout": "two-column",
+        "contentLeftFraction": 0.5
+      },
+      {
+        "page": 73,
+        "printedPage": 65,
+        "first": 3,
+        "last": 13,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 74,
+        "printedPage": 66,
+        "first": 14,
+        "last": 21,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      75,
+      76
+    ],
+    "stopBeforeQuestion": 22,
+    "endAtLastPage": true,
+    "sectionEndPattern": "(?!)",
+    "diagramQuestions": [],
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 74,
+        "kind": "Descriptive questions following the inventoried four-choice section excluded. No answers inferred from bold print."
+      }
+    ],
+    "keyEvidence": "No explicit question-specific printed key located in inspected exercise/ending pages. Bold options are not a key; answers remain unknown.",
+    "subjectNeutral": true,
+    "optionLabelPattern": "(?:^|\\s)([அஆஇஈ])\\s*\\)",
+    "sourceWarnings": [
+      "Damaged Tamil Unicode/spacing requires source-image correction; raw extraction preserved separately. No automatic repairs.",
+      "Chromosome/genotype superscripts and Tamil glyphs require teacher/source-image verification; bold options must not be treated as key evidence."
+    ],
+    "sectionHeading": "Evaluation ? four-choice items; marks unspecified",
+    "incompleteQuestions": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "questionWarnings": {
+      "3": [
+        "Genotype superscripts require visual confirmation."
+      ],
+      "6": [
+        "Genotype superscripts require visual confirmation."
+      ],
+      "9": [
+        "Genotype superscripts require visual confirmation.",
+        "Fourth printed label extracts without closing parenthesis. Question-specific literal label boundary retained; no punctuation or answer repaired."
+      ],
+      "12": [
+        "Probabilities and parental genotypes require source verification."
+      ]
+    },
+    "questionOptionLabelPatterns": {
+      "9": "^[ \\t]*([அஆஇஈ])(?:\\s*\\)|[ \\t]+)"
+    },
+    "preparationStatus": "source_checked",
+    "preparationBlocker": "",
+    "preparationHistory": [
+      {
+        "status": "in_progress",
+        "blocker": "Unreconciled draft; no source-bounded packet. English Q6 anchor missing and draft Tamil titles contain replacement question marks. Requires original-page verification before source_checked."
+      },
+      {
+        "status": "source_checked",
+        "evidence": "Original source openings/exercises/endings visually inspected; Q6 boundary, UTF-8 title and option-label/cutoff issues reconciled; all 57 held proposals pass fresh stable-rerun tests."
+      }
+    ]
+  },
+  {
+    "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+    "subject": "Basic Electrical Engineering",
+    "medium": "Tamil",
+    "volume": null,
+    "sourceFile": "12th_Std_Basic_Electrical_Enginering_TM_Optimised.pdf",
+    "sourceSha256": "049b6c664b8a25cc31d00703b2e34f8c16dd71a4ead7e6cbb384a982b9ffcdc5",
+    "chapterNumber": 4,
+    "chapterTitle": "இயந்திர மின்சாதனங்கள்",
+    "chapterStartPdfPage": 67,
+    "chapterEndPdfPage": 90,
+    "pages": [
+      {
+        "page": 86,
+        "printedPage": 78,
+        "first": 1,
+        "last": 2,
+        "contentTopFraction": 0.68,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 87,
+        "printedPage": 79,
+        "first": 3,
+        "last": 12,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 85,
+        "layout": "two-column"
+      },
+      {
+        "page": 88,
+        "printedPage": 80,
+        "first": 13,
+        "last": 15,
+        "contentTopFraction": 0.07,
+        "contentBottomPoints": 520,
+        "layout": "two-column"
+      }
+    ],
+    "inspectedEndingPages": [
+      89,
+      90,
+      91
+    ],
+    "stopBeforeQuestion": null,
+    "endAtLastPage": true,
+    "sectionEndPattern": "(?!)",
+    "diagramQuestions": [],
+    "excludedItems": [
+      {
+        "numbers": [],
+        "page": 88,
+        "kind": "Descriptive questions following the inventoried four-choice section excluded. No answers inferred from bold print."
+      }
+    ],
+    "keyEvidence": "No explicit question-specific printed key located in inspected exercise/ending pages. Bold options are not a key; answers remain unknown.",
+    "subjectNeutral": true,
+    "optionLabelPattern": "(?:^|\\s)([அஆஇஈ])\\s*\\)",
+    "sourceWarnings": [
+      "Damaged Tamil Unicode/spacing requires source-image correction; raw extraction preserved separately. No automatic repairs.",
+      "Source chapter covers motor appliances, not alternators as the old backlog note claimed.",
+      "Source chapter covers motor appliances, not alternators as the old backlog note claimed."
+    ],
+    "sectionHeading": "Evaluation Part A ? printed one mark",
+    "preparationStatus": "source_checked",
+    "preparationBlocker": "",
+    "preparationHistory": [
+      {
+        "status": "in_progress",
+        "blocker": "Unreconciled draft; no source-bounded packet. English Q6 anchor missing and draft Tamil titles contain replacement question marks. Requires original-page verification before source_checked."
+      },
+      {
+        "status": "source_checked",
+        "evidence": "Original source openings/exercises/endings visually inspected; Q6 boundary, UTF-8 title and option-label/cutoff issues reconciled; all 57 held proposals pass fresh stable-rerun tests."
+      }
+    ]
   }
 ]

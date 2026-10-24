@@ -30,6 +30,8 @@
     "mcqs:prepare": "tsx scripts/import-textbook-mcqs.ts --dry-run",
     "mcqs:extract-local": "tsx scripts/extract-book-back-local.ts",
     "mcqs:progress-audit": "tsx scripts/audit-extraction-progress.ts",
+    "mcqs:portal-coverage": "tsx scripts/audit-portal-coverage.ts",
+    "mcqs:portal-integrity": "tsx scripts/audit-portal-integrity.ts",
     "mcqs:import": "tsx scripts/import-textbook-mcqs.ts",
     "mcqs:audit": "tsx scripts/audit-textbook-mcqs.ts",
     "mcqs:coverage": "tsx scripts/audit-textbook-coverage.ts",

@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { testFixtureOrigin } from "../helpers/e2e-urls";
 import { authRequest, readTestOtp } from "../helpers/otp-browser";
 
 test("unavailable mobile verification offers password sign-in without authenticating", async ({
@@ -109,7 +110,7 @@ test("OTP rejects missing challenges, expired codes, resend floods and excessive
     const code = await readTestOtp(page, phone);
     if (phase === "expiry") {
       await page.request.delete(
-        "http://127.0.0.1:3101/_qa/otp?phone=" +
+        testFixtureOrigin + "/_qa/otp?phone=" +
           encodeURIComponent("+91" + phone),
         { headers: { apikey: "qa-service-key" } },
       );

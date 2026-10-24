@@ -390,23 +390,31 @@ test("platform security and learning behaviour", async (t) => {
       );
     },
   );
-  await t.test("all models map to existing curriculum chapters", async () => {
-    assert.equal(learningModels.length, 3);
-    for (const model of learningModels) {
-      const subject =
-        model.subject === "Computer Science"
-          ? "sub-cs"
-          : model.subject === "Bio-Botany"
-            ? "sub-botany"
-            : "sub-zoology";
-      assert.ok(
-        (await getChaptersBySubject(subject)).some(
-          (ch) => ch.id === model.chapterId,
-        ),
-      );
-      assert.ok(model.parts.length >= 3);
-    }
-  });
+  await t.test(
+    "models retain valid chapter links where mapped and have distinct named parts",
+    async () => {
+      assert.equal(learningModels.length, 15);
+      for (const model of learningModels) {
+        const subject =
+          model.subject === "Computer Science"
+            ? "sub-cs"
+            : model.subject === "Bio-Botany"
+              ? "sub-botany"
+              : "sub-zoology";
+        if (model.chapterId)
+          assert.ok(
+            (await getChaptersBySubject(subject)).some(
+              (ch) => ch.id === model.chapterId,
+            ),
+          );
+        assert.ok(model.parts.length >= 2);
+        assert.equal(
+          new Set(model.parts.map((part) => part.id)).size,
+          model.parts.length,
+        );
+      }
+    },
+  );
   await t.test(
     "production requires signing secrets and durable content configuration",
     async () => {

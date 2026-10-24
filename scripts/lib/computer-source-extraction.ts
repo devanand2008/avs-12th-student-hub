@@ -58,6 +58,7 @@ export interface ComputerSectionDefinition {
   /** Explicit, visually inventoried layouts for any subject; legacy definitions stay unchanged. */
   subjectNeutral?: boolean;
   optionLabelPattern?: string;
+  questionOptionLabelPatterns?: Record<string, string | undefined>;
   optionLabelSkip?: Record<string, number | undefined>;
   endAtLastPage?: boolean;
   sectionHeading?: string;
@@ -295,8 +296,8 @@ export function prepareComputerSection(
             );
             const allLabels = [
               ...body.matchAll(
-                definition.optionLabelPattern
-                  ? new RegExp(definition.optionLabelPattern, "gu")
+                definition.questionOptionLabelPatterns?.[String(span.number)] || definition.optionLabelPattern
+                  ? new RegExp(definition.questionOptionLabelPatterns?.[String(span.number)] ?? definition.optionLabelPattern!, definition.questionOptionLabelPatterns?.[String(span.number)] ? "gmu" : "gu")
                   : definition.parenthesizedTamilOptions
                   ? /(?:^|\s)\(\s*([அஆஇஈ])\s*\)/gu
                   : english

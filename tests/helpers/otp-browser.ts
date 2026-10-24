@@ -1,4 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
+import { testFixtureOrigin } from "./e2e-urls";
 export async function authRequest(page: Page, path: string, data?: unknown) {
   const cookies = await page.context().cookies();
   return page.request.post(path, {
@@ -12,7 +13,7 @@ export async function authRequest(page: Page, path: string, data?: unknown) {
 }
 export async function readTestOtp(page: Page, phone: string) {
   const sms = await page.request.get(
-    "http://127.0.0.1:3101/_qa/otp?phone=" + encodeURIComponent("+91" + phone),
+    testFixtureOrigin + "/_qa/otp?phone=" + encodeURIComponent("+91" + phone),
     { headers: { apikey: "qa-service-key" } },
   );
   expect(sms.status()).toBe(200);

@@ -4422,6 +4422,194 @@
           "evidence": "YouTube oEmbed HTTPS 200 returned this exact title and channel and a supported iframe for Y-ivyEQi8eg. Only validated ID is stored; returned iframe HTML is never rendered."
         }
       ]
+    },
+    {
+      "id": "dge-hse2-2022-archive",
+      "category": "question-papers",
+      "title": "Class 12 DGE archive — 2022 May collection",
+      "class": 12,
+      "board": "Tamil Nadu DGE HSE (+2)",
+      "subjects": ["Tamil", "Physics"],
+      "mediums": ["English", "Tamil"],
+      "year": 2022,
+      "session": "May public examination",
+      "resourceType": "Public exam collection",
+      "chapter": null,
+      "publisher": "Directorate of Government Examinations, Tamil Nadu",
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "originalUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2022_May_HSE_II.pdf",
+      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2022_May_HSE_II.pdf",
+      "localAsset": null,
+      "checksum": null,
+      "status": "listed",
+      "availability": "confirmed",
+      "authenticity": "confirmed",
+      "relevance": "confirmed",
+      "rights": "official_access_terms_unclear",
+      "licence": null,
+      "licenceUrl": null,
+      "redistribution": "unclear",
+      "embedding": "not_applicable",
+      "download": "source_browser",
+      "editorial": "source_checked",
+      "checkedAt": "2026-10-23T17:04:02.030744Z",
+      "description": "Official 2362-page combined archive. Only Tamil and Physics headings were checked in this pass; other subjects and individual medium variants are not indexed. No local PDF copy.",
+      "accessibilityNotes": "Large combined PDF; Tamil legacy-font text may not read correctly with assistive tools. Use the original source if the browser cannot display it.",
+      "issues": [
+        "Large external PDF; redistribution permission is not confirmed.",
+        "Only Tamil page 1 and Physics headers were inspected; no claim of complete collection coverage."
+      ],
+      "history": [
+        {
+          "at": "2026-10-23T17:04:02.030744Z",
+          "action": "source_check",
+          "evidence": "Exact URL linked by DGE Question Bank. HTTP 200; 86935918 bytes parsed in memory, 2362 pages. First Tamil page visually inspected; Physics bilingual headers recorded in agent1-older-papers.json."
+        }
+      ],
+      "markFormats": [
+        {
+          "marks": 1,
+          "subject": "Tamil",
+          "medium": "Tamil",
+          "pdfPage": 1,
+          "evidence": "Printed Part I shows 14 × 1 = 14; visually checked Tamil paper code 5901."
+        }
+      ]
+    },
+    {
+      "id": "dge-hse2-2021-archive",
+      "category": "question-papers",
+      "title": "Class 12 DGE archive — 2021 session needs verification",
+      "class": 12,
+      "board": "Tamil Nadu DGE HSE (+2)",
+      "subjects": ["Tamil", "Physics"],
+      "mediums": ["English", "Tamil"],
+      "year": 2021,
+      "session": null,
+      "resourceType": "Public exam collection",
+      "chapter": null,
+      "publisher": "Directorate of Government Examinations, Tamil Nadu",
+      "sourceUrl": "https://apply1.tndge.org/dge-notification/questbank",
+      "originalUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2021_May_HSE_II.pdf",
+      "pdfUrl": "https://tnegadge.s3-ap-south-1.amazonaws.com/notification/questbank/2021_May_HSE_II.pdf",
+      "localAsset": null,
+      "checksum": null,
+      "status": "temporary_unverified",
+      "availability": "confirmed",
+      "authenticity": "confirmed",
+      "relevance": "pending",
+      "rights": "official_access_terms_unclear",
+      "licence": null,
+      "licenceUrl": null,
+      "redistribution": "unclear",
+      "embedding": "not_applicable",
+      "download": "source_browser",
+      "editorial": "pending",
+      "checkedAt": "2026-10-23T17:04:02.030744Z",
+      "description": "Official 2378-page combined archive. Only Tamil and Physics headings were checked in this pass; other subjects and individual medium variants are not indexed. No local PDF copy.",
+      "accessibilityNotes": "Large combined PDF; Tamil legacy-font text may not read correctly with assistive tools. Use the original source if the browser cannot display it.",
+      "issues": [
+        "Large external PDF; redistribution permission is not confirmed.",
+        "Only Tamil page 1 and Physics headers were inspected; no claim of complete collection coverage.",
+        "DGE listing says September 2021 but linked filename says May. Session is unset until document provenance is reconciled; do not classify as supplementary without evidence."
+      ],
+      "history": [
+        {
+          "at": "2026-10-23T17:04:02.030744Z",
+          "action": "source_check",
+          "evidence": "Exact URL linked by DGE Question Bank. HTTP 200; 88188489 bytes parsed in memory, 2378 pages. First Tamil page visually inspected; Physics bilingual headers recorded in agent1-older-papers.json."
+        }
+      ]
+    },
+    {
+      "id": "youtube-2zlwbnnnc6o",
+      "category": "video-lessons",
+      "title": "XII, 5-அணைவு வேதியியல்T/M (மாற்றியங்களின் வகைகள்)",
+      "class": 12,
+      "board": null,
+      "subjects": ["Chemistry"],
+      "mediums": ["Tamil"],
+      "year": null,
+      "session": null,
+      "resourceType": "YouTube lesson",
+      "chapter": null,
+      "publisher": "Chemistryvideoanbu",
+      "sourceUrl": "https://www.youtube.com/@chemistryvideoanbu",
+      "originalUrl": "https://www.youtube.com/watch?v=2ZlwBnnNc6o",
+      "pdfUrl": null,
+      "localAsset": null,
+      "checksum": null,
+      "status": "temporary_unverified",
+      "availability": "confirmed",
+      "authenticity": "pending",
+      "relevance": "pending",
+      "rights": "external_link_only",
+      "licence": null,
+      "licenceUrl": null,
+      "redistribution": "not_permitted",
+      "embedding": "oembed_supported",
+      "download": "not_available",
+      "editorial": "pending",
+      "checkedAt": "2026-10-23T17:04:02.030744Z",
+      "description": "Tamil Class 12 Chemistry lesson according to the publisher title. The title claims Unit 5; exact current textbook chapter alignment and teaching accuracy await review.",
+      "accessibilityNotes": "YouTube captions depend on the uploader; availability and accuracy are not guaranteed.",
+      "issues": [
+        "Discovery site labelled these Kalvi TV, but YouTube identifies Chemistryvideoanbu. Government ownership is not verified.",
+        "Successful oEmbed metadata is not proof of actual playback or editorial approval.",
+        "Claimed Unit 5 retained in original title; no verified chapter ID assigned."
+      ],
+      "history": [
+        {
+          "at": "2026-10-23T17:04:02.030744Z",
+          "action": "candidate_discovery",
+          "evidence": "Discovered https://www.kalvikural.com/2020/12/12.html?m=0; primary YouTube oEmbed returned HTTP 200 with exact title and channel. See agent1-video-checks.json. No iframe HTML imported."
+        }
+      ]
+    },
+    {
+      "id": "youtube-avhnvmo7nhg",
+      "category": "video-lessons",
+      "title": "XII,அலகு-5, அணைவு வேதியியல்T/M (IUPAC- பெயரிடுதல்)",
+      "class": 12,
+      "board": null,
+      "subjects": ["Chemistry"],
+      "mediums": ["Tamil"],
+      "year": null,
+      "session": null,
+      "resourceType": "YouTube lesson",
+      "chapter": null,
+      "publisher": "Chemistryvideoanbu",
+      "sourceUrl": "https://www.youtube.com/@chemistryvideoanbu",
+      "originalUrl": "https://www.youtube.com/watch?v=avhNvMO7nHg",
+      "pdfUrl": null,
+      "localAsset": null,
+      "checksum": null,
+      "status": "temporary_unverified",
+      "availability": "confirmed",
+      "authenticity": "pending",
+      "relevance": "pending",
+      "rights": "external_link_only",
+      "licence": null,
+      "licenceUrl": null,
+      "redistribution": "not_permitted",
+      "embedding": "oembed_supported",
+      "download": "not_available",
+      "editorial": "pending",
+      "checkedAt": "2026-10-23T17:04:02.030744Z",
+      "description": "Tamil Class 12 Chemistry lesson according to the publisher title. The title claims Unit 5; exact current textbook chapter alignment and teaching accuracy await review.",
+      "accessibilityNotes": "YouTube captions depend on the uploader; availability and accuracy are not guaranteed.",
+      "issues": [
+        "Discovery site labelled these Kalvi TV, but YouTube identifies Chemistryvideoanbu. Government ownership is not verified.",
+        "Successful oEmbed metadata is not proof of actual playback or editorial approval.",
+        "Claimed Unit 5 retained in original title; no verified chapter ID assigned."
+      ],
+      "history": [
+        {
+          "at": "2026-10-23T17:04:02.030744Z",
+          "action": "candidate_discovery",
+          "evidence": "Discovered https://www.kalvikural.com/2020/12/12.html?m=0; primary YouTube oEmbed returned HTTP 200 with exact title and channel. See agent1-video-checks.json. No iframe HTML imported."
+        }
+      ]
     }
   ]
 }

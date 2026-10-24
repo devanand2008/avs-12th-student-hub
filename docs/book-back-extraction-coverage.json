@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-22T15:54:38.167Z",
+  "checkedAt": "2026-10-23T18:12:43.421Z",
   "pdfInventory": [
     {
       "file": "public\\textbooks\\12-accountancy-english-c0f4ded3.pdf",
@@ -334,15 +334,15 @@
   "catalogPdfs": 82,
   "processedReports": 82,
   "processedPages": 24088,
-  "uniqueCandidateIds": 12738,
+  "uniqueCandidateIds": 12747,
   "duplicateCandidateIds": 0,
-  "preservedCandidateRecords": 17329,
+  "preservedCandidateRecords": 17338,
   "quarantinedCandidateRecords": 4591,
   "parserBookBackCandidates": 6311,
   "textAndKeyEligibleCandidates": 985,
   "approvedNewCandidates": 0,
-  "sourceBoundedInventoriedQuestions": 953,
-  "recoveredSectionCandidates": 509,
+  "sourceBoundedInventoriedQuestions": 1044,
+  "recoveredSectionCandidates": 518,
   "publishedNewCandidates": 0,
   "sourceCollectionComplete": false,
   "failures": [],
@@ -8002,9 +8002,9 @@
       ],
       "failedPages": [],
       "sparsePages": [],
-      "extractedCandidates": 170,
+      "extractedCandidates": 171,
       "parserBookBackCandidates": 52,
-      "recoveredSectionCandidates": 0,
+      "recoveredSectionCandidates": 1,
       "sourceBoundedQuestionInventory": [
         {
           "chapterId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-1",
@@ -8080,6 +8080,87 @@
           "inspectedEndingPages": [
             47,
             48
+          ],
+          "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
+        },
+        {
+          "chapterId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-3",
+          "chapterNumber": 3,
+          "chapterTitle": "மின் வெப்பச் சாதனங்கள்",
+          "batchId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-3-source-bounded-01",
+          "sourceInventoriedQuestions": 18,
+          "pdfPages": [
+            63,
+            64,
+            65
+          ],
+          "printedPages": [
+            55,
+            56,
+            57
+          ],
+          "keyPdfPage": null,
+          "keyMatched": 0,
+          "completeTextOptionMappings": 16,
+          "fourNonemptyChoicePositions": 18,
+          "diagramDependent": 0,
+          "incompleteGraphQuestions": [],
+          "reusedIds": 17,
+          "newIds": 1,
+          "teacherApproved": 0,
+          "published": 0,
+          "complete": false,
+          "excludedItems": [
+            {
+              "numbers": [],
+              "page": 65,
+              "kind": "Parts B/C/D descriptive items excluded; Part A explicitly one mark."
+            }
+          ],
+          "inspectedEndingPages": [
+            66,
+            67
+          ],
+          "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
+        },
+        {
+          "chapterId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-4",
+          "chapterNumber": 4,
+          "chapterTitle": "இயந்திர மின்சாதனங்கள்",
+          "batchId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-4-source-bounded-01",
+          "sourceInventoriedQuestions": 15,
+          "pdfPages": [
+            86,
+            87,
+            88
+          ],
+          "printedPages": [
+            78,
+            79,
+            80
+          ],
+          "keyPdfPage": null,
+          "keyMatched": 0,
+          "completeTextOptionMappings": 15,
+          "fourNonemptyChoicePositions": 15,
+          "diagramDependent": 0,
+          "incompleteGraphQuestions": [],
+          "reusedIds": 15,
+          "newIds": 0,
+          "teacherApproved": 0,
+          "published": 0,
+          "complete": false,
+          "excludedItems": [
+            {
+              "numbers": [],
+              "page": 88,
+              "kind": "Descriptive questions following the inventoried four-choice section excluded. No answers inferred from bold print."
+            }
+          ],
+          "inspectedEndingPages": [
+            89,
+            90,
+            91
           ],
           "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
         }
@@ -8175,47 +8256,86 @@
         {
           "id": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-3",
           "number": 3,
-          "title": "Chapter 3",
+          "title": "மின் வெப்பச் சாதனங்கள்",
           "startPdfPage": 49,
-          "exercisePdfPages": [],
-          "sectionCount": 0,
-          "extractedCandidates": 17,
-          "bookBackCandidates": 0,
-          "sourceSectionAssociatedCandidates": 0,
+          "exercisePdfPages": [
+            63,
+            65
+          ],
+          "sectionCount": 1,
+          "extractedCandidates": 18,
+          "bookBackCandidates": 18,
+          "sourceSectionAssociatedCandidates": 18,
           "textAndKeyEligible": 0,
           "answerKnown": 0,
-          "damagedOrAmbiguous": 17,
+          "damagedOrAmbiguous": 18,
           "published": 0,
-          "authenticSourceQuestionTotal": null,
-          "printedKeyMatchedSourceQuestions": null,
-          "sourceBoundedCandidateIds": [],
+          "authenticSourceQuestionTotal": 18,
+          "printedKeyMatchedSourceQuestions": 0,
+          "sourceBoundedCandidateIds": [
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-2ebb4a67d0af6903",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-63a4324b9f3e6af8",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-28c3b18934774a00",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-9db74a1bc7fac0e8",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-a107f580477e67fd",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-c8632878ad1bbea6",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-db04c838178b7db2",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-b853478ee655695a",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-c12b4afead2a3b52",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-5958a98a072f3606",
+            "textbook-bounded-12-basic-electrical-engineering-tamil-029f513a-b8a06fec93505ff3",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-b82be3008bfc9bde",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-a1ead3256798199f",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-b94bba4db36fdc19",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-256a5594b06bdb68",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-fc21a6b1a3a5d929",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-205639d36a264358",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-f562471907db0b67"
+          ],
           "complete": false,
           "warnings": [
-            "Chapter and section boundaries require source verification",
-            "No scoped one-mark heading detected; inspect the original exercise"
+            "Source exercise numbering/pages and available key evidence were inspected; Tamil wording, options, notation and figures still require teacher verification"
           ]
         },
         {
           "id": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-4",
           "number": 4,
-          "title": "Chapter 4",
+          "title": "இயந்திர மின்சாதனங்கள்",
           "startPdfPage": 67,
-          "exercisePdfPages": [],
-          "sectionCount": 0,
+          "exercisePdfPages": [
+            86,
+            88
+          ],
+          "sectionCount": 1,
           "extractedCandidates": 16,
-          "bookBackCandidates": 0,
-          "sourceSectionAssociatedCandidates": 0,
+          "bookBackCandidates": 15,
+          "sourceSectionAssociatedCandidates": 15,
           "textAndKeyEligible": 0,
           "answerKnown": 0,
           "damagedOrAmbiguous": 16,
           "published": 0,
-          "authenticSourceQuestionTotal": null,
-          "printedKeyMatchedSourceQuestions": null,
-          "sourceBoundedCandidateIds": [],
+          "authenticSourceQuestionTotal": 15,
+          "printedKeyMatchedSourceQuestions": 0,
+          "sourceBoundedCandidateIds": [
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-d5280f3cf6cbfd47",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-74355fa180aa53a9",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-1bb9d9d9f8669b27",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-151f48a1231df651",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-386d0e5ae83af91b",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-4da46de12cf23aae",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-4410574383529ae0",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-ea53d758bae0dca7",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-894a3055f1b6fffd",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-191062b1bcedc044",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-dc8bd6686826d22b",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-94caed107e758d89",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-3cd0c173fab7baa9",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-c975c452351a3466",
+            "textbook-q-12-basic-electrical-engineering-tamil-029f513a-31e71d5082e09ba5"
+          ],
           "complete": false,
           "warnings": [
-            "Chapter and section boundaries require source verification",
-            "No scoped one-mark heading detected; inspect the original exercise"
+            "Source exercise numbering/pages and available key evidence were inspected; Tamil wording, options, notation and figures still require teacher verification"
           ]
         },
         {
@@ -8385,6 +8505,57 @@
           "startPdfPage": 45,
           "endPdfPage": 46,
           "heading": "Evaluation Part A — one-mark questions",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "mappingStatus": "provisional-needs-source-review"
+        },
+        {
+          "chapterId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-3",
+          "startPdfPage": 63,
+          "endPdfPage": 65,
+          "heading": "Evaluation Part A — one-mark questions",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "mappingStatus": "provisional-needs-source-review"
+        },
+        {
+          "chapterId": "tb-12-basic-electrical-engineering-tamil-029f513a-ch-4",
+          "startPdfPage": 86,
+          "endPdfPage": 88,
+          "heading": "Evaluation Part A ? printed one mark",
           "questionNumbers": [
             1,
             2,
@@ -13819,9 +13990,9 @@
       ],
       "failedPages": [],
       "sparsePages": [],
-      "extractedCandidates": 238,
+      "extractedCandidates": 243,
       "parserBookBackCandidates": 198,
-      "recoveredSectionCandidates": 9,
+      "recoveredSectionCandidates": 14,
       "sourceBoundedQuestionInventory": [
         {
           "chapterId": "tb-12-bio-zoology-english-7e848813-ch-1",
@@ -13915,6 +14086,82 @@
             39
           ],
           "answerEvidenceStatus": "Explicit printed answers below numbered shared-rubric items; other answers unknown. Evidence does not grant approval."
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-english-7e848813-ch-3",
+          "chapterNumber": 3,
+          "chapterTitle": "Reproductive Health",
+          "batchId": "tb-12-bio-zoology-english-7e848813-ch-3-source-bounded-01",
+          "sourceInventoriedQuestions": 8,
+          "pdfPages": [
+            50,
+            51
+          ],
+          "printedPages": [
+            42,
+            43
+          ],
+          "keyPdfPage": null,
+          "keyMatched": 0,
+          "completeTextOptionMappings": 8,
+          "fourNonemptyChoicePositions": 8,
+          "diagramDependent": 2,
+          "incompleteGraphQuestions": [],
+          "reusedIds": 6,
+          "newIds": 2,
+          "teacherApproved": 0,
+          "published": 0,
+          "complete": false,
+          "excludedItems": [
+            {
+              "numbers": [],
+              "page": 51,
+              "kind": "Q9 onward are descriptive, completion diagrams and open assessment; no four-choice MCQs invented. Marks unspecified in Evaluation."
+            }
+          ],
+          "inspectedEndingPages": [
+            52,
+            53
+          ],
+          "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-english-7e848813-ch-4",
+          "chapterNumber": 4,
+          "chapterTitle": "Principles of Inheritance and Variation",
+          "batchId": "tb-12-bio-zoology-english-7e848813-ch-4-source-bounded-01",
+          "sourceInventoriedQuestions": 21,
+          "pdfPages": [
+            63,
+            64
+          ],
+          "printedPages": [
+            55,
+            56
+          ],
+          "keyPdfPage": null,
+          "keyMatched": 0,
+          "completeTextOptionMappings": 17,
+          "fourNonemptyChoicePositions": 21,
+          "diagramDependent": 0,
+          "incompleteGraphQuestions": [],
+          "reusedIds": 18,
+          "newIds": 3,
+          "teacherApproved": 0,
+          "published": 0,
+          "complete": false,
+          "excludedItems": [
+            {
+              "numbers": [],
+              "page": 64,
+              "kind": "Descriptive questions following the inventoried four-choice section excluded. No answers inferred from bold print."
+            }
+          ],
+          "inspectedEndingPages": [
+            65,
+            66
+          ],
+          "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
         }
       ],
       "ambiguousIdentityMatches": [],
@@ -14001,47 +14248,82 @@
         {
           "id": "tb-12-bio-zoology-english-7e848813-ch-3",
           "number": 3,
-          "title": "Chapter 3",
+          "title": "Reproductive Health",
           "startPdfPage": 40,
-          "exercisePdfPages": [],
-          "sectionCount": 0,
-          "extractedCandidates": 10,
-          "bookBackCandidates": 5,
-          "sourceSectionAssociatedCandidates": 0,
+          "exercisePdfPages": [
+            50,
+            51
+          ],
+          "sectionCount": 1,
+          "extractedCandidates": 12,
+          "bookBackCandidates": 10,
+          "sourceSectionAssociatedCandidates": 8,
           "textAndKeyEligible": 0,
           "answerKnown": 0,
-          "damagedOrAmbiguous": 7,
+          "damagedOrAmbiguous": 12,
           "published": 0,
-          "authenticSourceQuestionTotal": null,
-          "printedKeyMatchedSourceQuestions": null,
-          "sourceBoundedCandidateIds": [],
+          "authenticSourceQuestionTotal": 8,
+          "printedKeyMatchedSourceQuestions": 0,
+          "sourceBoundedCandidateIds": [
+            "textbook-q-12-bio-zoology-english-7e848813-a14a754db043aaba",
+            "textbook-q-12-bio-zoology-english-7e848813-f325ec2a199244f1",
+            "textbook-q-12-bio-zoology-english-7e848813-9e825bb155f3989c",
+            "textbook-q-12-bio-zoology-english-7e848813-3a61df42d964bd4f",
+            "textbook-q-12-bio-zoology-english-7e848813-080edc6727d6a646",
+            "textbook-bounded-12-bio-zoology-english-7e848813-9f6b901d8073a8e8",
+            "textbook-bounded-12-bio-zoology-english-7e848813-2bfa576356f19f3c",
+            "textbook-q-12-bio-zoology-english-7e848813-b3b9eb7b16578c73"
+          ],
           "complete": false,
           "warnings": [
-            "Chapter and section boundaries require source verification",
-            "No scoped one-mark heading detected; inspect the original exercise"
+            "Source exercise numbering/pages and available key evidence were inspected; English wording, options, notation and figures still require teacher verification"
           ]
         },
         {
           "id": "tb-12-bio-zoology-english-7e848813-ch-4",
           "number": 4,
-          "title": "Chapter 4",
+          "title": "Principles of Inheritance and Variation",
           "startPdfPage": 53,
-          "exercisePdfPages": [],
-          "sectionCount": 0,
-          "extractedCandidates": 18,
-          "bookBackCandidates": 18,
-          "sourceSectionAssociatedCandidates": 0,
+          "exercisePdfPages": [
+            63,
+            64
+          ],
+          "sectionCount": 1,
+          "extractedCandidates": 21,
+          "bookBackCandidates": 21,
+          "sourceSectionAssociatedCandidates": 21,
           "textAndKeyEligible": 0,
           "answerKnown": 0,
-          "damagedOrAmbiguous": 0,
+          "damagedOrAmbiguous": 21,
           "published": 0,
-          "authenticSourceQuestionTotal": null,
-          "printedKeyMatchedSourceQuestions": null,
-          "sourceBoundedCandidateIds": [],
+          "authenticSourceQuestionTotal": 21,
+          "printedKeyMatchedSourceQuestions": 0,
+          "sourceBoundedCandidateIds": [
+            "textbook-q-12-bio-zoology-english-7e848813-ac1ba1f29bfd9764",
+            "textbook-q-12-bio-zoology-english-7e848813-900288a6d0615742",
+            "textbook-bounded-12-bio-zoology-english-7e848813-6a5c8c90e059ac7b",
+            "textbook-q-12-bio-zoology-english-7e848813-779ddb78a2ec6e3d",
+            "textbook-q-12-bio-zoology-english-7e848813-d8821ff202e0993e",
+            "textbook-q-12-bio-zoology-english-7e848813-0013eed8aecd9c5f",
+            "textbook-q-12-bio-zoology-english-7e848813-acfc07784f64456d",
+            "textbook-q-12-bio-zoology-english-7e848813-4e7da064ef9c08bf",
+            "textbook-q-12-bio-zoology-english-7e848813-8495ded71e3f7e13",
+            "textbook-bounded-12-bio-zoology-english-7e848813-1768cb37df5253e8",
+            "textbook-q-12-bio-zoology-english-7e848813-521f211770c8f269",
+            "textbook-q-12-bio-zoology-english-7e848813-1a95a6d829b9a8b7",
+            "textbook-q-12-bio-zoology-english-7e848813-31ab56aa3423206b",
+            "textbook-q-12-bio-zoology-english-7e848813-859c8c9a789c1e49",
+            "textbook-q-12-bio-zoology-english-7e848813-3326b4206b3e1d9c",
+            "textbook-q-12-bio-zoology-english-7e848813-7119522ee9b61d50",
+            "textbook-q-12-bio-zoology-english-7e848813-d2ec565adc34ce99",
+            "textbook-q-12-bio-zoology-english-7e848813-7ab0088940ce2611",
+            "textbook-q-12-bio-zoology-english-7e848813-562438748492410b",
+            "textbook-bounded-12-bio-zoology-english-7e848813-0850e6a27d3bae29",
+            "textbook-q-12-bio-zoology-english-7e848813-d164edab8bb0e98f"
+          ],
           "complete": false,
           "warnings": [
-            "Chapter and section boundaries require source verification",
-            "No scoped one-mark heading detected; inspect the original exercise"
+            "Source exercise numbering/pages and available key evidence were inspected; English wording, options, notation and figures still require teacher verification"
           ]
         },
         {
@@ -14292,6 +14574,53 @@
             14,
             15,
             16
+          ],
+          "mappingStatus": "provisional-needs-source-review"
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-english-7e848813-ch-3",
+          "startPdfPage": 50,
+          "endPdfPage": 51,
+          "heading": "Evaluation — eight authentic four-choice items (marks unspecified)",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "mappingStatus": "provisional-needs-source-review"
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-english-7e848813-ch-4",
+          "startPdfPage": 63,
+          "endPdfPage": 64,
+          "heading": "Evaluation ? four-choice items; marks unspecified",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
           ],
           "mappingStatus": "provisional-needs-source-review"
         }
@@ -14627,9 +14956,9 @@
       ],
       "failedPages": [],
       "sparsePages": [],
-      "extractedCandidates": 244,
+      "extractedCandidates": 247,
       "parserBookBackCandidates": 85,
-      "recoveredSectionCandidates": 6,
+      "recoveredSectionCandidates": 9,
       "sourceBoundedQuestionInventory": [
         {
           "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-1",
@@ -14723,6 +15052,85 @@
             42
           ],
           "answerEvidenceStatus": "Explicit printed answers below numbered shared-rubric items; other answers unknown. Evidence does not grant approval."
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-3",
+          "chapterNumber": 3,
+          "chapterTitle": "இனப்பெருக்க நலன்",
+          "batchId": "tb-12-bio-zoology-tamil-2631f8e3-ch-3-source-bounded-01",
+          "sourceInventoriedQuestions": 8,
+          "pdfPages": [
+            56,
+            57
+          ],
+          "printedPages": [
+            48,
+            49
+          ],
+          "keyPdfPage": null,
+          "keyMatched": 0,
+          "completeTextOptionMappings": 8,
+          "fourNonemptyChoicePositions": 8,
+          "diagramDependent": 2,
+          "incompleteGraphQuestions": [],
+          "reusedIds": 5,
+          "newIds": 3,
+          "teacherApproved": 0,
+          "published": 0,
+          "complete": false,
+          "excludedItems": [
+            {
+              "numbers": [],
+              "page": 58,
+              "kind": "Q9 onward are descriptive, completion diagrams and open assessment; no four-choice MCQs invented. Marks unspecified in Evaluation."
+            }
+          ],
+          "inspectedEndingPages": [
+            58,
+            59,
+            60
+          ],
+          "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-4",
+          "chapterNumber": 4,
+          "chapterTitle": "மரபுக் கடத்தல் கொள்கைகள் மற்றும் மாறுபாடுகள்",
+          "batchId": "tb-12-bio-zoology-tamil-2631f8e3-ch-4-source-bounded-01",
+          "sourceInventoriedQuestions": 21,
+          "pdfPages": [
+            72,
+            73,
+            74
+          ],
+          "printedPages": [
+            64,
+            65,
+            66
+          ],
+          "keyPdfPage": null,
+          "keyMatched": 0,
+          "completeTextOptionMappings": 17,
+          "fourNonemptyChoicePositions": 21,
+          "diagramDependent": 0,
+          "incompleteGraphQuestions": [],
+          "reusedIds": 21,
+          "newIds": 0,
+          "teacherApproved": 0,
+          "published": 0,
+          "complete": false,
+          "excludedItems": [
+            {
+              "numbers": [],
+              "page": 74,
+              "kind": "Descriptive questions following the inventoried four-choice section excluded. No answers inferred from bold print."
+            }
+          ],
+          "inspectedEndingPages": [
+            75,
+            76
+          ],
+          "answerEvidenceStatus": "Not located in inspected exercise/ending pages; no whole-book absence claim"
         }
       ],
       "ambiguousIdentityMatches": [],
@@ -14809,47 +15217,82 @@
         {
           "id": "tb-12-bio-zoology-tamil-2631f8e3-ch-3",
           "number": 3,
-          "title": "Chapter 3",
+          "title": "இனப்பெருக்க நலன்",
           "startPdfPage": 43,
-          "exercisePdfPages": [],
-          "sectionCount": 0,
-          "extractedCandidates": 7,
-          "bookBackCandidates": 6,
-          "sourceSectionAssociatedCandidates": 0,
+          "exercisePdfPages": [
+            56,
+            57
+          ],
+          "sectionCount": 1,
+          "extractedCandidates": 10,
+          "bookBackCandidates": 9,
+          "sourceSectionAssociatedCandidates": 8,
           "textAndKeyEligible": 0,
           "answerKnown": 0,
-          "damagedOrAmbiguous": 7,
+          "damagedOrAmbiguous": 10,
           "published": 0,
-          "authenticSourceQuestionTotal": null,
-          "printedKeyMatchedSourceQuestions": null,
-          "sourceBoundedCandidateIds": [],
+          "authenticSourceQuestionTotal": 8,
+          "printedKeyMatchedSourceQuestions": 0,
+          "sourceBoundedCandidateIds": [
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-17355d0ab5ff5a7c",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-01ac7c490353cc08",
+            "textbook-bounded-12-bio-zoology-tamil-2631f8e3-5534d4c744e2fb5f",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-f91766ff893256cd",
+            "textbook-bounded-12-bio-zoology-tamil-2631f8e3-60a07e9b0955d998",
+            "textbook-bounded-12-bio-zoology-tamil-2631f8e3-eb175cdd92fd2c90",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-0ac5d48aced47148",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-f6d583f1ab7b5057"
+          ],
           "complete": false,
           "warnings": [
-            "Chapter and section boundaries require source verification",
-            "No scoped one-mark heading detected; inspect the original exercise"
+            "Source exercise numbering/pages and available key evidence were inspected; Tamil wording, options, notation and figures still require teacher verification"
           ]
         },
         {
           "id": "tb-12-bio-zoology-tamil-2631f8e3-ch-4",
           "number": 4,
-          "title": "Chapter 4",
+          "title": "மரபுக் கடத்தல் கொள்கைகள் மற்றும் மாறுபாடுகள்",
           "startPdfPage": 60,
-          "exercisePdfPages": [],
-          "sectionCount": 0,
+          "exercisePdfPages": [
+            72,
+            74
+          ],
+          "sectionCount": 1,
           "extractedCandidates": 21,
           "bookBackCandidates": 21,
-          "sourceSectionAssociatedCandidates": 0,
+          "sourceSectionAssociatedCandidates": 21,
           "textAndKeyEligible": 0,
           "answerKnown": 0,
           "damagedOrAmbiguous": 21,
           "published": 0,
-          "authenticSourceQuestionTotal": null,
-          "printedKeyMatchedSourceQuestions": null,
-          "sourceBoundedCandidateIds": [],
+          "authenticSourceQuestionTotal": 21,
+          "printedKeyMatchedSourceQuestions": 0,
+          "sourceBoundedCandidateIds": [
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-0829a18e6ea705de",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-2b78e426d885a818",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-58e0b4f9ac0785a2",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-e148bb446e26679e",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-afe440520814efc6",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-0bb7d9311e188ab1",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-0d10ff8a12eb215a",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-4f97dd907974029b",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-44ab12c0912e3b7e",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-65d68d317621bc7f",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-5bf3e50cacb701c8",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-1eca2264fbb2bc5b",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-404f1c9c9a077f0b",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-f558cf5a937e4a1b",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-ed8af327bcf6b1f5",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-2d07c14aed3de889",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-94a5c43a9079a185",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-dff48b541cc55436",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-bbe1b9f08943bf28",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-5333eafca4a65aa1",
+            "textbook-q-12-bio-zoology-tamil-2631f8e3-79f601926c7edb2c"
+          ],
           "complete": false,
           "warnings": [
-            "Chapter and section boundaries require source verification",
-            "No scoped one-mark heading detected; inspect the original exercise"
+            "Source exercise numbering/pages and available key evidence were inspected; Tamil wording, options, notation and figures still require teacher verification"
           ]
         },
         {
@@ -15074,6 +15517,53 @@
             14,
             15,
             16
+          ],
+          "mappingStatus": "provisional-needs-source-review"
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-3",
+          "startPdfPage": 56,
+          "endPdfPage": 57,
+          "heading": "Evaluation — eight authentic four-choice items (marks unspecified)",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "mappingStatus": "provisional-needs-source-review"
+        },
+        {
+          "chapterId": "tb-12-bio-zoology-tamil-2631f8e3-ch-4",
+          "startPdfPage": 72,
+          "endPdfPage": 74,
+          "heading": "Evaluation ? four-choice items; marks unspecified",
+          "questionNumbers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
           ],
           "mappingStatus": "provisional-needs-source-review"
         }

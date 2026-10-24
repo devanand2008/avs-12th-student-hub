@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 import definitions from "../data/source-bounded-sections.json";
-import sharedDefinitions from "../data/shared-source-sections.json";
+import { readySourceDefinitions as sharedDefinitions } from "./shared-source-definitions";
 import type { Textbook } from "../../src/lib/textbooks";
 import type { TextbookMcqCandidate } from "../../src/lib/textbook-question-types";
 import type { ExtractedBook } from "./textbook-question-parser";

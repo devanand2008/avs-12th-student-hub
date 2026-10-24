@@ -1,0 +1,83 @@
+{
+  "scope": "Fresh local-only verification; no production access",
+  "initialFullSuite": {
+    "exit": 1,
+    "counts": {
+      "tests": 218,
+      "pass": 196,
+      "fail": 22,
+      "skipped": 0
+    },
+    "note": "Ran during source preparation/gate changes; failure, not a passing baseline."
+  },
+  "finalFullSuite": {
+    "exit": 1,
+    "counts": {
+      "tests": 221,
+      "pass": 219,
+      "fail": 2,
+      "skipped": 0
+    },
+    "note": "Two stale numeric assertions were subsequently fixed. The affected file passed its rerun; the complete suite was not run a third time."
+  },
+  "affectedFileAfterFix": {
+    "exit": 0,
+    "counts": {
+      "tests": 4,
+      "pass": 4,
+      "fail": 0,
+      "skipped": 0
+    }
+  },
+  "focusedChapterTests": {
+    "count": 7,
+    "passed": 7
+  },
+  "selectedBrowserCases": {
+    "count": 24,
+    "passed": 24,
+    "exit": 0
+  },
+  "build": 0,
+  "lint": 0,
+  "typecheck": 0,
+  "coverage": {
+    "registeredPdfs": 82,
+    "subjects": 40,
+    "englishPdfs": 40,
+    "tamilPdfs": 42,
+    "physicalTextbookPdfs": 82,
+    "otherSourcePdfs": 13,
+    "pages": 24088,
+    "saved": 17338,
+    "active": 12747,
+    "proposals": 1044,
+    "provisionalChapters": 856,
+    "eligibleSnapshot": 995,
+    "teacherReviewed": 0,
+    "historyEvents": 0
+  },
+  "sourceAudit": {
+    "books": 82,
+    "pagesChecked": 713,
+    "mismatches": 0
+  },
+  "preservation": {
+    "protectedPaths": 586,
+    "unchangedPaths": 585,
+    "changedPaths": [
+      ".local\\teacher-review\\source-evidence\\systematic-computer-batch\\source-pages.json"
+    ],
+    "priorRecordErrors": [],
+    "addedRawIds": [
+      "textbook-bounded-12-bio-zoology-english-7e848813-6a5c8c90e059ac7b",
+      "textbook-bounded-12-bio-zoology-english-7e848813-1768cb37df5253e8",
+      "textbook-bounded-12-bio-zoology-english-7e848813-0850e6a27d3bae29"
+    ],
+    "counts": {
+      "candidates": 17338,
+      "sourceBoundedProposals": 1044
+    },
+    "note": "Source page receipt is append-only derived metadata; original source PNG/PDF hashes and saved decisions independently retained."
+  }
+}

@@ -340,5 +340,95 @@
     "referenceHeight": 1102,
     "label": "Original Tamil Q4.ii assertion/reason and response row; PDF 18 / printed 10",
     "sourceOrdinal": 5
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "chapterNumber": 3,
+    "question": 5,
+    "page": 50,
+    "rect": [
+      510,
+      590,
+      350,
+      270
+    ],
+    "referenceWidth": 985,
+    "referenceHeight": 1312,
+    "label": "Original Chapter 3 Q5 source table/formula/label evidence; PDF 50 / printed 42. Not an answer key."
+  },
+  {
+    "bookId": "12-bio-zoology-english-7e848813",
+    "chapterNumber": 3,
+    "question": 7,
+    "page": 51,
+    "rect": [
+      125,
+      280,
+      350,
+      315
+    ],
+    "referenceWidth": 985,
+    "referenceHeight": 1312,
+    "label": "Original Chapter 3 Q7 source table/formula/label evidence; PDF 51 / printed 43. Not an answer key."
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "chapterNumber": 3,
+    "question": 5,
+    "page": 57,
+    "rect": [
+      120,
+      415,
+      365,
+      590
+    ],
+    "referenceWidth": 985,
+    "referenceHeight": 1312,
+    "label": "Original Chapter 3 Q5 source table/formula/label evidence; PDF 57 / printed 49. Not an answer key."
+  },
+  {
+    "bookId": "12-bio-zoology-tamil-2631f8e3",
+    "chapterNumber": 3,
+    "question": 7,
+    "page": 57,
+    "rect": [
+      510,
+      420,
+      350,
+      480
+    ],
+    "referenceWidth": 985,
+    "referenceHeight": 1312,
+    "label": "Original Chapter 3 Q7 source table/formula/label evidence; PDF 57 / printed 49. Not an answer key."
+  },
+  {
+    "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+    "chapterNumber": 3,
+    "question": 8,
+    "page": 64,
+    "rect": [
+      125,
+      320,
+      365,
+      175
+    ],
+    "referenceWidth": 985,
+    "referenceHeight": 1312,
+    "label": "Original Chapter 3 Q8 source table/formula/label evidence; PDF 64 / printed 56. Not an answer key."
+  },
+  {
+    "bookId": "12-basic-electrical-engineering-tamil-029f513a",
+    "chapterNumber": 3,
+    "question": 11,
+    "page": 64,
+    "rect": [
+      125,
+      700,
+      365,
+      210
+    ],
+    "referenceWidth": 985,
+    "referenceHeight": 1312,
+    "label": "Original Chapter 3 Q11 source table/formula/label evidence; PDF 64 / printed 56. Not an answer key."
   }
 ]

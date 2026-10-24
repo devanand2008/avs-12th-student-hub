@@ -9,8 +9,34 @@ export const studyResources = validateResourceManifest(
   resourceSubjects,
 ).resources;
 export const visibleResources = studyResources.filter(
-  (r) => r.status !== "retired" && r.status !== "unavailable",
+  (r) =>
+    r.status !== "retired" &&
+    r.status !== "unavailable" &&
+    r.availability !== "unavailable",
 );
+/** Existing import pipeline uses tb-<book ID>; this is a reference, not a new curriculum row. */
+export function resourceCurriculumReferences(
+  resource: (typeof studyResources)[number],
+) {
+  const exact = resource.id.startsWith("textbook-reference-")
+    ? resource.id.slice("textbook-reference-".length)
+    : null;
+  return catalog.books
+    .filter((b) =>
+      exact
+        ? b.id === exact
+        : resource.subjects.includes(b.subject) &&
+          (resource.mediums.includes("Common") ||
+            resource.mediums.some((m) => m === b.medium)),
+    )
+    .map((b) => ({
+      subjectId: `tb-${b.id}`,
+      textbookId: b.id,
+      subject: b.subject,
+      medium: b.medium,
+      volume: b.volume,
+    }));
+}
 export const resourceCategories = [
   {
     id: "question-papers",

@@ -48,12 +48,12 @@ export async function POST(request: Request) {
         : saved,
       ...(question ? {
         questionId,
-        selectedAnswer,
+        selectedAnswer: saved.selectedAnswer,
         correctAnswer: question.correctAnswer,
         explanation: question.explanation,
         explanationTamil: question.explanationTamil,
         sourceAnswerPage: question.sourceAnswerPage,
-        isCorrect: selectedAnswer === question.correctAnswer,
+        isCorrect: saved.isCorrect,
       } : {}),
     });
   } catch {

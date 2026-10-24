@@ -106,7 +106,7 @@ test("full reader renders first, next and last pages, zooms, selects text and ru
   ).toHaveAttribute("download", /Computer Science-English\.pdf/);
   await expect(
     page.getByRole("link", { name: "Open original PDF", exact: true }),
-  ).toHaveAttribute("href", englishBook.localPath!);
+  ).toHaveAttribute("href", englishBook.sourceUrl);
   expect(workerRequests.length).toBeGreaterThan(0);
   expect(workerRequests.every((url) => new URL(url).origin === origin)).toBe(
     true,
@@ -157,7 +157,7 @@ test("reader download failures show a useful fallback and recover after retry", 
   );
   await expect(
     page.getByRole("link", { name: "Open original PDF", exact: true }),
-  ).toHaveAttribute("href", englishBook.localPath!);
+  ).toHaveAttribute("href", englishBook.sourceUrl);
   await expect(
     page.getByRole("link", { name: "Download full book", exact: true }),
   ).toBeVisible();

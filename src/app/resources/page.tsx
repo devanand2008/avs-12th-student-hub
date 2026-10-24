@@ -25,7 +25,23 @@ export default function ResourcesPage() {
         <p lang="ta" className="mt-4 text-sm text-blue-100">
           வினாத்தாள்கள் · கற்றல் வளங்கள் · காணொளிப் பாடங்கள்
         </p>
+        <Link
+          href="/resources/all"
+          className="mt-7 inline-flex rounded-xl bg-white px-6 py-3 font-bold text-blue-800"
+        >
+          Browse all {visibleResources.length} resources →
+        </Link>
       </section>
+      <Link
+        href="/ai-study-tools"
+        className="block rounded-3xl border border-blue-200 bg-blue-50 p-7 text-blue-950 hover:bg-blue-100"
+      >
+        <h2 className="text-2xl font-black">AI Study Tools →</h2>
+        <p className="mt-3 text-sm leading-6">
+          Find free and limited-access AI assistants, maths tools and science
+          simulations. Build a study prompt using your subject and chapter.
+        </p>
+      </Link>
       <section
         aria-label="Resource categories"
         className="grid gap-6 md:grid-cols-3"
@@ -89,6 +105,9 @@ export default function ResourcesPage() {
       </section>
       <div className="flex flex-wrap gap-5 text-sm font-semibold text-blue-700">
         <Link href="/textbooks">Textbook library →</Link>
+        <Link href="/models">Biology, Physics & Chemistry 3D lab →</Link>
+        <Link href="/notes">Handwritten notes →</Link>
+        <Link href="/videos">English and Tamil video library →</Link>
         <Link href="/subjects">My subjects →</Link>
         <Link href="/textbook-practice">Book-back MCQ practice →</Link>
       </div>

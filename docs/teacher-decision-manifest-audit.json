@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-15T08:52:43.307Z",
+  "checkedAt": "2026-10-23T17:34:11.391Z",
   "exportLocated": false,
   "exportFiles": [],
   "conflictingExports": false,
@@ -11,7 +11,387 @@
   ],
   "searchHits": [
     {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\commerce-12-commerce-tamil-d9e013d8-ch-27\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-10\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-11\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-12\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-13\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-14\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-15\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-4\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-5\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-6\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-7\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-8\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-applications-tamil-e51fbdf6-ch-9\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-science-tamil-d5aa7dd4-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-science-tamil-d5aa7dd4-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-4\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-5\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\computer-12-computer-technology-tamil-c66e9089-ch-6\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
       "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-10\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-4\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-5\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-6\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-7\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-8\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-english-13c7fc7b-ch-9\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-tamil-029f513a-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-tamil-029f513a-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-basic-electrical-engineering-tamil-029f513a-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-10\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-4\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-5\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-6\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-7\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-8\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-english-f15d4524-ch-9\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-10\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-4\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-5\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-6\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-7\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-8\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-botany-tamil-51160855-ch-9\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-zoology-english-7e848813-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-zoology-english-7e848813-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-zoology-english-7e848813-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-zoology-tamil-2631f8e3-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-zoology-tamil-2631f8e3-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-bio-zoology-tamil-2631f8e3-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-history-english-3cd2e4c2-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-history-english-3cd2e4c2-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-history-english-3cd2e4c2-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-history-tamil-3c88c869-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-history-tamil-3c88c869-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-microbiology-english-6a36a404-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-microbiology-english-6a36a404-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-microbiology-english-6a36a404-ch-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-political-science-english-db4a2e0c-ch-1\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\source-12-political-science-english-db4a2e0c-ch-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-2\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-3\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-4\\decisions.json",
+      "classification": "local_store_or_template",
+      "reason": "Local store/template without authenticated export metadata; not a teacher export."
+    },
+    {
+      "file": "D:\\avs-12-hub\\.local\\teacher-review\\physics-unit1-workflow\\unit-5\\decisions.json",
       "classification": "local_store_or_template",
       "reason": "Local store/template without authenticated export metadata; not a teacher export."
     },

@@ -4,6 +4,8 @@ import { officialTextbookRewrite } from "./src/lib/textbook-delivery";
 import type { TextbookCatalog } from "./src/lib/textbooks";
 
 const nextConfig: NextConfig = {
+  // Isolate this local QA server from concurrent default builds in the workspace.
+  distDir: process.env.AVS_PORTAL_QA_BUILD === "true" ? ".next-portal" : ".next",
   allowedDevOrigins: ["localhost", "127.0.0.1", "10.120.145.229"],
   rewrites() {
     if (process.env.TEXTBOOK_DELIVERY !== "official") return [];

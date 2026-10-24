@@ -1,15 +1,16 @@
 import { spawn } from "node:child_process";
 import { randomBytes } from "node:crypto";
 import { startPostgrestFixture } from "../tests/helpers/postgrest";
+import { testAppPort, testAppOrigin } from "../tests/helpers/e2e-urls";
 async function main() {
-  const fixture = await startPostgrestFixture(3101, true);
+  const fixture = await startPostgrestFixture(testAppPort + 1, true);
   const child = spawn(
     process.execPath,
     [
       "node_modules/next/dist/bin/next",
       "start",
       "--port",
-      "3100",
+      String(testAppPort),
       "--hostname",
       "127.0.0.1",
     ],
@@ -24,7 +25,7 @@ async function main() {
         NEXT_PUBLIC_SUPABASE_URL: fixture.url,
         SUPABASE_SERVICE_ROLE_KEY: "qa-service-key",
         SESSION_SECRET: randomBytes(48).toString("base64url"),
-        APP_ORIGIN: "http://127.0.0.1:3100",
+        APP_ORIGIN: testAppOrigin,
         ADMIN_EMAIL: "qa-admin@example.test",
         ADMIN_INITIAL_PASSWORD: "QA-only-bootstrap-password",
         GEMINI_API_KEY: "",
