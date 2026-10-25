@@ -6,8 +6,10 @@ export default defineConfig({
   testDir: "./tests/e2e",
   fullyParallel: false,
   workers: 1,
-  timeout: 60000,
-  expect: { timeout: 10000 },
+  timeout: process.env.AVS_TEST_DEV_SERVER === "true" ? 180000 : 60000,
+  expect: {
+    timeout: process.env.AVS_TEST_DEV_SERVER === "true" ? 60000 : 10000,
+  },
   reporter: [
     ["list"],
     [

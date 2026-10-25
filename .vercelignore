@@ -8,6 +8,7 @@ node_modules
 .next-portal
 out
 output
+one mark html page
 coverage
 playwright-report
 test-results

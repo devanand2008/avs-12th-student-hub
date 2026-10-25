@@ -1,5 +1,6 @@
 import type { Book, Chapter, Subject } from "@/types";
 import videoLessons from "./video-lessons-catalog.json";
+import suppliedMaterials from "./supplied-materials-catalog.json";
 
 export const LEARNING_UPLOAD_LIMIT = 50 * 1024 * 1024;
 
@@ -42,7 +43,8 @@ export const MATERIAL_BOOKS: Book[] = [
     subjectId: "sub-english",
     name: "English - Video Lesson Collection",
     volume: "Language lessons",
-    description: "The supplied English videos, organised by their visible lesson content.",
+    description:
+      "The supplied English videos, organised by their visible lesson content.",
     orderIndex: 1,
   },
   {
@@ -109,8 +111,19 @@ function chapter(
   };
 }
 export const MATERIAL_CHAPTERS: Chapter[] = [
+  {
+    ...chapter("tamil", 0, "Supplied textbook copy"),
+    id: "tamil-supplied-textbook",
+    description:
+      "Supplied reference file; edition unverified, not an official chapter mapping.",
+  },
   ...videoLessons.map((video) => ({
-    ...chapter(video.subjectName.toLowerCase(), Number(video.chapterId.split("-").at(-1)), video.topic, video.titleTamil),
+    ...chapter(
+      video.subjectName.toLowerCase(),
+      Number(video.chapterId.split("-").at(-1)),
+      video.topic,
+      video.titleTamil,
+    ),
     description: `Video lesson collection: ${video.topic}. Lesson numbers organise these videos; they are not textbook chapter mappings.`,
   })),
   ...mathsTitles.map((title, index) => chapter("maths", index + 1, title)),
@@ -132,6 +145,8 @@ export interface SourceMaterial {
   hostedUrl?: string;
   sha256?: string;
   thumbnailUrl?: string;
+  badge?: "HANDWRITTEN" | "IMPORTANT" | "REVISION" | "EXAM FOCUS";
+  description?: string;
 }
 function maths(
   file: string,
@@ -165,7 +180,12 @@ function tamil(file: string, number: number): SourceMaterial {
   };
 }
 export const SOURCE_MATERIALS: SourceMaterial[] = [
-  ...videoLessons.map((video) => ({ ...video, kind: "video" as const, language: video.language as "English" | "Tamil" })),
+  ...(suppliedMaterials as SourceMaterial[]),
+  ...videoLessons.map((video) => ({
+    ...video,
+    kind: "video" as const,
+    language: video.language as "English" | "Tamil",
+  })),
   maths(
     "handwritten_exercises_1.5_to_1.8_complete (2).pdf",
     1,

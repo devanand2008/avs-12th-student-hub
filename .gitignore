@@ -58,3 +58,7 @@ next-env.d.ts
 /public/textbooks/*.pdf
 /public/textbooks/*.part
 /public/pdfjs/*/
+
+# Source media is hosted as release assets; keep large originals local.
+/book's/**/*.pdf
+/book's/**/*.mp4

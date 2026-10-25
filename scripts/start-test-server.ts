@@ -8,7 +8,9 @@ async function main() {
     process.execPath,
     [
       "node_modules/next/dist/bin/next",
-      "start",
+      ...(process.env.AVS_TEST_DEV_SERVER === "true"
+        ? ["dev", "--webpack"]
+        : ["start"]),
       "--port",
       String(testAppPort),
       "--hostname",

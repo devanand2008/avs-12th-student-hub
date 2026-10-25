@@ -1,0 +1,256 @@
+{
+  "files": 10,
+  "occurrences": 2424,
+  "uniqueQuestions": 2244,
+  "duplicateOccurrences": 180,
+  "approved": 0,
+  "pendingTeacherVerification": 2244,
+  "availableSuppliedPractice": 2244,
+  "accessPolicy": "Owner enabled supplied, unverified practice on 2026-10-25; no teacher approval or verified publication is implied.",
+  "collections": [
+    {
+      "id": "chemistry-v1",
+      "subject": "Chemistry",
+      "volume": 1,
+      "count": 252,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_chemistry_vol_1_one_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "chemistry-v2",
+      "subject": "Chemistry",
+      "volume": 2,
+      "count": 299,
+      "sections": [
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_chemistry_vol_2_one_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "english",
+      "subject": "English",
+      "volume": null,
+      "count": 130,
+      "sections": [
+        "Unit 1",
+        "Unit 2",
+        "Unit 3",
+        "Unit 4",
+        "Unit 5",
+        "Unit 6"
+      ],
+      "mediums": [
+        "English"
+      ],
+      "sourceFiles": [
+        "12th_general_english_one_mark_practice_portal.html"
+      ]
+    },
+    {
+      "id": "physics-v2",
+      "subject": "Physics",
+      "volume": 2,
+      "count": 165,
+      "sections": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_physics_vol_2_one_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "computer-science",
+      "subject": "Computer Science",
+      "volume": null,
+      "count": 316,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_standard_computer_science_complete_1_mark_practice_web_app_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "mathematics-v1",
+      "subject": "Mathematics",
+      "volume": 1,
+      "count": 190,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_standard_mathematics_vol_i_vol_ii_complete_1_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "mathematics-v2",
+      "subject": "Mathematics",
+      "volume": 2,
+      "count": 180,
+      "sections": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_standard_mathematics_vol_i_vol_ii_complete_1_mark_practice_portal_tamil_english_medium.html",
+        "12th_standard_mathematics_vol_ii_1_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "physics-v1",
+      "subject": "Physics",
+      "volume": 1,
+      "count": 175,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "6",
+        "5",
+        "9",
+        "7",
+        "8",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_standard_physics_vol_i_complete_1_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "tamil",
+      "subject": "Tamil",
+      "volume": null,
+      "count": 135,
+      "sections": [
+        "இயல் 1",
+        "இயல் 2",
+        "திருக்குறள்",
+        "இயல் 3",
+        "இயல் 4",
+        "இயல் 5",
+        "இயல் 6"
+      ],
+      "mediums": [
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "tamil.html"
+      ]
+    },
+    {
+      "id": "bio-zoology",
+      "subject": "Bio-Zoology",
+      "volume": null,
+      "count": 402,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "tn_12th_zoology_complete_bilingual_1_mark_practice_portal_tamil_english_medium.html"
+      ]
+    }
+  ],
+  "warnings": {
+    "Supplied answers and textbook references require individual teacher verification": 2244,
+    "Supplied diagram requires visual verification": 43,
+    "Unexpected or damaged characters in Tamil transcription": 4
+  }
+}

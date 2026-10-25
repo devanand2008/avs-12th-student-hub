@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>12th Standard Mathematics Vol-II | 1-Mark Practice Portal (Tamil & English Medium)</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --surface-alt: #f1f5f9;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --text-muted: #475569;
+    --primary: #1e40af;
+    --primary-hover: #1d4ed8;
+    --primary-soft: #dbeafe;
+    --accent: #7c3aed;
+    --accent-soft: #ede9fe;
+    --success: #15803d;
+    --success-soft: #dcfce7;
+    --danger: #b91c1c;
+    --danger-soft: #fee2e2;
+    --warning: #b45309;
+    --warning-soft: #fef3c7;
+    --shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+  }
+  [data-theme="dark"] {
+    --bg: #0b1120;
+    --surface: #1e293b;
+    --surface-alt: #0f172a;
+    --border: #334155;
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #3b82f6;
+    --primary-hover: #60a5fa;
+    --primary-soft: rgba(59, 130, 246, 0.18);
+    --accent: #a78bfa;
+    --accent-soft: rgba(167, 139, 250, 0.18);
+    --success: #22c55e;
+    --success-soft: rgba(34, 197, 94, 0.18);
+    --danger: #ef4444;
+    --danger-soft: rgba(239, 68, 68, 0.18);
+    --warning: #f59e0b;
+    --warning-soft: rgba(245, 158, 11, 0.18);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Tamil', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #312e81 60%, #4c1d95 100%);
+    color: #fff;
+    padding: 1.4rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  .header-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .brand-title { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
+  .brand-sub { font-size: 0.84rem; opacity: 0.9; margin-top: 0.15rem; }
+  .header-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+  .pill-group {
+    display: inline-flex;
+    background: rgba(255,255,255,0.14);
+    padding: 0.22rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.22);
+  }
+  .pill-btn {
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 0.36rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .pill-btn.active { background: #fff; color: #1e3a8a; box-shadow: 0 2px 6px rgba(0,0,0,0.18); }
+  .icon-btn {
+    border: 1px solid rgba(255,255,255,0.28);
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    padding: 0.42rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .icon-btn:hover { background: rgba(255,255,255,0.24); }
+  .stats-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0.7rem 1.5rem;
+  }
+  .stats-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .stat-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .stat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+  }
+  .stat-badge.correct { background: var(--success-soft); color: var(--success); border-color: transparent; }
+  .stat-badge.wrong { background: var(--danger-soft); color: var(--danger); border-color: transparent; }
+  .stat-badge.score { background: var(--primary-soft); color: var(--primary); border-color: transparent; }
+  .main-layout {
+    max-width: 1320px;
+    margin: 1.25rem auto;
+    padding: 0 1.25rem 3rem;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 1.35rem;
+    align-items: start;
+  }
+  @media (max-width: 960px) { .main-layout { grid-template-columns: 1fr; } }
+  .sidebar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 86px;
+  }
+  .sidebar-title {
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    font-weight: 700;
+    margin-bottom: 0.55rem;
+  }
+  .chapter-list { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1.1rem; }
+  .chapter-btn {
+    width: 100%;
+    text-align: left;
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text);
+    padding: 0.55rem 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .chapter-btn:hover { border-color: var(--primary); }
+  .chapter-btn.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+  .chapter-btn .ch-name { font-size: 0.8rem; font-weight: 600; line-height: 1.3; }
+  .chapter-btn .ch-ta { font-size: 0.72rem; opacity: 0.85; display: block; margin-top: 0.1rem; }
+  .chapter-btn .ch-count {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.12rem 0.45rem;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.08);
+    flex-shrink: 0;
+  }
+  .chapter-btn.active .ch-count { background: rgba(255,255,255,0.22); color: #fff; }
+  .filter-section { margin-bottom: 1rem; }
+  .filter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; }
+  .filter-chip {
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text);
+    padding: 0.42rem 0.5rem;
+    border-radius: 8px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+  }
+  .filter-chip.active { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+  .toolbar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .search-box { flex: 1; min-width: 220px; position: relative; }
+  .search-box input {
+    width: 100%;
+    padding: 0.55rem 0.85rem;
+    border-radius: 9px;
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text);
+    font-size: 0.86rem;
+  }
+  .toolbar-btns { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+  .btn {
+    border: 1px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text);
+    padding: 0.48rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn.primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .q-list { display: flex; flex-direction: column; gap: 1rem; }
+  .q-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.15rem 1.25rem;
+    box-shadow: var(--shadow);
+  }
+  .q-card.answered-correct { border-left: 5px solid var(--success); }
+  .q-card.answered-wrong { border-left: 5px solid var(--danger); }
+  .q-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  .q-badges { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+  .badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.18rem 0.55rem;
+    border-radius: 6px;
+  }
+  .badge-ch { background: var(--primary-soft); color: var(--primary); }
+  .badge-back { background: var(--accent-soft); color: var(--accent); }
+  .badge-inside { background: var(--warning-soft); color: var(--warning); }
+  .bookmark-btn {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .bookmark-btn.active { color: #f59e0b; }
+  .q-stem { margin-bottom: 0.9rem; font-size: 0.96rem; font-weight: 600; }
+  .q-stem-en { margin-bottom: 0.35rem; }
+  .q-stem-ta {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.92rem;
+    padding-top: 0.3rem;
+    border-top: 1px dashed var(--border);
+  }
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.55rem;
+  }
+  .opt-btn {
+    text-align: left;
+    border: 1.5px solid var(--border);
+    background: var(--surface-alt);
+    color: var(--text);
+    padding: 0.65rem 0.85rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.88rem;
+    transition: all 0.15s;
+  }
+  .opt-btn:hover { border-color: var(--primary); }
+  .opt-num {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .opt-btn.correct-opt {
+    background: var(--success-soft);
+    border-color: var(--success);
+    color: var(--success);
+    font-weight: 700;
+  }
+  .opt-btn.wrong-opt {
+    background: var(--danger-soft);
+    border-color: var(--danger);
+    color: var(--danger);
+  }
+  .q-footer {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .exp-box {
+    margin-top: 0.65rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 9px;
+    background: var(--surface-alt);
+    border-left: 3px solid var(--primary);
+    font-size: 0.84rem;
+    color: var(--text);
+    display: none;
+  }
+  .exp-box.visible { display: block; }
+  .glossary-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15,23,42,0.65);
+    z-index: 200;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+  }
+  .glossary-modal.open { display: flex; justify-content: center; align-items: flex-start; }
+  .glossary-content {
+    background: var(--surface);
+    color: var(--text);
+    max-width: 820px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 1.4rem;
+    border: 1px solid var(--border);
+  }
+  .glossary-table { width: 100%; border-collapse: collapse; margin-top: 0.8rem; font-size: 0.86rem; }
+  .glossary-table th, .glossary-table td {
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+  .glossary-table th { background: var(--surface-alt); }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div>
+      <div class="brand-title">12th Maths Volume-II • One-Mark Practice Portal (TM & EM)</div>
+      <div class="brand-sub"> மேல்நிலை இரண்டாம் ஆண்டு கணிதவியல் தொகுதி-II • புத்தகப் பின்பக்க மற்றும் உட்புற ஒரு மதிப்பெண் வினாக்கள் (Chapters 7–12)</div>
+    </div>
+    <div class="header-actions">
+      <div class="pill-group" id="langGroup">
+        <button class="pill-btn active" onclick="setLang('both')">Both (இருமொழி)</button>
+        <button class="pill-btn" onclick="setLang('en')">English</button>
+        <button class="pill-btn" onclick="setLang('ta')">தமிழ்</button>
+      </div>
+      <div class="pill-group" id="modeGroup">
+        <button class="pill-btn active" onclick="setMode('practice')">Practice</button>
+        <button class="pill-btn" onclick="setMode('exam')">Exam</button>
+        <button class="pill-btn" onclick="setMode('study')">Answer Key</button>
+      </div>
+      <button class="icon-btn" onclick="toggleGlossary()">📖 Glossary / கலைச்சொற்கள்</button>
+      <button class="icon-btn" onclick="toggleTheme()">🌓 Theme</button>
+    </div>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-badges">
+      <span class="stat-badge" id="statShowing">Showing: 180 Qs</span>
+      <span class="stat-badge" id="statAttempted">Attempted: 0</span>
+      <span class="stat-badge correct" id="statCorrect">Correct: 0</span>
+      <span class="stat-badge wrong" id="statWrong">Wrong: 0</span>
+      <span class="stat-badge score" id="statAccuracy">Score: 0%</span>
+    </div>
+    <div style="display:flex;gap:0.5rem;align-items:center;">
+      <span class="stat-badge" id="timerDisplay">⏱ 00:00</span>
+      <button class="btn" onclick="submitExam()" id="submitExamBtn" style="display:none;">Submit Exam</button>
+      <button class="btn" onclick="resetProgress()">↺ Reset</button>
+    </div>
+  </div>
+</div>
+
+<div class="main-layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Chapters / அத்தியாயங்கள்</div>
+    <div class="chapter-list" id="chapterList"></div>
+    <div class="filter-section">
+      <div class="sidebar-title">Question Source / வினா வகை</div>
+      <div class="filter-grid">
+        <button class="filter-chip active" data-src="all" onclick="setSource('all')">All (180)</button>
+        <button class="filter-chip" data-src="Book-Back" onclick="setSource('Book-Back')">Book-Back (120)</button>
+        <button class="filter-chip" data-src="Book-Inside" onclick="setSource('Book-Inside')">Book-Inside (60)</button>
+        <button class="filter-chip" data-src="bookmarked" onclick="setSource('bookmarked')">★ Saved</button>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="toolbar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search questions in English or Tamil (e.g., Rolle's, தொடுகோடு, Euler, நிகழ்தகவு)..." oninput="renderQuestions()" />
+      </div>
+      <div class="toolbar-btns">
+        <button class="btn" onclick="shuffleQuestions()">🔀 Shuffle</button>
+        <button class="btn" onclick="toggleAllExplanations()">💡 Toggle Hints</button>
+        <button class="btn primary" onclick="window.print()">🖨 Print / PDF</button>
+      </div>
+    </div>
+    <div class="q-list" id="questionContainer"></div>
+  </main>
+</div>
+
+<div class="glossary-modal" id="glossaryModal">
+  <div class="glossary-content">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <h3>Bilingual Mathematical Glossary (கலைச்சொற்கள் — Chapters 7 to 12)</h3>
+      <button class="btn" onclick="toggleGlossary()">✕ Close</button>
+    </div>
+    <table class="glossary-table" id="glossaryTable"></table>
+  </div>
+</div>
+
+<script>
+const CHAPTERS = [
+  { id: 'all', num: 'All', en: 'All Chapters (7–12)', ta: 'அனைத்து அத்தியாயங்கள்' },
+  { id: 7, num: 'Ch 7', en: 'Applications of Differential Calculus', ta: 'வகை நுண்கணிதத்தின் பயன்பாடுகள்' },
+  { id: 8, num: 'Ch 8', en: 'Differentials and Partial Derivatives', ta: 'வகையீடுகள் மற்றும் பகுதி வகைக்கெழுக்கள்' },
+  { id: 9, num: 'Ch 9', en: 'Applications of Integration', ta: 'தொகை நுண்கணிதத்தின் பயன்பாடுகள்' },
+  { id: 10, num: 'Ch 10', en: 'Ordinary Differential Equations', ta: 'சாதாரண வகைக்கெழுச் சமன்பாடுகள்' },
+  { id: 11, num: 'Ch 11', en: 'Probability Distributions', ta: 'நிகழ்தகவு பரவல்கள்' },
+  { id: 12, num: 'Ch 12', en: 'Discrete Mathematics', ta: 'தனிநிலைக் கணிதம்' }
+];
+
+const ALL_QUESTIONS = [
+  // ==================== CHAPTER 7: BOOK-BACK (Ex 7.10: Q1 - Q20) ====================
+  {id:"7-BB-1",ch:7,src:"Book-Back",qno:1,en:"The volume of a sphere is increasing in volume at the rate of 3π cm³/sec. The rate of change of its radius when radius is 1/2 cm is",ta:"ஒரு கோளத்தின் கன அளவு வினாடிக்கு 3π செ.மீ³ வீதத்தில் அதிகரிக்கிறது. ஆரம் 1/2 செ.மீ ஆக இருக்கும்போது ஆரத்தின் மாறுபாட்டு வீதம்",opts_en:["3 cm/s","2 cm/s","1 cm/s","1/2 cm/s"],opts_ta:["3 செ.மீ/வி","2 செ.மீ/வி","1 செ.மீ/வி","1/2 செ.மீ/வி"],ans:0,exp:"V = (4/3)πr³ ⇒ dV/dt = 4πr²(dr/dt). Given 3π = 4π(1/2)²(dr/dt) ⇒ dr/dt = 3 cm/s."},
+  {id:"7-BB-2",ch:7,src:"Book-Back",qno:2,en:"A balloon rises straight up at 10 m/s. An observer is 40 m away from the spot where the balloon left the ground. The rate of change of the balloon's angle of elevation in radian per second when the balloon is 30 metres above the ground is",ta:"ஒரு பலூனானது செங்குத்தாக மேல்நோக்கி 10 மீ/வி வீதத்தில் செல்கிறது. பலூன் செலுத்தப்பட்ட இடத்திலிருந்து 40 மீ தொலைவில் இருந்து ஒருவர் இதனைப் பார்க்கிறார். பலூனின் ஏற்றக் கோணத்தில் ஏற்படும் மாறுபாட்டு வீதத்தை பலூன் தரையிலிருந்து 30 மீட்டர் உயரத்தில் இருக்கும்போது காண்க.",opts_en:["3/25 radians/sec","4/25 radians/sec","1/5 radians/sec","1/3 radians/sec"],opts_ta:["3/25 ரேடியன்கள்/வினாடி","4/25 ரேடியன்கள்/வினாடி","1/5 ரேடியன்கள்/வினாடி","1/3 ரேடியன்கள்/வினாடி"],ans:1,exp:"tanθ = h/40 ⇒ sec²θ(dθ/dt) = (1/40)(dh/dt). At h=30, sec²θ = 1+(3/4)² = 25/16. So dθ/dt = (16/25)×(10/40) = 4/25 rad/s."},
+  {id:"7-BB-3",ch:7,src:"Book-Back",qno:3,en:"The position of a particle moving along a horizontal line of any time t is given by s(t) = 3t² − 2t − 8. The time at which the particle is at rest is",ta:"t என்ற காலத்தில் கிடைமட்டமாக நகரும் துகளின் நிலை s(t) = 3t² − 2t − 8 எனக் கொடுக்கப்பட்டுள்ளது. துகள் ஓய்வு நிலைக்கு வரும் நேரம்",opts_en:["t = 0","t = 1/3","t = 1","t = 3"],opts_ta:["t = 0","t = 1/3","t = 1","t = 3"],ans:1,exp:"v(t) = ds/dt = 6t − 2 = 0 ⇒ t = 1/3."},
+  {id:"7-BB-4",ch:7,src:"Book-Back",qno:4,en:"A stone is thrown up vertically. The height it reaches at time t seconds is given by x = 80t − 16t². The stone reaches the maximum height in time t seconds is given by",ta:"ஒரு கல்லானது செங்குத்தாக மேல்நோக்கி எறியப்படுகின்றது. t நேரத்தில் அது அடைந்த உயரம் x = 80t − 16t². கல் அதிகபட்ச உயரத்தை t வினாடி நேரத்தில் அடைந்தால் t ஆனது",opts_en:["2","2.5","3","3.5"],opts_ta:["2","2.5","3","3.5"],ans:1,exp:"dx/dt = 80 − 32t = 0 ⇒ t = 80/32 = 2.5 seconds."},
+  {id:"7-BB-5",ch:7,src:"Book-Back",qno:5,en:"The point on the curve 6y = x³ + 2 at which y-coordinate changes 8 times as fast as x-coordinate is",ta:"6y = x³ + 2 என்ற வளைவரையின் எப்புள்ளியில் y-ஆயத்தொலைவின் மாறுபாட்டு வீதம் x-ஆயத்தொலைவின் மாறுபாட்டு வீதத்தைப் போல் 8 மடங்கு இருக்கும்?",opts_en:["(4, 11)","(4, −11)","(−4, 11)","(−4, −11)"],opts_ta:["(4, 11)","(4, −11)","(−4, 11)","(−4, −11)"],ans:0,exp:"6(dy/dt) = 3x²(dx/dt). Given dy/dt = 8(dx/dt) ⇒ 48 = 3x² ⇒ x = ±4. At x = 4, 6y = 66 ⇒ y = 11."},
+  {id:"7-BB-6",ch:7,src:"Book-Back",qno:6,en:"The abscissa of the point on the curve f(x) = √(8 − 2x) at which the slope of the tangent is −0.25?",ta:"f(x) = √(8 − 2x) என்ற வளைவரையின் எந்த x-ஆயத்தொலைவில் வரையப்பட்ட தொடுகோட்டின் சாய்வு −0.25 இருக்கும்?",opts_en:["−8","−4","−2","0"],opts_ta:["−8","−4","−2","0"],ans:1,exp:"f'(x) = −1/√(8−2x) = −0.25 = −1/4 ⇒ √(8−2x) = 4 ⇒ 8−2x = 16 ⇒ x = −4."},
+  {id:"7-BB-7",ch:7,src:"Book-Back",qno:7,en:"The slope of the line normal to the curve f(x) = 2cos4x at x = π/12 is",ta:"f(x) = 2cos4x என்ற வளைவரைக்கு x = π/12-ல் செங்கோட்டின் சாய்வு",opts_en:["−4√3","−4","√3/12","4√3"],opts_ta:["−4√3","−4","√3/12","4√3"],ans:2,exp:"f'(x) = −8sin4x. At x = π/12, f'(π/12) = −8sin(π/3) = −4√3. Normal slope = −1/f'(x) = 1/(4√3) = √3/12."},
+  {id:"7-BB-8",ch:7,src:"Book-Back",qno:8,en:"The tangent to the curve y² − xy + 9 = 0 is vertical when",ta:"y² − xy + 9 = 0 என்ற வளைவரையின் தொடுகோடு எப்போது நிலைகுத்தாக இருக்கும்?",opts_en:["y = 0","y = ±√3","y = 1/2","y = ±3"],opts_ta:["y = 0","y = ±√3","y = 1/2","y = ±3"],ans:3,exp:"dy/dx = y/(2y−x). Tangent is vertical when 2y − x = 0 ⇒ x = 2y. Sub in curve: y² − 2y² + 9 = 0 ⇒ y = ±3."},
+  {id:"7-BB-9",ch:7,src:"Book-Back",qno:9,en:"Angle between y² = x and x² = y at the origin is",ta:"ஆதியில் y² = x மற்றும் x² = y என்ற வளைவரைகளுக்கு இடைப்பட்ட கோணம்",opts_en:["tan⁻¹(3/4)","tan⁻¹(4/3)","π/2","π/4"],opts_ta:["tan⁻¹(3/4)","tan⁻¹(4/3)","π/2","π/4"],ans:2,exp:"At (0,0), y² = x is tangent to y-axis and x² = y is tangent to x-axis, so angle between them is π/2."},
+  {id:"7-BB-10",ch:7,src:"Book-Back",qno:10,en:"The value of the limit lim_{x→0} (cot x − 1/x) is",ta:"lim_{x→0} (cot x − 1/x)-ன் மதிப்பு",opts_en:["0","1","2","∞"],opts_ta:["0","1","2","∞"],ans:0,exp:"lim_{x→0} (x cos x − sin x)/(x sin x) = lim (−x sin x)/(sin x + x cos x) = 0 by L'Hôpital's rule."},
+  {id:"7-BB-11",ch:7,src:"Book-Back",qno:11,en:"The function sin⁴x + cos⁴x is increasing in the interval",ta:"sin⁴x + cos⁴x என்ற சார்பு ஏறும் (increasing) இடைவெளி",opts_en:["[5π/8, 3π/4]","[π/2, 5π/8]","[π/4, π/2]","[0, π/4]"],opts_ta:["[5π/8, 3π/4]","[π/2, 5π/8]","[π/4, π/2]","[0, π/4]"],ans:2,exp:"f'(x) = −sin4x ≥ 0 when π ≤ 4x ≤ 2π ⇒ x ∈ [π/4, π/2]."},
+  {id:"7-BB-12",ch:7,src:"Book-Back",qno:12,en:"The number given by the Rolle's theorem for the function x³ − 3x², x ∈ [0, 3] is",ta:"x³ − 3x², x ∈ [0, 3] என்ற சார்பிற்கு ரோலின் தேற்றத்தை நிறைவு செய்யும் எண்",opts_en:["1","√2","3/2","2"],opts_ta:["1","√2","3/2","2"],ans:3,exp:"f'(c) = 3c² − 6c = 0 ⇒ c = 0 or 2. Since c ∈ (0,3), c = 2."},
+  {id:"7-BB-13",ch:7,src:"Book-Back",qno:13,en:"The number given by the Mean value theorem for the function 1/x, x ∈ [1, 9] is",ta:"1/x, x ∈ [1, 9] என்ற சார்பிற்கு சராசரி மதிப்புத் தேற்றத்தை நிறைவு செய்யும் எண்",opts_en:["2","2.5","3","3.5"],opts_ta:["2","2.5","3","3.5"],ans:2,exp:"By MVT on [a,b] for 1/x, c = √(ab) = √(1×9) = 3."},
+  {id:"7-BB-14",ch:7,src:"Book-Back",qno:14,en:"The minimum value of the function |3 − x| + 9 is",ta:"|3 − x| + 9 என்ற சார்பின் குறைந்த மதிப்பு",opts_en:["0","3","6","9"],opts_ta:["0","3","6","9"],ans:3,exp:"Since |3 − x| ≥ 0 for all x, the minimum value is 0 + 9 = 9 at x = 3."},
+  {id:"7-BB-15",ch:7,src:"Book-Back",qno:15,en:"The maximum slope of the tangent to the curve y = eˣ sin x, x ∈ [0, 2π] is at",ta:"y = eˣ sin x, x ∈ [0, 2π] என்ற வளைவரையின் மீப்பெரு சாய்வு எங்கு அமையும்?",opts_en:["x = π/4","x = π/2","x = π","x = 3π/2"],opts_ta:["x = π/4","x = π/2","x = π","x = 3π/2"],ans:1,exp:"Slope m(x) = y' = eˣ(sin x + cos x). m'(x) = 2eˣ cos x = 0 ⇒ x = π/2, where m''(π/2) < 0."},
+  {id:"7-BB-16",ch:7,src:"Book-Back",qno:16,en:"The maximum value of the function x² e⁻²ˣ, x > 0 is",ta:"x² e⁻²ˣ, x > 0 என்ற சார்பின் பெரும மதிப்பு",opts_en:["1/e","1/(2e)","1/e²","4/e⁴"],opts_ta:["1/e","1/(2e)","1/e²","4/e⁴"],ans:2,exp:"f'(x) = 2x e⁻²ˣ(1 − x) = 0 ⇒ x = 1 (for x > 0). Maximum value f(1) = 1/e²."},
+  {id:"7-BB-17",ch:7,src:"Book-Back",qno:17,en:"One of the closest points on the curve x² − y² = 4 to the point (6, 0) is",ta:"(6, 0) என்ற புள்ளிக்கும் x² − y² = 4 என்ற வளைவரை மீதுள்ள புள்ளிக்கும் உள்ள தொலைவு குறைந்தபட்சம் எனில் அப்புள்ளி",opts_en:["(2, 0)","(√5, 1)","(3, √5)","(√13, −√3)"],opts_ta:["(2, 0)","(√5, 1)","(3, √5)","(√13, −√3)"],ans:2,exp:"D = (x−6)² + y² = (x−6)² + x² − 4. dD/dx = 2(x−6) + 2x = 0 ⇒ x = 3, y² = 9 − 4 = 5 ⇒ (3, √5)."},
+  {id:"7-BB-18",ch:7,src:"Book-Back",qno:18,en:"The maximum value of the product of two positive numbers, when their sum of the squares is 200, is",ta:"இரண்டு மிகை எண்களின் வர்க்கங்களின் கூடுதல் 200 எனில் அவற்றின் பெருக்கல் பலனின் பெரும மதிப்பு",opts_en:["100","25√7","28","24√14"],opts_ta:["100","25√7","28","24√14"],ans:0,exp:"x² + y² = 200. Product xy is maximum when x = y = 10, so xy = 100."},
+  {id:"7-BB-19",ch:7,src:"Book-Back",qno:19,en:"The curve y = ax⁴ + bx² with ab > 0",ta:"y = ax⁴ + bx², ab > 0 என்ற வளைவரை",opts_en:["has no horizontal tangent","is concave up","is concave down","has no points of inflection"],opts_ta:["கிடைமட்டத் தொடுகோடு பெறவில்லை","மேற்புறமாக குழிவு","கீழ்புறமாக குழிவு","வளைவு மாற்றப் புள்ளியை பெறவில்லை"],ans:3,exp:"y'' = 12ax² + 2b. Since ab > 0, a and b have the same sign, so y'' never vanishes or changes sign ⇒ no point of inflection."},
+  {id:"7-BB-20",ch:7,src:"Book-Back",qno:20,en:"The point of inflection of the curve y = (x − 1)³ is",ta:"y = (x − 1)³ என்ற வளைவரையின் வளைவு மாற்றப் புள்ளி",opts_en:["(0, 0)","(0, 1)","(1, 0)","(1, 1)"],opts_ta:["(0, 0)","(0, 1)","(1, 0)","(1, 1)"],ans:2,exp:"y'' = 6(x − 1) = 0 ⇒ x = 1, y = 0, and y'' changes sign at x = 1. Point is (1, 0)."},
+
+  // ==================== CHAPTER 7: BOOK-INSIDE (Q1 - Q10) ====================
+  {id:"7-IN-1",ch:7,src:"Book-Inside",qno:21,en:"For a position function s = f(t), the speed of the particle at time t is given by",ta:"இடப்பெயர்ச்சி சார்பு s = f(t)-க்கு t நேரத்தில் துகளின் வேகம் (Speed) என்பது",opts_en:["ds/dt","|ds/dt|","d²s/dt²","s(t)/t"],opts_ta:["ds/dt","|ds/dt|","d²s/dt²","s(t)/t"],ans:1,exp:"Remark 7.2.2: Speed is the absolute value of velocity regardless of direction: Speed = |v(t)| = |ds/dt|."},
+  {id:"7-IN-2",ch:7,src:"Book-Inside",qno:22,en:"Two curves y = f(x) and y = g(x) with finite slopes m₁ and m₂ at their point of intersection cut orthogonally if",ta:"இரு வளைவரைகளின் வெட்டும் புள்ளியில் அவற்றின் முடிவுற்ற சாய்வுகள் m₁ மற்றும் m₂ எனில், அவை செங்குத்தாக வெட்டிக்கொள்ள நிபந்தனை",opts_en:["m₁ = m₂","m₁ + m₂ = 0","m₁ m₂ = −1","m₁ m₂ = 1"],opts_ta:["m₁ = m₂","m₁ + m₂ = 0","m₁ m₂ = −1","m₁ m₂ = 1"],ans:2,exp:"Section 7.2.5 Remark: Two curves intersect orthogonally when m₁ × m₂ = −1."},
+  {id:"7-IN-3",ch:7,src:"Book-Inside",qno:23,en:"The curves ax² + by² = 1 and cx² + dy² = 1 intersect each other orthogonally if and only if",ta:"ax² + by² = 1 மற்றும் cx² + dy² = 1 என்ற வளைவரைகள் ஒன்றை ஒன்று செங்குத்தாக வெட்டிக்கொள்ள நிபந்தனை",opts_en:["1/a + 1/b = 1/c + 1/d","1/a − 1/b = 1/c − 1/d","a − b = c − d","ab = cd"],opts_ta:["1/a + 1/b = 1/c + 1/d","1/a − 1/b = 1/c − 1/d","a − b = c − d","ab = cd"],ans:1,exp:"Example 7.17: Orthogonal intersection condition is 1/a − 1/b = 1/c − 1/d."},
+  {id:"7-IN-4",ch:7,src:"Book-Inside",qno:24,en:"Lagrange's Mean Value Theorem is also known as",ta:"லெக்ராஞ்சியின் சராசரி மதிப்புத் தேற்றத்தின் மற்றொரு பெயர்",opts_en:["Generalized Taylor's Theorem","Rotated Rolle's Theorem","Fermat's Theorem","Extreme Value Theorem"],opts_ta:["பொதுமைப்படுத்தப்பட்ட டெய்லர் தேற்றம்","சுழன்ற ரோலின் தேற்றம்","ஃபெர்மார்ட் தேற்றம்","அறுதி மதிப்புத் தேற்றம்"],ans:1,exp:"Section 7.3.2 Remark: Lagrange's Mean Value Theorem is also known as rotated Rolle's Theorem."},
+  {id:"7-IN-5",ch:7,src:"Book-Inside",qno:25,en:"In the Maclaurin's series expansion of tan x, the coefficient of x³ is",ta:"tan x-ன் மெக்லாரின் தொடர் விரிவில் x³-ன் கெழு",opts_en:["1","1/2","1/3","2/15"],opts_ta:["1","1/2","1/3","2/15"],ans:2,exp:"Example 7.31: tan x = x + (1/3)x³ + (2/15)x⁵ + ... so coefficient of x³ is 1/3."},
+  {id:"7-IN-6",ch:7,src:"Book-Inside",qno:26,en:"Which of the following is NOT an indeterminate form?",ta:"பின்வருவனவற்றுள் எது தேரப்பெறாத வடிவம் (Indeterminate form) அல்ல?",opts_en:["0 × ∞","1^∞","0^0","∞ + ∞"],opts_ta:["0 × ∞","1^∞","0^0","∞ + ∞"],ans:3,exp:"Section 7.5.1: The 7 indeterminate forms are 0/0, ∞/∞, 0×∞, ∞−∞, 1^∞, 0^0, ∞^0. ∞ + ∞ = ∞ is determinate."},
+  {id:"7-IN-7",ch:7,src:"Book-Inside",qno:27,en:"For the function f(x) = |x − 17| at x = 17, the point (17, 0) is",ta:"f(x) = |x − 17| என்ற சார்பிற்கு x = 17-ல், புள்ளி (17, 0) என்பது",opts_en:["both a stationary point and a critical point","a critical point but not a stationary point","a stationary point but not a critical point","neither a critical point nor a stationary point"],opts_ta:["தேக்கநிலைப் புள்ளி மற்றும் நிலைப்புள்ளி","நிலைப்புள்ளி ஆனால் தேக்கநிலைப் புள்ளி அல்ல","தேக்கநிலைப் புள்ளி ஆனால் நிலைப்புள்ளி அல்ல","இரண்டுமில்லை"],ans:1,exp:"Section 7.6.1 Note: f'(17) does not exist, so (17, 0) is a critical point but not a stationary point."},
+  {id:"7-IN-8",ch:7,src:"Book-Inside",qno:28,en:"The slant (oblique) asymptote of the curve f(x) = (x² − 6x + 7)/(x + 5) is",ta:"f(x) = (x² − 6x + 7)/(x + 5) என்ற வளைவரையின் சாய்ந்த தொலைத் தொடுகோடு",opts_en:["y = x + 5","y = x − 6","y = x − 11","y = x + 11"],opts_ta:["y = x + 5","y = x − 6","y = x − 11","y = x + 11"],ans:2,exp:"Example 7.67: Dividing x² − 6x + 7 by x + 5 gives quotient x − 11, so slant asymptote is y = x − 11."},
+  {id:"7-IN-9",ch:7,src:"Book-Inside",qno:29,en:"If f(−x, −y) = f(x, y) for all (x, y), then the curve f(x, y) = 0 is symmetric with respect to",ta:"அனைத்து (x, y)-க்கும் f(−x, −y) = f(x, y) எனில், f(x, y) = 0 என்ற வளைவரை எதைப் பொறுத்து சமச்சீரானது?",opts_en:["x-axis","y-axis","origin","line y = x"],opts_ta:["x-அச்சு","y-அச்சு","ஆதிப்புள்ளி","y = x என்ற கோடு"],ans:2,exp:"Section 7.9.1: f(x,y) = f(−x,−y) means symmetry with respect to the origin."},
+  {id:"7-IN-10",ch:7,src:"Book-Inside",qno:30,en:"Among all rectangles of a given area, the one with the least perimeter is a",ta:"கொடுக்கப்பட்ட பரப்புடைய செவ்வகங்களுள் குறைந்த சுற்றளவைக் கொண்டது",opts_en:["rectangle with length = 2 × breadth","square","trapezium","rhombus"],opts_ta:["நீளம் = 2 × அகலம் கொண்ட செவ்வகம்","சதுரம்","சரிவகம்","சாய்சதுரம்"],ans:1,exp:"Example 7.65: Among all rectangles of a given area, the square has the least perimeter."},
+
+  // ==================== CHAPTER 8: BOOK-BACK (Ex 8.8: Q1 - Q15) ====================
+  {id:"8-BB-1",ch:8,src:"Book-Back",qno:1,en:"A circular template has a radius of 10 cm. The measurement of radius has an approximate error of 0.02 cm. Then the percentage error in calculating area of this template is",ta:"ஒரு வட்ட வடிவ வார்ப்பின் ஆரம் 10 செமீ. ஆரத்தின் அளவில் தோராயமாக 0.02 செமீ பிழை உள்ளது எனில் அதன் பரப்பில் ஏற்படும் தோராய சதவீதப் பிழையைக் காண்க.",opts_en:["0.2%","0.4%","0.04%","0.08%"],opts_ta:["0.2%","0.4%","0.04%","0.08%"],ans:1,exp:"A = πr² ⇒ dA/A = 2(dr/r) = 2(0.02/10) = 0.004 ⇒ Percentage error = 0.4%."},
+  {id:"8-BB-2",ch:8,src:"Book-Back",qno:2,en:"The percentage error of fifth root of 31 is approximately how many times the percentage error in 31?",ta:"31-ன் 5-ஆம் படி மூல சதவீதப் பிழை தோராயமாக, 31-ன் சதவீதப் பிழையைப் போல் எத்தனை மடங்காகும்?",opts_en:["1/31","1/5","5","31"],opts_ta:["1/31","1/5","5","31"],ans:1,exp:"y = x^(1/5) ⇒ dy/y = (1/5)(dx/x). Thus 1/5 times."},
+  {id:"8-BB-3",ch:8,src:"Book-Back",qno:3,en:"If u(x, y) = e^(x² + y²), then ∂u/∂x is equal to",ta:"u(x, y) = e^(x² + y²), எனில் ∂u/∂x-ன் மதிப்பு",opts_en:["e^(x² + y²)","2xu","x²u","y²u"],opts_ta:["e^(x² + y²)","2xu","x²u","y²u"],ans:1,exp:"∂u/∂x = e^(x²+y²) × 2x = 2xu."},
+  {id:"8-BB-4",ch:8,src:"Book-Back",qno:4,en:"If v(x, y) = log(eˣ + eʸ), then ∂v/∂x + ∂v/∂y is equal to",ta:"v(x, y) = log(eˣ + eʸ), எனில் ∂v/∂x + ∂v/∂y-ன் மதிப்பு",opts_en:["eˣ + eʸ","1/(eˣ + eʸ)","2","1"],opts_ta:["eˣ + eʸ","1/(eˣ + eʸ)","2","1"],ans:3,exp:"∂v/∂x + ∂v/∂y = eˣ/(eˣ+eʸ) + eʸ/(eˣ+eʸ) = 1."},
+  {id:"8-BB-5",ch:8,src:"Book-Back",qno:5,en:"If w(x, y) = xʸ, x > 0, then ∂w/∂x is equal to",ta:"w(x, y) = xʸ, x > 0, எனில் ∂w/∂x-ன் மதிப்பு",opts_en:["xʸ log x","y log x","y x^(y−1)","x log y"],opts_ta:["xʸ log x","y log x","y x^(y−1)","x log y"],ans:2,exp:"Treating y as constant, ∂(xʸ)/∂x = y x^(y−1)."},
+  {id:"8-BB-6",ch:8,src:"Book-Back",qno:6,en:"If f(x, y) = e^(xy), then ∂²f/∂x∂y is equal to",ta:"f(x, y) = e^(xy), எனில் ∂²f/∂x∂y-ன் மதிப்பு",opts_en:["xy e^(xy)","(1 + xy)e^(xy)","(1 + y)e^(xy)","(1 + x)e^(xy)"],opts_ta:["xy e^(xy)","(1 + xy)e^(xy)","(1 + y)e^(xy)","(1 + x)e^(xy)"],ans:1,exp:"∂f/∂y = x e^(xy) ⇒ ∂²f/∂x∂y = e^(xy) + xy e^(xy) = (1 + xy)e^(xy)."},
+  {id:"8-BB-7",ch:8,src:"Book-Back",qno:7,en:"If we measure the side of a cube to be 4 cm with an error of 0.1 cm, then the error in our calculation of the volume is",ta:"ஒரு கன சதுரத்தின் பக்க அளவு 4 செமீ மற்றும் அதன் பிழை 0.1 செமீ எனில் கன அளவு கணக்கீட்டில் ஏற்படும் பிழை",opts_en:["0.4 cu.cm","0.45 cu.cm","2 cu.cm","4.8 cu.cm"],opts_ta:["0.4 கன செமீ","0.45 கன செமீ","2 கன செமீ","4.8 கன செமீ"],ans:3,exp:"V = x³ ⇒ dV = 3x² dx = 3(4²)(0.1) = 4.8 cu.cm."},
+  {id:"8-BB-8",ch:8,src:"Book-Back",qno:8,en:"The change in the surface area S = 6x² of a cube when the edge length varies from x₀ to x₀ + dx is",ta:"ஒரு கன சதுரத்தின் பக்க அளவு x₀-இலிருந்து x₀ + dx ஆக மாறும்போது அதன் வளைபரப்பு S = 6x² இல் ஏற்படும் மாற்றம்",opts_en:["12x₀ + dx","12x₀ dx","6x₀ dx","6x₀ + dx"],opts_ta:["12x₀ + dx","12x₀ dx","6x₀ dx","6x₀ + dx"],ans:1,exp:"dS = S'(x₀) dx = 12x₀ dx."},
+  {id:"8-BB-9",ch:8,src:"Book-Back",qno:9,en:"The approximate change in the volume V of a cube of side x metres caused by increasing the side by 1% is",ta:"ஒரு கன சதுரத்தின் பக்க அளவு 1% அதிகரிக்கும்போது அதன் கன அளவில் ஏற்படும் தோராய மாற்றம்",opts_en:["0.3x dx m³","0.03x m³","0.03x² m³","0.03x³ m³"],opts_ta:["0.3x dx மீ³","0.03x மீ³","0.03x² மீ³","0.03x³ மீ³"],ans:3,exp:"dV = 3x² dx = 3x²(0.01x) = 0.03x³ m³."},
+  {id:"8-BB-10",ch:8,src:"Book-Back",qno:10,en:"If g(x, y) = 3x² − 5y + 2y², x(t) = eᵗ and y(t) = cos t, then dg/dt is equal to",ta:"g(x, y) = 3x² − 5y + 2y², x(t) = eᵗ மற்றும் y(t) = cos t, எனில் dg/dt-ன் மதிப்பு",opts_en:["6e²ᵗ + 5sin t − 4cos t sin t","6e²ᵗ − 5sin t + 4cos t sin t","3e²ᵗ + 5sin t + 4cos t sin t","3e²ᵗ − 5sin t + 4cos t sin t"],opts_ta:["6e²ᵗ + 5sin t − 4cos t sin t","6e²ᵗ − 5sin t + 4cos t sin t","3e²ᵗ + 5sin t + 4cos t sin t","3e²ᵗ − 5sin t + 4cos t sin t"],ans:0,exp:"dg/dt = 6x(dx/dt) + (−5+4y)(dy/dt) = 6e²ᵗ + 5sin t − 4cos t sin t."},
+  {id:"8-BB-11",ch:8,src:"Book-Back",qno:11,en:"If f(x) = x/(x + 1), then its differential is given by",ta:"f(x) = x/(x + 1), எனில் அதன் வகையீடு",opts_en:["−1/(x + 1)² dx","1/(x + 1)² dx","1/(x + 1) dx","−1/(x + 1) dx"],opts_ta:["−1/(x + 1)² dx","1/(x + 1)² dx","1/(x + 1) dx","−1/(x + 1) dx"],ans:1,exp:"df = f'(x)dx = [((x+1) − x)/(x+1)²]dx = 1/(x+1)² dx."},
+  {id:"8-BB-12",ch:8,src:"Book-Back",qno:12,en:"If u(x, y) = x² + 3xy + y − 2019, then ∂u/∂x at (4, −5) is equal to",ta:"u(x, y) = x² + 3xy + y − 2019, எனில் (4, −5)-ல் ∂u/∂x-ன் மதிப்பு",opts_en:["−4","−3","−7","13"],opts_ta:["−4","−3","−7","13"],ans:2,exp:"∂u/∂x = 2x + 3y. At (4, −5), 2(4) + 3(−5) = 8 − 15 = −7."},
+  {id:"8-BB-13",ch:8,src:"Book-Back",qno:13,en:"Linear approximation for g(x) = cos x at x = π/2 is",ta:"சார்பு g(x) = cos x-ன் நேரியல் தோராய மதிப்பு x = π/2 இல்",opts_en:["x + π/2","−x + π/2","x − π/2","−x − π/2"],opts_ta:["x + π/2","−x + π/2","x − π/2","−x − π/2"],ans:1,exp:"L(x) = g(π/2) + g'(π/2)(x − π/2) = 0 − sin(π/2)(x − π/2) = −x + π/2."},
+  {id:"8-BB-14",ch:8,src:"Book-Back",qno:14,en:"If w(x, y, z) = x²(y − z) + y²(z − x) + z²(x − y), then ∂w/∂x + ∂w/∂y + ∂w/∂z is",ta:"w(x, y, z) = x²(y − z) + y²(z − x) + z²(x − y), எனில் ∂w/∂x + ∂w/∂y + ∂w/∂z-ன் மதிப்பு",opts_en:["xy + yz + zx","x(y + z)","y(z + x)","0"],opts_ta:["xy + yz + zx","x(y + z)","y(z + x)","0"],ans:3,exp:"∂w/∂x + ∂w/∂y + ∂w/∂z = (2xy−2xz−y²+z²) + (x²+2yz−2xy−z²) + (−x²+y²+2xz−2yz) = 0."},
+  {id:"8-BB-15",ch:8,src:"Book-Back",qno:15,en:"If f(x, y, z) = xy + yz + zx, then f_x − f_z is equal to",ta:"f(x, y, z) = xy + yz + zx, எனில் f_x − f_z-ன் மதிப்பு",opts_en:["z − x","y − z","x − z","y − x"],opts_ta:["z − x","y − z","x − z","y − x"],ans:0,exp:"f_x = y + z and f_z = y + x ⇒ f_x − f_z = (y + z) − (y + x) = z − x."},
+
+  // ==================== CHAPTER 8: BOOK-INSIDE (Q1 - Q10) ====================
+  {id:"8-IN-1",ch:8,src:"Book-Inside",qno:16,en:"The linear approximation L(x) of a differentiable function f(x) at x₀ is defined as",ta:"x₀ என்ற புள்ளியில் வகையிடத்தக்க சார்பு f(x)-ன் நேரியல் தோராய மதிப்பு L(x) என்பது",opts_en:["f(x₀) − f'(x₀)(x − x₀)","f(x₀) + f'(x₀)(x − x₀)","f'(x₀) + f(x₀)(x − x₀)","f(x₀) + f''(x₀)(x − x₀)"],opts_ta:["f(x₀) − f'(x₀)(x − x₀)","f(x₀) + f'(x₀)(x − x₀)","f'(x₀) + f(x₀)(x − x₀)","f(x₀) + f''(x₀)(x − x₀)"],ans:1,exp:"Definition 8.1: L(x) = f(x₀) + f'(x₀)(x − x₀)."},
+  {id:"8-IN-2",ch:8,src:"Book-Inside",qno:17,en:"Which of the following errors has a unit of measurement (is NOT unit-free)?",ta:"பின்வரும் பிழைகளில் எதற்கு அளவீட்டு அலகு உண்டு?",opts_en:["Relative error","Percentage error","Absolute error","Both Relative and Percentage error"],opts_ta:["சார்பிழை","சதவீதப் பிழை","தனிப்பிழை","சார்பிழை மற்றும் சதவீதப் பிழை"],ans:2,exp:"Section 8.2.2 Note: Absolute error has unit of measurement whereas relative error and percentage error are units free."},
+  {id:"8-IN-3",ch:8,src:"Book-Inside",qno:18,en:"By Clairaut's Theorem, if f_xy and f_yx exist in an open region A and are continuous in A, then in A",ta:"கிளெய்ராட்டின் தேற்றத்தின்படி, A என்ற திறந்த பகுதியில் f_xy மற்றும் f_yx காணப்பெற்று தொடர்ச்சியானதாகவும் இருந்தால்",opts_en:["f_xx = f_yy","f_xy = f_yx","f_xy + f_yx = 0","f_x = f_y"],opts_ta:["f_xx = f_yy","f_xy = f_yx","f_xy + f_yx = 0","f_x = f_y"],ans:1,exp:"Theorem 8.1 (Clairaut's Theorem): If f_xy and f_yx exist and are continuous in A, then f_xy = f_yx in A."},
+  {id:"8-IN-4",ch:8,src:"Book-Inside",qno:19,en:"A function u(x, y) is said to be harmonic in A if it satisfies Laplace's equation:",ta:"u(x, y) என்ற சார்பு A-ல் சீரானது (harmonic) எனில் அது நிறைவு செய்யும் இலாபிலாஸின் சமன்பாடு:",opts_en:["∂u/∂x + ∂u/∂y = 0","∂²u/∂x² + ∂²u/∂y² = 0","∂²u/∂x² − ∂²u/∂y² = 0","∂²u/∂x∂y = 0"],opts_ta:["∂u/∂x + ∂u/∂y = 0","∂²u/∂x² + ∂²u/∂y² = 0","∂²u/∂x² − ∂²u/∂y² = 0","∂²u/∂x∂y = 0"],ans:1,exp:"Definition 8.9: u is harmonic if ∂²u/∂x² + ∂²u/∂y² = 0 (Laplace's equation)."},
+  {id:"8-IN-5",ch:8,src:"Book-Inside",qno:20,en:"The degree of homogeneity of the function F(x, y) = (x² + 5xy − 10y²)/(3x + 7y) is",ta:"F(x, y) = (x² + 5xy − 10y²)/(3x + 7y) என்ற சமபடித்தான சார்பின் படி",opts_en:["0","1","2","3"],opts_ta:["0","1","2","3"],ans:1,exp:"Example 8.21: F(λx, λy) = λ¹ F(x, y), so degree is 1."},
+  {id:"8-IN-6",ch:8,src:"Book-Inside",qno:21,en:"By Euler's Theorem, if F(x, y, z) is a homogeneous function of degree p with continuous partial derivatives, then x(∂F/∂x) + y(∂F/∂y) + z(∂F/∂z) =",ta:"ஆய்லரின் தேற்றப்படி, F(x, y, z) என்பது p படியுள்ள சமபடித்தான சார்பு எனில் x(∂F/∂x) + y(∂F/∂y) + z(∂F/∂z) =",opts_en:["0","F","pF","p²F"],opts_ta:["0","F","pF","p²F"],ans:2,exp:"Definition 8.13 (Euler's Theorem): x F_x + y F_y + z F_z = p F(x,y,z)."},
+  {id:"8-IN-7",ch:8,src:"Book-Inside",qno:22,en:"If u = sin⁻¹((x + y)/(√x + √y)), then x(∂u/∂x) + y(∂u/∂y) is equal to",ta:"u = sin⁻¹((x + y)/(√x + √y)) எனில் x(∂u/∂x) + y(∂u/∂y)-ன் மதிப்பு",opts_en:["(1/2) sin u","(1/2) tan u","tan u","2 tan u"],opts_ta:["(1/2) sin u","(1/2) tan u","tan u","2 tan u"],ans:1,exp:"Example 8.22: sin u is homogeneous of degree 1/2, so x u_x + y u_y = (1/2) tan u."},
+  {id:"8-IN-8",ch:8,src:"Book-Inside",qno:23,en:"Geometrically, the linear approximation of a function F(x, y) of two variables at (x₀, y₀) represents the",ta:"வடிவக் கணிதத்தின்படி, இரு மாறிகளில் அமைந்த சார்பு F(x, y)-ன் (x₀, y₀) புள்ளியிலான நேரியல் தோராய மதிப்பு குறிப்பது",opts_en:["tangent line to z = F(x, y)","normal line to z = F(x, y)","tangent plane to the graph of z = F(x, y)","secant line"],opts_ta:["தொடுகோடு","செங்கோடு","z = F(x, y) வரைபடத்தின் தொடு தளம்","வெட்டுக்கோடு"],ans:2,exp:"Section 8.6 (Fig. 8.13): Linear approximation of F(x,y) at (x₀,y₀) represents the tangent plane to the surface z = F(x,y)."},
+  {id:"8-IN-9",ch:8,src:"Book-Inside",qno:24,en:"If u(x, y) = (x² + y²)/√(x + y), then x(∂u/∂x) + y(∂u/∂y) is equal to",ta:"u(x, y) = (x² + y²)/√(x + y) எனில் x(∂u/∂x) + y(∂u/∂y)-ன் மதிப்பு",opts_en:["(1/2)u","u","(3/2)u","2u"],opts_ta:["(1/2)u","u","(3/2)u","2u"],ans:2,exp:"Exercise 8.7 Q4: Degree of homogeneity = 2 − 1/2 = 3/2. By Euler's theorem, x u_x + y u_y = (3/2)u."},
+  {id:"8-IN-10",ch:8,src:"Book-Inside",qno:25,en:"Using linear approximation for f(x) = √x at x₀ = 9, the approximate value of √9.2 is",ta:"f(x) = √x, x₀ = 9-ல் நேரியல் தோராய மதிப்பீட்டு முறை மூலம் √9.2-ன் தோராய மதிப்பு",opts_en:["3.02","3.03333","3.05","3.06667"],opts_ta:["3.02","3.03333","3.05","3.06667"],ans:1,exp:"Example 8.2: √9.2 ≈ f(9) + f'(9)(0.2) = 3 + 0.2/(2×3) = 3 + 0.2/6 = 3.03333."},
+  // ==================== CHAPTER 9: BOOK-BACK (Ex 9.10: Q1 - Q20) ====================
+  {id:"9-BB-1",ch:9,src:"Book-Back",qno:1,en:"The value of ∫₀^(2/3) dx / √(4 − 9x²) is",ta:"∫₀^(2/3) dx / √(4 − 9x²) இன் மதிப்பு",opts_en:["π/6","π/2","π/4","π"],opts_ta:["π/6","π/2","π/4","π"],ans:0,exp:"(1/3)[sin⁻¹(3x/2)]₀^(2/3) = (1/3)sin⁻¹(1) = π/6."},
+  {id:"9-BB-2",ch:9,src:"Book-Back",qno:2,en:"The value of ∫₋₁² |x| dx is",ta:"∫₋₁² |x| dx இன் மதிப்பு",opts_en:["1/2","3/2","5/2","7/2"],opts_ta:["1/2","3/2","5/2","7/2"],ans:2,exp:"∫₋₁⁰ (−x)dx + ∫₀² x dx = 1/2 + 2 = 5/2."},
+  {id:"9-BB-3",ch:9,src:"Book-Back",qno:3,en:"For any value of n ∈ ℤ, ∫₀^π e^(cos²x) cos³[(2n + 1)x] dx is",ta:"ஒவ்வொரு n ∈ ℤ-க்கும் ∫₀^π e^(cos²x) cos³[(2n + 1)x] dx இன் மதிப்பு",opts_en:["π/2","π","0","2"],opts_ta:["π/2","π","0","2"],ans:2,exp:"Since f(π − x) = −f(x), by Property 11 the integral is 0."},
+  {id:"9-BB-4",ch:9,src:"Book-Back",qno:4,en:"The value of ∫₋π/2^(π/2) sin²x cos x dx is",ta:"∫₋π/2^(π/2) sin²x cos x dx இன் மதிப்பு",opts_en:["3/2","1/2","0","2/3"],opts_ta:["3/2","1/2","0","2/3"],ans:3,exp:"Even function: 2 ∫₀^(π/2) sin²x cos x dx = 2[sin³x / 3]₀^(π/2) = 2/3."},
+  {id:"9-BB-5",ch:9,src:"Book-Back",qno:5,en:"The value of ∫₋₄⁴ [tan⁻¹(x²/(x⁴ + 1)) + tan⁻¹((x⁴ + 1)/x²)] dx is",ta:"∫₋₄⁴ [tan⁻¹(x²/(x⁴ + 1)) + tan⁻¹((x⁴ + 1)/x²)] dx இன் மதிப்பு",opts_en:["π","2π","3π","4π"],opts_ta:["π","2π","3π","4π"],ans:3,exp:"tan⁻¹(u) + tan⁻¹(1/u) = π/2 for u > 0. So ∫₋₄⁴ (π/2) dx = (π/2)(8) = 4π."},
+  {id:"9-BB-6",ch:9,src:"Book-Back",qno:6,en:"The value of ∫₋π/4^(π/4) ((2x⁷ − 3x⁵ + 7x³ − x + 1)/cos²x) dx is",ta:"∫₋π/4^(π/4) ((2x⁷ − 3x⁵ + 7x³ − x + 1)/cos²x) dx இன் மதிப்பு",opts_en:["4","3","2","0"],opts_ta:["4","3","2","0"],ans:2,exp:"Odd terms vanish; remaining is ∫₋π/4^(π/4) sec²x dx = 2[tan x]₀^(π/4) = 2."},
+  {id:"9-BB-7",ch:9,src:"Book-Back",qno:7,en:"If f(x) = ∫₀ˣ t cos t dt, then df/dx =",ta:"f(x) = ∫₀ˣ t cos t dt, எனில் df/dx =",opts_en:["cos x − x sin x","sin x + x cos x","x cos x","x sin x"],opts_ta:["cos x − x sin x","sin x + x cos x","x cos x","x sin x"],ans:2,exp:"By First Fundamental Theorem of Integral Calculus, df/dx = x cos x."},
+  {id:"9-BB-8",ch:9,src:"Book-Back",qno:8,en:"The area between y² = 4x and its latus rectum is",ta:"y² = 4x என்ற பரவளையத்திற்கும் அதன் செவ்வகலத்திற்கும் இடையே பரப்பானது",opts_en:["2/3","4/3","8/3","5/3"],opts_ta:["2/3","4/3","8/3","5/3"],ans:2,exp:"Area = (8/3)a². Here 4a = 4 ⇒ a = 1, so Area = 8/3."},
+  {id:"9-BB-9",ch:9,src:"Book-Back",qno:9,en:"The value of ∫₀¹ x(1 − x)⁹⁹ dx is",ta:"∫₀¹ x(1 − x)⁹⁹ dx இன் மதிப்பு",opts_en:["1/11000","1/10100","1/10010","1/10001"],opts_ta:["1/11000","1/10100","1/10010","1/10001"],ans:1,exp:"m! n! / (m+n+1)! = 1! 99! / 101! = 1/(100 × 101) = 1/10100."},
+  {id:"9-BB-10",ch:9,src:"Book-Back",qno:10,en:"The value of ∫₀^π dx / (1 + 5^(cos x)) is",ta:"∫₀^π dx / (1 + 5^(cos x)) இன் மதிப்பு",opts_en:["π/2","π","3π/2","2π"],opts_ta:["π/2","π","3π/2","2π"],ans:0,exp:"Using I = ∫₀^a f(x)dx = ∫₀^a f(a−x)dx, 2I = ∫₀^π 1 dx = π ⇒ I = π/2."},
+  {id:"9-BB-11",ch:9,src:"Book-Back",qno:11,en:"If Γ(n + 2)/Γ(n) = 90 then n is",ta:"Γ(n + 2)/Γ(n) = 90 எனில் n இன் மதிப்பு",opts_en:["10","5","8","9"],opts_ta:["10","5","8","9"],ans:3,exp:"(n+1)n = 90 ⇒ n = 9."},
+  {id:"9-BB-12",ch:9,src:"Book-Back",qno:12,en:"The value of ∫₀^(π/6) cos³3x dx is",ta:"∫₀^(π/6) cos³3x dx இன் மதிப்பு",opts_en:["2/3","2/9","1/9","1/3"],opts_ta:["2/3","2/9","1/9","1/3"],ans:1,exp:"Put u = 3x: (1/3) ∫₀^(π/2) cos³u du = (1/3)(2/3) = 2/9."},
+  {id:"9-BB-13",ch:9,src:"Book-Back",qno:13,en:"The value of ∫₀^π sin⁴x dx is",ta:"∫₀^π sin⁴x dx இன் மதிப்பு",opts_en:["3π/10","3π/8","3π/4","3π/2"],opts_ta:["3π/10","3π/8","3π/4","3π/2"],ans:1,exp:"2 ∫₀^(π/2) sin⁴x dx = 2 × (3/4)(1/2)(π/2) = 3π/8."},
+  {id:"9-BB-14",ch:9,src:"Book-Back",qno:14,en:"The value of ∫₀^∞ e⁻³ˣ x² dx is",ta:"∫₀^∞ e⁻³ˣ x² dx இன் மதிப்பு",opts_en:["7/27","5/27","4/27","2/27"],opts_ta:["7/27","5/27","4/27","2/27"],ans:3,exp:"n! / a^(n+1) = 2! / 3³ = 2/27."},
+  {id:"9-BB-15",ch:9,src:"Book-Back",qno:15,en:"If ∫₀^a (1/(4 + x²)) dx = π/8 then a is",ta:"∫₀^a (1/(4 + x²)) dx = π/8 எனில் a இன் மதிப்பு",opts_en:["4","1","3","2"],opts_ta:["4","1","3","2"],ans:3,exp:"(1/2)tan⁻¹(a/2) = π/8 ⇒ tan⁻¹(a/2) = π/4 ⇒ a = 2."},
+  {id:"9-BB-16",ch:9,src:"Book-Back",qno:16,en:"The volume of solid of revolution of the region bounded by y² = x(a − x) about x-axis is",ta:"y² = x(a − x) என்ற வளைவரையில் அடைபடும் அரங்கத்தின் பரப்பை x-அச்சைப் பொருத்து சுழற்றுவதால் உருவாகும் திடப்பொருளின் கன அளவு",opts_en:["πa³","πa³/4","πa³/5","πa³/6"],opts_ta:["πa³","πa³/4","πa³/5","πa³/6"],ans:3,exp:"V = π ∫₀^a x(a − x) dx = π[ax²/2 − x³/3]₀^a = πa³/6."},
+  {id:"9-BB-17",ch:9,src:"Book-Back",qno:17,en:"If f(x) = ∫₁ˣ (e^(sin u)/u) du, x > 1 and ∫₁³ (e^(sin x²)/x) dx = (1/2)[f(a) − f(1)], then one of the possible value of a is",ta:"f(x) = ∫₁ˣ (e^(sin u)/u) du, x > 1 மற்றும் ∫₁³ (e^(sin x²)/x) dx = (1/2)[f(a) − f(1)] எனில் a பெறக்கூடிய ஒரு மதிப்பு",opts_en:["3","6","9","5"],opts_ta:["3","6","9","5"],ans:2,exp:"Put u = x²: du/(2u) = dx/x. Limits x=1 to 3 give u=1 to 9, so a = 9."},
+  {id:"9-BB-18",ch:9,src:"Book-Back",qno:18,en:"The value of ∫₀¹ (sin⁻¹x)² dx is",ta:"∫₀¹ (sin⁻¹x)² dx இன் மதிப்பு",opts_en:["π²/4 − 1","π²/4 + 2","π²/4 + 1","π²/4 − 2"],opts_ta:["π²/4 − 1","π²/4 + 2","π²/4 + 1","π²/4 − 2"],ans:3,exp:"Put u = sin⁻¹x: ∫₀^(π/2) u² cos u du = [u² sin u + 2u cos u − 2 sin u]₀^(π/2) = π²/4 − 2."},
+  {id:"9-BB-19",ch:9,src:"Book-Back",qno:19,en:"The value of ∫₀^a (√(a² − x²))³ dx is",ta:"∫₀^a (√(a² − x²))³ dx இன் மதிப்பு",opts_en:["πa³/16","3πa⁴/16","3πa²/8","3πa⁴/8"],opts_ta:["πa³/16","3πa⁴/16","3πa²/8","3πa⁴/8"],ans:1,exp:"Put x = a sinθ: a⁴ ∫₀^(π/2) cos⁴θ dθ = a⁴(3/4)(1/2)(π/2) = 3πa⁴/16."},
+  {id:"9-BB-20",ch:9,src:"Book-Back",qno:20,en:"If ∫₀ˣ f(t) dt = x + ∫ₓ¹ t f(t) dt, then the value of f(1) is",ta:"∫₀ˣ f(t) dt = x + ∫ₓ¹ t f(t) dt எனில் f(1) இன் மதிப்பு",opts_en:["1/2","2","1","3/4"],opts_ta:["1/2","2","1","3/4"],ans:0,exp:"Differentiate w.r.t x: f(x) = 1 − x f(x) ⇒ f(x) = 1/(1 + x) ⇒ f(1) = 1/2."},
+
+  // ==================== CHAPTER 9: BOOK-INSIDE (Q1 - Q10) ====================
+  {id:"9-IN-1",ch:9,src:"Book-Inside",qno:21,en:"Archimedes proved that the area enclosed by a parabola and a straight line is how many times the area of the inscribed triangle?",ta:"ஒரு பரவளையம் மற்றும் ஒரு நேர்க்கோட்டால் சூழப்பட்ட பரப்பு உள்வரையப்பட்ட முக்கோணத்தின் பரப்பைப் போல் எத்தனை மடங்கு என ஆர்க்கிமிடிஸ் நிரூபித்தார்?",opts_en:["2/3","4/3","3/2","3/4"],opts_ta:["2/3","4/3","3/2","3/4"],ans:1,exp:"Section 9.1: 4/3 times the area of the inscribed triangle (and 2/3 of the circumscribing rectangle)."},
+  {id:"9-IN-2",ch:9,src:"Book-Inside",qno:22,en:"The value of ∫₀^(π/4) log(1 + tan x) dx is",ta:"∫₀^(π/4) log(1 + tan x) dx-ன் மதிப்பு",opts_en:["(π/4) log 2","(π/8) log 2","(π/2) log 2","log 2"],opts_ta:["(π/4) log 2","(π/8) log 2","(π/2) log 2","log 2"],ans:1,exp:"Example 9.27: Using ∫₀^a f(x)dx = ∫₀^a f(a−x)dx, I = (π/8) log 2."},
+  {id:"9-IN-3",ch:9,src:"Book-Inside",qno:23,en:"For any continuous function f(x), the value of ∫₀^a f(x) / [f(x) + f(a − x)] dx is",ta:"∫₀^a f(x) / [f(x) + f(a − x)] dx-ன் மதிப்பு",opts_en:["a","a/2","2a","0"],opts_ta:["a","a/2","2a","0"],ans:1,exp:"Example 9.26: Adding I(x) and I(a−x) gives 2I = a ⇒ I = a/2."},
+  {id:"9-IN-4",ch:9,src:"Book-Inside",qno:24,en:"The area of the region bounded by the ellipse x²/a² + y²/b² = 1 is",ta:"x²/a² + y²/b² = 1 என்ற நீள்வட்டத்தினால் அடைபடும் அரங்கத்தின் பரப்பு",opts_en:["π(a + b)","πab","2πab","4πab"],opts_ta:["π(a + b)","πab","2πab","4πab"],ans:1,exp:"Example 9.49: Area of the ellipse is πab."},
+  {id:"9-IN-5",ch:9,src:"Book-Inside",qno:25,en:"The area of the region bounded between the parabolas y² = 4x and x² = 4y is",ta:"y² = 4x மற்றும் x² = 4y என்ற பரவளையங்களால் அடைபடும் அரங்கத்தின் பரப்பு",opts_en:["8/3","16/3","4/3","32/3"],opts_ta:["8/3","16/3","4/3","32/3"],ans:1,exp:"Example 9.54: Area between y² = 4ax and x² = 4ay is 16a²/3. Here a = 1, so 16/3."},
+  {id:"9-IN-6",ch:9,src:"Book-Inside",qno:26,en:"The volume of the ellipsoid formed by revolving x²/a² + y²/b² = 1 (a > b) about the major axis (x-axis) is",ta:"x²/a² + y²/b² = 1 (a > b) என்ற நீள்வட்டத்தை நெட்டச்சைப் பொறுத்துச் சுழற்றினால் உருவாகும் திடப்பொருளின் கனஅளவு",opts_en:["(4/3)πa²b","(4/3)πab²","(2/3)πab²","πab²"],opts_ta:["(4/3)πa²b","(4/3)πab²","(2/3)πab²","πab²"],ans:1,exp:"Example 9.66: Revolving about the x-axis (major axis) gives V = (4/3)πab²."},
+  {id:"9-IN-7",ch:9,src:"Book-Inside",qno:27,en:"For any positive integer n, the Gamma integral Γ(n) = ∫₀^∞ e⁻ˣ x^(n−1) dx is equal to",ta:"n ஒரு மிகை முழு எண் எனில், காமா தொகையிடல் Γ(n) = ∫₀^∞ e⁻ˣ x^(n−1) dx-ன் மதிப்பு",opts_en:["n!","(n − 1)!","(n + 1)!","1/n!"],opts_ta:["n!","(n − 1)!","(n + 1)!","1/n!"],ans:1,exp:"Section 9.7 Definition 9.1 Note: Γ(n) = (n − 1)! for positive integer n."},
+  {id:"9-IN-8",ch:9,src:"Book-Inside",qno:28,en:"The value of ∫₀^(π/2) sin⁶x dx is",ta:"∫₀^(π/2) sin⁶x dx-ன் மதிப்பு",opts_en:["5π/16","5π/32","3π/16","15π/48"],opts_ta:["5π/16","5π/32","3π/16","15π/48"],ans:1,exp:"By Reduction Formula: (5/6)×(3/4)×(1/2)×(π/2) = 5π/32."},
+  {id:"9-IN-9",ch:9,src:"Book-Inside",qno:29,en:"The value of the improper integral ∫₋∞^∞ dx / (a² + x²) (a > 0) is",ta:"∫₋∞^∞ dx / (a² + x²) (a > 0) என்ற முறையற்ற தொகையீட்டின் மதிப்பு",opts_en:["π/(2a)","π/(4a)","π/a","2π/a"],opts_ta:["π/(2a)","π/(4a)","π/a","2π/a"],ans:2,exp:"Example 9.35 Note (iii): ∫₋∞^∞ dx/(a²+x²) = 2(π/(2a)) = π/a."},
+  {id:"9-IN-10",ch:9,src:"Book-Inside",qno:30,en:"The total area bounded by the x-axis, the sine curve y = sin x, and the lines x = 0 and x = 2π is",ta:"x-அச்சு, y = sin x என்ற வளைவரை, மற்றும் x = 0, x = 2π ஆகிய கோடுகளால் அடைபடும் மொத்தப் பரப்பு",opts_en:["0","2","4","2π"],opts_ta:["0","2","4","2π"],ans:2,exp:"Example 9.52: Area = |∫₀^π sin x dx| + |∫_π^(2π) sin x dx| = 2 + 2 = 4."},
+
+  // ==================== CHAPTER 10: BOOK-BACK (Ex 10.9: Q1 - Q25) ====================
+  {id:"10-BB-1",ch:10,src:"Book-Back",qno:1,en:"The order and degree of the differential equation d²y/dx² + (dy/dx)^(1/3) + x^(1/4) = 0 are respectively",ta:"d²y/dx² + (dy/dx)^(1/3) + x^(1/4) = 0 எனும் வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி முறையே",opts_en:["2, 3","3, 3","2, 6","2, 4"],opts_ta:["2, 3","3, 3","2, 6","2, 4"],ans:0,exp:"(d²y/dx² + x^(1/4))³ = −dy/dx ⇒ highest order is 2, degree is 3."},
+  {id:"10-BB-2",ch:10,src:"Book-Back",qno:2,en:"The differential equation representing the family of curves y = A cos(x + B), where A and B are parameters, is",ta:"y = A cos(x + B), இங்கு A, B என்பன எதேச்சை மாறிலிகள் எனும் சமன்பாட்டைக் கொண்ட வளைவரை குடும்பத்தின் வகைக்கெழுச் சமன்பாடு",opts_en:["d²y/dx² − y = 0","d²y/dx² + y = 0","d²y/dx² = 0","d²x/dy² = 0"],opts_ta:["d²y/dx² − y = 0","d²y/dx² + y = 0","d²y/dx² = 0","d²x/dy² = 0"],ans:1,exp:"Differentiating twice gives d²y/dx² = −A cos(x+B) = −y ⇒ d²y/dx² + y = 0."},
+  {id:"10-BB-3",ch:10,src:"Book-Back",qno:3,en:"The order and degree of the differential equation √(sin x)(dx + dy) = √(cos x)(dx − dy) is",ta:"√(sin x)(dx + dy) = √(cos x)(dx − dy) எனும் வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி",opts_en:["1, 2","2, 2","1, 1","2, 1"],opts_ta:["1, 2","2, 2","1, 1","2, 1"],ans:2,exp:"dy/dx = (√cos x − √sin x)/(√cos x + √sin x), which is polynomial in dy/dx of order 1 and degree 1."},
+  {id:"10-BB-4",ch:10,src:"Book-Back",qno:4,en:"The order of the differential equation of all circles with centre at (h, k) and radius 'a' is",ta:"மையம் (h, k) மற்றும் ஆரம் 'a' கொண்ட எல்லா வட்டங்களின் வகைக்கெழுச் சமன்பாட்டின் வரிசை",opts_en:["2","3","4","1"],opts_ta:["2","3","4","1"],ans:1,exp:"(x−h)² + (y−k)² = a² has 3 arbitrary constants (h, k, a), so order is 3."},
+  {id:"10-BB-5",ch:10,src:"Book-Back",qno:5,en:"The differential equation of the family of curves y = Aeˣ + Be⁻ˣ, where A and B are arbitrary constants is",ta:"y = Aeˣ + Be⁻ˣ, இங்கு A, B என்பன ஏதேனும் இரு மாறிலிகள், எனும் வளைவரைத் தொகுதியின் வகைக்கெழுச் சமன்பாடு",opts_en:["d²y/dx² + y = 0","d²y/dx² − y = 0","dy/dx + y = 0","dy/dx − y = 0"],opts_ta:["d²y/dx² + y = 0","d²y/dx² − y = 0","dy/dx + y = 0","dy/dx − y = 0"],ans:1,exp:"y'' = Aeˣ + Be⁻ˣ = y ⇒ d²y/dx² − y = 0."},
+  {id:"10-BB-6",ch:10,src:"Book-Back",qno:6,en:"The general solution of the differential equation dy/dx = y/x is",ta:"dy/dx = y/x எனும் வகைக்கெழுச் சமன்பாட்டின் பொதுத்தீர்வு",opts_en:["xy = k","y = k log x","y = kx","log y = kx"],opts_ta:["xy = k","y = k log x","y = kx","log y = kx"],ans:2,exp:"dy/y = dx/x ⇒ log|y| = log|x| + log|k| ⇒ y = kx."},
+  {id:"10-BB-7",ch:10,src:"Book-Back",qno:7,en:"The solution of the differential equation 2x(dy/dx) − y = 3 represents",ta:"2x(dy/dx) − y = 3 எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு குறிப்பிடுவது",opts_en:["straight lines","circles","parabola","ellipse"],opts_ta:["நேர்க்கோடுகள்","வட்டங்கள்","பரவளையம்","நீள்வட்டம்"],ans:2,exp:"dy/(y+3) = dx/(2x) ⇒ (y+3)² = cx, which represents a parabola."},
+  {id:"10-BB-8",ch:10,src:"Book-Back",qno:8,en:"The solution of dy/dx + p(x)y = 0 is",ta:"dy/dx + p(x)y = 0 -ன் தீர்வு",opts_en:["y = c e^(∫p dx)","y = c e^(−∫p dx)","x = c e^(−∫p dy)","x = c e^(∫p dy)"],opts_ta:["y = c e^(∫p dx)","y = c e^(−∫p dx)","x = c e^(−∫p dy)","x = c e^(∫p dy)"],ans:1,exp:"dy/y = −p(x)dx ⇒ y = c e^(−∫p dx)."},
+  {id:"10-BB-9",ch:10,src:"Book-Back",qno:9,en:"The integrating factor of the differential equation dy/dx + y = (1 + y)/λ is",ta:"dy/dx + y = (1 + y)/λ என்ற வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி",opts_en:["x/e^λ","e^λ/x","λ eˣ","eˣ"],opts_ta:["x/e^λ","e^λ/x","λ eˣ","eˣ"],ans:2,exp:"Note: In textbook EM/TM (1+y)/x: dy/dx + (1 − 1/x)y = 1/x ⇒ I.F. = e^(x − log x) = eˣ/x (Option 2)."},
+  {id:"10-BB-10",ch:10,src:"Book-Back",qno:10,en:"The integrating factor of the differential equation dy/dx + P(x)y = Q(x) is x, then P(x)",ta:"dy/dx + P(x)y = Q(x) என்ற வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி x எனில், P(x) என்பது",opts_en:["x","x²/2","1/x","1/x²"],opts_ta:["x","x²/2","1/x","1/x²"],ans:2,exp:"e^(∫P(x)dx) = x ⇒ ∫P(x)dx = log x ⇒ P(x) = 1/x."},
+  {id:"10-BB-11",ch:10,src:"Book-Back",qno:11,en:"The degree of the differential equation y(x) = 1 + dy/dx + (1/(1·2))(dy/dx)² + (1/(1·2·3))(dy/dx)³ + ... is",ta:"y(x) = 1 + dy/dx + (1/(1·2))(dy/dx)² + (1/(1·2·3))(dy/dx)³ + ... எனும் வகைக்கெழுச் சமன்பாட்டின் படி",opts_en:["2","3","1","4"],opts_ta:["2","3","1","4"],ans:2,exp:"y = e^(dy/dx) ⇒ dy/dx = log y, which is of degree 1."},
+  {id:"10-BB-12",ch:10,src:"Book-Back",qno:12,en:"If p and q are the order and degree of the differential equation y(dy/dx) + x³(d²y/dx²) + xy = cos x, when",ta:"p மற்றும் q என்பன முறையே y(dy/dx) + x³(d²y/dx²) + xy = cos x எனும் வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி எனில்,",opts_en:["p < q","p = q","p > q","p exists and q does not exist"],opts_ta:["p < q","p = q","p > q","இவற்றில் எதுவுமில்லை"],ans:2,exp:"Order p = 2, degree q = 1 ⇒ p > q."},
+  {id:"10-BB-13",ch:10,src:"Book-Back",qno:13,en:"The solution of the differential equation dy/dx + 1/√(1 − x²) = 0 is",ta:"dy/dx + 1/√(1 − x²) = 0 எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு",opts_en:["y + sin⁻¹x = c","x + sin⁻¹y = 0","y² + 2sin⁻¹x = C","x² + 2sin⁻¹y = 0"],opts_ta:["y + sin⁻¹x = c","x + sin⁻¹y = 0","y² + 2sin⁻¹x = C","x² + 2sin⁻¹y = 0"],ans:0,exp:"dy + dx/√(1−x²) = 0 ⇒ y + sin⁻¹x = c."},
+  {id:"10-BB-14",ch:10,src:"Book-Back",qno:14,en:"The solution of the differential equation dy/dx = 2xy is",ta:"dy/dx = 2xy எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு",opts_en:["y = C e^(x²)","y = 2x² + C","y = C e^(−x²) + C","y = x² + C"],opts_ta:["y = C e^(x²)","y = 2x² + C","y = C e^(−x²) + C","y = x² + C"],ans:0,exp:"dy/y = 2x dx ⇒ log|y| = x² + c ⇒ y = C e^(x²)."},
+  {id:"10-BB-15",ch:10,src:"Book-Back",qno:15,en:"The general solution of the differential equation log(dy/dx) = x + y is",ta:"log(dy/dx) = x + y எனும் வகைக்கெழுச் சமன்பாட்டின் பொதுத்தீர்வு",opts_en:["eˣ + eʸ = C","eˣ + e⁻ʸ = C","e⁻ˣ + eʸ = C","e⁻ˣ + e⁻ʸ = C"],opts_ta:["eˣ + eʸ = C","eˣ + e⁻ʸ = C","e⁻ˣ + eʸ = C","e⁻ˣ + e⁻ʸ = C"],ans:1,exp:"dy/dx = eˣ eʸ ⇒ e⁻ʸ dy = eˣ dx ⇒ eˣ + e⁻ʸ = C."},
+  {id:"10-BB-16",ch:10,src:"Book-Back",qno:16,en:"The solution of dy/dx = 2^(y−x) is",ta:"dy/dx = 2^(y−x) -ன் தீர்வு",opts_en:["2ˣ + 2ʸ = C","2ˣ − 2ʸ = C","1/2ˣ − 1/2ʸ = C","x + y = C"],opts_ta:["2ˣ + 2ʸ = C","2ˣ − 2ʸ = C","1/2ˣ − 1/2ʸ = C","x + y = C"],ans:2,exp:"2⁻ʸ dy = 2⁻ˣ dx ⇒ −2⁻ʸ/ln2 = −2⁻ˣ/ln2 + c ⇒ 1/2ˣ − 1/2ʸ = C."},
+  {id:"10-BB-17",ch:10,src:"Book-Back",qno:17,en:"The solution of the differential equation dy/dx = y/x + φ(y/x)/φ'(y/x) is",ta:"dy/dx = y/x + φ(y/x)/φ'(y/x) எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு",opts_en:["x φ(y/x) = k","φ(y/x) = kx","y φ(y/x) = k","φ(y/x) = ky"],opts_ta:["x φ(y/x) = k","φ(y/x) = kx","y φ(y/x) = k","φ(y/x) = ky"],ans:1,exp:"Put y = vx: x dv/dx = φ(v)/φ'(v) ⇒ φ'(v)/φ(v) dv = dx/x ⇒ φ(y/x) = kx."},
+  {id:"10-BB-18",ch:10,src:"Book-Back",qno:18,en:"If sin x is the integrating factor of the linear differential equation dy/dx + Py = Q, then P is",ta:"dy/dx + Py = Q எனும் நேரியல் வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி sin x எனில், P என்பது",opts_en:["log sin x","cos x","tan x","cot x"],opts_ta:["log sin x","cos x","tan x","cot x"],ans:3,exp:"e^(∫P dx) = sin x ⇒ ∫P dx = log(sin x) ⇒ P = cot x."},
+  {id:"10-BB-19",ch:10,src:"Book-Back",qno:19,en:"The number of arbitrary constants in the general solutions of order n and n + 1 are respectively",ta:"வரிசை n மற்றும் n + 1 கொண்ட வகைக்கெழுச் சமன்பாடுகளின் பொதுத் தீர்வுகளில் உள்ள மாறத்தக்க மாறிலிகளின் எண்ணிக்கை முறையே",opts_en:["n − 1, n","n, n + 1","n + 1, n + 2","n + 1, n"],opts_ta:["n − 1, n","n, n + 1","n + 1, n + 2","n + 1, n"],ans:1,exp:"General solution of an nth order ODE contains n arbitrary constants."},
+  {id:"10-BB-20",ch:10,src:"Book-Back",qno:20,en:"The number of arbitrary constants in the particular solution of a differential equation of third order is",ta:"மூன்றாம் வரிசை வகைக்கெழுச் சமன்பாட்டின் குறிப்பிட்டத் தீர்வில் உள்ள மாறத்தக்க மாறிலிகளின் எண்ணிக்கை",opts_en:["3","2","1","0"],opts_ta:["3","2","1","0"],ans:3,exp:"A particular solution contains 0 arbitrary constants."},
+  {id:"10-BB-21",ch:10,src:"Book-Back",qno:21,en:"Integrating factor of the differential equation dy/dx = (x + y + 1)/(x + 1) is",ta:"dy/dx = (x + y + 1)/(x + 1) எனும் வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி",opts_en:["1/(x + 1)","x + 1","1/√(x + 1)","√(x + 1)"],opts_ta:["1/(x + 1)","x + 1","1/√(x + 1)","√(x + 1)"],ans:0,exp:"dy/dx − y/(x+1) = 1 ⇒ P = −1/(x+1) ⇒ I.F. = e^(−log(x+1)) = 1/(x+1)."},
+  {id:"10-BB-22",ch:10,src:"Book-Back",qno:22,en:"The population P in any year t is such that the rate of increase in the population is proportional to the population. Then",ta:"ஏதேனும் ஒரு வருடம் t-ல் உள்ள P-ன் பெருக்க வீதமானது மக்கள் தொகைக்கு விகிதமாக அமையும் எனில், பின்னர்",opts_en:["P = C e^(kt)","P = C e^(−kt)","P = Ckt","P = C"],opts_ta:["P = C e^(kt)","P = C e^(−kt)","P = Ckt","P = C"],ans:0,exp:"dP/dt = kP ⇒ P = C e^(kt)."},
+  {id:"10-BB-23",ch:10,src:"Book-Back",qno:23,en:"P is the amount of certain substance left in after time t. If the rate of evaporation of the substance is proportional to the amount remaining, then",ta:"t எனும் நேரத்திற்குப் பிறகு மீதமுள்ள ஒரு பொருளின் அளவு P ஆகும். பொருள் ஆவியாகும் வீதமானது அந்நேரத்தில் மீதமிருக்கும் பொருளின் அளவிற்கு விகிதமாக அமைந்துள்ளது எனில், பின்னர்",opts_en:["P = C e^(kt)","P = C e^(−kt)","P = Ckt","Pt = C"],opts_ta:["P = C e^(kt)","P = C e^(−kt)","P = Ckt","Pt = C"],ans:1,exp:"dP/dt = −kP ⇒ P = C e^(−kt)."},
+  {id:"10-BB-24",ch:10,src:"Book-Back",qno:24,en:"If the solution of the differential equation dy/dx = (ax + 3)/(2y + f) represents a circle, then the value of a is",ta:"dy/dx = (ax + 3)/(2y + f) எனும் வகைக்கெழுச் சமன்பாட்டின் தீர்வு ஒரு வட்டத்தைக் குறிக்குமானால், a-ன் மதிப்பு",opts_en:["2","−2","1","−1"],opts_ta:["2","−2","1","−1"],ans:1,exp:"(2y+f)dy = (ax+3)dx ⇒ y² + fy − (a/2)x² − 3x = c. For a circle, coeff of x² = coeff of y² ⇒ −a/2 = 1 ⇒ a = −2."},
+  {id:"10-BB-25",ch:10,src:"Book-Back",qno:25,en:"The slope at any point of a curve y = f(x) is given by dy/dx = 3x² and it passes through (−1, 1). Then the equation of the curve is",ta:"y = f(x) எனும் வளைவரையின் ஏதேனும் ஒரு புள்ளியிடத்து சாய்வு dy/dx = 3x² எனக் கொடுக்கப்பட்டுள்ளது. மேலும் வளைவரையானது (−1, 1) புள்ளி வழியாகச் செல்கிறது எனில், வளைவரையின் சமன்பாடு",opts_en:["y = x³ + 2","y = 3x² + 4","y = 3x³ + 4","y = x³ + 5"],opts_ta:["y = x³ + 2","y = 3x² + 4","y = 3x³ + 4","y = x³ + 5"],ans:0,exp:"y = x³ + C. Passing through (−1, 1) ⇒ 1 = −1 + C ⇒ C = 2 ⇒ y = x³ + 2."},
+
+  // ==================== CHAPTER 10: BOOK-INSIDE (Q1 - Q10) ====================
+  {id:"10-IN-1",ch:10,src:"Book-Inside",qno:26,en:"The differential equation for the family of all straight lines passing through the origin is",ta:"ஆதி வழியாகச் செல்லும் நேர்க்கோடுகளின் தொகுதியின் வகைக்கெழுச் சமன்பாடு",opts_en:["y = x(dy/dx)","y + x(dy/dx) = 0","d²y/dx² = 0","dy/dx = y²/x²"],opts_ta:["y = x(dy/dx)","y + x(dy/dx) = 0","d²y/dx² = 0","dy/dx = y²/x²"],ans:0,exp:"Example 10.2: y = mx ⇒ m = dy/dx ⇒ y = x(dy/dx)."},
+  {id:"10-IN-2",ch:10,src:"Book-Inside",qno:27,en:"The differential equation of the family of parabolas y² = 4ax, where a is an arbitrary constant, is",ta:"y² = 4ax (a ஒரு மாறிலி) எனும் பரவளையத் தொகுதியின் வகைக்கெழுச் சமன்பாடு",opts_en:["dy/dx = 2y/x","dy/dx = y/(2x)","dy/dx = 4y/x","dy/dx = x/(2y)"],opts_ta:["dy/dx = 2y/x","dy/dx = y/(2x)","dy/dx = 4y/x","dy/dx = x/(2y)"],ans:1,exp:"Example 10.5: 2y(dy/dx) = 4a = y²/x ⇒ dy/dx = y/(2x)."},
+  {id:"10-IN-3",ch:10,src:"Book-Inside",qno:28,en:"The order and degree of the differential equation [1 + (dy/dx)²]^(3/2) = 3(d²y/dx²) are respectively",ta:"[1 + (dy/dx)²]^(3/2) = 3(d²y/dx²) என்ற வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி முறையே",opts_en:["2, 1","2, 2","2, 3","3, 2"],opts_ta:["2, 1","2, 2","2, 3","3, 2"],ans:1,exp:"Example 10.1 (iv): Squaring both sides gives 9(d²y/dx²)² = [1 + (dy/dx)²]³ ⇒ order 2, degree 2."},
+  {id:"10-IN-4",ch:10,src:"Book-Inside",qno:29,en:"In the differential equation sin(dy/dx) + d²y/dx² + 3x = 0, the order and degree are",ta:"sin(dy/dx) + d²y/dx² + 3x = 0 என்ற வகைக்கெழுச் சமன்பாட்டின் வரிசை மற்றும் படி",opts_en:["Order 2, Degree 1","Order 1, Degree 1","Order 2, Degree not defined","Order not defined, Degree 2"],opts_ta:["வரிசை 2, படி 1","வரிசை 1, படி 1","வரிசை 2, படி வரையறுக்கப்படவில்லை","வரிசை வரையறுக்கப்படவில்லை, படி 2"],ans:2,exp:"Section 10.2 (3): Order is 2; because of sin(dy/dx), degree is not defined."},
+  {id:"10-IN-5",ch:10,src:"Book-Inside",qno:30,en:"To solve a homogeneous differential equation dy/dx = g(y/x), the standard substitution used is",ta:"dy/dx = g(y/x) எனும் சமபடித்தான வகைக்கெழுச் சமன்பாட்டைத் தீர்க்கப் பயன்படும் பிரதியிடல்",opts_en:["y = v + x","y = vx","x = vy + v","xy = v"],opts_ta:["y = v + x","y = vx","x = vy + v","xy = v"],ans:1,exp:"Theorem 10.1: The substitution y = vx transforms a homogeneous ODE into a separable equation."},
+  {id:"10-IN-6",ch:10,src:"Book-Inside",qno:31,en:"For a first-order linear differential equation dx/dy + P(y)x = Q(y), the integrating factor (I.F.) is",ta:"dx/dy + P(y)x = Q(y) என்ற முதல் வரிசை நேரியல் வகைக்கெழுச் சமன்பாட்டின் தொகையீட்டுக் காரணி",opts_en:["e^(∫P dx)","e^(∫P dy)","e^(−∫P dy)","∫P(y) dy"],opts_ta:["e^(∫P dx)","e^(∫P dy)","e^(−∫P dy)","∫P(y) dy"],ans:1,exp:"Section 10.7 Remark 3: For dx/dy + Px = Q, I.F. = e^(∫P dy)."},
+  {id:"10-IN-7",ch:10,src:"Book-Inside",qno:32,en:"According to Newton's law of cooling/warming, if T(t) is the temperature of a body and T_m is the ambient temperature, then",ta:"நியூட்டனின் குளிர்ச்சி/வெப்பமடையும் விதிப்படி, பொருளின் வெப்பநிலை T(t) மற்றும் சுற்றுப்புற வெப்பநிலை T_m எனில்",opts_en:["dT/dt = k(T + T_m)","dT/dt = k(T − T_m)","dT/dt = k T / T_m","dT/dt = k T²"],opts_ta:["dT/dt = k(T + T_m)","dT/dt = k(T − T_m)","dT/dt = k T / T_m","dT/dt = k T²"],ans:1,exp:"Section 10.8.3: dT/dt = k(T − T_m)."},
+  {id:"10-IN-8",ch:10,src:"Book-Inside",qno:33,en:"The exponential population growth law dx/dt = kx (k > 0) with solution x(t) = Ce^(kt) is known as",ta:"dx/dt = kx (k > 0) என்ற மக்கள்தொகைப் பெருக்க விதி எவ்வாறு அழைக்கப்படுகிறது?",opts_en:["Logistic law","Malthusian law","Bernoulli's law","Euler's law"],opts_ta:["லாஜிஸ்டிக் விதி","மால்தாஸ் விதி","பெர்னோலி விதி","ஆய்லர் விதி"],ans:1,exp:"Section 10.8.1: The exponential population growth law is called Malthusian law."},
+  {id:"10-IN-9",ch:10,src:"Book-Inside",qno:34,en:"If the population of a colony doubles in 50 years under Malthusian growth, the time taken for the population to triple is",ta:"ஒரு காலனியின் மக்கள் தொகை 50 ஆண்டுகளில் இரு மடங்காகிறது எனில், அது மும்மடங்காக ஆகும் காலம்",opts_en:["75 years","50(log 3 / log 2) years","50(log 2 / log 3) years","100 years"],opts_ta:["75 வருடங்கள்","50(log 3 / log 2) வருடங்கள்","50(log 2 / log 3) வருடங்கள்","100 வருடங்கள்"],ans:1,exp:"Example 10.27: t₁ = 50(log 3 / log 2) years."},
+  {id:"10-IN-10",ch:10,src:"Book-Inside",qno:35,en:"Which of the following is a second-order LINEAR ordinary differential equation?",ta:"பின்வருவனவற்றுள் எது இரண்டாம் வரிசை நேரியல் சாதாரண வகைக்கெழுச் சமன்பாடு?",opts_en:["y'' + y' = √x","(y'')² + y = 0","cos(y')y'' + 5y = 0","y y'' + sin x = 0"],opts_ta:["y'' + y' = √x","(y'')² + y = 0","cos(y')y'' + 5y = 0","y y'' + sin x = 0"],ans:0,exp:"Section 10.3: y'' + y' = √x is linear in y and its derivatives."},
+  // ==================== CHAPTER 11: BOOK-BACK (Ex 11.6: Q1 - Q20) ====================
+  {id:"11-BB-1",ch:11,src:"Book-Back",qno:1,en:"Let X be random variable with probability density function f(x) = 2/x³ for x ≥ 1, and 0 for x < 1. Which of the following statement is correct?",ta:"X எனும் சமவாய்ப்பு மாறியின் நிகழ்தகவு அடர்த்தி சார்பு f(x) = 2/x³ (x ≥ 1), 0 (x < 1) எனில், இவற்றில் எந்த கூற்று சரியானது?",opts_en:["both mean and variance exist","mean exists but variance does not exist","both mean and variance do not exist","variance exists but Mean does not exist"],opts_ta:["சராசரி மற்றும் பரவற்படி உள்ளது","சராசரி உள்ளது ஆனால் பரவற்படி இல்லை","சராசரி, பரவற்படி இரண்டுமே இல்லை","பரவற்படி உள்ளது ஆனால் சராசரி இல்லை"],ans:1,exp:"E(X) = ∫₁^∞ (2/x²)dx = 2 exists, but E(X²) = ∫₁^∞ (2/x)dx = ∞ diverges."},
+  {id:"11-BB-2",ch:11,src:"Book-Back",qno:2,en:"A rod of length 2l is broken into two pieces at random. The probability density function of the shorter of the two pieces is f(x) = 1/l for 0 < x < l, and 0 for l ≤ x < 2l. The mean and variance of the shorter of the two pieces are respectively",ta:"2l நீளமுள்ள ஒரு கம்பி சமவாய்ப்பு முறையில் இரு துண்டாக உடைந்தது. குட்டையானப் பகுதிக்கான நிகழ்தகவு அடர்த்தி சார்பு f(x) = 1/l (0 < x < l) எனில் சராசரி மற்றும் பரவற்படி முறையே",opts_en:["l/2, l²/3","l/2, l²/6","l, l²/12","l/2, l²/12"],opts_ta:["l/2, l²/3","l/2, l²/6","l, l²/12","l/2, l²/12"],ans:3,exp:"E(X) = ∫₀^l x(1/l)dx = l/2; E(X²) = l²/3 ⇒ Var(X) = l²/3 − l²/4 = l²/12."},
+  {id:"11-BB-3",ch:11,src:"Book-Back",qno:3,en:"Consider a game where the player tosses a six-sided fair die. If the face that comes up is 6, the player wins ₹36, otherwise he loses ₹k², where k is the face that comes up k = {1, 2, 3, 4, 5}. The expected amount to win at this game in ₹ is",ta:"ஒரு விளையாட்டில் அறுபக்க பகடையை உருட்டும்போது எண் 6 வந்தால் ₹36 வெல்லுவார், இல்லையெனில் ₹k² தோற்பார் (k ∈ {1,2,3,4,5}). எதிர்பார்க்கப்படும் வெல்லும் தொகை ₹",opts_en:["19/6","−19/6","3/2","−3/2"],opts_ta:["19/6","−19/6","3/2","−3/2"],ans:1,exp:"E(X) = (1/6)[36 − (1²+2²+3²+4²+5²)] = (36 − 55)/6 = −19/6."},
+  {id:"11-BB-4",ch:11,src:"Book-Back",qno:4,en:"A pair of dice numbered 1, 2, 3, 4, 5, 6 of a six-sided die and 1, 2, 3, 4 of a four-sided die is rolled and the sum is determined. Let the random variable X denote this sum. Then the number of elements in the inverse image of 7 is",ta:"1..6 எண்ணிடப்பட்ட அறுபக்க பகடையும் 1..4 எண்ணிடப்பட்ட நான்கு பக்க பகடையும் உருட்டப்பட்டு கூடுதல் X குறிக்கப்படுகிறது. 7-இன் நேர்மாறு பிம்பத்தின் உறுப்புகளின் எண்ணிக்கை",opts_en:["1","2","3","4"],opts_ta:["1","2","3","4"],ans:3,exp:"Pairs summing to 7 are (3,4), (4,3), (5,2), (6,1) ⇒ 4 elements."},
+  {id:"11-BB-5",ch:11,src:"Book-Back",qno:5,en:"A random variable X has binomial distribution with n = 25 and p = 0.8 then standard deviation of X is",ta:"n = 25 மற்றும் p = 0.8 என்று உள்ள ஈருறுப்பு பரவல் கொண்ட சமவாய்ப்பு மாறி X-ன் திட்ட விலக்கத்தின் மதிப்பு",opts_en:["6","4","3","2"],opts_ta:["6","4","3","2"],ans:3,exp:"SD = √(npq) = √(25 × 0.8 × 0.2) = √4 = 2."},
+  {id:"11-BB-6",ch:11,src:"Book-Back",qno:6,en:"Let X represent the difference between the number of heads and the number of tails obtained when a coin is tossed n times. Then the possible values of X are",ta:"n முறை சுண்டப்படும் ஒரு நாணயத்தினால் பெறப்படும் தலை மற்றும் பூக்களின் எண்ணிக்கை வேறுபாட்டை X குறிக்கிறது என்க. X-இன் சாத்திய மதிப்புகள்",opts_en:["i + 2n, i = 0,1,2...n","2i − n, i = 0,1,2...n","n − i, i = 0,1,2...n","2i + 2n, i = 0,1,2...n"],opts_ta:["i + 2n, i = 0,1,2...n","2i − n, i = 0,1,2...n","n − i, i = 0,1,2...n","2i + 2n, i = 0,1,2...n"],ans:1,exp:"If i heads occur, n−i tails occur, so X = i − (n − i) = 2i − n."},
+  {id:"11-BB-7",ch:11,src:"Book-Back",qno:7,en:"If the function f(x) = 1/12 for a < x < b, represents a probability density function of a continuous random variable X, then which of the following cannot be the value of a and b?",ta:"f(x) = 1/12, a < x < b எனும் சார்பு நிகழ்தகவு அடர்த்தி சார்பினைக் குறிக்கிறது எனில், பின்வருவனவற்றுள் எது a மற்றும் b-இன் மதிப்புகளாக இராது?",opts_en:["0 and 12","5 and 17","7 and 19","16 and 24"],opts_ta:["0 மற்றும் 12","5 மற்றும் 17","7 மற்றும் 19","16 மற்றும் 24"],ans:3,exp:"∫_a^b (1/12)dx = 1 ⇒ b − a = 12. Since 24 − 16 = 8 ≠ 12, (16, 24) cannot be a and b."},
+  {id:"11-BB-8",ch:11,src:"Book-Back",qno:8,en:"Four buses carrying 160 students from the same school arrive at a football stadium. The buses carry, respectively, 42, 36, 34, and 48 students. One of the students is randomly selected (X), and one of the 4 bus drivers is randomly selected (Y). Then E(X) and E(Y) respectively are",ta:"நான்கு பேருந்துகளில் முறையே 42, 36, 34, மற்றும் 48 மாணவர்கள் (மொத்தம் 160) பயணிக்கின்றனர். சமவாய்ப்பு முறையில் தேர்ந்தெடுக்கப்பட்ட மாணவர் (X) மற்றும் ஓட்டுநர் (Y)-க்கு E(X) மற்றும் E(Y) முறையே",opts_en:["50, 40","40, 50","40.75, 40","41, 41"],opts_ta:["50, 40","40, 50","40.75, 40","41, 41"],ans:2,exp:"E(X) = (42²+36²+34²+48²)/160 = 6520/160 = 40.75; E(Y) = 160/4 = 40."},
+  {id:"11-BB-9",ch:11,src:"Book-Back",qno:9,en:"Two coins are to be flipped. The first coin will land on heads with probability 0.6, the second with Probability 0.5. Assume that the results of the flips are independent, and let X equal the total number of heads that result. The value of E(X) is",ta:"இரு நாணயங்கள் சுண்டப்படுகின்றன. முதல் நாணயத்தில் தலை கிடைக்க நிகழ்தகவு 0.6, இரண்டாவதில் 0.5. மொத்த தலைகளின் எண்ணிக்கை X எனில் E(X)-ன் மதிப்பு",opts_en:["0.11","1.1","11","1"],opts_ta:["0.11","1.1","11","1"],ans:1,exp:"E(X) = E(X₁) + E(X₂) = 0.6 + 0.5 = 1.1."},
+  {id:"11-BB-10",ch:11,src:"Book-Back",qno:10,en:"On a multiple-choice exam with 3 possible destructives for each of the 5 questions, the probability that a student will get 4 or more correct answers just by guessing is",ta:"பலவுள் தேர்வு ஒன்றில் 5 வினாக்கள் ஒவ்வொன்றிற்கும் 3 சாத்தியமானக் கவனச் சிதறல் விடைகள் உள்ளது. ஊகத்தின் அடிப்படையில் 4 அல்லது அதற்கு மேல் சரியான விடையை அளிப்பதற்கான நிகழ்தகவு",opts_en:["11/243","3/8","1/243","5/243"],opts_ta:["11/243","10/243","1/243","5/243"],ans:0,exp:"Note: Official answer key is (1) 11/243 (with p=1/3, q=2/3: 5(1/3)⁴(2/3) + (1/3)⁵ = 11/243)."},
+  {id:"11-BB-11",ch:11,src:"Book-Back",qno:11,en:"If P(X = 0) = 1 − P(X = 1) and E(X) = 3Var(X), then P(X = 0) is",ta:"P(X = 0) = 1 − P(X = 1) மற்றும் E(X) = 3Var(X) எனில், P(X = 0) காண்க",opts_en:["2/3","2/5","1/5","1/3"],opts_ta:["2/3","2/5","1/5","1/3"],ans:3,exp:"Bernoulli variable: p = 3pq ⇒ q = 1/3 ⇒ P(X = 0) = q = 1/3."},
+  {id:"11-BB-12",ch:11,src:"Book-Back",qno:12,en:"If X is a binomial random variable with expected value 6 and variance 2.4, then P(X = 5) is",ta:"எதிர்பார்ப்பு மதிப்பு 6 மற்றும் பரவற்படி 2.4 கொண்ட ஒரு ஈருறுப்பு சமவாய்ப்பு மாறி X எனில் P(X = 5)-இன் மதிப்பு",opts_en:["C(10,5)(3/5)⁶(2/5)⁴","C(10,5)(3/5)¹⁰","C(10,5)(3/5)⁴(2/5)⁶","C(10,5)(3/5)⁵(2/5)⁵"],opts_ta:["C(10,5)(3/5)⁶(2/5)⁴","C(10,5)(3/5)¹⁰","C(10,5)(3/5)⁴(2/5)⁶","C(10,5)(3/5)⁵(2/5)⁵"],ans:3,exp:"np = 6, npq = 2.4 ⇒ q = 2/5, p = 3/5, n = 10 ⇒ P(X=5) = C(10,5)(3/5)⁵(2/5)⁵."},
+  {id:"11-BB-13",ch:11,src:"Book-Back",qno:13,en:"The random variable X has the probability density function f(x) = ax + b for 0 < x < 1, and 0 otherwise, and E(X) = 7/12, then a and b are respectively",ta:"சமவாய்ப்பு மாறி X-ன் நிகழ்தகவு அடர்த்தி சார்பு f(x) = ax + b (0 < x < 1) மற்றும் E(X) = 7/12 எனில் a மற்றும் b-ன் மதிப்புகள் முறையே",opts_en:["1 and 1/2","1/2 and 1","2 and 1","1 and 2"],opts_ta:["1 மற்றும் 1/2","1/2 மற்றும் 1","2 மற்றும் 1","1 மற்றும் 2"],ans:0,exp:"a/2 + b = 1 and a/3 + b/2 = 7/12 ⇒ a = 1, b = 1/2."},
+  {id:"11-BB-14",ch:11,src:"Book-Back",qno:14,en:"Suppose that X takes on one of the values 0, 1, and 2. If for some constant k, P(X = i) = k P(X = i − 1) for i = 1, 2 and P(X = 0) = 1/7, then the value of k is",ta:"0, 1, மற்றும் 2 ஆகிய மதிப்புகளில் ஒன்றை X கொள்கிறது. P(X = i) = k P(X = i − 1), i = 1, 2 மற்றும் P(X = 0) = 1/7 எனில் k-இன் மதிப்பு",opts_en:["1","2","3","4"],opts_ta:["1","2","3","4"],ans:1,exp:"(1/7)(1 + k + k²) = 1 ⇒ k² + k − 6 = 0 ⇒ k = 2 (since k > 0)."},
+  {id:"11-BB-15",ch:11,src:"Book-Back",qno:15,en:"Which of the following is a discrete random variable? I. The number of cars crossing a particular signal in a day. II. The number of customers in a queue to buy train tickets at a moment. III. The time taken to complete a telephone call.",ta:"பின்வருவனவற்றுள் எது தனிநிலை சமவாய்ப்பு மாறி? I. ஒரு நாளில் சமிக்கையைக் கடக்கும் மகிழுந்துகளின் எண்ணிக்கை. II. வரிசையில் காத்திருக்கும் பயணிகளின் எண்ணிக்கை. III. ஒரு தொலைபேசி அழைப்பை நிறைவு செய்யும் காலம்.",opts_en:["I and II","II only","III only","II and III"],opts_ta:["I மற்றும் II","II மட்டுமே","III மட்டுமே","II மற்றும் III"],ans:0,exp:"I and II are countable (discrete); III is a continuous time measurement."},
+  {id:"11-BB-16",ch:11,src:"Book-Back",qno:16,en:"If f(x) = 2x for 0 ≤ x ≤ a, and 0 otherwise is a probability density function of a random variable, then the value of a is",ta:"ஒரு சமவாய்ப்பு மாறியின் நிகழ்தகவு அடர்த்தி சார்பு f(x) = 2x (0 ≤ x ≤ a) எனில், a-இன் மதிப்பு",opts_en:["1","2","3","4"],opts_ta:["1","2","3","4"],ans:0,exp:"∫₀^a 2x dx = a² = 1 ⇒ a = 1."},
+  {id:"11-BB-17",ch:11,src:"Book-Back",qno:17,en:"The probability mass function of a random variable is defined as: x = −2, −1, 0, 1, 2 with f(x) = k, 2k, 3k, 4k, 5k. Then E(X) is equal to:",ta:"x = −2, −1, 0, 1, 2-க்கு f(x) = k, 2k, 3k, 4k, 5k என வரையறுக்கப்படுகிறது எனில், E(X)-க்கு சமமான மதிப்பு",opts_en:["1/15","1/10","1/3","2/3"],opts_ta:["1/15","1/10","1/3","2/3"],ans:3,exp:"15k = 1 ⇒ k = 1/15. E(X) = (−2 + −2 + 0 + 4 + 10)k = 10/15 = 2/3."},
+  {id:"11-BB-18",ch:11,src:"Book-Back",qno:18,en:"Let X have a Bernoulli distribution with mean 0.4, then the variance of (2X − 3) is",ta:"சராசரி 0.4 கொண்ட ஒரு பெர்னோலி பரவல் X எனில் (2X − 3)-ன் பரவற்படி",opts_en:["0.24","0.48","0.6","0.96"],opts_ta:["0.24","0.48","0.6","0.96"],ans:3,exp:"Var(X) = pq = 0.4 × 0.6 = 0.24. Var(2X − 3) = 4 Var(X) = 0.96."},
+  {id:"11-BB-19",ch:11,src:"Book-Back",qno:19,en:"If in 6 trials, X is a binomial variable which follows the relation 9P(X = 4) = P(X = 2), then the probability of success is",ta:"ஈருறுப்பு மாறி X ஆறு முயற்சிகளில் 9P(X = 4) = P(X = 2) எனும் தொடர்பினை அனுசரிக்கிறது எனில் வெற்றியின் நிகழ்தகவு",opts_en:["0.125","0.25","0.375","0.75"],opts_ta:["0.125","0.25","0.375","0.75"],ans:1,exp:"9 C(6,4) p⁴q² = C(6,2) p²q⁴ ⇒ 9p² = q² ⇒ 3p = 1 − p ⇒ p = 0.25."},
+  {id:"11-BB-20",ch:11,src:"Book-Back",qno:20,en:"A computer salesperson knows from his past experience that he sells computers to one in every twenty customers who enter the showroom. What is the probability that he will sell a computer to exactly two of the next three customers?",ta:"ஒரு கணினி விற்பனையாளர் இருபது வாடிக்கையாளர்களில் ஒருவருக்கு கணினிகளை விற்கிறார். அடுத்த மூன்று வாடிக்கையாளர்களில் சரியாக இரண்டு பேருக்கு கணினியை விற்கும் நிகழ்தகவு என்ன?",opts_en:["57 / 20³","57 / 20²","19³ / 20³","57 / 20"],opts_ta:["57 / 20³","57 / 20²","19³ / 20³","57 / 20"],ans:0,exp:"p = 1/20, q = 19/20, n = 3 ⇒ P(X = 2) = C(3,2)(1/20)²(19/20) = 57 / 20³."},
+
+  // ==================== CHAPTER 11: BOOK-INSIDE (Q1 - Q10) ====================
+  {id:"11-IN-1",ch:11,src:"Book-Inside",qno:21,en:"For a continuous random variable X with probability density function f(x), the probability P(X = a) at any single point a ∈ ℝ is",ta:"X ஒரு தொடர்ச்சியான சமவாய்ப்பு மாறி எனில், குறிப்பிட்ட ஒரு புள்ளி a ∈ ℝ-ல் P(X = a)-ன் மதிப்பு",opts_en:["f(a)","F(a)","0","1"],opts_ta:["f(a)","F(a)","0","1"],ans:2,exp:"Section 11.4.2 Note: For a continuous random variable, P(X = a) = ∫_a^a f(x)dx = 0."},
+  {id:"11-IN-2",ch:11,src:"Book-Inside",qno:22,en:"If F(x) is the cumulative distribution function of a discrete random variable X, then P(X = x_k) is given by the jump at x_k:",ta:"தனிநிலை சமவாய்ப்பு மாறி X-ன் குவிவு பரவல் சார்பு F(x) எனில், P(X = x_k) என்பது",opts_en:["F(x_k) + F(x_{k−1})","F(x_k) − F(x_{k−1})","F'(x_k)","1 − F(x_k)"],opts_ta:["F(x_k) + F(x_{k−1})","F(x_k) − F(x_{k−1})","F'(x_k)","1 − F(x_k)"],ans:1,exp:"Section 11.3.5: f(x_i) = F(x_i) − F(x_{i−1})."},
+  {id:"11-IN-3",ch:11,src:"Book-Inside",qno:23,en:"For any random variable X and constants a, b, E(aX + b) and Var(aX + b) are respectively",ta:"சமவாய்ப்பு மாறி X மற்றும் மாறிலிகள் a, b-க்கு E(aX + b) மற்றும் Var(aX + b) முறையே",opts_en:["aE(X) + b and aVar(X) + b","aE(X) + b and a²Var(X)","aE(X) and a²Var(X) + b","a²E(X) + b and aVar(X)"],opts_ta:["aE(X) + b மற்றும் aVar(X) + b","aE(X) + b மற்றும் a²Var(X)","aE(X) மற்றும் a²Var(X) + b","a²E(X) + b மற்றும் aVar(X)"],ans:1,exp:"Section 11.5.3: E(aX + b) = aE(X) + b and Var(aX + b) = a²Var(X)."},
+  {id:"11-IN-4",ch:11,src:"Book-Inside",qno:24,en:"For a random variable X with probability density function f(x) = λ e^(−λx) for x ≥ 0 (λ > 0), the mean and variance are respectively",ta:"f(x) = λ e^(−λx) (x ≥ 0, λ > 0) எனும் நிகழ்தகவு அடர்த்தி சார்பு கொண்ட சமவாய்ப்பு மாறி X-ன் சராசரி மற்றும் பரவற்படி முறையே",opts_en:["λ and λ²","1/λ and 1/λ²","1/λ and 2/λ²","1/λ² and 1/λ"],opts_ta:["λ மற்றும் λ²","1/λ மற்றும் 1/λ²","1/λ மற்றும் 2/λ²","1/λ² மற்றும் 1/λ"],ans:1,exp:"Example 11.18: Mean = 1/λ and Variance = 1/λ²."},
+  {id:"11-IN-5",ch:11,src:"Book-Inside",qno:25,en:"If X has a one-point distribution concentrated at x₀ (i.e., P(X = x₀) = 1), then its mean and variance are respectively",ta:"P(X = x₀) = 1 எனும் ஒரு புள்ளி பரவலைக் கொண்ட சமவாய்ப்பு மாறி X-ன் சராசரி மற்றும் பரவற்படி முறையே",opts_en:["x₀ and x₀²","x₀ and 1","x₀ and 0","0 and x₀"],opts_ta:["x₀ மற்றும் x₀²","x₀ மற்றும் 1","x₀ மற்றும் 0","0 மற்றும் x₀"],ans:2,exp:"Section 11.6.1: Mean = x₀ and Variance = 0."},
+  {id:"11-IN-6",ch:11,src:"Book-Inside",qno:26,en:"The shape of a binomial distribution B(n, p) is symmetrical when",ta:"ஈருறுப்பு பரவல் B(n, p)-ன் அமைப்பு எப்போது சமச்சீராக இருக்கும்?",opts_en:["p = 0.25","p = 0.5","p = 1","p = 0.75"],opts_ta:["p = 0.25","p = 0.5","p = 1","p = 0.75"],ans:1,exp:"Section 11.6.4: Binomial distribution is symmetrical when p = 0.5 (or p = q = 1/2)."},
+  {id:"11-IN-7",ch:11,src:"Book-Inside",qno:27,en:"When p = q = 1/2, the mean and variance of the Binomial distribution B(n, 1/2) are respectively",ta:"p = q = 1/2 எனும்போது, ஈருறுப்பு பரவல் B(n, 1/2)-ன் சராசரி மற்றும் பரவற்படி முறையே",opts_en:["n/2 and n/2","n/2 and n/4","n/4 and n/2","n and n/2"],opts_ta:["n/2 மற்றும் n/2","n/2 மற்றும் n/4","n/4 மற்றும் n/2","n மற்றும் n/2"],ans:1,exp:"Section 11.6.4: Mean = np = n/2 and Variance = npq = n/4."},
+  {id:"11-IN-8",ch:11,src:"Book-Inside",qno:28,en:"If f(x) = Cx² for 1 < x < 4 and 0 otherwise is a probability density function, then the constant C is",ta:"f(x) = Cx² (1 < x < 4) என்பது ஒரு நிகழ்தகவு அடர்த்தி சார்பு எனில் மாறிலி C-இன் மதிப்பு",opts_en:["1/7","1/21","1/63","3/64"],opts_ta:["1/7","1/21","1/63","3/64"],ans:1,exp:"Example 11.11: C[x³/3]₁⁴ = C(63/3) = 21C = 1 ⇒ C = 1/21."},
+  {id:"11-IN-9",ch:11,src:"Book-Inside",qno:29,en:"An urn contains 2 white balls and 3 red balls. A sample of 3 balls is chosen at random. If X denotes the number of red balls chosen, the values taken by X are",ta:"ஒரு ஜாடியில் 2 வெள்ளை மற்றும் 3 சிவப்பு பந்துகள் உள்ளன. சமவாய்ப்பு முறையில் 3 பந்துகள் தேர்ந்தெடுக்கப்படும்போது சிவப்பு பந்துகளின் எண்ணிக்கை X எடுக்கும் மதிப்புகள்",opts_en:["0, 1, 2, 3","1, 2, 3","0, 1, 2","1, 2"],opts_ta:["0, 1, 2, 3","1, 2, 3","0, 1, 2","1, 2"],ans:1,exp:"Example 11.3: Since there are only 2 white balls, at least 1 red ball must be in any sample of 3 balls ⇒ X takes values 1, 2, 3."},
+  {id:"11-IN-10",ch:11,src:"Book-Inside",qno:30,en:"For a discrete random variable X with values x₁, x₂ and probabilities P(X = x₁) = p, P(X = x₂) = q (p + q = 1), its variance is",ta:"x₁, x₂ மதிப்புகளை p, q நிகழ்தகவுகளுடன் பெறும் இரு புள்ளி பரவலின் பரவற்படி",opts_en:["pq(x₂ + x₁)²","pq(x₂ − x₁)²","p²q²(x₂ − x₁)","pq(x₂² − x₁²)"],opts_ta:["pq(x₂ + x₁)²","pq(x₂ − x₁)²","p²q²(x₂ − x₁)","pq(x₂² − x₁²)"],ans:1,exp:"Section 11.6.2: For a two-point distribution, Var(X) = pq(x₂ − x₁)²."},
+
+  // ==================== CHAPTER 12: BOOK-BACK (Ex 12.3: Q1 - Q20) ====================
+  {id:"12-BB-1",ch:12,src:"Book-Back",qno:1,en:"A binary operation on a set S is a function from",ta:"ஓர் ஈருறுப்புச் செயலி S என்ற ஒரு கணத்தின் மீது ஒரு சார்பாக பின்வருவனவற்றிலிருந்து பெறப்படுகிறது",opts_en:["S → S","(S × S) → S","S → (S × S)","(S × S) → (S × S)"],opts_ta:["S → S","(S × S) → S","S → (S × S)","(S × S) → (S × S)"],ans:1,exp:"Definition 12.1: A binary operation ∗ on S is a mapping ∗ : S × S → S."},
+  {id:"12-BB-2",ch:12,src:"Book-Back",qno:2,en:"Subtraction is not a binary operation in",ta:"கழித்தலின் கீழ் பின்வரும் கணம் அடைவு பெறவில்லை",opts_en:["ℝ","ℤ","ℕ","ℚ"],opts_ta:["ℝ","ℤ","ℕ","ℚ"],ans:2,exp:"For 3, 4 ∈ ℕ, 3 − 4 = −1 ∉ ℕ, so subtraction is not binary on ℕ."},
+  {id:"12-BB-3",ch:12,src:"Book-Back",qno:3,en:"Which one of the following is a binary operation on ℕ?",ta:"பின்வருபவைகளில் எது ℕ-ன் மீது ஓர் ஈருறுப்புச் செயலி ஆகும்?",opts_en:["Subtraction","Multiplication","Division","All the above"],opts_ta:["கழித்தல்","பெருக்கல்","வகுத்தல்","அனைத்தும்"],ans:1,exp:"Product of any two natural numbers is a natural number."},
+  {id:"12-BB-4",ch:12,src:"Book-Back",qno:4,en:"In the set ℝ of real numbers '∗' is defined as follows. Which one of the following is not a binary operation on ℝ?",ta:"மெய் எண்களின் கணம் ℝ-ன் மீது '∗' பின்வருமாறு வரையறுக்கப்படுகிறது. இதில் எது ℝ-ன் மீது ஈருறுப்புச் செயலி அல்ல?",opts_en:["a ∗ b = min(a · b)","a ∗ b = max(a, b)","a ∗ b = a","a ∗ b = aᵇ"],opts_ta:["a ∗ b = min(a · b)","a ∗ b = max(a, b)","a ∗ b = a","a ∗ b = aᵇ"],ans:3,exp:"For a = −1, b = 1/2 ∈ ℝ, aᵇ = (−1)^(1/2) ∉ ℝ."},
+  {id:"12-BB-5",ch:12,src:"Book-Back",qno:5,en:"The operation ∗ defined by a ∗ b = ab/7 is not a binary operation on",ta:"∗ என்ற ஈருறுப்புச் செயலி a ∗ b = ab/7 என வரையறுக்கப்படுகிறது. ∗ எதன் மீது ஈருறுப்புச் செயலி ஆகாது?",opts_en:["ℚ⁺","ℤ","ℝ","ℂ"],opts_ta:["ℚ⁺","ℤ","ℝ","ℂ"],ans:1,exp:"For 1, 2 ∈ ℤ, (1×2)/7 = 2/7 ∉ ℤ."},
+  {id:"12-BB-6",ch:12,src:"Book-Back",qno:6,en:"In the set ℚ define a ⊙ b = a + b + ab. For what value of y, 3 ⊙ (y ⊙ 5) = 7?",ta:"ℚ என்ற கணத்தில் a ⊙ b = a + b + ab என வரையறு. பின்னர் 3 ⊙ (y ⊙ 5) = 7 -ன் தீர்வு",opts_en:["y = 2/3","y = −2/3","y = −3/2","y = 4"],opts_ta:["y = 2/3","y = −2/3","y = −3/2","y = 4"],ans:1,exp:"y ⊙ 5 = 6y + 5. Then 3 ⊙ (6y+5) = 3 + (6y+5) + 3(6y+5) = 24y + 23 = 7 ⇒ 24y = −16 ⇒ y = −2/3."},
+  {id:"12-BB-7",ch:12,src:"Book-Back",qno:7,en:"If a ∗ b = √(a² + b²) on the real numbers then ∗ is",ta:"ℝ-ன் மீது a ∗ b = √(a² + b²) எனில், ∗ ஆனது",opts_en:["commutative but not associative","associative but not commutative","both commutative and associative","neither commutative nor associative"],opts_ta:["பரிமாற்று விதிக்கு கட்டுப்படும் ஆனால் சேர்ப்பு விதியை நிறைவு செய்யாது","சேர்ப்பு விதிக்கு கட்டுப்படும் ஆனால் பரிமாற்று விதியை நிறைவு செய்யாது","பரிமாற்று விதி மற்றும் சேர்ப்பு விதிகளை நிறைவு செய்யும்","பரிமாற்று விதி மற்றும் சேர்ப்பு விதிகளை நிறைவு செய்யாது"],ans:2,exp:"a ∗ b = √(a²+b²) = b ∗ a, and (a ∗ b) ∗ c = √(a²+b²+c²) = a ∗ (b ∗ c)."},
+  {id:"12-BB-8",ch:12,src:"Book-Back",qno:8,en:"Which one of the following statements has the truth value T?",ta:"பின்வரும் கூற்றுகளில் எது T மெய்மதிப்பை பெற்றிருக்கும்?",opts_en:["sin x is an even function","Every square matrix is non-singular","The product of complex number and its conjugate is purely imaginary","√5 is an irrational number"],opts_ta:["sin x ஓர் இரட்டைச் சார்பு","ஒவ்வொரு சதுர அணியும் பூச்சியமற்ற கோவை அணி ஆகும்","ஒரு கலப்பெண் மற்றும் அதன் இணை எண்ணின் பெருக்கற்பலன் முற்றிலும் கற்பனை","√5 ஒரு விகிதமுறா எண்"],ans:3,exp:"√5 is an irrational number has truth value T."},
+  {id:"12-BB-9",ch:12,src:"Book-Back",qno:9,en:"Which one of the following statements has truth value F?",ta:"பின்வருபவைகளில் எது மெய்மதிப்பு F ஐ பெற்றிருக்கும்?",opts_en:["Chennai is in India or √2 is an integer","Chennai is in India or √2 is an irrational number","Chennai is in China or √2 is an integer","Chennai is in China or √2 is an irrational number"],opts_ta:["சென்னை இந்தியாவில் உள்ளது அல்லது √2 ஒரு முழு எண்","சென்னை இந்தியாவில் உள்ளது அல்லது √2 ஒரு விகிதமுறா எண்","சென்னை சீனாவில் உள்ளது அல்லது √2 ஒரு முழு எண்","சென்னை சீனாவில் உள்ளது அல்லது √2 ஒரு விகிதமுறா எண்"],ans:2,exp:"Both 'Chennai is in China' (F) and '√2 is an integer' (F) are false, so F ∨ F ≡ F."},
+  {id:"12-BB-10",ch:12,src:"Book-Back",qno:10,en:"If a compound statement involves 3 simple statements, then the number of rows in the truth table is",ta:"ஒரு கூட்டுக் கூற்றில் 3 தனிக் கூற்றுகள் உட்படுத்தப்பட்டிருந்தால் அம்மெய்மை அட்டவணையின் நிரைகளின் எண்ணிக்கை",opts_en:["9","8","6","3"],opts_ta:["9","8","3","6"],ans:1,exp:"2³ = 8 rows."},
+  {id:"12-BB-11",ch:12,src:"Book-Back",qno:11,en:"Which one is the inverse of the statement (p ∨ q) → (p ∧ q)?",ta:"(p ∨ q) → (p ∧ q) -ன் எதிர்மறை கூற்று (Inverse) எது?",opts_en:["(p ∧ q) → (p ∨ q)","¬(p ∨ q) → (p ∧ q)","(¬p ∨ ¬q) → (¬p ∧ ¬q)","(¬p ∧ ¬q) → (¬p ∨ ¬q)"],opts_ta:["(p ∧ q) → (p ∨ q)","¬(p ∨ q) → (p ∧ q)","(¬p ∨ ¬q) → (¬p ∧ ¬q)","(¬p ∧ ¬q) → (¬p ∨ ¬q)"],ans:3,exp:"Inverse of A → B is ¬A → ¬B: ¬(p ∨ q) → ¬(p ∧ q) ≡ (¬p ∧ ¬q) → (¬p ∨ ¬q)."},
+  {id:"12-BB-12",ch:12,src:"Book-Back",qno:12,en:"Which one is the contrapositive of the statement (p ∨ q) → r?",ta:"(p ∨ q) → r -ன் நேர்மாறுக் கூற்று (Contrapositive) எது?",opts_en:["¬r → (¬p ∧ ¬q)","¬r → (p ∨ q)","r → (p ∧ q)","p → (q ∨ r)"],opts_ta:["¬r → (¬p ∧ ¬q)","¬r → (p ∨ q)","r → (p ∧ q)","p → (q ∨ r)"],ans:0,exp:"Contrapositive of (p ∨ q) → r is ¬r → ¬(p ∨ q) ≡ ¬r → (¬p ∧ ¬q)."},
+  {id:"12-BB-13",ch:12,src:"Book-Back",qno:13,en:"The truth table for (p ∧ q) ∨ (¬q) for rows (T,T), (T,F), (F,T), (F,F) is given by (a), (b), (c), (d). Which one is true?",ta:"(p ∧ q) ∨ (¬q)-ன் மெய்மை அட்டவணையில் (a), (b), (c), (d) வரிசை",opts_en:["T, T, T, T","T, F, T, T","T, T, F, T","T, F, F, F"],opts_ta:["T, T, T, T","T, F, T, T","T, T, F, T","T, F, F, F"],ans:2,exp:"For (F,T), p∧q = F and ¬q = F, so F ∨ F = F. All other rows give T ⇒ T, T, F, T."},
+  {id:"12-BB-14",ch:12,src:"Book-Back",qno:14,en:"In the last column of the truth table for ¬(p ∨ ¬q) the number of final outcomes of the truth value 'F' are",ta:"¬(p ∨ ¬q)-ன் மெய்மை அட்டவணையில் கடைசி நிரலில் வரும் மெய்மதிப்பு 'F' விளைவுகளின் எண்ணிக்கை",opts_en:["1","2","3","4"],opts_ta:["1","2","3","4"],ans:2,exp:"¬(p ∨ ¬q) ≡ ¬p ∧ q, which is T only when p=F, q=T (1 row) and F in the other 3 rows."},
+  {id:"12-BB-15",ch:12,src:"Book-Back",qno:15,en:"Which one of the following is incorrect? For any two propositions p and q, we have",ta:"பின்வருபவைகளில் எது சரியல்ல? p மற்றும் q ஏதேனும் இரு கூற்றுகளுக்கு",opts_en:["¬(p ∨ q) ≡ ¬p ∧ ¬q","¬(p ∧ q) ≡ ¬p ∨ ¬q","¬(p ∨ q) ≡ ¬p ∨ ¬q","¬(¬p) ≡ p"],opts_ta:["¬(p ∨ q) ≡ ¬p ∧ ¬q","¬(p ∧ q) ≡ ¬p ∨ ¬q","¬(p ∨ q) ≡ ¬p ∨ ¬q","¬(¬p) ≡ p"],ans:2,exp:"By De Morgan's Law, ¬(p ∨ q) ≡ ¬p ∧ ¬q, so (3) is incorrect."},
+  {id:"12-BB-16",ch:12,src:"Book-Back",qno:16,en:"Which one of the following is correct for the truth value of (p ∧ q) → ¬p for rows (T,T), (T,F), (F,T), (F,F)?",ta:"(p ∧ q) → ¬p -ன் மெய்மை அட்டவணைக்கு பின்வருபவைகளில் எது சரி?",opts_en:["T, T, T, T","F, T, T, T","F, F, T, T","T, T, T, F"],opts_ta:["T, T, T, T","F, T, T, T","F, F, T, T","T, T, T, F"],ans:1,exp:"When p=T, q=T: (T ∧ T) → F is T → F ≡ F. All other 3 rows are T ⇒ F, T, T, T."},
+  {id:"12-BB-17",ch:12,src:"Book-Back",qno:17,en:"The dual of ¬(p ∨ q) ∨ [p ∨ (p ∧ ¬r)] is",ta:"¬(p ∨ q) ∨ [p ∨ (p ∧ ¬r)] -ன் இருமம் (Dual)",opts_en:["¬(p ∧ q) ∧ [p ∨ (p ∧ ¬r)]","(p ∧ q) ∧ [p ∧ (p ∨ ¬r)]","¬(p ∧ q) ∧ [p ∧ (p ∧ r)]","¬(p ∧ q) ∧ [p ∧ (p ∨ ¬r)]"],opts_ta:["¬(p ∧ q) ∧ [p ∨ (p ∧ ¬r)]","(p ∧ q) ∧ [p ∧ (p ∨ ¬r)]","¬(p ∧ q) ∧ [p ∧ (p ∧ r)]","¬(p ∧ q) ∧ [p ∧ (p ∨ ¬r)]"],ans:3,exp:"Replace ∨ by ∧ and ∧ by ∨ (keeping ¬ unchanged): ¬(p ∧ q) ∧ [p ∧ (p ∨ ¬r)]."},
+  {id:"12-BB-18",ch:12,src:"Book-Back",qno:18,en:"The proposition p ∧ (¬p ∨ q) is",ta:"p ∧ (¬p ∨ q) என்ற கூற்று",opts_en:["a tautology","a contradiction","logically equivalent to p ∧ q","logically equivalent to p ∨ q"],opts_ta:["ஒரு மெய்மம்","ஒரு முரண்பாடு","p ∧ q -க்கு தர்க்க சமானமானவை","p ∨ q -க்கு தர்க்க சமானமானவை"],ans:2,exp:"p ∧ (¬p ∨ q) ≡ (p ∧ ¬p) ∨ (p ∧ q) ≡ 𝔽 ∨ (p ∧ q) ≡ p ∧ q."},
+  {id:"12-BB-19",ch:12,src:"Book-Back",qno:19,en:"Determine the truth value of each of the following statements: (a) 4+2=5 and 6+3=9 (b) 3+2=5 and 6+1=7 (c) 4+5=9 and 1+2=4 (d) 3+2=5 and 4+7=11",ta:"பின்வரும் ஒவ்வொரு கூற்றிற்கும் அதன் மெய் மதிப்பை தீர்மானிக்க: (a) 4+2=5 மற்றும் 6+3=9 (b) 3+2=5 மற்றும் 6+1=7 (c) 4+5=9 மற்றும் 1+2=4 (d) 3+2=5 மற்றும் 4+7=11",opts_en:["F, T, F, T","T, F, T, F","T, T, F, F","F, F, T, T"],opts_ta:["F, T, F, T","T, F, T, F","T, T, F, F","F, F, T, T"],ans:0,exp:"(a) F∧T = F, (b) T∧T = T, (c) T∧F = F, (d) T∧T = T ⇒ F, T, F, T."},
+  {id:"12-BB-20",ch:12,src:"Book-Back",qno:20,en:"Which one of the following is not true?",ta:"பின்வருபவைகளில் எது உண்மையல்ல?",opts_en:["Negation of a negation of a statement is the statement itself.","If the last column of the truth table contains only T then it is a tautology.","If the last column of its truth table contains only F then it is a contradiction","If p and q are any two statements then p ↔ q is a tautology."],opts_ta:["ஒரு கூற்றின் மறுப்பின் மறுப்பு அக்கூற்றேயாகும்.","இறுதி நிரல் முழுவதும் T எனில் அது ஒரு மெய்மமாகும்.","இறுதி நிரல் முழுவதும் F எனில் அது ஒரு முரண்பாடாகும்.","p மற்றும் q ஏதேனும் இரு கூற்றுகள் எனில் p ↔ q என்பது ஒரு மெய்மமாகும்."],ans:3,exp:"p ↔ q is a contingency (not a tautology) for arbitrary statements p and q."},
+
+  // ==================== CHAPTER 12: BOOK-INSIDE (Q1 - Q10) ====================
+  {id:"12-IN-1",ch:12,src:"Book-Inside",qno:21,en:"On ℤ, for the binary operation m ∗ n = m + n − mn, the identity element e is",ta:"ℤ-ன் மீது m ∗ n = m + n − mn என்ற ஈருறுப்புச் செயலியின் சமனி உறுப்பு",opts_en:["1","0","−1","Does not exist"],opts_ta:["1","0","−1","இல்லை"],ans:1,exp:"Example 12.7: m ∗ 0 = m + 0 − 0 = m, so 0 is the identity element."},
+  {id:"12-IN-2",ch:12,src:"Book-Inside",qno:22,en:"In the set of 2×2 Boolean matrices 𝔹, the identity element for the meet operation (∧) is",ta:"2×2 பூலியன் அணிகளின் கணம் 𝔹-ல் சந்திப்பு (∧) செயலிக்கான சமனி உறுப்பு",opts_en:["[[0, 0], [0, 0]]","[[1, 0], [0, 1]]","[[1, 1], [1, 1]]","[[0, 1], [1, 0]]"],opts_ta:["[[0, 0], [0, 0]]","[[1, 0], [0, 1]]","[[1, 1], [1, 1]]","[[0, 1], [1, 0]]"],ans:2,exp:"Section 12.2.3: For meet (∧), U = [[1, 1], [1, 1]] is the identity matrix; for join (∨), the zero matrix is the identity."},
+  {id:"12-IN-3",ch:12,src:"Book-Inside",qno:23,en:"In ℤ₅ under addition modulo 5 (+₅), the inverse of 2 is",ta:"ℤ₅-ல் மட்டுக் கூட்டல் +₅-ஐப் பொறுத்து 2-ன் எதிர்மறை உறுப்பு",opts_en:["2","3","4","0"],opts_ta:["2","3","4","0"],ans:1,exp:"Example 12.9: Since 2 +₅ 3 = 0 (mod 5), the additive inverse of 2 in ℤ₅ is 3."},
+  {id:"12-IN-4",ch:12,src:"Book-Back",qno:24,en:"On the set A = {1, 3, 4, 5, 9} under multiplication modulo 11 (×₁₁), the inverse of 4 is",ta:"A = {1, 3, 4, 5, 9} என்ற கணத்தில் மட்டுப் பெருக்கல் ×₁₁-ஐப் பொறுத்து 4-ன் எதிர்மறை உறுப்பு",opts_en:["1","3","5","9"],opts_ta:["1","3","5","9"],ans:1,exp:"Example 12.10: 4 ×₁₁ 3 = 1 (mod 11), so the inverse of 4 is 3."},
+  {id:"12-IN-5",ch:12,src:"Book-Inside",qno:25,en:"Which of the following sentences is NOT a valid mathematical proposition (statement)?",ta:"பின்வரும் வாக்கியங்களில் எது கூற்று (Proposition) அல்ல?",opts_en:["Mount Everest is the highest mountain of the world.","3 + 4 = 8","Where are you going?","7 + 5 > 10"],opts_ta:["உலகத்தில் மிக உயரமான சிகரம் எவரெஸ்ட் சிகரமாகும்.","3 + 4 = 8","நீ எங்கே செல்கின்றாய்?","7 + 5 > 10"],ans:2,exp:"Example 12.11: Interrogative sentences (questions) cannot be propositions."},
+  {id:"12-IN-6",ch:12,src:"Book-Inside",qno:26,en:"The conditional statement p → q is logically equivalent to",ta:"p → q என்ற நிபந்தனைக் கூற்றுக்கு தர்க்க சமானமானது",opts_en:["p ∨ ¬q","¬p ∨ q","¬p ∧ q","p ∧ ¬q"],opts_ta:["p ∨ ¬q","¬p ∨ q","¬p ∧ q","p ∧ ¬q"],ans:1,exp:"Example 12.17: p → q ≡ ¬p ∨ q."},
+  {id:"12-IN-7",ch:12,src:"Book-Inside",qno:27,en:"A statement which is neither a tautology nor a contradiction is called a",ta:"ஒரு கூற்று மெய்மமும் அல்ல மற்றும் முரண்பாடும் அல்ல எனில், அது எவ்வாறு அழைக்கப்படும்?",opts_en:["paradox","contingency","converse","duality"],opts_ta:["முரண்படு மெய்மை","நிச்சயமின்மை (Contingency)","மறுதலை","இருமை"],ans:1,exp:"Definition 12.18: A statement which is neither a tautology nor a contradiction is called a contingency."},
+  {id:"12-IN-8",ch:12,src:"Book-Inside",qno:28,en:"The bi-conditional statement p ↔ q is logically equivalent to",ta:"p ↔ q என்ற இரு நிபந்தனைக் கூற்றுக்கு தர்க்க சமானமானது",opts_en:["(p ∧ q) ∨ (¬p ∧ ¬q)","(p ∨ q) ∧ (¬p ∨ ¬q)","(p ∧ ¬q) ∨ (¬p ∧ q)","¬p ↔ q"],opts_ta:["(p ∧ q) ∨ (¬p ∧ ¬q)","(p ∨ q) ∧ (¬p ∨ ¬q)","(p ∧ ¬q) ∨ (¬p ∧ q)","¬p ↔ q"],ans:0,exp:"Example 12.19: p ↔ q ≡ (p ∧ q) ∨ (¬p ∧ ¬q)."},
+  {id:"12-IN-9",ch:12,src:"Book-Inside",qno:29,en:"According to the Absorption Law, p ∨ (p ∧ q) is logically equivalent to",ta:"ஈர்ப்பு விதியின்படி (Absorption Law), p ∨ (p ∧ q)-க்கு தர்க்க சமானமானது",opts_en:["q","p","p ∧ q","𝕋"],opts_ta:["q","p","p ∧ q","𝕋"],ans:1,exp:"Section 12.3.5 Law 9 (Absorption Law): p ∨ (p ∧ q) ≡ p and p ∧ (p ∨ q) ≡ p."},
+  {id:"12-IN-10",ch:12,src:"Book-Inside",qno:30,en:"The compound proposition (p ⊽ q) ∧ (p ⊽ ¬q), where ⊽ denotes Exclusive OR (EOR), is a",ta:"(p ⊽ q) ∧ (p ⊽ ¬q) என்ற கூட்டுக் கூற்று ஒரு",opts_en:["tautology","contradiction","contingency","converse"],opts_ta:["மெய்மம்","முரண்பாடு (Contradiction)","நிச்சயமின்மை","மறுதலை"],ans:1,exp:"Example 12.16 (Table 12.10): All entries in the last column are F, so it is a contradiction."}
+];
+
+const GLOSSARY = [
+  ["Ch 7", "Related rates", "சார்ந்த வீதங்கள்"],
+  ["Ch 7", "Mean value theorem", "இடை மதிப்புத் தேற்றம் / சராசரி மதிப்புத் தேற்றம்"],
+  ["Ch 7", "Indeterminate forms", "தேரப்பெறாத வடிவங்கள்"],
+  ["Ch 7", "Stationary points / Critical points", "நிலைப் புள்ளிகள் / மாறுநிலைப் புள்ளிகள்"],
+  ["Ch 7", "Monotonicity of functions", "ஓரியல்புச் சார்புகள்"],
+  ["Ch 7", "Absolute / Relative extremum", "மீப்பெரு அறுதி / இடஞ்சார்ந்த அறுதி"],
+  ["Ch 7", "Concave / Convex / Point of inflection", "குழிவு / குவிவு / வளைவு மாற்றப் புள்ளி"],
+  ["Ch 7", "Symmetry / Asymptotes", "சமச்சீர்த் தன்மை / தொலைத் தொடுகோடுகள்"],
+  ["Ch 8", "Differential / Partial Derivatives", "வகையீடு / பகுதி வகைக்கெழு"],
+  ["Ch 8", "Harmonic / Homogeneous", "சீரான / சமபடித்தான"],
+  ["Ch 8", "Absolute / Relative / Percentage error", "தனிப்பிழை / சார் பிழை / சதவீத பிழை"],
+  ["Ch 9", "Definite integral / Improper integral", "வரையறுத்தத் தொகை / முறையற்ற தொகையீடுகள்"],
+  ["Ch 9", "Reduction formula / Gamma integral", "குறைப்பு சூத்திரம் / காமா தொகையிடல்"],
+  ["Ch 10", "Order / Degree / Linear", "வரிசை / படி / நேரியல்"],
+  ["Ch 10", "Arbitrary constant / Integrating factor", "ஏதேனுமொரு மாறிலி / தொகையீட்டுக் காரணி"],
+  ["Ch 11", "Random variable (Discrete / Continuous)", "சமவாய்ப்பு மாறி (தனிநிலை / தொடர்நிலை)"],
+  ["Ch 11", "Probability mass / density function", "நிகழ்தகவு நிறைச் / அடர்த்திச் சார்பு"],
+  ["Ch 11", "Cumulative distribution function", "குவிவு பரவல் சார்பு"],
+  ["Ch 11", "Mathematical expectation / Binomial distribution", "கணித எதிர்பார்ப்பு / ஈருறுப்பு பரவல்"],
+  ["Ch 12", "Binary Operation / Algebraic structure", "ஈருறுப்பு செயலி / இயற்கணித அமைப்பு"],
+  ["Ch 12", "Boolean Matrix / Modular arithmetic", "பூலியன் அணி / மட்டு எண் கணிதம்"],
+  ["Ch 12", "Tautology / Contradiction / Contingency", "மெய்மம் / முரண்பாடு / நிச்சயமின்மை"],
+  ["Ch 12", "Conjunction / Disjunction / Negation / Duality", "இணையல் / பிரிப்பிணையல் / மறுப்பு / இருமை இயல்பு"]
+];
+
+let state = {
+  chapter: 'all',
+  source: 'all',
+  lang: 'both',
+  mode: 'practice',
+  userAnswers: {},
+  bookmarks: new Set(),
+  showAllExp: false,
+  examSubmitted: false,
+  seconds: 0
+};
+
+setInterval(() => {
+  state.seconds++;
+  const m = String(Math.floor(state.seconds / 60)).padStart(2, '0');
+  const s = String(state.seconds % 60).padStart(2, '0');
+  document.getElementById('timerDisplay').textContent = `⏱ ${m}:${s}`;
+}, 1000);
+
+function init() {
+  renderChapters();
+  renderGlossary();
+  renderQuestions();
+}
+
+function renderChapters() {
+  const container = document.getElementById('chapterList');
+  container.innerHTML = CHAPTERS.map(c => {
+    const count = c.id === 'all' ? ALL_QUESTIONS.length : ALL_QUESTIONS.filter(q => q.ch === c.id).length;
+    return `<button class="chapter-btn ${state.chapter === c.id ? 'active' : ''}" onclick="setChapter('${c.id}')">
+      <div>
+        <div class="ch-name">${c.num}: ${c.en}</div>
+        <span class="ch-ta">${c.ta}</span>
+      </div>
+      <span class="ch-count">${count}</span>
+    </button>`;
+  }).join('');
+}
+
+function renderGlossary() {
+  const table = document.getElementById('glossaryTable');
+  table.innerHTML = `<thead><tr><th>Chapter</th><th>English Term</th><th>தமிழ் கலைச்சொல்</th></tr></thead><tbody>` +
+    GLOSSARY.map(r => `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('') + `</tbody>`;
+}
+
+function getFilteredQuestions() {
+  const qSearch = document.getElementById('searchInput').value.trim().toLowerCase();
+  return ALL_QUESTIONS.filter(q => {
+    if (state.chapter !== 'all' && q.ch !== Number(state.chapter)) return false;
+    if (state.source === 'Book-Back' && q.src !== 'Book-Back') return false;
+    if (state.source === 'Book-Inside' && q.src !== 'Book-Inside') return false;
+    if (state.source === 'bookmarked' && !state.bookmarks.has(q.id)) return false;
+    if (qSearch) {
+      const hay = `${q.en} ${q.ta} ${q.opts_en.join(' ')} ${q.opts_ta.join(' ')} ${q.exp}`.toLowerCase();
+      if (!hay.includes(qSearch)) return false;
+    }
+    return true;
+  });
+}
+
+function renderQuestions() {
+  const list = getFilteredQuestions();
+  const container = document.getElementById('questionContainer');
+  updateStats(list.length);
+
+  if (!list.length) {
+    container.innerHTML = `<div class="q-card">No matching questions found. Try clearing filters or search terms.</div>`;
+    return;
+  }
+
+  container.innerHTML = list.map((q, idx) => {
+    const picked = state.userAnswers[q.id];
+    const isAnswered = picked !== undefined;
+    const isStudy = state.mode === 'study';
+    const reveal = (state.mode === 'practice' && isAnswered) || isStudy || (state.mode === 'exam' && state.examSubmitted);
+
+    let cardClass = 'q-card';
+    if (reveal && isAnswered) {
+      cardClass += (picked === q.ans) ? ' answered-correct' : ' answered-wrong';
+    }
+
+    const stemHtml = `
+      ${state.lang !== 'ta' ? `<div class="q-stem-en">${idx + 1}. ${q.en}</div>` : ''}
+      ${state.lang !== 'en' ? `<div class="${state.lang === 'both' ? 'q-stem-ta' : 'q-stem-en'}">${state.lang === 'ta' ? (idx + 1) + '. ' : ''}${q.ta}</div>` : ''}
+    `;
+
+    const optsHtml = [0, 1, 2, 3].map(i => {
+      let cls = 'opt-btn';
+      if (reveal) {
+        if (i === q.ans) cls += ' correct-opt';
+        else if (picked === i && i !== q.ans) cls += ' wrong-opt';
+      } else if (picked === i) {
+        cls += ' correct-opt';
+      }
+      const labelEn = q.opts_en[i];
+      const labelTa = q.opts_ta[i];
+      let optText = '';
+      if (state.lang === 'en') optText = labelEn;
+      else if (state.lang === 'ta') optText = labelTa;
+      else optText = (labelEn === labelTa) ? labelEn : `${labelEn} <br><small style="opacity:0.85">${labelTa}</small>`;
+
+      return `<button class="${cls}" onclick="selectOption('${q.id}', ${i})">
+        <span class="opt-num">${i + 1}</span>
+        <span>${optText}</span>
+      </button>`;
+    }).join('');
+
+    const showExp = reveal || state.showAllExp;
+
+    return `<div class="${cardClass}" id="card-${q.id}">
+      <div class="q-meta">
+        <div class="q-badges">
+          <span class="badge badge-ch">Chapter ${q.ch}</span>
+          <span class="badge ${q.src === 'Book-Back' ? 'badge-back' : 'badge-inside'}">${q.src === 'Book-Back' ? 'Book-Back (புத்தகப் பின்பக்க வினா)' : 'Book-Inside (புத்தக உட்புற வினா)'} #${q.qno}</span>
+        </div>
+        <button class="bookmark-btn ${state.bookmarks.has(q.id) ? 'active' : ''}" onclick="toggleBookmark('${q.id}')" title="Bookmark">★</button>
+      </div>
+      <div class="q-stem">${stemHtml}</div>
+      <div class="options-grid">${optsHtml}</div>
+      <div class="exp-box ${showExp ? 'visible' : ''}">
+        <strong>✓ Correct Answer: Option (${q.ans + 1})</strong> — ${q.exp}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function selectOption(qid, optIdx) {
+  if (state.mode === 'study') return;
+  state.userAnswers[qid] = optIdx;
+  renderQuestions();
+}
+
+function updateStats(showingCount) {
+  const keys = Object.keys(state.userAnswers);
+  let correct = 0, wrong = 0;
+  keys.forEach(id => {
+    const q = ALL_QUESTIONS.find(x => x.id === id);
+    if (q) {
+      if (state.userAnswers[id] === q.ans) correct++;
+      else wrong++;
+    }
+  });
+  const pct = keys.length ? Math.round((correct / keys.length) * 100) : 0;
+  document.getElementById('statShowing').textContent = `Showing: ${showingCount} / 180 Qs`;
+  document.getElementById('statAttempted').textContent = `Attempted: ${keys.length}`;
+  document.getElementById('statCorrect').textContent = `Correct: ${correct}`;
+  document.getElementById('statWrong').textContent = `Wrong: ${wrong}`;
+  document.getElementById('statAccuracy').textContent = `Score: ${pct}%`;
+}
+
+function setChapter(ch) {
+  state.chapter = ch === 'all' ? 'all' : Number(ch);
+  renderChapters();
+  renderQuestions();
+}
+
+function setSource(src) {
+  state.source = src;
+  document.querySelectorAll('.filter-chip').forEach(b => b.classList.toggle('active', b.dataset.src === src));
+  renderQuestions();
+}
+
+function setLang(lang) {
+  state.lang = lang;
+  const btns = document.querySelectorAll('#langGroup .pill-btn');
+  btns[0].classList.toggle('active', lang === 'both');
+  btns[1].classList.toggle('active', lang === 'en');
+  btns[2].classList.toggle('active', lang === 'ta');
+  renderQuestions();
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  state.examSubmitted = false;
+  document.getElementById('submitExamBtn').style.display = mode === 'exam' ? 'inline-block' : 'none';
+  const btns = document.querySelectorAll('#modeGroup .pill-btn');
+  btns[0].classList.toggle('active', mode === 'practice');
+  btns[1].classList.toggle('active', mode === 'exam');
+  btns[2].classList.toggle('active', mode === 'study');
+  renderQuestions();
+}
+
+function submitExam() {
+  state.examSubmitted = true;
+  renderQuestions();
+}
+
+function resetProgress() {
+  state.userAnswers = {};
+  state.examSubmitted = false;
+  state.seconds = 0;
+  renderQuestions();
+}
+
+function toggleBookmark(id) {
+  if (state.bookmarks.has(id)) state.bookmarks.delete(id);
+  else state.bookmarks.add(id);
+  renderQuestions();
+}
+
+function shuffleQuestions() {
+  ALL_QUESTIONS.sort(() => Math.random() - 0.5);
+  renderQuestions();
+}
+
+function toggleAllExplanations() {
+  state.showAllExp = !state.showAllExp;
+  renderQuestions();
+}
+
+function toggleGlossary() {
+  document.getElementById('glossaryModal').classList.toggle('open');
+}
+
+function toggleTheme() {
+  const cur = document.documentElement.getAttribute('data-theme');
+  document.documentElement.setAttribute('data-theme', cur === 'dark' ? 'light' : 'dark');
+}
+
+init();
+</script>
+</body>
+</html>

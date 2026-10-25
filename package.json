@@ -13,7 +13,7 @@
     "ai:start": "node scripts/start-local-ai.mjs",
     "ai:check": "tsx scripts/check-local-ai.ts",
     "build": "next build",
-    "serve": "npm run build \u0026\u0026 npm start",
+    "serve": "npm run build && npm start",
     "start": "node scripts/start-web.mjs start",
     "start:web": "next start",
     "lint": "eslint src tests scripts",
@@ -52,6 +52,7 @@
     "materials:scan": "tsx scripts/import-learning-materials.ts --dry-run",
     "materials:import": "tsx scripts/import-learning-materials.ts",
     "materials:verify": "tsx scripts/import-learning-materials.ts --verify",
+    "practice:supplied:prepare": "tsx scripts/import-supplied-practice.ts",
     "resources:audit": "tsx scripts/audit-study-resources.ts"
   },
   "dependencies": {
@@ -60,14 +61,14 @@
     "clsx": "^2.1.1",
     "exceljs": "^4.4.0",
     "lucide-react": "^1.52.0",
-    "next": "16.3.8",
+    "next": "16.4.3",
     "pdfjs-dist": "^6.4.299",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "react-markdown": "^10.1.0",
     "tailwind-merge": "^3.7.0",
     "three": "^0.186.1",
-    "zod": "^4.6.5"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@electric-sql/pglite": "^0.5.8",
@@ -79,7 +80,7 @@
     "@types/react-dom": "^19",
     "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.3.8",
+    "eslint-config-next": "^16.4.3",
     "prettier": "^3.9.9",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",

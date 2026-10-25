@@ -124,11 +124,12 @@ export default function NotesPage() {
               <span>FACULTY CURATED RESOURCES</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
-              Handwritten Notes & Formulas
+              Notes, Formulas & Study PDFs
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
               Step-by-step derivations, neatly labeled diagrams, formula sheets,
-              and chapter definitions curated by senior subject faculty.
+              and chapter resources supplied for your study. Check uncertain
+              answers with your teacher.
             </p>
           </div>
           <span className="text-xs font-extrabold text-blue-700 bg-blue-50 px-3.5 py-1.5 rounded-xl border border-blue-200 shadow-xs">

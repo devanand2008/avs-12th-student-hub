@@ -53,7 +53,26 @@ export async function streamHostedTextbook(
       { error: "This textbook has no verified hosted file." },
       { status: 404 },
     );
-  const size = book.sizeBytes!;
+  return streamVerifiedPdf(request, source, book.sizeBytes!, book.id, fetcher);
+}
+
+// Callers must choose a trusted catalogue entry, never a request-supplied URL.
+export async function streamVerifiedPdf(
+  request: Request,
+  source: string,
+  size: number,
+  filename: string,
+  fetcher: typeof fetch = fetch,
+): Promise<Response> {
+  if (
+    !Number.isSafeInteger(size) ||
+    size <= 0 ||
+    !/^[a-z0-9-]+$/.test(filename) ||
+    !/^https:\/\/github\.com\/devanand2008\/avs-12th-student-hub\/releases\/download\/(?:textbooks-2026-10-13|learning-materials-2026-10-25)\/[a-z0-9-]+\.pdf$/.test(
+      source,
+    )
+  )
+    return Response.json({ error: "Unverified PDF source." }, { status: 404 });
   const rangeValue = request.headers.get("range");
   const range = rangeValue ? parseRange(rangeValue, size) : null;
   if (rangeValue && !range)
@@ -115,7 +134,7 @@ export async function streamHostedTextbook(
       "Content-Type": "application/pdf",
       "Content-Length": String(expectedLength),
       "Accept-Ranges": "bytes",
-      "Content-Disposition": `inline; filename="${book.id}.pdf"`,
+      "Content-Disposition": `inline; filename="${filename}.pdf"`,
       "Cache-Control": "private, no-store",
       "X-Content-Type-Options": "nosniff",
     });

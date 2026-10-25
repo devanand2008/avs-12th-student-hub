@@ -32,6 +32,42 @@ export default function ResourcesPage() {
           Browse all {visibleResources.length} resources →
         </Link>
       </section>
+      <section
+        aria-label="In-app study library"
+        className="grid gap-4 sm:grid-cols-3"
+      >
+        {[
+          {
+            href: "/notes",
+            title: "Study PDFs & handwritten notes",
+            description:
+              "Read supplied notes for Computer Science, Mathematics, Biology and Tamil.",
+          },
+          {
+            href: "/videos",
+            title: "Watch your video lessons",
+            description:
+              "English and Tamil lessons, including Zoology reproduction videos.",
+          },
+          {
+            href: "/practice/collections",
+            title: "One-mark practice library",
+            description:
+              "Practise the supplied English and Tamil subject collections or use the published textbook bank.",
+          },
+        ].map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className="rounded-2xl border border-blue-100 bg-white p-6 shadow-sm hover:border-blue-400"
+          >
+            <h2 className="font-bold text-blue-900">{item.title} →</h2>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              {item.description}
+            </p>
+          </Link>
+        ))}
+      </section>
       <Link
         href="/ai-study-tools"
         className="block rounded-3xl border border-blue-200 bg-blue-50 p-7 text-blue-950 hover:bg-blue-100"

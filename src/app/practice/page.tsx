@@ -157,6 +157,13 @@ export default function PracticeHubPage() {
           Practise official textbook MCQs by subject and chapter{" "}
           <ArrowRight className="h-5 w-5 shrink-0" />
         </Link>
+        <Link
+          href="/practice/collections"
+          className="flex items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-5 font-semibold text-slate-800"
+        >
+          Browse the English & Tamil one-mark collections{" "}
+          <ArrowRight className="h-5 w-5 shrink-0" />
+        </Link>
         <section className="bg-white/95 rounded-3xl border border-blue-100/90 p-5 sm:p-7 shadow-sm space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-xs font-black uppercase tracking-wider text-slate-400">

@@ -1,0 +1,58 @@
+{
+  "verifiedAt": "2026-10-25T18:55:47.670Z",
+  "materials": {
+    "notes": 32,
+    "videos": 35,
+    "newResources": 21,
+    "preservedOriginalResources": 46,
+    "preservedCurriculumRows": 7252
+  },
+  "suppliedPractice": {
+    "files": 10,
+    "occurrences": 2424,
+    "uniqueQuestions": 2244,
+    "duplicateOccurrences": 180,
+    "teacherApproved": 0,
+    "access": "owner-enabled supplied/unverified practice"
+  },
+  "tests": {
+    "initialFullNode": {
+      "passed": 226,
+      "failed": 1,
+      "failure": "Native out-of-memory; affected test passed on rerun"
+    },
+    "finalFocusedNode": {
+      "passed": 15,
+      "failed": 0
+    },
+    "suppliedBrowser": {
+      "passed": 6,
+      "failed": 0
+    },
+    "extendedBrowser": {
+      "passed": 22,
+      "failed": 2,
+      "failure": "Local development server memory restart interrupted mobile practice and notes"
+    },
+    "isolatedAffectedMobileRerun": {
+      "passed": 2,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "lint": "passed",
+    "productionDependencyVulnerabilities": 0,
+    "localBuild": "Turbopack and Webpack exhausted workstation memory",
+    "vercelProductionBuild": "passed",
+    "sourceIntegrity": "All ten staged HTML hashes equal original source evidence"
+  },
+  "preservation": {
+    "originalQuestionRows": 3039,
+    "existingEnglishPublications": 995,
+    "quizSessions": 16,
+    "progressRows": 4,
+    "activityRows": 17,
+    "protectedLocalFiles": 622,
+    "changedProtectedFiles": 0
+  },
+  "coverageComplete": false
+}

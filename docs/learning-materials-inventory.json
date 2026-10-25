@@ -1,0 +1,680 @@
+{
+  "inspectedAt": "2026-10-25",
+  "physicalFiles": 71,
+  "uniqueResources": 67,
+  "notes": 32,
+  "videos": 35,
+  "duplicateVideoAliases": 4,
+  "items": [
+    {
+      "id": "note-import-eb535f70ad761cc867fb80d2",
+      "kind": "note",
+      "title": "Bio-Zoology — Reproduction in Organisms — English Notes",
+      "sourceFile": "bio/zoo/pdf/Zoology_Reproduction_English_Handwritten_No_Branding.pdf",
+      "sha256": "99d98ff62aab0556a67b8993a9f612ff5fa5bdcceee766c51bfb757c0326872f",
+      "sizeBytes": 278892,
+      "pageCount": 18,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/99d98ff62aab0556a67b8993a9f612ff5fa5bdcceee766c51bfb757c0326872f.pdf"
+    },
+    {
+      "id": "note-import-0f571256626fc992124962b1",
+      "kind": "note",
+      "title": "Bio-Zoology — Reproduction in Organisms — Tamil Notes",
+      "sourceFile": "bio/zoo/pdf/Zoology_Reproduction_Tamil_Handwritten_No_Samacheer_Branding.pdf",
+      "sha256": "aceb4807c49311c5d69b5b08e4306dec2801b2af1cc40a942fb2d54e128118a9",
+      "sizeBytes": 16349810,
+      "pageCount": 16,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/aceb4807c49311c5d69b5b08e4306dec2801b2af1cc40a942fb2d54e128118a9.pdf"
+    },
+    {
+      "id": "video-import-2624c10d1025da859e83bb5e",
+      "kind": "video",
+      "title": "Bio-Zoology — Sexual reproduction — Tamil Video",
+      "sourceFile": "bio/zoo/video/WhatsApp Video 2026-10-25 at 14.42.36.mp4",
+      "sha256": "8571a4f0be36d7d6650093b286dfcfbcb65fb7e29d230bf59a0bee380955f51c",
+      "sizeBytes": 45497051,
+      "durationSeconds": 423,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8571a4f0be36d7d6650093b286dfcfbcb65fb7e29d230bf59a0bee380955f51c.mp4"
+    },
+    {
+      "id": "video-import-aa6adcd1ff3649dbf35fd94e",
+      "kind": "video",
+      "title": "Bio-Zoology — Asexual reproduction — English Video",
+      "sourceFile": "bio/zoo/video/WhatsApp Video 2026-10-25 at 14.45.10.mp4",
+      "sha256": "1a56e5b1f3059af2257ffa82e92b63f905bf6b06d07566d11c0d4d196030c5cd",
+      "sizeBytes": 32269013,
+      "durationSeconds": 343,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1a56e5b1f3059af2257ffa82e92b63f905bf6b06d07566d11c0d4d196030c5cd.mp4"
+    },
+    {
+      "id": "note-import-65b7dc42279ef3c21d68c454",
+      "kind": "note",
+      "title": "Computer Science — Algorithmic Strategies — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Algorithmic_Strategies_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "2f23afded8e12bf967bc16599d492f62463f399f6f8c86170e9b946cddce4241",
+      "sizeBytes": 26201785,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2f23afded8e12bf967bc16599d492f62463f399f6f8c86170e9b946cddce4241.pdf"
+    },
+    {
+      "id": "note-import-fd3c94822ab347cf43aa1e08",
+      "kind": "note",
+      "title": "Computer Science — Data Abstraction — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Data_Abstraction_All_10_Handwritten_Pages.pdf",
+      "sha256": "4c461876ec1ebd80b53030a5195c0c5b007c0eadd50b77e30b33d0e39bf470b0",
+      "sizeBytes": 23134224,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4c461876ec1ebd80b53030a5195c0c5b007c0eadd50b77e30b33d0e39bf470b0.pdf"
+    },
+    {
+      "id": "note-import-02c02808393715fb578d7d32",
+      "kind": "note",
+      "title": "Computer Science — Database Concepts — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/DBMS_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "48f37a5a0343739dd093fe67b702e43fe9c470ed027e1137c5a289b506f07b10",
+      "sizeBytes": 2294949,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/48f37a5a0343739dd093fe67b702e43fe9c470ed027e1137c5a289b506f07b10.pdf"
+    },
+    {
+      "id": "note-import-032e1b8652a2b5056edff6fb",
+      "kind": "note",
+      "title": "Computer Science — Function — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Functions_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "f797a1c1818d1094834566f24b3cff43713f3fbb5ccf639d01862bc882faf3a0",
+      "sizeBytes": 2124422,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f797a1c1818d1094834566f24b3cff43713f3fbb5ccf639d01862bc882faf3a0.pdf"
+    },
+    {
+      "id": "note-import-dcfa03101bf744393248ecdf",
+      "kind": "note",
+      "title": "Computer Science — Data Visualization Using Pyplot — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Handwritten_Notes_All_10_Pages.pdf",
+      "sha256": "fab4d232b0f4e276656ef21ea37f1e896ef1566fe5282e521d0b785c8dffd304",
+      "sizeBytes": 2407345,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/fab4d232b0f4e276656ef21ea37f1e896ef1566fe5282e521d0b785c8dffd304.pdf"
+    },
+    {
+      "id": "note-import-b43f3a69e3eb1be964a0b924",
+      "kind": "note",
+      "title": "Computer Science — Importing C++ Programs in Python — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Importing_CPP_Programs_in_Python_Handwritten_10_Pages.pdf",
+      "sha256": "647b608aeef9e6f40e107028b5e93fc627b6cd11a62ab8ce8c6ae7fb260e41be",
+      "sizeBytes": 2242539,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/647b608aeef9e6f40e107028b5e93fc627b6cd11a62ab8ce8c6ae7fb260e41be.pdf"
+    },
+    {
+      "id": "note-import-3136c79e00d2a02cd7c1d942",
+      "kind": "note",
+      "title": "Computer Science — Python and CSV Files — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_and_CSV_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "4330916784aeb77107dbb445e8581bb88b632b4cbb7bd5c18b72fb4d320493cf",
+      "sizeBytes": 2269198,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4330916784aeb77107dbb445e8581bb88b632b4cbb7bd5c18b72fb4d320493cf.pdf"
+    },
+    {
+      "id": "note-import-db713b4b5e35c989b2a927ce",
+      "kind": "note",
+      "title": "Computer Science — Python Classes and Objects — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_Classes_and_Objects_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "ec41a0c08a74c94015e6b11fb921ab03825ccaad61fccba33fa78a74e4292d59",
+      "sizeBytes": 2010433,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/ec41a0c08a74c94015e6b11fb921ab03825ccaad61fccba33fa78a74e4292d59.pdf"
+    },
+    {
+      "id": "note-import-914fede86573d6433fadfd7a",
+      "kind": "note",
+      "title": "Computer Science — Control Structures — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_Control_Structures_10_Handwritten_Pages.pdf",
+      "sha256": "651c51e54c7e2a149f927686a8044c81cb8988dd7ace39ea96050a14771b2268",
+      "sizeBytes": 31147230,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/651c51e54c7e2a149f927686a8044c81cb8988dd7ace39ea96050a14771b2268.pdf"
+    },
+    {
+      "id": "note-import-53429c3271c552e7306d970c",
+      "kind": "note",
+      "title": "Computer Science — Python Functions — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_Functions_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "88515822c6c7c82ae351b5700b0a2b8948eab4f9d190f15c0bdf74a3e3bdd297",
+      "sizeBytes": 2572626,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/88515822c6c7c82ae351b5700b0a2b8948eab4f9d190f15c0bdf74a3e3bdd297.pdf"
+    },
+    {
+      "id": "note-import-6e881bc6acc973b86c891fdb",
+      "kind": "note",
+      "title": "Computer Science — Lists, Tuples, Sets and Dictionary — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_Lists_Tuples_Sets_Dictionary_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "a87a8849698a54d1c88a7008f1783382efb69972c03cadd3c9de7c7b15dee344",
+      "sizeBytes": 2339719,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a87a8849698a54d1c88a7008f1783382efb69972c03cadd3c9de7c7b15dee344.pdf"
+    },
+    {
+      "id": "note-import-c859f365df1299185f9c9e0d",
+      "kind": "note",
+      "title": "Computer Science — Strings and String Manipulation — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_Strings_and_String_Manipulations_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "bdb8584e7da051e98c3d4041b7336661fadc7fff915b20d1e2882debd99eb1eb",
+      "sizeBytes": 31720078,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/bdb8584e7da051e98c3d4041b7336661fadc7fff915b20d1e2882debd99eb1eb.pdf"
+    },
+    {
+      "id": "note-import-59f04c5380ce2c701b39921b",
+      "kind": "note",
+      "title": "Computer Science — Python Variables and Operators — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Python_Variables_Operators_10_Handwritten_Pages.pdf",
+      "sha256": "ee0b6168cc5b3576cad9d438dbbbc8b0eaade3ba10fd2f0461068897f9e25df2",
+      "sizeBytes": 2341654,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/ee0b6168cc5b3576cad9d438dbbbc8b0eaade3ba10fd2f0461068897f9e25df2.pdf"
+    },
+    {
+      "id": "note-import-d2b45d805a8b07bb2b677ca4",
+      "kind": "note",
+      "title": "Computer Science — Scoping and Modular Programming — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/Scope_and_Modular_Programming_10_Handwritten_Pages.pdf",
+      "sha256": "97134daa00a7aaaa5efaa444039f6e4a4c4e5926468f103f190b456d3e8b356e",
+      "sizeBytes": 5559132,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/97134daa00a7aaaa5efaa444039f6e4a4c4e5926468f103f190b456d3e8b356e.pdf"
+    },
+    {
+      "id": "note-import-75a9fb8d26c5914be13f4e5c",
+      "kind": "note",
+      "title": "Computer Science — Data Manipulation Through SQL — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/SQLite_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "1ca72551945edaa0801c9a84f3c30f37a52bb463a922f2097271b1480da909f9",
+      "sizeBytes": 2474422,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1ca72551945edaa0801c9a84f3c30f37a52bb463a922f2097271b1480da909f9.pdf"
+    },
+    {
+      "id": "note-import-72fad8b64e52451dddddd697",
+      "kind": "note",
+      "title": "Computer Science — Structured Query Language — Supplied Handwritten Notes",
+      "sourceFile": "computer sic/pdf/SQL_Handwritten_Notes_10_Pages.pdf",
+      "sha256": "80b10202a144b86658356ae45aa068c231e2b49322319d44aa8c4da559ef5fa7",
+      "sizeBytes": 2224477,
+      "pageCount": 10,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/80b10202a144b86658356ae45aa068c231e2b49322319d44aa8c4da559ef5fa7.pdf"
+    },
+    {
+      "id": "note-import-f49fd4302b1723c1079f1830",
+      "kind": "note",
+      "title": "Tamil — Supplied 176-page Textbook Copy",
+      "sourceFile": "maths/pdf/12th Tamil Full Textbook New Edition 2025-2026 Download PDF.pdf",
+      "sha256": "5ae78a79b61cf732ed6e1d0874b7f94e5fe505c84bed83537193cc4690921a69",
+      "sizeBytes": 14864832,
+      "pageCount": 176,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/5ae78a79b61cf732ed6e1d0874b7f94e5fe505c84bed83537193cc4690921a69.pdf"
+    },
+    {
+      "id": "video-import-3a710ea1bb24467fa3fb420d",
+      "kind": "video",
+      "title": "English — Remember Caesar",
+      "sourceFile": "english/video/VID-20260929-WA0033.mp4",
+      "sha256": "7adc3c51c51871e0fb9e8b68eb79db3bcf07e837dda6ac4485da4053bb0eb745",
+      "sizeBytes": 55947310,
+      "durationSeconds": 523,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/7adc3c51c51871e0fb9e8b68eb79db3bcf07e837dda6ac4485da4053bb0eb745.mp4"
+    },
+    {
+      "id": "video-import-4883b3365a651c4ffb949623",
+      "kind": "video",
+      "title": "English — Story of Tea",
+      "sourceFile": "english/video/VID-20261006-WA0036.mp4",
+      "sha256": "37bbbd92e8c2a455035eb50a86bb3d47b3c1923e6939f2e5c4d41b7b8d5b501f",
+      "sizeBytes": 42492335,
+      "durationSeconds": 394,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/37bbbd92e8c2a455035eb50a86bb3d47b3c1923e6939f2e5c4d41b7b8d5b501f.mp4"
+    },
+    {
+      "id": "video-import-96b5d252bb8f99aed8f5eea4",
+      "kind": "video",
+      "title": "English — A Nice Cup of Tea",
+      "sourceFile": "english/video/VID-20261006-WA0037.mp4",
+      "sha256": "d1ee045b9c22c6cd6b96625c0d7b9c29ef1cb7a09cc72c5e06c43ac92981cba7",
+      "sizeBytes": 33640098,
+      "durationSeconds": 432,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/d1ee045b9c22c6cd6b96625c0d7b9c29ef1cb7a09cc72c5e06c43ac92981cba7.mp4"
+    },
+    {
+      "id": "video-import-1c88484c93cdd2f0661e5bda",
+      "kind": "video",
+      "title": "English — Christiaan Barnard — Hospital Story",
+      "sourceFile": "english/video/VID-20261006-WA0038.mp4",
+      "sha256": "7a1793f35e08d82849a1fe4083d555f5e342db06633cf228a40c37848dbe3fce",
+      "sizeBytes": 41268906,
+      "durationSeconds": 219,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/7a1793f35e08d82849a1fe4083d555f5e342db06633cf228a40c37848dbe3fce.mp4"
+    },
+    {
+      "id": "video-import-fb152a15e09caae6a9be2496",
+      "kind": "video",
+      "title": "English — Two Gentlemen of Verona",
+      "sourceFile": "english/video/VID-20261006-WA0041.mp4",
+      "sha256": "7b06da9f2cd46681358017ce626132f50a4d14ccb365e5ffdea734e10193e0ce",
+      "sizeBytes": 63505034,
+      "durationSeconds": 513,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/7b06da9f2cd46681358017ce626132f50a4d14ccb365e5ffdea734e10193e0ce.mp4"
+    },
+    {
+      "id": "video-import-48d226e9c44565355127617e",
+      "kind": "video",
+      "title": "English — The Midnight Visitor",
+      "sourceFile": "english/video/VID-20261006-WA0042.mp4",
+      "sha256": "be0a2d41ac7aa2d0fb453340e5aa2616c92026f202113ac11f1bbe6e8e80b203",
+      "sizeBytes": 57918527,
+      "durationSeconds": 543,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/be0a2d41ac7aa2d0fb453340e5aa2616c92026f202113ac11f1bbe6e8e80b203.mp4"
+    },
+    {
+      "id": "video-import-975e92281a14f8737c58f18c",
+      "kind": "video",
+      "title": "English — God Sees Truth, But Waits",
+      "sourceFile": "english/video/VID-20261006-WA0043.mp4",
+      "sha256": "de7f6db909048ebe47453ccec2a4eb4350e99c16a4f95c65dc24c8c2a83dcf01",
+      "sizeBytes": 74025899,
+      "durationSeconds": 600,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/de7f6db909048ebe47453ccec2a4eb4350e99c16a4f95c65dc24c8c2a83dcf01.mp4"
+    },
+    {
+      "id": "video-import-1b634509d2b71ca769912cbf",
+      "kind": "video",
+      "title": "English — All Summer in a Day",
+      "sourceFile": "english/video/VID-20261006-WA0044.mp4",
+      "sha256": "468d49529df26b1b530bbe530ab70fa202c1a69b2bb9dd0f43495414d0d272f4",
+      "sizeBytes": 76521210,
+      "durationSeconds": 593,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/468d49529df26b1b530bbe530ab70fa202c1a69b2bb9dd0f43495414d0d272f4.mp4"
+    },
+    {
+      "id": "video-import-9531f80b2586f8f2abe9a676",
+      "kind": "video",
+      "title": "English — On the Rule of the Road",
+      "sourceFile": "english/video/VID-20261006-WA0045.mp4",
+      "sha256": "dc12450f28e53c95cfebdbafab633e2c0c10ebb7a7602bb7730d2c51913aacba",
+      "sizeBytes": 45329171,
+      "durationSeconds": 380,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/dc12450f28e53c95cfebdbafab633e2c0c10ebb7a7602bb7730d2c51913aacba.mp4"
+    },
+    {
+      "id": "video-import-829b0f097aabd5746b30ddc8",
+      "kind": "video",
+      "title": "English — The Summit",
+      "sourceFile": "english/video/VID-20261006-WA0046.mp4",
+      "sha256": "344e870c7c6758d2e910292b12bfca742557e4c2acbe05f2411baafb966789a7",
+      "sizeBytes": 47549810,
+      "durationSeconds": 405,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/344e870c7c6758d2e910292b12bfca742557e4c2acbe05f2411baafb966789a7.mp4"
+    },
+    {
+      "id": "video-import-44284d5edd21b2da6f094a2b",
+      "kind": "video",
+      "title": "English — Poem 2 — Our Casuarina Tree",
+      "sourceFile": "english/video/VID-20261006-WA0050.mp4",
+      "sha256": "febdc4a259a6e77ab3958f9348e1618e8c31d5837fe1745e1a467b7e24723d08",
+      "sizeBytes": 38956931,
+      "durationSeconds": 376,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/febdc4a259a6e77ab3958f9348e1618e8c31d5837fe1745e1a467b7e24723d08.mp4"
+    },
+    {
+      "id": "video-import-910285ca5c48fc526c837193",
+      "kind": "video",
+      "title": "English — All the World’s a Stage",
+      "sourceFile": "english/video/VID-20261006-WA0054.mp4",
+      "sha256": "ee2a0a5e5345932e935bcb37f836fb44a2028b16f12c5f3e8c1881eb86e57d9d",
+      "sizeBytes": 50286308,
+      "durationSeconds": 499,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/ee2a0a5e5345932e935bcb37f836fb44a2028b16f12c5f3e8c1881eb86e57d9d.mp4"
+    },
+    {
+      "id": "video-import-6a7252d1ac00486e8fc2987e",
+      "kind": "video",
+      "title": "English — A Father to His Son",
+      "sourceFile": "english/video/VID-20261006-WA0055.mp4",
+      "sha256": "75de6bb4dcd8a63ffc64c3f7bba5a0f4997a46867829f5ca631376de07e3e16a",
+      "sizeBytes": 51380844,
+      "durationSeconds": 435,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/75de6bb4dcd8a63ffc64c3f7bba5a0f4997a46867829f5ca631376de07e3e16a.mp4"
+    },
+    {
+      "id": "video-import-183b8e2adb08906174acbe7e",
+      "kind": "video",
+      "title": "English — Incident of the French Camp",
+      "sourceFile": "english/video/VID-20261006-WA0057.mp4",
+      "sha256": "ed270b670fd1e311db20f09004e5b9932a44d650c5d97e40070fc7a33f873f8f",
+      "sizeBytes": 53988821,
+      "durationSeconds": 477,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/ed270b670fd1e311db20f09004e5b9932a44d650c5d97e40070fc7a33f873f8f.mp4"
+    },
+    {
+      "id": "video-import-077ce7ee7a2a5b011d10d4b6",
+      "kind": "video",
+      "title": "English — Ulysses",
+      "sourceFile": "english/video/VID-20261006-WA0058.mp4",
+      "sha256": "98881fce259ab9f5dc43a80549665e1c0d804217d2148f5f11bfa443be337294",
+      "sizeBytes": 57690335,
+      "durationSeconds": 490,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/98881fce259ab9f5dc43a80549665e1c0d804217d2148f5f11bfa443be337294.mp4"
+    },
+    {
+      "id": "video-import-11e0d4ed052f25915c7769b8",
+      "kind": "video",
+      "title": "English — The Castle",
+      "sourceFile": "english/video/VID-20261006-WA0059.mp4",
+      "sha256": "559cd4b578de15ced4b61e1d7f26bc0edd67f7ed2cbe4530d6dd06c80b342933",
+      "sizeBytes": 67757668,
+      "durationSeconds": 522,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/559cd4b578de15ced4b61e1d7f26bc0edd67f7ed2cbe4530d6dd06c80b342933.mp4"
+    },
+    {
+      "id": "video-import-c5098a842718e419ec68e0c5",
+      "kind": "video",
+      "title": "English — The Hour of Truth",
+      "sourceFile": "english/video/VID-20261006-WA0060.mp4",
+      "sha256": "c42b5299ff1271c56283da495f067a2d8a8d8010577b55e6b84fd3faea9a3739",
+      "sizeBytes": 65621017,
+      "durationSeconds": 539,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/c42b5299ff1271c56283da495f067a2d8a8d8010577b55e6b84fd3faea9a3739.mp4"
+    },
+    {
+      "id": "video-import-e286e6cb832c360744620fc3",
+      "kind": "video",
+      "title": "English — Life of Pi",
+      "sourceFile": "english/video/VID-20261006-WA0061.mp4",
+      "sha256": "e86b53d1f1afc2b64ba671c648a4589e32b69f1f2ed28d25fc3b957faa8a31b4",
+      "sizeBytes": 76961387,
+      "durationSeconds": 600,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/e86b53d1f1afc2b64ba671c648a4589e32b69f1f2ed28d25fc3b957faa8a31b4.mp4"
+    },
+    {
+      "id": "video-import-d509d87c005ff64af166b594",
+      "kind": "video",
+      "title": "English — Namma Kalvi — Class 12 English",
+      "sourceFile": "tamil/video/VID-20261006-WA0033.mp4",
+      "sha256": "d4108f8588cc625212a24ce8dd39e2a6a898e54c2448214922fbdea4c0551d13",
+      "sizeBytes": 50399239,
+      "durationSeconds": 471,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/d4108f8588cc625212a24ce8dd39e2a6a898e54c2448214922fbdea4c0551d13.mp4"
+    },
+    {
+      "id": "video-import-4f7a1b30a0170f8ad7fd4fe2",
+      "kind": "video",
+      "title": "Tamil — Iyal 3 — Overview",
+      "sourceFile": "tamil/video/VID-20261006-WA0031.mp4",
+      "sha256": "88c7b31312ba089beba77fdf1109d41bce70fb2f7d2f747b3127262ec0c0e69f",
+      "sizeBytes": 40024021,
+      "durationSeconds": 347,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/88c7b31312ba089beba77fdf1109d41bce70fb2f7d2f747b3127262ec0c0e69f.mp4"
+    },
+    {
+      "id": "video-import-51b86501dbf84cca2829657c",
+      "kind": "video",
+      "title": "Tamil — Iyal 4 — Kalvi",
+      "sourceFile": "tamil/video/VID-20261006-WA0032.mp4",
+      "sha256": "01b9f37d09f9ccac011b5e5f8f579880811ea052b7a2f436d53ae401bfb6a4cc",
+      "sizeBytes": 36380581,
+      "durationSeconds": 410,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/01b9f37d09f9ccac011b5e5f8f579880811ea052b7a2f436d53ae401bfb6a4cc.mp4"
+    },
+    {
+      "id": "video-import-f45a12e84dba76622f5bde09",
+      "kind": "video",
+      "title": "Tamil — Iyal 1 — Exam Guide",
+      "sourceFile": "tamil/video/VID-20261006-WA0035.mp4",
+      "sha256": "3b338e6d2091b97dc2edb38f50d2b3e36af88bd858af2391d201eec8eb975810",
+      "sizeBytes": 46124100,
+      "durationSeconds": 399,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/3b338e6d2091b97dc2edb38f50d2b3e36af88bd858af2391d201eec8eb975810.mp4"
+    },
+    {
+      "id": "video-import-1ea6554f217f8e557b28f920",
+      "kind": "video",
+      "title": "Tamil — Iyal 2 — Perumazhaikkaalam",
+      "sourceFile": "tamil/video/VID-20261006-WA0039.mp4",
+      "sha256": "3b741ef883db8157bf5f9d081d1fd538211b649f369ef8ad79fbd87a74e966af",
+      "sizeBytes": 39646198,
+      "durationSeconds": 448,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/3b741ef883db8157bf5f9d081d1fd538211b649f369ef8ad79fbd87a74e966af.mp4"
+    },
+    {
+      "id": "video-import-361099c043d18c4d0fc8f7b1",
+      "kind": "video",
+      "title": "Tamil — Tamilar Kudumba Murai",
+      "sourceFile": "tamil/video/VID-20261006-WA0040.mp4",
+      "sha256": "9dc0b1187170f476c9bcf55fa07626ca99dd6d4c14fbf832e568c4994b053785",
+      "sizeBytes": 54016963,
+      "durationSeconds": 456,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/9dc0b1187170f476c9bcf55fa07626ca99dd6d4c14fbf832e568c4994b053785.mp4"
+    },
+    {
+      "id": "video-import-15592c8c79e3c32825731134",
+      "kind": "video",
+      "title": "Tamil — Naalvagai Poruththangal",
+      "sourceFile": "tamil/video/VID-20261006-WA0047.mp4",
+      "sha256": "baa866084e0951ab9006d20600dac33e01ebba930ebb51a6e6d4e8759eaf6552",
+      "sizeBytes": 25118838,
+      "durationSeconds": 364,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/baa866084e0951ab9006d20600dac33e01ebba930ebb51a6e6d4e8759eaf6552.mp4"
+    },
+    {
+      "id": "video-import-797805282875983d7bdb515d",
+      "kind": "video",
+      "title": "Tamil — Nedunalvaadai — An Exploration",
+      "sourceFile": "tamil/video/VID-20261006-WA0051.mp4",
+      "sha256": "7ae399f15e06649706179d123a4d4d4f1b07daa54e430b62eda867866cc64c48",
+      "sizeBytes": 43592393,
+      "durationSeconds": 334,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/7ae399f15e06649706179d123a4d4d4f1b07daa54e430b62eda867866cc64c48.mp4"
+    },
+    {
+      "id": "video-import-f183e03fbc421db58697be93",
+      "kind": "video",
+      "title": "Tamil — Virundhinar Illam",
+      "sourceFile": "tamil/video/VID-20261006-WA0052.mp4",
+      "sha256": "4fb8471dc5787b91949ffb9f445c97b8b731ca23677fc812b72babfbdc26fb15",
+      "sizeBytes": 41568182,
+      "durationSeconds": 357,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/4fb8471dc5787b91949ffb9f445c97b8b731ca23677fc812b72babfbdc26fb15.mp4"
+    },
+    {
+      "id": "video-import-47efef3cdb747e83adf6982a",
+      "kind": "video",
+      "title": "Tamil — Anbin Virivu",
+      "sourceFile": "english/video/VID-20261006-WA0056.mp4",
+      "sha256": "b4a99f2abda364eb8d91d44dafd3dd0d0c6b2f9e7cb1751d80384f2aed421823",
+      "sizeBytes": 49250305,
+      "durationSeconds": 408,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/b4a99f2abda364eb8d91d44dafd3dd0d0c6b2f9e7cb1751d80384f2aed421823.mp4"
+    },
+    {
+      "id": "note-import-1abe6a05c6c18e61b52560f9",
+      "kind": "note",
+      "title": "Mathematics — Chapter 1: Applications of Matrices and Determinants — Exercises 1.5–1.8",
+      "sourceFile": "maths/pdf/handwritten_exercises_1.5_to_1.8_complete (2).pdf",
+      "sha256": "f0a0cc43878c8c73642efb3ab93282ee8ec508e212d031228284964ca7d67900",
+      "sizeBytes": 11498504,
+      "pageCount": 40,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/f0a0cc43878c8c73642efb3ab93282ee8ec508e212d031228284964ca7d67900.pdf"
+    },
+    {
+      "id": "note-import-0c814b032896b1395e57e4e7",
+      "kind": "note",
+      "title": "Mathematics — Chapter 3: Theory of Equations — Exercises 3.1–3.7",
+      "sourceFile": "maths/pdf/Chapter_3_Exercises_3.1_to_3.7_Handwritten_Ordered.pdf",
+      "sha256": "b2a38751c90f6ace608a17eed399a429b7caa0a894e46f1d8bcf0aab6662cecc",
+      "sizeBytes": 39534086,
+      "pageCount": 55,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/b2a38751c90f6ace608a17eed399a429b7caa0a894e46f1d8bcf0aab6662cecc.pdf"
+    },
+    {
+      "id": "note-import-8c820fef6eeea607dc43b3d5",
+      "kind": "note",
+      "title": "Mathematics — Chapter 4: Inverse Trigonometric Functions — Handwritten Notes",
+      "sourceFile": "maths/pdf/Inverse_Trigonometric_Functions_Handwritten_Notes.pdf",
+      "sha256": "f3bc3a5026bb8c58c4ebb783d0ba895722944303b155ddd5de69a1673f2125a7",
+      "sizeBytes": 86896,
+      "pageCount": 20,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/f3bc3a5026bb8c58c4ebb783d0ba895722944303b155ddd5de69a1673f2125a7.pdf"
+    },
+    {
+      "id": "note-import-3b4e52a871c2f80753f01d77",
+      "kind": "note",
+      "title": "Mathematics — Chapter 5: Two Dimensional Analytical Geometry — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_5_Handwritten_Notes.pdf",
+      "sha256": "ed3f278e253bbfd38ea596ab073ea5b1fc9a1c7ec6170cb87d6281f31cbb5f0a",
+      "sizeBytes": 1699869,
+      "pageCount": 57,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/ed3f278e253bbfd38ea596ab073ea5b1fc9a1c7ec6170cb87d6281f31cbb5f0a.pdf"
+    },
+    {
+      "id": "note-import-42b936cc4c6549e911274df7",
+      "kind": "note",
+      "title": "Mathematics — Chapter 6: Applications of Vector Algebra — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_6_Handwritten_Notes.pdf",
+      "sha256": "debb4da324b0219881f62bc616890607fe2b3d0ff6d08165bbf9fb9ee91da424",
+      "sizeBytes": 1054515,
+      "pageCount": 47,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/debb4da324b0219881f62bc616890607fe2b3d0ff6d08165bbf9fb9ee91da424.pdf"
+    },
+    {
+      "id": "note-import-e8f1a59cac0a52661a39c5ed",
+      "kind": "note",
+      "title": "Mathematics — Chapter 7: Applications of Differential Calculus — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_7_Handwritten_Notes.pdf",
+      "sha256": "344b8ea7e3405f691c7c1ae907d953d4e6eb85620e9699d7b35bd8493074d585",
+      "sizeBytes": 22784215,
+      "pageCount": 60,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/344b8ea7e3405f691c7c1ae907d953d4e6eb85620e9699d7b35bd8493074d585.pdf"
+    },
+    {
+      "id": "note-import-5e76528548f7c65051b6bc82",
+      "kind": "note",
+      "title": "Mathematics — Chapter 8: Differentials and Partial Derivatives — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_8_Handwritten_Notes.pdf",
+      "sha256": "5c2f0ff6cd80814dbdbab7feabe47657516649d434ae12df1d21cc65fee59a35",
+      "sizeBytes": 5699919,
+      "pageCount": 20,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/5c2f0ff6cd80814dbdbab7feabe47657516649d434ae12df1d21cc65fee59a35.pdf"
+    },
+    {
+      "id": "note-import-8263ce50fbb14b907a243bb1",
+      "kind": "note",
+      "title": "Mathematics — Chapter 9: Applications of Integration — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_9_Handwritten_Notes.pdf",
+      "sha256": "cae551bdddcd6929876e38984aa84b9882f0d570014875bbfa475f79ad715444",
+      "sizeBytes": 10714303,
+      "pageCount": 22,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/cae551bdddcd6929876e38984aa84b9882f0d570014875bbfa475f79ad715444.pdf"
+    },
+    {
+      "id": "note-import-05f42bac2030ba253eac548a",
+      "kind": "note",
+      "title": "Mathematics — Chapter 10: Ordinary Differential Equations — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_10_Handwritten_Notes.pdf",
+      "sha256": "cfb80af1ed14bd8069fa86cd214fe3261e5508a55c72413534de0baf15ef8602",
+      "sizeBytes": 13350859,
+      "pageCount": 25,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/cfb80af1ed14bd8069fa86cd214fe3261e5508a55c72413534de0baf15ef8602.pdf"
+    },
+    {
+      "id": "note-import-70f9e1db5d56550c6e7a2fcc",
+      "kind": "note",
+      "title": "Mathematics — Chapter 11: Probability Distributions — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_11_Handwritten_Notes.pdf",
+      "sha256": "27bacf8acf880c94bd2c3d6205d030edaaf91ecfc70cb31d21d8fcab1ddf7c0c",
+      "sizeBytes": 4334466,
+      "pageCount": 24,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/27bacf8acf880c94bd2c3d6205d030edaaf91ecfc70cb31d21d8fcab1ddf7c0c.pdf"
+    },
+    {
+      "id": "note-import-53625aa18ee734c414c1c6aa",
+      "kind": "note",
+      "title": "Mathematics — Chapter 12: Discrete Mathematics — Handwritten Notes",
+      "sourceFile": "maths/pdf/Chapter_12_Handwritten_Notes.pdf",
+      "sha256": "271d9f45d383d96db607ef9c982075769d2e374be1aa871913c7a93b5f8ac156",
+      "sizeBytes": 4309267,
+      "pageCount": 26,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/271d9f45d383d96db607ef9c982075769d2e374be1aa871913c7a93b5f8ac156.pdf"
+    },
+    {
+      "id": "note-import-f06c04831c1f791dc6bf63c8",
+      "kind": "note",
+      "title": "Bio-Botany — Principles and Processes of Biotechnology — Questions & Answers",
+      "sourceFile": "bio/bio/pdf/12th_Bio_Botany_Combined_Ordered_Questions.pdf",
+      "sha256": "d2b5787ced10b9c52e22e0637e5efb7a39f999abb478aecd9ccfb11fe45adc89",
+      "sizeBytes": 29921504,
+      "pageCount": 9,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/d2b5787ced10b9c52e22e0637e5efb7a39f999abb478aecd9ccfb11fe45adc89.pdf"
+    },
+    {
+      "id": "note-import-602e2e90cbaf38c7e6d9c777",
+      "kind": "note",
+      "title": "Bio-Botany — Plant Tissue Culture — Questions & Answers",
+      "sourceFile": "bio/bio/pdf/12th_Bio_Botany_Plant_Tissue_Culture_Combined_Ordered.pdf",
+      "sha256": "9ae9366328608efb8f8f354f77108e9507217d936c5b49fc7aaee4ddc31417d7",
+      "sizeBytes": 30237563,
+      "pageCount": 9,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/notes/imported/9ae9366328608efb8f8f354f77108e9507217d936c5b49fc7aaee4ddc31417d7.pdf"
+    },
+    {
+      "id": "video-import-04f59bc6c5c10c3bb59e5def",
+      "kind": "video",
+      "title": "Tamil — Ilantamizhe!",
+      "sourceFile": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.04.mp4",
+      "sha256": "ad9f7287b19758600def39bcc970085a5d83c017c42338e75235053d93a170ed",
+      "sizeBytes": 38939548,
+      "durationSeconds": 293,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/videos/imported/ad9f7287b19758600def39bcc970085a5d83c017c42338e75235053d93a170ed.mp4"
+    },
+    {
+      "id": "video-import-001bbddc038ae02e3a2f26b3",
+      "kind": "video",
+      "title": "Tamil — Thanner Ilatha Tamil",
+      "sourceFile": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.04 (1).mp4",
+      "sha256": "e4c3b5c45ac8e937c3b070baf006441c89945dbc26465cb11a758e21b191ed75",
+      "sizeBytes": 38669858,
+      "durationSeconds": 301,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/videos/imported/e4c3b5c45ac8e937c3b070baf006441c89945dbc26465cb11a758e21b191ed75.mp4"
+    },
+    {
+      "id": "video-import-0e36381b8f19c9fd857fad65",
+      "kind": "video",
+      "title": "Tamil — Tamilmozhiyin Nadai Azhagiyal",
+      "sourceFile": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05.mp4",
+      "sha256": "0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2",
+      "sizeBytes": 48133640,
+      "durationSeconds": 373,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/videos/imported/0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2.mp4"
+    },
+    {
+      "id": "video-import-c2e2e13591a53d00c9a2c594",
+      "kind": "video",
+      "title": "Tamil — Thambi Nellaiyapparukku",
+      "sourceFile": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05 (1).mp4",
+      "sha256": "83253f5da10ccd5c708dc73baa059379131eeb90f1072bebc21c9585221d7a0f",
+      "sizeBytes": 40486427,
+      "durationSeconds": 311,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/videos/imported/83253f5da10ccd5c708dc73baa059379131eeb90f1072bebc21c9585221d7a0f.mp4"
+    },
+    {
+      "id": "video-import-5b07d35e0415ca1668016b14",
+      "kind": "video",
+      "title": "Tamil — Tamizhai Ezhuthuvom",
+      "sourceFile": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.08.mp4",
+      "sha256": "fa12a2b1fc844718a6247a947af660426a27648caee51e1068834d30f12c59fe",
+      "sizeBytes": 40250365,
+      "durationSeconds": 487,
+      "url": "https://rqsymozgslwwupxmyido.supabase.co/storage/v1/object/public/learning-materials/videos/imported/fa12a2b1fc844718a6247a947af660426a27648caee51e1068834d30f12c59fe.mp4"
+    }
+  ]
+}

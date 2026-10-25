@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html lang="ta" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12ஆம் வகுப்பு பொதுத் தமிழ் - முழுமையான ஒரு மதிப்பெண் வினா வங்கி (2025-2026)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        tamil: ['"Noto Sans Tamil"', '"Hind Madurai"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans Tamil', 'Hind Madurai', sans-serif;
+        }
+        .option-btn {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .option-btn:hover:not(:disabled) {
+            transform: translateX(4px);
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+
+    <!-- Top Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <!-- Brand Title -->
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-indigo-500/20">
+                        ழ
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-lg sm:text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">
+                                12ஆம் வகுப்பு பொதுத் தமிழ்
+                            </h1>
+                            <span class="hidden sm:inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 border border-amber-200 dark:border-amber-700">
+                                2025-2026 புதிய பதிப்பு
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">
+                            புத்தகப் பின்பகுதி (Book Back) & உள்பகுதி (Book Inside) ஒரு மதிப்பெண் வினா வங்கி
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mode Switcher & Actions -->
+                <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+                    <div class="inline-flex rounded-xl bg-slate-100 dark:bg-slate-800 p-1 border border-slate-200 dark:border-slate-700">
+                        <button id="mode-practice" onclick="switchMode('practice')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm">
+                            <i class="fa-solid fa-book-open-reader mr-1.5"></i>பயிற்சி முறை
+                        </button>
+                        <button id="mode-exam" onclick="switchMode('exam')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900">
+                            <i class="fa-solid fa-stopwatch mr-1.5"></i>தேர்வு முறை
+                        </button>
+                        <button id="mode-study" onclick="switchMode('study')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900">
+                            <i class="fa-solid fa-list-check mr-1.5"></i>கையேடு (விடைகளுடன்)
+                        </button>
+                    </div>
+
+                    <!-- Bookmark Filter Button -->
+                    <button id="btn-bookmarks" onclick="toggleBookmarkFilter()" class="px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 text-xs sm:text-sm font-medium flex items-center gap-1.5 transition" title="நட்சத்திரமிட்ட வினாக்கள்">
+                        <i class="fa-regular fa-star text-amber-500" id="bookmark-icon"></i>
+                        <span id="bookmark-count" class="font-bold">0</span>
+                    </button>
+
+                    <!-- Print Button -->
+                    <button onclick="window.print()" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 transition" title="அச்சிடுக / PDF ஆகச் சேமிக்க">
+                        <i class="fa-solid fa-print"></i>
+                    </button>
+
+                    <!-- Dark Mode Toggle -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 transition" title="நிறம் மாற்றுக">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Exam Mode Sticky Bar -->
+    <div id="exam-bar" class="hidden sticky top-[65px] z-30 bg-indigo-900 text-white shadow-lg border-b border-indigo-700 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-amber-400 animate-pulse"></i>
+                    <span class="text-xs uppercase tracking-wider text-indigo-200">நேரம்:</span>
+                    <span id="exam-timer" class="font-mono text-lg font-bold text-amber-300">00:00</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-pen-clip text-emerald-400"></i>
+                    <span class="text-xs text-indigo-200">பதிலளித்தவை:</span>
+                    <span id="exam-answered-count" class="font-bold text-sm bg-indigo-800 px-2.5 py-0.5 rounded-full border border-indigo-600">0 / 0</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <button onclick="resetCurrentQuiz()" class="px-3 py-1.5 rounded-lg bg-indigo-800 hover:bg-indigo-700 text-xs font-semibold transition border border-indigo-600">
+                    <i class="fa-solid fa-rotate-left mr-1"></i>மீளமை
+                </button>
+                <button onclick="submitExam()" class="px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold shadow-md transition">
+                    <i class="fa-solid fa-check-double mr-1.5"></i>தேர்வைச் சமர்ப்பி (Submit)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- Statistics & Filter Control Panel -->
+        <section class="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-800 mb-6 no-print">
+            <!-- Stats Cards Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                <div class="p-3.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">மொத்த வினாக்கள்</p>
+                        <p id="stat-total" class="text-xl font-extrabold text-indigo-700 dark:text-indigo-300">0</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">சரியானவை</p>
+                        <p id="stat-correct" class="text-xl font-extrabold text-emerald-700 dark:text-emerald-300">0</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-100 dark:border-rose-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-rose-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">தவறானவை</p>
+                        <p id="stat-wrong" class="text-xl font-extrabold text-rose-700 dark:text-rose-300">0</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-amber-50/70 dark:bg-amber-950/40 border border-amber-100 dark:border-amber-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">மதிப்பெண் சதவீதம்</p>
+                        <p id="stat-score" class="text-xl font-extrabold text-amber-700 dark:text-amber-300">0%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter (இயல்) Pills -->
+            <div class="mb-4">
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-2">
+                    <i class="fa-solid fa-bookmark mr-1"></i>இயல் வாரியாகத் தேர்ந்தெடுக்க (Select Chapter):
+                </label>
+                <div class="flex flex-wrap gap-2" id="chapter-filters">
+                    <button onclick="setChapterFilter('all')" data-chapter="all" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-600 text-white shadow-sm transition">
+                        அனைத்து இயல்கள்
+                    </button>
+                    <button onclick="setChapterFilter('இயல் 1')" data-chapter="இயல் 1" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        இயல் 1: உயிரினும் ஓம்பப்படும்
+                    </button>
+                    <button onclick="setChapterFilter('இயல் 2')" data-chapter="இயல் 2" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        இயல் 2: பெய்யெனப் பெய்யும் மழை
+                    </button>
+                    <button onclick="setChapterFilter('இயல் 3')" data-chapter="இயல் 3" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        இயல் 3: சுற்றத்தார் கண்ணே உள
+                    </button>
+                    <button onclick="setChapterFilter('இயல் 4')" data-chapter="இயல் 4" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        இயல் 4: செல்வத்துள் எல்லாம் தலை
+                    </button>
+                    <button onclick="setChapterFilter('இயல் 5')" data-chapter="இயல் 5" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        இயல் 5: அருமை உடைய செயல்
+                    </button>
+                    <button onclick="setChapterFilter('இயல் 6')" data-chapter="இயல் 6" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        இயல் 6: எல்லா உயிரும் தொழும்
+                    </button>
+                    <button onclick="setChapterFilter('திருக்குறள்')" data-chapter="திருக்குறள்" class="chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition">
+                        திருக்குறள் சிறப்புப் பகுதி
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category, Sub-type & Search Row -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 pt-3 border-t border-slate-100 dark:border-slate-800">
+                <!-- Category Filter (Book Back vs Inside) -->
+                <div class="md:col-span-5 flex flex-wrap gap-1.5">
+                    <button onclick="setCategoryFilter('all')" data-cat="all" class="cat-pill flex-1 py-2 px-3 rounded-xl text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 transition text-center">
+                        அனைத்தும் (All)
+                    </button>
+                    <button onclick="setCategoryFilter('புத்தகப் பின்பகுதி')" data-cat="புத்தகப் பின்பகுதி" class="cat-pill flex-1 py-2 px-3 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition text-center">
+                        புத்தகப் பின்பகுதி (Book Back)
+                    </button>
+                    <button onclick="setCategoryFilter('புத்தக உள்பகுதி')" data-cat="புத்தக உள்பகுதி" class="cat-pill flex-1 py-2 px-3 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition text-center">
+                        புத்தக உள்பகுதி (Book Inside)
+                    </button>
+                </div>
+
+                <!-- Search Input -->
+                <div class="md:col-span-4 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                    <input type="text" id="search-input" oninput="handleSearch()" placeholder="வினாக்கள், நூல், ஆசிரியர் பெயரைத் தேடுக..." class="w-full pl-9 pr-8 py-2 rounded-xl text-xs sm:text-sm bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Action Buttons (Shuffle, Show All Answers, Reset) -->
+                <div class="md:col-span-3 flex items-center justify-end gap-2">
+                    <button onclick="shuffleQuestions()" class="px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold transition flex items-center gap-1.5" title="வினாக்களை வரிசை மாற்றுக">
+                        <i class="fa-solid fa-shuffle text-indigo-500"></i>கலக்குக
+                    </button>
+                    <button onclick="resetCurrentQuiz()" class="px-3 py-2 rounded-xl bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 text-rose-700 dark:text-rose-300 text-xs font-semibold transition flex items-center gap-1.5" title="பயிற்சியை மீளமைக்க">
+                        <i class="fa-solid fa-rotate-right"></i>மீளமை
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Result Summary Modal / Banner (Hidden by default) -->
+        <section id="exam-result-banner" class="hidden mb-6 bg-gradient-to-r from-indigo-900 via-purple-900 to-slate-900 text-white rounded-2xl p-6 shadow-xl border border-indigo-500/30 no-print">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                        தேர்வு முடிவு அறிக்கை (Exam Report)
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-2" id="result-headline">சிறப்பான முயற்சி!</h2>
+                    <p class="text-indigo-200 text-sm mt-1" id="result-subtext">கீழே உள்ள வினாக்களில் உங்களின் சரியான மற்றும் தவறான விடைகளைச் சரிபார்க்கலாம்.</p>
+                </div>
+                <div class="flex items-center gap-6 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/15">
+                    <div class="text-center">
+                        <p class="text-xs text-indigo-200">பெற்ற மதிப்பெண்</p>
+                        <p class="text-3xl font-black text-emerald-400" id="result-score-fraction">0 / 0</p>
+                    </div>
+                    <div class="h-10 w-px bg-white/20"></div>
+                    <div class="text-center">
+                        <p class="text-xs text-indigo-200">சதவீதம்</p>
+                        <p class="text-3xl font-black text-amber-300" id="result-percentage">0%</p>
+                    </div>
+                    <div class="h-10 w-px bg-white/20"></div>
+                    <div class="text-center">
+                        <p class="text-xs text-indigo-200">எடுத்துக்கொண்ட நேரம்</p>
+                        <p class="text-xl font-mono font-bold text-white" id="result-time-taken">00:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questions List Container -->
+        <div id="questions-container" class="space-y-4">
+            <!-- Dynamically populated by JS -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden text-center py-16 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <div class="w-16 h-16 mx-auto rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 text-2xl mb-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-700 dark:text-slate-300">வினாக்கள் எதுவும் கிடைக்கவில்லை</h3>
+            <p class="text-sm text-slate-500 mt-1">தேடல் சொல்லை மாற்றியோ அல்லது வேறு இயலைத் தேர்ந்தெடுத்தோ முயற்சிக்கவும்.</p>
+            <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-xl bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 transition">
+                அனைத்து வினாக்களையும் காட்டுக
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-6 mt-12 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+            <p>தமிழ்நாடு அரசு 12ஆம் வகுப்பு பொதுத் தமிழ் பாடநூல் (2025-2026 பதிப்பு) அடிப்படையில் உருவாக்கப்பட்டது.</p>
+            <p class="font-medium text-indigo-600 dark:text-indigo-400">இயல் 1 முதல் 6 வரை & திருக்குறள் (புத்தக உள்பகுதி + பின்பகுதி வினாக்கள்)</p>
+        </div>
+    </footer>
+
+    <!-- Complete Question Bank & Application Script -->
+    <script>
+        const QUESTION_BANK = [
+            // =========================================================================
+            // இயல் 1: உயிரினும் ஓம்பப்படும் (புத்தகப் பின்பகுதி - நம்மை அளப்போம் & இலக்கணத் தேர்ச்சிகொள்)
+            // =========================================================================
+            {
+                id: 1,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 17)",
+                q: "ச.த.சற்குணரின் உரை ஏற்படுத்திய ஆர்வத்தினால் மயிலை சீனி. வேங்கடசாமி எழுதிய நூல் எது?",
+                options: [
+                    "அ) பௌத்தமும் தமிழும்",
+                    "ஆ) இசுலாமும் தமிழும்",
+                    "இ) சமணமும் தமிழும்",
+                    "ஈ) கிறித்துவமும் தமிழும்"
+                ],
+                ans: 3,
+                exp: "1934இல் தெ.பொ.மீனாட்சி சுந்தரனார் நடத்திய தமிழ் ஆராய்ச்சி மாநாட்டில் ச.த.சற்குணர் ஆற்றிய உரையைக் கேட்டு மயிலை சீனி. வேங்கடசாமி எழுதிய முதல் நூல் 'கிறித்துவமும் தமிழும்'."
+            },
+            {
+                id: 2,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 17)",
+                q: "“மீண்டுமந்தப் பழமைநலம் புதுக்குதற்கு” - கவிஞர் சிற்பி பாலசுப்பிரமணியம் குறிப்பிடும் பழமைநலம் என்பது:\n1) பாண்டியரின் சங்கத்தில் கொலுவிருந்தது\n2) பொதிகையில் தோன்றியது\n3) வள்ளல்களைத் தந்தது",
+                options: [
+                    "அ) 1 மட்டும் சரி",
+                    "ஆ) 1, 2 இரண்டும் சரி",
+                    "இ) 3 மட்டும் சரி",
+                    "ஈ) 1, 3 இரண்டும் சரி"
+                ],
+                ans: 3,
+                exp: "பாண்டியரின் சங்கத்தில் கொலுவிருந்தாய்! பாரிமுதல் வள்ளல்களை ஈன்று தந்தாய்! மீண்டும் அந்தப் பழமைநலம் புதுக்குதற்கு (1 மற்றும் 3 சரி)."
+            },
+            {
+                id: 3,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 17)",
+                q: "“மின்னேர் தனியாழி வெங்கதிரொன்று ஏனையது\nதன்னேர் இலாத தமிழ்!” - இவ்வடிகளில் பயின்று வந்துள்ள தொடைநயங்களைத் தேர்க.",
+                options: [
+                    "அ) அடிமோனை, அடிஎதுகை",
+                    "ஆ) சீர்மோனை, சீர்எதுகை",
+                    "இ) அடிஎதுகை, சீர்மோனை",
+                    "ஈ) சீர்எதுகை, அடிமோனை"
+                ],
+                ans: 2,
+                exp: "மின்னேர் - தன்னேர் (இரண்டாம் எழுத்து 'ன்' ஒன்றி வந்ததால் அடிஎதுகை); தனியாழி - தன்னேர் - தமிழ் (முதல் எழுத்து 'த' சீர்களில் ஒன்றி வந்ததால் சீர்மோனை)."
+            },
+            {
+                id: 4,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 17)",
+                q: "“செம்பரிதி...” எனத் தொடங்கும் 'இளந்தமிழே!' பாடல் இடம்பெற்றுள்ள கவிதைத் தொகுப்பு எது?",
+                options: [
+                    "அ) ஒளிப்பறவை",
+                    "ஆ) நிலவுப்பூ",
+                    "இ) சர்ப்பயாகம்",
+                    "ஈ) சூரியநிழல்"
+                ],
+                ans: 1,
+                exp: "'இளந்தமிழே!' என்னும் கவிதை சிற்பி பாலசுப்பிரமணியத்தின் 'நிலவுப்பூ' என்னும் கவிதைத் தொகுப்பில் இடம்பெற்றுள்ளது."
+            },
+            {
+                id: 5,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 17)",
+                q: "மயிலை சீனி. வேங்கடசாமி 'செந்தமிழ்ச் செல்வி' இதழில் எழுதிய சொல்லாய்வுக் கட்டுரைகளின் தொகுப்பு எது?",
+                options: [
+                    "அ) மத்த விலாசம்",
+                    "ஆ) தமிழ்நாட்டு வரலாறு",
+                    "இ) அஞ்சிறைத் தும்பி",
+                    "ஈ) திசை எட்டும்"
+                ],
+                ans: 2,
+                exp: "'செந்தமிழ்ச் செல்வி' இதழில் மயிலை சீனி. வேங்கடசாமி எழுதிய சொல்லாய்வுக் கட்டுரைகள் 'அஞ்சிறைத் தும்பி' என்ற தொகுப்பாக வெளியிடப்பட்டது."
+            },
+            {
+                id: 6,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 16)",
+                q: "பிழையான தொடரைக் கண்டறிக.",
+                options: [
+                    "அ) காளைகளைப் பூட்டி வயலை உழுதனர்.",
+                    "ஆ) மலைமீது ஏறிக் கல்வெட்டுகளைக் கண்டறிந்தனர்.",
+                    "இ) காளையில் பூத்த மல்லிகை மனம் வீசியது.",
+                    "ஈ) நெற்பயிர்கள் மழைநீரில் மூழ்கின."
+                ],
+                ans: 2,
+                exp: "'காலையில் பூத்த மல்லிகை மணம் வீசியது' என்பதே சரி. 'காளையில்', 'மனம்' என மயங்கொலிப் பிழையுடன் உள்ளதால் (இ) பிழையான தொடராகும்."
+            },
+            {
+                id: 7,
+                chapter: "இயல் 1",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 16)",
+                q: "பேச்சுத்தமிழில் அமைந்த தொடரைத் தெரிவு செய்க.",
+                options: [
+                    "அ) அவருக்கு நல்லது கெட்டது நல்லாத் தெரியும்.",
+                    "ஆ) புத்தகக் கண்காட்சி நடைபெறுகிறது.",
+                    "இ) வறட்சி எல்லா இடங்களையும் பாதித்துள்ளது.",
+                    "ஈ) மயில்கள் விறலியரைப் போல் ஆடுகின்றன."
+                ],
+                ans: 0,
+                exp: "'நல்லாத் தெரியும்' என்பது பேச்சுத்தமிழ்ச் சொல்லாகும் (எழுத்துத் தமிழில் 'நன்றாகத் தெரியும்')."
+            },
+
+            // =========================================================================
+            // இயல் 1: புத்தக உள்பகுதி வினாக்கள் (Book Inside)
+            // =========================================================================
+            {
+                id: 8,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தன்னேர் இலாத தமிழ் (செய்யுள்)",
+                q: "“ஓங்கலிடை வந்து உயர்ந்தோர் தொழவிளங்கி” எனத் தொடங்கும் தண்டியலங்கார உரை மேற்கோள் பாடலில் பயின்று வந்துள்ள அணி யாது?",
+                options: [
+                    "அ) உவமை அணி",
+                    "ஆ) பொருள் வேற்றுமை அணி",
+                    "இ) நிரல்நிறை அணி",
+                    "ஈ) ஏகதேச உருவக அணி"
+                ],
+                ans: 1,
+                exp: "தமிழுக்கும் கதிரவனுக்கும் இடையே உள்ள ஒற்றுமையை முதலில் கூறி, பின் தமிழ் தன்னேரிலாதது என வேறுபடுத்திக் காட்டுவதால் இது 'பொருள் வேற்றுமை அணி' ஆகும்."
+            },
+            {
+                id: 9,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தன்னேர் இலாத தமிழ் (நூல்வெளி)",
+                q: "தண்டியலங்காரம் எந்த வடமொழி இலக்கண நூலைத் தழுவி எழுதப்பட்டது?",
+                options: [
+                    "அ) காவியதர்சம்",
+                    "ஆ) குவலயானந்தம்",
+                    "இ) தர்க்க சங்கிரகம்",
+                    "ஈ) அர்த்தசாஸ்திரம்"
+                ],
+                ans: 0,
+                exp: "காவியதர்சம் என்னும் வடமொழி இலக்கண நூலைத் தழுவி எழுதப்பட்ட நூல் தண்டியலங்காரம். இதன் ஆசிரியர் கி.பி. 12ஆம் நூற்றாண்டைச் சார்ந்த தண்டி."
+            },
+            {
+                id: 10,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தெரியுமா? (பக். 3)",
+                q: "பின்வருவனவற்றுள் அணியிலக்கணத்தை மட்டுமே கூறும் இலக்கண நூல்கள் எவை?",
+                options: [
+                    "அ) தொல்காப்பியம், வீரசோழியம், முத்துவீரியம்",
+                    "ஆ) தண்டியலங்காரம், மாறனலங்காரம், குவலயானந்தம்",
+                    "இ) இலக்கண விளக்கம், தொன்னூல் விளக்கம், நன்னூல்",
+                    "ஈ) வீரசோழியம், தண்டியலங்காரம், தொல்காப்பியம்"
+                ],
+                ans: 1,
+                exp: "அணியிலக்கணத்தை மட்டுமே கூறும் நூல்கள்: தண்டியலங்காரம், மாறனலங்காரம், குவலயானந்தம். (ஐந்திலக்கணத்துடன் அணியிலக்கணத்தையும் கூறுபவை: தொல்காப்பியம், வீரசோழியம், இலக்கண விளக்கம், தொன்னூல் விளக்கம், முத்துவீரியம்)."
+            },
+            {
+                id: 11,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "இலக்கணக்குறிப்பு & புணர்ச்சி (பக். 3)",
+                q: "'உயர்ந்தோர்' மற்றும் 'இலாத' ஆகிய சொற்களின் இலக்கணக் குறிப்பு முறையே:",
+                options: [
+                    "அ) பண்புத்தொகை, வினையெச்சம்",
+                    "ஆ) வினையாலணையும் பெயர், இடைக்குறை",
+                    "இ) தொழிற்பெயர், கடைக்குறை",
+                    "ஈ) வினைமுற்று, உரிச்சொல் தொடர்"
+                ],
+                ans: 1,
+                exp: "உயர்ந்தோர் - வினையாலணையும் பெயர்; இலாத - இல்லாத என்பதன் இடைக்குறை; வெங்கதிர் - பண்புத்தொகை."
+            },
+            {
+                id: 12,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "உரைநடை (மயிலை சீனி. வேங்கடசாமி)",
+                q: "கவின்கலைகள் குறித்துத் தமிழில் வெளிவந்த முழுமையான முதல் நூலும், தமிழக அரசின் முதற்பரிசைப் பெற்றதுமான மயிலை சீனி. வேங்கடசாமியின் நூல் எது?",
+                options: [
+                    "அ) இறைவன் ஆடிய எழுவகைத் தாண்டவம்",
+                    "ஆ) தமிழர் வளர்த்த அழகுக்கலைகள்",
+                    "இ) இசைவாணர் கதைகள்",
+                    "ஈ) மறைந்துபோன தமிழ் நூல்கள்"
+                ],
+                ans: 1,
+                exp: "'தமிழர் வளர்த்த அழகுக்கலைகள்' கவின்கலைகள் குறித்துத் தமிழில் வெளிவந்த முழுமையான முதல் நூல் ஆகும்."
+            },
+            {
+                id: 13,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "உரைநடை (மயிலை சீனி. வேங்கடசாமி)",
+                q: "மகேந்திரவர்மன் இயற்றிய 'மத்த விலாசம்' என்ற நாடக நூலை மயிலை சீனி. வேங்கடசாமி எந்த மொழி வழியாகத் தமிழாக்கம் செய்தார்?",
+                options: [
+                    "அ) மலையாளம்",
+                    "ஆ) பாலி",
+                    "இ) ஆங்கிலம்",
+                    "ஈ) கன்னடம்"
+                ],
+                ans: 2,
+                exp: "மகேந்திரவர்மன் இயற்றிய 'மத்த விலாசம்' என்ற நாடக நூலை ஆங்கிலம் வழியாகத் தமிழாக்கம் செய்தார்."
+            },
+            {
+                id: 14,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "உரைநடை (மயிலை சீனி. வேங்கடசாமி)",
+                q: "மயிலை சீனி. வேங்கடசாமிக்கு 'தமிழ்ப் பேரவைச் செம்மல்' என்ற விருதினை வழங்கிய பல்கலைக்கழகம் எது?",
+                options: [
+                    "அ) சென்னைப் பல்கலைக்கழகம்",
+                    "ஆ) அண்ணாமலைப் பல்கலைக்கழகம்",
+                    "இ) மதுரை காமராசர் பல்கலைக்கழகம்",
+                    "ஈ) பாரதியார் பல்கலைக்கழகம்"
+                ],
+                ans: 2,
+                exp: "மதுரை காமராசர் பல்கலைக்கழகம் 'தமிழ்ப் பேரவைச் செம்மல்' என்ற விருதினை அளித்தது. அறிஞர்கள் மணிவிழா எடுத்து 'ஆராய்ச்சிப் பேரறிஞர்' பட்டம் வழங்கினர்."
+            },
+            {
+                id: 15,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தெரிந்து தெளிவோம் (பக். 7)",
+                q: "சங்ககாலப் பசும்பூண் பாண்டியன் தன் கொடியில் எந்தச் சின்னத்தைக் கொண்டிருந்தான் என்ற அகநானூற்றுச் செய்தியை (162) மயிலை சீனி. வேங்கடசாமி வெளிப்படுத்தினார்?",
+                options: [
+                    "அ) மீன் சின்னம்",
+                    "ஆ) புலிச் சின்னம்",
+                    "இ) யானைச் சின்னம்",
+                    "ஈ) வில் சின்னம்"
+                ],
+                ans: 2,
+                exp: "சங்ககாலப் பசும்பூண் பாண்டியன் தன் கொடியில் யானைச் சின்னத்தைக் கொண்டிருந்தான் என்ற செய்தி அகநானூற்றில் (162) இருப்பதை முதன்முதலில் வெளிப்படுத்தினார்."
+            },
+            {
+                id: 16,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "இளந்தமிழே! (நூல்வெளி)",
+                q: "சிற்பி பாலசுப்பிரமணியம் எந்தக் கவிதை நூலிற்காகவும் மொழிபெயர்ப்புக்காகவும் இருமுறை சாகித்திய அகாதெமி விருது பெற்றார்?",
+                options: [
+                    "அ) ஒளிப்பறவை",
+                    "ஆ) ஒரு கிராமத்து நதி",
+                    "இ) பூஜ்யங்களின் சங்கிலி",
+                    "ஈ) மௌன மயக்கங்கள்"
+                ],
+                ans: 1,
+                exp: "மொழிபெயர்ப்புக்காகவும் 'ஒரு கிராமத்து நதி' என்னும் கவிதை நூலிற்காகவும் சிற்பி பாலசுப்பிரமணியம் இருமுறை சாகித்திய அகாதெமி விருது பெற்றார்."
+            },
+            {
+                id: 17,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தம்பி நெல்லையப்பருக்கு (விரிவானம்)",
+                q: "எட்டயபுரம் மன்னர்களின் பரம்பரை வரலாறு பற்றி 1879இல் 'வம்சமணி தீபிகை' என்னும் நூலை வெளியிட்டவர் யார்?",
+                options: [
+                    "அ) இளசை மணி",
+                    "ஆ) கவிகேசரி சாமி தீட்சிதர்",
+                    "இ) ரா.அ. பத்மநாபன்",
+                    "ஈ) பரலி சு. நெல்லையப்பர்"
+                ],
+                ans: 1,
+                exp: "கவிகேசரி சாமி தீட்சிதர் 1879இல் 'வம்சமணி தீபிகை' நூலை வெளியிட்டார். அதன் மூலவடிவம் 2008இல் இளசை மணி என்பவரால் மறுபதிப்பாக வெளியிடப்பட்டது."
+            },
+            {
+                id: 18,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தம்பி நெல்லையப்பருக்கு (தெரியுமா?)",
+                q: "வ.உ.சிதம்பரனாரின் வாழ்க்கை வரலாற்றையும், 'நெல்லைத்தென்றல்', 'பாரதி வாழ்த்து', 'உய்யும் வழி' ஆகிய கவிதை நூல்களையும் எழுதியவர் யார்?",
+                options: [
+                    "அ) சுப்பிரமணிய சிவா",
+                    "ஆ) பரலி சு. நெல்லையப்பர்",
+                    "இ) வ.சுப. மாணிக்கம்",
+                    "ஈ) நாமக்கல் கவிஞர்"
+                ],
+                ans: 1,
+                exp: "பாரதியாரால் அருமைத் தம்பியாகக் கருதப்பட்ட பரலி சு. நெல்லையப்பர் இந்நூல்களை எழுதியுள்ளார்."
+            },
+            {
+                id: 19,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தமிழாய் எழுதுவோம் (இலக்கணம்)",
+                q: "தமிழில் உள்ள 216 உயிர்மெய் எழுத்துகளில் உயிர்மெய்க் குறில் மற்றும் உயிர்மெய் நெடில் எழுத்துகளின் எண்ணிக்கை முறையே:",
+                options: [
+                    "அ) 100 குறில், 116 நெடில்",
+                    "ஆ) 90 குறில், 126 நெடில்",
+                    "இ) 126 குறில், 90 நெடில்",
+                    "ஈ) 108 குறில், 108 நெடில்"
+                ],
+                ans: 1,
+                exp: "உயிர்மெய் எழுத்துகள் 216 (உயிர்மெய்க் குறில் 90, உயிர்மெய் நெடில் 126)."
+            },
+            {
+                id: 20,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தமிழாய் எழுதுவோம் (இலக்கணம்)",
+                q: "ந, ண, ன, ற, ர, ல, ள, ழ ஆகிய எட்டு மயங்கொலி எழுத்துகளில் சொல்லின் தொடக்கமாக வரும் ஒரே எழுத்து மற்றும் சொல்லின் இறுதியில் வராத மெய் எழுத்து முறையே:",
+                options: [
+                    "அ) நகரம், றகர மெய்",
+                    "ஆ) னகரம், ரகர மெய்",
+                    "இ) லகரம், ழகர மெய்",
+                    "ஈ) நகரம், னகர மெய்"
+                ],
+                ans: 0,
+                exp: "இவ்வெட்டு எழுத்துகளில் 'ந'கரம் மட்டுமே சொல்லின் தொடக்கமாக வரும். 'ற'கர மெய் (ற்) சொல்லின் இறுதியில் வராது."
+            },
+            {
+                id: 21,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "தமிழாய் எழுதுவோம் (இலக்கணம்)",
+                q: "தமிழில் இயல்பாக ஈரொற்றாய் (இரண்டு மெய்யெழுத்துகள் இணைந்து) வரும் எழுத்துகள் எவை?",
+                options: [
+                    "அ) க், ச், த்",
+                    "ஆ) ட், ற், ல்",
+                    "இ) ய், ர், ழ்",
+                    "ஈ) ங், ஞ், ண்"
+                ],
+                ans: 2,
+                exp: "ய், ர், ழ் என்னும் ஒற்றுகள் மட்டுமே ஈரொற்றாய் வரும் (எ.கா. பாய்ச்சு, பார்க்கும், வாழ்க்கை)."
+            },
+            {
+                id: 22,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "சான்றோர் சித்திரம் (பக். 18)",
+                q: "‘எங்கும் தமிழ் எதிலும் தமிழ்’ என்ற கொள்கையில் ‘தமிழ்வழிக் கல்வி இயக்கம்’ என்னும் அமைப்பை நிறுவியவரும், 'தமிழ்க்காதல்', 'வள்ளுவம்', 'சங்கநெறி' ஆகிய நூல்களை இயற்றியவருமான அறிஞர் யார்?",
+                options: [
+                    "அ) தெ.பொ. மீனாட்சி சுந்தரனார்",
+                    "ஆ) வ.சுப. மாணிக்கம்",
+                    "இ) மு. வரதராசனார்",
+                    "ஈ) மறைமலையடிகள்"
+                ],
+                ans: 1,
+                exp: "மதுரை காமராசர் பல்கலைக்கழகத் துணைவேந்தராகப் பணியாற்றிய மூதறிஞர் வ.சுப. மாணிக்கம்."
+            },
+
+            // =========================================================================
+            // இயல் 2: பெய்யெனப் பெய்யும் மழை (புத்தகப் பின்பகுதி - நம்மை அளப்போம் & இலக்கணம்)
+            // =========================================================================
+            {
+                id: 23,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 38)",
+                q: "பொருத்துக (நெடுநல்வாடை):\nஅ) குரங்குகள் - 1) கன்றுகளைத் தவிர்த்தன\nஆ) விலங்குகள் - 2) மரங்களிலிருந்து வீழ்ந்தன\nஇ) பறவைகள் - 3) குளிரால் நடுங்கின\nஈ) பசுக்கள் - 4) மேய்ச்சலை மறந்தன",
+                options: [
+                    "அ) 1, 3, 4, 2",
+                    "ஆ) 3, 4, 2, 1",
+                    "இ) 3, 2, 1, 4",
+                    "ஈ) 2, 1, 3, 4"
+                ],
+                ans: 1,
+                exp: "குரங்குகள் (மந்தி) - குளிரால் நடுங்கின (3); விலங்குகள் (மா) - மேய்ச்சலை மறந்தன (4); பறவைகள் - மரங்களிலிருந்து வீழ்ந்தன (2); பசுக்கள் (கறவை) - கன்றுகளைத் தவிர்த்தன (1)."
+            },
+            {
+                id: 24,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 38)",
+                q: "“நரம்புகளுக்குள் வீணை மீட்டிக்கொண்டிருக்கிறது” என்று அய்யப்ப மாதவன் குறிப்பிடுவது எது?",
+                options: [
+                    "அ) சூரிய ஒளிக்கதிர்",
+                    "ஆ) மழை மேகங்கள்",
+                    "இ) மழைத்துளிகள்",
+                    "ஈ) நீர்நிலைகள்"
+                ],
+                ans: 2,
+                exp: "“கை ஏந்தி வாங்கிய துளிகள் நரம்புகளுக்குள் வீணை மீட்டிக் கொண்டிருக்கின்றன” - மழைத்துளிகள்."
+            },
+            {
+                id: 25,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 38)",
+                q: "சென்னை வெறும் நகரம் மட்டுமன்று, அது நம்பிக்கை மையம் - காரணம்:",
+                options: [
+                    "அ) நேரடி, மறைமுக வேலைவாய்ப்புகளின் களம்",
+                    "ஆ) மென்பொருள், வன்பொருள், வாகன உற்பத்தியில் பங்கு",
+                    "இ) மென்பொருள் ஏற்றுமதியில் முன்னிலை",
+                    "ஈ) அ, ஆ, இ - அனைத்தும்"
+                ],
+                ans: 3,
+                exp: "மேற்கூறிய அனைத்துக் காரணங்களாலும் சென்னை நம்பிக்கை மையமாகத் திகழ்கிறது."
+            },
+            {
+                id: 26,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 38)",
+                q: "‘பொய்யா வானம் புதுப்பெயல் பொழிந்தென’ - தடித்த சொல்லின் (பொய்யா) இலக்கணக் குறிப்பைத் தேர்க.",
+                options: [
+                    "அ) வினைத்தொகை",
+                    "ஆ) உரிச்சொல் தொடர்",
+                    "இ) இடைச்சொல் தொடர்",
+                    "ஈ) ஈறுகெட்ட எதிர்மறைப் பெயரெச்சம்"
+                ],
+                ans: 3,
+                exp: "பொய்யா (பொய்யாத) - ஈறுகெட்ட எதிர்மறைப் பெயரெச்சம். புதுப்பெயல் - பண்புத்தொகை."
+            },
+            {
+                id: 27,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 38)",
+                q: "கூற்று: இந்தியாவின் பல பகுதிகளில் இருந்தும் நெசவாளர்கள் சென்னை நோக்கி வந்தனர்.\nகாரணம்: கிழக்கிந்திய நிறுவனத்தின் வணிகம், துணி சார்ந்ததாகவே இருந்தது.",
+                options: [
+                    "அ) கூற்று சரி, காரணம் தவறு",
+                    "ஆ) கூற்று தவறு, காரணம் சரி",
+                    "இ) கூற்று தவறு, காரணம் தவறு",
+                    "ஈ) கூற்று சரி, காரணம் சரி"
+                ],
+                ans: 3,
+                exp: "கிழக்கிந்திய நிறுவனம் பெரும்பாலும் துணி வணிகத்தையே செய்த காரணத்தால் நெசவாளர்கள் சென்னை நோக்கி வந்தனர் (கூற்று, காரணம் இரண்டும் சரி)."
+            },
+            {
+                id: 28,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 37)",
+                q: "தமிழில் திணைப்பாகுபாடு ________ அடிப்படையில் பகுக்கப்பட்டுள்ளது.",
+                options: [
+                    "அ) பொருட்குறிப்பு",
+                    "ஆ) சொற்குறிப்பு",
+                    "இ) தொடர்க்குறிப்பு",
+                    "ஈ) எழுத்துக்குறிப்பு"
+                ],
+                ans: 0,
+                exp: "தமிழில் பொருட்குறிப்பை அடிப்படையாகக் கொண்டு இருதிணைப் பாகுபாடு அமைந்துள்ளது."
+            },
+            {
+                id: 29,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 37)",
+                q: "“உயர்திணை என்மனார் மக்கட் சுட்டே\nஅஃறிணை என்மனார் அவரல பிறவே” - இந்நூற்பா இடம்பெற்ற இலக்கண நூல் எது?",
+                options: [
+                    "அ) நன்னூல்",
+                    "ஆ) அகத்தியம்",
+                    "இ) தொல்காப்பியம்",
+                    "ஈ) இலக்கண விளக்கம்"
+                ],
+                ans: 2,
+                exp: "இந்நூற்பா தொல்காப்பியச் சொல்லதிகாரத்தில் (நூற்பா 1) இடம்பெற்றுள்ளது."
+            },
+            {
+                id: 30,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 37)",
+                q: "யார்? எது? ஆகிய வினாச்சொற்கள் பயனிலையாய் அமைந்து, உணர்த்தும் திணைகள் முறையே:",
+                options: [
+                    "அ) அஃறிணை, உயர்திணை",
+                    "ஆ) உயர்திணை, அஃறிணை",
+                    "இ) விரவுத்திணை, அஃறிணை",
+                    "ஈ) விரவுத்திணை, உயர்திணை"
+                ],
+                ans: 1,
+                exp: "'யார்?' என்ற பயனிலை உயர்திணையையும், 'எது?' என்ற பயனிலை அஃறிணையையும் உணர்த்துகின்றன."
+            },
+            {
+                id: 31,
+                chapter: "இயல் 2",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 37)",
+                q: "பொருத்தி விடை தேர்க:\nஅ) அவன், அவள், அவர் - 1) உளப்படுத்தாத் தன்மைப் பன்மை\nஆ) நாங்கள் முயற்சி செய்வோம் - 2) உளப்பாட்டுத் தன்மைப் பன்மை\nஇ) நாம் முயற்சி செய்வோம் - 3) தன்மைப் பன்மைப் பெயர்கள்\nஈ) நாங்கள், நாம் - 4) பதிலிப் பெயர்கள்",
+                options: [
+                    "அ) 4, 1, 2, 3",
+                    "ஆ) 2, 3, 4, 1",
+                    "இ) 3, 4, 1, 2",
+                    "ஈ) 4, 3, 1, 2"
+                ],
+                ans: 0,
+                exp: "அவன், அவள், அவர் - பதிலிப் பெயர்கள் (4); நாங்கள் முயற்சி செய்வோம் - உளப்படுத்தாத் தன்மைப் பன்மை (1); நாம் முயற்சி செய்வோம் - உளப்பாட்டுத் தன்மைப் பன்மை (2); நாங்கள், நாம் - தன்மைப் பன்மைப் பெயர்கள் (3)."
+            },
+
+            // =========================================================================
+            // இயல் 2: புத்தக உள்பகுதி வினாக்கள் (Book Inside)
+            // =========================================================================
+            {
+                id: 32,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "மதராசப்பட்டினம் (உரைநடை)",
+                q: "கி.பி. (பொ.ஆ.) 2ஆம் நூற்றாண்டில் தாலமி என்பவரால் 'மல்லியர்பா' எனும் துறைமுகமாகச் சுட்டப்பட்ட சென்னையின் பகுதி எது?",
+                options: [
+                    "அ) திருவொற்றியூர்",
+                    "ஆ) பல்லாவரம்",
+                    "இ) மயிலாப்பூர்",
+                    "ஈ) திருவல்லிக்கேணி"
+                ],
+                ans: 2,
+                exp: "மயிலாப்பூர் கி.பி. 2ஆம் நூற்றாண்டில் தாலமி என்பவரால் 'மல்லியர்பா' எனும் துறைமுகமாகச் சுட்டப்பட்டுள்ளது."
+            },
+            {
+                id: 33,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "மதராசப்பட்டினம் (உரைநடை)",
+                q: "கிழக்கிந்திய வணிக நிறுவனத்தின் அலுவலர் 'பிரான்சிஸ் டே', சென்னப்பரின் இரு மகன்களிடமிருந்து மதராசப்பட்டினம் நிலத்தை வாங்கிய நாள் எது?",
+                options: [
+                    "அ) 22.08.1639",
+                    "ஆ) 15.08.1640",
+                    "இ) 22.08.1768",
+                    "ஈ) 12.06.1812"
+                ],
+                ans: 0,
+                exp: "22.08.1639 அன்று பிரான்சிஸ் டே வாங்கியதால், ஆகஸ்ட் 22 'மெட்ராஸ் தினம்' எனக் கொண்டாடப்படுகிறது."
+            },
+            {
+                id: 34,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "மதராசப்பட்டினம் (தெரிந்து தெளிவோம்)",
+                q: "முகலாய, பிரித்தானிய, இந்தியப் பாரம்பரிய பாணிகளைக் கலந்து உருவாக்கப்பட்ட 'இந்தோ-சாரசனிக்' கட்டடக்கலைப் பாணியில் 1768இல் கட்டி முடிக்கப்பட்ட முதல் கட்டடம் எது?",
+                options: [
+                    "அ) ரிப்பன் கட்டடம்",
+                    "ஆ) சேப்பாக்கம் அரண்மனை",
+                    "இ) விக்டோரியா அரங்கு",
+                    "ஈ) சென்னைப் பல்கலைக்கழகம்"
+                ],
+                ans: 1,
+                exp: "இந்தோ-சாரசனிக் பாணியில் 1768இல் கட்டி முடிக்கப்பட்ட முதல் கட்டடம் சேப்பாக்கம் அரண்மனையே ஆகும்."
+            },
+            {
+                id: 35,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "மதராசப்பட்டினம் (உரைநடை)",
+                q: "தென்னிந்தியாவின் முதல் தொடர்வண்டி நிலையம் 1856இல் எங்கு அமைக்கப்பட்டது?",
+                options: [
+                    "அ) எழும்பூர்",
+                    "ஆ) இராயபுரம்",
+                    "இ) தாம்பரம்",
+                    "ஈ) சென்ட்ரல்"
+                ],
+                ans: 1,
+                exp: "1856இல் தென்னிந்தியாவின் முதல் தொடர்வண்டி நிலையம் இராயபுரத்தில் அமைக்கப்பட்டது."
+            },
+            {
+                id: 36,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "மதராசப்பட்டினம் (சென்னை நூலகங்கள்)",
+                q: "காலின் மெக்கன்சியின் தொகுப்புகளை அடிப்படையாகக் கொண்டு 1869இல் உருவாக்கப்பட்ட நூலகம் எது?",
+                options: [
+                    "அ) கன்னிமாரா நூலகம்",
+                    "ஆ) சென்னை இலக்கியச் சங்கம்",
+                    "இ) கீழ்த்திசைச் சுவடிகள் நூலகம்",
+                    "ஈ) ரோஜா முத்தையா ஆராய்ச்சி நூலகம்"
+                ],
+                ans: 2,
+                exp: "காலின் மெக்கன்சியின் தொகுப்புகளை அடிப்படையாகக் கொண்டு 1869இல் கீழ்த்திசைச் சுவடிகள் நூலகம் உருவாக்கப்பட்டது. (1860இல் தொடங்கப்பட்ட கன்னிமாரா நூலகம் இந்தியாவின் முதல் பொது நூலகமாகும்)."
+            },
+            {
+                id: 37,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "பிறகொரு நாள் கோடை (நூல்வெளி)",
+                q: "‘மழைக்குப் பிறகும் மழை’, ‘நானென்பது வேறொருவன்’, ‘நீர்வெளி’ முதலான கவிதை நூல்களையும் ‘இன்று’ என்ற கவிதைக் குறும்படத்தையும் வெளியிட்டவர் யார்?",
+                options: [
+                    "அ) நகுலன்",
+                    "ஆ) பிரமிள்",
+                    "இ) அய்யப்ப மாதவன்",
+                    "ஈ) சிற்பி பாலசுப்பிரமணியம்"
+                ],
+                ans: 2,
+                exp: "சிவகங்கை மாவட்டம் நாட்டரசன்கோட்டையைச் சேர்ந்த கவிஞர் அய்யப்ப மாதவன்."
+            },
+            {
+                id: 38,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "நெடுநல்வாடை (செய்யுள் & நூல்வெளி)",
+                q: "பாண்டியன் நெடுஞ்செழியனைப் பாட்டுடைத் தலைவனாகக் கொண்டு நக்கீரர் இயற்றிய நெடுநல்வாடை எத்தனை அடிகளைக் கொண்டது மற்றும் அதன் திணை யாது?",
+                options: [
+                    "அ) 188 அடிகள், வாகைத் திணை",
+                    "ஆ) 103 அடிகள், முல்லைத் திணை",
+                    "இ) 250 அடிகள், பொதுவியல் திணை",
+                    "ஈ) 188 அடிகள், பாலைத் திணை"
+                ],
+                ans: 0,
+                exp: "நெடுநல்வாடை 188 அடிகளைக் கொண்டது; நேரிசை ஆசிரியப்பாவால் ஆனது; திணை: வாகைத் திணை, துறை: கூதிர்ப்பாசறை."
+            },
+            {
+                id: 39,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "முதல்கல் (விரிவானம்)",
+                q: "‘முதல்கல்’ சிறுகதையின் ஆசிரியரான உத்தமசோழன் (செல்வராஜ்) நடத்திவரும் திங்களிதழின் பெயர் என்ன?",
+                options: [
+                    "அ) மனிதத்தீவுகள்",
+                    "ஆ) கிழக்கு வாசல் உதயம்",
+                    "இ) தஞ்சைச் சிறுகதைகள்",
+                    "ஈ) தொலைதூர வெளிச்சம்"
+                ],
+                ans: 1,
+                exp: "உத்தமசோழன் ‘கிழக்கு வாசல் உதயம்’ என்ற திங்களிதழை நடத்தி வருகிறார்."
+            },
+            {
+                id: 40,
+                chapter: "இயல் 2",
+                category: "புத்தக உள்பகுதி",
+                topic: "சான்றோர் சித்திரம் (பக். 39)",
+                q: "தமிழின் முதல் நாவலான 'பிரதாப முதலியார் சரித்திரம்' மற்றும் நீதிமன்றத் தீர்ப்புகளை மொழிபெயர்த்து 'சித்தாந்த சங்கிரகம்' என்ற நூலை வெளியிட்ட மாயூரம் வேதநாயகரைப் போற்றிக் கோபாலகிருஷ்ண பாரதியார் பாடிய பாடல் எது?",
+                options: [
+                    "அ) நீயே புருஷ மேரு...",
+                    "ஆ) செந்தமிழ் நாடெனும் போதினிலே...",
+                    "இ) வள்ளுவன் தன்னை உலகினுக்கே...",
+                    "ஈ) தமிழுக்கும் அமுதென்று பேர்..."
+                ],
+                ans: 0,
+                exp: "தாது வருடப் பஞ்சத்தின்போது தமது சொத்துகளைக் கொடையளித்த மாயூரம் வேதநாயகரைப் போற்றிக் கோபாலகிருஷ்ண பாரதியார் 'நீயே புருஷ மேரு...' என்ற பாடலை இயற்றினார்."
+            },
+
+            // =========================================================================
+            // திருக்குறள் சிறப்புப் பகுதி (இயல் 2 மற்றும் இயல் 4 - கற்பவை கற்றபின் & நூல்வெளி)
+            // =========================================================================
+            {
+                id: 41,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 47)",
+                q: "படகு தீப்பற்றி எரியும் படத்துக்குப் பொருத்தமான திருக்குறளைக் கண்டுபிடிக்க.",
+                options: [
+                    "அ) அன்பும் அறனும் உடைத்தாயின் இல்வாழ்க்கை பண்பும் பயனும் அது.",
+                    "ஆ) வையத்துள் வாழ்வாங்கு வாழ்பவன் வானுறையும் தெய்வத்துள் வைக்கப் படும்.",
+                    "இ) சினம்என்னும் சேர்ந்தாரைக் கொல்லி இனம்என்னும் ஏமப் புணையைச் சுடும்.",
+                    "ஈ) தன்னைத்தான் காக்கின் சினம்காக்க; காவாக்கால் தன்னையே கொல்லும் சினம்."
+                ],
+                ans: 2,
+                exp: "ஏமப் புணை (பாதுகாப்புத் தெப்பம்/படகு) சினம் என்னும் நெருப்பால் சுடப்படும் என்பதைக் காட்டுகிறது."
+            },
+            {
+                id: 42,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 47)",
+                q: "கடலின் பெரியது எது?",
+                options: [
+                    "அ) உற்ற காலத்தில் செய்த உதவி",
+                    "ஆ) பயன் ஆராயாமல் ஒருவர் செய்த உதவி",
+                    "இ) தினையளவு செய்த உதவி",
+                    "ஈ) செய்யாமல் செய்த உதவி"
+                ],
+                ans: 1,
+                exp: "பயன்தூக்கார் செய்த உதவி நயன்தூக்கின் நன்மை கடலின் பெரிது."
+            },
+            {
+                id: 43,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 47)",
+                q: "பின்வரும் நாலடியார் பாடலின் பொருளுக்குப் பொருத்தமான திருக்குறளைக் கண்டறிக:\n“நல்லார் நயவர் இருப்ப நயம்இலாக்\nகல்லார்க் கொன்றாகிய காரணம் - தொல்லை\nவினைப்பயன் அல்லது வேல்நெடுங் கண்ணாய்\nநினைப்ப வருவதொன் றில்”",
+                options: [
+                    "அ) இருவேறு உலகத்து இயற்கை; திருவேறு தெள்ளியர் ஆதலும் வேறு.",
+                    "ஆ) நல்லவை எல்லாம் தீயவாம் தீயவும் நல்லவாம் செல்வம் செயற்கு.",
+                    "இ) ஊழில் பெருவலி யாஉள மற்றுஒன்று சூழினும் தான்முந்து உறும்.",
+                    "ஈ) நுண்ணிய நூல்பல கற்பினும் மற்றும்தன் உண்மை அறிவே மிகும்."
+                ],
+                ans: 0,
+                exp: "அறிவுடையோர் வறியவராகவும், கல்லாதவர் செல்வந்தராகவும் இருப்பதற்குக் காரணம் உலக இயற்கை (இருவேறு உலகத்து இயற்கை; திருவேறு தெள்ளியர் ஆதலும் வேறு)."
+            },
+            {
+                id: 44,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 47)",
+                q: "“உயர் அலுவலரின் வருகை... அலுவலகமே அல்லாடும்... காலைக் கட்டிக் கொள்கிறது குழந்தை 'போ அந்தப் பக்கம்' உதறிச் செல்கிறேன் குழந்தையை” - இப்புதுக்கவிதைக்குப் பொருந்தும் திருக்குறளைத் தேர்ந்தெடுக்க.",
+                options: [
+                    "அ) வையத்துள் வாழ்வாங்கு வாழ்பவன் வான்உறையும் தெய்வத்துள் வைக்கப் படும்.",
+                    "ஆ) செல்இடத்துக் காப்பான் சினம்காப்பான் அல்இடத்துக் காக்கின்என் காவாக்கால் என்.",
+                    "இ) இயல்பினான் இல்வாழ்க்கை வாழ்பவன் என்பான் முயல்வாருள் எல்லாம் தலை.",
+                    "ஈ) நகையும் உவகையும் கொல்லும் சினத்தின் பகையும் உளவோ பிற?"
+                ],
+                ans: 1,
+                exp: "வலியவரான உயர் அலுவலரிடம் காட்ட முடியாத சினத்தை மெலியதான குழந்தையிடம் காட்டுவதை 'செல்லிடத்துக் காப்பான் சினம்காப்பான்' குறள் சுட்டுகிறது."
+            },
+            {
+                id: 45,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 47)",
+                q: "வையகமும் வானகமும் ஆற்றலரிது - எதற்கு?",
+                options: [
+                    "அ) செய்யாமல் செய்த உதவி",
+                    "ஆ) பயன் தூக்கார் செய்த உதவி",
+                    "இ) தினைத்துணை நன்றி",
+                    "ஈ) காலத்தினால் செய்த நன்றி"
+                ],
+                ans: 0,
+                exp: "செய்யாமல் செய்த உதவிக்கு வையகமும் வானகமும் ஆற்ற லரிது."
+            },
+            {
+                id: 46,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 48)",
+                q: "பொருத்துக:\nஅ) வையத்துள் வாழ்வாங்கு வாழ்பவன் - 1) சேர்ந்தாரைக் கொல்லி\nஆ) பயன்தூக்கார் செய்த உதவி - 2) ஞாலத்தின் மாணப் பெரிது\nஇ) சினம் - 3) தெய்வத்துள் வைக்கப்படும்\nஈ) காலத்தினாற் செய்த நன்றி - 4) நன்மை கடலின் பெரிது",
+                options: [
+                    "அ) 4, 3, 2, 1",
+                    "ஆ) 3, 4, 1, 2",
+                    "இ) 1, 2, 3, 4",
+                    "ஈ) 2, 1, 4, 3"
+                ],
+                ans: 1,
+                exp: "வாழ்வாங்கு வாழ்பவன் - தெய்வத்துள் வைக்கப்படும் (3); பயன்தூக்கார் செய்த உதவி - நன்மை கடலின் பெரிது (4); சினம் - சேர்ந்தாரைக் கொல்லி (1); காலத்தினாற் செய்த நன்றி - ஞாலத்தின் மாணப் பெரிது (2)."
+            },
+            {
+                id: 47,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 2 திருக்குறள் (பக். 48)",
+                q: "பொருத்துக (இலக்கணக்குறிப்பு):\nஅ) அன்பும் அறனும் - 1) பண்புத்தொகை\nஆ) நன்கலம் - 2) ஆகுபெயர்\nஇ) மறத்தல் - 3) எண்ணும்மை\nஈ) உலகு - 4) தொழிற்பெயர்",
+                options: [
+                    "அ) 2, 3, 4, 1",
+                    "ஆ) 3, 1, 4, 2",
+                    "இ) 4, 2, 3, 1",
+                    "ஈ) 1, 4, 2, 3"
+                ],
+                ans: 1,
+                exp: "அன்பும் அறனும் - எண்ணும்மை (3); நன்கலம் - பண்புத்தொகை (1); மறத்தல் - தொழிற்பெயர் (4); உலகு - இடவாகுபெயர் (2)."
+            },
+            {
+                id: 48,
+                chapter: "திருக்குறள்",
+                category: "புத்தக உள்பகுதி",
+                topic: "திருக்குறள் நூல்வெளி (பக். 46)",
+                q: "ஏட்டுச்சுவடியிலிருந்து திருக்குறள் முதன்முதலில் முழுமையாக அச்சிடப்பட்ட ஆண்டு எது? மற்றும் கன்னியாகுமரி திருவள்ளுவர் சிலைக்குத் தமிழ்நாடு அரசு வெள்ளிவிழாவில் சூட்டிய பெயர் என்ன?",
+                options: [
+                    "அ) 1812, பேரறிவுச் சிலை",
+                    "ஆ) 1815, அறத்தின் சிலை",
+                    "இ) 1800, வள்ளுவர் கோட்டம்",
+                    "ஈ) 1894, உலகப் பொதுமறைச் சிலை"
+                ],
+                ans: 0,
+                exp: "திருக்குறள் முதன்முதலில் அச்சிடப்பட்ட ஆண்டு 1812. கன்னியாகுமரி 133 அடி உயர திருவள்ளுவர் சிலையின் 25 ஆண்டு வெள்ளிவிழாவில் (டிசம்பர் 2024 - ஜனவரி 2025) 'பேரறிவுச் சிலை' எனப் பெயர் சூட்டப்பட்டது."
+            },
+            {
+                id: 49,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 101)",
+                q: "தேர் மற்றும் அதன் சக்கரம்/அச்சாணி படத்திற்குப் பொருத்தமான திருக்குறளைக் கண்டுபிடிக்க.",
+                options: [
+                    "அ) எண்ணிய எண்ணியாங்கு எய்துப எண்ணியார் திண்ணியர் ஆகப் பெறின்",
+                    "ஆ) உருவுகண்டு எள்ளாமை வேண்டும் உருள்பெருந்தேர்க்கு அச்சாணி அன்னார் உடைத்து.",
+                    "இ) வினைத்திட்பம் என்பது ஒருவன் மனத்திட்பம் மற்றைய எல்லாம் பிற.",
+                    "ஈ) சொல்லுதல் யார்க்கும் எளிய; அரியவாம் சொல்லிய வண்ணம் செயல்."
+                ],
+                ans: 1,
+                exp: "பெரிய தேர் ஓடுவதற்கு உதவும் சிறிய அச்சாணி போல உருவத்தில் சிறியவராயினும் ஆற்றல் மிக்கவர் இருப்பர்."
+            },
+            {
+                id: 50,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 101)",
+                q: "“மனமோ மாட்டுவண்டி... ஊர் போகும் பாதையில் சக்கரம் உருண்டால் அதுவே அறிவு; அதுவே தெளிவு” - இக்கவிதைக்குப் பொருந்தும் திருக்குறளைக் கண்டறிக.",
+                options: [
+                    "அ) எவ்வது உறைவது உலகம் உலகத்தோடு அவ்வது உறைவது அறிவு.",
+                    "ஆ) சென்ற இடத்தால் செலவிடா தீதுஒரீஇ நன்றின்பால் உய்ப்பது அறிவு.",
+                    "இ) அறிவற்றம் காக்கும் கருவி செறுவார்க்கும் உள்அழிக்கல் ஆகா அரண்.",
+                    "ஈ) எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள் மெய்ப்பொருள் காண்பது அறிவு."
+                ],
+                ans: 0,
+                exp: "உலகம் எத்தகைய உயர்ந்த நெறியில் செல்கிறதோ, அந்நெறியில் தானும் உலகத்தோடு இணைந்து செல்வதே அறிவாகும்."
+            },
+            {
+                id: 51,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 101)",
+                q: "பின்வரும் நாலடியார் பாடலின் பொருளுக்குப் பொருத்தமான திருக்குறளைக் கண்டறிக:\n“சீரியார் கேண்மை சிறந்த சிறப்பிற்றாய்\nமாரிபோல் மாண்ட பயத்தாம் - மாரி\nவறந்தக்கால் போலுமே வாலருவி நாட!\nசிறந்தக்கால் சீரியார் நட்பு.”",
+                options: [
+                    "அ) பழையம் எனக்கருதிப் பண்புஅல்ல செய்யும் கெழுதகைமை கேடு தரும்.",
+                    "ஆ) எதிரதாக் காக்கும் அறிவினார்க்கு இல்லை அதிர வருவதோர் நோய்.",
+                    "இ) நல்லினத்தின் ஊங்கும் துணையில்லை; தீயினத்தின் அல்லல் படுப்பதூஉம் இல்.",
+                    "ஈ) மனத்தான்ஆம் மாந்தர்க்கு உணர்ச்சி; இனத்தான்ஆம் இன்னான் எனப்படும் சொல்."
+                ],
+                ans: 2,
+                exp: "நல்ல இனத்தைவிடச் சிறந்த துணையும் உலகத்தில் இல்லை; தீய இனத்தைவிடத் துன்பத்தைத் தரும் பகையும் இல்லை."
+            },
+            {
+                id: 52,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 102)",
+                q: "‘அல்லல் படுப்பதூஉம் இல்’ - எவரோடு பழகினால்?",
+                options: [
+                    "அ) வாள்போல் பகைவர்",
+                    "ஆ) மெய்ப்பொருள் காண்பவர்",
+                    "இ) எண்ணியாங்கு எய்துபவர்",
+                    "ஈ) தீயினத்தார்"
+                ],
+                ans: 3,
+                exp: "தீயினத்தின் அல்லல் படுப்பதூஉம் இல் (தீய இனத்தைவிடத் துன்பத்தைத் தரும் பகை வேறு இல்லை)."
+            },
+            {
+                id: 53,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 102)",
+                q: "‘திண்ணியர்’ என்பதன் பொருள் யாது?",
+                options: [
+                    "அ) அறிவுடையவர்",
+                    "ஆ) மன உறுதியுடையவர்",
+                    "இ) தீக்காய்வார்",
+                    "ஈ) அறிவினார்"
+                ],
+                ans: 1,
+                exp: "திண்ணியர் - மன உறுதியுடையவர் (எண்ணியார் திண்ணியர் ஆகப் பெறின்)."
+            },
+            {
+                id: 54,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 102)",
+                q: "கடமை அறிந்து, காலம் கருதி, இடம் அறிந்து எண்ணி ஆராய்ந்து சொல்கிறவர் யார்?",
+                options: [
+                    "அ) அரசர்",
+                    "ஆ) சொல்லியபடி செய்பவர்",
+                    "இ) தூதுவர்",
+                    "ஈ) உறவினர்"
+                ],
+                ans: 2,
+                exp: "கடன்அறிந்து காலம் கருதி இடன்அறிந்து எண்ணி உரைப்பான் தலை (தூது அதிகாரம்)."
+            },
+            {
+                id: 55,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 102)",
+                q: "பொருத்துக:\nஅ) பாம்போடு உடன் உறைந்தற்று - 1) தீக்காய்வார்\nஆ) செத்தார் - 2) சீர் அழிக்கும் சூது\nஇ) வறுமை தருவது - 3) கள் உண்பவர்\nஈ) இகல்வேந்தர் சேர்ந்து ஒழுகுவார் - 4) உடம்பாடு இல்லாதவரோடு வாழ்தல்",
+                options: [
+                    "அ) 1, 2, 3, 4",
+                    "ஆ) 2, 3, 4, 1",
+                    "இ) 4, 1, 3, 2",
+                    "ஈ) 4, 3, 2, 1"
+                ],
+                ans: 3,
+                exp: "பாம்போடு உடன் உறைந்தற்று - உடம்பாடு இல்லாதவரோடு வாழ்தல் (4); செத்தார் - கள் உண்பவர்/துஞ்சினார் (3); வறுமை தருவது - சீர் அழிக்கும் சூது (2); இகல்வேந்தர் சேர்ந்து ஒழுகுவார் - தீக்காய்வார் (1)."
+            },
+            {
+                id: 56,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 102)",
+                q: "நடுங்கும்படியான துன்பம் (அதிர வருவதோர் நோய்) இல்லாதவர் யார்?",
+                options: [
+                    "அ) வரப்போவதை முன்னரே அறிந்து காத்துக்கொள்ளக் கூடியவர்",
+                    "ஆ) மனத்திட்பம் உடையவர்",
+                    "இ) அரசரைச் சார்ந்து வாழ்கின்றவர்",
+                    "ஈ) சூதாடுமிடத்தில் காலம் கழிப்பவர்"
+                ],
+                ans: 0,
+                exp: "எதிரதாக் காக்கும் அறிவினார்க்கு இல்லை அதிர வருவதோர் நோய்."
+            },
+            {
+                id: 57,
+                chapter: "திருக்குறள்",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இயல் 4 திருக்குறள் (பக். 102)",
+                q: "திருக்குறளின்படி எளியது, அரியது என்பன முறையே:",
+                options: [
+                    "அ) தீயினத்தின் துணை - நல்லினத்தின் துணை",
+                    "ஆ) சொல்வது - சொல்லியபடி செய்வது",
+                    "இ) சிறுமை பல செய்வது - பகைவர் தொடர்பு",
+                    "ஈ) மெய்ப்பொருள் காண்பது - உருவுகண்டு எள்ளாதது"
+                ],
+                ans: 1,
+                exp: "சொல்லுதல் யார்க்கும் எளிய; அரியவாம் சொல்லிய வண்ணம் செயல்."
+            },
+
+            // =========================================================================
+            // இயல் 3: சுற்றத்தார் கண்ணே உள (புத்தகப் பின்பகுதி - நம்மை அளப்போம் & இலக்கணம்)
+            // =========================================================================
+            {
+                id: 58,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 67)",
+                q: "‘குடும்பம்’ என்னும் சொல் முதன்முதலில் இடம்பெற்றுள்ள நூல் எது?",
+                options: [
+                    "அ) தொல்காப்பியம்",
+                    "ஆ) திருக்குறள்",
+                    "இ) குறுந்தொகை",
+                    "ஈ) புறநானூறு"
+                ],
+                ans: 1,
+                exp: "குடும்பம் எனும் சொல் முதன்முதலில் திருக்குறளில்தான் (குறள் 1029: இடும்பைக்கே கொள்கலம் கொல்லோ குடும்பத்தைக்...) பயின்று வருகிறது."
+            },
+            {
+                id: 59,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 67)",
+                q: "பொருத்தி விடையைத் தேர்ந்தெடுக்க:\nஅ) செற்றார் - 1) மகிழ்ச்சி\nஆ) கிளை - 2) காடு\nஇ) உவகை - 3) பகைவர்\nஈ) கானம் - 4) உறவினர்",
+                options: [
+                    "அ) 2, 4, 3, 1",
+                    "ஆ) 3, 4, 1, 2",
+                    "இ) 2, 4, 1, 3",
+                    "ஈ) 3, 2, 4, 1"
+                ],
+                ans: 1,
+                exp: "செற்றார் - பகைவர் (3); கிளை - உறவினர் (4); உவகை - மகிழ்ச்சி (1); கானம் - காடு (2)."
+            },
+            {
+                id: 60,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 67)",
+                q: "“இவற்றை வாயிலுக்கே சென்று இன்முகத்துடன் வரவேற்பாயாக” என்று ஜலாலுத்தீன் ரூமி குறிப்பிடுவது எது?",
+                options: [
+                    "அ) வக்கிரம்",
+                    "ஆ) அவமானம்",
+                    "இ) வஞ்சனை",
+                    "ஈ) இவை அனைத்தும்"
+                ],
+                ans: 3,
+                exp: "வக்கிரம், அவமானம், வஞ்சனை இவற்றை வாயிலுக்கே சென்று இன்முகத்துடன் வரவேற்பாயாக (இவை அனைத்தும்)."
+            },
+            {
+                id: 61,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 67)",
+                q: "“தந்தனன் தாதை தன்னைத் தடக்கையான் எடுத்துச் சார்வான்” - அடிக்கோடிட்ட சொல்லின் (தடக்கையான்) இலக்கணக்குறிப்பு யாது?",
+                options: [
+                    "அ) உரிச்சொல் தொடர்",
+                    "ஆ) வினைத்தொகை",
+                    "இ) உம்மைத்தொகை",
+                    "ஈ) இடைச்சொல் தொடர்"
+                ],
+                ans: 0,
+                exp: "'தட' என்பது உரிச்சொல். எனவே தடக்கை / தடக்கையான் என்பது உரிச்சொல் தொடர்."
+            },
+            {
+                id: 62,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 67)",
+                q: "“எங்கள் தந்தையர் நாடென்ற பேச்சினிலே - ஒரு\nசக்தி பிறக்குது மூச்சினிலே” - என்னும் பாரதியின் பாடல் வெளிப்படுத்துவது எது?",
+                options: [
+                    "அ) தனிக்குடும்ப முறை",
+                    "ஆ) விரிந்த குடும்ப முறை",
+                    "இ) தாய்வழிச் சமூகமுறை",
+                    "ஈ) தந்தைவழிச் சமூகமுறை"
+                ],
+                ans: 3,
+                exp: "'தந்தையர் நாடு' எனக் குறிப்பிடுவதால் இது தந்தைவழிச் சமூகமுறையை வெளிப்படுத்துகிறது."
+            },
+            {
+                id: 63,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 66)",
+                q: "பொருள் குழப்பமின்றி எழுதுவதற்குரிய காரணங்களுள் பொருந்துவதைத் தேர்க.",
+                options: [
+                    "அ) தேவையான இடங்களில் இடைவெளி விடாமல் எழுதுதல்",
+                    "ஆ) தேவையற்ற இடங்களில் இடைவெளி விட்டு எழுதுதல்",
+                    "இ) நிறுத்தக்குறிகளை உரிய இடங்களில் இட்டு எழுதுதல்",
+                    "ஈ) வல்லின மெய்களைத் தேவையான இடங்களில் இடாமல் எழுதுதல்"
+                ],
+                ans: 2,
+                exp: "நிறுத்தக்குறிகளை உரிய இடங்களில் இட்டு எழுதுதலே பொருள் குழப்பமின்றி எழுத உதவும்."
+            },
+            {
+                id: 64,
+                chapter: "இயல் 3",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 66)",
+                q: "வல்லினம் மிகும், மிகாத் தொடர்களின் பொருளறிந்து பொருத்துக:\nஅ) பாலை பாடினான் - 1) தேரை என்னும் உயிரினத்தைப் பார்த்தான்\nஆ) பாலைப் பாடினான் - 2) தேரினைப் பார்த்தான்\nஇ) தேரை பார்த்தான் - 3) பாலினைப் பாடினான்\nஈ) தேரைப் பார்த்தான் - 4) பாலைத் திணை பாடினான்",
+                options: [
+                    "அ) 4, 1, 3, 2",
+                    "ஆ) 2, 3, 1, 4",
+                    "இ) 4, 3, 1, 2",
+                    "ஈ) 2, 4, 1, 3"
+                ],
+                ans: 2,
+                exp: "பாலை பாடினான் - பாலைத் திணை பாடினான் (4); பாலைப் பாடினான் - பாலினைப் பாடினான் (3); தேரை பார்த்தான் - தேரை என்னும் உயிரினத்தைப் பார்த்தான் (1); தேரைப் பார்த்தான் - தேரினைப் பார்த்தான் (2)."
+            },
+
+            // =========================================================================
+            // இயல் 3: புத்தக உள்பகுதி வினாக்கள் (Book Inside)
+            // =========================================================================
+            {
+                id: 65,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "தமிழர் குடும்ப முறை (உரைநடை)",
+                q: "சங்க இலக்கியத்தில் தற்காலிகத் தங்குமிடம் எவ்வாறு அழைக்கப்பட்டது? மற்றும் திருமணத்திற்குப் பின் கணவனும் மனைவியும் பெற்றோரிடமிருந்து பிரிந்து தனியாக வாழுமிடம் எவ்வாறு வழங்கப்பட்டது?",
+                options: [
+                    "அ) புக்கில், தன்மனை",
+                    "ஆ) குரம்பை, நும்மனை",
+                    "இ) முன்றில், தம்மனை",
+                    "ஈ) வரைப்பு, மணந்தகம்"
+                ],
+                ans: 0,
+                exp: "தற்காலிகத் தங்குமிடம் 'புக்கில்' (புறம் 221) எனவும், பெற்றோரிடமிருந்து பிரிந்து தனியாக வாழுமிடம் 'தன்மனை' (neolocal) எனவும் வழங்கப்பெற்றன."
+            },
+            {
+                id: 66,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "தமிழர் குடும்ப முறை (உரைநடை)",
+                q: "சேரநாட்டு மருமக்கள் தாய முறை பற்றிக் கூறும் சங்க இலக்கிய நூல் எது?",
+                options: [
+                    "அ) பரிபாடல்",
+                    "ஆ) பதிற்றுப்பத்து",
+                    "இ) கலித்தொகை",
+                    "ஈ) நற்றிணை"
+                ],
+                ans: 1,
+                exp: "பதிற்றுப்பத்து கூறும் சேரநாட்டு மருமக்கள் தாய முறை தாய்வழிக் குடும்பத்திற்குச் சிறந்த எடுத்துக்காட்டாகும்."
+            },
+            {
+                id: 67,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "தமிழர் குடும்ப முறை (நூல்வெளி)",
+                q: "'தமிழர் குடும்ப முறை' என்ற கட்டுரையை எழுதிய பக்தவத்சல பாரதியின் கட்டுரை எந்தக் காலாண்டிதழில் வெளிவந்தது?",
+                options: [
+                    "அ) பனுவல்",
+                    "ஆ) செந்தமிழ்ச் செல்வி",
+                    "இ) அமுதசுரபி",
+                    "ஈ) கணையாழி"
+                ],
+                ans: 0,
+                exp: "இப்பாடப்பகுதி 'பனுவல்' (தொகுதி I, 2010) காலாண்டிதழில் வெளிவந்த பக்தவத்சல பாரதியின் கட்டுரையின் சுருக்கமாகும்."
+            },
+            {
+                id: 68,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "விருந்தினர் இல்லம் (நூல்வெளி)",
+                q: "ஜலாலுத்தீன் ரூமியின் கவிதைகளை ஆங்கிலத்தில் மொழியாக்கம் செய்த கோல்மன் பார்க்ஸின் நூலை, தமிழில் 'தாகங்கொண்ட மீனொன்று' என்ற தலைப்பில் மொழிபெயர்த்தவர் யார்?",
+                options: [
+                    "அ) கே.வி. சைலஜா",
+                    "ஆ) என். சத்தியமூர்த்தி",
+                    "இ) சிற்பி பாலசுப்பிரமணியம்",
+                    "ஈ) சாந்தா தத்"
+                ],
+                ans: 1,
+                exp: "என். சத்தியமூர்த்தி 'தாகங்கொண்ட மீனொன்று' என்ற தலைப்பில் தமிழில் மொழிபெயர்த்துள்ளார். ரூமியின் புகழ்பெற்ற சூஃபி தத்துவப் படைப்பு 'மஸ்னவி' (25,600 பாடல்கள்)."
+            },
+            {
+                id: 69,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "கம்பராமாயணம் (செய்யுள்)",
+                q: "“குகனொடும் ஐவர் ஆனேம் முன்பு; பின் குன்று சூழ்வான்\nமகனொடும் அறுவர் ஆனேம்; எம்முழை அன்பின் வந்த\nஅகன்அமர் காதல் ஐய! நின்னொடும் எழுவர் ஆனேம்” - இப்பாடலில் 'குன்று சூழ்வான் மகன்' எனக் குறிப்பிடப்படுபவர் யார்?",
+                options: [
+                    "அ) குகன்",
+                    "ஆ) வீடணன்",
+                    "இ) சுக்ரீவன்",
+                    "ஈ) சடாயு"
+                ],
+                ans: 2,
+                exp: "மேருமலையைச் சுற்றி வரும் கதிரவனின் (குன்று சூழ்வான்) மகன் சுக்ரீவன் ஆவான்."
+            },
+            {
+                id: 70,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "கம்பராமாயணம் (சொல்லும் பொருளும் & இலக்கணம்)",
+                q: "கம்பராமாயணப் பாடலில் வரும் 'இந்தனம்' என்பதன் பொருளும், 'நுந்தை' என்பதன் இலக்கணக் குறிப்பும் முறையே:",
+                options: [
+                    "அ) விறகு, மரூஉ மொழி",
+                    "ஆ) சந்தனம், இடைக்குறை",
+                    "இ) நெருப்பு, வினையாலணையும் பெயர்",
+                    "ஈ) மேடை, உரிச்சொல் தொடர்"
+                ],
+                ans: 0,
+                exp: "இந்தனம் - விறகு; நுந்தை - 'நும் தந்தை' என்பதன் மரூஉ மொழி."
+            },
+            {
+                id: 71,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "உரிமைத்தாகம் (விரிவானம்)",
+                q: "பூமணி (பூ.மாணிக்கவாசகம்) எந்தப் புதினத்திற்காக 2014இல் சாகித்திய அகாதெமி விருது பெற்றார்? மற்றும் அவர் இயக்கிய திரைப்படம் எது?",
+                options: [
+                    "அ) வெக்கை, பராசக்தி",
+                    "ஆ) அஞ்ஞாடி, கருவேலம்பூக்கள்",
+                    "இ) பிறகு, மறுபக்கம்",
+                    "ஈ) கொம்மை, அக்ரஹாரத்தில் கழுதை"
+                ],
+                ans: 1,
+                exp: "பூமணி 'அஞ்ஞாடி' புதினத்திற்காக 2014இல் சாகித்திய அகாதெமி விருது பெற்றார். அவர் இயக்கிய திரைப்படம் 'கருவேலம்பூக்கள்'."
+            },
+            {
+                id: 72,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "உரிமைத்தாகம் (தெரிந்து தெளிவோம் - பக். 61)",
+                q: "வட்டார வழக்குச் சொற்களைப் பொருத்துக:\n1) திருகை - அ) ஓலைப்பெட்டி\n2) கடகம் - ஆ) மாவு அரைக்கும் கல்\n3) கெராமுனுசு - இ) விடியற்காலை\n4) வெள்ளங்காட்டி - ஈ) கிராம நிருவாக அலுவலர்",
+                options: [
+                    "அ) 1-ஆ, 2-அ, 3-ஈ, 4-இ",
+                    "ஆ) 1-அ, 2-ஆ, 3-இ, 4-ஈ",
+                    "இ) 1-ஆ, 2-ஈ, 3-அ, 4-இ",
+                    "ஈ) 1-இ, 2-அ, 3-ஈ, 4-ஆ"
+                ],
+                ans: 0,
+                exp: "திருகை - மாவு அரைக்கும் கல்; கடகம் - ஓலைப்பெட்டி; கெராமுனுசு - கிராம நிருவாக அலுவலர்; வெள்ளங்காட்டி - விடியற்காலை."
+            },
+            {
+                id: 73,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "பொருள் மயக்கம் (இலக்கணம்)",
+                q: "செய்யுளில் சொற்களைப் பொருளுக்கு ஏற்றவாறு சேர்த்தோ மாற்றியோ பொருள் கொள்ளும் முறையான 'பொருள்கோள்' எத்தனை வகைப்படும்?",
+                options: [
+                    "அ) 6 வகைப்படும்",
+                    "ஆ) 8 வகைப்படும்",
+                    "இ) 9 வகைப்படும்",
+                    "ஈ) 10 வகைப்படும்"
+                ],
+                ans: 1,
+                exp: "பொருள்கோள் 8 வகைப்படும் (ஆற்றுநீர், மொழிமாற்று, நிரல்நிறை, விற்பூட்டு, தாப்பிசை, அளைமறிபாப்பு, கொண்டுகூட்டு, அடிமறிமாற்று)."
+            },
+            {
+                id: 74,
+                chapter: "இயல் 3",
+                category: "புத்தக உள்பகுதி",
+                topic: "சான்றோர் சித்திரம் (பக். 68)",
+                q: "சி.வை. தாமோதரனாரால் 'திராவிட சாஸ்திரி' என்று போற்றப்பட்டவரும், 'நாடகவியல்' என்னும் நாடக இலக்கண நூலை இயற்றியவரும், மு.சி.பூர்ணலிங்கனாருடன் இணைந்து 'ஞானபோதினி' இதழை நடத்தியவருமான அறிஞர் யார்?",
+                options: [
+                    "அ) மறைமலையடிகள்",
+                    "ஆ) பரிதிமாற் கலைஞர் (சூரியநாராயண சாஸ்திரி)",
+                    "இ) சோமசுந்தர பாரதியார்",
+                    "ஈ) உ.வே. சாமிநாதர்"
+                ],
+                ans: 1,
+                exp: "பரிதிமாற் கலைஞர் (1870-1903). இவரது 'தனிப்பாசுரத் தொகை' நூல் ஜி.யு.போப் அவர்களால் ஆங்கிலத்தில் மொழிபெயர்க்கப்பட்டது."
+            },
+
+            // =========================================================================
+            // இயல் 4: செல்வத்துள் எல்லாம் தலை (புத்தகப் பின்பகுதி - நம்மை அளப்போம் & இலக்கணம்)
+            // =========================================================================
+            {
+                id: 75,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 92)",
+                q: "‘கண்ணாடியாகும் கண்கள்’ என்னும் கவிதைத் தொகுப்பின் ஆசிரியர் யார்?",
+                options: [
+                    "அ) நகுலன்",
+                    "ஆ) பிரமிள்",
+                    "இ) அய்யப்ப மாதவன்",
+                    "ஈ) சிற்பி"
+                ],
+                ans: 0,
+                exp: "கவிஞர் நகுலன் (டி.கே. துரைசாமி) 'கண்ணாடியாகும் கண்கள்', 'சுருதி' உள்ளிட்ட கவிதை நூல்களைப் படைத்துள்ளார்."
+            },
+            {
+                id: 76,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 92)",
+                q: "“ஏழ் ஆண்டு இயற்றி ஓர் ஈராறு ஆண்டில்\nசூழ்கழல் மன்னற்குக் காட்டல்...” - தொடர்களில் வெளிப்படும் செய்திகள்:\n1. மாதவி ஏழு ஆண்டுகள் வரை நாட்டியம் பயின்றாள்.\n2. ஈராறு (12) வயதில் அரங்கேற்றம் செய்ய விரும்பினாள்.",
+                options: [
+                    "அ) 1 சரி; 2 தவறு",
+                    "ஆ) 1 தவறு; 2 சரி",
+                    "இ) 1 தவறு; 2 தவறு",
+                    "ஈ) 1 சரி; 2 சரி"
+                ],
+                ans: 3,
+                exp: "ஐந்து வயதில் தொடங்கி ஏழு ஆண்டுகள் நாட்டியம் பயின்று, ஈராறு (12) வயதில் அரங்கேற்றம் செய்ய விரும்பினாள் (1 சரி; 2 சரி)."
+            },
+            {
+                id: 77,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 92)",
+                q: "பொருத்தி விடை தேர்க (சிலப்பதிகாரம்):\nஅ) ஆமந்திரிகை - 1) முத்து\nஆ) நித்திலம் - 2) மூங்கில்\nஇ) கழஞ்சு - 3) இடக்கை வாத்தியம்\nஈ) கழை - 4) எடை அளவு",
+                options: [
+                    "அ) 2, 1, 3, 4",
+                    "ஆ) 3, 4, 2, 1",
+                    "இ) 3, 1, 4, 2",
+                    "ஈ) 1, 3, 4, 2"
+                ],
+                ans: 2,
+                exp: "ஆமந்திரிகை - இடக்கை வாத்தியம் (3); நித்திலம் - முத்து (1); கழஞ்சு - எடை அளவு (4); கழை - மூங்கில் (2)."
+            },
+            {
+                id: 78,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 92)",
+                q: "சுவடியோடு (மையாடல் விழாவில் தடவும் மை) பொருந்தாத ஒன்றைத் தேர்வு செய்க.",
+                options: [
+                    "அ) வசம்பு",
+                    "ஆ) மணத்தக்காளியிலைச் சாறு",
+                    "இ) கடுக்காய்",
+                    "ஈ) மாவிலைக்கரி"
+                ],
+                ans: 2,
+                exp: "சுவடியில் வசம்பு, மஞ்சள், மணத்தக்காளியிலைச்சாறு (அ) ஊமத்தையிலைச்சாறு, மாவிலைக்கரி, தர்ப்பைக்கரி ஆகியவற்றைக் கூட்டிச் செய்த மையைத் தடவுவார்கள். 'கடுக்காய்' இதில் இடம்பெறவில்லை."
+            },
+            {
+                id: 79,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 92)",
+                q: "‘குழிமாற்று’ என்னும் சொல்லோடு தொடர்புடைய துறை எது?",
+                options: [
+                    "அ) இலக்கியம்",
+                    "ஆ) கணிதம்",
+                    "இ) புவியியல்",
+                    "ஈ) வேளாண்மை"
+                ],
+                ans: 1,
+                exp: "குழிமாற்று என்பது பெருக்கல் வாய்பாடு ஆகும். எனவே இது கணிதத் துறையோடு தொடர்புடையது."
+            },
+            {
+                id: 80,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 90)",
+                q: "கல்வியை நிலைக்களனாகக் கொண்ட மெய்ப்பாடு எது?",
+                options: [
+                    "அ) பெருமிதம்",
+                    "ஆ) உவகை",
+                    "இ) நகை",
+                    "ஈ) மருட்கை"
+                ],
+                ans: 0,
+                exp: "கல்வி, தறுகண் (அஞ்சாமை), புகழ், கொடை ஆகிய நான்கும் 'பெருமிதம்' என்னும் மெய்ப்பாடு தோன்றும் நிலைக்களன்கள் ஆகும்."
+            },
+            {
+                id: 81,
+                chapter: "இயல் 4",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 90)",
+                q: "‘நகை’ என்னும் மெய்ப்பாடு தோன்றும் நிலைக்களன்களுள் ஒன்று எது?",
+                options: [
+                    "அ) கொடை",
+                    "ஆ) பிணி",
+                    "இ) பேதைமை",
+                    "ஈ) செல்வம்"
+                ],
+                ans: 2,
+                exp: "எள்ளல், இளமை, பேதைமை, மடன் ஆகிய நான்கு நிலைகளில் 'நகை' தோன்றும்."
+            },
+
+            // =========================================================================
+            // இயல் 4: புத்தக உள்பகுதி வினாக்கள் (Book Inside)
+            // =========================================================================
+            {
+                id: 82,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "பண்டைய காலத்துப் பள்ளிக்கூடங்கள் (உரைநடை)",
+                q: "பண்டைய காலத்துப் பள்ளிக்கூடங்களில் சுவடிகளை வைப்பதற்கும் எடுத்துச் செல்வதற்கும் உபயோகப்படும் கருவியான 'தூக்கு' என்பதன் மற்றொரு பெயர் என்ன?",
+                options: [
+                    "அ) சட்டம்",
+                    "ஆ) அசை",
+                    "இ) வேத்தான்",
+                    "ஈ) குண்டெழுத்தாணி"
+                ],
+                ans: 1,
+                exp: "சுவடிகளை வைப்பதற்கும் எடுத்துச் செல்வதற்கும் பயன்படும் கருவிக்குத் 'தூக்கு' என்று பெயர். அதனை 'அசை' என்றும் சொல்வதுண்டு."
+            },
+            {
+                id: 83,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "பண்டைய காலத்துப் பள்ளிக்கூடங்கள் (உரைநடை)",
+                q: "பள்ளிக்கூடத்திற்குக் காலையில் ஐந்து மணிக்கே முதலில் வருபவனை மற்றவர்களைவிடத் தனிப்பெருமை உடையவன் என்ற பொருளில் எவ்வாறு அழைப்பார்கள்?",
+                options: [
+                    "அ) சட்டாம்பிள்ளை",
+                    "ஆ) வேத்தான்",
+                    "இ) கணக்காயர்",
+                    "ஈ) அண்ணாவி"
+                ],
+                ans: 1,
+                exp: "முதலில் வருபவனை 'வேத்தான்' என்று சொல்வார்கள்."
+            },
+            {
+                id: 84,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "பண்டைய காலத்துப் பள்ளிக்கூடங்கள் (உரைநடை)",
+                q: "தொல்காப்பியம் முதலான நூல்களில் குறிப்பிடப்படும் கல்வி கற்பதற்கான 'ஓதற்பிரிவு' என்பதன் கால எல்லை எத்தனை ஆண்டுகள்?",
+                options: [
+                    "அ) இரண்டு ஆண்டுகள்",
+                    "ஆ) மூன்று ஆண்டுகள்",
+                    "இ) ஐந்து ஆண்டுகள்",
+                    "ஈ) ஏழு ஆண்டுகள்"
+                ],
+                ans: 1,
+                exp: "ஓதற்பிரிவிற்கு மூன்று வருஷம் கால எல்லை என்று அந்நூல்கள் விதிக்கின்றன."
+            },
+            {
+                id: 85,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "பண்டைய காலத்துப் பள்ளிக்கூடங்கள் (நூல்வெளி)",
+                q: "'பண்டைய காலத்துப் பள்ளிக்கூடங்கள்' என்னும் கட்டுரை உ.வே.சாமிநாதரின் எந்த நூலிலிருந்து எடுத்தாளப்பட்டுள்ளது?",
+                options: [
+                    "அ) என் சரித்திரம்",
+                    "ஆ) உயிர்மீட்சி",
+                    "இ) நினைவு மஞ்சரி",
+                    "ஈ) புதியதும் பழையதும்"
+                ],
+                ans: 1,
+                exp: "இப்பாடப்பகுதி 'உயிர்மீட்சி' என்னும் தலைப்பில் தொகுக்கப்பட்ட உ.வே.சாமிநாதரின் இலக்கியக் கட்டுரைகளிலிருந்து எடுத்தாளப்பட்டுள்ளது."
+            },
+            {
+                id: 86,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "காவியம் (நூல்வெளி)",
+                q: "“சிறகிலிருந்து பிரிந்த இறகு ஒன்று காற்றின் தீராத பக்கங்களில் ஒரு பறவையின் வாழ்வை எழுதிச் செல்கிறது” என்ற 'காவியம்' கவிதையை எழுதிய பிரமிளின் (சிவராமலிங்கம்) நாடக நூல் எது?",
+                options: [
+                    "அ) லங்காபுரி ராஜா",
+                    "ஆ) நக்ஷத்திரவாசி",
+                    "இ) வெயிலும் நிழலும்",
+                    "ஈ) கண்ணாடியுள்ளிருந்து"
+                ],
+                ans: 1,
+                exp: "லங்காபுரி ராஜா - சிறுகதைத் தொகுப்பு; நக்ஷத்திரவாசி - நாடகம்; வெயிலும் நிழலும் - கட்டுரைத் தொகுப்பு; கண்ணாடியுள்ளிருந்து, கைப்பிடியளவு கடல் - கவிதை நூல்கள்."
+            },
+            {
+                id: 87,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "சிலப்பதிகாரம் (செய்யுள்)",
+                q: "சிலப்பதிகார அரங்கேற்று காதையின்படி, நாட்டிய அரங்கின் அகலம், நீளம், உயரம் மற்றும் உத்தரப் பலகைக்கும் அரங்கின் பலகைக்கும் இடையிலான இடைநிலம் முறையே:",
+                options: [
+                    "அ) 7 கோல் அகலம், 8 கோல் நீளம், 1 கோல் உயரம், 4 கோல் இடைநிலம்",
+                    "ஆ) 8 கோல் அகலம், 7 கோல் நீளம், 2 கோல் உயரம், 4 கோல் இடைநிலம்",
+                    "இ) 4 கோல் அகலம், 8 கோல் நீளம், 1 கோல் உயரம், 7 கோல் இடைநிலம்",
+                    "ஈ) 7 கோல் அகலம், 9 கோல் நீளம், 1 கோல் உயரம், 3 கோல் இடைநிலம்"
+                ],
+                ans: 0,
+                exp: "எழுகோல் அகலத்து எண்கோல் நீளத்து ஒருகோல் உயரத்து உறுப்பினது ஆகி உத்தரப் பலகையோடு அரங்கின் பலகை வைத்த இடைநிலம் நால்கோல் ஆக (அரங்கம் அளக்கும் கோல் 24 பெருவிரல் அளவு கொண்டது)."
+            },
+            {
+                id: 88,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "சிலப்பதிகாரம் (செய்யுள்)",
+                q: "அரங்கேற்றம் வெற்றிகரமாக முடிந்தவுடன் சோழ மன்னனிடமிருந்து மாதவி 'தலைக்கோலி' பட்டத்துடன் பரிசாகப் பெற்ற பொன் மாலையின் மதிப்பு என்ன?",
+                options: [
+                    "அ) ஆயிரம் கழஞ்சுப் பொன்",
+                    "ஆ) ஆயிரத்தெட்டுக் கழஞ்சுப் பொன்",
+                    "இ) நூற்றெட்டுக் கழஞ்சுப் பொன்",
+                    "ஈ) இரண்டாயிரம் கழஞ்சுப் பொன்"
+                ],
+                ans: 1,
+                exp: "விதிமுறைக் கொள்கையின் ஆயிரத்து எண் கழஞ்சு (1008 கழஞ்சு) ஒரு முறையாகப் பெற்றனள்."
+            },
+            {
+                id: 89,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "சிலப்பதிகாரம் (தெரியுமா? - பக். 83)",
+                q: "யாழின் வகைகளையும் அவற்றின் நரம்பு எண்ணிக்கையையும் பொருத்துக:\n1) பேரியாழ் - அ) 7 நரம்புகள்\n2) மகரயாழ் - ஆ) 14 நரம்புகள்\n3) சகோடயாழ் - இ) 19 நரம்புகள்\n4) செங்கோட்டியாழ் - ஈ) 21 நரம்புகள்",
+                options: [
+                    "அ) 1-ஈ, 2-இ, 3-ஆ, 4-அ",
+                    "ஆ) 1-அ, 2-ஆ, 3-இ, 4-ஈ",
+                    "இ) 1-ஈ, 2-ஆ, 3-இ, 4-அ",
+                    "ஈ) 1-இ, 2-ஈ, 3-ஆ, 4-அ"
+                ],
+                ans: 0,
+                exp: "பேரியாழ் - 21 நரம்புகள்; மகரயாழ் - 19 நரம்புகள்; சகோடயாழ் - 14 நரம்புகள்; செங்கோட்டியாழ் - 7 நரம்புகள்."
+            },
+            {
+                id: 90,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "சூரியனைப் பிரசவிக்கும் பாறை (நூல்வெளி)",
+                q: "தோப்பில் முகமது மீரான் எழுதிய 'சூரியனைப் பிரசவிக்கும் பாறை' சிறுகதை இடம்பெற்றுள்ள தொகுப்பு எது? மற்றும் சாகித்திய அகாதெமி விருது (1997) பெற்ற அவருடைய புதினம் எது?",
+                options: [
+                    "அ) வேர்களின் பேச்சு, சாய்வு நாற்காலி",
+                    "ஆ) கூனன் தோப்பு, துறைமுகம்",
+                    "இ) சாய்வு நாற்காலி, கூனன் தோப்பு",
+                    "ஈ) துறைமுகம், வேர்களின் பேச்சு"
+                ],
+                ans: 0,
+                exp: "'வேர்களின் பேச்சு' சிறுகதைத் தொகுப்பில் இக்கதை இடம்பெற்றுள்ளது. 'சாய்வு நாற்காலி' புதினம் 1997இல் சாகித்திய அகாதெமி விருது பெற்றது."
+            },
+            {
+                id: 91,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "வட்டார வழக்கு (தெரிந்து தெளிவோம் - பக். 87)",
+                q: "படைப்பாளிகளையும் அவர்கள் எழுதிய வட்டாரத் தமிழையும் பொருத்துக:\n1) புதுமைப்பித்தன் - அ) கோவைத்தமிழ்\n2) ஆர். சண்முகசுந்தரம் - ஆ) தஞ்சைத்தமிழ்\n3) தி. ஜானகிராமன் - இ) நெல்லைத்தமிழ்\n4) தோப்பில் முகமது மீரான் - ஈ) குமரித்தமிழ்",
+                options: [
+                    "அ) 1-இ, 2-அ, 3-ஆ, 4-ஈ",
+                    "ஆ) 1-अ, 2-இ, 3-ஆ, 4-ஈ",
+                    "இ) 1-இ, 2-ஆ, 3-அ, 4-ஈ",
+                    "ஈ) 1-ஈ, 2-அ, 3-ஆ, 4-இ"
+                ],
+                ans: 0,
+                exp: "புதுமைப்பித்தன் - நெல்லைத்தமிழ்; ஆர்.சண்முகசுந்தரம் - கோவைத்தமிழ்; ஜெயகாந்தன் - சென்னை வட்டாரத்தமிழ்; தி.ஜானகிராமன் - தஞ்சைத்தமிழ்; தோப்பில் முகமது மீரான் - குமரித்தமிழ்."
+            },
+            {
+                id: 92,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "மெய்ப்பாடு (இலக்கணம்)",
+                q: "உறுப்பறை, குடிகோள், அலை, கொலை ஆகிய நான்கு நிலைக்களன்களில் வெளிப்படும் மெய்ப்பாடு எது?",
+                options: [
+                    "அ) அச்சம்",
+                    "ஆ) இளிவரல்",
+                    "இ) வெகுளி",
+                    "ஈ) அழுகை"
+                ],
+                ans: 2,
+                exp: "வெகுளி (சினம்) உறுப்பறை, குடிகோள், அலை, கொலை ஆகிய நிலைகளில் வெளிப்படும். (அணங்கு, விலங்கு, கள்வர், இறை ஆகியவற்றால் 'அச்சம்' தோன்றும்)."
+            },
+            {
+                id: 93,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "சான்றோர் சித்திரம் (பக். 93)",
+                q: "‘சுவாமி வேதாசலம்’ என்னும் தன் பெயரைத் தூய தமிழில் மாற்றிக்கொண்டு, ‘ஞானசாகரம்’ (அறிவுக்கடல்) இதழை நடத்திய தனித்தமிழ் இயக்கத் தந்தை யார்?",
+                options: [
+                    "அ) பரிதிமாற் கலைஞர்",
+                    "ஆ) மறைமலையடிகள்",
+                    "இ) திரு.வி.க.",
+                    "ஈ) தேவநேயப் பாவாணர்"
+                ],
+                ans: 1,
+                exp: "மறைமலையடிகள் (1876-1950). முல்லைப்பாட்டு ஆராய்ச்சியுரை, பட்டினப்பாலை ஆராய்ச்சியுரை, சாகுந்தல நாடகம் முதலான நூல்களை எழுதியுள்ளார்."
+            },
+
+            // =========================================================================
+            // இயல் 5: அருமை உடைய செயல் (புத்தகப் பின்பகுதி - நம்மை அளப்போம் & இலக்கணம்)
+            // =========================================================================
+            {
+                id: 94,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 124)",
+                q: "திரைப்படத்தில் கதையும் சொல்லலாம் என்பதை முதன்முதலில் நிகழ்த்திக் காட்டியவர் யார்?",
+                options: [
+                    "அ) லூமியர் சகோதரர்கள்",
+                    "ஆ) ஜார்ஜ் மிலி",
+                    "இ) தாமஸ் ஆல்வா எடிசன்",
+                    "ஈ) சாமிக்கண்ணு வின்சென்ட்"
+                ],
+                ans: 1,
+                exp: "திரைப்படத்தில் கதையும் சொல்லலாம் என்பதை நிகழ்த்திக்காட்டிய பெருமைக்குரியவர் ஜார்ஜ் மிலி."
+            },
+            {
+                id: 95,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 124)",
+                q: "‘மனித குலத்திற்குத் தேவை போரல்ல; நல்லுணர்வும் அன்புதான்’ என்பதை மையக்கருவாகக் கொண்ட சார்லி சாப்ளின் திரைப்படம் எது?",
+                options: [
+                    "அ) தி கிட்",
+                    "ஆ) தி சர்க்கஸ்",
+                    "இ) தி கோல்டு ரஷ்",
+                    "ஈ) தி கிரேட் டிக்டேட்டர்"
+                ],
+                ans: 3,
+                exp: "1940இல் சார்லி சாப்ளின் எடுத்த 'தி கிரேட் டிக்டேட்டர்' (The Great Dictator) திரைப்படம் இக்கருத்தை உணர்த்தியது."
+            },
+            {
+                id: 96,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 124)",
+                q: "மாசித் திங்களில் நிகழும் விழாவாக மயிலைப் பதிகம் சுட்டுவது எது?",
+                options: [
+                    "அ) விளக்குத் திருவிழா",
+                    "ஆ) ஓண விழா",
+                    "இ) கடலாட்டு விழா",
+                    "ஈ) திருவாதிரை விழா"
+                ],
+                ans: 2,
+                exp: "மாசி - கடலாட்டு விழா (ஐப்பசி - ஓண விழா, கார்த்திகை - விளக்குத் திருவிழா, மார்கழி - திருவாதிரை விழா, தை - தைப்பூச விழா, பங்குனி - பங்குனி உத்திர விழா)."
+            },
+            {
+                id: 97,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 124)",
+                q: "“உள்ளொன்று வைத்துப் புறம்பொன்று பேசுவார்” - இத்தொடர் உணர்த்தும் பண்பு யாது?",
+                options: [
+                    "அ) நேர்மறைப் பண்பு",
+                    "ஆ) தயக்கப் பண்பு",
+                    "இ) முரண்பண்பு",
+                    "ஈ) இவை அனைத்தும்"
+                ],
+                ans: 2,
+                exp: "உள்ளத்தில் ஒன்றும் புறத்தில் ஒன்றுமாக மாறுபட்டுப் பேசுவதால் இது 'முரண்பண்பு' ஆகும்."
+            },
+            {
+                id: 98,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 124)",
+                q: "“வாளால் அறுத்துச் சுடினும்...” - இவ்வடியின் மூலம் குலசேகராழ்வார் வெளிப்படுத்துவது எது?",
+                options: [
+                    "அ) போர்",
+                    "ஆ) மருத்துவம்",
+                    "இ) விளையாட்டு",
+                    "ஈ) வேளாண்மை"
+                ],
+                ans: 1,
+                exp: "“வாளால் அறுத்துச் சுடினும் மருத்துவன் பால் மாளாத காதல் நோயாளன் போல்” - மருத்துவம் (அறுவை மருத்துவம்)."
+            },
+            {
+                id: 99,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 123)",
+                q: "“ஒட்டுப் போடாத\nஆகாயம் போல - இந்த\nஉலகமும் ஒன்றேதான்...” - இக்கவிதையில் பயின்றுவருவது:",
+                options: [
+                    "அ) உவமை",
+                    "ஆ) உருவகம்",
+                    "இ) உள்ளுறை",
+                    "ஈ) இறைச்சி"
+                ],
+                ans: 0,
+                exp: "'போல' என்ற உவம உருபு வெளிப்படையாக வந்துள்ளதால் இது 'உவமை' ஆகும்."
+            },
+            {
+                id: 100,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 123)",
+                q: "‘ஐம்பெருங்காப்பியம்’ என்னும் சொற்றொடரைத் தம் நன்னூல் உரையில் குறிப்பிட்டவர் யார்?",
+                options: [
+                    "அ) சிவஞான முனிவர்",
+                    "ஆ) மயிலைநாதர்",
+                    "இ) ஆறுமுகநாவலர்",
+                    "ஈ) இளம்பூரணர்"
+                ],
+                ans: 1,
+                exp: "நன்னூலுக்கு உரை எழுதிய மயிலைநாதர் தம் உரையில் 'ஐம்பெருங்காப்பியம்' என்னும் சொற்றொடரைக் குறிப்பிட்டுள்ளார். (தமிழ்விடுதூது 'பஞ்சகாப்பியம்' எனக் குறிப்பிடுகிறது)."
+            },
+            {
+                id: 101,
+                chapter: "இயல் 5",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 123)",
+                q: "சரியானவற்றைப் பொருத்தித் தேர்க (காப்பியச் சிற்றுறுப்புகள்):\nஅ) காதை - 1) கந்தபுராணம்\nஆ) சருக்கம் - 2) சீவகசிந்தாமணி\nஇ) இலம்பகம் - 3) சூளாமணி\nஈ) படலம் - 4) சிலப்பதிகாரம்",
+                options: [
+                    "அ) 4, 3, 2, 1",
+                    "ஆ) 3, 4, 1, 2",
+                    "இ) 3, 4, 2, 1",
+                    "ஈ) 4, 3, 1, 2"
+                ],
+                ans: 0,
+                exp: "காதை - சிலப்பதிகாரம், மணிமேகலை (4); சருக்கம் - சூளாமணி, பாரதம் (3); இலம்பகம் - சீவகசிந்தாமணி (2); படலம் - கந்தபுராணம், கம்பராமாயணம் (1)."
+            },
+
+            // =========================================================================
+            // இயல் 5: புத்தக உள்பகுதி வினாக்கள் (Book Inside)
+            // =========================================================================
+            {
+                id: 102,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "திரைமொழி (உரைநடை)",
+                q: "காட்சிகளை மாற்றி மாற்றி வைப்பதன் மூலம் வெவ்வேறு பொருள் உணர்த்தப்படுவதை (எ.கா. புன்னகைக்கிற மனிதன் - நீட்டப்பட்ட துப்பாக்கி - பதற்றமாகும் மனிதன்) எவ்வாறு அழைப்பர்?",
+                options: [
+                    "அ) காட்சி உதயம் (Fade in)",
+                    "ஆ) குலஷோவ் விளைவு (Kuleshov Effect)",
+                    "இ) ஒற்றைக்கோணக் கலை",
+                    "ஈ) காட்சி மறைவு (Fade out)"
+                ],
+                ans: 1,
+                exp: "காட்சிகளை மாற்றி மாற்றி வைப்பதன் மூலம் வெவ்வேறு பிம்பங்களை உருவாக்கிக் காட்டுவதைக் 'குலஷோவ் விளைவு' (Kuleshov Effect) என்பர்."
+            },
+            {
+                id: 103,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "திரைமொழி (தெரியுமா? - பக். 109)",
+                q: "பிரெஞ்சுக்காரர் டுபான் (Dupont) என்பவரிடமிருந்து 2500 ரூபாய்க்கு புரொஜக்டரையும் துண்டுப்படங்களையும் வாங்கித் தென்னிந்திய சினிமாத் தொழிலைத் தொடங்கி வைத்த தமிழர் யார்?",
+                options: [
+                    "அ) ஆர். நடராஜ முதலியார்",
+                    "ஆ) சாமிக்கண்ணு வின்சென்ட்",
+                    "இ) ஏ.வி. மெய்யப்பன்",
+                    "ஈ) தியடோர் பாஸ்கரன்"
+                ],
+                ans: 1,
+                exp: "சாமிக்கண்ணு வின்சென்ட் திருச்சியிலும் பின்னர் மதராஸ் எஸ்பிளனேட்டிலும் (பாரிமுனை) சலனப்படங்களைத் திரையிட்டு சினிமாத் தொழிலை நிறுவினார்."
+            },
+            {
+                id: 104,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "தெய்வமணிமாலை (செய்யுள் & நூல்வெளி)",
+                q: "இராமலிங்க அடிகள் சென்னை கந்தகோட்டத்து முருகப்பெருமானைப் பாடிய 'தெய்வமணிமாலை' திருவருட்பாவின் எத்தனையாவது திருமுறையில் இடம்பெற்றுள்ளது?",
+                options: [
+                    "அ) முதல் திருமுறை",
+                    "ஆ) இரண்டாம் திருமுறை",
+                    "இ) ஐந்தாம் திருமுறை",
+                    "ஈ) ஆறாம் திருமுறை"
+                ],
+                ans: 2,
+                exp: "திருவருட்பா ஆறு திருமுறைகளாகப் பகுக்கப்பட்டுள்ளது. தெய்வமணிமாலை ஐந்தாம் திருமுறையில் உள்ளது."
+            },
+            {
+                id: 105,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "பெருமாள் திருமொழி (செய்யுள் & நூல்வெளி)",
+                q: "குலசேகராழ்வார் வித்துவக்கோடு உய்யவந்த பெருமாளை அன்னையாக உருவகித்துப் பாடிய 'பெருமாள் திருமொழி' நாலாயிரத் திவ்வியப் பிரபந்தத்தில் எத்தனையாவது திருமொழியாக உள்ளது மற்றும் அதில் உள்ள பாடல்கள் எத்தனை?",
+                options: [
+                    "அ) ஐந்தாம் திருமொழி, 105 பாடல்கள்",
+                    "ஆ) இரண்டாம் திருமொழி, 100 பாடல்கள்",
+                    "இ) ஐந்தாம் திருமொழி, 400 பாடல்கள்",
+                    "ஈ) மூன்றாம் திருமொழி, 105 பாடல்கள்"
+                ],
+                ans: 0,
+                exp: "பெருமாள் திருமொழி நாலாயிரத் திவ்வியப் பிரபந்தத்தின் முதலாயிரத்தில் ஐந்தாம் திருமொழியாக உள்ளது. இதில் 105 பாடல்கள் உள்ளன."
+            },
+            {
+                id: 106,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "தேவாரம் (செய்யுள் & நூல்வெளி)",
+                q: "“மலிவிழா வீதி மடநல்லார் மாமயிலைக்...” எனத் தொடங்கும் திருஞானசம்பந்தரின் திருமயிலாப்பூர் பதிகம் பன்னிரு திருமுறைகளில் எந்தத் திருமுறையில் இடம்பெற்றுள்ளது?",
+                options: [
+                    "அ) முதல் திருமுறை",
+                    "ஆ) இரண்டாம் திருமுறை",
+                    "இ) மூன்றாம் திருமுறை",
+                    "ஈ) நான்காம் திருமுறை"
+                ],
+                ans: 1,
+                exp: "திருஞானசம்பந்தர் பாடியவை முதல் மூன்று திருமுறைகள். திருமயிலாப்பூர் பதிகம் இரண்டாம் திருமுறையில் இடம்பெற்றுள்ளது."
+            },
+            {
+                id: 107,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "நடிகர் திலகம் (விரிவானம்)",
+                q: "மலையாளக் கவிஞர் பாலச்சந்திரன் சுள்ளிக்காடு எழுதிய ‘சிதம்பர ஸ்மரண’ என்னும் நூலை ‘சிதம்பர நினைவுகள்’ என்னும் தலைப்பில் தமிழில் மொழிபெயர்த்தவர் யார்?",
+                options: [
+                    "அ) கே.வி. சைலஜா",
+                    "ஆ) சாந்தா தத்",
+                    "இ) சிற்பி பாலசுப்பிரமணியம்",
+                    "ஈ) ராஜீவ்நாத்"
+                ],
+                ans: 0,
+                exp: "கே.வி. சைலஜா ‘சிதம்பர நினைவுகள்’ என்னும் தலைப்பில் தமிழில் மொழிபெயர்த்துள்ளார்."
+            },
+            {
+                id: 108,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "நடிகர் திலகம் (விரிவானம்)",
+                q: "அண்ணாதுரையின் நாடகத்தில் சத்ரபதி சிவாஜியாக வேடமேற்று நடித்த வி.சி.கணேசனுக்கு ‘சிவாஜி கணேசன்’ என்று பெயரிட்டவர் யார்? மற்றும் எந்த நாட்டு அரசு அவருக்கு ‘செவாலியர்’ விருது வழங்கியது?",
+                options: [
+                    "அ) பெரியார், பிரெஞ்சு அரசு",
+                    "ஆ) அறிஞர் அண்ணா, எகிப்து அரசு",
+                    "இ) காமராசர், பிரிட்டிஷ் அரசு",
+                    "ஈ) பெரியார், இத்தாலி அரசு"
+                ],
+                ans: 0,
+                exp: "தந்தை பெரியார் 'சிவாஜி கணேசன்' என்று பெயரிட்டார். பிரெஞ்சு அரசு அவருக்கு 'செவாலியர்' விருது வழங்கியது."
+            },
+            {
+                id: 109,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "படைப்பாக்க உத்திகள் (இலக்கணம்)",
+                q: "தொல்காப்பியர் கூற்றுப்படி உவமை எத்தனை அடிப்படையில் தோன்றும்? அவை யாவை?",
+                options: [
+                    "அ) 4 (வினை, பயன், வடிவம்/மெய், உரு/நிறம்)",
+                    "ஆ) 3 (முதல், கரு, உரிப்பொருள்)",
+                    "இ) 5 (அறம், பொருள், இன்பம், வீடு, பாவிகம்)",
+                    "ஈ) 2 (உவமானம், உவமேயம்)"
+                ],
+                ans: 0,
+                exp: "வினை (தொழில்), பயன், வடிவம் (மெய்), உரு (நிறம்) என்ற நான்கின் அடிப்படையில் உவமை தோன்றும் என்பார் தொல்காப்பியர் (தொல். 1222)."
+            },
+            {
+                id: 110,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "படைப்பாக்க உத்திகள் (இலக்கணம்)",
+                q: "“பாவிகம் என்பது காப்பியப் பண்பே” என்று கூறும் நூல் எது? மற்றும் பெருங்காப்பியத்திற்குரிய நான்குவகை உறுதிப் பொருள்களும் பிற உறுப்புகளும் முழுமையாக அமையப்பெற்ற காப்பியம் எது?",
+                options: [
+                    "அ) தண்டியலங்காரம், சீவகசிந்தாமணி",
+                    "ஆ) தொல்காப்பியம், சிலப்பதிகாரம்",
+                    "இ) வீரசோழியம், மணிமேகலை",
+                    "ஈ) மாறனலங்காரம், கம்பராமாயணம்"
+                ],
+                ans: 0,
+                exp: "தண்டியலங்காரம் (நூற்பா 89) 'பாவிகம் என்பது காப்பியப் பண்பே' என்கிறது. நான்குவகை உறுதிப்பொருள்களும் முழுமையாக அமையப்பெற்ற காப்பியம் சீவகசிந்தாமணி."
+            },
+            {
+                id: 111,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "சான்றோர் சித்திரம் (பக். 125)",
+                q: "‘தசரதன் குறையும் கைகேயி நிறையும்’, ‘சேரர் தாயமுறை’, ‘திருவள்ளுவர்’ ஆகிய நூல்களை இயற்றியவரும், வ.உ.சி.யின் சுதேசிக் கப்பல் நிறுவனத்தின் நிருவாகப் பொறுப்பை ஏற்றவருமான அறிஞர் யார்?",
+                options: [
+                    "அ) நாவலர் சோமசுந்தர பாரதியார்",
+                    "ஆ) சுப்பிரமணிய சிவா",
+                    "இ) வ.சுப. மாணிக்கம்",
+                    "ஈ) மா. இராசமாணிக்கனார்"
+                ],
+                ans: 0,
+                exp: "நாவலர் சோமசுந்தர பாரதியார் (1879-1959). வ.உ.சி. இவரை 'என்னிடம் இரண்டு சரக்குக் கப்பலோடு மூன்றாவதாக ஒரு தமிழ்க் கப்பலும் உள்ளது' என்று பெருமிதத்துடன் குறிப்பிடுவார்."
+            },
+
+            // =========================================================================
+            // இயல் 6: எல்லா உயிரும் தொழும் (புத்தகப் பின்பகுதி - நம்மை அளப்போம் & இலக்கணம்)
+            // =========================================================================
+            {
+                id: 112,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 147)",
+                q: "‘ஏற்ற காலத்தை அறிந்து ஏற்ற இடத்தையும் தெரிந்து ஒரு செயலை மேற்கொண்டால் உலகத்தையே அடைய நினைத்தாலும் கைகூடும்’ (ஞாலம் கருதினும் கைகூடும்...) என்று திருவள்ளுவர் குறிப்பிடும் அதிகாரம் எது?",
+                options: [
+                    "அ) ஊக்கமுடைமை",
+                    "ஆ) மடியின்மை",
+                    "இ) அறிவுடைமை",
+                    "ஈ) செங்கோன்மை"
+                ],
+                ans: 1,
+                exp: "பாடநூல் வினா வங்கியின்படி, காலம் அறிந்து செயல்படுதல் மற்றும் அரசன் ஒரு நாளை ஒதுக்கிப் பணியாற்றுவது குறித்து 'மடியின்மை' (மற்றும் காலமறிதல்) பகுதியில் சுட்டப்பட்டுள்ளது."
+            },
+            {
+                id: 113,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 147)",
+                q: "ஜான் பன்யன் எழுதிய ‘பில்கிரிம்ஸ் புராகிரஸ்’ (Pilgrim's Progress) என்னும் ஆங்கில நூலின் தழுவல் நூல் எது?",
+                options: [
+                    "அ) தேம்பாவணி",
+                    "ஆ) இயேசு காவியம்",
+                    "இ) இரட்சணிய யாத்திரிகம்",
+                    "ஈ) இரட்சணிய மனோகரம்"
+                ],
+                ans: 2,
+                exp: "ஜான் பன்யன் எழுதிய 'பில்கிரிம்ஸ் புராகிரஸ்' நூலின் தழுவலாக எச்.ஏ. கிருட்டினனாரால் படைக்கப்பட்ட உருவகக் காப்பியம் 'இரட்சணிய யாத்திரிகம்' (3766 பாடல்கள்)."
+            },
+            {
+                id: 114,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 147)",
+                q: "‘கிறித்துவக் கம்பர்’ என்று அழைக்கப்படுபவர் யார்?",
+                options: [
+                    "அ) கால்டுவெல்",
+                    "ஆ) ஜி.யு.போப்",
+                    "இ) வேதநாயகர்",
+                    "ஈ) எச்.ஏ. கிருட்டினனார்"
+                ],
+                ans: 3,
+                exp: "இரட்சணிய யாத்திரிகம், போற்றித் திருஅகவல், இரட்சணிய மனோகரம் ஆகிய நூல்களை இயற்றிய எச்.ஏ. கிருட்டினனாரை 'கிறித்துவக் கம்பர்' என்று போற்றுவர்."
+            },
+            {
+                id: 115,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 147)",
+                q: "புறநானூற்றை முதன்முதலாக (1894இல்) அச்சில் பதிப்பித்தவர் யார்?",
+                options: [
+                    "அ) உ.வே. சாமிநாதர்",
+                    "ஆ) மாயூரம் வேதநாயகர்",
+                    "இ) மா. இராசமாணிக்கனார்",
+                    "ஈ) சி.வை. தாமோதரனார்"
+                ],
+                ans: 0,
+                exp: "உ.வே.சா. 1894ஆம் ஆண்டு புறநானூற்றை முதன்முதலாக அச்சில் பதிப்பித்து வெளியிட்டார்."
+            },
+            {
+                id: 116,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "நம்மை அளப்போம் (பக். 147)",
+                q: "சோழநாட்டில் (காவிரிப்பூம்பட்டினத்தில்) இறக்குமதிப் பொருள்களுக்குச் சுங்கம் வசூலித்த செய்தியைக் கூறும் நூல் எது?",
+                options: [
+                    "அ) பதிற்றுப்பத்து",
+                    "ஆ) பட்டினப்பாலை",
+                    "இ) மலைபடுகடாம்",
+                    "ஈ) நெடுநல்வாடை"
+                ],
+                ans: 1,
+                exp: "“நீரினின்றும் நிலத்து ஏற்றவும் நிலத்தினின்று நீர்ப் பரப்பவும்...” எனப் பட்டினப்பாலை சுங்கம் வசூலித்துப் புலிச்சின்னம் பொறித்த செய்தியைக் கூறுகிறது."
+            },
+            {
+                id: 117,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 146)",
+                q: "பின்வருவனவற்றுள் தொன்மத்திற்குப் பொருந்தாத ஒன்றைத் தேர்க.",
+                options: [
+                    "அ) கர்ணன் தோற்றான் போ.",
+                    "ஆ) வயதில் சிறியவர், ஆனாலும் தலைவர்!",
+                    "இ) இந்த நாரதரிடம் எச்சரிக்கையாக இரு.",
+                    "ஈ) இந்தா போறான் தருமன்."
+                ],
+                ans: 1,
+                exp: "'வயதில் சிறியவர், ஆனாலும் தலைவர்!' என்பதில் எந்தத் தொன்மக் கதைமாந்தரும் இடம்பெறவில்லை."
+            },
+            {
+                id: 118,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 146)",
+                q: "தொன்மத்தைப் பற்றிய கூற்றுகளுள் தவறான ஒன்றைத் தேர்க.",
+                options: [
+                    "அ) உருவாக்கப்பட்டு இறுகிவிட்ட வடிவங்கள்.",
+                    "ஆ) பழங்கதையைக் கொண்டு கருத்தை விளக்குவது.",
+                    "இ) நம்ப முடியாததுபோல் தோன்றும் நிகழ்ச்சிகள், செய்திகள்.",
+                    "ஈ) விளங்காத கருத்துகளைப் பழமொழியின் மூலம் விளக்குவது."
+                ],
+                ans: 3,
+                exp: "பழமொழியின் மூலம் விளக்குவது தொன்மம் அன்று; புராண/பழங்கதைகள் மூலம் விளக்குவதே தொன்மம்."
+            },
+            {
+                id: 119,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 146)",
+                q: "‘சாப விமோசனம்’, ‘அகலிகை’ ஆகிய சிறுகதைகளில் இராமாயணத் தொன்மங்களைப் பயன்படுத்தியவர் யார்?",
+                options: [
+                    "அ) கு. அழகிரிசாமி",
+                    "ஆ) புதுமைப்பித்தன்",
+                    "இ) ஜெயமோகன்",
+                    "ஈ) எஸ். இராமகிருஷ்ணன்"
+                ],
+                ans: 1,
+                exp: "புதுமைப்பித்தன் 'சாப விமோசனம்', 'அகலிகை' கதைகளை எழுதியுள்ளார். (கு. அழகிரிசாமி - விட்ட குறை, வெந்தழலால் வேகாது; ஜெயமோகன் - பத்மவியூகம்; எஸ். ராமகிருஷ்ணன் - அரவான் நாடகம்)."
+            },
+            {
+                id: 120,
+                chapter: "இயல் 6",
+                category: "புத்தகப் பின்பகுதி",
+                topic: "இலக்கணத் தேர்ச்சிகொள் (பக். 146)",
+                q: "பண்புக்குறியீடுகளைக் கதைமாந்தர்களோடு பொருத்துக:\nஅ) அறம் - 1) கர்ணன்\nஆ) வலிமை - 2) மனுநீதிச்சோழன்\nஇ) நீதி - 3) பீமன்\nஈ) வள்ளல் - 4) தருமன்",
+                options: [
+                    "அ) 3, 2, 1, 4",
+                    "ஆ) 4, 3, 2, 1",
+                    "இ) 2, 4, 3, 1",
+                    "ஈ) 4, 3, 1, 2"
+                ],
+                ans: 1,
+                exp: "அறம் - தருமன் (4); வலிமை - பீமன் (3); நீதி - மனுநீதிச்சோழன் (2); வள்ளல் - கர்ணன் (1)."
+            },
+
+            // =========================================================================
+            // இயல் 6: புத்தக உள்பகுதி வினாக்கள் (Book Inside)
+            // =========================================================================
+            {
+                id: 121,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "இலக்கியத்தில் மேலாண்மை (உரைநடை)",
+                q: "“இன்சொல் விளைநிலனா ஈதலே வித்தாக வன்சொல் களைக்கட்டு வாய்மை எருவட்டி...” என வேளாண் மேலாண்மையோடு மனதின் செயலை ஒப்பிடும் பாடல் இடம்பெற்ற நூல் எது?",
+                options: [
+                    "அ) நாலடியார்",
+                    "ஆ) அறநெறிச்சாரம்",
+                    "இ) நல்வழி",
+                    "ஈ) பழமொழி நானூறு"
+                ],
+                ans: 1,
+                exp: "முனைப்பாடியார் இயற்றிய 'அறநெறிச்சாரம்' (பாடல் 16)."
+            },
+            {
+                id: 122,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "இலக்கியத்தில் மேலாண்மை (உரைநடை)",
+                q: "126 ஒற்றை வரிகளில் எழுதிய ‘துளிகள்’ (Fragments) என்னும் நூலின் மூலம் உலகப்புகழ் பெற்றவரும், ‘இரண்டு முறை ஒருவன் ஒரே நதியில் இறங்க முடியாது’ என்று கூறியவருமான கிரேக்க அறிஞர் யார்?",
+                options: [
+                    "அ) ஸ்ட்ரேபோ",
+                    "ஆ) ஹிராக்ளிடஸ்",
+                    "இ) சாக்ரடீஸ்",
+                    "ஈ) அரிஸ்டாட்டில்"
+                ],
+                ans: 1,
+                exp: "கிரேக்க நாட்டவரான ஹிராக்ளிடஸ் ‘துளிகள்’ (Fragments) நூலை எழுதியவர்."
+            },
+            {
+                id: 123,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "இலக்கியத்தில் மேலாண்மை (நூல்வெளி)",
+                q: "வெ. இறையன்பு எழுதிய எந்தக் கவிதை நூல் 1995ஆம் ஆண்டில் தமிழ் வளர்ச்சித் துறையின் சிறந்த நூலுக்கான பரிசினைப் பெற்றது?",
+                options: [
+                    "அ) வாய்க்கால் மீன்கள்",
+                    "ஆ) ஏழாவது அறிவு",
+                    "இ) உள்ளொளிப் பயணம்",
+                    "ஈ) மூளைக்குள் சுற்றுலா"
+                ],
+                ans: 0,
+                exp: "'வாய்க்கால் மீன்கள்' என்னும் கவிதை நூல் 1995இல் தமிழ் வளர்ச்சித் துறையின் பரிசினைப் பெற்றது."
+            },
+            {
+                id: 124,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "இரட்சணிய யாத்திரிகம் (செய்யுள் & நூல்வெளி)",
+                q: "இரட்சணிய யாத்திரிகம் திருநெல்வேலியில் இருந்து வெளிவந்த எந்த ஆன்மீக மாத இதழில் பதின்மூன்று ஆண்டுகள் தொடராக வெளிவந்தது? மற்றும் அதன் ஐந்து பருவங்களில் இயேசுவின் இறுதிக்கால நிகழ்ச்சிகள் இடம்பெறும் பருவம் எது?",
+                options: [
+                    "அ) நற்போதகம், குமார பருவம்",
+                    "ஆ) ஞானபோதினி, ஆதி பருவம்",
+                    "இ) நற்போதகம், இரட்சணிய பருவம்",
+                    "ஈ) சத்திய வர்த்தமானி, ஆரணிய பருவம்"
+                ],
+                ans: 0,
+                exp: "'நற்போதகம்' மாத இதழில் 13 ஆண்டுகள் தொடராக வெளிவந்து 1894 மே திங்களில் முதல் பதிப்பாக வெளியிடப்பட்டது. பாடப்பகுதி குமார பருவத்தில் (இரட்சணிய சரித படலம்) உள்ளது."
+            },
+            {
+                id: 125,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "இரட்சணிய யாத்திரிகம் (சொல்லும் பொருளும்)",
+                q: "இரட்சணிய யாத்திரிகப் பாடலில் வரும் 'கூவல்', 'உததி', 'மேதினி' ஆகிய சொற்களின் பொருள் முறையே:",
+                options: [
+                    "அ) கிணறு, கடல், உலகம்",
+                    "ஆ) கடல், கிணறு, வானம்",
+                    "இ) தண்டனை, உறுதி, உலகம்",
+                    "ஈ) கிணறு, மலை, கடல்"
+                ],
+                ans: 0,
+                exp: "கூவல் - கிணறு; உததி (மற்றும் வாரிதி) - கடல்; மேதினி - உலகம்."
+            },
+            {
+                id: 126,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "புறநானூறு (செய்யுள் & நூல்வெளி)",
+                q: "“உண்டால் அம்ம இவ்வுலகம் இந்திரர் அமிழ்தம் இயைவது ஆயினும்...” என்ற புறநானூற்றுப் பாடலைப் பாடியவர் யார்? மற்றும் அப்பாடலின் திணை, துறை யாது?",
+                options: [
+                    "அ) கடலுள் மாய்ந்த இளம்பெருவழுதி; பொதுவியல் திணை, பொருண்மொழிக்காஞ்சித் துறை",
+                    "ஆ) கணியன் பூங்குன்றனார்; பொதுவியல் திணை, முதுமொழிக்காஞ்சித் துறை",
+                    "இ) நக்கீரர்; வாகைத் திணை, கூதிர்ப்பாசறைத் துறை",
+                    "ஈ) ஔவையார்; பாடாண் திணை, பரிசில் துறை"
+                ],
+                ans: 0,
+                exp: "ஆசிரியர்: கடலுள் மாய்ந்த இளம்பெருவழுதி (புறம் 182). திணை: பொதுவியல் திணை, துறை: பொருண்மொழிக்காஞ்சித் துறை."
+            },
+            {
+                id: 127,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "புறநானூறு (நூல்வெளி)",
+                q: "புறநானூற்றை 'The Four Hundred Songs of War and Wisdom' என்னும் தலைப்பில் ஆங்கிலத்தில் மொழிபெயர்த்த பேராசிரியர் யார்?",
+                options: [
+                    "அ) ஜி.யு. போப் (G.U. Pope)",
+                    "ஆ) ஜார்ஜ் எல். ஹார்ட் (George L. Hart)",
+                    "இ) கால்டுவெல்",
+                    "ஈ) வீரமாமுனிவர்"
+                ],
+                ans: 1,
+                exp: "பேராசிரியர் ஜார்ஜ் எல். ஹார்ட் முழுமையாக மொழிபெயர்த்தார். (ஜி.யு. போப் 'Extracts from Purananooru & Purapporul Venbamalai' என்ற தலைப்பில் சில பாடல்களை மொழிபெயர்த்தார்)."
+            },
+            {
+                id: 128,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "கோடை மழை (விரிவானம்)",
+                q: "காஞ்சிபுரத்தைச் சேர்ந்த சாந்தா தத் எழுதிய 'கோடை மழை' சிறுகதை எந்த இதழில் வெளியாகி 'இலக்கியச் சிந்தனை' விருதைப் பெற்றது?",
+                options: [
+                    "அ) கல்கி",
+                    "ஆ) அமுதசுரபி",
+                    "இ) கலைமகள்",
+                    "ஈ) ஆனந்த விகடன்"
+                ],
+                ans: 1,
+                exp: "அமுதசுரபி இதழில் வெளியான 'கோடை மழை' சிறுகதை இலக்கியச் சிந்தனை விருதைப் பெற்றது. சாந்தா தத் 'நிறை' மாத இதழின் ஆசிரியராகவும், 'திசை எட்டும்' இதழின் ஆசிரியர் குழுவிலும் உள்ளார்."
+            },
+            {
+                id: 129,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "தொன்மம் (இலக்கணம்)",
+                q: "“தொன்மை தானே சொல்லுங் காலை உரையொடு புணர்ந்த பழமை மேற்றே” எனத் தொன்மத்திற்கு இலக்கணம் வகுத்த தொல்காப்பிய இயல் எது?",
+                options: [
+                    "அ) அகத்திணையியல்",
+                    "ஆ) புறத்திணையியல்",
+                    "இ) செய்யுளியல்",
+                    "ஈ) மெய்ப்பாட்டியல்"
+                ],
+                ans: 2,
+                exp: "தொல்காப்பியம் - செய்யுளியல் (நூற்பா 228)."
+            },
+            {
+                id: 130,
+                chapter: "இயல் 6",
+                category: "புத்தக உள்பகுதி",
+                topic: "சான்றோர் சித்திரம் (பக். 148)",
+                q: "சிந்துவெளி நாகரிகம் பற்றித் தமிழில் முதன்முதலில் ‘மொஹெஞ்சொ-தரோ அல்லது சிந்துவெளி நாகரிகம்’ என்ற நூலையும், ‘சோழர் வரலாறு’, ‘பல்லவர் வரலாறு’, ‘பெரியபுராண ஆராய்ச்சி’ ஆகிய நூல்களையும் இயற்றிய தமிழறிஞர் யார்?",
+                options: [
+                    "அ) மயிலை சீனி. வேங்கடசாமி",
+                    "ஆ) மா. இராசமாணிக்கனார்",
+                    "இ) சதாசிவ பண்டாரத்தார்",
+                    "ஈ) நீலகண்ட சாஸ்திரி"
+                ],
+                ans: 1,
+                exp: "மா. இராசமாணிக்கனார் (1907-1967) இளமையில் தையல் கடையில் பணியாற்றிப் பின்னர் தஞ்சை செயின்ட் பீட்டர்ஸ் பள்ளியில் பயின்று பல்கலைக்கழகப் பேராசிரியராக உயர்ந்தவர்."
+            },
+            {
+                id: 131,
+                chapter: "இயல் 4",
+                category: "புத்தக உள்பகுதி",
+                topic: "சாலைப் பாதுகாப்பு (பக். 91)",
+                q: "சாலைப் பாதுகாப்பு விதிகளின்படி விதிமீறல் மற்றும் தண்டத்தொகையைப் பொருத்துக:\n1) கைப்பேசியில் பேசிக்கொண்டு வாகனம் இயக்குதல் - அ) ₹ 2,000\n2) பந்தயம் வைத்து வாகனம் ஓட்டுதல் (முதல் முறை) - ஆ) ₹ 25,000\n3) காப்பீடு இல்லாத வாகனம் ஓட்டுதல் - இ) ₹ 5,000\n4) 18 வயது நிரம்பாதவர் வாகனம் இயக்கினால் பெற்றோருக்கு - ஈ) ₹ 1,000",
+                options: [
+                    "அ) 1-ஈ, 2-இ, 3-அ, 4-ஆ",
+                    "ஆ) 1-அ, 2-இ, 3-ஈ, 4-ஆ",
+                    "இ) 1-ஈ, 2-ஆ, 3-அ, 4-இ",
+                    "ஈ) 1-இ, 2-ஈ, 3-அ, 4-ஆ"
+                ],
+                ans: 0,
+                exp: "கைப்பேசி / தலைக்கவசம் / இருக்கைப்பட்டை அணியாமை - ₹1,000; பந்தயம் (முதல் முறை) - ₹5,000; காப்பீடு இல்லாமை - ₹2,000; 18 வயது நிரம்பாதவர் - ₹25,000."
+            },
+            {
+                id: 132,
+                chapter: "இயல் 1",
+                category: "புத்தக உள்பகுதி",
+                topic: "கலைச்சொற்கள் (படிப்போம் பயன்படுத்துவோம்)",
+                q: "கலைச்சொற்களைப் பொருத்துக (இயல் 1 & 2):\n1) Anthropology - அ) கல்வெட்டியல்\n2) Archaeology - ஆ) ஆவணக்காப்பகம்\n3) Epigraphy - இ) தொல்லியல்\n4) Archive - ஈ) மானுடவியல்",
+                options: [
+                    "அ) 1-ஈ, 2-இ, 3-அ, 4-ஆ",
+                    "ஆ) 1-இ, 2-ஈ, 3-ஆ, 4-அ",
+                    "இ) 1-ஈ, 2-அ, 3-இ, 4-ஆ",
+                    "ஈ) 1-ஆ, 2-இ, 3-அ, 4-ஈ"
+                ],
+                ans: 0,
+                exp: "Anthropology - மானுடவியல்; Archaeology - தொல்லியல்; Epigraphy - கல்வெட்டியல்; Archive - ஆவணக்காப்பகம்."
+            },
+            {
+                id: 133,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "கலைச்சொற்கள் (இயல் 3, 4, 5, 6)",
+                q: "கலைச்சொற்களைப் பொருத்துக:\n1) Matriarchy - அ) ஒளிப்பதிவு\n2) Cinematography - ஆ) சுங்க அதிகாரி\n3) Multiplex Complex - இ) தாய்வழிச்சமூகம்\n4) Customs officer - ஈ) ஒருங்கிணைந்த வளாகம்",
+                options: [
+                    "அ) 1-இ, 2-அ, 3-ஈ, 4-ஆ",
+                    "ஆ) 1-अ, 2-இ, 3-ஈ, 4-ஆ",
+                    "இ) 1-இ, 2-ஈ, 3-அ, 4-ஆ",
+                    "ஈ) 1-இ, 2-அ, 3-ஆ, 4-ஈ"
+                ],
+                ans: 0,
+                exp: "Matriarchy - தாய்வழிச்சமூகம்; Cinematography - ஒளிப்பதிவு; Multiplex Complex - ஒருங்கிணைந்த வளாகம்; Customs officer - சுங்க அதிகாரி."
+            },
+            {
+                id: 134,
+                chapter: "இயல் 5",
+                category: "புத்தக உள்பகுதி",
+                topic: "மொழியோடு விளையாடு (பக். 127)",
+                q: "எட்டுத்தொகை நூல்களுள் 'அகமும் புறமும்' சார்ந்த நூல் எது? மற்றும் 'புறம்' சார்ந்த இரு நூல்கள் எவை?",
+                options: [
+                    "அ) பரிபாடல் (அகமும் புறமும்); புறநானூறு, பதிற்றுப்பத்து (புறம்)",
+                    "ஆ) கலித்தொகை (அகமும் புறமும்); நற்றிணை, குறுந்தொகை (புறம்)",
+                    "இ) நெடுநல்வாடை (அகமும் புறமும்); மதுரைக்காஞ்சி, பட்டினப்பாலை (புறம்)",
+                    "ஈ) ஐங்குறுநூறு (அகமும் புறமும்); புறநானூறு, பரிபாடல் (புறம்)"
+                ],
+                ans: 0,
+                exp: "பக்கம் 127 கருத்துப்படத்தின்படி: எட்டுத்தொகையில் நற்றிணை, குறுந்தொகை, ஐங்குறுநூறு, அகநானூறு, கலித்தொகை ஆகிய 5 நூல்கள் அகம்; புறநானூறு, பதிற்றுப்பத்து ஆகிய 2 நூல்கள் புறம்; பரிபாடல் அகமும் புறமும்."
+            },
+            {
+                id: 135,
+                chapter: "திருக்குறள்",
+                category: "புத்தக உள்பகுதி",
+                topic: "திருக்குறள் அணிகள் (இயல் 2 & 4)",
+                q: "திருக்குறளपौ மற்றும் அவற்றில் பயின்று வந்துள்ள அணிகளைப் பொருத்துக:\n1) அன்பும் அறனும் உடைத்தாயின்... - அ) ஏகதேச உருவக அணி\n2) சினம்என்னும் சேர்ந்தாரைக் கொல்லி... - ஆ) தொழில் உவமை அணி\n3) அகலாது அணுகாது தீக்காய்வார் போல்க... - இ) எடுத்துக்காட்டு உவமையணி\n4) துஞ்சினார் செத்தாரின் வேறுஅல்லர்... - ஈ) நிரல்நிறை அணி",
+                options: [
+                    "அ) 1-ஈ, 2-அ, 3-ஆ, 4-இ",
+                    "ஆ) 1-அ, 2-ஈ, 3-ஆ, 4-இ",
+                    "இ) 1-ஈ, 2-ஆ, 3-அ, 4-இ",
+                    "ஈ) 1-இ, 2-அ, 3-ஆ, 4-ஈ"
+                ],
+                ans: 0,
+                exp: "1) அன்பும் அறனும் - நிரல்நிறை அணி; 2) சினம்என்னும் - ஏகதேச உருவக அணி; 3) அகலாது அணுகாது - தொழில் உவமை அணி; 4) துஞ்சினார் செத்தாரின் - எடுத்துக்காட்டு உவமையணி."
+            }
+        ];
+
+        // Application State
+        let currentMode = 'practice'; // 'practice', 'exam', 'study'
+        let selectedChapter = 'all';
+        let selectedCategory = 'all';
+        let searchQuery = '';
+        let showBookmarksOnly = false;
+        let userAnswers = {}; // { questionId: selectedOptionIndex }
+        let revealedAnswers = {}; // { questionId: boolean }
+        let bookmarks = new Set(JSON.parse(localStorage.getItem('tamil12_bookmarks') || '[]'));
+        let examSubmitted = false;
+        let examTimerInterval = null;
+        let examSeconds = 0;
+        let displayQuestions = [...QUESTION_BANK];
+
+        // Initialize App
+        window.addEventListener('DOMContentLoaded', () => {
+            updateBookmarkUI();
+            filterAndRender();
+        });
+
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.className = 'fa-solid fa-moon';
+            } else {
+                html.classList.add('dark');
+                icon.className = 'fa-solid fa-sun text-amber-400';
+            }
+        }
+
+        // Mode Switching
+        function switchMode(mode) {
+            currentMode = mode;
+            examSubmitted = false;
+            document.getElementById('exam-result-banner').classList.add('hidden');
+
+            // Update Mode Buttons UI
+            ['practice', 'exam', 'study'].forEach(m => {
+                const btn = document.getElementById(`mode-${m}`);
+                if (m === mode) {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white dark:bg-slate-900 text-indigo-600 dark:text-indigo-400 shadow-sm";
+                } else {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900";
+                }
+            });
+
+            // Handle Exam Bar & Timer
+            const examBar = document.getElementById('exam-bar');
+            if (mode === 'exam') {
+                userAnswers = {};
+                revealedAnswers = {};
+                examBar.classList.remove('hidden');
+                startExamTimer();
+            } else {
+                examBar.classList.add('hidden');
+                stopExamTimer();
+            }
+
+            filterAndRender();
+        }
+
+        function startExamTimer() {
+            stopExamTimer();
+            examSeconds = 0;
+            updateTimerDisplay();
+            examTimerInterval = setInterval(() => {
+                examSeconds++;
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function stopExamTimer() {
+            if (examTimerInterval) {
+                clearInterval(examTimerInterval);
+                examTimerInterval = null;
+            }
+        }
+
+        function updateTimerDisplay() {
+            const mins = String(Math.floor(examSeconds / 60)).padStart(2, '0');
+            const secs = String(examSeconds % 60).padStart(2, '0');
+            document.getElementById('exam-timer').textContent = `${mins}:${secs}`;
+        }
+
+        // Filter Handlers
+        function setChapterFilter(chapter) {
+            selectedChapter = chapter;
+            document.querySelectorAll('.chapter-pill').forEach(btn => {
+                if (btn.dataset.chapter === chapter) {
+                    btn.className = "chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-indigo-600 text-white shadow-sm transition";
+                } else {
+                    btn.className = "chapter-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-indigo-50 transition";
+                }
+            });
+            filterAndRender();
+        }
+
+        function setCategoryFilter(cat) {
+            selectedCategory = cat;
+            document.querySelectorAll('.cat-pill').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.className = "cat-pill flex-1 py-2 px-3 rounded-xl text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 transition text-center";
+                } else {
+                    btn.className = "cat-pill flex-1 py-2 px-3 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition text-center";
+                }
+            });
+            filterAndRender();
+        }
+
+        function handleSearch() {
+            const input = document.getElementById('search-input');
+            searchQuery = input.value.trim().toLowerCase();
+            const clearBtn = document.getElementById('clear-search');
+            if (searchQuery.length > 0) {
+                clearBtn.classList.remove('hidden');
+            } else {
+                clearBtn.classList.add('hidden');
+            }
+            filterAndRender();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            searchQuery = '';
+            document.getElementById('clear-search').classList.add('hidden');
+            filterAndRender();
+        }
+
+        function toggleBookmarkFilter() {
+            showBookmarksOnly = !showBookmarksOnly;
+            const btn = document.getElementById('btn-bookmarks');
+            if (showBookmarksOnly) {
+                btn.classList.add('ring-2', 'ring-amber-400', 'bg-amber-50', 'dark:bg-amber-950');
+            } else {
+                btn.classList.remove('ring-2', 'ring-amber-400', 'bg-amber-50', 'dark:bg-amber-950');
+            }
+            filterAndRender();
+        }
+
+        function toggleBookmark(id) {
+            if (bookmarks.has(id)) {
+                bookmarks.delete(id);
+            } else {
+                bookmarks.add(id);
+            }
+            localStorage.setItem('tamil12_bookmarks', JSON.stringify([...bookmarks]));
+            updateBookmarkUI();
+            filterAndRender();
+        }
+
+        function updateBookmarkUI() {
+            document.getElementById('bookmark-count').textContent = bookmarks.size;
+            const icon = document.getElementById('bookmark-icon');
+            icon.className = bookmarks.size > 0 ? 'fa-solid fa-star text-amber-500' : 'fa-regular fa-star text-amber-500';
+        }
+
+        function shuffleQuestions() {
+            displayQuestions.sort(() => Math.random() - 0.5);
+            renderQuestions();
+        }
+
+        function resetCurrentQuiz() {
+            userAnswers = {};
+            revealedAnswers = {};
+            examSubmitted = false;
+            document.getElementById('exam-result-banner').classList.add('hidden');
+            if (currentMode === 'exam') {
+                startExamTimer();
+            }
+            filterAndRender();
+        }
+
+        function resetFilters() {
+            selectedChapter = 'all';
+            selectedCategory = 'all';
+            showBookmarksOnly = false;
+            clearSearch();
+            setChapterFilter('all');
+            setCategoryFilter('all');
+        }
+
+        // Core Filtering & Rendering
+        function filterAndRender() {
+            displayQuestions = QUESTION_BANK.filter(item => {
+                const matchChapter = selectedChapter === 'all' || item.chapter === selectedChapter;
+                const matchCat = selectedCategory === 'all' || item.category === selectedCategory;
+                const matchBookmark = !showBookmarksOnly || bookmarks.has(item.id);
+                const matchSearch = searchQuery === '' ||
+                    item.q.toLowerCase().includes(searchQuery) ||
+                    item.topic.toLowerCase().includes(searchQuery) ||
+                    item.options.some(o => o.toLowerCase().includes(searchQuery)) ||
+                    item.exp.toLowerCase().includes(searchQuery);
+                return matchChapter && matchCat && matchBookmark && matchSearch;
+            });
+
+            renderQuestions();
+            updateStats();
+        }
+
+        function selectOption(questionId, optionIndex) {
+            if (currentMode === 'exam' && examSubmitted) return;
+            userAnswers[questionId] = optionIndex;
+            renderQuestions();
+            updateStats();
+        }
+
+        function toggleRevealAnswer(questionId) {
+            revealedAnswers[questionId] = !revealedAnswers[questionId];
+            renderQuestions();
+        }
+
+        function submitExam() {
+            examSubmitted = true;
+            stopExamTimer();
+
+            let correctCount = 0;
+            displayQuestions.forEach(q => {
+                if (userAnswers[q.id] === q.ans) {
+                    correctCount++;
+                }
+            });
+
+            const total = displayQuestions.length;
+            const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+            document.getElementById('result-score-fraction').textContent = `${correctCount} / ${total}`;
+            document.getElementById('result-percentage').textContent = `${percentage}%`;
+            document.getElementById('result-time-taken').textContent = document.getElementById('exam-timer').textContent;
+
+            const headline = document.getElementById('result-headline');
+            if (percentage >= 90) headline.textContent = "மிகச் சிறப்பு! (Outstanding Performance!)";
+            else if (percentage >= 75) headline.textContent = "நன்று! தொடர்ந்து பயிற்சி செய்க!";
+            else headline.textContent = "மேலும் பயிற்சி தேவை! விடைகளைச் சரிபார்க்கவும்.";
+
+            const banner = document.getElementById('exam-result-banner');
+            banner.classList.remove('hidden');
+            banner.scrollIntoView({ behavior: 'smooth' });
+
+            renderQuestions();
+            updateStats();
+        }
+
+        function updateStats() {
+            const total = displayQuestions.length;
+            let answered = 0;
+            let correct = 0;
+            let wrong = 0;
+
+            displayQuestions.forEach(q => {
+                if (userAnswers[q.id] !== undefined) {
+                    answered++;
+                    if (userAnswers[q.id] === q.ans) {
+                        correct++;
+                    } else {
+                        wrong++;
+                    }
+                }
+            });
+
+            document.getElementById('stat-total').textContent = total;
+            if (currentMode === 'exam' && !examSubmitted) {
+                document.getElementById('stat-correct').textContent = '-';
+                document.getElementById('stat-wrong').textContent = '-';
+                document.getElementById('stat-score').textContent = '-';
+            } else {
+                document.getElementById('stat-correct').textContent = correct;
+                document.getElementById('stat-wrong').textContent = wrong;
+                const pct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+                document.getElementById('stat-score').textContent = `${pct}%`;
+            }
+
+            const examCountEl = document.getElementById('exam-answered-count');
+            if (examCountEl) {
+                examCountEl.textContent = `${answered} / ${total}`;
+            }
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questions-container');
+            const emptyState = document.getElementById('empty-state');
+
+            if (displayQuestions.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+            emptyState.classList.add('hidden');
+
+            const html = displayQuestions.map((item, idx) => {
+                const userSelected = userAnswers[item.id];
+                const isAnswered = userSelected !== undefined;
+                const isRevealed = revealedAnswers[item.id] || currentMode === 'study' || (currentMode === 'exam' && examSubmitted);
+                const isBookmarked = bookmarks.has(item.id);
+
+                // Badge Colors
+                const catBadgeClass = item.category === 'புத்தகப் பின்பகுதி'
+                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+                    : 'bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border-purple-200 dark:border-purple-800';
+
+                // Format Question Text (preserve newlines)
+                const formattedQ = item.q.replace(/\n/g, '<br>');
+
+                // Build Options HTML
+                const optionsHtml = item.options.map((opt, optIdx) => {
+                    let btnStyle = "bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:border-indigo-400";
+                    let iconHtml = `<span class="w-5 h-5 rounded-full border border-slate-300 dark:border-slate-600 flex items-center justify-center text-xs"></span>`;
+
+                    if (currentMode === 'practice' && (isAnswered || isRevealed)) {
+                        if (optIdx === item.ans) {
+                            btnStyle = "bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-semibold ring-1 ring-emerald-500";
+                            iconHtml = `<i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 text-base"></i>`;
+                        } else if (userSelected === optIdx && optIdx !== item.ans) {
+                            btnStyle = "bg-rose-50 dark:bg-rose-950/60 border-rose-500 text-rose-900 dark:text-rose-200 font-semibold ring-1 ring-rose-500";
+                            iconHtml = `<i class="fa-solid fa-circle-xmark text-rose-600 dark:text-rose-400 text-base"></i>`;
+                        }
+                    } else if (currentMode === 'exam') {
+                        if (!examSubmitted) {
+                            if (userSelected === optIdx) {
+                                btnStyle = "bg-indigo-50 dark:bg-indigo-950/80 border-indigo-600 text-indigo-900 dark:text-indigo-200 font-semibold ring-1 ring-indigo-600";
+                                iconHtml = `<i class="fa-solid fa-circle-dot text-indigo-600 dark:text-indigo-400 text-base"></i>`;
+                            }
+                        } else {
+                            if (optIdx === item.ans) {
+                                btnStyle = "bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-semibold ring-1 ring-emerald-500";
+                                iconHtml = `<i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 text-base"></i>`;
+                            } else if (userSelected === optIdx && optIdx !== item.ans) {
+                                btnStyle = "bg-rose-50 dark:bg-rose-950/60 border-rose-500 text-rose-900 dark:text-rose-200 font-semibold ring-1 ring-rose-500";
+                                iconHtml = `<i class="fa-solid fa-circle-xmark text-rose-600 dark:text-rose-400 text-base"></i>`;
+                            }
+                        }
+                    } else if (currentMode === 'study') {
+                        if (optIdx === item.ans) {
+                            btnStyle = "bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold";
+                            iconHtml = `<i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 text-base"></i>`;
+                        }
+                    }
+
+                    return `
+                        <button onclick="selectOption(${item.id}, ${optIdx})" 
+                                class="option-btn w-full text-left p-3.5 rounded-xl border ${btnStyle} flex items-center justify-between gap-3 text-sm sm:text-base">
+                            <span>${opt}</span>
+                            ${iconHtml}
+                        </button>
+                    `;
+                }).join('');
+
+                // Explanation Box
+                const showExplanation = (currentMode === 'practice' && (isAnswered || isRevealed)) ||
+                                        (currentMode === 'exam' && examSubmitted) ||
+                                        (currentMode === 'study');
+
+                return `
+                    <article class="bg-white dark:bg-slate-900 rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-800 transition-all hover:shadow-md">
+                        <!-- Top Meta Row -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-indigo-600 text-white">
+                                    வினா #${idx + 1}
+                                </span>
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                                    ${item.chapter}
+                                </span>
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold border ${catBadgeClass}">
+                                    ${item.category}
+                                </span>
+                                <span class="text-xs text-slate-400 dark:text-slate-500 font-medium">
+                                    <i class="fa-solid fa-tag mr-1"></i>${item.topic}
+                                </span>
+                            </div>
+
+                            <div class="flex items-center gap-2 no-print">
+                                ${currentMode === 'practice' ? `
+                                    <button onclick="toggleRevealAnswer(${item.id})" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 transition">
+                                        <i class="fa-regular fa-eye mr-1"></i>${isRevealed ? 'விடையை மறை' : 'விடையைக் காட்டு'}
+                                    </button>
+                                ` : ''}
+                                <button onclick="toggleBookmark(${item.id})" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition" title="முக்கிய வினாவாகக் குறிக்க">
+                                    <i class="${isBookmarked ? 'fa-solid text-amber-500' : 'fa-regular text-slate-400'} fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Question Text -->
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-relaxed mb-4">
+                            ${formattedQ}
+                        </h3>
+
+                        <!-- Options Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            ${optionsHtml}
+                        </div>
+
+                        <!-- Explanation / Answer Key Box -->
+                        ${showExplanation ? `
+                            <div class="mt-4 p-3.5 rounded-xl bg-indigo-50/70 dark:bg-indigo-950/40 border border-indigo-200/80 dark:border-indigo-800/60 text-xs sm:text-sm">
+                                <div class="font-bold text-indigo-900 dark:text-indigo-300 mb-1 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-lightbulb text-amber-500"></i>
+                                    <span>சரியான விடை: ${item.options[item.ans]}</span>
+                                </div>
+                                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                    <span class="font-semibold">விளக்கம்:</span> ${item.exp}
+                                </p>
+                            </div>
+                        ` : ''}
+                    </article>
+                `;
+            }).join('');
+
+            container.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

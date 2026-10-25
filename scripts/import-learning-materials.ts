@@ -38,10 +38,16 @@ async function main() {
   const files = await walk(root);
   const known = new Set(SOURCE_MATERIALS.map((item) => item.file));
   for (const alias of videoAliases) {
-    if (!known.has(alias.canonicalFile)) throw new Error(`Unknown canonical video: ${alias.file}`);
+    if (!known.has(alias.canonicalFile))
+      throw new Error(`Unknown canonical video: ${alias.file}`);
     const buffer = await readFile(path.join(root, alias.file));
     const original = await readFile(path.join(root, alias.canonicalFile));
-    if ([buffer, original].some((value) => createHash("sha256").update(value).digest("hex") !== alias.sha256))
+    if (
+      [buffer, original].some(
+        (value) =>
+          createHash("sha256").update(value).digest("hex") !== alias.sha256,
+      )
+    )
       throw new Error(`Duplicate source changed: ${alias.file}`);
     known.add(alias.file);
   }
@@ -56,10 +62,25 @@ async function main() {
   const inspected = [];
   for (const source of SOURCE_MATERIALS) {
     const buffer = await readFile(path.join(root, source.file));
-    if (!buffer.length || (!source.hostedUrl && buffer.length > LEARNING_UPLOAD_LIMIT))
+    if (
+      !buffer.length ||
+      (!source.hostedUrl && buffer.length > LEARNING_UPLOAD_LIMIT)
+    )
       throw new Error(`Invalid file size: ${source.file}. Limit is 50 MiB.`);
     const sha256 = createHash("sha256").update(buffer).digest("hex");
-    if (source.hostedUrl && (source.kind !== "video" || source.sha256 !== sha256 || source.hostedUrl !== `https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/${sha256}.mp4`))
+    const ext = source.kind === "video" ? ".mp4" : ".pdf";
+    const allowedHosted = [
+      `https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/${sha256}${ext}`,
+      ...(source.kind === "video"
+        ? [
+            `https://github.com/devanand2008/avs-12th-student-hub/releases/download/video-lessons-2026-10-20/${sha256}.mp4`,
+          ]
+        : []),
+    ];
+    if (
+      source.hostedUrl &&
+      (source.sha256 !== sha256 || !allowedHosted.includes(source.hostedUrl))
+    )
       throw new Error(`Hosted source integrity mismatch: ${source.file}`);
     let pageCount = 0;
     let durationSeconds = 0;
@@ -99,7 +120,7 @@ async function main() {
       "Configure a live Supabase project before importing. Demo storage is not supported.",
     );
   const client = requireSupabase();
-  if (!verify) await initDatabase();
+  if (!verify && !process.argv.includes("--skip-init")) await initDatabase();
   const existing = await client
     .from("learning_resources")
     .select("id,kind,resource")
@@ -114,15 +135,19 @@ async function main() {
   const rows = new Map((existing.data || []).map((row) => [row.id, row]));
   // Existing resources and externally hosted videos need no Storage admin calls.
   // Only inspect/change the bucket when a missing resource actually needs upload.
-  const needsStorageUpload = !verify && inspected.some(
-    (item) => !item.source.hostedUrl && !rows.has(item.id),
-  );
+  const needsStorageUpload =
+    !verify &&
+    inspected.some((item) => !item.source.hostedUrl && !rows.has(item.id));
   if (needsStorageUpload) {
     const bucket = await client.storage.getBucket(bucketName);
     if (bucket.error || !bucket.data)
-      throw new Error("The learning-materials bucket is unavailable. Check the storage service before uploading.");
+      throw new Error(
+        "The learning-materials bucket is unavailable. Check the storage service before uploading.",
+      );
     if (!bucket.data.public)
-      throw new Error("This app requires public learning-materials URLs. Review the bucket configuration.");
+      throw new Error(
+        "This app requires public learning-materials URLs. Review the bucket configuration.",
+      );
     if (
       (bucket.data.file_size_limit != null &&
         bucket.data.file_size_limit < LEARNING_UPLOAD_LIMIT) ||
@@ -137,13 +162,20 @@ async function main() {
         allowedMimeTypes: [
           ...new Set([
             ...(bucket.data.allowed_mime_types || []),
-            "application/pdf", "image/jpeg", "image/png", "video/mp4",
+            "application/pdf",
+            "image/jpeg",
+            "image/png",
+            "video/mp4",
           ]),
         ],
       });
       if (updated.error)
-        throw new Error("Could not enable 50 MiB material uploads in Supabase Storage.");
-      console.log("Supabase Storage configured for notes and MP4 videos up to 50 MiB.");
+        throw new Error(
+          "Could not enable 50 MiB material uploads in Supabase Storage.",
+        );
+      console.log(
+        "Supabase Storage configured for notes and MP4 videos up to 50 MiB.",
+      );
     }
   }
 
@@ -163,11 +195,17 @@ async function main() {
         source.kind === "note" ? "notes/imported" : "videos/imported";
       const fileName = sha256 + (source.kind === "note" ? ".pdf" : ".mp4");
       const storagePath = `${directory}/${fileName}`;
-      const listed = source.hostedUrl ? null : await client.storage
-        .from(bucketName).list(directory, { search: fileName });
+      const listed = source.hostedUrl
+        ? null
+        : await client.storage
+            .from(bucketName)
+            .list(directory, { search: fileName });
       if (listed?.error)
         throw new Error(`Could not inspect uploaded files: ${source.file}`);
-      if (!source.hostedUrl && !listed?.data?.some((file) => file.name === fileName)) {
+      if (
+        !source.hostedUrl &&
+        !listed?.data?.some((file) => file.name === fileName)
+      ) {
         const buffer = await readFile(path.join(root, source.file));
         if (createHash("sha256").update(buffer).digest("hex") !== sha256)
           throw new Error(`Source changed during import: ${source.file}`);
@@ -184,17 +222,31 @@ async function main() {
             `Upload failed: ${source.file} (${uploaded.error.message}). Rerun to resume.`,
           );
       }
-      const url = source.hostedUrl || client.storage.from(bucketName).getPublicUrl(storagePath)
-        .data.publicUrl;
+      const url =
+        source.hostedUrl ||
+        client.storage.from(bucketName).getPublicUrl(storagePath).data
+          .publicUrl;
       // Do not publish a metadata row until its real remote MP4 is accessible.
       if (source.hostedUrl) {
-        const check = await fetch(url, { headers: { Range: "bytes=0-31" }, signal: AbortSignal.timeout(60000) });
-        if (check.status !== 206 || check.headers.get("content-range") !== `bytes 0-31/${sizeBytes}`) {
+        const check = await fetch(url, {
+          headers: { Range: "bytes=0-31" },
+          signal: AbortSignal.timeout(60000),
+        });
+        if (
+          check.status !== 206 ||
+          check.headers.get("content-range") !== `bytes 0-31/${sizeBytes}`
+        ) {
           await check.body?.cancel();
           throw new Error(`Hosted video range/size mismatch: ${source.file}`);
         }
         const header = Buffer.from(await check.arrayBuffer());
-        if (header.length !== 32 || header.toString("ascii", 4, 8) !== "ftyp") throw new Error(`Hosted video unavailable: ${source.file}`);
+        if (
+          header.length !== 32 ||
+          (source.kind === "video"
+            ? header.toString("ascii", 4, 8) !== "ftyp"
+            : header.toString("ascii", 0, 5) !== "%PDF-")
+        )
+          throw new Error(`Hosted material unavailable: ${source.file}`);
       }
       const common = {
         id,
@@ -210,16 +262,17 @@ async function main() {
         sha256,
         sizeBytes,
         description:
-          source.kind === "note"
+          source.description ||
+          (source.kind === "note"
             ? `Class 12 ${source.subjectName}: ${source.topic}. ${item.pageCount} PDF pages of notes and worked questions.`
-            : `Class 12 ${source.subjectName} video lesson: ${source.topic}.`,
+            : `Class 12 ${source.subjectName} video lesson: ${source.topic}.`),
         isPublished: true,
       };
       resource =
         source.kind === "note"
           ? {
               ...common,
-              badge: "HANDWRITTEN",
+              badge: source.badge || "HANDWRITTEN",
               pageCount: item.pageCount,
               downloadAllowed: true,
               viewsCount: 0,

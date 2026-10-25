@@ -262,7 +262,11 @@ export default function NoteViewerPage({ params }: PageProps) {
 
           {note.downloadAllowed && note.pdfUrl && (
             <a
-              href={note.pdfUrl}
+              href={
+                note.pdfUrl.includes("/learning-materials-2026-10-25/")
+                  ? `/api/notes/${encodeURIComponent(note.id)}/pdf`
+                  : note.pdfUrl
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="model-control"
@@ -323,14 +327,18 @@ export default function NoteViewerPage({ params }: PageProps) {
                 <div className="w-full">
                   <iframe
                     key={currentPage}
-                    src={`${note.pdfUrl}#page=${currentPage}&zoom=${zoomLevel}`}
+                    src={`${note.pdfUrl.includes("/learning-materials-2026-10-25/") ? `/api/notes/${encodeURIComponent(note.id)}/pdf` : note.pdfUrl}#page=${currentPage}&zoom=${zoomLevel}`}
                     title={note.title}
                     className="h-[65vh] min-h-[420px] w-full border-0 bg-white"
                   />
                   <p className="p-3 text-center text-xs text-slate-500">
                     If your browser cannot display this PDF,{" "}
                     <a
-                      href={note.pdfUrl}
+                      href={
+                        note.pdfUrl.includes("/learning-materials-2026-10-25/")
+                          ? `/api/notes/${encodeURIComponent(note.id)}/pdf`
+                          : note.pdfUrl
+                      }
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-semibold text-blue-600 underline"

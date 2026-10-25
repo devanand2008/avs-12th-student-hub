@@ -9,3 +9,6 @@
 *.woff binary
 *.woff2 binary
 *.gguf binary
+
+# Preserve supplied HTML evidence bytes, including original whitespace.
+"one mark html page/*.html" -text -whitespace

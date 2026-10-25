@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12th General English - Complete One-Mark Question Bank (Units 1 to 6)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .option-btn {
+            transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .option-btn:hover:not(:disabled) {
+            transform: translateX(4px);
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            .question-card {
+                break-inside: avoid;
+                border: 1px solid #cbd5e1 !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <!-- Brand Title -->
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center text-white font-black text-xl shadow-md shadow-blue-500/20">
+                        EN
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <h1 class="text-lg sm:text-xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">
+                                12th Std General English
+                            </h1>
+                            <span class="hidden sm:inline-block text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-700">
+                                TN SCERT Full Book
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">
+                            Complete Book Back & Book Inside One-Mark Portal (Units 1–6)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mode Switcher & Utilities -->
+                <div class="flex items-center gap-2 sm:gap-3 flex-wrap">
+                    <div class="inline-flex rounded-xl bg-slate-100 dark:bg-slate-800 p-1 border border-slate-200 dark:border-slate-700">
+                        <button id="mode-practice" onclick="switchMode('practice')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm">
+                            <i class="fa-solid fa-bolt mr-1.5"></i>Practice Mode
+                        </button>
+                        <button id="mode-exam" onclick="switchMode('exam')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900">
+                            <i class="fa-solid fa-stopwatch mr-1.5"></i>Exam Mode
+                        </button>
+                        <button id="mode-study" onclick="switchMode('study')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900">
+                            <i class="fa-solid fa-book-open mr-1.5"></i>Study Guide
+                        </button>
+                    </div>
+
+                    <!-- Bookmarks Filter -->
+                    <button id="btn-bookmarks" onclick="toggleBookmarkFilter()" class="px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition" title="View Starred Questions">
+                        <i class="fa-regular fa-star text-amber-500" id="bookmark-icon"></i>
+                        <span id="bookmark-count">0</span>
+                    </button>
+
+                    <!-- Print / PDF -->
+                    <button onclick="window.print()" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 transition" title="Print / Save as PDF">
+                        <i class="fa-solid fa-print"></i>
+                    </button>
+
+                    <!-- Dark Mode Toggle -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-100 transition" title="Toggle Dark Mode">
+                        <i id="theme-icon" class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Exam Mode Sticky Status Bar -->
+    <div id="exam-bar" class="hidden sticky top-[65px] z-30 bg-indigo-950 text-white shadow-lg border-b border-indigo-800 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <i class="fa-regular fa-clock text-amber-400 animate-pulse"></i>
+                    <span class="text-xs uppercase tracking-wider text-indigo-200">Timer:</span>
+                    <span id="exam-timer" class="font-mono text-lg font-bold text-amber-300">00:00</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-pen-clip text-emerald-400"></i>
+                    <span class="text-xs text-indigo-200">Attempted:</span>
+                    <span id="exam-answered-count" class="font-bold text-sm bg-indigo-900 px-2.5 py-0.5 rounded-full border border-indigo-700">0 / 0</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <button onclick="resetCurrentQuiz()" class="px-3 py-1.5 rounded-lg bg-indigo-900 hover:bg-indigo-800 text-xs font-semibold transition border border-indigo-700">
+                    <i class="fa-solid fa-rotate-left mr-1"></i>Reset
+                </button>
+                <button onclick="submitExam()" class="px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold shadow-md transition">
+                    <i class="fa-solid fa-check-double mr-1.5"></i>Submit Exam
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+        <!-- Dashboard & Filter Controls -->
+        <section class="bg-white dark:bg-slate-900 rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-800 mb-6 no-print">
+            <!-- Live Stats Row -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                <div class="p-3.5 rounded-xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Questions Shown</p>
+                        <p id="stat-total" class="text-xl font-extrabold text-blue-700 dark:text-blue-300">0</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-emerald-50/70 dark:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Correct</p>
+                        <p id="stat-correct" class="text-xl font-extrabold text-emerald-700 dark:text-emerald-300">0</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-rose-50/70 dark:bg-rose-950/40 border border-rose-100 dark:border-rose-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-rose-600 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Incorrect</p>
+                        <p id="stat-wrong" class="text-xl font-extrabold text-rose-700 dark:text-rose-300">0</p>
+                    </div>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-amber-50/70 dark:bg-amber-950/40 border border-amber-100 dark:border-amber-900/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500 text-white flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Accuracy Score</p>
+                        <p id="stat-score" class="text-xl font-extrabold text-amber-700 dark:text-amber-300">0%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unit Selection Pills -->
+            <div class="mb-4">
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-2">
+                    <i class="fa-solid fa-book-bookmark mr-1"></i>Filter by Unit:
+                </label>
+                <div class="flex flex-wrap gap-2" id="unit-filters">
+                    <button onclick="setUnitFilter('all')" data-unit="all" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-blue-600 text-white shadow-sm transition">
+                        All Units (1–6)
+                    </button>
+                    <button onclick="setUnitFilter('Unit 1')" data-unit="Unit 1" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition">
+                        Unit 1: Two Gentlemen / The Castle
+                    </button>
+                    <button onclick="setUnitFilter('Unit 2')" data-unit="Unit 2" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition">
+                        Unit 2: Nice Cup of Tea / Casuarina
+                    </button>
+                    <button onclick="setUnitFilter('Unit 3')" data-unit="Unit 3" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition">
+                        Unit 3: Being Alive / World's a Stage
+                    </button>
+                    <button onclick="setUnitFilter('Unit 4')" data-unit="Unit 4" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition">
+                        Unit 4: The Summit / Ulysses
+                    </button>
+                    <button onclick="setUnitFilter('Unit 5')" data-unit="Unit 5" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition">
+                        Unit 5: The Chair / Father to his Son
+                    </button>
+                    <button onclick="setUnitFilter('Unit 6')" data-unit="Unit 6" class="unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition">
+                        Unit 6: Rule of the Road / French Camp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Topic Category Pills -->
+            <div class="mb-4">
+                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-2">
+                    <i class="fa-solid fa-tags mr-1"></i>Filter by Section / Topic:
+                </label>
+                <div class="flex flex-wrap gap-1.5" id="section-filters">
+                    <button onclick="setSectionFilter('all')" data-sec="all" class="sec-pill px-3 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white transition">All Topics</button>
+                    <button onclick="setSectionFilter('Synonyms & Antonyms')" data-sec="Synonyms & Antonyms" class="sec-pill px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Synonyms & Antonyms</button>
+                    <button onclick="setSectionFilter('Vocabulary & Idioms')" data-sec="Vocabulary & Idioms" class="sec-pill px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Vocabulary, Idioms & Phrasal Verbs</button>
+                    <button onclick="setSectionFilter('Grammar')" data-sec="Grammar" class="sec-pill px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Grammar & Error Spotting</button>
+                    <button onclick="setSectionFilter('Poem & Literary Devices')" data-sec="Poem & Literary Devices" class="sec-pill px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Poem & Figures of Speech</button>
+                    <button onclick="setSectionFilter('Prose & Supplementary')" data-sec="Prose & Supplementary" class="sec-pill px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition">Prose & Supplementary</button>
+                </div>
+            </div>
+
+            <!-- Source Filter (Book Back vs Inside), Search & Quick Actions -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-3 pt-3 border-t border-slate-100 dark:border-slate-800">
+                <div class="md:col-span-5 flex flex-wrap gap-1.5">
+                    <button onclick="setSourceFilter('all')" data-src="all" class="src-pill flex-1 py-2 px-3 rounded-xl text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 transition text-center">
+                        All Sources
+                    </button>
+                    <button onclick="setSourceFilter('Book Back')" data-src="Book Back" class="src-pill flex-1 py-2 px-3 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition text-center">
+                        Book Back Exercises
+                    </button>
+                    <button onclick="setSourceFilter('Book Inside')" data-src="Book Inside" class="src-pill flex-1 py-2 px-3 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition text-center">
+                        Book Inside
+                    </button>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="md:col-span-4 relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                    <input type="text" id="search-input" oninput="handleSearch()" placeholder="Search word, poem, grammar, author..." class="w-full pl-9 pr-8 py-2 rounded-xl text-xs sm:text-sm bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                </div>
+
+                <!-- Shuffle & Reset -->
+                <div class="md:col-span-3 flex items-center justify-end gap-2">
+                    <button onclick="shuffleQuestions()" class="px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-blue-50 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold transition flex items-center gap-1.5" title="Shuffle Questions">
+                        <i class="fa-solid fa-shuffle text-blue-600"></i>Shuffle
+                    </button>
+                    <button onclick="resetCurrentQuiz()" class="px-3 py-2 rounded-xl bg-rose-50 dark:bg-rose-950/50 hover:bg-rose-100 text-rose-700 dark:text-rose-300 text-xs font-semibold transition flex items-center gap-1.5" title="Reset Answers">
+                        <i class="fa-solid fa-rotate-right"></i>Reset
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exam Report Banner -->
+        <section id="exam-result-banner" class="hidden mb-6 bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white rounded-2xl p-6 shadow-xl border border-blue-500/30 no-print">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                        Exam Performance Report
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mt-2" id="result-headline">Great Effort!</h2>
+                    <p class="text-blue-200 text-sm mt-1">Review all questions below with detailed textbook explanations.</p>
+                </div>
+                <div class="flex items-center gap-6 bg-white/10 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/15">
+                    <div class="text-center">
+                        <p class="text-xs text-blue-200">Score</p>
+                        <p class="text-3xl font-black text-emerald-400" id="result-score-fraction">0 / 0</p>
+                    </div>
+                    <div class="h-10 w-px bg-white/20"></div>
+                    <div class="text-center">
+                        <p class="text-xs text-blue-200">Percentage</p>
+                        <p class="text-3xl font-black text-amber-300" id="result-percentage">0%</p>
+                    </div>
+                    <div class="h-10 w-px bg-white/20"></div>
+                    <div class="text-center">
+                        <p class="text-xs text-blue-200">Time Taken</p>
+                        <p class="text-xl font-mono font-bold text-white" id="result-time-taken">00:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Questions List Container -->
+        <div id="questions-container" class="space-y-4"></div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="hidden text-center py-16 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <div class="w-16 h-16 mx-auto rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 text-2xl mb-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-700 dark:text-slate-300">No matching questions found</h3>
+            <p class="text-sm text-slate-500 mt-1">Try clearing your search filter or selecting 'All Units'.</p>
+            <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-xl bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition">
+                Reset All Filters
+            </button>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-6 mt-12 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+            <p>Based on Tamil Nadu State Council of Educational Research and Training (SCERT) Class 12 General English Textbook.</p>
+            <p class="font-semibold text-blue-600 dark:text-blue-400">Covers Prose, Poetry, Supplementary, Vocabulary & Grammar (Units 1–6)</p>
+        </div>
+    </footer>
+
+    <!-- Exhaustive 12th General English Question Bank & App Logic -->
+    <script>
+        const QUESTION_BANK = [
+            // =========================================================================
+            // UNIT 1: Two Gentlemen of Verona | The Castle | God Sees the Truth, But Waits
+            // =========================================================================
+            {
+                id: 1,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary & Vocab (p. 5-6)",
+                q: "Choose the correct synonym for the underlined word: 'He shrugged his shoulders to convey his disapproval of their shabby appearance.'",
+                options: ["a) raised slightly and momentarily", "b) drooped heavily", "c) stretched wide", "d) twisted painfully"],
+                ans: 0,
+                exp: "Glossary (p. 5): 'shrug' means to raise one's shoulders slightly and momentarily."
+            },
+            {
+                id: 2,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary (p. 5)",
+                q: "Choose the correct synonym for the underlined word: 'My interest was again provoked by their remarkable demeanour.'",
+                options: ["a) intelligence and skill", "b) appearance and behaviour", "c) poverty and hardship", "d) wealth and status"],
+                ans: 1,
+                exp: "Glossary (p. 5): 'demeanour' means appearance and behaviour."
+            },
+            {
+                id: 3,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary (p. 5)",
+                q: "Choose the correct synonym for the underlined word: 'They were childish enough, and in many ways quite artless.'",
+                options: ["a) cunning and clever", "b) innocent and guileless", "c) unskilful in painting", "d) rude and arrogant"],
+                ans: 1,
+                exp: "Glossary (p. 5): 'artless' means innocent, guileless (natural and without deceit)."
+            },
+            {
+                id: 4,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary (p. 5)",
+                q: "Choose the correct synonym for the underlined word: 'Nicola was glaring at his young brother in vexation.'",
+                options: ["a) admiration", "b) annoyance", "c) amusement", "d) delight"],
+                ans: 1,
+                exp: "Glossary (p. 5): 'vexation' means annoyance or frustration."
+            },
+            {
+                id: 5,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary (p. 5)",
+                q: "Choose the correct synonym for the underlined word: 'I felt I could not bear to intrude upon this happy family party.'",
+                options: ["a) celebrate warmly", "b) enter without permission", "c) observe silently", "d) donate generously"],
+                ans: 1,
+                exp: "Glossary (p. 5): 'intrude' means to enter without permission."
+            },
+            {
+                id: 6,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Vocabulary (p. 6)",
+                q: "Choose the most appropriate antonym for the word 'cautious':",
+                options: ["a) careful", "b) reckless / careless", "c) vigilant", "d) prudent"],
+                ans: 1,
+                exp: "'Cautious' means careful or alert; its antonym is 'reckless' or 'careless'."
+            },
+            {
+                id: 7,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Vocabulary (p. 6)",
+                q: "Choose the most appropriate antonym for the word 'scarce':",
+                options: ["a) scanty", "b) rare", "c) abundant / plentiful", "d) dear"],
+                ans: 2,
+                exp: "'Scarce' means insufficient or rare; its antonym is 'abundant' or 'plentiful'."
+            },
+            {
+                id: 8,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Choose the correct pair of confusable words to complete the sentences:\n1) They were saving up to _______ to America.\n2) Many skilled workers _______ into our country every year.",
+                options: ["a) immigrate, emigrate", "b) emigrate, immigrate", "c)eminent, imminent", "d) illicit, elicit"],
+                ans: 1,
+                exp: "'Emigrate' means to leave one's own country to settle permanently in another; 'immigrate' means to come to live permanently in a foreign country."
+            },
+            {
+                id: 9,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Distinguish between 'judicial' and 'judicious': 'A _______ person always respects the _______ system of the country.'",
+                options: ["a) judicial, judicious", "b) judicious, judicial", "c) industrial, industrious", "d) eligible, illegible"],
+                ans: 1,
+                exp: "'Judicious' means having or showing good judgement/wise; 'judicial' relates to a court of law or judges."
+            },
+            {
+                id: 10,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Choose the correct word: 'The police tried to _______ information from the culprit regarding his _______ trade.'",
+                options: ["a) illicit, elicit", "b) elicit, illicit", "c) prescribe, proscribe", "d) affect, effect"],
+                ans: 1,
+                exp: "'Elicit' (verb) means to draw out a response/information; 'illicit' (adjective) means unlawful or forbidden."
+            },
+            {
+                id: 11,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Choose the correct word: 'The doctor _______ a new medicine, while the government _______ the sale of harmful drugs.'",
+                options: ["a) proscribed, prescribed", "b) prescribed, proscribed", "c) borne, born", "d) aural, oral"],
+                ans: 1,
+                exp: "'Prescribed' means recommended/authorized (medical); 'proscribed' means banned or forbidden by law."
+            },
+            {
+                id: 12,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Phrasal Verbs (p. 7)",
+                q: "What is the meaning of the phrasal verb 'come upon' in the sentence: 'One night, we came upon them in the windy and deserted square'?",
+                options: ["a) scolded severely", "b) met or found by chance", "c) fainted suddenly", "d) relied upon"],
+                ans: 1,
+                exp: "'Come upon' means to meet or find someone/something by chance."
+            },
+            {
+                id: 13,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Phrasal Verbs (p. 7)",
+                q: "Match the phrasal verbs with their meanings (p. 7):\n1) draw up - A) faint / lose consciousness\n2) pass out - B) rely on / depend on\n3) bank on - C) come to a halt / stop (a vehicle)\n4) stand by - D) support / remain loyal",
+                options: ["a) 1-C, 2-A, 3-B, 4-D", "b) 1-A, 2-C, 3-D, 4-B", "c) 1-C, 2-B, 3-A, 4-D", "d) 1-B, 2-A, 3-C, 4-D"],
+                ans: 0,
+                exp: "draw up = stop a vehicle ('we drew up at a large red-roofed villa'); pass out = faint; bank on = rely on; stand by = support."
+            },
+            {
+                id: 14,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Prefixes and Suffixes (p. 7)",
+                q: "Choose the correct prefix and suffix for the root word 'manage':",
+                options: ["a) unmanage, managely", "b) mismanage, management", "c) inmanage, managable", "d) dismanage, manager"],
+                ans: 1,
+                exp: "Prefix: 'mis-' -> mismanage; Suffix: '-ment' / '-er' / '-able' -> management / manager / manageable."
+            },
+            {
+                id: 15,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Prefixes and Suffixes (p. 7)",
+                q: "Choose the correct prefix for the word 'fertile':",
+                options: ["a) unfertile", "b) infertile", "c) disfertile", "d) misfertile"],
+                ans: 1,
+                exp: "Prefix 'in-' is added to 'fertile' to form 'infertile' (Suffix: fertility)."
+            },
+            {
+                id: 16,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Tenses (p. 11)",
+                q: "Fill in the blank with the correct tense form (p. 11): 'Everyone _______ when the earthquake hit the small town.'",
+                options: ["a) is sleeping", "b) was sleeping", "c) sleeps", "d) will be sleeping"],
+                ans: 1,
+                exp: "Past Continuous ('was sleeping') is used for an ongoing past action interrupted by another past event ('hit')."
+            },
+            {
+                id: 17,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Tenses (p. 11)",
+                q: "Fill in the blank with the correct tense form (p. 11): 'My mother was tired yesterday because she _______ well the night before.'",
+                options: ["a) has not slept", "b) had not slept", "c) did not slept", "d) does not sleep"],
+                ans: 1,
+                exp: "Past Perfect ('had not slept') is used for an action completed before another past state ('was tired yesterday')."
+            },
+            {
+                id: 18,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Tenses (p. 12)",
+                q: "Fill in the blank with the correct tense form (p. 12): 'Scientists predict that by 2050, man _______ on Mars.'",
+                options: ["a) landed", "b) will have landed", "c) has landed", "d) was landing"],
+                ans: 1,
+                exp: "Future Perfect ('will have landed') is used with 'by + future time (by 2050)'."
+            },
+            {
+                id: 19,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Modal Auxiliaries (p. 14)",
+                q: "Fill in the blank with a suitable modal auxiliary (p. 14): 'Poonam _______ not catch the bus yesterday.'",
+                options: ["a) can", "b) could", "c) may", "d) must"],
+                ans: 1,
+                exp: "'Could' is the past form of 'can' used here to indicate past inability ('yesterday')."
+            },
+            {
+                id: 20,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Modal Auxiliaries (p. 14)",
+                q: "Complete the sentence with a modal using the clue given (p. 14): 'Had the doctor come in time, he _______ have saved the patient.' (probability)",
+                options: ["a) will", "b) would / could", "c) shall", "d) need"],
+                ans: 1,
+                exp: "In Type 3 Conditional ('Had + S + V3'), 'would have / could have + V3' is used in the main clause."
+            },
+            {
+                id: 21,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Reported Speech (p. 15)",
+                q: "Choose the correct indirect speech for: Satya said, 'I have completed my work.'",
+                options: [
+                    "a) Satya said that she has completed her work.",
+                    "b) Satya said that she had completed her work.",
+                    "c) Satya said that I had completed my work.",
+                    "d) Satya told that she completed her work."
+                ],
+                ans: 1,
+                exp: "Present Perfect ('have completed') changes to Past Perfect ('had completed') in reported speech."
+            },
+            {
+                id: 22,
+                unit: "Unit 1",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "Two Gentlemen of Verona (p. 1-4)",
+                q: "In 'Two Gentlemen of Verona', how old were the two brothers Nicola and Jacopo, and what was their sister Lucia suffering from?",
+                options: [
+                    "a) Nicola 13, Jacopo 12; Tuberculosis of the spine",
+                    "b) Nicola 12, Jacopo 13; Malignant tumour of the bone",
+                    "c) Nicola 14, Jacopo 11; Perforated lung",
+                    "d) Nicola 15, Jacopo 12; Cardiac ailment"
+                ],
+                ans: 0,
+                exp: "Nicola, the elder, was 13; Jacopo was nearly 12. Their sister Lucia (aged 20) suffered from tuberculosis of the spine at a hospital in Poleta (30 km from Verona)."
+            },
+            {
+                id: 23,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "The Castle by Edwin Muir (p. 19-22)",
+                q: "Identify the figure of speech in the line: 'A little wicked wicket gate.' (The Castle, p. 22)",
+                options: ["a) Simile", "b) Personification", "c) Metaphor", "d) Rhetorical Question"],
+                ans: 1,
+                exp: "'Wicked' is a human moral quality attributed to an inanimate 'wicket gate' (Personification). Also contains alliteration (wicked-wicket)."
+            },
+            {
+                id: 24,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "The Castle by Edwin Muir (p. 22)",
+                q: "Identify the figure of speech used in the line: 'Grew thin and treacherous as air.' (The Castle, p. 22)",
+                options: ["a) Metaphor", "b) Simile", "c) Oxymoron", "d) Onomatopoeia"],
+                ans: 1,
+                exp: "The tunnelled stone maze is compared to air using 'as' (Simile)."
+            },
+            {
+                id: 25,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "The Castle by Edwin Muir (p. 22)",
+                q: "Identify the figure of speech in the line: 'How can this shameful tale be told?' (The Castle, p. 22)",
+                options: ["a) Interrogation / Rhetorical Question", "b) Simile", "c) Transferred Epithet", "d) Euphemism"],
+                ans: 0,
+                exp: "A question asked for dramatic effect rather than to get an answer is a Rhetorical Question (Interrogation)."
+            },
+            {
+                id: 26,
+                unit: "Unit 1",
+                source: "Book Inside",
+                section: "Poem & Literary Devices",
+                topic: "The Castle by Edwin Muir (p. 19-21)",
+                q: "In the poem 'The Castle', who let the enemies into the famous citadel and what was their 'only enemy'?",
+                options: [
+                    "a) The brave captain; weapons",
+                    "b) The wizened warder; gold",
+                    "c) The mowers in the hay; starvation",
+                    "d) The friendly allies; silver"
+                ],
+                ans: 1,
+                exp: "'The wizened warder let them through... Our only enemy was gold, And we had no arms to fight it with.'"
+            },
+            {
+                id: 27,
+                unit: "Unit 1",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "God Sees the Truth, But Waits (p. 24-30)",
+                q: "In Leo Tolstoy's 'God Sees the Truth, But Waits', where did Ivan Dmitrich Aksionov live, how many years did he spend in Siberia, and which book did he buy in prison?",
+                options: [
+                    "a) Vladimir; 26 years; The Lives of the Saints",
+                    "b) Ryazan; 20 years; War and Peace",
+                    "c) Nizhny; 26 years; The Pilgrim's Progress",
+                    "d) Moscow; 30 years; The Bible"
+                ],
+                ans: 0,
+                exp: "Aksionov lived in Vladimir, was accused of murdering a merchant from Ryazan, spent 26 years in Siberia, and bought 'The Lives of the Saints' by making boots."
+            },
+            {
+                id: 28,
+                unit: "Unit 1",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "God Sees the Truth, But Waits - Glossary (p. 30)",
+                q: "In 'God Sees the Truth, But Waits', what do the Russian terms 'samovar' and 'troika' refer to?",
+                options: [
+                    "a) A musical instrument; a snow sledge",
+                    "b) A Russian metal urn for making tea; a cart pulled by a team of three horses",
+                    "c) A leather whip; a prison church",
+                    "d) A silver coin; a fur coat"
+                ],
+                ans: 1,
+                exp: "Glossary (p. 30): 'samovar' is a Russian metal urn for making tea; 'troika' is a cart pulled by a team of three horses."
+            },
+
+            // =========================================================================
+            // UNIT 2: A Nice Cup of Tea | Our Casuarina Tree | Life of Pi
+            // =========================================================================
+            {
+                id: 29,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Synonyms (p. 39)",
+                q: "Find out the synonym of the underlined word: 'But because the best manner of making it is the subject of violent disputes.'",
+                options: ["a) agreements", "b) applauses", "c) conflicts", "d) discussions"],
+                ans: 2,
+                exp: "Book Back Vocabulary (p. 39): 'disputes' means conflicts or arguments."
+            },
+            {
+                id: 30,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Synonyms (p. 39)",
+                q: "Find out the synonym of the underlined word: '...tea is one of the mainstays of civilization in the country.'",
+                options: [
+                    "a) a society in an advanced state of social development",
+                    "b) a society that has slow progress",
+                    "c) a society that has no progress",
+                    "d) a society in an average state of social development"
+                ],
+                ans: 0,
+                exp: "Book Back Vocabulary (p. 39): 'civilization' means a society in an advanced state of social development."
+            },
+            {
+                id: 31,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Synonyms (p. 39)",
+                q: "Find out the synonym of the underlined word: '...that they only drink it in order to be warmed and stimulated.'",
+                options: ["a) motivated", "b) discouraged", "c) passive", "d) admired"],
+                ans: 0,
+                exp: "Book Back Vocabulary (p. 39): 'stimulated' means motivated / excited / energized."
+            },
+            {
+                id: 32,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Synonyms (p. 39)",
+                q: "Find out the synonym of the underlined word: '...under the spout to catch the stray leaves.'",
+                options: ["a) fresh", "b) loose", "c) gathered", "d) harmful"],
+                ans: 1,
+                exp: "Book Back Vocabulary (p. 39): 'stray' leaves means loose / separated leaves."
+            },
+            {
+                id: 33,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Synonyms (p. 39)",
+                q: "Find out the synonym of the underlined word: 'One is liable to put in too much milk.'",
+                options: ["a) likely", "b) certain", "c) eager", "d) unlikely"],
+                ans: 0,
+                exp: "Book Back Vocabulary (p. 39): 'liable' means likely."
+            },
+            {
+                id: 34,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Antonyms (p. 39)",
+                q: "Find out the antonym of the underlined word: '...which are not to be despised.'",
+                options: ["a) hated", "b) liked", "c) respected", "d) defeated"],
+                ans: 1,
+                exp: "Book Back Vocabulary (p. 39): 'despised' means hated; its antonym is 'liked' (or respected)."
+            },
+            {
+                id: 35,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Antonyms (p. 39)",
+                q: "Find out the antonym of the underlined word: 'One does not feel wise, braver or more optimistic.'",
+                options: ["a) opportunistic", "b) cheerful", "c) realistic", "d) pessimistic"],
+                ans: 3,
+                exp: "Book Back Vocabulary (p. 39): The antonym of 'optimistic' (hopeful) is 'pessimistic'."
+            },
+            {
+                id: 36,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Antonyms (p. 39)",
+                q: "Find out the antonym of the underlined word: 'Not the flat, shallow type...'",
+                options: ["a) narrow", "b) wide", "c) deep", "d) direct"],
+                ans: 2,
+                exp: "Book Back Vocabulary (p. 39): The antonym of 'shallow' is 'deep'."
+            },
+            {
+                id: 37,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Antonyms (p. 39)",
+                q: "Find out the antonym of the underlined word: 'Predicting the arrival of visitors...'",
+                options: ["a) journey", "b) departure", "c) migration", "d) perusal"],
+                ans: 1,
+                exp: "Book Back Vocabulary (p. 39): The antonym of 'arrival' is 'departure'."
+            },
+            {
+                id: 38,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "A Nice Cup of Tea - Antonyms (p. 39)",
+                q: "Find out the antonym of the underlined word: '...but they are sufficient to show how subtilized the whole business has become.'",
+                options: ["a) enough", "b) suffocative", "c) inadequate", "d) submissive"],
+                ans: 2,
+                exp: "Book Back Vocabulary (p. 39): The antonym of 'sufficient' is 'inadequate'."
+            },
+            {
+                id: 39,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "A Nice Cup of Tea - George Orwell (p. 35-37)",
+                q: "What is the real name of George Orwell, and how many golden rules does he list in his essay 'A Nice Cup of Tea'?",
+                options: [
+                    "a) Eric Arthur Blair; 11 golden rules",
+                    "b) Archibald Joseph Cronin; 10 golden rules",
+                    "c) Alfred George Gardiner; 12 golden rules",
+                    "d) Samuel Clemens; 11 golden rules"
+                ],
+                ans: 0,
+                exp: "Eric Arthur Blair (pen name George Orwell), author of Animal Farm and Nineteen Eighty-Four, lists 11 golden rules for making tea."
+            },
+            {
+                id: 40,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "A Nice Cup of Tea (p. 35)",
+                q: "According to George Orwell, which teapot material produces the best tea, and how many heaped teaspoons of tea are right for a pot holding a quart?",
+                options: [
+                    "a) China or earthenware; six heaped teaspoons",
+                    "b) Silver or Britannia ware; four heaped teaspoons",
+                    "c) Enamel pot; ten teaspoons",
+                    "d) Army cauldron; two teaspoons"
+                ],
+                ans: 0,
+                exp: "The teapot should be made of china or earthenware (pewter is not so bad, silver/enamel are worse). A pot holding a quart needs six heaped teaspoons."
+            },
+            {
+                id: 41,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Prepositions (p. 45)",
+                q: "Complete the sentences with the correct prepositions (p. 45):\n1) Yuvan has been studying well _______ childhood.\n2) There was a skirmish _______ my brother and sister.",
+                options: ["a) for, among", "b) since, between", "c) from, with", "d) since, among"],
+                ans: 1,
+                exp: "'Since' is used for a point in time (childhood); 'between' is used for two nouns connected by 'and' (my brother and sister)."
+            },
+            {
+                id: 42,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Prepositional Phrases (p. 46)",
+                q: "Fill in the blanks with suitable prepositional phrases (p. 46):\n1) Many tourists visited Ooty _______ heavy rains.\n2) _______ rain, take an umbrella.",
+                options: [
+                    "a) on account of, Instead of",
+                    "b) in spite of, In case of",
+                    "c) in favour of, On behalf of",
+                    "d) according to, On the whole"
+                ],
+                ans: 1,
+                exp: "'in spite of' expresses contrast (despite heavy rains); 'in case of' expresses condition/precaution."
+            },
+            {
+                id: 43,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Connectives / Linkers (p. 47-48)",
+                q: "Choose the appropriate linkers (p. 48):\n1) _______ you register your name, you cannot participate in the competitions.\n2) My brother will certainly clear GRE; _______ he works very hard.",
+                options: ["a) If, yet", "b) Unless, for", "c) Although, so", "d) Besides, therefore"],
+                ans: 1,
+                exp: "'Unless' means 'if not'; 'for' is a coordinating conjunction of reason/cause (meaning 'because')."
+            },
+            {
+                id: 44,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Correlative Conjunctions (p. 48)",
+                q: "Fill in the blank with the appropriate correlative conjunction (p. 48): 'She is _______ an understanding person _______ everybody likes to be with her.'",
+                options: ["a) so ... that", "b) such ... that", "c) neither ... nor", "d) scarcely ... when"],
+                ans: 1,
+                exp: "'Such + a/an + adjective + noun + that' is the correct correlative structure ('such an understanding person that...')."
+            },
+            {
+                id: 45,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "Our Casuarina Tree by Toru Dutt (p. 56)",
+                q: "Identify the figure of speech in the opening lines of 'Our Casuarina Tree':\n'LIKE a huge Python, winding round and round\nThe rugged trunk, indented deep with scars'",
+                options: [
+                    "a) Zoomorphism / Simile",
+                    "b) Personification / Oxymoron",
+                    "c) Transferred Epithet",
+                    "d) Metonymy"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 56): Describing the vine in animal terms (as a python) using 'Like' is both Zoomorphism and Simile."
+            },
+            {
+                id: 46,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "Our Casuarina Tree by Toru Dutt (p. 56)",
+                q: "Identify the figure of speech in: 'What is that dirge-like murmur that I hear / Like the sea breaking on a shingle-beach? / It is the tree's lament, an eerie speech'",
+                options: [
+                    "a) Simile and Personification",
+                    "b) Antithesis and Irony",
+                    "c) Hyperbole and Pun",
+                    "d) Synecdoche"
+                ],
+                ans: 0,
+                exp: "'dirge-like' and 'Like the sea' are Similes; 'the tree's lament, an eerie speech' attributes human weeping/speech to the tree (Personification)."
+            },
+            {
+                id: 47,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Poem & Literary Devices",
+                topic: "Our Casuarina Tree - Glossary & Text (p. 52-55)",
+                q: "In 'Our Casuarina Tree', what sits 'statue-like alone' watching the sunrise on the tree's crest in winter, and which trees did Wordsworth sanctify that Toru Dutt alludes to?",
+                options: [
+                    "a) A gray baboon; the yew trees of Borrowdale",
+                    "b) A kokila bird; the oak trees of France",
+                    "c) A python; the pine trees of Italy",
+                    "d) A water-wraith; the banyan trees of Bengal"
+                ],
+                ans: 0,
+                exp: "A gray baboon sits statue-like alone on its crest while its puny offspring leap on lower boughs. Toru Dutt alludes to the deathless yew trees in Borrowdale (Wordsworth)."
+            },
+            {
+                id: 48,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "Life of Pi by Yann Martel (p. 59-64)",
+                q: "In 'Life of Pi', how many days did Pi Patel survive in the Pacific Ocean, what was the name of the ship that sank, and how many days of water rations did he find?",
+                options: [
+                    "a) 227 days; Tsimtsum; 124 days of water rations",
+                    "b) 124 days; Panama; 227 days of water rations",
+                    "c) 300 days; Titanic; 100 days of water rations",
+                    "d) 227 days; Pondicherry; 500 days of water rations"
+                ],
+                ans: 0,
+                exp: "Pi survived 227 days after the shipwreck of 'Tsimtsum'. He drank four 500ml cans (2 litres) of water and calculated he had water rations to last 124 days."
+            },
+            {
+                id: 49,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "Life of Pi - Glossary (p. 64)",
+                q: "Match the words from 'Life of Pi' with their meanings (p. 64):\n1) flotsam - A) death due to lack of oxygen\n2) conundrum - B) a humble request / prayer\n3) asphyxiation - C) debris floating in a river or sea\n4) supplication - D) a riddle / puzzling question",
+                options: ["a) 1-C, 2-D, 3-A, 4-B", "b) 1-D, 2-C, 3-B, 4-A", "c) 1-C, 2-A, 3-D, 4-B", "d) 1-A, 2-D, 3-C, 4-B"],
+                ans: 0,
+                exp: "Glossary (p. 64): flotsam = floating debris; conundrum = a riddle; asphyxiation = death due to lack of oxygen; supplication = a humble request/prayer."
+            },
+
+            // =========================================================================
+            // UNIT 3: In Celebration of Being Alive | All the World's a Stage | The Hour of Truth
+            // =========================================================================
+            {
+                id: 50,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "In Celebration of Being Alive - Synonyms (p. 71)",
+                q: "Spot the words from the lesson 'In Celebration of Being Alive' which mean the same as:\n1) hijacked (para 8)\n2) serious (para 10)",
+                options: [
+                    "a) commandeered, severe",
+                    "b) perforated, intrepid",
+                    "c) amputated, malignant",
+                    "d) disfigured, profound"
+                ],
+                ans: 0,
+                exp: "Book Back Vocabulary (p. 71): hijacked (para 8) = 'commandeered'; serious (para 10) = 'severe' (Also: profession = career, sorrowful = gloomy, decency = nobility, destiny = fate, significant = important)."
+            },
+            {
+                id: 51,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "In Celebration of Being Alive - Antonyms (p. 71)",
+                q: "Spot the words from the lesson 'In Celebration of Being Alive' opposite in meaning to:\n1) rare (para 1)\n2) fearful (para 8)\n3) benign (para 11)",
+                options: [
+                    "a) prevalent, intrepid, malignant",
+                    "b) sophisticated, solace, crippled",
+                    "c) profound, agony, amputated",
+                    "d) common, timid, harmless"
+                ],
+                ans: 0,
+                exp: "Book Back Antonyms (p. 71): rare x prevalent; primitive x sophisticated; fiction x fact; fearful x intrepid; benign x malignant; diffidence x confidence; boredom x amusement; criticize x appreciate."
+            },
+            {
+                id: 52,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "In Celebration of Being Alive - Fill in the blanks (p. 72)",
+                q: "Fill in the blanks with the words from the text (p. 72): 'The _______ warriors of the Spartan Army marched into battle, while the tyres of the car got _______ when it rolled over rusted nails.'",
+                options: [
+                    "a) intrepid, perforated",
+                    "b) disfigured, profound",
+                    "c) malignant, amputated",
+                    "d) solace, agony"
+                ],
+                ans: 0,
+                exp: "'intrepid' means bold and daring; 'perforated' means torn and damaged with holes."
+            },
+            {
+                id: 53,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Word Formation - Noun + Noun to Adj + Noun (p. 72)",
+                q: "Form a phrase with each of the following pairs of nouns (p. 72) on the model of 'fibre + tissue = fibrous tissue':\n1) muscle + pain\n2) skeleton + system\n3) digestion + enzymes",
+                options: [
+                    "a) muscular pain, skeletal system, digestive enzymes",
+                    "b) muscly pain, skeletonic system, digested enzymes",
+                    "c) muscularly pain, skeletal system, digestion enzymes",
+                    "d) muscle pain, bone system, digesting enzymes"
+                ],
+                ans: 0,
+                exp: "muscle -> muscular pain; skeleton -> skeletal system; nerve -> nervous disorder; digestion -> digestive enzymes; surgery -> surgical instruments; agony -> agonizing experience."
+            },
+            {
+                id: 54,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Spot the Errors (p. 73)",
+                q: "Spot the error and choose the correct sentence for: 'The Boss had full confidence on his Manager for successful completion of the project.' (p. 73)",
+                options: [
+                    "a) The Boss had full confidence in his Manager for the successful completion of the project.",
+                    "b) The Boss had full confidence at his Manager for successful completion of the project.",
+                    "c) The Boss had full confident on his Manager for successful completion.",
+                    "d) The Boss have full confidence on his Manager."
+                ],
+                ans: 0,
+                exp: "The noun 'confidence' takes the preposition 'in' (confidence in someone), not 'on'. Similarly: 'hoped for complete recovery' (not hoped of), 'suffering from' (not suffering with)."
+            },
+            {
+                id: 55,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Spot the Errors (p. 73)",
+                q: "Identify the correct version of the erroneous sentence from page 73: 'My grandfather is well-known in the village for his nobel deeds.'",
+                options: [
+                    "a) My grandfather is well-known in the village for his noble deeds.",
+                    "b) My grandfather are well-known in the village for his nobel deeds.",
+                    "c) My grandfather is well-known at the village for his nobel deeds.",
+                    "d) My grandfather is well-known in the village for his nobility deeds."
+                ],
+                ans: 0,
+                exp: "Spelling/Homophone error: 'noble' (worthy/moral) should be used instead of 'nobel'. Similarly on p. 73: 'dream career' instead of 'dream carrier', and 'evening meal' instead of 'evening meals'."
+            },
+            {
+                id: 56,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Active and Passive Voice (p. 77)",
+                q: "Change into Passive Voice (p. 77): 'Who taught her Computer Science?'",
+                options: [
+                    "a) By whom was she taught Computer Science?",
+                    "b) Who was taught Computer Science by her?",
+                    "c) By whom she was taught Computer Science?",
+                    "d) Whom was she taught Computer Science?"
+                ],
+                ans: 0,
+                exp: "In interrogative passive voice, 'Who' becomes 'By whom' followed by auxiliary verb + subject + past participle ('By whom was she taught Computer Science?')."
+            },
+            {
+                id: 57,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Active and Passive Voice (p. 77)",
+                q: "Change into Passive Voice (p. 77): 'One should keep one's promise.'",
+                options: [
+                    "a) One's promise should be kept by one.",
+                    "b) Promises should be kept. / A promise should be kept.",
+                    "c) Let one's promise be kept.",
+                    "d) Promise is kept by one."
+                ],
+                ans: 1,
+                exp: "Indefinite subjects like 'one', 'someone', 'people' are omitted in the passive voice: 'A promise should be kept.'"
+            },
+            {
+                id: 58,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Question Tags (p. 80-81)",
+                q: "Choose the correct question tag for the following sentences (p. 81):\n1) Let's clean the shelves this weekend, _______?\n2) My mother rarely travels by bus, _______?",
+                options: [
+                    "a) can we?, doesn't she?",
+                    "b) shall we?, does she?",
+                    "c) will you?, did she?",
+                    "d) shan't we?, is she?"
+                ],
+                ans: 1,
+                exp: "Sentences beginning with 'Let's' take 'shall we?'. Words like 'rarely, hardly, scarcely, seldom' are negative in meaning and take a positive tag ('does she?')."
+            },
+            {
+                id: 59,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Question Tags (p. 81)",
+                q: "Choose the correct question tag for the following sentences (p. 81):\n1) I am always the winner, _______?\n2) Somebody must bell the cat, _______?",
+                options: [
+                    "a) amn't I?, mustn't he?",
+                    "b) aren't I?, mustn't they?",
+                    "c) am I?, must they?",
+                    "d) isn't it?, shouldn't they?"
+                ],
+                ans: 1,
+                exp: "Affirmative 'I am' takes the contracted tag 'aren't I?'. Indefinite pronouns like 'Somebody, Everyone, Nobody' take the plural pronoun 'they' in the tag ('mustn't they?')."
+            },
+            {
+                id: 60,
+                unit: "Unit 3",
+                source: "Book Inside",
+                section: "Vocabulary & Idioms",
+                topic: "Do You Know - Age Groups (p. 88)",
+                q: "Match the age groups with the single words depicting them (Do You Know box, p. 88):\n1) 40–49 years - A) Quinquagenarian\n2) 50–59 years - B) Septuagenarian\n3) 70–79 years - C) Quadragenarian\n4) 80–89 years - D) Octogenarian",
+                options: [
+                    "a) 1-C, 2-A, 3-B, 4-D",
+                    "b) 1-A, 2-C, 3-D, 4-B",
+                    "c) 1-C, 2-B, 3-A, 4-D",
+                    "d) 1-B, 2-A, 3-C, 4-D"
+                ],
+                ans: 0,
+                exp: "10-19: denarian; 20-29: vicenarian; 30-39: tricenarian; 40-49: quadragenarian; 50-59: quinquagenarian; 60-69: sexagenarian; 70-79: septuagenarian; 80-89: octogenarian; 90-99: nonagenarian; 100+: centenarian."
+            },
+            {
+                id: 61,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "All the World's a Stage by William Shakespeare (p. 88-92)",
+                q: "In Shakespeare's 'All the World's a Stage' (from As You Like It, spoken by Jaques), identify the figures of speech in:\n1) 'All the world's a stage'\n2) 'And shining morning face, creeping like snail'\n3) 'Seeking the bubble reputation'",
+                options: [
+                    "a) 1-Metaphor, 2-Simile, 3-Metaphor",
+                    "b) 1-Simile, 2-Metaphor, 3-Personification",
+                    "c) 1-Personification, 2-Simile, 3-Oxymoron",
+                    "d) 1-Metaphor, 2-Alliteration, 3-Simile"
+                ],
+                ans: 0,
+                exp: "'All the world's a stage' and 'Seeking the bubble reputation' are Metaphors; 'creeping like snail' (and 'bearded like the pard', 'sighing like furnace') are Similes."
+            },
+            {
+                id: 62,
+                unit: "Unit 3",
+                source: "Book Inside",
+                section: "Poem & Literary Devices",
+                topic: "All the World's a Stage (p. 89-90)",
+                q: "In 'All the World's a Stage', which stage of man's life is described as 'In fair round belly with good capon lin'd, With eyes severe and beard of formal cut, Full of wise saws and modern instances'?",
+                options: [
+                    "a) The fourth stage - The Soldier",
+                    "b) The fifth stage - The Justice (Judge)",
+                    "c) The sixth stage - The lean and slipper'd pantaloon",
+                    "d) The seventh stage - Second childishness"
+                ],
+                ans: 1,
+                exp: "The fifth stage is 'the justice' (judge). 'Saws' means sayings/proverbs; 'capon' means fat chicken."
+            },
+            {
+                id: 63,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "The Hour of Truth - Idioms (p. 109)",
+                q: "Match the idioms from 'The Hour of Truth' with their meanings (p. 109):\n1) save one's skin - A) a sudden unexpected event or news\n2) a bolt out of a clear sky - B) viewed with suspicion and distrust\n3) have the whip hand - C) to protect oneself from difficulty\n4) under a cloud - D) to be the most powerful",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Book Back Idioms (p. 109): save one's skin = protect oneself from difficulty; make both ends meet = manage expenses within income; a bolt out of a clear sky = sudden unexpected event; have the whip hand = be the most powerful; under a cloud = viewed with suspicion."
+            },
+            {
+                id: 64,
+                unit: "Unit 3",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Hour of Truth by Percival Wilde (p. 95-105)",
+                q: "In Percival Wilde's one-act play 'The Hour of Truth', what was Robert Baldwin's weekly salary at Gresham's bank, how much bribe did John Gresham offer him to say 'I don't remember', and who offered Baldwin a job at the Third National Bank?",
+                options: [
+                    "a) 60 dollars a week; 100,000 dollars; Mr. Marshall",
+                    "b) 100 dollars a week; 50,000 dollars; Mr. Donovan",
+                    "c) 60 dollars a week; 10,000 dollars; Mr. Gresham",
+                    "d) 50 dollars a week; 100,000 dollars; Mr. Donovan"
+                ],
+                ans: 0,
+                exp: "Baldwin earned 60 dollars a week, Gresham offered him a hundred thousand dollars in thousand-dollar bills, and Mr. Marshall (President of the Third National) offered him a position after Gresham confessed."
+            },
+
+            // =========================================================================
+            // UNIT 4: The Summit | Ulysses | The Midnight Visitor
+            // =========================================================================
+            {
+                id: 65,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "The Summit - Idioms (p. 117)",
+                q: "Match the idioms from 'The Summit' with their meanings (p. 117):\n1) wait for the dust to settle - A) to have made all preparations needed / be well organized\n2) get all your ducks in a row - B) to think carefully about all relevant facts/figures before doing something\n3) fetch and carry - C) to wait for a situation to become clear or certain\n4) do the math - D) to do a lot of little jobs for somebody",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Book Back Idioms (p. 117): wait for the dust to settle = wait for a situation to become clear; have all your ducks in a row = be well organized; fetch and carry = do a lot of little jobs; do the math = calculate/think carefully; round the corner = very near."
+            },
+            {
+                id: 66,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "The Summit - Idioms (p. 117)",
+                q: "Fill in the blanks with the right idioms (p. 117):\n1) The chairman introduced an interactive session to _______.\n2) Our headmistress not only promised an excursion, but also announced a holiday on return. It was like _______.",
+                options: [
+                    "a) break the ice, the icing on the cake",
+                    "b) the icing on the cake, break the ice",
+                    "c) do the math, fetch and carry",
+                    "d) wait for the dust to settle, round the corner"
+                ],
+                ans: 0,
+                exp: "'break the ice' = make people more relaxed at the beginning of a meeting; 'the icing on the cake' = something extra that makes a good situation even better."
+            },
+            {
+                id: 67,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "The Summit - Phrasal Verbs (p. 118)",
+                q: "Match the travel-related phrasal verbs with their meanings (p. 118):\n1) see off - A) stay at a place for a short period when travelling to another destination\n2) stop over - B) go to station or airport to say goodbye to someone\n3) set off - C) arrive and register at airport or hotel\n4) check in - D) start a journey",
+                options: [
+                    "a) 1-B, 2-A, 3-D, 4-C",
+                    "b) 1-A, 2-B, 3-C, 4-D",
+                    "c) 1-B, 2-D, 3-A, 4-C",
+                    "d) 1-D, 2-A, 3-B, 4-C"
+                ],
+                ans: 0,
+                exp: "Book Back Phrasal Verbs (p. 118): see off = say goodbye at station/airport; stop over = halt briefly on a journey; set off = start a journey; check in = register at hotel/airport; check out = pay bill when leaving hotel."
+            },
+            {
+                id: 68,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Compound Words & Semantic Fields (p. 118-119)",
+                q: "Match the compound words with their definitions (p. 118):\n1) ice-berg - A) specially prepared flat surface of ice for skating\n2) ice-cap - B) an extremely large mass of ice floating in the sea\n3) ice-floe - C) a layer of ice permanently covering parts of the earth (North/South Poles)\n4) ice-rink - D) a large area of ice floating in the sea",
+                options: [
+                    "a) 1-B, 2-C, 3-D, 4-A",
+                    "b) 1-C, 2-B, 3-A, 4-D",
+                    "c) 1-B, 2-D, 3-C, 4-A",
+                    "d) 1-D, 2-C, 3-B, 4-A"
+                ],
+                ans: 0,
+                exp: "Book Back Compound Words (p. 118): ice-berg, ice-cap, ice-floe, ice-sheet, ice-rink."
+            },
+            {
+                id: 69,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Semantic Network (p. 119)",
+                q: "Match the 'snow' compound words with their semantic fields (p. 119):\n1) snow-board - A) Weather\n2) snow-mobile - B) Geography\n3) snow-storm - C) Sports\n4) snow-belt - D) Transportation",
+                options: [
+                    "a) 1-C, 2-D, 3-A, 4-B",
+                    "b) 1-D, 2-C, 3-B, 4-A",
+                    "c) 1-C, 2-A, 3-D, 4-B",
+                    "d) 1-B, 2-D, 3-A, 4-C"
+                ],
+                ans: 0,
+                exp: "snow-board -> Sports; snow-mobile -> Transportation; snow-chains -> Machinery; snow-storm -> Weather; snow-bird -> Travel; snow-belt -> Geography."
+            },
+            {
+                id: 70,
+                unit: "Unit 4",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Summit by Edmund Hillary (p. 111-115)",
+                q: "In 'The Summit', at what time on May 29, 1953 did Edmund Hillary and Tenzing Norgay reach the top of Mt. Everest, and what did they place in the snow as offerings?",
+                options: [
+                    "a) 11.30 a.m.; Tenzing placed chocolate, biscuits, and lollies; Hillary placed a small crucifix given by Colonel Hunt",
+                    "b) 9.00 a.m.; Tenzing placed a prayer flag; Hillary placed an ice-axe",
+                    "c) 2.00 p.m.; Tenzing placed sardines; Hillary placed oxygen bottles",
+                    "d) 6.30 a.m.; Tenzing placed flowers; Hillary placed a Bible"
+                ],
+                ans: 0,
+                exp: "They crawled out at 6.30 a.m., reached the South Peak at 9 a.m., and stood on the summit at 11.30 a.m. Tenzing placed a bar of chocolate, a packet of biscuits, and lollies; Hillary placed a crucifix given by Colonel John Hunt."
+            },
+            {
+                id: 71,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Conditional Clauses (p. 124-125)",
+                q: "Fill in the blanks with the correct verb forms in Conditional Clauses (p. 124-125):\n1) If I _______ (be) a spider, I _______ (weave) webs.\n2) If I had won the lottery, I _______ (donate) relief materials for the flood victims.",
+                options: [
+                    "a) was, will weave | will donate",
+                    "b) were, would weave | would have donated",
+                    "c) am, would weave | had donated",
+                    "d) were, wove | would donate"
+                ],
+                ans: 1,
+                exp: "1) Type II (Hypothetical/Unreal): 'If I were..., I would weave'. 2) Type III (Impossible past): 'If I had won..., I would have donated'."
+            },
+            {
+                id: 72,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Transformation of Sentences (p. 219)",
+                q: "Do as directed (p. 219): 'Besides being a singer, she is also a dancer.' (Rewrite as a compound sentence)",
+                options: [
+                    "a) She is not only a singer, but also a dancer.",
+                    "b) Though she is a singer, she is a dancer.",
+                    "c) She is a singer who dances well.",
+                    "d) Being a singer, she dances."
+                ],
+                ans: 0,
+                exp: "Simple ('Besides being...') transforms into Compound using correlative conjunctions 'not only... but also' or 'and'."
+            },
+            {
+                id: 73,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "Ulysses by Alfred Tennyson (p. 127-132)",
+                q: "Identify the figures of speech in the following lines from 'Ulysses' (p. 132):\n1) 'Yet all experience is an arch wherethro' / Gleams that untravell'd world'\n2) 'To follow knowledge like a sinking star'\n3) 'There lies the port; the vessel puffs her sail'",
+                options: [
+                    "a) 1-Metaphor, 2-Simile, 3-Personification",
+                    "b) 1-Simile, 2-Metaphor, 3-Alliteration",
+                    "c) 1-Personification, 2-Simile, 3-Metonymy",
+                    "d) 1-Oxymoron, 2-Hyperbole, 3-Simile"
+                ],
+                ans: 0,
+                exp: "'experience is an arch' = Metaphor; 'like a sinking star' = Simile; 'the vessel puffs her sail' (and 'the deep moans round with many voices') = Personification."
+            },
+            {
+                id: 74,
+                unit: "Unit 4",
+                source: "Book Inside",
+                section: "Poem & Literary Devices",
+                topic: "Ulysses by Alfred Tennyson (p. 127-130)",
+                q: "In Tennyson's 'Ulysses', what is the name of Ulysses' kingdom, who is his son to whom he leaves 'the sceptre and the isle', and which great Greek warrior does he hope to see in the 'Happy Isles'?",
+                options: [
+                    "a) Ithaca; Telemachus; Achilles",
+                    "b) Troy; Achilles; Telemachus",
+                    "c) Sparta; Hector; Agamemnon",
+                    "d) Athens; Odysseus; Hercules"
+                ],
+                ans: 0,
+                exp: "Ulysses is the King of Ithaca, his son is Telemachus, and he hopes to touch the Happy Isles (Greek Paradise) and see the great warrior Achilles."
+            },
+            {
+                id: 75,
+                unit: "Unit 4",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Midnight Visitor by Robert Arthur (p. 135-140)",
+                q: "In 'The Midnight Visitor', who was the young romantic writer who visited secret agent Ausable, who was the rival spy holding an automatic pistol, and who actually knocked on the door?",
+                options: [
+                    "a) Fowler (writer); Max (rival spy); Henry (the waiter)",
+                    "b) Max (writer); Fowler (rival spy); the French Police",
+                    "c) Henry (writer); Max (rival spy); the Hotel Manager",
+                    "d) Roger (writer); Max (rival spy); Inspector"
+                ],
+                ans: 0,
+                exp: "Fowler was the young writer; Max came to steal the report on new missiles; Henry was the waiter bringing the drinks Ausable had ordered."
+            },
+            {
+                id: 76,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "The Midnight Visitor - Fictional Detectives & Agencies (p. 139-140)",
+                q: "Match the fictional detective characters with their creators (p. 140):\n1) Hercule Poirot - A) Sujatha\n2) Ganesh & Vasanth - B) Devan\n3) Sankar Lal - C) Agatha Christie\n4) Sambu (Thuppariyum Sambu) - D) Tamizhvanan",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 140): Sherlock Holmes & Dr. Watson -> Sir Arthur Conan Doyle; Hercule Poirot -> Agatha Christie; Ganesh & Vasanth -> Sujatha; Sankar Lal -> Tamizhvanan; Sambu -> Devan."
+            },
+
+            // =========================================================================
+            // UNIT 5: The Chair | A Father to his Son | All Summer in a Day
+            // =========================================================================
+            {
+                id: 77,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "The Chair - Synonyms (p. 149)",
+                q: "Find out the synonym of the underlined word (p. 149):\n1) 'Just as we thought our chuckles had subsided.'\n2) 'Anna would say with an impudent smile.'",
+                options: [
+                    "a) 1-diminished, 2-disrespectful",
+                    "b) 1-increased, 2-innocent",
+                    "c) 1-submerged, 2-decent",
+                    "d) 1-completed, 2-fake"
+                ],
+                ans: 0,
+                exp: "Book Back Synonyms (p. 149): subsided = diminished; sturdy = strong; impudent = disrespectful; seasoned = garnished; bereavement = grief."
+            },
+            {
+                id: 78,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "The Chair - Antonyms (p. 149-150)",
+                q: "Find out the antonym of the underlined word (p. 149):\n1) 'Fortuitously, a guest visited our house.'\n2) 'There he was sitting in splendour on his chair.'",
+                options: [
+                    "a) 1-unfortunately, 2-simplicity",
+                    "b) 1-luckily, 2-magnificence",
+                    "c) 1-peacefully, 2-pomp",
+                    "d) 1-happily, 2-effulgence"
+                ],
+                ans: 0,
+                exp: "Book Back Antonyms (p. 149): anticipation x ignorance; fortuitously (luckily) x unfortunately; splendour (magnificence) x simplicity; unmatched x inferior; banter x flattery."
+            },
+            {
+                id: 79,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Compound Word Combinations (p. 150)",
+                q: "Identify the correct grammatical combination for the compound words (p. 150):\n1) buttermilk / storeroom\n2) diamond-hard / world famous\n3) grandmother / milchcow\n4) overstep",
+                options: [
+                    "a) 1-Noun+Noun, 2-Noun+Adj, 3-Adj+Noun, 4-Adverb+Verb",
+                    "b) 1-Adj+Noun, 2-Noun+Noun, 3-Verb+Noun, 4-Prep+Noun",
+                    "c) 1-Noun+Verb, 2-Adj+Adj, 3-Noun+Noun, 4-Adverb+Noun",
+                    "d) 1-Noun+Noun, 2-Verb+Noun, 3-Adj+Noun, 4-Noun+Adverb"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 150): Storeroom, buttermilk = Noun+Noun; Diamond-hard, world famous = Noun+Adjective; Grandmother, milchcow, software = Adjective+Noun; Overstep = Adverb+Verb; Swimming pool = Gerund+Noun; Output = Preposition/Adverb+Verb."
+            },
+            {
+                id: 80,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Blended Words / Portmanteau (p. 150)",
+                q: "Give the correct blended (portmanteau) words for the following combinations (p. 150):\n1) binary + digit\n2) foreign + exchange\n3) motor + pedal\n4) parachute + troop\n5) splash + sputter",
+                options: [
+                    "a) 1-bit, 2-forex, 3-moped, 4-paratroop, 5-splutter",
+                    "b) 1-bidigit, 2-fex, 3-motoped, 4-patroop, 5-spash",
+                    "c) 1-byte, 2-forex, 3-modal, 4-parachop, 5-splutter",
+                    "d) 1-bit, 2-forchange, 3-moped, 4-paratroop, 5-sput"
+                ],
+                ans: 0,
+                exp: "Book Back Blended Words (p. 150): binary + digit = bit; electronic + mail = email; foreign + exchange = forex; motor + pedal = moped; parachute + troop = paratroop; splash + sputter = splutter."
+            },
+            {
+                id: 81,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Euphemisms / Polite Alternatives (p. 150)",
+                q: "Match the underlined harsh words with their polite Euphemisms (p. 150):\n1) jail - A) between jobs\n2) unemployed - B) pre-owned / used\n3) disabled - C) correctional facility\n4) poor - D) visually / physically challenged\n5) second-hand - E) underprivileged / economically disadvantaged",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-E, 5-B",
+                    "b) 1-A, 2-C, 3-E, 4-D, 5-B",
+                    "c) 1-C, 2-B, 3-D, 4-E, 5-A",
+                    "d) 1-D, 2-A, 3-C, 4-B, 5-E"
+                ],
+                ans: 0,
+                exp: "Book Back Euphemisms (p. 150): jail -> correctional facility; unemployed -> between jobs; disabled -> physically/differently abled; poor -> underprivileged; second-hand -> pre-owned."
+            },
+            {
+                id: 82,
+                unit: "Unit 5",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Chair by Ki. Rajanarayanan (p. 143-148)",
+                q: "In Ki. Rajanarayanan's 'The Chair' (translated by Pritham K. Chakravarthy from 'Naarkaali'), which wood did Grandmother, Maamanaar, and Pedanna suggest for making the chair, and what colour did the elder sister finally recommend?",
+                options: [
+                    "a) Grandmother: Teak; Maamanaar: Neem; Pedanna: Poovarasu; Elder sister: Black wood (like sesame oilcake / ripe sugarcane)",
+                    "b) Grandmother: Neem; Maamanaar: Teak; Pedanna: Rosewood; Elder sister: Red wood",
+                    "c) Grandmother: Poovarasu; Maamanaar: Sandalwood; Pedanna: Teak; Elder sister: White wood",
+                    "d) Grandmother: Bamboo; Maamanaar: Neem; Pedanna: Teak; Elder sister: Brown wood"
+                ],
+                ans: 0,
+                exp: "Grandmother suggested Teak (light and sturdy); Maamanaar suggested Neem (keeps body cool); Pedanna suggested Poovarasu (fine-grained, without knots); Elder sister suggested dark/black wood like ripe sugarcane or sesame oilcake."
+            },
+            {
+                id: 83,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Non-Finite Verbs (p. 155-156, 221)",
+                q: "Identify the grammatical function of the underlined non-finite verbs (p. 155) and spot the error in (3):\n1) 'Jumping is fun.'\n2) 'The dancing parrots entertained the crowd.'\n3) Spot the error: 'She made me to cry.' (p. 221)",
+                options: [
+                    "a) 1-Gerund, 2-Present Participle (Adjective), 3-'She made me cry' (bare infinitive after 'make')",
+                    "b) 1-Participle, 2-Gerund, 3-'She made me crying'",
+                    "c) 1-Infinitive, 2-Gerund, 3-'She makes me to cry'",
+                    "d) 1-Gerund, 2-Infinitive, 3-'She made I to cry'"
+                ],
+                ans: 0,
+                exp: "'Jumping' is a Gerund (verbal noun acting as subject); 'dancing' modifies 'parrots' so it is a Present Participle; after causative verbs like 'make, let, bid', a bare infinitive without 'to' is used ('She made me cry')."
+            },
+            {
+                id: 84,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Degrees of Comparison - Error Spotting (p. 222)",
+                q: "Identify the correct forms of the erroneous sentences from page 222:\n1) 'Oxygen is more heavier than hydrogen.'\n2) 'Faster you run, sooner you get tired.'\n3) 'Of the two sisters, Helen is the prettiest.'",
+                options: [
+                    "a) 1-Oxygen is heavier than hydrogen. | 2-The faster you run, the sooner you get tired. | 3-Of the two sisters, Helen is the prettier.",
+                    "b) 1-Oxygen is most heaviest. | 2-Fastest you run, soonest you get tired. | 3-Of the two sisters, Helen is pretty.",
+                    "c) 1-Oxygen is heavier to hydrogen. | 2-More faster you run, more sooner you get tired. | 3-Helen is prettiest of two.",
+                    "d) No error in any of the sentences."
+                ],
+                ans: 0,
+                exp: "1) Avoid double comparatives ('more heavier' -> 'heavier'). 2) Parallel comparatives require 'The... the...' ('The faster..., the sooner...'). 3) When comparing two persons/things ('Of the two'), use Comparative ('the prettier'), not Superlative."
+            },
+            {
+                id: 85,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "A Father to his Son by Carl Sandburg (p. 162-166)",
+                q: "Identify the figures of speech in the following lines from 'A Father to his Son' (p. 165-166):\n1) 'Life is hard; be steel; be a rock.' & 'Life is a soft loam'\n2) 'The growth of a frail flower in a path up has sometimes shattered and split a rock.'\n3) 'Let him have lazy days seeking his deeper motives.'",
+                options: [
+                    "a) 1-Metaphor, 2-Antithesis, 3-Transferred Epithet",
+                    "b) 1-Simile, 2-Oxymoron, 3-Personification",
+                    "c) 1-Personification, 2-Simile, 3-Metaphor",
+                    "d) 1-Metaphor, 2-Synecdoche, 3-Irony"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 165-166): 'Life is a soft loam / be steel; be a rock' = Metaphor; 'frail flower... split a rock' (and 'Brutes have been gentled where lashes failed') = Antithesis; 'lazy days' (and 'world resenting change') = Transferred Epithet."
+            },
+            {
+                id: 86,
+                unit: "Unit 5",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "All Summer in a Day by Ray Bradbury (p. 170-175)",
+                q: "In Ray Bradbury's science fiction story 'All Summer in a Day', on which planet is the story set, how often does the Sun come out there, and which boy led the children in locking Margot in a closet?",
+                options: [
+                    "a) Planet Venus; once every 7 years (for 1–2 hours); William",
+                    "b) Planet Mars; once every 5 years; Roger",
+                    "c) Planet Venus; once every 10 years; John",
+                    "d) Planet Jupiter; once every 7 years; Henry"
+                ],
+                ans: 0,
+                exp: "On Venus, it had been raining continuously for 7 years. Margot had come from Earth (Ohio) 5 years ago when she was four, so she remembered the sun ('like a penny', 'like a fire in the stove', 'a flower that blooms for just one hour'). William pushed her and locked her in a closet."
+            },
+
+            // =========================================================================
+            // UNIT 6: On the Rule of the Road | Incident of the French Camp | Remember Caesar
+            // =========================================================================
+            {
+                id: 87,
+                unit: "Unit 6",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "On the Rule of the Road by A.G. Gardiner (p. 178-180)",
+                q: "What was the pseudonym of A.G. Gardiner, from which compilation is 'On the Rule of the Road' taken, and where was the stout old lady walking with her basket?",
+                options: [
+                    "a) Alpha of the Plough; Leaves in the Wind; down the middle of a street in Petrograd",
+                    "b) George Orwell; Pebbles on the Shore; at Piccadilly Circus in London",
+                    "c) Boz; Windfalls; on a highway in Paris",
+                    "d) Elia; Essays of Elia; in Moscow"
+                ],
+                ans: 0,
+                exp: "A.G. Gardiner wrote under the pseudonym 'Alpha of the Plough'. The essay is from 'Leaves in the Wind'. The stout old lady walked down the middle of a street in Petrograd claiming 'We've got liberty now'."
+            },
+            {
+                id: 88,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Functional Stress - Noun vs Verb (p. 181)",
+                q: "According to the Functional Stress rule on page 181, when words like 'contract, conduct, object, present, rebel, record' are used as a NOUN vs as a VERB, where does the primary stress fall?",
+                options: [
+                    "a) First syllable for Noun ('con-tract); Second syllable for Verb (con-'tract)",
+                    "b) Second syllable for Noun (con-'tract); First syllable for Verb ('con-tract)",
+                    "c) Both syllables are equally stressed in both Noun and Verb",
+                    "d) Stress changes only in American English"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 181): Usually, when the first syllable is stressed ('contract, 'conduct, 'object), the word is a Noun; when the second syllable is stressed (con'tract, con'duct, ob'ject), it is a Verb."
+            },
+            {
+                id: 89,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "British vs American English Vocabulary (p. 182)",
+                q: "Match the British English words with their American English equivalents (p. 182):\n1) pavement - A) vest\n2) pullover - B) sweater\n3) waistcoat - C) sidewalk\n4) chips - D) elevator\n5) lift - E) french fries",
+                options: [
+                    "a) 1-C, 2-B, 3-A, 4-E, 5-D",
+                    "b) 1-B, 2-C, 3-A, 4-D, 5-E",
+                    "c) 1-C, 2-A, 3-B, 4-E, 5-D",
+                    "d) 1-E, 2-B, 3-A, 4-C, 5-D"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 182): pavement = sidewalk; pullover = sweater; waistcoat = vest; chips = french fries; flat = apartment; ground floor = first floor; underground = subway; queue = line; windscreen = windshield; indicator = blinker/turn signal; timetable = schedule; post = mail; holiday = vacation; autumn = fall; lift = elevator; nappy = diaper; full stop = period; loo = restroom; sweets = candies; bin = trash can/garbage can."
+            },
+            {
+                id: 90,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "American vs British Spelling (p. 182)",
+                q: "Choose the correct British English spellings for the American words: 'odor, program, parlor, check (bank), gray' (p. 182):",
+                options: [
+                    "a) odour, programme, parlour, cheque, grey",
+                    "b) odor, program, parlour, check, gray",
+                    "c) odoure, programe, parlor, cheque, grey",
+                    "d) odour, programm, parlour, checke, grey"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 182): odor -> odour, program -> programme, parlor -> parlour, apologize -> apologise, color -> colour, check -> cheque, theater -> theatre, gray -> grey, behavior -> behaviour, humor -> humour, labor -> labour."
+            },
+            {
+                id: 91,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Concord / Subject-Verb Agreement (p. 187-188)",
+                q: "Choose the correct verb forms to complete the sentences (p. 187):\n1) Neither Lekha nor Leela _______ (has/have) been selected.\n2) Every man, woman and child _______ (was/were) happy.\n3) One of the machines _______ (is/are) defective.",
+                options: [
+                    "a) has, was, is",
+                    "b) have, were, are",
+                    "c) has, were, is",
+                    "d) have, was, is"
+                ],
+                ans: 0,
+                exp: "1) Two singular subjects joined by 'neither...nor' take a singular verb ('has'). 2) Nouns preceded by 'Every' or 'Each' take a singular verb ('was'). 3) 'One of + plural noun' takes a singular verb ('is')."
+            },
+            {
+                id: 92,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Concord - Error Spotting (p. 188)",
+                q: "Identify the corrected versions of the following sentences from page 188:\n1) 'Abdul as well as Karim deserve praise.'\n2) 'Neither Veena nor her sisters has been informed.'\n3) 'Sixty miles are a long distance.'",
+                options: [
+                    "a) 1-deserves, 2-have been informed, 3-is a long distance",
+                    "b) 1-deserving, 2-was informed, 3-were a long distance",
+                    "c) 1-deserves, 2-has been informed, 3-are a long distance",
+                    "d) 1-deserve, 2-have been informed, 3-is a long distance"
+                ],
+                ans: 0,
+                exp: "1) With 'as well as', the verb agrees with the first subject ('Abdul... deserves'). 2) With 'neither...nor', the verb agrees with the nearer subject ('her sisters have'). 3) Units of distance/money/time as a single whole take a singular verb ('Sixty miles is')."
+            },
+            {
+                id: 93,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "Incident of the French Camp by Robert Browning (p. 190-194)",
+                q: "Identify the figures of speech in the following lines from 'Incident of the French Camp' (p. 194):\n1) 'You know, we French stormed Ratisbon'\n2) 'his plans / Soared up again like fire.'\n3) 'Let once my army-leader Lannes / Waver at yonder wall'",
+                options: [
+                    "a) 1-Synecdoche, 2-Simile, 3-Alliteration (Let-leader-Lannes; waver-wall)",
+                    "b) 1-Metaphor, 2-Personification, 3-Oxymoron",
+                    "c) 1-Simile, 2-Synecdoche, 3-Transferred Epithet",
+                    "d) 1-Personification, 2-Metaphor, 3-Assonance"
+                ],
+                ans: 0,
+                exp: "Book Back (p. 194): 'French' (country used for the army) = Synecdoche; 'Soared up again like fire' (and 'as sheathes a film the mother-eagle's eye') = Simile."
+            },
+            {
+                id: 94,
+                unit: "Unit 6",
+                source: "Book Inside",
+                section: "Poem & Literary Devices",
+                topic: "Incident of the French Camp (p. 191-193)",
+                q: "In 'Incident of the French Camp', what does 'flag-bird' refer to, who was Napoleon's army-leader at Ratisbon, and what were the young soldier's last words?",
+                options: [
+                    "a) The imperial eagle on the French flag; Marshal Lannes; 'I'm killed, Sire!'",
+                    "b) A white dove; Duke of Wellington; 'We've got you Ratisbon!'",
+                    "c) A falcon; General Charles; 'Long live the Emperor!'",
+                    "d) The Austrian eagle; Marshal Lannes; 'I am wounded, Sire!'"
+                ],
+                ans: 0,
+                exp: "'flag-bird' refers to the imperial eagle on the French flag. Lannes (Duke of Montebello) was the Marshal. When Napoleon said 'You're wounded!', the boy's pride was touched to the quick and he replied, 'Nay... I'm killed, Sire!' and fell dead smiling."
+            },
+            {
+                id: 95,
+                unit: "Unit 6",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "Remember Caesar by Gordon Daviot (p. 196-206)",
+                q: "In Gordon Daviot's (Elizabeth McKintosh) play 'Remember Caesar', who was Lord Weston's conscientious secretary, what was actually inside the 'infernal machine' (parcel) drowned in the gardener's pail, and who was 'Mr. Caesar'?",
+                options: [
+                    "a) Roger Chetwynd; Lord Weston's new velvet cloak; a gardener/nurseryman coming to see him about rose trees",
+                    "b) Mr. Clay; six rare books; an assassin sent by pirates",
+                    "c) Joel; a game pie; a clerk from the Awards Committee",
+                    "d) Roger Chetwynd; a pair of pistols; a judge from Hampton"
+                ],
+                ans: 0,
+                exp: "Roger Chetwynd was Weston's assistant. Weston mistook his own reminder note 'Remember Caesar' on March 15 (Ides of March) for an assassination threat and submerged a parcel containing his new velvet cloak in a bucket of water weighed down with six books. Mr. Caesar was a specialist visiting about rose trees."
+            },
+            {
+                id: 96,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Spell Test & Appendix Rules (p. 224, 231)",
+                q: "Choose the set in which ALL words are spelt correctly according to the Spell Test on page 224 & 231:",
+                options: [
+                    "a) believe, separate, hypocrites, buoyantly, indispensable, conscience, amateur, supersede",
+                    "b) beleive, seperate, hippocrites, bouyantly, indispensible, concience, amatuer, supercede",
+                    "c) believe, separate, secretery, neccesary, tommorrow, foriegn, dysentry, awefully",
+                    "d) believe, seperate, assistant,Contemtuously, plaesant, choclate, competant,igs"
+                ],
+                ans: 0,
+                exp: "Book Back Spell Test (p. 224 & 231): believe, separate, assistant, hypocrites, secretary, buoyantly, necessary, evolution, athletics, warehouse, contemptuously, indispensable, tomorrow, foreign, dysentery, lying, conscience, competent, pleasant, chocolate, awfully, amateur. Note (p. 231): 'supersede' is the only word in English that ends with '-sede'."
+            },
+            // =========================================================================
+            // ADDITIONAL HIGH-YIELD BOOK-BACK & BOOK-INSIDE QUESTIONS (97 to 160)
+            // =========================================================================
+            {
+                id: 97,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary (p. 5)",
+                q: "Choose the correct synonym for the underlined word: 'For months they had barely kept themselves alive in a sort of shelter they built amidst the rubble.'",
+                options: ["a) lush garden", "b) debris, broken bricks", "c) palatial villa", "d) mountain peak"],
+                ans: 1,
+                exp: "Glossary (p. 5): 'rubble' means debris or broken bricks left after the bombing."
+            },
+            {
+                id: 98,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Synonyms & Antonyms",
+                topic: "Two Gentlemen of Verona - Glossary (p. 5)",
+                q: "Choose the correct synonym for the underlined word: 'She led me through a cool, tiled vestibule into the hospital.'",
+                options: ["a) lobby / entrance hall", "b) staircase", "c) balcony", "d) kitchen"],
+                ans: 0,
+                exp: "Glossary (p. 5): 'vestibule' means a lobby or entrance hall."
+            },
+            {
+                id: 99,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Fill in the blanks with the suitable pair of homophones (p. 6): 'The soldiers had to _______ for a long time in the scorching _______.'",
+                options: ["a) weight, desert", "b) wait, desert", "c) wait, dessert", "d) weight, dessert"],
+                ans: 1,
+                exp: "wait (stay in expectation) vs weight; desert (barren sandy land) vs dessert (sweet dish)."
+            },
+            {
+                id: 100,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Choose the correct confusable words (p. 6): 'An _______ scientist warned the public about the _______ danger of the cyclone.'",
+                options: ["a) imminent, eminent", "b) eminent, imminent", "c) industrial, industrious", "d) aural, oral"],
+                ans: 1,
+                exp: "'Eminent' means famous and respected; 'imminent' means about to happen very soon."
+            },
+            {
+                id: 101,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Homophones & Confusables (p. 6)",
+                q: "Choose the correct confusable words (p. 6): 'His handwriting was so _______ that he was declared not _______ for the post.'",
+                options: ["a) eligible, illegible", "b) illegible, eligible", "c) conscious, conscience", "d) oral, aural"],
+                ans: 1,
+                exp: "'Illegible' means not clear enough to be read; 'eligible' means qualified or entitled to be chosen."
+            },
+            {
+                id: 102,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Modal Auxiliaries (p. 14)",
+                q: "Fill in the blanks with suitable modals (p. 14):\n1) People who live in glass houses _______ not throw stones.\n2) You _______ not go to the market as I have brought vegetables.",
+                options: ["a) should, need", "b) dare, must", "c) would, can", "d) might, ought"],
+                ans: 0,
+                exp: "1) 'should' expresses advice/proverbial obligation; 2) 'need not' expresses absence of necessity."
+            },
+            {
+                id: 103,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Modal Auxiliaries (p. 216)",
+                q: "Complete the news item with the best modal phrase (p. 216): 'As a result of the flooding, as many as 5,000 families _______ homeless, although the figure is only an estimate.'",
+                options: ["a) could be / may be", "b) can't have", "c) ought not", "d) used to"],
+                ans: 0,
+                exp: "Since it is an estimate, 'may be' or 'could be' expresses possibility."
+            },
+            {
+                id: 104,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "The Castle - Glossary & Poetic Lines (p. 19-20)",
+                q: "In 'The Castle', what do the words 'provender' and 'turret wall' mean?",
+                options: [
+                    "a) Food; a small tower on top of a castle",
+                    "b) Weapons; an underground tunnel",
+                    "c) Gold coins; a wicked wicket gate",
+                    "d) Soldiers; a grassy lawn"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 20): 'provender' means food; 'turret wall' means a small tower on top of a castle."
+            },
+            {
+                id: 105,
+                unit: "Unit 1",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "The Castle - Alliteration & Rhyme Scheme (p. 22)",
+                q: "What is the rhyme scheme of each 5-line stanza in Edwin Muir's 'The Castle' (e.g., lay, wall, hay, away, all)?",
+                options: ["a) a b a a b", "b) a b a b b", "c) a a b b a", "d) a b c a b"],
+                ans: 0,
+                exp: "lay (a), wall (b), hay (a), away (a), all (b) -> ABAAB."
+            },
+            {
+                id: 106,
+                unit: "Unit 1",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "God Sees the Truth, But Waits (p. 26-29)",
+                q: "In 'God Sees the Truth, But Waits', what did the fellow-prisoners in Siberia call Aksionov, and how did Makar Semyonich get rid of the earth while digging the tunnel?",
+                options: [
+                    "a) 'Grandfather' and 'The Saint'; by putting the earth into his high-boots and emptying it on the road",
+                    "b) 'The Merchant' and 'Vanya'; by throwing the earth out of the window",
+                    "c) 'The Judge' and 'Father'; by hiding the earth under Aksionov's bed-shelf",
+                    "d) 'The Choir Singer'; by putting it in a samovar"
+                ],
+                ans: 0,
+                exp: "Fellow prisoners called Aksionov 'Grandfather' and 'The Saint'. Makar hid the dug earth inside his high-boots and emptied it on the road every day."
+            },
+            {
+                id: 107,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Vocabulary & Idioms",
+                topic: "Tea Time Dictionary & Do You Know (p. 36, 40)",
+                q: "According to the 'Tea Time Dictionary' (p. 36) and 'Do You Know' (p. 40), what does 'Elevensies' mean in England, and what does the idiom 'cup of tea' mean?",
+                options: [
+                    "a) Morning coffee hour in England; one's favourite activity",
+                    "b) Eleven golden rules of tea; a bitter experience",
+                    "c) Late night dinner; an easy task",
+                    "d) Tea served with champagne; a costly affair"
+                ],
+                ans: 0,
+                exp: "Page 36: 'Elevensies' is the morning coffee hour in England ('Royale Tea' is served with champagne/sherry). Page 40: 'Cup of tea' is an idiom meaning one's favourite activity."
+            },
+            {
+                id: 108,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Prepositions Editing (p. 217)",
+                q: "Identify the correct prepositions to replace the underlined errors in the passage on page 217:\n'Dolphins are regarded as the friendliest (1) between the sea creatures... The more we learn (2) on dolphins... they care (3) off the sick.'",
+                options: [
+                    "a) 1-among, 2-about, 3-for",
+                    "b) 1-in, 2-of, 3-with",
+                    "c) 1-amid, 2-over, 3-after",
+                    "d) 1-between, 2-into, 3-of"
+                ],
+                ans: 0,
+                exp: "Grammar Exercise (p. 217): 1) friendliest 'among' the sea creatures; 2) learn 'about' dolphins; 3) care 'for' the sick; 4) protect the weakest 'from' danger."
+            },
+            {
+                id: 109,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Conjunctions Error Spotting (p. 217-218)",
+                q: "Correct the errors in the following sentences from pages 217–218:\n1) 'Scarcely had the workers stepped out, than the building collapsed.'\n2) 'No sooner did the power resume, when the children screamed in joy.'",
+                options: [
+                    "a) 1-Scarcely... when | 2-No sooner... than",
+                    "b) 1-Scarcely... then | 2-No sooner... that",
+                    "c) 1-Scarcely... as | 2-No sooner... so",
+                    "d) Both sentences are already correct"
+                ],
+                ans: 0,
+                exp: "Correlative conjunction rules: 'Scarcely / Hardly' is followed by 'when'; 'No sooner' is followed by 'than'."
+            },
+            {
+                id: 110,
+                unit: "Unit 2",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "Our Casuarina Tree - Glossary (p. 54)",
+                q: "Match the words from 'Our Casuarina Tree' with their meanings (p. 54):\n1) casement - A) apparition / ghost\n2) wraith - B) a state of forgetfulness\n3) consecrate - C) a window fixed on one side that opens like a door\n4) oblivion - D) to officially make something holy",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 54): casement = window opening like a door; wraith = apparition; consecrate = make holy; oblivion = state of forgetfulness; fain = eagerly."
+            },
+            {
+                id: 111,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Poem & Literary Devices",
+                topic: "Our Casuarina Tree - About the Author (p. 54)",
+                q: "Which of the following is a volume of poems in French written by Toru Dutt in 1875?",
+                options: [
+                    "a) A Sheaf Gleaned in French Fields",
+                    "b) Ancient Ballads and Legends of Hindustan",
+                    "c) The Golden Threshold",
+                    "d) The Bird of Time"
+                ],
+                ans: 0,
+                exp: "About the Author (p. 54): Toru Dutt (1856-1877) wrote in English and French. Her French volume is 'A Sheaf Gleaned in French Fields' (1875) and her English collection is 'Ancient Ballads and Legends of Hindustan' (1882)."
+            },
+            {
+                id: 112,
+                unit: "Unit 2",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "Life of Pi by Yann Martel (p. 61-63)",
+                q: "In 'Life of Pi', what were the dimensions of the lifeboat, what colour did Pi say was 'the colour of survival', and what did he use to open the water cans?",
+                options: [
+                    "a) 3.5 ft deep, 8 ft wide, 26 ft long; Orange; the tarpaulin hooks on the gunnel",
+                    "b) 5 ft deep, 10 ft wide, 30 ft long; Yellow; a pocket knife",
+                    "c) 3.5 ft deep, 8 ft wide, 26 ft long; White; his teeth and fingernails",
+                    "d) 4 ft deep, 6 ft wide, 20 ft long; Red; an oar"
+                ],
+                ans: 0,
+                exp: "The lifeboat was 3.5 feet deep, 8 feet wide, and 26 feet long (designed for 32 people). Orange was the colour of survival. He opened the 'Drinking Water' cans (packaged by HP Foods Ltd.) by dinting them against the tarpaulin hooks."
+            },
+            {
+                id: 113,
+                unit: "Unit 3",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "In Celebration of Being Alive (p. 67-69)",
+                q: "In 'In Celebration of Being Alive', what injuries did Dr. Christiaan Barnard and his wife sustain in the road accident, and what roles did the two boys play in the 'Grand Prix' at Cape Town's Red Cross Children's Hospital?",
+                options: [
+                    "a) Barnard had 11 broken ribs and a perforated lung, his wife had a fractured shoulder; the 7-year-old blind boy was the mechanic and the one-armed boy was the driver",
+                    "b) Barnard had a fractured leg, his wife had broken ribs; the blind boy was the driver and the one-armed boy was the mechanic",
+                    "c) Barnard had a head injury; both boys were drivers",
+                    "d) Barnard had 12 broken ribs; the deaf boy was the mechanic"
+                ],
+                ans: 0,
+                exp: "Dr. Barnard had 11 broken ribs and a perforated lung. In the hospital 'Grand Prix', the 7-year-old blind boy (burned by a lantern) acted as the mechanic providing motor power, while the one-armed boy (whose shoulder/arm were amputated due to malignant bone tumour) sat on the lower deck as the driver."
+            },
+            {
+                id: 114,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "Word Class / Derivatives Table (p. 73)",
+                q: "Complete the word class table from page 73 with the correct Noun, Verb, Adjective, and Adverb forms of 'appreciate':",
+                options: [
+                    "a) Noun: appreciation | Verb: appreciate | Adj: appreciable / appreciative | Adv: appreciatively",
+                    "b) Noun: appreciativeness | Verb: appreciated | Adj: appreciating | Adv: appreciate",
+                    "c) Noun: appreciate | Verb: appreciation | Adj: appreciative | Adv: appreciably",
+                    "d) Noun: appreciator | Verb: appreciative | Adj: appreciation | Adv: appreciatively"
+                ],
+                ans: 0,
+                exp: "Book Back Table (p. 73): amusement / amuse / amusing / amusingly; appreciation / appreciate / appreciative / appreciatively; success / succeed / successful / successfully; pride / pride / proud / proudly; hope / hope / hopeful / hopefully."
+            },
+            {
+                id: 115,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Question Tags Error Correction (p. 81-82, 219)",
+                q: "Correct the errors in the question tags from page 81–82:\n1) 'Theemployees are seldom allowed to meet their boss, aren't they?'\n2) 'The Chief Guest spoke a few words, did he?'\n3) 'We needn't apply for a bank loan, do we?'",
+                options: [
+                    "a) 1-are they? | 2-didn't he? | 3-need we?",
+                    "b) 1-don't they? | 2-spoke he? | 3-must we?",
+                    "c) 1-weren't they? | 2-hasn't he? | 3-didn't we?",
+                    "d) 1-are they? | 2-did he? | 3-needn't we?"
+                ],
+                ans: 0,
+                exp: "1) 'seldom' is negative, so it takes a positive tag ('are they?'). 2) 'a few' is positive in meaning, so it takes a negative tag ('didn't he?'). 3) 'needn't' is a modal auxiliary, so the tag is 'need we?'."
+            },
+            {
+                id: 116,
+                unit: "Unit 3",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "All the World's a Stage - Glossary & Poetic Lines (p. 89-93)",
+                q: "Match the words from 'All the World's a Stage' with their meanings (p. 90):\n1) satchel - A) a large cat, such as a leopard\n2) pard - B) without\n3) saws - C) a shoulder bag\n4) sans - D) wise sayings / proverbs",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 90): mewling = weak noise a cat makes; puking = vomiting; satchel = shoulder bag; pard = leopard; saws = sayings; hose = tights/thin trousers; shank = leg from knee to ankle; sans = without."
+            },
+            {
+                id: 117,
+                unit: "Unit 3",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Hour of Truth - Glossary (p. 106)",
+                q: "Match the legal/textual terms from 'The Hour of Truth' with their meanings (p. 106):\n1) indict - A) swear falsely / tell a lie in court\n2) perjure - B) confused, puzzled\n3) misappropriate - C) accuse or charge someone for a crime and put on trial\n4) nonplussed - D) take others' money dishonestly for one's own use",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-D, 2-A, 3-C, 4-B"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 106): indict = charge someone for a crime; perjure = swear falsely; haggle = argue; misappropriate = take others' money dishonestly; nonplussed = confused/puzzled."
+            },
+            {
+                id: 118,
+                unit: "Unit 4",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Summit - Glossary (p. 115-116)",
+                q: "Match the mountaineering terms from 'The Summit' with their meanings (p. 112, 115-116):\n1) col - A) overhanging mass of snow or ice along a ridge\n2) cornice - B) climbing on ice wearing spike shoes\n3) cwm - C) depression in a mountain chain / a pass\n4) cramponed - D) an enclosed armchair-shaped hollow at the head of a valley",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 112, 115-116): col = depression/pass in a mountain chain; cornice = overhanging mass of snow/ice; cwm = armchair-shaped hollow at the head of a valley; cramponed = climbing on ice wearing spike shoes; traverse = cross a mountain slope horizontally/diagonally."
+            },
+            {
+                id: 119,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Finite vs Non-Finite Verbs & Clauses (p. 122-123)",
+                q: "Identify the Main Clause and Subordinate Clause in the complex sentence (p. 123): 'The man who directed the film was my schoolmate.'",
+                options: [
+                    "a) Main Clause: 'The man was my schoolmate' | Subordinate Clause: 'who directed the film'",
+                    "b) Main Clause: 'The man who directed the film' | Subordinate Clause: 'was my schoolmate'",
+                    "c) Main Clause: 'who directed the film' | Subordinate Clause: 'The man was my schoolmate'",
+                    "d) It is a compound sentence with two main clauses."
+                ],
+                ans: 0,
+                exp: "'who directed the film' is a relative (adjective) subordinate clause modifying 'The man'. 'The man was my schoolmate' stands on its own as the Main Clause."
+            },
+            {
+                id: 120,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Conditional Clauses - Unless to If (p. 125)",
+                q: "Rewrite using 'If' without changing the meaning (p. 125): 'Sindhu would not have won the world championship, unless she had had single-minded devotion.'",
+                options: [
+                    "a) If Sindhu had not had single-minded devotion, she would not have won the world championship.",
+                    "b) If Sindhu has single-minded devotion, she will win the world championship.",
+                    "c) If Sindhu did not have single-minded devotion, she would not win.",
+                    "d) If Sindhu had single-minded devotion, she would not have won."
+                ],
+                ans: 0,
+                exp: "'Unless + affirmative verb' is replaced by 'If + negative verb' in the same tense (Past Perfect: 'had not had')."
+            },
+            {
+                id: 121,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "Ulysses - Glossary & Lines (p. 127-130)",
+                q: "In Tennyson's 'Ulysses', what do the expressions 'drink life to the lees', 'Hyades', and 'three suns' mean?",
+                options: [
+                    "a) Live life to the fullest (drink to the last drop); a group of stars in the constellation Taurus associated with rain; three long years",
+                    "b) Drink wine greedily; Greek gods of war; three summer days",
+                    "c) Suffer in old age; islands in the Atlantic; three centuries",
+                    "d) Rule a kingdom; winds of Troy; three months"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 130): 'drink life to the lees' = live life to the fullest; 'Hyades' = a group of stars in the constellation Taurus associated with rain; 'three suns' = three long years."
+            },
+            {
+                id: 122,
+                unit: "Unit 4",
+                source: "Book Back",
+                section: "Vocabulary & Idioms",
+                topic: "The Midnight Visitor - Expressions & Espionage Agencies (p. 138-139)",
+                q: "Match the intelligence agencies with their countries and headquarters (p. 139):\n1) RAW - A) Israel (Tel Aviv)\n2) CIA - B) UK (London)\n3) MI6 - C) India (New Delhi)\n4) Mossad - D) USA (Fairfax, Virginia)",
+                options: [
+                    "a) 1-C, 2-D, 3-B, 4-A",
+                    "b) 1-D, 2-C, 3-A, 4-B",
+                    "c) 1-C, 2-B, 3-D, 4-A",
+                    "d) 1-A, 2-D, 3-B, 4-C"
+                ],
+                ans: 0,
+                exp: "Page 139 Table: RAW -> India (New Delhi); CIA -> USA (Fairfax, Virginia); MI6 -> UK (London); Mossad -> Israel (Tel Aviv); ASIS -> Australia (Canberra); MSS -> China (Beijing); FSB -> Russia (Moscow)."
+            },
+            {
+                id: 123,
+                unit: "Unit 5",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "The Chair - About the Author (p. 148)",
+                q: "For which novel did Ki. Rajanarayanan (Ki. Ra.) win the Sahitya Akademi Award in 1991?",
+                options: [
+                    "a) Gopallapurathu Makkal",
+                    "b) Gopalla Gramam",
+                    "c) Nattuppura Kadhai Kalanjiyam",
+                    "d) Where Are You Going, You Monkeys?"
+                ],
+                ans: 0,
+                exp: "About the Author (p. 148): Ki. Ra. won the Sahitya Akademi award in 1991 for 'Gopallapurathu Makkal' (the sequel to 'Gopalla Gramam')."
+            },
+            {
+                id: 124,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Articles and Determiners (p. 156-157, 221-222)",
+                q: "Fill in the blanks with appropriate articles/determiners (p. 157, 222):\n1) My mother is _______ honest woman.\n2) She bought _______ useful gadget.\n3) _______ information that she gave proved false.",
+                options: [
+                    "a) an, a, The",
+                    "b) a, an, An",
+                    "c) the, a, Many",
+                    "d) an, an, Few"
+                ],
+                ans: 0,
+                exp: "'honest' begins with a vowel sound -> 'an'; 'useful' begins with a consonant sound /ju:/ -> 'a'; specific uncountable noun 'information that she gave' -> 'The'."
+            },
+            {
+                id: 125,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Degrees of Comparison Transformation (p. 158-159)",
+                q: "Transform into the Comparative Degree without changing the meaning (p. 159): 'Very few boys in the class are as tall as Ravi.'",
+                options: [
+                    "a) Ravi is taller than most other / many other boys in the class.",
+                    "b) Ravi is taller than any other boy in the class.",
+                    "c) Ravi is the tallest boy in the class.",
+                    "d) No other boy is taller than Ravi."
+                ],
+                ans: 0,
+                exp: "Type 2 Degree of Comparison (p. 158): 'Very few...' (Positive) <-> '...than most other / many other...' (Comparative) <-> '...one of the -est...' (Superlative)."
+            },
+            {
+                id: 126,
+                unit: "Unit 5",
+                source: "Book Back",
+                section: "Poem & Literary Devices",
+                topic: "A Father to his Son - Glossary & Poetic Lines (p. 162-166)",
+                q: "In Carl Sandburg's 'A Father to his Son', what do 'humdrum monotony', 'white lies', and 'quest of lucre' mean?",
+                options: [
+                    "a) Boring routine; lies told to avoid hurting someone's feelings; seeking money gained in a dishonourable way",
+                    "b) Musical rhythm; pure truth; quest for knowledge",
+                    "c) Loud noise; wicked crimes; love for nature",
+                    "d) Silent rooms; creative solitude; hard work"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 164): humdrum monotony = boring routine; soft loam = fertile soil; thwarted = frustrated; white lies = lies told to avoid hurting one's feelings; quest of lucre = money gained in a dishonourable way."
+            },
+            {
+                id: 127,
+                unit: "Unit 6",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "On the Rule of the Road - Glossary (p. 180)",
+                q: "Match the words from 'On the Rule of the Road' with their meanings (p. 180):\n1) peril - A) lawlessness / rebellion\n2) anarchy - B) rudeness / arrogance\n3) curtailed - C) serious risk / danger\n4) insolence - D) reduced / restricted",
+                options: [
+                    "a) 1-C, 2-A, 3-D, 4-B",
+                    "b) 1-A, 2-C, 3-B, 4-D",
+                    "c) 1-C, 2-D, 3-A, 4-B",
+                    "d) 1-B, 2-A, 3-D, 4-C"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 180): peril = risk; chaos = confusion; anarchy = lawlessness; curtailed = reduced; tyranny = autocracy; insolence = rudeness; shandy = lemonade."
+            },
+            {
+                id: 128,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Concord / Subject-Verb Agreement (p. 186-188)",
+                q: "Choose the correct verb form according to the Concord rules on pages 186–188:\n1) 'The Correspondent and Principal _______ called for a meeting.'\n2) 'The Correspondent and the Principal _______ attending a meeting.'\n3) 'All the furniture _______ been remodelled.'",
+                options: [
+                    "a) has, are, has",
+                    "b) have, is, have",
+                    "c) has, is, have",
+                    "d) have, are, has"
+                ],
+                ans: 0,
+                exp: "1) One article ('The Correspondent and Principal') refers to a single person holding both posts -> 'has'. 2) Two articles ('The Correspondent and the Principal') refer to two different persons -> 'are'. 3) 'Furniture' (like luggage, information, scenery) is an uncountable singular noun -> 'has'."
+            },
+            {
+                id: 129,
+                unit: "Unit 6",
+                source: "Book Inside",
+                section: "Prose & Supplementary",
+                topic: "Remember Caesar - Glossary (p. 205)",
+                q: "Match the words from 'Remember Caesar' with their meanings (p. 205):\n1) twiddling my thumbs - A) minute/trivial details\n2) footpad - B) evergreen oak tree (holm oak)\n3) minutiae - C) being idle\n4) ilex tree - D) highwayman (robber) who goes about on foot",
+                options: [
+                    "a) 1-C, 2-D, 3-A, 4-B",
+                    "b) 1-D, 2-C, 3-B, 4-A",
+                    "c) 1-C, 2-A, 3-D, 4-B",
+                    "d) 1-B, 2-D, 3-A, 4-C"
+                ],
+                ans: 0,
+                exp: "Glossary (p. 205): twiddling my thumbs = being idle; footpad = highway robber on foot; minutiae = minute details; gingerly = carefully; infernal machine = concealed explosive device; ilex tree = evergreen oak tree."
+            },
+            {
+                id: 130,
+                unit: "Unit 6",
+                source: "Book Back",
+                section: "Grammar",
+                topic: "Describing a Process - Passive Voice (p. 188-189)",
+                q: "Complete the process of preparing apple juice using the passive voice (p. 188): 'Four or five apples _______ (take) and _______ (wash) well. The seeds _______ (remove).'",
+                options: [
+                    "a) are taken, washed, are removed",
+                    "b) took, washed, removed",
+                    "c) is taken, washing, is removed",
+                    "d) have taken, wash, were removed"
+                ],
+                ans: 0,
+                exp: "General processes are described in the Simple Present Passive ('are taken, washed, are removed')."
+            }
+        ];
+
+        // Application State
+        let currentMode = 'practice'; // 'practice', 'exam', 'study'
+        let selectedUnit = 'all';
+        let selectedSection = 'all';
+        let selectedSource = 'all';
+        let searchQuery = '';
+        let showBookmarksOnly = false;
+        let userAnswers = {};
+        let revealedAnswers = {};
+        let bookmarks = new Set(JSON.parse(localStorage.getItem('eng12_bookmarks') || '[]'));
+        let examSubmitted = false;
+        let examTimerInterval = null;
+        let examSeconds = 0;
+        let displayQuestions = [...QUESTION_BANK];
+
+        window.addEventListener('DOMContentLoaded', () => {
+            updateBookmarkUI();
+            filterAndRender();
+        });
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.className = 'fa-solid fa-moon';
+            } else {
+                html.classList.add('dark');
+                icon.className = 'fa-solid fa-sun text-amber-400';
+            }
+        }
+
+        function switchMode(mode) {
+            currentMode = mode;
+            examSubmitted = false;
+            document.getElementById('exam-result-banner').classList.add('hidden');
+
+            ['practice', 'exam', 'study'].forEach(m => {
+                const btn = document.getElementById(`mode-${m}`);
+                if (m === mode) {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-sm";
+                } else {
+                    btn.className = "px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-600 dark:text-slate-400 hover:text-slate-900";
+                }
+            });
+
+            const examBar = document.getElementById('exam-bar');
+            if (mode === 'exam') {
+                userAnswers = {};
+                revealedAnswers = {};
+                examBar.classList.remove('hidden');
+                startExamTimer();
+            } else {
+                examBar.classList.add('hidden');
+                stopExamTimer();
+            }
+
+            filterAndRender();
+        }
+
+        function startExamTimer() {
+            stopExamTimer();
+            examSeconds = 0;
+            updateTimerDisplay();
+            examTimerInterval = setInterval(() => {
+                examSeconds++;
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function stopExamTimer() {
+            if (examTimerInterval) {
+                clearInterval(examTimerInterval);
+                examTimerInterval = null;
+            }
+        }
+
+        function updateTimerDisplay() {
+            const mins = String(Math.floor(examSeconds / 60)).padStart(2, '0');
+            const secs = String(examSeconds % 60).padStart(2, '0');
+            document.getElementById('exam-timer').textContent = `${mins}:${secs}`;
+        }
+
+        function setUnitFilter(unit) {
+            selectedUnit = unit;
+            document.querySelectorAll('.unit-pill').forEach(btn => {
+                if (btn.dataset.unit === unit) {
+                    btn.className = "unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-blue-600 text-white shadow-sm transition";
+                } else {
+                    btn.className = "unit-pill px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-blue-50 transition";
+                }
+            });
+            filterAndRender();
+        }
+
+        function setSectionFilter(sec) {
+            selectedSection = sec;
+            document.querySelectorAll('.sec-pill').forEach(btn => {
+                if (btn.dataset.sec === sec) {
+                    btn.className = "sec-pill px-3 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white transition";
+                } else {
+                    btn.className = "sec-pill px-3 py-1 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition";
+                }
+            });
+            filterAndRender();
+        }
+
+        function setSourceFilter(src) {
+            selectedSource = src;
+            document.querySelectorAll('.src-pill').forEach(btn => {
+                if (btn.dataset.src === src) {
+                    btn.className = "src-pill flex-1 py-2 px-3 rounded-xl text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 transition text-center";
+                } else {
+                    btn.className = "src-pill flex-1 py-2 px-3 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 transition text-center";
+                }
+            });
+            filterAndRender();
+        }
+
+        function handleSearch() {
+            const input = document.getElementById('search-input');
+            searchQuery = input.value.trim().toLowerCase();
+            document.getElementById('clear-search').classList.toggle('hidden', searchQuery.length === 0);
+            filterAndRender();
+        }
+
+        function clearSearch() {
+            document.getElementById('search-input').value = '';
+            searchQuery = '';
+            document.getElementById('clear-search').classList.add('hidden');
+            filterAndRender();
+        }
+
+        function toggleBookmarkFilter() {
+            showBookmarksOnly = !showBookmarksOnly;
+            const btn = document.getElementById('btn-bookmarks');
+            btn.classList.toggle('ring-2', showBookmarksOnly);
+            btn.classList.toggle('ring-amber-400', showBookmarksOnly);
+            filterAndRender();
+        }
+
+        function toggleBookmark(id) {
+            if (bookmarks.has(id)) bookmarks.delete(id);
+            else bookmarks.add(id);
+            localStorage.setItem('eng12_bookmarks', JSON.stringify([...bookmarks]));
+            updateBookmarkUI();
+            filterAndRender();
+        }
+
+        function updateBookmarkUI() {
+            document.getElementById('bookmark-count').textContent = bookmarks.size;
+            document.getElementById('bookmark-icon').className = bookmarks.size > 0
+                ? 'fa-solid fa-star text-amber-500'
+                : 'fa-regular fa-star text-amber-500';
+        }
+
+        function shuffleQuestions() {
+            displayQuestions.sort(() => Math.random() - 0.5);
+            renderQuestions();
+        }
+
+        function resetCurrentQuiz() {
+            userAnswers = {};
+            revealedAnswers = {};
+            examSubmitted = false;
+            document.getElementById('exam-result-banner').classList.add('hidden');
+            if (currentMode === 'exam') startExamTimer();
+            filterAndRender();
+        }
+
+        function resetFilters() {
+            showBookmarksOnly = false;
+            clearSearch();
+            setUnitFilter('all');
+            setSectionFilter('all');
+            setSourceFilter('all');
+        }
+
+        function filterAndRender() {
+            displayQuestions = QUESTION_BANK.filter(item => {
+                const matchUnit = selectedUnit === 'all' || item.unit === selectedUnit;
+                const matchSec = selectedSection === 'all' || item.section === selectedSection;
+                const matchSrc = selectedSource === 'all' || item.source === selectedSource;
+                const matchBookmark = !showBookmarksOnly || bookmarks.has(item.id);
+                const matchSearch = searchQuery === '' ||
+                    item.q.toLowerCase().includes(searchQuery) ||
+                    item.topic.toLowerCase().includes(searchQuery) ||
+                    item.options.some(o => o.toLowerCase().includes(searchQuery)) ||
+                    item.exp.toLowerCase().includes(searchQuery);
+                return matchUnit && matchSec && matchSrc && matchBookmark && matchSearch;
+            });
+
+            renderQuestions();
+            updateStats();
+        }
+
+        function selectOption(questionId, optionIndex) {
+            if (currentMode === 'exam' && examSubmitted) return;
+            userAnswers[questionId] = optionIndex;
+            renderQuestions();
+            updateStats();
+        }
+
+        function toggleRevealAnswer(questionId) {
+            revealedAnswers[questionId] = !revealedAnswers[questionId];
+            renderQuestions();
+        }
+
+        function submitExam() {
+            examSubmitted = true;
+            stopExamTimer();
+
+            let correctCount = 0;
+            displayQuestions.forEach(q => {
+                if (userAnswers[q.id] === q.ans) correctCount++;
+            });
+
+            const total = displayQuestions.length;
+            const percentage = total > 0 ? Math.round((correctCount / total) * 100) : 0;
+
+            document.getElementById('result-score-fraction').textContent = `${correctCount} / ${total}`;
+            document.getElementById('result-percentage').textContent = `${percentage}%`;
+            document.getElementById('result-time-taken').textContent = document.getElementById('exam-timer').textContent;
+
+            const headline = document.getElementById('result-headline');
+            if (percentage >= 90) headline.textContent = "Outstanding Mastery! (90%+)";
+            else if (percentage >= 75) headline.textContent = "Great Job! Keep Practicing!";
+            else headline.textContent = "Good Attempt! Review the explanations below.";
+
+            const banner = document.getElementById('exam-result-banner');
+            banner.classList.remove('hidden');
+            banner.scrollIntoView({ behavior: 'smooth' });
+
+            renderQuestions();
+            updateStats();
+        }
+
+        function updateStats() {
+            const total = displayQuestions.length;
+            let answered = 0;
+            let correct = 0;
+            let wrong = 0;
+
+            displayQuestions.forEach(q => {
+                if (userAnswers[q.id] !== undefined) {
+                    answered++;
+                    if (userAnswers[q.id] === q.ans) correct++;
+                    else wrong++;
+                }
+            });
+
+            document.getElementById('stat-total').textContent = total;
+            if (currentMode === 'exam' && !examSubmitted) {
+                document.getElementById('stat-correct').textContent = '-';
+                document.getElementById('stat-wrong').textContent = '-';
+                document.getElementById('stat-score').textContent = '-';
+            } else {
+                document.getElementById('stat-correct').textContent = correct;
+                document.getElementById('stat-wrong').textContent = wrong;
+                const pct = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+                document.getElementById('stat-score').textContent = `${pct}%`;
+            }
+
+            const examCountEl = document.getElementById('exam-answered-count');
+            if (examCountEl) examCountEl.textContent = `${answered} / ${total}`;
+        }
+
+        function renderQuestions() {
+            const container = document.getElementById('questions-container');
+            const emptyState = document.getElementById('empty-state');
+
+            if (displayQuestions.length === 0) {
+                container.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+            emptyState.classList.add('hidden');
+
+            container.innerHTML = displayQuestions.map((item, idx) => {
+                const userSelected = userAnswers[item.id];
+                const isAnswered = userSelected !== undefined;
+                const isRevealed = revealedAnswers[item.id] || currentMode === 'study' || (currentMode === 'exam' && examSubmitted);
+                const isBookmarked = bookmarks.has(item.id);
+
+                const srcBadgeClass = item.source === 'Book Back'
+                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800'
+                    : 'bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border-purple-200 dark:border-purple-800';
+
+                const formattedQ = item.q.replace(/\n/g, '<br>');
+
+                const optionsHtml = item.options.map((opt, optIdx) => {
+                    let btnStyle = "bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:border-blue-400";
+                    let iconHtml = `<span class="w-5 h-5 rounded-full border border-slate-300 dark:border-slate-600 flex-shrink-0"></span>`;
+
+                    if (currentMode === 'practice' && (isAnswered || isRevealed)) {
+                        if (optIdx === item.ans) {
+                            btnStyle = "bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-semibold ring-1 ring-emerald-500";
+                            iconHtml = `<i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 text-base"></i>`;
+                        } else if (userSelected === optIdx && optIdx !== item.ans) {
+                            btnStyle = "bg-rose-50 dark:bg-rose-950/60 border-rose-500 text-rose-900 dark:text-rose-200 font-semibold ring-1 ring-rose-500";
+                            iconHtml = `<i class="fa-solid fa-circle-xmark text-rose-600 dark:text-rose-400 text-base"></i>`;
+                        }
+                    } else if (currentMode === 'exam') {
+                        if (!examSubmitted) {
+                            if (userSelected === optIdx) {
+                                btnStyle = "bg-blue-50 dark:bg-blue-950/80 border-blue-600 text-blue-900 dark:text-blue-200 font-semibold ring-1 ring-blue-600";
+                                iconHtml = `<i class="fa-solid fa-circle-dot text-blue-600 dark:text-blue-400 text-base"></i>`;
+                            }
+                        } else {
+                            if (optIdx === item.ans) {
+                                btnStyle = "bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-semibold ring-1 ring-emerald-500";
+                                iconHtml = `<i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 text-base"></i>`;
+                            } else if (userSelected === optIdx && optIdx !== item.ans) {
+                                btnStyle = "bg-rose-50 dark:bg-rose-950/60 border-rose-500 text-rose-900 dark:text-rose-200 font-semibold ring-1 ring-rose-500";
+                                iconHtml = `<i class="fa-solid fa-circle-xmark text-rose-600 dark:text-rose-400 text-base"></i>`;
+                            }
+                        }
+                    } else if (currentMode === 'study') {
+                        if (optIdx === item.ans) {
+                            btnStyle = "bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold";
+                            iconHtml = `<i class="fa-solid fa-circle-check text-emerald-600 dark:text-emerald-400 text-base"></i>`;
+                        }
+                    }
+
+                    return `
+                        <button onclick="selectOption(${item.id}, ${optIdx})" 
+                                class="option-btn w-full text-left p-3.5 rounded-xl border ${btnStyle} flex items-center justify-between gap-3 text-sm sm:text-base">
+                            <span>${opt}</span>
+                            ${iconHtml}
+                        </button>
+                    `;
+                }).join('');
+
+                const showExplanation = (currentMode === 'practice' && (isAnswered || isRevealed)) ||
+                                        (currentMode === 'exam' && examSubmitted) ||
+                                        (currentMode === 'study');
+
+                return `
+                    <article class="question-card bg-white dark:bg-slate-900 rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-200 dark:border-slate-800 transition-all hover:shadow-md">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-blue-600 text-white">
+                                    Q.${idx + 1}
+                                </span>
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                                    ${item.unit}
+                                </span>
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-semibold border ${srcBadgeClass}">
+                                    ${item.source}
+                                </span>
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300">
+                                    ${item.section}
+                                </span>
+                                <span class="text-xs text-slate-400 dark:text-slate-500 font-medium">
+                                    <i class="fa-solid fa-bookmark mr-1"></i>${item.topic}
+                                </span>
+                            </div>
+
+                            <div class="flex items-center gap-2 no-print">
+                                ${currentMode === 'practice' ? `
+                                    <button onclick="toggleRevealAnswer(${item.id})" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-blue-600 transition">
+                                        <i class="fa-regular fa-eye mr-1"></i>${isRevealed ? 'Hide Answer' : 'Show Answer'}
+                                    </button>
+                                ` : ''}
+                                <button onclick="toggleBookmark(${item.id})" class="p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition" title="Bookmark Question">
+                                    <i class="${isBookmarked ? 'fa-solid text-amber-500' : 'fa-regular text-slate-400'} fa-star"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-slate-100 leading-relaxed mb-4">
+                            ${formattedQ}
+                        </h3>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                            ${optionsHtml}
+                        </div>
+
+                        ${showExplanation ? `
+                            <div class="mt-4 p-3.5 rounded-xl bg-blue-50/70 dark:bg-blue-950/40 border border-blue-200/80 dark:border-blue-800/60 text-xs sm:text-sm">
+                                <div class="font-bold text-blue-900 dark:text-blue-300 mb-1 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-lightbulb text-amber-500"></i>
+                                    <span>Correct Answer: ${item.options[item.ans]}</span>
+                                </div>
+                                <p class="text-slate-700 dark:text-slate-300 leading-relaxed">
+                                    <span class="font-semibold">Textbook Reference:</span> ${item.exp}
+                                </p>
+                            </div>
+                        ` : ''}
+                    </article>
+                `;
+            }).join('');
+        }
+    </script>
+</body>
+</html>

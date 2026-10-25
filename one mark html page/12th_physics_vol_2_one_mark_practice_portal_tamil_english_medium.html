@@ -1,0 +1,5048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>12th Physics Vol-2 One-Mark Practice Portal (Tamil &amp; English Medium)</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style id="app-stylesheet">
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #4f46e5;
+      --success: #059669;
+      --danger: #dc2626;
+      --bg-surface: #f8fafc;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', 'Noto Sans Tamil', system-ui, -apple-system, sans-serif;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .tamil-text {
+      font-family: 'Noto Sans Tamil', 'Inter', sans-serif;
+      line-height: 1.75;
+    }
+    .option-btn {
+      transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .option-btn:hover:not(:disabled) {
+      transform: translateY(-1px);
+      border-color: #6366f1;
+      background-color: #f5f3ff;
+    }
+    .option-correct {
+      background-color: #ecfdf5 !important;
+      border-color: #10b981 !important;
+      color: #065f46 !important;
+    }
+    .option-wrong {
+      background-color: #fef2f2 !important;
+      border-color: #ef4444 !important;
+      color: #991b1b !important;
+    }
+    .option-selected-exam {
+      background-color: #eef2ff !important;
+      border-color: #4f46e5 !important;
+      color: #1e1b4b !important;
+      box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+    }
+    .palette-btn {
+      transition: all 0.15s ease;
+    }
+    .palette-btn:hover {
+      transform: scale(1.06);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background: #ffffff;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Top Header -->
+  <header class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white shadow-lg sticky top-0 z-30 no-print">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-3">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <!-- Brand Title -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-400 flex items-center justify-center font-extrabold text-lg shadow-md shrink-0">
+            12
+          </div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <h1 class="text-base sm:text-lg font-bold tracking-tight">12th Physics Vol-2 One-Mark Master</h1>
+              <span class="text-xs px-2 py-0.5 rounded-full bg-indigo-500/30 border border-indigo-400/40 text-indigo-200 font-medium">TN State Board • Units 6–11</span>
+            </div>
+            <p class="text-xs text-slate-300 tamil-text">மேல்நிலை இரண்டாம் ஆண்டு இயற்பியல் தொகுதி-2 • புத்தகப் பின்பக்க &amp; உட்பகுதி ஒரு மதிப்பெண் வினாக்கள்</p>
+          </div>
+        </div>
+
+        <!-- Language / Medium Switcher & Code Viewer -->
+        <div class="flex items-center gap-2 flex-wrap">
+          <div class="inline-flex rounded-lg bg-slate-800/90 p-1 border border-slate-700" role="group" aria-label="Language Mode">
+            <button type="button" id="lang-both" data-lang="both" class="lang-btn px-2.5 py-1 rounded-md text-xs font-semibold transition bg-indigo-600 text-white shadow">
+              இருமொழி / Both
+            </button>
+            <button type="button" id="lang-ta" data-lang="ta" class="lang-btn px-2.5 py-1 rounded-md text-xs font-semibold transition text-slate-300 hover:text-white tamil-text">
+              தமிழ் வழி
+            </button>
+            <button type="button" id="lang-en" data-lang="en" class="lang-btn px-2.5 py-1 rounded-md text-xs font-semibold transition text-slate-300 hover:text-white">
+              English
+            </button>
+          </div>
+
+          <button type="button" id="open-code-modal-btn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow flex items-center gap-1.5 transition">
+            <span>&lt;/&gt;</span>
+            <span>HTML &amp; CSS Code</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mode Navigation Tabs -->
+      <div class="mt-3 pt-2 border-t border-slate-800 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-1 sm:pb-0">
+          <button type="button" id="mode-practice" data-mode="practice" class="mode-tab px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition bg-white text-slate-900 shadow-sm flex items-center gap-1.5">
+            <span>🎯</span>
+            <span>Practice Mode / பயிற்சி</span>
+          </button>
+          <button type="button" id="mode-exam" data-mode="exam" class="mode-tab px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:bg-slate-800 hover:text-white flex items-center gap-1.5">
+            <span>⏱️</span>
+            <span>Exam Test / தேர்வு முறை</span>
+          </button>
+          <button type="button" id="mode-study" data-mode="study" class="mode-tab px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition text-slate-300 hover:bg-slate-800 hover:text-white flex items-center gap-1.5">
+            <span>📖</span>
+            <span>Answer Key Sheet / விடைக்குறிப்பு</span>
+          </button>
+        </div>
+
+        <!-- Live Stats Pill -->
+        <div class="flex items-center gap-2 text-xs">
+          <span class="px-2.5 py-1 rounded-full bg-slate-800 text-slate-200 border border-slate-700">
+            Answered: <strong id="stat-attempted" class="text-white">0</strong>/<span id="stat-total">165</span>
+          </span>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-700/50">
+            Correct: <strong id="stat-correct">0</strong>
+          </span>
+          <span class="px-2.5 py-1 rounded-full bg-amber-950/80 text-amber-300 border border-amber-700/50">
+            Saved: <strong id="stat-bookmarked">0</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter & Search Bar -->
+  <section class="bg-white border-b border-slate-200 shadow-sm no-print">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-3">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-2.5 items-center">
+        <!-- Chapter Select -->
+        <div class="md:col-span-4">
+          <label for="unit-filter" class="block text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-1">
+            Chapter / அலகு (Units 6–11)
+          </label>
+          <select id="unit-filter" class="w-full rounded-lg border border-slate-300 bg-slate-50 px-3 py-2 text-xs sm:text-sm font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <option value="all">All Chapters (Units 6–11) • அனைத்து அலகுகள் (165 Qs)</option>
+            <option value="6">Unit 6: Ray Optics • கதிர் ஒளியியல் (25 Qs)</option>
+            <option value="7">Unit 7: Wave Optics • அலை ஒளியியல் (25 Qs)</option>
+            <option value="8">Unit 8: Dual Nature of Radiation &amp; Matter • இருமைப்பண்பு (30 Qs)</option>
+            <option value="9">Unit 9: Atomic and Nuclear Physics • அணு &amp; அணுக்கரு இயற்பியல் (30 Qs)</option>
+            <option value="10">Unit 10: Electronics &amp; Communication • எலக்ட்ரானியல் (30 Qs)</option>
+            <option value="11">Unit 11: Recent Developments in Physics • அண்மைக்கால வளர்ச்சிகள் (25 Qs)</option>
+          </select>
+        </div>
+
+        <!-- Question Source Filter (Book-Back / Book-Inside) -->
+        <div class="md:col-span-4">
+          <label class="block text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-1">
+            Question Type / வினா வகை
+          </label>
+          <div class="grid grid-cols-4 gap-1 bg-slate-100 p-1 rounded-lg border border-slate-200">
+            <button type="button" id="type-all" data-qtype="all" class="qtype-btn py-1.5 px-2 rounded-md text-xs font-semibold bg-white text-indigo-700 shadow-sm transition">
+              All (165)
+            </button>
+            <button type="button" id="type-back" data-qtype="back" class="qtype-btn py-1.5 px-2 rounded-md text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+              Book-Back (75)
+            </button>
+            <button type="button" id="type-inside" data-qtype="inside" class="qtype-btn py-1.5 px-2 rounded-md text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+              Inside (90)
+            </button>
+            <button type="button" id="type-saved" data-qtype="saved" class="qtype-btn py-1.5 px-2 rounded-md text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+              ★ Saved
+            </button>
+          </div>
+        </div>
+
+        <!-- Search & Actions -->
+        <div class="md:col-span-4 flex items-end gap-2">
+          <div class="flex-1">
+            <label for="search-input" class="block text-[11px] font-semibold uppercase tracking-wider text-slate-500 mb-1">
+              Search / தேடுக (English or தமிழ்)
+            </label>
+            <div class="relative">
+              <input id="search-input" type="text" placeholder="e.g., Snell, Brewster, டி ப்ராய், நானோ..." class="w-full rounded-lg border border-slate-300 bg-slate-50 pl-3 pr-8 py-1.5 text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              <button type="button" id="clear-search-btn" title="Clear Search" class="hidden absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-bold">✕</button>
+            </div>
+          </div>
+          <button type="button" id="shuffle-btn" title="Shuffle Questions" class="px-3 py-2 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-xs font-semibold text-slate-700 shadow-sm transition shrink-0">
+            🔀 Shuffle
+          </button>
+          <button type="button" id="reset-progress-btn" title="Reset Current Answers" class="px-3 py-2 rounded-lg border border-rose-200 bg-rose-50 hover:bg-rose-100 text-xs font-semibold text-rose-700 shadow-sm transition shrink-0">
+            ↺ Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exam Mode Banner (Visible only in Exam Mode) -->
+  <div id="exam-banner" class="hidden bg-indigo-950 text-white border-b border-indigo-800 px-4 py-2.5 no-print">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-indigo-800 text-indigo-100 text-xs font-semibold">
+          ⏱️ Time Remaining: <span id="exam-timer-display" class="font-mono text-sm font-bold text-amber-300">25:00</span>
+        </span>
+        <div class="flex items-center gap-1.5 text-xs">
+          <span class="text-indigo-200">Preset:</span>
+          <button type="button" id="preset-15" data-preset="15" class="exam-preset-btn px-2 py-1 rounded bg-indigo-800 hover:bg-indigo-700 text-white font-medium">15 Qs (Public Exam)</button>
+          <button type="button" id="preset-30" data-preset="30" class="exam-preset-btn px-2 py-1 rounded bg-indigo-800 hover:bg-indigo-700 text-white font-medium">30 Qs</button>
+          <button type="button" id="preset-75" data-preset="75" class="exam-preset-btn px-2 py-1 rounded bg-indigo-800 hover:bg-indigo-700 text-white font-medium">All 75 Book-Back</button>
+          <button type="button" id="preset-all" data-preset="all" class="exam-preset-btn px-2 py-1 rounded bg-indigo-800 hover:bg-indigo-700 text-white font-medium">Full Set (165)</button>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button type="button" id="submit-exam-btn" class="px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs sm:text-sm shadow transition">
+          ✓ Submit Exam &amp; View Scorecard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exam Scorecard Result Panel (Hidden until exam submitted) -->
+  <section id="exam-result-panel" class="hidden max-w-7xl mx-auto px-3 sm:px-6 pt-4 w-full">
+    <div class="bg-white rounded-2xl border-2 border-indigo-500 shadow-lg p-4 sm:p-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Exam Completed • தேர்வு முடிவுகள்</span>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-0.5" id="result-headline">Scorecard Summary</h2>
+          <p class="text-xs sm:text-sm text-slate-600 tamil-text" id="result-subline">கீழே உள்ள அனைத்து வினாக்களின் சரியான விடைகளையும் விளக்கங்களையும் சரிபார்க்கவும்.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" id="retake-exam-btn" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold shadow transition">
+            ↻ Start New Test
+          </button>
+          <button type="button" id="close-result-btn" class="px-3 py-2 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs sm:text-sm font-semibold transition">
+            Review Answers Below
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
+        <div class="p-3.5 rounded-xl bg-indigo-50 border border-indigo-100">
+          <div class="text-xs text-indigo-600 font-semibold">Total Score / மதிப்பெண்</div>
+          <div class="text-2xl font-extrabold text-indigo-950 mt-1" id="res-score">0 / 0</div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-emerald-50 border border-emerald-100">
+          <div class="text-xs text-emerald-700 font-semibold">Accuracy / துல்லியம்</div>
+          <div class="text-2xl font-extrabold text-emerald-900 mt-1" id="res-accuracy">0%</div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-amber-50 border border-amber-100">
+          <div class="text-xs text-amber-700 font-semibold">Attempted / முயற்சித்தவை</div>
+          <div class="text-2xl font-extrabold text-amber-900 mt-1" id="res-attempted">0</div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-100 border border-slate-200">
+          <div class="text-xs text-slate-600 font-semibold">Time Taken / நேரம்</div>
+          <div class="text-2xl font-extrabold text-slate-900 mt-1" id="res-time">00:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Workspace Container -->
+  <main class="max-w-7xl mx-auto px-3 sm:px-6 py-4 flex-1 w-full">
+
+    <!-- PRACTICE & EXAM VIEW (Single Card or List View + Question Palette) -->
+    <div id="interactive-view" class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+
+      <!-- Left/Center Column: Active Question Area -->
+      <div class="lg:col-span-8 xl:col-span-9 space-y-4">
+
+        <!-- View Layout Sub-toolbar -->
+        <div class="bg-white rounded-xl border border-slate-200 px-4 py-2.5 flex flex-wrap items-center justify-between gap-2 shadow-sm">
+          <div class="flex items-center gap-2">
+            <span id="filter-summary-badge" class="text-xs sm:text-sm font-bold text-slate-800">Showing 165 Questions</span>
+            <span id="current-index-badge" class="text-xs px-2 py-0.5 rounded-md bg-indigo-50 text-indigo-700 font-semibold">Q 1 of 165</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="inline-flex rounded-lg bg-slate-100 p-0.5 border border-slate-200">
+              <button type="button" id="layout-card-btn" class="px-2.5 py-1 rounded-md text-xs font-semibold bg-white text-slate-900 shadow-sm transition">
+                Single Card
+              </button>
+              <button type="button" id="layout-list-btn" class="px-2.5 py-1 rounded-md text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+                All Cards List
+              </button>
+            </div>
+            <button type="button" id="reveal-all-btn" class="px-2.5 py-1 rounded-lg border border-indigo-200 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 text-xs font-semibold transition">
+              👁️ Show All Answers
+            </button>
+          </div>
+        </div>
+
+        <!-- Single Card Container -->
+        <div id="single-card-container"></div>
+
+        <!-- Multi-Card List Container -->
+        <div id="list-cards-container" class="hidden space-y-4"></div>
+
+      </div>
+
+      <!-- Right Column: Question Navigator Palette & Chapter Breakdown -->
+      <aside class="lg:col-span-4 xl:col-span-3 space-y-4 lg:sticky lg:top-28 no-print">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-4">
+          <div class="flex items-center justify-between mb-2.5">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700">Question Palette / வினா எண்கள்</h3>
+            <span class="text-[11px] text-slate-500" id="palette-count-label">165 Qs</span>
+          </div>
+
+          <!-- Legend -->
+          <div class="flex flex-wrap gap-2 text-[11px] text-slate-600 mb-3 pb-2.5 border-b border-slate-100">
+            <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Correct</span>
+            <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span> Wrong</span>
+            <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span> Answered</span>
+            <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> ★ Saved</span>
+          </div>
+
+          <div id="question-palette" class="grid grid-cols-6 sm:grid-cols-8 lg:grid-cols-5 xl:grid-cols-6 gap-1.5 max-h-72 overflow-y-auto custom-scrollbar pr-1"></div>
+        </div>
+
+        <!-- Quick Chapter Progress Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-4">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-3">Chapter Breakdown / அலகு வாரி</h3>
+          <div id="chapter-breakdown-list" class="space-y-2 text-xs"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- STUDY & ANSWER KEY SHEET VIEW -->
+    <div id="study-sheet-view" class="hidden space-y-4">
+      <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-sm flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900">Complete Master Answer Key &amp; Revision Sheet (Units 6–11)</h2>
+          <p class="text-xs text-slate-600 tamil-text">அலகு 6 முதல் 11 வரையிலான அனைத்து புத்தகப் பின்பக்க (75) மற்றும் புத்தக உட்பகுதி (90) ஒரு மதிப்பெண் வினா-விடைத் தொகுப்பு</p>
+        </div>
+        <div class="flex items-center gap-2 no-print">
+          <button type="button" id="print-sheet-btn" class="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow flex items-center gap-1.5 transition">
+            <span>🖨️</span>
+            <span>Print / Save PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="study-sheet-content" class="space-y-4"></div>
+    </div>
+
+  </main>
+
+  <!-- HTML & CSS Source Code Modal -->
+  <div id="code-modal" class="fixed inset-0 z-50 hidden bg-slate-900/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 no-print">
+    <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden">
+      <div class="px-5 py-3.5 bg-slate-900 text-white flex items-center justify-between">
+        <div>
+          <h3 class="text-sm sm:text-base font-bold">Full HTML &amp; CSS Source Code (Single-File &amp; Separate CSS)</h3>
+          <p class="text-xs text-slate-300">Copy or download the complete HTML page and CSS stylesheet</p>
+        </div>
+        <button type="button" id="close-code-modal-btn" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 flex items-center justify-center font-bold">✕</button>
+      </div>
+
+      <div class="p-4 border-b border-slate-200 bg-slate-50 flex flex-wrap items-center justify-between gap-2">
+        <div class="inline-flex rounded-lg bg-slate-200 p-1">
+          <button type="button" id="tab-code-html" class="px-3 py-1 rounded-md text-xs font-bold bg-white text-slate-900 shadow-sm">Full HTML Page (index.html)</button>
+          <button type="button" id="tab-code-css" class="px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900">CSS Stylesheet (styles.css)</button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" id="copy-code-btn" class="px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow transition">
+            📋 Copy Code
+          </button>
+          <button type="button" id="download-html-btn" class="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow transition">
+            ⬇ Download .HTML
+          </button>
+        </div>
+      </div>
+
+      <div class="p-4 flex-1 overflow-y-auto bg-slate-950 text-slate-100 font-mono text-xs">
+        <pre id="code-display-area" class="whitespace-pre-wrap break-words"></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-container" class="fixed bottom-4 right-4 z-50 hidden px-4 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-semibold shadow-xl border border-slate-700 no-print"></div>
+
+  <script>
+    // ==================== COMPLETE BILINGUAL QUESTION BANK (165 QUESTIONS) ====================
+    const QUESTIONS = [
+  {
+    "id": "u6_bb_1",
+    "unit": 6,
+    "type": "back",
+    "qno": 1,
+    "q_en": "The speed of light in an isotropic medium depends on,",
+    "q_ta": "திசையொப்பு பண்பினைப் பெற்ற (Isotropic) ஊடகத்தின் வழியே செல்லும் ஒளியின் வேகம், பின்வருவனவற்றுள் எதனைச் சார்ந்துள்ளது?",
+    "opts_en": [
+      "its intensity",
+      "its wavelength",
+      "the nature of propagation",
+      "the motion of the source w.r.t medium"
+    ],
+    "opts_ta": [
+      "அதன் ஒளிச்செறிவு",
+      "அதன் அலைநீளம்",
+      "பரவும் தன்மை",
+      "ஊடகத்தைப் பொருத்து ஒளிமூலத்தின் இயக்கம்"
+    ],
+    "ans": 1,
+    "exp_en": "In an isotropic medium, refractive index n depends on wavelength (v = c/n), so speed of light depends on its wavelength.",
+    "exp_ta": "திசையொப்பு ஊடகத்தில் ஒளிவிலகல் எண் n அலைநீளத்தைச் சார்ந்தது (v = c/n). எனவே ஒளியின் வேகம் அதன் அலைநீளத்தைச் சார்ந்துள்ளது."
+  },
+  {
+    "id": "u6_bb_2",
+    "unit": 6,
+    "type": "back",
+    "qno": 2,
+    "q_en": "A rod of length 10 cm lies along the principal axis of a concave mirror of focal length 10 cm in such a way that its end closer to the pole is 20 cm away from the mirror. The length of the image is, (AIPMT Main 2012)",
+    "q_ta": "10 cm நீளமுடைய தண்டு ஒன்று, 10 cm குவியத்தூரம் கொண்ட குழிஆடியின் முதன்மை அச்சில் வைக்கப்பட்டுள்ளது. தண்டின் ஒரு முனை குழிஆடியின் முனையிலிருந்து 20 cm தொலைவில் இருந்தால், கிடைக்கும் பிம்பத்தின் நீளம் என்ன? (AIPMT 2012)",
+    "opts_en": [
+      "2.5 cm",
+      "5 cm",
+      "10 cm",
+      "15 cm"
+    ],
+    "opts_ta": [
+      "2.5 cm",
+      "5 cm",
+      "10 cm",
+      "15 cm"
+    ],
+    "ans": 1,
+    "exp_en": "Near end u₁ = −20 cm (= 2f) ⇒ v₁ = −20 cm. Far end u₂ = −30 cm, f = −10 cm ⇒ v₂ = −15 cm. Image length = |v₁ − v₂| = 5 cm.",
+    "exp_ta": "அருகிலுள்ள முனை u₁ = −20 cm ⇒ v₁ = −20 cm. மறுமுனை u₂ = −30 cm, f = −10 cm ⇒ v₂ = −15 cm. பிம்பத்தின் நீளம் = 20 − 15 = 5 cm."
+  },
+  {
+    "id": "u6_bb_3",
+    "unit": 6,
+    "type": "back",
+    "qno": 3,
+    "q_en": "An object is placed in front of a convex mirror of focal length of f and the maximum and minimum distance of an object from the mirror such that the image formed is real and magnified. (JEE Main 2009)",
+    "q_ta": "குவியத்தூரம் f கொண்ட குவிஆடியின் முன்பாகப் பொருளொன்று வைக்கப்பட்டுள்ளது. பெரிதாக்கப்பட்ட மெய் பிம்பம் கிடைக்க வேண்டுமெனில், குவிஆடியிலிருந்து பொருளை வைக்க வேண்டிய பெரும மற்றும் சிறுமத் தொலைவுகள் யாவை? (JEE Main 2009)",
+    "opts_en": [
+      "2f and c",
+      "c and ∞",
+      "f and O",
+      "None of these"
+    ],
+    "opts_ta": [
+      "2f மற்றும் c",
+      "c மற்றும் ∞",
+      "f மற்றும் O",
+      "மேற்கண்ட எதுவுமில்லை"
+    ],
+    "ans": 3,
+    "exp_en": "A convex mirror always forms a virtual and diminished image for any real object position.",
+    "exp_ta": "குவிஆடி எப்போதும் மெய்ப்பொருளுக்கு சிறிய மாயப் பிம்பத்தையே உருவாக்கும். எனவே மேற்கண்ட எதுவுமில்லை."
+  },
+  {
+    "id": "u6_bb_4",
+    "unit": 6,
+    "type": "back",
+    "qno": 4,
+    "q_en": "For light incident from air on a slab of refractive index 2, the maximum possible angle of refraction is,",
+    "q_ta": "காற்றிலிருந்து, ஒளிவிலகல் எண் 2 கொண்ட கண்ணாடிப் பட்டகத்தின் மீது ஒளி விழுகிறது எனில், சாத்தியமான பெரும விலகுகோணத்தின் மதிப்பு என்ன?",
+    "opts_en": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "opts_ta": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "ans": 0,
+    "exp_en": "By Snell's law, sin r_max = sin 90° / 2 = 1/2 ⇒ r_max = 30°.",
+    "exp_ta": "ஸ்னெல் விதிப்படி பெரும விலகுகோணத்திற்கு i = 90° ⇒ sin r = 1/2 ⇒ r = 30°."
+  },
+  {
+    "id": "u6_bb_5",
+    "unit": 6,
+    "type": "back",
+    "qno": 5,
+    "q_en": "If the velocity and wavelength of light in air is Vₐ and λₐ and that in water is V_w and λ_w, then the refractive index of water is,",
+    "q_ta": "காற்றில், ஒளியின் திசைவேகம் மற்றும் அலைநீளம் முறையே Vₐ மற்றும் λₐ. இதே போன்று தண்ணீரில் V_w மற்றும் λ_w எனில், தண்ணீரின் ஒளிவிலகல் எண் என்ன?",
+    "opts_en": [
+      "V_w / Vₐ",
+      "Vₐ / V_w",
+      "λ_w / λₐ",
+      "(Vₐ λₐ) / (V_w λ_w)"
+    ],
+    "opts_ta": [
+      "V_w / Vₐ",
+      "Vₐ / V_w",
+      "λ_w / λₐ",
+      "(Vₐ λₐ) / (V_w λ_w)"
+    ],
+    "ans": 1,
+    "exp_en": "Refractive index of water n = speed of light in air (Vₐ) / speed of light in water (V_w).",
+    "exp_ta": "தண்ணீரின் ஒளிவிலகல் எண் n = Vₐ / V_w."
+  },
+  {
+    "id": "u6_bb_6",
+    "unit": 6,
+    "type": "back",
+    "qno": 6,
+    "q_en": "Stars twinkle due to,",
+    "q_ta": "பின்வருவனவற்றுள் விண்மீன்கள் மின்னுவதற்கான சரியான காரணம் எது?",
+    "opts_en": [
+      "reflection",
+      "total internal reflection",
+      "refraction",
+      "polarisation"
+    ],
+    "opts_ta": [
+      "ஒளிஎதிரொளிப்பு",
+      "முழு அக எதிரொளிப்பு",
+      "ஒளிவிலகல்",
+      "தளவிளைவு"
+    ],
+    "ans": 2,
+    "exp_en": "Stars twinkle due to atmospheric refraction of starlight through air layers of varying densities.",
+    "exp_ta": "வளிமண்டல அடுக்குகளில் ஏற்படும் தொடர் ஒளிவிலகல் (Refraction) காரணமாக விண்மீன்கள் மின்னுகின்றன."
+  },
+  {
+    "id": "u6_bb_7",
+    "unit": 6,
+    "type": "back",
+    "qno": 7,
+    "q_en": "When a biconvex lens of glass having refractive index 1.47 is dipped in a liquid, it acts as a plane sheet of glass. This implies that the liquid must have refractive index,",
+    "q_ta": "ஒளிவிலகல் எண் 1.47 கொண்ட இருபுற குவிலென்ஸ் ஒன்று திரவம் ஒன்றில் மூழ்கி, சமதள கண்ணாடித் தகடு போன்று செயல்படுகிறது எனில், திரவத்தின் ஒளிவிலகல் எண் எவ்வாறு இருக்க வேண்டும்?",
+    "opts_en": [
+      "less than one",
+      "less than that of glass",
+      "greater than that of glass",
+      "equal to that of glass"
+    ],
+    "opts_ta": [
+      "ஒன்றைவிடக் குறைவு",
+      "கண்ணாடியைவிடக் குறைவாக",
+      "கண்ணாடியைவிட அதிகமாக",
+      "கண்ணாடிக்குச் சமமாக"
+    ],
+    "ans": 3,
+    "exp_en": "For lens to act as a plane sheet, P = 1/f = 0 ⇒ refractive index of liquid must equal that of glass (1.47).",
+    "exp_ta": "சமதள கண்ணாடித் தகடு போல் செயல்பட P = 0 ஆக இருக்க வேண்டும்; எனவே திரவத்தின் ஒளிவிலகல் எண் கண்ணாடிக்குச் சமமாக (1.47) இருக்க வேண்டும்."
+  },
+  {
+    "id": "u6_bb_8",
+    "unit": 6,
+    "type": "back",
+    "qno": 8,
+    "q_en": "The radius of curvature of curved surface at a thin planoconvex lens is 10 cm and the refractive index is 1.5. If the plane surface is silvered, then the focal length will be,",
+    "q_ta": "தட்டைக் குவிலென்ஸ் ஒன்றின் வளைவுப்பரப்பின் வளைவு ஆரம் 10 cm. மேலும், அதன் ஒளிவிலகல் எண் 1.5. குவிலென்சின் தட்டைப்பரப்பின் மீது வெள்ளி பூசப்பட்டால் அதன் குவியத்தூரம்",
+    "opts_en": [
+      "5 cm",
+      "10 cm",
+      "15 cm",
+      "20 cm"
+    ],
+    "opts_ta": [
+      "5 cm",
+      "10 cm",
+      "15 cm",
+      "20 cm"
+    ],
+    "ans": 1,
+    "exp_en": "F = R / [2(n − 1)] = 10 / [2(1.5 − 1)] = 10 cm.",
+    "exp_ta": "F = R / [2(n − 1)] = 10 / [2(1.5 − 1)] = 10 cm."
+  },
+  {
+    "id": "u6_bb_9",
+    "unit": 6,
+    "type": "back",
+    "qno": 9,
+    "q_en": "An air bubble in glass slab of refractive index 1.5 (near normal incidence) is 5 cm deep when viewed from one surface and 3 cm deep when viewed from the opposite face. The thickness of the slab is,",
+    "q_ta": "ஒளிவிலகல் எண் 1.5 கொண்ட கண்ணாடிப் பட்டகம் ஒன்றினுள் காற்றுக் குமிழ் ஒன்று உள்ளது. ஒரு பக்கத்திலிருந்து பார்க்கும்போது 5 cm ஆழத்திலும், மறுபக்கம் வழியாகப் பார்க்கும்போது 3 cm ஆழத்திலும் உள்ளது எனில், கண்ணாடிப் பட்டகத்தின் தடிமன் என்ன?",
+    "opts_en": [
+      "8 cm",
+      "10 cm",
+      "12 cm",
+      "16 cm"
+    ],
+    "opts_ta": [
+      "8 cm",
+      "10 cm",
+      "12 cm",
+      "16 cm"
+    ],
+    "ans": 2,
+    "exp_en": "Real thickness d = n × (d'₁ + d'₂) = 1.5 × (5 + 3) = 12 cm.",
+    "exp_ta": "உண்மைத் தடிமன் d = n × (d'₁ + d'₂) = 1.5 × (5 + 3) = 12 cm."
+  },
+  {
+    "id": "u6_bb_10",
+    "unit": 6,
+    "type": "back",
+    "qno": 10,
+    "q_en": "A ray of light travelling in a transparent medium of refractive index n falls, on a surface separating the medium from air at an angle of incidence of 45°. The ray can undergo total internal reflection for the following n,",
+    "q_ta": "ஒளிவிலகல் எண் n கொண்ட ஒளிபுகும் ஊடகத்தின் வழியே செல்லும் ஒளிக்கதிர், காற்றிலிருந்து இந்த ஊடகத்தைப் பிரிக்கும் தளத்தின் மீது 45° கோணத்தில் விழுந்து முழு அக எதிரொளிப்பு அடைகிறது எனில், n இன் மதிப்பு என்ன?",
+    "opts_en": [
+      "n = 1.25",
+      "n = 1.33",
+      "n = 1.4",
+      "n = 1.5"
+    ],
+    "opts_ta": [
+      "n = 1.25",
+      "n = 1.33",
+      "n = 1.4",
+      "n = 1.5"
+    ],
+    "ans": 3,
+    "exp_en": "For TIR, n > 1/sin 45° = √2 = 1.414 ⇒ n = 1.5.",
+    "exp_ta": "முழு அக எதிரொளிப்பு அடைய n > 1/sin 45° (1.414) ⇒ n = 1.5."
+  },
+  {
+    "id": "u6_in_1",
+    "unit": 6,
+    "type": "inside",
+    "qno": 1,
+    "q_en": "The angle of deviation produced by a plane mirror when the angle of incidence is i is given by,",
+    "q_ta": "சமதள ஆடியில் படுகோணம் i எனில், ஒளி எதிரொளிப்பினால் ஏற்படும் திசைமாற்றக் கோணம் d எதற்குச் சமம்?",
+    "opts_en": [
+      "d = 90° − i",
+      "d = 180° − 2i",
+      "d = 2i",
+      "d = 180° − i"
+    ],
+    "opts_ta": [
+      "d = 90° − i",
+      "d = 180° − 2i",
+      "d = 2i",
+      "d = 180° − i"
+    ],
+    "ans": 1,
+    "exp_en": "Angle of deviation due to reflection at a plane mirror is d = 180° − 2i.",
+    "exp_ta": "எதிரொளிப்பினால் ஏற்படும் திசைமாற்றக் கோணம் d = 180° − 2i."
+  },
+  {
+    "id": "u6_in_2",
+    "unit": 6,
+    "type": "inside",
+    "qno": 2,
+    "q_en": "The relation between focal length (f) and radius of curvature (R) of a spherical mirror is,",
+    "q_ta": "கோளக ஆடியின் குவியத்தூரம் (f) மற்றும் வளைவு ஆரம் (R) ஆகியவற்றிற்கு இடையேயான தொடர்பு யாது?",
+    "opts_en": [
+      "f = 2R",
+      "f = R / 2",
+      "f = R²",
+      "f = R / 4"
+    ],
+    "opts_ta": [
+      "f = 2R",
+      "f = R / 2",
+      "f = R²",
+      "f = R / 4"
+    ],
+    "ans": 1,
+    "exp_en": "For spherical mirrors, focal length f = R / 2 (or R = 2f).",
+    "exp_ta": "கோளக ஆடியில் R = 2f அல்லது f = R / 2."
+  },
+  {
+    "id": "u6_in_3",
+    "unit": 6,
+    "type": "inside",
+    "qno": 3,
+    "q_en": "In Fizeau's method to determine the speed of light, the toothed wheel had N teeth and N cuts of equal widths. The speed of light c in terms of distance d and angular speed ω is,",
+    "q_ta": "ஒளியின் வேகத்தைக் கண்டறியும் ஃபிஸீயு (Fizeau) முறையில், N பற்கள் மற்றும் N இடைவெளிகள் கொண்ட சக்கரத்தின் கோணத் திசைவேகம் ω மற்றும் ஆடியின் தொலைவு d எனில், ஒளியின் வேகம் c என்பது,",
+    "opts_en": [
+      "c = (2dNω) / π",
+      "c = (dNω) / π",
+      "c = (2πd) / (Nω)",
+      "c = (dω) / (2Nπ)"
+    ],
+    "opts_ta": [
+      "c = (2dNω) / π",
+      "c = (dNω) / π",
+      "c = (2πd) / (Nω)",
+      "c = (dω) / (2Nπ)"
+    ],
+    "ans": 0,
+    "exp_en": "Time t = 2d/c = π/(Nω) ⇒ c = 2dNω / π.",
+    "exp_ta": "t = 2d/c = π/(Nω) என்பதால் ஒளியின் திசைவேகம் c = 2dNω / π."
+  },
+  {
+    "id": "u6_in_4",
+    "unit": 6,
+    "type": "inside",
+    "qno": 4,
+    "q_en": "If light travels a distance d inside a medium of refractive index n, the equivalent optical path d' in vacuum is,",
+    "q_ta": "ஒளிவிலகல் எண் n கொண்ட ஊடகத்தில் ஒளி d தொலைவைக் கடந்தால், வெற்றிடத்தில் அதற்குச் சமமான ஒளியியல் பாதை (Optical path) d' என்பது,",
+    "opts_en": [
+      "d / n",
+      "n · d",
+      "n² · d",
+      "d / n²"
+    ],
+    "opts_ta": [
+      "d / n",
+      "n · d",
+      "n² · d",
+      "d / n²"
+    ],
+    "ans": 1,
+    "exp_en": "Optical path d' = n · d.",
+    "exp_ta": "ஒளியியல் பாதை d' = n d."
+  },
+  {
+    "id": "u6_in_5",
+    "unit": 6,
+    "type": "inside",
+    "qno": 5,
+    "q_en": "The refractive index of diamond and its critical angle are approximately,",
+    "q_ta": "வைரத்தின் ஒளிவிலகல் எண் மற்றும் அதன் மாறுநிலைக் கோணம் தோராயமாக முறையே,",
+    "opts_en": [
+      "1.5 and 41.8°",
+      "2.417 and 24.4°",
+      "1.33 and 48.6°",
+      "1.65 and 37.3°"
+    ],
+    "opts_ta": [
+      "1.5 மற்றும் 41.8°",
+      "2.417 மற்றும் 24.4°",
+      "1.33 மற்றும் 48.6°",
+      "1.65 மற்றும் 37.3°"
+    ],
+    "ans": 1,
+    "exp_en": "Diamond has refractive index 2.417 and critical angle 24.4°.",
+    "exp_ta": "வைரத்தின் ஒளிவிலகல் எண் 2.417 மற்றும் அதன் மாறுநிலைக் கோணம் 24.4° ஆகும்."
+  },
+  {
+    "id": "u6_in_6",
+    "unit": 6,
+    "type": "inside",
+    "qno": 6,
+    "q_en": "The radius of the circular illumination in Snell's window when viewed from a depth d in a liquid of refractive index n is,",
+    "q_ta": "ஒளிவிலகல் எண் n கொண்ட திரவத்தில் d ஆழத்திலிருந்து பார்க்கும்போது தெரியும் ஸ்னெல் சாளரத்தின் (Snell's window) வட்ட ஆரம் R என்பது,",
+    "opts_en": [
+      "d √(n² − 1)",
+      "d / √(n² − 1)",
+      "d / (n − 1)",
+      "n / √(d² − 1)"
+    ],
+    "opts_ta": [
+      "d √(n² − 1)",
+      "d / √(n² − 1)",
+      "d / (n − 1)",
+      "n / √(d² − 1)"
+    ],
+    "ans": 1,
+    "exp_en": "Radius of Snell's window R = d tan i_c = d / √(n² − 1).",
+    "exp_ta": "ஸ்னெல் சாளரத்தின் ஆரம் R = d / √(n² − 1)."
+  },
+  {
+    "id": "u6_in_7",
+    "unit": 6,
+    "type": "inside",
+    "qno": 7,
+    "q_en": "In an optical fibre with core refractive index n₁, cladding refractive index n₂, and surrounding medium air (n₃ = 1), the Numerical Aperture (NA) is,",
+    "q_ta": "உள்ளக ஒளிவிலகல் எண் n₁ மற்றும் உறைபூச்சு ஒளிவிலகல் எண் n₂ கொண்ட ஒளி இழையின் எண்ணியல் துளை (Numerical Aperture - காற்று ஊடகத்தில்) சமன்பாடு யாது?",
+    "opts_en": [
+      "√(n₁² + n₂²)",
+      "√(n₁² − n₂²)",
+      "n₁ − n₂",
+      "n₁ / n₂"
+    ],
+    "opts_ta": [
+      "√(n₁² + n₂²)",
+      "√(n₁² − n₂²)",
+      "n₁ − n₂",
+      "n₁ / n₂"
+    ],
+    "ans": 1,
+    "exp_en": "Numerical Aperture NA = sin i_a = √(n₁² − n₂²).",
+    "exp_ta": "எண்ணியல் துளை NA = sin i_a = √(n₁² − n₂²)."
+  },
+  {
+    "id": "u6_in_8",
+    "unit": 6,
+    "type": "inside",
+    "qno": 8,
+    "q_en": "Medical endoscopes work on the principle of,",
+    "q_ta": "மருத்துவத் துறையில் பயன்படும் அகஉள்நோக்கி (Endoscope) எந்தத் தத்துவத்தின் அடிப்படையில் செயல்படுகிறது?",
+    "opts_en": [
+      "diffraction",
+      "polarisation",
+      "total internal reflection",
+      "dispersion"
+    ],
+    "opts_ta": [
+      "விளிம்பு விளைவு",
+      "தளவிளைவு",
+      "முழு அக எதிரொளிப்பு",
+      "நிறப்பிரிகை"
+    ],
+    "ans": 2,
+    "exp_en": "Endoscopes use optical fibre bundles working on total internal reflection.",
+    "exp_ta": "அகஉள்நோக்கி ஒளி இழைகளின் முழு அக எதிரொளிப்புத் தத்துவத்தின் அடிப்படையில் செயல்படுகிறது."
+  },
+  {
+    "id": "u6_in_9",
+    "unit": 6,
+    "type": "inside",
+    "qno": 9,
+    "q_en": "An air bubble inside water (n = 1.33) behaves as a,",
+    "q_ta": "தண்ணீரின் உள்ளே தோன்றும் காற்றுக் குமிழி எவ்வகையான லென்ஸாகச் செயல்படும்?",
+    "opts_en": [
+      "converging lens",
+      "diverging (concave) lens",
+      "plane mirror",
+      "cylindrical lens"
+    ],
+    "opts_ta": [
+      "குவிக்கும் லென்ஸ்",
+      "விரிக்கும் (குழி) லென்ஸ்",
+      "சமதள ஆடி",
+      "உருளை லென்ஸ்"
+    ],
+    "ans": 1,
+    "exp_en": "Since n_air < n_water, a convex air bubble in water acts as a diverging lens.",
+    "exp_ta": "காற்றின் ஒளிவிலகல் எண் நீரை விடக் குறைவு என்பதால், நீருக்குள் உள்ள காற்றுக் குமிழி விரிக்கும் (குழி) லென்ஸாகச் செயல்படும்."
+  },
+  {
+    "id": "u6_in_10",
+    "unit": 6,
+    "type": "inside",
+    "qno": 10,
+    "q_en": "What is the SI unit of power of a lens?",
+    "q_ta": "லென்சின் திறனின் SI அலகு என்ன?",
+    "opts_en": [
+      "metre (m)",
+      "dioptre (D)",
+      "watt (W)",
+      "lux"
+    ],
+    "opts_ta": [
+      "மீட்டர் (m)",
+      "டயாப்டர் (D)",
+      "வாட் (W)",
+      "லக்ஸ்"
+    ],
+    "ans": 1,
+    "exp_en": "Power P = 1/f has SI unit dioptre (D), where 1 D = 1 m⁻¹.",
+    "exp_ta": "லென்சின் திறனின் அலகு டயாப்டர் (D) ஆகும் (1 D = 1 m⁻¹)."
+  },
+  {
+    "id": "u6_in_11",
+    "unit": 6,
+    "type": "inside",
+    "qno": 11,
+    "q_en": "At the position of minimum deviation in a prism,",
+    "q_ta": "முப்பட்டகத்தின் சிறும திசைமாற்ற நிலையில் கீழ்க்கண்டவற்றுள் எது சரியானது?",
+    "opts_en": [
+      "i₁ > i₂",
+      "i₁ < i₂",
+      "the refracted ray inside the prism is parallel to its base",
+      "angle of emergence is 90°"
+    ],
+    "opts_ta": [
+      "i₁ > i₂",
+      "i₁ < i₂",
+      "முப்பட்டகத்தினுள் விலகலடைந்த கதிர் அதன் அடிப்பக்கத்திற்கு இணையாகச் செல்லும்",
+      "விடுகோணம் 90° ஆகும்"
+    ],
+    "ans": 2,
+    "exp_en": "At minimum deviation, i₁ = i₂, r₁ = r₂, and the refracted ray inside the prism is parallel to its base.",
+    "exp_ta": "சிறும திசைமாற்ற நிலையில் i₁ = i₂, r₁ = r₂ மற்றும் முப்பட்டகத்தினுள் செல்லும் கதிர் அதன் அடிப்பரப்பிற்கு இணையாகச் செல்லும்."
+  },
+  {
+    "id": "u6_in_12",
+    "unit": 6,
+    "type": "inside",
+    "qno": 12,
+    "q_en": "The dispersive power (ω) of the material of a prism is given by,",
+    "q_ta": "ஊடகம் ஒன்றின் நிறப்பிரிகைத் திறனுக்கான (Dispersive power ω) சமன்பாடு யாது?",
+    "opts_en": [
+      "(n_V − n_R) / (n − 1)",
+      "(n − 1) / (n_V − n_R)",
+      "(n_V + n_R) / 2",
+      "(n_V − n_R) × A"
+    ],
+    "opts_ta": [
+      "(n_V − n_R) / (n − 1)",
+      "(n − 1) / (n_V − n_R)",
+      "(n_V + n_R) / 2",
+      "(n_V − n_R) × A"
+    ],
+    "ans": 0,
+    "exp_en": "Dispersive power ω = (n_V − n_R) / (n − 1).",
+    "exp_ta": "நிறப்பிரிகைத் திறன் ω = (n_V − n_R) / (n − 1)."
+  },
+  {
+    "id": "u6_in_13",
+    "unit": 6,
+    "type": "inside",
+    "qno": 13,
+    "q_en": "According to Rayleigh's scattering law, the intensity of scattered light (I) is inversely proportional to,",
+    "q_ta": "இராலே ஒளிச்சிதறல் விதியின்படி, சிதறலடைந்த ஒளியின் செறிவு (I) எதற்கு எதிர்த்தகவில் இருக்கும்?",
+    "opts_en": [
+      "λ",
+      "λ²",
+      "λ³",
+      "λ⁴"
+    ],
+    "opts_ta": [
+      "λ",
+      "λ²",
+      "λ³",
+      "λ⁴"
+    ],
+    "ans": 3,
+    "exp_en": "Rayleigh's scattering law states I ∝ 1/λ⁴.",
+    "exp_ta": "இராலே ஒளிச்சிதறல் விதியின்படி I ∝ 1/λ⁴."
+  },
+  {
+    "id": "u6_in_14",
+    "unit": 6,
+    "type": "inside",
+    "qno": 14,
+    "q_en": "In a secondary rainbow, the order of colours from the outside to the inside is,",
+    "q_ta": "துணை வானவில்லில் (Secondary rainbow) வெளிப்புறத்திலிருந்து உட்புறமாக வண்ணங்களின் வரிசை எவ்வாறு அமையும்?",
+    "opts_en": [
+      "red to violet",
+      "violet to red",
+      "green to yellow",
+      "blue to orange"
+    ],
+    "opts_ta": [
+      "சிவப்பிலிருந்து ஊதா",
+      "ஊதாவிலிருந்து சிவப்பு",
+      "பச்சையிலிருந்து மஞ்சள்",
+      "நீலத்திலிருந்து ஆரஞ்சு"
+    ],
+    "ans": 1,
+    "exp_en": "In a secondary rainbow (52° to 54°), violet is on the outside and red is on the inside.",
+    "exp_ta": "துணை வானவில்லில் வெளிப்புறத்தில் ஊதா நிறமும் உட்புறத்தில் சிவப்பு நிறமும் தோன்றும்."
+  },
+  {
+    "id": "u6_in_15",
+    "unit": 6,
+    "type": "inside",
+    "qno": 15,
+    "q_en": "Clouds appear white because dust and water droplets have size a ≫ λ, so,",
+    "q_ta": "மேகங்களில் உள்ள நீர்த்துளிகள் மற்றும் தூசுகளின் அளவு ஒளியின் அலைநீளத்தை விட மிகப் பெரியதாக (a ≫ λ) உள்ளதால் மேகங்கள் வெண்மையாகத் தெரியக் காரணம்,",
+    "opts_en": [
+      "only blue light is scattered",
+      "only red light is scattered",
+      "all wavelengths are scattered almost equally",
+      "no scattering occurs"
+    ],
+    "opts_ta": [
+      "நீல நிறம் மட்டும் சிதறலடைகிறது",
+      "சிவப்பு நிறம் மட்டும் சிதறலடைகிறது",
+      "அனைத்து அலைநீளங்களும் சமமாகச் சிதறலடைகின்றன",
+      "ஒளிச்சிதறல் நிகழ்வதில்லை"
+    ],
+    "ans": 2,
+    "exp_en": "Large particles (a ≫ λ) scatter all wavelengths equally, making clouds appear white.",
+    "exp_ta": "ஒளியின் அலைநீளத்தை விடப் பெரிய துகள்களால் அனைத்து நிறங்களும் சம அளவில் சிதறலடைவதால் மேகங்கள் வெண்மையாகத் தெரிகின்றன."
+  },
+  {
+    "id": "u7_bb_1",
+    "unit": 7,
+    "type": "back",
+    "qno": 1,
+    "q_en": "A plane glass is placed over various coloured letters (violet, green, yellow, red). The letter which appears to be raised more is,",
+    "q_ta": "பல்வேறு வண்ணங்களில் எழுதப்பட்ட எழுத்துகளின் மீது (ஊதா, பச்சை, மஞ்சள், மற்றும் சிவப்பு) சமதளக் கண்ணாடி ஒன்று வைக்கப்பட்டுள்ளது. எந்த வண்ணத்தில் எழுதப்பட்ட எழுத்து அதிக உயரத்தில் தெரியும்?",
+    "opts_en": [
+      "red",
+      "yellow",
+      "green",
+      "violet"
+    ],
+    "opts_ta": [
+      "சிவப்பு",
+      "மஞ்சள்",
+      "பச்சை",
+      "ஊதா"
+    ],
+    "ans": 3,
+    "exp_en": "Violet has the smallest wavelength and largest refractive index n, so apparent depth d' = d/n is least and it appears raised the most.",
+    "exp_ta": "ஊதா நிறத்திற்கு ஒளிவிலகல் எண் (n) அதிகம் என்பதால் தோற்ற ஆழம் குறைவாகி, ஊதா எழுத்து அதிக உயரத்தில் தெரியும்."
+  },
+  {
+    "id": "u7_bb_2",
+    "unit": 7,
+    "type": "back",
+    "qno": 2,
+    "q_en": "Two point white dots are 1 mm apart on a black paper. They are viewed by eye of pupil diameter 3 mm approximately. The maximum distance at which these dots can be resolved by the eye is, [take wavelength of light, λ = 500 nm]",
+    "q_ta": "கருமைநிறத் தாளின் மீது 1 mm இடைவெளியில் இரண்டு வெள்ளை நிறப் புள்ளிகள் காணப்படுகின்றன. தோராயமாக 3 mm விட்டமுடைய விழிலென்ஸ் உள்ள விழியினால் இப்புள்ளிகள் பார்க்கப்படுகின்றன. விழியினால் இப்புள்ளிகளைத் தெளிவாகப் பகுத்துப்பார்க்கக்கூடிய பெருமத் தொலைவு என்ன? [λ = 500 nm]",
+    "opts_en": [
+      "1 m",
+      "5 m",
+      "3 m",
+      "6 m"
+    ],
+    "opts_ta": [
+      "1 m",
+      "5 m",
+      "3 m",
+      "6 m"
+    ],
+    "ans": 1,
+    "exp_en": "D = (y × a) / (1.22 λ) = (10⁻³ × 3×10⁻³) / (1.22 × 500×10⁻⁹) ≈ 5 m.",
+    "exp_ta": "D = (y × a) / (1.22 λ) ≈ 5 m."
+  },
+  {
+    "id": "u7_bb_3",
+    "unit": 7,
+    "type": "back",
+    "qno": 3,
+    "q_en": "In a Young's double-slit experiment, the slit separation is doubled. To maintain the same fringe spacing on the screen, the screen-to-slit distance D must be changed to,",
+    "q_ta": "யங் இரட்டைப் பிளவு ஆய்வில், பிளவுகளுக்கு இடையே உள்ள தொலைவு இருமடங்காக்கப்படுகிறது. திரையில் தோன்றும் பட்டை அகலம் மாறாமல் இருக்க வேண்டுமெனில், பிளவுகளுக்கும் திரைக்கும் இடையே உள்ள தொலைவு எவ்வளவு இருக்க வேண்டும்?",
+    "opts_en": [
+      "2D",
+      "D / 2",
+      "√2 D",
+      "D / √2"
+    ],
+    "opts_ta": [
+      "2D",
+      "D / 2",
+      "√2 D",
+      "D / √2"
+    ],
+    "ans": 0,
+    "exp_en": "β = λD / d. When d is doubled, D must be changed to 2D to keep β constant.",
+    "exp_ta": "β = λD / d. d இருமடங்கானால் β மாறாமல் இருக்க D-ம் 2D ஆக வேண்டும்."
+  },
+  {
+    "id": "u7_bb_4",
+    "unit": 7,
+    "type": "back",
+    "qno": 4,
+    "q_en": "Two coherent monochromatic light beams of intensities I and 4I are superposed. The maximum and minimum possible intensities in the resulting beam are [IIT-JEE 1988]",
+    "q_ta": "I மற்றும் 4I ஒளிச்செறிவுகள் கொண்ட இரண்டு ஒற்றை நிற ஓரியல் ஒளிக்கற்றைகள் ஒன்றுடன் ஒன்று மேற்பொருந்துகின்றன. தொகுபயன் பிம்பத்தின் சாத்தியமான பெரும மற்றும் சிறும ஒளிச்செறிவுகள் முறையே [IIT-JEE 1988]",
+    "opts_en": [
+      "5I and I",
+      "5I and 3I",
+      "9I and I",
+      "9I and 3I"
+    ],
+    "opts_ta": [
+      "5I மற்றும் I",
+      "5I மற்றும் 3I",
+      "9I மற்றும் I",
+      "9I மற்றும் 3I"
+    ],
+    "ans": 2,
+    "exp_en": "I_max = (√I + √4I)² = 9I and I_min = (√I − √4I)² = I.",
+    "exp_ta": "I_max = (√I + √4I)² = 9I; I_min = (√I − √4I)² = I."
+  },
+  {
+    "id": "u7_bb_5",
+    "unit": 7,
+    "type": "back",
+    "qno": 5,
+    "q_en": "When light is incident on a soap film of thickness 5 × 10⁻⁵ cm, the wavelength of light reflected maximum in the visible region is 5320 Å. Refractive index of the film will be,",
+    "q_ta": "5 × 10⁻⁵ cm தடிமன் கொண்ட சோப்புப் படலத்தின் மீது ஒளி விழுகிறது. கண்ணுறு பகுதியில் எதிரொளிப்பு அடைந்த ஒளியின் பெரும அலைநீளம் 5320 Å எனில் சோப்புப் படலத்தின் ஒளிவிலகல் எண் என்ன?",
+    "opts_en": [
+      "1.22",
+      "1.33",
+      "1.51",
+      "1.83"
+    ],
+    "opts_ta": [
+      "1.22",
+      "1.33",
+      "1.51",
+      "1.83"
+    ],
+    "ans": 1,
+    "exp_en": "2μt = (2n − 1)λ/2; for n = 3, μ = 5λ / (4t) = 1.33.",
+    "exp_ta": "2μt = (2n − 1)λ/2; n = 3 எனில் μ = 5λ / 4t = 1.33."
+  },
+  {
+    "id": "u7_bb_6",
+    "unit": 7,
+    "type": "back",
+    "qno": 6,
+    "q_en": "First diffraction minimum due to a single slit of width 1.0 × 10⁻⁵ cm is at 30°. Then wavelength of light used is,",
+    "q_ta": "1.0 × 10⁻⁵ cm அகலம் கொண்ட ஒற்றைப் பிளவினால் ஏற்படும் விளிம்புவிளைவின் முதல் சிறுமம் 30° எனில், பயன்படுத்தப்படும் ஒளியின் அலைநீளம் என்ன?",
+    "opts_en": [
+      "400 Å",
+      "500 Å",
+      "600 Å",
+      "700 Å"
+    ],
+    "opts_ta": [
+      "400 Å",
+      "500 Å",
+      "600 Å",
+      "700 Å"
+    ],
+    "ans": 1,
+    "exp_en": "λ = a sin 30° = 1.0×10⁻⁷ m × 0.5 = 500 Å.",
+    "exp_ta": "λ = a sin 30° = 10⁻⁷ × 0.5 = 500 Å."
+  },
+  {
+    "id": "u7_bb_7",
+    "unit": 7,
+    "type": "back",
+    "qno": 7,
+    "q_en": "A ray of light strikes a glass plate at an angle 60°. If the reflected and refracted rays are perpendicular to each other, the refractive index of the glass is,",
+    "q_ta": "கண்ணாடித் தட்டு ஒன்றின் மீது 60° கோணத்தில் ஒளிக்கதிர் விழுகிறது. எதிரொளிப்பு மற்றும் ஒளிவிலகல் அடைந்த ஒளிக்கதிர்கள் இரண்டும் ஒன்றுக்கொன்று செங்குத்தாக அமைந்தால், கண்ணாடியின் ஒளிவிலகல் எண் எவ்வளவு?",
+    "opts_en": [
+      "√3",
+      "3 / 2",
+      "√(3 / 2)",
+      "2"
+    ],
+    "opts_ta": [
+      "√3",
+      "3 / 2",
+      "√(3 / 2)",
+      "2"
+    ],
+    "ans": 0,
+    "exp_en": "By Brewster's law, n = tan i_p = tan 60° = √3.",
+    "exp_ta": "புரூஸ்டர் விதிப்படி n = tan 60° = √3."
+  },
+  {
+    "id": "u7_bb_8",
+    "unit": 7,
+    "type": "back",
+    "qno": 8,
+    "q_en": "One of the Young's double slits is covered with a glass plate as shown in figure. The position of central maximum will,",
+    "q_ta": "படத்தில் காட்டப்பட்டுள்ள யங் இரட்டைப் பிளவு ஆய்வில் ஒரு துளை கண்ணாடி ஒன்றினால் மூடப்படுகிறது எனில், மையப் பெருமம் எங்கு அமையும்?",
+    "svg": "<svg viewBox=\"0 0 320 150\" class=\"w-full max-w-xs mx-auto my-2 bg-slate-50 rounded-lg border border-slate-200 p-2\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"35\" y=\"15\" width=\"8\" height=\"35\" fill=\"#38bdf8\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <rect x=\"35\" y=\"60\" width=\"8\" height=\"30\" fill=\"#38bdf8\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <rect x=\"35\" y=\"100\" width=\"8\" height=\"35\" fill=\"#38bdf8\" stroke=\"#0284c7\" stroke-width=\"1.5\"/>\n  <rect x=\"46\" y=\"45\" width=\"10\" height=\"22\" fill=\"#a16207\" fill-opacity=\"0.7\" stroke=\"#713f12\" stroke-width=\"1.5\"/>\n  <text x=\"45\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f172a\">Glass slide / கண்ணாடித் தட்டு</text>\n  <line x1=\"43\" y1=\"55\" x2=\"275\" y2=\"85\" stroke=\"#e11d48\" stroke-width=\"1.2\" stroke-dasharray=\"3,2\"/>\n  <line x1=\"43\" y1=\"95\" x2=\"275\" y2=\"85\" stroke=\"#e11d48\" stroke-width=\"1.2\" stroke-dasharray=\"3,2\"/>\n  <rect x=\"275\" y=\"15\" width=\"6\" height=\"120\" fill=\"#cbd5e1\" stroke=\"#334155\" stroke-width=\"1.5\"/>\n  <text x=\"245\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#0f172a\">Screen / திரை</text>\n</svg>",
+    "opts_en": [
+      "get shifted downwards",
+      "get shifted upwards",
+      "will remain the same",
+      "data insufficient to conclude"
+    ],
+    "opts_ta": [
+      "கீழ்நோக்கி இடம்பெயரும்",
+      "மேல்நோக்கி இடம்பெயரும்",
+      "அங்கேயே தொடர்ந்து இருக்கும்",
+      "கொடுக்கப்பட்ட விவரங்கள் போதுமானதல்ல"
+    ],
+    "ans": 1,
+    "exp_en": "The fringe system shifts towards the slit covered by the glass plate (upwards).",
+    "exp_ta": "மேற்பகுதி பிளவில் கண்ணாடித் தட்டு வைக்கப்பட்டுள்ளதால் மையப் பெருமம் மேல்நோக்கி இடம்பெயரும்."
+  },
+  {
+    "id": "u7_bb_9",
+    "unit": 7,
+    "type": "back",
+    "qno": 9,
+    "q_en": "Light transmitted by Nicol prism is,",
+    "q_ta": "நிகோல் பட்டகம் வழியாகச் செல்லும் ஒளி,",
+    "opts_en": [
+      "partially polarised",
+      "unpolarised",
+      "plane polarised",
+      "elliptically polarised"
+    ],
+    "opts_ta": [
+      "பகுதி தளவிளைவு அடையும்",
+      "தளவிளைவு அடையாது",
+      "முழுவதும் தளவிளைவு அடையும்",
+      "நீள்வட்டமாகத் தளவிளைவு அடையும்"
+    ],
+    "ans": 2,
+    "exp_en": "Light transmitted by a Nicol prism is completely plane polarised.",
+    "exp_ta": "நிகோல் பட்டகம் வழியாகச் செல்லும் ஒளி முழுவதும் தளவிளைவு அடையும்."
+  },
+  {
+    "id": "u7_bb_10",
+    "unit": 7,
+    "type": "back",
+    "qno": 10,
+    "q_en": "The transverse nature of light is shown in,",
+    "q_ta": "ஒளியின் குறுக்கலைப் பண்பினை வெளிப்படுத்தும் நிகழ்வு,",
+    "opts_en": [
+      "interference",
+      "diffraction",
+      "scattering",
+      "polarisation"
+    ],
+    "opts_ta": [
+      "குறுக்கீட்டு விளைவு",
+      "விளிம்பு விளைவு",
+      "ஒளிச்சிதறல்",
+      "தளவிளைவு"
+    ],
+    "ans": 3,
+    "exp_en": "Polarisation proves the transverse nature of light waves.",
+    "exp_ta": "தளவிளைவு ஒளியின் குறுக்கலைப் பண்பை நிரூபிக்கிறது."
+  },
+  {
+    "id": "u7_in_1",
+    "unit": 7,
+    "type": "inside",
+    "qno": 1,
+    "q_en": "What is the shape of the wavefront originating from a point source kept at a finite distance?",
+    "q_ta": "வரையறுக்கப்பட்ட தொலைவில் உள்ள புள்ளி ஒளிமூலத்திலிருந்து உருவாகும் அலைமுகப்பின் வடிவம் யாது?",
+    "opts_en": [
+      "Plane wavefront",
+      "Spherical wavefront",
+      "Cylindrical wavefront",
+      "Elliptical wavefront"
+    ],
+    "opts_ta": [
+      "சமதள அலைமுகப்பு",
+      "கோளக அலைமுகப்பு",
+      "உருளை அலைமுகப்பு",
+      "நீள்வட்ட அலைமுகப்பு"
+    ],
+    "ans": 1,
+    "exp_en": "A point source at a finite distance produces spherical wavefronts.",
+    "exp_ta": "புள்ளி ஒளிமூலம் கோளக அலைமுகப்பை உருவாக்கும்."
+  },
+  {
+    "id": "u7_in_2",
+    "unit": 7,
+    "type": "inside",
+    "qno": 2,
+    "q_en": "The relation between phase difference (φ) and path difference (δ) of two interfering light waves of wavelength λ is,",
+    "q_ta": "λ அலைநீளம் கொண்ட இரு குறுக்கிடும் அலைகளின் கட்ட வேறுபாட்டிற்கும் (φ) பாதை வேறுபாட்டிற்கும் (δ) உள்ள தொடர்பு யாது?",
+    "opts_en": [
+      "φ = (2π / λ) δ",
+      "φ = (λ / 2π) δ",
+      "φ = 2π λ δ",
+      "φ = (π / λ) δ"
+    ],
+    "opts_ta": [
+      "φ = (2π / λ) δ",
+      "φ = (λ / 2π) δ",
+      "φ = 2π λ δ",
+      "φ = (π / λ) δ"
+    ],
+    "ans": 0,
+    "exp_en": "Phase difference φ = (2π / λ) × path difference δ.",
+    "exp_ta": "கட்ட வேறுபாடு φ = (2π / λ) δ."
+  },
+  {
+    "id": "u7_in_3",
+    "unit": 7,
+    "type": "inside",
+    "qno": 3,
+    "q_en": "For constructive interference of two coherent waves, the path difference δ must be,",
+    "q_ta": "இரு ஓரியல் ஒளி அலைகளின் ஆக்கக் குறுக்கீட்டு விளைவிற்குப் பாதை வேறுபாடு δ எவ்வாறு இருக்க வேண்டும்?",
+    "opts_en": [
+      "(2n − 1) λ / 2",
+      "n λ",
+      "(2n + 1) λ / 4",
+      "n λ / 2"
+    ],
+    "opts_ta": [
+      "(2n − 1) λ / 2",
+      "n λ",
+      "(2n + 1) λ / 4",
+      "n λ / 2"
+    ],
+    "ans": 1,
+    "exp_en": "For constructive interference, path difference δ = nλ.",
+    "exp_ta": "ஆக்கக் குறுக்கீட்டு விளைவிற்குப் பாதை வேறுபாடு δ = nλ."
+  },
+  {
+    "id": "u7_in_4",
+    "unit": 7,
+    "type": "inside",
+    "qno": 4,
+    "q_en": "The equation for bandwidth (fringe width β) in Young's double slit experiment is,",
+    "q_ta": "யங் இரட்டைப் பிளவு ஆய்வில் பட்டை அகலத்திற்கான (β) சமன்பாடு யாது?",
+    "opts_en": [
+      "β = (λ d) / D",
+      "β = (λ D) / d",
+      "β = D / (λ d)",
+      "β = (2λ D) / d"
+    ],
+    "opts_ta": [
+      "β = (λ d) / D",
+      "β = (λ D) / d",
+      "β = D / (λ d)",
+      "β = (2λ D) / d"
+    ],
+    "ans": 1,
+    "exp_en": "Fringe width β = λD / d.",
+    "exp_ta": "பட்டை அகலம் β = λD / d."
+  },
+  {
+    "id": "u7_in_5",
+    "unit": 7,
+    "type": "inside",
+    "qno": 5,
+    "q_en": "Fresnel's distance (z), the distance up to which ray optics is obeyed for a slit of width 'a' and wavelength λ, is given by,",
+    "q_ta": "'a' அகலம் கொண்ட பிளவு மற்றும் λ அலைநீளம் கொண்ட ஒளிக்கு பிரெனெல் தொலைவு (Fresnel's distance z) என்பது,",
+    "opts_en": [
+      "z = a / (2λ)",
+      "z = a² / (2λ)",
+      "z = 2a² / λ",
+      "z = λ² / (2a)"
+    ],
+    "opts_ta": [
+      "z = a / (2λ)",
+      "z = a² / (2λ)",
+      "z = 2a² / λ",
+      "z = λ² / (2a)"
+    ],
+    "ans": 1,
+    "exp_en": "Fresnel's distance z = a² / (2λ).",
+    "exp_ta": "பிரெனெல் தொலைவு z = a² / (2λ)."
+  },
+  {
+    "id": "u7_in_6",
+    "unit": 7,
+    "type": "inside",
+    "qno": 6,
+    "q_en": "In Fraunhofer diffraction at a single slit of width 'a', the condition for the nth maximum is,",
+    "q_ta": "'a' அகலம் கொண்ட ஒற்றைப் பிளவின் ஃபிரானோஃபர் விளிம்பு விளைவில் n-வது பெருமத்திற்கான நிபந்தனை யாது?",
+    "opts_en": [
+      "a sin θ = n λ",
+      "a sin θ = (2n + 1) λ / 2",
+      "a sin θ = (2n − 1) λ",
+      "a cos θ = n λ"
+    ],
+    "opts_ta": [
+      "a sin θ = n λ",
+      "a sin θ = (2n + 1) λ / 2",
+      "a sin θ = (2n − 1) λ",
+      "a cos θ = n λ"
+    ],
+    "ans": 1,
+    "exp_en": "Condition for nth secondary maximum in single-slit diffraction is a sin θ = (2n + 1)λ/2.",
+    "exp_ta": "ஒற்றைப் பிளவு விளிம்பு விளைவில் n-வது பெருமம் a sin θ = (2n + 1)λ/2."
+  },
+  {
+    "id": "u7_in_7",
+    "unit": 7,
+    "type": "inside",
+    "qno": 7,
+    "q_en": "In a plane transmission diffraction grating having N rulings per unit length, the grating equation for mth order maximum is,",
+    "q_ta": "ஓரலகு நீளத்தில் N கீற்றுகளைக் கொண்ட விளிம்பு விளைவுக் கீற்றணியில் m-வது வரிசைப் பெருமத்திற்கான சமன்பாடு,",
+    "opts_en": [
+      "sin θ = N m λ",
+      "sin θ = (m λ) / N",
+      "sin θ = N / (m λ)",
+      "cos θ = N m λ"
+    ],
+    "opts_ta": [
+      "sin θ = N m λ",
+      "sin θ = (m λ) / N",
+      "sin θ = N / (m λ)",
+      "cos θ = N m λ"
+    ],
+    "ans": 0,
+    "exp_en": "Grating equation is sin θ = N m λ.",
+    "exp_ta": "கீற்றணி சமன்பாடு sin θ = N m λ."
+  },
+  {
+    "id": "u7_in_8",
+    "unit": 7,
+    "type": "inside",
+    "qno": 8,
+    "q_en": "According to Malus' law, when plane polarised light of intensity I₀ passes through an analyser inclined at an angle θ to the polariser, the transmitted intensity I is,",
+    "q_ta": "மாலஸின் விதியின்படி, தளவிளைவாக்கிக்கும் ஆய்விக்கும் இடைப்பட்ட கோணம் θ எனில், வெளியேறும் ஒளியின் செறிவு I என்பது,",
+    "opts_en": [
+      "I = I₀ sin² θ",
+      "I = I₀ cos² θ",
+      "I = I₀ tan² θ",
+      "I = I₀ cos θ"
+    ],
+    "opts_ta": [
+      "I = I₀ sin² θ",
+      "I = I₀ cos² θ",
+      "I = I₀ tan² θ",
+      "I = I₀ cos θ"
+    ],
+    "ans": 1,
+    "exp_en": "Malus' law: I = I₀ cos² θ.",
+    "exp_ta": "மாலஸ் விதியின்படி I = I₀ cos² θ."
+  },
+  {
+    "id": "u7_in_9",
+    "unit": 7,
+    "type": "inside",
+    "qno": 9,
+    "q_en": "If the polarising angle for a medium is i_p, what is the relation between i_p and the angle of refraction r at that incidence?",
+    "q_ta": "ஊடகம் ஒன்றின் தளவிளைவுக் கோணம் i_p எனில், அந்நிலையில் படுகோணம் i_p மற்றும் விலகுகோணம் r இடையேயான தொடர்பு என்ன?",
+    "opts_en": [
+      "i_p = r",
+      "i_p + r = 90°",
+      "i_p − r = 90°",
+      "i_p + r = 180°"
+    ],
+    "opts_ta": [
+      "i_p = r",
+      "i_p + r = 90°",
+      "i_p − r = 90°",
+      "i_p + r = 180°"
+    ],
+    "ans": 1,
+    "exp_en": "At Brewster's angle, reflected and refracted rays are perpendicular, so i_p + r = 90°.",
+    "exp_ta": "புரூஸ்டர் கோணத்தில் i_p + r = 90°."
+  },
+  {
+    "id": "u7_in_10",
+    "unit": 7,
+    "type": "inside",
+    "qno": 10,
+    "q_en": "Nicol prism is made of which crystal and cemented together with which material?",
+    "q_ta": "நிகோல் பட்டகம் எந்தப் படிகத்தினால் செய்யப்பட்டு, எந்தப் பசையினால் ஒட்டப்பட்டுள்ளது?",
+    "opts_en": [
+      "Quartz and Canada balsam",
+      "Calcite and Canada balsam",
+      "Tourmaline and Quartz",
+      "Mica and Flint glass"
+    ],
+    "opts_ta": [
+      "குவார்ட்ஸ் மற்றும் கனடா பால்சம்",
+      "கால்சைட் மற்றும் கனடா பால்சம்",
+      "டூர்மலின் மற்றும் குவார்ட்ஸ்",
+      "மைக்கா மற்றும் ஃபிளின்ட் கண்ணாடி"
+    ],
+    "ans": 1,
+    "exp_en": "Nicol prism is made of calcite crystal cemented with Canada balsam.",
+    "exp_ta": "நிகோல் பட்டகம் கால்சைட் படிகத்தினால் செய்யப்பட்டு கனடா பால்சம் பசையினால் ஒட்டப்பட்டுள்ளது."
+  },
+  {
+    "id": "u7_in_11",
+    "unit": 7,
+    "type": "inside",
+    "qno": 11,
+    "q_en": "What is the magnification of a simple microscope in near point focusing (least distance of distinct vision D)?",
+    "q_ta": "எளிய நுண்ணோக்கி ஒன்றின் அண்மைப்புள்ளி குவியப்படுத்துதலில் (D) உருப்பெருக்கத்திற்கான சமன்பாடு யாது?",
+    "opts_en": [
+      "m = D / f",
+      "m = 1 + (D / f)",
+      "m = 1 − (D / f)",
+      "m = f / D"
+    ],
+    "opts_ta": [
+      "m = D / f",
+      "m = 1 + (D / f)",
+      "m = 1 − (D / f)",
+      "m = f / D"
+    ],
+    "ans": 1,
+    "exp_en": "In near-point focusing, magnification m = 1 + (D/f).",
+    "exp_ta": "அண்மைப்புள்ளி குவியப்படுத்துதலில் m = 1 + (D/f)."
+  },
+  {
+    "id": "u7_in_12",
+    "unit": 7,
+    "type": "inside",
+    "qno": 12,
+    "q_en": "The resolving power of a microscope (R_M) is given by,",
+    "q_ta": "நுண்ணோக்கி ஒன்றின் பிரிதிறனுக்கான (Resolving power R_M) சமன்பாடு யாது?",
+    "opts_en": [
+      "(2 n sin β) / (1.22 λ)",
+      "(1.22 λ) / (2 n sin β)",
+      "(n sin β) / λ",
+      "(1.22 λ) / a"
+    ],
+    "opts_ta": [
+      "(2 n sin β) / (1.22 λ)",
+      "(1.22 λ) / (2 n sin β)",
+      "(n sin β) / λ",
+      "(1.22 λ) / a"
+    ],
+    "ans": 0,
+    "exp_en": "R_M = 1 / d_min = (2 n sin β) / (1.22 λ).",
+    "exp_ta": "நுண்ணோக்கியின் பிரிதிறன் R_M = (2 n sin β) / (1.22 λ)."
+  },
+  {
+    "id": "u7_in_13",
+    "unit": 7,
+    "type": "inside",
+    "qno": 13,
+    "q_en": "In an astronomical telescope under normal adjustment, the magnifying power (m) and length of the tube (L) are,",
+    "q_ta": "வானியல் தொலைநோக்கி ஒன்றில் இயல்புநிலை குவியப்படுத்துதலில் உருப்பெருக்கம் (m) மற்றும் குழாயின் நீளம் (L) முறையே,",
+    "opts_en": [
+      "m = f_e / f_o, L = f_o − f_e",
+      "m = f_o / f_e, L = f_o + f_e",
+      "m = f_o × f_e, L = f_o + f_e",
+      "m = 1 + f_o/f_e, L = f_o / f_e"
+    ],
+    "opts_ta": [
+      "m = f_e / f_o, L = f_o − f_e",
+      "m = f_o / f_e, L = f_o + f_e",
+      "m = f_o × f_e, L = f_o + f_e",
+      "m = 1 + f_o/f_e, L = f_o / f_e"
+    ],
+    "ans": 1,
+    "exp_en": "In normal adjustment, m = f_o / f_e and L = f_o + f_e.",
+    "exp_ta": "வானியல் தொலைநோக்கியில் m = f_o / f_e மற்றும் L = f_o + f_e."
+  },
+  {
+    "id": "u7_in_14",
+    "unit": 7,
+    "type": "inside",
+    "qno": 14,
+    "q_en": "Myopia (nearsightedness) and Hypermetropia (farsightedness) are corrected respectively using,",
+    "q_ta": "கிட்டப்பார்வை (Myopia) மற்றும் தூரப்பார்வை (Hypermetropia) குறைபாடுகளைச் சரிசெய்யப் பயன்படும் லென்ஸ்கள் முறையே,",
+    "opts_en": [
+      "Convex lens and Concave lens",
+      "Concave lens and Convex lens",
+      "Cylindrical lens and Bifocal lens",
+      "Plane mirror and Convex lens"
+    ],
+    "opts_ta": [
+      "குவிலென்ஸ் மற்றும் குழிலென்ஸ்",
+      "குழிலென்ஸ் மற்றும் குவிலென்ஸ்",
+      "உருளை லென்ஸ் மற்றும் இருகுவிய லென்ஸ்",
+      "சமதள ஆடி மற்றும் குவிலென்ஸ்"
+    ],
+    "ans": 1,
+    "exp_en": "Myopia is corrected by a concave lens; Hypermetropia is corrected by a convex lens.",
+    "exp_ta": "கிட்டப்பார்வைக்குக் குழிலென்சும், தூரப்பார்வைக்குக் குவிலென்சும் பயன்படுகின்றன."
+  },
+  {
+    "id": "u7_in_15",
+    "unit": 7,
+    "type": "inside",
+    "qno": 15,
+    "q_en": "Astigmatism is caused by different curvatures along different planes of the eye lens and is corrected using,",
+    "q_ta": "விழி லென்சில் வெவ்வேறு தளங்களில் வெவ்வேறு வளைவு ஆரங்கள் இருப்பதால் ஏற்படும் 'ஒருதளப்பார்வை' (Astigmatism) குறைபாட்டைச் சரிசெய்யப் பயன்படுவது,",
+    "opts_en": [
+      "Spherical concave lens",
+      "Cylindrical lens",
+      "Plano-convex lens",
+      "Nicol prism"
+    ],
+    "opts_ta": [
+      "கோளகக் குழிலென்ஸ்",
+      "உருளை லென்ஸ் (Cylindrical lens)",
+      "தட்டைக் குவிலென்ஸ்",
+      "நிகோல் பட்டகம்"
+    ],
+    "ans": 1,
+    "exp_en": "Astigmatism is corrected using cylindrical lenses.",
+    "exp_ta": "ஒருதளப்பார்வை குறைபாட்டைச் சரிசெய்ய உருளை லென்ஸ்கள் பயன்படுகின்றன."
+  },
+  {
+    "id": "u8_bb_1",
+    "unit": 8,
+    "type": "back",
+    "qno": 1,
+    "q_en": "The wavelength λ_e of an electron and λ_p of a photon of same energy E are related by (NEET 2013)",
+    "q_ta": "λ_e அலைநீளம் கொண்ட எலக்ட்ரான் மற்றும் λ_p கொண்ட ஃபோட்டான் ஆகியவை ஒரே ஆற்றலைப் பெற்று இருப்பின், அலைநீளங்கள் λ_e மற்றும் λ_p இடையிலான தொடர்பு (NEET 2013)",
+    "opts_en": [
+      "λ_p ∝ λ_e",
+      "λ_p ∝ √λ_e",
+      "λ_p ∝ 1 / √λ_e",
+      "λ_p ∝ λ_e²"
+    ],
+    "opts_ta": [
+      "λ_p ∝ λ_e",
+      "λ_p ∝ √λ_e",
+      "λ_p ∝ 1 / √λ_e",
+      "λ_p ∝ λ_e²"
+    ],
+    "ans": 3,
+    "exp_en": "E = h²/(2mλ_e²) = hc/λ_p ⇒ λ_p ∝ λ_e².",
+    "exp_ta": "E = h²/(2mλ_e²) = hc/λ_p ⇒ λ_p ∝ λ_e²."
+  },
+  {
+    "id": "u8_bb_2",
+    "unit": 8,
+    "type": "back",
+    "qno": 2,
+    "q_en": "In an electron microscope, the electrons are accelerated by a voltage of 14 kV. If the voltage is changed to 224 kV, then the de Broglie wavelength associated with the electrons would",
+    "q_ta": "எலக்ட்ரான் நுண்ணோக்கியில் பயன்படும் எலக்ட்ரான்கள் 14 kV மின்னழுத்த வேறுபாட்டினால் முடுக்கப்படுகின்றன. இந்த மின்னழுத்த வேறுபாடு 224 kV ஆக அதிகரிக்கும்போது, எலக்ட்ரானின் டி ப்ராய் அலைநீளமானது",
+    "opts_en": [
+      "increase by 2 times",
+      "decrease by 2 times",
+      "decrease by 4 times",
+      "increase by 4 times"
+    ],
+    "opts_ta": [
+      "2 மடங்கு அதிகரிக்கும்",
+      "2 மடங்கு குறையும்",
+      "4 மடங்கு குறையும்",
+      "4 மடங்கு அதிகரிக்கும்"
+    ],
+    "ans": 2,
+    "exp_en": "λ ∝ 1/√V; since V increases 16 times, λ decreases by √16 = 4 times.",
+    "exp_ta": "λ ∝ 1/√V. மின்னழுத்தம் 16 மடங்கு அதிகரிப்பதால் அலைநீளம் 4 மடங்கு குறையும்."
+  },
+  {
+    "id": "u8_bb_3",
+    "unit": 8,
+    "type": "back",
+    "qno": 3,
+    "q_en": "The wave associated with a moving particle of mass 3 × 10⁻⁶ g has the same wavelength as an electron moving with a velocity 6 × 10⁶ m s⁻¹. The velocity of the particle is",
+    "q_ta": "3 × 10⁻⁶ g நிறை கொண்ட துகளுடன் தொடர்புடைய அலையின் அலைநீளம் மற்றும் 6 × 10⁶ m s⁻¹ திசைவேகத்தில் நகரும் எலக்ட்ரானின் அலைநீளம் ஆகியவை சமமாக இருப்பின், துகளின் திசைவேகம்",
+    "opts_en": [
+      "1.82 × 10⁻¹⁸ m s⁻¹",
+      "9 × 10⁻² m s⁻¹",
+      "3 × 10⁻³¹ m s⁻¹",
+      "1.82 × 10⁻¹⁵ m s⁻¹"
+    ],
+    "opts_ta": [
+      "1.82 × 10⁻¹⁸ m s⁻¹",
+      "9 × 10⁻² m s⁻¹",
+      "3 × 10⁻³¹ m s⁻¹",
+      "1.82 × 10⁻¹⁵ m s⁻¹"
+    ],
+    "ans": 3,
+    "exp_en": "v_p = m_e v_e / m_p = (9.1×10⁻³¹ × 6×10⁶) / (3×10⁻⁹) = 1.82 × 10⁻¹⁵ m s⁻¹.",
+    "exp_ta": "v_p = m_e v_e / m_p = 1.82 × 10⁻¹⁵ m s⁻¹."
+  },
+  {
+    "id": "u8_bb_4",
+    "unit": 8,
+    "type": "back",
+    "qno": 4,
+    "q_en": "When a metallic surface is illuminated with radiation of wavelength λ, the stopping potential is V. If the same surface is illuminated with radiation of wavelength 2λ, the stopping potential is V/4. The threshold wavelength for the metallic surface is (NEET 2016)",
+    "q_ta": "λ அலைநீளமுள்ள கதிர்வீச்சினால் ஒரு உலோகப் பரப்பு ஒளியூட்டப்படும் போது, அதன் நிறுத்து மின்னழுத்தம் V ஆகும். 2λ அலைநீளமுள்ள ஒளியினால் அதே பரப்பு ஒளியூட்டப்பட்டால், நிறுத்து மின்னழுத்தம் V/4 ஆகும். எனில் அந்த உலோகப்பரப்பிற்கான பயன்தொடக்க அலைநீளம் (NEET 2016)",
+    "opts_en": [
+      "4λ",
+      "5λ",
+      "(5/2)λ",
+      "3λ"
+    ],
+    "opts_ta": [
+      "4λ",
+      "5λ",
+      "(5/2)λ",
+      "3λ"
+    ],
+    "ans": 3,
+    "exp_en": "1/λ − 1/λ₀ = 4(1/2λ − 1/λ₀) ⇒ λ₀ = 3λ.",
+    "exp_ta": "1/λ − 1/λ₀ = 4(1/2λ − 1/λ₀) ⇒ λ₀ = 3λ."
+  },
+  {
+    "id": "u8_bb_5",
+    "unit": 8,
+    "type": "back",
+    "qno": 5,
+    "q_en": "If a light of wavelength 330 nm is incident on a metal with work function 3.55 eV, the electrons are emitted. Then the wavelength of the wave associated with the emitted electron is (Take h = 6.6 × 10⁻³⁴ Js)",
+    "q_ta": "330 nm அலைநீளம் கொண்ட ஒளியானது 3.55 eV வெளியேற்று ஆற்றல் கொண்ட உலோகத்தின் மீது படும் போது, உமிழப்படும் எலக்ட்ரானுடன் தொடர்புடைய அலையின் அலைநீளமானது (h = 6.6 × 10⁻³⁴ Js எனக் கொள்க)",
+    "opts_en": [
+      "< 2.75 × 10⁻⁹ m",
+      "≥ 2.75 × 10⁻⁹ m",
+      "≤ 2.75 × 10⁻¹² m",
+      "< 2.5 × 10⁻¹⁰ m"
+    ],
+    "opts_ta": [
+      "< 2.75 × 10⁻⁹ m",
+      "≥ 2.75 × 10⁻⁹ m",
+      "≤ 2.75 × 10⁻¹² m",
+      "< 2.5 × 10⁻¹⁰ m"
+    ],
+    "ans": 1,
+    "exp_en": "K_max = 3.75 − 3.55 = 0.20 eV ⇒ λ_min = 2.75 × 10⁻⁹ m, so λ ≥ 2.75 × 10⁻⁹ m.",
+    "exp_ta": "K_max = 0.2 eV என்பதால் λ ≥ 2.75 × 10⁻⁹ m."
+  },
+  {
+    "id": "u8_bb_6",
+    "unit": 8,
+    "type": "back",
+    "qno": 6,
+    "q_en": "A photoelectric surface is illuminated successively by monochromatic light of wavelength λ and λ/2. If the maximum kinetic energy of the emitted photoelectrons in the second case is 3 times that in the first case, the work function of the material is (NEET 2015)",
+    "q_ta": "ஒளிஉணர் பரப்பு ஒன்று அடுத்தடுத்து λ மற்றும் λ/2 அலைநீளம் கொண்ட ஒற்றை நிற ஒளியினால் ஒளியூட்டப்படுகிறது. இரண்டாவது நேர்வில் உமிழப்படும் எலக்ட்ரானின் பெரும இயக்க ஆற்றல் முதல் நேர்வை விட 3 மடங்காக இருப்பின், உலோகத்தின் வெளியேற்று ஆற்றலானது (NEET 2015)",
+    "opts_en": [
+      "hc / λ",
+      "2hc / λ",
+      "hc / (3λ)",
+      "hc / (2λ)"
+    ],
+    "opts_ta": [
+      "hc / λ",
+      "2hc / λ",
+      "hc / (3λ)",
+      "hc / (2λ)"
+    ],
+    "ans": 3,
+    "exp_en": "2hc/λ − φ₀ = 3(hc/λ − φ₀) ⇒ φ₀ = hc / (2λ).",
+    "exp_ta": "2hc/λ − φ₀ = 3(hc/λ − φ₀) ⇒ φ₀ = hc / (2λ)."
+  },
+  {
+    "id": "u8_bb_7",
+    "unit": 8,
+    "type": "back",
+    "qno": 7,
+    "q_en": "In photoelectric emission, a radiation whose frequency is 4 times threshold frequency of a certain metal is incident on the metal. Then the maximum possible velocity of the emitted electron will be",
+    "q_ta": "ஒளிமின் உமிழ்வு நிகழ்வில், ஒரு குறிப்பிட்ட உலோகத்தின் பயன்தொடக்க அதிர்வெண்ணை விட 4 மடங்கு அதிர்வெண் கொண்ட கதிர்வீச்சு அந்த உலோகப்பரப்பில் படும்போது, வெளிப்படும் எலக்ட்ரானின் பெரும திசைவேகமானது",
+    "opts_en": [
+      "√(hν₀ / m)",
+      "√(6hν₀ / m)",
+      "2√(hν₀ / m)",
+      "√(hν₀ / 2m)"
+    ],
+    "opts_ta": [
+      "√(hν₀ / m)",
+      "√(6hν₀ / m)",
+      "2√(hν₀ / m)",
+      "√(hν₀ / 2m)"
+    ],
+    "ans": 1,
+    "exp_en": "½ m v_max² = 4hν₀ − hν₀ = 3hν₀ ⇒ v_max = √(6hν₀ / m).",
+    "exp_ta": "½ m v_max² = 3hν₀ ⇒ v_max = √(6hν₀ / m)."
+  },
+  {
+    "id": "u8_bb_8",
+    "unit": 8,
+    "type": "back",
+    "qno": 8,
+    "q_en": "Two radiations with photon energies 0.9 eV and 3.3 eV respectively are falling on a metallic surface successively. If the work function of the metal is 0.6 eV, then the ratio of maximum speeds of emitted electrons in the two cases will be",
+    "q_ta": "0.9 eV மற்றும் 3.3 eV ஃபோட்டான் ஆற்றல் கொண்ட இரண்டு கதிர்வீச்சுகள் ஒரு உலோகப்பரப்பின் மீது அடுத்தடுத்து விழுகின்றன. உலோகத்தின் வெளியேற்று ஆற்றல் 0.6 eV எனில், இரு நேர்வுகளில் வெளிவிடப்படும் எலக்ட்ரான்களின் பெரும வேகங்களின் தகவு",
+    "opts_en": [
+      "1 : 4",
+      "1 : 3",
+      "1 : 1",
+      "1 : 9"
+    ],
+    "opts_ta": [
+      "1 : 4",
+      "1 : 3",
+      "1 : 1",
+      "1 : 9"
+    ],
+    "ans": 1,
+    "exp_en": "v₁/v₂ = √((0.9−0.6)/(3.3−0.6)) = √(0.3/2.7) = 1 : 3.",
+    "exp_ta": "v₁/v₂ = √(0.3 / 2.7) = 1 : 3."
+  },
+  {
+    "id": "u8_bb_9",
+    "unit": 8,
+    "type": "back",
+    "qno": 9,
+    "q_en": "A light source of wavelength 520 nm emits 1.04 × 10¹⁵ photons per second while the second source of 460 nm produces 1.38 × 10¹⁵ photons per second. Then the ratio of power of second source to that of first source is",
+    "q_ta": "520 nm அலைநீளம் கொண்ட ஒரு ஒளி மூலம் ஒரு வினாடிக்கு 1.04 × 10¹⁵ ஃபோட்டான்களை வெளிவிடுகிறது. 460 nm அலைநீளம் கொண்ட இரண்டாவது ஒளி மூலம் ஒரு வினாடிக்கு 1.38 × 10¹⁵ ஃபோட்டான்களை வெளிவிடுகிறது. இரண்டாவது மூலத்தின் திறனுக்கும் முதல் மூலத்தின் திறனுக்கும் இடையே உள்ள விகிதம்",
+    "opts_en": [
+      "1.00",
+      "1.02",
+      "1.5",
+      "0.98"
+    ],
+    "opts_ta": [
+      "1.00",
+      "1.02",
+      "1.5",
+      "0.98"
+    ],
+    "ans": 2,
+    "exp_en": "P₂/P₁ = (1.38/1.04) × (520/460) = 1.5.",
+    "exp_ta": "P₂/P₁ = (1.38/1.04) × (520/460) = 1.5."
+  },
+  {
+    "id": "u8_bb_10",
+    "unit": 8,
+    "type": "back",
+    "qno": 10,
+    "q_en": "If the mean wavelength of light from sun is taken as 550 nm and its mean power as 3.8 × 10²⁶ W, then the number of photons emitted per second from the sun is of the order of",
+    "q_ta": "சூரிய ஒளியின் சராசரி அலைநீளம் 550 nm மற்றும் அதன் சராசரி திறன் 3.8 × 10²⁶ W எனில், சூரியனில் இருந்து ஒரு வினாடி நேரத்தில் உமிழப்படும் ஃபோட்டான்களின் தோராயமான எண்ணிக்கையானது",
+    "opts_en": [
+      "10⁴⁵",
+      "10⁴²",
+      "10⁵⁴",
+      "10⁵¹"
+    ],
+    "opts_ta": [
+      "10⁴⁵",
+      "10⁴²",
+      "10⁵⁴",
+      "10⁵¹"
+    ],
+    "ans": 0,
+    "exp_en": "n = Pλ / (hc) ≈ 1.05 × 10⁴⁵ photons/s.",
+    "exp_ta": "n = Pλ / (hc) ≈ 10⁴⁵."
+  },
+  {
+    "id": "u8_bb_11",
+    "unit": 8,
+    "type": "back",
+    "qno": 11,
+    "q_en": "The threshold wavelength for a metal surface whose photoelectric work function is 3.313 eV is",
+    "q_ta": "ஒளிமின் வெளியேற்று ஆற்றல் 3.313 eV கொண்ட ஒரு உலோகப்பரப்பின் பயன் தொடக்க அலைநீளம்",
+    "opts_en": [
+      "4125 Å",
+      "3750 Å",
+      "6000 Å",
+      "2062.5 Å"
+    ],
+    "opts_ta": [
+      "4125 Å",
+      "3750 Å",
+      "6000 Å",
+      "2062.5 Å"
+    ],
+    "ans": 1,
+    "exp_en": "λ₀ = 12420 / 3.313 = 3750 Å.",
+    "exp_ta": "λ₀ = 12420 / 3.313 = 3750 Å."
+  },
+  {
+    "id": "u8_bb_12",
+    "unit": 8,
+    "type": "back",
+    "qno": 12,
+    "q_en": "A light of wavelength 500 nm is incident on a sensitive metal plate of photoelectric work function 1.235 eV. The kinetic energy of the photo electrons emitted is (Take h = 6.6 × 10⁻³⁴ Js)",
+    "q_ta": "ஒளிமின் வெளியேற்று ஆற்றல் 1.235 eV கொண்ட ஒரு ஒளிஉணர்வு மிக்க உலோகத்தட்டின் மீது 500 nm அலைநீளம் கொண்ட ஒளி படுகிறது எனில், உமிழப்படும் ஒளிஎலக்ட்ரான்களின் இயக்க ஆற்றலானது (h = 6.6 × 10⁻³⁴ Js எனக்கொள்க)",
+    "opts_en": [
+      "0.58 eV",
+      "2.48 eV",
+      "1.24 eV",
+      "1.16 eV"
+    ],
+    "opts_ta": [
+      "0.58 eV",
+      "2.48 eV",
+      "1.24 eV",
+      "1.16 eV"
+    ],
+    "ans": 2,
+    "exp_en": "K_max = 2.475 − 1.235 = 1.24 eV.",
+    "exp_ta": "K_max = 2.475 − 1.235 = 1.24 eV."
+  },
+  {
+    "id": "u8_bb_13",
+    "unit": 8,
+    "type": "back",
+    "qno": 13,
+    "q_en": "Photons of wavelength λ are incident on a metal. The most energetic electrons ejected from the metal are bent into a circular arc of radius R by a perpendicular magnetic field having magnitude B. The work function of the metal is (KVPY-SX 2016)",
+    "q_ta": "ஒரு உலோகத்தின் மீது λ அலைநீளம் கொண்ட ஃபோட்டான்கள் படுகின்றன. உலோகத்திலிருந்து உமிழப்படும் அதிக ஆற்றல் கொண்ட எலக்ட்ரான்கள், B எண் மதிப்பு கொண்ட செங்குத்து காந்தப்புலத்தினால் R ஆரமுடைய வட்ட வில் பாதையில் வளைக்கப்படுகின்றன எனில், உலோகத்தின் ஒளிமின் வெளியேற்று ஆற்றல் (KVPY-SX 2016)",
+    "opts_en": [
+      "hc/λ − m_e + (e²B²R²)/(2m_e)",
+      "hc/λ + 2m_e [eBR / (2m_e)]²",
+      "hc/λ − m_e c² − (e²B²R²)/(2m_e)",
+      "hc/λ − 2m_e [eBR / (2m_e)]²"
+    ],
+    "opts_ta": [
+      "hc/λ − m_e + (e²B²R²)/(2m_e)",
+      "hc/λ + 2m_e [eBR / (2m_e)]²",
+      "hc/λ − m_e c² − (e²B²R²)/(2m_e)",
+      "hc/λ − 2m_e [eBR / (2m_e)]²"
+    ],
+    "ans": 3,
+    "exp_en": "φ₀ = hc/λ − K_max = hc/λ − 2m_e [eBR/(2m_e)]².",
+    "exp_ta": "φ₀ = hc/λ − 2m_e [eBR/(2m_e)]²."
+  },
+  {
+    "id": "u8_bb_14",
+    "unit": 8,
+    "type": "back",
+    "qno": 14,
+    "q_en": "The work functions for metals A, B and C are 1.92 eV, 2.0 eV and 5.0 eV respectively. The metal/metals which will emit photoelectrons for a radiation of wavelength 4100 Å is/are",
+    "q_ta": "A, B மற்றும் C என்னும் உலோகங்களின் வெளியேற்று ஆற்றல்கள் முறையே 1.92 eV, 2.0 eV மற்றும் 5.0 eV ஆகும். 4100 Å அலைநீளம் கொண்ட ஒளி படும் போது, ஒளிஎலக்ட்ரான்களை உமிழும் உலோகம் / உலோகங்கள்",
+    "opts_en": [
+      "A only",
+      "both A and B",
+      "all these metals",
+      "none"
+    ],
+    "opts_ta": [
+      "A மட்டும்",
+      "A மற்றும் B",
+      "அனைத்து உலோகங்களும்",
+      "ஏதுமில்லை"
+    ],
+    "ans": 1,
+    "exp_en": "Incident photon energy E = 12420/4100 ≈ 3.03 eV > φ_A, φ_B; so both A and B emit photoelectrons.",
+    "exp_ta": "E ≈ 3.03 eV என்பதால் A மற்றும் B ஆகிய இரண்டும் ஒளிஎலக்ட்ரான்களை உமிழும்."
+  },
+  {
+    "id": "u8_bb_15",
+    "unit": 8,
+    "type": "back",
+    "qno": 15,
+    "q_en": "Emission of electrons by the absorption of heat energy is called ……… emission.",
+    "q_ta": "வெப்ப ஆற்றலை உட்கவர்வதால் எலக்ட்ரான்கள் உமிழப்படுவது __________ உமிழ்வு எனப்படும்.",
+    "opts_en": [
+      "photoelectric",
+      "field",
+      "thermionic",
+      "secondary"
+    ],
+    "opts_ta": [
+      "ஒளி மின்",
+      "புல",
+      "வெப்ப அயனி",
+      "இரண்டாம் நிலை"
+    ],
+    "ans": 2,
+    "exp_en": "Emission of electrons by absorption of heat energy is called thermionic emission.",
+    "exp_ta": "வெப்ப ஆற்றலை உட்கவர்வதால் எலக்ட்ரான்கள் உமிழப்படுவது வெப்ப அயனி உமிழ்வு எனப்படும்."
+  },
+  {
+    "id": "u8_in_1",
+    "unit": 8,
+    "type": "inside",
+    "qno": 1,
+    "q_en": "Which metal among the following has the lowest photoelectric work function (φ₀ = 2.14 eV)?",
+    "q_ta": "பின்வரும் உலோகங்களுள் மிகக் குறைந்த ஒளிமின் வெளியேற்று ஆற்றல் (φ₀ = 2.14 eV) கொண்ட உலோகம் எது?",
+    "opts_en": [
+      "Platinum (Pt)",
+      "Caesium (Cs)",
+      "Copper (Cu)",
+      "Silver (Ag)"
+    ],
+    "opts_ta": [
+      "பிளாட்டினம் (Pt)",
+      "சீசியம் (Cs)",
+      "தாமிரம் (Cu)",
+      "வெள்ளி (Ag)"
+    ],
+    "ans": 1,
+    "exp_en": "Caesium (Cs) has the lowest work function (2.14 eV).",
+    "exp_ta": "சீசியம் (Cs) மிகக் குறைந்த வெளியேற்று ஆற்றலைக் (2.14 eV) கொண்டுள்ளது."
+  },
+  {
+    "id": "u8_in_2",
+    "unit": 8,
+    "type": "inside",
+    "qno": 2,
+    "q_en": "1 electron volt (1 eV) is equal to,",
+    "q_ta": "1 எலக்ட்ரான் வோல்ட் (1 eV) என்பது எத்தனை ஜூலுக்குச் சமம்?",
+    "opts_en": [
+      "1.602 × 10⁻¹⁹ J",
+      "1.602 × 10⁻³¹ J",
+      "6.626 × 10⁻³⁴ J",
+      "9.11 × 10⁻³¹ J"
+    ],
+    "opts_ta": [
+      "1.602 × 10⁻¹⁹ J",
+      "1.602 × 10⁻³¹ J",
+      "6.626 × 10⁻³⁴ J",
+      "9.11 × 10⁻³¹ J"
+    ],
+    "ans": 0,
+    "exp_en": "1 eV = 1.602 × 10⁻¹⁹ J.",
+    "exp_ta": "1 eV = 1.602 × 10⁻¹⁹ J."
+  },
+  {
+    "id": "u8_in_3",
+    "unit": 8,
+    "type": "inside",
+    "qno": 3,
+    "q_en": "In photoelectric effect, the saturation photocurrent is directly proportional to,",
+    "q_ta": "ஒளிமின் விளைவில், தெவிட்டிய ஒளிமின்னோட்டம் எதற்கு நேர்த்தகவில் இருக்கும்?",
+    "opts_en": [
+      "frequency of incident light",
+      "intensity of incident light",
+      "work function of the metal",
+      "stopping potential"
+    ],
+    "opts_ta": [
+      "படுஒளியின் அதிர்வெண்",
+      "படுஒளியின் ஒளிச்செறிவு",
+      "உலோகத்தின் வெளியேற்று ஆற்றல்",
+      "நிறுத்து மின்னழுத்தம்"
+    ],
+    "ans": 1,
+    "exp_en": "Photoelectric current is directly proportional to the intensity of incident light.",
+    "exp_ta": "ஒளிமின்னோட்டம் படுஒளியின் செறிவிற்கு நேர்த்தகவில் இருக்கும்."
+  },
+  {
+    "id": "u8_in_4",
+    "unit": 8,
+    "type": "inside",
+    "qno": 4,
+    "q_en": "The stopping potential (V₀) in photoelectric emission depends on,",
+    "q_ta": "ஒளிமின் உமிழ்வில் நிறுத்து மின்னழுத்தம் (V₀) எதனைச் சார்ந்தது?",
+    "opts_en": [
+      "intensity of incident light only",
+      "frequency of incident light and nature of emitter material",
+      "area of the metal surface",
+      "distance between anode and cathode"
+    ],
+    "opts_ta": [
+      "படுஒளியின் செறிவை மட்டும்",
+      "படுஒளியின் அதிர்வெண் மற்றும் உமிழ் பொருளின் தன்மை",
+      "உலோகப் பரப்பின் பரப்பளவு",
+      "ஆனோடு மற்றும் கேத்தோடு இடையேயான தொலைவு"
+    ],
+    "ans": 1,
+    "exp_en": "Stopping potential depends on frequency and work function, not intensity.",
+    "exp_ta": "நிறுத்து மின்னழுத்தம் படுஒளியின் அதிர்வெண் மற்றும் உலோகத்தின் தன்மையைச் சார்ந்தது."
+  },
+  {
+    "id": "u8_in_5",
+    "unit": 8,
+    "type": "inside",
+    "qno": 5,
+    "q_en": "Einstein's photoelectric equation is given by,",
+    "q_ta": "ஐன்ஸ்டீனின் ஒளிமின் சமன்பாடு யாது?",
+    "opts_en": [
+      "K_max = hν + φ₀",
+      "K_max = hν − φ₀",
+      "K_max = φ₀ − hν",
+      "K_max = hν / φ₀"
+    ],
+    "opts_ta": [
+      "K_max = hν + φ₀",
+      "K_max = hν − φ₀",
+      "K_max = φ₀ − hν",
+      "K_max = hν / φ₀"
+    ],
+    "ans": 1,
+    "exp_en": "Einstein's photoelectric equation: K_max = hν − φ₀.",
+    "exp_ta": "ஐன்ஸ்டீனின் ஒளிமின் சமன்பாடு: K_max = hν − φ₀."
+  },
+  {
+    "id": "u8_in_6",
+    "unit": 8,
+    "type": "inside",
+    "qno": 6,
+    "q_en": "The slope of the graph plotted between stopping potential (V₀) on the y-axis and frequency (ν) of incident light on the x-axis gives,",
+    "q_ta": "நிறுத்து மின்னழுத்தம் (V₀) மற்றும் படுஒளியின் அதிர்வெண் (ν) இடையே வரையப்படும் வரைபடத்தின் சாய்வு (Slope) தருவது,",
+    "opts_en": [
+      "h",
+      "h / e",
+      "e / h",
+      "φ₀ / e"
+    ],
+    "opts_ta": [
+      "h",
+      "h / e",
+      "e / h",
+      "φ₀ / e"
+    ],
+    "ans": 1,
+    "exp_en": "Slope of V₀ vs ν graph is h/e.",
+    "exp_ta": "V₀ மற்றும் ν வரைபடத்தின் சாய்வு h/e ஆகும்."
+  },
+  {
+    "id": "u8_in_7",
+    "unit": 8,
+    "type": "inside",
+    "qno": 7,
+    "q_en": "The de Broglie wavelength of an electron accelerated through a potential difference of V volts is,",
+    "q_ta": "V வோல்ட் மின்னழுத்த வேறுபாட்டினால் முடுக்கப்பட்ட எலக்ட்ரானின் டி ப்ராய் அலைநீளம்,",
+    "opts_en": [
+      "12.27 / √V Å",
+      "1.227 / √V Å",
+      "122.7 / √V Å",
+      "12.27 × √V Å"
+    ],
+    "opts_ta": [
+      "12.27 / √V Å",
+      "1.227 / √V Å",
+      "122.7 / √V Å",
+      "12.27 × √V Å"
+    ],
+    "ans": 0,
+    "exp_en": "λ = 12.27 / √V Å.",
+    "exp_ta": "λ = 12.27 / √V Å."
+  },
+  {
+    "id": "u8_in_8",
+    "unit": 8,
+    "type": "inside",
+    "qno": 8,
+    "q_en": "Which experiment first experimentally confirmed the wave nature of electrons in 1927?",
+    "q_ta": "1927-இல் எலக்ட்ரானின் அலைப் பண்பினைச் சோதனை வாயிலாக முதன்முதலில் உறுதி செய்த ஆய்வு எது?",
+    "opts_en": [
+      "Millikan oil drop experiment",
+      "Davisson and Germer experiment",
+      "Rutherford alpha scattering",
+      "Hertz experiment"
+    ],
+    "opts_ta": [
+      "மில்லிகன் எண்ணெய்த்துளி ஆய்வு",
+      "டேவிசன் மற்றும் ஜெர்மர் சோதனை",
+      "ரூதர்போர்டு ஆல்பா சிதறல் ஆய்வு",
+      "ஹெர்ட்ஸ் சோதனை"
+    ],
+    "ans": 1,
+    "exp_en": "Davisson and Germer (1927) experimentally confirmed electron diffraction.",
+    "exp_ta": "டேவிசன் மற்றும் ஜெர்மர் சோதனை (1927) எலக்ட்ரானின் அலைப் பண்பை உறுதி செய்தது."
+  },
+  {
+    "id": "u8_in_9",
+    "unit": 8,
+    "type": "inside",
+    "qno": 9,
+    "q_en": "In the Davisson–Germer experiment, for an accelerating voltage of 54 V, maximum intensity of diffracted electron beam occurred at an angle of,",
+    "q_ta": "டேவிசன் – ஜெர்மர் சோதனையில், 54 V முடுக்கு மின்னழுத்தத்திற்கு விளிம்பு விளைவடைந்த எலக்ட்ரான் கற்றையின் பெருமச் செறிவு எந்தக் கோணத்தில் கிடைத்தது?",
+    "opts_en": [
+      "30°",
+      "50°",
+      "65°",
+      "90°"
+    ],
+    "opts_ta": [
+      "30°",
+      "50°",
+      "65°",
+      "90°"
+    ],
+    "ans": 1,
+    "exp_en": "At V = 54 V, maximum intensity occurred at θ = 50° (λ = 1.65 Å).",
+    "exp_ta": "V = 54 V மின்னழுத்தத்தில் θ = 50° கோணத்தில் பெருமச் செறிவு கிடைத்தது."
+  },
+  {
+    "id": "u8_in_10",
+    "unit": 8,
+    "type": "inside",
+    "qno": 10,
+    "q_en": "A proton and an electron have the same kinetic energy. Which one has a greater de Broglie wavelength?",
+    "q_ta": "புரோட்டான் மற்றும் எலக்ட்ரான் ஆகியவை சமமான இயக்க ஆற்றலைப் பெற்றுள்ளன. இவற்றுள் எதற்கு டி ப்ராய் அலைநீளம் அதிகமாக இருக்கும்?",
+    "opts_en": [
+      "Proton",
+      "Electron",
+      "Both have equal wavelength",
+      "Depends on charge"
+    ],
+    "opts_ta": [
+      "புரோட்டான்",
+      "எலக்ட்ரான்",
+      "இரண்டும் சம அலைநீளம் கொண்டவை",
+      "மின்னூட்டத்தைச் சார்ந்தது"
+    ],
+    "ans": 1,
+    "exp_en": "Since λ = h/√(2mK) and m_e < m_p, the electron has a greater de Broglie wavelength.",
+    "exp_ta": "எலக்ட்ரானின் நிறை குறைவு என்பதால் அதற்கு டி ப்ராய் அலைநீளம் அதிகம்."
+  },
+  {
+    "id": "u8_in_11",
+    "unit": 8,
+    "type": "inside",
+    "qno": 11,
+    "q_en": "A photo cell is a device which converts,",
+    "q_ta": "ஒளி மின்கலம் (Photo cell) என்பது எவ்வகை ஆற்றல் மாற்றும் சாதனம்?",
+    "opts_en": [
+      "electrical energy into light energy",
+      "light energy into electrical energy",
+      "heat energy into light energy",
+      "magnetic energy into electrical energy"
+    ],
+    "opts_ta": [
+      "மின் ஆற்றலை ஒளி ஆற்றலாக",
+      "ஒளி ஆற்றலை மின் ஆற்றலாக",
+      "வெப்ப ஆற்றலை ஒளி ஆற்றலாக",
+      "காந்த ஆற்றலை மின் ஆற்றலாக"
+    ],
+    "ans": 1,
+    "exp_en": "A photo cell converts light energy into electrical energy.",
+    "exp_ta": "ஒளி மின்கலம் ஒளி ஆற்றலை மின் ஆற்றலாக மாற்றும் சாதனமாகும்."
+  },
+  {
+    "id": "u8_in_12",
+    "unit": 8,
+    "type": "inside",
+    "qno": 12,
+    "q_en": "X-rays were discovered in 1895 by,",
+    "q_ta": "1895-ஆம் ஆண்டு X-கதிர்களைக் கண்டறிந்தவர் யார்?",
+    "opts_en": [
+      "Max Planck",
+      "Wilhelm Roentgen",
+      "J.J. Thomson",
+      "Heinrich Hertz"
+    ],
+    "opts_ta": [
+      "மேக்ஸ் பிளாங்க்",
+      "வில்ஹெல்ம் ரோன்ட்ஜென்",
+      "ஜே.ஜே. தாம்சன்",
+      "ஹென்றிச் ஹெர்ட்ஸ்"
+    ],
+    "ans": 1,
+    "exp_en": "Wilhelm Roentgen discovered X-rays in 1895.",
+    "exp_ta": "வில்ஹெல்ம் ரோன்ட்ஜென் 1895-இல் X-கதிர்களைக் கண்டறிந்தார்."
+  },
+  {
+    "id": "u8_in_13",
+    "unit": 8,
+    "type": "inside",
+    "qno": 13,
+    "q_en": "The minimum wavelength (cut-off wavelength λ₀) of continuous X-ray spectrum for an accelerating voltage V is given by,",
+    "q_ta": "V முடுக்கு மின்னழுத்தத்தில் செயல்படும் X-கதிர் குழாயின் தொடர் X-கதிர் நிறமாலையின் சிறும அலைநீளம் (λ₀) என்பது,",
+    "opts_en": [
+      "12400 / V Å",
+      "12.27 / √V Å",
+      "1240 / V² Å",
+      "6.626 / V Å"
+    ],
+    "opts_ta": [
+      "12400 / V Å",
+      "12.27 / √V Å",
+      "1240 / V² Å",
+      "6.626 / V Å"
+    ],
+    "ans": 0,
+    "exp_en": "Cut-off wavelength λ₀ = 12400 / V Å.",
+    "exp_ta": "சிறும அலைநீளம் λ₀ = 12400 / V Å."
+  },
+  {
+    "id": "u8_in_14",
+    "unit": 8,
+    "type": "inside",
+    "qno": 14,
+    "q_en": "Continuous X-ray radiation produced when fast-moving electrons decelerate near a heavy target nucleus is also known as,",
+    "q_ta": "வேகமாகச் செல்லும் எலக்ட்ரான்கள் இலக்கு அணுக்கருவால் எதிர்முடுக்கப்படும்போது உருவாகும் தொடர் X-கதிர் நிறமாலை எவ்வாறு அழைக்கப்படுகிறது?",
+    "opts_en": [
+      "Compton radiation",
+      "Bremsstrahlung (braking radiation)",
+      "Cherenkov radiation",
+      "Synchrotron radiation"
+    ],
+    "opts_ta": [
+      "காம்ப்டன் கதிர்வீச்சு",
+      "ப்ரம்ஸ்டிராலங் (Bremsstrahlung / தடை கதிர்வீச்சு)",
+      "செரன்கோவ் கதிர்வீச்சு",
+      "சின்க்ரோட்ரான் கதிர்வீச்சு"
+    ],
+    "ans": 1,
+    "exp_en": "Bremsstrahlung (braking radiation) produces the continuous X-ray spectrum.",
+    "exp_ta": "ப்ரம்ஸ்டிராலங் (தடை கதிர்வீச்சு) தொடர் X-கதிர் நிறமாலையை உருவாக்குகிறது."
+  },
+  {
+    "id": "u8_in_15",
+    "unit": 8,
+    "type": "inside",
+    "qno": 15,
+    "q_en": "In characteristic X-ray spectra, when an electron jumps from the L-shell (n = 2) to fill a vacancy in the K-shell (n = 1), the emitted X-ray line is called,",
+    "q_ta": "சிறப்பு X-கதிர் நிறமாலையில், K-கூட்டில் (n = 1) உள்ள காலியிடத்தை நிரப்ப L-கூட்டிலிருந்து (n = 2) எலக்ட்ரான் தாவும்போது உமிழப்படும் வரி எது?",
+    "opts_en": [
+      "K_α line",
+      "K_β line",
+      "L_α line",
+      "M_α line"
+    ],
+    "opts_ta": [
+      "K_α வரி",
+      "K_β வரி",
+      "L_α வரி",
+      "M_α வரி"
+    ],
+    "ans": 0,
+    "exp_en": "Transition from L-shell to K-shell emits the K_α characteristic X-ray line.",
+    "exp_ta": "L கூட்டிலிருந்து K கூட்டிற்குத் தாவும்போது K_α வரி உமிழப்படுகிறது."
+  },
+  {
+    "id": "u9_bb_1",
+    "unit": 9,
+    "type": "back",
+    "qno": 1,
+    "q_en": "Suppose an alpha particle accelerated by a potential of V volt is allowed to collide with a nucleus of atomic number Z, then the distance of closest approach of alpha particle to the nucleus is",
+    "q_ta": "மின்னழுத்தம் V வோல்ட் மூலமாக முடுக்கப்படும் ஆல்ஃபா துகள் ஒன்று அணு எண் Z கொண்ட அணுக்கருவை நோக்கி மோதலுக்கு உட்பட அனுமதிக்கப்படும் போது, அணுக்கருவிலிருந்து ஆல்பா துகளின் மீச்சிறு அணுகு தொலைவு",
+    "opts_en": [
+      "14.4 (Z / V) Å",
+      "14.4 (V / Z) Å",
+      "1.44 (Z / V) Å",
+      "1.44 (V / Z) Å"
+    ],
+    "opts_ta": [
+      "14.4 (Z / V) Å",
+      "14.4 (V / Z) Å",
+      "1.44 (Z / V) Å",
+      "1.44 (V / Z) Å"
+    ],
+    "ans": 2,
+    "exp_en": "At closest approach, 2eV = (1/4πε₀)(2e·Ze)/r₀. Official Textbook Answer Key gives (c) 1.44 (Z/V) Å.",
+    "exp_ta": "மீச்சிறு அணுகு தொலைவு r₀ = (1/4πε₀)(2Ze²)/(2eV). பாடப்புத்தக விடைக்குறிப்பின்படி (c) 1.44 (Z / V) Å."
+  },
+  {
+    "id": "u9_bb_2",
+    "unit": 9,
+    "type": "back",
+    "qno": 2,
+    "q_en": "In a hydrogen atom, the electron revolving in the fourth orbit, has angular momentum equal to",
+    "q_ta": "ஹைட்ரஜன் அணுவில் நான்காவது சுற்றுப்பாதையில் இயங்கும் எலக்ட்ரானின் கோண உந்தம்:",
+    "opts_en": [
+      "h",
+      "h / π",
+      "4h / π",
+      "2h / π"
+    ],
+    "opts_ta": [
+      "h",
+      "h / π",
+      "4h / π",
+      "2h / π"
+    ],
+    "ans": 3,
+    "exp_en": "L = nh / (2π) = 4h / (2π) = 2h / π.",
+    "exp_ta": "L = nh / 2π = 4h / 2π = 2h / π."
+  },
+  {
+    "id": "u9_bb_3",
+    "unit": 9,
+    "type": "back",
+    "qno": 3,
+    "q_en": "Atomic number of H-like atom with ionization potential 122.4 V for n = 1 is",
+    "q_ta": "n = 1 சுற்றுப்பாதைக்கு அயனியாக்க அழுத்தம் 122.4 V கொண்ட H-போன்ற அணுவின் அணு எண்:",
+    "opts_en": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "opts_ta": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 2,
+    "exp_en": "13.6 Z² = 122.4 ⇒ Z² = 9 ⇒ Z = 3.",
+    "exp_ta": "13.6 Z² = 122.4 ⇒ Z² = 9 ⇒ Z = 3."
+  },
+  {
+    "id": "u9_bb_4",
+    "unit": 9,
+    "type": "back",
+    "qno": 4,
+    "q_en": "The ratio between the radius of first three orbits of hydrogen atom is",
+    "q_ta": "ஹைட்ரஜன் அணுவின் முதல் மூன்று சுற்றுப்பாதைகளின் ஆரங்களின் விகிதம்",
+    "opts_en": [
+      "1 : 2 : 3",
+      "2 : 4 : 6",
+      "1 : 4 : 9",
+      "1 : 3 : 5"
+    ],
+    "opts_ta": [
+      "1 : 2 : 3",
+      "2 : 4 : 6",
+      "1 : 4 : 9",
+      "1 : 3 : 5"
+    ],
+    "ans": 2,
+    "exp_en": "Since r_n ∝ n², r₁ : r₂ : r₃ = 1 : 4 : 9.",
+    "exp_ta": "r_n ∝ n² என்பதால் 1² : 2² : 3² = 1 : 4 : 9."
+  },
+  {
+    "id": "u9_bb_5",
+    "unit": 9,
+    "type": "back",
+    "qno": 5,
+    "q_en": "The charge of cathode rays particle is",
+    "q_ta": "கேத்தோடு கதிர்களின் மின்னூட்டம்",
+    "opts_en": [
+      "positive",
+      "negative",
+      "neutral",
+      "not defined"
+    ],
+    "opts_ta": [
+      "நேர்க்குறி",
+      "எதிர்க்குறி",
+      "நடுநிலை",
+      "வரையறுக்கப்படவில்லை"
+    ],
+    "ans": 1,
+    "exp_en": "Cathode rays are negatively charged electrons.",
+    "exp_ta": "கேத்தோடு கதிர்கள் எதிர்க்குறி மின்னூட்டம் கொண்ட எலக்ட்ரான்களாகும்."
+  },
+  {
+    "id": "u9_bb_6",
+    "unit": 9,
+    "type": "back",
+    "qno": 6,
+    "q_en": "In J.J. Thomson e/m experiment, electrons are accelerated through 2.6 kV enter the region of crossed electric field and magnetic field of strength 3.0 × 10⁴ Vm⁻¹ and 1.0 × 10⁻³ T, respectively, and pass through it and undeflected, then the specific charge is",
+    "q_ta": "ஜே.ஜே தாம்சன் e/m ஆய்வில், 2.6 kV மின்னழுத்தத்தில் முடுக்கப்பட்ட எலக்ட்ரான்கள் ஒன்றுக்கொன்று செங்குத்தான மின் மற்றும் காந்தப்புல மதிப்புள்ள 3.0 × 10⁴ Vm⁻¹ மற்றும் 1.0 × 10⁻³ T பகுதியில் செலுத்தப்படும்போது விலக்கமடையாமல் செல்கிறது எனில் எலக்ட்ரானின் மின்னூட்ட எண்",
+    "opts_en": [
+      "1.6 × 10¹⁰ C kg⁻¹",
+      "1.7 × 10¹¹ C kg⁻¹",
+      "1.5 × 10¹¹ C kg⁻¹",
+      "1.8 × 10¹¹ C kg⁻¹"
+    ],
+    "opts_ta": [
+      "1.6 × 10¹⁰ C kg⁻¹",
+      "1.7 × 10¹¹ C kg⁻¹",
+      "1.5 × 10¹¹ C kg⁻¹",
+      "1.8 × 10¹¹ C kg⁻¹"
+    ],
+    "ans": 1,
+    "exp_en": "e/m = E² / (2VB²) ≈ 1.7 × 10¹¹ C kg⁻¹.",
+    "exp_ta": "e/m = E² / (2VB²) ≈ 1.7 × 10¹¹ C kg⁻¹."
+  },
+  {
+    "id": "u9_bb_7",
+    "unit": 9,
+    "type": "back",
+    "qno": 7,
+    "q_en": "The ratio of the wavelengths radiation emitted for the transition from n = 2 to n = 1 in Li⁺⁺, He⁺ and H is",
+    "q_ta": "Li⁺⁺, He⁺ மற்றும் H ஆகியவற்றில் n = 2 லிருந்து n = 1-க்கு நகர்வு ஏற்படும் போது உமிழப்படும் கதிர்வீச்சின் அலைநீளங்களின் விகிதம்:",
+    "opts_en": [
+      "1 : 2 : 3",
+      "1 : 4 : 9",
+      "3 : 2 : 1",
+      "4 : 9 : 36"
+    ],
+    "opts_ta": [
+      "1 : 2 : 3",
+      "1 : 4 : 9",
+      "3 : 2 : 1",
+      "4 : 9 : 36"
+    ],
+    "ans": 3,
+    "exp_en": "λ ∝ 1/Z² ⇒ 1/9 : 1/4 : 1/1 = 4 : 9 : 36.",
+    "exp_ta": "λ ∝ 1/Z² ⇒ 1/9 : 1/4 : 1/1 = 4 : 9 : 36."
+  },
+  {
+    "id": "u9_bb_8",
+    "unit": 9,
+    "type": "back",
+    "qno": 8,
+    "q_en": "The electric potential of an electron is given by V = V₀ ln(r / r₀), where r₀ is a constant. If Bohr atom model is valid, then variation of radius of nth orbit r_n with the principal quantum number n is",
+    "q_ta": "ஒரு எலக்ட்ரானின் மின்னழுத்தம் V = V₀ ln(r / r₀) எனக் கொடுக்கப்பட்டுள்ளது. போர் அணு மாதிரியைப் பயன்படுத்தினால், முதன்மை குவாண்டம் எண் n-ஐப் பொருத்து n-ஆவது சுற்றுப்பாதை ஆரம் r_n-இன் மாறுபாட்டின் தன்மை",
+    "opts_en": [
+      "r_n ∝ 1 / n",
+      "r_n ∝ n",
+      "r_n ∝ 1 / n²",
+      "r_n ∝ n²"
+    ],
+    "opts_ta": [
+      "r_n ∝ 1 / n",
+      "r_n ∝ n",
+      "r_n ∝ 1 / n²",
+      "r_n ∝ n²"
+    ],
+    "ans": 1,
+    "exp_en": "F = eV₀/r = mv²/r ⇒ v is constant; from mvr_n = nh/2π, r_n ∝ n.",
+    "exp_ta": "v மாறிலி என்பதால் mvr_n = nh/2π-இலிருந்து r_n ∝ n."
+  },
+  {
+    "id": "u9_bb_9",
+    "unit": 9,
+    "type": "back",
+    "qno": 9,
+    "q_en": "If the nuclear radius of ²⁷Al is 3.6 fermi, the approximate nuclear radius of ⁶⁴Cu in fermi is",
+    "q_ta": "²⁷Al அணுக்கரு ஆரம் 3.6 பெர்மி எனில் ⁶⁴Cu அணுக்கரு ஆரம் ஏறக்குறைய (பெர்மியில்)",
+    "opts_en": [
+      "2.4",
+      "1.2",
+      "4.8",
+      "3.6"
+    ],
+    "opts_ta": [
+      "2.4",
+      "1.2",
+      "4.8",
+      "3.6"
+    ],
+    "ans": 2,
+    "exp_en": "R_Cu = 3.6 × (64/27)¹/³ = 4.8 fermi.",
+    "exp_ta": "R_Cu = 3.6 × (4/3) = 4.8 பெர்மி."
+  },
+  {
+    "id": "u9_bb_10",
+    "unit": 9,
+    "type": "back",
+    "qno": 10,
+    "q_en": "The nucleus is approximately spherical in shape. Then the surface area of nucleus having mass number A varies as",
+    "q_ta": "அணுக்கரு கிட்டத்தட்ட கோள வடிவம் கொண்டது எனில் நிறை எண் A கொண்ட அணுக்கரு ஒன்றின் புறப்பரப்பளவு எவ்வாறு மாறுபடும்?",
+    "opts_en": [
+      "A²/³",
+      "A⁴/³",
+      "A¹/³",
+      "A⁵/³"
+    ],
+    "opts_ta": [
+      "A²/³",
+      "A⁴/³",
+      "A¹/³",
+      "A⁵/³"
+    ],
+    "ans": 0,
+    "exp_en": "Surface area S = 4πR² ∝ (A¹/³)² = A²/³.",
+    "exp_ta": "புறப்பரப்பளவு S = 4πR² ∝ A²/³."
+  },
+  {
+    "id": "u9_bb_11",
+    "unit": 9,
+    "type": "back",
+    "qno": 11,
+    "q_en": "The mass of a ⁷₃Li nucleus is 0.042 u less than the sum of the masses of all its nucleons. The average binding energy per nucleon of ⁷₃Li nucleus is nearly",
+    "q_ta": "⁷₃Li அணுக்கருவின் நிறையானது அதிலுள்ள அனைத்து நியூக்ளியான்களின் மொத்த நிறையை விட 0.042 u குறைவாக உள்ளது எனில், ⁷₃Li அணுக்கருவின் ஒரு நியூக்ளியானுக்கான சராசரி பிணைப்பாற்றல்:",
+    "opts_en": [
+      "46 MeV",
+      "5.6 MeV",
+      "3.9 MeV",
+      "23 MeV"
+    ],
+    "opts_ta": [
+      "46 MeV",
+      "5.6 MeV",
+      "3.9 MeV",
+      "23 MeV"
+    ],
+    "ans": 1,
+    "exp_en": "BE/A = (0.042 × 931.5) / 7 ≈ 5.6 MeV.",
+    "exp_ta": "சராசரி பிணைப்பாற்றல் = (0.042 × 931.5) / 7 ≈ 5.6 MeV."
+  },
+  {
+    "id": "u9_bb_12",
+    "unit": 9,
+    "type": "back",
+    "qno": 12,
+    "q_en": "M_p denotes the mass of the proton and M_n denotes mass of a neutron. A given nucleus of binding energy B, contains Z protons and N neutrons. The mass M(N, Z) of the nucleus is given by (where c is the speed of light)",
+    "q_ta": "M_p என்பது புரோட்டானின் நிறையையும் M_n என்பது நியூட்ரானின் நிறையையும் குறிக்கும். Z புரோட்டான்களும் N நியூட்ரான்களும் கொண்ட அணுக்கரு ஒன்றின் பிணைப்பாற்றல் B எனில் அவ்வணுக்கருவின் நிறை M(N, Z) ஆனது:",
+    "opts_en": [
+      "M(N, Z) = N M_n + Z M_p − B c²",
+      "M(N, Z) = N M_n + Z M_p + B c²",
+      "M(N, Z) = N M_n + Z M_p − B / c²",
+      "M(N, Z) = N M_n + Z M_p + B / c²"
+    ],
+    "opts_ta": [
+      "M(N, Z) = N M_n + Z M_p − B c²",
+      "M(N, Z) = N M_n + Z M_p + B c²",
+      "M(N, Z) = N M_n + Z M_p − B / c²",
+      "M(N, Z) = N M_n + Z M_p + B / c²"
+    ],
+    "ans": 2,
+    "exp_en": "M(N,Z) = N M_n + Z M_p − B / c².",
+    "exp_ta": "M(N,Z) = N M_n + Z M_p − B / c²."
+  },
+  {
+    "id": "u9_bb_13",
+    "unit": 9,
+    "type": "back",
+    "qno": 13,
+    "q_en": "A radioactive nucleus (initial mass number A and atomic number Z) emits two α-particles and 2 positrons. The ratio of number of neutrons to that of proton in the final nucleus will be",
+    "q_ta": "(தொடக்க நிறை எண் A மற்றும் தொடக்க அணு எண் Z கொண்ட) கதிரியக்க அணுக்கரு ஒன்று 2 ஆல்பா துகள்கள் மற்றும் 2 பாசிட்ரான்களை உமிழ்கிறது. இறுதி அணுக்கருவின் நியூட்ரான் மற்றும் புரோட்டான் எண்களின் விகிதம்:",
+    "opts_en": [
+      "(A − Z − 4) / (Z − 2)",
+      "(A − Z − 2) / (Z − 6)",
+      "(A − Z − 4) / (Z − 6)",
+      "(A − Z − 12) / (Z − 4)"
+    ],
+    "opts_ta": [
+      "(A − Z − 4) / (Z − 2)",
+      "(A − Z − 2) / (Z − 6)",
+      "(A − Z − 4) / (Z − 6)",
+      "(A − Z − 12) / (Z − 4)"
+    ],
+    "ans": 1,
+    "exp_en": "A' = A−8, Z' = Z−6 ⇒ N' = A'−Z' = A−Z−2. Ratio = (A − Z − 2) / (Z − 6).",
+    "exp_ta": "A' = A−8, Z' = Z−6 ⇒ N'/Z' = (A − Z − 2) / (Z − 6)."
+  },
+  {
+    "id": "u9_bb_14",
+    "unit": 9,
+    "type": "back",
+    "qno": 14,
+    "q_en": "The half-life period of a radioactive element A is same as the mean life time of another radioactive element B. Initially both have the same number of atoms. Then",
+    "q_ta": "கதிரியக்கத் தனிமம் A-இன் அரை ஆயுட்காலம் மற்றொரு கதிரியக்கத் தனிமம் B-இன் சராசரி ஆயுட்காலத்திற்குச் சமமாகும். தொடக்கத்தில் அவ்விரண்டு தனிமங்களின் அணுக்களின் எண்ணிக்கை சமமாக உள்ளது எனில்:",
+    "opts_en": [
+      "A and B have the same decay rate initially",
+      "A and B decay at the same rate always",
+      "B will decay at faster rate than A",
+      "A will decay at faster rate than B"
+    ],
+    "opts_ta": [
+      "A மற்றும் B-ன் தொடக்கச் சிதைவு வீதம் சமம்",
+      "A மற்றும் B-ன் சிதைவு வீதம் எப்போதும் சமம்",
+      "A-வை விட B வேகமாகச் சிதைவடையும்",
+      "B-யை விட A வேகமாகச் சிதைவடையும்"
+    ],
+    "ans": 2,
+    "exp_en": "λ_B = λ_A / 0.693 > λ_A, so B decays faster than A.",
+    "exp_ta": "λ_B > λ_A என்பதால் A-வை விட B வேகமாகச் சிதைவடையும்."
+  },
+  {
+    "id": "u9_bb_15",
+    "unit": 9,
+    "type": "back",
+    "qno": 15,
+    "q_en": "A radioactive element has N₀ number of nuclei at t = 0. The number of nuclei remaining after half of a half-life (that is, at time t = ½ T₁/₂)",
+    "q_ta": "t = 0 நேரத்தில் அமைப்பு ஒன்றிலுள்ள அணுக்கருக்களின் எண்ணிக்கை N₀. அரை ஆயுட்காலத்தில் பாதியளவு காலம் (t = ½ T₁/₂) ஆகும்போது மீதமுள்ள அணுக்கருக்களின் எண்ணிக்கை:",
+    "opts_en": [
+      "N₀ / 2",
+      "N₀ / √2",
+      "N₀ / 4",
+      "N₀ / 8"
+    ],
+    "opts_ta": [
+      "N₀ / 2",
+      "N₀ / √2",
+      "N₀ / 4",
+      "N₀ / 8"
+    ],
+    "ans": 1,
+    "exp_en": "N = N₀ (½)^(½) = N₀ / √2.",
+    "exp_ta": "N = N₀ (½)^(½) = N₀ / √2."
+  },
+  {
+    "id": "u9_in_1",
+    "unit": 9,
+    "type": "inside",
+    "qno": 1,
+    "q_en": "What is the value of the Bohr radius (a₀), the radius of the first orbit of the hydrogen atom?",
+    "q_ta": "ஹைட்ரஜன் அணுவின் முதல் சுற்றுப்பாதையின் ஆரமான 'போர் ஆரம்' (a₀) மதிப்பு என்ன?",
+    "opts_en": [
+      "0.529 Å",
+      "1.058 Å",
+      "1.529 Å",
+      "0.259 Å"
+    ],
+    "opts_ta": [
+      "0.529 Å",
+      "1.058 Å",
+      "1.529 Å",
+      "0.259 Å"
+    ],
+    "ans": 0,
+    "exp_en": "Bohr radius a₀ = 0.529 Å.",
+    "exp_ta": "போர் ஆரம் a₀ = 0.529 Å."
+  },
+  {
+    "id": "u9_in_2",
+    "unit": 9,
+    "type": "inside",
+    "qno": 2,
+    "q_en": "The dimensionless fine structure constant (α) is equal to,",
+    "q_ta": "பரிமாணமற்ற நுண்வரியமைப்பு மாறிலியின் (Fine structure constant α) மதிப்பு யாது?",
+    "opts_en": [
+      "1 / 273",
+      "1 / 137",
+      "1 / 100",
+      "13.6"
+    ],
+    "opts_ta": [
+      "1 / 273",
+      "1 / 137",
+      "1 / 100",
+      "13.6"
+    ],
+    "ans": 1,
+    "exp_en": "Fine structure constant α = 1 / 137.",
+    "exp_ta": "நுண்வரியமைப்பு மாறிலி α = 1 / 137."
+  },
+  {
+    "id": "u9_in_3",
+    "unit": 9,
+    "type": "inside",
+    "qno": 3,
+    "q_en": "The total energy of the electron in the ground state (n = 1) of a hydrogen atom is,",
+    "q_ta": "ஹைட்ரஜன் அணுவின் அடிநிலையில் (n = 1) உள்ள எலக்ட்ரானின் மொத்த ஆற்றல்,",
+    "opts_en": [
+      "−3.4 eV",
+      "−13.6 eV",
+      "+13.6 eV",
+      "−1.51 eV"
+    ],
+    "opts_ta": [
+      "−3.4 eV",
+      "−13.6 eV",
+      "+13.6 eV",
+      "−1.51 eV"
+    ],
+    "ans": 1,
+    "exp_en": "Ground state energy E₁ = −13.6 eV.",
+    "exp_ta": "அடிநிலை ஆற்றல் E₁ = −13.6 eV."
+  },
+  {
+    "id": "u9_in_4",
+    "unit": 9,
+    "type": "inside",
+    "qno": 4,
+    "q_en": "In the hydrogen emission spectrum, which spectral series lies in the visible region?",
+    "q_ta": "ஹைட்ரஜன் வரி நிறமாலையில் கண்ணுறு ஒளிப் பகுதியில் (Visible region) அமையும் நிறமாலை வரிசை எது?",
+    "opts_en": [
+      "Lyman series",
+      "Balmer series",
+      "Paschen series",
+      "Brackett series"
+    ],
+    "opts_ta": [
+      "லைமன் வரிசை",
+      "பாமர் வரிசை",
+      "பாஷன் வரிசை",
+      "பிராக்கெட் வரிசை"
+    ],
+    "ans": 1,
+    "exp_en": "Balmer series lies in the visible region.",
+    "exp_ta": "பாமர் வரிசை கண்ணுறு ஒளிப் பகுதியில் அமைகிறது."
+  },
+  {
+    "id": "u9_in_5",
+    "unit": 9,
+    "type": "inside",
+    "qno": 5,
+    "q_en": "The value of Rydberg constant (R) for hydrogen is approximately,",
+    "q_ta": "ஹைட்ரஜன் அணுவிற்கான ரிட்பெர்க் மாறிலியின் (Rydberg constant R) மதிப்பு தோராயமாக,",
+    "opts_en": [
+      "1.097 × 10⁷ m⁻¹",
+      "6.626 × 10⁻³⁴ m⁻¹",
+      "1.6 × 10⁻¹⁹ m⁻¹",
+      "3.0 × 10⁸ m⁻¹"
+    ],
+    "opts_ta": [
+      "1.097 × 10⁷ m⁻¹",
+      "6.626 × 10⁻³⁴ m⁻¹",
+      "1.6 × 10⁻¹⁹ m⁻¹",
+      "3.0 × 10⁸ m⁻¹"
+    ],
+    "ans": 0,
+    "exp_en": "Rydberg constant R = 1.097 × 10⁷ m⁻¹.",
+    "exp_ta": "ரிட்பெர்க் மாறிலி R = 1.097 × 10⁷ m⁻¹."
+  },
+  {
+    "id": "u9_in_6",
+    "unit": 9,
+    "type": "inside",
+    "qno": 6,
+    "q_en": "Atoms of different elements having the same number of neutrons (N) but different atomic number (Z) and mass number (A) are called,",
+    "q_ta": "ஒரே நியூட்ரான் எண்ணிக்கையையும் (N), வெவ்வேறு அணு எண் மற்றும் நிறை எண்களையும் கொண்ட வெவ்வேறு தனிமங்களின் அணுக்கள் எவ்வாறு அழைக்கப்படுகின்றன?",
+    "opts_en": [
+      "Isotopes",
+      "Isobars",
+      "Isotones",
+      "Isomers"
+    ],
+    "opts_ta": [
+      "ஐசோடோப்புகள்",
+      "ஐசோபார்கள்",
+      "ஐசோடோன்கள் (Isotones)",
+      "ஐசோமர்கள்"
+    ],
+    "ans": 2,
+    "exp_en": "Nuclides with the same neutron number N are called Isotones.",
+    "exp_ta": "ஒத்த நியூட்ரான் எண்ணிக்கை கொண்ட அணுக்கள் ஐசோடோன்கள் எனப்படும்."
+  },
+  {
+    "id": "u9_in_7",
+    "unit": 9,
+    "type": "inside",
+    "qno": 7,
+    "q_en": "1 atomic mass unit (1 u) is defined as 1/12th of the mass of ¹²₆C atom, and its energy equivalent is,",
+    "q_ta": "1 அணு நிறை அலகுக்கு (1 u = 1.66 × 10⁻²⁷ kg) சமமான ஆற்றல் மதிப்பு யாது?",
+    "opts_en": [
+      "931.5 MeV",
+      "0.511 MeV",
+      "13.6 MeV",
+      "200 MeV"
+    ],
+    "opts_ta": [
+      "931.5 MeV",
+      "0.511 MeV",
+      "13.6 MeV",
+      "200 MeV"
+    ],
+    "ans": 0,
+    "exp_en": "1 u = 931.5 MeV.",
+    "exp_ta": "1 u = 931.5 MeV."
+  },
+  {
+    "id": "u9_in_8",
+    "unit": 9,
+    "type": "inside",
+    "qno": 8,
+    "q_en": "The nuclear density for all nuclei with Z > 10 is independent of mass number A and is approximately equal to,",
+    "q_ta": "Z > 10 கொண்ட அனைத்து அணுக்கருக்களின் அணுக்கரு அடர்த்தி நிறை எண்ணைச் (A) சாராத மாறிலியாகும். அதன் மதிப்பு,",
+    "opts_en": [
+      "2.3 × 10¹⁷ kg m⁻³",
+      "1.66 × 10⁻²⁷ kg m⁻³",
+      "1.2 × 10⁻¹⁵ kg m⁻³",
+      "9.1 × 10³¹ kg m⁻³"
+    ],
+    "opts_ta": [
+      "2.3 × 10¹⁷ kg m⁻³",
+      "1.66 × 10⁻²⁷ kg m⁻³",
+      "1.2 × 10⁻¹⁵ kg m⁻³",
+      "9.1 × 10³¹ kg m⁻³"
+    ],
+    "ans": 0,
+    "exp_en": "Nuclear density ρ = 2.3 × 10¹⁷ kg m⁻³.",
+    "exp_ta": "அணுக்கரு அடர்த்தி ρ = 2.3 × 10¹⁷ kg m⁻³."
+  },
+  {
+    "id": "u9_in_9",
+    "unit": 9,
+    "type": "inside",
+    "qno": 9,
+    "q_en": "From the binding energy curve, the average binding energy per nucleon is maximum (8.8 MeV) for,",
+    "q_ta": "பிணைப்பாற்றல் வளைகோட்டின்படி, ஒரு நியூக்ளியானுக்கான சராசரி பிணைப்பாற்றல் எந்தத் தனிமத்திற்குப் பெரும மதிப்பைப் (8.8 MeV) பெற்றுள்ளது?",
+    "opts_en": [
+      "⁴₂He",
+      "⁵⁶₂₆Fe (Iron)",
+      "²³⁵₉₂U",
+      "¹²₆C"
+    ],
+    "opts_ta": [
+      "⁴₂He",
+      "⁵⁶₂₆Fe (இரும்பு)",
+      "²³⁵₉₂U",
+      "¹²₆C"
+    ],
+    "ans": 1,
+    "exp_en": "⁵⁶₂₆Fe has the maximum BE per nucleon of 8.8 MeV.",
+    "exp_ta": "⁵⁶₂₆Fe (இரும்பு) பெரும சராசரி பிணைப்பாற்றலைப் (8.8 MeV) பெற்றுள்ளது."
+  },
+  {
+    "id": "u9_in_10",
+    "unit": 9,
+    "type": "inside",
+    "qno": 10,
+    "q_en": "In β⁻ decay, a neutron inside the nucleus converts into a proton by emitting,",
+    "q_ta": "β⁻ சிதைவின்போது, அணுக்கருவிற்குள் உள்ள ஒரு நியூட்ரான் புரோட்டானாக மாறும்போது உமிழப்படுபவை,",
+    "opts_en": [
+      "an electron and a neutrino",
+      "an electron and an antineutrino",
+      "a positron and a neutrino",
+      "a positron and an antineutrino"
+    ],
+    "opts_ta": [
+      "எலக்ட்ரான் மற்றும் நியூட்ரினோ",
+      "எலக்ட்ரான் மற்றும் எதிர்நியூட்ரினோ (Antineutrino)",
+      "பாசிட்ரான் மற்றும் நியூட்ரினோ",
+      "பாசிட்ரான் மற்றும் எதிர்நியூட்ரினோ"
+    ],
+    "ans": 1,
+    "exp_en": "In β⁻ decay, n → p + e⁻ + ν̄ (electron and antineutrino).",
+    "exp_ta": "β⁻ சிதைவில் எலக்ட்ரான் மற்றும் எதிர்நியூட்ரினோ உமிழப்படுகின்றன."
+  },
+  {
+    "id": "u9_in_11",
+    "unit": 9,
+    "type": "inside",
+    "qno": 11,
+    "q_en": "The SI unit of radioactivity (activity) is Becquerel (Bq). 1 Curie (Ci) is equal to,",
+    "q_ta": "கதிரியக்கச் செயல்பாட்டின் SI அலகு பெக்கொரல் (Bq) ஆகும். 1 கியூரி (1 Ci) என்பது எத்தனை பெக்கொரலுக்குச் சமம்?",
+    "opts_en": [
+      "3.7 × 10¹⁰ Bq (decays/s)",
+      "10⁶ Bq",
+      "1.6 × 10¹⁹ Bq",
+      "6.023 × 10²³ Bq"
+    ],
+    "opts_ta": [
+      "3.7 × 10¹⁰ Bq (சிதைவுகள்/வினாடி)",
+      "10⁶ Bq",
+      "1.6 × 10¹⁹ Bq",
+      "6.023 × 10²³ Bq"
+    ],
+    "ans": 0,
+    "exp_en": "1 Curie = 3.7 × 10¹⁰ Bq.",
+    "exp_ta": "1 கியூரி = 3.7 × 10¹⁰ Bq."
+  },
+  {
+    "id": "u9_in_12",
+    "unit": 9,
+    "type": "inside",
+    "qno": 12,
+    "q_en": "The relation between half-life (T₁/₂) and mean life (τ) of a radioactive nucleus is,",
+    "q_ta": "கதிரியக்க அணுக்கருவின் அரை ஆயுட்காலம் (T₁/₂) மற்றும் சராசரி ஆயுட்காலம் (τ) இடையேயான தொடர்பு,",
+    "opts_en": [
+      "T₁/₂ = 0.6931 τ",
+      "τ = 0.6931 T₁/₂",
+      "T₁/₂ = 1.44 τ",
+      "T₁/₂ = τ²"
+    ],
+    "opts_ta": [
+      "T₁/₂ = 0.6931 τ",
+      "τ = 0.6931 T₁/₂",
+      "T₁/₂ = 1.44 τ",
+      "T₁/₂ = τ²"
+    ],
+    "ans": 0,
+    "exp_en": "T₁/₂ = 0.6931 τ.",
+    "exp_ta": "T₁/₂ = 0.6931 τ."
+  },
+  {
+    "id": "u9_in_13",
+    "unit": 9,
+    "type": "inside",
+    "qno": 13,
+    "q_en": "The average energy released per fission of a ²³⁵₉₂U nucleus is approximately,",
+    "q_ta": "ஒரு ²³⁵₉₂U அணுக்கரு பிளவின்போது வெளிப்படும் சராசரி ஆற்றல் மதிப்பு,",
+    "opts_en": [
+      "200 MeV",
+      "20 MeV",
+      "8.8 MeV",
+      "931.5 MeV"
+    ],
+    "opts_ta": [
+      "200 MeV",
+      "20 MeV",
+      "8.8 MeV",
+      "931.5 MeV"
+    ],
+    "ans": 0,
+    "exp_en": "200 MeV of energy is released per fission of ²³⁵U.",
+    "exp_ta": "ஒரு ²³⁵U அணுக்கரு பிளவில் 200 MeV ஆற்றல் வெளிப்படுகிறது."
+  },
+  {
+    "id": "u9_in_14",
+    "unit": 9,
+    "type": "inside",
+    "qno": 14,
+    "q_en": "In a nuclear reactor, cadmium or boron rods are used as,",
+    "q_ta": "அணுக்கரு உலையில் காட்மியம் (Cadmium) அல்லது போரான் (Boron) தண்டுகள் எதற்காகப் பயன்படுத்தப்படுகின்றன?",
+    "opts_en": [
+      "Moderator",
+      "Control rods (to absorb excess neutrons)",
+      "Coolant",
+      "Nuclear fuel"
+    ],
+    "opts_ta": [
+      "தணிப்பான் (Moderator)",
+      "கட்டுப்படுத்தும் தண்டுகள் (உபரி நியூட்ரான்களை உட்கவர)",
+      "குளிர்விப்பான்",
+      "அணு எரிபொருள்"
+    ],
+    "ans": 1,
+    "exp_en": "Cadmium and Boron rods absorb neutrons and serve as control rods.",
+    "exp_ta": "காட்மியம் மற்றும் போரான் தண்டுகள் கட்டுப்படுத்தும் தண்டுகளாகப் பயன்படுகின்றன."
+  },
+  {
+    "id": "u9_in_15",
+    "unit": 9,
+    "type": "inside",
+    "qno": 15,
+    "q_en": "According to the quark model, the quark composition of a proton and a neutron are respectively,",
+    "q_ta": "குவார்க் மாதிரியின்படி, ஒரு புரோட்டான் மற்றும் ஒரு நியூட்ரானின் குவார்க் கட்டமைப்பு முறையே (u = up quark, d = down quark),",
+    "opts_en": [
+      "udd and uud",
+      "uud and udd",
+      "uuu and ddd",
+      "ud and udd"
+    ],
+    "opts_ta": [
+      "udd மற்றும் uud",
+      "uud மற்றும் udd",
+      "uuu மற்றும் ddd",
+      "ud மற்றும் udd"
+    ],
+    "ans": 1,
+    "exp_en": "Proton = uud; Neutron = udd.",
+    "exp_ta": "புரோட்டான் = uud; நியூட்ரான் = udd."
+  },
+  {
+    "id": "u10_bb_1",
+    "unit": 10,
+    "type": "back",
+    "qno": 1,
+    "q_en": "The barrier potential of a silicon diode is approximately,",
+    "q_ta": "ஒரு சிலிக்கான் டையோடின் மின்னழுத்த அரண் (தோராயமாக)",
+    "opts_en": [
+      "0.7 V",
+      "0.3 V",
+      "2.0 V",
+      "2.2 V"
+    ],
+    "opts_ta": [
+      "0.7 V",
+      "0.3 V",
+      "2.0 V",
+      "2.2 V"
+    ],
+    "ans": 0,
+    "exp_en": "Barrier potential is 0.7 V for Silicon and 0.3 V for Germanium.",
+    "exp_ta": "சிலிக்கான் டையோடின் மின்னழுத்த அரண் 0.7 V ஆகும்."
+  },
+  {
+    "id": "u10_bb_2",
+    "unit": 10,
+    "type": "back",
+    "qno": 2,
+    "q_en": "If a small amount of antimony (Sb) is added to germanium crystal, (AIPMT 2011)",
+    "q_ta": "சிறிய அளவு ஆண்டிமனி (Sb) ஆனது, ஜெர்மானியம் படிகத்துடன் சேர்க்கும் போது (AIPMT 2011)",
+    "opts_en": [
+      "it becomes a p-type semiconductor",
+      "the antimony becomes an acceptor atom",
+      "there will be more free electrons than holes in the semiconductor",
+      "its resistance is increased"
+    ],
+    "opts_ta": [
+      "இது p-வகை குறைக்கடத்தியாக மாறுகிறது",
+      "ஆண்டிமனி ஒரு ஏற்பான் அணுவாக மாறுகிறது",
+      "குறைக்கடத்தியில் துளைகளை விட அதிகமான கட்டுறா எலக்ட்ரான்கள் இருக்கும்",
+      "அதன் மின்தடை அதிகரிக்கிறது"
+    ],
+    "ans": 2,
+    "exp_en": "Antimony (pentavalent) creates an n-type semiconductor with more free electrons than holes.",
+    "exp_ta": "ஆண்டிமனி சேர்க்கப்படும்போது n-வகை குறைக்கடத்தி உருவாகி, துளைகளை விட அதிக கட்டுறா எலக்ட்ரான்கள் இருக்கும்."
+  },
+  {
+    "id": "u10_bb_3",
+    "unit": 10,
+    "type": "back",
+    "qno": 3,
+    "q_en": "In an unbiased p-n junction, the majority charge carriers (that is, holes) in the p-region diffuse into n-region because of",
+    "q_ta": "சார்பளிக்கப்படாத p-n சந்தியில், p-பகுதியில் உள்ள பெரும்பான்மை மின்னூட்ட ஊர்திகள் (அதாவது, துளைகள்) n-பகுதிக்கு விரவல் அடைவதற்குக் காரணம்,",
+    "opts_en": [
+      "the potential difference across the p-n junction",
+      "the higher hole concentration in p-region than that in n-region",
+      "the attraction of free electrons of n-region",
+      "All of the above"
+    ],
+    "opts_ta": [
+      "p-n சந்தியின் குறுக்கே உள்ள மின்னழுத்த வேறுபாடு",
+      "n-பகுதியில் உள்ளதை விட, p-பகுதியில் உள்ள அதிக துளை செறிவு",
+      "n-பகுதியில் உள்ள கட்டுறா எலக்ட்ரான்களின் கவர்ச்சி",
+      "மேலே உள்ள அனைத்தும்"
+    ],
+    "ans": 1,
+    "exp_en": "Diffusion occurs due to higher hole concentration in p-region than in n-region.",
+    "exp_ta": "n-பகுதியில் உள்ளதை விட p-பகுதியில் உள்ள அதிக துளை செறிவே விரவலுக்குக் காரணம்."
+  },
+  {
+    "id": "u10_bb_4",
+    "unit": 10,
+    "type": "back",
+    "qno": 4,
+    "q_en": "If a positive half-wave rectified voltage is fed to a load resistor, for which part of a cycle there will be current flow through the load?",
+    "q_ta": "ஓர் நேர் அரை அலைதிருத்தியில் திருத்தப்பட்ட மின்னழுத்தம் ஒரு பளுமின்தடைக்கு அளிக்கப்பட்டால், உள்ளீடு சைகை மாறுபாட்டின் எந்தப் பகுதியில் பளு மின்னோட்டம் பாயும்?",
+    "opts_en": [
+      "0° – 90°",
+      "90° – 180°",
+      "0° – 180°",
+      "0° – 360°"
+    ],
+    "opts_ta": [
+      "0° – 90°",
+      "90° – 180°",
+      "0° – 180°",
+      "0° – 360°"
+    ],
+    "ans": 2,
+    "exp_en": "Current flows during the positive half-cycle (0° – 180°).",
+    "exp_ta": "நேர் அரைச் சுற்றில் (0° – 180°) மட்டும் மின்னோட்டம் பாயும்."
+  },
+  {
+    "id": "u10_bb_5",
+    "unit": 10,
+    "type": "back",
+    "qno": 5,
+    "q_en": "The zener diode is primarily used as",
+    "q_ta": "செனார் டையோடின் முதன்மைப் பயன்பாடு எது?",
+    "opts_en": [
+      "Rectifier",
+      "Amplifier",
+      "Oscillator",
+      "Voltage regulator"
+    ],
+    "opts_ta": [
+      "அலைதிருத்தி",
+      "பெருக்கி",
+      "அலை இயற்றி",
+      "மின்னழுத்தச் சீரமைப்பான்"
+    ],
+    "ans": 3,
+    "exp_en": "Zener diode is primarily used as a voltage regulator.",
+    "exp_ta": "செனார் டையோடு மின்னழுத்தச் சீரமைப்பானாகப் பயன்படுகிறது."
+  },
+  {
+    "id": "u10_bb_6",
+    "unit": 10,
+    "type": "back",
+    "qno": 6,
+    "q_en": "The principle based on which a solar cell operates is",
+    "q_ta": "சூரிய மின்கலன் எந்தத் தத்துவத்தின் அடிப்படையில் செயல்படுகிறது?",
+    "opts_en": [
+      "Diffusion",
+      "Recombination",
+      "Photovoltaic action",
+      "Carrier flow"
+    ],
+    "opts_ta": [
+      "விரவல்",
+      "மறு இணைப்பு",
+      "ஒளி வோல்டா செயல்பாடு",
+      "ஊர்தியின் பாய்வு"
+    ],
+    "ans": 2,
+    "exp_en": "Solar cell works on photovoltaic action.",
+    "exp_ta": "சூரிய மின்கலன் ஒளி வோல்டா செயல்பாட்டின் அடிப்படையில் செயல்படுகிறது."
+  },
+  {
+    "id": "u10_bb_7",
+    "unit": 10,
+    "type": "back",
+    "qno": 7,
+    "q_en": "The light emitted in an LED is due to",
+    "q_ta": "ஒளி உமிழ்வு டையோடில் (LED) ஒளி உமிழப்படக் காரணம்",
+    "opts_en": [
+      "Recombination of charge carriers",
+      "Reflection of light due to lens action",
+      "Amplification of light falling at the junction",
+      "Large current capacity"
+    ],
+    "opts_ta": [
+      "மின்னூட்ட ஊர்திகளின் மறுஇணைப்பு",
+      "லென்சுகளின் செயல்பாட்டால் ஏற்படும் ஒளி எதிரொளிப்பு",
+      "சந்தியின்மீது படும் ஒளியின் பெருக்கம்",
+      "மிகப்பெரிய மின்னோட்ட கடத்தும் திறன்"
+    ],
+    "ans": 0,
+    "exp_en": "Light in an LED is emitted due to recombination of charge carriers.",
+    "exp_ta": "மின்னூட்ட ஊர்திகளின் மறுஇணைப்பினால் LED-இல் ஒளி உமிழப்படுகிறது."
+  },
+  {
+    "id": "u10_bb_8",
+    "unit": 10,
+    "type": "back",
+    "qno": 8,
+    "q_en": "The barrier potential of a p-n junction depends on i) type of semiconductor material ii) amount of doping iii) temperature. Which one of the following is correct? (NEET)",
+    "q_ta": "p-n சந்தியில் உள்ள மின்னழுத்த அரண் i) குறைக்கடத்திப் பொருளின் வகை ii) மாசூட்டலின் அளவு iii) வெப்பநிலை ஆகியவற்றைப் பொருத்து அமையும். பின்வருவனவற்றில் எது சரியானது? (NEET)",
+    "opts_en": [
+      "(i) and (ii) only",
+      "(ii) only",
+      "(ii) and (iii) only",
+      "(i), (ii) and (iii)"
+    ],
+    "opts_ta": [
+      "(i) மற்றும் (ii)",
+      "(ii) மட்டும்",
+      "(ii) மற்றும் (iii)",
+      "(i), (ii) மற்றும் (iii)"
+    ],
+    "ans": 3,
+    "exp_en": "Barrier potential depends on all three: material type, doping, and temperature.",
+    "exp_ta": "மின்னழுத்த அரண் (i), (ii) மற்றும் (iii) ஆகிய மூன்றையும் சார்ந்தது."
+  },
+  {
+    "id": "u10_bb_9",
+    "unit": 10,
+    "type": "back",
+    "qno": 9,
+    "q_en": "To obtain sustained oscillation in an oscillator,",
+    "q_ta": "ஓர் அலை இயற்றியில் தொடர்ச்சியான அலைவுகள் ஏற்பட",
+    "opts_en": [
+      "Feedback should be positive",
+      "Feedback factor must be unity",
+      "Phase shift must be 0 or 2π",
+      "All the above"
+    ],
+    "opts_ta": [
+      "நேர்பின்னூட்டம் இருக்க வேண்டும்",
+      "பின்னூட்ட மாறிலி ஒன்றாக இருக்க வேண்டும்",
+      "கட்டமாற்றம் சுழி அல்லது 2π யாக இருக்க வேண்டும்",
+      "மேற்கூறிய அனைத்தும்"
+    ],
+    "ans": 3,
+    "exp_en": "All three are Barkhausen conditions for sustained oscillations.",
+    "exp_ta": "மேற்கூறிய அனைத்தும் பர்க்கௌசன் நிபந்தனைகளாகும்."
+  },
+  {
+    "id": "u10_bb_10",
+    "unit": 10,
+    "type": "back",
+    "qno": 10,
+    "q_en": "If the input to the NOT gate is A = 1011, its output is",
+    "q_ta": "ஒரு NOT கேட்டின் உள்ளீடு A = 1011 எனில், அதன் வெளியீடானது,",
+    "opts_en": [
+      "0100",
+      "1000",
+      "1100",
+      "0011"
+    ],
+    "opts_ta": [
+      "0100",
+      "1000",
+      "1100",
+      "0011"
+    ],
+    "ans": 0,
+    "exp_en": "NOT of 1011 is 0100.",
+    "exp_ta": "1011-இன் நிரப்பி 0100."
+  },
+  {
+    "id": "u10_bb_11",
+    "unit": 10,
+    "type": "back",
+    "qno": 11,
+    "q_en": "Which one of the following represents forward bias diode? (NEET)",
+    "q_ta": "பின்வருவனவற்றில் எது முன்னோக்குச் சார்பில் உள்ள டையோடினைக் குறிக்கும்? (NEET)",
+    "svg": "<svg viewBox=\"0 0 360 190\" class=\"w-full max-w-sm mx-auto my-2 bg-slate-50 rounded-lg border border-slate-200 p-2\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">\n    <text x=\"12\" y=\"30\">a)  0 V</text>\n    <line x1=\"65\" y1=\"26\" x2=\"115\" y2=\"26\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <polygon points=\"115,18 115,34 131,26\" fill=\"#f97316\" stroke=\"#c2410c\" stroke-width=\"1.5\"/>\n    <line x1=\"131\" y1=\"18\" x2=\"131\" y2=\"34\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <polyline points=\"131,26 155,26 160,20 166,32 172,20 178,32 184,20 190,32 195,26 235,26\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <text x=\"170\" y=\"16\" font-size=\"10\">R</text>\n    <text x=\"242\" y=\"30\">−2 V</text>\n    <text x=\"12\" y=\"75\">b) −4 V</text>\n    <line x1=\"65\" y1=\"71\" x2=\"115\" y2=\"71\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <polygon points=\"115,63 115,79 131,71\" fill=\"#f97316\" stroke=\"#c2410c\" stroke-width=\"1.5\"/>\n    <line x1=\"131\" y1=\"63\" x2=\"131\" y2=\"79\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <polyline points=\"131,71 155,71 160,65 166,77 172,65 178,77 184,65 190,77 195,71 235,71\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <text x=\"170\" y=\"61\" font-size=\"10\">R</text>\n    <text x=\"242\" y=\"75\">−3 V</text>\n    <text x=\"12\" y=\"120\">c) −2 V</text>\n    <line x1=\"65\" y1=\"116\" x2=\"115\" y2=\"116\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <polygon points=\"115,108 115,124 131,116\" fill=\"#f97316\" stroke=\"#c2410c\" stroke-width=\"1.5\"/>\n    <line x1=\"131\" y1=\"108\" x2=\"131\" y2=\"124\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <polyline points=\"131,116 155,116 160,110 166,122 172,110 178,122 184,110 190,122 195,116 235,116\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <text x=\"170\" y=\"106\" font-size=\"10\">R</text>\n    <text x=\"242\" y=\"120\">+2 V</text>\n    <text x=\"12\" y=\"165\">d) −3 V</text>\n    <line x1=\"65\" y1=\"161\" x2=\"115\" y2=\"161\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <polygon points=\"115,153 115,169 131,161\" fill=\"#f97316\" stroke=\"#c2410c\" stroke-width=\"1.5\"/>\n    <line x1=\"131\" y1=\"153\" x2=\"131\" y2=\"169\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n    <polyline points=\"131,161 155,161 160,155 166,167 172,155 178,167 184,155 190,167 195,161 235,161\" fill=\"none\" stroke=\"#334155\" stroke-width=\"1.8\"/>\n    <text x=\"170\" y=\"151\" font-size=\"10\">R</text>\n    <text x=\"242\" y=\"165\">+5 V</text>\n  </g>\n</svg>",
+    "opts_en": [
+      "a (0 V to −2 V)",
+      "b (−4 V to −3 V)",
+      "c (−2 V to +2 V)",
+      "d (−3 V to +5 V)"
+    ],
+    "opts_ta": [
+      "a (0 V முதல் −2 V)",
+      "b (−4 V முதல் −3 V)",
+      "c (−2 V முதல் +2 V)",
+      "d (−3 V முதல் +5 V)"
+    ],
+    "ans": 0,
+    "exp_en": "In (a), anode (0 V) is at higher potential than cathode (−2 V).",
+    "exp_ta": "(a)-இல் p-பகுதி (0 V) n-பகுதியை (−2 V) விட உயர் மின்னழுத்தத்தில் உள்ளதால் முன்னோக்குச் சார்பாகும்."
+  },
+  {
+    "id": "u10_bb_12",
+    "unit": 10,
+    "type": "back",
+    "qno": 12,
+    "q_en": "The given electrical network is equivalent to (NEET)",
+    "q_ta": "பின்வரும் மின்சுற்று எந்த லாஜிக் கேட்டிற்குச் சமமானது? (NEET)",
+    "svg": "<svg viewBox=\"0 0 360 90\" class=\"w-full max-w-sm mx-auto my-2 bg-slate-50 rounded-lg border border-slate-200 p-2\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\">\n    <line x1=\"25\" y1=\"30\" x2=\"62\" y2=\"30\"/>\n    <line x1=\"25\" y1=\"56\" x2=\"62\" y2=\"56\"/>\n    <path d=\"M55,20 Q70,43 55,66 Q90,66 108,43 Q90,20 55,20 Z\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <circle cx=\"113\" cy=\"43\" r=\"4\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <line x1=\"117\" y1=\"43\" x2=\"138\" y2=\"43\"/>\n    <line x1=\"138\" y1=\"30\" x2=\"138\" y2=\"56\"/>\n    <line x1=\"138\" y1=\"30\" x2=\"162\" y2=\"30\"/>\n    <line x1=\"138\" y1=\"56\" x2=\"162\" y2=\"56\"/>\n    <path d=\"M155,20 Q170,43 155,66 Q190,66 208,43 Q190,20 155,20 Z\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <circle cx=\"213\" cy=\"43\" r=\"4\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <line x1=\"217\" y1=\"43\" x2=\"255\" y2=\"43\"/>\n    <polygon points=\"255,24 255,62 290,43\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <circle cx=\"295\" cy=\"43\" r=\"4\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <line x1=\"299\" y1=\"43\" x2=\"330\" y2=\"43\"/>\n  </g>\n  <g font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">\n    <text x=\"10\" y=\"34\">A</text>\n    <text x=\"10\" y=\"60\">B</text>\n    <text x=\"334\" y=\"47\">Y</text>\n  </g>\n</svg>",
+    "opts_en": [
+      "AND gate",
+      "OR gate",
+      "NOR gate",
+      "NOT gate"
+    ],
+    "opts_ta": [
+      "AND கேட்",
+      "OR கேட்",
+      "NOR கேட்",
+      "NOT கேட்"
+    ],
+    "ans": 2,
+    "exp_en": "The network simplifies to Y = (A+B)̄, which is a NOR gate.",
+    "exp_ta": "இம்மின்சுற்று NOR கேட்டிற்குச் சமமானது."
+  },
+  {
+    "id": "u10_bb_13",
+    "unit": 10,
+    "type": "back",
+    "qno": 13,
+    "q_en": "The output of the following circuit is 1 when the input ABC is (NEET)",
+    "q_ta": "பின்வரும் மின்சுற்றின் வெளியீடு 1 ஆக இருக்கும்போது, உள்ளீடு ABC ஆனது (NEET)",
+    "svg": "<svg viewBox=\"0 0 320 110\" class=\"w-full max-w-xs mx-auto my-2 bg-slate-50 rounded-lg border border-slate-200 p-2\" xmlns=\"http://www.w3.org/2000/svg\">\n  <g stroke=\"#334155\" stroke-width=\"1.6\" fill=\"none\">\n    <line x1=\"35\" y1=\"25\" x2=\"75\" y2=\"25\"/>\n    <line x1=\"35\" y1=\"47\" x2=\"75\" y2=\"47\"/>\n    <path d=\"M68,15 Q82,36 68,57 Q102,57 120,36 Q102,15 68,15 Z\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <polyline points=\"120,36 155,36 155,55 185,55\"/>\n    <line x1=\"35\" y1=\"77\" x2=\"185\" y2=\"77\"/>\n    <path d=\"M185,44 L210,44 A22,22 0 0,1 210,88 L185,88 Z\" fill=\"#fde68a\" stroke=\"#d97706\"/>\n    <line x1=\"232\" y1=\"66\" x2=\"275\" y2=\"66\"/>\n  </g>\n  <g font-family=\"sans-serif\" font-size=\"11\" font-weight=\"bold\" fill=\"#0f172a\">\n    <text x=\"18\" y=\"29\">A</text>\n    <text x=\"18\" y=\"51\">B</text>\n    <text x=\"18\" y=\"81\">C</text>\n    <text x=\"280\" y=\"70\">Y</text>\n  </g>\n</svg>",
+    "opts_en": [
+      "101",
+      "100",
+      "110",
+      "010"
+    ],
+    "opts_ta": [
+      "101",
+      "100",
+      "110",
+      "010"
+    ],
+    "ans": 0,
+    "exp_en": "Y = (A + B) · C; for ABC = 101, Y = (1 + 0) · 1 = 1.",
+    "exp_ta": "Y = (A + B) · C; ABC = 101 எனில் Y = 1."
+  },
+  {
+    "id": "u10_bb_14",
+    "unit": 10,
+    "type": "back",
+    "qno": 14,
+    "q_en": "The variation of frequency of carrier wave with respect to the amplitude of the modulating signal is called",
+    "q_ta": "பண்பேற்றும் சைகையின் கணநேர வீச்சிற்கு ஏற்ப ஊர்தி அலையின் அதிர்வெண் மாற்றப்படுவது __________ எனப்படும்.",
+    "opts_en": [
+      "Amplitude modulation",
+      "Frequency modulation",
+      "Phase modulation",
+      "Pulse width modulation"
+    ],
+    "opts_ta": [
+      "வீச்சுப் பண்பேற்றம்",
+      "அதிர்வெண் பண்பேற்றம்",
+      "கட்டப் பண்பேற்றம்",
+      "துடிப்பு அகல பண்பேற்றம்"
+    ],
+    "ans": 1,
+    "exp_en": "Varying carrier frequency with modulating signal amplitude is Frequency Modulation (FM).",
+    "exp_ta": "ஊர்தி அலையின் அதிர்வெண் மாற்றப்படுவது அதிர்வெண் பண்பேற்றம் (FM) எனப்படும்."
+  },
+  {
+    "id": "u10_bb_15",
+    "unit": 10,
+    "type": "back",
+    "qno": 15,
+    "q_en": "The frequency range of 3 MHz to 30 MHz is used for",
+    "q_ta": "3 MHz முதல் 30 MHz வரையிலான அதிர்வெண் நெடுக்கம் பயன்படுவது",
+    "opts_en": [
+      "Ground wave propagation",
+      "Space wave propagation",
+      "Sky wave propagation",
+      "Satellite communication"
+    ],
+    "opts_ta": [
+      "தரை அலைப் பரவல்",
+      "வெளி அலைப் பரவல்",
+      "வான் அலைப் பரவல்",
+      "செயற்கைக்கோள் தகவல்தொடர்பு"
+    ],
+    "ans": 2,
+    "exp_en": "3 MHz to 30 MHz is used for sky wave propagation.",
+    "exp_ta": "3 MHz முதல் 30 MHz வரை வான் அலைப் பரவலுக்குப் பயன்படுகிறது."
+  },
+  {
+    "id": "u10_in_1",
+    "unit": 10,
+    "type": "inside",
+    "qno": 1,
+    "q_en": "At room temperature, the forbidden energy gap (E_g) for Germanium (Ge) and Silicon (Si) are respectively,",
+    "q_ta": "அறை வெப்பநிலையில் ஜெர்மானியம் (Ge) மற்றும் சிலிக்கான் (Si) ஆகியவற்றின் விலக்கப்பட்ட ஆற்றல் இடைவெளி (E_g) மதிப்புகள் முறையே,",
+    "opts_en": [
+      "0.7 eV and 1.1 eV",
+      "1.1 eV and 0.7 eV",
+      "0.3 eV and 0.7 eV",
+      "3.0 eV and 6.0 eV"
+    ],
+    "opts_ta": [
+      "0.7 eV மற்றும் 1.1 eV",
+      "1.1 eV மற்றும் 0.7 eV",
+      "0.3 eV மற்றும் 0.7 eV",
+      "3.0 eV மற்றும் 6.0 eV"
+    ],
+    "ans": 0,
+    "exp_en": "E_g is 0.7 eV for Ge and 1.1 eV for Si.",
+    "exp_ta": "ஜெர்மானியத்திற்கு 0.7 eV மற்றும் சிலிக்கானுக்கு 1.1 eV."
+  },
+  {
+    "id": "u10_in_2",
+    "unit": 10,
+    "type": "inside",
+    "qno": 2,
+    "q_en": "The temperature coefficient of resistance of a semiconductor is,",
+    "q_ta": "குறைக்கடத்தியின் வெப்பநிலை மின்தடை எண் எத்தகைய குறியுடையது?",
+    "opts_en": [
+      "positive",
+      "negative",
+      "zero",
+      "infinite"
+    ],
+    "opts_ta": [
+      "நேர்க்குறி",
+      "எதிர்க்குறி",
+      "சுழி",
+      "ஈறிலி"
+    ],
+    "ans": 1,
+    "exp_en": "Semiconductors have a negative temperature coefficient of resistance.",
+    "exp_ta": "குறைக்கடத்தியின் வெப்பநிலை மின்தடை எண் எதிர்க்குறி உடையது."
+  },
+  {
+    "id": "u10_in_3",
+    "unit": 10,
+    "type": "inside",
+    "qno": 3,
+    "q_en": "What is the maximum efficiency of a half-wave rectifier and a full-wave rectifier respectively?",
+    "q_ta": "அரை அலைதிருத்தி மற்றும் முழு அலைதிருத்தி ஆகியவற்றின் பெருமத் பயனுறுதிறன் (Efficiency η) முறையே,",
+    "opts_en": [
+      "40.6% and 81.2%",
+      "81.2% and 40.6%",
+      "50% and 100%",
+      "25.4% and 50.8%"
+    ],
+    "opts_ta": [
+      "40.6% மற்றும் 81.2%",
+      "81.2% மற்றும் 40.6%",
+      "50% மற்றும் 100%",
+      "25.4% மற்றும் 50.8%"
+    ],
+    "ans": 0,
+    "exp_en": "Max efficiency is 40.6% for half-wave and 81.2% for full-wave rectifier.",
+    "exp_ta": "அரை அலைதிருத்திக்கு 40.6% மற்றும் முழு அலைதிருத்திக்கு 81.2%."
+  },
+  {
+    "id": "u10_in_4",
+    "unit": 10,
+    "type": "inside",
+    "qno": 4,
+    "q_en": "A photodiode is always operated under,",
+    "q_ta": "ஒளி டையோடு (Photodiode) எப்போதும் எந்தச் சார்பில் செயல்படுத்தப்படுகிறது?",
+    "opts_en": [
+      "forward bias",
+      "reverse bias",
+      "zero bias",
+      "above breakdown voltage"
+    ],
+    "opts_ta": [
+      "முன்னோக்குச் சார்பு",
+      "பின்னோக்குச் சார்பு",
+      "சார்பற்ற நிலை",
+      "முறிவு மின்னழுத்தத்திற்கு மேல்"
+    ],
+    "ans": 1,
+    "exp_en": "A photodiode operates under reverse bias.",
+    "exp_ta": "ஒளி டையோடு பின்னோக்குச் சார்பில் செயல்படுத்தப்படுகிறது."
+  },
+  {
+    "id": "u10_in_5",
+    "unit": 10,
+    "type": "inside",
+    "qno": 5,
+    "q_en": "In a Bipolar Junction Transistor (BJT), the relation between emitter current (I_E), base current (I_B), and collector current (I_C) is,",
+    "q_ta": "இருமுனை சந்தி டிரான்சிஸ்டரில் உமிழ்ப்பான் மின்னோட்டம் (I_E), அடிவாய் மின்னோட்டம் (I_B) மற்றும் ஏற்பான் மின்னோட்டம் (I_C) இடையேயான தொடர்பு,",
+    "opts_en": [
+      "I_C = I_E + I_B",
+      "I_E = I_B + I_C",
+      "I_B = I_E + I_C",
+      "I_E = I_C − I_B"
+    ],
+    "opts_ta": [
+      "I_C = I_E + I_B",
+      "I_E = I_B + I_C",
+      "I_B = I_E + I_C",
+      "I_E = I_C − I_B"
+    ],
+    "ans": 1,
+    "exp_en": "I_E = I_B + I_C.",
+    "exp_ta": "I_E = I_B + I_C."
+  },
+  {
+    "id": "u10_in_6",
+    "unit": 10,
+    "type": "inside",
+    "qno": 6,
+    "q_en": "The relationship between current gain in common base configuration (α) and current gain in common emitter configuration (β) is,",
+    "q_ta": "டிரான்சிஸ்டரின் பொது அடிவாய் மின்னோட்டப் பெருக்கம் (α) மற்றும் பொது உமிழ்ப்பான் மின்னோட்டப் பெருக்கம் (β) இடையேயான தொடர்பு,",
+    "opts_en": [
+      "β = α / (1 − α)",
+      "β = α / (1 + α)",
+      "β = (1 − α) / α",
+      "α = β / (1 − β)"
+    ],
+    "opts_ta": [
+      "β = α / (1 − α)",
+      "β = α / (1 + α)",
+      "β = (1 − α) / α",
+      "α = β / (1 − β)"
+    ],
+    "ans": 0,
+    "exp_en": "β = α / (1 − α).",
+    "exp_ta": "β = α / (1 − α)."
+  },
+  {
+    "id": "u10_in_7",
+    "unit": 10,
+    "type": "inside",
+    "qno": 7,
+    "q_en": "In a single-stage Common Emitter (CE) transistor amplifier, the phase difference between the input signal voltage and the output signal voltage is,",
+    "q_ta": "பொது உமிழ்ப்பான் (CE) டிரான்சிஸ்டர் பெருக்கியில், உள்ளீட்டுச் சைகைக்கும் பெருக்கப்பட்ட வெளியீட்டுச் சைகைக்கும் இடையேயான கட்ட வேறுபாடு,",
+    "opts_en": [
+      "0°",
+      "90°",
+      "180° (π rad)",
+      "270°"
+    ],
+    "opts_ta": [
+      "0°",
+      "90°",
+      "180° (π rad)",
+      "270°"
+    ],
+    "ans": 2,
+    "exp_en": "CE amplifier produces a 180° phase shift between input and output.",
+    "exp_ta": "பொது உமிழ்ப்பான் பெருக்கியில் 180° கட்ட வேறுபாடு ஏற்படும்."
+  },
+  {
+    "id": "u10_in_8",
+    "unit": 10,
+    "type": "inside",
+    "qno": 8,
+    "q_en": "Which logic gates are called 'Universal Gates' because any Boolean function can be realized using them alone?",
+    "q_ta": "எந்த லாஜிக் கேட்டுகள் 'பொது கேட்டுகள்' (Universal Gates) என அழைக்கப்படுகின்றன?",
+    "opts_en": [
+      "AND and OR",
+      "NAND and NOR",
+      "XOR and NOT",
+      "OR and NOT"
+    ],
+    "opts_ta": [
+      "AND மற்றும் OR",
+      "NAND மற்றும் NOR",
+      "XOR மற்றும் NOT",
+      "OR மற்றும் NOT"
+    ],
+    "ans": 1,
+    "exp_en": "NAND and NOR gates are called Universal Gates.",
+    "exp_ta": "NAND மற்றும் NOR கேட்டுகள் பொது கேட்டுகள் எனப்படுகின்றன."
+  },
+  {
+    "id": "u10_in_9",
+    "unit": 10,
+    "type": "inside",
+    "qno": 9,
+    "q_en": "According to De Morgan's first and second theorems,",
+    "q_ta": "டீ மார்கனின் முதல் மற்றும் இரண்டாவது தேற்றங்களுக்கான பூலியன் சமன்பாடுகள் முறையே,",
+    "opts_en": [
+      "(A + B)̄ = Ā · B̄ and (A · B)̄ = Ā + B̄",
+      "(A + B)̄ = Ā + B̄ and (A · B)̄ = Ā · B̄",
+      "A + Ā = 1 and A · Ā = 0",
+      "A + AB = A and A(A + B) = A"
+    ],
+    "opts_ta": [
+      "(A + B)̄ = Ā · B̄ மற்றும் (A · B)̄ = Ā + B̄",
+      "(A + B)̄ = Ā + B̄ மற்றும் (A · B)̄ = Ā · B̄",
+      "A + Ā = 1 மற்றும் A · Ā = 0",
+      "A + AB = A மற்றும் A(A + B) = A"
+    ],
+    "ans": 0,
+    "exp_en": "De Morgan's Theorems: (A+B)̄ = Ā·B̄ and (A·B)̄ = Ā+B̄.",
+    "exp_ta": "(A + B)̄ = Ā · B̄ மற்றும் (A · B)̄ = Ā + B̄."
+  },
+  {
+    "id": "u10_in_10",
+    "unit": 10,
+    "type": "inside",
+    "qno": 10,
+    "q_en": "The Boolean expression for an Exclusive-OR (EX-OR) gate with inputs A and B is,",
+    "q_ta": "A மற்றும் B உள்ளீடுகள் கொண்ட EX-OR கேட்டிற்கான பூலியன் சமன்பாடு யாது?",
+    "opts_en": [
+      "Y = A · B + Ā · B̄",
+      "Y = Ā · B + A · B̄ (or A ⊕ B)",
+      "Y = (A + B)̄",
+      "Y = (A · B)̄"
+    ],
+    "opts_ta": [
+      "Y = A · B + Ā · B̄",
+      "Y = Ā · B + A · B̄ (அல்லது A ⊕ B)",
+      "Y = (A + B)̄",
+      "Y = (A · B)̄"
+    ],
+    "ans": 1,
+    "exp_en": "EX-OR gate: Y = A ⊕ B = ĀB + AB̄.",
+    "exp_ta": "EX-OR சமன்பாடு: Y = ĀB + AB̄."
+  },
+  {
+    "id": "u10_in_11",
+    "unit": 10,
+    "type": "inside",
+    "qno": 11,
+    "q_en": "In a transistor, how do the size and doping levels of the Base region compare?",
+    "q_ta": "ஒரு டிரான்சிஸ்டரில் அடிவாய் (Base) பகுதியின் தடிமன் மற்றும் மாசூட்டல் அளவு எவ்வாறு இருக்கும்?",
+    "opts_en": [
+      "Very thick and heavily doped",
+      "Very thin and lightly doped",
+      "Moderately thick and heavily doped",
+      "Largest in size and moderately doped"
+    ],
+    "opts_ta": [
+      "மிகத் தடிமனானது மற்றும் அதிக மாசூட்டப்பட்டது",
+      "மிக மெல்லியது மற்றும் குறைவாக மாசூட்டப்பட்டது",
+      "மிதமான தடிமன் மற்றும் அதிக மாசூட்டப்பட்டது",
+      "அளவில் பெரியது மற்றும் மிதமாக மாசூட்டப்பட்டது"
+    ],
+    "ans": 1,
+    "exp_en": "The Base region is very thin and lightly doped.",
+    "exp_ta": "அடிவாய் (Base) மிக மெல்லியதாகவும் குறைவாக மாசூட்டப்பட்டதாகவும் இருக்கும்."
+  },
+  {
+    "id": "u10_in_12",
+    "unit": 10,
+    "type": "inside",
+    "qno": 12,
+    "q_en": "The shortest distance between the transmitter and the point on Earth's surface where the sky wave is first received is called,",
+    "q_ta": "வான் அலைப் பரவலில் பரப்பும் விண்ணலைக் கம்பியிலிருந்து வான் அலை பூமியை வந்தடையும் மிகக் குறைந்த தொலைவு எவ்வாறு அழைக்கப்படுகிறது?",
+    "opts_en": [
+      "Line of sight distance",
+      "Skip distance",
+      "Fresnel distance",
+      "Stopping distance"
+    ],
+    "opts_ta": [
+      "நேர்க்கோட்டுப் பார்வைத் தொலைவு",
+      "தாவு தொலைவு (Skip distance)",
+      "பிரெனெல் தொலைவு",
+      "நிறுத்துத் தொலைவு"
+    ],
+    "ans": 1,
+    "exp_en": "It is called Skip distance.",
+    "exp_ta": "இது தாவு தொலைவு (Skip distance) எனப்படும்."
+  },
+  {
+    "id": "u10_in_13",
+    "unit": 10,
+    "type": "inside",
+    "qno": 13,
+    "q_en": "If two towers of heights h_T and h_R are used for space wave (line-of-sight) communication, the maximum line-of-sight distance d_M between them (with Earth radius R) is,",
+    "q_ta": "h_T மற்றும் h_R உயரம் கொண்ட இரு விண்ணலைக் கம்பிகளுக்கு இடையே வெளி அலைப் பரவலுக்கான பெருமத் தொலைவு (d_M) சமன்பாடு (புவியின் ஆரம் R),",
+    "opts_en": [
+      "√(2Rh_T) + √(2Rh_R)",
+      "√(Rh_T) + √(Rh_R)",
+      "2R(h_T + h_R)",
+      "√(2R(h_T + h_R))"
+    ],
+    "opts_ta": [
+      "√(2Rh_T) + √(2Rh_R)",
+      "√(Rh_T) + √(Rh_R)",
+      "2R(h_T + h_R)",
+      "√(2R(h_T + h_R))"
+    ],
+    "ans": 0,
+    "exp_en": "d_M = √(2Rh_T) + √(2Rh_R).",
+    "exp_ta": "d_M = √(2Rh_T) + √(2Rh_R)."
+  },
+  {
+    "id": "u10_in_14",
+    "unit": 10,
+    "type": "inside",
+    "qno": 14,
+    "q_en": "What does the acronym RADAR stand for?",
+    "q_ta": "RADAR என்ற சொற்றொடரின் விரிவாக்கம் என்ன?",
+    "opts_en": [
+      "Radio Detection and Ranging",
+      "Radiation Direction and Reflection",
+      "Radio Demodulation and Amplification Receiver",
+      "Rapid Detection and Ranging"
+    ],
+    "opts_ta": [
+      "Radio Detection and Ranging (ரேடியோ கண்டறிதல் மற்றும் தொலைவு அளவிடுதல்)",
+      "Radiation Direction and Reflection",
+      "Radio Demodulation and Amplification Receiver",
+      "Rapid Detection and Ranging"
+    ],
+    "ans": 0,
+    "exp_en": "RADAR stands for Radio Detection and Ranging.",
+    "exp_ta": "RADAR என்பது Radio Detection and Ranging ஆகும்."
+  },
+  {
+    "id": "u10_in_15",
+    "unit": 10,
+    "type": "inside",
+    "qno": 15,
+    "q_en": "A device that converts variations in a physical quantity (such as sound, pressure, or temperature) into an equivalent electrical signal is called a,",
+    "q_ta": "ஒலி, அழுத்தம் அல்லது வெப்பநிலை போன்ற இயற்பியல் அளவுகளின் மாறுபாடுகளை அதற்குச் சமமான மின் சைகைகளாக மாற்றும் சாதனம் எது?",
+    "opts_en": [
+      "Modulator",
+      "Transducer",
+      "Attenuator",
+      "Repeater"
+    ],
+    "opts_ta": [
+      "பண்பேற்றி (Modulator)",
+      "திறன் மாற்றி (Transducer)",
+      "வலுகுறைப்பி (Attenuator)",
+      "மறுஒலிபரப்பி (Repeater)"
+    ],
+    "ans": 1,
+    "exp_en": "A transducer converts physical variations into electrical signals.",
+    "exp_ta": "திறன் மாற்றி (Transducer) ஒரு வடிவ ஆற்றலை மின் சைகையாக மாற்றுகிறது."
+  },
+  {
+    "id": "u11_bb_1",
+    "unit": 11,
+    "type": "back",
+    "qno": 1,
+    "q_en": "The particle size of ZnO material is 30 nm. Based on the dimension it is classified as",
+    "q_ta": "ZnO பொருளின் துகள் அளவு 30 nm. இந்த பரிமாணத்தின் அடிப்படையில் அது எவ்வாறு வகைப்படுத்தப்படுகிறது?",
+    "opts_en": [
+      "Bulk material",
+      "Nanomaterial",
+      "Soft material",
+      "Magnetic material"
+    ],
+    "opts_ta": [
+      "பேரளவு பொருள்",
+      "நானோ பொருள்",
+      "மென்மையான பொருள்",
+      "காந்தப்பொருள்"
+    ],
+    "ans": 1,
+    "exp_en": "Particles sized between 1 nm and 100 nm are classified as nanomaterials.",
+    "exp_ta": "1 nm முதல் 100 nm வரையிலான துகள்கள் நானோ பொருள்கள் எனப்படும்."
+  },
+  {
+    "id": "u11_bb_2",
+    "unit": 11,
+    "type": "back",
+    "qno": 2,
+    "q_en": "Which one of the following is the natural nanomaterial?",
+    "q_ta": "கீழ்க்கண்டவற்றுள் இயற்கையான நானோ பொருள் எது?",
+    "opts_en": [
+      "Peacock feather",
+      "Peacock beak",
+      "Grain of sand",
+      "Skin of the Whale"
+    ],
+    "opts_ta": [
+      "மயிலிறகு",
+      "மயில் அலகு",
+      "மணல் துகள்",
+      "திமிங்கலத்தின் தோல்"
+    ],
+    "ans": 0,
+    "exp_en": "Peacock feather is a natural nanomaterial.",
+    "exp_ta": "மயிலிறகு இயற்கையான நானோ பொருளாகும்."
+  },
+  {
+    "id": "u11_bb_3",
+    "unit": 11,
+    "type": "back",
+    "qno": 3,
+    "q_en": "The blue print for making ultra durable synthetic material is mimicked from",
+    "q_ta": "மிகவும் நிலைத்த தன்மை கொண்ட செயற்கைப் பொருள் உருவாக்குவதற்கான திட்ட வரையறை எதனைப் பின்பற்றியது?",
+    "opts_en": [
+      "Lotus leaf",
+      "Morpho butterfly",
+      "Parrot fish",
+      "Peacock feather"
+    ],
+    "opts_ta": [
+      "தாமரை இலை",
+      "மார்ஃபோ பட்டாம்பூச்சி",
+      "கிளிமீன்",
+      "மயிலிறகு"
+    ],
+    "ans": 2,
+    "exp_en": "Ultra-durable synthetic material is mimicked from Parrot fish teeth.",
+    "exp_ta": "கிளிமீன் (Parrot fish) பற்களின் அமைப்பைப் பின்பற்றியது."
+  },
+  {
+    "id": "u11_bb_4",
+    "unit": 11,
+    "type": "back",
+    "qno": 4,
+    "q_en": "The method of making nanomaterial by assembling the atoms is called",
+    "q_ta": "அணுக்களை ஒன்றுதிரட்டி நானோ பொருளை உருவாக்கும் முறை அழைக்கப்படுவது",
+    "opts_en": [
+      "Top down approach",
+      "Bottom up approach",
+      "Cross down approach",
+      "Diagonal approach"
+    ],
+    "opts_ta": [
+      "மேலிருந்து–கீழ் அணுகுமுறை",
+      "கீழிலிருந்து–மேல் அணுகுமுறை",
+      "குறுக்கு கீழ் அணுகுமுறை",
+      "மூலை விட்ட அணுகுமுறை"
+    ],
+    "ans": 1,
+    "exp_en": "Assembling atoms together is the Bottom-up approach.",
+    "exp_ta": "அணுக்களை ஒன்றுதிரட்டும் முறை கீழிலிருந்து–மேல் அணுகுமுறை எனப்படும்."
+  },
+  {
+    "id": "u11_bb_5",
+    "unit": 11,
+    "type": "back",
+    "qno": 5,
+    "q_en": "“Ski wax” is an application of nano product in the field of",
+    "q_ta": "‘ஸ்கி மெழுகு’ (Ski wax) என்பது நானோ பொருளின் பயன்பாடு ஆகும். அது பயன்படும் துறை",
+    "opts_en": [
+      "Medicine",
+      "Textile",
+      "Sports",
+      "Automotive industry"
+    ],
+    "opts_ta": [
+      "மருத்துவம்",
+      "ஜவுளி",
+      "விளையாட்டு",
+      "வாகன தொழிற்சாலை"
+    ],
+    "ans": 2,
+    "exp_en": "Ski wax is a nano product in Sports.",
+    "exp_ta": "‘ஸ்கி மெழுகு’ விளையாட்டுத் துறையில் பயன்படுகிறது."
+  },
+  {
+    "id": "u11_bb_6",
+    "unit": 11,
+    "type": "back",
+    "qno": 6,
+    "q_en": "The materials used in Robotics are",
+    "q_ta": "எந்திரனியல் துறையில் பயன்படுத்தப்படும் பொருள்கள்",
+    "opts_en": [
+      "Aluminium and silver",
+      "Silver and gold",
+      "Copper and gold",
+      "Steel and aluminum"
+    ],
+    "opts_ta": [
+      "அலுமினியம் மற்றும் வெள்ளி",
+      "வெள்ளி மற்றும் தங்கம்",
+      "தாமிரம் மற்றும் தங்கம்",
+      "எஃகு மற்றும் அலுமினியம்"
+    ],
+    "ans": 3,
+    "exp_en": "Steel and aluminium are primarily used in Robotics.",
+    "exp_ta": "எந்திரனியல் துறையில் எஃகு மற்றும் அலுமினியம் பயன்படுகின்றன."
+  },
+  {
+    "id": "u11_bb_7",
+    "unit": 11,
+    "type": "back",
+    "qno": 7,
+    "q_en": "The alloys used for muscle wires in Robots are",
+    "q_ta": "ரோபோக்களில் தசைக்கம்பிகள் உருவாக்க பயன்படும் உலோகக்கலவைகள்",
+    "opts_en": [
+      "Shape memory alloys",
+      "Gold copper alloys",
+      "Gold silver alloys",
+      "Two dimensional alloys"
+    ],
+    "opts_ta": [
+      "வடிவ நினைவு உலோகக்கலவைகள்",
+      "தங்கம் தாமிர உலோகக் கலவைகள்",
+      "தங்கம் வெள்ளி உலோகக் கலவைகள்",
+      "இரு பரிமாண உலோகக்கலவைகள்"
+    ],
+    "ans": 0,
+    "exp_en": "Shape memory alloys (Nitinol) are used for muscle wires in robots.",
+    "exp_ta": "வடிவ நினைவு உலோகக்கலவைகள் தசைக்கம்பிகள் உருவாக்கப் பயன்படுகின்றன."
+  },
+  {
+    "id": "u11_bb_8",
+    "unit": 11,
+    "type": "back",
+    "qno": 8,
+    "q_en": "The technology used for stopping the brain from processing pain is",
+    "q_ta": "மூளையானது வலியைச் செயலாக்குவதை நிறுத்த பயன்படுத்தப்படும் தொழில்நுட்பம்",
+    "opts_en": [
+      "Precision medicine",
+      "Wireless brain sensor",
+      "Virtual reality",
+      "Radiology"
+    ],
+    "opts_ta": [
+      "துல்லிய மருத்துவம்",
+      "கம்பியில்லா மூளை உணர்வி",
+      "மெய்நிகர் உண்மை",
+      "கதிரியக்கவியல்"
+    ],
+    "ans": 2,
+    "exp_en": "Virtual reality (VR) is used to stop the brain from processing pain.",
+    "exp_ta": "மெய்நிகர் உண்மை (Virtual reality) தொழில்நுட்பம் பயன்படுகிறது."
+  },
+  {
+    "id": "u11_bb_9",
+    "unit": 11,
+    "type": "back",
+    "qno": 9,
+    "q_en": "The particle which gives mass to protons and neutrons are",
+    "q_ta": "புரோட்டான்கள் மற்றும் நியூட்ரான்களுக்கு நிறையை அளிக்கும் துகள்",
+    "opts_en": [
+      "Higgs particle",
+      "Einstein particle",
+      "Nanoparticle",
+      "Bulk particle"
+    ],
+    "opts_ta": [
+      "ஹிக்ஸ் துகள்",
+      "ஐன்ஸ்டீன் துகள்",
+      "நானோ துகள்",
+      "பேரளவு துகள்"
+    ],
+    "ans": 0,
+    "exp_en": "The Higgs particle gives mass to protons and neutrons.",
+    "exp_ta": "ஹிக்ஸ் துகள் புரோட்டான்கள் மற்றும் நியூட்ரான்களுக்கு நிறையை அளிக்கிறது."
+  },
+  {
+    "id": "u11_bb_10",
+    "unit": 11,
+    "type": "back",
+    "qno": 10,
+    "q_en": "The gravitational waves were theoretically proposed by",
+    "q_ta": "ஈர்ப்பு அலைகளை கருத்தியலாக முன்மொழிந்தவர்",
+    "opts_en": [
+      "Conrad Rontgen",
+      "Marie Curie",
+      "Albert Einstein",
+      "Edward Purcell"
+    ],
+    "opts_ta": [
+      "கான்ராட் ரோன்ட்ஜென்",
+      "மேரி கியூரி",
+      "ஆல்பர்ட் ஐன்ஸ்டீன்",
+      "எட்வார்டு பர்செல்"
+    ],
+    "ans": 2,
+    "exp_en": "Albert Einstein theoretically proposed gravitational waves.",
+    "exp_ta": "ஆல்பர்ட் ஐன்ஸ்டீன் ஈர்ப்பு அலைகளைக் கருத்தியலாக முன்மொழிந்தார்."
+  },
+  {
+    "id": "u11_in_1",
+    "unit": 11,
+    "type": "inside",
+    "qno": 1,
+    "q_en": "1 nanometre (1 nm) is equal to,",
+    "q_ta": "1 நானோமீட்டர் (1 nm) என்பது எத்தனை மீட்டருக்குச் சமம்?",
+    "opts_en": [
+      "10⁻⁶ m",
+      "10⁻⁹ m",
+      "10⁻¹⁰ m",
+      "10⁻¹² m"
+    ],
+    "opts_ta": [
+      "10⁻⁶ m",
+      "10⁻⁹ m",
+      "10⁻¹⁰ m",
+      "10⁻¹² m"
+    ],
+    "ans": 1,
+    "exp_en": "1 nm = 10⁻⁹ m.",
+    "exp_ta": "1 nm = 10⁻⁹ m."
+  },
+  {
+    "id": "u11_in_2",
+    "unit": 11,
+    "type": "inside",
+    "qno": 2,
+    "q_en": "Who gave the famous 1959 lecture 'There's Plenty of Room at the Bottom' that inspired modern nanotechnology?",
+    "q_ta": "நவீன நானோ தொழில்நுட்பத்திற்கு வித்திட்ட 'கீழே நிறைய இடமிருக்கிறது' (There's Plenty of Room at the Bottom - 1959) என்ற புகழ்பெற்ற உரையை நிகழ்த்தியவர் யார்?",
+    "opts_en": [
+      "Norio Taniguchi",
+      "Richard Feynman",
+      "Eric Drexler",
+      "Gerd Binnig"
+    ],
+    "opts_ta": [
+      "நோரியோ டானிகுச்சி",
+      "ரிச்சர்ட் ஃபெய்ன்மேன் (Richard Feynman)",
+      "எரிக் டிரெக்ஸ்லர்",
+      "கெர்ட் பின்னிக்"
+    ],
+    "ans": 1,
+    "exp_en": "Richard Feynman delivered that famous lecture in 1959.",
+    "exp_ta": "1959-இல் ரிச்சர்ட் ஃபெய்ன்மேன் இப்புகழ்பெற்ற உரையை நிகழ்த்தினார்."
+  },
+  {
+    "id": "u11_in_3",
+    "unit": 11,
+    "type": "inside",
+    "qno": 3,
+    "q_en": "Who coined the term 'Nanotechnology' in 1974?",
+    "q_ta": "1974-ஆம் ஆண்டு 'நானோ தொழில்நுட்பம்' (Nanotechnology) என்ற சொல்லை முதன்முதலில் உருவாக்கியவர் யார்?",
+    "opts_en": [
+      "Richard Feynman",
+      "Norio Taniguchi",
+      "Heinrich Rohrer",
+      "Sumio Iijima"
+    ],
+    "opts_ta": [
+      "ரிச்சர்ட் ஃபெய்ன்மேன்",
+      "நோரியோ டானிகுச்சி (Norio Taniguchi)",
+      "ஹென்றிச் ரோரர்",
+      "சுமியோ இஜிமா"
+    ],
+    "ans": 1,
+    "exp_en": "Norio Taniguchi coined the term Nanotechnology in 1974.",
+    "exp_ta": "நோரியோ டானிகுச்சி 1974-இல் இச்சொல்லை அறிமுகப்படுத்தினார்."
+  },
+  {
+    "id": "u11_in_4",
+    "unit": 11,
+    "type": "inside",
+    "qno": 4,
+    "q_en": "The water-repellent (self-cleaning) property of the Lotus leaf is due to,",
+    "q_ta": "தாமரை இலையின் மீது நீர் ஒட்டாமல் உருண்டோடும் (சுய சுத்திகரிப்பு) பண்பிற்குக் காரணம்,",
+    "opts_en": [
+      "magnetic coating on the leaf",
+      "nano-structures on its hydrophobic surface",
+      "high electrical conductivity",
+      "radioactive isotopes"
+    ],
+    "opts_ta": [
+      "இலையின் காந்தப் பூச்சு",
+      "இலையின் மேற்பரப்பிலுள்ள நானோ கட்டமைப்புகள்",
+      "அதிக மின்கடத்துத்திறன்",
+      "கதிரியக்க ஐசோடோப்புகள்"
+    ],
+    "ans": 1,
+    "exp_en": "Nano-structures on the lotus leaf surface give it self-cleaning hydrophobic properties.",
+    "exp_ta": "தாமரை இலையின் மேற்பரப்பிலுள்ள நானோ கட்டமைப்புகளே இதற்குக் காரணம்."
+  },
+  {
+    "id": "u11_in_5",
+    "unit": 11,
+    "type": "inside",
+    "qno": 5,
+    "q_en": "Which of the following is an example of the 'Top-down approach' to synthesize nanomaterials?",
+    "q_ta": "நானோ பொருள்களை உருவாக்கும் 'மேலிருந்து–கீழ் அணுகுமுறைக்கு' (Top-down approach) எடுத்துக்காட்டு எது?",
+    "opts_en": [
+      "Ball milling and Lithography",
+      "Plasma etching only",
+      "Chemical vapour deposition (CVD)",
+      "Sol-gel molecular assembly"
+    ],
+    "opts_ta": [
+      "பந்து அரைத்தல் (Ball milling) மற்றும் லித்தோகிராபி",
+      "பிளாஸ்மா எட்சிங் மட்டும்",
+      "வேதி ஆவிப் படிவு (CVD)",
+      "சால்-ஜெல் மூலக்கூறு ஒருங்கிணைப்பு"
+    ],
+    "ans": 0,
+    "exp_en": "Ball milling and lithography are Top-down approaches.",
+    "exp_ta": "பந்து அரைத்தல் மற்றும் லித்தோகிராபி மேலிருந்து–கீழ் அணுகுமுறைகளாகும்."
+  },
+  {
+    "id": "u11_in_6",
+    "unit": 11,
+    "type": "inside",
+    "qno": 6,
+    "q_en": "By how much do Muscle Wires (Shape Memory Alloy / Nitinol) typically contract when an electric current is passed through them?",
+    "q_ta": "ரோபோக்களில் பயன்படும் தசைக் கம்பிகளின் (Muscle wires) வழியே மின்னோட்டம் செலுத்தப்படும்போது அவை எத்தனை சதவீதம் சுருங்குகின்றன?",
+    "opts_en": [
+      "5%",
+      "40%",
+      "80%",
+      "95%"
+    ],
+    "opts_ta": [
+      "5%",
+      "40%",
+      "80%",
+      "95%"
+    ],
+    "ans": 0,
+    "exp_en": "Muscle wires contract by 5% when current flows through them.",
+    "exp_ta": "தசைக் கம்பிகள் மின்னோட்டம் பாயும்போது 5% சுருங்குகின்றன."
+  },
+  {
+    "id": "u11_in_7",
+    "unit": 11,
+    "type": "inside",
+    "qno": 7,
+    "q_en": "Which component of a robot acts as its 'brain' to run programs and make decisions?",
+    "q_ta": "ரோபோவின் எந்தப் பாகம் அதன் 'மூளையாக' (Brain) செயல்பட்டு கட்டளைகளை இயக்குகிறது?",
+    "opts_en": [
+      "Actuator",
+      "Controller (Microprocessor / Microcontroller)",
+      "Pneumatic air muscle",
+      "Mechanical gripper"
+    ],
+    "opts_ta": [
+      "செயலி / இயக்கி (Actuator)",
+      "கட்டுப்படுத்தி (Controller / நுண்செயலி)",
+      "காற்றியக்கத் தசை",
+      "இயந்திரப் பிடிப்பான்"
+    ],
+    "ans": 1,
+    "exp_en": "The Controller acts as the brain of the robot.",
+    "exp_ta": "கட்டுப்படுத்தி (Controller) ரோபோவின் மூளையாகச் செயல்படுகிறது."
+  },
+  {
+    "id": "u11_in_8",
+    "unit": 11,
+    "type": "inside",
+    "qno": 8,
+    "q_en": "How many main types of industrial robots are classified based on mechanical configuration (Cartesian, SCARA, Cylindrical, Delta, Polar, Vertically Articulated)?",
+    "q_ta": "தொழிற்சாலை ரோபோக்கள் அவற்றின் இயந்திரக் கட்டமைப்பின் அடிப்படையில் எத்தனை முக்கிய வகைகளாகப் பிரிக்கப்படுகின்றன?",
+    "opts_en": [
+      "Three",
+      "Four",
+      "Six",
+      "Ten"
+    ],
+    "opts_ta": [
+      "மூன்று",
+      "நான்கு",
+      "ஆறு (Six)",
+      "பத்து"
+    ],
+    "ans": 2,
+    "exp_en": "There are six main types of industrial robots.",
+    "exp_ta": "தொழிற்சாலை ரோபோக்கள் 6 முக்கிய வகைகளாகப் பிரிக்கப்படுகின்றன."
+  },
+  {
+    "id": "u11_in_9",
+    "unit": 11,
+    "type": "inside",
+    "qno": 9,
+    "q_en": "Why is steel preferred along with aluminium for building the structural body of robots?",
+    "q_ta": "ரோபோக்களின் உடற்பகுதியை உருவாக்க அலுமினியத்துடன் எஃகு (Steel) ஏன் விரும்பிப் பயன்படுத்தப்படுகிறது?",
+    "opts_en": [
+      "Steel is softer than aluminium",
+      "Steel is several times stronger and durable",
+      "Steel is a semiconductor",
+      "Steel is transparent to X-rays"
+    ],
+    "opts_ta": [
+      "எஃகு அலுமினியத்தை விட மென்மையானது",
+      "எஃகு பல மடங்கு வலிமையானது மற்றும் நீடித்து உழைக்கக்கூடியது",
+      "எஃகு ஒரு குறைக்கடத்தி",
+      "எஃகு X-கதிர்களை ஊடுருவ அனுமதிக்கும்"
+    ],
+    "ans": 1,
+    "exp_en": "Steel is several times stronger than aluminium.",
+    "exp_ta": "எஃகு பல மடங்கு வலிமையானது என்பதால் பயன்படுத்தப்படுகிறது."
+  },
+  {
+    "id": "u11_in_10",
+    "unit": 11,
+    "type": "inside",
+    "qno": 10,
+    "q_en": "In PET (Positron Emission Tomography) medical imaging, positrons emitted by a radioisotope annihilate with electrons to produce,",
+    "q_ta": "மருத்துவத் துறையில் பயன்படும் PET (Positron Emission Tomography) ஸ்கேன் முறையில் பாசிட்ரான்கள் எலக்ட்ரான்களுடன் இணைந்து அழிவடையும்போது உருவாவது,",
+    "opts_en": [
+      "alpha particles",
+      "gamma rays (photons)",
+      "ultrasonic waves",
+      "sound waves"
+    ],
+    "opts_ta": [
+      "ஆல்பா துகள்கள்",
+      "காமா கதிர்கள் (ஃபோட்டான்கள்)",
+      "மீயொலி அலைகள்",
+      "ஒலி அலைகள்"
+    ],
+    "ans": 1,
+    "exp_en": "Positron-electron annihilation produces gamma rays.",
+    "exp_ta": "பாசிட்ரான்–எலக்ட்ரான் அழிவின்போது காமா கதிர்கள் வெளிப்படுகின்றன."
+  },
+  {
+    "id": "u11_in_11",
+    "unit": 11,
+    "type": "inside",
+    "qno": 11,
+    "q_en": "In which year were Gravitational Waves first experimentally detected by the LIGO observatory?",
+    "q_ta": "ஈர்ப்பு அலைகள் (Gravitational waves) LIGO ஆய்வகத்தினால் முதன்முதலில் சோதனை வாயிலாக எந்த ஆண்டு கண்டறியப்பட்டன?",
+    "opts_en": [
+      "1916",
+      "1995",
+      "2015 (Nobel Prize 2017)",
+      "2001"
+    ],
+    "opts_ta": [
+      "1916",
+      "1995",
+      "2015 (நோபல் பரிசு 2017)",
+      "2001"
+    ],
+    "ans": 2,
+    "exp_en": "LIGO detected gravitational waves in 2015 (awarded the 2017 Nobel Prize).",
+    "exp_ta": "2015-இல் LIGO ஆய்வகத்தால் ஈர்ப்பு அலைகள் கண்டறியப்பட்டன."
+  },
+  {
+    "id": "u11_in_12",
+    "unit": 11,
+    "type": "inside",
+    "qno": 12,
+    "q_en": "Which astronomical objects are the strongest sources of gravitational waves in the universe?",
+    "q_ta": "பிரபஞ்சத்தில் அதிக வலிமையுள்ள ஈர்ப்பு அலைகளை வெளியிடும் மிக வலிமையான மூலம் எது?",
+    "opts_en": [
+      "Comets",
+      "Black holes",
+      "Asteroids",
+      "Artificial satellites"
+    ],
+    "opts_ta": [
+      "வால்மீன்கள்",
+      "கருந்துளைகள் (Black holes)",
+      "சிறுகோள்கள்",
+      "செயற்கைக்கோள்கள்"
+    ],
+    "ans": 1,
+    "exp_en": "Black holes are the strongest sources of gravitational waves.",
+    "exp_ta": "கருந்துளைகள் அதிக வலிமையுள்ள ஈர்ப்பு அலைகளை வெளியிடுகின்றன."
+  },
+  {
+    "id": "u11_in_13",
+    "unit": 11,
+    "type": "inside",
+    "qno": 13,
+    "q_en": "The boundary around a black hole beyond which no matter or radiation (not even light) can escape is called the,",
+    "q_ta": "கருந்துளையைச் சுற்றியுள்ள எந்த எல்லைக்கு அப்பால் ஒளியோ அல்லது பருப்பொருளோ தப்பிக்க முடியாதோ, அந்த எல்லை எவ்வாறு அழைக்கப்படுகிறது?",
+    "opts_en": [
+      "Fresnel zone",
+      "Event horizon",
+      "Depletion region",
+      "Snell's window"
+    ],
+    "opts_ta": [
+      "பிரெனெல் மண்டலம்",
+      "நிகழ்வு எல்லை (Event horizon)",
+      "இயக்கமில்லாப் பகுதி",
+      "ஸ்னெல் சாளரம்"
+    ],
+    "ans": 1,
+    "exp_en": "The boundary of a black hole is called the Event horizon.",
+    "exp_ta": "கருந்துளையின் எல்லை நிகழ்வு எல்லை (Event horizon) எனப்படும்."
+  },
+  {
+    "id": "u11_in_14",
+    "unit": 11,
+    "type": "inside",
+    "qno": 14,
+    "q_en": "The branch of science that involves the study of the origin and evolution of the universe is called,",
+    "q_ta": "பிரபஞ்சத்தின் தோற்றம் மற்றும் பரிணாம வளர்ச்சியை உள்ளடக்கிய அறிவியல் துறை எவ்வாறு அழைக்கப்படுகிறது?",
+    "opts_en": [
+      "Robotics",
+      "Cosmology",
+      "Radiology",
+      "Tribology"
+    ],
+    "opts_ta": [
+      "எந்திரனியல்",
+      "பிரபஞ்சவியல் (Cosmology)",
+      "கதிரியக்கவியல்",
+      "உராய்வியல்"
+    ],
+    "ans": 1,
+    "exp_en": "Cosmology is the study of the origin and evolution of the universe.",
+    "exp_ta": "பிரபஞ்சத்தின் தோற்றம் மற்றும் பரிணாம வளர்ச்சி பற்றிய துறை பிரபஞ்சவியல் எனப்படும்."
+  },
+  {
+    "id": "u11_in_15",
+    "unit": 11,
+    "type": "inside",
+    "qno": 15,
+    "q_en": "Who received the 1952 Nobel Prize in Physics (along with Felix Bloch) for the development of Nuclear Magnetic Resonance (NMR), which led to modern MRI scanning?",
+    "q_ta": "நவீன MRI ஸ்கேன் தொழில்நுட்பத்திற்கு அடிப்படையான அணுக்கரு காந்த ஒத்திசைவை (NMR) உருவாக்கியதற்காக (ஃபெலிக்ஸ் பிளாக்குடன் இணைந்து) 1952-இல் நோபல் பரிசு பெற்றவர் யார்?",
+    "opts_en": [
+      "Edward Purcell",
+      "Wilhelm Roentgen",
+      "Peter Higgs",
+      "C.V. Raman"
+    ],
+    "opts_ta": [
+      "எட்வார்டு பர்செல் (Edward Purcell)",
+      "வில்ஹெல்ம் ரோன்ட்ஜென்",
+      "பீட்டர் ஹிக்ஸ்",
+      "சி.வி. ராமன்"
+    ],
+    "ans": 0,
+    "exp_en": "Edward Purcell and Felix Bloch won the 1952 Nobel Prize for NMR.",
+    "exp_ta": "எட்வார்டு பர்செல் மற்றும் ஃபெலிக்ஸ் பிளாக் 1952-இல் நோபல் பரிசு பெற்றனர்."
+  }
+];
+
+    const UNIT_META = {
+      6: { en: "Unit 6: Ray Optics", ta: "அலகு 6: கதிர் ஒளியியல்" },
+      7: { en: "Unit 7: Wave Optics", ta: "அலகு 7: அலை ஒளியியல்" },
+      8: { en: "Unit 8: Dual Nature of Radiation and Matter", ta: "அலகு 8: கதிர்வீச்சு மற்றும் பருப்பொருளின் இருமைப்பண்பு" },
+      9: { en: "Unit 9: Atomic and Nuclear Physics", ta: "அலகு 9: அணு மற்றும் அணுக்கரு இயற்பியல்" },
+      10: { en: "Unit 10: Electronics and Communication", ta: "அலகு 10: எலக்ட்ரானியல் மற்றும் தகவல் தொடர்பு அமைப்புகள்" },
+      11: { en: "Unit 11: Recent Developments in Physics", ta: "அலகு 11: இயற்பியலின் அண்மைக்கால வளர்ச்சிகள்" }
+    };
+
+    const OPT_LABELS = ["a", "b", "c", "d"];
+
+    // ==================== APPLICATION STATE ====================
+    const state = {
+      lang: "both",         // 'both' | 'ta' | 'en'
+      mode: "practice",     // 'practice' | 'exam' | 'study'
+      unitFilter: "all",    // 'all' | '6' | '7' | '8' | '9' | '10' | '11'
+      typeFilter: "all",    // 'all' | 'back' | 'inside' | 'saved'
+      searchQuery: "",
+      layout: "card",       // 'card' | 'list'
+      currentIndex: 0,
+      revealAll: false,
+      userAnswers: {},      // { [questionId]: selectedOptionIndex }
+      bookmarks: {},        // { [questionId]: true }
+      shuffledIds: null,    // null or array of question IDs
+      examActive: false,
+      examSubmitted: false,
+      examSecondsLeft: 1500,
+      examTotalSeconds: 1500,
+      examTimerId: null,
+      activeCodeTab: "html"
+    };
+
+    // Load saved state safely
+    try {
+      const savedBookmarks = localStorage.getItem("tn12_phys_vol2_bookmarks");
+      if (savedBookmarks) state.bookmarks = JSON.parse(savedBookmarks);
+      const savedLang = localStorage.getItem("tn12_phys_vol2_lang");
+      if (savedLang && ["both", "ta", "en"].includes(savedLang)) state.lang = savedLang;
+    } catch (e) {
+      // Ignore storage errors in sandboxed iframe
+    }
+
+    function saveBookmarks() {
+      try {
+        localStorage.setItem("tn12_phys_vol2_bookmarks", JSON.stringify(state.bookmarks));
+      } catch (e) {}
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById("toast-container");
+      if (!el) return;
+      el.textContent = msg;
+      el.classList.remove("hidden");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => {
+        el.classList.add("hidden");
+      }, 2400);
+    }
+
+    // ==================== FILTERING LOGIC ====================
+    function getFilteredQuestions() {
+      let list = QUESTIONS.slice();
+      if (state.shuffledIds) {
+        const map = new Map(list.map(q => [q.id, q]));
+        list = state.shuffledIds.map(id => map.get(id)).filter(Boolean);
+      }
+      if (state.unitFilter !== "all") {
+        const u = parseInt(state.unitFilter, 10);
+        list = list.filter(q => q.unit === u);
+      }
+      if (state.typeFilter === "back") {
+        list = list.filter(q => q.type === "back");
+      } else if (state.typeFilter === "inside") {
+        list = list.filter(q => q.type === "inside");
+      } else if (state.typeFilter === "saved") {
+        list = list.filter(q => !!state.bookmarks[q.id]);
+      }
+      if (state.searchQuery.trim() !== "") {
+        const qStr = state.searchQuery.trim().toLowerCase();
+        list = list.filter(q =>
+          q.q_en.toLowerCase().includes(qStr) ||
+          q.q_ta.toLowerCase().includes(qStr) ||
+          q.opts_en.some(o => o.toLowerCase().includes(qStr)) ||
+          q.opts_ta.some(o => o.toLowerCase().includes(qStr)) ||
+          q.exp_en.toLowerCase().includes(qStr) ||
+          q.exp_ta.toLowerCase().includes(qStr)
+        );
+      }
+      return list;
+    }
+
+    // ==================== RENDER HELPERS ====================
+    function formatUnitTitle(unit) {
+      const m = UNIT_META[unit];
+      if (!m) return "Unit " + unit;
+      if (state.lang === "en") return m.en;
+      if (state.lang === "ta") return m.ta;
+      return m.en + " • " + m.ta;
+    }
+
+    function formatTypeBadge(type, qno) {
+      if (type === "back") {
+        return `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-indigo-100 text-indigo-800 border border-indigo-200">Book-Back Q${qno} • புத்தகப் பின்பக்க வினா</span>`;
+      }
+      return `<span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800 border border-amber-200">Book-Inside Q${qno} • புத்தக உட்பகுதி வினா</span>`;
+    }
+
+    function buildQuestionCardHTML(q, idxInList, totalInList) {
+      const selected = state.userAnswers[q.id];
+      const hasAnswered = selected !== undefined;
+      const isBookmarked = !!state.bookmarks[q.id];
+      const showFeedback = (state.mode === "practice" && (hasAnswered || state.revealAll)) || (state.mode === "exam" && state.examSubmitted);
+
+      // Question text according to language mode
+      let questionBody = "";
+      if (state.lang === "en") {
+        questionBody = `<p class="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed">${q.q_en}</p>`;
+      } else if (state.lang === "ta") {
+        questionBody = `<p class="text-base sm:text-lg font-semibold text-slate-900 tamil-text">${q.q_ta}</p>`;
+      } else {
+        questionBody = `
+          <div class="space-y-2">
+            <p class="text-sm sm:text-base font-semibold text-slate-900 leading-relaxed">${q.q_en}</p>
+            <p class="text-sm sm:text-base font-medium text-indigo-950 tamil-text bg-indigo-50/60 px-3 py-2 rounded-lg border-l-4 border-indigo-500">${q.q_ta}</p>
+          </div>
+        `;
+      }
+
+      // Diagram SVG if present
+      const svgBlock = q.svg ? `<div class="my-3">${q.svg}</div>` : "";
+
+      // Options HTML
+      const optionsHTML = [0, 1, 2, 3].map(optIdx => {
+        const isCorrectOpt = optIdx === q.ans;
+        const isSelectedOpt = selected === optIdx;
+
+        let stateClass = "bg-white border-slate-200 text-slate-800";
+        let badgeClass = "bg-slate-100 text-slate-700 border-slate-300";
+        let statusIcon = "";
+
+        if (showFeedback) {
+          if (isCorrectOpt) {
+            stateClass = "option-correct font-semibold";
+            badgeClass = "bg-emerald-600 text-white border-emerald-600";
+            statusIcon = `<span class="ml-auto text-emerald-700 font-bold text-xs shrink-0">✓ Correct</span>`;
+          } else if (isSelectedOpt && !isCorrectOpt) {
+            stateClass = "option-wrong";
+            badgeClass = "bg-rose-600 text-white border-rose-600";
+            statusIcon = `<span class="ml-auto text-rose-700 font-bold text-xs shrink-0">✕ Your Choice</span>`;
+          }
+        } else if (state.mode === "exam" && isSelectedOpt) {
+          stateClass = "option-selected-exam font-semibold";
+          badgeClass = "bg-indigo-600 text-white border-indigo-600";
+          statusIcon = `<span class="ml-auto text-indigo-700 font-bold text-xs shrink-0">Selected</span>`;
+        }
+
+        let optTextHTML = "";
+        if (state.lang === "en") {
+          optTextHTML = `<span class="text-sm sm:text-base">${q.opts_en[optIdx]}</span>`;
+        } else if (state.lang === "ta") {
+          optTextHTML = `<span class="text-sm sm:text-base tamil-text">${q.opts_ta[optIdx]}</span>`;
+        } else {
+          const sameText = q.opts_en[optIdx].trim() === q.opts_ta[optIdx].trim();
+          if (sameText) {
+            optTextHTML = `<span class="text-sm sm:text-base font-medium">${q.opts_en[optIdx]}</span>`;
+          } else {
+            optTextHTML = `
+              <div class="flex flex-col">
+                <span class="text-xs sm:text-sm font-medium">${q.opts_en[optIdx]}</span>
+                <span class="text-xs sm:text-sm tamil-text text-slate-600">${q.opts_ta[optIdx]}</span>
+              </div>
+            `;
+          }
+        }
+
+        return `
+          <button type="button"
+            data-action="select-option"
+            data-qid="${q.id}"
+            data-opt="${optIdx}"
+            class="option-btn w-full text-left p-3 sm:p-3.5 rounded-xl border-2 flex items-center gap-3 ${stateClass}">
+            <span class="w-7 h-7 rounded-lg border flex items-center justify-center text-xs font-bold uppercase shrink-0 ${badgeClass}">
+              ${OPT_LABELS[optIdx]}
+            </span>
+            <div class="flex-1 min-w-0">${optTextHTML}</div>
+            ${statusIcon}
+          </button>
+        `;
+      }).join("");
+
+      // Explanation Box
+      let explanationHTML = "";
+      if (showFeedback) {
+        let expContent = "";
+        if (state.lang === "en") {
+          expContent = `<p class="text-xs sm:text-sm text-slate-700">${q.exp_en}</p>`;
+        } else if (state.lang === "ta") {
+          expContent = `<p class="text-xs sm:text-sm text-slate-800 tamil-text">${q.exp_ta}</p>`;
+        } else {
+          expContent = `
+            <p class="text-xs sm:text-sm text-slate-800">${q.exp_en}</p>
+            <p class="text-xs sm:text-sm text-slate-700 tamil-text mt-1">${q.exp_ta}</p>
+          `;
+        }
+
+        explanationHTML = `
+          <div class="mt-4 p-3.5 rounded-xl bg-emerald-50/90 border border-emerald-200">
+            <div class="flex items-center gap-2 text-xs font-bold text-emerald-900 mb-1">
+              <span>💡 Correct Answer: (${OPT_LABELS[q.ans].toUpperCase()}) ${q.opts_en[q.ans]}</span>
+              <span class="tamil-text">• (${OPT_LABELS[q.ans]}) ${q.opts_ta[q.ans]}</span>
+            </div>
+            ${expContent}
+          </div>
+        `;
+      }
+
+      // Navigation Footer for Single Card view
+      const navFooterHTML = state.layout === "card" ? `
+        <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2">
+          <button type="button" data-action="prev-question" ${idxInList === 0 ? "disabled" : ""} class="px-4 py-2 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 disabled:opacity-40 text-xs sm:text-sm font-semibold text-slate-700 transition">
+            ← Previous / முந்தையது
+          </button>
+
+          <div class="flex items-center gap-2">
+            ${state.mode === "practice" ? `
+              <button type="button" data-action="show-hint" data-qid="${q.id}" class="px-3 py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 text-xs font-semibold transition">
+                👁️ Show Answer / விடை
+              </button>
+            ` : ""}
+          </div>
+
+          <button type="button" data-action="next-question" ${idxInList >= totalInList - 1 ? "disabled" : ""} class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-700 disabled:opacity-40 text-white text-xs sm:text-sm font-semibold shadow transition">
+            Next / அடுத்தது →
+          </button>
+        </div>
+      ` : "";
+
+      return `
+        <article class="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sm:p-6 transition">
+          <!-- Card Header -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="px-2.5 py-1 rounded-lg bg-slate-900 text-white text-xs font-bold">#${idxInList + 1}</span>
+              <span class="text-xs font-semibold text-slate-600 tamil-text">${formatUnitTitle(q.unit)}</span>
+              ${formatTypeBadge(q.type, q.qno)}
+            </div>
+
+            <button type="button" data-action="toggle-bookmark" data-qid="${q.id}" class="px-2.5 py-1 rounded-lg border text-xs font-semibold transition ${isBookmarked ? "bg-amber-100 border-amber-300 text-amber-900" : "bg-slate-50 border-slate-200 text-slate-500 hover:text-slate-800"}">
+              ${isBookmarked ? "★ Saved" : "☆ Save"}
+            </button>
+          </div>
+
+          <!-- Question Text -->
+          <div class="mb-4">
+            ${questionBody}
+            ${svgBlock}
+          </div>
+
+          <!-- Options Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            ${optionsHTML}
+          </div>
+
+          ${explanationHTML}
+          ${navFooterHTML}
+        </article>
+      `;
+    }
+
+    // ==================== MAIN RENDER FUNCTION ====================
+    function renderApp() {
+      const filtered = getFilteredQuestions();
+      if (state.currentIndex >= filtered.length) {
+        state.currentIndex = Math.max(0, filtered.length - 1);
+      }
+
+      // Update header stats
+      const totalAttempted = Object.keys(state.userAnswers).length;
+      let totalCorrect = 0;
+      for (const q of QUESTIONS) {
+        if (state.userAnswers[q.id] === q.ans) totalCorrect++;
+      }
+      const totalSaved = Object.keys(state.bookmarks).filter(k => state.bookmarks[k]).length;
+
+      document.getElementById("stat-attempted").textContent = totalAttempted;
+      document.getElementById("stat-total").textContent = QUESTIONS.length;
+      document.getElementById("stat-correct").textContent = totalCorrect;
+      document.getElementById("stat-bookmarked").textContent = totalSaved;
+
+      // Update Language Buttons
+      document.querySelectorAll(".lang-btn").forEach(btn => {
+        const active = btn.dataset.lang === state.lang;
+        btn.className = `lang-btn px-2.5 py-1 rounded-md text-xs font-semibold transition ${active ? "bg-indigo-600 text-white shadow" : "text-slate-300 hover:text-white"}`;
+      });
+
+      // Update Mode Tabs
+      document.querySelectorAll(".mode-tab").forEach(tab => {
+        const active = tab.dataset.mode === state.mode;
+        tab.className = `mode-tab px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 ${active ? "bg-white text-slate-900 shadow-sm" : "text-slate-300 hover:bg-slate-800 hover:text-white"}`;
+      });
+
+      // Update Question Type Filter Buttons
+      document.querySelectorAll(".qtype-btn").forEach(btn => {
+        const active = btn.dataset.qtype === state.typeFilter;
+        btn.className = `qtype-btn py-1.5 px-2 rounded-md text-xs font-semibold transition ${active ? "bg-white text-indigo-700 shadow-sm" : "text-slate-600 hover:text-slate-900"}`;
+      });
+
+      // Update Layout Toggle Buttons
+      const cardBtn = document.getElementById("layout-card-btn");
+      const listBtn = document.getElementById("layout-list-btn");
+      if (state.layout === "card") {
+        cardBtn.className = "px-2.5 py-1 rounded-md text-xs font-semibold bg-white text-slate-900 shadow-sm transition";
+        listBtn.className = "px-2.5 py-1 rounded-md text-xs font-semibold text-slate-600 hover:text-slate-900 transition";
+      } else {
+        listBtn.className = "px-2.5 py-1 rounded-md text-xs font-semibold bg-white text-slate-900 shadow-sm transition";
+        cardBtn.className = "px-2.5 py-1 rounded-md text-xs font-semibold text-slate-600 hover:text-slate-900 transition";
+      }
+
+      // Show/Hide Exam Banner & Views
+      const examBanner = document.getElementById("exam-banner");
+      const interactiveView = document.getElementById("interactive-view");
+      const studySheetView = document.getElementById("study-sheet-view");
+      const revealAllBtn = document.getElementById("reveal-all-btn");
+
+      if (state.mode === "exam") {
+        examBanner.classList.remove("hidden");
+        interactiveView.classList.remove("hidden");
+        studySheetView.classList.add("hidden");
+        revealAllBtn.classList.add("hidden");
+      } else if (state.mode === "study") {
+        examBanner.classList.add("hidden");
+        interactiveView.classList.add("hidden");
+        studySheetView.classList.remove("hidden");
+        renderStudySheet(filtered);
+        return;
+      } else {
+        examBanner.classList.add("hidden");
+        interactiveView.classList.remove("hidden");
+        studySheetView.classList.add("hidden");
+        revealAllBtn.classList.remove("hidden");
+        revealAllBtn.textContent = state.revealAll ? "🙈 Hide Answers" : "👁️ Show All Answers";
+      }
+
+      // Update Filter Summary & Index Badges
+      document.getElementById("filter-summary-badge").textContent = `Showing ${filtered.length} Question${filtered.length === 1 ? "" : "s"}`;
+      document.getElementById("current-index-badge").textContent = filtered.length > 0 ? `Q ${state.currentIndex + 1} of ${filtered.length}` : "No matches";
+      document.getElementById("palette-count-label").textContent = `${filtered.length} Qs`;
+
+      // Render Single Card or List View
+      const singleContainer = document.getElementById("single-card-container");
+      const listContainer = document.getElementById("list-cards-container");
+
+      if (filtered.length === 0) {
+        const emptyHTML = `
+          <div class="bg-white rounded-2xl border border-slate-200 p-8 text-center">
+            <div class="text-3xl mb-2">🔍</div>
+            <h3 class="text-base font-bold text-slate-800">No questions match your current filter</h3>
+            <p class="text-xs text-slate-500 mt-1 tamil-text">தேடல் அல்லது வடிகட்டியை மாற்றி மீண்டும் முயற்சிக்கவும்.</p>
+            <button type="button" id="reset-filters-empty-btn" class="mt-4 px-4 py-2 rounded-xl bg-indigo-600 text-white text-xs font-semibold">Show All 165 Questions</button>
+          </div>
+        `;
+        singleContainer.innerHTML = emptyHTML;
+        listContainer.innerHTML = emptyHTML;
+      } else if (state.layout === "card") {
+        singleContainer.classList.remove("hidden");
+        listContainer.classList.add("hidden");
+        const activeQ = filtered[state.currentIndex];
+        singleContainer.innerHTML = buildQuestionCardHTML(activeQ, state.currentIndex, filtered.length);
+      } else {
+        singleContainer.classList.add("hidden");
+        listContainer.classList.remove("hidden");
+        listContainer.innerHTML = filtered.map((q, idx) => buildQuestionCardHTML(q, idx, filtered.length)).join("");
+      }
+
+      // Render Question Palette
+      const paletteEl = document.getElementById("question-palette");
+      paletteEl.innerHTML = filtered.map((q, idx) => {
+        const ans = state.userAnswers[q.id];
+        const isCurrent = idx === state.currentIndex && state.layout === "card";
+        const isSaved = !!state.bookmarks[q.id];
+
+        let colorClass = "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200";
+        if (ans !== undefined) {
+          if (state.mode === "exam" && !state.examSubmitted) {
+            colorClass = "bg-indigo-600 text-white border-indigo-600 font-bold";
+          } else if (ans === q.ans) {
+            colorClass = "bg-emerald-500 text-white border-emerald-600 font-bold";
+          } else {
+            colorClass = "bg-rose-500 text-white border-rose-600 font-bold";
+          }
+        }
+        const ringClass = isCurrent ? "ring-2 ring-offset-1 ring-slate-900" : "";
+        const savedDot = isSaved ? `<span class="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-amber-400 border border-white"></span>` : "";
+
+        return `
+          <button type="button" data-action="jump-question" data-idx="${idx}" class="palette-btn relative h-8 rounded-lg border text-xs font-medium flex items-center justify-center ${colorClass} ${ringClass}">
+            ${idx + 1}
+            ${savedDot}
+          </button>
+        `;
+      }).join("");
+
+      // Render Chapter Breakdown
+      const breakdownEl = document.getElementById("chapter-breakdown-list");
+      breakdownEl.innerHTML = [6, 7, 8, 9, 10, 11].map(u => {
+        const unitQs = QUESTIONS.filter(q => q.unit === u);
+        const unitDone = unitQs.filter(q => state.userAnswers[q.id] !== undefined).length;
+        const unitCorrect = unitQs.filter(q => state.userAnswers[q.id] === q.ans).length;
+        const pct = Math.round((unitDone / unitQs.length) * 100);
+        return `
+          <div class="p-2 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="flex items-center justify-between font-semibold text-slate-800">
+              <span class="truncate pr-2 tamil-text">Unit ${u} (${unitQs.length} Qs)</span>
+              <span class="text-[11px] text-indigo-700 shrink-0">${unitCorrect}/${unitDone} Correct</span>
+            </div>
+            <div class="w-full h-1.5 bg-slate-200 rounded-full overflow-hidden mt-1.5">
+              <div class="h-full bg-indigo-600 rounded-full transition-all" style="width: ${pct}%"></div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // ==================== STUDY & ANSWER KEY SHEET RENDERER ====================
+    function renderStudySheet(filtered) {
+      const container = document.getElementById("study-sheet-content");
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="bg-white p-6 rounded-xl border text-center text-sm text-slate-600">No questions match your filter.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map((q, idx) => {
+        return `
+          <div class="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 rounded bg-slate-900 text-white text-xs font-bold">#${idx + 1}</span>
+                <span class="text-xs font-semibold text-slate-600 tamil-text">${formatUnitTitle(q.unit)}</span>
+                ${formatTypeBadge(q.type, q.qno)}
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold border border-emerald-300">
+                Ans: (${OPT_LABELS[q.ans].toUpperCase()})
+              </span>
+            </div>
+
+            <div class="space-y-1.5 mb-3">
+              ${state.lang !== "ta" ? `<p class="text-sm font-semibold text-slate-900">${q.q_en}</p>` : ""}
+              ${state.lang !== "en" ? `<p class="text-sm font-medium text-indigo-950 tamil-text">${q.q_ta}</p>` : ""}
+              ${q.svg ? `<div class="my-2">${q.svg}</div>` : ""}
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs mb-2.5">
+              ${[0, 1, 2, 3].map(i => `
+                <div class="p-2 rounded-lg border ${i === q.ans ? "bg-emerald-50 border-emerald-400 font-bold text-emerald-950" : "bg-slate-50 border-slate-200 text-slate-700"}">
+                  <span class="uppercase font-bold mr-1">(${OPT_LABELS[i]})</span>
+                  ${state.lang !== "ta" ? `<span>${q.opts_en[i]}</span>` : ""}
+                  ${state.lang === "both" && q.opts_en[i] !== q.opts_ta[i] ? ` <span class="tamil-text text-slate-600">/ ${q.opts_ta[i]}</span>` : ""}
+                  ${state.lang === "ta" ? `<span class="tamil-text">${q.opts_ta[i]}</span>` : ""}
+                  ${i === q.ans ? ` <span class="float-right text-emerald-700">✓</span>` : ""}
+                </div>
+              `).join("")}
+            </div>
+
+            <div class="text-xs bg-slate-50 p-2.5 rounded-lg border border-slate-200 text-slate-700">
+              ${state.lang !== "ta" ? `<div><strong>Explanation:</strong> ${q.exp_en}</div>` : ""}
+              ${state.lang !== "en" ? `<div class="tamil-text mt-0.5"><strong>விளக்கம்:</strong> ${q.exp_ta}</div>` : ""}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // ==================== EXAM MODE TIMER & SUBMISSION ====================
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+    }
+
+    function startExam(presetCount) {
+      clearInterval(state.examTimerId);
+      state.userAnswers = {};
+      state.examSubmitted = false;
+      state.examActive = true;
+      state.currentIndex = 0;
+      document.getElementById("exam-result-panel").classList.add("hidden");
+
+      if (presetCount === "75") {
+        state.typeFilter = "back";
+        state.unitFilter = "all";
+        state.shuffledIds = null;
+        state.examTotalSeconds = 75 * 60;
+      } else if (presetCount === "15" || presetCount === "30") {
+        const count = parseInt(presetCount, 10);
+        state.typeFilter = "all";
+        const pool = QUESTIONS.slice().sort(() => Math.random() - 0.5).slice(0, count);
+        state.shuffledIds = pool.map(q => q.id);
+        state.examTotalSeconds = count * 60;
+      } else {
+        state.shuffledIds = null;
+        const filtered = getFilteredQuestions();
+        state.examTotalSeconds = Math.max(300, filtered.length * 45);
+      }
+
+      state.examSecondsLeft = state.examTotalSeconds;
+      document.getElementById("exam-timer-display").textContent = formatTime(state.examSecondsLeft);
+
+      state.examTimerId = setInterval(() => {
+        if (state.examSubmitted || state.mode !== "exam") {
+          clearInterval(state.examTimerId);
+          return;
+        }
+        state.examSecondsLeft = Math.max(0, state.examSecondsLeft - 1);
+        document.getElementById("exam-timer-display").textContent = formatTime(state.examSecondsLeft);
+        if (state.examSecondsLeft === 0) {
+          submitExam();
+        }
+      }, 1000);
+
+      renderApp();
+      showToast("Exam Timer Started! Select your answers and click Submit.");
+    }
+
+    function submitExam() {
+      clearInterval(state.examTimerId);
+      state.examSubmitted = true;
+      state.examActive = false;
+
+      const filtered = getFilteredQuestions();
+      let correct = 0;
+      let attempted = 0;
+      filtered.forEach(q => {
+        if (state.userAnswers[q.id] !== undefined) {
+          attempted++;
+          if (state.userAnswers[q.id] === q.ans) correct++;
+        }
+      });
+
+      const accuracy = filtered.length > 0 ? Math.round((correct / filtered.length) * 100) : 0;
+      const elapsed = state.examTotalSeconds - state.examSecondsLeft;
+
+      document.getElementById("res-score").textContent = `${correct} / ${filtered.length}`;
+      document.getElementById("res-accuracy").textContent = `${accuracy}%`;
+      document.getElementById("res-attempted").textContent = `${attempted} / ${filtered.length}`;
+      document.getElementById("res-time").textContent = formatTime(elapsed);
+      document.getElementById("exam-result-panel").classList.remove("hidden");
+
+      renderApp();
+      showToast(`Exam Submitted! You scored ${correct} / ${filtered.length} (${accuracy}%).`);
+    }
+
+    // ==================== EVENT LISTENERS ====================
+    document.addEventListener("click", (e) => {
+      const target = e.target.closest("button");
+      if (!target) return;
+
+      // Language Switch
+      if (target.classList.contains("lang-btn")) {
+        state.lang = target.dataset.lang;
+        try { localStorage.setItem("tn12_phys_vol2_lang", state.lang); } catch (err) {}
+        renderApp();
+        return;
+      }
+
+      // Mode Switch
+      if (target.classList.contains("mode-tab")) {
+        const newMode = target.dataset.mode;
+        state.mode = newMode;
+        if (newMode === "exam" && !state.examActive && !state.examSubmitted) {
+          startExam("15");
+        } else {
+          renderApp();
+        }
+        return;
+      }
+
+      // Question Type Filter
+      if (target.classList.contains("qtype-btn")) {
+        state.typeFilter = target.dataset.qtype;
+        state.currentIndex = 0;
+        renderApp();
+        return;
+      }
+
+      // Exam Presets
+      if (target.classList.contains("exam-preset-btn")) {
+        startExam(target.dataset.preset);
+        return;
+      }
+
+      // Data-action handlers inside cards and palette
+      const action = target.dataset.action;
+      if (action === "select-option") {
+        if (state.mode === "exam" && state.examSubmitted) return;
+        const qid = target.dataset.qid;
+        const opt = parseInt(target.dataset.opt, 10);
+        state.userAnswers[qid] = opt;
+        renderApp();
+        return;
+      }
+
+      if (action === "toggle-bookmark") {
+        const qid = target.dataset.qid;
+        if (state.bookmarks[qid]) {
+          delete state.bookmarks[qid];
+          showToast("Removed from Saved Questions");
+        } else {
+          state.bookmarks[qid] = true;
+          showToast("★ Saved Question for Revision");
+        }
+        saveBookmarks();
+        renderApp();
+        return;
+      }
+
+      if (action === "prev-question") {
+        if (state.currentIndex > 0) {
+          state.currentIndex--;
+          renderApp();
+        }
+        return;
+      }
+
+      if (action === "next-question") {
+        const filtered = getFilteredQuestions();
+        if (state.currentIndex < filtered.length - 1) {
+          state.currentIndex++;
+          renderApp();
+        }
+        return;
+      }
+
+      if (action === "show-hint") {
+        const qid = target.dataset.qid;
+        const q = QUESTIONS.find(item => item.id === qid);
+        if (q) {
+          state.userAnswers[qid] = q.ans;
+          renderApp();
+        }
+        return;
+      }
+
+      if (action === "jump-question") {
+        state.currentIndex = parseInt(target.dataset.idx, 10);
+        if (state.layout !== "card") {
+          state.layout = "card";
+        }
+        renderApp();
+        return;
+      }
+
+      if (target.id === "reset-filters-empty-btn") {
+        state.unitFilter = "all";
+        state.typeFilter = "all";
+        state.searchQuery = "";
+        state.shuffledIds = null;
+        document.getElementById("unit-filter").value = "all";
+        document.getElementById("search-input").value = "";
+        renderApp();
+      }
+    });
+
+    // Unit dropdown filter
+    document.getElementById("unit-filter").addEventListener("change", (e) => {
+      state.unitFilter = e.target.value;
+      state.currentIndex = 0;
+      renderApp();
+    });
+
+    // Search input
+    const searchInput = document.getElementById("search-input");
+    const clearSearchBtn = document.getElementById("clear-search-btn");
+    searchInput.addEventListener("input", (e) => {
+      state.searchQuery = e.target.value;
+      state.currentIndex = 0;
+      clearSearchBtn.classList.toggle("hidden", state.searchQuery === "");
+      renderApp();
+    });
+
+    clearSearchBtn.addEventListener("click", () => {
+      state.searchQuery = "";
+      searchInput.value = "";
+      clearSearchBtn.classList.add("hidden");
+      state.currentIndex = 0;
+      renderApp();
+    });
+
+    // Shuffle button
+    document.getElementById("shuffle-btn").addEventListener("click", () => {
+      const ids = QUESTIONS.map(q => q.id).sort(() => Math.random() - 0.5);
+      state.shuffledIds = ids;
+      state.currentIndex = 0;
+      renderApp();
+      showToast("🔀 Questions Shuffled!");
+    });
+
+    // Reset button
+    document.getElementById("reset-progress-btn").addEventListener("click", () => {
+      state.userAnswers = {};
+      state.shuffledIds = null;
+      state.revealAll = false;
+      state.currentIndex = 0;
+      state.examSubmitted = false;
+      document.getElementById("exam-result-panel").classList.add("hidden");
+      renderApp();
+      showToast("↺ Progress Reset");
+    });
+
+    // Layout buttons
+    document.getElementById("layout-card-btn").addEventListener("click", () => {
+      state.layout = "card";
+      renderApp();
+    });
+    document.getElementById("layout-list-btn").addEventListener("click", () => {
+      state.layout = "list";
+      renderApp();
+    });
+
+    // Reveal all answers button
+    document.getElementById("reveal-all-btn").addEventListener("click", () => {
+      state.revealAll = !state.revealAll;
+      renderApp();
+    });
+
+    // Exam submit & retake buttons
+    document.getElementById("submit-exam-btn").addEventListener("click", submitExam);
+    document.getElementById("retake-exam-btn").addEventListener("click", () => startExam("15"));
+    document.getElementById("close-result-btn").addEventListener("click", () => {
+      document.getElementById("exam-result-panel").classList.add("hidden");
+    });
+
+    // Print sheet button
+    document.getElementById("print-sheet-btn").addEventListener("click", () => {
+      window.print();
+    });
+
+    // HTML & CSS Code Modal
+    function updateCodeModalContent() {
+      const codeArea = document.getElementById("code-display-area");
+      const tabHtml = document.getElementById("tab-code-html");
+      const tabCss = document.getElementById("tab-code-css");
+
+      if (state.activeCodeTab === "html") {
+        tabHtml.className = "px-3 py-1 rounded-md text-xs font-bold bg-white text-slate-900 shadow-sm";
+        tabCss.className = "px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900";
+        codeArea.textContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      } else {
+        tabCss.className = "px-3 py-1 rounded-md text-xs font-bold bg-white text-slate-900 shadow-sm";
+        tabHtml.className = "px-3 py-1 rounded-md text-xs font-bold text-slate-600 hover:text-slate-900";
+        const styleEl = document.getElementById("app-stylesheet");
+        codeArea.textContent = styleEl ? styleEl.textContent.trim() : "";
+      }
+    }
+
+    document.getElementById("open-code-modal-btn").addEventListener("click", () => {
+      document.getElementById("code-modal").classList.remove("hidden");
+      updateCodeModalContent();
+    });
+
+    document.getElementById("close-code-modal-btn").addEventListener("click", () => {
+      document.getElementById("code-modal").classList.add("hidden");
+    });
+
+    document.getElementById("tab-code-html").addEventListener("click", () => {
+      state.activeCodeTab = "html";
+      updateCodeModalContent();
+    });
+
+    document.getElementById("tab-code-css").addEventListener("click", () => {
+      state.activeCodeTab = "css";
+      updateCodeModalContent();
+    });
+
+    document.getElementById("copy-code-btn").addEventListener("click", () => {
+      const text = document.getElementById("code-display-area").textContent;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast("📋 Code copied to clipboard!");
+        }).catch(() => {
+          fallbackCopy(text);
+        });
+      } else {
+        fallbackCopy(text);
+      }
+    });
+
+    function fallbackCopy(text) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        showToast("📋 Code copied to clipboard!");
+      } catch (err) {
+        showToast("Could not copy automatically.");
+      }
+      document.body.removeChild(ta);
+    }
+
+    document.getElementById("download-html-btn").addEventListener("click", () => {
+      const fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      const blob = new Blob([fullHtml], { type: "text/html;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "12th_physics_vol2_one_marks_practice.html";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast("⬇ Downloaded 12th_physics_vol2_one_marks_practice.html");
+    });
+
+    // Keyboard navigation (Left/Right arrows in Single Card View)
+    document.addEventListener("keydown", (e) => {
+      if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
+      if (state.mode === "study" || state.layout !== "card") return;
+      const filtered = getFilteredQuestions();
+      if (e.key === "ArrowRight" && state.currentIndex < filtered.length - 1) {
+        state.currentIndex++;
+        renderApp();
+      } else if (e.key === "ArrowLeft" && state.currentIndex > 0) {
+        state.currentIndex--;
+        renderApp();
+      }
+    });
+
+    // Initial render
+    window.addEventListener("DOMContentLoaded", () => {
+      renderApp();
+    });
+    renderApp();
+  </script>
+</body>
+</html>
