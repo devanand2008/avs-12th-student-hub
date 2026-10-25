@@ -43,7 +43,13 @@
     "productionDependencyVulnerabilities": 0,
     "localBuild": "Turbopack and Webpack exhausted workstation memory",
     "vercelProductionBuild": "passed",
-    "sourceIntegrity": "All ten staged HTML hashes equal original source evidence"
+    "sourceIntegrity": "All ten staged HTML hashes equal original source evidence",
+    "resultViewportBrowser": {
+      "passed": 2,
+      "failed": 0
+    },
+    "finalViewportTypecheck": "passed",
+    "finalViewportScopedLint": "passed"
   },
   "preservation": {
     "originalQuestionRows": 3039,

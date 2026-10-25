@@ -136,7 +136,7 @@ test("students answer native MCQs, retain locked scores, finish, retry and reloa
     .click();
   await expect(
     page.getByRole("heading", { name: "Practice complete" }),
-  ).toBeVisible();
+  ).toBeInViewport();
   await expect(page.getByText("1 / 10", { exact: true })).toBeVisible();
   await expect(page.getByRole("status")).toContainText(
     "Saved to your supplied-practice history",

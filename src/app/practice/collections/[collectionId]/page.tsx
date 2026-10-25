@@ -63,6 +63,9 @@ export default function SuppliedPracticePage({
       });
     return () => controller.abort();
   }, [collectionId]);
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [attemptId, finished, position]);
   const matching = bank.filter(
       (q) =>
         (section === "all" || q.section === section) &&
