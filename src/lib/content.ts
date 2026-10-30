@@ -5,6 +5,7 @@ import {
   BackendUnavailableError,
 } from "@/lib/supabase/server";
 import { randomUUID } from "node:crypto";
+import additionalRows from "./additional-materials-resources.json";
 
 export type LearningResource = HandwrittenNote | VideoLesson;
 export type ResourceKind = "note" | "video";
@@ -46,6 +47,14 @@ export async function listResources(
       .filter((row) => row.kind === kind)
       .map((row) => row.resource)
       .reverse();
+  // Source-controlled additions avoid changing production resource/curriculum tables.
+  // A stored record (including an archived draft) always takes precedence.
+  const supplied = (additionalRows as StoredResource[])
+    .filter((row) => row.kind === kind)
+    .map((row) => row.resource);
+  const merged = new Map(supplied.map((resource) => [resource.id, resource]));
+  resources.forEach((resource) => merged.set(resource.id, resource));
+  resources = [...merged.values()];
   return includeDrafts
     ? resources
     : resources.filter((resource) => resource.isPublished);
@@ -70,7 +79,31 @@ export async function saveResource(
   }
   return resource;
 }
+
+// Activity references learning_resources through a foreign key. Built-in source
+// resources may not have a stored row yet. Insert only the canonical record;
+// never overwrite an administrator's existing edits or archived resource.
+export async function ensureActivityResource(kind: ResourceKind, id: string) {
+  const source = (additionalRows as StoredResource[]).find(
+    (row) => row.kind === kind && row.resource.id === id,
+  );
+  if (!source) return;
+  const client = storageClient();
+  if (!client) return;
+  const { error } = await client
+    .from("learning_resources")
+    .upsert(
+      { id, kind, resource: source.resource },
+      { onConflict: "id", ignoreDuplicates: true },
+    );
+  if (error)
+    throw new Error("Could not prepare this resource's progress record.");
+}
 export async function deleteResource(kind: ResourceKind, id: string) {
+  if (additionalRows.some((row) => row.kind === kind && row.resource.id === id))
+    throw new Error(
+      "This supplied resource is managed in the source catalogue. Archive it to hide it from students.",
+    );
   const client = storageClient();
   if (client) {
     const { error } = await client

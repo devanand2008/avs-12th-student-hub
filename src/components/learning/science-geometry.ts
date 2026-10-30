@@ -62,7 +62,76 @@ export function scienceGeometry(
     );
     head.quaternion.setFromUnitVectors(v(0, 1, 0), direction);
   };
-  if (model === "chromosome") {
+  if (model === "ovum") {
+    sphere(v(), v(1.1, 1.1, 1.1), 0xfbbf24, "egg", 0.45);
+    ball(v(0, 0, 0.4), 0.3, 0xf59e0b, "egg");
+    const coat = add(
+      new THREE.SphereGeometry(1.4, 28, 20, 0, Math.PI * 1.35),
+      0xa78bfa,
+      "zona",
+      v(),
+    );
+    const coatMaterial = coat.material as THREE.MeshStandardMaterial;
+    coatMaterial.transparent = true;
+    coatMaterial.opacity = 0.35;
+    coatMaterial.depthWrite = false;
+    for (let ring = 0; ring < 5; ring++)
+      for (let i = 0; i < 16; i++) {
+        const phi = ((ring + 1) * Math.PI) / 6,
+          theta = (i * Math.PI * 2) / 16;
+        // Leave a frontal window for the cutaway.
+        if (Math.cos(theta) > 0.65 && ring > 0 && ring < 4) continue;
+        ball(
+          v(
+            1.8 * Math.sin(phi) * Math.sin(theta),
+            1.8 * Math.cos(phi),
+            1.8 * Math.sin(phi) * Math.cos(theta),
+          ),
+          0.17,
+          0xfb7185,
+          "corona",
+        );
+      }
+  } else if (model === "nacl") {
+    for (let x = -1; x <= 1; x++)
+      for (let y = -1; y <= 1; y++)
+        for (let z = -1; z <= 1; z++) {
+          const sodium = (x + y + z) % 2 === 0;
+          ball(
+            v(x * 1.25, y * 1.25, z * 1.25),
+            sodium ? 0.23 : 0.34,
+            sodium ? 0xa78bfa : 0x34d399,
+            sodium ? "sodium" : "chloride",
+          );
+        }
+    for (const end of [
+      v(1.25),
+      v(-1.25),
+      v(0, 1.25),
+      v(0, -1.25),
+      v(0, 0, 1.25),
+      v(0, 0, -1.25),
+    ])
+      link(v(), end, 0x94a3b8, "neighbours", 0.025);
+    group.rotation.set(0.3, -0.45, 0);
+  } else if (model === "octahedral") {
+    ball(v(), 0.4, 0x2563eb, "metal");
+    for (const end of [
+      v(0, 1.8),
+      v(0, -1.8),
+      v(1.8),
+      v(-1.8),
+      v(0, 0, 1.8),
+      v(0, 0, -1.8),
+    ]) {
+      const axial = end.y !== 0,
+        part = axial ? "axial" : "equatorial",
+        color = axial ? 0xfbbf24 : 0x34d399;
+      ball(end, 0.27, color, part);
+      link(v(), end, color, part, 0.055);
+    }
+    group.rotation.set(0.2, -0.4, 0);
+  } else if (model === "chromosome") {
     for (const sign of [-1, 1]) {
       link(v(sign * 0.9, 1.7), v(sign * 0.12, 0), 0xa78bfa, "chromatids", 0.22);
       link(v(sign * 0.12, 0), v(sign * 1.1, -2), 0xa78bfa, "chromatids", 0.22);

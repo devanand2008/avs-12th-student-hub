@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-10-26T18:05:39.608Z",
+  "unitInitial": {
+    "tests": 236,
+    "passed": 235,
+    "failed": 1
+  },
+  "unitFocused": {
+    "tests": 33,
+    "passed": 33,
+    "failed": 0
+  },
+  "unitNewFinal": {
+    "tests": 12,
+    "passed": 12,
+    "failed": 0
+  },
+  "browserBroad": {
+    "passed": 31,
+    "failed": 1
+  },
+  "browserFinal": {
+    "passed": 19,
+    "failed": 1
+  },
+  "browserRecheck": {
+    "passed": 1,
+    "failed": 0
+  },
+  "coverage": {
+    "implemented": 30,
+    "newLessons": 15,
+    "structures": 18,
+    "newAnimated": 7,
+    "books": 82,
+    "subjects": 40,
+    "chapterEntries": 856
+  },
+  "hosting": {
+    "passed": 36,
+    "failed": 0
+  },
+  "preservation": {
+    "checkedAt": "2026-10-26T18:05:27.479Z",
+    "protectedFiles": 725,
+    "protectedBytes": 2655218990,
+    "changed": [],
+    "countsBefore": {
+      "retainedPublicationBaseline": 995,
+      "suppliedUnverified": 2244,
+      "textbooks": 82,
+      "chapterRegistry": 856,
+      "aiTools": 10,
+      "studyResourceRegistry": 103,
+      "existingSourceMaterials": 67
+    },
+    "countsAfter": {
+      "retainedPublicationBaseline": 995,
+      "suppliedUnverified": 2244,
+      "textbooks": 82,
+      "chapterRegistry": 856,
+      "aiTools": 10,
+      "studyResourceRegistry": 103,
+      "existingSourceMaterials": 67
+    },
+    "note": "Identical authoritative local file hashes prove matching before/after counts. This is not a fresh production database assertion. No production data import occurred."
+  },
+  "typecheck": "passed",
+  "lint": "passed",
+  "productionVulnerabilities": 0,
+  "diffCheck": "passed",
+  "limitations": [
+    "The full unit run had one stale old-catalogue assertion; it was corrected and all 33 focused tests passed.",
+    "The broad browser run passed 31/32. One desktop walkthrough lost state to a development page reload while a separate preview was active. Both full new-model walkthroughs passed in the final isolated run.",
+    "Additional intermediate browser attempts exposed search update timing, exact-label and duplicate-control-name selectors; source/accessibility and test fixes were applied. An interrupted intermediate run is not counted as passing.",
+    "Production database counts were not freshly queried. No production import/migration or Git push."
+  ],
+  "release": {
+    "url": "https://avs-12th-student-hub.vercel.app",
+    "deploymentId": "dpl_EjL43eNmcDW51i9UsNsc1ZQonzRq",
+    "state": "READY",
+    "sourceFingerprint": "95ede0cf4a4983655a74b9a10e4dc8643adcef7fc74ac97dfb9737cf424159bc",
+    "workingTree": true,
+    "gitPush": false,
+    "databaseImport": false,
+    "build": "Vercel production npm run build passed",
+    "publicRoutesPassed": 8,
+    "publicViewportChecksPassed": 2,
+    "checkedAt": "2026-10-26T18:11:33.929Z"
+  }
+}

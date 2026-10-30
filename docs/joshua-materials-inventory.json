@@ -1,0 +1,868 @@
+{
+  "checkedAt": "2026-10-30T06:59:43.990Z",
+  "sourceFolder": "D:\\avs-12-hub\\book's",
+  "physicalFiles": 113,
+  "uniqueResources": 109,
+  "pdfs": 57,
+  "physicalVideos": 56,
+  "uniqueVideos": 52,
+  "byteIdenticalAliases": 4,
+  "earlierFilesUnchanged": 107,
+  "newNotes": 0,
+  "newVideos": [
+    {
+      "file": "bio/zoo/video/Fertilization___Implantation.mp4",
+      "kind": "video",
+      "chapterId": "zoo-ch-2",
+      "subjectId": "sub-zoology",
+      "subjectName": "Bio-Zoology",
+      "title": "Bio-Zoology — Fertilization & Implantation",
+      "topic": "Fertilization & Implantation",
+      "language": "English",
+      "sha256": "92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa.mp4",
+      "sizeBytes": 44863951,
+      "description": "Owner-supplied study resource. Topic and language checked from source previews; full academic accuracy and all supplied answers have not been teacher-verified. Original source retained.",
+      "durationSeconds": 411,
+      "thumbnailUrl": "/images/learning-materials/92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa.jpg",
+      "inspection": {
+        "file": "book's/bio/zoo/video/Fertilization___Implantation.mp4",
+        "relative": "bio/zoo/video/Fertilization___Implantation.mp4",
+        "bytes": 44863951,
+        "sha256": "92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa",
+        "duration": 410.760998,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceCheck": "Introductory and middle frames inspected; topic/language/metadata checked, not a full academic review."
+    },
+    {
+      "file": "bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+      "kind": "video",
+      "chapterId": "zoo-ch-2",
+      "subjectId": "sub-zoology",
+      "subjectName": "Bio-Zoology",
+      "title": "Bio-Zoology — Structure of the Human Ovum",
+      "topic": "Structure of the Human Ovum",
+      "language": "English",
+      "sha256": "09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4.mp4",
+      "sizeBytes": 11601986,
+      "description": "Owner-supplied study resource. Topic and language checked from source previews; full academic accuracy and all supplied answers have not been teacher-verified. Original source retained.",
+      "durationSeconds": 269,
+      "thumbnailUrl": "/images/learning-materials/09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4.jpg",
+      "inspection": {
+        "file": "book's/bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+        "relative": "bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+        "bytes": 11601986,
+        "sha256": "09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4",
+        "duration": 268.329796,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceCheck": "Introductory and middle frames inspected; topic/language/metadata checked, not a full academic review."
+    },
+    {
+      "file": "bio/zoo/video/The_Menstrual_Cycle.mp4",
+      "kind": "video",
+      "chapterId": "zoo-ch-2",
+      "subjectId": "sub-zoology",
+      "subjectName": "Bio-Zoology",
+      "title": "Bio-Zoology — The Menstrual Cycle",
+      "topic": "The Menstrual Cycle",
+      "language": "English",
+      "sha256": "2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23.mp4",
+      "sizeBytes": 45039378,
+      "description": "Owner-supplied study resource. Topic and language checked from source previews; full academic accuracy and all supplied answers have not been teacher-verified. Original source retained.",
+      "durationSeconds": 439,
+      "thumbnailUrl": "/images/learning-materials/2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23.jpg",
+      "inspection": {
+        "file": "book's/bio/zoo/video/The_Menstrual_Cycle.mp4",
+        "relative": "bio/zoo/video/The_Menstrual_Cycle.mp4",
+        "bytes": 45039378,
+        "sha256": "2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23",
+        "duration": 438.067664,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceCheck": "Introductory and middle frames inspected; topic/language/metadata checked, not a full academic review."
+    },
+    {
+      "file": "bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+      "kind": "video",
+      "chapterId": "zoo-ch-2",
+      "subjectId": "sub-zoology",
+      "subjectName": "Bio-Zoology",
+      "title": "Bio-Zoology — கருவுறுதல் & கருப்பதித்தல் — Fertilization & Implantation",
+      "topic": "கருவுறுதல் & கருப்பதித்தல் — Fertilization & Implantation",
+      "language": "Tamil",
+      "sha256": "2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35.mp4",
+      "sizeBytes": 31745621,
+      "description": "Owner-supplied study resource. Topic and language checked from source previews; full academic accuracy and all supplied answers have not been teacher-verified. Original source retained.",
+      "durationSeconds": 306,
+      "thumbnailUrl": "/images/learning-materials/2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35.jpg",
+      "inspection": {
+        "file": "book's/bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+        "relative": "bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+        "bytes": 31745621,
+        "sha256": "2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35",
+        "duration": 305.388844,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceCheck": "Introductory and middle frames inspected; topic/language/metadata checked, not a full academic review."
+    },
+    {
+      "file": "bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+      "kind": "video",
+      "chapterId": "zoo-ch-2",
+      "subjectId": "sub-zoology",
+      "subjectName": "Bio-Zoology",
+      "title": "Bio-Zoology — மனித விந்து செல்லின் அமைப்பு — Human sperm structure",
+      "topic": "மனித விந்து செல்லின் அமைப்பு — Human sperm structure",
+      "language": "Tamil",
+      "sha256": "c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa.mp4",
+      "sizeBytes": 34042189,
+      "description": "Owner-supplied study resource. Topic and language checked from source previews; full academic accuracy and all supplied answers have not been teacher-verified. Original source retained.",
+      "durationSeconds": 331,
+      "thumbnailUrl": "/images/learning-materials/c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa.jpg",
+      "inspection": {
+        "file": "book's/bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+        "relative": "bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+        "bytes": 34042189,
+        "sha256": "c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa",
+        "duration": 330.884354,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceCheck": "Introductory and middle frames inspected; topic/language/metadata checked, not a full academic review."
+    },
+    {
+      "file": "bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+      "kind": "video",
+      "chapterId": "zoo-ch-2",
+      "subjectId": "sub-zoology",
+      "subjectName": "Bio-Zoology",
+      "title": "Bio-Zoology — மாதவிடாய் சுழற்சி — The Menstrual Cycle",
+      "topic": "மாதவிடாய் சுழற்சி — The Menstrual Cycle",
+      "language": "Tamil",
+      "sha256": "3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d.mp4",
+      "sizeBytes": 34840553,
+      "description": "Owner-supplied study resource. Topic and language checked from source previews; full academic accuracy and all supplied answers have not been teacher-verified. Original source retained.",
+      "durationSeconds": 338,
+      "thumbnailUrl": "/images/learning-materials/3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d.jpg",
+      "inspection": {
+        "file": "book's/bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+        "relative": "bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+        "bytes": 34840553,
+        "sha256": "3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d",
+        "duration": 337.339501,
+        "width": 1280,
+        "height": 720
+      },
+      "sourceCheck": "Introductory and middle frames inspected; topic/language/metadata checked, not a full academic review."
+    }
+  ],
+  "files": [
+    {
+      "file": "book's/bio/bio/pdf/12th_Bio_Botany_Combined_Ordered_Questions.pdf",
+      "relative": "bio/bio/pdf/12th_Bio_Botany_Combined_Ordered_Questions.pdf",
+      "bytes": 29921504,
+      "sha256": "d2b5787ced10b9c52e22e0637e5efb7a39f999abb478aecd9ccfb11fe45adc89"
+    },
+    {
+      "file": "book's/bio/bio/pdf/12th_Bio_Botany_Ecology_Textbook_Back_Questions_1-10.pdf",
+      "relative": "bio/bio/pdf/12th_Bio_Botany_Ecology_Textbook_Back_Questions_1-10.pdf",
+      "bytes": 4102950,
+      "sha256": "bd64953c04fdc32f0a132aaeb2e6e166c4b37da6592b3e2e428fc6f6a152848d"
+    },
+    {
+      "file": "book's/bio/bio/pdf/12th_Bio_Botany_Plant_Tissue_Culture_Combined_Ordered.pdf",
+      "relative": "bio/bio/pdf/12th_Bio_Botany_Plant_Tissue_Culture_Combined_Ordered.pdf",
+      "bytes": 30237563,
+      "sha256": "9ae9366328608efb8f8f354f77108e9507217d936c5b49fc7aaee4ddc31417d7"
+    },
+    {
+      "file": "book's/bio/bio/pdf/Bio_Botany_Ecology_Additional_Questions_10_Handwritten_Pages.pdf",
+      "relative": "bio/bio/pdf/Bio_Botany_Ecology_Additional_Questions_10_Handwritten_Pages.pdf",
+      "bytes": 25772413,
+      "sha256": "f6e138e7654c70b4d6c2fa4e4b9f00171df19f07217fedc34f6675b13f44cfc1"
+    },
+    {
+      "file": "book's/bio/bio/pdf/Bio_Botany_Ecology_Complete_Handwritten_Notes_20_Pages.pdf",
+      "relative": "bio/bio/pdf/Bio_Botany_Ecology_Complete_Handwritten_Notes_20_Pages.pdf",
+      "bytes": 51659777,
+      "sha256": "b264aa524a109075d01f605fa25eb60688f814f445a89336192c29e098e9ee0e"
+    },
+    {
+      "file": "book's/bio/bio/pdf/Bio_Botany_Ecosystem_10_Handwritten_Notes.pdf",
+      "relative": "bio/bio/pdf/Bio_Botany_Ecosystem_10_Handwritten_Notes.pdf",
+      "bytes": 9678375,
+      "sha256": "2370ec9103bb8828d7b20097338ca1bf5b37efff44c88dbf18c8e16983332376"
+    },
+    {
+      "file": "book's/bio/bio/pdf/Bio_Botany_Ecosystem_Textbook_Back_Then_Additional_Combined (1).pdf",
+      "relative": "bio/bio/pdf/Bio_Botany_Ecosystem_Textbook_Back_Then_Additional_Combined (1).pdf",
+      "bytes": 28415220,
+      "sha256": "ef3afca9a73b2d991b873a0d9a4a1eba954778a9d1f93c3e1b082103489c2e3f"
+    },
+    {
+      "file": "book's/bio/bio/pdf/Bio_Botany_Principles_of_Ecology_10_Handwritten_Notes.pdf",
+      "relative": "bio/bio/pdf/Bio_Botany_Principles_of_Ecology_10_Handwritten_Notes.pdf",
+      "bytes": 25887422,
+      "sha256": "d807d6913cefd90cd5c1b13ba509020d9966f1a1030e6a84c87fd9728cae4a5e"
+    },
+    {
+      "file": "book's/bio/bio/pdf/Environmental_Issues_Handwritten_Ordered.pdf",
+      "relative": "bio/bio/pdf/Environmental_Issues_Handwritten_Ordered.pdf",
+      "bytes": 15135055,
+      "sha256": "ad5b40fc2b8da5805d80fbfff119402ac727f7f19225aaefac29a8f4a3ec8497"
+    },
+    {
+      "file": "book's/bio/zoo/pdf/Uyirgalin_Inapperukkam_Handwritten_10_Pages.pdf",
+      "relative": "bio/zoo/pdf/Uyirgalin_Inapperukkam_Handwritten_10_Pages.pdf",
+      "bytes": 5542840,
+      "sha256": "312d6471fe994933c70ffc76472c574d0d8b589cc964c66dc7e5557c4455853a"
+    },
+    {
+      "file": "book's/bio/zoo/pdf/Zoology_English_Handwritten_Notes_Compact_Adjusted.pdf",
+      "relative": "bio/zoo/pdf/Zoology_English_Handwritten_Notes_Compact_Adjusted.pdf",
+      "bytes": 122235,
+      "sha256": "321775ec66e8c11c38e2c053d8aea1b9c8c793869387edc211b2581c1f09d702"
+    },
+    {
+      "file": "book's/bio/zoo/pdf/Zoology_Human_Reproduction_10_Handwritten_Images_Ordered.pdf",
+      "relative": "bio/zoo/pdf/Zoology_Human_Reproduction_10_Handwritten_Images_Ordered.pdf",
+      "bytes": 26355431,
+      "sha256": "b191a4e57510aa03d097b97133d9d0f2ec7735336e26a9d64e6e3ba00ca93e75"
+    },
+    {
+      "file": "book's/bio/zoo/pdf/Zoology_Human_Reproduction_All_25_Handwritten_Images_Ordered.pdf",
+      "relative": "bio/zoo/pdf/Zoology_Human_Reproduction_All_25_Handwritten_Images_Ordered.pdf",
+      "bytes": 16945339,
+      "sha256": "b4877154723b5a462d098921fd1dbc64faf8af299334bd1133ae68654eb03870"
+    },
+    {
+      "file": "book's/bio/zoo/pdf/Zoology_Reproduction_English_Handwritten_No_Branding.pdf",
+      "relative": "bio/zoo/pdf/Zoology_Reproduction_English_Handwritten_No_Branding.pdf",
+      "bytes": 278892,
+      "sha256": "99d98ff62aab0556a67b8993a9f612ff5fa5bdcceee766c51bfb757c0326872f"
+    },
+    {
+      "file": "book's/bio/zoo/pdf/Zoology_Reproduction_Tamil_Handwritten_No_Samacheer_Branding.pdf",
+      "relative": "bio/zoo/pdf/Zoology_Reproduction_Tamil_Handwritten_No_Samacheer_Branding.pdf",
+      "bytes": 16349810,
+      "sha256": "aceb4807c49311c5d69b5b08e4306dec2801b2af1cc40a942fb2d54e128118a9"
+    },
+    {
+      "file": "book's/bio/zoo/video/Asexual_Reproduction.mp4",
+      "relative": "bio/zoo/video/Asexual_Reproduction.mp4",
+      "bytes": 32269141,
+      "sha256": "592b62cb96129c709fe23710270f49f3bb2c72d77b6397a59c19f3b27128c704"
+    },
+    {
+      "file": "book's/bio/zoo/video/Biology_Olympiad_Journey.mp4",
+      "relative": "bio/zoo/video/Biology_Olympiad_Journey.mp4",
+      "bytes": 50767861,
+      "sha256": "6c14914368fc6e607652a26022b1bc29595241e0afd88af9a28284a113cb03fc"
+    },
+    {
+      "file": "book's/bio/zoo/video/Fertilization___Implantation.mp4",
+      "relative": "bio/zoo/video/Fertilization___Implantation.mp4",
+      "bytes": 44863951,
+      "sha256": "92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa",
+      "duration": 410.760998,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "book's/bio/zoo/video/Major_Reproductive_Events.mp4",
+      "relative": "bio/zoo/video/Major_Reproductive_Events.mp4",
+      "bytes": 26358902,
+      "sha256": "b6af7efa7295f1712e9cdc0366f22d0320f643ee5a658ba6341d3e7952b9c494"
+    },
+    {
+      "file": "book's/bio/zoo/video/Parthenogenesis.mp4",
+      "relative": "bio/zoo/video/Parthenogenesis.mp4",
+      "bytes": 43440585,
+      "sha256": "f5b1763ce23178c5ca4af3cbeecb1c8ce1902828b5441652e985cfab4559a3f9"
+    },
+    {
+      "file": "book's/bio/zoo/video/Sexual_Reproduction.mp4",
+      "relative": "bio/zoo/video/Sexual_Reproduction.mp4",
+      "bytes": 23758345,
+      "sha256": "b3aae3baaf22c65f4b46e4dc0492e2f9a23acf0e0d2f4da1ea3ffa1b78adcd9d"
+    },
+    {
+      "file": "book's/bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+      "relative": "bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+      "bytes": 11601986,
+      "sha256": "09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4",
+      "duration": 268.329796,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "book's/bio/zoo/video/The_Menstrual_Cycle.mp4",
+      "relative": "bio/zoo/video/The_Menstrual_Cycle.mp4",
+      "bytes": 45039378,
+      "sha256": "2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23",
+      "duration": 438.067664,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "book's/bio/zoo/video/WhatsApp Video 2026-10-25 at 14.42.36.mp4",
+      "relative": "bio/zoo/video/WhatsApp Video 2026-10-25 at 14.42.36.mp4",
+      "bytes": 45497051,
+      "sha256": "8571a4f0be36d7d6650093b286dfcfbcb65fb7e29d230bf59a0bee380955f51c"
+    },
+    {
+      "file": "book's/bio/zoo/video/WhatsApp Video 2026-10-25 at 14.45.10.mp4",
+      "relative": "bio/zoo/video/WhatsApp Video 2026-10-25 at 14.45.10.mp4",
+      "bytes": 32269013,
+      "sha256": "1a56e5b1f3059af2257ffa82e92b63f905bf6b06d07566d11c0d4d196030c5cd"
+    },
+    {
+      "file": "book's/bio/zoo/video/WhatsApp Video 2026-10-25 at 21.15.19.mp4",
+      "relative": "bio/zoo/video/WhatsApp Video 2026-10-25 at 21.15.19.mp4",
+      "bytes": 23758217,
+      "sha256": "70a33fbdd58df0c57a12cd720c26aef2d4fab4d99313912b3bd748964b95ce52"
+    },
+    {
+      "file": "book's/bio/zoo/video/இனச்செல்_உருவாக்கம்.mp4",
+      "relative": "bio/zoo/video/இனச்செல்_உருவாக்கம்.mp4",
+      "bytes": 41623018,
+      "sha256": "2f23eb2378b2ca391eae1e8f3cc7e125160c837170a01f1d2ae5aee2ec716dac"
+    },
+    {
+      "file": "book's/bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+      "relative": "bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+      "bytes": 31745621,
+      "sha256": "2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35",
+      "duration": 305.388844,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "book's/bio/zoo/video/பாலினப்_பெருக்கம்.mp4",
+      "relative": "bio/zoo/video/பாலினப்_பெருக்கம்.mp4",
+      "bytes": 49547487,
+      "sha256": "2503ddb9417427d5836489b685ed1f63904c68fc66f4123d3600be254db6b1dc"
+    },
+    {
+      "file": "book's/bio/zoo/video/பாலிலி_இனப்பெருக்கம்.mp4",
+      "relative": "bio/zoo/video/பாலிலி_இனப்பெருக்கம்.mp4",
+      "bytes": 45497179,
+      "sha256": "dfbd461dc72dc4c7240570320636478dfcf3bf4336e2c9ab0c1a6b9df8ade825"
+    },
+    {
+      "file": "book's/bio/zoo/video/மனித_அண்டகத்தின்_அமைப்பு.mp4",
+      "relative": "bio/zoo/video/மனித_அண்டகத்தின்_அமைப்பு.mp4",
+      "bytes": 31905823,
+      "sha256": "43578656df953decc7f9bc4356951359c74af12515c39daa11e9141659bc2388"
+    },
+    {
+      "file": "book's/bio/zoo/video/மனித_இனப்பெருக்க_நிகழ்வுகள்.mp4",
+      "relative": "bio/zoo/video/மனித_இனப்பெருக்க_நிகழ்வுகள்.mp4",
+      "bytes": 31301979,
+      "sha256": "eece13dfb5bd084b8461279e45fc31472b67ce663eddda4f7ab8331fed9cd5de"
+    },
+    {
+      "file": "book's/bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+      "relative": "bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+      "bytes": 34042189,
+      "sha256": "c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa",
+      "duration": 330.884354,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "book's/bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+      "relative": "bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+      "bytes": 34840553,
+      "sha256": "3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d",
+      "duration": 337.339501,
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "book's/che/pdf/Chapter_11_Notes_Clean_No_Misaligned_Lines.pdf",
+      "relative": "che/pdf/Chapter_11_Notes_Clean_No_Misaligned_Lines.pdf",
+      "bytes": 4717820,
+      "sha256": "7d7436c6525af628eca6f9d445aaa3fd64c14185ba0a97231d809ab7489c336f"
+    },
+    {
+      "file": "book's/che/pdf/Chapter_6_Notes_Text_Layout_Repaired_With_Diagrams.pdf",
+      "relative": "che/pdf/Chapter_6_Notes_Text_Layout_Repaired_With_Diagrams.pdf",
+      "bytes": 2286296,
+      "sha256": "6a967653ec2bccfdcfb656ac40bf8718643544e7dea3ecf4c10a66b89df5ff4d"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes (1).pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes (1).pdf",
+      "bytes": 1756950,
+      "sha256": "afb333a754eec7fcada8292691543218c443a850fdcfe129ed1cb4e7313471ce"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes (2).pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes (2).pdf",
+      "bytes": 18552514,
+      "sha256": "56a01aeb017eeda954418e695885e811c6e23d321ae9b84c1409c71fefc11d38"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes (3).pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes (3).pdf",
+      "bytes": 18799794,
+      "sha256": "750f70f3fe3cd119694ee12de7fa2ce366db8f21add27d320f2595c92c21b534"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes (4).pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes (4).pdf",
+      "bytes": 33104477,
+      "sha256": "52bc0bc8511607ca4ee9553b2a6f5429c5e189ec66a8ef5533e4395605dc49fa"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes.pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes.pdf",
+      "bytes": 11660265,
+      "sha256": "c8e6e3f94182c5bd5a966ed23a1cf4dbde0f21ccd61b5cc6d1581d27b1f024c2"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes_Chapter5.pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes_Chapter5.pdf",
+      "bytes": 49990742,
+      "sha256": "8418fcc30d74993c5e2ee1a22323105faaaeece140b4b019e18cc36444bcb72d"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes_Chapter7.pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes_Chapter7.pdf",
+      "bytes": 43161301,
+      "sha256": "620e820fe0d571a9378c28e7a2a928f0abc743aa606f6982974037835211e5de"
+    },
+    {
+      "file": "book's/che/pdf/Complete_Handwritten_Notes_II.pdf",
+      "relative": "che/pdf/Complete_Handwritten_Notes_II.pdf",
+      "bytes": 9058925,
+      "sha256": "035b052e3d32e821acbafc55f85d1692ba277dd8ba1ca88c64f8ec9f032b1407"
+    },
+    {
+      "file": "book's/che/pdf/Metallurgy_Handwritten_Style_51_Pages.pdf",
+      "relative": "che/pdf/Metallurgy_Handwritten_Style_51_Pages.pdf",
+      "bytes": 2276600,
+      "sha256": "14c8c582a43d14b84bb8013fe7eab9d13db1250b4b282802117e5fceaf55335e"
+    },
+    {
+      "file": "book's/computer sic/pdf/Algorithmic_Strategies_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Algorithmic_Strategies_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 26201785,
+      "sha256": "2f23afded8e12bf967bc16599d492f62463f399f6f8c86170e9b946cddce4241"
+    },
+    {
+      "file": "book's/computer sic/pdf/Data_Abstraction_10_Handwritten_Images.pdf",
+      "relative": "computer sic/pdf/Data_Abstraction_10_Handwritten_Images.pdf",
+      "bytes": 2631115,
+      "sha256": "2e175d77861239eecb65d6ae5ba98d2d000c348669e1541d63b99a51b0845c47"
+    },
+    {
+      "file": "book's/computer sic/pdf/Data_Abstraction_All_10_Handwritten_Pages.pdf",
+      "relative": "computer sic/pdf/Data_Abstraction_All_10_Handwritten_Pages.pdf",
+      "bytes": 23134224,
+      "sha256": "4c461876ec1ebd80b53030a5195c0c5b007c0eadd50b77e30b33d0e39bf470b0"
+    },
+    {
+      "file": "book's/computer sic/pdf/DBMS_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/DBMS_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2294949,
+      "sha256": "48f37a5a0343739dd093fe67b702e43fe9c470ed027e1137c5a289b506f07b10"
+    },
+    {
+      "file": "book's/computer sic/pdf/Functions_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Functions_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2124422,
+      "sha256": "f797a1c1818d1094834566f24b3cff43713f3fbb5ccf639d01862bc882faf3a0"
+    },
+    {
+      "file": "book's/computer sic/pdf/Handwritten_Notes_All_10_Pages.pdf",
+      "relative": "computer sic/pdf/Handwritten_Notes_All_10_Pages.pdf",
+      "bytes": 2407345,
+      "sha256": "fab4d232b0f4e276656ef21ea37f1e896ef1566fe5282e521d0b785c8dffd304"
+    },
+    {
+      "file": "book's/computer sic/pdf/Importing_CPP_Programs_in_Python_Handwritten_10_Pages.pdf",
+      "relative": "computer sic/pdf/Importing_CPP_Programs_in_Python_Handwritten_10_Pages.pdf",
+      "bytes": 2242539,
+      "sha256": "647b608aeef9e6f40e107028b5e93fc627b6cd11a62ab8ce8c6ae7fb260e41be"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_and_CSV_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Python_and_CSV_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2269198,
+      "sha256": "4330916784aeb77107dbb445e8581bb88b632b4cbb7bd5c18b72fb4d320493cf"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_Classes_and_Objects_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Python_Classes_and_Objects_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2010433,
+      "sha256": "ec41a0c08a74c94015e6b11fb921ab03825ccaad61fccba33fa78a74e4292d59"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_Control_Structures_10_Handwritten_Pages.pdf",
+      "relative": "computer sic/pdf/Python_Control_Structures_10_Handwritten_Pages.pdf",
+      "bytes": 31147230,
+      "sha256": "651c51e54c7e2a149f927686a8044c81cb8988dd7ace39ea96050a14771b2268"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_Functions_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Python_Functions_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2572626,
+      "sha256": "88515822c6c7c82ae351b5700b0a2b8948eab4f9d190f15c0bdf74a3e3bdd297"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_Lists_Tuples_Sets_Dictionary_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Python_Lists_Tuples_Sets_Dictionary_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2339719,
+      "sha256": "a87a8849698a54d1c88a7008f1783382efb69972c03cadd3c9de7c7b15dee344"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_Strings_and_String_Manipulations_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Python_Strings_and_String_Manipulations_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 31720078,
+      "sha256": "bdb8584e7da051e98c3d4041b7336661fadc7fff915b20d1e2882debd99eb1eb"
+    },
+    {
+      "file": "book's/computer sic/pdf/Python_Variables_Operators_10_Handwritten_Pages.pdf",
+      "relative": "computer sic/pdf/Python_Variables_Operators_10_Handwritten_Pages.pdf",
+      "bytes": 2341654,
+      "sha256": "ee0b6168cc5b3576cad9d438dbbbc8b0eaade3ba10fd2f0461068897f9e25df2"
+    },
+    {
+      "file": "book's/computer sic/pdf/Scope_and_Modular_Programming_10_Handwritten_Pages.pdf",
+      "relative": "computer sic/pdf/Scope_and_Modular_Programming_10_Handwritten_Pages.pdf",
+      "bytes": 5559132,
+      "sha256": "97134daa00a7aaaa5efaa444039f6e4a4c4e5926468f103f190b456d3e8b356e"
+    },
+    {
+      "file": "book's/computer sic/pdf/Scope_Handwritten_10_Images.pdf",
+      "relative": "computer sic/pdf/Scope_Handwritten_10_Images.pdf",
+      "bytes": 29448514,
+      "sha256": "e6a7da487dec8d2e32636601a1520b7e52b2ffe0e968b6b70f7f890338e2e41b"
+    },
+    {
+      "file": "book's/computer sic/pdf/SQLite_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/SQLite_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2474422,
+      "sha256": "1ca72551945edaa0801c9a84f3c30f37a52bb463a922f2097271b1480da909f9"
+    },
+    {
+      "file": "book's/computer sic/pdf/SQL_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/SQL_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2224477,
+      "sha256": "80b10202a144b86658356ae45aa068c231e2b49322319d44aa8c4da559ef5fa7"
+    },
+    {
+      "file": "book's/computer sic/pdf/Tamil_Handwritten_Notes_10_Pages.pdf",
+      "relative": "computer sic/pdf/Tamil_Handwritten_Notes_10_Pages.pdf",
+      "bytes": 2762708,
+      "sha256": "3ad825b02bdbc8dc92c3982a7a5df7f97b29dec904f8bc40d48b5b4b852e5638"
+    },
+    {
+      "file": "book's/english/video/VID-20260929-WA0033.mp4",
+      "relative": "english/video/VID-20260929-WA0033.mp4",
+      "bytes": 55947310,
+      "sha256": "7adc3c51c51871e0fb9e8b68eb79db3bcf07e837dda6ac4485da4053bb0eb745"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0036.mp4",
+      "relative": "english/video/VID-20261006-WA0036.mp4",
+      "bytes": 42492335,
+      "sha256": "37bbbd92e8c2a455035eb50a86bb3d47b3c1923e6939f2e5c4d41b7b8d5b501f"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0037.mp4",
+      "relative": "english/video/VID-20261006-WA0037.mp4",
+      "bytes": 33640098,
+      "sha256": "d1ee045b9c22c6cd6b96625c0d7b9c29ef1cb7a09cc72c5e06c43ac92981cba7"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0038.mp4",
+      "relative": "english/video/VID-20261006-WA0038.mp4",
+      "bytes": 41268906,
+      "sha256": "7a1793f35e08d82849a1fe4083d555f5e342db06633cf228a40c37848dbe3fce"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0041.mp4",
+      "relative": "english/video/VID-20261006-WA0041.mp4",
+      "bytes": 63505034,
+      "sha256": "7b06da9f2cd46681358017ce626132f50a4d14ccb365e5ffdea734e10193e0ce"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0042.mp4",
+      "relative": "english/video/VID-20261006-WA0042.mp4",
+      "bytes": 57918527,
+      "sha256": "be0a2d41ac7aa2d0fb453340e5aa2616c92026f202113ac11f1bbe6e8e80b203"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0043.mp4",
+      "relative": "english/video/VID-20261006-WA0043.mp4",
+      "bytes": 74025899,
+      "sha256": "de7f6db909048ebe47453ccec2a4eb4350e99c16a4f95c65dc24c8c2a83dcf01"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0044.mp4",
+      "relative": "english/video/VID-20261006-WA0044.mp4",
+      "bytes": 76521210,
+      "sha256": "468d49529df26b1b530bbe530ab70fa202c1a69b2bb9dd0f43495414d0d272f4"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0045.mp4",
+      "relative": "english/video/VID-20261006-WA0045.mp4",
+      "bytes": 45329171,
+      "sha256": "dc12450f28e53c95cfebdbafab633e2c0c10ebb7a7602bb7730d2c51913aacba"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0046.mp4",
+      "relative": "english/video/VID-20261006-WA0046.mp4",
+      "bytes": 47549810,
+      "sha256": "344e870c7c6758d2e910292b12bfca742557e4c2acbe05f2411baafb966789a7"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0050.mp4",
+      "relative": "english/video/VID-20261006-WA0050.mp4",
+      "bytes": 38956931,
+      "sha256": "febdc4a259a6e77ab3958f9348e1618e8c31d5837fe1745e1a467b7e24723d08"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0054.mp4",
+      "relative": "english/video/VID-20261006-WA0054.mp4",
+      "bytes": 50286308,
+      "sha256": "ee2a0a5e5345932e935bcb37f836fb44a2028b16f12c5f3e8c1881eb86e57d9d"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0055.mp4",
+      "relative": "english/video/VID-20261006-WA0055.mp4",
+      "bytes": 51380844,
+      "sha256": "75de6bb4dcd8a63ffc64c3f7bba5a0f4997a46867829f5ca631376de07e3e16a"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0056.mp4",
+      "relative": "english/video/VID-20261006-WA0056.mp4",
+      "bytes": 49250305,
+      "sha256": "b4a99f2abda364eb8d91d44dafd3dd0d0c6b2f9e7cb1751d80384f2aed421823"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0057.mp4",
+      "relative": "english/video/VID-20261006-WA0057.mp4",
+      "bytes": 53988821,
+      "sha256": "ed270b670fd1e311db20f09004e5b9932a44d650c5d97e40070fc7a33f873f8f"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0058.mp4",
+      "relative": "english/video/VID-20261006-WA0058.mp4",
+      "bytes": 57690335,
+      "sha256": "98881fce259ab9f5dc43a80549665e1c0d804217d2148f5f11bfa443be337294"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0059.mp4",
+      "relative": "english/video/VID-20261006-WA0059.mp4",
+      "bytes": 67757668,
+      "sha256": "559cd4b578de15ced4b61e1d7f26bc0edd67f7ed2cbe4530d6dd06c80b342933"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0060.mp4",
+      "relative": "english/video/VID-20261006-WA0060.mp4",
+      "bytes": 65621017,
+      "sha256": "c42b5299ff1271c56283da495f067a2d8a8d8010577b55e6b84fd3faea9a3739"
+    },
+    {
+      "file": "book's/english/video/VID-20261006-WA0061.mp4",
+      "relative": "english/video/VID-20261006-WA0061.mp4",
+      "bytes": 76961387,
+      "sha256": "e86b53d1f1afc2b64ba671c648a4589e32b69f1f2ed28d25fc3b957faa8a31b4"
+    },
+    {
+      "file": "book's/maths/pdf/12th Tamil Full Textbook New Edition 2025-2026 Download PDF.pdf",
+      "relative": "maths/pdf/12th Tamil Full Textbook New Edition 2025-2026 Download PDF.pdf",
+      "bytes": 14864832,
+      "sha256": "5ae78a79b61cf732ed6e1d0874b7f94e5fe505c84bed83537193cc4690921a69"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_10_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_10_Handwritten_Notes.pdf",
+      "bytes": 13350859,
+      "sha256": "cfb80af1ed14bd8069fa86cd214fe3261e5508a55c72413534de0baf15ef8602"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_11_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_11_Handwritten_Notes.pdf",
+      "bytes": 4334466,
+      "sha256": "27bacf8acf880c94bd2c3d6205d030edaaf91ecfc70cb31d21d8fcab1ddf7c0c"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_12_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_12_Handwritten_Notes.pdf",
+      "bytes": 4309267,
+      "sha256": "271d9f45d383d96db607ef9c982075769d2e374be1aa871913c7a93b5f8ac156"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_3_Exercises_3.1_to_3.7_Handwritten_Ordered.pdf",
+      "relative": "maths/pdf/Chapter_3_Exercises_3.1_to_3.7_Handwritten_Ordered.pdf",
+      "bytes": 39534086,
+      "sha256": "b2a38751c90f6ace608a17eed399a429b7caa0a894e46f1d8bcf0aab6662cecc"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_5_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_5_Handwritten_Notes.pdf",
+      "bytes": 1699869,
+      "sha256": "ed3f278e253bbfd38ea596ab073ea5b1fc9a1c7ec6170cb87d6281f31cbb5f0a"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_6_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_6_Handwritten_Notes.pdf",
+      "bytes": 1054515,
+      "sha256": "debb4da324b0219881f62bc616890607fe2b3d0ff6d08165bbf9fb9ee91da424"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_7_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_7_Handwritten_Notes.pdf",
+      "bytes": 22784215,
+      "sha256": "344b8ea7e3405f691c7c1ae907d953d4e6eb85620e9699d7b35bd8493074d585"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_8_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_8_Handwritten_Notes.pdf",
+      "bytes": 5699919,
+      "sha256": "5c2f0ff6cd80814dbdbab7feabe47657516649d434ae12df1d21cc65fee59a35"
+    },
+    {
+      "file": "book's/maths/pdf/Chapter_9_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Chapter_9_Handwritten_Notes.pdf",
+      "bytes": 10714303,
+      "sha256": "cae551bdddcd6929876e38984aa84b9882f0d570014875bbfa475f79ad715444"
+    },
+    {
+      "file": "book's/maths/pdf/handwritten_exercises_1.5_to_1.8_complete (2).pdf",
+      "relative": "maths/pdf/handwritten_exercises_1.5_to_1.8_complete (2).pdf",
+      "bytes": 11498504,
+      "sha256": "f0a0cc43878c8c73642efb3ab93282ee8ec508e212d031228284964ca7d67900"
+    },
+    {
+      "file": "book's/maths/pdf/Inverse_Trigonometric_Functions_Handwritten_Notes.pdf",
+      "relative": "maths/pdf/Inverse_Trigonometric_Functions_Handwritten_Notes.pdf",
+      "bytes": 86896,
+      "sha256": "f3bc3a5026bb8c58c4ebb783d0ba895722944303b155ddd5de69a1673f2125a7"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0031.mp4",
+      "relative": "tamil/video/VID-20261006-WA0031.mp4",
+      "bytes": 40024021,
+      "sha256": "88c7b31312ba089beba77fdf1109d41bce70fb2f7d2f747b3127262ec0c0e69f"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0032.mp4",
+      "relative": "tamil/video/VID-20261006-WA0032.mp4",
+      "bytes": 36380581,
+      "sha256": "01b9f37d09f9ccac011b5e5f8f579880811ea052b7a2f436d53ae401bfb6a4cc"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0033.mp4",
+      "relative": "tamil/video/VID-20261006-WA0033.mp4",
+      "bytes": 50399239,
+      "sha256": "d4108f8588cc625212a24ce8dd39e2a6a898e54c2448214922fbdea4c0551d13"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0034.mp4",
+      "relative": "tamil/video/VID-20261006-WA0034.mp4",
+      "bytes": 40486427,
+      "sha256": "83253f5da10ccd5c708dc73baa059379131eeb90f1072bebc21c9585221d7a0f"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0035.mp4",
+      "relative": "tamil/video/VID-20261006-WA0035.mp4",
+      "bytes": 46124100,
+      "sha256": "3b338e6d2091b97dc2edb38f50d2b3e36af88bd858af2391d201eec8eb975810"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0039.mp4",
+      "relative": "tamil/video/VID-20261006-WA0039.mp4",
+      "bytes": 39646198,
+      "sha256": "3b741ef883db8157bf5f9d081d1fd538211b649f369ef8ad79fbd87a74e966af"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0040.mp4",
+      "relative": "tamil/video/VID-20261006-WA0040.mp4",
+      "bytes": 54016963,
+      "sha256": "9dc0b1187170f476c9bcf55fa07626ca99dd6d4c14fbf832e568c4994b053785"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0047.mp4",
+      "relative": "tamil/video/VID-20261006-WA0047.mp4",
+      "bytes": 25118838,
+      "sha256": "baa866084e0951ab9006d20600dac33e01ebba930ebb51a6e6d4e8759eaf6552"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0048.mp4",
+      "relative": "tamil/video/VID-20261006-WA0048.mp4",
+      "bytes": 38669858,
+      "sha256": "e4c3b5c45ac8e937c3b070baf006441c89945dbc26465cb11a758e21b191ed75"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0049.mp4",
+      "relative": "tamil/video/VID-20261006-WA0049.mp4",
+      "bytes": 38939548,
+      "sha256": "ad9f7287b19758600def39bcc970085a5d83c017c42338e75235053d93a170ed"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0051.mp4",
+      "relative": "tamil/video/VID-20261006-WA0051.mp4",
+      "bytes": 43592393,
+      "sha256": "7ae399f15e06649706179d123a4d4d4f1b07daa54e430b62eda867866cc64c48"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0052.mp4",
+      "relative": "tamil/video/VID-20261006-WA0052.mp4",
+      "bytes": 41568182,
+      "sha256": "4fb8471dc5787b91949ffb9f445c97b8b731ca23677fc812b72babfbdc26fb15"
+    },
+    {
+      "file": "book's/tamil/video/VID-20261006-WA0053.mp4",
+      "relative": "tamil/video/VID-20261006-WA0053.mp4",
+      "bytes": 48133640,
+      "sha256": "0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2"
+    },
+    {
+      "file": "book's/tamil/video/WhatsApp Video 2026-10-07 at 11.37.04 (1).mp4",
+      "relative": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.04 (1).mp4",
+      "bytes": 38669858,
+      "sha256": "e4c3b5c45ac8e937c3b070baf006441c89945dbc26465cb11a758e21b191ed75"
+    },
+    {
+      "file": "book's/tamil/video/WhatsApp Video 2026-10-07 at 11.37.04.mp4",
+      "relative": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.04.mp4",
+      "bytes": 38939548,
+      "sha256": "ad9f7287b19758600def39bcc970085a5d83c017c42338e75235053d93a170ed"
+    },
+    {
+      "file": "book's/tamil/video/WhatsApp Video 2026-10-07 at 11.37.05 (1).mp4",
+      "relative": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05 (1).mp4",
+      "bytes": 40486427,
+      "sha256": "83253f5da10ccd5c708dc73baa059379131eeb90f1072bebc21c9585221d7a0f"
+    },
+    {
+      "file": "book's/tamil/video/WhatsApp Video 2026-10-07 at 11.37.05.mp4",
+      "relative": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05.mp4",
+      "bytes": 48133640,
+      "sha256": "0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2"
+    },
+    {
+      "file": "book's/tamil/video/WhatsApp Video 2026-10-07 at 11.37.08.mp4",
+      "relative": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.08.mp4",
+      "bytes": 40250365,
+      "sha256": "fa12a2b1fc844718a6247a947af660426a27648caee51e1068834d30f12c59fe"
+    }
+  ]
+}

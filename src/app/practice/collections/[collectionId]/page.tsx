@@ -50,6 +50,16 @@ export default function SuppliedPracticePage({
         if (!r.ok) throw Error(data.error || "Could not load this collection.");
         if (!controller.signal.aborted) {
           setCollection(data.collection);
+          const requestedSection = new URLSearchParams(
+            window.location.search,
+          ).get("section");
+          if (
+            requestedSection &&
+            data.collection.sectionCounts.some(
+              (s: { id: string }) => s.id === requestedSection,
+            )
+          )
+            setSection(requestedSection);
           setBank(data.questions);
           setOwner(data.ownerId);
           setHistory(readSuppliedHistory(data.ownerId));
@@ -125,23 +135,28 @@ export default function SuppliedPracticePage({
   return (
     <div className="flex-1 flex bg-[#eff5ff]">
       <Sidebar />
-      <main className="min-w-0 w-full max-w-5xl mx-auto px-4 py-7 space-y-5">
+      <main className="min-w-0 w-full max-w-5xl mx-auto px-3 sm:px-6 pt-5 pb-28 md:pb-10 space-y-4">
         <Link
           href="/practice/collections"
           className="text-sm font-bold text-blue-700"
         >
           ← All question collections
         </Link>
-        <header>
-          <p className="text-xs tracking-widest font-bold text-blue-700">
+        <header className="rounded-2xl bg-gradient-to-br from-slate-950 to-blue-900 p-5 text-white sm:p-7">
+          <p className="text-[10px] tracking-widest font-bold text-blue-200">
             SKILL UP · ONE-MARK PRACTICE
           </p>
           <h1 className="mt-2 text-2xl sm:text-3xl font-black">
-            {collection?.subject || "Question collection"}
+            {collection?.title || collection?.subject || "Question collection"}
             {collection?.volume ? ` · Volume ${collection.volume}` : ""}
           </h1>
+          <p className="mt-2 text-sm text-blue-100">
+            {collection?.available ?? 0} practice entries ·{" "}
+            {collection?.sectionCounts.length ?? 0} supplied sections ·{" "}
+            {collection?.mediums.join(" / ")}
+          </p>
         </header>
-        <p className="rounded-xl bg-amber-50 border border-amber-200 p-4 text-sm text-amber-900">
+        <p className="rounded-xl bg-amber-50 border border-amber-200 p-3 text-xs leading-5 text-amber-900">
           Supplied questions and answers · Not teacher verified. Scores and
           feedback use the answer key in the supplied files.
         </p>
@@ -162,7 +177,7 @@ export default function SuppliedPracticePage({
                     aria-label="Chapter or section"
                     value={section}
                     onChange={(e) => setSection(e.target.value)}
-                    className="mt-2 w-full rounded-xl border bg-slate-50 p-3 font-normal"
+                    className="mt-2 min-h-12 w-full rounded-xl border bg-slate-50 p-3 text-base font-normal"
                   >
                     <option value="all">All supplied sections</option>
                     {collection?.sectionCounts.map((s) => (
@@ -178,7 +193,7 @@ export default function SuppliedPracticePage({
                     aria-label="Practice language"
                     value={language}
                     onChange={(e) => setLanguage(e.target.value)}
-                    className="mt-2 w-full rounded-xl border bg-slate-50 p-3 font-normal"
+                    className="mt-2 min-h-12 w-full rounded-xl border bg-slate-50 p-3 text-base font-normal"
                   >
                     <option value="both">English + தமிழ்</option>
                     {collection?.mediums.includes("English") ? (
@@ -195,7 +210,7 @@ export default function SuppliedPracticePage({
                     aria-label="Number of questions"
                     value={count}
                     onChange={(e) => setCount(e.target.value)}
-                    className="mt-2 w-full rounded-xl border bg-slate-50 p-3 font-normal"
+                    className="mt-2 min-h-12 w-full rounded-xl border bg-slate-50 p-3 text-base font-normal"
                   >
                     <option value="10">10 questions</option>
                     <option value="25">25 questions</option>
@@ -374,7 +389,7 @@ export default function SuppliedPracticePage({
                     disabled={Boolean(locked)}
                     aria-pressed={(locked ? answers[active.id] : draft) === i}
                     onClick={() => setDraft(i)}
-                    className={`flex min-h-14 items-start gap-3 rounded-2xl border-2 p-4 text-left ${locked && i === active.proposedAnswer ? "border-emerald-600 bg-emerald-50" : (locked ? answers[active.id] : draft) === i ? "border-blue-600 bg-blue-50" : "border-slate-200 hover:border-blue-300"}`}
+                    className={`flex min-h-14 items-start gap-3 rounded-2xl border-2 p-4 text-left transition-colors ${locked && i === active.proposedAnswer ? "border-emerald-600 bg-emerald-50" : locked && answers[active.id] === i ? "border-rose-600 bg-rose-50" : !locked && draft === i ? "border-blue-600 bg-blue-50" : "border-slate-200 hover:border-blue-300"}`}
                   >
                     <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-100 font-bold">
                       {String.fromCharCode(65 + i)}

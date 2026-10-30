@@ -13,6 +13,8 @@ interface Props {
   resetKey: number;
   onSelect: (part: string) => void;
   vectorScale?: number;
+  hiddenPart?: string;
+  exploded?: boolean;
 }
 
 export default function ModelCanvas({
@@ -22,13 +24,29 @@ export default function ModelCanvas({
   resetKey,
   onSelect,
   vectorScale = 1,
+  hiddenPart = "",
+  exploded = false,
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
-  const preferences = useRef({ selected, rotating, onSelect, vectorScale });
+  const preferences = useRef({
+    selected,
+    rotating,
+    onSelect,
+    vectorScale,
+    hiddenPart,
+    exploded,
+  });
   const [failed, setFailed] = useState(false);
   useEffect(() => {
-    preferences.current = { selected, rotating, onSelect, vectorScale };
-  }, [selected, rotating, onSelect, vectorScale]);
+    preferences.current = {
+      selected,
+      rotating,
+      onSelect,
+      vectorScale,
+      hiddenPart,
+      exploded,
+    };
+  }, [selected, rotating, onSelect, vectorScale, hiddenPart, exploded]);
 
   useEffect(() => {
     const container = host.current;
@@ -45,6 +63,7 @@ export default function ModelCanvas({
       return;
     }
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+    queueMicrotask(() => setFailed(false));
     renderer.setClearColor(0x000000, 0);
     container.appendChild(renderer.domElement);
     renderer.domElement.setAttribute(
@@ -304,6 +323,9 @@ export default function ModelCanvas({
     }
     if (!["dna", "cell", "tree", "vectors"].includes(model))
       scienceGeometry(model, group, meshes, sphere, link);
+    meshes.forEach((mesh) => {
+      mesh.userData.basePosition = mesh.position.clone();
+    });
     const raycaster = new THREE.Raycaster();
     let pointerStart = { x: 0, y: 0 };
     const down = (event: PointerEvent) => {
@@ -325,12 +347,25 @@ export default function ModelCanvas({
         ),
         camera,
       );
-      const hit = raycaster.intersectObjects(meshes)[0];
+      const hit = raycaster.intersectObjects(
+        meshes.filter((m) => m.visible),
+      )[0];
       if (hit) preferences.current.onSelect(hit.object.userData.part);
     };
     renderer.domElement.addEventListener("pointerdown", down);
     renderer.domElement.addEventListener("pointerup", pick);
+    let dirty = true;
+    let previousPreferences = "";
+    const changed = () => {
+      dirty = true;
+    };
+    controls.addEventListener("change", changed);
+    const contextLost = () => {
+      setFailed(true);
+    };
+    renderer.domElement.addEventListener("webglcontextlost", contextLost);
     const resize = new ResizeObserver(() => {
+      dirty = true;
       const width = container.clientWidth;
       const height = container.clientHeight;
       renderer.setSize(width, height);
@@ -355,7 +390,25 @@ export default function ModelCanvas({
         preferences.current.rotating && !reducedMotion.matches;
       controls.autoRotateSpeed = 0.7;
       controls.update(delta);
+      const fingerprint = JSON.stringify([
+        preferences.current.selected,
+        preferences.current.vectorScale,
+        preferences.current.hiddenPart,
+        preferences.current.exploded,
+      ]);
+      if (fingerprint !== previousPreferences) {
+        dirty = true;
+        previousPreferences = fingerprint;
+      }
+      if (!dirty) return;
+      dirty = false;
       meshes.forEach((mesh) => {
+        if (["ovum", "nacl", "octahedral"].includes(model)) {
+          mesh.position
+            .copy(mesh.userData.basePosition)
+            .multiplyScalar(preferences.current.exploded ? 1.4 : 1);
+          mesh.visible = mesh.userData.part !== preferences.current.hiddenPart;
+        }
         if (mesh.userData.vectorShaft || mesh.userData.vectorTip) {
           const t = preferences.current.vectorScale;
           mesh.visible = t > 0;
@@ -382,6 +435,8 @@ export default function ModelCanvas({
       resize.disconnect();
       observer.disconnect();
       controls.dispose();
+      controls.removeEventListener("change", changed);
+      renderer.domElement.removeEventListener("webglcontextlost", contextLost);
       renderer.domElement.removeEventListener("pointerdown", down);
       renderer.domElement.removeEventListener("pointerup", pick);
       renderer.domElement.removeEventListener("keydown", keyboard);

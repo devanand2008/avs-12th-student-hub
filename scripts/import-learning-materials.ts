@@ -8,10 +8,12 @@ import { backendMode, requireSupabase } from "../src/lib/supabase/server";
 import {
   LEARNING_UPLOAD_LIMIT,
   SOURCE_MATERIALS,
+  type SourceMaterial,
 } from "../src/lib/learning-materials";
 import type { HandwrittenNote, VideoLesson } from "../src/types";
 import { materialId, mp4Duration } from "./lib/material-inspection";
 import videoAliases from "../src/lib/video-source-aliases.json";
+import additionalMaterials from "../src/lib/additional-materials-catalog.json";
 
 loadEnvConfig(process.cwd());
 const root = path.resolve("book's");
@@ -36,7 +38,11 @@ async function walk(directory: string): Promise<string[]> {
 
 async function main() {
   const files = await walk(root);
-  const known = new Set(SOURCE_MATERIALS.map((item) => item.file));
+  const sources = [
+    ...SOURCE_MATERIALS,
+    ...(additionalMaterials as SourceMaterial[]),
+  ];
+  const known = new Set(sources.map((item) => item.file));
   for (const alias of videoAliases) {
     if (!known.has(alias.canonicalFile))
       throw new Error(`Unknown canonical video: ${alias.file}`);
@@ -60,7 +66,7 @@ async function main() {
 
   // Validate every source before changing the database or uploading anything.
   const inspected = [];
-  for (const source of SOURCE_MATERIALS) {
+  for (const source of sources) {
     const buffer = await readFile(path.join(root, source.file));
     if (
       !buffer.length ||

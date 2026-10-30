@@ -137,7 +137,7 @@ export default function SuppliedReviewPreview() {
             >
               {collections.map((c) => (
                 <option value={c.id} key={c.id}>
-                  {c.subject}
+                  {c.title || c.subject}
                   {c.volume ? ` · Volume ${c.volume}` : ""}
                 </option>
               ))}

@@ -21,7 +21,13 @@ export default function PwaInstallBanner() {
 
   // Keep floating installation prompts clear of practice controls and answers.
   // Installation remains available from the navigation.
-  if (isInstalled || isStandalone || isBannerDismissed || isPracticeRoute) {
+  if (
+    isInstalled ||
+    isStandalone ||
+    isBannerDismissed ||
+    isPracticeRoute ||
+    pathname === "/ai-helper"
+  ) {
     return null;
   }
 

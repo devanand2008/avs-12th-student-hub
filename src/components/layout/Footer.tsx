@@ -1,6 +1,8 @@
 import { MapPin, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import BrandLogo from "@/components/layout/BrandLogo";
+import InstagramLink from "@/components/layout/InstagramLink";
+import JoshuaIntroduction from "@/components/layout/JoshuaIntroduction";
 
 export default function Footer() {
   return (
@@ -28,6 +30,8 @@ export default function Footer() {
               <MapPin size={16} className="shrink-0" />
               Attur Main Road, Military Road, Ammapet, Salem, Tamil Nadu 636003
             </p>
+            <InstagramLink className="border border-pink-100 bg-pink-50/50 px-4 py-2" />
+            <JoshuaIntroduction />
           </div>
           <div>
             <h2 className="mb-4 text-xs font-bold tracking-wider text-slate-900">

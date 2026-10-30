@@ -1,10 +1,17 @@
 import { getSession } from "@/lib/auth";
 import {
+  generateGeminiAnswer,
+  getGeminiStatus,
+  GeminiLanguageError,
+} from "@/lib/ai/gemini";
+import {
   aiProvider,
   chatRequestSchema,
   generateLocalAnswer,
   getLocalModelStatus,
   LocalLanguageError,
+  smallTalkAnswer,
+  isEverydayConversation,
 } from "@/lib/ai/local-gemma";
 import { retrieveGroundedKnowledge } from "@/lib/db";
 import { checkRateLimit } from "@/lib/rate-limit";
@@ -18,9 +25,12 @@ export const maxDuration = 180;
 export async function GET() {
   if (!(await getSession()))
     return NextResponse.json({ error: "Please sign in." }, { status: 401 });
-  return NextResponse.json(await getLocalModelStatus(), {
-    headers: { "Cache-Control": "private, no-store" },
-  });
+  return NextResponse.json(
+    aiProvider() === "gemini" ? getGeminiStatus() : await getLocalModelStatus(),
+    {
+      headers: { "Cache-Control": "private, no-store" },
+    },
+  );
 }
 
 export async function POST(request: Request) {
@@ -53,8 +63,20 @@ export async function POST(request: Request) {
         { status: 429 },
       );
     const input = parsed.data;
+    const greeting = input.mode === "auto" ? smallTalkAnswer(input) : null;
+    if (greeting)
+      return NextResponse.json({
+        response: greeting,
+        citations: [],
+        foundInKnowledgeBase: false,
+        engine: "assistant",
+        answerType: "conversation",
+      });
     const stream = (session.stream as StreamType) || undefined;
-    let matches = await retrieveGroundedKnowledge(input.message, stream, 0.25);
+    let matches =
+      input.mode === "auto" && isEverydayConversation(input.message)
+        ? []
+        : await retrieveGroundedKnowledge(input.message, stream, 0.25);
     // Follow-ups can refer to the last student question, while retaining stream filtering.
     if (
       !matches.length &&
@@ -65,14 +87,17 @@ export async function POST(request: Request) {
       const previous = [...input.history]
         .reverse()
         .find((turn) => turn.role === "user");
-      if (previous)
+      if (
+        previous &&
+        !(input.mode === "auto" && isEverydayConversation(previous.content))
+      )
         matches = await retrieveGroundedKnowledge(
           previous.content,
           stream,
           0.25,
         );
     }
-    if (!matches.length)
+    if (!matches.length && input.mode === "study")
       return NextResponse.json({
         response:
           input.language === "Tamil"
@@ -81,6 +106,7 @@ export async function POST(request: Request) {
         citations: [],
         foundInKnowledgeBase: false,
         engine: "excerpts",
+        answerType: "unavailable",
       });
     const citations = matches.map(({ chunk }) => ({
       subject: chunk.subjectName,
@@ -88,35 +114,50 @@ export async function POST(request: Request) {
       topic: chunk.topicTitle || "Key Concepts",
       source: `${backendMode() === "demo" ? "Demo curriculum excerpt · " : ""}${chunk.sourceType}`,
     }));
-    let response =
-      input.language === "Tamil"
+    const answerType = matches.length ? "study" : "conversation";
+    let response = !matches.length
+      ? input.language === "Tamil"
+        ? "இப்போது AI உரையாடல் கிடைக்கவில்லை. சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும். பாடக் குறிப்புகளுக்குப் படிப்பு மூலங்கள் முறையைத் தேர்ந்தெடுக்கலாம்."
+        : "AI conversation is temporarily unavailable. Please try again shortly, or choose Study sources to find matching course material."
+      : input.language === "Tamil"
         ? matches[0].chunk.chunkTextTamil || matches[0].chunk.chunkText
         : matches[0].chunk.chunkText;
-    let engine = "excerpts";
+    let engine = matches.length ? "excerpts" : "assistant";
     let notice: string | undefined;
     let fallbackReason: "language" | "unavailable" | undefined;
-    if (aiProvider() === "local") {
+    const provider = aiProvider();
+    if (provider === "local" || provider === "gemini") {
       try {
-        response = await generateLocalAnswer(
+        response = await (
+          provider === "gemini" ? generateGeminiAnswer : generateLocalAnswer
+        )(
           input,
           matches.map(({ chunk }) => chunk),
           request.signal,
+          answerType,
         );
-        engine = "local-gemma";
+        engine = provider === "gemini" ? "gemini" : "local-gemma";
       } catch (error) {
         if (request.signal.aborted) return new Response(null, { status: 499 });
-        fallbackReason =
-          error instanceof LocalLanguageError ? "language" : "unavailable";
-        notice =
-          error instanceof LocalLanguageError
+        const languageError =
+          error instanceof LocalLanguageError ||
+          error instanceof GeminiLanguageError;
+        fallbackReason = languageError ? "language" : "unavailable";
+        notice = !matches.length
+          ? "The AI service is unavailable. Your message has not been answered by a model."
+          : languageError
             ? error.message
-            : "The local model is unavailable. Showing the matching study excerpt instead.";
+            : provider === "gemini"
+              ? "The AI service is unavailable. Showing the matching study excerpt instead."
+              : "The local model is unavailable. Showing the matching study excerpt instead.";
       }
     }
     return NextResponse.json({
       response,
       citations,
-      foundInKnowledgeBase: true,
+      foundInKnowledgeBase: matches.length > 0,
+      answerType:
+        !matches.length && engine === "assistant" ? "unavailable" : answerType,
       engine,
       notice,
       fallbackReason,

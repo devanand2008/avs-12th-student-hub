@@ -8,6 +8,7 @@ import { createHash } from "node:crypto";
 import path from "node:path";
 import videoAliases from "../src/lib/video-source-aliases.json";
 import videoCatalog from "../src/lib/video-lessons-catalog.json";
+import additionalCatalog from "../src/lib/additional-materials-catalog.json";
 
 process.env.DB_DRIVER = "memory";
 process.env.ENABLE_DEMO_DATA = "true";
@@ -32,13 +33,19 @@ test("every supplied video is catalogued once or linked to a byte-identical exis
     const found: string[] = [];
     for (const entry of await readdir(dir, { withFileTypes: true })) {
       const file = path.join(dir, entry.name);
-      if (entry.isDirectory()) found.push(...await walk(file));
-      else if (/\.mp4$/i.test(file)) found.push(path.relative(root, file).replaceAll("\\", "/"));
+      if (entry.isDirectory()) found.push(...(await walk(file)));
+      else if (/\.mp4$/i.test(file))
+        found.push(path.relative(root, file).replaceAll("\\", "/"));
     }
     return found;
   }
-  const videos = SOURCE_MATERIALS.filter((source) => source.kind === "video");
-  assert.deepEqual((await walk(root)).sort(), [...videos.map((v) => v.file), ...videoAliases.map((a) => a.file)].sort());
+  const videos = [...SOURCE_MATERIALS, ...additionalCatalog].filter(
+    (source) => source.kind === "video",
+  );
+  assert.deepEqual(
+    (await walk(root)).sort(),
+    [...videos.map((v) => v.file), ...videoAliases.map((a) => a.file)].sort(),
+  );
   const hashes = new Map<string, string>();
   for (const video of videos) {
     const buffer = await readFile(path.join(root, video.file));
@@ -53,7 +60,12 @@ test("every supplied video is catalogued once or linked to a byte-identical exis
   }
   for (const alias of videoAliases) {
     assert.equal(hashes.get(alias.sha256), alias.canonicalFile);
-    assert.equal(createHash("sha256").update(await readFile(path.join(root, alias.file))).digest("hex"), alias.sha256);
+    assert.equal(
+      createHash("sha256")
+        .update(await readFile(path.join(root, alias.file)))
+        .digest("hex"),
+      alias.sha256,
+    );
   }
 });
 

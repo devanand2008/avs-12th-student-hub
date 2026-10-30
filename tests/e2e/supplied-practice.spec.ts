@@ -54,17 +54,17 @@ test("supplied collections enable labelled practice without exposing admin expor
   const r = await get(page, "/api/supplied-practice");
   expect(r.status()).toBe(200);
   const body = await r.json();
-  expect(body.collections).toHaveLength(10);
+  expect(body.collections).toHaveLength(12);
   expect(JSON.stringify(body)).not.toContain("proposedAnswer");
   expect(
     body.collections.reduce((n: number, c: { held: number }) => n + c.held, 0),
-  ).toBe(2244);
+  ).toBe(2763);
   expect(
     body.collections.reduce(
       (n: number, c: { available: number }) => n + c.available,
       0,
     ),
-  ).toBe(2244);
+  ).toBe(2763);
   const supplied = await get(
     page,
     "/api/supplied-practice?questions=1&collection=chemistry-v1",
@@ -83,9 +83,9 @@ test("supplied collections enable labelled practice without exposing admin expor
   await expect(
     page.getByRole("heading", { name: "Your one-mark practice library" }),
   ).toBeVisible();
-  await expect(page.getByRole("article")).toHaveCount(10);
+  await expect(page.getByRole("article")).toHaveCount(12);
   await page
-    .getByRole("textbox", { name: "Search collections" })
+    .getByRole("searchbox", { name: "Search collections" })
     .fill("Chemistry");
   await expect(page.getByRole("article")).toHaveCount(2);
   expect(

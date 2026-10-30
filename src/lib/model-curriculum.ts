@@ -1,5 +1,6 @@
 import catalog from "./textbooks-catalog.json";
 import type { ModelId } from "./models";
+import { advancedModels } from "./advanced-models";
 
 export interface ModelChapter {
   modelId: ModelId;
@@ -13,6 +14,14 @@ export interface ModelChapter {
 // Source contexts checked in the locally installed textbook edition. A context
 // association does not certify the model as an official exam diagram.
 export const modelChapters: ModelChapter[] = [
+  ...advancedModels.map((m) => ({
+    modelId: m.id,
+    bookId: m.bookId,
+    chapter: m.chapterNumber,
+    title: m.chapter,
+    pdfPage: m.pdfPage,
+    printedPage: m.printedPage,
+  })),
   {
     modelId: "dna",
     bookId: "12-bio-zoology-english-7e848813",

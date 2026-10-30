@@ -1,8 +1,17 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readFileSync, readdirSync } from "node:fs";
+import {
+  copyFileSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+} from "node:fs";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
+import { createRequire } from "node:module";
+import { basename, join, resolve, sep } from "node:path";
+import { pathToFileURL } from "node:url";
 import { readHtmlLiteralData } from "../scripts/lib/static-html-data";
 import {
   safeTextTree,
@@ -44,9 +53,10 @@ test("HTML ingestion reads literal banks without executing supplied scripts", ()
 });
 
 test("every imported occurrence preserves its real source hash and original row ID", () => {
-  const files = readdirSync("one mark html page").filter((f) =>
-    f.endsWith(".html"),
-  );
+  // Audit the imported snapshot, not unrelated HTML files added afterwards.
+  const files = [
+    ...new Set(suppliedQuestions.flatMap((q) => q.sources.map((s) => s.file))),
+  ];
   const raw = new Map(
     files.map((file) => {
       const html = readFileSync(`one mark html page/${file}`, "utf8"),
@@ -55,6 +65,7 @@ test("every imported occurrence preserves its real source hash and original row 
         file,
         {
           sha: digest(html),
+          data,
           rows: (data.QUESTION_BANK ||
             data.ALL_QUESTIONS ||
             data.QUESTIONS) as Record<string, unknown>[],
@@ -82,6 +93,7 @@ test("every imported occurrence preserves its real source hash and original row 
           q.questionTa,
           q.optionsEn,
           q.optionsTa,
+          ...(q.sourceContext ? [q.sourceContext] : []),
         ]),
       ),
     );
@@ -100,6 +112,19 @@ test("every imported occurrence preserves its real source hash and original row 
         s.originalId,
         String(source.rows[s.row - 1].id ?? s.row - 1),
       );
+      if (q.sourceContext) {
+        const raw = source.rows[s.row - 1];
+        assert.equal(
+          q.subject,
+          raw.subject === "botany" ? "Bio-Botany" : "Bio-Zoology",
+        );
+        assert.equal(q.section, String(raw.chapter));
+        assert.equal(q.questionEn, raw.q_en);
+        assert.equal(q.questionTa, raw.q_ta);
+        assert.deepEqual(q.optionsEn, raw.opts_en);
+        assert.deepEqual(q.optionsTa, raw.opts_ta);
+        assert.equal(q.proposedAnswer, raw.ans);
+      }
       occurrences++;
     }
     if (q.originalDiagram)
@@ -111,7 +136,9 @@ test("every imported occurrence preserves its real source hash and original row 
     occurrences,
     [...raw.values()].reduce((n, f) => n + f.rows.length, 0),
   );
-  assert.equal(occurrences - suppliedQuestions.length, 180);
+  assert.equal(occurrences, 3444);
+  assert.equal(suppliedQuestions.length, 2763);
+  assert.equal(occurrences - suppliedQuestions.length, 681);
   assert.equal(
     suppliedCollectionSummaries().reduce((n, c) => n + c.count, 0),
     suppliedQuestions.length,
@@ -123,17 +150,93 @@ test("every imported occurrence preserves its real source hash and original row 
   );
 });
 
-test("reimport is byte-stable and never creates a teacher decision", () => {
-  const before = readFileSync("src/lib/supplied-practice/data.json");
-  execFileSync(
-    process.execPath,
-    ["--import", "tsx", "scripts/import-supplied-practice.ts"],
-    { stdio: "pipe", timeout: 60000 },
+test("Biology-group chapter structures stay separate from the existing thirteen-chapter source", () => {
+  const collections = suppliedCollectionSummaries();
+  const botany = collections.find((c) => c.id === "bio-botany-biology-group")!;
+  const zoology = collections.find(
+    (c) => c.id === "bio-zoology-biology-group",
+  )!;
+  const existing = collections.find((c) => c.id === "bio-zoology")!;
+  assert.equal(botany.count, 255);
+  assert.equal(botany.sections.length, 10);
+  assert.equal(zoology.count, 264);
+  assert.equal(zoology.sections.length, 12);
+  assert.equal(existing.count, 402);
+  assert.equal(existing.sections.length, 13);
+  assert.match(
+    zoology.sectionCounts.find((s) => s.id === "8")!.title,
+    /Microbes/,
+  );
+  assert.match(
+    existing.sectionCounts.find((s) => s.id === "8")!.title,
+    /Immunology/,
+  );
+  assert.ok(
+    suppliedPracticeQuestions(botany.id).every(
+      (q) => q.subject === "Bio-Botany" && q.sourceContext === "biology-group",
+    ),
   );
   assert.equal(
-    digest(readFileSync("src/lib/supplied-practice/data.json")),
-    digest(before),
+    suppliedQuestions.filter(
+      (q) =>
+        q.sourceContext &&
+        q.warnings.some((w) => w.startsWith("Source versions differ")),
+    ).length,
+    18,
   );
+});
+
+test("reimport is byte-stable and never creates a teacher decision", () => {
+  const before = readFileSync("src/lib/supplied-practice/data.json");
+  const reportBefore = readFileSync("docs/supplied-practice-import.json");
+  const root = resolve(".local");
+  mkdirSync(root, { recursive: true });
+  const temporary = mkdtempSync(join(root, "practice-reimport-test-"));
+  assert.ok(temporary.startsWith(root + sep));
+  try {
+    mkdirSync(join(temporary, "one mark html page"));
+    mkdirSync(join(temporary, "docs"));
+    for (const { file } of JSON.parse(before.toString("utf8")).files as {
+      file: string;
+    }[]) {
+      assert.equal(file, basename(file));
+      copyFileSync(
+        join("one mark html page", file),
+        join(temporary, "one mark html page", file),
+      );
+    }
+    const loader = createRequire(resolve("package.json")).resolve("tsx");
+    execFileSync(
+      process.execPath,
+      [
+        "--import",
+        pathToFileURL(loader).href,
+        resolve("scripts/import-supplied-practice.ts"),
+      ],
+      {
+        cwd: temporary,
+        stdio: "pipe",
+        timeout: 60000,
+      },
+    );
+    assert.equal(
+      digest(
+        readFileSync(join(temporary, "src/lib/supplied-practice/data.json")),
+      ),
+      digest(before),
+    );
+    assert.deepEqual(
+      readFileSync("src/lib/supplied-practice/data.json"),
+      before,
+    );
+    assert.deepEqual(
+      readFileSync("docs/supplied-practice-import.json"),
+      reportBefore,
+    );
+  } finally {
+    assert.ok(resolve(temporary).startsWith(root + sep));
+    rmSync(temporary, { recursive: true, force: true });
+  }
 });
 
 test("admin preview selection is bounded, paginated and uses actual source sections", () => {
@@ -159,7 +262,7 @@ test("owner-enabled supplied practice stays unverified and validates all answer 
   const collections = suppliedCollectionSummaries();
   assert.equal(
     collections.reduce((n, c) => n + c.available, 0),
-    2244,
+    2763,
   );
   for (const collection of collections) {
     const questions = suppliedPracticeQuestions(collection.id);
@@ -173,6 +276,10 @@ test("owner-enabled supplied practice stays unverified and validates all answer 
   const question = suppliedQuestions[0];
   assert.equal(
     hasUsableSuppliedAnswer({ ...question, proposedAnswer: 99 }),
+    false,
+  );
+  assert.equal(
+    hasUsableSuppliedAnswer({ ...question, answerConflict: true }),
     false,
   );
   assert.equal(

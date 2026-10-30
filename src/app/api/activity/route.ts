@@ -6,7 +6,7 @@ import {
   recordNoteVisit,
   recordVideoVisit,
 } from "@/lib/db";
-import { listResources } from "@/lib/content";
+import { ensureActivityResource, listResources } from "@/lib/content";
 import type { HandwrittenNote } from "@/types";
 const input = z.discriminatedUnion("kind", [
   z.object({
@@ -50,6 +50,7 @@ export async function POST(request: Request) {
         { status: 404 },
       );
     const studentId = user.studentId || user.userId;
+    await ensureActivityResource(data.kind, data.id);
     if (data.kind === "note") {
       if (data.page > (resource as HandwrittenNote).pageCount)
         return NextResponse.json(

@@ -1,3 +1,5 @@
+import { advancedModels } from "./advanced-models";
+
 export const learningModels = [
   {
     id: "vectors",
@@ -516,6 +518,7 @@ export const learningModels = [
       },
     ],
   },
+  ...advancedModels,
 ] as const;
 
 export type ModelId = (typeof learningModels)[number]["id"];

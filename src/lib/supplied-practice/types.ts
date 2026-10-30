@@ -25,6 +25,8 @@ export interface SuppliedQuestion {
   warnings: string[];
   sources: SuppliedSource[];
   reviewStatus: string;
+  sourceContext?: string;
+  answerConflict?: boolean;
 }
 export interface SuppliedCollection {
   id: string;
@@ -34,6 +36,8 @@ export interface SuppliedCollection {
   sections: string[];
   mediums: string[];
   sourceFiles: string[];
+  title?: string;
+  sourceContext?: string;
 }
 export interface CollectionSummary extends SuppliedCollection {
   ready: number;

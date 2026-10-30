@@ -1,4 +1,11 @@
-import { readFile, readdir, mkdir, writeFile } from "node:fs/promises";
+import {
+  readFile,
+  readdir,
+  mkdir,
+  writeFile,
+  rename,
+  rm,
+} from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
 import { readHtmlLiteralData } from "./lib/static-html-data";
@@ -6,35 +13,60 @@ import { hasUsableSuppliedAnswer } from "../src/lib/supplied-practice/eligibilit
 import type { SuppliedQuestion } from "../src/lib/supplied-practice/types";
 const sha = (s: string) => createHash("sha256").update(s).digest("hex");
 type Raw = Record<string, unknown>;
+async function writeJson(file: string, value: unknown) {
+  const temporary = `${file}.${process.pid}.tmp`;
+  try {
+    await writeFile(temporary, JSON.stringify(value, null, 2) + "\n");
+    await rename(temporary, file);
+  } finally {
+    await rm(temporary, { force: true });
+  }
+}
 async function main() {
   const folder = "one mark html page",
     questions: Record<string, unknown>[] = [],
     files = [],
     seen = new Map<string, Record<string, unknown>>();
   let occurrences = 0;
-  for (const file of (await readdir(folder))
-    .filter((f) => f.endsWith(".html"))
-    .sort()) {
-    const html = await readFile(path.join(folder, file), "utf8"),
-      data = readHtmlLiteralData(html),
-      rows = (data.QUESTION_BANK ||
-        data.ALL_QUESTIONS ||
-        data.QUESTIONS) as Raw[];
+  const inputs = await Promise.all(
+    (await readdir(folder))
+      .filter((f) => f.endsWith(".html"))
+      .sort()
+      .map(async (file) => {
+        const html = await readFile(path.join(folder, file), "utf8");
+        const data = readHtmlLiteralData(html);
+        const units = Object.values(
+          (data.UNIT_META || {}) as Record<string, Raw>,
+        );
+        const mixedBiology =
+          units.some((unit) => unit.subject === "botany") &&
+          units.some((unit) => unit.subject === "zoology");
+        return { file, html, data, mixedBiology };
+      }),
+  );
+  // Keep the original source order stable while appending the distinct Biology-group sources.
+  inputs.sort((a, b) => Number(a.mixedBiology) - Number(b.mixedBiology));
+  for (const { file, html, data, mixedBiology } of inputs) {
+    const rows = (data.QUESTION_BANK ||
+      data.ALL_QUESTIONS ||
+      data.QUESTIONS) as Raw[];
     if (!Array.isArray(rows) || !rows.length)
       throw Error("No literal question bank: " + file);
-    const subject = file.includes("chemistry")
-      ? "Chemistry"
-      : file.includes("physics")
-        ? "Physics"
-        : file.includes("mathematics")
-          ? "Mathematics"
-          : file.includes("computer_science")
-            ? "Computer Science"
-            : file.includes("zoology")
-              ? "Bio-Zoology"
-              : file === "tamil.html"
-                ? "Tamil"
-                : "English";
+    const fileSubject = mixedBiology
+      ? "Biology (Bio-Botany & Bio-Zoology)"
+      : file.includes("chemistry")
+        ? "Chemistry"
+        : file.includes("physics")
+          ? "Physics"
+          : file.includes("mathematics")
+            ? "Mathematics"
+            : file.includes("computer_science")
+              ? "Computer Science"
+              : file.includes("zoology")
+                ? "Bio-Zoology"
+                : file === "tamil.html"
+                  ? "Tamil"
+                  : "English";
     const meta = (data.CHAPTERS_META ||
       data.CHAPTERS ||
       data.UNIT_META ||
@@ -43,11 +75,26 @@ async function main() {
     const metadata: Raw[] = Array.isArray(meta)
       ? meta
       : Object.entries(meta).map(([id, v]) => ({ id, ...(v as object) }));
-    files.push({ file, sha256: sha(html), subject, occurrences: rows.length });
+    files.push({
+      file,
+      sha256: sha(html),
+      subject: fileSubject,
+      occurrences: rows.length,
+    });
     for (const [index, r] of rows.entries()) {
       occurrences++;
       const chapter = String(r.ch ?? r.chapter ?? r.unit ?? "Unmapped"),
-        chapterMeta = metadata.find((m) => String(m.id) === chapter),
+        chapterMeta = metadata.find(
+          (m) => String(m.id) === (mixedBiology ? String(r.unit) : chapter),
+        ),
+        subject = mixedBiology
+          ? r.subject === "botany"
+            ? "Bio-Botany"
+            : r.subject === "zoology"
+              ? "Bio-Zoology"
+              : ""
+          : fileSubject,
+        sourceContext = mixedBiology ? "biology-group" : undefined,
         volume =
           subject === "Mathematics"
             ? Number(r.ch) <= 6
@@ -58,6 +105,15 @@ async function main() {
               : /vol_(?:2|ii)_/.test(file)
                 ? 2
                 : null;
+      if (
+        !subject ||
+        (mixedBiology &&
+          (chapterMeta?.subject !== r.subject ||
+            String(chapterMeta?.ch) !== chapter))
+      )
+        throw Error(
+          `Conflicting Biology subject/chapter metadata: ${file} row ${index + 1}`,
+        );
       const questionEn = String(
           r.q_en ?? r.en ?? (subject !== "Tamil" ? r.q : "") ?? "",
         ),
@@ -80,6 +136,7 @@ async function main() {
           questionTa,
           optionsEn,
           optionsTa,
+          ...(sourceContext ? [sourceContext] : []),
         ]),
       );
       const source = {
@@ -95,10 +152,12 @@ async function main() {
       const prior = seen.get(fingerprint);
       if (prior) {
         (prior.sources as unknown[]).push(source);
-        if (prior.proposedAnswer !== proposedAnswer)
+        if (prior.proposedAnswer !== proposedAnswer) {
+          prior.answerConflict = true;
           (prior.warnings as string[]).push(
             "Conflicting supplied answer indices across source occurrences",
           );
+        }
         continue;
       }
       const warnings = [
@@ -131,7 +190,8 @@ async function main() {
         );
       const collectionId =
         subject.toLowerCase().replace(/[^a-z]+/g, "-") +
-        (volume ? `-v${volume}` : "");
+        (volume ? `-v${volume}` : "") +
+        (sourceContext ? "-biology-group" : "");
       const q = {
         id: "supplied-" + fingerprint.slice(0, 24),
         fingerprint,
@@ -158,10 +218,34 @@ async function main() {
         warnings,
         sources: [source],
         reviewStatus: "pending",
+        ...(sourceContext ? { sourceContext } : {}),
       };
       questions.push(q);
       seen.set(fingerprint, q);
     }
+  }
+  const variants = new Map<string, Set<Record<string, unknown>>>();
+  for (const question of questions.filter((q) => q.sourceContext)) {
+    for (const source of question.sources as { originalId: string }[]) {
+      const key = JSON.stringify([
+        question.sourceContext,
+        question.subject,
+        question.section,
+        source.originalId,
+      ]);
+      const entries = variants.get(key) || new Set<Record<string, unknown>>();
+      entries.add(question);
+      variants.set(key, entries);
+    }
+  }
+  for (const entries of variants.values()) {
+    if (entries.size > 1)
+      for (const question of entries) {
+        const warning =
+          "Source versions differ for the same original question ID; wording/options require verification";
+        const warnings = question.warnings as string[];
+        if (!warnings.includes(warning)) warnings.push(warning);
+      }
   }
   const collections = [
     ...new Set(questions.map((q) => String(q.collectionId))),
@@ -170,6 +254,12 @@ async function main() {
     return {
       id,
       subject: q[0].subject,
+      ...(q[0].sourceContext
+        ? {
+            sourceContext: q[0].sourceContext,
+            title: `${q[0].subject} · Biology group`,
+          }
+        : {}),
       volume: q[0].volume,
       count: q.length,
       sections: [...new Set(q.map((r) => String(r.section)))],
@@ -187,16 +277,19 @@ async function main() {
     };
   });
   await mkdir("src/lib/supplied-practice", { recursive: true });
-  await writeFile(
-    "src/lib/supplied-practice/data.json",
-    JSON.stringify({ version: 1, files, collections, questions }, null, 2) +
-      "\n",
-  );
+  await writeJson("src/lib/supplied-practice/data.json", {
+    version: 1,
+    files,
+    collections,
+    questions,
+  });
   const report = {
     files: files.length,
     occurrences,
     uniqueQuestions: questions.length,
     duplicateOccurrences: occurrences - questions.length,
+    deduplicationScope:
+      "Subject, source context, section, exact bilingual wording and ordered choices; not a global count across textbook editions or the verified bank",
     approved: 0,
     pendingTeacherVerification: questions.length,
     availableSuppliedPractice: questions.filter((q) =>
@@ -213,10 +306,7 @@ async function main() {
       {} as Record<string, number>,
     ),
   };
-  await writeFile(
-    "docs/supplied-practice-import.json",
-    JSON.stringify(report, null, 2) + "\n",
-  );
+  await writeJson("docs/supplied-practice-import.json", report);
   console.log(
     JSON.stringify({
       files: report.files,

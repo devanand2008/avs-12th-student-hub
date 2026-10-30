@@ -2,6 +2,7 @@ import { getSession } from "@/lib/auth";
 import { listResources } from "@/lib/content";
 import { streamVerifiedPdf } from "@/lib/hosted-textbooks";
 import supplied from "@/lib/supplied-materials-catalog.json";
+import additional from "@/lib/additional-materials-catalog.json";
 import { NextResponse } from "next/server";
 import type { HandwrittenNote } from "@/types";
 export async function GET(
@@ -18,7 +19,7 @@ export async function GET(
     ) as HandwrittenNote | undefined;
     const source =
       note &&
-      supplied.find(
+      [...supplied, ...additional].find(
         (s) =>
           s.kind === "note" &&
           s.file === note.sourceFile &&

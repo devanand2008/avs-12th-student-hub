@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-30T07:04:38.733Z",
+  "results": [
+    {
+      "file": "bio/zoo/video/Fertilization___Implantation.mp4",
+      "sha256": "92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa",
+      "bytes": 44863951,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa.mp4",
+      "status": 206,
+      "digest": "sha256:92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa",
+      "passed": true
+    },
+    {
+      "file": "bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+      "sha256": "09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4",
+      "bytes": 11601986,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4.mp4",
+      "status": 206,
+      "digest": "sha256:09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4",
+      "passed": true
+    },
+    {
+      "file": "bio/zoo/video/The_Menstrual_Cycle.mp4",
+      "sha256": "2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23",
+      "bytes": 45039378,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23.mp4",
+      "status": 206,
+      "digest": "sha256:2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23",
+      "passed": true
+    },
+    {
+      "file": "bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+      "sha256": "2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35",
+      "bytes": 31745621,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35.mp4",
+      "status": 206,
+      "digest": "sha256:2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35",
+      "passed": true
+    },
+    {
+      "file": "bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+      "sha256": "c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa",
+      "bytes": 34042189,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa.mp4",
+      "status": 206,
+      "digest": "sha256:c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa",
+      "passed": true
+    },
+    {
+      "file": "bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+      "sha256": "3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d",
+      "bytes": 34840553,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d.mp4",
+      "status": 206,
+      "digest": "sha256:3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d",
+      "passed": true
+    }
+  ]
+}

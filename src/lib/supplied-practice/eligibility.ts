@@ -3,6 +3,7 @@ import type { SuppliedQuestion } from "./types";
 export function hasUsableSuppliedAnswer(q: SuppliedQuestion) {
   const choices = q.optionsEn.length ? q.optionsEn : q.optionsTa;
   return (
+    !q.answerConflict &&
     Boolean(q.questionEn.trim() || q.questionTa.trim()) &&
     choices.length >= 2 &&
     choices.every(

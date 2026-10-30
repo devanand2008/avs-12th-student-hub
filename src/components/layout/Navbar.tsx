@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import BrandLogo from "@/components/layout/BrandLogo";
 import InstallButton from "@/components/pwa/InstallButton";
+import InstagramLink from "@/components/layout/InstagramLink";
 
 interface UserProfile {
   id: string;
@@ -356,6 +357,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-md px-4 py-4 space-y-2 shadow-xl animate-in slide-in-from-top-2">
+          <InstagramLink className="w-full border border-pink-100 px-3 py-3" onClick={() => setMobileMenuOpen(false)} />
           <Link href="/resources" onClick={()=>setMobileMenuOpen(false)} className="mb-2 flex items-center gap-3 rounded-xl bg-blue-50 px-3 py-3 text-sm font-bold text-blue-800"><BookOpen size={18}/>Study Resources</Link>
           {user ? (
             <>

@@ -18,6 +18,8 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { usePwa } from "@/components/pwa/PwaContext";
+import InstagramLink from "@/components/layout/InstagramLink";
+import JoshuaIntroduction from "@/components/layout/JoshuaIntroduction";
 
 export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const pathname = usePathname();
@@ -111,6 +113,8 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
           );
         })}
       </nav>
+      <InstagramLink className="mt-5 w-full px-3 py-2" />
+      <JoshuaIntroduction compact />
       <div className="sidebar-tip">
         <div className="mb-3 grid h-9 w-9 place-items-center rounded-xl bg-white text-blue-600">
           <Sparkles size={18} />

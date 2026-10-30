@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { learningModels } from "../../src/lib/models";
+import { advancedLesson } from "../../src/lib/advanced-models";
 
 test("science models render, filter and expose their selectable parts", async ({
   page,
@@ -10,6 +11,11 @@ test("science models render, filter and expose their selectable parts", async ({
   await page.getByRole("button", { name: "Explore in 3D" }).click();
   await expect(page.locator("canvas")).toBeVisible();
   for (const model of learningModels) {
+    if (
+      advancedLesson(model.id)?.kind &&
+      advancedLesson(model.id)?.kind !== "3d"
+    )
+      continue;
     await page
       .getByRole("button", {
         name: new RegExp(model.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")),
@@ -17,14 +23,17 @@ test("science models render, filter and expose their selectable parts", async ({
       .click();
     await expect(page.locator("canvas")).toBeVisible();
     for (const part of model.parts) {
-      await page.getByRole("button", { name: part.name, exact: true }).click();
+      await page
+        .getByRole("group", { name: "Model components" })
+        .getByRole("button", { name: part.name, exact: true })
+        .click();
       await expect(
         page.getByRole("heading", { name: part.name, exact: true }),
       ).toBeVisible();
     }
   }
   await page.getByRole("button", { name: "Chemistry", exact: true }).click();
-  await expect(page.locator(".model-option")).toHaveCount(4);
+  await expect(page.locator(".model-option")).toHaveCount(6);
   await expect(
     page.getByRole("heading", { name: "Ammonia molecule · NH₃" }),
   ).toBeVisible();

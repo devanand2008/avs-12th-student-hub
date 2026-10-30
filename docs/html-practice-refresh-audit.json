@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-30T09:16:26.682Z",
+  "sourceFiles": 12,
+  "sourceOccurrences": 3444,
+  "contextDistinctQuestions": 2763,
+  "newContextEntries": 519,
+  "originalQuestionsPreserved": 2244,
+  "originalCollectionsPreserved": 10,
+  "originalQuestionHash": "dde6a7c5b41c8269d897b36baf6d7fc8baf31b901634f31e85964e289de655ae",
+  "retainedQuestionHash": "dde6a7c5b41c8269d897b36baf6d7fc8baf31b901634f31e85964e289de655ae",
+  "otherProtectedFiles": 723,
+  "changedProtectedFiles": [],
+  "retainedEnglishBaseline": 995,
+  "approved": 0,
+  "pendingTeacherVerification": 2763,
+  "availableSuppliedPractice": 2763,
+  "unavailableForPractice": 0,
+  "duplicateOccurrences": 681,
+  "perCollection": [
+    {
+      "id": "chemistry-v1",
+      "title": "Chemistry",
+      "questions": 252,
+      "sections": 7
+    },
+    {
+      "id": "chemistry-v2",
+      "title": "Chemistry",
+      "questions": 299,
+      "sections": 8
+    },
+    {
+      "id": "english",
+      "title": "English",
+      "questions": 130,
+      "sections": 6
+    },
+    {
+      "id": "physics-v2",
+      "title": "Physics",
+      "questions": 165,
+      "sections": 6
+    },
+    {
+      "id": "computer-science",
+      "title": "Computer Science",
+      "questions": 316,
+      "sections": 16
+    },
+    {
+      "id": "mathematics-v1",
+      "title": "Mathematics",
+      "questions": 190,
+      "sections": 6
+    },
+    {
+      "id": "mathematics-v2",
+      "title": "Mathematics",
+      "questions": 180,
+      "sections": 6
+    },
+    {
+      "id": "physics-v1",
+      "title": "Physics",
+      "questions": 175,
+      "sections": 15
+    },
+    {
+      "id": "tamil",
+      "title": "Tamil",
+      "questions": 135,
+      "sections": 7
+    },
+    {
+      "id": "bio-zoology",
+      "title": "Bio-Zoology",
+      "questions": 402,
+      "sections": 13
+    },
+    {
+      "id": "bio-botany-biology-group",
+      "title": "Bio-Botany · Biology group",
+      "questions": 255,
+      "sections": 10
+    },
+    {
+      "id": "bio-zoology-biology-group",
+      "title": "Bio-Zoology · Biology group",
+      "questions": 264,
+      "sections": 12
+    }
+  ],
+  "warningCounts": {
+    "Supplied answers and textbook references require individual teacher verification": 2763,
+    "Supplied diagram requires visual verification": 46,
+    "Unexpected or damaged characters in Tamil transcription": 7,
+    "Source versions differ for the same original question ID; wording/options require verification": 18
+  },
+  "note": "Distinct counts include source context; do not add these to the verified textbook bank as a globally deduplicated count. No teacher decision or production database import."
+}

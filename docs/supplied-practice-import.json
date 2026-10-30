@@ -1,11 +1,12 @@
 {
-  "files": 10,
-  "occurrences": 2424,
-  "uniqueQuestions": 2244,
-  "duplicateOccurrences": 180,
+  "files": 12,
+  "occurrences": 3444,
+  "uniqueQuestions": 2763,
+  "duplicateOccurrences": 681,
+  "deduplicationScope": "Subject, source context, section, exact bilingual wording and ordered choices; not a global count across textbook editions or the verified bank",
   "approved": 0,
-  "pendingTeacherVerification": 2244,
-  "availableSuppliedPractice": 2244,
+  "pendingTeacherVerification": 2763,
+  "availableSuppliedPractice": 2763,
   "accessPolicy": "Owner enabled supplied, unverified practice on 2026-10-25; no teacher approval or verified publication is implied.",
   "collections": [
     {
@@ -246,11 +247,70 @@
       "sourceFiles": [
         "tn_12th_zoology_complete_bilingual_1_mark_practice_portal_tamil_english_medium.html"
       ]
+    },
+    {
+      "id": "bio-botany-biology-group",
+      "subject": "Bio-Botany",
+      "sourceContext": "biology-group",
+      "title": "Bio-Botany · Biology group",
+      "volume": null,
+      "count": 255,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_biology_bio_botany_bio_zoology_one_mark_practice_portal_tamil_english_medium (2).html",
+        "12th_biology_bio_botany_bio_zoology_one_mark_practice_portal_tamil_english_medium.html"
+      ]
+    },
+    {
+      "id": "bio-zoology-biology-group",
+      "subject": "Bio-Zoology",
+      "sourceContext": "biology-group",
+      "title": "Bio-Zoology · Biology group",
+      "volume": null,
+      "count": 264,
+      "sections": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "mediums": [
+        "English",
+        "Tamil"
+      ],
+      "sourceFiles": [
+        "12th_biology_bio_botany_bio_zoology_one_mark_practice_portal_tamil_english_medium (2).html",
+        "12th_biology_bio_botany_bio_zoology_one_mark_practice_portal_tamil_english_medium.html"
+      ]
     }
   ],
   "warnings": {
-    "Supplied answers and textbook references require individual teacher verification": 2244,
-    "Supplied diagram requires visual verification": 43,
-    "Unexpected or damaged characters in Tamil transcription": 4
+    "Supplied answers and textbook references require individual teacher verification": 2763,
+    "Supplied diagram requires visual verification": 46,
+    "Unexpected or damaged characters in Tamil transcription": 7,
+    "Source versions differ for the same original question ID; wording/options require verification": 18
   }
 }

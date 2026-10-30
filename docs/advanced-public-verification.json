@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-26T18:11:33.929Z",
+  "origin": "https://avs-12th-student-hub.vercel.app",
+  "results": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/login",
+      "status": 200
+    },
+    {
+      "path": "/resources",
+      "status": 200
+    },
+    {
+      "path": "/resources/all",
+      "status": 200
+    },
+    {
+      "path": "/ai-study-tools",
+      "status": 200
+    },
+    {
+      "path": "/models",
+      "status": 200
+    },
+    {
+      "path": "/interactive-3d",
+      "status": 200
+    },
+    {
+      "path": "/practice/collections",
+      "status": 200
+    },
+    {
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "models": 30,
+      "structureAndParameterControls": true,
+      "scriptErrors": [],
+      "horizontalOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "width": 390,
+      "height": 844,
+      "models": 30,
+      "structureAndParameterControls": true,
+      "scriptErrors": [],
+      "horizontalOverflow": false
+    }
+  ],
+  "scope": "Public routes/model controls only; no production student login or database writes."
+}

@@ -11,6 +11,7 @@ export default function BottomNav() {
   if (
     pathname === "/" ||
     pathname === "/login" ||
+    pathname === "/ai-helper" ||
     pathname.startsWith("/textbooks/") ||
     pathname === "/change-password"
   ) {

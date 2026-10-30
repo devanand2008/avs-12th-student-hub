@@ -20,7 +20,10 @@ function stop(code = 0) {
 for (const signal of ["SIGINT", "SIGTERM"]) process.on(signal, () => stop());
 
 try {
-  const useLocalAI = process.env.AI_PROVIDER !== "excerpts";
+  const provider = ["gemini", "excerpts"].includes(process.env.AI_PROVIDER)
+    ? process.env.AI_PROVIDER
+    : "local";
+  const useLocalAI = provider === "local";
   const config = useLocalAI ? localAIConfig() : null;
   let ready = false;
   try {
@@ -63,7 +66,7 @@ try {
     console.log(
       useLocalAI
         ? "Local Gemma is ready. Starting AVS 12 Hub..."
-        : "Starting AVS 12 Hub in study-excerpt mode...",
+        : `Starting AVS 12 Hub in ${provider} mode...`,
     );
     app = spawn(
       process.execPath,
@@ -71,7 +74,7 @@ try {
       {
         stdio: "inherit",
         windowsHide: true,
-        env: { ...process.env, AI_PROVIDER: useLocalAI ? "local" : "excerpts" },
+        env: { ...process.env, AI_PROVIDER: provider },
       },
     );
     app.on("error", (error) => {

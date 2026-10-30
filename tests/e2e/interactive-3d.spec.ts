@@ -7,7 +7,7 @@ test("3D source filters, scalar animation, keyboard controls and empty curriculu
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/interactive-3d");
   await expect(
-    page.getByText("15 interactive models", { exact: true }),
+    page.getByText("30 interactive models", { exact: true }),
   ).toBeVisible();
   await expect(page.locator("canvas")).toHaveCount(0);
   await page.getByLabel("Search models").fill("vectors");
@@ -50,7 +50,7 @@ test("3D source filters, scalar animation, keyboard controls and empty curriculu
   await expect(page.locator("canvas")).toHaveCount(1);
   await page.getByLabel("Search models").fill("");
   await page.getByLabel("Textbook medium").selectOption("English");
-  await expect(page.locator(".model-option")).toHaveCount(5);
+  await expect(page.locator(".model-option")).toHaveCount(20);
   await page
     .getByLabel("Source chapter")
     .selectOption("12-physics-english-v1-1b1de8f8:ch-1");

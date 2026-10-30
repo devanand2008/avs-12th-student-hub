@@ -1,3 +1,67 @@
+<!-- html-practice-refresh-20261030 -->
+## Complete HTML practice-folder integration — 30 October 2026
+
+All **12 supplied HTML files** are processed: 3,444 source occurrences → **2,763 context-distinct unverified practice entries**, with 681 exact duplicate occurrences merged. Added **519** entries: **255 Bio-Botany + 264 Bio-Zoology**. All original 2,244 entries and ten collection objects remain identical. New Biology-group collections keep their 10/12-section structures separate from the existing 13-section Zoology source. Nine differing source IDs retain both versions, with warnings on all 18 entries. No teacher decision or official answer was fabricated; all entries remain pending review and are available only under the owner's existing supplied-practice exception. The existing 995 English bank is unchanged.
+
+Redesigned the native practice library with real totals, subject/language/chapter search and section links; improved mobile setup, navigation clearance and wrong-answer feedback. Original wording/options/keys/SVGs remain intact, and source files are not executed. Admin exports preserve collection context. Import reruns are byte-stable and atomically written.
+
+Validation: **252/252 full tests**, **12/12 focused checks**, **8/8 clean rerun browser cases** plus **4/4 all-collection/wrong-answer cases**, typecheck, full lint, diff checks and Vercel production build passed. Initial stale browser expectations and a development-manifest interruption were corrected/rechecked. The staged API serves all 12 collections, validates all 2,763 entries and proves the original 2,244 objects unchanged. All other 723 protected local files match; no production content, question, review or server-history import occurred. Staged deployment `dpl_ChMjMxEkz1vg6KeE1M7FfhbXh44L` is READY; push/promotion results will be appended.
+
+[Implementation, source contexts and complete validation](docs/HTML_PRACTICE_REFRESH.md) · [Source/preservation audit](docs/html-practice-refresh-audit.json).
+<!-- /html-practice-refresh-20261030 -->
+
+## Everyday conversation and phone chatbot layout — 30 October 2026
+
+Added **Chat & study** for ordinary English/Tamil conversation, greetings, revision planning and general help, while **Study sources** retains source-only answers and the missing-source gate. Conversation replies are labelled separately and never invent textbook citations or enter the MCQ bank. Existing server-side key fallback, authentication, rate limits, stream-filtered retrieval and citations are preserved.
+
+The phone interface now has a compact header, an independently scrolling conversation, viewport/header-aware height, a growing 16px message input, 44px send/stop targets and safe-area spacing. Phone Enter adds a newline. Floating install prompts and fixed bottom navigation no longer cover chat controls; portal navigation returns on other pages. Retry no longer duplicates failed user turns.
+
+Actual verification: **22/22 focused unit tests**, **8/8 final desktop/mobile browser cases**, 320px/360px phone and shortened-viewport checks, real English/Tamil Gemini generation, staged production greetings/conversation/source-only API checks, and authenticated live desktop/mobile chat passed. Typecheck, full lint, diff check and Vercel production build passed. An early mobile assertion raced the header resize and a staged request encountered a connection reset; final checks passed. Native physical-phone keyboard testing and the full repository suite were not run. All 725 protected local files and the 995/2,244 question baselines remain unchanged.
+
+Deployment **`dpl_Cbb6ZfvKEpCNFKLZpFRsY9TYRbwb`** is READY and promoted to [the existing Vercel site](https://avs-12th-student-hub.vercel.app). No Git push or content/practice/review mutation. [Detailed implementation and validation](docs/CHATBOT_CONVERSATION_MOBILE.md).
+
+## Gemini chatbot key fallback — 30 October 2026
+
+Added server-only Gemini support to the existing authenticated study chatbot and configured the two supplied credentials as a sensitive production Vercel secret pool. Both credentials passed Google's real authentication and generation checks. Requests try each distinct key at most once for credential/quota/server/network failures, with finite attempt/overall timeouts and cancellation. Safety blocks are not retried through other credentials. Matching study excerpts remain the final fallback; existing citations, stream restrictions, rate limits and English/Tamil choices are retained. Local Gemma and excerpt modes remain supported. No credential values were committed or exposed to browser code.
+
+Validation: **17/17 AI unit tests**, **4/4 real English/Tamil desktop/mobile fallback flows**, **4/4 existing browser regressions**, typecheck, full lint, diff check and Vercel build passed. The staged production build generated both languages through the real application API using the stored sample account. Public release checks confirmed authentication gates, desktop/mobile login flow, four routes and absence of both keys in 18 browser-script responses. Initial browser selector expectations were corrected; the full repository suite was not repeated. All 725 protected local file hashes and the 995/2,244 question baselines remain unchanged; sample-account verification uses normal authentication/rate-limit writes only.
+
+Deployment **`dpl_2Wt18xzFn5A8AgPVD3YPXz4Vnf8m`** is READY and promoted to [the existing Vercel website](https://avs-12th-student-hub.vercel.app). No Git push or question/review/history mutation. [Implementation and verification report](docs/CHATBOT_GEMINI_FALLBACK.md).
+
+<!-- joshua-intro-20261030 -->
+## Joshua introduction and complete resource-folder check — 30 October 2026
+
+Added the supplied Joshua badge as a secondary introduction card in the shared footer and student/admin sidebar; SkillUp remains the main logo. All 113 files in `book's` are accounted for: **57 PDFs + 52 byte-unique videos**, with four duplicate video aliases. Added six Human Reproduction videos (three English, three Tamil) and source thumbnails; all earlier 107 source files and 36 additional catalogue rows are preserved. No new PDF was present. Six hosted assets passed digest/size/range/header checks, and the 109-resource scan passed.
+
+Fixed source-managed resource progress failing its database foreign key. An authenticated, valid activity save now inserts a missing canonical resource with ignore-duplicates semantics; stored edits/archives and existing history remain intact. No bulk import or direct production database write was executed. Future normal student progress saves may create the corresponding missing learning-resource row. The isolated regression passed. No MCQ or teacher decision changed; 725 protected local files and the 995/2,244 question baselines remain unchanged.
+
+Validation: final focused tests **34/34**, local desktop/mobile page/playback/progress checks **22/22**, live public checks **10/10**, typecheck, full lint, diff check and Vercel production build passed. Full npm test: 233/237 passed, 4 failed, 0 skipped in the initial broad run (18 minutes). Failures were the stale video-count assertion and its parent suite, plus two supplied-HTML audit/reimport cases triggered by two additional unimported source files. The count assertion now compares canonical IDs. The reimport test now runs in an isolated temporary directory using only the existing imported source manifest; source auditing checks imported occurrences instead of claiming every newly dropped HTML file is already imported. Its unintended local regeneration was restored to the exact pre-test SHA-256 bytes. The final 34 focused tests and 9 supplied-practice tests passed. The full suite was not repeated.
+
+Release **dpl_EoCSmvnYpU9NzY2Z85ijbMvZ8kWs** is READY and promoted to [the existing Vercel website](https://avs-12th-student-hub.vercel.app), after confirmed renewed sign-in. No Git push. [Detailed report](docs/JOSHUA_INTRODUCTION_RESOURCES.md) · [Full folder inventory](docs/joshua-materials-inventory.json).
+<!-- /joshua-intro-20261030 -->
+
+## Instagram account link — 28 October 2026
+
+Added `https://www.instagram.com/joshuamec/` to the shared website footer, student/admin portal sidebars and mobile navigation. The labelled link opens in a new tab with `noopener noreferrer`; no Instagram embed, tracking script or additional dependency was added. Existing project changes and learning data are preserved.
+
+Typecheck, scoped ESLint and `git diff --check` passed. Four local browser checks passed across home/portal pages and desktop/mobile layouts, including menu closing, new-tab destination and no horizontal overflow. The first browser attempt exceeded its default timeout during a development cold compile; the rerun passed.
+
+After renewing the Vercel sign-in, production build passed and deployment `dpl_9gdPSMkW3L6Lt5zrcUBzhtELVsQq` was promoted to [the existing website](https://avs-12th-student-hub.vercel.app). Alias inspection confirmed READY. All four live desktop/mobile link checks passed, including footer/sidebar visibility, mobile-menu closing and the new-tab destination. No page-script errors or horizontal overflow were detected. No Git push or database change occurred.
+
+<!-- advanced-lab-20261026 -->
+## Advanced Learning Lab and resource expansion — 26 October 2026
+
+Extended the existing `/models` and `/interactive-3d` lab to **30 implemented entries: 18 selectable 3D structures and 12 guided visuals**. Added 15 source-checked lessons across seven textbook subjects, with seven new process/algorithm animations (eight non-decorative animated concepts including the retained vector lesson). Source contexts now span 16 book/chapter combinations. New labels are English; Tamil mappings and full syllabus coverage remain unverified. All 82 books / 856 provisional chapter entries are inventoried without declaring chapters complete.
+
+The full `book's` folder has 107 physical media files / 103 byte-unique resources: **57 PDFs and 46 videos**. Added 25 PDFs (1,054 pages) and 11 videos, preserving the old 67 source rows and four byte-identical aliases. Two Mathematics PDFs filed under Chemistry were identified from their contents and mapped correctly. All 36 assets passed hosted digest/size/range/header checks. Source-controlled additions merge into existing libraries without a production database import; stored archives override defaults. Supplied resource answers remain unverified and were not imported as MCQs.
+
+Initial full unit run: **235/236 passed**, with one stale catalogue assertion corrected; focused tests **33/33**, final model/material tests **12/12**. Broad browser run **31/32**, followed by **19/20 final desktop/mobile model and portal regressions**, with the interrupted mobile admin case passing its **1/1 isolated recheck**. Intermediate failures/reloads are documented. Typecheck, lint, source/material/integrity audits and diff check passed; production dependency audit: zero vulnerabilities. All 725 protected local byte baselines matched; the 995 retained English baseline, 2,244 supplied questions, teacher/history files, original resources and AI registries remain unchanged. No new MCQ publication, teacher decision, production data import or Git push.
+
+Release: final working-tree deployment `dpl_EjL43eNmcDW51i9UsNsc1ZQonzRq` built successfully on Vercel and was promoted to [the existing website](https://avs-12th-student-hub.vercel.app). Public checks passed on eight routes and desktop/mobile model controls, with 30 entries visible, no page-script errors and no horizontal overflow. No production student login or database writes were used for verification. No Git push occurred. Source fingerprint: `95ede0cf4a4983655a74b9a10e4dc8643adcef7fc74ac97dfb9737cf424159bc`.
+
+[Full report](docs/ADVANCED_LEARNING_LAB_REPORT.md) · [Model coverage CSV](docs/advanced-learning-lab-coverage.csv) · [Coverage inventory](docs/advanced-learning-lab-coverage.json) · [Verification](docs/advanced-learning-lab-verification.json) · [Additional materials](docs/advanced-materials-inventory.json). Next priority: verify Tamil source mappings/terminology for this batch, then translation/protein synthesis, double fertilisation and semiconductor junction visuals.
+<!-- /advanced-lab-20261026 -->
+
 <!-- materials-supplied-20261025 -->
 ## Supplied study resources and one-mark practice — 25 October 2026
 

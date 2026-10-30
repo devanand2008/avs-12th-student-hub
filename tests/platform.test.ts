@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs";
 import ExcelJS from "exceljs";
 import assert from "node:assert/strict";
 import test from "node:test";
+import additionalResources from "../src/lib/additional-materials-resources.json";
 import { decodeSession, encodeSession } from "../src/lib/auth/session";
 import {
   deleteResource,
@@ -318,31 +319,69 @@ test("platform security and learning behaviour", async (t) => {
     });
     assert.ok(!questions.some((item) => item.id === q.id));
   });
-  await t.test("notes and videos start empty; drafts stay hidden", async () => {
-    assert.deepEqual(await listResources("note"), []);
-    assert.deepEqual(await listResources("video"), []);
-    const note = {
-      id: "unit-note",
-      chapterId: "cs-ch-1",
-      title: "Unit demo note",
-      titleTamil: "",
-      description: "",
-      badge: "HANDWRITTEN" as const,
-      pageCount: 1,
-      downloadAllowed: false,
-      isPublished: false,
-      viewsCount: 0,
-      pages: [],
-      pdfUrl: "https://example.test/unit.pdf",
-      updatedAt: new Date().toISOString(),
-    };
-    await saveResource("note", note);
-    assert.equal((await listResources("note")).length, 0);
-    assert.equal((await listResources("note", true)).length, 1);
-    await saveResource("note", { ...note, isPublished: true });
-    assert.equal((await listResources("note")).length, 1);
-    await deleteResource("note", note.id);
-  });
+  await t.test(
+    "supplied catalogue starts available; stored drafts stay hidden",
+    async () => {
+      const initialNotes = await listResources("note");
+      const initialVideos = await listResources("video");
+      for (const [kind, rows] of [
+        ["note", initialNotes],
+        ["video", initialVideos],
+      ] as const) {
+        assert.deepEqual(
+          rows.map((row) => row.id).sort(),
+          additionalResources
+            .filter((row) => row.kind === kind && row.resource.isPublished)
+            .map((row) => row.resource.id)
+            .sort(),
+        );
+      }
+      assert.ok(
+        initialNotes.every((n) =>
+          n.description.startsWith("Owner-supplied study resource."),
+        ),
+      );
+      const note = {
+        id: "unit-note",
+        chapterId: "cs-ch-1",
+        title: "Unit demo note",
+        titleTamil: "",
+        description: "",
+        badge: "HANDWRITTEN" as const,
+        pageCount: 1,
+        downloadAllowed: false,
+        isPublished: false,
+        viewsCount: 0,
+        pages: [],
+        pdfUrl: "https://example.test/unit.pdf",
+        updatedAt: new Date().toISOString(),
+      };
+      await saveResource("note", note);
+      assert.equal((await listResources("note")).length, initialNotes.length);
+      assert.equal(
+        (await listResources("note", true)).length,
+        initialNotes.length + 1,
+      );
+      await saveResource("note", { ...note, isPublished: true });
+      assert.equal(
+        (await listResources("note")).length,
+        initialNotes.length + 1,
+      );
+      await deleteResource("note", note.id);
+      const supplied = initialNotes[0];
+      await saveResource("note", { ...supplied, isPublished: false });
+      assert.ok(
+        !(await listResources("note")).some((n) => n.id === supplied.id),
+      );
+      assert.ok(
+        (await listResources("note", true)).some(
+          (n) => n.id === supplied.id && !n.isPublished,
+        ),
+      );
+      await saveResource("note", supplied);
+      await assert.rejects(deleteResource("note", supplied.id), /Archive it/);
+    },
+  );
   await t.test("source retrieval refuses unsupported topics", async () => {
     assert.ok(
       (await retrieveGroundedKnowledge("pure function specification")).length >
@@ -393,7 +432,7 @@ test("platform security and learning behaviour", async (t) => {
   await t.test(
     "models retain valid chapter links where mapped and have distinct named parts",
     async () => {
-      assert.equal(learningModels.length, 15);
+      assert.equal(learningModels.length, 30);
       for (const model of learningModels) {
         const subject =
           model.subject === "Computer Science"
