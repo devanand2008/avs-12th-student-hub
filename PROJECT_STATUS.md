@@ -7,6 +7,8 @@ Redesigned the native practice library with real totals, subject/language/chapte
 
 Validation: **252/252 full tests**, **12/12 focused checks**, **8/8 clean rerun browser cases** plus **4/4 all-collection/wrong-answer cases**, typecheck, full lint, diff checks and Vercel production build passed. Initial stale browser expectations and a development-manifest interruption were corrected/rechecked. The staged API serves all 12 collections, validates all 2,763 entries and proves the original 2,244 objects unchanged. All other 723 protected local files match; no production content, question, review or server-history import occurred. Staged deployment `dpl_ChMjMxEkz1vg6KeE1M7FfhbXh44L` is READY; push/promotion results will be appended.
 
+Release complete: implementation commit [`42b0e72`](https://github.com/devanand2008/avs-12th-student-hub/commit/42b0e723f550549a494b3214e9d758ed9df4a999) pushed to GitHub. The tested working-tree production artifact `dpl_ChMjMxEkz1vg6KeE1M7FfhbXh44L` is READY and promoted to [the live practice library](https://avs-12th-student-hub.vercel.app/practice/collections), with its source fingerprint and alias verified. Live desktop/mobile checks passed for discovery, chapter links, Tamil questions, wrong-answer scoring, navigation without double counting and browser-local history. No browser page errors or horizontal overflow; the recent deployment-scoped 10-minute error/fatal log query returned no groups. No production content import or teacher decision. See the report for build/commit metadata limitations.
+
 [Implementation, source contexts and complete validation](docs/HTML_PRACTICE_REFRESH.md) · [Source/preservation audit](docs/html-practice-refresh-audit.json).
 <!-- /html-practice-refresh-20261030 -->
 
