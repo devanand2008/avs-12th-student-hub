@@ -24,6 +24,7 @@ test("November 9 Class 12 Physics video additions maintain correct curriculum ma
     assert.equal(catalogEntry.subjectId, s.subjectId);
     assert.equal(catalogEntry.language, s.language);
     assert.equal(catalogEntry.durationSeconds, s.durationSeconds);
+    assert.equal(catalogEntry.thumbnailUrl, s.thumbnailUrl);
 
     const resourceRow = resources.find(
       (r) => r.resource.sourceFile === s.file,
@@ -35,6 +36,7 @@ test("November 9 Class 12 Physics video additions maintain correct curriculum ma
     assert.equal(resourceRow.resource.language, s.language);
     assert.equal(resourceRow.resource.durationSeconds, s.durationSeconds);
     assert.equal(resourceRow.resource.videoUrl, s.hostedUrl);
+    assert.equal(resourceRow.resource.thumbnailUrl, s.thumbnailUrl);
     assert.equal(resourceRow.resource.embedType, "mp4");
     assert.equal(resourceRow.resource.isPublished, true);
 

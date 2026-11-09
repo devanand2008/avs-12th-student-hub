@@ -122,8 +122,9 @@ All primary project objectives have been accomplished:
 - `src/app/api/admin/content/route.ts`: Added `pages` schema validation, resource editing support, and WebP support.
 - `src/components/admin/ContentManager.tsx`: Added multi-image batch uploads, natural sorting, page reordering/replacement gallery, and editing form.
 - `src/lib/video-source-aliases.json`: Registered 8th duplicate alias for Maxwell missing piece video.
-- `src/lib/additional-materials-catalog.json`: Registered 39 unique Physics video entries (Units 5, 6, 7).
-- `src/lib/additional-materials-resources.json`: Added 39 runtime resources with metadata and hosted URLs.
+- `src/lib/additional-materials-catalog.json`: Registered 39 unique Physics video entries (Units 5, 6, 7) with thumbnail paths.
+- `src/lib/additional-materials-resources.json`: Added 39 runtime resources with metadata, hosted URLs, and thumbnail URLs.
+- `public/images/learning-materials/`: Added 39 individual 850x480 JPEG thumbnails (`<sha256>.jpg`) extracted from original video frames.
 - `docs/materials-folder-nov9-inventory.json`: Generated full audit manifest for all 311 physical files.
 - `tests/materials-nov9.test.ts`: Added automated regression tests for Nov 9 additions.
 - `.gitignore`: Ignored temporary directories (`tmp/`, `output/`).

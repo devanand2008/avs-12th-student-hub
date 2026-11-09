@@ -101,6 +101,12 @@
 | `phy/video/பருப்பொருள்_அலைகள்.mp4` | Tamil | 351s | `1390c17d9980ac85` | இயற்பியல் — பருப்பொருள் அலைகள் — டி பிராலி அலைநீளம் |
 | `phy/video/X-கதிர்களின்_இயற்பியல்.mp4` | Tamil | 352s | `8cec57eaebe6da8f` | இயற்பியல் — X-கதிர்களின் இயற்பியல் — உருவாக்கம் & பண்புகள் |
 
+### 2.4 Video Thumbnail Asset Verification
+All 39 newly added Physics video lessons have full-resolution (850x480) JPEG preview thumbnails captured at timestamp 00:00:05 and stored under `public/images/learning-materials/<sha256>.jpg`.
+- **Dimensions:** 850 x 480 pixels (16:9 standard video aspect ratio)
+- **Format:** Progressive JPEG (`image/jpeg`, standard `0xFFD8` SOI marker)
+- **Integrity:** Directly mapped in `src/lib/additional-materials-catalog.json`, `src/lib/additional-materials-resources.json`, and `docs/materials-folder-nov9-inventory.json`.
+
 ---
 
 ## 3. Duplicate Video Aliases Registry
