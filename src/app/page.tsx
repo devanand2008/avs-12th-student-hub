@@ -25,7 +25,6 @@ import Image from "next/image";
 import Link from "@/components/layout/IntentLink";
 import BrandLogo from "@/components/layout/BrandLogo";
 import InstallButton from "@/components/pwa/InstallButton";
-import StudentReadySummary from "@/components/practice/StudentReadySummary";
 import { pageMetadata, websiteStructuredData } from "@/lib/seo";
 
 export const metadata = pageMetadata("/");

@@ -48,22 +48,36 @@ export default function Navbar() {
 
   // Horizontal scroll states for mobile navbar
   const navScrollRef = useRef<HTMLDivElement>(null);
+  const navThumbRef = useRef<HTMLDivElement>(null);
+  const scrollRaf = useRef<number | null>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
 
   const checkScroll = useCallback(() => {
-    const el = navScrollRef.current;
-    if (!el) return;
-    const { scrollLeft, scrollWidth, clientWidth } = el;
-    const maxScroll = scrollWidth - clientWidth;
-    setCanScrollLeft(scrollLeft > 4);
-    setCanScrollRight(scrollLeft < maxScroll - 4);
-    if (maxScroll > 0) {
-      setScrollProgress(Math.min(1, Math.max(0, scrollLeft / maxScroll)));
-    } else {
-      setScrollProgress(0);
-    }
+    if (scrollRaf.current !== null) return;
+    scrollRaf.current = requestAnimationFrame(() => {
+      scrollRaf.current = null;
+      const el = navScrollRef.current;
+      if (!el) return;
+      const { scrollLeft, scrollWidth, clientWidth } = el;
+      const maxScroll = scrollWidth - clientWidth;
+      const nextLeft = scrollLeft > 4;
+      const nextRight = scrollLeft < maxScroll - 4;
+      const ratio =
+        maxScroll > 0 ? Math.min(1, Math.max(0, scrollLeft / maxScroll)) : 0;
+
+      // Update DOM thumb transform directly for 60/120fps hardware-accelerated movement
+      if (navThumbRef.current) {
+        navThumbRef.current.style.transform = `translateX(${ratio * 316}%)`;
+      }
+
+      setCanScrollLeft((prev) => (prev !== nextLeft ? nextLeft : prev));
+      setCanScrollRight((prev) => (prev !== nextRight ? nextRight : prev));
+      setScrollProgress((prev) =>
+        Math.abs(prev - ratio) > 0.04 ? ratio : prev,
+      );
+    });
   }, []);
 
   useEffect(() => {
@@ -472,7 +486,8 @@ export default function Navbar() {
         <nav
           ref={navScrollRef}
           onScroll={checkScroll}
-          className="nav-horizontal-scroll px-3 py-2 gap-1.5 flex items-center min-w-0"
+          className="nav-horizontal-scroll px-3 py-2 gap-1.5 flex items-center min-w-0 touch-pan-x overscroll-x-contain"
+          style={{ WebkitOverflowScrolling: "touch" }}
           aria-label="Mobile Sections Navigation"
         >
           {mobileNavItems.map((item) => {
@@ -507,10 +522,11 @@ export default function Navbar() {
           aria-valuenow={Math.round(scrollProgress * 100)}
         >
           <div
-            className="absolute top-0 bottom-0 bg-[#3B82F6] rounded-full transition-all duration-75"
+            ref={navThumbRef}
+            className="absolute top-0 bottom-0 bg-[#3B82F6] rounded-full will-change-transform"
             style={{
               width: "24%",
-              left: `${scrollProgress * 76}%`,
+              transform: `translateX(${scrollProgress * 316}%)`,
             }}
           />
         </div>

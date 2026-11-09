@@ -12,14 +12,32 @@ export async function GET(request: Request) {
     if (id) {
       const resource = resources.find((item) => item.id === id);
       return resource
-        ? NextResponse.json({ note: resource })
+        ? NextResponse.json(
+            { note: resource },
+            {
+              headers: {
+                "Cache-Control":
+                  "private, max-age=30, s-maxage=30, stale-while-revalidate=60",
+              },
+            },
+          )
         : NextResponse.json({ error: "Resource not found." }, { status: 404 });
     }
-    return NextResponse.json({
-      notes: params.get("chapterId")
-        ? resources.filter((item) => item.chapterId === params.get("chapterId"))
-        : resources,
-    });
+    return NextResponse.json(
+      {
+        notes: params.get("chapterId")
+          ? resources.filter(
+              (item) => item.chapterId === params.get("chapterId"),
+            )
+          : resources,
+      },
+      {
+        headers: {
+          "Cache-Control":
+            "private, max-age=30, s-maxage=30, stale-while-revalidate=60",
+        },
+      },
+    );
   } catch {
     return NextResponse.json(
       {

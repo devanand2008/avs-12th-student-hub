@@ -110,10 +110,15 @@ export default function VideoLibrary({ watchId }: { watchId?: string }) {
           "avs_video_" + (auth.user?.studentId || auth.user?.id || "guest");
         if (!response.ok) throw new Error(data.error);
         setVideos(
-          [...(data.videos || [])].sort(
-            (a: VideoLesson, b: VideoLesson) =>
-              (Date.parse(b.createdAt) || 0) - (Date.parse(a.createdAt) || 0),
-          ),
+          [...(data.videos || [])]
+            .sort(
+              (a: VideoLesson, b: VideoLesson) =>
+                (Date.parse(b.createdAt) || 0) - (Date.parse(a.createdAt) || 0),
+            )
+            .map((v: VideoLesson) => ({
+              ...v,
+              _searchKey: `${v.title} ${v.titleTamil || ""} ${v.topic || ""} ${v.description || ""}`.toLowerCase(),
+            })),
         );
         const requested =
           watchId || new URLSearchParams(window.location.search).get("id");
@@ -217,17 +222,19 @@ export default function VideoLibrary({ watchId }: { watchId?: string }) {
     }
   }
 
+  const normalizedQuery = deferredQuery.trim().toLowerCase();
   const filteredVideos = useMemo(
     () =>
-      videos.filter(
-        (video) =>
-          video.id !== active?.id &&
-          (language === "all" || video.language === language) &&
-          `${video.title} ${video.titleTamil} ${video.topic || ""} ${video.description}`
-            .toLowerCase()
-            .includes(deferredQuery.toLowerCase()),
-      ),
-    [videos, active?.id, language, deferredQuery],
+      videos.filter((video) => {
+        if (video.id === active?.id) return false;
+        if (language !== "all" && video.language !== language) return false;
+        if (!normalizedQuery) return true;
+        const key =
+          (video as VideoLesson & { _searchKey?: string })._searchKey ||
+          `${video.title} ${video.titleTamil || ""} ${video.topic || ""} ${video.description || ""}`.toLowerCase();
+        return key.includes(normalizedQuery);
+      }),
+    [videos, active?.id, language, normalizedQuery],
   );
   const durationLabel = (seconds: number) =>
     `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
@@ -589,8 +596,8 @@ export default function VideoLibrary({ watchId }: { watchId?: string }) {
                 <div
                   className={
                     active
-                      ? "grid gap-4 sm:grid-cols-2 xl:grid-cols-1"
-                      : "grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+                      ? "grid gap-4 sm:grid-cols-2 xl:grid-cols-1 content-auto-render"
+                      : "grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-auto-render"
                   }
                 >
                   {filteredVideos.slice(0, visibleCount).map((video) => (

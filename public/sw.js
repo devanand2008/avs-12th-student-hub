@@ -1,4 +1,4 @@
-const CACHE_NAME = "avs-public-shell-v4";
+const CACHE_NAME = "avs-public-shell-v5-speed";
 const PRECACHE_ASSETS = [
   "/",
   "/offline.html",

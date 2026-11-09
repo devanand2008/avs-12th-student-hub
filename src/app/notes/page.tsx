@@ -4,7 +4,7 @@ import Sidebar from "@/components/layout/Sidebar";
 import type { HandwrittenNote } from "@/types";
 import { ArrowUpRight, BookOpen, FileText, Search } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 const getNoteColor = (title: string, topic: string = "") => {
   const combined = (title + " " + topic).toLowerCase();
@@ -89,28 +89,38 @@ export default function NotesPage() {
       .finally(() => setLoading(false));
   }, []);
 
-  const subjects = [
-    ...new Set(
-      notes
-        .map((note) => note.subjectName)
-        .filter((name): name is string => Boolean(name)),
-    ),
-  ].sort();
-  const filtered = notes.filter(
-    (note) =>
-      (subject === "all" || note.subjectName === subject) &&
-      (language === "all" || note.language === language) &&
-      (
-        note.title +
-        " " +
-        note.titleTamil +
-        " " +
-        note.topic +
-        " " +
-        note.description
-      )
-        .toLowerCase()
-        .includes(query.toLowerCase()),
+  const subjects = useMemo(
+    () => [
+      ...new Set(
+        notes
+          .map((note) => note.subjectName)
+          .filter((name): name is string => Boolean(name)),
+      ),
+    ].sort(),
+    [notes],
+  );
+
+  const normalizedQuery = query.trim().toLowerCase();
+  const filtered = useMemo(
+    () =>
+      notes.filter(
+        (note) =>
+          (subject === "all" || note.subjectName === subject) &&
+          (language === "all" || note.language === language) &&
+          (!normalizedQuery ||
+            (
+              note.title +
+              " " +
+              note.titleTamil +
+              " " +
+              note.topic +
+              " " +
+              note.description
+            )
+              .toLowerCase()
+              .includes(normalizedQuery)),
+      ),
+    [notes, subject, language, normalizedQuery],
   );
 
   return (
@@ -220,7 +230,7 @@ export default function NotesPage() {
             </Link>
           </div>
         ) : (
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 content-auto-render">
             {filtered.map((note) => {
               const theme = getNoteColor(note.title, note.topic);
 

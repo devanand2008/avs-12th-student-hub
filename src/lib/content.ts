@@ -25,10 +25,28 @@ function storageClient() {
 export function contentStorageMode() {
   return storageClient() ? "supabase" : "preview";
 }
+
+// Memory cache for resources to prevent hammering Supabase on every heartbeat/visit
+const resourceCache = new Map<
+  string,
+  { data: LearningResource[]; timestamp: number }
+>();
+const RESOURCE_CACHE_TTL_MS = 60_000; // 60 seconds
+
+export function invalidateResourceCache() {
+  resourceCache.clear();
+}
+
 export async function listResources(
   kind: ResourceKind,
   includeDrafts = false,
 ): Promise<LearningResource[]> {
+  const cacheKey = `${kind}_${includeDrafts ? "all" : "published"}`;
+  const cached = resourceCache.get(cacheKey);
+  if (cached && Date.now() - cached.timestamp < RESOURCE_CACHE_TTL_MS) {
+    return cached.data;
+  }
+
   const client = storageClient();
   let resources: LearningResource[];
   if (client) {
@@ -55,14 +73,22 @@ export async function listResources(
   const merged = new Map(supplied.map((resource) => [resource.id, resource]));
   resources.forEach((resource) => merged.set(resource.id, resource));
   resources = [...merged.values()];
-  return includeDrafts
+  const finalResources = includeDrafts
     ? resources
     : resources.filter((resource) => resource.isPublished);
+
+  resourceCache.set(cacheKey, {
+    data: finalResources,
+    timestamp: Date.now(),
+  });
+
+  return finalResources;
 }
 export async function saveResource(
   kind: ResourceKind,
   resource: LearningResource,
 ) {
+  invalidateResourceCache();
   const client = storageClient();
   if (client) {
     const { error } = await client

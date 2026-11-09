@@ -4,6 +4,7 @@ import { officialTextbookRewrite } from "./src/lib/textbook-delivery";
 import type { TextbookCatalog } from "./src/lib/textbooks";
 
 const nextConfig: NextConfig = {
+  compress: true,
   // Isolate this local QA server from concurrent default builds in the workspace.
   distDir:
     process.env.AVS_PORTAL_QA_BUILD === "true" ? ".next-portal" : ".next",
@@ -21,7 +22,19 @@ const nextConfig: NextConfig = {
       return rewrite ? [rewrite] : [];
     });
   },
+  headers: async () => [
+    {
+      source: "/:path*.(svg|jpg|jpeg|png|webp|ico|woff|woff2)",
+      headers: [
+        {
+          key: "Cache-Control",
+          value: "public, max-age=31536000, immutable",
+        },
+      ],
+    },
+  ],
   experimental: {
+    optimizePackageImports: ["lucide-react", "clsx", "tailwind-merge"],
     ...(process.env.AVS_PORTAL_QA_BUILD === "true"
       ? { cpus: 1, webpackMemoryOptimizations: true }
       : {}),
