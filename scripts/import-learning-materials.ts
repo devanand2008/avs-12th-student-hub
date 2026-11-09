@@ -234,15 +234,25 @@ async function main() {
           .publicUrl;
       // Do not publish a metadata row until its real remote MP4 is accessible.
       if (source.hostedUrl) {
-        const check = await fetch(url, {
-          headers: { Range: "bytes=0-31" },
-          signal: AbortSignal.timeout(60000),
-        });
+        let check: Response | null = null;
+        for (let attempt = 1; attempt <= 3; attempt++) {
+          try {
+            check = await fetch(url, {
+              headers: { Range: "bytes=0-31" },
+              signal: AbortSignal.timeout(60000),
+            });
+            if (check.ok || check.status === 206) break;
+          } catch (e) {
+            if (attempt === 3) throw e;
+            await new Promise((r) => setTimeout(r, 2000));
+          }
+        }
         if (
+          !check ||
           check.status !== 206 ||
           check.headers.get("content-range") !== `bytes 0-31/${sizeBytes}`
         ) {
-          await check.body?.cancel();
+          await check?.body?.cancel();
           throw new Error(`Hosted video range/size mismatch: ${source.file}`);
         }
         const header = Buffer.from(await check.arrayBuffer());
