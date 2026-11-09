@@ -18,6 +18,7 @@ lint-latest.json
 audit-production.json
 **/*.pdf
 **/*.mp4
+!public/media/student-guide.mp4
 **/*.gguf
 **/*.part
 public/pdfjs/*/

@@ -18,6 +18,7 @@ import {
   VideoLesson,
 } from "@/types";
 import bcrypt from "bcryptjs";
+import { validateReplacementPassword } from "@/lib/auth/reset-password-policy";
 import { isTextPracticeQuestion } from "@/lib/practice-question-text";
 import { selectPracticeQuestions } from "@/lib/textbook-practice-selection";
 import { studentActivationMode } from "@/lib/auth/activation";
@@ -679,8 +680,11 @@ export async function toggleStudentActive(
 export async function resetStudentPassword(
   id: string,
   actorId?: string,
+  replacementPassword?: string,
 ): Promise<string | null> {
   await ensureInit();
+  const chosen = validateReplacementPassword(replacementPassword);
+  if (chosen && !actorId) throw new Error("Admin authorization required");
   if (actorId && dbState.users.get(actorId)?.role !== "admin")
     throw new Error("Admin authorization required");
   const student = dbState.students.get(id);
@@ -688,7 +692,8 @@ export async function resetStudentPassword(
   const user = dbState.users.get(student.userId);
   if (!user) return null;
 
-  const tempPassword = `AVS@26${randomBytes(9).toString("base64url")}`;
+  const tempPassword =
+    chosen ?? `AVS@26${randomBytes(9).toString("base64url")}`;
   user.passwordHash = await bcrypt.hash(tempPassword, 10);
   user.mustChangePassword = true;
   user.updatedAt = new Date().toISOString();
@@ -1071,7 +1076,10 @@ export async function saveQuizAnswer(
   if (selectedAnswer !== null && !["A", "B", "C", "D"].includes(selectedAnswer))
     return null;
 
-  if (session.mode !== "timed" && session.answers[questionId]?.selectedAnswer != null)
+  if (
+    session.mode !== "timed" &&
+    session.answers[questionId]?.selectedAnswer != null
+  )
     return session;
 
   const question = dbState.questions.get(questionId);

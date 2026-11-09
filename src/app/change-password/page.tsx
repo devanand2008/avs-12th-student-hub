@@ -1,5 +1,7 @@
 "use client";
 
+import { fetchCurrentSession } from "@/lib/current-session-client";
+
 import { AlertCircle, CheckCircle2, ShieldCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -13,7 +15,7 @@ export default function ChangePasswordPage() {
   const [success, setSuccess] = useState(false);
   const [canSetInitialPassword, setCanSetInitialPassword] = useState(false);
   useEffect(() => {
-    void fetch("/api/auth/me")
+    void fetchCurrentSession()
       .then((r) => r.json())
       .then((data) =>
         setCanSetInitialPassword(Boolean(data.user?.canSetInitialPassword)),

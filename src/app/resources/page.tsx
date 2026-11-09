@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, BookOpen, FileText, Play, Library } from "lucide-react";
 import { resourceCategories, visibleResources } from "@/lib/study-resources";
-export const metadata = { title: "Study Resources | Skill Up" };
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata("/resources");
 export default function ResourcesPage() {
   return (
     <main className="mx-auto w-full max-w-7xl space-y-10 px-4 py-10 pb-28 sm:px-8">
@@ -37,6 +38,12 @@ export default function ResourcesPage() {
         className="grid gap-4 sm:grid-cols-3"
       >
         {[
+          {
+            href: "/resources/guides",
+            title: "Authorised open PDF references",
+            description:
+              "Read and download complete openly licensed references, with publisher links and licence evidence.",
+          },
           {
             href: "/notes",
             title: "Study PDFs & handwritten notes",

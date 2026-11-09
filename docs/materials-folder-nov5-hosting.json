@@ -1,0 +1,239 @@
+{
+  "checkedAt": "2026-11-05T10:32:46.949Z",
+  "results": [
+    {
+      "file": "bio/bio/video/12th_Bio-Botany__Millets.mp4",
+      "sha256": "d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e",
+      "bytes": 41102667,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e.mp4",
+      "status": 206,
+      "digest": "sha256:d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ch_9__Plant_Breeding.mp4",
+      "sha256": "d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778",
+      "bytes": 46216868,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778.mp4",
+      "status": 206,
+      "digest": "sha256:d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Lesson_10__Major_Cereals.mp4",
+      "sha256": "0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8",
+      "bytes": 63792917,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8.mp4",
+      "status": 206,
+      "digest": "sha256:0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Lesson_9__Plant_Breeding (1).mp4",
+      "sha256": "ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186",
+      "bytes": 49307487,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186.mp4",
+      "status": 206,
+      "digest": "sha256:ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Lesson_9__Plant_Breeding.mp4",
+      "sha256": "1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495",
+      "bytes": 40108434,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495.mp4",
+      "status": 206,
+      "digest": "sha256:1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Mastering_Minor_Millets.mp4",
+      "sha256": "0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8",
+      "bytes": 35349927,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8.mp4",
+      "status": 206,
+      "digest": "sha256:0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Medicinal_Plants___Systems.mp4",
+      "sha256": "441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489",
+      "bytes": 53884926,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489.mp4",
+      "status": 206,
+      "digest": "sha256:441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Alternating_Current.mp4",
+      "sha256": "1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a",
+      "bytes": 41576196,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a.mp4",
+      "status": 206,
+      "digest": "sha256:1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Demystifying_AC_Generators.mp4",
+      "sha256": "c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456",
+      "bytes": 42697345,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456.mp4",
+      "status": 206,
+      "digest": "sha256:c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Dual_Nature_of_Eddy_Currents.mp4",
+      "sha256": "e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6",
+      "bytes": 49589022,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6.mp4",
+      "status": 206,
+      "digest": "sha256:e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Electromagnetic_Induction.mp4",
+      "sha256": "563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b",
+      "bytes": 42381681,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b.mp4",
+      "status": 206,
+      "digest": "sha256:563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Inertia_of_Electricity.mp4",
+      "sha256": "0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd",
+      "bytes": 39628076,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd.mp4",
+      "status": 206,
+      "digest": "sha256:0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd",
+      "passed": true
+    },
+    {
+      "file": "phy/video/LC_அலைவுகள்.mp4",
+      "sha256": "c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694",
+      "bytes": 28558961,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694.mp4",
+      "status": 206,
+      "digest": "sha256:c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Power_in_AC_Circuits.mp4",
+      "sha256": "d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610",
+      "bytes": 40488068,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610.mp4",
+      "status": 206,
+      "digest": "sha256:d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Power_of_Eddy_Currents.mp4",
+      "sha256": "c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe",
+      "bytes": 62266783,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe.mp4",
+      "status": 206,
+      "digest": "sha256:c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Power_of_Transformers.mp4",
+      "sha256": "d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961",
+      "bytes": 44664438,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961.mp4",
+      "status": 206,
+      "digest": "sha256:d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Producing_Induced_EMF.mp4",
+      "sha256": "4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf",
+      "bytes": 48404574,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf.mp4",
+      "status": 206,
+      "digest": "sha256:4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf",
+      "passed": true
+    },
+    {
+      "file": "phy/video/The_Invisible_Pendulum.mp4",
+      "sha256": "5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404",
+      "bytes": 36325528,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404.mp4",
+      "status": 206,
+      "digest": "sha256:5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404",
+      "passed": true
+    },
+    {
+      "file": "phy/video/சுழல்_மின்னோட்ட_ரகசியம்.mp4",
+      "sha256": "e37863f2a78fb70c0892e75b367b1c8d7d0973ec48847cb77ecc69a8dcd90de1",
+      "bytes": 29673562,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e37863f2a78fb70c0892e75b367b1c8d7d0973ec48847cb77ecc69a8dcd90de1.mp4",
+      "status": 206,
+      "digest": "sha256:e37863f2a78fb70c0892e75b367b1c8d7d0973ec48847cb77ecc69a8dcd90de1",
+      "passed": true
+    },
+    {
+      "file": "phy/video/சுழித்திறன்_மின்னோட்டம்.mp4",
+      "sha256": "f93519fa326eedca0f2a05df503add9dbda392c2c6aaabf7a9e5ef643f38d9ab",
+      "bytes": 31554225,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f93519fa326eedca0f2a05df503add9dbda392c2c6aaabf7a9e5ef643f38d9ab.mp4",
+      "status": 206,
+      "digest": "sha256:f93519fa326eedca0f2a05df503add9dbda392c2c6aaabf7a9e5ef643f38d9ab",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மாறுதிசை_மின்னியற்றிகள்.mp4",
+      "sha256": "6022426528ef4ede02410fbe165565092e285d6def744717ac89adc833f3d7ab",
+      "bytes": 28827287,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6022426528ef4ede02410fbe165565092e285d6def744717ac89adc833f3d7ab.mp4",
+      "status": 206,
+      "digest": "sha256:6022426528ef4ede02410fbe165565092e285d6def744717ac89adc833f3d7ab",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மாறுதிசை_மின்னோட்டம்.mp4",
+      "sha256": "8c602caa228d739acea2d15cdfed93e9faf1fc4f320b445b5d8a4a5d5d684c1d",
+      "bytes": 41894216,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8c602caa228d739acea2d15cdfed93e9faf1fc4f320b445b5d8a4a5d5d684c1d.mp4",
+      "status": 206,
+      "digest": "sha256:8c602caa228d739acea2d15cdfed93e9faf1fc4f320b445b5d8a4a5d5d684c1d",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்காந்த_தூண்டல்_பயணம்.mp4",
+      "sha256": "6ff20fd273677e81e48e608c92e3578ac620f9e204ded481eb8d2dc4718be66c",
+      "bytes": 35560657,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6ff20fd273677e81e48e608c92e3578ac620f9e204ded481eb8d2dc4718be66c.mp4",
+      "status": 206,
+      "digest": "sha256:6ff20fd273677e81e48e608c92e3578ac620f9e204ded481eb8d2dc4718be66c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்சாரம்_தூண்டும்_வழிகள்.mp4",
+      "sha256": "8a512eb431782187ddd6e8d4f0daddd00a8a52872188a633127020a3f37f145c",
+      "bytes": 23178144,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8a512eb431782187ddd6e8d4f0daddd00a8a52872188a633127020a3f37f145c.mp4",
+      "status": 206,
+      "digest": "sha256:8a512eb431782187ddd6e8d4f0daddd00a8a52872188a633127020a3f37f145c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்மாற்றி__மின்திறன்_வலை.mp4",
+      "sha256": "092f63c7e31c94884add191676ef08152c9405978472d4af57156307b9489046",
+      "bytes": 34085088,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/092f63c7e31c94884add191676ef08152c9405978472d4af57156307b9489046.mp4",
+      "status": 206,
+      "digest": "sha256:092f63c7e31c94884add191676ef08152c9405978472d4af57156307b9489046",
+      "passed": true
+    },
+    {
+      "file": "phy/video/வாய்ப்புகளின்_இயற்பியல்.mp4",
+      "sha256": "11f63a52849969c3eee0209068e19a88b1f1a81f9c3163359215be92bbf60762",
+      "bytes": 36577698,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/11f63a52849969c3eee0209068e19a88b1f1a81f9c3163359215be92bbf60762.mp4",
+      "status": 206,
+      "digest": "sha256:11f63a52849969c3eee0209068e19a88b1f1a81f9c3163359215be92bbf60762",
+      "passed": true
+    }
+  ]
+}

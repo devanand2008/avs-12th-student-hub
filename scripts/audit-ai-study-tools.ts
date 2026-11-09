@@ -9,7 +9,7 @@ import chapters from "../src/lib/ai-study-chapters.json";
 const lines = [
   "# AI Study Tools — implementation and source report",
   "",
-  `Audited ${new Date().toISOString()}. Local only; no production access, API integrations, deployments or Git push.`,
+  `Catalogue audit generated ${new Date().toISOString()}. This command validates local metadata; provider evidence dates are stored per tool. It does not sign into providers, send prompts or publish questions. Release/testing results are recorded below.`,
   "",
   "## Routes and architecture",
   "",
@@ -39,7 +39,7 @@ lines.push(
       `- **${t.name}:** ${t.limitations} ${t.eligibility} Privacy URL: ${t.privacyUrl ?? "not established"}; terms URL: ${t.termsUrl ?? "not established"}.`,
   ),
   "",
-  "Google’s NotebookLM help URL redirected to Gemini Notebook help, which identifies free Standard access and paid expansions. The product endpoint redirected to notebook.google.com but the web fetch could not access that destination; no successful login was claimed. Gemini’s India marketing endpoint was also inaccessible through the research tool; official support establishes India/Tamil availability. Microsoft’s endpoint redirects to its current Copilot landing page; exact consumer account/region/age behaviour remains partially verified. Desmos and Khan pages use JavaScript; official published access documents support the free-content classification. Primary PhET pages identify Capacitor Lab and Molecule Shapes; neither is mapped to a whole chapter. GeoGebra and PhET are external links, with no commercial embedding or redistribution licence inferred.",
+  "Official sources were refreshed on 3 November 2026. Gemini Notebook help establishes free Standard access and limits; the product redirect could not be fetched, so account interaction remains untested. Current Microsoft personal-account terms establish required sign-in and age 13 or the higher local minimum; school accounts have separate conditions. Python Tutor’s official page describes a free visualizer for Python, Java, C/C++ and JavaScript. Desmos and Khan published documents establish free tools/content. GeoGebra and PhET have noncommercial conditions; all entries are external links and no assets are redistributed or embedded. Unknown account/age/privacy details remain explicitly unverified. Product/access evidence does not establish full suitability for every student or country.",
   "",
   "Only Gemini has independently checked Tamil language support in this initial directory. English labels do not imply all providers have equally accurate Tamil output. Other provider languages remain unverified. Free Tools includes usable free tiers and personal noncommercial study resources while retaining all limitations; it excludes unverified-access, unavailable and eligibility-only statuses.",
   "",
@@ -56,7 +56,7 @@ for (const name of [...new Set(aiSubjects.map((s) => s.name))].sort()) {
       t.subjectIds.some((id) => ids.includes(id)),
     );
   lines.push(
-    `| ${name} | ${tools.map((t) => t.name).join(", ")} | General source-guided explanations/revision${tools.some((t) => t.id === "phet") ? "; conceptual simulations" : ""}${tools.some((t) => ["desmos", "geogebra", "wolfram"].includes(t.id)) ? "; maths exploration/calculation" : ""}. Gap: official board alignment, full chapter coverage and teacher verification. |`,
+    `| ${name} | ${tools.map((t) => t.name).join(", ")} | General source-guided explanations/revision${tools.some((t) => t.id === "phet") ? "; conceptual simulations" : ""}${tools.some((t) => ["desmos", "geogebra", "wolfram"].includes(t.id)) ? "; maths exploration/calculation" : ""}${tools.some((t) => t.id === "python-tutor") ? "; supported-language code tracing" : ""}. Gap: official board alignment, full chapter coverage and teacher verification. |`,
   );
 }
 lines.push(

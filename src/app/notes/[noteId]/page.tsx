@@ -1,5 +1,7 @@
 "use client";
 
+import { fetchCurrentSession } from "@/lib/current-session-client";
+
 import { HandwrittenNote, NotePage } from "@/types";
 import {
   ArrowLeft,
@@ -53,7 +55,7 @@ export default function NoteViewerPage({ params }: PageProps) {
   useEffect(() => {
     Promise.all([
       fetch("/api/notes?id=" + noteId).then((r) => r.json()),
-      fetch("/api/auth/me").then((r) => r.json()),
+      fetchCurrentSession().then((r) => r.json()),
       fetch("/api/activity").then((r) => r.json()),
       fetch("/api/bookmarks").then((r) => r.json()),
     ])

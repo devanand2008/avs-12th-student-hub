@@ -1,6 +1,6 @@
 import { getUserByLoginId, getUserById, verifyStudentPhone } from "@/lib/db";
 import { normalizePhone } from "@/lib/db/user-data";
-import { requireSupabase } from "@/lib/supabase/server";
+import { requireSupabaseAuth } from "@/lib/supabase/server";
 import { requiresFirstPhoneOtp } from "./phone";
 import { passwordVersion } from "./session";
 import type { OtpChallenge } from "./otp-challenge";
@@ -52,7 +52,7 @@ export async function pendingPhoneStudent(phone: string) {
 }
 export async function sendFirstLoginOtp(phone: string) {
   const match = await pendingPhoneStudent(phone);
-  const { error } = await requireSupabase().auth.signInWithOtp({
+  const { error } = await requireSupabaseAuth().auth.signInWithOtp({
     phone: "+91" + phone,
     options: {
       shouldCreateUser: true,
@@ -93,7 +93,7 @@ export async function verifyFirstLoginOtp(
     passwordVersion(match.user.passwordHash) !== challenge.passwordVersion
   )
     throw new OtpError("Your account changed. Request a new OTP.");
-  const { data, error } = await requireSupabase().auth.verifyOtp({
+  const { data, error } = await requireSupabaseAuth().auth.verifyOtp({
     phone: "+91" + challenge.phone,
     token,
     type: "sms",

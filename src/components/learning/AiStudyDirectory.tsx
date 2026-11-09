@@ -158,6 +158,7 @@ export default function AiStudyDirectory({
             setFilters({ ...initial, subject: "" });
             setChapter("");
             setEdited(null);
+            setMessage("");
           }}
           className="self-end rounded-xl border border-blue-200 p-3 font-bold text-blue-800"
         >
@@ -359,8 +360,8 @@ export default function AiStudyDirectory({
                 <div>
                   <dt className="font-bold">Privacy and availability</dt>
                   <dd>
-                    {t.availability}. Privacy and terms not independently
-                    reviewed; check the provider before sharing information.
+                    {t.availability}. Policy links are for your review; no
+                    guarantee of suitability or privacy is implied.
                   </dd>
                 </div>
               </dl>

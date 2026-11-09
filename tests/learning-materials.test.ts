@@ -9,6 +9,100 @@ import path from "node:path";
 import videoAliases from "../src/lib/video-source-aliases.json";
 import videoCatalog from "../src/lib/video-lessons-catalog.json";
 import additionalCatalog from "../src/lib/additional-materials-catalog.json";
+import refreshInventory from "../docs/materials-folder-refresh-inventory.json";
+import octoberInventory from "../docs/materials-folder-oct31-inventory.json";
+import currentElectricityInventory from "../docs/materials-folder-oct31b-inventory.json";
+import zoologyInventory from "../docs/materials-folder-oct31c-inventory.json";
+import textbookCatalog from "../src/lib/textbooks-catalog.json";
+import novemberInventory from "../docs/materials-folder-nov2-inventory.json";
+import magnetismInventory from "../docs/materials-folder-nov4-inventory.json";
+import ecologyInventory from "../docs/materials-folder-nov4b-inventory.json";
+
+test("ecology videos use real Botany chapters and retain distinct succession editions", () => {
+  const hashes = new Set<string>();
+  for (const source of ecologyInventory.additions) {
+    assert.ok(!hashes.has(source.sha256));
+    hashes.add(source.sha256);
+    assert.deepEqual(
+      additionalCatalog.find((s) => s.file === source.file),
+      source,
+    );
+    const book = textbookCatalog.books.find(
+      (b) => `tb-${b.id}` === source.subjectId,
+    );
+    assert.equal(book?.subject, "Bio-Botany");
+    assert.equal(book?.medium, source.language);
+    assert.equal(source.language, "English");
+    assert.ok(
+      [6, 7, 8].some(
+        (ch) => source.chapterId === `${source.subjectId}-ch-${ch}`,
+      ),
+    );
+    assert.match(source.description, /not been teacher-verified/);
+  }
+  assert.equal(hashes.size, ecologyInventory.newUniqueVideos);
+  const variants = ecologyInventory.additions.filter((s) =>
+    /Ecosystem___Succession(?: \(1\))?\.mp4$/.test(s.file),
+  );
+  assert.equal(variants.length, 2);
+  assert.equal(new Set(variants.map((s) => s.sha256)).size, 2);
+  assert.equal(new Set(variants.map((s) => s.title)).size, 2);
+});
+
+test("magnetism resources preserve medium-specific Unit 3 mapping and one canonical duplicate", () => {
+  const seen = new Set<string>();
+  for (const source of magnetismInventory.additions) {
+    assert.ok(!seen.has(source.sha256));
+    seen.add(source.sha256);
+    assert.deepEqual(
+      additionalCatalog.find((s) => s.file === source.file),
+      source,
+    );
+    const book = textbookCatalog.books.find(
+      (b) => `tb-${b.id}` === source.subjectId,
+    );
+    assert.equal(book?.subject, "Physics");
+    assert.equal(book?.volume, "1");
+    assert.equal(book?.medium, source.language);
+    assert.equal(source.chapterId, `${source.subjectId}-ch-3`);
+    assert.ok(source.durationSeconds > 0);
+    assert.match(source.description, /not been teacher-verified/);
+  }
+  assert.equal(seen.size, magnetismInventory.newUniqueVideos);
+  const aliases = magnetismInventory.aliases.filter((a) =>
+    /காந்தவியலின்_ரகசியங்கள்/.test(a.file),
+  );
+  assert.equal(aliases.length, 1);
+  assert.equal(
+    aliases[0].canonicalFile,
+    "phy/video/காந்தவியலின்_ரகசியங்கள்.mp4",
+  );
+  assert.ok(!additionalCatalog.some((s) => s.file === aliases[0].file));
+});
+
+test("Botany folder refresh maps source content to registered chapters without duplicating editions", () => {
+  assert.equal(novemberInventory.additions.length, 20);
+  assert.equal(novemberInventory.uniqueVideos, 146);
+  assert.equal(novemberInventory.pdfs, 57);
+  const mapping = new Map(novemberInventory.additions.map((s) => [s.file, s]));
+  const misnamed = mapping.get("bio/bio/video/botany chap 2 video 2.mp4")!;
+  assert.ok(misnamed.chapterId.endsWith("-ch-1"));
+  assert.match(misnamed.description, /opening slide identifies Chapter 1/);
+  for (const s of novemberInventory.additions) {
+    assert.equal(s.subjectId, "tb-12-bio-botany-english-f15d4524");
+    assert.match(s.description, /have not been teacher-verified/);
+    assert.equal(
+      additionalCatalog.filter((r) => r.sha256 === s.sha256).length,
+      1,
+    );
+  }
+  const editions = novemberInventory.additions.filter((s) =>
+    /Plant_Tissue_Culture(?: \(\d\))?\.mp4$/.test(s.file),
+  );
+  assert.equal(editions.length, 3);
+  assert.equal(new Set(editions.map((s) => s.sha256)).size, 3);
+  assert.equal(new Set(editions.map((s) => s.title)).size, 3);
+});
 
 process.env.DB_DRIVER = "memory";
 process.env.ENABLE_DEMO_DATA = "true";
@@ -25,6 +119,99 @@ test("both student streams can find Mathematics and Tamil materials", async () =
     assert.ok(chapter?.isActive, source.file);
     assert.equal(chapter.subjectId, source.subjectId);
   }
+});
+
+test("new supplied videos resolve to active registered chapters and preserve their subjects", async () => {
+  for (const addition of refreshInventory.additions) {
+    const source = additionalCatalog.find(
+      (item) => item.file === addition.file,
+    );
+    assert.ok(source, addition.file);
+    const chapter = await getChapterById(source.chapterId);
+    assert.ok(chapter?.isActive, addition.file);
+    assert.equal(chapter.subjectId, source.subjectId, addition.file);
+    assert.ok(chapter.chapterNumber > 0, addition.file);
+  }
+});
+
+test("October 31 videos retain registered medium/chapter mappings and source warnings", async () => {
+  const ids = new Set<string>();
+  for (const source of octoberInventory.additions) {
+    assert.ok(!ids.has(source.file), source.file);
+    ids.add(source.file);
+    assert.deepEqual(
+      additionalCatalog.find((s) => s.file === source.file),
+      source,
+    );
+    if (source.subjectId === "sub-maths") {
+      const chapter = await getChapterById(source.chapterId);
+      assert.equal(chapter?.subjectId, source.subjectId);
+      assert.equal(chapter?.isActive, true);
+    } else {
+      const book = textbookCatalog.books.find(
+        (b) => `tb-${b.id}` === source.subjectId,
+      );
+      assert.ok(book, source.file);
+      assert.equal(book.subject, "Physics");
+      assert.equal(book.medium, source.language);
+      const mapping = octoberInventory.chapterMappings.find(
+        (m) => m.file === source.file,
+      );
+      assert.equal(mapping?.chapterId, source.chapterId);
+      assert.match(source.chapterId, /-ch-[1-5]$/);
+      assert.ok(mapping?.registeredTitle);
+    }
+    assert.match(source.description, /not been teacher-verified/);
+  }
+  const incorrect = octoberInventory.additions.find((s) =>
+    s.file.endsWith("Origin_of_Everyday_Forces.mp4"),
+  );
+  assert.ok(incorrect);
+  assert.match(incorrect.description, /captions are reversed/);
+  assert.match(
+    incorrect.description,
+    /Like charges repel; unlike charges attract/,
+  );
+});
+
+test("new current-electricity videos use the matching textbook medium and existing Unit 2", () => {
+  const files = new Set<string>();
+  for (const source of currentElectricityInventory.additions) {
+    assert.ok(!files.has(source.file), source.file);
+    files.add(source.file);
+    assert.deepEqual(
+      additionalCatalog.find((s) => s.file === source.file),
+      source,
+    );
+    const book = textbookCatalog.books.find(
+      (b) => `tb-${b.id}` === source.subjectId,
+    );
+    assert.ok(book, source.file);
+    assert.equal(book.subject, "Physics");
+    assert.equal(book.medium, source.language);
+    assert.equal(source.chapterId, `${source.subjectId}-ch-2`);
+    assert.match(source.description, /not been teacher-verified/);
+  }
+  assert.equal(files.size, currentElectricityInventory.newUniqueVideos);
+});
+
+test("new reproductive-health and inheritance lessons map to active Zoology chapters", async () => {
+  const files = new Set<string>();
+  for (const source of zoologyInventory.additions) {
+    assert.ok(!files.has(source.file), source.file);
+    files.add(source.file);
+    assert.deepEqual(
+      additionalCatalog.find((s) => s.file === source.file),
+      source,
+    );
+    assert.equal(source.subjectId, "sub-zoology");
+    assert.ok(["zoo-ch-3", "zoo-ch-4"].includes(source.chapterId));
+    const chapter = await getChapterById(source.chapterId);
+    assert.equal(chapter?.subjectId, source.subjectId);
+    assert.equal(chapter?.isActive, true);
+    assert.match(source.description, /not been teacher-verified/);
+  }
+  assert.equal(files.size, zoologyInventory.newUniqueVideos);
 });
 
 test("every supplied video is catalogued once or linked to a byte-identical existing video", async () => {

@@ -26,6 +26,8 @@ export function proxy(request: NextRequest) {
     "/api/auth/otp/verify",
     "/api/auth/otp/status",
     "/api/subjects",
+    "/api/cron/reminders",
+    "/api/reminders/unsubscribe",
   ];
   const protectedPage = [
     "/admin",
@@ -36,6 +38,7 @@ export function proxy(request: NextRequest) {
     "/practice",
     "/textbook-practice",
     "/performance",
+    "/leaderboard",
     "/profile",
     "/bookmarks",
     "/ai-helper",

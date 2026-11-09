@@ -5,6 +5,13 @@ import {
   resourceCurriculumReferences,
 } from "@/lib/study-resources";
 import ResourcePlayer from "@/components/resources/ResourcePlayer";
+import { publicMetadata, privateMetadata, searchableResources } from "@/lib/seo";
+
+export async function generateMetadata({params}:{params:Promise<{id:string}>}) {
+  const {id}=await params;
+  const resource=searchableResources.find(r=>r.id===id);
+  return resource ? publicMetadata(`/resources/item/${resource.id}`,resource.title,resource.description || `Class 12 ${resource.resourceType} from ${resource.publisher}. View the source and availability information on Skill Up.`) : privateMetadata;
+}
 export default async function ResourceDetail({
   params,
   searchParams,

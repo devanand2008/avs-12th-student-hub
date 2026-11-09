@@ -39,6 +39,18 @@ export default function JoshuaIntroduction({
           <br />
           AVS Engineering College
         </p>
+        <a
+          href="https://dr-d-r-joshua-skillup.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Joshua's portfolio (opens in a new tab)"
+          className="mt-2 inline-flex min-h-11 items-center rounded-lg px-2 text-xs font-semibold text-blue-700 underline decoration-blue-200 underline-offset-4 transition-colors hover:bg-blue-100 hover:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+        >
+          View portfolio{" "}
+          <span aria-hidden="true" className="ml-1">
+            ↗
+          </span>
+        </a>
       </div>
     </section>
   );

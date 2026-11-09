@@ -24,8 +24,8 @@ import resourceRows from "../src/lib/additional-materials-resources.json";
 import { materialId } from "../scripts/lib/material-inspection";
 
 test("every new lesson has a real book, checked source page, local concept check and honest limits", () => {
-  assert.equal(learningModels.length, 30);
-  assert.equal(advancedModels.length, 15);
+  assert.equal(learningModels.length, 39);
+  assert.equal(advancedModels.length, 24);
   assert.equal(
     new Set(learningModels.map((m) => m.id)).size,
     learningModels.length,
@@ -154,6 +154,89 @@ test("all new procedural structures generate meshes with matching selectable par
         `${lesson.id}/${p.id}`,
       );
     assert.ok(meshes.length < 150);
+    const parts = (id: string) => meshes.filter((m) => m.userData.part === id);
+    if (lesson.id === "ethernet-plug") {
+      assert.equal(parts("contacts").length, 8);
+      assert.equal(new Set(parts("contacts").map((m) => m.position.x)).size, 8);
+      assert.equal(parts("latch").length, 1);
+    }
+    if (["coaxial-cable", "optical-fibre"].includes(lesson.id)) {
+      const cylinders = meshes.filter(
+        (m) => m.geometry instanceof THREE.CylinderGeometry,
+      );
+      assert.equal(cylinders.length, lesson.parts.length);
+      for (let i = 1; i < cylinders.length; i++) {
+        const current = (cylinders[i].geometry as THREE.CylinderGeometry)
+          .parameters;
+        const previous = (cylinders[i - 1].geometry as THREE.CylinderGeometry)
+          .parameters;
+        assert.ok(current.radiusTop > previous.radiusTop);
+        assert.ok(current.height < previous.height);
+        assert.equal(current.openEnded, true);
+        assert.equal(parts(lesson.parts[i].id).length, 3);
+      }
+    }
+    if (lesson.id === "twisted-pair") {
+      for (const id of ["orange", "green", "blue", "brown"]) {
+        assert.equal(parts(id).length, 2);
+        for (const mesh of parts(id)) assert.ok(mesh.position.length() > 0);
+      }
+      assert.equal(parts("jacket").length, 1);
+      assert.equal(meshes.length, 9);
+    }
+    if (lesson.id === "ethernet-card") {
+      assert.equal(parts("board").length, 1);
+      assert.equal(parts("connector").length, 1);
+      assert.equal(parts("port").length, 5);
+    }
+    if (lesson.id === "bcc") {
+      assert.equal(parts("corners").length, 8);
+      assert.equal(parts("centre").length, 1);
+      assert.equal(parts("edges").length, 12);
+      assert.equal(parts("neighbours").length, 8);
+      assert.equal(parts("corners").length / 8 + parts("centre").length, 2);
+      assert.equal(
+        new Set(parts("corners").map((m) => m.position.toArray().join(",")))
+          .size,
+        8,
+      );
+    }
+    if (lesson.id === "embryo-sac") {
+      const nuclei = meshes.filter((m) => m.userData.nucleus);
+      assert.equal(nuclei.length, 8);
+      for (const [part, count] of [
+        ["egg", 1],
+        ["synergids", 2],
+        ["antipodals", 3],
+        ["polar", 2],
+      ] as const)
+        assert.equal(
+          nuclei.filter((m) => m.userData.part === part).length,
+          count,
+        );
+    }
+    if (lesson.id === "pn-junction") {
+      for (const m of parts("holes")) assert.ok(m.position.x < -1);
+      for (const m of parts("electrons")) assert.ok(m.position.x > 1);
+      for (const m of meshes.filter((m) => m.userData.charge)) {
+        if (m.userData.part === "acceptors") {
+          assert.equal(m.userData.charge, -1);
+          assert.ok(m.position.x < 0);
+        }
+        if (m.userData.part === "donors") {
+          assert.equal(m.userData.charge, 1);
+          assert.ok(m.position.x > 0);
+        }
+      }
+      const heads = parts("field").filter(
+        (m) => m.geometry.type === "ConeGeometry",
+      );
+      assert.equal(heads.length, 2);
+      for (const m of heads)
+        assert.ok(
+          new THREE.Vector3(0, 1, 0).applyQuaternion(m.quaternion).x < -0.99,
+        );
+    }
     group.traverse((o) => {
       if (o instanceof THREE.Mesh) {
         o.geometry.dispose();

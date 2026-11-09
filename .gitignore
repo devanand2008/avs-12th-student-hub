@@ -23,6 +23,8 @@
 
 # misc
 .DS_Store
+/tmp/
+/output/
 *.pem
 
 # debug

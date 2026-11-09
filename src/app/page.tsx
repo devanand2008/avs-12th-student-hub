@@ -18,11 +18,14 @@ import {
   WifiOff,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/layout/IntentLink";
 import BrandLogo from "@/components/layout/BrandLogo";
 import InstallButton from "@/components/pwa/InstallButton";
 import StudentReadySummary from "@/components/practice/StudentReadySummary";
+import { pageMetadata, websiteStructuredData } from "@/lib/seo";
+import WelcomeGuide from "@/components/learning/WelcomeGuide";
 
+export const metadata = pageMetadata("/");
 
 const features = [
   {
@@ -35,13 +38,18 @@ const features = [
     color: "from-blue-700 via-blue-600 to-cyan-600",
     tagBg: "bg-blue-50 text-blue-700 border-blue-200",
     iconGradient: "from-blue-700 to-cyan-600",
-    description: "Explore official examination paper collections, useful reading and subject video lessons with clear source information.",
-    highlights: ["Search by subject and medium", "Original publisher links", "Watch lessons inside the app"],
+    description:
+      "Explore official examination paper collections, useful reading and subject video lessons with clear source information.",
+    highlights: [
+      "Search by subject and medium",
+      "Original publisher links",
+      "Watch lessons inside the app",
+    ],
   },
   {
     index: "01",
     title: "Handwritten Notes",
-    tag: "FACULTY CURATED",
+    tag: "REVISION MATERIALS",
     icon: FileText,
     href: "/notes",
     action: "Explore Notes",
@@ -49,11 +57,11 @@ const features = [
     tagBg: "bg-blue-50 text-blue-700 border-blue-200",
     iconGradient: "from-blue-600 to-cyan-600",
     description:
-      "Step-by-step verified handwritten derivations, formula sheets, and chapter definitions curated by senior AVS faculty.",
+      "Browse supplied handwritten notes, formula sheets and topic PDFs, organised by subject and chapter.",
     highlights: [
       "Formula & derivation cheat-sheets",
       "Neat diagrams with SI units",
-      "Verified by senior AVS teachers",
+      "Check source and availability labels",
     ],
   },
   {
@@ -103,10 +111,10 @@ const features = [
     tagBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
     iconGradient: "from-emerald-600 to-teal-600",
     description:
-      "Instant in-site interactive reader and PDF downloads for all Tamil Nadu State Board 12th standard subjects.",
+      "Browse available Tamil Nadu State Board Class 12 textbooks by subject, volume and medium, with in-site PDF reading.",
     highlights: [
       "English & Tamil medium editions",
-      "Volume 1 & Volume 2 complete",
+      "Subject, medium and volume filters",
       "Interactive in-site reader with zoom",
     ],
   },
@@ -232,13 +240,22 @@ const subjects = [
 export default function HomePage() {
   return (
     <main className="landing-page min-h-screen bg-[#eff5ff] text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteStructuredData).replace(
+            /</g,
+            "\\u003c",
+          ),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center bg-gradient-to-b from-[#e3eeff] via-[#eff5ff] to-[#f8fbff]">
         {/* Floating Ambient Glow Orbs */}
         <div className="orb-animate absolute -top-16 -right-16 w-80 h-80 bg-blue-400/25 rounded-full blur-3xl pointer-events-none" />
         <div className="orb-animate-2 absolute -bottom-20 -left-20 w-96 h-96 bg-cyan-400/25 rounded-full blur-3xl pointer-events-none" />
         <div className="orb-animate-3 absolute top-1/3 left-1/2 -translate-x-1/2 w-72 h-72 bg-indigo-400/15 rounded-full blur-3xl pointer-events-none" />
-        
+
         <div className="reference-grid absolute inset-0 opacity-25 pointer-events-none" />
 
         <div className="relative mx-auto max-w-6xl z-10">
@@ -260,12 +277,15 @@ export default function HomePage() {
             </div>
           </div>
 
+          <p className="mb-4 text-sm font-bold tracking-wide text-blue-700">
+            joshuaskillup · Skill Up Class 12 Learning Portal
+          </p>
           {/* Main Headline */}
           <h1 className="mx-auto max-w-5xl font-heading text-4xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-7xl">
-            Prepare Smarter for Your
+            joshuaskillup for
             <br />
             <span className="relative inline-block mx-2">
-              <span className="shimmer-text">12th Standard</span>
+              <span className="shimmer-text">Tamil Nadu Class 12</span>
             </span>{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500">
               Board Exams
@@ -273,7 +293,8 @@ export default function HomePage() {
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base sm:text-xl leading-relaxed text-slate-600">
-            Access handwritten notes, unit-wise one-mark questions, learning videos and{" "}
+            Access handwritten notes, unit-wise one-mark questions, learning
+            videos and{" "}
             <span className="font-bold text-blue-600">
               AI-powered study support
             </span>{" "}
@@ -285,10 +306,16 @@ export default function HomePage() {
             <Link
               href="/register"
               className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl text-white font-bold text-sm overflow-hidden shadow-electric transition-all transform hover:-translate-y-1 hover:shadow-glow-blue active:scale-95"
-              style={{ background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)" }}
+              style={{
+                background:
+                  "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
+              }}
             >
               <span>Start Learning Free</span>
-              <ArrowRight size={17} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={17}
+                className="group-hover:translate-x-1 transition-transform"
+              />
             </Link>
             <Link
               href="/login"
@@ -307,16 +334,38 @@ export default function HomePage() {
           {/* 4 Stat Highlights in Glassmorphic Cards */}
           <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-3.5 sm:grid-cols-4">
             {[
-              { value: "Class 12", label: "Textbook Library", icon: BookOpen, color: "text-blue-600" },
-              { value: "Practice", label: "Published Web MCQs", icon: CheckSquare, color: "text-teal-600" },
-              { value: "100%", label: "Handwritten Notes", icon: FileText, color: "text-indigo-600" },
-              { value: "AI", label: "Tamil + English Tutor", icon: Languages, color: "text-purple-600" },
+              {
+                value: "Class 12",
+                label: "Textbook Library",
+                icon: BookOpen,
+                color: "text-blue-600",
+              },
+              {
+                value: "Practice",
+                label: "Published Web MCQs",
+                icon: CheckSquare,
+                color: "text-teal-600",
+              },
+              {
+                value: "PDFs",
+                label: "Revision Notes",
+                icon: FileText,
+                color: "text-indigo-600",
+              },
+              {
+                value: "AI",
+                label: "Tamil + English Tutor",
+                icon: Languages,
+                color: "text-purple-600",
+              },
             ].map((stat) => (
               <div
                 key={stat.label}
                 className="glass-panel rounded-2xl p-4 text-center shadow-subtle hover:scale-105 transition-all"
               >
-                <div className={`flex items-center justify-center gap-1.5 text-2xl sm:text-3xl font-black ${stat.color}`}>
+                <div
+                  className={`flex items-center justify-center gap-1.5 text-2xl sm:text-3xl font-black ${stat.color}`}
+                >
                   <stat.icon size={19} />
                   <span>{stat.value}</span>
                 </div>
@@ -334,7 +383,11 @@ export default function HomePage() {
       </div>
 
       {/* 5 Academic Knowledge Pillars (Colorful Card Design) */}
-      <section id="features" className="relative px-4 py-20 sm:py-28 bg-[#f8fbff]">
+      <section
+        id="features"
+        className="relative px-4 py-20 sm:py-28 bg-[#f8fbff]"
+      >
+        <WelcomeGuide />
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-2xl text-center">
             <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase text-blue-600 bg-blue-50 border border-blue-200/80 shadow-xs">
@@ -347,7 +400,9 @@ export default function HomePage() {
               </span>
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-500 max-w-lg mx-auto">
-              A comprehensive curriculum-focused ecosystem for Tamil Nadu 12th standard students, from your first revision to the final public exam.
+              A comprehensive curriculum-focused ecosystem for Tamil Nadu 12th
+              standard students, from your first revision to the final public
+              exam.
             </p>
           </div>
 
@@ -448,7 +503,8 @@ export default function HomePage() {
                 </span>
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
-                Explore verified handwritten notes, in-book questions, revision videos and AI tutoring tailored to each subject.
+                Explore supplied handwritten notes, published one-mark questions, revision
+                videos and AI tutoring tailored to each subject.
               </p>
             </div>
             <Link
@@ -533,7 +589,8 @@ export default function HomePage() {
                   Interactive 3D Learning Lab
                 </h4>
                 <p className="text-xs text-slate-500">
-                  Manipulate 3D physical models, molecular structures, and interactive animations in real-time.
+                  Manipulate 3D physical models, molecular structures, and
+                  interactive animations in real-time.
                 </p>
               </div>
             </div>
@@ -566,7 +623,9 @@ export default function HomePage() {
                   </span>
                 </h2>
                 <p className="text-sm text-blue-100/90 leading-relaxed max-w-xl">
-                  Install SkillUp directly to your phone’s home screen with zero storage overhead. No App Store or Play Store login required — works on both Android and iPhone.
+                  Install SkillUp directly to your phone’s home screen with zero
+                  storage overhead. No App Store or Play Store login required —
+                  works on both Android and iPhone.
                 </p>
 
                 {/* 3 Mobile Badges */}
@@ -576,21 +635,27 @@ export default function HomePage() {
                       <Zap className="w-4 h-4 text-amber-300" />
                       <span>Instant 1-Tap</span>
                     </div>
-                    <p className="text-[11px] text-blue-100">Launches like a native phone app</p>
+                    <p className="text-[11px] text-blue-100">
+                      Launches like a native phone app
+                    </p>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 space-y-1">
                     <div className="flex items-center gap-2 font-bold text-xs text-cyan-200">
                       <WifiOff className="w-4 h-4 text-emerald-300" />
                       <span>Offline Notes</span>
                     </div>
-                    <p className="text-[11px] text-blue-100">Review notes even without Internet</p>
+                    <p className="text-[11px] text-blue-100">
+                      Review notes even without Internet
+                    </p>
                   </div>
                   <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 space-y-1">
                     <div className="flex items-center gap-2 font-bold text-xs text-cyan-200">
                       <CheckCircle2 className="w-4 h-4 text-cyan-300" />
                       <span>Zero App Store Lag</span>
                     </div>
-                    <p className="text-[11px] text-blue-100">Under 2 MB lightweight PWA</p>
+                    <p className="text-[11px] text-blue-100">
+                      Under 2 MB lightweight PWA
+                    </p>
                   </div>
                 </div>
 
@@ -679,7 +744,8 @@ export default function HomePage() {
                   Dr. Joshua, Vice Principal & Academic Patron
                 </h3>
                 <p className="text-xs text-slate-500 mt-0.5">
-                  AVS Engineering College (Autonomous), Salem · Supporting Tamil Nadu 12th Standard Students
+                  AVS Engineering College (Autonomous), Salem · Supporting Tamil
+                  Nadu 12th Standard Students
                 </p>
               </div>
             </div>
@@ -703,6 +769,78 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section
+        aria-labelledby="study-overview"
+        className="bg-white px-4 py-12 sm:py-16"
+      >
+        <div className="mx-auto max-w-5xl space-y-5">
+          <h2
+            id="study-overview"
+            className="text-2xl font-bold text-slate-900 sm:text-3xl"
+          >
+            Tamil Nadu 12th standard study materials
+          </h2>
+          <p className="max-w-4xl leading-relaxed text-slate-600">
+            Explore Samacheer Kalvi Class 12 textbooks, handwritten revision
+            notes, NotebookLM video lessons and book-back one-mark MCQ practice.
+            Learn with Biology, Physics and Chemistry 3D models, Mathematics and
+            Computer Science visualisations, and AI study tools. Available
+            content varies by subject and medium.
+          </p>
+          <p lang="ta" className="max-w-4xl leading-8 text-slate-600">
+            தமிழ்நாடு 12ஆம் வகுப்பு மாணவர்கள் தமிழ் மற்றும் ஆங்கில வழிப்
+            பாடநூல்கள், பாடக்குறிப்புகள் மற்றும் காணொளிப் பாடங்களை joshuaskillup
+            தளத்தில் தேடலாம். ஒரு மதிப்பெண் பயிற்சிக்கு தற்போது
+            வெளியிடப்பட்டுள்ள கேள்விகள் மட்டுமே கிடைக்கும்; பாடம் மற்றும்
+            மொழிக்கு ஏற்ப உள்ளடக்கம் மாறுபடும்.
+          </p>
+          <nav
+            aria-label="Explore Class 12 learning resources"
+            className="flex flex-wrap gap-x-6 gap-y-3 font-semibold text-blue-700"
+          >
+            <Link href="/resources">Study materials and question papers</Link>
+            <Link href="/textbooks">Tamil and English textbooks</Link>
+            <Link href="/resources/guides">Authorised PDF references</Link>
+            <Link href="/models">Interactive 3D learning models</Link>
+          </nav>
+          <h2 className="pt-5 text-2xl font-bold text-slate-900">
+            Getting started with Skill Up
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            <article className="rounded-2xl border border-blue-100 p-5">
+              <h3 className="font-bold text-slate-900">
+                What is joshuaskillup?
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Skill Up is a learning platform for Tamil Nadu Class 12
+                students, bringing notes, textbooks, videos, published MCQ
+                practice and interactive models into one place.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-blue-100 p-5">
+              <h3 className="font-bold text-slate-900">
+                Can I study in Tamil and English?
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Tamil and English textbooks and learning resources are
+                available. Practice shows currently published questions;
+                coverage differs by subject and medium.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-blue-100 p-5">
+              <h3 className="font-bold text-slate-900">
+                How do I start learning?
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Explore public resources first. Register or sign in to use
+                student notes, videos and question practice, and save your
+                learning progress.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action Banner */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600 px-4 py-20 text-center text-white sm:py-24">
         {/* Floating background lights */}
@@ -722,7 +860,9 @@ export default function HomePage() {
             <span className="text-cyan-200">Preparation Today</span>
           </h2>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-blue-100">
-            Open to 12th standard students across Salem and Tamil Nadu. Practice one-mark questions, revise with faculty notes, and study with your bilingual AI tutor.
+            Open to 12th standard students across Salem and Tamil Nadu. Practice
+            one-mark questions, revise with supplied notes, and study with your
+            bilingual AI tutor.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link

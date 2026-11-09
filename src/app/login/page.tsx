@@ -17,6 +17,7 @@ import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import BrandLogo from "@/components/layout/BrandLogo";
 import { useStudentActivation } from "@/components/auth/useStudentActivation";
+import WelcomeGuide from "@/components/learning/WelcomeGuide";
 
 function LoginForm() {
   const activationMode = useStudentActivation();
@@ -275,6 +276,7 @@ function LoginForm() {
         </p>
 
         <div className="mt-5 text-center">
+          <WelcomeGuide />
           <Link
             href="/"
             className="text-xs font-bold text-slate-500 hover:text-blue-600 transition-colors"

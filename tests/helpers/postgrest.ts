@@ -28,9 +28,16 @@ const tables = new Set([
   "avs_revoked_sessions",
   "avs_rate_limits",
   "learning_resources",
+  "learning_media_uploads",
   "textbooks",
   "textbook_mcq_candidates",
   "textbook_mcq_imports",
+  "avs_engagement_profiles",
+  "avs_point_events",
+  "avs_reminder_deliveries",
+  "avs_video_reward_progress",
+  "avs_gift_claims",
+  "avs_gift_history",
 ]);
 function identifier(value: string) {
   if (!/^[a-z_][a-z0-9_]*$/.test(value))
@@ -109,7 +116,33 @@ export async function startPostgrestFixture(
       "utf8",
     ),
   );
-  await db.exec(await readFile("supabase/migrations/20261023_practice_answer_lock.sql", "utf8"));
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261023_practice_answer_lock.sql",
+      "utf8",
+    ),
+  );
+  await db.exec(
+    await readFile("supabase/migrations/20261102_engagement.sql", "utf8"),
+  );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261102_engagement_display_name.sql",
+      "utf8",
+    ),
+  );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261103103557_completion_rewards_gifts.sql",
+      "utf8",
+    ),
+  );
+  await db.exec(
+    await readFile(
+      "supabase/migrations/20261104140307_media_upload_sessions.sql",
+      "utf8",
+    ),
+  );
   if (seedDemo) {
     await seedTextbookBank(db);
     await db.query("select public.avs_bootstrap_admin($1)", [
@@ -184,6 +217,7 @@ export async function startPostgrestFixture(
       );
   }
   const files = new Map<string, { bytes: Buffer; contentType: string }>();
+  const capabilities = new Map<string, { key: string; action: string }>();
   const otps = new Map<
     string,
     { code: string; expiresAt: number; authId: string }
@@ -208,6 +242,58 @@ export async function startPostgrestFixture(
         response.setHeader("Content-Type", stored.contentType);
         response.end(stored.bytes);
         return;
+      }
+      const capability = capabilities.get(url.searchParams.get("token") || "");
+      const origin = String(request.headers.origin || "");
+      if (capability && /^http:\/\/127\.0\.0\.1:\d+$/.test(origin)) {
+        response.setHeader("Access-Control-Allow-Origin", origin);
+        response.setHeader("Access-Control-Allow-Methods", "GET,PUT,OPTIONS");
+        response.setHeader(
+          "Access-Control-Allow-Headers",
+          "content-type,x-upsert",
+        );
+        if (request.method === "OPTIONS") return send(204, undefined);
+      }
+      if (
+        capability &&
+        url.pathname ===
+          `/storage/v1/object/${capability.action === "upload" ? "upload/sign" : "sign"}/${capability.key}`
+      ) {
+        if (capability.action === "upload" && request.method === "PUT") {
+          const chunks: Buffer[] = [];
+          for await (const chunk of request) chunks.push(Buffer.from(chunk));
+          const bytes = Buffer.concat(chunks);
+          if (bytes.length > 4194304)
+            return send(413, { message: "Part too large" });
+          if (files.has(capability.key))
+            return send(409, { message: "Object already exists" });
+          files.set(capability.key, {
+            bytes,
+            contentType: "application/octet-stream",
+          });
+          return send(200, { Key: capability.key });
+        }
+        if (capability.action === "read" && request.method === "GET") {
+          const stored = files.get(capability.key);
+          if (!stored) return send(404, { message: "Missing object" });
+          const range = /^bytes=(\d+)-(\d+)$/.exec(
+            String(request.headers.range || ""),
+          );
+          const a = range ? Number(range[1]) : 0,
+            b = range
+              ? Math.min(Number(range[2]), stored.bytes.length - 1)
+              : stored.bytes.length - 1;
+          response.statusCode = range ? 206 : 200;
+          response.setHeader("Content-Type", stored.contentType);
+          response.setHeader("Content-Length", b - a + 1);
+          if (range)
+            response.setHeader(
+              "Content-Range",
+              `bytes ${a}-${b}/${stored.bytes.length}`,
+            );
+          response.end(stored.bytes.subarray(a, b + 1));
+          return;
+        }
       }
       if (request.headers.apikey !== "qa-service-key")
         return send(401, { message: "Test service key required" });
@@ -301,6 +387,53 @@ export async function startPostgrestFixture(
         return bucket
           ? send(200, bucket)
           : send(404, { message: "Bucket not found" });
+      }
+      if (
+        request.method === "POST" &&
+        (url.pathname.startsWith("/storage/v1/object/upload/sign/") ||
+          url.pathname.startsWith("/storage/v1/object/sign/"))
+      ) {
+        const action = url.pathname.includes("/upload/sign/")
+          ? "upload"
+          : "read";
+        const key = parts.slice(action === "upload" ? 6 : 5).join("/");
+        const token = randomUUID();
+        capabilities.set(token, { key, action });
+        return send(
+          200,
+          action === "upload"
+            ? { url: `/object/upload/sign/${key}?token=${token}` }
+            : { signedURL: `/object/sign/${key}?token=${token}` },
+        );
+      }
+      if (
+        request.method === "POST" &&
+        url.pathname.startsWith("/storage/v1/object/list/")
+      ) {
+        let raw = "";
+        for await (const chunk of request) raw += chunk.toString();
+        const prefix = JSON.parse(raw).prefix || "";
+        const base = `${parts[5]}/${prefix}/`;
+        return send(
+          200,
+          [...files]
+            .filter(([key]) => key.startsWith(base))
+            .map(([key, v]) => ({
+              name: key.slice(base.length),
+              metadata: { size: v.bytes.length },
+            })),
+        );
+      }
+      if (
+        request.method === "GET" &&
+        url.pathname.startsWith("/storage/v1/object/")
+      ) {
+        const key = parts.slice(parts[4] === "authenticated" ? 5 : 4).join("/");
+        const stored = files.get(key);
+        if (!stored) return send(404, { message: "Missing object" });
+        response.setHeader("Content-Type", stored.contentType);
+        response.end(stored.bytes);
+        return;
       }
       if (
         request.method === "POST" &&
@@ -476,6 +609,27 @@ export async function startPostgrestFixture(
           params,
         );
         return send(200, undefined);
+      }
+      if (request.method === "PATCH") {
+        const keys = Object.keys(body);
+        const values = keys.map((key) =>
+          typeof body[key] === "object" && body[key] !== null
+            ? JSON.stringify(body[key])
+            : body[key],
+        );
+        const sets = keys
+          .map((key, i) => `${identifier(key)}=$${params.length + i + 1}`)
+          .join(",");
+        const updated = await db.query(
+          `update public.${identifier(name)} set ${sets}${where} returning *`,
+          [...params, ...values],
+        );
+        return send(
+          200,
+          String(request.headers.prefer).includes("return=representation")
+            ? updated.rows
+            : undefined,
+        );
       }
       return send(405, { message: "Unsupported method" });
     } catch (error) {

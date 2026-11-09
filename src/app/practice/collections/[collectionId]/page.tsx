@@ -1,5 +1,5 @@
 "use client";
-import { use, useEffect, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Sidebar from "@/components/layout/Sidebar";
 import SuppliedText from "@/components/practice/SuppliedText";
@@ -22,6 +22,7 @@ export default function SuppliedPracticePage({
   params: Promise<{ collectionId: string }>;
 }) {
   const { collectionId } = use(params);
+  const rewardStart = useRef(0);
   const [collection, setCollection] = useState<CollectionSummary | null>(null),
     [bank, setBank] = useState<SuppliedQuestion[]>([]),
     [owner, setOwner] = useState(""),
@@ -37,8 +38,11 @@ export default function SuppliedPracticePage({
     [draft, setDraft] = useState<number | null>(null),
     [finished, setFinished] = useState(false),
     [attemptId, setAttemptId] = useState(""),
+    [rewardToken, setRewardToken] = useState(""),
     [history, setHistory] = useState<SuppliedAttempt[]>([]),
-    [saveNotice, setSaveNotice] = useState("");
+    [saveNotice, setSaveNotice] = useState(""),
+    [pointsNotice, setPointsNotice] = useState(""),
+    [pointsRetry, setPointsRetry] = useState(false);
   useEffect(() => {
     const controller = new AbortController();
     fetch(
@@ -92,22 +96,46 @@ export default function SuppliedPracticePage({
         ? active.optionsEn
         : active.optionsTa
     : [];
-  function begin(rows: SuppliedQuestion[]) {
+  async function begin(rows: SuppliedQuestion[]) {
+    const generation = ++rewardStart.current;
     const selected = [...rows];
     if (shuffle)
       for (let i = selected.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [selected[i], selected[j]] = [selected[j], selected[i]];
       }
-    setQuestions(
-      selected.slice(0, count === "all" ? selected.length : Number(count)),
+    const chosen = selected.slice(
+      0,
+      count === "all" ? selected.length : Number(count),
     );
+    setQuestions(chosen);
+    setRewardToken("");
     setAnswers({});
     setPosition(0);
     setDraft(null);
     setFinished(false);
     setAttemptId(crypto.randomUUID());
     setSaveNotice("");
+    setPointsNotice("");
+    setPointsRetry(false);
+    try {
+      const response = await fetch("/api/engagement/supplied/start", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          collectionId,
+          questionIds: chosen.map((q) => q.id),
+        }),
+      });
+      const d = await response.json();
+      if (!response.ok) throw Error();
+      if (rewardStart.current === generation) setRewardToken(d.token);
+    } catch {
+      if (rewardStart.current !== generation) return;
+      setPointsNotice(
+        "Practice is available, but points tracking could not start. Start a new attempt when your connection returns.",
+      );
+    }
   }
   function navigate(index: number) {
     setPosition(index);
@@ -130,12 +158,60 @@ export default function SuppliedPracticePage({
         : "This browser could not save your result. Your score is still shown below.",
     );
     setFinished(true);
+    void savePoints();
+  }
+  async function savePoints() {
+    if (Object.keys(answers).length !== questions.length) {
+      setPointsNotice(
+        "Complete every question to earn 10 points. This partial result is still saved.",
+      );
+      return;
+    }
+    if (!rewardToken) {
+      setPointsNotice(
+        "This attempt could not start points tracking. Your local result is preserved.",
+      );
+      return;
+    }
+    setPointsNotice("Saving participation points…");
+    setPointsRetry(false);
+    try {
+      const r = await fetch("/api/engagement/supplied", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ collectionId, answers, token: rewardToken }),
+      });
+      const d = await r.json();
+      if (!r.ok)
+        throw Error(
+          "Points could not be saved. Your local result is preserved.",
+        );
+      setPointsNotice(`${d.points.earned} new participation points saved.`);
+    } catch {
+      setPointsNotice(
+        "Points could not be saved. Your local result is preserved.",
+      );
+      setPointsRetry(true);
+    }
   }
   const missed = questions.filter((q) => answers[q.id] !== q.proposedAnswer);
   return (
     <div className="flex-1 flex bg-[#eff5ff]">
       <Sidebar />
       <main className="min-w-0 w-full max-w-5xl mx-auto px-3 sm:px-6 pt-5 pb-28 md:pb-10 space-y-4">
+        {pointsNotice && (
+          <div className="rounded-xl bg-amber-50 p-3 text-sm" role="status">
+            {pointsNotice}
+            {pointsRetry && (
+              <button
+                className="ml-3 font-bold underline"
+                onClick={() => void savePoints()}
+              >
+                Retry saving points
+              </button>
+            )}
+          </div>
+        )}
         <Link
           href="/practice/collections"
           className="text-sm font-bold text-blue-700"
@@ -170,6 +246,10 @@ export default function SuppliedPracticePage({
           <>
             <section className="rounded-3xl border bg-white p-5 sm:p-7 space-y-5">
               <h2 className="text-xl font-bold">Set up your practice</h2>
+              <p className="text-sm text-slate-600">
+                Complete every question in your attempt to earn 10 Skill Up
+                points. A partial result still saves to your local history.
+              </p>
               <div className="grid sm:grid-cols-3 gap-4">
                 <label className="text-sm font-bold">
                   Chapter or section

@@ -438,6 +438,37 @@ test("Supabase SDK connects the full repository to PostgreSQL over HTTP", async 
     assert.ok((await db.getAuditLogs()).some((log) => log.action === "CHECK"));
     const reset = await db.resetStudentPassword(created.student.id);
     assert.ok(reset);
+    const chosenPassword = "Administrator-chosen-test-password";
+    await assert.rejects(
+      db.resetStudentPassword(
+        created.student.id,
+        registered.user.id,
+        chosenPassword,
+      ),
+      /Admin authorization/,
+    );
+    await assert.rejects(
+      db.resetStudentPassword(created.student.id, admin!.user.id, "short"),
+      /at least 10/,
+    );
+    const chosen = await db.resetStudentPassword(
+      created.student.id,
+      admin!.user.id,
+      chosenPassword,
+    );
+    assert.equal(chosen, chosenPassword);
+    const afterReset = await db.getUserByLoginId(created.student.studentId);
+    assert.ok(
+      await bcrypt.compare(chosenPassword, afterReset!.user.passwordHash),
+    );
+    assert.ok(
+      !JSON.stringify(await db.getAuditLogs()).includes(chosenPassword),
+    );
+    assert.ok(
+      !JSON.stringify(await db.getAllUserData(admin!.user.id)).includes(
+        chosenPassword,
+      ),
+    );
     assert.equal(
       (await db.getUserByLoginId(created.student.studentId))!.student!
         .mustChangePassword,

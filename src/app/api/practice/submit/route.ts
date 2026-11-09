@@ -8,6 +8,7 @@ import {
 } from "@/lib/db";
 import { savedAnswers } from "@/lib/practice";
 import { NextResponse } from "next/server";
+import { quizPointEvents, tryAwardPoints } from "@/lib/engagement";
 
 export async function POST(request: Request) {
   try {
@@ -121,6 +122,10 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       success: true,
+      points:
+        user.role === "student"
+          ? await tryAwardPoints(user.userId, quizPointEvents(completedSession))
+          : undefined,
       session: completedSession,
       accuracy,
       recommendation,

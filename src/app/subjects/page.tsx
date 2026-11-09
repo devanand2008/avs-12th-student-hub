@@ -3,7 +3,7 @@
 import Sidebar from "@/components/layout/Sidebar";
 import { Chapter, Subject } from "@/types";
 import { CheckSquare, FileText, Layers, Sparkles, Video } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/layout/IntentLink";
 import { useEffect, useState } from "react";
 
 interface EnrichedSubject extends Subject {

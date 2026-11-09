@@ -33,7 +33,9 @@ test("science models render, filter and expose their selectable parts", async ({
     }
   }
   await page.getByRole("button", { name: "Chemistry", exact: true }).click();
-  await expect(page.locator(".model-option")).toHaveCount(6);
+  await expect(page.locator(".model-option")).toHaveCount(
+    learningModels.filter((m) => m.subject === "Chemistry").length,
+  );
   await expect(
     page.getByRole("heading", { name: "Ammonia molecule · NH₃" }),
   ).toBeVisible();

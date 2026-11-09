@@ -1,0 +1,47 @@
+[
+  {
+    "id": "precalculus",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-precalculus.pdf",
+    "digest": "sha256:f0a83745e1ea5b4200bac371afb64615742528e4d31e1e4d241623a38e454e7d",
+    "size": 86247471,
+    "rangeStatus": 206,
+    "header": "%PDF-",
+    "checkedAt": "2026-11-04T14:45:43.637Z"
+  },
+  {
+    "id": "statistics",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-statistics.pdf",
+    "digest": "sha256:8bd20cdcd376a153580d35e1acfce7bf23f29f39bdd69cc42ba0330bfe07c676",
+    "size": 29990560,
+    "rangeStatus": 206,
+    "header": "%PDF-",
+    "checkedAt": "2026-11-04T14:45:44.927Z"
+  },
+  {
+    "id": "biology",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-biology.pdf",
+    "digest": "sha256:4d8a1900da800f4ff5793d1985aff9bbcc8093a90cac83a1fd3b592967e12354",
+    "size": 227222946,
+    "rangeStatus": 206,
+    "header": "%PDF-",
+    "checkedAt": "2026-11-04T14:45:46.300Z"
+  },
+  {
+    "id": "calculus-workbook",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-calculus-workbook.pdf",
+    "digest": "sha256:c1bbeca0a312e200536567a1ed89416cf0e5810782326cbe5ce22699440d87b5",
+    "size": 1307816,
+    "rangeStatus": 206,
+    "header": "%PDF-",
+    "checkedAt": "2026-11-04T14:45:47.491Z"
+  },
+  {
+    "id": "integral-workbook",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-integral-workbook.pdf",
+    "digest": "sha256:6c67c81f9dfb6ffa1908158f42d6cbc22485bc6fbaab776f171be65943df773c",
+    "size": 693836,
+    "rangeStatus": 206,
+    "header": "%PDF-",
+    "checkedAt": "2026-11-04T14:45:48.803Z"
+  }
+]

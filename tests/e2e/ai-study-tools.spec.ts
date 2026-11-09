@@ -47,7 +47,7 @@ test("AI tools navigation, filters, privacy, actual curriculum prompt copy/reset
   await expect(
     page.getByRole("heading", { name: "AI Study Tools", exact: true }),
   ).toBeVisible();
-  await expect(page.getByRole("status")).toContainText("10 tools found");
+  await expect(page.getByRole("status")).toContainText("11 tools found");
   await page.screenshot({
     path: `.local/ai-study-tools-${info.project.name}.png`,
     fullPage: true,
@@ -72,7 +72,7 @@ test("AI tools navigation, filters, privacy, actual curriculum prompt copy/reset
   await page
     .getByLabel("Tool type", { exact: true })
     .selectOption("Subject learning tool");
-  await expect(page.getByRole("status")).toContainText("5 tools found");
+  await expect(page.getByRole("status")).toContainText("6 tools found");
   await page
     .getByLabel("Search tools", { exact: true })
     .fill("no-matching-tool");

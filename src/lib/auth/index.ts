@@ -67,26 +67,27 @@ export async function createSession(
   return payload;
 }
 
-export async function getSession(): Promise<SessionPayload | null> {
-  const cookieStore = await cookies();
-  const token = cookieStore.get(COOKIE_NAME)?.value;
+// Validate against current database state on every request. No session-result cache.
+export async function getSessionContext(): Promise<{
+  session: SessionPayload;
+  student: Student | null;
+} | null> {
+  const token = (await cookies()).get(COOKIE_NAME)?.value;
   if (!token) return null;
   const session = decodeSession(token);
+  if (!session?.sessionId) return null;
+  const [revoked, user, student] = await Promise.all([
+    isSessionRevoked(session.sessionId),
+    getUserById(session.userId),
+    session.role === "student" ? getStudentByUserId(session.userId) : null,
+  ]);
   if (
-    !session ||
-    !session.sessionId ||
-    (await isSessionRevoked(session.sessionId))
-  )
-    return null;
-  const user = await getUserById(session.userId);
-  if (
+    revoked ||
     !user ||
     user.role !== session.role ||
     session.passwordVersion !== passwordVersion(user.passwordHash)
   )
     return null;
-  const student =
-    user.role === "student" ? await getStudentByUserId(user.id) : null;
   if (
     user.role === "student" &&
     (!student ||
@@ -96,10 +97,17 @@ export async function getSession(): Promise<SessionPayload | null> {
   )
     return null;
   return {
-    ...session,
-    mustChangePassword:
-      student?.mustChangePassword || user.mustChangePassword || false,
+    session: {
+      ...session,
+      mustChangePassword:
+        student?.mustChangePassword || user.mustChangePassword || false,
+    },
+    student,
   };
+}
+
+export async function getSession(): Promise<SessionPayload | null> {
+  return (await getSessionContext())?.session ?? null;
 }
 
 export async function destroySession(): Promise<void> {
@@ -138,8 +146,7 @@ export async function authenticateUser(
   if (student && !student.activeStatus) {
     return {
       success: false,
-      error:
-        "This account is inactive. Please contact your administrator.",
+      error: "This account is inactive. Please contact your administrator.",
     };
   }
 

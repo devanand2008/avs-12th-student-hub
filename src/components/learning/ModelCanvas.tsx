@@ -28,6 +28,14 @@ export default function ModelCanvas({
   exploded = false,
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
+  const sceneKey = `${model}:${resetKey}`;
+  const [focus, setFocus] = useState({ key: "", enabled: false });
+  const focusSelected = focus.key === sceneKey && focus.enabled;
+  const [readyKey, setReadyKey] = useState("");
+  const [controlsOpen, setControlsOpen] = useState(false);
+  const [meshView, setMeshView] = useState({ key: "", enabled: false });
+  const wireframe = meshView.key === sceneKey && meshView.enabled;
+  const cameraCommand = useRef<((command: string) => void) | null>(null);
   const preferences = useRef({
     selected,
     rotating,
@@ -35,6 +43,8 @@ export default function ModelCanvas({
     vectorScale,
     hiddenPart,
     exploded,
+    focusSelected,
+    wireframe,
   });
   const [failed, setFailed] = useState(false);
   useEffect(() => {
@@ -45,8 +55,19 @@ export default function ModelCanvas({
       vectorScale,
       hiddenPart,
       exploded,
+      focusSelected,
+      wireframe,
     };
-  }, [selected, rotating, onSelect, vectorScale, hiddenPart, exploded]);
+  }, [
+    selected,
+    rotating,
+    onSelect,
+    vectorScale,
+    hiddenPart,
+    exploded,
+    focusSelected,
+    wireframe,
+  ]);
 
   useEffect(() => {
     const container = host.current;
@@ -97,8 +118,7 @@ export default function ModelCanvas({
         camera.position.multiplyScalar(event.key === "-" ? 1.1 : 0.9);
         camera.position.clampLength(controls.minDistance, controls.maxDistance);
       } else if (event.key === "Home") {
-        camera.position.set(0, 1.1, 11);
-        controls.target.set(0, 0, 0);
+        cameraCommand.current?.("reset-camera");
       } else return;
       event.preventDefault();
       controls.update();
@@ -114,6 +134,32 @@ export default function ModelCanvas({
     scene.add(rim);
     const group = new THREE.Group();
     scene.add(group);
+    cameraCommand.current = (command) => {
+      if (command === "reset-camera") {
+        controls.target.set(0, 0, 0);
+        camera.position.set(0, 1.1, 11);
+        group.rotation.set(0, 0, 0);
+      } else if (command === "in" || command === "out") {
+        camera.position
+          .sub(controls.target)
+          .multiplyScalar(command === "in" ? 0.85 : 1.18)
+          .clampLength(controls.minDistance, controls.maxDistance)
+          .add(controls.target);
+      } else {
+        // Presets restore object orientation so front/top/side stay meaningful after dragging.
+        group.rotation.set(0, 0, 0);
+        controls.target.set(0, 0, 0);
+        camera.position.set(
+          ...((command === "top"
+            ? [0, 11, 0.001]
+            : command === "side"
+              ? [11, 0, 0]
+              : [0, 0, 11]) as [number, number, number]),
+        );
+      }
+      controls.update();
+    };
+    queueMicrotask(() => setReadyKey(`${model}:${resetKey}`));
     const meshes: THREE.Mesh[] = [];
     const textures: THREE.Texture[] = [];
     function sphere(
@@ -317,6 +363,7 @@ export default function ModelCanvas({
           );
           sprite.position.copy(pos).add(new THREE.Vector3(0, 0, 0.5));
           sprite.scale.set(0.6, 0.6, 1);
+          sprite.userData.part = node.p;
           group.add(sprite);
         }
       });
@@ -395,6 +442,8 @@ export default function ModelCanvas({
         preferences.current.vectorScale,
         preferences.current.hiddenPart,
         preferences.current.exploded,
+        preferences.current.focusSelected,
+        preferences.current.wireframe,
       ]);
       if (fingerprint !== previousPreferences) {
         dirty = true;
@@ -403,15 +452,33 @@ export default function ModelCanvas({
       if (!dirty) return;
       dirty = false;
       meshes.forEach((mesh) => {
-        if (["ovum", "nacl", "octahedral"].includes(model)) {
+        mesh.visible =
+          mesh.userData.part !== preferences.current.hiddenPart &&
+          (!preferences.current.focusSelected ||
+            mesh.userData.part === preferences.current.selected);
+        if (
+          [
+            "ovum",
+            "nacl",
+            "octahedral",
+            "sperm",
+            "embryo-sac",
+            "bcc",
+            "pn-junction",
+            "ethernet-card",
+            "twisted-pair",
+            "coaxial-cable",
+            "optical-fibre",
+            "ethernet-plug",
+          ].includes(model)
+        ) {
           mesh.position
             .copy(mesh.userData.basePosition)
             .multiplyScalar(preferences.current.exploded ? 1.4 : 1);
-          mesh.visible = mesh.userData.part !== preferences.current.hiddenPart;
         }
         if (mesh.userData.vectorShaft || mesh.userData.vectorTip) {
           const t = preferences.current.vectorScale;
-          mesh.visible = t > 0;
+          mesh.visible = mesh.visible && t > 0;
           const endpoint = new THREE.Vector3(2, 2, 1).multiplyScalar(t);
           mesh.position.copy(
             new THREE.Vector3(-1, -1, 0).add(
@@ -421,6 +488,7 @@ export default function ModelCanvas({
           if (mesh.userData.vectorShaft) mesh.scale.y = t;
         }
         const material = mesh.material as THREE.MeshStandardMaterial;
+        material.wireframe = preferences.current.wireframe;
         material.emissive.set(
           mesh.userData.part === preferences.current.selected
             ? 0x1e40af
@@ -428,9 +496,30 @@ export default function ModelCanvas({
         );
         material.emissiveIntensity = 0.28;
       });
+      group.children.forEach((object) => {
+        if (object instanceof THREE.Sprite)
+          object.visible =
+            object.userData.part !== preferences.current.hiddenPart &&
+            (!preferences.current.focusSelected ||
+              object.userData.part === preferences.current.selected);
+      });
+      renderer.domElement.dataset.visibleParts = [
+        ...new Set(meshes.filter((m) => m.visible).map((m) => m.userData.part)),
+      ].join(",");
+      renderer.domElement.dataset.cameraDistance = camera.position
+        .distanceTo(controls.target)
+        .toFixed(3);
+      renderer.domElement.dataset.surfaceMesh = String(
+        preferences.current.wireframe,
+      );
+      renderer.domElement.dataset.cameraPosition = camera.position
+        .toArray()
+        .map((n) => n.toFixed(3))
+        .join(",");
       renderer.render(scene, camera);
     });
     return () => {
+      cameraCommand.current = null;
       renderer.setAnimationLoop(null);
       resize.disconnect();
       observer.disconnect();
@@ -455,15 +544,81 @@ export default function ModelCanvas({
   }, [model, resetKey]);
 
   return (
-    <div ref={host} className="absolute inset-0" data-testid="model-canvas">
-      {failed && (
-        <div className="flex h-full items-center justify-center p-8 text-center text-slate-600">
-          <p>
-            3D rendering is unavailable on this device. You can still explore
-            every structure using the part buttons and descriptions.
-          </p>
+    <>
+      <div ref={host} className="absolute inset-0" data-testid="model-canvas">
+        {failed && (
+          <div className="flex h-full items-center justify-center p-8 text-center text-slate-600">
+            <p>
+              3D rendering is unavailable on this device. You can still explore
+              every structure using the part buttons and descriptions.
+            </p>
+          </div>
+        )}
+      </div>
+      {!failed && (
+        <div className="absolute right-3 top-3 z-10 max-w-[260px] text-right">
+          <button
+            type="button"
+            aria-expanded={controlsOpen}
+            aria-controls={`${model}-camera-controls`}
+            onClick={() => setControlsOpen((v) => !v)}
+            className="min-h-10 rounded-lg border border-slate-200 bg-white/95 px-3 text-xs font-semibold text-slate-700 shadow-sm focus-visible:outline-2 focus-visible:outline-blue-600 sm:hidden"
+          >
+            {controlsOpen ? "Hide view controls" : "View controls"}
+          </button>
+          <div
+            id={`${model}-camera-controls`}
+            role="group"
+            aria-label="3D camera and focus controls"
+            className={`${controlsOpen ? "flex" : "hidden"} mt-2 flex-wrap justify-end gap-1.5 sm:mt-0 sm:flex`}
+          >
+            {[
+              ["front", "Front view"],
+              ["top", "Top view"],
+              ["side", "Side view"],
+              ["in", "Zoom in"],
+              ["out", "Zoom out"],
+              ["reset-camera", "Reset camera"],
+            ].map(([command, label]) => (
+              <button
+                key={command}
+                type="button"
+                disabled={readyKey !== sceneKey}
+                onClick={() => cameraCommand.current?.(command)}
+                className="min-h-10 rounded-lg border border-slate-200 bg-white/95 px-3 text-xs font-semibold text-slate-700 shadow-sm hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-blue-600 disabled:opacity-50"
+              >
+                {label}
+              </button>
+            ))}
+            <button
+              type="button"
+              disabled={readyKey !== sceneKey}
+              aria-pressed={wireframe}
+              title="Show the rendering mesh; these lines are not physical structures"
+              onClick={() =>
+                setMeshView({ key: sceneKey, enabled: !wireframe })
+              }
+              className="min-h-10 rounded-lg border border-slate-200 bg-white/95 px-3 text-xs font-semibold text-slate-700 shadow-sm hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-blue-600 disabled:opacity-50"
+            >
+              {wireframe ? "Solid surfaces" : "Surface mesh"}
+            </button>
+            <button
+              type="button"
+              disabled={
+                readyKey !== sceneKey ||
+                (!focusSelected && hiddenPart === selected)
+              }
+              aria-pressed={focusSelected}
+              onClick={() =>
+                setFocus({ key: sceneKey, enabled: !focusSelected })
+              }
+              className="min-h-10 rounded-lg border border-slate-200 bg-white/95 px-3 text-xs font-semibold text-slate-700 shadow-sm focus-visible:outline-2 focus-visible:outline-blue-600 disabled:opacity-50"
+            >
+              {focusSelected ? "Show whole model" : "Focus selected component"}
+            </button>
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 }

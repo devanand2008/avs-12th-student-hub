@@ -1,0 +1,203 @@
+{
+  "checkedAt": "2026-11-04T05:03:52.569Z",
+  "results": [
+    {
+      "file": "phy/video/Ampere_s_Circuital_Law.mp4",
+      "sha256": "6d6158e10abc97808993595c3964a59bb083e159246d459eb3b3565908e1de4c",
+      "bytes": 46947162,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6d6158e10abc97808993595c3964a59bb083e159246d459eb3b3565908e1de4c.mp4",
+      "status": 206,
+      "digest": "sha256:6d6158e10abc97808993595c3964a59bb083e159246d459eb3b3565908e1de4c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Intro_to_Magnetism.mp4",
+      "sha256": "2a03dd59ddb6428ecba72cea1a218f8f022c65f1242aced9de862407b91b6a0a",
+      "bytes": 45813070,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2a03dd59ddb6428ecba72cea1a218f8f022c65f1242aced9de862407b91b6a0a.mp4",
+      "status": 206,
+      "digest": "sha256:2a03dd59ddb6428ecba72cea1a218f8f022c65f1242aced9de862407b91b6a0a",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Lorentz_Force_Explained.mp4",
+      "sha256": "3cede43544fedff65955dfe4e9554edccd483a8d4006b42ed0d6f2e0ace6e0c5",
+      "bytes": 49002713,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3cede43544fedff65955dfe4e9554edccd483a8d4006b42ed0d6f2e0ace6e0c5.mp4",
+      "status": 206,
+      "digest": "sha256:3cede43544fedff65955dfe4e9554edccd483a8d4006b42ed0d6f2e0ace6e0c5",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Magnetic_Effects_of_Current.mp4",
+      "sha256": "6fec8dcbbf456288309304577c98617d62739381c3b3e2e16b05d135413cf21c",
+      "bytes": 38409781,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6fec8dcbbf456288309304577c98617d62739381c3b3e2e16b05d135413cf21c.mp4",
+      "status": 206,
+      "digest": "sha256:6fec8dcbbf456288309304577c98617d62739381c3b3e2e16b05d135413cf21c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Magnetic_Materials.mp4",
+      "sha256": "20b7dd12619253a8a0e023cf2ce9b1d0673f382c1295495d04a629c5f4d05ed9",
+      "bytes": 46742009,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/20b7dd12619253a8a0e023cf2ce9b1d0673f382c1295495d04a629c5f4d05ed9.mp4",
+      "status": 206,
+      "digest": "sha256:20b7dd12619253a8a0e023cf2ce9b1d0673f382c1295495d04a629c5f4d05ed9",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Magnetic_Properties.mp4",
+      "sha256": "6e9d4b43efae0d8b495063a7e3928cbb124f27f970dadfb91bcfbdb32b5308e6",
+      "bytes": 48666240,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6e9d4b43efae0d8b495063a7e3928cbb124f27f970dadfb91bcfbdb32b5308e6.mp4",
+      "status": 206,
+      "digest": "sha256:6e9d4b43efae0d8b495063a7e3928cbb124f27f970dadfb91bcfbdb32b5308e6",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Magnetic_Torque___Energy.mp4",
+      "sha256": "3619c37eccce086929226493635ff5df8a28e15bdeb6b9cd38c33b7ccce05101",
+      "bytes": 38664392,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3619c37eccce086929226493635ff5df8a28e15bdeb6b9cd38c33b7ccce05101.mp4",
+      "status": 206,
+      "digest": "sha256:3619c37eccce086929226493635ff5df8a28e15bdeb6b9cd38c33b7ccce05101",
+      "passed": true
+    },
+    {
+      "file": "phy/video/The_Alphabet_Soup_of_Magnetism.mp4",
+      "sha256": "b395ecc7ae0c4ba1f338d22a987a5ab3f0c6d5104f4979fd7c64aac6aa9f3bf8",
+      "bytes": 42140155,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b395ecc7ae0c4ba1f338d22a987a5ab3f0c6d5104f4979fd7c64aac6aa9f3bf8.mp4",
+      "status": 206,
+      "digest": "sha256:b395ecc7ae0c4ba1f338d22a987a5ab3f0c6d5104f4979fd7c64aac6aa9f3bf8",
+      "passed": true
+    },
+    {
+      "file": "phy/video/The_Biot-Savart_Law.mp4",
+      "sha256": "0a5677216d81bbfefc051834c59c7285139aee20b2f01c30312d73a63d56216c",
+      "bytes": 48807687,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/0a5677216d81bbfefc051834c59c7285139aee20b2f01c30312d73a63d56216c.mp4",
+      "status": 206,
+      "digest": "sha256:0a5677216d81bbfefc051834c59c7285139aee20b2f01c30312d73a63d56216c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/The_Invisible_Geometry.mp4",
+      "sha256": "1833d84e0e106acf4c95236bcf7505ffff3eef9eb0ef873442fac7f4ce314525",
+      "bytes": 46513184,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1833d84e0e106acf4c95236bcf7505ffff3eef9eb0ef873442fac7f4ce314525.mp4",
+      "status": 206,
+      "digest": "sha256:1833d84e0e106acf4c95236bcf7505ffff3eef9eb0ef873442fac7f4ce314525",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Unlocking_Hysteresis.mp4",
+      "sha256": "df0efc95e0d2cb50b36023235f904f2e768467f24b4548c7189858d385eac249",
+      "bytes": 38982660,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/df0efc95e0d2cb50b36023235f904f2e768467f24b4548c7189858d385eac249.mp4",
+      "status": 206,
+      "digest": "sha256:df0efc95e0d2cb50b36023235f904f2e768467f24b4548c7189858d385eac249",
+      "passed": true
+    },
+    {
+      "file": "phy/video/ஆம்பியரின்_சுற்று_விதி.mp4",
+      "sha256": "168679bedff3eaca4fc812b2f77404d8dd2e92b12aef82ab9de0e46d1ccb4649",
+      "bytes": 25545803,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/168679bedff3eaca4fc812b2f77404d8dd2e92b12aef82ab9de0e46d1ccb4649.mp4",
+      "status": 206,
+      "digest": "sha256:168679bedff3eaca4fc812b2f77404d8dd2e92b12aef82ab9de0e46d1ccb4649",
+      "passed": true
+    },
+    {
+      "file": "phy/video/காந்த_விளைவுகள்.mp4",
+      "sha256": "d02713d43d34c1ce95112c7351590e01e98b31e7bde359e05a5fbb236735fa60",
+      "bytes": 27975195,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d02713d43d34c1ce95112c7351590e01e98b31e7bde359e05a5fbb236735fa60.mp4",
+      "status": 206,
+      "digest": "sha256:d02713d43d34c1ce95112c7351590e01e98b31e7bde359e05a5fbb236735fa60",
+      "passed": true
+    },
+    {
+      "file": "phy/video/காந்தத்_தயக்கம்.mp4",
+      "sha256": "8f9ded61d03c2faefbc7bab48a1152f3613e9a2304f69a4aa7b7968b39fb18b5",
+      "bytes": 34911266,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8f9ded61d03c2faefbc7bab48a1152f3613e9a2304f69a4aa7b7968b39fb18b5.mp4",
+      "status": 206,
+      "digest": "sha256:8f9ded61d03c2faefbc7bab48a1152f3613e9a2304f69a4aa7b7968b39fb18b5",
+      "passed": true
+    },
+    {
+      "file": "phy/video/காந்தப்_பண்புகளின்_உலகம்.mp4",
+      "sha256": "b5115f89d2e8ab36a8c8d71d7a4d7afeae4847ef12b6314737eaa55d8c66c58b",
+      "bytes": 25744836,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b5115f89d2e8ab36a8c8d71d7a4d7afeae4847ef12b6314737eaa55d8c66c58b.mp4",
+      "status": 206,
+      "digest": "sha256:b5115f89d2e8ab36a8c8d71d7a4d7afeae4847ef12b6314737eaa55d8c66c58b",
+      "passed": true
+    },
+    {
+      "file": "phy/video/காந்தவியலின்_கூலும்_விதி.mp4",
+      "sha256": "b9df16439b46282554ff65087ae423f94c86a76c4484bfd53e47a0a07458f780",
+      "bytes": 29196065,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b9df16439b46282554ff65087ae423f94c86a76c4484bfd53e47a0a07458f780.mp4",
+      "status": 206,
+      "digest": "sha256:b9df16439b46282554ff65087ae423f94c86a76c4484bfd53e47a0a07458f780",
+      "passed": true
+    },
+    {
+      "file": "phy/video/காந்தவியலின்_ரகசியங்கள்.mp4",
+      "sha256": "12e7d5867f2fd6407360b4ee6c34ecabf5e36e9bb76232ca24a232d436a53f31",
+      "bytes": 28325079,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/12e7d5867f2fd6407360b4ee6c34ecabf5e36e9bb76232ca24a232d436a53f31.mp4",
+      "status": 206,
+      "digest": "sha256:12e7d5867f2fd6407360b4ee6c34ecabf5e36e9bb76232ca24a232d436a53f31",
+      "passed": true
+    },
+    {
+      "file": "phy/video/காந்தவியல்_-_ஓர்_அறிமுகம்.mp4",
+      "sha256": "fb8474f75afc58c1855d1c3b88c3202ce4cfb0d20aaeb90b134823135d84d20a",
+      "bytes": 34816715,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/fb8474f75afc58c1855d1c3b88c3202ce4cfb0d20aaeb90b134823135d84d20a.mp4",
+      "status": 206,
+      "digest": "sha256:fb8474f75afc58c1855d1c3b88c3202ce4cfb0d20aaeb90b134823135d84d20a",
+      "passed": true
+    },
+    {
+      "file": "phy/video/திருப்புவிசை___நிலை_ஆற்றல்.mp4",
+      "sha256": "3ab56b8d566dadd8886e51ab262328ddbbaf346896acd0b8950a884842dfebf4",
+      "bytes": 26646563,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3ab56b8d566dadd8886e51ab262328ddbbaf346896acd0b8950a884842dfebf4.mp4",
+      "status": 206,
+      "digest": "sha256:3ab56b8d566dadd8886e51ab262328ddbbaf346896acd0b8950a884842dfebf4",
+      "passed": true
+    },
+    {
+      "file": "phy/video/பயட்-சாவர்ட்_விதியின்_ரகசியம்.mp4",
+      "sha256": "ef0fc97f8655e41a3484c33d35467a87339ee0d2fb802696d489cc0f94f1a720",
+      "bytes": 33013718,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/ef0fc97f8655e41a3484c33d35467a87339ee0d2fb802696d489cc0f94f1a720.mp4",
+      "status": 206,
+      "digest": "sha256:ef0fc97f8655e41a3484c33d35467a87339ee0d2fb802696d489cc0f94f1a720",
+      "passed": true
+    },
+    {
+      "file": "phy/video/லாரன்ஸ்_விசை.mp4",
+      "sha256": "f07b701ee96699fe5d922df12d01e9896045cc33742b8b3f9012bc0ef198ed93",
+      "bytes": 42475939,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f07b701ee96699fe5d922df12d01e9896045cc33742b8b3f9012bc0ef198ed93.mp4",
+      "status": 206,
+      "digest": "sha256:f07b701ee96699fe5d922df12d01e9896045cc33742b8b3f9012bc0ef198ed93",
+      "passed": true
+    },
+    {
+      "file": "phy/video/லோரென்ஸ்_விசை.mp4",
+      "sha256": "39a4928124226c84849c6163e6311942b84604de91ff4803d215fcad47ebb1eb",
+      "bytes": 33364085,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/39a4928124226c84849c6163e6311942b84604de91ff4803d215fcad47ebb1eb.mp4",
+      "status": 206,
+      "digest": "sha256:39a4928124226c84849c6163e6311942b84604de91ff4803d215fcad47ebb1eb",
+      "passed": true
+    }
+  ]
+}

@@ -5,6 +5,8 @@ import supplied from "@/lib/supplied-materials-catalog.json";
 import additional from "@/lib/additional-materials-catalog.json";
 import { NextResponse } from "next/server";
 import type { HandwrittenNote } from "@/types";
+import { storedMediaId } from "@/lib/media-upload-policy";
+import { streamUploadedMedia } from "@/lib/media-stream";
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ noteId: string }> },
@@ -17,6 +19,9 @@ export async function GET(
     const note = (await listResources("note", session.role === "admin")).find(
       (n) => n.id === noteId,
     ) as HandwrittenNote | undefined;
+    const uploadId = note?.pdfUrl && storedMediaId(note.pdfUrl);
+    if (uploadId)
+      return streamUploadedMedia(request, uploadId, session.role === "admin");
     const source =
       note &&
       [...supplied, ...additional].find(

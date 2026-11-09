@@ -7,7 +7,8 @@ import {
   recordVideoVisit,
 } from "@/lib/db";
 import { ensureActivityResource, listResources } from "@/lib/content";
-import type { HandwrittenNote } from "@/types";
+import type { HandwrittenNote, VideoLesson } from "@/types";
+import { engagementRpc, tryAwardPoints } from "@/lib/engagement";
 const input = z.discriminatedUnion("kind", [
   z.object({
     kind: z.literal("note"),
@@ -19,6 +20,7 @@ const input = z.discriminatedUnion("kind", [
     id: z.string(),
     seconds: z.number().min(0).max(86400),
     percent: z.number().min(0).max(100),
+    phase: z.enum(["start", "progress", "pause", "seek", "ended"]).optional(),
   }),
 ]);
 export async function GET() {
@@ -60,7 +62,31 @@ export async function POST(request: Request) {
       await recordNoteVisit(studentId, data.id, data.page);
     } else
       await recordVideoVisit(studentId, data.id, data.seconds, data.percent);
-    return NextResponse.json({ success: true });
+    let points: unknown;
+    if (user.role === "student") {
+      if (data.kind === "note") {
+        points = await tryAwardPoints(user.userId, [
+          { key: `note:${data.id}`, kind: "Notes opened", points: 1 },
+        ]);
+      } else if (
+        data.phase &&
+        (resource as VideoLesson).embedType === "mp4" &&
+        (resource as VideoLesson).durationSeconds > 0
+      ) {
+        try {
+          points = await engagementRpc("avs_track_video_reward", {
+            p_user_id: user.userId,
+            p_video_id: data.id,
+            p_duration: (resource as VideoLesson).durationSeconds,
+            p_position: data.seconds,
+            p_phase: data.phase,
+          });
+        } catch {
+          points = { earned: 0, saved: false };
+        }
+      }
+    }
+    return NextResponse.json({ success: true, points });
   } catch {
     return NextResponse.json(
       { error: "Could not save learning activity." },

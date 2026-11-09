@@ -1,0 +1,18 @@
+[
+  {
+    "file": "che/pdf/Chemistry_Chapter_2_Original_Order.pdf",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/467fd43f0b24b1e546f7a8cb26078cf7fdc4238a33c1260d1ce8d6df6ca97e07.pdf",
+    "size": 31407813,
+    "digest": "sha256:467fd43f0b24b1e546f7a8cb26078cf7fdc4238a33c1260d1ce8d6df6ca97e07",
+    "status": 206,
+    "header": "%PDF-"
+  },
+  {
+    "file": "che/pdf/DocScanner Nov 2, 2026 11-44 AM.pdf",
+    "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b15247ec5a2517977582df76b47f9a5aa4d0d7fde5e25ac3b57edc38b18136e5.pdf",
+    "size": 13246031,
+    "digest": "sha256:b15247ec5a2517977582df76b47f9a5aa4d0d7fde5e25ac3b57edc38b18136e5",
+    "status": 206,
+    "header": "%PDF-"
+  }
+]

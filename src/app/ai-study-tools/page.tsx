@@ -1,6 +1,7 @@
 import Link from "next/link";
 import AiStudyDirectory from "@/components/learning/AiStudyDirectory";
-export const metadata = { title: "AI Study Tools | Skill Up" };
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata("/ai-study-tools");
 export default async function AiStudyToolsPage({
   searchParams,
 }: {

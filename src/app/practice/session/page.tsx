@@ -1,5 +1,7 @@
 "use client";
 
+import { fetchCurrentSession } from "@/lib/current-session-client";
+
 import type { Question, QuizSession } from "@/types";
 import {
   ArrowLeft,
@@ -46,6 +48,7 @@ interface Result {
   accuracy: number;
   recommendation: string;
   reviewDetails: Review[];
+  points?: { earned: number; saved: boolean };
 }
 
 function ReviewQuestion({
@@ -122,7 +125,7 @@ function PracticeContent() {
     let disposed = false;
     async function load() {
       try {
-        const auth = await fetch("/api/auth/me").then((r) => r.json());
+        const auth = await fetchCurrentSession().then((r) => r.json());
         if (!auth.authenticated || !auth.user?.id)
           throw new Error("Please sign in to practise.");
         historyOwner.current = auth.user.id;
@@ -363,7 +366,8 @@ function PracticeContent() {
 
   async function submitAnswer() {
     if (!quiz || busyRef.current || result) return;
-    const question = questions[index], answer = drafts[question.id];
+    const question = questions[index],
+      answer = drafts[question.id];
     if (!answer || answerRef.current[question.id]) return;
     busyRef.current = true;
     setBusy(true);
@@ -372,24 +376,40 @@ function PracticeContent() {
       const response = await fetch("/api/practice/answer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId: quiz.id, questionId: question.id, answer }),
+        body: JSON.stringify({
+          sessionId: quiz.id,
+          questionId: question.id,
+          answer,
+        }),
       });
       const feedback = await response.json();
-      if (!response.ok) throw new Error(feedback.error || "Could not check your answer.");
+      if (!response.ok)
+        throw new Error(feedback.error || "Could not check your answer.");
       const recorded = feedback.selectedAnswer as Answer;
-      if (!recorded || !["A", "B", "C", "D"].includes(recorded)) throw new Error("The server did not confirm a submitted answer.");
+      if (!recorded || !["A", "B", "C", "D"].includes(recorded))
+        throw new Error("The server did not confirm a submitted answer.");
       answerRef.current = { ...answerRef.current, [question.id]: recorded };
-      setDrafts(previous => ({ ...previous, [question.id]: recorded }));
+      setDrafts((previous) => ({ ...previous, [question.id]: recorded }));
       setAnswers(answerRef.current);
-      setQuestions((previous) => previous.map((q) => q.id === question.id ? {
-        ...q,
-        correctAnswer: feedback.correctAnswer,
-        explanation: feedback.explanation,
-        sourceAnswerPage: feedback.sourceAnswerPage,
-      } : q));
+      setQuestions((previous) =>
+        previous.map((q) =>
+          q.id === question.id
+            ? {
+                ...q,
+                correctAnswer: feedback.correctAnswer,
+                explanation: feedback.explanation,
+                sourceAnswerPage: feedback.sourceAnswerPage,
+              }
+            : q,
+        ),
+      );
       persist();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not submit your answer. Please retry.");
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Could not submit your answer. Please retry.",
+      );
     } finally {
       busyRef.current = false;
       setBusy(false);
@@ -437,7 +457,9 @@ function PracticeContent() {
   const exam = quiz.mode === "timed";
   const selected = drafts[question?.id] ?? answers[question?.id];
   const submitted = answers[question?.id];
-  const showFeedback = Boolean(submitted && selected === submitted && question?.correctAnswer);
+  const showFeedback = Boolean(
+    submitted && selected === submitted && question?.correctAnswer,
+  );
   const currentMarks = Object.entries(answers).filter(([qId, ans]) => {
     const q = questions.find((item) => item.id === qId);
     return q && q.correctAnswer === ans;
@@ -473,6 +495,16 @@ function PracticeContent() {
           <p className="text-sm text-slate-500 mt-1">
             Every practice attempt solidifies your board exam recall.
           </p>
+          {result.points && (
+            <p className="mt-3 rounded-xl bg-amber-50 p-3 text-sm text-amber-950">
+              {result.points.saved
+                ? `${result.points.earned} new learning points saved. Complete every question for 10 points per attempt; repeat submissions add no extra points.`
+                : "Your quiz result is saved; points are temporarily unavailable. Submit again to retry without duplicating rewards."}{" "}
+              <Link href="/leaderboard" className="font-bold underline">
+                View scoreboard
+              </Link>
+            </p>
+          )}
         </div>
 
         {/* Scorecard Hero with Radial Accuracy Ring */}
@@ -857,7 +889,10 @@ function PracticeContent() {
             const isCorrect =
               !exam && showFeedback && key === question.correctAnswer;
             const isIncorrectSelection =
-              !exam && showFeedback && isThisSelected && key !== question.correctAnswer;
+              !exam &&
+              showFeedback &&
+              isThisSelected &&
+              key !== question.correctAnswer;
 
             let cardStyle =
               "border-slate-200 hover:border-slate-300 hover:bg-slate-50/50 bg-white";
@@ -925,11 +960,33 @@ function PracticeContent() {
 
         {!exam && (
           <div className="space-y-2">
-            <button type="button" className="btn-primary" onClick={() => void submitAnswer()} disabled={busy || !drafts[question.id] || Boolean(submitted)}>
+            <button
+              type="button"
+              className="btn-primary"
+              onClick={() => void submitAnswer()}
+              disabled={busy || !drafts[question.id] || Boolean(submitted)}
+            >
               {busy ? "Checking answer…" : "Submit Answer"}
             </button>
-            <button type="button" className="ml-3 min-h-11 px-3 text-sm font-semibold text-blue-700 disabled:text-slate-400" disabled={busy || !drafts[question.id] || Boolean(submitted)} onClick={() => setDrafts(previous => { const next = {...previous}; delete next[question.id]; return next; })}>Clear answer</button>
-            <p className="text-xs text-slate-600">{submitted ? "Answer submitted and locked for this attempt. Retake practice to try again." : "Select or change an option, then submit it for feedback. Unsubmitted choices are skipped when you finish."}</p>
+            <button
+              type="button"
+              className="ml-3 min-h-11 px-3 text-sm font-semibold text-blue-700 disabled:text-slate-400"
+              disabled={busy || !drafts[question.id] || Boolean(submitted)}
+              onClick={() =>
+                setDrafts((previous) => {
+                  const next = { ...previous };
+                  delete next[question.id];
+                  return next;
+                })
+              }
+            >
+              Clear answer
+            </button>
+            <p className="text-xs text-slate-600">
+              {submitted
+                ? "Answer submitted and locked for this attempt. Retake practice to try again."
+                : "Select or change an option, then submit it for feedback. Unsubmitted choices are skipped when you finish."}
+            </p>
           </div>
         )}
         {/* Feedback follows explicit individual submission. */}

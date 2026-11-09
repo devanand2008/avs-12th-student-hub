@@ -112,6 +112,21 @@ function chapter(
 }
 export const MATERIAL_CHAPTERS: Chapter[] = [
   {
+    id: "tb-12-physics-tamil-v1-c1623725-study-orientation",
+    subjectId: "tb-12-physics-tamil-v1-c1623725",
+    bookId: "12-physics-tamil-v1-c1623725",
+    chapterNumber: 0,
+    title: "Supplementary study and career guidance (not a textbook chapter)",
+    titleTamil: "துணைப் படிப்பு மற்றும் உயர்கல்வி வழிகாட்டல்",
+    description:
+      "Owner-supplied cross-chapter orientation, including potentiometer and mutual-induction examples and higher-education pathways. Not an official chapter or a complete career guide. Textbook front matter: PDF page 4.",
+    totalNotes: 0,
+    totalVideos: 0,
+    totalMcqs: 0,
+    isActive: true,
+    orderIndex: 0,
+  },
+  {
     ...chapter("tamil", 0, "Supplied textbook copy"),
     id: "tamil-supplied-textbook",
     description:

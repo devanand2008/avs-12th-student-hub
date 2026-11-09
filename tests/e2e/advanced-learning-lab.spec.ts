@@ -1,5 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { advancedModels } from "../../src/lib/advanced-models";
+import { learningModels } from "../../src/lib/models";
+import resourceRows from "../../src/lib/additional-materials-resources.json";
 import { authRequest } from "../helpers/otp-browser";
 
 test("all new models open with valid source context, functional controls and no leaked canvas", async ({
@@ -9,7 +11,9 @@ test("all new models open with valid source context, functional controls and no 
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/interactive-3d");
   await expect(
-    page.getByText("30 interactive models", { exact: true }),
+    page.getByText(`${learningModels.length} interactive models`, {
+      exact: true,
+    }),
   ).toBeVisible();
   for (const model of advancedModels) {
     await page.getByLabel("Search models", { exact: true }).fill(model.title);
@@ -199,7 +203,9 @@ test("graphs calculate actual values, filters clear and reduced-motion lessons r
     .selectOption("Tamil");
   await expect(page.getByText(/No verified model matches/)).toBeVisible();
   await page.getByRole("button", { name: "Clear model filters" }).click();
-  await expect(page.locator(".model-option")).toHaveCount(30);
+  await expect(page.locator(".model-option")).toHaveCount(
+    learningModels.length,
+  );
   for (const entry of [
     {
       search: "Energy through trophic",
@@ -253,16 +259,16 @@ test("additional supplied PDFs/videos appear without mutating stored resources",
   expect(videos.status()).toBe(200);
   const n = (await notes.json()).notes,
     v = (await videos.json()).videos;
-  expect(
-    n.filter((x: { description: string }) =>
-      x.description.startsWith("Owner-supplied study resource."),
-    ),
-  ).toHaveLength(25);
-  expect(
-    v.filter((x: { description: string }) =>
-      x.description.startsWith("Owner-supplied study resource."),
-    ),
-  ).toHaveLength(11);
+  for (const row of resourceRows) {
+    expect(
+      (row.kind === "note" ? n : v).find(
+        (x: { id: string }) => x.id === row.resource.id,
+      ),
+    ).toMatchObject({
+      id: row.resource.id,
+      sourceFile: row.resource.sourceFile,
+    });
+  }
   expect(
     n.find((x: { sourceFile: string }) =>
       x.sourceFile?.includes("Chapter_11_Notes_Clean"),

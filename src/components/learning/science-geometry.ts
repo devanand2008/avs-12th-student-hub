@@ -62,7 +62,256 @@ export function scienceGeometry(
     );
     head.quaternion.setFromUnitVectors(v(0, 1, 0), direction);
   };
-  if (model === "ovum") {
+  if (model === "coaxial-cable" || model === "optical-fibre") {
+    // Stepped shells expose the layer below. Shells are hollow, not overlapping solid rods.
+    const layers: [string, number, number, number, number][] =
+      model === "coaxial-cable"
+        ? [
+            ["conductor", 0.15, 4.6, 0, 0xf59e0b],
+            ["dielectric", 0.48, 3.5, -0.55, 0xe2e8f0],
+            ["shield", 0.62, 2.5, -1.05, 0x94a3b8],
+            ["jacket", 0.79, 1.5, -1.55, 0x334155],
+          ]
+        : [
+            ["core", 0.22, 4.6, 0, 0x38bdf8],
+            ["cladding", 0.52, 3.3, -0.65, 0xa78bfa],
+            ["coating", 0.78, 1.9, -1.35, 0xf97316],
+          ];
+    layers.forEach(([part, radius, height, y, colour], i) => {
+      add(
+        new THREE.CylinderGeometry(radius, radius, height, 32, 1, i > 0),
+        colour,
+        part,
+        v(0, y),
+      );
+      if (i > 0) {
+        // Annular ends make the thickness clear without capping the inner layer.
+        const inner = layers[i - 1][1];
+        for (const end of [-1, 1]) {
+          const ring = add(
+            new THREE.RingGeometry(inner, radius, 32),
+            colour,
+            part,
+            v(0, y + (end * height) / 2),
+          );
+          ring.rotation.x = Math.PI / 2;
+        }
+      }
+    });
+    return;
+  }
+  if (model === "ethernet-plug") {
+    add(new THREE.BoxGeometry(3.4, 0.18, 2.4), 0x93c5fd, "housing", v(0, -0.4));
+    add(
+      new THREE.BoxGeometry(3.4, 0.9, 0.18),
+      0x93c5fd,
+      "housing",
+      v(0, 0, -1.1),
+    );
+    for (let i = 0; i < 8; i++)
+      add(
+        new THREE.BoxGeometry(0.2, 0.13, 1.65),
+        0xfbbf24,
+        "contacts",
+        v(-1.26 + i * 0.36, 0.12, 0.18),
+      );
+    const latch = add(
+      new THREE.BoxGeometry(0.65, 0.13, 1.55),
+      0x60a5fa,
+      "latch",
+      v(0, -0.82, 0.15),
+    );
+    latch.rotation.x = -0.2;
+    return;
+  }
+  if (model === "ethernet-card") {
+    add(new THREE.BoxGeometry(3.8, 2.4, 0.12), 0x16a34a, "board", v());
+    add(
+      new THREE.BoxGeometry(2.5, 0.35, 0.13),
+      0xfbbf24,
+      "connector",
+      v(-0.35, -1.32),
+    );
+    // A hollow socket: four walls leave a visible opening facing the viewer.
+    for (const x of [1.1, 2])
+      add(
+        new THREE.BoxGeometry(0.12, 0.85, 0.8),
+        0x94a3b8,
+        "port",
+        v(x, 0, 0.45),
+      );
+    for (const y of [-0.42, 0.42])
+      add(
+        new THREE.BoxGeometry(1.02, 0.12, 0.8),
+        0x94a3b8,
+        "port",
+        v(1.55, y, 0.45),
+      );
+    add(
+      new THREE.BoxGeometry(0.8, 0.7, 0.04),
+      0x334155,
+      "port",
+      v(1.55, 0, 0.08),
+    );
+    return;
+  }
+  if (model === "twisted-pair") {
+    const pairs = [
+      ["orange", 0xf97316, 0xffedd5],
+      ["green", 0x22c55e, 0xdcfce7],
+      ["blue", 0x3b82f6, 0xdbeafe],
+      ["brown", 0xa16207, 0xfef3c7],
+    ] as const;
+    pairs.forEach(([part, colour, partner], index) => {
+      const cx = index % 2 === 0 ? -0.55 : 0.55;
+      const cz = index < 2 ? -0.55 : 0.55;
+      for (let wire = 0; wire < 2; wire++) {
+        const points = Array.from({ length: 121 }, (_, i) => {
+          const phase = (i / 120) * Math.PI * 8 + wire * Math.PI;
+          return v(
+            0.19 * Math.cos(phase),
+            -2.2 + (i / 120) * 4.4,
+            0.19 * Math.sin(phase),
+          );
+        });
+        add(
+          new THREE.TubeGeometry(
+            new THREE.CatmullRomCurve3(points),
+            120,
+            0.075,
+            8,
+            false,
+          ),
+          wire ? partner : colour,
+          part,
+          v(cx, 0, cz),
+        );
+      }
+    });
+    // Open-ended partial cylinder exposes the conductors without hiding their separation.
+    add(
+      new THREE.CylinderGeometry(
+        1.15,
+        1.15,
+        4.7,
+        32,
+        1,
+        true,
+        Math.PI / 2,
+        Math.PI,
+      ),
+      0x94a3b8,
+      "jacket",
+      v(),
+    );
+    return;
+  }
+  if (model === "sperm") {
+    // Centre the long head-to-tail silhouette in the camera's default framing.
+    group.position.y = 0.8;
+    sphere(v(0, 1.6), v(0.48, 0.65, 0.3), 0xa78bfa, "nucleus");
+    const cap = add(
+      new THREE.SphereGeometry(1, 24, 12, 0, Math.PI * 2, 0, Math.PI / 2),
+      0xfb7185,
+      "acrosome",
+      v(0, 1.72),
+    );
+    cap.scale.set(0.51, 0.57, 0.33);
+    link(v(0, 0.95), v(0, 0.65), 0xfbbf24, "neck", 0.13);
+    link(v(0, 0.65), v(0, -0.6), 0x34d399, "middle", 0.09);
+    for (let i = 0; i < 30; i++) {
+      const a = i * 0.75;
+      ball(
+        v(0.2 * Math.cos(a), 0.6 - i * 0.04, 0.2 * Math.sin(a)),
+        0.105,
+        0x34d399,
+        "middle",
+      );
+    }
+    const points = Array.from({ length: 30 }, (_, i) =>
+      v(0.28 * Math.sin(i * 0.14), -0.6 - i * 0.115, 0.08 * Math.sin(i * 0.2)),
+    );
+    add(
+      new THREE.TubeGeometry(
+        new THREE.CatmullRomCurve3(points),
+        48,
+        0.045,
+        8,
+        false,
+      ),
+      0x60a5fa,
+      "tail",
+      v(),
+    );
+  } else if (model === "embryo-sac") {
+    sphere(v(), v(1.25, 2.65, 0.8), 0xfbbf24, "central", 0.13);
+    const cell = (x: number, y: number, color: number, part: string) => {
+      sphere(v(x, y), v(0.32, 0.42, 0.3), color, part, 0.5);
+      const nucleus = ball(v(x, y, 0.12), 0.12, color, part);
+      nucleus.userData.nucleus = true;
+    };
+    cell(0, 1.65, 0xfb7185, "egg");
+    cell(-0.62, 1.9, 0x38bdf8, "synergids");
+    cell(0.62, 1.9, 0x38bdf8, "synergids");
+    for (const x of [-0.55, 0, 0.55]) cell(x, -1.9, 0x34d399, "antipodals");
+    for (const x of [-0.22, 0.22]) {
+      const n = ball(v(x, 0, 0.1), 0.17, 0xa78bfa, "polar");
+      n.userData.nucleus = true;
+    }
+  } else if (model === "bcc") {
+    const corners: THREE.Vector3[] = [];
+    for (const x of [-1.5, 1.5])
+      for (const y of [-1.5, 1.5])
+        for (const z of [-1.5, 1.5]) {
+          const p = v(x, y, z);
+          corners.push(p);
+          ball(p, 0.33, 0x34d399, "corners");
+          link(v(), p, 0xfbbf24, "neighbours", 0.025);
+        }
+    ball(v(), 0.43, 0xfb7185, "centre");
+    for (let i = 0; i < corners.length; i++)
+      for (let j = i + 1; j < corners.length; j++)
+        if (Math.abs(corners[i].distanceTo(corners[j]) - 3) < 0.001)
+          link(corners[i], corners[j], 0x60a5fa, "edges", 0.035);
+  } else if (model === "pn-junction") {
+    for (const y of [-0.85, 0, 0.85])
+      for (const z of [-0.35, 0.35]) {
+        const hole = add(
+          new THREE.TorusGeometry(0.16, 0.045, 8, 20),
+          0xfb7185,
+          "holes",
+          v(-2, y, z),
+        );
+        hole.userData.charge = 1;
+        const electron = ball(v(2, y, z), 0.12, 0x38bdf8, "electrons");
+        electron.userData.charge = -1;
+        for (const [x, part, color, charge] of [
+          [-0.6, "acceptors", 0xa78bfa, -1],
+          [0.6, "donors", 0xfbbf24, 1],
+        ] as const) {
+          const ion = ball(v(x, y, z), 0.2, color, part);
+          ion.userData.charge = charge;
+          link(
+            v(x - 0.1, y, z + 0.21),
+            v(x + 0.1, y, z + 0.21),
+            0x172554,
+            part,
+            0.025,
+          );
+          if (charge === 1)
+            link(
+              v(x, y - 0.1, z + 0.21),
+              v(x, y + 0.1, z + 0.21),
+              0x172554,
+              part,
+              0.025,
+            );
+        }
+      }
+    for (const y of [-1.4, 1.4]) {
+      arrow(v(0.9, y, 0.55), v(-0.9, y, 0.55), 0x34d399, "field");
+    }
+  } else if (model === "ovum") {
     sphere(v(), v(1.1, 1.1, 1.1), 0xfbbf24, "egg", 0.45);
     ball(v(0, 0, 0.4), 0.3, 0xf59e0b, "egg");
     const coat = add(

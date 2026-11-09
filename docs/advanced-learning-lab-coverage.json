@@ -1,8 +1,8 @@
 {
-  "auditedAt": "2026-10-26T17:39:57.012Z",
-  "implemented": 30,
-  "threeDimensional": 18,
-  "newLessons": 15,
+  "auditedAt": "2026-11-02T06:52:57.234Z",
+  "implemented": 39,
+  "threeDimensional": 27,
+  "newLessons": 24,
   "animatedNewConcepts": 7,
   "books": 82,
   "subjects": 40,
@@ -22,6 +22,169 @@
     "nextBatch"
   ],
   "models": [
+    {
+      "id": "coaxial-cable",
+      "title": "Coaxial cable cutaway",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Identify the concentric layers of a coaxial cable and distinguish its metal conductors from insulation.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "surface mesh",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Enlarged stepped cutaway, not to scale. The shield is a smooth shell standing for a metallic braid or foil. No impedance, signal-speed or wiring simulation. Product construction varies.",
+      "pdfPage": 184,
+      "printedPage": 178,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "25de459c0a76a7b6aca76978f3ea15ea78e004d46b49228f43205a7c52a87df0",
+      "scienceReference": "https://www.belden.com/products/cable/video-cable/coaxial-video-cable/8241f",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "optical-fibre",
+      "title": "Optical fibre cutaway",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Distinguish the light-guiding core and cladding from the protective coating.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "surface mesh",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Schematic single-fibre stepped cutaway, not an entire multi-fibre cable. Colours and relative diameters are illustrative. No ray tracing, optical modes, attenuation or transmission-rate simulation; glass is shown opaque so layers remain distinguishable.",
+      "pdfPage": 184,
+      "printedPage": 178,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "25de459c0a76a7b6aca76978f3ea15ea78e004d46b49228f43205a7c52a87df0",
+      "scienceReference": "https://www.thefoa.org/tech/ref/basic/fiber.html",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "ethernet-plug",
+      "title": "Eight-contact Ethernet plug",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Recognise the eight contacts and distinguish the cable plug from the network card socket.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "surface mesh",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Simplified open-sided housing and enlarged contacts, not a manufacturing drawing. No pin numbering, wire colour code or termination instructions. The retaining latch is schematic; connector variants differ.",
+      "pdfPage": 188,
+      "printedPage": 182,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "c2dfaabfb21aa96292058a9e32263fabf13a77e21b7db685e981a725e8933e78",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "ethernet-card",
+      "title": "Ethernet network interface card",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Distinguish a network interface card from its Ethernet port and the cable plugged into it.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Simplified expansion-card layout, not a particular product or wiring diagram. The port is shown empty; controller circuitry, pin assignments and electrical signals are omitted. Integrated network interfaces can look different.",
+      "pdfPage": 190,
+      "printedPage": 184,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "c08a24d3f63fa9d2b2fae85996686b6d3db1ddd1988c173564683c6628e3cea3",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "twisted-pair",
+      "title": "Twisted-pair Ethernet cable",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Identify eight insulated conductors arranged as four twisted pairs inside a protective jacket.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Schematic enlarged cutaway: equal twist pitches and spacing are illustrative. No connector pin order, signal propagation, shielding or performance simulation. Light-coloured partners stand for white-striped insulation; this is not a termination guide.",
+      "pdfPage": 187,
+      "printedPage": 181,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "6dfc02dd4ca7bc8095de4602da4766874f0c053397cbd3a5ba6072509837a64b",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
     {
       "id": "ovum",
       "title": "Human ovum · protective layers",
@@ -52,7 +215,7 @@
       "pageTextSha256": "0281a89f36239e165466b5903e83030bba3bff3b9b895c23d8ea4b4b87114812",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "nacl",
@@ -84,7 +247,7 @@
       "pageTextSha256": "ca5b50bfaf0522a64c02d0923eb2d695ad1580ffd7fd35da99fd3b2ff4f0e60f",
       "scienceReference": "https://openstax.org/books/chemistry-2e/pages/10-6-lattice-structures-in-crystalline-solids",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "octahedral",
@@ -116,7 +279,7 @@
       "pageTextSha256": "a2b0f9f25aee7b8f2027558286bceec6e7d3885a63cced50392edd83e6bb68bd",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "replication",
@@ -148,7 +311,7 @@
       "pageTextSha256": "07a1c373ce5ad416800114a36077b8ff42acf2b28c53497f136d19a1e59e3be7",
       "scienceReference": "https://openstax.org/books/biology-2e/pages/14-3-basics-of-dna-replication",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "transcription",
@@ -180,7 +343,7 @@
       "pageTextSha256": "64fd8ab3f6610a413e11e3559a83627e84833f2e7410b6b262b9ffc5cf71d488",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "mendel",
@@ -213,7 +376,7 @@
       "pageTextSha256": "3e75229933394c54ce0e14ff2c3c442dc374fb565061525dc2a541e2d17cb858",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "pollination",
@@ -245,7 +408,7 @@
       "pageTextSha256": "40c59e9729c277a6e2ce89f864f2a90523feb130010dc0b45d05d7f0b6e908a2",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "ecosystem",
@@ -273,7 +436,7 @@
       "pageTextSha256": "c24ab875841980c213fea679e49f6ba8e639231ff2c582f7a48150a8ed91cf27",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "ac-wave",
@@ -307,7 +470,7 @@
       "pageTextSha256": "4e9b44ad102a22449f9875370faaa27dd7dd772f7d80031a28e3624fcf6e3422",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "thin-lens",
@@ -335,7 +498,7 @@
       "pageTextSha256": "46034a71160d58ae7361c142faf0c5dfe0463b939f5832621cf72a402dd16786",
       "scienceReference": "https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "ohm",
@@ -364,7 +527,7 @@
       "pageTextSha256": "6798be8541396e18ee43cc2d3cf1eb3ce02d7bb037145b39f25178b458ad3c72",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "derivative",
@@ -393,7 +556,7 @@
       "pageTextSha256": "4ce228fca481821033066852b7760c06a06c07eeaf7226ad8b4d24d201359043",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "binary-search",
@@ -429,7 +592,7 @@
       "pageTextSha256": "8ebf3071700ce8aefbd59217c8f0976af51c037cae8fa874ea20f550baa0f942",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "insertion-sort",
@@ -464,7 +627,7 @@
       "pageTextSha256": "51c943cc33fa469f66592ccea881d98fe13a6fc046d553b57a9d627642ea5733",
       "scienceReference": "Local textbook source page",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     },
     {
       "id": "transformer",
@@ -492,7 +655,135 @@
       "pageTextSha256": "c7b64ece1f5b16ed631bc80ec12b04beb180137784d140233fc18dec4daf95dc",
       "scienceReference": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
       "externalAssets": [],
-      "testStatus": "See verification receipts; visit count not automatically established"
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "sperm",
+      "title": "Human sperm · structure and function",
+      "subjectId": "tb-12-bio-zoology-english-7e848813",
+      "subject": "Bio-Zoology",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-bio-zoology-english-7e848813",
+      "chapter": 2,
+      "chapterTitle": "Human Reproduction",
+      "concept": "Relate each region of a spermatozoon to its role in fertilisation or movement.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Schematic external and internal parts, with exaggerated widths and spacing. The membrane and detailed axoneme are omitted; this is not a swimming simulation or a diagnostic model.",
+      "pdfPage": 25,
+      "printedPage": 17,
+      "sourceFile": "12th_Std_Biology_Zoology_EM_optimised.pdf",
+      "sourceSha256": "ee5428d73469d242a0090aa021b895b561a0b34517ea985dbd60912a5c795852",
+      "pageTextSha256": "514dc84764f8e1483c906cbcb48ac2168205e067ebad105416eb3a88d79d9ba6",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "embryo-sac",
+      "title": "Embryo sac · seven cells, eight nuclei",
+      "subjectId": "tb-12-bio-botany-english-f15d4524",
+      "subject": "Bio-Botany",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapter": 1,
+      "chapterTitle": "Asexual and Sexual Reproduction in Plants",
+      "concept": "Count seven cells and eight nuclei and locate the micropylar egg apparatus and chalazal antipodals.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "A schematic Polygonum-type embryo sac before fusion of its two polar nuclei. Sizes and cell outlines are simplified; not all flowering plants share this developmental pattern. Top is micropylar, bottom is chalazal in this view.",
+      "pdfPage": 18,
+      "printedPage": 12,
+      "sourceFile": "12th_Std_Biology_Botany_EM_Optimised.pdf",
+      "sourceSha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+      "pageTextSha256": "967b4df902db4d1245e8d719825908d18a07d27607b307964381b566a75a30b8",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "bcc",
+      "title": "Body-centred cubic · unit cell",
+      "subjectId": "tb-12-chemistry-english-v1-2d0e27cb",
+      "subject": "Chemistry",
+      "medium": "English",
+      "volume": "1",
+      "bookId": "12-chemistry-english-v1-2d0e27cb",
+      "chapter": 6,
+      "chapterTitle": "Solid State",
+      "concept": "Distinguish nine drawn atom centres from the two atoms contributed to one BCC unit cell: 8 × ⅛ + 1 = 2.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Ball-and-stick schematic with deliberately reduced atom radii, not a space-filling or scaled crystal. Corner spheres extend outside the cell and are shared between eight cells. Lines to the centre indicate nearest-neighbour directions, not molecular bonds.",
+      "pdfPage": 193,
+      "printedPage": 183,
+      "sourceFile": "12th_Std_Chemistry_EM_Vol_1_Optimised.pdf",
+      "sourceSha256": "8537d519cc6d527211acd65b7dbdde3830ef08035bab86e9a8def9eb362acb2b",
+      "pageTextSha256": "924ab3d660cfd3a9e6d03a07bdb33dbfc72313c15e9943d67259d3437ed2ced2",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "pn-junction",
+      "title": "p–n junction · equilibrium depletion region",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subject": "Physics",
+      "medium": "English",
+      "volume": "2",
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "chapter": 10,
+      "chapterTitle": "Electronics and Communication",
+      "concept": "Distinguish mobile carriers in the bulk from fixed acceptor and donor ions near an unbiased junction.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "explode",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "Extruded conceptual diagram at equilibrium, not an atomic lattice or a numerical device simulation. Carrier counts and depletion widths are arbitrary; minority carriers, neutral-bulk ion balance and drift/diffusion currents are omitted. Field direction is shown without a magnitude. Printed page 203 continues the field explanation.",
+      "pdfPage": 210,
+      "printedPage": 202,
+      "sourceFile": "12th_Std_Physics_Vol_2_EM_optimised.pdf",
+      "sourceSha256": "a0138e5a020d3a7c538193c503cac385cfc307072a617b7247d2fc4579933271",
+      "pageTextSha256": "b1df61d032aba47bfee95df2b30c1eb55c219e63019aeef838249b1ca3cc8b0f",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
     }
   ],
   "legacyModels": [
@@ -1884,7 +2175,8 @@
           "inventoryTitle": "Asexual and Sexual Reproduction in Plants",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
-            "pollination"
+            "pollination",
+            "embryo-sac"
           ],
           "coverage": "Partial concept context only; chapter completeness unverified"
         },
@@ -1959,7 +2251,8 @@
       "mappedModels": [
         "mendel",
         "pollination",
-        "ecosystem"
+        "ecosystem",
+        "embryo-sac"
       ],
       "status": "Full chapter coverage not claimed"
     },
@@ -2065,7 +2358,8 @@
           "inventoryTitle": "Human Reproduction",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
-            "ovum"
+            "ovum",
+            "sperm"
           ],
           "coverage": "Partial concept context only; chapter completeness unverified"
         },
@@ -2148,6 +2442,7 @@
         "ovum",
         "replication",
         "transcription",
+        "sperm",
         "dna"
       ],
       "status": "Full chapter coverage not claimed"
@@ -2790,7 +3085,8 @@
           "inventoryTitle": "XII U6 Solid State - Jerald",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
-            "nacl"
+            "nacl",
+            "bcc"
           ],
           "coverage": "Partial concept context only; chapter completeness unverified"
         },
@@ -2804,7 +3100,8 @@
       ],
       "mappedModels": [
         "nacl",
-        "octahedral"
+        "octahedral",
+        "bcc"
       ],
       "status": "Full chapter coverage not claimed"
     },
@@ -3529,7 +3826,13 @@
           "chapter": 13,
           "inventoryTitle": "XII CompApp English version CHAPTER 13",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
-          "modelIds": [],
+          "modelIds": [
+            "coaxial-cable",
+            "optical-fibre",
+            "ethernet-plug",
+            "ethernet-card",
+            "twisted-pair"
+          ],
           "coverage": "Partial concept context only; chapter completeness unverified"
         },
         {
@@ -3568,7 +3871,13 @@
           "coverage": "Partial concept context only; chapter completeness unverified"
         }
       ],
-      "mappedModels": [],
+      "mappedModels": [
+        "coaxial-cable",
+        "optical-fibre",
+        "ethernet-plug",
+        "ethernet-card",
+        "twisted-pair"
+      ],
       "status": "Full chapter coverage not claimed"
     },
     {
@@ -6603,7 +6912,9 @@
           "chapter": 10,
           "inventoryTitle": "UNIT-10 XII-Physics Vol-2 Part 1",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
-          "modelIds": [],
+          "modelIds": [
+            "pn-junction"
+          ],
           "coverage": "Partial concept context only; chapter completeness unverified"
         },
         {
@@ -6615,7 +6926,8 @@
         }
       ],
       "mappedModels": [
-        "thin-lens"
+        "thin-lens",
+        "pn-junction"
       ],
       "status": "Full chapter coverage not claimed"
     },

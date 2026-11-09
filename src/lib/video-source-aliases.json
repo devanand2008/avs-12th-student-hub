@@ -18,5 +18,25 @@
     "file": "tamil/video/VID-20261006-WA0053.mp4",
     "canonicalFile": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05.mp4",
     "sha256": "0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2"
+  },
+  {
+    "file": "bio/zoo/video/இனப்பெருக்க_நலன் (3).mp4",
+    "canonicalFile": "bio/zoo/video/இனப்பெருக்க_நலன் (2).mp4",
+    "sha256": "7ace60a241a70111196ad41832646e2ac48fa501e157856aab54faa6370dbbfc"
+  },
+  {
+    "file": "phy/video/நிலைமின்_பண்புகள் (1).mp4",
+    "canonicalFile": "phy/video/நிலைமின்_பண்புகள்.mp4",
+    "sha256": "bff5415667b0b6552a9a6545111e40871b3c61c2afa1498a880513fd505b700f"
+  },
+  {
+    "file": "phy/video/காந்தவியலின்_ரகசியங்கள் (1).mp4",
+    "canonicalFile": "phy/video/காந்தவியலின்_ரகசியங்கள்.mp4",
+    "sha256": "12e7d5867f2fd6407360b4ee6c34ecabf5e36e9bb76232ca24a232d436a53f31"
+  },
+  {
+    "file": "phy/video/Maxwell_s_Missing_Piece (1).mp4",
+    "canonicalFile": "phy/video/Maxwell_s_Missing_Piece.mp4",
+    "sha256": "f522729cfe56676aa76f097c833e1483a958f3bf0368564669550c17e20bd2f6"
   }
 ]

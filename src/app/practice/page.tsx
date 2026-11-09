@@ -1,5 +1,7 @@
 "use client";
 
+import { fetchCurrentSession } from "@/lib/current-session-client";
+
 import Sidebar from "@/components/layout/Sidebar";
 import textbookCatalog from "@/lib/textbooks-catalog.json";
 import { Chapter, PracticeMode, Subject } from "@/types";
@@ -55,7 +57,7 @@ export default function PracticeHubPage() {
           throw new Error(data.error || "Could not load practice subjects.");
         return data;
       }),
-      fetch("/api/auth/me", { cache: "no-store" }).then((res) => res.json()),
+      fetchCurrentSession().then((res) => res.json()),
     ])
       .then(([data, auth]) => {
         if (disposed) return;

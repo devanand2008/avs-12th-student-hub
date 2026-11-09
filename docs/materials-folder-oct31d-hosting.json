@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-31T16:43:51.588Z",
+  "results": [
+    {
+      "file": "che/video/Class_12__Transition_Elements.mp4",
+      "sha256": "78b52842c2c97fe7b02be87d7727f392752d4c445b30165338920c2e097618fc",
+      "bytes": 30078820,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/78b52842c2c97fe7b02be87d7727f392752d4c445b30165338920c2e097618fc.mp4",
+      "status": 206,
+      "digest": "sha256:78b52842c2c97fe7b02be87d7727f392752d4c445b30165338920c2e097618fc",
+      "passed": true
+    },
+    {
+      "file": "che/video/p-Block_Elements_-_II.mp4",
+      "sha256": "6555b4c598e3f37d6cc002d28c23e38b111f7c1e6789be0149c1fe7c7a9f34fa",
+      "bytes": 37956115,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6555b4c598e3f37d6cc002d28c23e38b111f7c1e6789be0149c1fe7c7a9f34fa.mp4",
+      "status": 206,
+      "digest": "sha256:6555b4c598e3f37d6cc002d28c23e38b111f7c1e6789be0149c1fe7c7a9f34fa",
+      "passed": true
+    },
+    {
+      "file": "che/video/அலகு_1__உலோகவியல்.mp4",
+      "sha256": "f75af269b0f68cbcfcfc5444d9191de39f55e6e88edb0f26eb19789f13c4624e",
+      "bytes": 34321715,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f75af269b0f68cbcfcfc5444d9191de39f55e6e88edb0f26eb19789f13c4624e.mp4",
+      "status": 206,
+      "digest": "sha256:f75af269b0f68cbcfcfc5444d9191de39f55e6e88edb0f26eb19789f13c4624e",
+      "passed": true
+    },
+    {
+      "file": "che/video/அலகு_2__p-தொகுதி_தனிமங்கள்_I.mp4",
+      "sha256": "e4c3d5875fed55de2c8d848f8a3e64eec740c184666ccbf875f9ca247c8cfa8c",
+      "bytes": 28977724,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e4c3d5875fed55de2c8d848f8a3e64eec740c184666ccbf875f9ca247c8cfa8c.mp4",
+      "status": 206,
+      "digest": "sha256:e4c3d5875fed55de2c8d848f8a3e64eec740c184666ccbf875f9ca247c8cfa8c",
+      "passed": true
+    },
+    {
+      "file": "che/video/வேதியியல்__அணைவு_வேதியியல்.mp4",
+      "sha256": "80f194d7129f6255ee6f327d23b89c72bda0844d94a539bbe623591d993db543",
+      "bytes": 28799749,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/80f194d7129f6255ee6f327d23b89c72bda0844d94a539bbe623591d993db543.mp4",
+      "status": 206,
+      "digest": "sha256:80f194d7129f6255ee6f327d23b89c72bda0844d94a539bbe623591d993db543",
+      "passed": true
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 ﻿import { getSession } from "@/lib/auth";
 import { getTextbookCatalog } from "@/lib/textbooks-server";
 import TextbookLibrary from "./TextbookLibrary";
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata("/textbooks");
 
 export default async function TextbooksPage({
   searchParams,

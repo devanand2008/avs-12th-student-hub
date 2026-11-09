@@ -67,6 +67,14 @@ export default function AdminStudentsPage() {
     studentId: string;
     password: string;
   } | null>(null);
+  const [replacementPassword, setReplacementPassword] = useState("");
+  const [showReplacement, setShowReplacement] = useState(false);
+  const [credentialNotice, setCredentialNotice] = useState("");
+  const closeAction = useCallback(() => {
+    setPending(null);
+    setReplacementPassword("");
+    setShowReplacement(false);
+  }, []);
 
   const refresh = useCallback(() => {
     return fetch("/api/admin/users", { cache: "no-store" })
@@ -108,7 +116,7 @@ export default function AdminStudentsPage() {
     function handleKey(event: KeyboardEvent) {
       if (event.key === "Escape" && !busy) {
         setSelected(null);
-        setPending(null);
+        closeAction();
       }
       if (event.key !== "Tab") return;
       const elements = focusable();
@@ -132,7 +140,7 @@ export default function AdminStudentsPage() {
       document.body.style.overflow = previousOverflow;
       previousFocus?.focus();
     };
-  }, [selected, pending, busy]);
+  }, [selected, pending, busy, closeAction]);
 
   function setFilter(field: keyof DirectoryFilters, value: string) {
     setFilters((current) => ({ ...current, [field]: value }));
@@ -148,11 +156,18 @@ export default function AdminStudentsPage() {
       const response = await fetch("/api/admin/students/actions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ studentId: user.student!.id, action }),
+        body: JSON.stringify({
+          studentId: user.student!.id,
+          action,
+          ...(action === "reset-password" && replacementPassword
+            ? { newPassword: replacementPassword }
+            : {}),
+        }),
       });
       const data = await response.json();
       if (!response.ok)
         throw new Error(data.error || "Could not update account.");
+      setCredentialNotice("");
       if (action === "reset-password" || action === "approve")
         setTemporaryPassword({
           studentId: user.student!.studentId,
@@ -166,7 +181,7 @@ export default function AdminStudentsPage() {
               ? "Password reset. The student must choose a new password at next sign-in."
               : `${user.student!.studentName}'s account is now ${user.student!.activeStatus ? "inactive" : "active"}.`,
       });
-      setPending(null);
+      closeAction();
       setLoading(true);
       await refresh();
     } catch (error) {
@@ -220,13 +235,16 @@ export default function AdminStudentsPage() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-          <a
-            href={"/api/admin/users/export?" + new URLSearchParams({ ...filters }).toString()}
-            className="btn-secondary text-xs"
-          >
-            <Download size={14} /> Download Excel
-          </a>
-          <button
+            <a
+              href={
+                "/api/admin/users/export?" +
+                new URLSearchParams({ ...filters }).toString()
+              }
+              className="btn-secondary text-xs"
+            >
+              <Download size={14} /> Download Excel
+            </a>
+            <button
               className="btn-secondary"
               disabled={loading || !filtered.length}
               onClick={exportCsv}
@@ -316,6 +334,27 @@ export default function AdminStudentsPage() {
             <p className="text-xs leading-5">
               Share this privately with the student. It is shown only for this
               reset and never included in the directory export.
+            </p>
+            <button
+              type="button"
+              className="mt-3 rounded-lg bg-amber-900 px-4 py-2 font-bold text-white"
+              onClick={async () => {
+                try {
+                  await navigator.clipboard.writeText(
+                    `Student ID: ${temporaryPassword.studentId}\nTemporary password: ${temporaryPassword.password}`,
+                  );
+                  setCredentialNotice("Login details copied.");
+                } catch {
+                  setCredentialNotice(
+                    "Select the password above and copy it manually.",
+                  );
+                }
+              }}
+            >
+              Copy login details
+            </button>
+            <p className="mt-2 text-xs" aria-live="polite">
+              {credentialNotice}
             </p>
           </div>
         )}
@@ -804,11 +843,40 @@ export default function AdminStudentsPage() {
               {pending.action === "approve"
                 ? "Confirm you have reviewed this student's identity. A temporary password will be generated for you to share privately. Their first sign-in requires a password change."
                 : pending.action === "reset-password"
-                  ? "Their current password will stop working. A temporary password will be generated for you to share privately."
+                  ? "Their current password will stop working. Issue a replacement below; the student must change it at next sign-in. Existing passwords are stored as one-way hashes and cannot be displayed."
                   : pending.user.student?.activeStatus
                     ? "The student will lose access to the learning portal until you reactivate their account."
                     : "The student will be able to sign in again."}
             </p>
+            {pending.action === "reset-password" && (
+              <div className="mb-4 space-y-3">
+                <label className="block text-sm font-semibold">
+                  Replacement temporary password (optional)
+                  <input
+                    autoComplete="new-password"
+                    type={showReplacement ? "text" : "password"}
+                    value={replacementPassword}
+                    onChange={(e) => setReplacementPassword(e.target.value)}
+                    className="mt-2 w-full rounded-xl border border-slate-300 p-3"
+                  />
+                </label>
+                <button
+                  type="button"
+                  aria-pressed={showReplacement}
+                  onClick={() => setShowReplacement((v) => !v)}
+                  className="text-sm font-bold text-blue-700"
+                >
+                  {showReplacement
+                    ? "Hide replacement password"
+                    : "Show replacement password"}
+                </button>
+                <p className="text-xs leading-5 text-slate-600">
+                  Leave blank to generate a strong password. A chosen password
+                  needs at least 10 characters and no more than 72 UTF-8 bytes.
+                  The newly issued password is shown once after confirmation.
+                </p>
+              </div>
+            )}
             {message?.error && (
               <p
                 role="alert"
@@ -821,7 +889,7 @@ export default function AdminStudentsPage() {
               <button
                 className="btn-secondary"
                 disabled={busy}
-                onClick={() => setPending(null)}
+                onClick={closeAction}
               >
                 Cancel
               </button>

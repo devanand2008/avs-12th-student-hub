@@ -1,0 +1,39 @@
+# Biology and Physics materials refresh — 5 November 2026
+
+## Source audit and additions
+
+Recursively streamed SHA-256 checksums for every file under `D:\avs-12-hub\book's`: **269 physical files (212 MP4s, 57 PDFs)**. The previous **243 originals are byte-for-byte unchanged**. There are **26 new, byte-distinct videos**, no new PDFs and no new duplicate aliases. Seven existing aliases remain mapped to their canonical originals. The complete folder represents **262 unique learning resources: 205 videos and 57 PDF notes**.
+
+Source previews were inspected at introduction/midpoint; extra quarter/three-quarter frames distinguished LC oscillations and the mixed guidance video. Original videos and watermarks are retained. Duration and dimensions were measured from native MP4 metadata. Thumbnails are clean full-frame captures, not generated illustrations. Full narration, diagrams and scientific accuracy have **not** been teacher-verified; every new resource is labelled owner-supplied/unverified. English/Tamil below refers to visible on-screen content, not a full narration-language audit.
+
+| Verified textbook scope | New videos | Language | Source evidence |
+|---|---:|---|---|
+| Bio-Botany Chapter 9, Plant Breeding | 3 | English | `12-bio-botany-english-f15d4524`, contents PDF page 3; printed start 171, PDF page 179 |
+| Bio-Botany Chapter 10, Economically Useful Plants and Entrepreneurial Botany | 4 | English | Same book, contents PDF page 3; printed start 185, PDF page 193 |
+| Physics Volume 1, Unit 4, Electromagnetic Induction And Alternating Current | 10 | English | `12-physics-english-v1-1b1de8f8`, contents PDF page 3; printed start 195, PDF page 203 |
+| Physics Volume 1, Unit 4, மின்காந்தத்தூண்டலும் மாறுதிசை மின்னோட்டமும் | 8 | Tamil | `12-physics-tamil-v1-c1623725`, contents PDF page 3; printed start 195, PDF page 203 |
+| Supplementary study and career orientation, **not an official chapter** | 1 | Tamil | `வாய்ப்புகளின்_இயற்பியல்.mp4`: potentiometer, mutual induction and higher-education pathways; textbook front-matter orientation PDF page 4 |
+
+The mixed video is placed in an explicitly labelled, active supplementary collection (`...c1623725-study-orientation`, chapterNumber 0) under the actual Tamil Physics volume. It is not counted as an official chapter. Three similarly named Plant Breeding videos and two Eddy Currents videos have different hashes/content and descriptive distinct titles. Existing generic database labels (“Learning Objectives”, “Chapter outline”, “Unit 4”) are preserved; source-verified chapter names are recorded here and in the new resource descriptions instead of rewriting existing curriculum records.
+
+## Integration and hosting
+
+Append-only additions to the existing material catalogue and resource fallback: **169 → 195 rows** each; original 169 rows unchanged. Stable IDs derive from relative source paths. `/videos` discovery, Tamil/English search, chapter filtering and `/videos/watch/[videoId]` use the existing player, progress system and admin library. The original 57 PDF notes stay in `/notes`; the five separately licensed open-reference guides are unchanged and are not counted as folder PDFs.
+
+All 26 files are hosted as hash-named assets in the existing authorised GitHub release, not in the Vercel deployment bundle. Each uploaded asset passed full GitHub SHA-256 digest and byte-size checks plus HTTP 206 range/MP4 signature checks. No existing release assets were overwritten. See [inventory](materials-folder-nov5-inventory.json) and [hosting receipts](materials-folder-nov5-hosting.json).
+
+## Preservation
+
+All 269 source-file checksums match after preparation. All 169 previous catalogue/resource entries and seven aliases are unchanged; rerunning preparation is byte-stable and creates no duplicate IDs. Of the 725 monitored local files, 724 remain byte-identical. The sole intentional shared-file addition is the supplementary collection in `src/lib/learning-materials.ts`; its pre-existing content is preserved. No question data, candidate IDs, teacher decisions, answers, history snapshots, resource-directory data or AI-tool templates were changed.
+
+Before import/deployment, live snapshots show 236 resources and 7,253 curriculum rows. Protected database fingerprints: 3,039 question rows `f67d728c222d8fac15c3e76d0e1de528`; 12,229 candidates `13b21d5421e8f4ea43bd880c9e126c3f`; 19 quiz sessions `dcd082f74bac6efb94389bae400f607d`. Existing bank eligibility is 995 English questions and zero Tamil publications; resource publication does not approve any MCQ.
+
+## Verification and release
+
+The complete materials dry-run validates **262 resources** without database writes. The initial focused suite passed 43 existing checks and two of three new checks; the new chapter-mapping test incorrectly assumed the demo seed contained all textbook chapters. It now uses the captured actual registered chapters and separately checks the supplementary seed. All **three new focused checks pass**. No product behaviour was changed to satisfy a test. The full historical 270-test suite has not been rerun for this content-only batch.
+
+**58 local desktop/mobile browser checks passed**: all 26 new videos on both viewports, real local-source native playback, play/pause/seek, measured durations, posters, isolated-fixture progress persistence, Tamil/chapter search, Notes and Resources. No browser page errors or horizontal overflow. Lint passed. One development-server prefetch reported a transient JSON/cache parse error during route compilation; the browser run completed successfully, and production build/live checks are tracked separately. Typecheck initially found an optional duration in the new test; its type guard was corrected. **Final typecheck, local production build and diff check passed**. The 43 existing focused regression checks and all three new checks pass (46 unique checks, zero remaining failures/skips). The authenticated admin sync inserted **26 rows**, then inserted **zero on repeat**; all 236 previous database rows are deeply equal to their snapshots, and all 26 new rows match the catalogue exactly (**262 durable rows**). Both sync decisions have real administrator audit entries. The original 7,253 curriculum rows retain their exact hash; only the supplementary collection was added (7,254 rows total). Question/candidate/session hashes and the 23-point balance are unchanged. Public API still reports 995 eligible MCQs and the supplementary collection has exactly one video.
+
+Vercel production deployment **dpl_DxMNCYDsVpfYgK1ZRSzrmgAXKtUY** is READY and assigned to https://avs-12th-student-hub.vercel.app. Cloud build passed; all 244 application files match the submitted source manifest. **All 64 live verification checks passed**: 52 real hosted-video play/pause/seek cases (every new video on desktop and mobile), six authenticated PDF range/signature checks across existing subject groups, four existing computer-model render checks, and two viewport-level source-registry/search/Notes/Resources/error/overflow checks. Each viewport confirms all 262 source references, all 26 new records exactly, 205 videos and 57 notes. Viewing-activity POSTs were explicitly blocked during production testing, preserving points and history. The short production error/fatal scan returned no groups after one transient connector connection failure; no broader uptime claim is made.
+
+Final database fingerprints match the original snapshots, the public API still reports 995 eligible MCQs, and a final directory walk still finds exactly 269 source files. Full checksums and preparation idempotence were rechecked after hosting/deployment. No Git push. Local documentation was completed after release; all 244 application-source digests still match the submitted deployment manifest. The independent remote source-tree check was not run. No Git push is requested or performed.

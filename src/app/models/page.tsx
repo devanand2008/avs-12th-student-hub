@@ -373,6 +373,7 @@ export default function ModelsPage() {
                   <LabSimulation key={model.id} lesson={lesson} />
                 ) : active ? (
                   <ModelCanvas
+                    key={model.id}
                     model={model.id}
                     selected={part.id}
                     rotating={rotating}
@@ -411,11 +412,14 @@ export default function ModelsPage() {
                 )}
                 {active && !isDiagram && (
                   <div className="absolute bottom-5 left-5 right-5 z-10 flex flex-wrap items-center justify-between gap-2">
-                    <span className="flex items-center gap-2 rounded-full bg-white/90 px-3 py-2 text-xs text-slate-600">
-                      <MousePointer2 size={14} /> Drag · pinch/scroll · arrows /
-                      + / − / Home
+                    <span className="hidden items-center gap-2 rounded-full bg-white/90 px-3 py-2 text-xs text-slate-600 sm:flex">
+                      <MousePointer2 size={14} />
+                      <span className="sm:hidden">Drag · pinch to zoom</span>
+                      <span className="hidden sm:inline">
+                        Drag · pinch/scroll · arrows / + / − / Home
+                      </span>
                     </span>
-                    <div className="flex gap-2">
+                    <div className="ml-auto flex gap-2">
                       <button
                         className="model-control"
                         title={rotating ? "Pause rotation" : "Resume rotation"}
@@ -458,6 +462,12 @@ export default function ModelsPage() {
                 <p className="mt-3 text-sm leading-6 text-slate-500">
                   {model.description}
                 </p>
+                {!isDiagram && (
+                  <p className="mt-2 text-xs leading-5 text-slate-500 sm:hidden">
+                    Drag to rotate and pinch to zoom. Open View controls for
+                    camera presets and component focus.
+                  </p>
+                )}
                 {model.id === "vectors" && (
                   <div className="mt-4 rounded-xl border p-3 text-sm">
                     <label className="block font-semibold">

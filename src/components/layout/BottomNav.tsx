@@ -1,7 +1,7 @@
 "use client";
 
 import { BookOpen, CheckCircle2, Home, Sparkles, User } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/layout/IntentLink";
 import { usePathname } from "next/navigation";
 
 export default function BottomNav() {

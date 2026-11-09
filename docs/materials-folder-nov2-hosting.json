@@ -1,0 +1,185 @@
+{
+  "checkedAt": "2026-11-03T08:40:24.736Z",
+  "results": [
+    {
+      "file": "bio/bio/video/bot chap 1 video 4.mp4",
+      "sha256": "b049ed63af94b3e534041ccaf47e13c348a42bf77cb6ab32f4bd0f3dcd40b4c3",
+      "bytes": 49822065,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b049ed63af94b3e534041ccaf47e13c348a42bf77cb6ab32f4bd0f3dcd40b4c3.mp4",
+      "status": 206,
+      "digest": "sha256:b049ed63af94b3e534041ccaf47e13c348a42bf77cb6ab32f4bd0f3dcd40b4c3",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/botany chap 1 video 1.mp4",
+      "sha256": "730a3ef7e509af214d7aa1245d463187c766b4f122df443ba5e86bf4fd43470d",
+      "bytes": 41829273,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/730a3ef7e509af214d7aa1245d463187c766b4f122df443ba5e86bf4fd43470d.mp4",
+      "status": 206,
+      "digest": "sha256:730a3ef7e509af214d7aa1245d463187c766b4f122df443ba5e86bf4fd43470d",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/botany chap 1 video 3.mp4",
+      "sha256": "adc3e94fccd5ce6f40c9113be67fed17806e182358d08a22e76bc67ed330677a",
+      "bytes": 38693964,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/adc3e94fccd5ce6f40c9113be67fed17806e182358d08a22e76bc67ed330677a.mp4",
+      "status": 206,
+      "digest": "sha256:adc3e94fccd5ce6f40c9113be67fed17806e182358d08a22e76bc67ed330677a",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/botany chap 2 video 2.mp4",
+      "sha256": "3c1ff30a0f23b05af047848ca4ce5f57feb85f8d58e7cf4bbbd74c68503c0355",
+      "bytes": 45921563,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3c1ff30a0f23b05af047848ca4ce5f57feb85f8d58e7cf4bbbd74c68503c0355.mp4",
+      "status": 206,
+      "digest": "sha256:3c1ff30a0f23b05af047848ca4ce5f57feb85f8d58e7cf4bbbd74c68503c0355",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Chromosomal_Inheritance.mp4",
+      "sha256": "66a141b48a1fef12367a3cb6668dc836caeb59ecc54eff9588614d8230a86d90",
+      "bytes": 54327723,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/66a141b48a1fef12367a3cb6668dc836caeb59ecc54eff9588614d8230a86d90.mp4",
+      "status": 206,
+      "digest": "sha256:66a141b48a1fef12367a3cb6668dc836caeb59ecc54eff9588614d8230a86d90",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Classical_Genetics.mp4",
+      "sha256": "f904aeae846ffe5a5a4464b4187f3edd859c56ea4c21719583fe84ae8837796f",
+      "bytes": 53545508,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f904aeae846ffe5a5a4464b4187f3edd859c56ea4c21719583fe84ae8837796f.mp4",
+      "status": 206,
+      "digest": "sha256:f904aeae846ffe5a5a4464b4187f3edd859c56ea4c21719583fe84ae8837796f",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Class_12__Classical_Genetics.mp4",
+      "sha256": "71e84b2eb3e013d09355849ce050c13a38c669161f1cd65873f029ba233649e6",
+      "bytes": 56931931,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/71e84b2eb3e013d09355849ce050c13a38c669161f1cd65873f029ba233649e6.mp4",
+      "status": 206,
+      "digest": "sha256:71e84b2eb3e013d09355849ce050c13a38c669161f1cd65873f029ba233649e6",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/How_Test_Crosses_Map_DNA.mp4",
+      "sha256": "cf0f8fb7a892fc2295e26c8d440b2a930e1b32b2a6dd7e8785d1410c653f5d05",
+      "bytes": 53246168,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/cf0f8fb7a892fc2295e26c8d440b2a930e1b32b2a6dd7e8785d1410c653f5d05.mp4",
+      "status": 206,
+      "digest": "sha256:cf0f8fb7a892fc2295e26c8d440b2a930e1b32b2a6dd7e8785d1410c653f5d05",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Inheritance___Crossover.mp4",
+      "sha256": "b40ed5f904546e3295325c31c85461c94c6b656b6554c30e016f5b3a9f48e87e",
+      "bytes": 58434640,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b40ed5f904546e3295325c31c85461c94c6b656b6554c30e016f5b3a9f48e87e.mp4",
+      "status": 206,
+      "digest": "sha256:b40ed5f904546e3295325c31c85461c94c6b656b6554c30e016f5b3a9f48e87e",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Mapping_the_Invisible.mp4",
+      "sha256": "a93b352d4b5bc8fffc94615d261237c01fb111452fb3cf268f1e96c95cc0dae8",
+      "bytes": 55173993,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a93b352d4b5bc8fffc94615d261237c01fb111452fb3cf268f1e96c95cc0dae8.mp4",
+      "status": 206,
+      "digest": "sha256:a93b352d4b5bc8fffc94615d261237c01fb111452fb3cf268f1e96c95cc0dae8",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Post-Mendelian_Genetics.mp4",
+      "sha256": "7538ebfa14ce3f776b512a1cb8a0d1cad64711e258e822ca86d4df067aa0f4df",
+      "bytes": 53130426,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/7538ebfa14ce3f776b512a1cb8a0d1cad64711e258e822ca86d4df067aa0f4df.mp4",
+      "status": 206,
+      "digest": "sha256:7538ebfa14ce3f776b512a1cb8a0d1cad64711e258e822ca86d4df067aa0f4df",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/The_Invisible_Map.mp4",
+      "sha256": "08c18ba562e72cc319ab8edbeede5965f0ebda537cb4d1dd0ebb958744a7a7f2",
+      "bytes": 48456014,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/08c18ba562e72cc319ab8edbeede5965f0ebda537cb4d1dd0ebb958744a7a7f2.mp4",
+      "status": 206,
+      "digest": "sha256:08c18ba562e72cc319ab8edbeede5965f0ebda537cb4d1dd0ebb958744a7a7f2",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Biotech_Principles.mp4",
+      "sha256": "edd57c322fe79d1156c94a3e3b28dbdfc411df4c0c0d88feb7f38796065bdd65",
+      "bytes": 65506799,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/edd57c322fe79d1156c94a3e3b28dbdfc411df4c0c0d88feb7f38796065bdd65.mp4",
+      "status": 206,
+      "digest": "sha256:edd57c322fe79d1156c94a3e3b28dbdfc411df4c0c0d88feb7f38796065bdd65",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Biotech__Principles___Process.mp4",
+      "sha256": "f2c76ac846dbad71173e6aabf55d1a17f560231fc2b371381240fa643a025660",
+      "bytes": 39402581,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f2c76ac846dbad71173e6aabf55d1a17f560231fc2b371381240fa643a025660.mp4",
+      "status": 206,
+      "digest": "sha256:f2c76ac846dbad71173e6aabf55d1a17f560231fc2b371381240fa643a025660",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Blotting___Bioremediation.mp4",
+      "sha256": "cc49e178959ab48c3f216c408c5f02f649e1533258abf418992299a744dbfaab",
+      "bytes": 50235217,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/cc49e178959ab48c3f216c408c5f02f649e1533258abf418992299a744dbfaab.mp4",
+      "status": 206,
+      "digest": "sha256:cc49e178959ab48c3f216c408c5f02f649e1533258abf418992299a744dbfaab",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Methods_of_Gene_Transfer.mp4",
+      "sha256": "93ccdb30ef39f8068acbc148fd298dcab729544c45b645ecac38d81e42406555",
+      "bytes": 49039058,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/93ccdb30ef39f8068acbc148fd298dcab729544c45b645ecac38d81e42406555.mp4",
+      "status": 206,
+      "digest": "sha256:93ccdb30ef39f8068acbc148fd298dcab729544c45b645ecac38d81e42406555",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Plant_Tissue_Culture (1).mp4",
+      "sha256": "b085a280bf0a4765f9c75cf4045e57edc7bfb0f557b4f8038fd72b6ed8314090",
+      "bytes": 50188875,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b085a280bf0a4765f9c75cf4045e57edc7bfb0f557b4f8038fd72b6ed8314090.mp4",
+      "status": 206,
+      "digest": "sha256:b085a280bf0a4765f9c75cf4045e57edc7bfb0f557b4f8038fd72b6ed8314090",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Plant_Tissue_Culture (2).mp4",
+      "sha256": "b274165e9c2fceabceb04403db87569cbd57d205069cfa53868272e85e1394f5",
+      "bytes": 53723029,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b274165e9c2fceabceb04403db87569cbd57d205069cfa53868272e85e1394f5.mp4",
+      "status": 206,
+      "digest": "sha256:b274165e9c2fceabceb04403db87569cbd57d205069cfa53868272e85e1394f5",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Plant_Tissue_Culture.mp4",
+      "sha256": "66784e42884f95ddb0c6615f693f7e54d4aaef92c1a6e2afddb5bf167317e4a1",
+      "bytes": 41843209,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/66784e42884f95ddb0c6615f693f7e54d4aaef92c1a6e2afddb5bf167317e4a1.mp4",
+      "status": 206,
+      "digest": "sha256:66784e42884f95ddb0c6615f693f7e54d4aaef92c1a6e2afddb5bf167317e4a1",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Types_of_Tissue_Culture.mp4",
+      "sha256": "1701c74709922df0640f4d1e119ceef76fe6c65f99a6ebf7bf733a58b71e182a",
+      "bytes": 40255632,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1701c74709922df0640f4d1e119ceef76fe6c65f99a6ebf7bf733a58b71e182a.mp4",
+      "status": 206,
+      "digest": "sha256:1701c74709922df0640f4d1e119ceef76fe6c65f99a6ebf7bf733a58b71e182a",
+      "passed": true
+    }
+  ]
+}

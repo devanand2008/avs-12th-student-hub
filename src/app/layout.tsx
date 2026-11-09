@@ -6,12 +6,21 @@ import { PwaProvider } from "@/components/pwa/PwaContext";
 import PwaInstallBanner from "@/components/pwa/PwaInstallBanner";
 import PwaInstallModal from "@/components/pwa/PwaInstallModal";
 import type { Metadata, Viewport } from "next";
+import { SITE_URL, seoPages, SEO_KEYWORDS } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SkillUp | Handwritten Notes & One Mark Practice",
-  description:
-    "SkillUp Class 12 Learning Portal. Comprehensive handwritten notes, unit-wise one-mark MCQs, NotebookLM videos, and AI Study Assistant for 12th standard students.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "joshuaskillup | Skill Up Class 12",
+    template: "%s | joshuaskillup",
+  },
+  description: seoPages["/"].description,
+  // Public landing pages opt in explicitly; account/admin/session pages stay out of search.
+  robots: { index: false, follow: false },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -23,25 +32,13 @@ export const metadata: Metadata = {
       { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
       { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
     ],
-    apple: [
-      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
-    ],
+    apple: [{ url: "/icon-192.png", sizes: "192x192", type: "image/png" }],
   },
   other: {
     "mobile-web-app-capable": "yes",
     "application-name": "SkillUp",
   },
-  keywords: [
-    "SkillUp",
-    "12th standard",
-    "handwritten notes",
-    "one mark MCQ",
-    "Tamil Nadu state board",
-    "NotebookLM",
-    "AI study assistant",
-    "Salem",
-    "Dr. Joshua",
-  ],
+  keywords: SEO_KEYWORDS,
 };
 
 export const viewport: Viewport = {
@@ -64,7 +61,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
         <meta name="apple-mobile-web-app-title" content="SkillUp" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="application-name" content="SkillUp" />
@@ -102,4 +102,3 @@ export default function RootLayout({
     </html>
   );
 }
-

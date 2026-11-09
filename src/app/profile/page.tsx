@@ -1,5 +1,7 @@
 "use client";
 
+import { fetchCurrentSession } from "@/lib/current-session-client";
+
 import Sidebar from "@/components/layout/Sidebar";
 import {
   AlertCircle,
@@ -36,7 +38,7 @@ export default function ProfilePage() {
   const { isInstalled, isStandalone, promptInstall } = usePwa();
 
   useEffect(() => {
-    fetch("/api/auth/me")
+    fetchCurrentSession()
       .then((res) => res.json())
       .then((d) => {
         if (d.user) {

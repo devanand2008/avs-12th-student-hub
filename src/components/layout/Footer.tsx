@@ -1,5 +1,5 @@
 import { MapPin, ShieldCheck } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/layout/IntentLink";
 import BrandLogo from "@/components/layout/BrandLogo";
 import InstagramLink from "@/components/layout/InstagramLink";
 import JoshuaIntroduction from "@/components/layout/JoshuaIntroduction";

@@ -1,5 +1,7 @@
 "use client";
 
+import { fetchCurrentSession } from "@/lib/current-session-client";
+
 import Sidebar from "@/components/layout/Sidebar";
 import type { getStudentProgress } from "@/lib/db";
 import type { QuizSession, StreamType } from "@/types";
@@ -21,11 +23,11 @@ import {
   Video,
   Zap,
 } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/layout/IntentLink";
 import { useEffect, useState } from "react";
 import InstallButton from "@/components/pwa/InstallButton";
 import StudentReadySummary from "@/components/practice/StudentReadySummary";
-
+import PointsCard from "@/components/learning/PointsCard";
 
 interface DashboardData {
   user: {
@@ -45,7 +47,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     Promise.all([
-      fetch("/api/auth/me"),
+      fetchCurrentSession(),
       fetch("/api/performance"),
       fetch("/api/announcements"),
     ])
@@ -141,12 +143,12 @@ export default function DashboardPage() {
   const strokeDashoffset =
     circumference - (progressPercent / 100) * circumference;
 
-
   return (
     <div className="flex flex-1 bg-[#eff5ff]">
       <Sidebar />
 
       <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-7 min-w-0">
+        <PointsCard />
         {/* Top Header Strip with Greeting and Badges */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
@@ -181,7 +183,10 @@ export default function DashboardPage() {
             <Link
               href="/practice"
               className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-2xl text-white font-extrabold text-xs shadow-electric transition-all hover:scale-105 active:scale-95"
-              style={{ background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)" }}
+              style={{
+                background:
+                  "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
+              }}
             >
               <Zap size={15} />
               <span>Quick Test</span>
@@ -211,7 +216,9 @@ export default function DashboardPage() {
             </h2>
 
             <p className="text-xs sm:text-sm text-blue-100/90 leading-relaxed">
-              Explore handwritten faculty notes, watch NotebookLM audio podcasts, and take Book-In & Book-Out one-mark practice tests to lock in your board exam score.
+              Explore handwritten faculty notes, watch NotebookLM audio
+              podcasts, and take Book-In & Book-Out one-mark practice tests to
+              lock in your board exam score.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-3">
@@ -244,7 +251,10 @@ export default function DashboardPage() {
                 </span>
                 <div className="mt-2 text-2xl sm:text-3xl font-black text-slate-900">
                   {data.progress.chaptersCompleted}
-                  <span className="text-xs font-bold text-slate-400"> / 38</span>
+                  <span className="text-xs font-bold text-slate-400">
+                    {" "}
+                    / 38
+                  </span>
                 </div>
               </div>
               <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white flex items-center justify-center shadow-md shrink-0">
@@ -261,7 +271,8 @@ export default function DashboardPage() {
                 />
               </div>
               <span className="text-[10px] font-bold text-slate-400 mt-1.5 block">
-                {Math.round((data.progress.chaptersCompleted / 38) * 100)}% syllabus completed
+                {Math.round((data.progress.chaptersCompleted / 38) * 100)}%
+                syllabus completed
               </span>
             </div>
           </div>
@@ -313,7 +324,9 @@ export default function DashboardPage() {
                     : "bg-amber-50 text-amber-700 border border-amber-200"
                 }`}
               >
-                {data.progress.averageScore >= 70 ? "Board Ready" : "Practicing"}
+                {data.progress.averageScore >= 70
+                  ? "Board Ready"
+                  : "Practicing"}
               </span>
             </div>
           </div>
@@ -334,7 +347,10 @@ export default function DashboardPage() {
 
             {/* Circular Gauge */}
             <div className="relative w-16 h-16 shrink-0 flex items-center justify-center">
-              <svg className="w-16 h-16 transform -rotate-90" viewBox="0 0 90 90">
+              <svg
+                className="w-16 h-16 transform -rotate-90"
+                viewBox="0 0 90 90"
+              >
                 <circle
                   cx="45"
                   cy="45"
@@ -400,7 +416,8 @@ export default function DashboardPage() {
                   Official Class 12 SCERT Textbooks
                 </h3>
                 <p className="mt-0.5 text-xs text-slate-600">
-                  Read complete textbooks in Tamil and English medium, or download the PDFs for offline revision.
+                  Read complete textbooks in Tamil and English medium, or
+                  download the PDFs for offline revision.
                 </p>
               </div>
             </div>
@@ -581,7 +598,8 @@ export default function DashboardPage() {
                   className="mx-auto text-emerald-400 mb-2"
                 />
                 <p className="text-xs text-slate-600 font-medium">
-                  Great work! No weak chapters identified yet. Take more timed tests to benchmark your accuracy.
+                  Great work! No weak chapters identified yet. Take more timed
+                  tests to benchmark your accuracy.
                 </p>
               </div>
             ) : (
@@ -619,7 +637,9 @@ export default function DashboardPage() {
               <span>AVS Engineering College · Academic Helpline</span>
             </div>
             <p className="text-xs text-slate-600">
-              Guidance provided under <strong>Dr. Joshua</strong>, Vice Principal (+91 7200008770). Need syllabus help or additional study material?
+              Guidance provided under <strong>Dr. Joshua</strong>, Vice
+              Principal (+91 7200008770). Need syllabus help or additional study
+              material?
             </p>
           </div>
           <a

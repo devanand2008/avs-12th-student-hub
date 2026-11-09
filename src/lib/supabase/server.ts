@@ -33,7 +33,13 @@ export function backendMode(): "supabase" | "demo" | "unconfigured" {
   return process.env.ENABLE_DEMO_DATA === "true" ? "demo" : "unconfigured";
 }
 
-export function getSupabase(): SupabaseClient | null {
+// A server-only service client contains no user's session. Reuse its transport
+// configuration, while rotating it when credentials change (including test fixtures).
+let serviceClient:
+  { url: string; key: string; client: SupabaseClient } | undefined;
+export function getSupabase(options?: {
+  isolatedAuth?: boolean;
+}): SupabaseClient | null {
   if (typeof window !== "undefined")
     throw new Error("The Supabase server client cannot run in a browser.");
   if (backendMode() !== "supabase") return null;
@@ -41,17 +47,32 @@ export function getSupabase(): SupabaseClient | null {
     process.env.NEXT_PUBLIC_SUPABASE_URL)!.trim();
   const key = (process.env.SUPABASE_SECRET_KEY ||
     process.env.SUPABASE_SERVICE_ROLE_KEY)!.trim();
-  return createClient(url, key, {
+  if (
+    !options?.isolatedAuth &&
+    serviceClient?.url === url &&
+    serviceClient.key === key
+  )
+    return serviceClient.client;
+  const client = createClient(url, key, {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
       detectSessionInUrl: false,
     },
   });
+  if (!options?.isolatedAuth) serviceClient = { url, key, client };
+  return client;
 }
 
 export function requireSupabase(): SupabaseClient {
   const client = getSupabase();
+  if (!client) throw new BackendUnavailableError();
+  return client;
+}
+
+// OTP sign-in changes SDK auth state, so it must never use the shared data client.
+export function requireSupabaseAuth(): SupabaseClient {
+  const client = getSupabase({ isolatedAuth: true });
   if (!client) throw new BackendUnavailableError();
   return client;
 }

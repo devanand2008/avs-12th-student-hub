@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-11-04T10:28:25.528Z",
+  "results": [
+    {
+      "file": "bio/bio/video/Carbon_Capture___Biochar.mp4",
+      "sha256": "24b6aafcedb73b9075065421d7d42981df017570b721bba41d8f8c56f374ca3e",
+      "bytes": 47520324,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/24b6aafcedb73b9075065421d7d42981df017570b721bba41d8f8c56f374ca3e.mp4",
+      "status": 206,
+      "digest": "sha256:24b6aafcedb73b9075065421d7d42981df017570b721bba41d8f8c56f374ca3e",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ecological_Adaptations.mp4",
+      "sha256": "58e29b69e6f144c691aa040343afc6d1c41e4dcffa0e9bfd0e644cc24a1a32a9",
+      "bytes": 49704624,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/58e29b69e6f144c691aa040343afc6d1c41e4dcffa0e9bfd0e644cc24a1a32a9.mp4",
+      "status": 206,
+      "digest": "sha256:58e29b69e6f144c691aa040343afc6d1c41e4dcffa0e9bfd0e644cc24a1a32a9",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ecology__Edaphic_Factors.mp4",
+      "sha256": "f9dc6e6e446ce53415beb5d6b11d53d1cbfb1250d3378879254da214f3f48063",
+      "bytes": 41157360,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f9dc6e6e446ce53415beb5d6b11d53d1cbfb1250d3378879254da214f3f48063.mp4",
+      "status": 206,
+      "digest": "sha256:f9dc6e6e446ce53415beb5d6b11d53d1cbfb1250d3378879254da214f3f48063",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ecology__Epiphytes.mp4",
+      "sha256": "d1fa51fe2b3291f74f326e5b03510e355d176523874c6f3695b996738b4b6fea",
+      "bytes": 52959176,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d1fa51fe2b3291f74f326e5b03510e355d176523874c6f3695b996738b4b6fea.mp4",
+      "status": 206,
+      "digest": "sha256:d1fa51fe2b3291f74f326e5b03510e355d176523874c6f3695b996738b4b6fea",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ecosystem_Productivity.mp4",
+      "sha256": "01b8faabb95150a98cb1d4fe508cf188f75c2ef77c42d1542c98ecf241caa4ed",
+      "bytes": 58132251,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/01b8faabb95150a98cb1d4fe508cf188f75c2ef77c42d1542c98ecf241caa4ed.mp4",
+      "status": 206,
+      "digest": "sha256:01b8faabb95150a98cb1d4fe508cf188f75c2ef77c42d1542c98ecf241caa4ed",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ecosystem___Succession (1).mp4",
+      "sha256": "95dc5c71932103d4b8a32c59c5fbe883d5c54b9915156e4e07f6f387116d6865",
+      "bytes": 64917189,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/95dc5c71932103d4b8a32c59c5fbe883d5c54b9915156e4e07f6f387116d6865.mp4",
+      "status": 206,
+      "digest": "sha256:95dc5c71932103d4b8a32c59c5fbe883d5c54b9915156e4e07f6f387116d6865",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Ecosystem___Succession.mp4",
+      "sha256": "c90bbf43b1eb735a1033fbd90523adf443ec31f35cff641f545dc2ccc4ae83ad",
+      "bytes": 60142841,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c90bbf43b1eb735a1033fbd90523adf443ec31f35cff641f545dc2ccc4ae83ad.mp4",
+      "status": 206,
+      "digest": "sha256:c90bbf43b1eb735a1033fbd90523adf443ec31f35cff641f545dc2ccc4ae83ad",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Environmental_Issues.mp4",
+      "sha256": "0429f24c99f2c2aa635da85f9351e02380a39978747a3da2a3132d88503a51bd",
+      "bytes": 57851411,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/0429f24c99f2c2aa635da85f9351e02380a39978747a3da2a3132d88503a51bd.mp4",
+      "status": 206,
+      "digest": "sha256:0429f24c99f2c2aa635da85f9351e02380a39978747a3da2a3132d88503a51bd",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Lesson_7__Ecosystem.mp4",
+      "sha256": "45e7fa8dfbd63c1f8830b44526046749057e608350753d66fae94c06fd33b073",
+      "bytes": 40349990,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/45e7fa8dfbd63c1f8830b44526046749057e608350753d66fae94c06fd33b073.mp4",
+      "status": 206,
+      "digest": "sha256:45e7fa8dfbd63c1f8830b44526046749057e608350753d66fae94c06fd33b073",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Principles_of_Ecology.mp4",
+      "sha256": "3da4e5887a0f62e0473156501b1cfd752768115c58bcf6e6d6a62f0b0caefab6",
+      "bytes": 38463592,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3da4e5887a0f62e0473156501b1cfd752768115c58bcf6e6d6a62f0b0caefab6.mp4",
+      "status": 206,
+      "digest": "sha256:3da4e5887a0f62e0473156501b1cfd752768115c58bcf6e6d6a62f0b0caefab6",
+      "passed": true
+    },
+    {
+      "file": "bio/bio/video/Topographic_Factors.mp4",
+      "sha256": "d05c697945771e8089359a1ede7cb4cfd863738b016409d742ae95c9ae64c7eb",
+      "bytes": 50709696,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d05c697945771e8089359a1ede7cb4cfd863738b016409d742ae95c9ae64c7eb.mp4",
+      "status": 206,
+      "digest": "sha256:d05c697945771e8089359a1ede7cb4cfd863738b016409d742ae95c9ae64c7eb",
+      "passed": true
+    }
+  ]
+}

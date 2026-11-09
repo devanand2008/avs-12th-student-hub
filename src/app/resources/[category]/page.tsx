@@ -6,6 +6,14 @@ import {
   resourceMatches,
   resourceFilterChoices,
 } from "@/lib/study-resource-schema";
+import { publicMetadata, privateMetadata } from "@/lib/seo";
+
+export async function generateMetadata({params}:{params:Promise<{category:string}>}) {
+  const {category}=await params;
+  if(category==="all") return publicMetadata("/resources/all","Browse Class 12 Study Resources","Search Class 12 learning resources by subject, medium and source. Explore question papers, textbooks and video lessons with availability details.");
+  const definition=resourceCategories.find(c=>c.id===category);
+  return definition ? publicMetadata(`/resources/${category}`,`Class 12 ${definition.title}`,definition.description) : privateMetadata;
+}
 
 export default async function ResourceList({
   params,

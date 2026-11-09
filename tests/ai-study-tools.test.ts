@@ -12,12 +12,12 @@ import {
 } from "../src/lib/ai-study-tools";
 import chapters from "../src/lib/ai-study-chapters.json";
 test("tool registry validates identities, sources, actual curriculum IDs and separate AI/access classifications", () => {
-  assert.equal(aiStudyTools.length, 10);
+  assert.equal(aiStudyTools.length, 11);
   assert.equal(aiSubjects.length, 82);
   assert.equal(new Set(aiSubjects.map((s) => s.name)).size, 40);
   assert.equal(
     aiStudyTools.filter((t) => t.verification === "Source checked").length,
-    9,
+    11,
   );
   assert(chapters.every((c) => aiSubjects.some((s) => s.id === c.subjectId)));
   assert.equal(new Set(chapters.map((c) => c.id)).size, chapters.length);
@@ -28,6 +28,14 @@ test("tool registry validates identities, sources, actual curriculum IDs and sep
   );
   assert.equal(
     aiStudyTools.find((t) => t.id === "phet")!.type,
+    "Subject learning tool",
+  );
+  assert.equal(
+    aiStudyTools.find((t) => t.id === "copilot")!.account,
+    "Required",
+  );
+  assert.equal(
+    aiStudyTools.find((t) => t.id === "python-tutor")!.type,
     "Subject learning tool",
   );
   assert.throws(

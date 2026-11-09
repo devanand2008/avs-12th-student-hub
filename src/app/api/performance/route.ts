@@ -8,8 +8,10 @@ export async function GET() {
     return NextResponse.json({ error: "Please sign in." }, { status: 401 });
   const studentId = session.studentId || session.userId;
 
-  const progress = await getStudentProgress(studentId);
-  const history = await getStudentQuizHistory(studentId);
+  const [progress, history] = await Promise.all([
+    getStudentProgress(studentId),
+    getStudentQuizHistory(studentId),
+  ]);
 
   return NextResponse.json({
     progress,

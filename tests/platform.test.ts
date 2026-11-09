@@ -432,7 +432,7 @@ test("platform security and learning behaviour", async (t) => {
   await t.test(
     "models retain valid chapter links where mapped and have distinct named parts",
     async () => {
-      assert.equal(learningModels.length, 30);
+      assert.equal(learningModels.length, 39);
       for (const model of learningModels) {
         const subject =
           model.subject === "Computer Science"

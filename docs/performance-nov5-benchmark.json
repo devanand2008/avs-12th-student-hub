@@ -1,0 +1,6988 @@
+{
+  "scope": "Production HTTPS; three endpoint samples, one desktop/mobile page visit each. Mobile 4x CPU throttling, no network emulation. Viewing activity blocked. Final run executed alone after the intent-prefetch refinement. Intermediate variable/overlapping runs retained separately.",
+  "before": {
+    "checkedAt": "2026-11-05T15:10:20.928Z",
+    "label": "before",
+    "api": [
+      {
+        "url": "/api/auth/me",
+        "iteration": 0,
+        "ms": 4178,
+        "bytes": 398
+      },
+      {
+        "url": "/api/auth/me",
+        "iteration": 1,
+        "ms": 3160,
+        "bytes": 398
+      },
+      {
+        "url": "/api/auth/me",
+        "iteration": 2,
+        "ms": 3360,
+        "bytes": 398
+      },
+      {
+        "url": "/api/subjects",
+        "iteration": 0,
+        "ms": 2600,
+        "bytes": 33628
+      },
+      {
+        "url": "/api/subjects",
+        "iteration": 1,
+        "ms": 3067,
+        "bytes": 33628
+      },
+      {
+        "url": "/api/subjects",
+        "iteration": 2,
+        "ms": 2499,
+        "bytes": 33628
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "iteration": 0,
+        "ms": 2719,
+        "bytes": 368878
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "iteration": 1,
+        "ms": 2809,
+        "bytes": 368878
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "iteration": 2,
+        "ms": 2728,
+        "bytes": 368878
+      },
+      {
+        "url": "/api/videos",
+        "iteration": 0,
+        "ms": 3068,
+        "bytes": 257555
+      },
+      {
+        "url": "/api/videos",
+        "iteration": 1,
+        "ms": 2499,
+        "bytes": 257555
+      },
+      {
+        "url": "/api/videos",
+        "iteration": 2,
+        "ms": 3155,
+        "bytes": 257555
+      },
+      {
+        "url": "/api/performance",
+        "iteration": 0,
+        "ms": 4130,
+        "bytes": 181
+      },
+      {
+        "url": "/api/performance",
+        "iteration": 1,
+        "ms": 4540,
+        "bytes": 181
+      },
+      {
+        "url": "/api/performance",
+        "iteration": 2,
+        "ms": 3343,
+        "bytes": 181
+      }
+    ],
+    "pages": [
+      {
+        "device": "desktop",
+        "path": "/dashboard",
+        "usableMs": 10042,
+        "api": [
+          {
+            "path": "/api/announcements",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/performance",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 10180,
+          "longTasks": 4
+        },
+        "domNodes": 682,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 95
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 94
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 121
+          },
+          {
+            "path": "/_next/static/immutable/chunks/084gpph1a3e-2.js",
+            "bytes": 73469,
+            "ms": 160
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 126
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 137
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 160
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3rx1n16seqnz9.js",
+            "bytes": 10829,
+            "ms": 136
+          },
+          {
+            "path": "/_next/static/immutable/chunks/28-c5fejux7wu.js",
+            "bytes": 9904,
+            "ms": 157
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 160
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 161
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 115
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 3688,
+            "ms": 109
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 132
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 3651
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 2700
+          },
+          {
+            "path": "/api/performance",
+            "bytes": 141,
+            "ms": 5720
+          },
+          {
+            "path": "/api/announcements",
+            "bytes": 26,
+            "ms": 969
+          },
+          {
+            "path": "/",
+            "bytes": 174,
+            "ms": 348
+          },
+          {
+            "path": "/resources",
+            "bytes": 226,
+            "ms": 204
+          },
+          {
+            "path": "/subjects",
+            "bytes": 225,
+            "ms": 320
+          },
+          {
+            "path": "/notes",
+            "bytes": 222,
+            "ms": 81
+          },
+          {
+            "path": "/practice",
+            "bytes": 225,
+            "ms": 122
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 87
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 226,
+            "ms": 99
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 171,
+            "ms": 1613
+          },
+          {
+            "path": "/models",
+            "bytes": 223,
+            "ms": 297
+          },
+          {
+            "path": "/register",
+            "bytes": 225,
+            "ms": 83
+          },
+          {
+            "path": "/login",
+            "bytes": 222,
+            "ms": 80
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 226,
+            "ms": 89
+          },
+          {
+            "path": "/resources/guides",
+            "bytes": 275,
+            "ms": 324
+          },
+          {
+            "path": "/practice/collections",
+            "bytes": 279,
+            "ms": 79
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 234,
+            "ms": 79
+          },
+          {
+            "path": "/performance",
+            "bytes": 228,
+            "ms": 85
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 228,
+            "ms": 83
+          },
+          {
+            "path": "/bookmarks",
+            "bytes": 226,
+            "ms": 333
+          },
+          {
+            "path": "/",
+            "bytes": 3638,
+            "ms": 342
+          },
+          {
+            "path": "/",
+            "bytes": 11976,
+            "ms": 338
+          },
+          {
+            "path": "/resources",
+            "bytes": 4360,
+            "ms": 88
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3k10vnu43fso9.js",
+            "bytes": 2262,
+            "ms": 71
+          },
+          {
+            "path": "/subjects",
+            "bytes": 1487,
+            "ms": 71
+          },
+          {
+            "path": "/notes",
+            "bytes": 1491,
+            "ms": 82
+          },
+          {
+            "path": "/_next/static/immutable/chunks/447z4yxdozue9.js",
+            "bytes": 673,
+            "ms": 91
+          },
+          {
+            "path": "/practice",
+            "bytes": 1529,
+            "ms": 96
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+            "bytes": 5739,
+            "ms": 63
+          },
+          {
+            "path": "/videos",
+            "bytes": 1357,
+            "ms": 89
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+            "bytes": 5525,
+            "ms": 58
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 1499,
+            "ms": 86
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vch26adiqgni.js",
+            "bytes": 8806,
+            "ms": 76
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+            "bytes": 31822,
+            "ms": 79
+          },
+          {
+            "path": "/models",
+            "bytes": 1774,
+            "ms": 89
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2lgx80cwj_5rd.js",
+            "bytes": 8059,
+            "ms": 66
+          },
+          {
+            "path": "/register",
+            "bytes": 1486,
+            "ms": 91
+          },
+          {
+            "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+            "bytes": 3232,
+            "ms": 83
+          },
+          {
+            "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+            "bytes": 41910,
+            "ms": 84
+          },
+          {
+            "path": "/login",
+            "bytes": 1492,
+            "ms": 110
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2fbu8h1jb6j87.js",
+            "bytes": 4899,
+            "ms": 79
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2m60vt6_qhk8m.js",
+            "bytes": 20337,
+            "ms": 76
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 1498,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0x9xs0djjngu3.js",
+            "bytes": 6237,
+            "ms": 73
+          },
+          {
+            "path": "/resources/guides",
+            "bytes": 2128,
+            "ms": 347
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0b630ltgzxx_r.js",
+            "bytes": 4786,
+            "ms": 58
+          },
+          {
+            "path": "/practice/collections",
+            "bytes": 1500,
+            "ms": 322
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 1507,
+            "ms": 85
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3i_fc7eb5fx-m.js",
+            "bytes": 6382,
+            "ms": 72
+          },
+          {
+            "path": "/performance",
+            "bytes": 1486,
+            "ms": 81
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1vrrk9amv42d3.js",
+            "bytes": 5577,
+            "ms": 74
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 1357,
+            "ms": 85
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+            "bytes": 7953,
+            "ms": 79
+          },
+          {
+            "path": "/bookmarks",
+            "bytes": 1486,
+            "ms": 338
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0aeia2hkim6si.js",
+            "bytes": 4565,
+            "ms": 62
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3x4buh5nq_1ue.js",
+            "bytes": 5483,
+            "ms": 61
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 1387,
+            "ms": 329
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0bs9qwt7s3vl2.js",
+            "bytes": 4427,
+            "ms": 61
+          },
+          {
+            "path": "/search",
+            "bytes": 223,
+            "ms": 90
+          },
+          {
+            "path": "/profile",
+            "bytes": 224,
+            "ms": 236
+          },
+          {
+            "path": "/search",
+            "bytes": 1489,
+            "ms": 90
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2xs6_4ecz2szk.js",
+            "bytes": 4604,
+            "ms": 62
+          },
+          {
+            "path": "/profile",
+            "bytes": 1489,
+            "ms": 101
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03z4slas03djh.js",
+            "bytes": 5212,
+            "ms": 59
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "desktop",
+        "path": "/subjects",
+        "usableMs": 3060,
+        "api": [
+          {
+            "path": "/api/subjects",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 3328,
+          "longTasks": 3
+        },
+        "domNodes": 4756,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 117
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 78
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 83
+          },
+          {
+            "path": "/_next/static/immutable/chunks/084gpph1a3e-2.js",
+            "bytes": 73469,
+            "ms": 120
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 141
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 143
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 130
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3rx1n16seqnz9.js",
+            "bytes": 10829,
+            "ms": 205
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 128
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+            "bytes": 5739,
+            "ms": 139
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 99
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 3688,
+            "ms": 115
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 128
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 3023
+          },
+          {
+            "path": "/api/subjects",
+            "bytes": 6424,
+            "ms": 2068
+          },
+          {
+            "path": "/",
+            "bytes": 174,
+            "ms": 101
+          },
+          {
+            "path": "/resources",
+            "bytes": 226,
+            "ms": 104
+          },
+          {
+            "path": "/subjects",
+            "bytes": 225,
+            "ms": 95
+          },
+          {
+            "path": "/notes",
+            "bytes": 222,
+            "ms": 194
+          },
+          {
+            "path": "/practice",
+            "bytes": 225,
+            "ms": 110
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 103
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 226,
+            "ms": 97
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 171,
+            "ms": 323
+          },
+          {
+            "path": "/models",
+            "bytes": 223,
+            "ms": 88
+          },
+          {
+            "path": "/register",
+            "bytes": 225,
+            "ms": 78
+          },
+          {
+            "path": "/login",
+            "bytes": 222,
+            "ms": 88
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 226,
+            "ms": 87
+          },
+          {
+            "path": "/resources/guides",
+            "bytes": 275,
+            "ms": 91
+          },
+          {
+            "path": "/practice/collections",
+            "bytes": 279,
+            "ms": 87
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 234,
+            "ms": 82
+          },
+          {
+            "path": "/performance",
+            "bytes": 228,
+            "ms": 75
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 228,
+            "ms": 89
+          },
+          {
+            "path": "/bookmarks",
+            "bytes": 226,
+            "ms": 76
+          },
+          {
+            "path": "/",
+            "bytes": 3638,
+            "ms": 73
+          },
+          {
+            "path": "/",
+            "bytes": 11976,
+            "ms": 83
+          },
+          {
+            "path": "/resources",
+            "bytes": 4360,
+            "ms": 79
+          },
+          {
+            "path": "/subjects",
+            "bytes": 1487,
+            "ms": 67
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3k10vnu43fso9.js",
+            "bytes": 2262,
+            "ms": 64
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 64
+          },
+          {
+            "path": "/notes",
+            "bytes": 1491,
+            "ms": 230
+          },
+          {
+            "path": "/practice",
+            "bytes": 1529,
+            "ms": 89
+          },
+          {
+            "path": "/_next/static/immutable/chunks/447z4yxdozue9.js",
+            "bytes": 673,
+            "ms": 57
+          },
+          {
+            "path": "/videos",
+            "bytes": 1357,
+            "ms": 78
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 1499,
+            "ms": 110
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2lgx80cwj_5rd.js",
+            "bytes": 8059,
+            "ms": 59
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 1386,
+            "ms": 304
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vch26adiqgni.js",
+            "bytes": 8806,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+            "bytes": 31822,
+            "ms": 85
+          },
+          {
+            "path": "/models",
+            "bytes": 1774,
+            "ms": 86
+          },
+          {
+            "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+            "bytes": 3232,
+            "ms": 65
+          },
+          {
+            "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+            "bytes": 41910,
+            "ms": 69
+          },
+          {
+            "path": "/register",
+            "bytes": 1486,
+            "ms": 98
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2fbu8h1jb6j87.js",
+            "bytes": 4899,
+            "ms": 76
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2m60vt6_qhk8m.js",
+            "bytes": 20337,
+            "ms": 76
+          },
+          {
+            "path": "/login",
+            "bytes": 1492,
+            "ms": 85
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+            "bytes": 5525,
+            "ms": 58
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 1498,
+            "ms": 68
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0x9xs0djjngu3.js",
+            "bytes": 6237,
+            "ms": 62
+          },
+          {
+            "path": "/resources/guides",
+            "bytes": 2128,
+            "ms": 76
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0b630ltgzxx_r.js",
+            "bytes": 4786,
+            "ms": 63
+          },
+          {
+            "path": "/practice/collections",
+            "bytes": 1500,
+            "ms": 80
+          },
+          {
+            "path": "/_next/static/immutable/chunks/28-c5fejux7wu.js",
+            "bytes": 9904,
+            "ms": 69
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 1507,
+            "ms": 89
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0aeia2hkim6si.js",
+            "bytes": 4565,
+            "ms": 66
+          },
+          {
+            "path": "/performance",
+            "bytes": 1486,
+            "ms": 85
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3x4buh5nq_1ue.js",
+            "bytes": 5483,
+            "ms": 67
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 1357,
+            "ms": 93
+          },
+          {
+            "path": "/bookmarks",
+            "bytes": 1486,
+            "ms": 140
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3i_fc7eb5fx-m.js",
+            "bytes": 6382,
+            "ms": 68
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1vrrk9amv42d3.js",
+            "bytes": 5577,
+            "ms": 58
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+            "bytes": 7953,
+            "ms": 67
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0bs9qwt7s3vl2.js",
+            "bytes": 4427,
+            "ms": 78
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 1408,
+            "ms": 307
+          },
+          {
+            "path": "/search",
+            "bytes": 223,
+            "ms": 93
+          },
+          {
+            "path": "/profile",
+            "bytes": 224,
+            "ms": 93
+          },
+          {
+            "path": "/search",
+            "bytes": 1489,
+            "ms": 79
+          },
+          {
+            "path": "/profile",
+            "bytes": 1489,
+            "ms": 87
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2xs6_4ecz2szk.js",
+            "bytes": 4604,
+            "ms": 64
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03z4slas03djh.js",
+            "bytes": 5212,
+            "ms": 66
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "desktop",
+        "path": "/videos",
+        "usableMs": 8084,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/videos",
+            "status": 200
+          },
+          {
+            "path": "/api/activity",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 8512,
+          "longTasks": 4
+        },
+        "domNodes": 1960,
+        "cards": 205,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 182
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 240
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 236
+          },
+          {
+            "path": "/_next/static/immutable/chunks/084gpph1a3e-2.js",
+            "bytes": 73469,
+            "ms": 238
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 186
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 189
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 103
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3rx1n16seqnz9.js",
+            "bytes": 10829,
+            "ms": 238
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 239
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2lgx80cwj_5rd.js",
+            "bytes": 8059,
+            "ms": 197
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 106
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 3688,
+            "ms": 107
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 132
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 2122
+          },
+          {
+            "path": "/api/videos",
+            "bytes": 26940,
+            "ms": 5594
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 3722
+          },
+          {
+            "path": "/api/activity",
+            "bytes": 268,
+            "ms": 7115
+          },
+          {
+            "path": "/",
+            "bytes": 174,
+            "ms": 98
+          },
+          {
+            "path": "/resources",
+            "bytes": 226,
+            "ms": 178
+          },
+          {
+            "path": "/subjects",
+            "bytes": 225,
+            "ms": 90
+          },
+          {
+            "path": "/notes",
+            "bytes": 222,
+            "ms": 96
+          },
+          {
+            "path": "/practice",
+            "bytes": 225,
+            "ms": 133
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 75
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 226,
+            "ms": 90
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 171,
+            "ms": 333
+          },
+          {
+            "path": "/models",
+            "bytes": 223,
+            "ms": 110
+          },
+          {
+            "path": "/register",
+            "bytes": 225,
+            "ms": 114
+          },
+          {
+            "path": "/login",
+            "bytes": 222,
+            "ms": 93
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 226,
+            "ms": 102
+          },
+          {
+            "path": "/resources/guides",
+            "bytes": 275,
+            "ms": 100
+          },
+          {
+            "path": "/practice/collections",
+            "bytes": 279,
+            "ms": 96
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 234,
+            "ms": 72
+          },
+          {
+            "path": "/performance",
+            "bytes": 228,
+            "ms": 89
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 228,
+            "ms": 73
+          },
+          {
+            "path": "/bookmarks",
+            "bytes": 226,
+            "ms": 89
+          },
+          {
+            "path": "/",
+            "bytes": 3638,
+            "ms": 102
+          },
+          {
+            "path": "/",
+            "bytes": 11976,
+            "ms": 88
+          },
+          {
+            "path": "/resources",
+            "bytes": 4360,
+            "ms": 81
+          },
+          {
+            "path": "/subjects",
+            "bytes": 1487,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3k10vnu43fso9.js",
+            "bytes": 2262,
+            "ms": 79
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 76
+          },
+          {
+            "path": "/notes",
+            "bytes": 1491,
+            "ms": 95
+          },
+          {
+            "path": "/_next/static/immutable/chunks/447z4yxdozue9.js",
+            "bytes": 673,
+            "ms": 69
+          },
+          {
+            "path": "/practice",
+            "bytes": 1529,
+            "ms": 85
+          },
+          {
+            "path": "/videos",
+            "bytes": 1357,
+            "ms": 83
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+            "bytes": 5739,
+            "ms": 76
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 1499,
+            "ms": 98
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+            "bytes": 5525,
+            "ms": 63
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 1386,
+            "ms": 294
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vch26adiqgni.js",
+            "bytes": 8806,
+            "ms": 65
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+            "bytes": 31822,
+            "ms": 76
+          },
+          {
+            "path": "/models",
+            "bytes": 1774,
+            "ms": 82
+          },
+          {
+            "path": "/register",
+            "bytes": 1486,
+            "ms": 104
+          },
+          {
+            "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+            "bytes": 3232,
+            "ms": 69
+          },
+          {
+            "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+            "bytes": 41910,
+            "ms": 74
+          },
+          {
+            "path": "/login",
+            "bytes": 1492,
+            "ms": 91
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2fbu8h1jb6j87.js",
+            "bytes": 4899,
+            "ms": 66
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2m60vt6_qhk8m.js",
+            "bytes": 20337,
+            "ms": 67
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 1498,
+            "ms": 70
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0x9xs0djjngu3.js",
+            "bytes": 6237,
+            "ms": 66
+          },
+          {
+            "path": "/resources/guides",
+            "bytes": 2128,
+            "ms": 72
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0b630ltgzxx_r.js",
+            "bytes": 4786,
+            "ms": 78
+          },
+          {
+            "path": "/practice/collections",
+            "bytes": 1500,
+            "ms": 87
+          },
+          {
+            "path": "/_next/static/immutable/chunks/28-c5fejux7wu.js",
+            "bytes": 9904,
+            "ms": 75
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 1507,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0aeia2hkim6si.js",
+            "bytes": 4565,
+            "ms": 86
+          },
+          {
+            "path": "/performance",
+            "bytes": 1486,
+            "ms": 103
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3x4buh5nq_1ue.js",
+            "bytes": 5483,
+            "ms": 77
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 1357,
+            "ms": 107
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3i_fc7eb5fx-m.js",
+            "bytes": 6382,
+            "ms": 72
+          },
+          {
+            "path": "/bookmarks",
+            "bytes": 1486,
+            "ms": 101
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1vrrk9amv42d3.js",
+            "bytes": 5577,
+            "ms": 57
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0bs9qwt7s3vl2.js",
+            "bytes": 4427,
+            "ms": 80
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+            "bytes": 7953,
+            "ms": 237
+          },
+          {
+            "path": "/search",
+            "bytes": 223,
+            "ms": 109
+          },
+          {
+            "path": "/profile",
+            "bytes": 224,
+            "ms": 92
+          },
+          {
+            "path": "/profile",
+            "bytes": 1489,
+            "ms": 124
+          },
+          {
+            "path": "/search",
+            "bytes": 1489,
+            "ms": 197
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03z4slas03djh.js",
+            "bytes": 5212,
+            "ms": 62
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2xs6_4ecz2szk.js",
+            "bytes": 4604,
+            "ms": 96
+          },
+          {
+            "path": "/images/learning-materials/592b62cb96129c709fe23710270f49f3bb2c72d77b6397a59c19f3b27128c704.jpg",
+            "bytes": 55923,
+            "ms": 179
+          },
+          {
+            "path": "/images/learning-materials/6c14914368fc6e607652a26022b1bc29595241e0afd88af9a28284a113cb03fc.jpg",
+            "bytes": 73561,
+            "ms": 282
+          },
+          {
+            "path": "/images/learning-materials/f5b1763ce23178c5ca4af3cbeecb1c8ce1902828b5441652e985cfab4559a3f9.jpg",
+            "bytes": 62112,
+            "ms": 155
+          },
+          {
+            "path": "/images/learning-materials/b6af7efa7295f1712e9cdc0366f22d0320f643ee5a658ba6341d3e7952b9c494.jpg",
+            "bytes": 60328,
+            "ms": 251
+          },
+          {
+            "path": "/images/learning-materials/b3aae3baaf22c65f4b46e4dc0492e2f9a23acf0e0d2f4da1ea3ffa1b78adcd9d.jpg",
+            "bytes": 39642,
+            "ms": 192
+          },
+          {
+            "path": "/images/learning-materials/70a33fbdd58df0c57a12cd720c26aef2d4fab4d99313912b3bd748964b95ce52.jpg",
+            "bytes": 39659,
+            "ms": 225
+          },
+          {
+            "path": "/images/learning-materials/2503ddb9417427d5836489b685ed1f63904c68fc66f4123d3600be254db6b1dc.jpg",
+            "bytes": 61479,
+            "ms": 201
+          },
+          {
+            "path": "/images/learning-materials/2f23eb2378b2ca391eae1e8f3cc7e125160c837170a01f1d2ae5aee2ec716dac.jpg",
+            "bytes": 67855,
+            "ms": 214
+          },
+          {
+            "path": "/images/learning-materials/dfbd461dc72dc4c7240570320636478dfcf3bf4336e2c9ab0c1a6b9df8ade825.jpg",
+            "bytes": 65602,
+            "ms": 242
+          },
+          {
+            "path": "/images/learning-materials/43578656df953decc7f9bc4356951359c74af12515c39daa11e9141659bc2388.jpg",
+            "bytes": 47660,
+            "ms": 311
+          },
+          {
+            "path": "/images/learning-materials/eece13dfb5bd084b8461279e45fc31472b67ce663eddda4f7ab8331fed9cd5de.jpg",
+            "bytes": 49858,
+            "ms": 219
+          },
+          {
+            "path": "/images/learning-materials/92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa.jpg",
+            "bytes": 64829,
+            "ms": 311
+          },
+          {
+            "path": "/images/learning-materials/3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d.jpg",
+            "bytes": 58566,
+            "ms": 245
+          },
+          {
+            "path": "/images/learning-materials/2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35.jpg",
+            "bytes": 74144,
+            "ms": 276
+          },
+          {
+            "path": "/images/learning-materials/2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23.jpg",
+            "bytes": 55616,
+            "ms": 277
+          },
+          {
+            "path": "/images/learning-materials/c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa.jpg",
+            "bytes": 60734,
+            "ms": 396
+          },
+          {
+            "path": "/images/learning-materials/09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4.jpg",
+            "bytes": 46200,
+            "ms": 401
+          },
+          {
+            "path": "/images/learning-materials/e8021db4fd40a49eeeb944e5dbb234e6dd8a3bcd45de241a53f809de4ef59366.jpg",
+            "bytes": 63221,
+            "ms": 317
+          },
+          {
+            "path": "/images/learning-materials/2b67925499140ecc9637020313f6f6fd9f2ba7f2b6f0ddeb2105b50794dee0ee.jpg",
+            "bytes": 63556,
+            "ms": 314
+          },
+          {
+            "path": "/images/learning-materials/4b5cc334ff9f120c58a896682a5ef961de3bd2971703ee759330b9feca2986a6.jpg",
+            "bytes": 69642,
+            "ms": 329
+          },
+          {
+            "path": "/images/learning-materials/7ace60a241a70111196ad41832646e2ac48fa501e157856aab54faa6370dbbfc.jpg",
+            "bytes": 70393,
+            "ms": 382
+          },
+          {
+            "path": "/images/learning-materials/e104b028f209a1211160277a544cac414319d1854feff728d7921c4fe3078727.jpg",
+            "bytes": 58808,
+            "ms": 337
+          },
+          {
+            "path": "/images/learning-materials/0892092e11cc6bdf065f4112dc48037325f111813d592344f0f766f88b22390b.jpg",
+            "bytes": 64918,
+            "ms": 362
+          },
+          {
+            "path": "/images/learning-materials/bd9bf5166dc52b431f3efb1bd1f0ee0920422c3d6593254bf22c0f67b0733ba4.jpg",
+            "bytes": 65015,
+            "ms": 348
+          },
+          {
+            "path": "/images/learning-materials/a18fa3b96e4bf5bee548edb73c1f9d3dcd1dfb073f87e1464aed9f8d7669cae0.jpg",
+            "bytes": 61481,
+            "ms": 354
+          },
+          {
+            "path": "/images/learning-materials/1dd289f12474452aaf1cbefb5d281bcfdc57f36921cb04f847d92d536efdd143.jpg",
+            "bytes": 59509,
+            "ms": 387
+          },
+          {
+            "path": "/images/learning-materials/80647831f215339c9e0ab9b8ef2ba7d954b3eb5de28fb20b07933193b93be5c9.jpg",
+            "bytes": 65411,
+            "ms": 365
+          },
+          {
+            "path": "/images/learning-materials/a10ad1b250bfb4bb77000e415752f7ffc4b26d7ae55263cca7609a9e206f4bc0.jpg",
+            "bytes": 60225,
+            "ms": 453
+          },
+          {
+            "path": "/images/learning-materials/1f154790bde7f815f10b61d38baa16ca3b1110381a7d927d39e420f829547ce6.jpg",
+            "bytes": 67161,
+            "ms": 505
+          },
+          {
+            "path": "/images/learning-materials/48f9b079858c0a9aadb89a2676da191f84d05b02d5f5689ce4285f58e84d14c9.jpg",
+            "bytes": 56791,
+            "ms": 443
+          },
+          {
+            "path": "/images/learning-materials/b40fcd72912ed6b48ead0d521af2a8661761e91841f4cb765a8cb8b4f4033058.jpg",
+            "bytes": 60722,
+            "ms": 463
+          },
+          {
+            "path": "/images/learning-materials/6ab679447615112afebfb334685d89c1786b67c451c6d3f9e5f8602c6def5225.jpg",
+            "bytes": 50550,
+            "ms": 496
+          },
+          {
+            "path": "/images/learning-materials/4789a0fe9881ba3357820b8d5fd47fbf1e9700db4a4bc84c6ea267f9ab1aa545.jpg",
+            "bytes": 75494,
+            "ms": 519
+          },
+          {
+            "path": "/videos/watch/video-import-9f55bc7f4f814d95d203c9af",
+            "bytes": 236,
+            "ms": 393
+          },
+          {
+            "path": "/videos/watch/video-import-41219ba96c78be895bbf12bb",
+            "bytes": 236,
+            "ms": 394
+          },
+          {
+            "path": "/videos/watch/video-import-3d9d4e538190c4a532e85264",
+            "bytes": 234,
+            "ms": 448
+          },
+          {
+            "path": "/videos/watch/video-import-00422734593628ab6c07f00d",
+            "bytes": 236,
+            "ms": 446
+          },
+          {
+            "path": "/videos/watch/video-import-9f55bc7f4f814d95d203c9af",
+            "bytes": 1218,
+            "ms": 1124
+          },
+          {
+            "path": "/videos/watch/video-import-41219ba96c78be895bbf12bb",
+            "bytes": 1217,
+            "ms": 286
+          },
+          {
+            "path": "/videos/watch/video-import-00422734593628ab6c07f00d",
+            "bytes": 1221,
+            "ms": 1120
+          },
+          {
+            "path": "/videos/watch/video-import-3d9d4e538190c4a532e85264",
+            "bytes": 1217,
+            "ms": 304
+          },
+          {
+            "path": "/videos/watch/video-import-285984e65ebc133721732335",
+            "bytes": 1220,
+            "ms": 361
+          },
+          {
+            "path": "/videos/watch/video-import-98c8ef5fd9348c46e7dc9e21",
+            "bytes": 1217,
+            "ms": 299
+          },
+          {
+            "path": "/videos/watch/video-import-52b2d2854967a175b1289fd4",
+            "bytes": 1219,
+            "ms": 465
+          },
+          {
+            "path": "/videos/watch/video-import-d75c758318564e15be24003d",
+            "bytes": 1215,
+            "ms": 283
+          },
+          {
+            "path": "/videos/watch/video-import-4a172e5b1c2eb4865121019b",
+            "bytes": 1217,
+            "ms": 296
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "mobile",
+        "path": "/dashboard",
+        "usableMs": 5652,
+        "api": [
+          {
+            "path": "/api/announcements",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/performance",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 5988,
+          "longTasks": 8
+        },
+        "domNodes": 671,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 94
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/084gpph1a3e-2.js",
+            "bytes": 73469,
+            "ms": 134
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 144
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 137
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 136
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3rx1n16seqnz9.js",
+            "bytes": 10829,
+            "ms": 146
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 145
+          },
+          {
+            "path": "/_next/static/immutable/chunks/28-c5fejux7wu.js",
+            "bytes": 9904,
+            "ms": 146
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 147
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 129
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 96
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 4017
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 3647
+          },
+          {
+            "path": "/api/performance",
+            "bytes": 141,
+            "ms": 3659
+          },
+          {
+            "path": "/api/announcements",
+            "bytes": 26,
+            "ms": 1094
+          },
+          {
+            "path": "/",
+            "bytes": 174,
+            "ms": 113
+          },
+          {
+            "path": "/login",
+            "bytes": 222,
+            "ms": 117
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 226,
+            "ms": 111
+          },
+          {
+            "path": "/subjects",
+            "bytes": 225,
+            "ms": 111
+          },
+          {
+            "path": "/practice",
+            "bytes": 225,
+            "ms": 74
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 226,
+            "ms": 79
+          },
+          {
+            "path": "/profile",
+            "bytes": 224,
+            "ms": 90
+          },
+          {
+            "path": "/",
+            "bytes": 3638,
+            "ms": 74
+          },
+          {
+            "path": "/",
+            "bytes": 11976,
+            "ms": 83
+          },
+          {
+            "path": "/login",
+            "bytes": 1492,
+            "ms": 72
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 1498,
+            "ms": 102
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3k10vnu43fso9.js",
+            "bytes": 2262,
+            "ms": 87
+          },
+          {
+            "path": "/subjects",
+            "bytes": 1487,
+            "ms": 102
+          },
+          {
+            "path": "/practice",
+            "bytes": 1529,
+            "ms": 94
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0b630ltgzxx_r.js",
+            "bytes": 4786,
+            "ms": 73
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 1499,
+            "ms": 89
+          },
+          {
+            "path": "/profile",
+            "bytes": 1489,
+            "ms": 90
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+            "bytes": 5739,
+            "ms": 80
+          },
+          {
+            "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+            "bytes": 3232,
+            "ms": 104
+          },
+          {
+            "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+            "bytes": 41910,
+            "ms": 78
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vch26adiqgni.js",
+            "bytes": 8806,
+            "ms": 74
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+            "bytes": 31822,
+            "ms": 98
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03z4slas03djh.js",
+            "bytes": 5212,
+            "ms": 98
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 228,
+            "ms": 86
+          },
+          {
+            "path": "/notes",
+            "bytes": 222,
+            "ms": 136
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 1357,
+            "ms": 86
+          },
+          {
+            "path": "/notes",
+            "bytes": 1491,
+            "ms": 82
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+            "bytes": 7953,
+            "ms": 181
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+            "bytes": 5525,
+            "ms": 178
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "mobile",
+        "path": "/subjects",
+        "usableMs": 4192,
+        "api": [
+          {
+            "path": "/api/subjects",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 664,
+          "longTasks": 6
+        },
+        "domNodes": 4745,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 127
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 130
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 131
+          },
+          {
+            "path": "/_next/static/immutable/chunks/084gpph1a3e-2.js",
+            "bytes": 73469,
+            "ms": 150
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 123
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 74
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 139
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3rx1n16seqnz9.js",
+            "bytes": 10829,
+            "ms": 120
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 119
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+            "bytes": 5739,
+            "ms": 119
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 94
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 89
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 3667
+          },
+          {
+            "path": "/api/subjects",
+            "bytes": 6424,
+            "ms": 2579
+          },
+          {
+            "path": "/",
+            "bytes": 174,
+            "ms": 74
+          },
+          {
+            "path": "/login",
+            "bytes": 222,
+            "ms": 81
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 226,
+            "ms": 95
+          },
+          {
+            "path": "/subjects",
+            "bytes": 225,
+            "ms": 74
+          },
+          {
+            "path": "/practice",
+            "bytes": 225,
+            "ms": 82
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 226,
+            "ms": 106
+          },
+          {
+            "path": "/profile",
+            "bytes": 224,
+            "ms": 105
+          },
+          {
+            "path": "/notes",
+            "bytes": 222,
+            "ms": 92
+          },
+          {
+            "path": "/",
+            "bytes": 3638,
+            "ms": 88
+          },
+          {
+            "path": "/",
+            "bytes": 11976,
+            "ms": 87
+          },
+          {
+            "path": "/login",
+            "bytes": 1492,
+            "ms": 79
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 1498,
+            "ms": 103
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3k10vnu43fso9.js",
+            "bytes": 2262,
+            "ms": 74
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 98
+          },
+          {
+            "path": "/subjects",
+            "bytes": 1487,
+            "ms": 87
+          },
+          {
+            "path": "/practice",
+            "bytes": 1529,
+            "ms": 81
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0b630ltgzxx_r.js",
+            "bytes": 4786,
+            "ms": 65
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 1499,
+            "ms": 70
+          },
+          {
+            "path": "/_next/static/immutable/chunks/28-c5fejux7wu.js",
+            "bytes": 9904,
+            "ms": 63
+          },
+          {
+            "path": "/profile",
+            "bytes": 1489,
+            "ms": 82
+          },
+          {
+            "path": "/notes",
+            "bytes": 1491,
+            "ms": 75
+          },
+          {
+            "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+            "bytes": 3232,
+            "ms": 101
+          },
+          {
+            "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+            "bytes": 41910,
+            "ms": 73
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vch26adiqgni.js",
+            "bytes": 8806,
+            "ms": 99
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+            "bytes": 31822,
+            "ms": 84
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03z4slas03djh.js",
+            "bytes": 5212,
+            "ms": 74
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+            "bytes": 5525,
+            "ms": 82
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 198,
+            "ms": 389
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 81
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 87
+          },
+          {
+            "path": "/videos",
+            "bytes": 1357,
+            "ms": 91
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 1406,
+            "ms": 303
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2lgx80cwj_5rd.js",
+            "bytes": 8059,
+            "ms": 81
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 92
+          },
+          {
+            "path": "/textbooks",
+            "bytes": 171,
+            "ms": 307
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "mobile",
+        "path": "/videos",
+        "usableMs": 6140,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/videos",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/activity",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 7156,
+          "longTasks": 9
+        },
+        "domNodes": 1948,
+        "cards": 205,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 96
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 91
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 136
+          },
+          {
+            "path": "/_next/static/immutable/chunks/084gpph1a3e-2.js",
+            "bytes": 73469,
+            "ms": 135
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 125
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 100
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 122
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3rx1n16seqnz9.js",
+            "bytes": 10829,
+            "ms": 135
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 131
+          },
+          {
+            "path": "/_next/static/immutable/chunks/2lgx80cwj_5rd.js",
+            "bytes": 8059,
+            "ms": 88
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 117
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 137
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 3787
+          },
+          {
+            "path": "/api/videos",
+            "bytes": 26920,
+            "ms": 2630
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 1789
+          },
+          {
+            "path": "/api/activity",
+            "bytes": 268,
+            "ms": 4488
+          },
+          {
+            "path": "/",
+            "bytes": 174,
+            "ms": 92
+          },
+          {
+            "path": "/login",
+            "bytes": 222,
+            "ms": 83
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 226,
+            "ms": 81
+          },
+          {
+            "path": "/subjects",
+            "bytes": 225,
+            "ms": 81
+          },
+          {
+            "path": "/practice",
+            "bytes": 225,
+            "ms": 78
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 226,
+            "ms": 94
+          },
+          {
+            "path": "/profile",
+            "bytes": 224,
+            "ms": 80
+          },
+          {
+            "path": "/",
+            "bytes": 3638,
+            "ms": 76
+          },
+          {
+            "path": "/",
+            "bytes": 11976,
+            "ms": 82
+          },
+          {
+            "path": "/login",
+            "bytes": 1492,
+            "ms": 77
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3k10vnu43fso9.js",
+            "bytes": 2262,
+            "ms": 69
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 69
+          },
+          {
+            "path": "/dashboard",
+            "bytes": 1498,
+            "ms": 70
+          },
+          {
+            "path": "/subjects",
+            "bytes": 1487,
+            "ms": 81
+          },
+          {
+            "path": "/practice",
+            "bytes": 1529,
+            "ms": 75
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0b630ltgzxx_r.js",
+            "bytes": 4786,
+            "ms": 79
+          },
+          {
+            "path": "/ai-helper",
+            "bytes": 1499,
+            "ms": 82
+          },
+          {
+            "path": "/_next/static/immutable/chunks/28-c5fejux7wu.js",
+            "bytes": 9904,
+            "ms": 57
+          },
+          {
+            "path": "/profile",
+            "bytes": 1489,
+            "ms": 98
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+            "bytes": 5739,
+            "ms": 53
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vch26adiqgni.js",
+            "bytes": 8806,
+            "ms": 93
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+            "bytes": 31822,
+            "ms": 79
+          },
+          {
+            "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+            "bytes": 3232,
+            "ms": 80
+          },
+          {
+            "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+            "bytes": 41910,
+            "ms": 98
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03z4slas03djh.js",
+            "bytes": 5212,
+            "ms": 95
+          },
+          {
+            "path": "/images/learning-materials/592b62cb96129c709fe23710270f49f3bb2c72d77b6397a59c19f3b27128c704.jpg",
+            "bytes": 55923,
+            "ms": 334
+          },
+          {
+            "path": "/images/learning-materials/6c14914368fc6e607652a26022b1bc29595241e0afd88af9a28284a113cb03fc.jpg",
+            "bytes": 73561,
+            "ms": 405
+          },
+          {
+            "path": "/images/learning-materials/b6af7efa7295f1712e9cdc0366f22d0320f643ee5a658ba6341d3e7952b9c494.jpg",
+            "bytes": 60328,
+            "ms": 401
+          },
+          {
+            "path": "/images/learning-materials/f5b1763ce23178c5ca4af3cbeecb1c8ce1902828b5441652e985cfab4559a3f9.jpg",
+            "bytes": 62112,
+            "ms": 335
+          },
+          {
+            "path": "/images/learning-materials/b3aae3baaf22c65f4b46e4dc0492e2f9a23acf0e0d2f4da1ea3ffa1b78adcd9d.jpg",
+            "bytes": 39642,
+            "ms": 330
+          },
+          {
+            "path": "/images/learning-materials/70a33fbdd58df0c57a12cd720c26aef2d4fab4d99313912b3bd748964b95ce52.jpg",
+            "bytes": 39659,
+            "ms": 183
+          },
+          {
+            "path": "/images/learning-materials/2f23eb2378b2ca391eae1e8f3cc7e125160c837170a01f1d2ae5aee2ec716dac.jpg",
+            "bytes": 67855,
+            "ms": 373
+          },
+          {
+            "path": "/images/learning-materials/2503ddb9417427d5836489b685ed1f63904c68fc66f4123d3600be254db6b1dc.jpg",
+            "bytes": 61479,
+            "ms": 266
+          },
+          {
+            "path": "/images/learning-materials/dfbd461dc72dc4c7240570320636478dfcf3bf4336e2c9ab0c1a6b9df8ade825.jpg",
+            "bytes": 65602,
+            "ms": 328
+          },
+          {
+            "path": "/images/learning-materials/43578656df953decc7f9bc4356951359c74af12515c39daa11e9141659bc2388.jpg",
+            "bytes": 47660,
+            "ms": 184
+          },
+          {
+            "path": "/images/learning-materials/eece13dfb5bd084b8461279e45fc31472b67ce663eddda4f7ab8331fed9cd5de.jpg",
+            "bytes": 49858,
+            "ms": 374
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 399
+          },
+          {
+            "path": "/videos/watch/video-import-9f55bc7f4f814d95d203c9af",
+            "bytes": 236,
+            "ms": 432
+          },
+          {
+            "path": "/videos/watch/video-import-41219ba96c78be895bbf12bb",
+            "bytes": 236,
+            "ms": 476
+          },
+          {
+            "path": "/videos",
+            "bytes": 1357,
+            "ms": 92
+          },
+          {
+            "path": "/videos/watch/video-import-9f55bc7f4f814d95d203c9af",
+            "bytes": 1220,
+            "ms": 322
+          },
+          {
+            "path": "/videos/watch/video-import-41219ba96c78be895bbf12bb",
+            "bytes": 1218,
+            "ms": 322
+          }
+        ],
+        "overflow": false
+      }
+    ]
+  },
+  "after": {
+    "checkedAt": "2026-11-05T16:16:15.160Z",
+    "label": "after",
+    "api": [
+      {
+        "url": "/api/auth/me",
+        "iteration": 0,
+        "ms": 615,
+        "bytes": 398,
+        "regionHeader": "bom1::syd1::62vc5-1793895379727-e13ab1bbe5b0"
+      },
+      {
+        "url": "/api/auth/me",
+        "iteration": 1,
+        "ms": 376,
+        "bytes": 398,
+        "regionHeader": "bom1::syd1::rxdg8-1793895380342-e3f8ed819665"
+      },
+      {
+        "url": "/api/auth/me",
+        "iteration": 2,
+        "ms": 598,
+        "bytes": 398,
+        "regionHeader": "bom1::syd1::867b7-1793895380717-9a7c46e0f5ff"
+      },
+      {
+        "url": "/api/subjects",
+        "iteration": 0,
+        "ms": 737,
+        "bytes": 33628,
+        "regionHeader": "bom1::syd1::867b7-1793895381312-3df6bef83ab3"
+      },
+      {
+        "url": "/api/subjects",
+        "iteration": 1,
+        "ms": 490,
+        "bytes": 33628,
+        "regionHeader": "bom1::syd1::867b7-1793895382062-a2c7a7d83fa6"
+      },
+      {
+        "url": "/api/subjects",
+        "iteration": 2,
+        "ms": 631,
+        "bytes": 33628,
+        "regionHeader": "bom1::syd1::rnl9m-1793895382547-51dc87f02d41"
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "iteration": 0,
+        "ms": 905,
+        "bytes": 368878,
+        "regionHeader": "bom1::syd1::zl5k2-1793895383194-1b71e9a6095f"
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "iteration": 1,
+        "ms": 700,
+        "bytes": 368878,
+        "regionHeader": "bom1::syd1::zl5k2-1793895384093-936738d8a858"
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "iteration": 2,
+        "ms": 859,
+        "bytes": 368878,
+        "regionHeader": "bom1::syd1::vjd5n-1793895384787-99dce39a6180"
+      },
+      {
+        "url": "/api/videos",
+        "iteration": 0,
+        "ms": 785,
+        "bytes": 257555,
+        "regionHeader": "bom1::syd1::w6ch2-1793895385642-77f5a639c2dd"
+      },
+      {
+        "url": "/api/videos",
+        "iteration": 1,
+        "ms": 748,
+        "bytes": 257555,
+        "regionHeader": "bom1::syd1::6wn7c-1793895386427-389c0abf4911"
+      },
+      {
+        "url": "/api/videos",
+        "iteration": 2,
+        "ms": 804,
+        "bytes": 257555,
+        "regionHeader": "bom1::syd1::6wn7c-1793895387172-9ac993575212"
+      },
+      {
+        "url": "/api/performance",
+        "iteration": 0,
+        "ms": 700,
+        "bytes": 181,
+        "regionHeader": "bom1::syd1::vjd5n-1793895388002-8969e0f60faf"
+      },
+      {
+        "url": "/api/performance",
+        "iteration": 1,
+        "ms": 589,
+        "bytes": 181,
+        "regionHeader": "bom1::syd1::84jzq-1793895388677-d33109a0017e"
+      },
+      {
+        "url": "/api/performance",
+        "iteration": 2,
+        "ms": 571,
+        "bytes": 181,
+        "regionHeader": "bom1::syd1::w6ch2-1793895389267-ac7a5dac883d"
+      }
+    ],
+    "pages": [
+      {
+        "device": "desktop",
+        "path": "/dashboard",
+        "usableMs": 3382,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/performance",
+            "status": 200
+          },
+          {
+            "path": "/api/announcements",
+            "status": 200
+          },
+          {
+            "path": "/api/engagement",
+            "status": 200
+          },
+          {
+            "path": "/api/textbook-practice",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 3516,
+          "longTasks": 4
+        },
+        "domNodes": 704,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 115
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 116
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 161
+          },
+          {
+            "path": "/_next/static/immutable/chunks/21xcgo9rerj0m.js",
+            "bytes": 73469,
+            "ms": 416
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 183
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 127
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 162
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0jg-nmll4ur0p.js",
+            "bytes": 11266,
+            "ms": 419
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 158
+          },
+          {
+            "path": "/_next/static/immutable/chunks/02xedpr_1udu3.js",
+            "bytes": 9883,
+            "ms": 362
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 162
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 101
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 3688,
+            "ms": 100
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 119
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 351
+          },
+          {
+            "path": "/api/performance",
+            "bytes": 141,
+            "ms": 956
+          },
+          {
+            "path": "/api/announcements",
+            "bytes": 26,
+            "ms": 1765
+          },
+          {
+            "path": "/api/engagement",
+            "bytes": 380,
+            "ms": 678
+          },
+          {
+            "path": "/api/textbook-practice",
+            "bytes": 19094,
+            "ms": 2229
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 228,
+            "ms": 638
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 234,
+            "ms": 639
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 3573,
+            "ms": 657
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 1360,
+            "ms": 656
+          },
+          {
+            "path": "/textbook-practice",
+            "bytes": 1505,
+            "ms": 653
+          },
+          {
+            "path": "/_next/static/immutable/chunks/41aeo47iz53wh.js",
+            "bytes": 7950,
+            "ms": 352
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1yfaa05pta2-1.js",
+            "bytes": 6391,
+            "ms": 339
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "desktop",
+        "path": "/subjects",
+        "usableMs": 1739,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/subjects",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 2016,
+          "longTasks": 4
+        },
+        "domNodes": 4734,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 111
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 88
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 94
+          },
+          {
+            "path": "/_next/static/immutable/chunks/21xcgo9rerj0m.js",
+            "bytes": 73469,
+            "ms": 138
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 165
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 144
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 142
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0jg-nmll4ur0p.js",
+            "bytes": 11266,
+            "ms": 147
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 172
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03bn19mmc9t_w.js",
+            "bytes": 5748,
+            "ms": 354
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 122
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 3688,
+            "ms": 107
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 121
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 362
+          },
+          {
+            "path": "/api/subjects",
+            "bytes": 6424,
+            "ms": 563
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "desktop",
+        "path": "/videos",
+        "usableMs": 2945,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/activity",
+            "status": 200
+          },
+          {
+            "path": "/api/videos",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 3408,
+          "longTasks": 3
+        },
+        "domNodes": 583,
+        "cards": 24,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 182
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 183
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 286
+          },
+          {
+            "path": "/_next/static/immutable/chunks/21xcgo9rerj0m.js",
+            "bytes": 73469,
+            "ms": 384
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 318
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 278
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 284
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0jg-nmll4ur0p.js",
+            "bytes": 11266,
+            "ms": 321
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 282
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0kl5076y4m0d2.js",
+            "bytes": 8302,
+            "ms": 386
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 261
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 3688,
+            "ms": 100
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 100
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 485
+          },
+          {
+            "path": "/api/videos",
+            "bytes": 26920,
+            "ms": 1708
+          },
+          {
+            "path": "/api/activity",
+            "bytes": 268,
+            "ms": 586
+          },
+          {
+            "path": "/images/learning-materials/d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e.jpg",
+            "bytes": 69535,
+            "ms": 350
+          },
+          {
+            "path": "/images/learning-materials/d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778.jpg",
+            "bytes": 71355,
+            "ms": 455
+          },
+          {
+            "path": "/images/learning-materials/0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8.jpg",
+            "bytes": 81719,
+            "ms": 512
+          },
+          {
+            "path": "/images/learning-materials/ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186.jpg",
+            "bytes": 70037,
+            "ms": 411
+          },
+          {
+            "path": "/images/learning-materials/1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495.jpg",
+            "bytes": 89098,
+            "ms": 434
+          },
+          {
+            "path": "/images/learning-materials/441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489.jpg",
+            "bytes": 71373,
+            "ms": 700
+          },
+          {
+            "path": "/images/learning-materials/0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8.jpg",
+            "bytes": 65343,
+            "ms": 820
+          },
+          {
+            "path": "/images/learning-materials/1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a.jpg",
+            "bytes": 73714,
+            "ms": 376
+          },
+          {
+            "path": "/images/learning-materials/e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6.jpg",
+            "bytes": 65166,
+            "ms": 477
+          },
+          {
+            "path": "/images/learning-materials/c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456.jpg",
+            "bytes": 63549,
+            "ms": 666
+          },
+          {
+            "path": "/images/learning-materials/0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd.jpg",
+            "bytes": 56486,
+            "ms": 578
+          },
+          {
+            "path": "/images/learning-materials/563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b.jpg",
+            "bytes": 58236,
+            "ms": 604
+          },
+          {
+            "path": "/images/learning-materials/c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694.jpg",
+            "bytes": 57264,
+            "ms": 539
+          },
+          {
+            "path": "/images/learning-materials/d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610.jpg",
+            "bytes": 63582,
+            "ms": 824
+          },
+          {
+            "path": "/images/learning-materials/c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe.jpg",
+            "bytes": 75202,
+            "ms": 567
+          },
+          {
+            "path": "/images/learning-materials/d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961.jpg",
+            "bytes": 54158,
+            "ms": 780
+          },
+          {
+            "path": "/images/learning-materials/5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404.jpg",
+            "bytes": 48806,
+            "ms": 712
+          },
+          {
+            "path": "/images/learning-materials/4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf.jpg",
+            "bytes": 56592,
+            "ms": 720
+          },
+          {
+            "path": "/images/learning-materials/f93519fa326eedca0f2a05df503add9dbda392c2c6aaabf7a9e5ef643f38d9ab.jpg",
+            "bytes": 64593,
+            "ms": 514
+          },
+          {
+            "path": "/images/learning-materials/e37863f2a78fb70c0892e75b367b1c8d7d0973ec48847cb77ecc69a8dcd90de1.jpg",
+            "bytes": 62267,
+            "ms": 757
+          },
+          {
+            "path": "/images/learning-materials/8c602caa228d739acea2d15cdfed93e9faf1fc4f320b445b5d8a4a5d5d684c1d.jpg",
+            "bytes": 72493,
+            "ms": 627
+          },
+          {
+            "path": "/images/learning-materials/6ff20fd273677e81e48e608c92e3578ac620f9e204ded481eb8d2dc4718be66c.jpg",
+            "bytes": 84163,
+            "ms": 653
+          },
+          {
+            "path": "/images/learning-materials/6022426528ef4ede02410fbe165565092e285d6def744717ac89adc833f3d7ab.jpg",
+            "bytes": 68597,
+            "ms": 789
+          },
+          {
+            "path": "/images/learning-materials/8a512eb431782187ddd6e8d4f0daddd00a8a52872188a633127020a3f37f145c.jpg",
+            "bytes": 50892,
+            "ms": 757
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 819
+          },
+          {
+            "path": "/videos",
+            "bytes": 3573,
+            "ms": 489
+          },
+          {
+            "path": "/videos",
+            "bytes": 1358,
+            "ms": 852
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "mobile",
+        "path": "/dashboard",
+        "usableMs": 2370,
+        "api": [
+          {
+            "path": "/api/announcements",
+            "status": 200
+          },
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/performance",
+            "status": 200
+          },
+          {
+            "path": "/api/engagement",
+            "status": 200
+          },
+          {
+            "path": "/api/textbook-practice",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 2752,
+          "longTasks": 8
+        },
+        "domNodes": 703,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 136
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 98
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 75
+          },
+          {
+            "path": "/_next/static/immutable/chunks/21xcgo9rerj0m.js",
+            "bytes": 73469,
+            "ms": 114
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 123
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 128
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 139
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0jg-nmll4ur0p.js",
+            "bytes": 11266,
+            "ms": 138
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 138
+          },
+          {
+            "path": "/_next/static/immutable/chunks/02xedpr_1udu3.js",
+            "bytes": 9883,
+            "ms": 136
+          },
+          {
+            "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+            "bytes": 8611,
+            "ms": 136
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 106
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 119
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 456
+          },
+          {
+            "path": "/api/performance",
+            "bytes": 141,
+            "ms": 643
+          },
+          {
+            "path": "/api/announcements",
+            "bytes": 26,
+            "ms": 422
+          },
+          {
+            "path": "/api/engagement",
+            "bytes": 379,
+            "ms": 575
+          },
+          {
+            "path": "/api/textbook-practice",
+            "bytes": 19100,
+            "ms": 840
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 228,
+            "ms": 94
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 3573,
+            "ms": 109
+          },
+          {
+            "path": "/leaderboard",
+            "bytes": 1360,
+            "ms": 106
+          },
+          {
+            "path": "/_next/static/immutable/chunks/41aeo47iz53wh.js",
+            "bytes": 7950,
+            "ms": 77
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "mobile",
+        "path": "/subjects",
+        "usableMs": 2235,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/subjects",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 772,
+          "longTasks": 7
+        },
+        "domNodes": 4734,
+        "cards": 0,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 109
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 68
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 110
+          },
+          {
+            "path": "/_next/static/immutable/chunks/21xcgo9rerj0m.js",
+            "bytes": 73469,
+            "ms": 139
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 104
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 115
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 104
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0jg-nmll4ur0p.js",
+            "bytes": 11266,
+            "ms": 104
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 121
+          },
+          {
+            "path": "/_next/static/immutable/chunks/03bn19mmc9t_w.js",
+            "bytes": 5748,
+            "ms": 104
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 100
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 96
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 561
+          },
+          {
+            "path": "/api/subjects",
+            "bytes": 6424,
+            "ms": 625
+          }
+        ],
+        "overflow": false
+      },
+      {
+        "device": "mobile",
+        "path": "/videos",
+        "usableMs": 2435,
+        "api": [
+          {
+            "path": "/api/auth/me",
+            "status": 200
+          },
+          {
+            "path": "/api/videos",
+            "status": 200
+          },
+          {
+            "path": "/api/activity",
+            "status": 200
+          }
+        ],
+        "errors": [],
+        "timings": {
+          "lcp": 3040,
+          "longTasks": 6
+        },
+        "domNodes": 583,
+        "cards": 24,
+        "resources": [
+          {
+            "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+            "bytes": 27043,
+            "ms": 155
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+            "bytes": 2129,
+            "ms": 92
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+            "bytes": 7957,
+            "ms": 103
+          },
+          {
+            "path": "/_next/static/immutable/chunks/21xcgo9rerj0m.js",
+            "bytes": 73469,
+            "ms": 168
+          },
+          {
+            "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+            "bytes": 47259,
+            "ms": 140
+          },
+          {
+            "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+            "bytes": 4130,
+            "ms": 93
+          },
+          {
+            "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+            "bytes": 3652,
+            "ms": 123
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0jg-nmll4ur0p.js",
+            "bytes": 11266,
+            "ms": 139
+          },
+          {
+            "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+            "bytes": 10195,
+            "ms": 93
+          },
+          {
+            "path": "/_next/static/immutable/chunks/0kl5076y4m0d2.js",
+            "bytes": 8302,
+            "ms": 136
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 1844,
+            "ms": 123
+          },
+          {
+            "path": "/_next/image",
+            "bytes": 5654,
+            "ms": 122
+          },
+          {
+            "path": "/api/auth/me",
+            "bytes": 275,
+            "ms": 563
+          },
+          {
+            "path": "/api/videos",
+            "bytes": 26920,
+            "ms": 876
+          },
+          {
+            "path": "/api/activity",
+            "bytes": 268,
+            "ms": 695
+          },
+          {
+            "path": "/images/learning-materials/d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e.jpg",
+            "bytes": 69535,
+            "ms": 279
+          },
+          {
+            "path": "/images/learning-materials/d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778.jpg",
+            "bytes": 71355,
+            "ms": 151
+          },
+          {
+            "path": "/images/learning-materials/0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8.jpg",
+            "bytes": 81719,
+            "ms": 282
+          },
+          {
+            "path": "/images/learning-materials/ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186.jpg",
+            "bytes": 70037,
+            "ms": 154
+          },
+          {
+            "path": "/images/learning-materials/1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495.jpg",
+            "bytes": 89098,
+            "ms": 243
+          },
+          {
+            "path": "/images/learning-materials/441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489.jpg",
+            "bytes": 71373,
+            "ms": 124
+          },
+          {
+            "path": "/images/learning-materials/0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8.jpg",
+            "bytes": 65343,
+            "ms": 213
+          },
+          {
+            "path": "/images/learning-materials/1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a.jpg",
+            "bytes": 73714,
+            "ms": 213
+          },
+          {
+            "path": "/images/learning-materials/c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456.jpg",
+            "bytes": 63549,
+            "ms": 188
+          },
+          {
+            "path": "/images/learning-materials/e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6.jpg",
+            "bytes": 65166,
+            "ms": 240
+          },
+          {
+            "path": "/images/learning-materials/563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b.jpg",
+            "bytes": 58236,
+            "ms": 186
+          },
+          {
+            "path": "/images/learning-materials/0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd.jpg",
+            "bytes": 56486,
+            "ms": 216
+          },
+          {
+            "path": "/videos",
+            "bytes": 223,
+            "ms": 208
+          },
+          {
+            "path": "/videos",
+            "bytes": 3573,
+            "ms": 82
+          },
+          {
+            "path": "/videos",
+            "bytes": 1358,
+            "ms": 80
+          }
+        ],
+        "overflow": false
+      }
+    ]
+  },
+  "intermediateRuns": [
+    {
+      "scope": "Initial Sydney release, concurrent functional browser work; not used as the final controlled comparison",
+      "checkedAt": "2026-11-05T15:42:19.144Z",
+      "label": "after",
+      "api": [
+        {
+          "url": "/api/auth/me",
+          "iteration": 0,
+          "ms": 407,
+          "bytes": 398,
+          "regionHeader": "bom1::syd1::zl5k2-1793893340622-1fbab99cf518"
+        },
+        {
+          "url": "/api/auth/me",
+          "iteration": 1,
+          "ms": 349,
+          "bytes": 398,
+          "regionHeader": "bom1::syd1::hln6s-1793893341027-4da10f84c106"
+        },
+        {
+          "url": "/api/auth/me",
+          "iteration": 2,
+          "ms": 359,
+          "bytes": 398,
+          "regionHeader": "bom1::syd1::ssvlh-1793893341382-d541d60dee56"
+        },
+        {
+          "url": "/api/subjects",
+          "iteration": 0,
+          "ms": 707,
+          "bytes": 33628,
+          "regionHeader": "bom1::syd1::h8rp2-1793893341732-39f09a569431"
+        },
+        {
+          "url": "/api/subjects",
+          "iteration": 1,
+          "ms": 497,
+          "bytes": 33628,
+          "regionHeader": "bom1::syd1::h8rp2-1793893342447-934f850dafe5"
+        },
+        {
+          "url": "/api/subjects",
+          "iteration": 2,
+          "ms": 441,
+          "bytes": 33628,
+          "regionHeader": "bom1::syd1::ftmkd-1793893342937-8ea58547fa16"
+        },
+        {
+          "url": "/api/subjects?library=all",
+          "iteration": 0,
+          "ms": 641,
+          "bytes": 368878,
+          "regionHeader": "bom1::syd1::zl5k2-1793893343392-0068365b7634"
+        },
+        {
+          "url": "/api/subjects?library=all",
+          "iteration": 1,
+          "ms": 750,
+          "bytes": 368878,
+          "regionHeader": "bom1::syd1::9nh5f-1793893344083-146d845ce55c"
+        },
+        {
+          "url": "/api/subjects?library=all",
+          "iteration": 2,
+          "ms": 810,
+          "bytes": 368878,
+          "regionHeader": "bom1::syd1::9nh5f-1793893344790-5ca27e963c48"
+        },
+        {
+          "url": "/api/videos",
+          "iteration": 0,
+          "ms": 694,
+          "bytes": 257555,
+          "regionHeader": "bom1::syd1::zl5k2-1793893345596-959cdd033360"
+        },
+        {
+          "url": "/api/videos",
+          "iteration": 1,
+          "ms": 750,
+          "bytes": 257555,
+          "regionHeader": "bom1::syd1::zl5k2-1793893346346-630b16d032fa"
+        },
+        {
+          "url": "/api/videos",
+          "iteration": 2,
+          "ms": 795,
+          "bytes": 257555,
+          "regionHeader": "bom1::syd1::zl5k2-1793893347047-d7b1ae88f1ff"
+        },
+        {
+          "url": "/api/performance",
+          "iteration": 0,
+          "ms": 644,
+          "bytes": 181,
+          "regionHeader": "bom1::syd1::kfr2q-1793893347837-356ccb39fcab"
+        },
+        {
+          "url": "/api/performance",
+          "iteration": 1,
+          "ms": 547,
+          "bytes": 181,
+          "regionHeader": "bom1::syd1::kfr2q-1793893348477-8ad6aea8df9c"
+        },
+        {
+          "url": "/api/performance",
+          "iteration": 2,
+          "ms": 752,
+          "bytes": 181,
+          "regionHeader": "bom1::syd1::ftmkd-1793893349027-884c142e7599"
+        }
+      ],
+      "pages": [
+        {
+          "device": "desktop",
+          "path": "/dashboard",
+          "usableMs": 5425,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/announcements",
+              "status": 200
+            },
+            {
+              "path": "/api/performance",
+              "status": 200
+            },
+            {
+              "path": "/api/engagement",
+              "status": 200
+            },
+            {
+              "path": "/api/textbook-practice",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 5544,
+            "longTasks": 1
+          },
+          "domNodes": 720,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 85
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 99
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 150
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 141
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 148
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 152
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 153
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 151
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 158
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 154
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 155
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 98
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 3688,
+              "ms": 97
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 88
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 357
+            },
+            {
+              "path": "/api/performance",
+              "bytes": 141,
+              "ms": 1627
+            },
+            {
+              "path": "/api/announcements",
+              "bytes": 26,
+              "ms": 1374
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 89
+            },
+            {
+              "path": "/resources",
+              "bytes": 226,
+              "ms": 88
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 103
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 102
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 85
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 89
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 118
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 172,
+              "ms": 547
+            },
+            {
+              "path": "/models",
+              "bytes": 223,
+              "ms": 261
+            },
+            {
+              "path": "/register",
+              "bytes": 225,
+              "ms": 264
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 230
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 96
+            },
+            {
+              "path": "/search",
+              "bytes": 223,
+              "ms": 88
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 91
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 275,
+              "ms": 71
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 279,
+              "ms": 90
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 234,
+              "ms": 462
+            },
+            {
+              "path": "/performance",
+              "bytes": 228,
+              "ms": 493
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 228,
+              "ms": 488
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 226,
+              "ms": 507
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 3578,
+              "ms": 144
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 1501,
+              "ms": 152
+            },
+            {
+              "path": "/subjects",
+              "bytes": 1492,
+              "ms": 137
+            },
+            {
+              "path": "/notes",
+              "bytes": 1494,
+              "ms": 183
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 192
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 1502,
+              "ms": 175
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 157
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 1387,
+              "ms": 384
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+              "bytes": 5525,
+              "ms": 89
+            },
+            {
+              "path": "/search",
+              "bytes": 1491,
+              "ms": 110
+            },
+            {
+              "path": "/_next/static/immutable/chunks/185ccrf22x0ij.js",
+              "bytes": 8849,
+              "ms": 126
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+              "bytes": 31822,
+              "ms": 141
+            },
+            {
+              "path": "/profile",
+              "bytes": 1494,
+              "ms": 157
+            },
+            {
+              "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+              "bytes": 3232,
+              "ms": 83
+            },
+            {
+              "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+              "bytes": 41910,
+              "ms": 104
+            },
+            {
+              "path": "/resources",
+              "bytes": 4361,
+              "ms": 163
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2xs6_4ecz2szk.js",
+              "bytes": 4604,
+              "ms": 241
+            },
+            {
+              "path": "/videos",
+              "bytes": 1358,
+              "ms": 135
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1cequo5iouiuo.js",
+              "bytes": 5234,
+              "ms": 114
+            },
+            {
+              "path": "/models",
+              "bytes": 1777,
+              "ms": 171
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2p21tpqtwhk4b.js",
+              "bytes": 8302,
+              "ms": 67
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 2132,
+              "ms": 90
+            },
+            {
+              "path": "/_next/static/immutable/chunks/447z4yxdozue9.js",
+              "bytes": 673,
+              "ms": 71
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 1502,
+              "ms": 111
+            },
+            {
+              "path": "/api/engagement",
+              "bytes": 379,
+              "ms": 667
+            },
+            {
+              "path": "/api/textbook-practice",
+              "bytes": 19100,
+              "ms": 1731
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 1361,
+              "ms": 661
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2fbu8h1jb6j87.js",
+              "bytes": 4899,
+              "ms": 215
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2m60vt6_qhk8m.js",
+              "bytes": 20337,
+              "ms": 284
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 1508,
+              "ms": 957
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0aeia2hkim6si.js",
+              "bytes": 4565,
+              "ms": 716
+            },
+            {
+              "path": "/performance",
+              "bytes": 1490,
+              "ms": 1174
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3x4buh5nq_1ue.js",
+              "bytes": 5483,
+              "ms": 712
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 1488,
+              "ms": 1163
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+              "bytes": 7953,
+              "ms": 117
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3i_fc7eb5fx-m.js",
+              "bytes": 6382,
+              "ms": 65
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0bs9qwt7s3vl2.js",
+              "bytes": 4427,
+              "ms": 58
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1vrrk9amv42d3.js",
+              "bytes": 5577,
+              "ms": 76
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "desktop",
+          "path": "/subjects",
+          "usableMs": 1552,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/subjects",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 1732,
+            "longTasks": 1
+          },
+          "domNodes": 4753,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 76
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 78
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 93
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 116
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 117
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 152
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 155
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 154
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 156
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 155
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 112
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 3688,
+              "ms": 147
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 129
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 557
+            },
+            {
+              "path": "/api/subjects",
+              "bytes": 6424,
+              "ms": 627
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 315
+            },
+            {
+              "path": "/resources",
+              "bytes": 226,
+              "ms": 312
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 485
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 485
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 171
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 167
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 100
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 172,
+              "ms": 264
+            },
+            {
+              "path": "/models",
+              "bytes": 223,
+              "ms": 104
+            },
+            {
+              "path": "/register",
+              "bytes": 225,
+              "ms": 104
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 86
+            },
+            {
+              "path": "/search",
+              "bytes": 223,
+              "ms": 84
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 98
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 197,
+              "ms": 249
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 275,
+              "ms": 71
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 279,
+              "ms": 69
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 234,
+              "ms": 72
+            },
+            {
+              "path": "/performance",
+              "bytes": 228,
+              "ms": 72
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 228,
+              "ms": 78
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 226,
+              "ms": 81
+            },
+            {
+              "path": "/notes",
+              "bytes": 3578,
+              "ms": 478
+            },
+            {
+              "path": "/notes",
+              "bytes": 1494,
+              "ms": 99
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 100
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 1409,
+              "ms": 291
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+              "bytes": 5525,
+              "ms": 75
+            },
+            {
+              "path": "/videos",
+              "bytes": 1358,
+              "ms": 88
+            },
+            {
+              "path": "/_next/static/immutable/chunks/185ccrf22x0ij.js",
+              "bytes": 8849,
+              "ms": 78
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+              "bytes": 31822,
+              "ms": 79
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 80
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 1502,
+              "ms": 83
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2p21tpqtwhk4b.js",
+              "bytes": 8302,
+              "ms": 82
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 1501,
+              "ms": 93
+            },
+            {
+              "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+              "bytes": 3232,
+              "ms": 81
+            },
+            {
+              "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+              "bytes": 41910,
+              "ms": 87
+            },
+            {
+              "path": "/subjects",
+              "bytes": 1492,
+              "ms": 85
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 1388,
+              "ms": 302
+            },
+            {
+              "path": "/search",
+              "bytes": 1491,
+              "ms": 91
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 67
+            },
+            {
+              "path": "/profile",
+              "bytes": 1494,
+              "ms": 114
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2xs6_4ecz2szk.js",
+              "bytes": 4604,
+              "ms": 65
+            },
+            {
+              "path": "/resources",
+              "bytes": 4361,
+              "ms": 89
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1cequo5iouiuo.js",
+              "bytes": 5234,
+              "ms": 90
+            },
+            {
+              "path": "/models",
+              "bytes": 1777,
+              "ms": 70
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 2132,
+              "ms": 114
+            },
+            {
+              "path": "/_next/static/immutable/chunks/447z4yxdozue9.js",
+              "bytes": 673,
+              "ms": 91
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 1502,
+              "ms": 91
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2fbu8h1jb6j87.js",
+              "bytes": 4899,
+              "ms": 86
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2m60vt6_qhk8m.js",
+              "bytes": 20337,
+              "ms": 86
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 1508,
+              "ms": 105
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0aeia2hkim6si.js",
+              "bytes": 4565,
+              "ms": 61
+            },
+            {
+              "path": "/performance",
+              "bytes": 1490,
+              "ms": 94
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3x4buh5nq_1ue.js",
+              "bytes": 5483,
+              "ms": 64
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 1361,
+              "ms": 113
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 1488,
+              "ms": 97
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3i_fc7eb5fx-m.js",
+              "bytes": 6382,
+              "ms": 95
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1vrrk9amv42d3.js",
+              "bytes": 5577,
+              "ms": 78
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+              "bytes": 7953,
+              "ms": 77
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0bs9qwt7s3vl2.js",
+              "bytes": 4427,
+              "ms": 76
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "desktop",
+          "path": "/videos",
+          "usableMs": 2029,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/videos",
+              "status": 200
+            },
+            {
+              "path": "/api/activity",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 2236,
+            "longTasks": 1
+          },
+          "domNodes": 603,
+          "cards": 24,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 102
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 137
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 68
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 115
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 130
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 97
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 131
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 134
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2p21tpqtwhk4b.js",
+              "bytes": 8302,
+              "ms": 134
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 133
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 3688,
+              "ms": 81
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 97
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 92
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 646
+            },
+            {
+              "path": "/api/videos",
+              "bytes": 26943,
+              "ms": 1082
+            },
+            {
+              "path": "/api/activity",
+              "bytes": 268,
+              "ms": 773
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 73
+            },
+            {
+              "path": "/resources",
+              "bytes": 226,
+              "ms": 74
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 73
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 96
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 88
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 100
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 85
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 172,
+              "ms": 264
+            },
+            {
+              "path": "/models",
+              "bytes": 223,
+              "ms": 93
+            },
+            {
+              "path": "/register",
+              "bytes": 225,
+              "ms": 91
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 106
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 76
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 275,
+              "ms": 73
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 279,
+              "ms": 93
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 234,
+              "ms": 75
+            },
+            {
+              "path": "/performance",
+              "bytes": 228,
+              "ms": 69
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 228,
+              "ms": 76
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 226,
+              "ms": 78
+            },
+            {
+              "path": "/",
+              "bytes": 3643,
+              "ms": 476
+            },
+            {
+              "path": "/",
+              "bytes": 11980,
+              "ms": 76
+            },
+            {
+              "path": "/resources",
+              "bytes": 4361,
+              "ms": 85
+            },
+            {
+              "path": "/subjects",
+              "bytes": 1492,
+              "ms": 97
+            },
+            {
+              "path": "/_next/static/immutable/chunks/32itkzz2ht1wl.js",
+              "bytes": 2359,
+              "ms": 397
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 407
+            },
+            {
+              "path": "/notes",
+              "bytes": 1494,
+              "ms": 433
+            },
+            {
+              "path": "/_next/static/immutable/chunks/447z4yxdozue9.js",
+              "bytes": 673,
+              "ms": 384
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 410
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 335
+            },
+            {
+              "path": "/videos",
+              "bytes": 1358,
+              "ms": 368
+            },
+            {
+              "path": "/search",
+              "bytes": 223,
+              "ms": 73
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 74
+            },
+            {
+              "path": "/_next/static/immutable/chunks/185ccrf22x0ij.js",
+              "bytes": 8849,
+              "ms": 81
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+              "bytes": 31822,
+              "ms": 82
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 1501,
+              "ms": 82
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2irm91x3je4oe.js",
+              "bytes": 5525,
+              "ms": 69
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 1502,
+              "ms": 81
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 1389,
+              "ms": 411
+            },
+            {
+              "path": "/search",
+              "bytes": 1491,
+              "ms": 89
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 76
+            },
+            {
+              "path": "/profile",
+              "bytes": 1494,
+              "ms": 84
+            },
+            {
+              "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+              "bytes": 3232,
+              "ms": 73
+            },
+            {
+              "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+              "bytes": 41910,
+              "ms": 72
+            },
+            {
+              "path": "/models",
+              "bytes": 1777,
+              "ms": 89
+            },
+            {
+              "path": "/images/learning-materials/d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e.jpg",
+              "bytes": 69535,
+              "ms": 136
+            },
+            {
+              "path": "/images/learning-materials/0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8.jpg",
+              "bytes": 81719,
+              "ms": 235
+            },
+            {
+              "path": "/images/learning-materials/d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778.jpg",
+              "bytes": 71355,
+              "ms": 470
+            },
+            {
+              "path": "/images/learning-materials/ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186.jpg",
+              "bytes": 70037,
+              "ms": 230
+            },
+            {
+              "path": "/images/learning-materials/1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495.jpg",
+              "bytes": 89098,
+              "ms": 99
+            },
+            {
+              "path": "/images/learning-materials/0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8.jpg",
+              "bytes": 65343,
+              "ms": 257
+            },
+            {
+              "path": "/images/learning-materials/441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489.jpg",
+              "bytes": 71373,
+              "ms": 287
+            },
+            {
+              "path": "/images/learning-materials/1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a.jpg",
+              "bytes": 73714,
+              "ms": 286
+            },
+            {
+              "path": "/images/learning-materials/c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456.jpg",
+              "bytes": 63549,
+              "ms": 261
+            },
+            {
+              "path": "/images/learning-materials/e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6.jpg",
+              "bytes": 65166,
+              "ms": 323
+            },
+            {
+              "path": "/images/learning-materials/563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b.jpg",
+              "bytes": 58236,
+              "ms": 302
+            },
+            {
+              "path": "/images/learning-materials/0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd.jpg",
+              "bytes": 56486,
+              "ms": 316
+            },
+            {
+              "path": "/images/learning-materials/d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610.jpg",
+              "bytes": 63582,
+              "ms": 335
+            },
+            {
+              "path": "/images/learning-materials/c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694.jpg",
+              "bytes": 57264,
+              "ms": 351
+            },
+            {
+              "path": "/images/learning-materials/c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe.jpg",
+              "bytes": 75202,
+              "ms": 437
+            },
+            {
+              "path": "/images/learning-materials/d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961.jpg",
+              "bytes": 54158,
+              "ms": 344
+            },
+            {
+              "path": "/images/learning-materials/4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf.jpg",
+              "bytes": 56592,
+              "ms": 381
+            },
+            {
+              "path": "/images/learning-materials/5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404.jpg",
+              "bytes": 48806,
+              "ms": 410
+            },
+            {
+              "path": "/images/learning-materials/e37863f2a78fb70c0892e75b367b1c8d7d0973ec48847cb77ecc69a8dcd90de1.jpg",
+              "bytes": 62267,
+              "ms": 417
+            },
+            {
+              "path": "/images/learning-materials/f93519fa326eedca0f2a05df503add9dbda392c2c6aaabf7a9e5ef643f38d9ab.jpg",
+              "bytes": 64593,
+              "ms": 439
+            },
+            {
+              "path": "/images/learning-materials/6022426528ef4ede02410fbe165565092e285d6def744717ac89adc833f3d7ab.jpg",
+              "bytes": 68597,
+              "ms": 383
+            },
+            {
+              "path": "/images/learning-materials/8c602caa228d739acea2d15cdfed93e9faf1fc4f320b445b5d8a4a5d5d684c1d.jpg",
+              "bytes": 72493,
+              "ms": 393
+            },
+            {
+              "path": "/images/learning-materials/8a512eb431782187ddd6e8d4f0daddd00a8a52872188a633127020a3f37f145c.jpg",
+              "bytes": 50892,
+              "ms": 420
+            },
+            {
+              "path": "/images/learning-materials/6ff20fd273677e81e48e608c92e3578ac620f9e204ded481eb8d2dc4718be66c.jpg",
+              "bytes": 84163,
+              "ms": 457
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2xs6_4ecz2szk.js",
+              "bytes": 4604,
+              "ms": 366
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 2132,
+              "ms": 417
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1cequo5iouiuo.js",
+              "bytes": 5234,
+              "ms": 317
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 1502,
+              "ms": 435
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2fbu8h1jb6j87.js",
+              "bytes": 4899,
+              "ms": 360
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2m60vt6_qhk8m.js",
+              "bytes": 20337,
+              "ms": 379
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 1508,
+              "ms": 433
+            },
+            {
+              "path": "/performance",
+              "bytes": 1490,
+              "ms": 209
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0aeia2hkim6si.js",
+              "bytes": 4565,
+              "ms": 73
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 1361,
+              "ms": 72
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3x4buh5nq_1ue.js",
+              "bytes": 5483,
+              "ms": 67
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 1488,
+              "ms": 86
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3i_fc7eb5fx-m.js",
+              "bytes": 6382,
+              "ms": 67
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1vrrk9amv42d3.js",
+              "bytes": 5577,
+              "ms": 63
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1prxn4076fehk.js",
+              "bytes": 7953,
+              "ms": 57
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0bs9qwt7s3vl2.js",
+              "bytes": 4427,
+              "ms": 70
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "mobile",
+          "path": "/dashboard",
+          "usableMs": 2132,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/announcements",
+              "status": 200
+            },
+            {
+              "path": "/api/performance",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 2596,
+            "longTasks": 7
+          },
+          "domNodes": 669,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 74
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 73
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 131
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 127
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 165
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 135
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 165
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 166
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 166
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 192
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 166
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 85
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 108
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 472
+            },
+            {
+              "path": "/api/performance",
+              "bytes": 141,
+              "ms": 735
+            },
+            {
+              "path": "/api/announcements",
+              "bytes": 26,
+              "ms": 508
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 83
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 97
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 86
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 98
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 166
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 164
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 170
+            },
+            {
+              "path": "/",
+              "bytes": 3643,
+              "ms": 159
+            },
+            {
+              "path": "/",
+              "bytes": 11980,
+              "ms": 103
+            },
+            {
+              "path": "/login",
+              "bytes": 1493,
+              "ms": 100
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 1501,
+              "ms": 106
+            },
+            {
+              "path": "/_next/static/immutable/chunks/32itkzz2ht1wl.js",
+              "bytes": 2359,
+              "ms": 137
+            },
+            {
+              "path": "/subjects",
+              "bytes": 1492,
+              "ms": 126
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 144
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0sadeimnvr6zj.js",
+              "bytes": 4789,
+              "ms": 120
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 1502,
+              "ms": 149
+            },
+            {
+              "path": "/profile",
+              "bytes": 1494,
+              "ms": 144
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 353
+            },
+            {
+              "path": "/_next/static/immutable/chunks/185ccrf22x0ij.js",
+              "bytes": 8849,
+              "ms": 822
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+              "bytes": 31822,
+              "ms": 908
+            },
+            {
+              "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+              "bytes": 3232,
+              "ms": 993
+            },
+            {
+              "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+              "bytes": 41910,
+              "ms": 1014
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1cequo5iouiuo.js",
+              "bytes": 5234,
+              "ms": 984
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 228,
+              "ms": 1673
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 1686
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "mobile",
+          "path": "/subjects",
+          "usableMs": 9861,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/subjects",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 3056,
+            "longTasks": 5
+          },
+          "domNodes": 4740,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 465
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 4446
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 649
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 647
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 4316
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 4315
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 4317
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 4318
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 4441
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 4441
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 3764
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 3763
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 560
+            },
+            {
+              "path": "/api/subjects",
+              "bytes": 6424,
+              "ms": 655
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 235
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 234
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 216
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 215
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 124
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 146
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 412
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 430
+            },
+            {
+              "path": "/",
+              "bytes": 3643,
+              "ms": 404
+            },
+            {
+              "path": "/",
+              "bytes": 11980,
+              "ms": 427
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 197,
+              "ms": 574
+            },
+            {
+              "path": "/_next/static/immutable/chunks/32itkzz2ht1wl.js",
+              "bytes": 2359,
+              "ms": 359
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 379
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 384
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 343
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 317
+            },
+            {
+              "path": "/notes",
+              "bytes": 1494,
+              "ms": 195
+            },
+            {
+              "path": "/videos",
+              "bytes": 1358,
+              "ms": 207
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "mobile",
+          "path": "/videos",
+          "usableMs": 12587,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/videos",
+              "status": 200
+            },
+            {
+              "path": "/api/activity",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 4636,
+            "longTasks": 13
+          },
+          "domNodes": 583,
+          "cards": 24,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 2246
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 2243
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 2391
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 2371
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 2453
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 2462
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 2464
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 2486
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 2474
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2p21tpqtwhk4b.js",
+              "bytes": 8302,
+              "ms": 2489
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 2749
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 2750
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 5292
+            },
+            {
+              "path": "/api/videos",
+              "bytes": 26920,
+              "ms": 5634
+            },
+            {
+              "path": "/api/activity",
+              "bytes": 268,
+              "ms": 5286
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 6770
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 6728
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 6760
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 6780
+            }
+          ],
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "scope": "Initial Sydney release, isolated run before intent-prefetch refinement; variable mobile timings retained",
+      "checkedAt": "2026-11-05T15:48:48.101Z",
+      "label": "after",
+      "api": [
+        {
+          "url": "/api/auth/me",
+          "iteration": 0,
+          "ms": 523,
+          "bytes": 398,
+          "regionHeader": "bom1::syd1::9nh5f-1793893730987-958f5f1c3062"
+        },
+        {
+          "url": "/api/auth/me",
+          "iteration": 1,
+          "ms": 1064,
+          "bytes": 398,
+          "regionHeader": "bom1::syd1::dgkns-1793893732072-e94ce4c791c3"
+        },
+        {
+          "url": "/api/auth/me",
+          "iteration": 2,
+          "ms": 588,
+          "bytes": 398,
+          "regionHeader": "bom1::syd1::9nh5f-1793893732692-32ffaf3e64ae"
+        },
+        {
+          "url": "/api/subjects",
+          "iteration": 0,
+          "ms": 600,
+          "bytes": 33628,
+          "regionHeader": "bom1::syd1::dgkns-1793893733151-8518ce7c16b5"
+        },
+        {
+          "url": "/api/subjects",
+          "iteration": 1,
+          "ms": 610,
+          "bytes": 33628,
+          "regionHeader": "bom1::syd1::dgkns-1793893733732-e5a4e0487389"
+        },
+        {
+          "url": "/api/subjects",
+          "iteration": 2,
+          "ms": 591,
+          "bytes": 33628,
+          "regionHeader": "bom1::syd1::dgkns-1793893734352-306975664298"
+        },
+        {
+          "url": "/api/subjects?library=all",
+          "iteration": 0,
+          "ms": 1020,
+          "bytes": 368878,
+          "regionHeader": "bom1::syd1::kcn9r-1793893734987-e06c057de816"
+        },
+        {
+          "url": "/api/subjects?library=all",
+          "iteration": 1,
+          "ms": 1000,
+          "bytes": 368878,
+          "regionHeader": "bom1::syd1::kcn9r-1793893736076-8aed3f9b80c5"
+        },
+        {
+          "url": "/api/subjects?library=all",
+          "iteration": 2,
+          "ms": 745,
+          "bytes": 368878,
+          "regionHeader": "bom1::syd1::v29dw-1793893737002-413046174f42"
+        },
+        {
+          "url": "/api/videos",
+          "iteration": 0,
+          "ms": 785,
+          "bytes": 257555,
+          "regionHeader": "bom1::syd1::v29dw-1793893737769-1e975b7c008b"
+        },
+        {
+          "url": "/api/videos",
+          "iteration": 1,
+          "ms": 1109,
+          "bytes": 257555,
+          "regionHeader": "bom1::syd1::d46jq-1793893738827-1250e60e2a9a"
+        },
+        {
+          "url": "/api/videos",
+          "iteration": 2,
+          "ms": 3812,
+          "bytes": 257555,
+          "regionHeader": "bom1::syd1::867b7-1793893742027-4a5863619503"
+        },
+        {
+          "url": "/api/performance",
+          "iteration": 0,
+          "ms": 2263,
+          "bytes": 181,
+          "regionHeader": "bom1::syd1::84jzq-1793893745051-8e424f849916"
+        },
+        {
+          "url": "/api/performance",
+          "iteration": 1,
+          "ms": 3686,
+          "bytes": 181,
+          "regionHeader": "bom1::syd1::cvt94-1793893748536-b73e87a2a3b8"
+        },
+        {
+          "url": "/api/performance",
+          "iteration": 2,
+          "ms": 856,
+          "bytes": 181,
+          "regionHeader": "bom1::syd1::8fff4-1793893749357-cc78326925e3"
+        }
+      ],
+      "pages": [
+        {
+          "device": "desktop",
+          "path": "/dashboard",
+          "usableMs": 2279,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/announcements",
+              "status": 200
+            },
+            {
+              "path": "/api/performance",
+              "status": 200
+            },
+            {
+              "path": "/api/engagement",
+              "status": 200
+            },
+            {
+              "path": "/api/textbook-practice",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 2444,
+            "longTasks": 3
+          },
+          "domNodes": 707,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 393
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 394
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 279
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 285
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 396
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 396
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 393
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 477
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 483
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 485
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 486
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 100
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 3688,
+              "ms": 105
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 106
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 434
+            },
+            {
+              "path": "/api/performance",
+              "bytes": 141,
+              "ms": 716
+            },
+            {
+              "path": "/api/announcements",
+              "bytes": 26,
+              "ms": 446
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 212
+            },
+            {
+              "path": "/resources",
+              "bytes": 226,
+              "ms": 213
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 214
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 214
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 190
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 189
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 188
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 172,
+              "ms": 376
+            },
+            {
+              "path": "/models",
+              "bytes": 223,
+              "ms": 202
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 218
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 275,
+              "ms": 204
+            },
+            {
+              "path": "/search",
+              "bytes": 223,
+              "ms": 86
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 94
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 279,
+              "ms": 97
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 234,
+              "ms": 95
+            },
+            {
+              "path": "/performance",
+              "bytes": 228,
+              "ms": 154
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 228,
+              "ms": 98
+            },
+            {
+              "path": "/bookmarks",
+              "bytes": 226,
+              "ms": 116
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 3578,
+              "ms": 315
+            },
+            {
+              "path": "/api/engagement",
+              "bytes": 380,
+              "ms": 1148
+            },
+            {
+              "path": "/api/textbook-practice",
+              "bytes": 19100,
+              "ms": 1700
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 1361,
+              "ms": 775
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 844
+            },
+            {
+              "path": "/subjects",
+              "bytes": 1492,
+              "ms": 897
+            },
+            {
+              "path": "/notes",
+              "bytes": 1494,
+              "ms": 1079
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "desktop",
+          "path": "/subjects",
+          "usableMs": 3820,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/subjects",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 4140,
+            "longTasks": 4
+          },
+          "domNodes": 4734,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 593
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 595
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 682
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 728
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 753
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 756
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 759
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 761
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 798
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 799
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 161
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 3688,
+              "ms": 184
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 201
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 693
+            },
+            {
+              "path": "/api/subjects",
+              "bytes": 6424,
+              "ms": 707
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 290
+            },
+            {
+              "path": "/resources",
+              "bytes": 226,
+              "ms": 303
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 302
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 316
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 258
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 274
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 275
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 172,
+              "ms": 463
+            },
+            {
+              "path": "/models",
+              "bytes": 223,
+              "ms": 252
+            },
+            {
+              "path": "/register",
+              "bytes": 225,
+              "ms": 226
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 232
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 1750
+            },
+            {
+              "path": "/search",
+              "bytes": 223,
+              "ms": 1736
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 1973
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 275,
+              "ms": 1970
+            },
+            {
+              "path": "/practice/collections",
+              "bytes": 279,
+              "ms": 314
+            },
+            {
+              "path": "/textbook-practice",
+              "bytes": 234,
+              "ms": 307
+            },
+            {
+              "path": "/performance",
+              "bytes": 228,
+              "ms": 83
+            },
+            {
+              "path": "/leaderboard",
+              "bytes": 228,
+              "ms": 85
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "desktop",
+          "path": "/videos",
+          "usableMs": 1440,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/videos",
+              "status": 200
+            },
+            {
+              "path": "/api/activity",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 1756,
+            "longTasks": 3
+          },
+          "domNodes": 583,
+          "cards": 24,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 89
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 174
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 120
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 138
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 170
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 171
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 172
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 186
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 326
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2p21tpqtwhk4b.js",
+              "bytes": 8302,
+              "ms": 325
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 134
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 3688,
+              "ms": 122
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 150
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 526
+            },
+            {
+              "path": "/api/videos",
+              "bytes": 26920,
+              "ms": 882
+            },
+            {
+              "path": "/api/activity",
+              "bytes": 268,
+              "ms": 665
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 610
+            },
+            {
+              "path": "/resources",
+              "bytes": 226,
+              "ms": 651
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 701
+            },
+            {
+              "path": "/notes",
+              "bytes": 222,
+              "ms": 745
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 135
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 99
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 89
+            },
+            {
+              "path": "/textbooks",
+              "bytes": 172,
+              "ms": 303
+            },
+            {
+              "path": "/search",
+              "bytes": 223,
+              "ms": 117
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 112
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 87
+            },
+            {
+              "path": "/models",
+              "bytes": 223,
+              "ms": 113
+            },
+            {
+              "path": "/resources/guides",
+              "bytes": 275,
+              "ms": 90
+            },
+            {
+              "path": "/images/learning-materials/d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e.jpg",
+              "bytes": 69535,
+              "ms": 195
+            },
+            {
+              "path": "/images/learning-materials/d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778.jpg",
+              "bytes": 71355,
+              "ms": 253
+            },
+            {
+              "path": "/images/learning-materials/0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8.jpg",
+              "bytes": 81719,
+              "ms": 475
+            },
+            {
+              "path": "/images/learning-materials/ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186.jpg",
+              "bytes": 70037,
+              "ms": 391
+            },
+            {
+              "path": "/images/learning-materials/1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495.jpg",
+              "bytes": 89098,
+              "ms": 534
+            },
+            {
+              "path": "/images/learning-materials/0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8.jpg",
+              "bytes": 65343,
+              "ms": 602
+            },
+            {
+              "path": "/images/learning-materials/441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489.jpg",
+              "bytes": 71373,
+              "ms": 677
+            },
+            {
+              "path": "/images/learning-materials/1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a.jpg",
+              "bytes": 73714,
+              "ms": 745
+            },
+            {
+              "path": "/images/learning-materials/c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456.jpg",
+              "bytes": 63549,
+              "ms": 1133
+            },
+            {
+              "path": "/images/learning-materials/e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6.jpg",
+              "bytes": 65166,
+              "ms": 1258
+            },
+            {
+              "path": "/images/learning-materials/563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b.jpg",
+              "bytes": 58236,
+              "ms": 1053
+            },
+            {
+              "path": "/images/learning-materials/c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694.jpg",
+              "bytes": 57264,
+              "ms": 1381
+            },
+            {
+              "path": "/images/learning-materials/0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd.jpg",
+              "bytes": 56486,
+              "ms": 1979
+            },
+            {
+              "path": "/images/learning-materials/d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610.jpg",
+              "bytes": 63582,
+              "ms": 1547
+            },
+            {
+              "path": "/images/learning-materials/c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe.jpg",
+              "bytes": 75202,
+              "ms": 1855
+            },
+            {
+              "path": "/images/learning-materials/d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961.jpg",
+              "bytes": 54158,
+              "ms": 2017
+            },
+            {
+              "path": "/images/learning-materials/4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf.jpg",
+              "bytes": 56592,
+              "ms": 2296
+            },
+            {
+              "path": "/images/learning-materials/5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404.jpg",
+              "bytes": 48806,
+              "ms": 2337
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "mobile",
+          "path": "/dashboard",
+          "usableMs": 9397,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/announcements",
+              "status": 200
+            },
+            {
+              "path": "/api/performance",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 11140,
+            "longTasks": 16
+          },
+          "domNodes": 662,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 197
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 174
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 165
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 340
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 352
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 350
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 350
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 349
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 350
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 354
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 350
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 102
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 191
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 498
+            },
+            {
+              "path": "/api/performance",
+              "bytes": 141,
+              "ms": 746
+            },
+            {
+              "path": "/api/announcements",
+              "bytes": 26,
+              "ms": 487
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 129
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 126
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 127
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 142
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 512
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 526
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 556
+            },
+            {
+              "path": "/",
+              "bytes": 3643,
+              "ms": 3720
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "mobile",
+          "path": "/subjects",
+          "usableMs": 16728,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/subjects",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 5432,
+            "longTasks": 12
+          },
+          "domNodes": 4734,
+          "cards": 0,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 1567
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 1560
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 1587
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 1702
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 1716
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 1716
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 1731
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 1722
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 1726
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 1729
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 1678
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 1681
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 7030
+            },
+            {
+              "path": "/api/subjects",
+              "bytes": 6424,
+              "ms": 7099
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 6596
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 6625
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 6592
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 6593
+            }
+          ],
+          "overflow": false
+        },
+        {
+          "device": "mobile",
+          "path": "/videos",
+          "usableMs": 17545,
+          "api": [
+            {
+              "path": "/api/auth/me",
+              "status": 200
+            },
+            {
+              "path": "/api/videos",
+              "status": 200
+            },
+            {
+              "path": "/api/activity",
+              "status": 200
+            }
+          ],
+          "errors": [],
+          "timings": {
+            "lcp": 19008,
+            "longTasks": 18
+          },
+          "domNodes": 593,
+          "cards": 24,
+          "resources": [
+            {
+              "path": "/_next/static/immutable/chunks/0a_vymg-wkwnh.css",
+              "bytes": 27043,
+              "ms": 3202
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3douyljdx_-l2.js",
+              "bytes": 2129,
+              "ms": 2980
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0meshd4c712hl.js",
+              "bytes": 7957,
+              "ms": 2985
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2u0ar0m77q5t6.js",
+              "bytes": 73468,
+              "ms": 3054
+            },
+            {
+              "path": "/_next/static/immutable/chunks/01885k4t3h71y.js",
+              "bytes": 47259,
+              "ms": 3183
+            },
+            {
+              "path": "/_next/static/immutable/chunks/turbopack-1cvbnb3nlabgn.js",
+              "bytes": 4130,
+              "ms": 3183
+            },
+            {
+              "path": "/_next/static/immutable/chunks/00z4pmesk2f4f.js",
+              "bytes": 3652,
+              "ms": 3184
+            },
+            {
+              "path": "/_next/static/immutable/chunks/33l77dys4mt1n.js",
+              "bytes": 11217,
+              "ms": 3184
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3vfrqndg366kk.js",
+              "bytes": 10195,
+              "ms": 3181
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2p21tpqtwhk4b.js",
+              "bytes": 8302,
+              "ms": 3248
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 1844,
+              "ms": 3046
+            },
+            {
+              "path": "/_next/image",
+              "bytes": 5654,
+              "ms": 3052
+            },
+            {
+              "path": "/api/auth/me",
+              "bytes": 275,
+              "ms": 489
+            },
+            {
+              "path": "/api/videos",
+              "bytes": 26923,
+              "ms": 1025
+            },
+            {
+              "path": "/api/activity",
+              "bytes": 268,
+              "ms": 712
+            },
+            {
+              "path": "/",
+              "bytes": 174,
+              "ms": 122
+            },
+            {
+              "path": "/login",
+              "bytes": 222,
+              "ms": 137
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 226,
+              "ms": 129
+            },
+            {
+              "path": "/subjects",
+              "bytes": 225,
+              "ms": 126
+            },
+            {
+              "path": "/practice",
+              "bytes": 225,
+              "ms": 75
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 226,
+              "ms": 98
+            },
+            {
+              "path": "/profile",
+              "bytes": 224,
+              "ms": 95
+            },
+            {
+              "path": "/",
+              "bytes": 3643,
+              "ms": 85
+            },
+            {
+              "path": "/",
+              "bytes": 11980,
+              "ms": 129
+            },
+            {
+              "path": "/login",
+              "bytes": 1493,
+              "ms": 106
+            },
+            {
+              "path": "/dashboard",
+              "bytes": 1501,
+              "ms": 92
+            },
+            {
+              "path": "/_next/static/immutable/chunks/32itkzz2ht1wl.js",
+              "bytes": 2359,
+              "ms": 109
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1mmr7sjmrgzu0.js",
+              "bytes": 8611,
+              "ms": 96
+            },
+            {
+              "path": "/subjects",
+              "bytes": 1492,
+              "ms": 93
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0sadeimnvr6zj.js",
+              "bytes": 4789,
+              "ms": 130
+            },
+            {
+              "path": "/profile",
+              "bytes": 1494,
+              "ms": 103
+            },
+            {
+              "path": "/practice",
+              "bytes": 1532,
+              "ms": 72
+            },
+            {
+              "path": "/_next/static/immutable/chunks/2j0egs02ka3if.js",
+              "bytes": 9901,
+              "ms": 82
+            },
+            {
+              "path": "/ai-helper",
+              "bytes": 1502,
+              "ms": 86
+            },
+            {
+              "path": "/_next/static/immutable/chunks/0i05c2nlzbko5.js",
+              "bytes": 5739,
+              "ms": 78
+            },
+            {
+              "path": "/images/learning-materials/d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e.jpg",
+              "bytes": 69535,
+              "ms": 298
+            },
+            {
+              "path": "/images/learning-materials/d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778.jpg",
+              "bytes": 71355,
+              "ms": 345
+            },
+            {
+              "path": "/images/learning-materials/0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8.jpg",
+              "bytes": 81719,
+              "ms": 437
+            },
+            {
+              "path": "/images/learning-materials/ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186.jpg",
+              "bytes": 70037,
+              "ms": 364
+            },
+            {
+              "path": "/images/learning-materials/1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495.jpg",
+              "bytes": 89098,
+              "ms": 397
+            },
+            {
+              "path": "/images/learning-materials/0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8.jpg",
+              "bytes": 65343,
+              "ms": 459
+            },
+            {
+              "path": "/images/learning-materials/441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489.jpg",
+              "bytes": 71373,
+              "ms": 483
+            },
+            {
+              "path": "/images/learning-materials/1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a.jpg",
+              "bytes": 73714,
+              "ms": 553
+            },
+            {
+              "path": "/images/learning-materials/c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456.jpg",
+              "bytes": 63549,
+              "ms": 560
+            },
+            {
+              "path": "/images/learning-materials/e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6.jpg",
+              "bytes": 65166,
+              "ms": 502
+            },
+            {
+              "path": "/images/learning-materials/563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b.jpg",
+              "bytes": 58236,
+              "ms": 637
+            },
+            {
+              "path": "/images/learning-materials/0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd.jpg",
+              "bytes": 56486,
+              "ms": 694
+            },
+            {
+              "path": "/videos",
+              "bytes": 223,
+              "ms": 619
+            },
+            {
+              "path": "/_next/static/immutable/chunks/1cequo5iouiuo.js",
+              "bytes": 5234,
+              "ms": 595
+            },
+            {
+              "path": "/_next/static/immutable/chunks/185ccrf22x0ij.js",
+              "bytes": 8849,
+              "ms": 600
+            },
+            {
+              "path": "/_next/static/immutable/chunks/3z89_0fyhlb2u.js",
+              "bytes": 31822,
+              "ms": 615
+            },
+            {
+              "path": "/_next/static/immutable/chunks/23n03e51s2wwm.js",
+              "bytes": 3232,
+              "ms": 660
+            },
+            {
+              "path": "/_next/static/immutable/chunks/36v-hur_mlp7g.js",
+              "bytes": 41910,
+              "ms": 666
+            },
+            {
+              "path": "/videos",
+              "bytes": 1358,
+              "ms": 97
+            }
+          ],
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "endpoints": [
+      {
+        "url": "/api/auth/me",
+        "beforeMedianMs": 3360,
+        "afterMedianMs": 598,
+        "reductionPercent": 82.2
+      },
+      {
+        "url": "/api/subjects",
+        "beforeMedianMs": 2600,
+        "afterMedianMs": 631,
+        "reductionPercent": 75.7
+      },
+      {
+        "url": "/api/subjects?library=all",
+        "beforeMedianMs": 2728,
+        "afterMedianMs": 859,
+        "reductionPercent": 68.5
+      },
+      {
+        "url": "/api/videos",
+        "beforeMedianMs": 3068,
+        "afterMedianMs": 785,
+        "reductionPercent": 74.4
+      },
+      {
+        "url": "/api/performance",
+        "beforeMedianMs": 4130,
+        "afterMedianMs": 589,
+        "reductionPercent": 85.7
+      }
+    ],
+    "pages": [
+      {
+        "device": "desktop",
+        "path": "/dashboard",
+        "beforeMs": 10042,
+        "afterMs": 3382,
+        "reductionPercent": 66.3,
+        "beforeCards": 0,
+        "afterCards": 0,
+        "beforeAuthProbes": 2,
+        "afterAuthProbes": 1
+      },
+      {
+        "device": "desktop",
+        "path": "/subjects",
+        "beforeMs": 3060,
+        "afterMs": 1739,
+        "reductionPercent": 43.2,
+        "beforeCards": 0,
+        "afterCards": 0,
+        "beforeAuthProbes": 1,
+        "afterAuthProbes": 1
+      },
+      {
+        "device": "desktop",
+        "path": "/videos",
+        "beforeMs": 8084,
+        "afterMs": 2945,
+        "reductionPercent": 63.6,
+        "beforeCards": 205,
+        "afterCards": 24,
+        "beforeAuthProbes": 2,
+        "afterAuthProbes": 1
+      },
+      {
+        "device": "mobile",
+        "path": "/dashboard",
+        "beforeMs": 5652,
+        "afterMs": 2370,
+        "reductionPercent": 58.1,
+        "beforeCards": 0,
+        "afterCards": 0,
+        "beforeAuthProbes": 2,
+        "afterAuthProbes": 1
+      },
+      {
+        "device": "mobile",
+        "path": "/subjects",
+        "beforeMs": 4192,
+        "afterMs": 2235,
+        "reductionPercent": 46.7,
+        "beforeCards": 0,
+        "afterCards": 0,
+        "beforeAuthProbes": 1,
+        "afterAuthProbes": 1
+      },
+      {
+        "device": "mobile",
+        "path": "/videos",
+        "beforeMs": 6140,
+        "afterMs": 2435,
+        "reductionPercent": 60.3,
+        "beforeCards": 205,
+        "afterCards": 24,
+        "beforeAuthProbes": 2,
+        "afterAuthProbes": 1
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 import type * as Memory from "./memory";
+import { validateReplacementPassword } from "@/lib/auth/reset-password-policy";
 import type {
   User,
   Student,
@@ -348,14 +349,20 @@ export async function toggleStudentActive(id: string, actorId?: string) {
     );
   return Boolean(student);
 }
-export async function resetStudentPassword(id: string, actorId?: string) {
+export async function resetStudentPassword(
+  id: string,
+  actorId?: string,
+  replacementPassword?: string,
+) {
+  const chosen = validateReplacementPassword(replacementPassword);
+  if (chosen && !actorId) throw new Error("Admin authorization required");
   if (actorId && (await getUserById(actorId))?.role !== "admin")
     throw new Error("Admin authorization required");
   const student = await getStudentById(id);
   if (!student) return null;
   const user = await getUserById(student.userId);
   if (!user) return null;
-  const password = "AVS@" + randomBytes(12).toString("base64url");
+  const password = chosen ?? "AVS@" + randomBytes(12).toString("base64url");
   const changed = await rpc<boolean>("avs_change_password", {
     p_user_id: user.id,
     p_expected_hash: user.passwordHash,

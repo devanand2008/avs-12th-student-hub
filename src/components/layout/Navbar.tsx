@@ -1,8 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import {
+  fetchCurrentSession,
+  clearCurrentSessionRequest,
+} from "@/lib/current-session-client";
+
+import Link from "@/components/layout/IntentLink";
 import { usePathname, useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   BookOpen,
   FileText,
@@ -35,22 +40,28 @@ export default function Navbar() {
   const router = useRouter();
   const [user, setUser] = useState<UserProfile | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const authRequest = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    fetch("/api/auth/me")
+    const controller = new AbortController();
+    authRequest.current = controller;
+    fetchCurrentSession(controller.signal)
       .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (data?.authenticated) {
-          setUser(data.user);
-        } else {
-          setUser(null);
-        }
+        if (!controller.signal.aborted)
+          setUser(data?.authenticated ? data.user : null);
       })
-      .catch(() => setUser(null));
+      .catch(() => {
+        if (!controller.signal.aborted) setUser(null);
+      });
+    return () => controller.abort();
   }, [pathname]);
 
   const handleLogout = async () => {
+    authRequest.current?.abort();
+    clearCurrentSessionRequest();
     await fetch("/api/auth/logout", { method: "POST" });
+    clearCurrentSessionRequest();
     setUser(null);
     router.push("/login");
   };
@@ -112,7 +123,15 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center gap-1">
-          <Link href="/resources" aria-current={pathname.startsWith("/resources")?"page":undefined} className="rounded-xl px-3 py-2 text-xs font-bold text-blue-700 hover:bg-blue-50">Study Resources</Link>
+          <Link
+            href="/resources"
+            aria-current={
+              pathname.startsWith("/resources") ? "page" : undefined
+            }
+            className="rounded-xl px-3 py-2 text-xs font-bold text-blue-700 hover:bg-blue-50"
+          >
+            Study Resources
+          </Link>
           {user ? (
             <>
               <Link
@@ -314,7 +333,10 @@ export default function Navbar() {
                 <Link
                   href="/register"
                   className="hidden sm:inline-flex touch-target px-4 py-2 text-white rounded-xl text-xs font-bold transition-all items-center gap-1.5 shadow-electric hover:shadow-glow-blue active:scale-95"
-                  style={{ background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)" }}
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
+                  }}
                 >
                   <Sparkles className="w-3.5 h-3.5 text-cyan-200" />
                   <span>Create Account</span>
@@ -357,8 +379,18 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-slate-200 bg-white/98 backdrop-blur-md px-4 py-4 space-y-2 shadow-xl animate-in slide-in-from-top-2">
-          <InstagramLink className="w-full border border-pink-100 px-3 py-3" onClick={() => setMobileMenuOpen(false)} />
-          <Link href="/resources" onClick={()=>setMobileMenuOpen(false)} className="mb-2 flex items-center gap-3 rounded-xl bg-blue-50 px-3 py-3 text-sm font-bold text-blue-800"><BookOpen size={18}/>Study Resources</Link>
+          <InstagramLink
+            className="w-full border border-pink-100 px-3 py-3"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+          <Link
+            href="/resources"
+            onClick={() => setMobileMenuOpen(false)}
+            className="mb-2 flex items-center gap-3 rounded-xl bg-blue-50 px-3 py-3 text-sm font-bold text-blue-800"
+          >
+            <BookOpen size={18} />
+            Study Resources
+          </Link>
           {user ? (
             <>
               <div className="p-3 bg-blue-50/70 rounded-2xl mb-3 flex items-center gap-3">
@@ -420,8 +452,23 @@ export default function Navbar() {
                 <Video className="w-4 h-4 text-purple-600" />
                 <span>NotebookLM Videos</span>
               </Link>
-              <Link href="/textbook-practice" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"><CheckSquare className="h-4 w-4 text-blue-600" /> Textbook MCQs</Link>
-              {user.role === "admin" && <Link href="/admin/textbook-questions" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"><ShieldCheck className="h-4 w-4 text-blue-600" /> Review textbook MCQs</Link>}
+              <Link
+                href="/textbook-practice"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"
+              >
+                <CheckSquare className="h-4 w-4 text-blue-600" /> Textbook MCQs
+              </Link>
+              {user.role === "admin" && (
+                <Link
+                  href="/admin/textbook-questions"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"
+                >
+                  <ShieldCheck className="h-4 w-4 text-blue-600" /> Review
+                  textbook MCQs
+                </Link>
+              )}
               <Link
                 href="/practice"
                 onClick={() => setMobileMenuOpen(false)}

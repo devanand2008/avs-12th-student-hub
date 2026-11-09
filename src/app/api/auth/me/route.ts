@@ -1,17 +1,22 @@
-import { getSession } from "@/lib/auth";
-import { getStudentByUserId } from "@/lib/db";
-import { NextResponse } from "next/server";
+import { getSessionContext } from "@/lib/auth";
+import { after, NextResponse } from "next/server";
+import { engagementRpc } from "@/lib/engagement";
 
 export async function GET() {
-  const session = await getSession();
-  if (!session) {
+  const context = await getSessionContext();
+  if (!context) {
     return NextResponse.json({ authenticated: false }, { status: 401 });
   }
 
-  const student =
-    session.role === "student"
-      ? await getStudentByUserId(session.userId)
-      : null;
+  const { session, student } = context;
+  if (student) {
+    // Optional last-seen bookkeeping must not delay the authenticated UI.
+    after(async () => {
+      await engagementRpc("avs_touch_engagement", {
+        p_user_id: session.userId,
+      }).catch(() => undefined);
+    });
+  }
 
   return NextResponse.json({
     authenticated: true,

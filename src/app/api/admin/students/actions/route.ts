@@ -6,6 +6,10 @@ import {
 } from "@/lib/db";
 import { studentActivationMode } from "@/lib/auth/activation";
 import { NextResponse } from "next/server";
+import {
+  ResetPasswordError,
+  validateReplacementPassword,
+} from "@/lib/auth/reset-password-policy";
 
 export async function POST(request: Request) {
   const session = await getSession();
@@ -17,7 +21,20 @@ export async function POST(request: Request) {
   }
 
   try {
-    const { studentId, action } = await request.json();
+    const body = await request.json();
+    if (!body || typeof body !== "object" || Array.isArray(body))
+      return NextResponse.json(
+        { error: "Invalid request body." },
+        { status: 400 },
+      );
+    const { studentId, action, newPassword } = body;
+    if (newPassword !== undefined && action !== "reset-password")
+      return NextResponse.json(
+        {
+          error: "A replacement password is only accepted for password reset.",
+        },
+        { status: 400 },
+      );
     if (typeof studentId !== "string" || !studentId || studentId.length > 100) {
       return NextResponse.json(
         { error: "studentId is required" },
@@ -68,22 +85,39 @@ export async function POST(request: Request) {
     }
 
     if (action === "reset-password") {
-      const newPassword = await resetStudentPassword(studentId, session.userId);
-      if (!newPassword)
+      const issuedPassword = await resetStudentPassword(
+        studentId,
+        session.userId,
+        validateReplacementPassword(newPassword),
+      );
+      if (!issuedPassword)
         return NextResponse.json(
           { error: "Student not found" },
           { status: 404 },
         );
-      return NextResponse.json({
-        success: true,
-        temporaryPassword: newPassword,
-        message:
-          "Student password reset. Student must change password on next login.",
-      });
+      return NextResponse.json(
+        {
+          success: true,
+          temporaryPassword: issuedPassword,
+          message:
+            "Student password reset. Student must change password on next login.",
+        },
+        { headers: { "Cache-Control": "private, no-store" } },
+      );
     }
 
     return NextResponse.json({ error: "Invalid action" }, { status: 400 });
   } catch (error) {
+    if (error instanceof ResetPasswordError || error instanceof SyntaxError)
+      return NextResponse.json(
+        {
+          error:
+            error instanceof ResetPasswordError
+              ? error.message
+              : "Invalid request body.",
+        },
+        { status: 400 },
+      );
     return NextResponse.json(
       {
         error:

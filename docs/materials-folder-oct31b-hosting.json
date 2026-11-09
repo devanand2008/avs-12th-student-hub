@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-10-31T10:33:03.049Z",
+  "results": [
+    {
+      "file": "phy/video/Electric_Cells___Batteries.mp4",
+      "sha256": "31eb16292a6ced8d1898c6dcdba51aeaa2e44cdbd6e59e1157331d429e4d8c63",
+      "bytes": 42466550,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/31eb16292a6ced8d1898c6dcdba51aeaa2e44cdbd6e59e1157331d429e4d8c63.mp4",
+      "status": 206,
+      "digest": "sha256:31eb16292a6ced8d1898c6dcdba51aeaa2e44cdbd6e59e1157331d429e4d8c63",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Electric_Current_Mystery.mp4",
+      "sha256": "fc4b591fc7d7b8aaa3796bb1fd1a6c6281bc8a5a637e012f09e7377e30ead403",
+      "bytes": 37863932,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/fc4b591fc7d7b8aaa3796bb1fd1a6c6281bc8a5a637e012f09e7377e30ead403.mp4",
+      "status": 206,
+      "digest": "sha256:fc4b591fc7d7b8aaa3796bb1fd1a6c6281bc8a5a637e012f09e7377e30ead403",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Energy_and_Power.mp4",
+      "sha256": "a250902199a522ad49f93aa01fe7d2b29e59aa5c2603927a06bb75ed87a07e27",
+      "bytes": 41899887,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a250902199a522ad49f93aa01fe7d2b29e59aa5c2603927a06bb75ed87a07e27.mp4",
+      "status": 206,
+      "digest": "sha256:a250902199a522ad49f93aa01fe7d2b29e59aa5c2603927a06bb75ed87a07e27",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Heating_Effect_of_Current.mp4",
+      "sha256": "619697f41a1c574581065a7376e7b5e04199c4c529ba694592f7697512f6ea55",
+      "bytes": 66745323,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/619697f41a1c574581065a7376e7b5e04199c4c529ba694592f7697512f6ea55.mp4",
+      "status": 206,
+      "digest": "sha256:619697f41a1c574581065a7376e7b5e04199c4c529ba694592f7697512f6ea55",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Mastering_Circuits.mp4",
+      "sha256": "6fad5b076f5bd22e3e7537124b56e225736fc4b3e12c5c2313d802fe35aeace9",
+      "bytes": 39764623,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6fad5b076f5bd22e3e7537124b56e225736fc4b3e12c5c2313d802fe35aeace9.mp4",
+      "status": 206,
+      "digest": "sha256:6fad5b076f5bd22e3e7537124b56e225736fc4b3e12c5c2313d802fe35aeace9",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Ohm_s_Law_and_Beyond.mp4",
+      "sha256": "76c0562f86dc71f6d85975a57123d9e6c3d8435d9f9c4fa2beb799a69e238415",
+      "bytes": 50149150,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/76c0562f86dc71f6d85975a57123d9e6c3d8435d9f9c4fa2beb799a69e238415.mp4",
+      "status": 206,
+      "digest": "sha256:76c0562f86dc71f6d85975a57123d9e6c3d8435d9f9c4fa2beb799a69e238415",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Thermoelectric_Effect.mp4",
+      "sha256": "4da0cefb4ec389a06edc4fd077e17dffe3a332f0e8cd0f5fa407242ba886fc2f",
+      "bytes": 40465728,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4da0cefb4ec389a06edc4fd077e17dffe3a332f0e8cd0f5fa407242ba886fc2f.mp4",
+      "status": 206,
+      "digest": "sha256:4da0cefb4ec389a06edc4fd077e17dffe3a332f0e8cd0f5fa407242ba886fc2f",
+      "passed": true
+    },
+    {
+      "file": "phy/video/ஓம்_விதி___மின்தடை.mp4",
+      "sha256": "311b2fd6e20645abe7be5b7b8203ddd7044adb66c3dc3353ec8c4fd3babbb876",
+      "bytes": 30274564,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/311b2fd6e20645abe7be5b7b8203ddd7044adb66c3dc3353ec8c4fd3babbb876.mp4",
+      "status": 206,
+      "digest": "sha256:311b2fd6e20645abe7be5b7b8203ddd7044adb66c3dc3353ec8c4fd3babbb876",
+      "passed": true
+    },
+    {
+      "file": "phy/video/கிர்ச்சாஃப்_விதிகள்.mp4",
+      "sha256": "8ca8d879de6889dcabb194eeb08390f69c8ac69795b843ab1ad607a153a07559",
+      "bytes": 30372529,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8ca8d879de6889dcabb194eeb08390f69c8ac69795b843ab1ad607a153a07559.mp4",
+      "status": 206,
+      "digest": "sha256:8ca8d879de6889dcabb194eeb08390f69c8ac69795b843ab1ad607a153a07559",
+      "passed": true
+    },
+    {
+      "file": "phy/video/பேட்டரியின்_ரகசியங்கள்.mp4",
+      "sha256": "981c37aee09c138e61ad5ef660163cb49ce3ce38652c220e5efc0eb10ef2af7a",
+      "bytes": 30394516,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/981c37aee09c138e61ad5ef660163cb49ce3ce38652c220e5efc0eb10ef2af7a.mp4",
+      "status": 206,
+      "digest": "sha256:981c37aee09c138e61ad5ef660163cb49ce3ce38652c220e5efc0eb10ef2af7a",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்சுற்றில்_ஆற்றல்___திறன்.mp4",
+      "sha256": "73dd8ccfd9c39c5e539d19c278dcc293cdabf63204c6c62ef5524cf8c9f7cdd5",
+      "bytes": 31761025,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/73dd8ccfd9c39c5e539d19c278dcc293cdabf63204c6c62ef5524cf8c9f7cdd5.mp4",
+      "status": 206,
+      "digest": "sha256:73dd8ccfd9c39c5e539d19c278dcc293cdabf63204c6c62ef5524cf8c9f7cdd5",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்னோட்டத்தின்_ரகசியம்.mp4",
+      "sha256": "f93bf68ff8368f1c0b84afee3f1e2275c01c48cc969b4d804736778e6b9f129b",
+      "bytes": 22881157,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f93bf68ff8368f1c0b84afee3f1e2275c01c48cc969b4d804736778e6b9f129b.mp4",
+      "status": 206,
+      "digest": "sha256:f93bf68ff8368f1c0b84afee3f1e2275c01c48cc969b4d804736778e6b9f129b",
+      "passed": true
+    },
+    {
+      "file": "phy/video/வெப்பத்தின்_ரகசியம்.mp4",
+      "sha256": "7b8c9a4a353e5e8021c24f59f54f72f13f45be12174daaee5c74819a0e521682",
+      "bytes": 33263136,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/7b8c9a4a353e5e8021c24f59f54f72f13f45be12174daaee5c74819a0e521682.mp4",
+      "status": 206,
+      "digest": "sha256:7b8c9a4a353e5e8021c24f59f54f72f13f45be12174daaee5c74819a0e521682",
+      "passed": true
+    },
+    {
+      "file": "phy/video/வெப்பமின்_சமச்சீர்_தன்மைகள்.mp4",
+      "sha256": "1d0ad79c1979d732febd894de8c43eb738b6ddd63101af401d95ba750fe61abe",
+      "bytes": 28318435,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1d0ad79c1979d732febd894de8c43eb738b6ddd63101af401d95ba750fe61abe.mp4",
+      "status": 206,
+      "digest": "sha256:1d0ad79c1979d732febd894de8c43eb738b6ddd63101af401d95ba750fe61abe",
+      "passed": true
+    }
+  ]
+}

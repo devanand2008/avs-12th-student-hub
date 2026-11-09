@@ -1,0 +1,145 @@
+[
+  {
+    "id": "precalculus",
+    "title": "Precalculus",
+    "authors": "Jay Abramson and contributing authors",
+    "publisher": "OpenStax / Rice University",
+    "subjects": [
+      "Mathematics"
+    ],
+    "topics": [
+      "Functions and graphs",
+      "Trigonometric functions",
+      "Analytic geometry",
+      "Sequences and probability"
+    ],
+    "medium": "English",
+    "sourceUrl": "https://openstax.org/details/books/precalculus",
+    "sourcePdf": "https://assets.openstax.org/oscms-prodcms/media/documents/Precalculus-OP_9wwF7YT.pdf",
+    "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-precalculus.pdf",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licencePdfPage": 4,
+    "attribution": "Precalculus by Jay Abramson and contributing authors. OpenStax / Rice University. Used under CC BY 4.0. Download the unmodified original from https://openstax.org/details/books/precalculus.",
+    "sha256": "f0a83745e1ea5b4200bac371afb64615742528e4d31e1e4d241623a38e454e7d",
+    "sizeBytes": 86247471,
+    "pages": 1156,
+    "limitations": "Supplementary general mathematics reference. This is not a full Tamil Nadu Class 12 guide; notation, sequence and exercises differ.",
+    "checkedAt": "2026-11-04T14:40:42.516Z"
+  },
+  {
+    "id": "statistics",
+    "title": "Introductory Statistics",
+    "authors": "Barbara Illowsky, Susan Dean and contributing authors",
+    "publisher": "OpenStax / Rice University",
+    "subjects": [
+      "Statistics",
+      "Business Mathematics & Statistics",
+      "Mathematics"
+    ],
+    "topics": [
+      "Probability and random variables",
+      "Probability distributions",
+      "Sampling and statistical inference"
+    ],
+    "medium": "English",
+    "sourceUrl": "https://openstax.org/details/books/introductory-statistics",
+    "sourcePdf": "https://assets.openstax.org/oscms-prodcms/media/documents/IntroductoryStatistics-OP.pdf",
+    "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-statistics.pdf",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licencePdfPage": 2,
+    "attribution": "Introductory Statistics by Barbara Illowsky, Susan Dean and contributing authors. OpenStax / Rice University. Used under CC BY 4.0. Download the unmodified original from https://openstax.org/details/books/introductory-statistics.",
+    "sha256": "8bd20cdcd376a153580d35e1acfce7bf23f29f39bdd69cc42ba0330bfe07c676",
+    "sizeBytes": 29990560,
+    "pages": 863,
+    "limitations": "Supplementary English statistics reference, original 2013 edition. Examples and assessment conventions differ from Tamil Nadu textbooks.",
+    "checkedAt": "2026-11-04T14:40:42.518Z"
+  },
+  {
+    "id": "biology",
+    "title": "Biology 2e",
+    "authors": "Mary Ann Clark, Matthew Douglas, Jung Choi and contributing authors",
+    "publisher": "OpenStax / Rice University",
+    "subjects": [
+      "Bio-Botany",
+      "Bio-Zoology",
+      "Botany",
+      "Zoology"
+    ],
+    "topics": [
+      "Genetics and molecular biology",
+      "Plant and animal reproduction",
+      "Ecology and evolution"
+    ],
+    "medium": "English",
+    "sourceUrl": "https://openstax.org/details/books/biology-2e",
+    "sourcePdf": "https://assets.openstax.org/oscms-prodcms/media/documents/Biology2e-OP_aHSFm3Y.pdf",
+    "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-biology.pdf",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "licencePdfPage": 3,
+    "attribution": "Biology 2e by Mary Ann Clark, Matthew Douglas, Jung Choi and contributing authors. OpenStax / Rice University. Used under CC BY 4.0. Download the unmodified original from https://openstax.org/details/books/biology-2e.",
+    "sha256": "4d8a1900da800f4ff5793d1985aff9bbcc8093a90cac83a1fd3b592967e12354",
+    "sizeBytes": 227222946,
+    "pages": 1578,
+    "limitations": "Supplementary English biology reference. Includes topics beyond Class 12 and does not establish complete Tamil Nadu chapter or exam coverage.",
+    "checkedAt": "2026-11-04T14:40:42.518Z"
+  },
+  {
+    "id": "calculus-workbook",
+    "title": "Active Calculus — Differential Calculus Activities (Chapters 1–4)",
+    "authors": "Matthew Boelkins, David Austin, Christina Safranski and Steven Schlicker",
+    "publisher": "Active Calculus",
+    "subjects": [
+      "Mathematics"
+    ],
+    "topics": [
+      "Rates of change and derivatives",
+      "Differentiation rules",
+      "Applications of derivatives",
+      "Definite integrals"
+    ],
+    "medium": "English",
+    "sourceUrl": "https://activecalculus.org/acs2e/",
+    "sourcePdf": "https://activecalculus.org/wp-content/uploads/2025/08/acs2e-activity-workbook-14-8-7-25.pdf",
+    "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-calculus-workbook.pdf",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licencePdfPage": 6,
+    "attribution": "Active Calculus — Differential Calculus Activities (Chapters 1–4) by Matthew Boelkins, David Austin, Christina Safranski and Steven Schlicker. Active Calculus. Used under CC BY-SA 4.0. Download the unmodified original from https://activecalculus.org/acs2e/.",
+    "sha256": "c1bbeca0a312e200536567a1ed89416cf0e5810782326cbe5ce22699440d87b5",
+    "sizeBytes": 1307816,
+    "pages": 215,
+    "limitations": "Activities workbook, not the full Active Calculus textbook or an official TN guide. Many activities require guidance; worked answers are not supplied for every exercise.",
+    "checkedAt": "2026-11-04T14:40:42.518Z"
+  },
+  {
+    "id": "integral-workbook",
+    "title": "Active Calculus — Integral Calculus Activities (Chapters 5–8)",
+    "authors": "Matthew Boelkins, David Austin, Christina Safranski and Steven Schlicker",
+    "publisher": "Active Calculus",
+    "subjects": [
+      "Mathematics"
+    ],
+    "topics": [
+      "Antidifferentiation and integration",
+      "Applications of integration",
+      "Differential equations",
+      "Sequences and series"
+    ],
+    "medium": "English",
+    "sourceUrl": "https://activecalculus.org/acs2e/",
+    "sourcePdf": "https://activecalculus.org/wp-content/uploads/2025/08/acs2e-activity-workbook-58-8-7-25.pdf",
+    "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/open-reference-integral-workbook.pdf",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licencePdfPage": 6,
+    "attribution": "Active Calculus — Integral Calculus Activities (Chapters 5–8) by Matthew Boelkins, David Austin, Christina Safranski and Steven Schlicker. Active Calculus. Used under CC BY-SA 4.0. Download the unmodified original from https://activecalculus.org/acs2e/.",
+    "sha256": "6c67c81f9dfb6ffa1908158f42d6cbc22485bc6fbaab776f171be65943df773c",
+    "sizeBytes": 693836,
+    "pages": 189,
+    "limitations": "Activities workbook with topics beyond Class 12. Use relevant sections with your teacher; this is not a full Tamil Nadu syllabus guide or an official answer key.",
+    "checkedAt": "2026-11-04T14:40:42.518Z"
+  }
+]

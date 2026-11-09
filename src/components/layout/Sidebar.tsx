@@ -15,7 +15,7 @@ import {
   Users,
   Video,
 } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/layout/IntentLink";
 import { usePathname } from "next/navigation";
 import { usePwa } from "@/components/pwa/PwaContext";
 import InstagramLink from "@/components/layout/InstagramLink";
@@ -27,6 +27,17 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const links = isAdmin
     ? [
         { label: "Overview", href: "/admin", icon: LayoutDashboard },
+        {
+          label: "Learning scoreboard",
+          href: "/admin/leaderboard",
+          icon: BarChart3,
+        },
+        { label: "Milestone gifts", href: "/admin/gifts", icon: Sparkles },
+        {
+          label: "Study reminder email",
+          href: "/admin/reminders",
+          icon: LayoutDashboard,
+        },
         {
           label: "Database connection",
           href: "/admin/backend",
@@ -66,6 +77,11 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
         { label: "Overview", href: "/dashboard", icon: LayoutDashboard },
         { label: "My subjects", href: "/subjects", icon: BookOpen },
         { label: "Study Resources", href: "/resources", icon: BookOpen },
+        {
+          label: "Open PDF references",
+          href: "/resources/guides",
+          icon: BookOpen,
+        },
         { label: "Handwritten notes", href: "/notes", icon: FileText },
         { label: "Official textbooks", href: "/textbooks", icon: BookOpen },
         { label: "Video lessons", href: "/videos", icon: Video },
@@ -79,6 +95,7 @@ export default function Sidebar({ isAdmin = false }: { isAdmin?: boolean }) {
         { label: "Textbook MCQs", href: "/textbook-practice", icon: BookOpen },
         { label: "AI study helper", href: "/ai-helper", icon: Sparkles },
         { label: "My performance", href: "/performance", icon: BarChart3 },
+        { label: "Learning scoreboard", href: "/leaderboard", icon: BarChart3 },
         { label: "Bookmarks", href: "/bookmarks", icon: Bookmark },
       ];
   return (

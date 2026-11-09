@@ -1,0 +1,248 @@
+{
+  "checkedAt": "2026-10-31T08:45:57.931Z",
+  "results": [
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.35.40 PM.mp4",
+      "sha256": "8e011673553897e323eb64a04859d671a3af051ff780f5c31a21b26e4479f001",
+      "bytes": 12689994,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8e011673553897e323eb64a04859d671a3af051ff780f5c31a21b26e4479f001.mp4",
+      "status": 206,
+      "digest": "sha256:8e011673553897e323eb64a04859d671a3af051ff780f5c31a21b26e4479f001",
+      "passed": true
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.37.26 PM.mp4",
+      "sha256": "e3991fa7ce066a52b33de1097d33ce054a11b1897f438b10985268e9db0c3fe2",
+      "bytes": 37447270,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e3991fa7ce066a52b33de1097d33ce054a11b1897f438b10985268e9db0c3fe2.mp4",
+      "status": 206,
+      "digest": "sha256:e3991fa7ce066a52b33de1097d33ce054a11b1897f438b10985268e9db0c3fe2",
+      "passed": true
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.38.20 PM.mp4",
+      "sha256": "645741b9a193e11fad1a5a22e382865c8715adaa2e01fe120feaa6145ae9e58d",
+      "bytes": 28538426,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/645741b9a193e11fad1a5a22e382865c8715adaa2e01fe120feaa6145ae9e58d.mp4",
+      "status": 206,
+      "digest": "sha256:645741b9a193e11fad1a5a22e382865c8715adaa2e01fe120feaa6145ae9e58d",
+      "passed": true
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.39.17 PM (1).mp4",
+      "sha256": "18b2dc90735c99876ac9e2b25e1e4c9047abd4a118c7afbdd2b657f677313b8b",
+      "bytes": 25458998,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/18b2dc90735c99876ac9e2b25e1e4c9047abd4a118c7afbdd2b657f677313b8b.mp4",
+      "status": 206,
+      "digest": "sha256:18b2dc90735c99876ac9e2b25e1e4c9047abd4a118c7afbdd2b657f677313b8b",
+      "passed": true
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-27 at 11.44.47 AM.mp4",
+      "sha256": "7095de7cc2ca7d59c80e74122a7a73b67310c72751b2869d8174de039c798106",
+      "bytes": 22333342,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/7095de7cc2ca7d59c80e74122a7a73b67310c72751b2869d8174de039c798106.mp4",
+      "status": 206,
+      "digest": "sha256:7095de7cc2ca7d59c80e74122a7a73b67310c72751b2869d8174de039c798106",
+      "passed": true
+    },
+    {
+      "file": "phy/video/12ஆம்_வகுப்பு__காந்தவியல்.mp4",
+      "sha256": "3448d4c5405d5b93ba467e8881282df21cb508698082f0400eb06ef182f96122",
+      "bytes": 36460462,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3448d4c5405d5b93ba467e8881282df21cb508698082f0400eb06ef182f96122.mp4",
+      "status": 206,
+      "digest": "sha256:3448d4c5405d5b93ba467e8881282df21cb508698082f0400eb06ef182f96122",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Capacitors_and_Capacitance.mp4",
+      "sha256": "5d8647e8d5127164b4ee3054ae253fd0c2f0633d804735d4e41a5018965fb786",
+      "bytes": 48309180,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/5d8647e8d5127164b4ee3054ae253fd0c2f0633d804735d4e41a5018965fb786.mp4",
+      "status": 206,
+      "digest": "sha256:5d8647e8d5127164b4ee3054ae253fd0c2f0633d804735d4e41a5018965fb786",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Coulomb___Superposition.mp4",
+      "sha256": "9c6227952d6df5145d65aee84bda3db6ba94971ecff6f8a774d3651192a68263",
+      "bytes": 44747433,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/9c6227952d6df5145d65aee84bda3db6ba94971ecff6f8a774d3651192a68263.mp4",
+      "status": 206,
+      "digest": "sha256:9c6227952d6df5145d65aee84bda3db6ba94971ecff6f8a774d3651192a68263",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Demystifying_Gauss_s_Law.mp4",
+      "sha256": "b05349fc1192b2eaab4c2b5097f79df3c6c5379a099a831d478a1ba24c997db2",
+      "bytes": 37427212,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/b05349fc1192b2eaab4c2b5097f79df3c6c5379a099a831d478a1ba24c997db2.mp4",
+      "status": 206,
+      "digest": "sha256:b05349fc1192b2eaab4c2b5097f79df3c6c5379a099a831d478a1ba24c997db2",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Electric_Fields_Explained.mp4",
+      "sha256": "5508f816c1ba7dc0ae49a99acd9c0a7529ef23a4bddba24edb89632868c2d8e9",
+      "bytes": 37559095,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/5508f816c1ba7dc0ae49a99acd9c0a7529ef23a4bddba24edb89632868c2d8e9.mp4",
+      "status": 206,
+      "digest": "sha256:5508f816c1ba7dc0ae49a99acd9c0a7529ef23a4bddba24edb89632868c2d8e9",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Electric_Potential___Energy.mp4",
+      "sha256": "bd61900a30e8ac3208fba433cb95685c1af19f833d34a9a221b3f96fc4e8e821",
+      "bytes": 36189869,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/bd61900a30e8ac3208fba433cb95685c1af19f833d34a9a221b3f96fc4e8e821.mp4",
+      "status": 206,
+      "digest": "sha256:bd61900a30e8ac3208fba433cb95685c1af19f833d34a9a221b3f96fc4e8e821",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Electrostatics.mp4",
+      "sha256": "cf42a5a8a22bc4c0f1926eb0be6372994868c1746c97979e34e7974ea65c49ee",
+      "bytes": 52361031,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/cf42a5a8a22bc4c0f1926eb0be6372994868c1746c97979e34e7974ea65c49ee.mp4",
+      "status": 206,
+      "digest": "sha256:cf42a5a8a22bc4c0f1926eb0be6372994868c1746c97979e34e7974ea65c49ee",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Life_of_an_Electric_Dipole.mp4",
+      "sha256": "7b9bf250ac352a7c2abae915ca281522fced74c3beee99c9b85635f484e1a7b9",
+      "bytes": 40716686,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/7b9bf250ac352a7c2abae915ca281522fced74c3beee99c9b85635f484e1a7b9.mp4",
+      "status": 206,
+      "digest": "sha256:7b9bf250ac352a7c2abae915ca281522fced74c3beee99c9b85635f484e1a7b9",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Origin_of_Everyday_Forces.mp4",
+      "sha256": "13a15c6f5ccc396233ed5aa3a5bee0b3c4aea2267ccf67818d5be2b40b2e32f4",
+      "bytes": 33934447,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/13a15c6f5ccc396233ed5aa3a5bee0b3c4aea2267ccf67818d5be2b40b2e32f4.mp4",
+      "status": 206,
+      "digest": "sha256:13a15c6f5ccc396233ed5aa3a5bee0b3c4aea2267ccf67818d5be2b40b2e32f4",
+      "passed": true
+    },
+    {
+      "file": "phy/video/Power_of_Points.mp4",
+      "sha256": "a1c350676dbef3a08b124cc66a23004384a988e0c8094e89b13234d586674e04",
+      "bytes": 45782214,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a1c350676dbef3a08b124cc66a23004384a988e0c8094e89b13234d586674e04.mp4",
+      "status": 206,
+      "digest": "sha256:a1c350676dbef3a08b124cc66a23004384a988e0c8094e89b13234d586674e04",
+      "passed": true
+    },
+    {
+      "file": "phy/video/அலகு_2__மின்னோட்டவியல்.mp4",
+      "sha256": "9cae19f69f8429f0acff6b1f9989838f73dc880e30eadc4fc522f8f876661d48",
+      "bytes": 27839525,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/9cae19f69f8429f0acff6b1f9989838f73dc880e30eadc4fc522f8f876661d48.mp4",
+      "status": 206,
+      "digest": "sha256:9cae19f69f8429f0acff6b1f9989838f73dc880e30eadc4fc522f8f876661d48",
+      "passed": true
+    },
+    {
+      "file": "phy/video/அலகு_5__மின்காந்த_அலைகள்.mp4",
+      "sha256": "53492c3906a431cdf2421e2cfc9eef5febac01b564f441f55ba70a13edf097be",
+      "bytes": 27912134,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/53492c3906a431cdf2421e2cfc9eef5febac01b564f441f55ba70a13edf097be.mp4",
+      "status": 206,
+      "digest": "sha256:53492c3906a431cdf2421e2cfc9eef5febac01b564f441f55ba70a13edf097be",
+      "passed": true
+    },
+    {
+      "file": "phy/video/கூலூம்_விதி___விசைகள்.mp4",
+      "sha256": "9131771fe901f92a5ada9bab1e4d5b93ff6faf4f78cab3bd8e2dfd362d34489c",
+      "bytes": 41077971,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/9131771fe901f92a5ada9bab1e4d5b93ff6faf4f78cab3bd8e2dfd362d34489c.mp4",
+      "status": 206,
+      "digest": "sha256:9131771fe901f92a5ada9bab1e4d5b93ff6faf4f78cab3bd8e2dfd362d34489c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/நிலைமின்_பண்புகள்.mp4",
+      "sha256": "bff5415667b0b6552a9a6545111e40871b3c61c2afa1498a880513fd505b700f",
+      "bytes": 36717974,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/bff5415667b0b6552a9a6545111e40871b3c61c2afa1498a880513fd505b700f.mp4",
+      "status": 206,
+      "digest": "sha256:bff5415667b0b6552a9a6545111e40871b3c61c2afa1498a880513fd505b700f",
+      "passed": true
+    },
+    {
+      "file": "phy/video/நிலைமின்னியலின்_ரகசியங்கள்.mp4",
+      "sha256": "f3993567baa1c0bd9ec80704df07262f8f38a064522aff1d39fb05179c97a161",
+      "bytes": 32453441,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f3993567baa1c0bd9ec80704df07262f8f38a064522aff1d39fb05179c97a161.mp4",
+      "status": 206,
+      "digest": "sha256:f3993567baa1c0bd9ec80704df07262f8f38a064522aff1d39fb05179c97a161",
+      "passed": true
+    },
+    {
+      "file": "phy/video/நிலைமின்னியல்_-_பகுதி_1.mp4",
+      "sha256": "e1b96a54a47e64b077bc573f788cc26259a45dda473e943eb27b47c1e872bb06",
+      "bytes": 36109627,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e1b96a54a47e64b077bc573f788cc26259a45dda473e943eb27b47c1e872bb06.mp4",
+      "status": 206,
+      "digest": "sha256:e1b96a54a47e64b077bc573f788cc26259a45dda473e943eb27b47c1e872bb06",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்_இருமுனை__மாய_விசை.mp4",
+      "sha256": "95d9345a62a6118d5027bf94cdb03ffd5a91b9052efa77723a45261ad022f6aa",
+      "bytes": 28580363,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/95d9345a62a6118d5027bf94cdb03ffd5a91b9052efa77723a45261ad022f6aa.mp4",
+      "status": 206,
+      "digest": "sha256:95d9345a62a6118d5027bf94cdb03ffd5a91b9052efa77723a45261ad022f6aa",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்காந்தத்_தூண்டல்.mp4",
+      "sha256": "49cfc0a52ccd4396538e2b053077e1d7632c68735bb9a3012b448b1ddee1852c",
+      "bytes": 33093768,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/49cfc0a52ccd4396538e2b053077e1d7632c68735bb9a3012b448b1ddee1852c.mp4",
+      "status": 206,
+      "digest": "sha256:49cfc0a52ccd4396538e2b053077e1d7632c68735bb9a3012b448b1ddee1852c",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்காந்தவியல்_ரகசியங்கள்.mp4",
+      "sha256": "cfc1cbeea7673615fbf4df0377c80bd6619ed4ae14b801a298b2e46a45f08362",
+      "bytes": 30702197,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/cfc1cbeea7673615fbf4df0377c80bd6619ed4ae14b801a298b2e46a45f08362.mp4",
+      "status": 206,
+      "digest": "sha256:cfc1cbeea7673615fbf4df0377c80bd6619ed4ae14b801a298b2e46a45f08362",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்தேக்கிகளின்_மாயாஜாலம்.mp4",
+      "sha256": "d3d6940769de0f9e8e7f7638db9e5032adc0c07ae8055449473de3e4edc55418",
+      "bytes": 31093612,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d3d6940769de0f9e8e7f7638db9e5032adc0c07ae8055449473de3e4edc55418.mp4",
+      "status": 206,
+      "digest": "sha256:d3d6940769de0f9e8e7f7638db9e5032adc0c07ae8055449473de3e4edc55418",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்னழுத்தம்_மற்றும்_ஆற்றல்.mp4",
+      "sha256": "59f40373325fff9472703c66bb65884d32de34b2761005af65a2f3004926e29a",
+      "bytes": 35141234,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/59f40373325fff9472703c66bb65884d32de34b2761005af65a2f3004926e29a.mp4",
+      "status": 206,
+      "digest": "sha256:59f40373325fff9472703c66bb65884d32de34b2761005af65a2f3004926e29a",
+      "passed": true
+    },
+    {
+      "file": "phy/video/மின்புலக்_கோடுகள்.mp4",
+      "sha256": "e1022c167267d5d5dd68eb6a3d43e4fee09387e223d476dcec98acb26626a54e",
+      "bytes": 33078258,
+      "url": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e1022c167267d5d5dd68eb6a3d43e4fee09387e223d476dcec98acb26626a54e.mp4",
+      "status": 206,
+      "digest": "sha256:e1022c167267d5d5dd68eb6a3d43e4fee09387e223d476dcec98acb26626a54e",
+      "passed": true
+    }
+  ]
+}
