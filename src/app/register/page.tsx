@@ -561,11 +561,7 @@ export default function RegisterPage() {
             <button
               type="submit"
               disabled={loading || success || !activationMode}
-              className="w-full py-3.5 px-4 rounded-xl text-white text-xs sm:text-sm font-bold shadow-electric hover:shadow-glow-blue transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 active:scale-95"
-              style={{
-                background:
-                  "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
-              }}
+              className="w-full py-3.5 px-4 rounded-xl text-white text-xs sm:text-sm font-bold bg-[#142B63] hover:bg-blue-900 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 active:scale-95"
             >
               {loading ? (
                 <span>Creating your account...</span>

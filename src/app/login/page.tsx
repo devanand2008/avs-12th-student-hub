@@ -223,10 +223,7 @@ function LoginForm() {
           <button
             type="submit"
             disabled={busy}
-            className="flex w-full items-center justify-center gap-2.5 rounded-2xl px-5 py-3.5 text-xs sm:text-sm font-bold text-white shadow-electric hover:shadow-glow-blue transition-all disabled:opacity-50 cursor-pointer active:scale-95"
-            style={{
-              background: "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
-            }}
+            className="flex w-full items-center justify-center gap-2.5 rounded-2xl px-5 py-3.5 text-xs sm:text-sm font-bold text-white bg-[#142B63] hover:bg-blue-900 shadow-md hover:shadow-lg transition-all disabled:opacity-50 cursor-pointer active:scale-95"
           >
             <span>{busy ? "Signing in…" : "Sign In to SkillUp"}</span>
             <ArrowRight size={16} />

@@ -14,7 +14,14 @@
 }
 
 @theme inline {
-  --color-navy: #1b3574;
+  --color-navy: #142B63;
+  --color-royal: #3B82F6;
+  --color-violet-accent: #8B5CF6;
+  --color-emerald-accent: #10B981;
+  --color-surface-bg: #F7F9FC;
+  --color-surface-card: #FFFFFF;
+  --color-text-main: #172033;
+  --color-text-secondary: #64748B;
   --color-brand-50: #eff6ff;
   --color-brand-100: #dbeafe;
   --color-brand-200: #bfdbfe;
@@ -23,9 +30,9 @@
   --color-brand-500: #3b82f6;
   --color-brand-600: #2563eb;
   --color-brand-700: #1d4ed8;
-  --color-brand-800: #1b3574;
-  --color-brand-900: #15295c;
-  --color-brand-950: #050d24;
+  --color-brand-800: #142b63;
+  --color-brand-900: #0f1f47;
+  --color-brand-950: #081024;
   --font-heading: 'Outfit', 'Inter', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
@@ -1367,5 +1374,48 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* Horizontally Scrollable Mobile Navbar with Visible Custom Scrollbar & Indicators */
+.nav-horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #e2e8f0;
+}
+
+.nav-horizontal-scroll::-webkit-scrollbar {
+  height: 3px;
+  display: block;
+}
+
+.nav-horizontal-scroll::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 9999px;
+}
+
+.nav-horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 9999px;
+}
+
+.nav-horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* Mobile Scroll Fade Masks */
+.scroll-fade-left {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.95), transparent);
+}
+
+.scroll-fade-right {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.95), transparent);
+}
+
 
 

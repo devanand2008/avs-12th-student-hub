@@ -57,6 +57,11 @@ export const seoPages = {
     description:
       "Read authorised open educational PDF references for Mathematics, Statistics and Biology on joshuaskillup. See original sources, licences and subject availability.",
   },
+  "/founder": {
+    title: "Dr. D. R. Joshua – Founder, SkillUp | Vice Principal, AVS Engineering College",
+    description:
+      "Learn about Dr. D. R. Joshua, Founder of SkillUp and Vice Principal of AVS Engineering College, Salem. Discover the vision behind Tamil Nadu Class 12's digital learning hub.",
+  },
 } as const;
 
 export function publicMetadata(

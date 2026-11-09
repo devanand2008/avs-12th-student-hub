@@ -114,77 +114,68 @@ export default function NotesPage() {
   );
 
   return (
-    <div className="flex flex-1 bg-[#eff5ff]">
+    <div className="flex flex-1 bg-[#F7F9FC]">
       <Sidebar />
-      <main className="workspace min-w-0 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-7">
+      <main className="workspace min-w-0 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-2 border border-blue-200 shadow-xs">
               <FileText className="w-3.5 h-3.5" />
               <span>FACULTY CURATED RESOURCES</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
-              Notes, Formulas & Study PDFs
+            <h1 className="text-2xl sm:text-3xl font-black text-[#142B63] font-heading tracking-tight">
+              Handwritten Notes & Formulas
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
               Step-by-step derivations, neatly labeled diagrams, formula sheets,
-              and chapter resources supplied for your study. Check uncertain
-              answers with your teacher.
+              and chapter resources supplied for your study.
             </p>
           </div>
-          <span className="text-xs font-extrabold text-blue-700 bg-blue-50 px-3.5 py-1.5 rounded-xl border border-blue-200 shadow-xs">
-            {filtered.length} notes
+          <span className="text-xs font-extrabold text-[#142B63] bg-blue-50 px-3.5 py-1.5 rounded-xl border border-blue-200 shadow-xs">
+            {filtered.length} notes available
           </span>
         </div>
 
-        <label className="flex max-w-md items-center gap-3 rounded-2xl border border-blue-200/80 bg-white px-4 py-3 shadow-xs focus-within:border-blue-500 transition-colors">
-          <Search size={18} className="text-slate-400" />
-          <input
-            type="search"
-            aria-label="Search notes"
-            placeholder="Find a derivation, chapter, or keyword..."
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            className="w-full bg-transparent text-xs sm:text-sm outline-none font-medium placeholder:text-slate-400"
-          />
-        </label>
+        {/* Filter Toolbar */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <label className="flex flex-1 items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-2.5 shadow-xs focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-100 transition-all">
+            <Search size={18} className="text-slate-400 shrink-0" />
+            <input
+              type="search"
+              aria-label="Search notes"
+              placeholder="Find a derivation, chapter, or keyword..."
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              className="w-full bg-transparent text-xs sm:text-sm outline-hidden font-medium placeholder:text-slate-400"
+            />
+          </label>
 
-        <div className="flex flex-wrap gap-3">
-          <label className="text-xs font-semibold text-slate-600">
-            Subject
+          <div className="flex items-center gap-2">
             <select
               aria-label="Filter notes by subject"
               value={subject}
               onChange={(event) => setSubject(event.target.value)}
-              className="ml-2 rounded-xl border border-blue-200 bg-white px-3 py-2"
+              className="rounded-2xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs font-semibold text-slate-700 shadow-xs focus:border-blue-500 outline-hidden"
             >
-              <option value="all">All subjects</option>
+              <option value="all">All Subjects</option>
               {subjects.map((name) => (
                 <option key={name} value={name}>
                   {name}
                 </option>
               ))}
             </select>
-          </label>
-          <label className="text-xs font-semibold text-slate-600">
-            Language
+
             <select
               aria-label="Filter notes by language"
               value={language}
               onChange={(event) => setLanguage(event.target.value)}
-              className="ml-2 rounded-xl border border-blue-200 bg-white px-3 py-2"
+              className="rounded-2xl border border-slate-200 bg-white px-3.5 py-2.5 text-xs font-semibold text-slate-700 shadow-xs focus:border-blue-500 outline-hidden"
             >
-              <option value="all">All languages</option>
+              <option value="all">All Mediums</option>
               <option>English</option>
               <option>Tamil</option>
             </select>
-          </label>
-          <Link
-            href="/notes"
-            className="self-center text-xs font-semibold text-blue-700"
-          >
-            All notes
-          </Link>
+          </div>
         </div>
 
         {error ? (

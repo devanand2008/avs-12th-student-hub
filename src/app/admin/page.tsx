@@ -72,7 +72,7 @@ export default function AdminDashboardPage() {
     );
 
   return (
-    <div className="flex-1 flex bg-[#F8FAFC]">
+    <div className="flex-1 flex bg-[#F7F9FC]">
       <Sidebar isAdmin={true} />
 
       <main className="workspace min-w-0 flex-1 space-y-6">
@@ -83,7 +83,7 @@ export default function AdminDashboardPage() {
               <ShieldCheck className="w-3.5 h-3.5 text-amber-600" />
               <span>AVS Institutional Administration Portal</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-[#071A3D]">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-[#142B63]">
               Admin Control Center
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 mt-0.5">
@@ -96,7 +96,7 @@ export default function AdminDashboardPage() {
           <div className="flex flex-wrap items-center gap-2">
             <Link
               href="/admin/students/import"
-              className="touch-target px-4 py-2 bg-[#2563EB] hover:bg-blue-700 text-white rounded-xl text-xs font-bold shadow-xs flex items-center gap-1.5"
+              className="touch-target px-4 py-2 bg-[#142B63] hover:bg-blue-900 text-white rounded-xl text-xs font-bold shadow-xs flex items-center gap-1.5 transition-all"
             >
               <Upload className="w-4 h-4" />
               <span>Bulk Student Import</span>

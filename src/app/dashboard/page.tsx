@@ -144,10 +144,10 @@ export default function DashboardPage() {
     circumference - (progressPercent / 100) * circumference;
 
   return (
-    <div className="flex flex-1 bg-[#eff5ff]">
+    <div className="flex flex-1 bg-[#F7F9FC]">
       <Sidebar />
 
-      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-7 min-w-0">
+      <main className="flex-1 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-5 sm:py-8 space-y-6 sm:space-y-7 min-w-0">
         <PointsCard />
         {/* Top Header Strip with Greeting and Badges */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -156,7 +156,7 @@ export default function DashboardPage() {
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
               <span>TN CLASS 12 · {streamLabel.toUpperCase()} STREAM</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-black text-[#142B63] font-heading tracking-tight">
               {greeting}, {firstName}
               <span className="text-blue-600">.</span>
             </h1>
@@ -169,12 +169,12 @@ export default function DashboardPage() {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
             {/* Streak Counter Badge */}
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-extrabold text-xs shadow-md shadow-amber-500/20">
+            <div className="flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-extrabold text-xs shadow-md shadow-amber-500/20">
               <Flame
                 size={16}
-                className="text-amber-100 fill-amber-100 animate-bounce"
+                className="text-amber-100 fill-amber-100"
               />
               <span>{data.progress.currentStreak} Day Streak</span>
             </div>
@@ -182,13 +182,9 @@ export default function DashboardPage() {
             {/* Quick Practice shortcut */}
             <Link
               href="/practice"
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-2xl text-white font-extrabold text-xs shadow-electric transition-all hover:scale-105 active:scale-95"
-              style={{
-                background:
-                  "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
-              }}
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-2xl text-white font-extrabold text-xs bg-[#142B63] hover:bg-blue-900 shadow-md transition-all active:scale-95"
             >
-              <Zap size={15} />
+              <Zap size={14} className="text-cyan-300" />
               <span>Quick Test</span>
             </Link>
 
@@ -200,40 +196,38 @@ export default function DashboardPage() {
         </div>
 
         {/* Hero Interactive Workspace Banner */}
-        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#051336] via-[#0b2866] to-[#154699] p-6 sm:p-9 text-white shadow-xl border border-blue-900/50 group">
+        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#142B63] via-[#1A387E] to-[#142B63] p-5 sm:p-8 text-white shadow-lg border border-blue-900/50 group">
           {/* Ambient Glowing Floating Orbs */}
-          <div className="orb-animate absolute -top-16 -right-16 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform" />
-          <div className="orb-animate-2 absolute -bottom-16 -left-16 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-16 -right-16 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none group-hover:scale-125 transition-transform" />
+          <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
 
-          <div className="relative z-10 max-w-2xl space-y-4">
+          <div className="relative z-10 max-w-2xl space-y-3 sm:space-y-4">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-bold border border-white/15 backdrop-blur-md">
               <Sparkles size={13} className="text-cyan-300" />
               <span>CONTINUE YOUR REVISION PROGRESS</span>
             </span>
 
-            <h2 className="text-2xl sm:text-3xl font-black font-heading text-white leading-tight">
+            <h2 className="text-xl sm:text-3xl font-black font-heading text-white leading-tight">
               Ready for your next chapter breakthrough?
             </h2>
 
             <p className="text-xs sm:text-sm text-blue-100/90 leading-relaxed">
-              Explore handwritten faculty notes, watch NotebookLM audio
-              podcasts, and take Book-In & Book-Out one-mark practice tests to
-              lock in your board exam score.
+              Explore handwritten faculty notes, watch chapter revision guides, and take Book-In & Book-Out one-mark practice tests to lock in your board exam score.
             </p>
 
-            <div className="pt-2 flex flex-wrap items-center gap-3">
+            <div className="pt-2 flex flex-wrap items-center gap-2.5 sm:gap-3">
               <Link
                 href="/subjects"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-white hover:bg-cyan-50 text-blue-900 font-extrabold text-xs shadow-xl transition-all transform hover:-translate-y-0.5 active:scale-95"
+                className="inline-flex items-center gap-2 px-5 py-2.5 sm:py-3 rounded-xl bg-white hover:bg-cyan-50 text-blue-900 font-extrabold text-xs shadow-md transition-all active:scale-95"
               >
                 <span>Browse All Chapters</span>
-                <ArrowRight size={15} />
+                <ArrowRight size={14} />
               </Link>
               <Link
                 href="/notes"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-extrabold text-xs border border-white/20 backdrop-blur-md transition-all active:scale-95"
+                className="inline-flex items-center gap-2 px-4 py-2.5 sm:py-3 rounded-xl bg-white/15 hover:bg-white/25 text-white font-extrabold text-xs border border-white/20 backdrop-blur-md transition-all active:scale-95"
               >
-                <FileText size={15} />
+                <FileText size={14} />
                 <span>Read Notes</span>
               </Link>
             </div>

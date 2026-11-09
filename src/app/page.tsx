@@ -4,8 +4,6 @@ import {
   CheckCircle2,
   CheckSquare,
   FileText,
-  Headphones,
-  Languages,
   Sparkles,
   GraduationCap,
   Layers,
@@ -16,6 +14,12 @@ import {
   Smartphone,
   Zap,
   WifiOff,
+  Video,
+  Box,
+  ExternalLink,
+  Award,
+  BookMarked,
+  Search,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "@/components/layout/IntentLink";
@@ -23,132 +27,121 @@ import BrandLogo from "@/components/layout/BrandLogo";
 import InstallButton from "@/components/pwa/InstallButton";
 import StudentReadySummary from "@/components/practice/StudentReadySummary";
 import { pageMetadata, websiteStructuredData } from "@/lib/seo";
-import WelcomeGuide from "@/components/learning/WelcomeGuide";
 
 export const metadata = pageMetadata("/");
 
-const features = [
+const FOUNDER_PORTFOLIO_URL = "https://dr-d-r-joshua-skillup.vercel.app/";
+
+const featureCards = [
   {
-    index: "00",
-    title: "Study Resources",
-    tag: "EXPLORE AND LEARN",
-    icon: BookOpen,
-    href: "/resources",
-    action: "Browse Study Resources",
-    color: "from-blue-700 via-blue-600 to-cyan-600",
-    tagBg: "bg-blue-50 text-blue-700 border-blue-200",
-    iconGradient: "from-blue-700 to-cyan-600",
-    description:
-      "Explore official examination paper collections, useful reading and subject video lessons with clear source information.",
-    highlights: [
-      "Search by subject and medium",
-      "Original publisher links",
-      "Watch lessons inside the app",
-    ],
-  },
-  {
-    index: "01",
     title: "Handwritten Notes",
-    tag: "REVISION MATERIALS",
+    tag: "A4 REVISION SHEETS",
     icon: FileText,
     href: "/notes",
-    action: "Explore Notes",
-    color: "from-blue-600 via-blue-500 to-cyan-500",
-    tagBg: "bg-blue-50 text-blue-700 border-blue-200",
-    iconGradient: "from-blue-600 to-cyan-600",
+    action: "Read Notes",
+    iconColor: "text-blue-600",
+    iconBg: "bg-blue-50 border-blue-100",
     description:
-      "Browse supplied handwritten notes, formula sheets and topic PDFs, organised by subject and chapter.",
-    highlights: [
-      "Formula & derivation cheat-sheets",
-      "Neat diagrams with SI units",
-      "Check source and availability labels",
-    ],
+      "Handwritten derivations, formula summaries, diagrams, and problem steps in clean student-friendly format.",
   },
   {
-    index: "02",
-    title: "Book-Back One-Mark Practice",
+    title: "Video Lessons",
+    tag: "260+ LESSON GUIDES",
+    icon: Video,
+    href: "/videos",
+    action: "Watch Lessons",
+    iconColor: "text-purple-600",
+    iconBg: "bg-purple-50 border-purple-100",
+    description:
+      "Curated topic-by-topic video revisions breaking down core concepts for Physics, Chemistry, Biology and CS.",
+  },
+  {
+    title: "One-Mark MCQs",
     tag: "EXAM QUESTION BANK",
     icon: CheckSquare,
-    href: "/textbook-practice",
-    action: "Practice MCQs",
-    color: "from-cyan-500 via-teal-500 to-emerald-500",
-    tagBg: "bg-cyan-50 text-teal-700 border-cyan-200",
-    iconGradient: "from-cyan-500 to-teal-600",
+    href: "/practice",
+    action: "Start Practice",
+    iconColor: "text-emerald-600",
+    iconBg: "bg-emerald-50 border-emerald-100",
     description:
-      "Choose a medium, subject, textbook and chapter to practise available published questions as web MCQs.",
-    highlights: [
-      "Instant feedback and marks",
-      "Published questions only",
-      "Unlimited repeat practice",
-    ],
+      "Official book-back one-mark tests with instant scoring, explanations, and repeated self-evaluation.",
   },
   {
-    index: "03",
-    title: "NotebookLM Video Guides",
-    tag: "STUDY VIDEOS & AUDIO",
-    icon: Headphones,
-    href: "/videos",
-    action: "Watch Guides",
-    color: "from-indigo-600 via-purple-600 to-pink-500",
-    tagBg: "bg-purple-50 text-purple-700 border-purple-200",
-    iconGradient: "from-indigo-600 to-purple-600",
-    description:
-      "High-yield conversational audio & video guides breaking down core syllabus concepts for effortless revision.",
-    highlights: [
-      "Unit breakdown for quick revision",
-      "Audio revision of core definitions",
-      "Optimized for mobile playback",
-    ],
-  },
-  {
-    index: "04",
-    title: "Official 12th Textbooks",
-    tag: "TN STATE BOARD",
-    icon: BookOpen,
-    href: "/textbooks",
-    action: "Read Textbooks",
-    color: "from-emerald-500 via-teal-600 to-cyan-600",
-    tagBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
-    iconGradient: "from-emerald-600 to-teal-600",
-    description:
-      "Browse available Tamil Nadu State Board Class 12 textbooks by subject, volume and medium, with in-site PDF reading.",
-    highlights: [
-      "English & Tamil medium editions",
-      "Subject, medium and volume filters",
-      "Interactive in-site reader with zoom",
-    ],
-  },
-  {
-    index: "05",
-    title: "SkillUp AI Study Assistant",
-    tag: "24/7 BILINGUAL TUTOR",
+    title: "AI Study Tutor",
+    tag: "24/7 BILINGUAL MENTOR",
     icon: Sparkles,
     href: "/ai-helper",
     action: "Ask AI Tutor",
-    color: "from-purple-600 via-fuchsia-600 to-indigo-600",
-    tagBg: "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200",
-    iconGradient: "from-purple-600 to-fuchsia-600",
+    iconColor: "text-indigo-600",
+    iconBg: "bg-indigo-50 border-indigo-100",
     description:
-      "Ask study doubts anytime. Get step-by-step explanations in English, pure Tamil, or easy Tanglish.",
-    highlights: [
-      "Tamil + English explanations",
-      "Instant doubt solver with formulas",
-      "Grounded in official textbooks",
-    ],
+      "Ask study doubts anytime. Get step-by-step guidance in English, pure Tamil, or easy conversational Tanglish.",
+  },
+  {
+    title: "Tamil & English Textbooks",
+    tag: "TN STATE BOARD",
+    icon: BookOpen,
+    href: "/textbooks",
+    action: "Browse Textbooks",
+    iconColor: "text-cyan-600",
+    iconBg: "bg-cyan-50 border-cyan-100",
+    description:
+      "Complete Tamil Nadu State Board Class 12 textbooks with in-site responsive PDF viewer and zoom controls.",
+  },
+  {
+    title: "3D Learning Lab",
+    tag: "INTERACTIVE VISUALS",
+    icon: Box,
+    href: "/models",
+    action: "Launch 3D Lab",
+    iconColor: "text-rose-600",
+    iconBg: "bg-rose-50 border-rose-100",
+    description:
+      "Interactive 3D molecular structures, physics setups, and biological models powered by real-time Three.js graphics.",
   },
 ];
 
-const subjects = [
+const studentJourneySteps = [
+  {
+    step: "01",
+    title: "Choose Subject",
+    desc: "Select from Physics, Chemistry, Biology, Math, Computer Science, and Arts.",
+    icon: BookMarked,
+  },
+  {
+    step: "02",
+    title: "Select Chapter",
+    desc: "Browse state board unit-wise syllabus modules in Tamil or English medium.",
+    icon: Layers,
+  },
+  {
+    step: "03",
+    title: "Study Notes",
+    desc: "Review concise handwritten notes, derivation steps, and key equations.",
+    icon: FileText,
+  },
+  {
+    step: "04",
+    title: "Watch Videos",
+    desc: "Stream high-yield revision lessons with byte-range instant playback.",
+    icon: Video,
+  },
+  {
+    step: "05",
+    title: "Practice Questions",
+    desc: "Solve book-back one-mark MCQs and measure your exam readiness.",
+    icon: CheckSquare,
+  },
+];
+
+const academicSubjects = [
   {
     id: "sub-physics",
     name: "Physics",
     image: "physics",
     tag: "SCIENCE · CORE",
     color: "from-blue-600 to-cyan-500",
-    tagBg: "bg-blue-50 text-blue-700 border-blue-200",
-    borderHover: "hover:border-blue-400",
-    description:
-      "Electrostatics, Magnetism, Optics, Modern Physics and Electronics with handwritten derivations.",
+    description: "Electrostatics, Magnetism, Optics, Dual Nature, Semiconductor & Communications.",
     href: "/subjects",
   },
   {
@@ -156,730 +149,379 @@ const subjects = [
     name: "Chemistry",
     image: "chemistry",
     tag: "SCIENCE · CORE",
-    color: "from-emerald-500 to-teal-500",
-    tagBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
-    borderHover: "hover:border-emerald-400",
-    description:
-      "Solid State, Coordination Compounds, Organic Reactions, Electrochemistry and Metallurgy concepts.",
+    color: "from-emerald-500 to-teal-600",
+    description: "Solid State, Metallurgy, Coordination Chemistry, Organic Reactions & Polymers.",
     href: "/subjects",
   },
   {
-    id: "sub-mathematics",
-    name: "Mathematics",
-    image: "mathematics",
-    tag: "SCIENCE & ENG",
-    color: "from-amber-500 to-orange-500",
-    tagBg: "bg-amber-50 text-amber-700 border-amber-200",
-    borderHover: "hover:border-amber-400",
-    description:
-      "Matrices, Complex Numbers, Differential Calculus, Integral Calculus and Probability Distributions.",
-    href: "/subjects",
-  },
-  {
-    id: "sub-computer-science",
-    name: "Computer Science",
-    image: "computer-science",
-    tag: "CS STREAM",
-    color: "from-indigo-600 to-purple-600",
-    tagBg: "bg-indigo-50 text-indigo-700 border-indigo-200",
-    borderHover: "hover:border-indigo-400",
-    description:
-      "Object-Oriented Programming with Python, Data Abstraction, Algorithms, SQL, and CSV manipulation.",
-    href: "/subjects",
-  },
-  {
-    id: "sub-botany",
-    name: "Bio-Botany",
+    id: "sub-biology",
+    name: "Bio-Botany & Zoology",
     image: "botany",
     tag: "BIO STREAM",
     color: "from-teal-500 to-emerald-600",
-    tagBg: "bg-teal-50 text-teal-700 border-teal-200",
-    borderHover: "hover:border-teal-400",
-    description:
-      "Reproduction in Plants, Classical Genetics, Molecular Genetics, Plant Tissue Culture and Ecosystem.",
+    description: "Plant Reproduction, Genetics, Biotechnology, Human Physiology & Ecology.",
     href: "/subjects",
   },
   {
-    id: "sub-zoology",
-    name: "Bio-Zoology",
-    image: "zoology",
-    tag: "BIO STREAM",
-    color: "from-rose-500 to-pink-600",
-    tagBg: "bg-rose-50 text-rose-700 border-rose-200",
-    borderHover: "hover:border-rose-400",
-    description:
-      "Human Reproduction, Immunology, Genetics, Microbes in Human Welfare and Environmental Issues.",
+    id: "sub-math",
+    name: "Mathematics",
+    image: "maths",
+    tag: "SCIENCE · CORE",
+    color: "from-amber-500 to-orange-600",
+    description: "Matrices, Complex Numbers, Differential Calculus, Vector Algebra & Probability.",
     href: "/subjects",
   },
   {
-    id: "sub-tamil",
-    name: "பொதுத்தமிழ்",
-    image: "tamil",
-    tag: "LANGUAGE",
-    color: "from-red-500 to-rose-600",
-    tagBg: "bg-red-50 text-red-700 border-red-200",
-    borderHover: "hover:border-red-400",
-    description:
-      "செய்யுள், உரைநடை, இலக்கணம், துணைப்பாடம் மற்றும் அரசு பொதுத்தேர்வு படைப்பாக்கப் பயிற்சிகள்.",
-    href: "/textbooks?search=Tamil",
+    id: "sub-cs",
+    name: "Computer Science",
+    image: "computer",
+    tag: "TECH STREAM",
+    color: "from-indigo-600 to-blue-600",
+    description: "Python, OOP, Data Structures, SQL Database Management & Web Applications.",
+    href: "/subjects",
   },
   {
-    id: "sub-english",
-    name: "General English",
+    id: "sub-commerce",
+    name: "Commerce & Accounts",
     image: "english",
-    tag: "LANGUAGE",
-    color: "from-sky-500 to-blue-600",
-    tagBg: "bg-sky-50 text-sky-700 border-sky-200",
-    borderHover: "hover:border-sky-400",
-    description:
-      "Prose, Poetry, Supplementary Reader, Grammar, Vocabulary, and Comprehensive reading skills.",
-    href: "/textbooks?search=English",
+    tag: "COMMERCE STREAM",
+    color: "from-cyan-600 to-blue-700",
+    description: "Management Process, Financial Markets, Partnership Accounts & Economics.",
+    href: "/subjects",
   },
 ];
 
 export default function HomePage() {
   return (
-    <main className="landing-page min-h-screen bg-[#eff5ff] text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
+    <main className="landing-page min-h-screen bg-[#F7F9FC] text-[#172033] antialiased">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteStructuredData).replace(
-            /</g,
-            "\\u003c",
-          ),
+          __html: JSON.stringify(websiteStructuredData).replace(/</g, "\\u003c"),
         }}
       />
-      {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 pt-16 pb-20 sm:pt-24 sm:pb-28 text-center bg-gradient-to-b from-[#e3eeff] via-[#eff5ff] to-[#f8fbff]">
-        {/* Floating Ambient Glow Orbs */}
-        <div className="orb-animate absolute -top-16 -right-16 w-80 h-80 bg-blue-400/25 rounded-full blur-3xl pointer-events-none" />
-        <div className="orb-animate-2 absolute -bottom-20 -left-20 w-96 h-96 bg-cyan-400/25 rounded-full blur-3xl pointer-events-none" />
-        <div className="orb-animate-3 absolute top-1/3 left-1/2 -translate-x-1/2 w-72 h-72 bg-indigo-400/15 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="reference-grid absolute inset-0 opacity-25 pointer-events-none" />
+      {/* HERO SECTION */}
+      <section className="relative overflow-hidden px-4 pt-12 pb-16 sm:pt-20 sm:pb-24 text-center bg-gradient-to-b from-[#EBF3FF] via-[#F3F7FF] to-[#F7F9FC]">
+        {/* Ambient Subtle Glows */}
+        <div className="absolute -top-20 -right-20 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative mx-auto max-w-6xl z-10">
-          {/* Brand Badge */}
-          <div className="mb-8 inline-flex items-center gap-3.5 px-5 py-2.5 rounded-3xl bg-white/90 border-2 border-blue-200/80 backdrop-blur-md shadow-lg shadow-blue-900/5 text-left transition-all hover:scale-[1.02]">
-            <div className="w-10 h-10 rounded-2xl bg-white border border-blue-200/90 p-1 flex items-center justify-center shadow-xs shrink-0">
-              <BrandLogo size={30} />
-            </div>
-            <div>
-              <p className="text-xs font-black text-slate-800 tracking-tight flex items-center gap-1.5">
-                SkillUp Learning Hub
-                <span className="px-2 py-0.5 rounded-full bg-blue-600 text-white text-[9px] font-black uppercase tracking-wider shadow-xs">
-                  CLASS 12
-                </span>
-              </p>
-              <p className="text-[10px] font-bold text-blue-600 mt-0.5">
-                Tamil Nadu · Higher Secondary Academic Initiative
-              </p>
-            </div>
+        <div className="relative mx-auto max-w-5xl z-10 space-y-6">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/90 border border-blue-200/90 shadow-xs text-left">
+            <BrandLogo size={24} />
+            <span className="text-xs font-bold text-[#142B63]">
+              SkillUp 12th Hub
+            </span>
+            <span className="h-3 w-px bg-slate-200" />
+            <span className="text-[11px] font-semibold text-blue-700">
+              Tamil Nadu State Board
+            </span>
           </div>
 
-          <p className="mb-4 text-sm font-bold tracking-wide text-blue-700">
-            joshuaskillup · Skill Up Class 12 Learning Portal
-          </p>
-          {/* Main Headline */}
-          <h1 className="mx-auto max-w-5xl font-heading text-4xl font-black leading-[1.08] tracking-tight text-slate-950 sm:text-5xl lg:text-7xl">
-            joshuaskillup for
+          {/* Requested Headline */}
+          <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#142B63] leading-[1.12]">
+            Learn Smarter. Score Higher.
             <br />
-            <span className="relative inline-block mx-2">
-              <span className="shimmer-text">Tamil Nadu Class 12</span>
-            </span>{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500">
-              Board Exams
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2563EB] to-[#0EA5E9]">
+              Grow with SkillUp.
             </span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base sm:text-xl leading-relaxed text-slate-600">
-            Access handwritten notes, unit-wise one-mark questions, learning
-            videos and{" "}
-            <span className="font-bold text-blue-600">
-              AI-powered study support
-            </span>{" "}
-            — all in one unified platform.
+          {/* Requested Subtitle */}
+          <p className="mx-auto max-w-2xl text-sm sm:text-lg text-slate-600 leading-relaxed">
+            Your complete Class 12 learning companion for handwritten notes, video lessons, textbooks, one-mark practice and AI-powered learning.
           </p>
 
-          {/* Call to Actions */}
-          <div className="mt-9 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* Requested Actions: Start Learning & Explore Study Materials */}
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
             <Link
               href="/register"
-              className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl text-white font-bold text-sm overflow-hidden shadow-electric transition-all transform hover:-translate-y-1 hover:shadow-glow-blue active:scale-95"
-              style={{
-                background:
-                  "linear-gradient(135deg, #1d4ed8, #2563eb, #0ea5e9)",
-              }}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-white font-bold text-sm bg-[#142B63] hover:bg-blue-900 shadow-md hover:shadow-lg transition-all active:scale-95"
             >
-              <span>Start Learning Free</span>
-              <ArrowRight
-                size={17}
-                className="group-hover:translate-x-1 transition-transform"
-              />
+              <span>Start Learning</span>
+              <ArrowRight size={16} />
             </Link>
+
             <Link
-              href="/login"
-              className="group inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-2xl font-bold text-sm text-blue-700 border-2 border-blue-200 bg-white/80 hover:bg-white backdrop-blur-md transition-all transform hover:-translate-y-0.5 shadow-subtle active:scale-95"
+              href="/resources"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-[#142B63] border border-blue-200 bg-white hover:bg-blue-50/70 shadow-xs transition-all active:scale-95"
             >
-              <GraduationCap size={18} className="text-blue-600" />
-              <span>Student Sign In</span>
-              <ChevronRight size={16} />
+              <BookOpen size={16} className="text-blue-600" />
+              <span>Explore Study Materials</span>
             </Link>
+
             <InstallButton
               variant="pill"
-              className="px-6 py-4 rounded-2xl !bg-[#071a3d] hover:!bg-[#153e78] !text-white shadow-md border border-blue-900/60"
+              className="!w-full sm:!w-auto !py-3 !px-5 !bg-white !text-slate-800 !border !border-slate-200 !shadow-xs"
             />
           </div>
 
-          {/* 4 Stat Highlights in Glassmorphic Cards */}
-          <div className="mx-auto mt-14 grid max-w-3xl grid-cols-2 gap-3.5 sm:grid-cols-4">
-            {[
-              {
-                value: "Class 12",
-                label: "Textbook Library",
-                icon: BookOpen,
-                color: "text-blue-600",
-              },
-              {
-                value: "Practice",
-                label: "Published Web MCQs",
-                icon: CheckSquare,
-                color: "text-teal-600",
-              },
-              {
-                value: "PDFs",
-                label: "Revision Notes",
-                icon: FileText,
-                color: "text-indigo-600",
-              },
-              {
-                value: "AI",
-                label: "Tamil + English Tutor",
-                icon: Languages,
-                color: "text-purple-600",
-              },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="glass-panel rounded-2xl p-4 text-center shadow-subtle hover:scale-105 transition-all"
-              >
-                <div
-                  className={`flex items-center justify-center gap-1.5 text-2xl sm:text-3xl font-black ${stat.color}`}
-                >
-                  <stat.icon size={19} />
-                  <span>{stat.value}</span>
-                </div>
-                <p className="mt-1 text-[11px] font-bold text-slate-500">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+          {/* Quick Metrics Bar */}
+          <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
+            <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">260+</p>
+              <p className="text-[11px] text-slate-500 font-medium">Video Lessons</p>
+            </div>
+            <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">3,000+</p>
+              <p className="text-[11px] text-slate-500 font-medium">Book-Back MCQs</p>
+            </div>
+            <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">100% Free</p>
+              <p className="text-[11px] text-slate-500 font-medium">Open to Students</p>
+            </div>
+            <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">Tamil & Eng</p>
+              <p className="text-[11px] text-slate-500 font-medium">Bilingual Support</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <div className="mx-auto w-full max-w-7xl px-4 py-8">
-        <StudentReadySummary />
-      </div>
+      {/* FEATURE OVERVIEW SECTION */}
+      <section className="px-4 py-14 max-w-6xl mx-auto space-y-8">
+        <div className="text-center max-w-2xl mx-auto space-y-2">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">
+            <Sparkles size={13} />
+            <span>Comprehensive Learning Suite</span>
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#142B63] tracking-tight">
+            Everything You Need for Class 12 Success
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-600">
+            Tailored tools designed specifically for Tamil Nadu Higher Secondary curriculum.
+          </p>
+        </div>
 
-      {/* 5 Academic Knowledge Pillars (Colorful Card Design) */}
-      <section
-        id="features"
-        className="relative px-4 py-20 sm:py-28 bg-[#f8fbff]"
-      >
-        <WelcomeGuide />
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto mb-14 max-w-2xl text-center">
-            <span className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase text-blue-600 bg-blue-50 border border-blue-200/80 shadow-xs">
-              ACADEMIC KNOWLEDGE PILLARS
-            </span>
-            <h2 className="mt-4 font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">
-              Engineered for Board Exam{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500">
-                Top Scorers
-              </span>
-            </h2>
-            <p className="mt-3 text-sm leading-relaxed text-slate-500 max-w-lg mx-auto">
-              A comprehensive curriculum-focused ecosystem for Tamil Nadu 12th
-              standard students, from your first revision to the final public
-              exam.
-            </p>
-          </div>
-
-          {/* 5 Colorful Feature Cards */}
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {features.map((feature) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {featureCards.map((card) => {
+            const Icon = card.icon;
+            return (
               <div
-                key={feature.title}
-                className="info-card-capsule group relative flex flex-col justify-between rounded-3xl bg-white/95 backdrop-blur-xl border border-blue-100/90 p-5 sm:p-6 shadow-md hover:border-blue-400 transition-all duration-300 overflow-hidden"
+                key={card.title}
+                className="group p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 hover:shadow-md transition-all flex flex-col justify-between"
               >
-                {/* Top colored gradient line */}
-                <div
-                  className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${feature.color}`}
-                />
-
-                {/* Ambient corner aura */}
-                <div className="absolute -top-12 -right-12 w-28 h-28 bg-blue-500/10 rounded-full blur-2xl group-hover:scale-150 transition-transform pointer-events-none" />
-
-                {/* Big watermark index */}
-                <span
-                  className="absolute bottom-2 right-3 text-4xl sm:text-5xl font-black text-slate-100 select-none pointer-events-none font-mono"
-                  aria-hidden="true"
-                >
-                  {feature.index}
-                </span>
-
-                <div className="space-y-3.5 relative z-10">
-                  {/* Icon & Badge Header */}
-                  <div className="flex items-center justify-between gap-2">
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
                     <div
-                      className={`w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br ${feature.iconGradient} text-white flex items-center justify-center shadow-lg ring-4 ring-blue-500/10 group-hover:scale-110 group-hover:rotate-3 transition-transform`}
+                      className={`w-11 h-11 rounded-xl flex items-center justify-center border ${card.iconBg} ${card.iconColor}`}
                     >
-                      <feature.icon size={22} />
+                      <Icon size={22} />
                     </div>
-                    <span
-                      className={`text-[9px] sm:text-[10px] font-extrabold tracking-wider uppercase px-2.5 py-1 rounded-full border ${feature.tagBg}`}
-                    >
-                      {feature.tag}
+                    <span className="text-[10px] font-bold text-slate-500 tracking-wider">
+                      {card.tag}
                     </span>
                   </div>
 
-                  {/* Title & Description */}
-                  <div>
-                    <h3 className="text-base font-extrabold text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
-                      {feature.title}
-                    </h3>
-                    <p className="text-xs text-slate-500 mt-1.5 leading-relaxed line-clamp-3">
-                      {feature.description}
-                    </p>
-                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                    {card.title}
+                  </h3>
 
-                  {/* Bullet Highlights */}
-                  <div className="space-y-1.5 pt-2 border-t border-slate-100">
-                    {feature.highlights.map((h, hi) => (
-                      <div
-                        key={hi}
-                        className="flex items-start gap-1.5 text-[11px] font-semibold text-slate-600"
-                      >
-                        <CheckCircle2 className="w-3.5 h-3.5 text-blue-500 shrink-0 mt-0.5" />
-                        <span className="leading-snug">{h}</span>
-                      </div>
-                    ))}
-                  </div>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    {card.description}
+                  </p>
                 </div>
 
-                {/* Action Button */}
-                <div className="pt-4 mt-4 border-t border-slate-100 relative z-10">
+                <div className="pt-4 mt-4 border-t border-slate-100">
                   <Link
-                    href={feature.href}
-                    className="inline-flex items-center justify-between w-full px-4 py-2.5 min-h-[44px] rounded-xl bg-blue-50/80 hover:bg-blue-600 text-blue-700 hover:text-white text-xs font-bold transition-all group-hover:shadow-md active:scale-95"
+                    href={card.href}
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 group-hover:text-blue-700 group-hover:translate-x-0.5 transition-transform"
                   >
-                    <span>{feature.action}</span>
-                    <ArrowRight size={14} />
+                    <span>{card.action}</span>
+                    <ArrowRight size={13} />
                   </Link>
                 </div>
               </div>
-            ))}
+            );
+          })}
+        </div>
+      </section>
+
+      {/* STUDENT EXPERIENCE JOURNEY SECTION */}
+      <section className="bg-white border-y border-slate-200/80 px-4 py-14">
+        <div className="max-w-6xl mx-auto space-y-8">
+          <div className="text-center max-w-xl mx-auto space-y-2">
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+              Student Learning Pathway
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#142B63] tracking-tight">
+              How to Study & Score High with SkillUp
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600">
+              A structured 5-step approach to master every lesson with confidence.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
+            {studentJourneySteps.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.step}
+                  className="p-4 rounded-2xl bg-slate-50/80 border border-slate-200/70 relative flex flex-col justify-between"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-black text-blue-600 bg-blue-100/80 px-2 py-0.5 rounded-md">
+                        Step {item.step}
+                      </span>
+                      <Icon size={16} className="text-slate-400" />
+                    </div>
+                    <h3 className="font-bold text-slate-900 text-sm">{item.title}</h3>
+                    <p className="text-[11px] text-slate-600 leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                  {idx < studentJourneySteps.length - 1 && (
+                    <div className="hidden lg:block absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-slate-300">
+                      →
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Core 12th Subjects Section (Colorful Academic Cards) */}
-      <section className="relative px-4 py-20 sm:py-28 bg-[#eef4ff] overflow-hidden">
-        {/* Subtle background glow */}
-        <div className="orb-animate absolute -right-36 top-1/4 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="orb-animate-2 absolute -left-32 bottom-0 w-96 h-80 bg-cyan-400/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="mx-auto max-w-7xl relative z-10">
-          <div className="mb-12 flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest uppercase text-blue-600 bg-white border border-blue-200/80 shadow-xs">
-                TN STATE BOARD CURRICULUM
-              </span>
-              <h2 className="mt-3 font-heading text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-950">
-                12th Standard{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                  Subjects & Chapters
-                </span>
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
-                Explore supplied handwritten notes, published one-mark questions, revision
-                videos and AI tutoring tailored to each subject.
-              </p>
-            </div>
-            <Link
-              href="/subjects"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-blue-50 text-xs font-bold text-blue-700 border border-blue-200/80 shadow-xs transition-all hover:scale-105 active:scale-95"
-            >
-              <span>View All Chapters</span>
-              <ArrowRight size={15} />
-            </Link>
-          </div>
-
-          {/* 8 Colorful Academic Subject Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {subjects.map((subject) => (
-              <Link
-                key={subject.id}
-                href={subject.href}
-                className={`academic-card group relative flex flex-col rounded-3xl overflow-hidden border border-blue-100/80 bg-white shadow-subtle ${subject.borderHover}`}
-              >
-                {/* Image Banner with Scrim and Floating Title */}
-                <div className="aspect-[16/10] w-full bg-blue-100 overflow-hidden relative">
-                  <Image
-                    src={`/subject-images/${subject.image}.jpg`}
-                    alt={subject.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {/* Gradients */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-950/85 via-blue-900/30 to-transparent" />
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r ${subject.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300`}
-                  />
-
-                  {/* Top Badge */}
-                  <div className="absolute top-3 left-3">
-                    <span className="px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider bg-white/20 backdrop-blur-md text-white border border-white/25">
-                      {subject.tag}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <span className="absolute bottom-3 left-3 text-white font-extrabold text-lg drop-shadow-md">
-                    {subject.name}
-                  </span>
-                </div>
-
-                {/* Card Body */}
-                <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
-                  <p className="text-xs text-slate-500 line-clamp-2 leading-relaxed">
-                    {subject.description}
-                  </p>
-
-                  <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-1.5 text-slate-400 font-bold text-[11px]">
-                      <Layers className="w-3.5 h-3.5 text-blue-500" />
-                      <span>Textbook resources</span>
-                      <span>·</span>
-                      <span className="text-teal-600">Check availability</span>
-                    </div>
-                    <span className="inline-flex items-center gap-1 font-bold text-blue-600 group-hover:translate-x-1 transition-transform">
-                      <span>Explore</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-
-          {/* Interactive 3D Lab Banner */}
-          <Link
-            href="/models"
-            className="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-blue-200 bg-white/80 backdrop-blur-md p-6 shadow-sm hover:border-blue-400 hover:shadow-md transition-all group"
-          >
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white flex items-center justify-center shadow-md group-hover:rotate-6 transition-transform">
-                <Compass className="w-6 h-6" />
-              </div>
-              <div>
-                <h4 className="font-heading font-extrabold text-sm text-slate-900 group-hover:text-blue-600 transition-colors">
-                  Interactive 3D Learning Lab
-                </h4>
-                <p className="text-xs text-slate-500">
-                  Manipulate 3D physical models, molecular structures, and
-                  interactive animations in real-time.
-                </p>
-              </div>
-            </div>
-            <span className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 text-xs font-bold group-hover:bg-blue-600 group-hover:text-white transition-all">
-              <span>Open 3D Lab</span>
-              <ArrowRight size={14} />
+      {/* SUBJECTS PREVIEW */}
+      <section className="px-4 py-14 max-w-6xl mx-auto space-y-6">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">
+              Curriculum Coverage
             </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#142B63] tracking-tight">
+              Class 12 Core Subjects
+            </h2>
+          </div>
+          <Link
+            href="/subjects"
+            className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 hover:text-blue-800"
+          >
+            <span>Explore All Subjects</span>
+            <ArrowRight size={14} />
           </Link>
         </div>
-      </section>
 
-      {/* PWA Mobile App Spotlight Section */}
-      <section className="relative px-4 py-16 bg-white overflow-hidden">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative rounded-3xl bg-gradient-to-br from-[#071a3d] via-[#103774] to-[#1d4ed8] p-8 sm:p-12 text-white shadow-2xl overflow-hidden">
-            {/* Glowing orbs in background */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-400/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
-
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-7 space-y-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-400/30 text-[11px] font-bold text-cyan-200 uppercase tracking-wider">
-                  <Smartphone className="w-3.5 h-3.5" />
-                  <span>Progressive Web App (PWA)</span>
-                </div>
-                <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-white leading-tight">
-                  Study Anywhere on Mobile — <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-200">
-                    Works Offline & 1-Tap Launch
-                  </span>
-                </h2>
-                <p className="text-sm text-blue-100/90 leading-relaxed max-w-xl">
-                  Install SkillUp directly to your phone’s home screen with zero
-                  storage overhead. No App Store or Play Store login required —
-                  works on both Android and iPhone.
-                </p>
-
-                {/* 3 Mobile Badges */}
-                <div className="pt-2 grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 space-y-1">
-                    <div className="flex items-center gap-2 font-bold text-xs text-cyan-200">
-                      <Zap className="w-4 h-4 text-amber-300" />
-                      <span>Instant 1-Tap</span>
-                    </div>
-                    <p className="text-[11px] text-blue-100">
-                      Launches like a native phone app
-                    </p>
-                  </div>
-                  <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 space-y-1">
-                    <div className="flex items-center gap-2 font-bold text-xs text-cyan-200">
-                      <WifiOff className="w-4 h-4 text-emerald-300" />
-                      <span>Offline Notes</span>
-                    </div>
-                    <p className="text-[11px] text-blue-100">
-                      Review notes even without Internet
-                    </p>
-                  </div>
-                  <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 space-y-1">
-                    <div className="flex items-center gap-2 font-bold text-xs text-cyan-200">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-300" />
-                      <span>Zero App Store Lag</span>
-                    </div>
-                    <p className="text-[11px] text-blue-100">
-                      Under 2 MB lightweight PWA
-                    </p>
-                  </div>
-                </div>
-
-                <div className="pt-4 flex flex-wrap items-center gap-4">
-                  <InstallButton
-                    variant="pill"
-                    className="!py-3.5 !px-6 !text-sm !shadow-glow-blue cursor-pointer"
-                  />
-                  <span className="text-xs text-blue-200">
-                    Supports Android, iOS Safari & Desktop
-                  </span>
-                </div>
-              </div>
-
-              {/* Graphic / Visual Phone Mockup */}
-              <div className="lg:col-span-5 flex justify-center">
-                <div className="relative w-64 sm:w-72 rounded-[2.5rem] p-3 bg-slate-900 border-4 border-slate-700 shadow-2xl">
-                  {/* Speaker Notch */}
-                  <div className="absolute top-5 left-1/2 -translate-x-1/2 w-20 h-4 bg-slate-800 rounded-full flex items-center justify-center">
-                    <div className="w-3 h-3 rounded-full bg-slate-900" />
-                  </div>
-                  {/* Screen Content */}
-                  <div className="rounded-[2rem] bg-[#eff5ff] p-4 text-slate-900 pt-8 space-y-3 overflow-hidden shadow-inner">
-                    <div className="flex items-center justify-between pb-2 border-b border-blue-100">
-                      <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center font-bold text-xs shadow-xs">
-                          SU
-                        </div>
-                        <span className="font-extrabold text-xs text-[#071A3D]">
-                          SkillUp
-                        </span>
-                      </div>
-                      <span className="px-1.5 py-0.5 rounded text-[8px] font-bold bg-emerald-100 text-emerald-800">
-                        INSTALLED
-                      </span>
-                    </div>
-
-                    <div className="p-2.5 rounded-xl bg-white shadow-xs border border-blue-100 space-y-1">
-                      <div className="text-[10px] font-bold text-blue-600 uppercase">
-                        Quick Practice
-                      </div>
-                      <div className="text-xs font-black text-slate-800">
-                        Physics: Electrostatics
-                      </div>
-                      <div className="text-[10px] text-slate-500">
-                        Choose an available chapter
-                      </div>
-                    </div>
-
-                    <div className="p-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-xs space-y-1">
-                      <div className="text-[10px] font-bold text-cyan-200">
-                        AI Study Tutor
-                      </div>
-                      <div className="text-xs font-semibold">
-                        Ask any formula or doubt 24/7
-                      </div>
-                    </div>
-
-                    <div className="pt-1 flex items-center justify-around text-slate-400 border-t border-slate-200 text-[9px] font-medium">
-                      <span className="text-blue-600 font-bold">Home</span>
-                      <span>Notes</span>
-                      <span>MCQs</span>
-                      <span>AI</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Institutional Patron Contact Box */}
-      <section className="px-4 py-16 bg-white border-y border-blue-100/80">
-        <div className="mx-auto max-w-5xl">
-          <div className="rounded-3xl border border-blue-200/90 bg-gradient-to-r from-blue-50/60 via-indigo-50/40 to-cyan-50/60 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-subtle">
-            <div className="flex items-center gap-4">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#071a3d] to-blue-900 text-white flex items-center justify-center font-black text-xl shadow-md shrink-0">
-                SU
-              </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {academicSubjects.map((sub) => (
+            <Link
+              key={sub.id}
+              href={sub.href}
+              className="p-4 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 hover:shadow-xs transition-all flex items-center justify-between group"
+            >
               <div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-blue-600">
-                  Academic Guidance Desk
+                <span className="text-[9px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full uppercase">
+                  {sub.tag}
                 </span>
-                <h3 className="text-lg font-bold text-slate-900">
-                  Dr. Joshua, Vice Principal & Academic Patron
+                <h3 className="font-bold text-slate-900 text-base mt-1.5 group-hover:text-blue-600 transition-colors">
+                  {sub.name}
                 </h3>
-                <p className="text-xs text-slate-500 mt-0.5">
-                  AVS Engineering College (Autonomous), Salem · Supporting Tamil
-                  Nadu 12th Standard Students
+                <p className="text-xs text-slate-500 mt-1 line-clamp-1">
+                  {sub.description}
                 </p>
               </div>
-            </div>
-            <div className="flex items-center gap-3 shrink-0">
-              <a
-                href="tel:+917200008770"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#071a3d] hover:bg-blue-900 text-white text-xs font-bold shadow-md transition-all active:scale-95"
-              >
-                <Phone size={14} className="text-cyan-300" />
-                <span>+91 7200008770</span>
-              </a>
-              <Link
-                href="/register"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-md transition-all active:scale-95"
-              >
-                <ShieldCheck size={14} />
-                <span>Join Free</span>
-              </Link>
+              <ChevronRight
+                size={18}
+                className="text-slate-400 group-hover:translate-x-1 group-hover:text-blue-600 transition-all shrink-0"
+              />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FOUNDER SPOTLIGHT SECTION */}
+      <section className="bg-white border-y border-slate-200/80 px-4 py-14 sm:py-16">
+        <div className="max-w-5xl mx-auto">
+          <div className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50/60 via-white to-blue-50/40 p-6 sm:p-10 shadow-xs">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              {/* Founder Image */}
+              <div className="md:col-span-4 flex justify-center">
+                <div className="relative p-2 rounded-2xl bg-white border border-blue-200 shadow-md">
+                  <Image
+                    src="/images/joshua-introduction.png"
+                    alt="Dr. D. R. Joshua, Founder of SkillUp and Vice Principal of AVS Engineering College"
+                    width={180}
+                    height={180}
+                    className="w-36 h-36 sm:w-44 sm:h-44 object-cover rounded-xl"
+                  />
+                  <div className="mt-2 text-center">
+                    <span className="inline-block text-[10px] font-bold text-blue-700 bg-blue-100/70 px-2.5 py-0.5 rounded-full">
+                      Founder · SkillUp
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Founder Bio & Actions */}
+              <div className="md:col-span-8 text-center md:text-left space-y-4">
+                <div className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 uppercase tracking-wide">
+                  <Award size={15} />
+                  <span>Meet the Founder</span>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-[#142B63] font-heading">
+                    Dr. D. R. Joshua
+                  </h2>
+                  <p className="text-sm font-semibold text-blue-700 mt-0.5">
+                    Founder, SkillUp · Vice Principal, AVS Engineering College, Salem
+                  </p>
+                </div>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Dedicated to engineering education and school-to-college transition. Dr. Joshua initiated SkillUp as a digital patronship providing Tamil Nadu Higher Secondary students with free, high-quality handwritten study notes, video tutorials, 3D simulations, and AI support.
+                </p>
+
+                {/* Requested Buttons: "Learn More" (internal) and "Visit Portfolio" (external) */}
+                <div className="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-3">
+                  <Link
+                    href="/founder"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#142B63] hover:bg-blue-900 text-white font-bold text-xs shadow-xs transition-all active:scale-95"
+                  >
+                    <span>Learn More</span>
+                    <ArrowRight size={14} />
+                  </Link>
+
+                  <a
+                    href={FOUNDER_PORTFOLIO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-blue-50 text-[#142B63] border border-blue-200 font-bold text-xs shadow-2xs transition-all active:scale-95"
+                  >
+                    <span>Visit Portfolio</span>
+                    <ExternalLink size={13} className="text-blue-600" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        aria-labelledby="study-overview"
-        className="bg-white px-4 py-12 sm:py-16"
-      >
-        <div className="mx-auto max-w-5xl space-y-5">
-          <h2
-            id="study-overview"
-            className="text-2xl font-bold text-slate-900 sm:text-3xl"
-          >
-            Tamil Nadu 12th standard study materials
-          </h2>
-          <p className="max-w-4xl leading-relaxed text-slate-600">
-            Explore Samacheer Kalvi Class 12 textbooks, handwritten revision
-            notes, NotebookLM video lessons and book-back one-mark MCQ practice.
-            Learn with Biology, Physics and Chemistry 3D models, Mathematics and
-            Computer Science visualisations, and AI study tools. Available
-            content varies by subject and medium.
-          </p>
-          <p lang="ta" className="max-w-4xl leading-8 text-slate-600">
-            தமிழ்நாடு 12ஆம் வகுப்பு மாணவர்கள் தமிழ் மற்றும் ஆங்கில வழிப்
-            பாடநூல்கள், பாடக்குறிப்புகள் மற்றும் காணொளிப் பாடங்களை joshuaskillup
-            தளத்தில் தேடலாம். ஒரு மதிப்பெண் பயிற்சிக்கு தற்போது
-            வெளியிடப்பட்டுள்ள கேள்விகள் மட்டுமே கிடைக்கும்; பாடம் மற்றும்
-            மொழிக்கு ஏற்ப உள்ளடக்கம் மாறுபடும்.
-          </p>
-          <nav
-            aria-label="Explore Class 12 learning resources"
-            className="flex flex-wrap gap-x-6 gap-y-3 font-semibold text-blue-700"
-          >
-            <Link href="/resources">Study materials and question papers</Link>
-            <Link href="/textbooks">Tamil and English textbooks</Link>
-            <Link href="/resources/guides">Authorised PDF references</Link>
-            <Link href="/models">Interactive 3D learning models</Link>
-          </nav>
-          <h2 className="pt-5 text-2xl font-bold text-slate-900">
-            Getting started with Skill Up
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-3">
-            <article className="rounded-2xl border border-blue-100 p-5">
-              <h3 className="font-bold text-slate-900">
-                What is joshuaskillup?
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">
-                Skill Up is a learning platform for Tamil Nadu Class 12
-                students, bringing notes, textbooks, videos, published MCQ
-                practice and interactive models into one place.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-blue-100 p-5">
-              <h3 className="font-bold text-slate-900">
-                Can I study in Tamil and English?
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">
-                Tamil and English textbooks and learning resources are
-                available. Practice shows currently published questions;
-                coverage differs by subject and medium.
-              </p>
-            </article>
-            <article className="rounded-2xl border border-blue-100 p-5">
-              <h3 className="font-bold text-slate-900">
-                How do I start learning?
-              </h3>
-              <p className="mt-3 text-sm leading-6 text-slate-600">
-                Explore public resources first. Register or sign in to use
-                student notes, videos and question practice, and save your
-                learning progress.
-              </p>
-            </article>
+      {/* PWA MOBILE APP BANNER */}
+      <section className="px-4 py-12 max-w-5xl mx-auto">
+        <div className="p-6 sm:p-8 rounded-3xl bg-[#142B63] text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
+          <div className="space-y-2 text-center md:text-left">
+            <span className="text-[10px] font-bold text-cyan-300 uppercase tracking-wider bg-white/10 px-2.5 py-1 rounded-full">
+              Mobile App Experience
+            </span>
+            <h3 className="text-xl sm:text-2xl font-extrabold">
+              Study Anywhere with the SkillUp PWA
+            </h3>
+            <p className="text-xs sm:text-sm text-blue-100/90 max-w-lg leading-relaxed">
+              Install SkillUp directly to your Android phone or iPhone home screen with one tap. Zero app store delay, ultra-fast loading, and offline access.
+            </p>
           </div>
-        </div>
-      </section>
 
-      {/* Call to Action Banner */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-600 px-4 py-20 text-center text-white sm:py-24">
-        {/* Floating background lights */}
-        <div className="orb-animate absolute -top-20 -left-20 w-80 h-80 bg-white/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="orb-animate-2 absolute -bottom-20 -right-20 w-80 h-80 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative mx-auto flex max-w-2xl flex-col items-center z-10">
-          <div className="w-16 h-16 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-2 flex items-center justify-center shadow-lg">
-            <BrandLogo size={46} />
-          </div>
-          <span className="mt-6 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[10px] font-black tracking-widest uppercase">
-            FREE FOR ALL 12TH STUDENTS
-          </span>
-          <h2 className="mt-4 font-heading text-3xl font-extrabold tracking-tight sm:text-5xl text-white">
-            Start Your Free 12th Exam
-            <br />
-            <span className="text-cyan-200">Preparation Today</span>
-          </h2>
-          <p className="mt-5 max-w-xl text-sm leading-relaxed text-blue-100">
-            Open to 12th standard students across Salem and Tamil Nadu. Practice
-            one-mark questions, revise with supplied notes, and study with your
-            bilingual AI tutor.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Link
-              href="/register"
-              className="inline-flex items-center gap-2.5 rounded-2xl bg-white px-7 py-4 text-xs font-extrabold text-blue-900 shadow-xl hover:bg-blue-50 transition-all transform hover:-translate-y-0.5 active:scale-95"
-            >
-              <GraduationCap size={16} className="text-blue-600" />
-              <span>Create Free Account</span>
-              <ArrowRight size={15} />
-            </Link>
-            <Link
-              href="/login"
-              className="inline-flex items-center gap-2 rounded-2xl border-2 border-white/30 bg-white/10 backdrop-blur-md px-7 py-4 text-xs font-bold text-white hover:bg-white/20 transition-all active:scale-95"
-            >
-              <span>Already a member? Sign in</span>
-              <ChevronRight size={15} />
-            </Link>
+          <div className="shrink-0">
+            <InstallButton
+              variant="pill"
+              className="!py-3 !px-6 !text-xs !bg-blue-500 hover:!bg-blue-600 !text-white !font-bold !rounded-xl !shadow-md cursor-pointer"
+            />
           </div>
         </div>
       </section>

@@ -233,25 +233,24 @@ export default function VideoLibrary({ watchId }: { watchId?: string }) {
     `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
 
   return (
-    <div className="flex flex-1 bg-[#eff5ff]">
+    <div className="flex flex-1 bg-[#F7F9FC]">
       <Sidebar />
-      <main className="workspace min-w-0 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-7">
+      <main className="workspace min-w-0 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-50 text-xs font-bold text-purple-700 mb-2 border border-purple-200 shadow-xs">
               <Headphones className="w-3.5 h-3.5" />
-              <span>VIDEO LESSONS</span>
+              <span>VIDEO LESSONS & GUIDES</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
-              Video Lessons & Visual Guides
+            <h1 className="text-2xl sm:text-3xl font-black text-[#142B63] font-heading tracking-tight">
+              Class 12 Video Revision Guides
             </h1>
             <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
-              Watch Tamil language lessons and chapter video guides. Search in
-              English or Tamil, save a lesson, and continue where you left off.
+              Watch Tamil & English medium lessons with instant streaming. Pick any chapter video, save your progress, and continue anytime.
             </p>
           </div>
-          <span className="text-xs font-extrabold text-purple-700 bg-purple-50 px-3.5 py-1.5 rounded-xl border border-purple-200 shadow-xs">
-            {videos.length} learning modules
+          <span className="text-xs font-extrabold text-[#142B63] bg-purple-50 px-3.5 py-1.5 rounded-xl border border-purple-200 shadow-xs">
+            {videos.length} videos available
           </span>
         </div>
 
