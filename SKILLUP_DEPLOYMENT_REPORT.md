@@ -29,22 +29,15 @@ The local repository was synchronized cleanly with the primary GitHub repository
 - **Repository URL:** https://github.com/devanand2008/avs-12th-student-hub
 - **Remote Name:** `origin`
 - **Branch:** `main`
-- **Commit SHA:** `1eb5cc6`
+- **Commit SHA:** `280cbb9`
 - **Commit Message:**
   ```text
-  feat: complete Class 12 handwritten notes CMS, Physics video lessons and platform enhancements
-
-  - Add 39 Class 12 Physics lessons (Units 5, 6, 7) and canonical alias
-  - Upgrade Admin Notes CMS with multi-page batch upload (10+ images)
-  - Add natural numeric sorting, page reordering, and WebP support
-  - Enable in-place editing for existing notes and videos
-  - Preserve student records, question banks, and progress analytics
-  - Add comprehensive documentation, test suites, and audit inventories
+  feat: add 850x480 source thumbnail images for 39 Physics video lessons
   ```
 - **Push Output:**
   ```text
   To https://github.com/devanand2008/avs-12th-student-hub.git
-     5e19818..1eb5cc6  main -> main
+     418f9ec..280cbb9  main -> main
   ```
 
 ---
@@ -94,6 +87,7 @@ Direct HTTP probing against `https://avs-12th-student-hub.vercel.app/` confirmed
 | `/subjects` | Subject curriculum index (Class 12 Tamil/English medium) | **HTTP 307 Redirect** | Correctly redirects unauthenticated requests to `/login` |
 | `/videos` | Educational video catalog & player | **HTTP 307 Redirect** | Protected student route correctly protected |
 | `/dashboard` | Student personalized learning hub & progress tracker | **HTTP 307 Redirect** | Session validation barrier confirmed |
+| `/images/learning-materials/<sha256>.jpg` | Newly generated 850x480 video thumbnail assets | **HTTP 200 OK** | Edge CDN delivery verified for Unit 5, 6, 7 video cards |
 | `/api/cron/reminders` | Scheduled daily reminder delivery (03:30 UTC) | **Active Cron** | Registered in `vercel.json` |
 
 ---

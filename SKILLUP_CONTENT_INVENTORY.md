@@ -3,9 +3,9 @@
 **Catalog Date:** November 9, 2026  
 **Auditor:** Senior Educational Technology & Full-Stack Engineer  
 **Source Master Root:** `D:\avs-12-hub\book's`  
-**Total Source Files:** 311 files (59 PDFs, 252 MP4 Videos)  
-**Total Unique Learning Resources:** 303 Resources (59 Notes, 244 Videos)  
-**Total Duplicate Video Aliases:** 8 Aliases (7 earlier + 1 newly identified)  
+**Total Source Files:** 329 files (59 PDFs, 270 MP4 Videos)  
+**Total Unique Learning Resources:** 319 Resources (59 Notes, 260 Videos)  
+**Total Duplicate Video Aliases:** 10 Aliases (7 earlier + 3 newly identified)  
 
 ---
 
@@ -13,8 +13,8 @@
 
 | Subject | Medium | Total Notes (PDFs) | Total Unique Videos | Verified Syllabus Units Covered |
 |---|---|---:|---:|---|
-| **Physics** | English | 0 | 51 | Unit 1 (Electrostatics), Unit 2 (Current Electricity), Unit 3 (Magnetism), Unit 4 (EM Induction), Unit 5 (EM Waves), Unit 6 (Optics), Unit 7 (Dual Nature) |
-| **Physics** | Tamil | 0 | 50 | Unit 1 (நிலைமின்னியல்), Unit 2 (மின்னோட்டவியல்), Unit 3 (காந்தவியல்), Unit 4 (மின்காந்தத்தூண்டல்), Unit 5 (மின்காந்த அலைகள்), Unit 6 (ஒளியியல்), Unit 7 (இருமைப் பண்பு), + 1 Career Guide |
+| **Physics** | English | 0 | 59 | Unit 1 (Electrostatics), Unit 2 (Current Electricity), Unit 3 (Magnetism), Unit 4 (EM Induction), Unit 5 (EM Waves), Unit 6 (Optics), Unit 7 (Dual Nature), Unit 8 (Atomic & Nuclear Physics) |
+| **Physics** | Tamil | 0 | 58 | Unit 1 (நிலைமின்னியல்), Unit 2 (மின்னோட்டவியல்), Unit 3 (காந்தவியல்), Unit 4 (மின்காந்தத்தூண்டல்), Unit 5 (மின்காந்த அலைகள்), Unit 6 (ஒளியியல்), Unit 7 (இருமைப் பண்பு), Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல்), + 1 Career Guide |
 | **Bio-Botany** | English | 16 | 28 | Chapters 1–10 (Reproduction, Genetics, Tissue Culture, Ecology, Plant Breeding, Useful Plants) |
 | **Bio-Botany** | Tamil | 3 | 0 | Chapters 1–3 (பாலிலா & பாலினப்பெருக்கம், பாரம்பரிய மரபியல், குரோமோசோம் அடிப்படைகள்) |
 | **Bio-Zoology** | English | 10 | 18 | Chapters 1–6 (Reproduction, Health, Inheritance, Molecular Genetics, Evolution) |
@@ -23,7 +23,7 @@
 | **Mathematics** | English | 25 | 0 | Chapters 1–12 (Matrices, Complex Numbers, Geometry, Vector Algebra, Calculus, Diff Equations, Probability, Discrete) |
 | **Tamil Language** | Tamil | 0 | 38 | Units 1–5 (இளந்தமிழே, தன்னேர் இலாத தமிழ், நடை அழகியல், தம்பி நெல்லையப்பருக்கு, தமிழாய் எழுதுவோம்) |
 | **English Language**| English | 0 | 45 | Prose, Poetry, Grammar, Supplementary readers |
-| **Total** | Bilingual | **59** | **244** | **303 Unique Resources Across All Streams** |
+| **Total** | Bilingual | **59** | **260** | **319 Unique Resources Across All Streams** |
 
 ---
 
@@ -101,8 +101,30 @@
 | `phy/video/பருப்பொருள்_அலைகள்.mp4` | Tamil | 351s | `1390c17d9980ac85` | இயற்பியல் — பருப்பொருள் அலைகள் — டி பிராலி அலைநீளம் |
 | `phy/video/X-கதிர்களின்_இயற்பியல்.mp4` | Tamil | 352s | `8cec57eaebe6da8f` | இயற்பியல் — X-கதிர்களின் இயற்பியல் — உருவாக்கம் & பண்புகள் |
 
-### 2.4 Video Thumbnail Asset Verification
-All 39 newly added Physics video lessons have full-resolution (850x480) JPEG preview thumbnails captured at timestamp 00:00:05 and stored under `public/images/learning-materials/<sha256>.jpg`.
+### 2.4 Physics Unit 8: Atomic and Nuclear Physics (அணு மற்றும் அணுக்கரு இயற்பியல்)
+*Curriculum Mapping: Volume 2, Chapter 8 (`tb-12-physics-english-v2-0ce6704c-ch-8` & `tb-12-physics-tamil-v2-fb1fa4de-ch-8`)*
+
+| File | Medium | Duration | SHA-256 (First 16 chars) | Title & Lesson Scope |
+|---|---|---:|---|---|
+| `phy/video/Evolution_of_the_Atom.mp4` | English | 483s | `c631fb006e7cc5b1` | Physics — Evolution of the Atom & Atomic Models |
+| `phy/video/Radioactivity_Explained.mp4` | English | 522s | `df1fb56042ac6700` | Physics — Radioactivity & Nuclear Fission Explained |
+| `phy/video/Stars_to_Quarks.mp4` | English | 485s | `8e1114aef1fa9cd7` | Physics — Stars to Quarks — Elementary Particles |
+| `phy/video/Story_of_the_Electron.mp4` | English | 501s | `a1074183a4bc4eeb` | Physics — Story of the Electron & Cathode Rays |
+| `phy/video/The_Atomic_Paradox.mp4` | English | 388s | `c1e0960d4d887935` | Physics — The Atomic Paradox — Bohr Atom Model |
+| `phy/video/The_Center_of_Matter.mp4` | English | 519s | `1d4ed13e35ede3e0` | Physics — The Center of Matter — Nuclear Structure |
+| `phy/video/Universe__Stars_to_Forces.mp4` | English | 316s | `d24653f8e441e254` | Physics — Universe — Stars to Fundamental Forces |
+| `phy/video/Unlocking_the_Nucleus.mp4` | English | 422s | `fbae0007607243d1` | Physics — Unlocking the Nucleus — Nuclear Binding Energy |
+| `phy/video/அணு_மாதிரிகளைக்_கண்டறிதல்.mp4` | Tamil | 342s | `19d04cad8b9996bd` | இயற்பியல் — அணு மாதிரிகளைக் கண்டறிதல் |
+| `phy/video/அணுக்கரு_விசை.mp4` | Tamil | 279s | `e19257026ec4eb4b` | இயற்பியல் — அணுக்கரு விசை |
+| `phy/video/அணுக்கரு_விசையின்_ரகசியங்கள்.mp4` | Tamil | 320s | `f4227895f75353f0` | இயற்பியல் — அணுக்கரு விசையின் ரகசியங்கள் |
+| `phy/video/அணுக்கருவின்_ரகசியங்கள்.mp4` | Tamil | 335s | `3a0de66ff0d75b56` | இயற்பியல் — அணுக்கருவின் ரகசியங்கள் |
+| `phy/video/அணுவினுள்_ஒரு_பயணம்.mp4` | Tamil | 223s | `cc1d431a11ebb882` | இயற்பியல் — அணுவினுள் ஒரு பயணம் |
+| `phy/video/அணுவின்_அடிப்படைகள்.mp4` | Tamil | 327s | `61b1e50d51c07b34` | இயற்பியல் — அணுவின் அடிப்படைகள் |
+| `phy/video/கதிரியக்கம்___அணுக்கரு_பிளவு.mp4` | Tamil | 343s | `4db44ffe7bf3377d` | இயற்பியல் — கதிரியக்கம் & அணுக்கரு பிளவு |
+| `phy/video/விண்மீன்_முதல்_குவார்க்_வரை.mp4` | Tamil | 330s | `1480f0e82264384a` | இயற்பியல் — விண்மீன் முதல் குவார்க் வரை |
+
+### 2.5 Video Thumbnail Asset Verification
+All 55 newly added Physics video lessons (39 from Units 5-7 + 16 from Unit 8) have full-resolution (850x480) JPEG preview thumbnails captured at timestamp 00:00:05 and stored under `public/images/learning-materials/<sha256>.jpg`.
 - **Dimensions:** 850 x 480 pixels (16:9 standard video aspect ratio)
 - **Format:** Progressive JPEG (`image/jpeg`, standard `0xFFD8` SOI marker)
 - **Integrity:** Directly mapped in `src/lib/additional-materials-catalog.json`, `src/lib/additional-materials-resources.json`, and `docs/materials-folder-nov9-inventory.json`.
@@ -120,12 +142,14 @@ All 39 newly added Physics video lessons have full-resolution (850x480) JPEG pre
 | `bio/zoo/video/இனப்பெருக்க_நலன் (3).mp4` | `bio/zoo/video/இனப்பெருக்க_நலன் (2).mp4` | `7ace60a241a70111...` |
 | `phy/video/நிலைமின்_பண்புகள் (1).mp4` | `phy/video/நிலைமின்_பண்புகள்.mp4` | `bff5415667b0b655...` |
 | `phy/video/காந்தவியலின்_ரகசியங்கள் (1).mp4` | `phy/video/காந்தவியலின்_ரகசியங்கள்.mp4` | `12e7d5867f2fd640...` |
-| **`phy/video/Maxwell_s_Missing_Piece (1).mp4`** *(New)* | **`phy/video/Maxwell_s_Missing_Piece.mp4`** | **`f522729cfe56676a...`** |
+| `phy/video/Maxwell_s_Missing_Piece (1).mp4` | `phy/video/Maxwell_s_Missing_Piece.mp4` | `f522729cfe56676a...` |
+| **`phy/video/Universe__Stars_to_Forces (1).mp4`** *(New)* | **`phy/video/Universe__Stars_to_Forces.mp4`** | **`d24653f8e441e254...`** |
+| **`phy/video/Unlocking_the_Nucleus (1).mp4`** *(New)* | **`phy/video/Unlocking_the_Nucleus.mp4`** | **`fbae0007607243d1...`** |
 
 ---
 
 ## 4. Uncatalogued or Ambiguous Files
 
-- **Total Ambiguous Files:** **0**. All 40 newly supplied files have been rigorously mapped to their corresponding Tamil Nadu Class 12 Physics syllabus chapters, volumes, and languages.
-- **Physical File Integrity:** All 40 files have valid ISO BMFF MP4 headers with measurable durations and non-zero SHA-256 digests.
+- **Total Ambiguous Files:** **0**. All 329 files in `book's/` are catalogued.
+- **Physical File Integrity:** All files have valid ISO BMFF MP4 headers with measurable durations and non-zero SHA-256 digests.
 

@@ -6134,5 +6134,341 @@
       "createdAt": "2026-11-09T10:50:00.000Z",
       "thumbnailUrl": "/images/learning-materials/8cec57eaebe6da8fb0af0de87c28ddb3bf7784a415dd7c672a65f49823637b20.jpg"
     }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-13fd3b70d1b645c13306f32e",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — Evolution of the Atom & Atomic Models",
+      "topic": "Evolution of the Atom & Atomic Models",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c631fb006e7cc5b1263a1b20705a6d18bda9dd4dc5122005f38baf7f81970e9b.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 483,
+      "thumbnailUrl": "/images/learning-materials/c631fb006e7cc5b1263a1b20705a6d18bda9dd4dc5122005f38baf7f81970e9b.jpg",
+      "orderIndex": 1,
+      "isPublished": true,
+      "sourceFile": "phy/video/Evolution_of_the_Atom.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Evolution of the Atom). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "c631fb006e7cc5b1263a1b20705a6d18bda9dd4dc5122005f38baf7f81970e9b",
+      "sizeBytes": 46252974
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-4e419f97355e46e70e6697ef",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — Radioactivity & Nuclear Fission Explained",
+      "topic": "Radioactivity & Nuclear Fission",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/df1fb56042ac670045fe2309668bf31c015a1ee30a9b72ccfaf4694d73b3034a.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 522,
+      "thumbnailUrl": "/images/learning-materials/df1fb56042ac670045fe2309668bf31c015a1ee30a9b72ccfaf4694d73b3034a.jpg",
+      "orderIndex": 2,
+      "isPublished": true,
+      "sourceFile": "phy/video/Radioactivity_Explained.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Radioactivity & Nuclear Decay). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "df1fb56042ac670045fe2309668bf31c015a1ee30a9b72ccfaf4694d73b3034a",
+      "sizeBytes": 43857590
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-d693fea2825e32910bc15edc",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — Stars to Quarks — Elementary Particles",
+      "topic": "Stars to Quarks — Elementary Particles",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/8e1114aef1fa9cd70c28648dc848e023b095a7ff730b8e7c166b926e6d9b6a5f.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 485,
+      "thumbnailUrl": "/images/learning-materials/8e1114aef1fa9cd70c28648dc848e023b095a7ff730b8e7c166b926e6d9b6a5f.jpg",
+      "orderIndex": 3,
+      "isPublished": true,
+      "sourceFile": "phy/video/Stars_to_Quarks.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Elementary Particles & Classification). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "8e1114aef1fa9cd70c28648dc848e023b095a7ff730b8e7c166b926e6d9b6a5f",
+      "sizeBytes": 46075610
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-ae0a97f716f410286a3870d4",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — Story of the Electron & Cathode Rays",
+      "topic": "Story of the Electron & Cathode Rays",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a1074183a4bc4eebf984d884c130be16b7c1b026f8ceccd093578ecc7f329131.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 501,
+      "thumbnailUrl": "/images/learning-materials/a1074183a4bc4eebf984d884c130be16b7c1b026f8ceccd093578ecc7f329131.jpg",
+      "orderIndex": 4,
+      "isPublished": true,
+      "sourceFile": "phy/video/Story_of_the_Electron.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Discovery of Electron & J.J. Thomson Experiment). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "a1074183a4bc4eebf984d884c130be16b7c1b026f8ceccd093578ecc7f329131",
+      "sizeBytes": 51380548
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-83157d322409be6ea2252da5",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — The Atomic Paradox — Bohr Atom Model",
+      "topic": "The Atomic Paradox — Bohr Atom Model",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c1e0960d4d88793582d9aad2a21a8eddb5da442a9172ebb7cb8de3508d9d5c8a.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 388,
+      "thumbnailUrl": "/images/learning-materials/c1e0960d4d88793582d9aad2a21a8eddb5da442a9172ebb7cb8de3508d9d5c8a.jpg",
+      "orderIndex": 5,
+      "isPublished": true,
+      "sourceFile": "phy/video/The_Atomic_Paradox.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Rutherford Limitations & Bohr Atom Model). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "c1e0960d4d88793582d9aad2a21a8eddb5da442a9172ebb7cb8de3508d9d5c8a",
+      "sizeBytes": 42311363
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-c8bdb3ada4633f2172305224",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — The Center of Matter — Nuclear Structure",
+      "topic": "The Center of Matter — Nuclear Structure",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1d4ed13e35ede3e0c5e6eed8b93a22534381bdfb9f71fa187eceaed56fbd53d1.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 519,
+      "thumbnailUrl": "/images/learning-materials/1d4ed13e35ede3e0c5e6eed8b93a22534381bdfb9f71fa187eceaed56fbd53d1.jpg",
+      "orderIndex": 6,
+      "isPublished": true,
+      "sourceFile": "phy/video/The_Center_of_Matter.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Composition of Nucleus & Properties). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "1d4ed13e35ede3e0c5e6eed8b93a22534381bdfb9f71fa187eceaed56fbd53d1",
+      "sizeBytes": 48583337
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-02ee4c5ffe37b4d536f0e93c",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — Universe — Stars to Fundamental Forces",
+      "topic": "Universe — Stars to Fundamental Forces",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/d24653f8e441e254678cb2b097ae19fe252f1987833bcada6ed18f0f50133eed.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 316,
+      "thumbnailUrl": "/images/learning-materials/d24653f8e441e254678cb2b097ae19fe252f1987833bcada6ed18f0f50133eed.jpg",
+      "orderIndex": 7,
+      "isPublished": true,
+      "sourceFile": "phy/video/Universe__Stars_to_Forces.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Fundamental Forces of Nature). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "d24653f8e441e254678cb2b097ae19fe252f1987833bcada6ed18f0f50133eed",
+      "sizeBytes": 34113009
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-61c1798f524974e46763ef92",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "title": "Physics — Unlocking the Nucleus — Nuclear Binding Energy",
+      "topic": "Unlocking the Nucleus — Binding Energy",
+      "language": "English",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/fbae0007607243d1abbfff6cd872829251b2a5683f37421bd800fcb25e2cb83f.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 422,
+      "thumbnailUrl": "/images/learning-materials/fbae0007607243d1abbfff6cd872829251b2a5683f37421bd800fcb25e2cb83f.jpg",
+      "orderIndex": 8,
+      "isPublished": true,
+      "sourceFile": "phy/video/Unlocking_the_Nucleus.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Mass Defect & Nuclear Binding Energy Curve). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "fbae0007607243d1abbfff6cd872829251b2a5683f37421bd800fcb25e2cb83f",
+      "sizeBytes": 39799760
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-cb0a4517a52689d70eaa195d",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — அணு மாதிரிகளைக் கண்டறிதல்",
+      "topic": "அணு மாதிரிகளைக் கண்டறிதல்",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/19d04cad8b9996bd1afca2006115698d39bfdd5e10e0119a95433b48f64fbf18.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 342,
+      "thumbnailUrl": "/images/learning-materials/19d04cad8b9996bd1afca2006115698d39bfdd5e10e0119a95433b48f64fbf18.jpg",
+      "orderIndex": 9,
+      "isPublished": true,
+      "sourceFile": "phy/video/அணு_மாதிரிகளைக்_கண்டறிதல்.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணு மாதிரிகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "19d04cad8b9996bd1afca2006115698d39bfdd5e10e0119a95433b48f64fbf18",
+      "sizeBytes": 35765957
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-fd70ab4fc009f57f92ea8602",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — அணுக்கரு விசை",
+      "topic": "அணுக்கரு விசை",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e19257026ec4eb4b71d9f0187767cb58ed9fc6cf5d30d9bab78f0ded1ab445e1.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 279,
+      "thumbnailUrl": "/images/learning-materials/e19257026ec4eb4b71d9f0187767cb58ed9fc6cf5d30d9bab78f0ded1ab445e1.jpg",
+      "orderIndex": 10,
+      "isPublished": true,
+      "sourceFile": "phy/video/அணுக்கரு_விசை.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு விசை பண்புகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "e19257026ec4eb4b71d9f0187767cb58ed9fc6cf5d30d9bab78f0ded1ab445e1",
+      "sizeBytes": 27884353
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-1dbdde2fcaa4dc0537c4ccef",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — அணுக்கரு விசையின் ரகசியங்கள்",
+      "topic": "அணுக்கரு விசையின் ரகசியங்கள்",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f4227895f75353f021678a60b6cf2c36901e50210d14436318584351a7f1ec61.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 320,
+      "thumbnailUrl": "/images/learning-materials/f4227895f75353f021678a60b6cf2c36901e50210d14436318584351a7f1ec61.jpg",
+      "orderIndex": 11,
+      "isPublished": true,
+      "sourceFile": "phy/video/அணுக்கரு_விசையின்_ரகசியங்கள்.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு நிலைப்புத்தன்மை). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "f4227895f75353f021678a60b6cf2c36901e50210d14436318584351a7f1ec61",
+      "sizeBytes": 34273518
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-89674c45d1894863c3d67d39",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — அணுக்கருவின் ரகசியங்கள்",
+      "topic": "அணுக்கருவின் ரகசியங்கள்",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3a0de66ff0d75b5618bc283f9a657eeb37d5803e263190d93c02a1113192d903.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 335,
+      "thumbnailUrl": "/images/learning-materials/3a0de66ff0d75b5618bc283f9a657eeb37d5803e263190d93c02a1113192d903.jpg",
+      "orderIndex": 12,
+      "isPublished": true,
+      "sourceFile": "phy/video/அணுக்கருவின்_ரகசியங்கள்.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு அமைப்பு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "3a0de66ff0d75b5618bc283f9a657eeb37d5803e263190d93c02a1113192d903",
+      "sizeBytes": 37285861
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-39e05a7d6c83e1b42433fb2f",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — அணுவினுள் ஒரு பயணம்",
+      "topic": "அணுவினுள் ஒரு பயணம்",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/cc1d431a11ebb882c04558329f24f6d1b599114bfc529579301717348addfb49.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 223,
+      "thumbnailUrl": "/images/learning-materials/cc1d431a11ebb882c04558329f24f6d1b599114bfc529579301717348addfb49.jpg",
+      "orderIndex": 13,
+      "isPublished": true,
+      "sourceFile": "phy/video/அணுவினுள்_ஒரு_பயணம்.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — ரூதர்போர்டு சிதறல் ஆய்வு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "cc1d431a11ebb882c04558329f24f6d1b599114bfc529579301717348addfb49",
+      "sizeBytes": 24059014
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-f6c5a950e3616da18d45b6ee",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — அணுவின் அடிப்படைகள்",
+      "topic": "அணுவின் அடிப்படைகள்",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/61b1e50d51c07b3413beb9079695d4587d5cadadb827c132eefe79e4c47d53eb.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 327,
+      "thumbnailUrl": "/images/learning-materials/61b1e50d51c07b3413beb9079695d4587d5cadadb827c132eefe79e4c47d53eb.jpg",
+      "orderIndex": 14,
+      "isPublished": true,
+      "sourceFile": "phy/video/அணுவின்_அடிப்படைகள்.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — தாம்சன் அணு மாதிரி). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "61b1e50d51c07b3413beb9079695d4587d5cadadb827c132eefe79e4c47d53eb",
+      "sizeBytes": 31541803
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-ea46e686ebd3c36149d2ee74",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — கதிரியக்கம் & அணுக்கரு பிளவு",
+      "topic": "கதிரியக்கம் & அணுக்கரு பிளவு",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4db44ffe7bf3377d1875c238e0db12a5e521f0c3bde5ff89faec5fdea93452f1.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 343,
+      "thumbnailUrl": "/images/learning-materials/4db44ffe7bf3377d1875c238e0db12a5e521f0c3bde5ff89faec5fdea93452f1.jpg",
+      "orderIndex": 15,
+      "isPublished": true,
+      "sourceFile": "phy/video/கதிரியக்கம்___அணுக்கரு_பிளவு.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — கதிரியக்கம் & அணுக்கரு இணைவு/பிளவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "4db44ffe7bf3377d1875c238e0db12a5e521f0c3bde5ff89faec5fdea93452f1",
+      "sizeBytes": 38239027
+    }
+  },
+  {
+    "kind": "video",
+    "resource": {
+      "id": "video-import-755148708b7e19c93d845259",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "title": "இயற்பியல் — விண்மீன் முதல் குவார்க் வரை",
+      "topic": "விண்மீன் முதல் குவார்க் வரை",
+      "language": "Tamil",
+      "videoUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1480f0e82264384acdc2a51e63c22f5d609e917e0d0566a2820c795333ddbf7a.mp4",
+      "embedType": "mp4",
+      "durationSeconds": 330,
+      "thumbnailUrl": "/images/learning-materials/1480f0e82264384acdc2a51e63c22f5d609e917e0d0566a2820c795333ddbf7a.jpg",
+      "orderIndex": 16,
+      "isPublished": true,
+      "sourceFile": "phy/video/விண்மீன்_முதல்_குவார்க்_வரை.mp4",
+      "description": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அடிப்படைத் துகள்கள் & பிரபஞ்சம்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "sha256": "1480f0e82264384acdc2a51e63c22f5d609e917e0d0566a2820c795333ddbf7a",
+      "sizeBytes": 35944404
+    }
   }
 ]

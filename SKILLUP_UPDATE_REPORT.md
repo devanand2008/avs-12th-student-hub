@@ -121,11 +121,11 @@ All primary project objectives have been accomplished:
 - `src/app/api/admin/content/uploads/route.ts`: Allowed WebP uploads and rate-limited chunked processing.
 - `src/app/api/admin/content/route.ts`: Added `pages` schema validation, resource editing support, and WebP support.
 - `src/components/admin/ContentManager.tsx`: Added multi-image batch uploads, natural sorting, page reordering/replacement gallery, and editing form.
-- `src/lib/video-source-aliases.json`: Registered 8th duplicate alias for Maxwell missing piece video.
-- `src/lib/additional-materials-catalog.json`: Registered 39 unique Physics video entries (Units 5, 6, 7) with thumbnail paths.
-- `src/lib/additional-materials-resources.json`: Added 39 runtime resources with metadata, hosted URLs, and thumbnail URLs.
-- `public/images/learning-materials/`: Added 39 individual 850x480 JPEG thumbnails (`<sha256>.jpg`) extracted from original video frames.
-- `docs/materials-folder-nov9-inventory.json`: Generated full audit manifest for all 311 physical files.
-- `tests/materials-nov9.test.ts`: Added automated regression tests for Nov 9 additions.
+- `src/lib/video-source-aliases.json`: Registered duplicate aliases (Maxwell, Universe, Unlocking Nucleus) reaching 10 total aliases.
+- `src/lib/additional-materials-catalog.json`: Registered 55 unique Physics video entries (Units 5, 6, 7, 8) with thumbnail paths.
+- `src/lib/additional-materials-resources.json`: Added 55 runtime resources with metadata, hosted URLs, and thumbnail URLs.
+- `public/images/learning-materials/`: Added 55 individual 850x480 JPEG thumbnails (`<sha256>.jpg`) extracted from original video frames.
+- `docs/materials-folder-nov9-inventory.json`: Generated full audit manifest for all 329 physical files.
+- `tests/materials-nov9.test.ts`: Added automated regression tests for Nov 9 additions (55 videos, 10 aliases).
 - `.gitignore`: Ignored temporary directories (`tmp/`, `output/`).
 
