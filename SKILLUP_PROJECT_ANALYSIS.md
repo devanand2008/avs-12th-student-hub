@@ -105,3 +105,4 @@ The application uses Next.js App Router with responsive layouts:
 2. **Preservation of Student History:** Student scores, points, and practice history must never be touched during content imports. All migrations and database synchronization scripts must remain strictly additive (`insert-only` / `onConflict: "id", ignoreDuplicates: true`).
 3. **Multi-Page Image Ordering:** For handwritten notes uploaded as batches of images, numeric natural sorting (`page1.jpg`, `page2.jpg` ... `page10.jpg`) must be enforced over naive alphabetical sorting (`page1.jpg`, `page10.jpg`, `page2.jpg`).
 4. **Vercel Deployment Hygiene:** Production deployment must strictly exclude heavy binary video files from the Vercel serverless bundle via `.vercelignore`, preserving fast cloud builds and sub-second cold starts.
+

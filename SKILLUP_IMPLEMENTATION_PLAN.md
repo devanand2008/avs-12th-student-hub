@@ -96,3 +96,4 @@ This implementation plan details the architectural and functional enhancements r
 3. **Additive-Only Migrations:** Content synchronization uses `INSERT ... ON CONFLICT DO NOTHING`.
 4. **Credential Protection:** Secrets (`SUPABASE_SECRET_KEY`, `SESSION_SECRET`, `ADMIN_INITIAL_PASSWORD`, tokens) must never be committed to Git or printed in reports.
 5. **Bandwidth Optimization:** Large MP4 video masters (over 1.5 GB in total) remain excluded from Git and Vercel bundles via `.gitignore` and `.vercelignore`.
+

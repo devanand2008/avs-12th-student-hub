@@ -141,3 +141,4 @@ To toggle between Published and Archived, simply click the **Publish** or **Arch
 > 2. **Never Commit Large Media into Git:** Do not add MP4 or PDF files directly to Git commits. Use the administrative upload interface, which uploads to private cloud storage.
 > 3. **Verify Chapter Mappings:** Always assign materials to the verified Tamil Nadu State Board chapter names to ensure students can locate their syllabus topics quickly.
 > 4. **Audit Logging:** All administrative actions (creating content, updating metadata, publishing, archiving, and student approvals) are logged with timestamp and administrator ID in the audit trail.
+
