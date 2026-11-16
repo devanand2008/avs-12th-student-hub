@@ -167,7 +167,7 @@ export default function NotesPage() {
 
           <div className="flex items-center gap-3 shrink-0">
             <a
-              href="/pdf/maths-golden-formula-sheet.pdf"
+              href="/api/pdf/golden-formula-sheet"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 bg-white hover:bg-amber-50 text-amber-900 rounded-2xl text-xs sm:text-sm font-black shadow-md flex items-center gap-2 transition-all active:scale-95"

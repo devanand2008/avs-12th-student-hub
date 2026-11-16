@@ -18,6 +18,7 @@ test-results
 lint-latest.json
 audit-production.json
 **/*.pdf
+!public/pdf/**
 **/*.mp4
 !public/media/student-guide.mp4
 **/*.gguf

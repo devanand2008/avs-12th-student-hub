@@ -38,6 +38,7 @@ import {
 } from "@/lib/science-games-data";
 import { sound } from "@/lib/sound-effects";
 import SectionBadge from "@/components/ui/SectionBadge";
+import MathText from "@/components/ui/MathText";
 
 type GameMode = "blitz" | "memory" | "fill" | "vault";
 
@@ -557,7 +558,7 @@ export default function MathFormulaGame() {
               </span>
             </div>
             <a
-              href="/pdf/maths-golden-formula-sheet.pdf"
+              href="/api/pdf/golden-formula-sheet"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs rounded-xl flex items-center gap-1.5 shadow-sm transition-all shrink-0 active:scale-95"
@@ -665,7 +666,7 @@ export default function MathFormulaGame() {
                   Identify the Correct Law / Formula for {theme.name}
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-heading">
-                  {blitzQuestions[currentBlitzIndex].name}
+                  <MathText text={blitzQuestions[currentBlitzIndex].name} />
                 </h2>
                 {blitzQuestions[currentBlitzIndex].tamilName && (
                   <p className="text-xs sm:text-sm font-semibold text-slate-500">
@@ -673,7 +674,7 @@ export default function MathFormulaGame() {
                   </p>
                 )}
                 <p className="text-xs text-slate-600 max-w-lg mx-auto pt-1">
-                  {blitzQuestions[currentBlitzIndex].description}
+                  <MathText text={blitzQuestions[currentBlitzIndex].description} />
                 </p>
               </div>
 
@@ -709,7 +710,7 @@ export default function MathFormulaGame() {
                         <span className="w-6 h-6 rounded-lg bg-white/80 border border-slate-300 text-slate-700 flex items-center justify-center text-xs font-sans font-bold shrink-0">
                           {String.fromCharCode(65 + i)}
                         </span>
-                        <span className="select-all">{opt}</span>
+                        <MathText text={opt} className="select-all" />
                       </div>
                       {isAnswerChecked && isCorrectAnswer && (
                         <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
@@ -731,7 +732,7 @@ export default function MathFormulaGame() {
                       <strong className="text-slate-900 block font-bold">
                         Exam Tip & Concept:
                       </strong>
-                      {blitzQuestions[currentBlitzIndex].examTip}
+                      <MathText text={blitzQuestions[currentBlitzIndex].examTip} />
                     </div>
                   </div>
 
@@ -830,15 +831,15 @@ export default function MathFormulaGame() {
                         <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
                           {card.type === "concept" ? "Concept" : "Formula / Law"}
                         </span>
-                        <p
+                        <div
                           className={`font-bold leading-snug line-clamp-3 ${
                             card.type === "formula"
                               ? "font-mono text-xs sm:text-sm text-[#142B63]"
                               : "text-xs sm:text-sm text-slate-900"
                           }`}
                         >
-                          {card.content}
-                        </p>
+                          <MathText text={card.content} />
+                        </div>
                         {card.isMatched && (
                           <CheckCircle2 className="w-4 h-4 text-emerald-600 absolute top-2 right-2" />
                         )}
@@ -901,16 +902,16 @@ export default function MathFormulaGame() {
                   Fill in the Missing Term or Coefficient
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-heading">
-                  {fillQuestions[fillIndex].name}
+                  <MathText text={fillQuestions[fillIndex].name} />
                 </h2>
                 <div className="my-5 p-5 bg-slate-900 text-white rounded-2xl font-mono text-base sm:text-xl font-bold tracking-wide inline-block shadow-inner max-w-full overflow-x-auto">
-                  {fillQuestions[fillIndex].fillBlank.template.split("[?]")[0]}
+                  <MathText text={fillQuestions[fillIndex].fillBlank.template.split("[?]")[0]} />
                   <span
                     className={`inline-block mx-1.5 px-3 py-1 ${theme.blankPill} rounded-lg font-extrabold animate-pulse`}
                   >
-                    {selectedFillBlank || "?"}
+                    {selectedFillBlank ? <MathText text={selectedFillBlank} /> : "?"}
                   </span>
-                  {fillQuestions[fillIndex].fillBlank.template.split("[?]")[1]}
+                  <MathText text={fillQuestions[fillIndex].fillBlank.template.split("[?]")[1] || ""} />
                 </div>
               </div>
 
@@ -940,7 +941,7 @@ export default function MathFormulaGame() {
                       disabled={isFillChecked}
                       className={`p-3.5 rounded-xl border text-center font-mono font-bold text-sm sm:text-base transition-all duration-200 shadow-2xs active:scale-98 ${style}`}
                     >
-                      {choice}
+                      <MathText text={choice} />
                     </button>
                   );
                 })}
@@ -953,11 +954,11 @@ export default function MathFormulaGame() {
                     <strong className="text-slate-900 font-bold block">
                       Full Formula:
                     </strong>
-                    <code className="text-sm font-mono text-blue-900 font-bold">
-                      {fillQuestions[fillIndex].formula}
-                    </code>
+                    <div className="text-sm font-mono text-blue-900 font-bold bg-blue-50/80 px-3 py-1.5 rounded-lg border border-blue-200/60 inline-block my-1">
+                      <MathText text={fillQuestions[fillIndex].formula} />
+                    </div>
                     <p className="text-slate-600 mt-1">
-                      {fillQuestions[fillIndex].examTip}
+                      <MathText text={fillQuestions[fillIndex].examTip} />
                     </p>
                   </div>
 
@@ -1045,19 +1046,19 @@ export default function MathFormulaGame() {
                   </div>
 
                   <h3 className="text-sm font-bold text-slate-900 leading-snug">
-                    {f.name}
+                    <MathText text={f.name} />
                   </h3>
 
                   <div className="p-2.5 bg-slate-900 text-white rounded-xl font-mono text-xs sm:text-sm font-bold tracking-wide select-all overflow-x-auto">
-                    {f.formula}
+                    <MathText text={f.formula} />
                   </div>
 
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    {f.description}
+                    <MathText text={f.description} />
                   </p>
 
                   <div className="text-[11px] text-slate-800 bg-slate-50 p-2 rounded-lg border border-slate-200">
-                    <strong>Tip:</strong> {f.examTip}
+                    <strong>Tip:</strong> <MathText text={f.examTip} />
                   </div>
                 </div>
               ))}

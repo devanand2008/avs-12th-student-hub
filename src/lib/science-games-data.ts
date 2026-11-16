@@ -689,3 +689,4 @@ export const SCIENCE_QUESTIONS: ScienceQuestion[] = [
     examTip: "This is why food chains rarely exceed 4 or 5 trophic levels!",
   },
 ];
+

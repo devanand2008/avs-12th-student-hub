@@ -25,7 +25,7 @@ export default function MathGamePage() {
 
           <div className="flex items-center gap-2">
             <a
-              href="/pdf/maths-golden-formula-sheet.pdf"
+              href="/api/pdf/golden-formula-sheet"
               target="_blank"
               rel="noopener noreferrer"
               className="px-3.5 py-1.5 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-950 font-black rounded-xl text-xs flex items-center gap-1.5 shadow-xs transition-all active:scale-95"

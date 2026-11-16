@@ -28,6 +28,7 @@ export function proxy(request: NextRequest) {
     "/api/subjects",
     "/api/cron/reminders",
     "/api/reminders/unsubscribe",
+    "/api/pdf/golden-formula-sheet",
   ];
   const protectedPage = [
     "/admin",

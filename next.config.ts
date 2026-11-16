@@ -16,11 +16,20 @@ const nextConfig: NextConfig = {
     ],
   },
   rewrites() {
-    if (process.env.TEXTBOOK_DELIVERY !== "official") return [];
-    return (catalog as TextbookCatalog).books.flatMap((book) => {
-      const rewrite = officialTextbookRewrite(book);
-      return rewrite ? [rewrite] : [];
-    });
+    const textbookRewrites =
+      process.env.TEXTBOOK_DELIVERY === "official"
+        ? (catalog as TextbookCatalog).books.flatMap((book) => {
+            const rewrite = officialTextbookRewrite(book);
+            return rewrite ? [rewrite] : [];
+          })
+        : [];
+    return [
+      ...textbookRewrites,
+      {
+        source: "/pdf/maths-golden-formula-sheet.pdf",
+        destination: "/api/pdf/golden-formula-sheet",
+      },
+    ];
   },
   headers: async () => [
     {
