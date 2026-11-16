@@ -20,6 +20,7 @@ import {
   Award,
   BookMarked,
   Search,
+  Gamepad2,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "@/components/layout/IntentLink";
@@ -402,6 +403,33 @@ export default function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* MATH FORMULA GAME SPOTLIGHT BANNER */}
+        <div className="mt-8 rounded-3xl bg-gradient-to-r from-[#142B63] via-[#1E3A8A] to-[#0F172A] p-6 sm:p-8 text-white relative overflow-hidden shadow-lg border border-blue-900/50 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center md:text-left">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-400 text-slate-950 rounded-full text-xs font-black uppercase tracking-wider shadow-xs">
+              <Gamepad2 className="w-3.5 h-3.5" />
+              NEW: CLASS 12 MATH FORMULA ARCADE
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-white font-heading">
+              Struggling to Memorize 12th Maths Formulas?
+            </h2>
+            <p className="text-xs sm:text-sm text-blue-200 max-w-xl">
+              Play our interactive formula game! Master Matrices, Integration, Vectors, and Complex Numbers with Blitz Quiz, Memory Flip cards, and Formula Puzzles.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3 shrink-0">
+            <Link
+              href="/math-game"
+              className="px-6 py-3 bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs sm:text-sm rounded-2xl shadow-md transition-all active:scale-95 flex items-center gap-2"
+            >
+              <Gamepad2 className="w-4 h-4" />
+              <span>Play Formula Game</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

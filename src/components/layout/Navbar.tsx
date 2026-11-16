@@ -25,6 +25,7 @@ import {
   GraduationCap,
   Layers,
   ChevronRight,
+  Gamepad2,
 } from "lucide-react";
 import BrandLogo from "@/components/layout/BrandLogo";
 import InstallButton from "@/components/pwa/InstallButton";
@@ -194,6 +195,13 @@ export default function Navbar() {
         pathname.startsWith("/models") ||
         pathname.startsWith("/interactive-3d"),
       color: "text-rose-600 bg-rose-50 border border-rose-200",
+    },
+    {
+      label: "Math Game",
+      href: "/math-game",
+      icon: Gamepad2,
+      isActive: pathname.startsWith("/math-game"),
+      color: "text-amber-600 bg-amber-50 border border-amber-200",
     },
     {
       label: "Founder",
@@ -369,6 +377,17 @@ export default function Navbar() {
           >
             <Box className="w-3.5 h-3.5 text-[#10B981]" />
             <span>3D Lab</span>
+          </Link>
+          <Link
+            href="/math-game"
+            className={`px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-1 transition-all ${
+              pathname.startsWith("/math-game")
+                ? "bg-amber-50 text-amber-800 ring-1 ring-amber-200"
+                : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+            }`}
+          >
+            <Gamepad2 className="w-3.5 h-3.5 text-amber-500" />
+            <span>Math Game</span>
           </Link>
           <Link
             href="/founder"
@@ -662,6 +681,14 @@ export default function Navbar() {
                 <span>3D Learning Lab</span>
               </Link>
               <Link
+                href="/math-game"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-bold text-amber-800 hover:bg-amber-50"
+              >
+                <Gamepad2 className="w-4 h-4 text-amber-600" />
+                <span>Math Formula Game</span>
+              </Link>
+              <Link
                 href="/performance"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-3 px-3 py-2 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-50"
@@ -705,6 +732,14 @@ export default function Navbar() {
             </>
           ) : (
             <div className="space-y-2 pt-2">
+              <Link
+                href="/math-game"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 w-full py-2.5 bg-amber-50 text-amber-800 border border-amber-200 font-bold text-xs rounded-xl"
+              >
+                <Gamepad2 className="w-4 h-4 text-amber-600" />
+                <span>Play Math Formula Game</span>
+              </Link>
               <Link
                 href="/textbooks"
                 onClick={() => setMobileMenuOpen(false)}

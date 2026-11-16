@@ -15,6 +15,7 @@ import {
   Code2,
   TrendingUp,
   Layers,
+  Gamepad2,
   LucideIcon,
 } from "lucide-react";
 
@@ -27,6 +28,7 @@ export type SectionType =
   | "lab"
   | "scoreboard"
   | "founder"
+  | "game"
   | "physics"
   | "chemistry"
   | "biology"
@@ -136,6 +138,17 @@ export const SECTION_CONFIGS: Record<SectionType, SectionConfig> = {
     icon: GraduationCap,
     subIconText: "DR",
     image: "/images/joshua-introduction.png",
+  },
+  game: {
+    title: "Math Formula Quest",
+    tag: "MATH FORMULA GAME",
+    gradient: "from-amber-500 via-orange-500 to-rose-500",
+    iconBg: "bg-gradient-to-br from-amber-500 to-orange-600",
+    borderGlow: "shadow-amber-500/20",
+    badgeBg: "bg-amber-50 border-amber-200",
+    badgeText: "text-amber-700",
+    icon: Gamepad2,
+    subIconText: "PLAY",
   },
   physics: {
     title: "Physics",
@@ -269,3 +282,4 @@ export default function SectionBadge({
     </div>
   );
 }
+

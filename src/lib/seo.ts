@@ -62,6 +62,11 @@ export const seoPages = {
     description:
       "Learn about Dr. D. R. Joshua, Founder of SkillUp and Vice Principal of AVS Engineering College, Salem. Discover the vision behind Tamil Nadu Class 12's digital learning hub.",
   },
+  "/math-game": {
+    title: "Class 12 Maths Formula Game & Practice Arcade",
+    description:
+      "Play interactive math formula games for Tamil Nadu Class 12 on joshuaskillup. Master Matrices, Calculus, Vectors, and Complex Numbers with Blitz and Memory Flip.",
+  },
 } as const;
 
 export function publicMetadata(

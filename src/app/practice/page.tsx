@@ -170,6 +170,25 @@ export default function PracticeHubPage() {
           Browse the English & Tamil one-mark collections{" "}
           <ArrowRight className="h-5 w-5 shrink-0" />
         </Link>
+        <Link
+          href="/math-game"
+          className="flex items-center justify-between gap-3 rounded-2xl border border-amber-300 bg-gradient-to-r from-amber-50 to-orange-50/70 p-5 font-bold text-amber-950 hover:border-amber-400 hover:shadow-xs transition-all"
+        >
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center font-black text-lg shrink-0 shadow-xs">
+              🎮
+            </div>
+            <div>
+              <div className="font-extrabold text-sm sm:text-base text-amber-950">
+                Play Class 12 Maths Formula Arcade
+              </div>
+              <div className="text-xs text-amber-800/90 font-medium">
+                Speed blitz, card pairs & missing term puzzles for Matrices, Calculus & Vectors!
+              </div>
+            </div>
+          </div>
+          <ArrowRight className="h-5 w-5 shrink-0 text-amber-700" />
+        </Link>
         <section className="bg-white/95 rounded-3xl border border-blue-100/90 p-5 sm:p-7 shadow-sm space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-xs font-black uppercase tracking-wider text-slate-400">
