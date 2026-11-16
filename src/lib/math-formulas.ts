@@ -556,3 +556,4 @@ export const MATH_FORMULAS: MathFormula[] = [
     examTip: "If a problem states 'Mean and Variance are equal', identify it as Poisson immediately!",
   },
 ];
+

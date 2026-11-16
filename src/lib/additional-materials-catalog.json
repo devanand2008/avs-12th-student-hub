@@ -5080,5 +5080,21 @@
     "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f337f3474e8888718e8480062490f33460047276f2b4de563530ae1f79a4d6c7.pdf",
     "description": "Owner-supplied English study notes with 14 actual PDF pages. Topic aligned to Mathematics Volume 1, Chapter 6: Applications of Vector Algebra. Exercise labels follow the supplied sheets and filenames. Exact textbook-question equivalence, solution accuracy and exercise completeness await teacher review. Original PDF retained.",
     "exercise": "6.1"
+  },
+  {
+    "file": "maths/pdf/main formul sheet/ChatGPT Image Nov 14, 2026, 12_56_56 PM-4.pdf",
+    "kind": "note",
+    "chapterId": "maths-ch-1",
+    "subjectId": "sub-maths",
+    "subjectName": "Mathematics",
+    "title": "Class 12 Mathematics — Complete Golden Formula Sheet & Centum Revision Master Guide",
+    "topic": "Complete Mathematics Golden Formula Sheet (Volumes 1 & 2)",
+    "language": "English",
+    "sha256": "60b48b81531fb39e09d6797b8724502645d11e426fb1e1cae4f79fc1453bce61",
+    "sizeBytes": 3421700,
+    "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/60b48b81531fb39e09d6797b8724502645d11e426fb1e1cae4f79fc1453bce61.pdf",
+    "description": "Owner-supplied study resource. Class 12 Mathematics full golden formula sheet covering all 12 chapters across Volume 1 & Volume 2. Original PDF pages retained.",
+    "pageCount": 12,
+    "badge": "HANDWRITTEN"
   }
 ]

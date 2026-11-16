@@ -2,7 +2,7 @@
 
 import Sidebar from "@/components/layout/Sidebar";
 import type { HandwrittenNote } from "@/types";
-import { ArrowUpRight, BookOpen, FileText, Search } from "lucide-react";
+import { ArrowUpRight, BookOpen, FileText, Search, Sparkles } from "lucide-react";
 import Link from "next/link";
 import SectionBadge from "@/components/ui/SectionBadge";
 import { useEffect, useMemo, useState } from "react";
@@ -148,6 +148,35 @@ export default function NotesPage() {
           <span className="text-xs font-extrabold text-[#142B63] bg-blue-50 px-3.5 py-1.5 rounded-xl border border-blue-200 shadow-xs">
             {filtered.length} notes available
           </span>
+        </div>
+
+        {/* GOLDEN STUDY MATERIAL SPOTLIGHT */}
+        <div className="rounded-3xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 p-6 sm:p-7 text-white shadow-lg relative overflow-hidden border border-amber-300 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+          <div className="space-y-2">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-[11px] font-black uppercase tracking-wider text-amber-950 border border-white/30">
+              <Sparkles className="w-3.5 h-3.5 text-yellow-200" />
+              OFFICIAL GOLDEN MATERIAL · CLASS 12 MATHS
+            </div>
+            <h2 className="text-xl sm:text-2xl font-black text-white font-heading">
+              Complete Mathematics Golden Formula Sheet
+            </h2>
+            <p className="text-xs sm:text-sm text-amber-100 max-w-2xl leading-relaxed">
+              Full 12-page comprehensive formula compilation covering all 12 chapters across Volume 1 & Volume 2. Essential for Centum preparation and rapid board revision!
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3 shrink-0">
+            <a
+              href="/pdf/maths-golden-formula-sheet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-3 bg-white hover:bg-amber-50 text-amber-900 rounded-2xl text-xs sm:text-sm font-black shadow-md flex items-center gap-2 transition-all active:scale-95"
+            >
+              <FileText className="w-4 h-4 text-amber-600" />
+              <span>Open Golden PDF (12 Pages)</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
 
         {/* Filter Toolbar */}

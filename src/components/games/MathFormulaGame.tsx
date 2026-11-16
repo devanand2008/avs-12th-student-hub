@@ -19,17 +19,43 @@ import {
   Search,
   Check,
   Share2,
+  Atom,
+  FlaskConical,
+  Dna,
+  Calculator,
+  ExternalLink,
 } from "lucide-react";
 import {
   MATH_FORMULAS,
   MATH_CHAPTERS,
   MathFormula,
-  MathChapter,
 } from "@/lib/math-formulas";
+import {
+  GameSubject,
+  SUBJECT_THEMES,
+  SCIENCE_QUESTIONS,
+  ScienceQuestion,
+} from "@/lib/science-games-data";
 import { sound } from "@/lib/sound-effects";
 import SectionBadge from "@/components/ui/SectionBadge";
 
 type GameMode = "blitz" | "memory" | "fill" | "vault";
+
+interface GenericQuestion {
+  id: string;
+  chapter: string;
+  name: string;
+  tamilName?: string;
+  formula: string;
+  description: string;
+  options: string[];
+  fillBlank: {
+    template: string;
+    correct: string;
+    options: string[];
+  };
+  examTip: string;
+}
 
 interface MemoryCard {
   id: string;
@@ -42,9 +68,10 @@ interface MemoryCard {
 }
 
 export default function MathFormulaGame() {
-  // Game Configuration State
+  // Subject & Mode Configuration
+  const [subject, setSubject] = useState<GameSubject>("maths");
   const [mode, setMode] = useState<GameMode>("blitz");
-  const [selectedChapter, setSelectedChapter] = useState<MathChapter>("All Chapters");
+  const [selectedChapter, setSelectedChapter] = useState<string>("All Chapters");
   const [soundEnabled, setSoundEnabled] = useState(true);
 
   // Player Stats (persisted in localStorage)
@@ -54,7 +81,7 @@ export default function MathFormulaGame() {
   const [maxStreak, setMaxStreak] = useState(0);
 
   // Mode 1: Blitz States
-  const [blitzQuestions, setBlitzQuestions] = useState<MathFormula[]>([]);
+  const [blitzQuestions, setBlitzQuestions] = useState<GenericQuestion[]>([]);
   const [currentBlitzIndex, setCurrentBlitzIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isAnswerChecked, setIsAnswerChecked] = useState(false);
@@ -70,7 +97,7 @@ export default function MathFormulaGame() {
   const [totalPairs, setTotalPairs] = useState(6);
 
   // Mode 3: Fill-the-Blank States
-  const [fillQuestions, setFillQuestions] = useState<MathFormula[]>([]);
+  const [fillQuestions, setFillQuestions] = useState<GenericQuestion[]>([]);
   const [fillIndex, setFillIndex] = useState(0);
   const [selectedFillBlank, setSelectedFillBlank] = useState<string | null>(null);
   const [isFillChecked, setIsFillChecked] = useState(false);
@@ -79,6 +106,9 @@ export default function MathFormulaGame() {
   // Mode 4: Vault Search State
   const [searchQuery, setSearchQuery] = useState("");
   const [copiedFormulaId, setCopiedFormulaId] = useState<string | null>(null);
+
+  // Active Subject Theme Config
+  const theme = SUBJECT_THEMES[subject];
 
   // Initialize and load localStorage data
   useEffect(() => {
@@ -118,11 +148,43 @@ export default function MathFormulaGame() {
     setSoundEnabled(next);
   };
 
-  // Filter formulas based on selected chapter
-  const filteredFormulas = useMemo(() => {
-    if (selectedChapter === "All Chapters") return MATH_FORMULAS;
-    return MATH_FORMULAS.filter((f) => f.chapter === selectedChapter);
-  }, [selectedChapter]);
+  // Convert maths formulas to GenericQuestion
+  const allSubjectQuestions: GenericQuestion[] = useMemo(() => {
+    if (subject === "maths") {
+      return MATH_FORMULAS.map((f) => ({
+        id: f.id,
+        chapter: f.chapter,
+        name: f.name,
+        tamilName: f.tamilName,
+        formula: f.formula,
+        description: f.description,
+        options: f.options,
+        fillBlank: f.fillBlank,
+        examTip: f.examTip,
+      }));
+    }
+    return SCIENCE_QUESTIONS.filter((q) => q.subject === subject);
+  }, [subject]);
+
+  // Available chapters for the selected subject
+  const availableChapters = useMemo(() => {
+    const set = new Set<string>();
+    allSubjectQuestions.forEach((q) => set.add(q.chapter));
+    return ["All Chapters", ...Array.from(set)];
+  }, [allSubjectQuestions]);
+
+  // When subject changes, reset chapter filter
+  const handleSubjectChange = (newSubject: GameSubject) => {
+    sound.playFlip();
+    setSubject(newSubject);
+    setSelectedChapter("All Chapters");
+  };
+
+  // Filter questions based on selected chapter
+  const filteredQuestions = useMemo(() => {
+    if (selectedChapter === "All Chapters") return allSubjectQuestions;
+    return allSubjectQuestions.filter((f) => f.chapter === selectedChapter);
+  }, [allSubjectQuestions, selectedChapter]);
 
   // Utility to shuffle an array
   const shuffleArray = <T,>(arr: T[]): T[] => {
@@ -136,7 +198,7 @@ export default function MathFormulaGame() {
 
   // --- BLITZ MODE LOGIC ---
   const initBlitzGame = useCallback(() => {
-    const pool = shuffleArray(filteredFormulas);
+    const pool = shuffleArray(filteredQuestions);
     const selected = pool.slice(0, Math.min(10, pool.length));
     setBlitzQuestions(selected);
     setCurrentBlitzIndex(0);
@@ -149,7 +211,7 @@ export default function MathFormulaGame() {
     if (selected.length > 0) {
       setShuffledOptions(shuffleArray(selected[0].options));
     }
-  }, [filteredFormulas]);
+  }, [filteredQuestions]);
 
   const handleBlitzSelect = (option: string) => {
     if (isAnswerChecked || !blitzQuestions[currentBlitzIndex]) return;
@@ -198,7 +260,7 @@ export default function MathFormulaGame() {
 
   // --- MEMORY FLIP MODE LOGIC ---
   const initMemoryGame = useCallback(() => {
-    const pool = shuffleArray(filteredFormulas).slice(0, 6);
+    const pool = shuffleArray(filteredQuestions).slice(0, 6);
     const cards: MemoryCard[] = [];
 
     pool.forEach((f) => {
@@ -227,7 +289,7 @@ export default function MathFormulaGame() {
     setMemoryMoves(0);
     setMatchedPairs(0);
     setTotalPairs(pool.length);
-  }, [filteredFormulas]);
+  }, [filteredQuestions]);
 
   const handleCardClick = (index: number) => {
     if (
@@ -294,14 +356,14 @@ export default function MathFormulaGame() {
 
   // --- FILL IN THE BLANK LOGIC ---
   const initFillGame = useCallback(() => {
-    const pool = shuffleArray(filteredFormulas);
+    const pool = shuffleArray(filteredQuestions);
     const selected = pool.slice(0, Math.min(8, pool.length));
     setFillQuestions(selected);
     setFillIndex(0);
     setSelectedFillBlank(null);
     setIsFillChecked(false);
     setFillScore(0);
-  }, [filteredFormulas]);
+  }, [filteredQuestions]);
 
   const handleFillSelect = (choice: string) => {
     if (isFillChecked || !fillQuestions[fillIndex]) return;
@@ -329,15 +391,15 @@ export default function MathFormulaGame() {
     }
   };
 
-  // Handle switching modes or chapter changes
+  // Handle switching modes, chapter or subject
   useEffect(() => {
     if (mode === "blitz") initBlitzGame();
     if (mode === "memory") initMemoryGame();
     if (mode === "fill") initFillGame();
-  }, [mode, selectedChapter, initBlitzGame, initMemoryGame, initFillGame]);
+  }, [mode, subject, selectedChapter, initBlitzGame, initMemoryGame, initFillGame]);
 
   // Copy formula text in Vault
-  const handleCopyFormula = (f: MathFormula) => {
+  const handleCopyFormula = (f: GenericQuestion) => {
     if (typeof navigator !== "undefined" && navigator.clipboard) {
       navigator.clipboard.writeText(`${f.name}: ${f.formula}`);
       setCopiedFormulaId(f.id);
@@ -347,59 +409,111 @@ export default function MathFormulaGame() {
 
   // Calculate Level based on XP
   const level = useMemo(() => {
-    if (xp < 50) return { title: "Novice", badge: "Level 1", next: 50 };
-    if (xp < 150) return { title: "Apprentice", badge: "Level 2", next: 150 };
-    if (xp < 350) return { title: "Scholar", badge: "Level 3", next: 350 };
-    if (xp < 700) return { title: "Math Master", badge: "Level 4", next: 700 };
-    return { title: "Grand Genius", badge: "Level 5", next: 1000 };
+    if (xp < 50) return { title: "Novice", badge: "Level 1" };
+    if (xp < 150) return { title: "Apprentice", badge: "Level 2" };
+    if (xp < 350) return { title: "Scholar", badge: "Level 3" };
+    if (xp < 700) return { title: "Formula Master", badge: "Level 4" };
+    return { title: "Grand Centum Genius", badge: "Level 5" };
   }, [xp]);
 
   return (
     <div className="w-full max-w-5xl mx-auto space-y-6">
-      {/* Top Banner & Player Status Header */}
-      <div className="rounded-3xl bg-gradient-to-br from-[#142B63] via-[#1E3A8A] to-[#0F172A] p-5 sm:p-7 text-white shadow-xl relative overflow-hidden border border-blue-900/40">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+      {/* 1. SUBJECT SWITCHER TABS WITH DISTINCT VISUAL IDENTITIES */}
+      <div className="p-1.5 sm:p-2 rounded-3xl bg-slate-900 border border-slate-800 shadow-xl flex flex-wrap sm:flex-nowrap items-center justify-between gap-1.5">
+        <button
+          onClick={() => handleSubjectChange("maths")}
+          className={`flex-1 py-3 px-3 sm:px-4 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all ${
+            subject === "maths"
+              ? "bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 font-black shadow-lg scale-102 ring-2 ring-amber-300"
+              : "text-slate-300 hover:text-white hover:bg-slate-800/60"
+          }`}
+        >
+          <Calculator className="w-4 h-4 text-amber-300" />
+          <span>Mathematics</span>
+        </button>
+
+        <button
+          onClick={() => handleSubjectChange("physics")}
+          className={`flex-1 py-3 px-3 sm:px-4 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all ${
+            subject === "physics"
+              ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-slate-950 font-black shadow-lg scale-102 ring-2 ring-cyan-300"
+              : "text-slate-300 hover:text-white hover:bg-slate-800/60"
+          }`}
+        >
+          <Atom className="w-4 h-4 text-cyan-300" />
+          <span>Physics</span>
+        </button>
+
+        <button
+          onClick={() => handleSubjectChange("chemistry")}
+          className={`flex-1 py-3 px-3 sm:px-4 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all ${
+            subject === "chemistry"
+              ? "bg-gradient-to-r from-emerald-400 to-teal-600 text-slate-950 font-black shadow-lg scale-102 ring-2 ring-emerald-300"
+              : "text-slate-300 hover:text-white hover:bg-slate-800/60"
+          }`}
+        >
+          <FlaskConical className="w-4 h-4 text-emerald-300" />
+          <span>Chemistry</span>
+        </button>
+
+        <button
+          onClick={() => handleSubjectChange("biology")}
+          className={`flex-1 py-3 px-3 sm:px-4 rounded-2xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all ${
+            subject === "biology"
+              ? "bg-gradient-to-r from-fuchsia-500 to-pink-600 text-slate-950 font-black shadow-lg scale-102 ring-2 ring-fuchsia-300"
+              : "text-slate-300 hover:text-white hover:bg-slate-800/60"
+          }`}
+        >
+          <Dna className="w-4 h-4 text-fuchsia-300" />
+          <span>Biology</span>
+        </button>
+      </div>
+
+      {/* 2. DYNAMIC SUBJECT HERO BANNER & STATUS */}
+      <div
+        className={`rounded-3xl bg-gradient-to-br ${theme.heroGradient} p-5 sm:p-7 text-white shadow-xl relative overflow-hidden border border-white/10 transition-all duration-500`}
+      >
+        <div className={`absolute top-0 right-0 w-80 h-80 ${theme.bgGlow} rounded-full blur-3xl pointer-events-none`} />
 
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
-          {/* Left Title & Branding */}
+          {/* Left Title */}
           <div className="flex items-start sm:items-center gap-3.5">
-            <SectionBadge type="math" size="lg" />
+            <SectionBadge type={subject === "maths" ? "math" : subject} size="lg" />
             <div>
               <div className="flex flex-wrap items-center gap-2">
-                <span className="bg-amber-400 text-slate-950 font-black text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-xs">
+                <span
+                  className={`${theme.primaryButton} text-[10px] sm:text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wider flex items-center gap-1 shadow-xs`}
+                >
                   <Gamepad2 className="w-3.5 h-3.5" />
-                  CLASS 12 MATH ARCADE
+                  {theme.badge}
                 </span>
-                <span className="text-blue-200 text-xs font-semibold">
-                  Tamil Nadu State Board
+                <span className="text-white/80 text-xs font-semibold">
+                  Tamil Nadu Class 12 · {theme.tamilName}
                 </span>
               </div>
               <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold font-heading text-white tracking-tight mt-1">
-                Math Formula Quest
+                {theme.name} Formula & Law Quest
               </h1>
-              <p className="text-xs sm:text-sm text-blue-200/90 font-medium">
-                Master crucial 12th Maths formulas with speed recall, memory pairs & formula puzzles!
+              <p className="text-xs sm:text-sm text-slate-200/90 font-medium">
+                {theme.tagline}
               </p>
             </div>
           </div>
 
-          {/* Right Stats & Audio Controls */}
+          {/* Right Stats & Audio */}
           <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 bg-white/10 backdrop-blur-md p-2 sm:p-2.5 rounded-2xl border border-white/15">
-            {/* XP & Level */}
-            <div className="px-3 py-1.5 bg-blue-950/60 rounded-xl text-center border border-blue-400/20">
-              <div className="text-[10px] text-blue-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
-                <Sparkles className="w-3 h-3 text-amber-400" />
+            <div className="px-3 py-1.5 bg-black/40 rounded-xl text-center border border-white/10">
+              <div className="text-[10px] text-slate-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
+                <Sparkles className="w-3 h-3 text-yellow-400" />
                 {level.title}
               </div>
-              <div className="text-sm font-extrabold text-amber-300">
+              <div className={`text-sm font-extrabold ${theme.accentText}`}>
                 {xp} <span className="text-[10px] text-white/80 font-semibold">XP</span>
               </div>
             </div>
 
-            {/* Streak */}
-            <div className="px-3 py-1.5 bg-blue-950/60 rounded-xl text-center border border-blue-400/20">
-              <div className="text-[10px] text-blue-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
+            <div className="px-3 py-1.5 bg-black/40 rounded-xl text-center border border-white/10">
+              <div className="text-[10px] text-slate-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
                 <Flame className="w-3 h-3 text-orange-400" />
                 Streak
               </div>
@@ -408,9 +522,8 @@ export default function MathFormulaGame() {
               </div>
             </div>
 
-            {/* Best High Score */}
-            <div className="px-3 py-1.5 bg-blue-950/60 rounded-xl text-center border border-blue-400/20">
-              <div className="text-[10px] text-blue-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
+            <div className="px-3 py-1.5 bg-black/40 rounded-xl text-center border border-white/10">
+              <div className="text-[10px] text-slate-300 font-bold uppercase tracking-wider flex items-center justify-center gap-1">
                 <Trophy className="w-3 h-3 text-yellow-400" />
                 Best
               </div>
@@ -419,33 +532,50 @@ export default function MathFormulaGame() {
               </div>
             </div>
 
-            {/* Audio Toggle */}
             <button
               onClick={toggleSound}
               className={`touch-target p-2.5 rounded-xl border transition-all ${
                 soundEnabled
-                  ? "bg-amber-400/20 text-amber-300 border-amber-400/30 hover:bg-amber-400/30"
+                  ? "bg-white/20 text-white border-white/30 hover:bg-white/30"
                   : "bg-slate-800 text-slate-400 border-slate-700 hover:bg-slate-700"
               }`}
               title={soundEnabled ? "Mute audio effects" : "Turn audio on"}
               aria-label={soundEnabled ? "Mute sound effects" : "Enable sound effects"}
             >
-              {soundEnabled ? (
-                <Volume2 className="w-4 h-4" />
-              ) : (
-                <VolumeX className="w-4 h-4" />
-              )}
+              {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
             </button>
           </div>
         </div>
 
+        {/* Golden Material Quick Access Callout for Maths */}
+        {subject === "maths" && (
+          <div className="mt-4 p-3 bg-amber-400/20 backdrop-blur-md rounded-2xl border border-amber-400/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <Sparkles className="w-4 h-4 text-amber-300 shrink-0" />
+              <span className="text-xs text-amber-100 font-semibold">
+                <strong>Official Golden Material:</strong> Class 12 Full Maths Golden Formula Sheet (12 Pages, Vol 1 & 2) is now available!
+              </span>
+            </div>
+            <a
+              href="/pdf/maths-golden-formula-sheet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs rounded-xl flex items-center gap-1.5 shadow-sm transition-all shrink-0 active:scale-95"
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Open Golden Sheet</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
+        )}
+
         {/* Game Mode Navigation Tabs */}
-        <div className="mt-6 flex flex-wrap items-center gap-2 pt-4 border-t border-white/10">
+        <div className="mt-5 flex flex-wrap items-center gap-2 pt-4 border-t border-white/10">
           <button
             onClick={() => setMode("blitz")}
             className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all ${
               mode === "blitz"
-                ? "bg-amber-400 text-slate-950 shadow-md scale-102"
+                ? `${theme.primaryButton} shadow-md scale-102`
                 : "bg-white/10 hover:bg-white/20 text-white"
             }`}
           >
@@ -457,7 +587,7 @@ export default function MathFormulaGame() {
             onClick={() => setMode("memory")}
             className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all ${
               mode === "memory"
-                ? "bg-amber-400 text-slate-950 shadow-md scale-102"
+                ? `${theme.primaryButton} shadow-md scale-102`
                 : "bg-white/10 hover:bg-white/20 text-white"
             }`}
           >
@@ -469,7 +599,7 @@ export default function MathFormulaGame() {
             onClick={() => setMode("fill")}
             className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all ${
               mode === "fill"
-                ? "bg-amber-400 text-slate-950 shadow-md scale-102"
+                ? `${theme.primaryButton} shadow-md scale-102`
                 : "bg-white/10 hover:bg-white/20 text-white"
             }`}
           >
@@ -481,7 +611,7 @@ export default function MathFormulaGame() {
             onClick={() => setMode("vault")}
             className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 transition-all ${
               mode === "vault"
-                ? "bg-amber-400 text-slate-950 shadow-md scale-102"
+                ? `${theme.primaryButton} shadow-md scale-102`
                 : "bg-white/10 hover:bg-white/20 text-white"
             }`}
           >
@@ -494,15 +624,15 @@ export default function MathFormulaGame() {
       {/* Chapter Filter Pill Selector */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs font-semibold scrollbar-none">
         <span className="text-slate-500 font-bold uppercase text-[10px] shrink-0 pl-1">
-          Chapter:
+          {theme.name} Topic:
         </span>
-        {MATH_CHAPTERS.map((chap) => (
+        {availableChapters.map((chap) => (
           <button
             key={chap}
             onClick={() => setSelectedChapter(chap)}
             className={`px-3 py-1.5 rounded-full whitespace-nowrap transition-all shrink-0 ${
               selectedChapter === chap
-                ? "bg-[#142B63] text-white shadow-xs font-bold"
+                ? "bg-slate-900 text-white shadow-xs font-bold ring-2 ring-slate-800"
                 : "bg-white text-slate-600 border border-slate-200 hover:bg-slate-50"
             }`}
           >
@@ -518,7 +648,7 @@ export default function MathFormulaGame() {
             <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm space-y-6">
               {/* Question Header */}
               <div className="flex items-center justify-between text-xs font-bold text-slate-500 pb-3 border-b border-slate-100">
-                <span className="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg">
+                <span className={`px-2.5 py-1 ${theme.pillBg} rounded-lg`}>
                   {blitzQuestions[currentBlitzIndex].chapter}
                 </span>
                 <span className="font-mono text-slate-700">
@@ -529,10 +659,10 @@ export default function MathFormulaGame() {
                 </span>
               </div>
 
-              {/* Formula Concept Prompt */}
+              {/* Concept Prompt */}
               <div className="text-center py-4 px-2 space-y-1.5">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600">
-                  Identify the Correct Formula
+                <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                  Identify the Correct Law / Formula for {theme.name}
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-heading">
                   {blitzQuestions[currentBlitzIndex].name}
@@ -547,7 +677,7 @@ export default function MathFormulaGame() {
                 </p>
               </div>
 
-              {/* 4 Formula Options */}
+              {/* 4 Choices */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {shuffledOptions.map((opt, i) => {
                   const isCorrectAnswer =
@@ -555,7 +685,7 @@ export default function MathFormulaGame() {
                   const isChosen = selectedOption === opt;
 
                   let cardStyle =
-                    "border-slate-200 bg-slate-50/70 hover:border-blue-400 hover:bg-blue-50/50 text-slate-800";
+                    "border-slate-200 bg-slate-50/70 hover:border-slate-400 hover:bg-slate-100/50 text-slate-800";
                   if (isAnswerChecked) {
                     if (isCorrectAnswer) {
                       cardStyle =
@@ -594,12 +724,12 @@ export default function MathFormulaGame() {
 
               {/* Feedback and Exam Tip after selection */}
               {isAnswerChecked && (
-                <div className="rounded-2xl p-4 bg-amber-50/90 border border-amber-200/80 animate-in fade-in duration-300 space-y-3">
+                <div className="rounded-2xl p-4 bg-slate-50 border border-slate-200 animate-in fade-in duration-300 space-y-3">
                   <div className="flex items-start gap-2.5">
-                    <Sparkles className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                    <Sparkles className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
                     <div className="text-xs sm:text-sm text-slate-800">
-                      <strong className="text-amber-900 block font-bold">
-                        Exam Tip & Mnemonic:
+                      <strong className="text-slate-900 block font-bold">
+                        Exam Tip & Concept:
                       </strong>
                       {blitzQuestions[currentBlitzIndex].examTip}
                     </div>
@@ -608,7 +738,7 @@ export default function MathFormulaGame() {
                   <div className="flex justify-end pt-1">
                     <button
                       onClick={handleNextBlitz}
-                      className="px-5 py-2.5 bg-[#142B63] hover:bg-blue-900 text-white rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-sm transition-all"
+                      className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 shadow-sm transition-all"
                     >
                       <span>
                         {currentBlitzIndex + 1 < blitzQuestions.length
@@ -628,17 +758,17 @@ export default function MathFormulaGame() {
                 <Trophy className="w-8 h-8" />
               </div>
               <h2 className="text-2xl font-black text-slate-900 font-heading">
-                Round Complete!
+                {theme.name} Round Complete!
               </h2>
               <p className="text-slate-600 text-sm max-w-md mx-auto">
                 You scored <strong className="text-slate-900">{blitzScore} points</strong> with a max streak of{" "}
-                <strong className="text-orange-600">{maxStreak}x</strong>! Keep practicing to master all Class 12 formulas.
+                <strong className="text-orange-600">{maxStreak}x</strong>!
               </p>
 
               <div className="flex justify-center gap-3 pt-2">
                 <button
                   onClick={initBlitzGame}
-                  className="px-6 py-3 bg-[#142B63] hover:bg-blue-900 text-white rounded-2xl text-sm font-bold flex items-center gap-2 shadow-md transition-all"
+                  className="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-2xl text-sm font-bold flex items-center gap-2 shadow-md transition-all"
                 >
                   <RotateCcw className="w-4 h-4" />
                   <span>Play Again</span>
@@ -648,7 +778,7 @@ export default function MathFormulaGame() {
                   className="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-2xl text-sm font-bold flex items-center gap-2 transition-all"
                 >
                   <BookOpen className="w-4 h-4" />
-                  <span>Review Formula Vault</span>
+                  <span>Review {theme.name} Vault</span>
                 </button>
               </div>
             </div>
@@ -665,7 +795,7 @@ export default function MathFormulaGame() {
               <span className="text-slate-700">
                 Moves: <strong className="font-mono text-slate-900">{memoryMoves}</strong>
               </span>
-              <span className="text-blue-700 font-extrabold">
+              <span className="text-slate-900 font-extrabold">
                 Pairs Matched: {matchedPairs} / {totalPairs}
               </span>
               <button
@@ -691,14 +821,14 @@ export default function MathFormulaGame() {
                       card.isMatched
                         ? "border-emerald-300 bg-emerald-50/70 text-emerald-950 shadow-xs"
                         : isOpen
-                        ? "border-blue-400 bg-white text-slate-900 shadow-md scale-102 ring-2 ring-blue-400/20"
-                        : "border-slate-200 bg-gradient-to-br from-slate-100 via-slate-50 to-blue-50/40 hover:border-blue-300 hover:shadow-sm"
+                        ? "border-slate-800 bg-white text-slate-900 shadow-md scale-102 ring-2 ring-slate-800/20"
+                        : "border-slate-200 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-200/40 hover:border-slate-400 hover:shadow-sm"
                     }`}
                   >
                     {isOpen ? (
                       <div className="animate-in zoom-in-95 duration-200 flex flex-col items-center justify-center h-full w-full">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 block mb-1">
-                          {card.type === "concept" ? "Concept" : "Formula"}
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block mb-1">
+                          {card.type === "concept" ? "Concept" : "Formula / Law"}
                         </span>
                         <p
                           className={`font-bold leading-snug line-clamp-3 ${
@@ -754,7 +884,7 @@ export default function MathFormulaGame() {
           {fillQuestions.length > 0 && fillIndex < fillQuestions.length ? (
             <div className="rounded-3xl border border-slate-200 bg-white p-5 sm:p-7 shadow-sm space-y-6">
               <div className="flex items-center justify-between text-xs font-bold text-slate-500 pb-3 border-b border-slate-100">
-                <span className="px-2.5 py-1 bg-violet-50 text-violet-700 rounded-lg">
+                <span className={`px-2.5 py-1 ${theme.pillBg} rounded-lg`}>
                   {fillQuestions[fillIndex].chapter}
                 </span>
                 <span className="font-mono text-slate-700">
@@ -767,22 +897,24 @@ export default function MathFormulaGame() {
 
               {/* Puzzle Prompt */}
               <div className="text-center py-4 space-y-2">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-violet-600">
-                  Fill in the Missing Term
+                <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                  Fill in the Missing Term or Coefficient
                 </span>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 font-heading">
                   {fillQuestions[fillIndex].name}
                 </h2>
                 <div className="my-5 p-5 bg-slate-900 text-white rounded-2xl font-mono text-base sm:text-xl font-bold tracking-wide inline-block shadow-inner max-w-full overflow-x-auto">
                   {fillQuestions[fillIndex].fillBlank.template.split("[?]")[0]}
-                  <span className="inline-block mx-1.5 px-3 py-1 bg-amber-400 text-slate-950 rounded-lg ring-2 ring-amber-300 font-extrabold animate-pulse">
+                  <span
+                    className={`inline-block mx-1.5 px-3 py-1 ${theme.blankPill} rounded-lg font-extrabold animate-pulse`}
+                  >
                     {selectedFillBlank || "?"}
                   </span>
                   {fillQuestions[fillIndex].fillBlank.template.split("[?]")[1]}
                 </div>
               </div>
 
-              {/* 4 Fill Choices */}
+              {/* 4 Choices */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {fillQuestions[fillIndex].fillBlank.options.map((choice) => {
                   const isCorrect =
@@ -790,7 +922,7 @@ export default function MathFormulaGame() {
                   const isSelected = selectedFillBlank === choice;
 
                   let style =
-                    "border-slate-200 bg-slate-50 text-slate-800 hover:border-violet-400 hover:bg-violet-50/50";
+                    "border-slate-200 bg-slate-50 text-slate-800 hover:border-slate-400 hover:bg-slate-100";
                   if (isFillChecked) {
                     if (isCorrect) {
                       style = "border-emerald-500 bg-emerald-50 text-emerald-900 font-black";
@@ -816,12 +948,12 @@ export default function MathFormulaGame() {
 
               {/* Explanation & Next */}
               {isFillChecked && (
-                <div className="rounded-2xl p-4 bg-violet-50 border border-violet-200 animate-in fade-in space-y-3">
+                <div className="rounded-2xl p-4 bg-slate-50 border border-slate-200 animate-in fade-in space-y-3">
                   <div className="text-xs sm:text-sm text-slate-800">
-                    <strong className="text-violet-950 font-bold block">
+                    <strong className="text-slate-900 font-bold block">
                       Full Formula:
                     </strong>
-                    <code className="text-sm font-mono text-violet-900 font-bold">
+                    <code className="text-sm font-mono text-blue-900 font-bold">
                       {fillQuestions[fillIndex].formula}
                     </code>
                     <p className="text-slate-600 mt-1">
@@ -832,7 +964,7 @@ export default function MathFormulaGame() {
                   <div className="flex justify-end">
                     <button
                       onClick={handleNextFill}
-                      className="px-5 py-2.5 bg-[#142B63] hover:bg-blue-900 text-white rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition-all shadow-xs"
+                      className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition-all shadow-xs"
                     >
                       <span>
                         {fillIndex + 1 < fillQuestions.length
@@ -856,7 +988,7 @@ export default function MathFormulaGame() {
               </p>
               <button
                 onClick={initFillGame}
-                className="px-5 py-2.5 bg-[#142B63] hover:bg-blue-900 text-white rounded-xl text-xs font-bold transition-all shadow-xs"
+                className="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition-all shadow-xs"
               >
                 Play Another Round
               </button>
@@ -875,14 +1007,14 @@ export default function MathFormulaGame() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search formula by name (e.g. Parabola, Inverse, Euler, Bernoulli, Integral...)"
-              className="w-full pl-10 pr-4 py-2.5 rounded-2xl border border-slate-200 bg-white text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all shadow-2xs"
+              placeholder={`Search ${theme.name} formulas, laws or chapters...`}
+              className="w-full pl-10 pr-4 py-2.5 rounded-2xl border border-slate-200 bg-white text-xs sm:text-sm font-medium focus:outline-none focus:ring-2 focus:ring-slate-400 focus:border-slate-500 transition-all shadow-2xs"
             />
           </div>
 
           {/* Formulas List */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-            {filteredFormulas
+            {filteredQuestions
               .filter(
                 (f) =>
                   f.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -892,15 +1024,15 @@ export default function MathFormulaGame() {
               .map((f) => (
                 <div
                   key={f.id}
-                  className="p-4 rounded-2xl border border-slate-200 bg-white shadow-2xs space-y-2 hover:border-blue-300 transition-all"
+                  className="p-4 rounded-2xl border border-slate-200 bg-white shadow-2xs space-y-2 hover:border-slate-400 transition-all"
                 >
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700">
+                    <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${theme.pillBg}`}>
                       {f.chapter}
                     </span>
                     <button
                       onClick={() => handleCopyFormula(f)}
-                      className="text-slate-400 hover:text-blue-600 text-xs flex items-center gap-1 transition-colors"
+                      className="text-slate-400 hover:text-slate-800 text-xs flex items-center gap-1 transition-colors"
                       title="Copy formula text"
                     >
                       {copiedFormulaId === f.id ? (
@@ -916,7 +1048,7 @@ export default function MathFormulaGame() {
                     {f.name}
                   </h3>
 
-                  <div className="p-2.5 bg-slate-900 text-amber-300 rounded-xl font-mono text-xs sm:text-sm font-bold tracking-wide select-all overflow-x-auto">
+                  <div className="p-2.5 bg-slate-900 text-white rounded-xl font-mono text-xs sm:text-sm font-bold tracking-wide select-all overflow-x-auto">
                     {f.formula}
                   </div>
 
@@ -924,7 +1056,7 @@ export default function MathFormulaGame() {
                     {f.description}
                   </p>
 
-                  <div className="text-[11px] text-amber-900 bg-amber-50/80 p-2 rounded-lg border border-amber-200/50">
+                  <div className="text-[11px] text-slate-800 bg-slate-50 p-2 rounded-lg border border-slate-200">
                     <strong>Tip:</strong> {f.examTip}
                   </div>
                 </div>
