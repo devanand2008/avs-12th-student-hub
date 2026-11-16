@@ -107,7 +107,10 @@ const report = {
   ).length,
   newLessons: advancedModels.length,
   animatedNewConcepts: advancedModels.filter(
-    (m) => m.stages.length || m.kind === "algorithm",
+    (m) =>
+      m.stages.length ||
+      m.kind === "algorithm" ||
+      m.controls.includes("play/pause coil"),
   ).length,
   books: catalog.books.length,
   subjects: new Set(catalog.books.map((b) => b.subject)).size,

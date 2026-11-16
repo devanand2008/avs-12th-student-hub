@@ -62,6 +62,137 @@ export function scienceGeometry(
     );
     head.quaternion.setFromUnitVectors(v(0, 1, 0), direction);
   };
+  if (model === "sc-neighbours") {
+    ball(v(), 0.35, 0xfb7185, "centre");
+    for (const point of [
+      v(2),
+      v(-2),
+      v(0, 2),
+      v(0, -2),
+      v(0, 0, 2),
+      v(0, 0, -2),
+    ]) {
+      ball(point, 0.35, 0x34d399, "neighbours");
+      link(v(), point, 0x60a5fa, "directions", 0.025);
+    }
+    return;
+  }
+  if (model === "fcc" || model === "simple-cubic") {
+    const corners: THREE.Vector3[] = [];
+    for (const x of [-1.5, 1.5])
+      for (const y of [-1.5, 1.5])
+        for (const z of [-1.5, 1.5]) {
+          const point = v(x, y, z);
+          corners.push(point);
+          ball(point, 0.25, 0x34d399, "corners");
+        }
+    if (model === "fcc")
+      for (const point of [
+        v(1.5),
+        v(-1.5),
+        v(0, 1.5),
+        v(0, -1.5),
+        v(0, 0, 1.5),
+        v(0, 0, -1.5),
+      ])
+        ball(point, 0.25, 0xfb7185, "faces");
+    for (let i = 0; i < corners.length; i++)
+      for (let j = i + 1; j < corners.length; j++)
+        if (Math.abs(corners[i].distanceTo(corners[j]) - 3) < 0.001)
+          link(corners[i], corners[j], 0x60a5fa, "edges", 0.025);
+    group.rotation.set(0.2, -0.4, 0);
+    return;
+  }
+  if (model === "square-planar") {
+    ball(v(), 0.4, 0x2563eb, "metal");
+    for (const position of [v(1.8), v(-1.8), v(0, 1.8), v(0, -1.8)]) {
+      ball(position, 0.3, 0x34d399, "ligands");
+      link(v(), position, 0xfbbf24, "bonds", 0.07);
+    }
+    return;
+  }
+  if (model === "nucleosome") {
+    for (const y of [-0.38, 0.38])
+      for (const x of [-0.45, 0.45])
+        for (const z of [-0.45, 0.45])
+          ball(v(x, y, z), 0.44, 0xa78bfa, "histones");
+    const points = Array.from({ length: 161 }, (_, index) => {
+      const fraction = index / 160;
+      const angle = (fraction - 0.5) * Math.PI * 3.3;
+      return v(
+        1.35 * Math.cos(angle),
+        (fraction - 0.5) * 1.7,
+        1.35 * Math.sin(angle),
+      );
+    });
+    add(
+      new THREE.TubeGeometry(
+        new THREE.CatmullRomCurve3(points),
+        160,
+        0.085,
+        8,
+        false,
+      ),
+      0xfbbf24,
+      "wrapped",
+      v(),
+    );
+    for (const [point, direction] of [
+      [points[0], -1],
+      [points.at(-1)!, 1],
+    ] as const)
+      link(
+        point,
+        point.clone().add(v(1.3, direction * 0.35, 0)),
+        0x38bdf8,
+        "linker",
+        0.085,
+      );
+    return;
+  }
+  if (model === "ac-generator") {
+    group.rotation.set(0.15, -0.5, 0);
+    const firstMesh = meshes.length;
+    add(new THREE.BoxGeometry(0.65, 2.7, 2), 0xfb7185, "north", v(-2.1));
+    add(new THREE.BoxGeometry(0.65, 2.7, 2), 0x60a5fa, "south", v(2.1));
+    const corners = [
+      v(0, -1.2, -0.8),
+      v(0, 1.2, -0.8),
+      v(0, 1.2, 0.8),
+      v(0, -1.2, 0.8),
+    ];
+    for (let i = 0; i < corners.length; i++)
+      link(
+        corners[i],
+        corners[(i + 1) % corners.length],
+        0xfbbf24,
+        "coil",
+        0.075,
+      );
+    link(v(0, -2.45), v(0, 1.8), 0x94a3b8, "shaft", 0.065);
+    for (const y of [-1.7, -2.1]) {
+      const ring = add(
+        new THREE.TorusGeometry(0.26, 0.055, 8, 24),
+        0xf59e0b,
+        "rings",
+        v(0, y),
+      );
+      ring.rotation.x = Math.PI / 2;
+      add(
+        new THREE.BoxGeometry(0.24, 0.17, 0.25),
+        0x475569,
+        "brushes",
+        v(0.42, y),
+      );
+    }
+    for (const y of [-1.45, 1.45])
+      arrow(v(-1.65, y, 1.2), v(1.65, y, 1.2), 0x34d399, "field");
+    for (const mesh of meshes.slice(firstMesh))
+      mesh.userData.rotor = ["coil", "shaft", "rings"].includes(
+        mesh.userData.part,
+      );
+    return;
+  }
   if (model === "coaxial-cable" || model === "optical-fibre") {
     // Stepped shells expose the layer below. Shells are hollow, not overlapping solid rods.
     const layers: [string, number, number, number, number][] =

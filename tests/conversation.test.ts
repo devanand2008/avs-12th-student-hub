@@ -6,6 +6,8 @@ import {
   chatRequestSchema,
   smallTalkAnswer,
   isEverydayConversation,
+  isStudyFollowUp,
+  studyTopic,
 } from "../src/lib/ai/local-gemma";
 
 test("conversation schema preserves source-only mode and rejects invented modes", () => {
@@ -20,6 +22,81 @@ test("conversation schema preserves source-only mode and rejects invented modes"
     false,
   );
 });
+
+test("answer formats validate and reach both grounded and conversational prompts", () => {
+  assert.equal(
+    chatRequestSchema.parse({ message: "Hello" }).responseStyle,
+    "explain",
+  );
+  assert.equal(
+    chatRequestSchema.safeParse({ message: "Hello", responseStyle: "invented" })
+      .success,
+    false,
+  );
+  for (const [responseStyle, expected] of [
+    ["steps", /short numbered steps/],
+    ["revision", /three concise revision bullets/],
+  ] as const) {
+    const input = chatRequestSchema.parse({
+      message: "Explain DNA",
+      responseStyle,
+      language: "Tamil",
+    });
+    assert.match(buildConversationPrompt(input), expected);
+    assert.match(buildStudyPrompt(input, []), expected);
+    assert.match(buildStudyPrompt(input, []), /Answer in Tamil/);
+    assert.match(buildStudyPrompt(input, []), /Use only facts/);
+  }
+});
+
+test("study follow-ups recognise the English and Tamil UI prompts without swallowing topics", () => {
+  for (const message of [
+    "Explain more simply",
+    "Give an example",
+    "Summarise in three points",
+    "மேலும் எளிமையாக விளக்குங்கள்",
+    "ஒரு எடுத்துக்காட்டு கொடுங்கள்",
+    "மூன்று குறிப்புகளில் சுருக்கமாகக் கூறுங்கள்",
+  ])
+    assert.equal(isStudyFollowUp(message), true, message);
+  for (const message of [
+    "Explain DNA replication",
+    "pure functions",
+    "electromagnetic induction",
+    "Why does current flow?",
+    "Explain more about DNA",
+    "Summarise electrostatics",
+  ])
+    assert.equal(isStudyFollowUp(message), false, message);
+});
+test("follow-up retrieval retains its topic despite generic words matching other pages", () => {
+  const input = chatRequestSchema.parse({
+    message: "Summarise in three points",
+    history: [
+      { role: "user", content: "Explain pure functions" },
+      { role: "assistant", content: "Pure functions have no side effects." },
+      { role: "user", content: "Explain more simply" },
+    ],
+  });
+  assert.equal(studyTopic(input), "Explain pure functions");
+  assert.equal(
+    studyTopic(
+      chatRequestSchema.parse({ message: "Summarise in three points" }),
+    ),
+    undefined,
+  );
+  assert.match(
+    buildStudyPrompt({ ...input, sourceTopic: studyTopic(input) }, []),
+    /Study topic: Explain pure functions/,
+  );
+  const parsed = chatRequestSchema.parse({
+    message: "Explain DNA",
+    sourceTopic: "injected topic",
+  });
+  assert.equal(studyTopic(parsed), "Explain DNA");
+  assert.equal("sourceTopic" in parsed, false);
+});
+
 test("everyday English and Tamil replies work without inventing citations or swallowing study questions", () => {
   for (const message of [
     "Hi!",

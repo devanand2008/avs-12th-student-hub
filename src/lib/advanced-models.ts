@@ -60,6 +60,357 @@ const make = (
 });
 export const advancedModels: LabLesson[] = [
   make({
+    id: "simple-cubic",
+    title: "Simple cubic unit cell",
+    subject: "Chemistry",
+    chapter: "Solid State",
+    bookId: "12-chemistry-english-v1-2d0e27cb",
+    chapterNumber: 6,
+    pdfPage: 193,
+    printedPage: 183,
+    kind: "3d",
+    description: "Count eight shared corners to obtain one atom per cell.",
+    objective: "Count eight shared corners to obtain one atom per cell.",
+    limitations:
+      "Reduced sphere radii expose lattice sites. Lines are geometric guides. Neighbouring cells and realistic atomic sizes are omitted. Exploded view changes distances for inspection.",
+    stages: [],
+    controls: ["rotate", "zoom", "select", "hide selected", "explode", "reset"],
+    parts: [
+      {
+        id: "corners",
+        name: "Eight shared corners",
+        color: "#34d399",
+        description: "Each corner contributes one eighth of an atom.",
+      },
+      {
+        id: "edges",
+        name: "Twelve cell edges",
+        color: "#34d399",
+        description: "The cell repeats along three perpendicular directions.",
+      },
+    ],
+    check: {
+      question: "How many atoms contribute to a simple cubic cell?",
+      options: ["1", "8", "4"],
+      answer: 0,
+      explanation: "Count eight shared corners to obtain one atom per cell.",
+    },
+  }),
+  make({
+    id: "sc-neighbours",
+    title: "Simple cubic nearest neighbours",
+    subject: "Chemistry",
+    chapter: "Solid State",
+    bookId: "12-chemistry-english-v1-2d0e27cb",
+    chapterNumber: 6,
+    pdfPage: 193,
+    printedPage: 183,
+    kind: "3d",
+    description:
+      "Identify six equally distant neighbours along the three coordinate axes.",
+    objective:
+      "Identify six equally distant neighbours along the three coordinate axes.",
+    limitations:
+      "Reduced sphere radii expose lattice sites. Lines are geometric guides. Neighbouring cells and realistic atomic sizes are omitted. Exploded view changes distances for inspection.",
+    stages: [],
+    controls: ["rotate", "zoom", "select", "hide selected", "explode", "reset"],
+    parts: [
+      {
+        id: "centre",
+        name: "Reference atom",
+        color: "#34d399",
+        description: "Choose an atom within the extended simple cubic lattice.",
+      },
+      {
+        id: "neighbours",
+        name: "Six nearest neighbours",
+        color: "#34d399",
+        description:
+          "Two neighbours lie along each axis, giving coordination number six.",
+      },
+      {
+        id: "directions",
+        name: "Neighbour directions",
+        color: "#34d399",
+        description: "Lines indicate equal nearest-neighbour distances.",
+      },
+    ],
+    check: {
+      question: "What is the simple cubic coordination number?",
+      options: ["6", "8", "4"],
+      answer: 0,
+      explanation:
+        "Identify six equally distant neighbours along the three coordinate axes.",
+    },
+  }),
+  make({
+    id: "fcc",
+    title: "Face-centred cubic · unit cell",
+    subject: "Chemistry",
+    chapter: "Solid State",
+    bookId: chem,
+    chapterNumber: 6,
+    pdfPage: 194,
+    printedPage: 184,
+    kind: "3d",
+    description:
+      "Inspect eight corner sites and six face-centre sites. Work out the contribution of shared atoms to one FCC unit cell.",
+    objective: "Use 8 × ⅛ + 6 × ½ to obtain four atoms per FCC unit cell.",
+    limitations:
+      "Separated spheres show lattice sites and sharing, with reduced radii for visibility. Colours distinguish site positions of identical atoms. The cubic edges are geometric guides. The display omits neighbouring cells and does not depict close-packed atomic radii.",
+    sourceUrl:
+      "https://openstax.org/books/chemistry/pages/10-6-lattice-structures-in-crystalline-solids",
+    stages: [],
+    controls: [
+      "rotate",
+      "zoom",
+      "select",
+      "hide selected",
+      "explode",
+      "surface mesh",
+      "reset",
+    ],
+    parts: [
+      {
+        id: "corners",
+        name: "Eight corner sites",
+        color: "#34d399",
+        description:
+          "Each corner atom is shared by eight cells. The eight corners together contribute one atom to this cell.",
+      },
+      {
+        id: "faces",
+        name: "Six face-centre sites",
+        color: "#fb7185",
+        description:
+          "One atom sits at the centre of each of the six faces. Each is shared by two cells, giving three atoms per cell in total.",
+      },
+      {
+        id: "edges",
+        name: "Cubic cell boundary",
+        color: "#60a5fa",
+        description:
+          "Twelve equal edges outline the repeat unit. The blue lines mark the cell boundary and are geometric guides.",
+      },
+    ],
+    check: {
+      question: "How many atoms belong to one FCC unit cell?",
+      options: ["14", "4", "6"],
+      answer: 1,
+      explanation:
+        "Eight corner contributions give one atom and six face contributions give three, totalling four.",
+    },
+  }),
+  make({
+    id: "square-planar",
+    title: "Square-planar coordination geometry",
+    subject: "Chemistry",
+    chapter: "Coordination Chemistry",
+    bookId: chem,
+    chapterNumber: 5,
+    pdfPage: 153,
+    printedPage: 143,
+    kind: "3d",
+    description:
+      "Compare four ligand positions in a common plane around a central metal. Turn to a side view to see their coplanar arrangement.",
+    objective:
+      "Distinguish square-planar coordination, with adjacent 90° and opposite 180° directions, from tetrahedral geometry.",
+    limitations:
+      "Generic idealised coordination geometry. Spheres represent donor positions and sticks represent coordination directions. No particular chemical formula, bond length, orbital hybridisation, ligand charge or magnetic property is assigned.",
+    sourceUrl:
+      "https://openstax.org/books/chemistry-atoms-first-2e/pages/19-2-coordination-chemistry-of-transition-metals",
+    stages: [],
+    controls: [
+      "rotate",
+      "zoom",
+      "select",
+      "hide selected",
+      "explode",
+      "surface mesh",
+      "reset",
+    ],
+    parts: [
+      {
+        id: "metal",
+        name: "Central metal position",
+        color: "#2563eb",
+        description:
+          "The metal lies at the centre of the square, in the same plane as the four donor positions.",
+      },
+      {
+        id: "ligands",
+        name: "Four coplanar donor positions",
+        color: "#34d399",
+        description:
+          "Four ligand donor positions lie along two perpendicular axes in one plane. Adjacent directions meet at 90° and opposite directions at 180°.",
+      },
+      {
+        id: "bonds",
+        name: "Coordination directions",
+        color: "#fbbf24",
+        description:
+          "Four sticks connect the central position to the donors. The sticks show the ideal geometry and do not represent electron density.",
+      },
+    ],
+    check: {
+      question: "What is the angle between adjacent coordination directions?",
+      options: ["109.5°", "120°", "90°"],
+      answer: 2,
+      explanation:
+        "Adjacent directions in an ideal square-planar arrangement are perpendicular.",
+    },
+  }),
+  make({
+    id: "nucleosome",
+    title: "Nucleosome · DNA packaging",
+    subject: "Bio-Zoology",
+    chapter: "Molecular Genetics",
+    bookId: zoo,
+    chapterNumber: 5,
+    pdfPage: 72,
+    printedPage: 64,
+    kind: "3d",
+    description:
+      "Explore a DNA path wrapped around eight core histones and follow the linker DNA leaving the core.",
+    objective:
+      "Recognise the histone octamer and distinguish core-associated DNA from linker DNA.",
+    limitations:
+      "Conceptual packaging model with eight enlarged protein beads. One tube traces the DNA duplex path, with individual strands, bases, histone tails and H1 omitted. Protein shapes, distances and colours are schematic. Higher-order chromatin folding is outside this model.",
+    sourceUrl: "https://pdb101-east.rcsb.org/motm/7",
+    stages: [],
+    controls: [
+      "rotate",
+      "zoom",
+      "select",
+      "hide selected",
+      "explode",
+      "surface mesh",
+      "reset",
+    ],
+    parts: [
+      {
+        id: "histones",
+        name: "Eight core histones",
+        color: "#a78bfa",
+        description:
+          "The core is an octamer containing two copies each of H2A, H2B, H3 and H4. The eight purple beads indicate the count, with protein shapes simplified.",
+      },
+      {
+        id: "wrapped",
+        name: "Wrapped DNA duplex path",
+        color: "#fbbf24",
+        description:
+          "DNA winds around the histone core. The gold tube follows the path of the duplex as a whole.",
+      },
+      {
+        id: "linker",
+        name: "Linker DNA",
+        color: "#38bdf8",
+        description:
+          "The blue extensions show DNA continuing away from the core toward neighbouring nucleosomes, which are omitted.",
+      },
+    ],
+    check: {
+      question: "How many histone proteins form the core octamer?",
+      options: ["8", "4", "2"],
+      answer: 0,
+      explanation:
+        "Two copies of each of four core histone types give eight proteins.",
+    },
+  }),
+  make({
+    id: "ac-generator",
+    title: "AC generator · coil angle and induction",
+    subject: "Physics",
+    chapter: "Electromagnetic Induction and Alternating Current",
+    bookId: phy,
+    chapterNumber: 4,
+    pdfPage: 231,
+    printedPage: 223,
+    kind: "3d",
+    description:
+      "Turn a rectangular coil between magnetic poles. Compare the angle of its normal with the magnetic field and explore normalised flux and induced emf.",
+    objective:
+      "Relate flux NBA cos θ and emf NBAω sin θ for a coil turning uniformly in a uniform magnetic field.",
+    limitations:
+      "Rotating-coil teaching arrangement described in the textbook note. Commercial rotating-field alternators use another arrangement. Uniform-field arrows are conceptual. Readouts are dimensionless normalised values, with a chosen polarity convention, rather than voltages. Wiring, external load, brush losses and magnetic fringing are omitted.",
+    sourceUrl:
+      "https://openstax.org/books/university-physics-volume-2/pages/13-6-electric-generators-and-back-emf",
+    stages: [],
+    controls: [
+      "rotate",
+      "zoom",
+      "select",
+      "hide selected",
+      "coil angle",
+      "play/pause coil",
+      "quarter-turn step",
+      "reset",
+    ],
+    parts: [
+      {
+        id: "north",
+        name: "North magnetic pole",
+        color: "#fb7185",
+        description:
+          "The red pole supplies the field on the left. The illustrated gap field points toward the south pole on the right.",
+      },
+      {
+        id: "south",
+        name: "South magnetic pole",
+        color: "#60a5fa",
+        description:
+          "The blue pole is on the right. Field arrows across the gap run from north to south.",
+      },
+      {
+        id: "coil",
+        name: "Rotating armature coil",
+        color: "#fbbf24",
+        description:
+          "The rectangular coil turns around the vertical shaft. θ measures its normal relative to the gap field. Turning the coil changes its linked flux.",
+      },
+      {
+        id: "field",
+        name: "Gap magnetic field",
+        color: "#34d399",
+        description:
+          "Green arrows indicate the assumed uniform field direction. Flux is maximal at θ = 0° and zero at θ = 90°.",
+      },
+      {
+        id: "shaft",
+        name: "Rotation shaft",
+        color: "#94a3b8",
+        description:
+          "The shaft marks the rotation axis. External mechanical work drives the generator.",
+      },
+      {
+        id: "rings",
+        name: "Two slip rings",
+        color: "#f59e0b",
+        description:
+          "Separate continuous rings turn with the coil. The full electrical connections are omitted in this structural schematic.",
+      },
+      {
+        id: "brushes",
+        name: "Stationary brushes",
+        color: "#475569",
+        description:
+          "Brushes contact the slip rings while remaining stationary. An external circuit would connect here.",
+      },
+    ],
+    check: {
+      question: "At θ = 90°, what happens for nonzero constant angular speed?",
+      options: [
+        "Flux and emf are both maximal",
+        "Flux is zero and emf magnitude is maximal",
+        "Flux is maximal and emf is zero",
+      ],
+      answer: 1,
+      explanation:
+        "cos 90° = 0 while sin 90° = 1. The normalised flux is zero and normalised emf is at its positive peak.",
+    },
+  }),
+  make({
     id: "coaxial-cable",
     title: "Coaxial cable cutaway",
     subject: "Computer Applications",

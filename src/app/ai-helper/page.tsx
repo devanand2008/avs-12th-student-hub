@@ -62,25 +62,39 @@ export default function AIStudyHelperPage() {
   const [inputText, setInputText] = useState("");
   const [language, setLanguage] = useState<"English" | "Tamil">("English");
   const [mode, setMode] = useState<"auto" | "study">("auto");
+  const [responseStyle, setResponseStyle] = useState<
+    "explain" | "steps" | "revision"
+  >("explain");
   const [loading, setLoading] = useState(false);
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [status, setStatus] = useState<ModelStatus | null>(null);
   const shellRef = useRef<HTMLDivElement>(null);
   const logRef = useRef<HTMLDivElement>(null);
+  const latestMessageRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const followLatest = useRef(true);
   const requestRef = useRef<AbortController | null>(null);
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    if (followLatest.current && logRef.current)
-      logRef.current.scrollTo({
-        top: logRef.current.scrollHeight,
-        // Instant scrolling keeps programmatic scroll events at the bottom and
-        // respects reduced-motion preferences without losing the next reply.
+    if (followLatest.current && logRef.current) {
+      const log = logRef.current;
+      const reply = latestMessageRef.current;
+      const showReplyStart =
+        !loading && messages.at(-1)?.sender === "assistant" && reply;
+      log.scrollTo({
+        top: showReplyStart
+          ? log.scrollTop +
+            reply.getBoundingClientRect().top -
+            log.getBoundingClientRect().top -
+            16
+          : log.scrollHeight,
+        // Show the start of a completed reply before its sources and follow-ups.
+        // Instant scrolling also respects reduced-motion preferences.
         behavior: "instant",
       });
+    }
   }, [messages, loading]);
 
   useEffect(() => {
@@ -182,7 +196,13 @@ export default function AIStudyHelperPage() {
       const response = await fetch("/api/ai/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, language, history, mode }),
+        body: JSON.stringify({
+          message: text,
+          language,
+          history,
+          mode,
+          responseStyle,
+        }),
         signal: AbortSignal.any([
           controller.signal,
           AbortSignal.timeout(185000),
@@ -351,6 +371,30 @@ export default function AIStudyHelperPage() {
               </button>
             ))}
           </div>
+          <label className="flex flex-wrap items-center gap-2 text-xs text-slate-600">
+            Answer format
+            <select
+              aria-label="Answer format"
+              disabled={loading}
+              value={responseStyle}
+              onChange={(event) =>
+                setResponseStyle(event.target.value as typeof responseStyle)
+              }
+              className="min-h-11 min-w-0 rounded-lg border border-slate-200 bg-white px-2 text-xs text-slate-800 focus-visible:outline-2 focus-visible:outline-blue-600"
+            >
+              <option value="explain">
+                {language === "Tamil" ? "எளிய விளக்கம்" : "Clear explanation"}
+              </option>
+              <option value="steps">
+                {language === "Tamil" ? "படிப்படியாக" : "Step by step"}
+              </option>
+              <option value="revision">
+                {language === "Tamil"
+                  ? "மீள்பார்வைக் குறிப்புகள்"
+                  : "Quick revision"}
+              </option>
+            </select>
+          </label>
         </div>
 
         <div
@@ -372,6 +416,11 @@ export default function AIStudyHelperPage() {
             return (
               <div
                 key={message.id}
+                ref={
+                  message.id === messages.at(-1)?.id
+                    ? latestMessageRef
+                    : undefined
+                }
                 className={`flex gap-2.5 sm:gap-3 max-w-3xl ${isUser ? "ml-auto justify-end" : "mr-auto"}`}
               >
                 {!isUser && (
@@ -471,6 +520,37 @@ export default function AIStudyHelperPage() {
               </div>
             );
           })}
+          {!loading &&
+            messages.at(-1)?.sender === "assistant" &&
+            messages.at(-1)?.answerType === "study" && (
+              <div
+                className="flex gap-2 overflow-x-auto pb-1"
+                role="group"
+                aria-label="Continue studying"
+              >
+                {(language === "Tamil"
+                  ? [
+                      "மேலும் எளிமையாக விளக்குங்கள்",
+                      "ஒரு எடுத்துக்காட்டு கொடுங்கள்",
+                      "மூன்று குறிப்புகளில் சுருக்கமாகக் கூறுங்கள்",
+                    ]
+                  : [
+                      "Explain more simply",
+                      "Give an example",
+                      "Summarise in three points",
+                    ]
+                ).map((prompt) => (
+                  <button
+                    key={prompt}
+                    type="button"
+                    className="min-h-11 shrink-0 whitespace-nowrap rounded-xl border border-blue-200 bg-white px-3 py-2 text-left text-xs font-medium text-blue-700 hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-blue-600"
+                    onClick={() => void handleSend(prompt)}
+                  >
+                    {prompt}
+                  </button>
+                ))}
+              </div>
+            )}
           {loading && (
             <div
               role="status"
@@ -586,6 +666,7 @@ export default function AIStudyHelperPage() {
               </button>
             )}
           </form>
+
           <div className="shrink-0 flex items-center justify-between gap-3 mt-2 text-[10px] text-slate-500">
             <p>
               {mode === "study"

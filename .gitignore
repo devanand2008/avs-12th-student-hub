@@ -64,3 +64,5 @@ next-env.d.ts
 # Source media is hosted as release assets; keep large originals local.
 /book's/**/*.pdf
 /book's/**/*.mp4
+
+/reel video/

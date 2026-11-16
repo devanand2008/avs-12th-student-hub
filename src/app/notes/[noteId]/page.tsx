@@ -305,6 +305,20 @@ export default function NoteViewerPage({ params }: PageProps) {
         </div>
       </div>
 
+      {note.sourceWarnings?.length ? (
+        <aside
+          aria-label="Source material notes"
+          className="mx-4 mt-4 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950 sm:mx-6"
+        >
+          <h2 className="font-semibold">About this supplied material</h2>
+          <ul className="mt-2 list-disc space-y-1 pl-5">
+            {note.sourceWarnings.map((warning) => (
+              <li key={warning}>{warning}</li>
+            ))}
+          </ul>
+        </aside>
+      ) : null}
+
       {/* Main Reader Viewport */}
       <div className="flex-1 flex flex-col lg:flex-row max-w-7xl mx-auto w-full p-4 sm:p-6 gap-6 items-start">
         {/* Left / Center: Interactive Page Canvas */}

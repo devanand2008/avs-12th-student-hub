@@ -157,3 +157,11 @@ export function insertionSortFrames(input: number[]): AlgorithmFrame[] {
   });
   return frames;
 }
+// θ is measured from the field to the coil's area normal. These are
+// dimensionless values for nonzero constant angular speed and chosen polarity.
+export function generatorState(angleDegrees: number) {
+  if (!Number.isFinite(angleDegrees))
+    throw new Error("Enter a finite coil angle.");
+  const angle = (angleDegrees * Math.PI) / 180;
+  return { flux: Math.cos(angle), emf: Math.sin(angle) };
+}

@@ -4,6 +4,7 @@ export const chatRequestSchema = z.object({
   message: z.string().trim().min(1).max(4000),
   language: z.enum(["English", "Tamil"]).default("English"),
   mode: z.enum(["auto", "study"]).default("auto"),
+  responseStyle: z.enum(["explain", "steps", "revision"]).default("explain"),
   history: z
     .array(
       z.object({
@@ -15,8 +16,16 @@ export const chatRequestSchema = z.object({
     .default([]),
 });
 
-export type ChatRequest = z.infer<typeof chatRequestSchema>;
+export type ChatRequest = z.infer<typeof chatRequestSchema> & {
+  sourceTopic?: string;
+};
 export type AnswerType = "study" | "conversation";
+const responseFormats = {
+  explain: "Give a short, clear explanation in connected paragraphs.",
+  steps: "Explain using short numbered steps in a logical order.",
+  revision:
+    "Use at most three concise revision bullets with the essential ideas.",
+};
 export class LocalLanguageError extends Error {
   constructor() {
     super(
@@ -87,6 +96,7 @@ export function buildStudyPrompt(input: ChatRequest, context: StudyContext[]) {
   // Gemma's chat template expects user/model turns, rather than a system role.
   return `You are the AVS 12 Learning Hub study tutor for Tamil Nadu Class 12.
 Answer in ${input.language}. Use short, clear explanations with numbered steps where helpful.
+${responseFormats[input.responseStyle]}
 Keep the answer under 120 words. Summarize the relevant excerpt faithfully.
 Do not add examples, analogies, benefits or facts unless they appear in the excerpts.
 Do not include introductory chatter or follow-up questions.
@@ -102,6 +112,7 @@ ${excerpts}
 ${history}
 </previous_conversation>
 <student_question>
+Study topic: ${input.sourceTopic || input.message}
 ${input.message}
 </student_question>`;
 }
@@ -114,6 +125,7 @@ export function buildConversationPrompt(input: ChatRequest) {
     .slice(-2000);
   return `You are SkillUp, a friendly AI study companion for Tamil Nadu Class 12 students.
 Respond naturally in ${input.language}, in under 150 words. You can greet, chat, help plan revision, encourage learning, and explain general concepts.
+${responseFormats[input.responseStyle]}
 Answer the current message and use recent conversation for context. Do not force every message into a textbook lesson.
 You are an AI, not a human teacher. Be honest about uncertainty; do not claim to have feelings, private information or live information you do not have.
 No verified textbook excerpt is supplied for this response. Never invent textbook citations, official answers, marks or claims of teacher verification.
@@ -167,6 +179,30 @@ export function isEverydayConversation(message: string) {
       message,
     )
   );
+}
+
+export function isStudyFollowUp(message: string) {
+  const text = message.trim().replace(/[.!?]+$/u, "");
+  return (
+    /^(explain (it|that|this)( again| more simply)?|explain more simply|summari[sz]e( (it|that|this))?( in three points)?|give (an? )?example|make (it|that) (simple|simpler|shorter)|translate( (it|that|this))?|simplify( (it|that|this))?|why|how so)$/iu.test(
+      text,
+    ) ||
+    [
+      "மேலும்",
+      "மேலும் எளிமையாக விளக்குங்கள்",
+      "சுருக்கமாக",
+      "ஒரு எடுத்துக்காட்டு கொடுங்கள்",
+      "மூன்று குறிப்புகளில் சுருக்கமாகக் கூறுங்கள்",
+    ].includes(text)
+  );
+}
+
+export function studyTopic(input: ChatRequest) {
+  if (!isStudyFollowUp(input.message)) return input.message;
+  return [...input.history]
+    .reverse()
+    .find((turn) => turn.role === "user" && !isStudyFollowUp(turn.content))
+    ?.content;
 }
 
 export async function generateLocalAnswer(

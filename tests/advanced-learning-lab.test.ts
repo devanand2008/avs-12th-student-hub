@@ -15,6 +15,7 @@ import {
   tangent,
   thinLens,
   transformerVoltage,
+  generatorState,
   trophicEnergy,
 } from "../src/lib/lab-math";
 import { scienceGeometry } from "../src/components/learning/science-geometry";
@@ -24,8 +25,8 @@ import resourceRows from "../src/lib/additional-materials-resources.json";
 import { materialId } from "../scripts/lib/material-inspection";
 
 test("every new lesson has a real book, checked source page, local concept check and honest limits", () => {
-  assert.equal(learningModels.length, 39);
-  assert.equal(advancedModels.length, 24);
+  assert.equal(learningModels.length, 45);
+  assert.equal(advancedModels.length, 30);
   assert.equal(
     new Set(learningModels.map((m) => m.id)).size,
     learningModels.length,
@@ -69,6 +70,25 @@ test("physical and mathematical relationships match known cases and reject singu
   assert.throws(() => trophicEnergy(1, 2));
   assert.equal(transformerVoltage(12, 2), 24);
   assert.equal(transformerVoltage(12, 0.5), 6);
+});
+
+test("generator flux and emf have the correct phase and periodicity", () => {
+  for (const [angle, flux, emf] of [
+    [0, 1, 0],
+    [90, 0, 1],
+    [180, -1, 0],
+    [270, 0, -1],
+    [360, 1, 0],
+  ]) {
+    const actual = generatorState(angle);
+    assert.ok(Math.abs(actual.flux - flux) < 1e-12);
+    assert.ok(Math.abs(actual.emf - emf) < 1e-12);
+  }
+  const diagonal = generatorState(45);
+  assert.ok(Math.abs(diagonal.flux - Math.SQRT1_2) < 1e-12);
+  assert.ok(Math.abs(diagonal.emf - Math.SQRT1_2) < 1e-12);
+  for (const value of [NaN, Infinity, -Infinity])
+    assert.throws(() => generatorState(value));
 });
 test("binary search records actual bounded comparisons and handles absent and duplicate targets", () => {
   for (const a of [[4, 1, 3, 2], [0], [-3, -1, -1, 5], [9, 2, 8, 1, 6, 4]])
@@ -155,6 +175,64 @@ test("all new procedural structures generate meshes with matching selectable par
       );
     assert.ok(meshes.length < 150);
     const parts = (id: string) => meshes.filter((m) => m.userData.part === id);
+    if (lesson.id === "simple-cubic") {
+      assert.equal(parts("corners").length, 8);
+      assert.equal(parts("edges").length, 12);
+      for (const corner of parts("corners"))
+        assert.ok(corner.position.toArray().every((n) => Math.abs(n) === 1.5));
+    }
+    if (lesson.id === "sc-neighbours") {
+      assert.equal(parts("centre").length, 1);
+      assert.equal(parts("neighbours").length, 6);
+      for (const neighbour of parts("neighbours")) {
+        assert.equal(neighbour.position.length(), 2);
+        assert.equal(
+          neighbour.position.toArray().filter((n) => n !== 0).length,
+          1,
+        );
+      }
+    }
+    if (lesson.id === "fcc") {
+      assert.equal(parts("corners").length, 8);
+      assert.equal(parts("faces").length, 6);
+      assert.equal(parts("edges").length, 12);
+      assert.ok(
+        parts("faces").every((face) =>
+          face.scale.equals(parts("corners")[0].scale),
+        ),
+      );
+      for (const face of parts("faces")) {
+        assert.equal(face.position.toArray().filter((n) => n === 0).length, 2);
+        assert.equal(face.position.length(), 1.5);
+      }
+    }
+    if (lesson.id === "square-planar") {
+      const positions = parts("ligands").map((mesh) => mesh.position);
+      assert.equal(positions.length, 4);
+      assert.ok(positions.every((p) => p.z === 0));
+      for (const p of positions) {
+        assert.equal(
+          positions.filter((q) => Math.abs(p.dot(q)) < 1e-10).length,
+          2,
+        );
+        assert.equal(positions.filter((q) => p.dot(q) < -1).length, 1);
+      }
+    }
+    if (lesson.id === "nucleosome") {
+      assert.equal(parts("histones").length, 8);
+      assert.equal(parts("wrapped").length, 1);
+      assert.equal(parts("linker").length, 2);
+    }
+    if (lesson.id === "ac-generator") {
+      assert.equal(parts("coil").length, 4);
+      assert.equal(parts("rings").length, 2);
+      assert.equal(parts("brushes").length, 2);
+      for (const mesh of meshes)
+        assert.equal(
+          mesh.userData.rotor,
+          ["coil", "shaft", "rings"].includes(mesh.userData.part),
+        );
+    }
     if (lesson.id === "ethernet-plug") {
       assert.equal(parts("contacts").length, 8);
       assert.equal(new Set(parts("contacts").map((m) => m.position.x)).size, 8);
@@ -285,7 +363,10 @@ test("all additional resources retain stable source IDs, hashes, exact hosted pa
         `/learning-materials-2026-10-25/${source.sha256}\\.${source.kind === "note" ? "pdf" : "mp4"}$`,
       ),
     );
-    assert.match(row.resource.description, /not been teacher-verified/);
+    assert.match(
+      row.resource.description,
+      /not been teacher-verified|await teacher (?:verification|review)/,
+    );
     if (source.kind === "note") assert.ok(source.pageCount! > 0);
     else assert.ok(source.durationSeconds! > 0);
   }

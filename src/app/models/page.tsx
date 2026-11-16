@@ -4,6 +4,7 @@ import Sidebar from "@/components/layout/Sidebar";
 import { learningModels } from "@/lib/models";
 import { advancedLesson } from "@/lib/advanced-models";
 import { generalModelReferences } from "@/lib/model-validation";
+import { generatorState } from "@/lib/lab-math";
 import {
   chapterBook,
   chapterKey,
@@ -83,6 +84,7 @@ export default function ModelsPage() {
   const [rotating, setRotating] = useState(false);
   const [resetKey, setResetKey] = useState(0);
   const [vectorScale, setVectorScale] = useState(1);
+  const [generatorAngle, setGeneratorAngle] = useState(0);
   const [animating, setAnimating] = useState(false);
   const [speed, setSpeed] = useState(1);
   const visible = learningModels.filter((item) => {
@@ -125,13 +127,21 @@ export default function ModelsPage() {
       ];
   const part = parts[partIndex] ?? parts[0];
   const selectedMappings = modelChapters.filter((m) => m.modelId === model.id);
+  const generator = generatorState(generatorAngle);
   useEffect(() => {
-    if (!animating || model.id !== "vectors" || !active || !visible.length)
+    if (
+      !animating ||
+      !["vectors", "ac-generator"].includes(model.id) ||
+      !active ||
+      !visible.length
+    )
       return;
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
     const timer = window.setInterval(() => {
-      if (!document.hidden && !preference.matches)
+      if (document.hidden || preference.matches) return;
+      if (model.id === "vectors")
         setVectorScale((t) => (t >= 1 ? 0 : Math.min(1, t + 0.01 * speed)));
+      else setGeneratorAngle((angle) => (angle + 2 * speed) % 360);
     }, 50);
     return () => window.clearInterval(timer);
   }, [animating, speed, model.id, active, visible.length]);
@@ -341,6 +351,8 @@ export default function ModelsPage() {
                       setPartIndex(0);
                       setHiddenPart("");
                       setExploded(false);
+                      setAnimating(false);
+                      setGeneratorAngle(0);
                     }}
                     aria-pressed={model.id === item.id}
                     className={`model-option ${model.id === item.id ? "model-option-active" : ""}`}
@@ -381,6 +393,7 @@ export default function ModelsPage() {
                     vectorScale={vectorScale}
                     hiddenPart={hiddenPart}
                     exploded={exploded}
+                    generatorAngle={generatorAngle}
                     onSelect={(id) => {
                       const index = parts.findIndex((p) => p.id === id);
                       if (index >= 0) setPartIndex(index);
@@ -520,6 +533,77 @@ export default function ModelsPage() {
                     </label>
                   </div>
                 )}
+                {model.id === "ac-generator" && (
+                  <section
+                    className="mt-4 space-y-3 rounded-xl border border-blue-100 bg-blue-50/50 p-3 text-sm"
+                    aria-label="Generator experiment"
+                  >
+                    <label className="block font-semibold">
+                      Coil angle θ (degrees)
+                      <input
+                        type="range"
+                        min="0"
+                        max="360"
+                        step="1"
+                        value={generatorAngle}
+                        className="mt-2 min-h-11 w-full"
+                        onChange={(event) => {
+                          setAnimating(false);
+                          setGeneratorAngle(Number(event.target.value));
+                        }}
+                      />
+                    </label>
+                    <div aria-live={animating ? "off" : "polite"}>
+                      <p>θ = {generatorAngle.toFixed(0)}°</p>
+                      <p>
+                        Flux / NBA = cos θ ={" "}
+                        <output aria-label="Normalised magnetic flux">
+                          {Number(generator.flux.toFixed(2))}
+                        </output>
+                      </p>
+                      <p>
+                        emf / (NBAω) = sin θ ={" "}
+                        <output aria-label="Normalised induced emf">
+                          {Number(generator.emf.toFixed(2))}
+                        </output>
+                      </p>
+                    </div>
+                    <p className="text-xs leading-5">
+                      θ is measured between the coil normal and the field.
+                      Readouts are dimensionless for uniform rotation. Automatic
+                      motion pauses when reduced motion is enabled. Quarter-turn
+                      stepping stays available.
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      <button
+                        className="min-h-11 rounded-lg border bg-white px-3 font-semibold text-blue-700"
+                        disabled={!active}
+                        onClick={() => setAnimating((value) => !value)}
+                        aria-pressed={animating}
+                      >
+                        {animating ? "Pause coil" : "Play coil"}
+                      </button>
+                      <button
+                        className="min-h-11 rounded-lg border bg-white px-3"
+                        onClick={() => {
+                          setAnimating(false);
+                          setGeneratorAngle((angle) => (angle + 90) % 360);
+                        }}
+                      >
+                        Turn coil 90°
+                      </button>
+                      <button
+                        className="min-h-11 rounded-lg border bg-white px-3"
+                        onClick={() => {
+                          setAnimating(false);
+                          setGeneratorAngle(0);
+                        }}
+                      >
+                        Reset coil
+                      </button>
+                    </div>
+                  </section>
+                )}
                 <h3 className="mb-3 mt-7 text-xs font-bold uppercase tracking-wider text-slate-500">
                   Explore the parts
                 </h3>
@@ -582,13 +666,15 @@ export default function ModelsPage() {
                     </p>
                     {lesson.kind === "3d" && (
                       <div className="flex flex-wrap gap-2">
-                        <button
-                          className="min-h-11 rounded-xl border p-2"
-                          aria-pressed={exploded}
-                          onClick={() => setExploded((v) => !v)}
-                        >
-                          {exploded ? "Complete view" : "Exploded view"}
-                        </button>
+                        {lesson.controls.includes("explode") && (
+                          <button
+                            className="min-h-11 rounded-xl border p-2"
+                            aria-pressed={exploded}
+                            onClick={() => setExploded((v) => !v)}
+                          >
+                            {exploded ? "Complete view" : "Exploded view"}
+                          </button>
+                        )}
                         <button
                           className="min-h-11 rounded-xl border p-2"
                           onClick={() =>
@@ -606,6 +692,8 @@ export default function ModelsPage() {
                             setHiddenPart("");
                             setRotating(false);
                             setPartIndex(0);
+                            setAnimating(false);
+                            setGeneratorAngle(0);
                             setResetKey((k) => k + 1);
                           }}
                         >

@@ -12,6 +12,7 @@ import {
   LocalLanguageError,
   smallTalkAnswer,
   isEverydayConversation,
+  studyTopic,
 } from "@/lib/ai/local-gemma";
 import { retrieveGroundedKnowledge } from "@/lib/db";
 import { checkRateLimit } from "@/lib/rate-limit";
@@ -73,30 +74,11 @@ export async function POST(request: Request) {
         answerType: "conversation",
       });
     const stream = (session.stream as StreamType) || undefined;
-    let matches =
-      input.mode === "auto" && isEverydayConversation(input.message)
+    const topic = studyTopic(input);
+    const matches =
+      !topic || (input.mode === "auto" && isEverydayConversation(topic))
         ? []
-        : await retrieveGroundedKnowledge(input.message, stream, 0.25);
-    // Follow-ups can refer to the last student question, while retaining stream filtering.
-    if (
-      !matches.length &&
-      /^(explain (it|that|this)|summari[sz]e|give (an? )?example|make (it|that)|translate|simplify|why\b|how so\b|மேலும்|சுருக்கமாக)/iu.test(
-        input.message,
-      )
-    ) {
-      const previous = [...input.history]
-        .reverse()
-        .find((turn) => turn.role === "user");
-      if (
-        previous &&
-        !(input.mode === "auto" && isEverydayConversation(previous.content))
-      )
-        matches = await retrieveGroundedKnowledge(
-          previous.content,
-          stream,
-          0.25,
-        );
-    }
+        : await retrieveGroundedKnowledge(topic, stream, 0.25);
     if (!matches.length && input.mode === "study")
       return NextResponse.json({
         response:
@@ -131,7 +113,7 @@ export async function POST(request: Request) {
         response = await (
           provider === "gemini" ? generateGeminiAnswer : generateLocalAnswer
         )(
-          input,
+          { ...input, sourceTopic: topic },
           matches.map(({ chunk }) => chunk),
           request.signal,
           answerType,

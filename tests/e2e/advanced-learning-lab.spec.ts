@@ -46,12 +46,14 @@ test("all new models open with valid source context, functional controls and no 
           page.getByRole("heading", { name: part.name, exact: true }),
         ).toBeVisible();
       }
-      await page
-        .getByRole("button", { name: "Exploded view", exact: true })
-        .click();
-      await expect(
-        page.getByRole("button", { name: "Complete view", exact: true }),
-      ).toHaveAttribute("aria-pressed", "true");
+      if (model.controls.includes("explode")) {
+        await page
+          .getByRole("button", { name: "Exploded view", exact: true })
+          .click();
+        await expect(
+          page.getByRole("button", { name: "Complete view", exact: true }),
+        ).toHaveAttribute("aria-pressed", "true");
+      }
       await page
         .getByRole("button", { name: "Hide selected component" })
         .click();
@@ -59,9 +61,10 @@ test("all new models open with valid source context, functional controls and no 
         page.getByRole("button", { name: "Show selected component" }),
       ).toBeVisible();
       await page.getByRole("button", { name: "Reset structure" }).click();
-      await expect(
-        page.getByRole("button", { name: "Exploded view", exact: true }),
-      ).toHaveAttribute("aria-pressed", "false");
+      if (model.controls.includes("explode"))
+        await expect(
+          page.getByRole("button", { name: "Exploded view", exact: true }),
+        ).toHaveAttribute("aria-pressed", "false");
       await page.locator("canvas").focus();
       await page.keyboard.press("ArrowLeft");
       await page.keyboard.press("+");

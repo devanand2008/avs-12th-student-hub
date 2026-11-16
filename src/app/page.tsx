@@ -24,6 +24,7 @@ import {
 import Image from "next/image";
 import Link from "@/components/layout/IntentLink";
 import BrandLogo from "@/components/layout/BrandLogo";
+import PromotionVideo from "@/components/PromotionVideo";
 import InstallButton from "@/components/pwa/InstallButton";
 import { pageMetadata, websiteStructuredData } from "@/lib/seo";
 
@@ -140,7 +141,8 @@ const academicSubjects = [
     image: "physics",
     tag: "SCIENCE · CORE",
     color: "from-blue-600 to-cyan-500",
-    description: "Electrostatics, Magnetism, Optics, Dual Nature, Semiconductor & Communications.",
+    description:
+      "Electrostatics, Magnetism, Optics, Dual Nature, Semiconductor & Communications.",
     href: "/subjects",
   },
   {
@@ -149,7 +151,8 @@ const academicSubjects = [
     image: "chemistry",
     tag: "SCIENCE · CORE",
     color: "from-emerald-500 to-teal-600",
-    description: "Solid State, Metallurgy, Coordination Chemistry, Organic Reactions & Polymers.",
+    description:
+      "Solid State, Metallurgy, Coordination Chemistry, Organic Reactions & Polymers.",
     href: "/subjects",
   },
   {
@@ -158,7 +161,8 @@ const academicSubjects = [
     image: "botany",
     tag: "BIO STREAM",
     color: "from-teal-500 to-emerald-600",
-    description: "Plant Reproduction, Genetics, Biotechnology, Human Physiology & Ecology.",
+    description:
+      "Plant Reproduction, Genetics, Biotechnology, Human Physiology & Ecology.",
     href: "/subjects",
   },
   {
@@ -167,7 +171,8 @@ const academicSubjects = [
     image: "maths",
     tag: "SCIENCE · CORE",
     color: "from-amber-500 to-orange-600",
-    description: "Matrices, Complex Numbers, Differential Calculus, Vector Algebra & Probability.",
+    description:
+      "Matrices, Complex Numbers, Differential Calculus, Vector Algebra & Probability.",
     href: "/subjects",
   },
   {
@@ -176,7 +181,8 @@ const academicSubjects = [
     image: "computer",
     tag: "TECH STREAM",
     color: "from-indigo-600 to-blue-600",
-    description: "Python, OOP, Data Structures, SQL Database Management & Web Applications.",
+    description:
+      "Python, OOP, Data Structures, SQL Database Management & Web Applications.",
     href: "/subjects",
   },
   {
@@ -185,7 +191,8 @@ const academicSubjects = [
     image: "english",
     tag: "COMMERCE STREAM",
     color: "from-cyan-600 to-blue-700",
-    description: "Management Process, Financial Markets, Partnership Accounts & Economics.",
+    description:
+      "Management Process, Financial Markets, Partnership Accounts & Economics.",
     href: "/subjects",
   },
 ];
@@ -196,7 +203,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteStructuredData).replace(/</g, "\\u003c"),
+          __html: JSON.stringify(websiteStructuredData).replace(
+            /</g,
+            "\\u003c",
+          ),
         }}
       />
 
@@ -230,7 +240,8 @@ export default function HomePage() {
 
           {/* Requested Subtitle */}
           <p className="mx-auto max-w-2xl text-sm sm:text-lg text-slate-600 leading-relaxed">
-            Your complete Class 12 learning companion for handwritten notes, video lessons, textbooks, one-mark practice and AI-powered learning.
+            Your complete Class 12 learning companion for handwritten notes,
+            video lessons, textbooks, one-mark practice and AI-powered learning.
           </p>
 
           {/* Requested Actions: Start Learning & Explore Study Materials */}
@@ -260,24 +271,41 @@ export default function HomePage() {
           {/* Quick Metrics Bar */}
           <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto">
             <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
-              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">260+</p>
-              <p className="text-[11px] text-slate-500 font-medium">Video Lessons</p>
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">
+                260+
+              </p>
+              <p className="text-[11px] text-slate-500 font-medium">
+                Video Lessons
+              </p>
             </div>
             <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
-              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">3,000+</p>
-              <p className="text-[11px] text-slate-500 font-medium">Book-Back MCQs</p>
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">
+                3,000+
+              </p>
+              <p className="text-[11px] text-slate-500 font-medium">
+                Book-Back MCQs
+              </p>
             </div>
             <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
-              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">100% Free</p>
-              <p className="text-[11px] text-slate-500 font-medium">Open to Students</p>
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">
+                100% Free
+              </p>
+              <p className="text-[11px] text-slate-500 font-medium">
+                Open to Students
+              </p>
             </div>
             <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
-              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">Tamil & Eng</p>
-              <p className="text-[11px] text-slate-500 font-medium">Bilingual Support</p>
+              <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">
+                Tamil & Eng
+              </p>
+              <p className="text-[11px] text-slate-500 font-medium">
+                Bilingual Support
+              </p>
             </div>
           </div>
         </div>
       </section>
+      <PromotionVideo />
 
       {/* FEATURE OVERVIEW SECTION */}
       <section className="px-4 py-14 max-w-6xl mx-auto space-y-8">
@@ -290,7 +318,8 @@ export default function HomePage() {
             Everything You Need for Class 12 Success
           </h2>
           <p className="text-xs sm:text-sm text-slate-600">
-            Tailored tools designed specifically for Tamil Nadu Higher Secondary curriculum.
+            Tailored tools designed specifically for Tamil Nadu Higher Secondary
+            curriculum.
           </p>
         </div>
 
@@ -349,7 +378,8 @@ export default function HomePage() {
               How to Study & Score High with SkillUp
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
-              A structured 5-step approach to master every lesson with confidence.
+              A structured 5-step approach to master every lesson with
+              confidence.
             </p>
           </div>
 
@@ -368,7 +398,9 @@ export default function HomePage() {
                       </span>
                       <Icon size={16} className="text-slate-400" />
                     </div>
-                    <h3 className="font-bold text-slate-900 text-sm">{item.title}</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">
+                      {item.title}
+                    </h3>
                     <p className="text-[11px] text-slate-600 leading-relaxed">
                       {item.desc}
                     </p>
@@ -467,12 +499,17 @@ export default function HomePage() {
                     Dr. D. R. Joshua
                   </h2>
                   <p className="text-sm font-semibold text-blue-700 mt-0.5">
-                    Founder, SkillUp · Vice Principal, AVS Engineering College, Salem
+                    Founder, SkillUp · Vice Principal, AVS Engineering College,
+                    Salem
                   </p>
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Dedicated to engineering education and school-to-college transition. Dr. Joshua initiated SkillUp as a digital patronship providing Tamil Nadu Higher Secondary students with free, high-quality handwritten study notes, video tutorials, 3D simulations, and AI support.
+                  Dedicated to engineering education and school-to-college
+                  transition. Dr. Joshua initiated SkillUp as a digital
+                  patronship providing Tamil Nadu Higher Secondary students with
+                  free, high-quality handwritten study notes, video tutorials,
+                  3D simulations, and AI support.
                 </p>
 
                 {/* Requested Buttons: "Learn More" (internal) and "Visit Portfolio" (external) */}
@@ -512,7 +549,9 @@ export default function HomePage() {
               Study Anywhere with the SkillUp PWA
             </h3>
             <p className="text-xs sm:text-sm text-blue-100/90 max-w-lg leading-relaxed">
-              Install SkillUp directly to your Android phone or iPhone home screen with one tap. Zero app store delay, ultra-fast loading, and offline access.
+              Install SkillUp directly to your Android phone or iPhone home
+              screen with one tap. Zero app store delay, ultra-fast loading, and
+              offline access.
             </p>
           </div>
 

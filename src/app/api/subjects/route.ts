@@ -9,10 +9,6 @@ type CacheEntry = { data: unknown; timestamp: number };
 const subjectsCache = new Map<string, CacheEntry>();
 const CACHE_TTL_MS = 60_000; // 60 seconds TTL
 
-export function invalidateSubjectsCache() {
-  subjectsCache.clear();
-}
-
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const stream = searchParams.get("stream") as StreamType | null;

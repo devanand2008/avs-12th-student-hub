@@ -89,6 +89,7 @@ export interface NotePage {
 }
 
 export interface HandwrittenNote {
+  sourceWarnings?: string[];
   subjectId?: string;
   subjectName?: string;
   sourceFile?: string;

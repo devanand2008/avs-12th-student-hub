@@ -1,0 +1,2641 @@
+{
+  "checkedAt": "2026-11-12T10:46:43.250Z",
+  "root": "D:\\avs-12-hub\\book's",
+  "physicalFiles": 362,
+  "physicalVideos": 303,
+  "pdfs": 59,
+  "uniqueVideos": 292,
+  "byteUniqueResources": 351,
+  "videoAliases": 11,
+  "previousFilesUnchanged": 329,
+  "newPhysicalFiles": 33,
+  "newUniqueVideos": 32,
+  "newAliases": 1,
+  "newPdfs": 0,
+  "additions": [
+    {
+      "file": "phy/video/Bipolar_Junction_Transistor.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Bipolar Junction Transistor",
+      "topic": "Bipolar junction transistor and its terminals",
+      "language": "English",
+      "sha256": "6dac72024ea5288261f413e04d45f34d8c97608bce014bf36d49c3a16ebd74de",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6dac72024ea5288261f413e04d45f34d8c97608bce014bf36d49c3a16ebd74de.mp4",
+      "sizeBytes": 40963092,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 451,
+      "thumbnailUrl": "/images/learning-materials/6dac72024ea5288261f413e04d45f34d8c97608bce014bf36d49c3a16ebd74de.jpg"
+    },
+    {
+      "file": "phy/video/Decoding_Boolean_Algebra.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Decoding Boolean Algebra",
+      "topic": "Boolean algebra and logic gates",
+      "language": "English",
+      "sha256": "a921e4726925d80e5d24dc3f45d30cfbe5f4e95bd425960be562e7339a348c7d",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a921e4726925d80e5d24dc3f45d30cfbe5f4e95bd425960be562e7339a348c7d.mp4",
+      "sizeBytes": 42701297,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 413,
+      "thumbnailUrl": "/images/learning-materials/a921e4726925d80e5d24dc3f45d30cfbe5f4e95bd425960be562e7339a348c7d.jpg"
+    },
+    {
+      "file": "phy/video/Decoding_the_Diode.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Decoding the Diode",
+      "topic": "p–n junction and forward/reverse bias",
+      "language": "English",
+      "sha256": "67b60ee70f1d9a6b40961f772462b98205bcc764d4adf9cec8894aa6defd6d5b",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/67b60ee70f1d9a6b40961f772462b98205bcc764d4adf9cec8894aa6defd6d5b.mp4",
+      "sizeBytes": 45188896,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 500,
+      "thumbnailUrl": "/images/learning-materials/67b60ee70f1d9a6b40961f772462b98205bcc764d4adf9cec8894aa6defd6d5b.jpg"
+    },
+    {
+      "file": "phy/video/Demystifying_Electronics.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Demystifying Electronics",
+      "topic": "Electronics and energy bands",
+      "language": "English",
+      "sha256": "bf512ca5d1dc8a26137b456d1ba90219d4733e2fb1ef6c23fd7f133b01f4c786",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/bf512ca5d1dc8a26137b456d1ba90219d4733e2fb1ef6c23fd7f133b01f4c786.mp4",
+      "sizeBytes": 41862028,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 411,
+      "thumbnailUrl": "/images/learning-materials/bf512ca5d1dc8a26137b456d1ba90219d4733e2fb1ef6c23fd7f133b01f4c786.jpg"
+    },
+    {
+      "file": "phy/video/Demystifying_Semiconductors.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Demystifying Semiconductors",
+      "topic": "Intrinsic and extrinsic semiconductors",
+      "language": "English",
+      "sha256": "812c453facc3924884d00a257fa58b8995e0a883d2c3041beabf8becb23f2b55",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/812c453facc3924884d00a257fa58b8995e0a883d2c3041beabf8becb23f2b55.mp4",
+      "sizeBytes": 49229123,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 483,
+      "thumbnailUrl": "/images/learning-materials/812c453facc3924884d00a257fa58b8995e0a883d2c3041beabf8becb23f2b55.jpg"
+    },
+    {
+      "file": "phy/video/Digital_Electronics (1).mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Digital Electronics — concise edition",
+      "topic": "Digital signals and basic logic gates",
+      "language": "English",
+      "sha256": "238b8c178c412250c2c8eb3dbfabd023d417bb8f602da3ab176bece1b5e46c1d",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/238b8c178c412250c2c8eb3dbfabd023d417bb8f602da3ab176bece1b5e46c1d.mp4",
+      "sizeBytes": 28440339,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 334,
+      "thumbnailUrl": "/images/learning-materials/238b8c178c412250c2c8eb3dbfabd023d417bb8f602da3ab176bece1b5e46c1d.jpg"
+    },
+    {
+      "file": "phy/video/Digital_Electronics.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Digital Electronics — extended edition",
+      "topic": "Boolean algebra and digital logic gates",
+      "language": "English",
+      "sha256": "98c4ce10e90287829bce2e83bf59a170ec6a4f96bacf4da3c2cb614466e91916",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/98c4ce10e90287829bce2e83bf59a170ec6a4f96bacf4da3c2cb614466e91916.mp4",
+      "sizeBytes": 47208459,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 540,
+      "thumbnailUrl": "/images/learning-materials/98c4ce10e90287829bce2e83bf59a170ec6a4f96bacf4da3c2cb614466e91916.jpg"
+    },
+    {
+      "file": "phy/video/Journey_of_a_Signal.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Journey of a Signal",
+      "topic": "Communication systems and signal transmission",
+      "language": "English",
+      "sha256": "33b2d1547a886d0beb91d6fa4a265cfe5df045d2c9e8392c727e1020c8d1e985",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/33b2d1547a886d0beb91d6fa4a265cfe5df045d2c9e8392c727e1020c8d1e985.mp4",
+      "sizeBytes": 47764647,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 490,
+      "thumbnailUrl": "/images/learning-materials/33b2d1547a886d0beb91d6fa4a265cfe5df045d2c9e8392c727e1020c8d1e985.jpg"
+    },
+    {
+      "file": "phy/video/Nanoscience___Nanotech.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-11",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Nanoscience & Nanotechnology",
+      "topic": "Nanoscale science and applications",
+      "language": "English",
+      "sha256": "3847dcd38004c60031a595bbf73d469192de7b2f53946532f3a208e6d5272404",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/3847dcd38004c60031a595bbf73d469192de7b2f53946532f3a208e6d5272404.mp4",
+      "sizeBytes": 38257424,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 387,
+      "thumbnailUrl": "/images/learning-materials/3847dcd38004c60031a595bbf73d469192de7b2f53946532f3a208e6d5272404.jpg"
+    },
+    {
+      "file": "phy/video/Physics_in_Modern_Med.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-11",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Physics in Modern Medicine",
+      "topic": "Medical applications of physics",
+      "language": "English",
+      "sha256": "965aa943b05769954dc681d8b9b6ace2912c20b7bc81ddd399153ddfdab9d1d1",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/965aa943b05769954dc681d8b9b6ace2912c20b7bc81ddd399153ddfdab9d1d1.mp4",
+      "sizeBytes": 46062926,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 471,
+      "thumbnailUrl": "/images/learning-materials/965aa943b05769954dc681d8b9b6ace2912c20b7bc81ddd399153ddfdab9d1d1.jpg"
+    },
+    {
+      "file": "phy/video/Physics_of_Modulation.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Physics of Modulation",
+      "topic": "Amplitude and frequency modulation",
+      "language": "English",
+      "sha256": "c201ab0b5a3318ce802316742d424e558a36456d4acbaac7449171b745abe3a9",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c201ab0b5a3318ce802316742d424e558a36456d4acbaac7449171b745abe3a9.mp4",
+      "sizeBytes": 29447804,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 286,
+      "thumbnailUrl": "/images/learning-materials/c201ab0b5a3318ce802316742d424e558a36456d4acbaac7449171b745abe3a9.jpg"
+    },
+    {
+      "file": "phy/video/Robotics__Anatomy_to_Action.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-11",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — Robotics — Anatomy to Action",
+      "topic": "Robot components and applications",
+      "language": "English",
+      "sha256": "5f173ed37c1ae1e60b14b765526698d1ede02d273772e8f4fb0a684ed1bb5600",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/5f173ed37c1ae1e60b14b765526698d1ede02d273772e8f4fb0a684ed1bb5600.mp4",
+      "sizeBytes": 38856274,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 378,
+      "thumbnailUrl": "/images/learning-materials/5f173ed37c1ae1e60b14b765526698d1ede02d273772e8f4fb0a684ed1bb5600.jpg"
+    },
+    {
+      "file": "phy/video/The_Diode_Explained.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — The Diode Explained",
+      "topic": "p–n junction characteristics and diode applications",
+      "language": "English",
+      "sha256": "a5feb16f66c5df93aa85858ddf1ddea19134dc90f4054a8cc1116e82e0192f3c",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/a5feb16f66c5df93aa85858ddf1ddea19134dc90f4054a8cc1116e82e0192f3c.mp4",
+      "sizeBytes": 40877086,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 457,
+      "thumbnailUrl": "/images/learning-materials/a5feb16f66c5df93aa85858ddf1ddea19134dc90f4054a8cc1116e82e0192f3c.jpg"
+    },
+    {
+      "file": "phy/video/The_Invisible_Blueprint.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-11",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — The Invisible Blueprint — recent developments",
+      "topic": "Nanoscience, robotics and modern physics applications",
+      "language": "English",
+      "sha256": "bf7095a6ebd471ff6c1540c81dec1190a71aa5afef59c5a567d055dedbf8c343",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/bf7095a6ebd471ff6c1540c81dec1190a71aa5afef59c5a567d055dedbf8c343.mp4",
+      "sizeBytes": 61308058,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 605,
+      "thumbnailUrl": "/images/learning-materials/bf7095a6ebd471ff6c1540c81dec1190a71aa5afef59c5a567d055dedbf8c343.jpg"
+    },
+    {
+      "file": "phy/video/The_Logic_of_Hardware.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — The Logic of Hardware",
+      "topic": "Boolean laws and De Morgan’s theorems",
+      "language": "English",
+      "sha256": "f25532f5ce781f29158aacdbe83637304a318743bb8a79aa0d1561b239eb7255",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f25532f5ce781f29158aacdbe83637304a318743bb8a79aa0d1561b239eb7255.mp4",
+      "sizeBytes": 36309894,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 408,
+      "thumbnailUrl": "/images/learning-materials/f25532f5ce781f29158aacdbe83637304a318743bb8a79aa0d1561b239eb7255.jpg"
+    },
+    {
+      "file": "phy/video/The_Scale_of_Connection.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — The Scale of Connection",
+      "topic": "Satellite communication and radar",
+      "language": "English",
+      "sha256": "45422afdc6e3dc5393a10296e1b66068615fed86e926c2ec72e3ea41b257f4ac",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/45422afdc6e3dc5393a10296e1b66068615fed86e926c2ec72e3ea41b257f4ac.mp4",
+      "sizeBytes": 35720648,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 336,
+      "thumbnailUrl": "/images/learning-materials/45422afdc6e3dc5393a10296e1b66068615fed86e926c2ec72e3ea41b257f4ac.jpg"
+    },
+    {
+      "file": "phy/video/The_Vertical_Journey.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-english-v2-0ce6704c-ch-10",
+      "subjectId": "tb-12-physics-english-v2-0ce6704c",
+      "subjectName": "Physics",
+      "title": "Physics — The Vertical Journey",
+      "topic": "Ground, sky and space wave propagation",
+      "language": "English",
+      "sha256": "1166b6435ab6915094b5d6182168dcb055df10f3ac010301829caef8099199b6",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/1166b6435ab6915094b5d6182168dcb055df10f3ac010301829caef8099199b6.mp4",
+      "sizeBytes": 33057723,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). English on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 399,
+      "thumbnailUrl": "/images/learning-materials/1166b6435ab6915094b5d6182168dcb055df10f3ac010301829caef8099199b6.jpg"
+    },
+    {
+      "file": "phy/video/இயற்பியல்__நவீன_அடித்தளம்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-11",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — நவீன அடித்தளம்",
+      "topic": "இயற்பியலின் அண்மைக்கால வளர்ச்சிகள்",
+      "language": "Tamil",
+      "sha256": "4b6f0c2665ca78a34fa110ba44b88b28ef281668f598143bf2e1cbfdee27191b",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4b6f0c2665ca78a34fa110ba44b88b28ef281668f598143bf2e1cbfdee27191b.mp4",
+      "sizeBytes": 27997102,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 257,
+      "thumbnailUrl": "/images/learning-materials/4b6f0c2665ca78a34fa110ba44b88b28ef281668f598143bf2e1cbfdee27191b.jpg"
+    },
+    {
+      "file": "phy/video/எந்திரனியல்_ஓர்_அறிமுகம்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-11",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — எந்திரனியல் ஓர் அறிமுகம்",
+      "topic": "ரோபோக்களின் பாகங்கள் மற்றும் பயன்பாடுகள்",
+      "language": "Tamil",
+      "sha256": "6c5b3533f5ad26373c345d06f8e7da4131cb9e93588858e86d846a8ef033be15",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6c5b3533f5ad26373c345d06f8e7da4131cb9e93588858e86d846a8ef033be15.mp4",
+      "sizeBytes": 29719942,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 275,
+      "thumbnailUrl": "/images/learning-materials/6c5b3533f5ad26373c345d06f8e7da4131cb9e93588858e86d846a8ef033be15.jpg"
+    },
+    {
+      "file": "phy/video/எலக்ட்ரானியலின்_அடிப்படைகள்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — எலக்ட்ரானியலின் அடிப்படைகள்",
+      "topic": "எலக்ட்ரானியல் மற்றும் ஆற்றல் பட்டைகள்",
+      "language": "Tamil",
+      "sha256": "6a86914491c5d09736d81487e8ede574ea7648b10325b08af6dd8b33b1443b7a",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6a86914491c5d09736d81487e8ede574ea7648b10325b08af6dd8b33b1443b7a.mp4",
+      "sizeBytes": 40877954,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 396,
+      "thumbnailUrl": "/images/learning-materials/6a86914491c5d09736d81487e8ede574ea7648b10325b08af6dd8b33b1443b7a.jpg"
+    },
+    {
+      "file": "phy/video/டிஜிட்டல்_எலக்ட்ரானிக்ஸ்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — டிஜிட்டல் எலக்ட்ரானிக்ஸ்",
+      "topic": "அடிப்படை லாஜிக் கேட்டுகள்",
+      "language": "Tamil",
+      "sha256": "e0dfb976399eb35596ae0162373a7018acd267682d6a5d8ae017574b828f7764",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e0dfb976399eb35596ae0162373a7018acd267682d6a5d8ae017574b828f7764.mp4",
+      "sizeBytes": 30768726,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 337,
+      "thumbnailUrl": "/images/learning-materials/e0dfb976399eb35596ae0162373a7018acd267682d6a5d8ae017574b828f7764.jpg"
+    },
+    {
+      "file": "phy/video/டீ_மார்கனின்_தேற்றங்கள்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — டீ மார்கனின் தேற்றங்கள்",
+      "topic": "பூலியன் இயற்கணிதம் மற்றும் டீ மார்கன் தேற்றங்கள்",
+      "language": "Tamil",
+      "sha256": "c804df2b54579578a19fade22a1cc210012d30b4c3183c6065fae73030da5270",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/c804df2b54579578a19fade22a1cc210012d30b4c3183c6065fae73030da5270.mp4",
+      "sizeBytes": 38334586,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 399,
+      "thumbnailUrl": "/images/learning-materials/c804df2b54579578a19fade22a1cc210012d30b4c3183c6065fae73030da5270.jpg"
+    },
+    {
+      "file": "phy/video/தகவல்_தொடர்பு_அமைப்புகள் (1).mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — தகவல் தொடர்பு அமைப்புகள் — சைகைகள்",
+      "topic": "தகவல் தொடர்பு அமைப்புகள் மற்றும் சைகைக் கடத்தல்",
+      "language": "Tamil",
+      "sha256": "71865dde46a172a531a5dc905c3ea71e301c7d0217edd8775ef53131a76f4f9b",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/71865dde46a172a531a5dc905c3ea71e301c7d0217edd8775ef53131a76f4f9b.mp4",
+      "sizeBytes": 26135093,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 259,
+      "thumbnailUrl": "/images/learning-materials/71865dde46a172a531a5dc905c3ea71e301c7d0217edd8775ef53131a76f4f9b.jpg"
+    },
+    {
+      "file": "phy/video/தகவல்_தொடர்பு_அமைப்புகள்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — தகவல் தொடர்பு அமைப்புகள் — ஒளியிழை மற்றும் ரேடார்",
+      "topic": "ஒளியிழை, செயற்கைக்கோள் மற்றும் ரேடார் தகவல் தொடர்பு",
+      "language": "Tamil",
+      "sha256": "2163a8bfd7c8655d1e8c6739076eeaaccabb7d34d45773143a597fd49d3e06c1",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/2163a8bfd7c8655d1e8c6739076eeaaccabb7d34d45773143a597fd49d3e06c1.mp4",
+      "sizeBytes": 35422601,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 304,
+      "thumbnailUrl": "/images/learning-materials/2163a8bfd7c8655d1e8c6739076eeaaccabb7d34d45773143a597fd49d3e06c1.jpg"
+    },
+    {
+      "file": "phy/video/தகவல்_தொடர்பு_இயற்பியல்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — தகவல் தொடர்பு இயற்பியல்",
+      "topic": "மின்காந்த அலைப் பரவல்",
+      "language": "Tamil",
+      "sha256": "30ec607b852e685c764a7763935f7558decd079fefa3d109dfa1fc19ab0e8eac",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/30ec607b852e685c764a7763935f7558decd079fefa3d109dfa1fc19ab0e8eac.mp4",
+      "sizeBytes": 34297682,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 324,
+      "thumbnailUrl": "/images/learning-materials/30ec607b852e685c764a7763935f7558decd079fefa3d109dfa1fc19ab0e8eac.jpg"
+    },
+    {
+      "file": "phy/video/தலைப்பு_10.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — குறைகடத்திகள் — பாடம் 10.2",
+      "topic": "உள்ளார்ந்த மற்றும் புறவியலான குறைகடத்திகள்",
+      "language": "Tamil",
+      "sha256": "e492b31ad2ded697a7393455b1d3e822b9b81eee0c8815e06eaa407f93580660",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/e492b31ad2ded697a7393455b1d3e822b9b81eee0c8815e06eaa407f93580660.mp4",
+      "sizeBytes": 36941721,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 329,
+      "thumbnailUrl": "/images/learning-materials/e492b31ad2ded697a7393455b1d3e822b9b81eee0c8815e06eaa407f93580660.jpg"
+    },
+    {
+      "file": "phy/video/நானோ_அறிவியல்___தொழில்நுட்பம்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-11",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — நானோ அறிவியல் & தொழில்நுட்பம்",
+      "topic": "நானோ அறிவியல் மற்றும் பயன்பாடுகள்",
+      "language": "Tamil",
+      "sha256": "f87af888a09e22f3bfb8f8966247f108911b610145b20b93847ec6ca7e240fa5",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/f87af888a09e22f3bfb8f8966247f108911b610145b20b93847ec6ca7e240fa5.mp4",
+      "sizeBytes": 44720895,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 389,
+      "thumbnailUrl": "/images/learning-materials/f87af888a09e22f3bfb8f8966247f108911b610145b20b93847ec6ca7e240fa5.jpg"
+    },
+    {
+      "file": "phy/video/நுண்-இயந்திர_வரைபடம்__BJT.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — நுண்-இயந்திர வரைபடம் — BJT",
+      "topic": "இருமுனை சந்தி டிரான்சிஸ்டர்",
+      "language": "Tamil",
+      "sha256": "01accc9e9392a5c3f154f9071cac5de7bb1d9eb97e27b3946ad800852edc0625",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/01accc9e9392a5c3f154f9071cac5de7bb1d9eb97e27b3946ad800852edc0625.mp4",
+      "sizeBytes": 23995825,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 257,
+      "thumbnailUrl": "/images/learning-materials/01accc9e9392a5c3f154f9071cac5de7bb1d9eb97e27b3946ad800852edc0625.jpg"
+    },
+    {
+      "file": "phy/video/பண்பேற்றத்தின்_மர்மங்கள்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — பண்பேற்றத்தின் மர்மங்கள்",
+      "topic": "வீச்சுப் பண்பேற்றம் மற்றும் தகவல் தொடர்பு",
+      "language": "Tamil",
+      "sha256": "49b3d40f13d539db23de00da4eb38a93394728a8d17086042fd4ecea5f9d8e4a",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/49b3d40f13d539db23de00da4eb38a93394728a8d17086042fd4ecea5f9d8e4a.mp4",
+      "sizeBytes": 34101383,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 356,
+      "thumbnailUrl": "/images/learning-materials/49b3d40f13d539db23de00da4eb38a93394728a8d17086042fd4ecea5f9d8e4a.jpg"
+    },
+    {
+      "file": "phy/video/பூலியன்_இயற்கணிதம்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — பூலியன் இயற்கணிதம்",
+      "topic": "பூலியன் விதிகள் மற்றும் லாஜிக் கேட்டுகள்",
+      "language": "Tamil",
+      "sha256": "60572f8a722dc8e8af8b043d5151b03111e1771ca37b0ee30b35699896c7dae4",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/60572f8a722dc8e8af8b043d5151b03111e1771ca37b0ee30b35699896c7dae4.mp4",
+      "sizeBytes": 29717958,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 287,
+      "thumbnailUrl": "/images/learning-materials/60572f8a722dc8e8af8b043d5151b03111e1771ca37b0ee30b35699896c7dae4.jpg"
+    },
+    {
+      "file": "phy/video/மருத்துவத்தில்_இயற்பியல்.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-11",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — மருத்துவத்தில் இயற்பியல்",
+      "topic": "மருத்துவத்தில் இயற்பியலின் பயன்பாடுகள்",
+      "language": "Tamil",
+      "sha256": "60af064a32a70928ab9330a7b3cfff93b0f283ffb9161617edef471d77089d7d",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/60af064a32a70928ab9330a7b3cfff93b0f283ffb9161617edef471d77089d7d.mp4",
+      "sizeBytes": 35298743,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 11 (Recent Developments in Physics). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 331,
+      "thumbnailUrl": "/images/learning-materials/60af064a32a70928ab9330a7b3cfff93b0f283ffb9161617edef471d77089d7d.jpg"
+    },
+    {
+      "file": "phy/video/மின்னணு_தகவல்_தொடர்பு.mp4",
+      "kind": "video",
+      "chapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-10",
+      "subjectId": "tb-12-physics-tamil-v2-fb1fa4de",
+      "subjectName": "Physics",
+      "title": "இயற்பியல் — மின்னணு தகவல் தொடர்பு",
+      "topic": "மின்னணு சைகைகள் மற்றும் தகவல் தொடர்பு அமைப்புகள்",
+      "language": "Tamil",
+      "sha256": "0dc15d42c06aa48e7c6bb52e93fe78d4d730fdbed0d8b82cd3e7f664310a6ba0",
+      "hostedUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/0dc15d42c06aa48e7c6bb52e93fe78d4d730fdbed0d8b82cd3e7f664310a6ba0.mp4",
+      "sizeBytes": 27530144,
+      "description": "Owner-supplied study resource. Class 12 Physics Unit 10 (Electronics and Communication). Tamil on-screen content checked at beginning, middle and later source frames against textbook topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained.",
+      "durationSeconds": 256,
+      "thumbnailUrl": "/images/learning-materials/0dc15d42c06aa48e7c6bb52e93fe78d4d730fdbed0d8b82cd3e7f664310a6ba0.jpg"
+    }
+  ],
+  "mappingCorrections": [
+    {
+      "id": "video-import-500eb314d163dea295f2c25f",
+      "file": "phy/video/Theories_on_Light.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-6",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (Wave Optics — Theories of Light). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Wave Optics — Theories of Light). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-1452f395f7ade50561a0fb97",
+      "file": "phy/video/Wave_Nature_of_Light.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-6",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (Wave Optics — Huygens' Principle). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Wave Optics — Huygens' Principle). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-21cc9808338ca0f554a7ee46",
+      "file": "phy/video/Wave_Optics___Interference.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-6",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (Wave Optics — Interference). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Wave Optics — Interference). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-3e9c6bc64a19d0a34bc1f89c",
+      "file": "phy/video/Demystifying_Diffraction.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-6",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (Wave Optics — Diffraction). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Wave Optics — Diffraction). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-d7f3dc60f9af3a5030eca75b",
+      "file": "phy/video/Mechanics_of_Polarisation.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-6",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (Wave Optics — Polarisation). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Wave Optics — Polarisation). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-40f63de3e06eb18452107af8",
+      "file": "phy/video/ஒளியியல்_கொள்கைகள்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-6",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (அலை ஒளியியல் — ஒளியின் கொள்கைகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (அலை ஒளியியல் — ஒளியின் கொள்கைகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-d921e20a3a2acf6becbfe128",
+      "file": "phy/video/ஒளியின்_அலைத்தன்மை.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-6",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (அலை ஒளியியல் — அலை முகப்புகள் & ஹைஜென்ஸ் தத்துவம்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (அலை ஒளியியல் — அலை முகப்புகள் & ஹைஜென்ஸ் தத்துவம்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-713c54fb71e4f01c72f299dc",
+      "file": "phy/video/ஒளியின்_மர்மம்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-6",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (அலை ஒளியியல் — குறுக்கீட்டு விளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (அலை ஒளியியல் — குறுக்கீட்டு விளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-112c64ad026ba46be8b8788d",
+      "file": "phy/video/விளிம்பு_விளைவின்_ரகசியங்கள்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-6",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (அலை ஒளியியல் — விளிம்பு விளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (அலை ஒளியியல் — விளிம்பு விளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-91e6ff700559fec02ef18b7f",
+      "file": "phy/video/ஒளித்_தளவிளைவின்_இயற்பியல்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-6",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 6 (அலை ஒளியியல் — தளவிளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (அலை ஒளியியல் — தளவிளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-394f29434880eaedaf3a6add",
+      "file": "phy/video/Photoelectric_Mystery.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Dual Nature — Photoelectric Effect). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Dual Nature — Photoelectric Effect). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-5d6b3436c4c6fc6f075f6a72",
+      "file": "phy/video/Wave-Particle_Duality.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Dual Nature — Einstein's Photoelectric Equation). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Dual Nature — Einstein's Photoelectric Equation). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-5f8207ebf18f7627224d5ec3",
+      "file": "phy/video/Matter_Waves.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Dual Nature — De Broglie Wavelength). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Dual Nature — De Broglie Wavelength). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-a368142bb216c78f7831b9ae",
+      "file": "phy/video/Demystifying_X-Rays.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-7",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (Dual Nature — X-Rays). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Dual Nature — X-Rays). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-44f3b66fe76d7321814749bd",
+      "file": "phy/video/ஒளிமின்_விளைவு.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (இருமைப் பண்பு — ஒளிமின் விளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (இருமைப் பண்பு — ஒளிமின் விளைவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-ce5c2b86d41e13d5be5ae325",
+      "file": "phy/video/கதிர்வீச்சின்_இருமைப்_பண்பு.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (இருமைப் பண்பு — ஐன்ஸ்டீனின் ஒளிமின் சமன்பாடு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (இருமைப் பண்பு — ஐன்ஸ்டீனின் ஒளிமின் சமன்பாடு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-7ffeeafbc0545c5e1cdb78c1",
+      "file": "phy/video/பருப்பொருள்_அலைகள்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (இருமைப் பண்பு — டி பிராலி அலைகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (இருமைப் பண்பு — டி பிராலி அலைகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-69d18f1c31c8a0fa2628e8ad",
+      "file": "phy/video/X-கதிர்களின்_இயற்பியல்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-7",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 7 (இருமைப் பண்பு — X-கதிர்கள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (இருமைப் பண்பு — X-கதிர்கள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-13fd3b70d1b645c13306f32e",
+      "file": "phy/video/Evolution_of_the_Atom.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Evolution of the Atom). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Evolution of the Atom). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-4e419f97355e46e70e6697ef",
+      "file": "phy/video/Radioactivity_Explained.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Radioactivity & Nuclear Decay). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Radioactivity & Nuclear Decay). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-d693fea2825e32910bc15edc",
+      "file": "phy/video/Stars_to_Quarks.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Elementary Particles & Classification). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Elementary Particles & Classification). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-ae0a97f716f410286a3870d4",
+      "file": "phy/video/Story_of_the_Electron.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Discovery of Electron & J.J. Thomson Experiment). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Discovery of Electron & J.J. Thomson Experiment). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-83157d322409be6ea2252da5",
+      "file": "phy/video/The_Atomic_Paradox.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Rutherford Limitations & Bohr Atom Model). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Rutherford Limitations & Bohr Atom Model). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-c8bdb3ada4633f2172305224",
+      "file": "phy/video/The_Center_of_Matter.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Composition of Nucleus & Properties). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Composition of Nucleus & Properties). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-02ee4c5ffe37b4d536f0e93c",
+      "file": "phy/video/Universe__Stars_to_Forces.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Fundamental Forces of Nature). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Fundamental Forces of Nature). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-61c1798f524974e46763ef92",
+      "file": "phy/video/Unlocking_the_Nucleus.mp4",
+      "oldChapterId": "tb-12-physics-english-v2-0ce6704c-ch-8",
+      "newChapterId": "tb-12-physics-english-v2-0ce6704c-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (Atomic and Nuclear Physics — Mass Defect & Nuclear Binding Energy Curve). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (Atomic and Nuclear Physics — Mass Defect & Nuclear Binding Energy Curve). English on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-cb0a4517a52689d70eaa195d",
+      "file": "phy/video/அணு_மாதிரிகளைக்_கண்டறிதல்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணு மாதிரிகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணு மாதிரிகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-fd70ab4fc009f57f92ea8602",
+      "file": "phy/video/அணுக்கரு_விசை.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு விசை பண்புகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு விசை பண்புகள்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-1dbdde2fcaa4dc0537c4ccef",
+      "file": "phy/video/அணுக்கரு_விசையின்_ரகசியங்கள்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு நிலைப்புத்தன்மை). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு நிலைப்புத்தன்மை). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-89674c45d1894863c3d67d39",
+      "file": "phy/video/அணுக்கருவின்_ரகசியங்கள்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு அமைப்பு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — அணுக்கரு அமைப்பு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-39e05a7d6c83e1b42433fb2f",
+      "file": "phy/video/அணுவினுள்_ஒரு_பயணம்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — ரூதர்போர்டு சிதறல் ஆய்வு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — ரூதர்போர்டு சிதறல் ஆய்வு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-f6c5a950e3616da18d45b6ee",
+      "file": "phy/video/அணுவின்_அடிப்படைகள்.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — தாம்சன் அணு மாதிரி). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — தாம்சன் அணு மாதிரி). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-ea46e686ebd3c36149d2ee74",
+      "file": "phy/video/கதிரியக்கம்___அணுக்கரு_பிளவு.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — கதிரியக்கம் & அணுக்கரு இணைவு/பிளவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — கதிரியக்கம் & அணுக்கரு இணைவு/பிளவு). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    },
+    {
+      "id": "video-import-755148708b7e19c93d845259",
+      "file": "phy/video/விண்மீன்_முதல்_குவார்க்_வரை.mp4",
+      "oldChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-8",
+      "newChapterId": "tb-12-physics-tamil-v2-fb1fa4de-ch-9",
+      "oldDescription": "Owner-supplied Class 12 Physics video lesson: Unit 8 (அணு மற்றும் அணுக்கரு இயற்பியல் — அடிப்படைத் துகள்கள் & பிரபஞ்சம்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide.",
+      "newDescription": "Owner-supplied Class 12 Physics video lesson: Unit 9 (அணு மற்றும் அணுக்கரு இயற்பியல் — அடிப்படைத் துகள்கள் & பிரபஞ்சம்). Tamil on-screen labels checked from source previews against textbook contents/topic evidence. Full narration, diagrams and academic accuracy have not been teacher-verified. Original source and watermark retained. This is supplementary learning material, not an official answer guide."
+    }
+  ],
+  "allFiles": [
+    {
+      "file": "bio/bio/pdf/12th_Bio_Botany_Combined_Ordered_Questions.pdf",
+      "sizeBytes": 29921504,
+      "sha256": "d2b5787ced10b9c52e22e0637e5efb7a39f999abb478aecd9ccfb11fe45adc89"
+    },
+    {
+      "file": "bio/bio/pdf/12th_Bio_Botany_Ecology_Textbook_Back_Questions_1-10.pdf",
+      "sizeBytes": 4102950,
+      "sha256": "bd64953c04fdc32f0a132aaeb2e6e166c4b37da6592b3e2e428fc6f6a152848d"
+    },
+    {
+      "file": "bio/bio/pdf/12th_Bio_Botany_Plant_Tissue_Culture_Combined_Ordered.pdf",
+      "sizeBytes": 30237563,
+      "sha256": "9ae9366328608efb8f8f354f77108e9507217d936c5b49fc7aaee4ddc31417d7"
+    },
+    {
+      "file": "bio/bio/pdf/Bio_Botany_Ecology_Additional_Questions_10_Handwritten_Pages.pdf",
+      "sizeBytes": 25772413,
+      "sha256": "f6e138e7654c70b4d6c2fa4e4b9f00171df19f07217fedc34f6675b13f44cfc1"
+    },
+    {
+      "file": "bio/bio/pdf/Bio_Botany_Ecology_Complete_Handwritten_Notes_20_Pages.pdf",
+      "sizeBytes": 51659777,
+      "sha256": "b264aa524a109075d01f605fa25eb60688f814f445a89336192c29e098e9ee0e"
+    },
+    {
+      "file": "bio/bio/pdf/Bio_Botany_Ecosystem_10_Handwritten_Notes.pdf",
+      "sizeBytes": 9678375,
+      "sha256": "2370ec9103bb8828d7b20097338ca1bf5b37efff44c88dbf18c8e16983332376"
+    },
+    {
+      "file": "bio/bio/pdf/Bio_Botany_Ecosystem_Textbook_Back_Then_Additional_Combined (1).pdf",
+      "sizeBytes": 28415220,
+      "sha256": "ef3afca9a73b2d991b873a0d9a4a1eba954778a9d1f93c3e1b082103489c2e3f"
+    },
+    {
+      "file": "bio/bio/pdf/Bio_Botany_Principles_of_Ecology_10_Handwritten_Notes.pdf",
+      "sizeBytes": 25887422,
+      "sha256": "d807d6913cefd90cd5c1b13ba509020d9966f1a1030e6a84c87fd9728cae4a5e"
+    },
+    {
+      "file": "bio/bio/pdf/Environmental_Issues_Handwritten_Ordered.pdf",
+      "sizeBytes": 15135055,
+      "sha256": "ad5b40fc2b8da5805d80fbfff119402ac727f7f19225aaefac29a8f4a3ec8497"
+    },
+    {
+      "file": "bio/bio/video/12th_Bio-Botany__Millets.mp4",
+      "sizeBytes": 41102667,
+      "sha256": "d142b7f8c42b27b98e70a0e857ca066164a39eb6eefb3a6cd01862582f111a3e"
+    },
+    {
+      "file": "bio/bio/video/Biotech__Principles___Process.mp4",
+      "sizeBytes": 39402581,
+      "sha256": "f2c76ac846dbad71173e6aabf55d1a17f560231fc2b371381240fa643a025660"
+    },
+    {
+      "file": "bio/bio/video/Biotech_Principles.mp4",
+      "sizeBytes": 65506799,
+      "sha256": "edd57c322fe79d1156c94a3e3b28dbdfc411df4c0c0d88feb7f38796065bdd65"
+    },
+    {
+      "file": "bio/bio/video/Blotting___Bioremediation.mp4",
+      "sizeBytes": 50235217,
+      "sha256": "cc49e178959ab48c3f216c408c5f02f649e1533258abf418992299a744dbfaab"
+    },
+    {
+      "file": "bio/bio/video/bot chap 1 video 4.mp4",
+      "sizeBytes": 49822065,
+      "sha256": "b049ed63af94b3e534041ccaf47e13c348a42bf77cb6ab32f4bd0f3dcd40b4c3"
+    },
+    {
+      "file": "bio/bio/video/botany chap 1 video 1.mp4",
+      "sizeBytes": 41829273,
+      "sha256": "730a3ef7e509af214d7aa1245d463187c766b4f122df443ba5e86bf4fd43470d"
+    },
+    {
+      "file": "bio/bio/video/botany chap 1 video 3.mp4",
+      "sizeBytes": 38693964,
+      "sha256": "adc3e94fccd5ce6f40c9113be67fed17806e182358d08a22e76bc67ed330677a"
+    },
+    {
+      "file": "bio/bio/video/botany chap 2 video 2.mp4",
+      "sizeBytes": 45921563,
+      "sha256": "3c1ff30a0f23b05af047848ca4ce5f57feb85f8d58e7cf4bbbd74c68503c0355"
+    },
+    {
+      "file": "bio/bio/video/Carbon_Capture___Biochar.mp4",
+      "sizeBytes": 47520324,
+      "sha256": "24b6aafcedb73b9075065421d7d42981df017570b721bba41d8f8c56f374ca3e"
+    },
+    {
+      "file": "bio/bio/video/Ch_9__Plant_Breeding.mp4",
+      "sizeBytes": 46216868,
+      "sha256": "d3086f851fb2d609077bd7f975f37e6bf397d191459d7f304f654d3d1766b778"
+    },
+    {
+      "file": "bio/bio/video/Chromosomal_Inheritance.mp4",
+      "sizeBytes": 54327723,
+      "sha256": "66a141b48a1fef12367a3cb6668dc836caeb59ecc54eff9588614d8230a86d90"
+    },
+    {
+      "file": "bio/bio/video/Class_12__Classical_Genetics.mp4",
+      "sizeBytes": 56931931,
+      "sha256": "71e84b2eb3e013d09355849ce050c13a38c669161f1cd65873f029ba233649e6"
+    },
+    {
+      "file": "bio/bio/video/Classical_Genetics.mp4",
+      "sizeBytes": 53545508,
+      "sha256": "f904aeae846ffe5a5a4464b4187f3edd859c56ea4c21719583fe84ae8837796f"
+    },
+    {
+      "file": "bio/bio/video/Ecological_Adaptations.mp4",
+      "sizeBytes": 49704624,
+      "sha256": "58e29b69e6f144c691aa040343afc6d1c41e4dcffa0e9bfd0e644cc24a1a32a9"
+    },
+    {
+      "file": "bio/bio/video/Ecology__Edaphic_Factors.mp4",
+      "sizeBytes": 41157360,
+      "sha256": "f9dc6e6e446ce53415beb5d6b11d53d1cbfb1250d3378879254da214f3f48063"
+    },
+    {
+      "file": "bio/bio/video/Ecology__Epiphytes.mp4",
+      "sizeBytes": 52959176,
+      "sha256": "d1fa51fe2b3291f74f326e5b03510e355d176523874c6f3695b996738b4b6fea"
+    },
+    {
+      "file": "bio/bio/video/Ecosystem___Succession (1).mp4",
+      "sizeBytes": 64917189,
+      "sha256": "95dc5c71932103d4b8a32c59c5fbe883d5c54b9915156e4e07f6f387116d6865"
+    },
+    {
+      "file": "bio/bio/video/Ecosystem___Succession.mp4",
+      "sizeBytes": 60142841,
+      "sha256": "c90bbf43b1eb735a1033fbd90523adf443ec31f35cff641f545dc2ccc4ae83ad"
+    },
+    {
+      "file": "bio/bio/video/Ecosystem_Productivity.mp4",
+      "sizeBytes": 58132251,
+      "sha256": "01b8faabb95150a98cb1d4fe508cf188f75c2ef77c42d1542c98ecf241caa4ed"
+    },
+    {
+      "file": "bio/bio/video/Environmental_Issues.mp4",
+      "sizeBytes": 57851411,
+      "sha256": "0429f24c99f2c2aa635da85f9351e02380a39978747a3da2a3132d88503a51bd"
+    },
+    {
+      "file": "bio/bio/video/How_Test_Crosses_Map_DNA.mp4",
+      "sizeBytes": 53246168,
+      "sha256": "cf0f8fb7a892fc2295e26c8d440b2a930e1b32b2a6dd7e8785d1410c653f5d05"
+    },
+    {
+      "file": "bio/bio/video/Inheritance___Crossover.mp4",
+      "sizeBytes": 58434640,
+      "sha256": "b40ed5f904546e3295325c31c85461c94c6b656b6554c30e016f5b3a9f48e87e"
+    },
+    {
+      "file": "bio/bio/video/Lesson_10__Major_Cereals.mp4",
+      "sizeBytes": 63792917,
+      "sha256": "0af4137d78fe169956d86a424ddb5a8c42f9a3fb3d024f29f2ed5a0908a0b4a8"
+    },
+    {
+      "file": "bio/bio/video/Lesson_7__Ecosystem.mp4",
+      "sizeBytes": 40349990,
+      "sha256": "45e7fa8dfbd63c1f8830b44526046749057e608350753d66fae94c06fd33b073"
+    },
+    {
+      "file": "bio/bio/video/Lesson_9__Plant_Breeding (1).mp4",
+      "sizeBytes": 49307487,
+      "sha256": "ae35eb1c870a8e905a7d9bd1a4885713cad49b9db8be3c4bd38541f0e9549186"
+    },
+    {
+      "file": "bio/bio/video/Lesson_9__Plant_Breeding.mp4",
+      "sizeBytes": 40108434,
+      "sha256": "1a1609ecb1b097f3ce50ad734f878111213515c5dad6f5234ff756652ccb0495"
+    },
+    {
+      "file": "bio/bio/video/Mapping_the_Invisible.mp4",
+      "sizeBytes": 55173993,
+      "sha256": "a93b352d4b5bc8fffc94615d261237c01fb111452fb3cf268f1e96c95cc0dae8"
+    },
+    {
+      "file": "bio/bio/video/Mastering_Minor_Millets.mp4",
+      "sizeBytes": 35349927,
+      "sha256": "0bfe5ee081a7c4762b9fc62c32caa02848b79afa2b69085f7497f98911d70ea8"
+    },
+    {
+      "file": "bio/bio/video/Medicinal_Plants___Systems.mp4",
+      "sizeBytes": 53884926,
+      "sha256": "441610066e471cd7549b91523196abc455fcd017df7804a2a16c3f17972e5489"
+    },
+    {
+      "file": "bio/bio/video/Methods_of_Gene_Transfer.mp4",
+      "sizeBytes": 49039058,
+      "sha256": "93ccdb30ef39f8068acbc148fd298dcab729544c45b645ecac38d81e42406555"
+    },
+    {
+      "file": "bio/bio/video/Plant_Tissue_Culture (1).mp4",
+      "sizeBytes": 50188875,
+      "sha256": "b085a280bf0a4765f9c75cf4045e57edc7bfb0f557b4f8038fd72b6ed8314090"
+    },
+    {
+      "file": "bio/bio/video/Plant_Tissue_Culture (2).mp4",
+      "sizeBytes": 53723029,
+      "sha256": "b274165e9c2fceabceb04403db87569cbd57d205069cfa53868272e85e1394f5"
+    },
+    {
+      "file": "bio/bio/video/Plant_Tissue_Culture.mp4",
+      "sizeBytes": 41843209,
+      "sha256": "66784e42884f95ddb0c6615f693f7e54d4aaef92c1a6e2afddb5bf167317e4a1"
+    },
+    {
+      "file": "bio/bio/video/Post-Mendelian_Genetics.mp4",
+      "sizeBytes": 53130426,
+      "sha256": "7538ebfa14ce3f776b512a1cb8a0d1cad64711e258e822ca86d4df067aa0f4df"
+    },
+    {
+      "file": "bio/bio/video/Principles_of_Ecology.mp4",
+      "sizeBytes": 38463592,
+      "sha256": "3da4e5887a0f62e0473156501b1cfd752768115c58bcf6e6d6a62f0b0caefab6"
+    },
+    {
+      "file": "bio/bio/video/The_Invisible_Map.mp4",
+      "sizeBytes": 48456014,
+      "sha256": "08c18ba562e72cc319ab8edbeede5965f0ebda537cb4d1dd0ebb958744a7a7f2"
+    },
+    {
+      "file": "bio/bio/video/Topographic_Factors.mp4",
+      "sizeBytes": 50709696,
+      "sha256": "d05c697945771e8089359a1ede7cb4cfd863738b016409d742ae95c9ae64c7eb"
+    },
+    {
+      "file": "bio/bio/video/Types_of_Tissue_Culture.mp4",
+      "sizeBytes": 40255632,
+      "sha256": "1701c74709922df0640f4d1e119ceef76fe6c65f99a6ebf7bf733a58b71e182a"
+    },
+    {
+      "file": "bio/zoo/pdf/Uyirgalin_Inapperukkam_Handwritten_10_Pages.pdf",
+      "sizeBytes": 5542840,
+      "sha256": "312d6471fe994933c70ffc76472c574d0d8b589cc964c66dc7e5557c4455853a"
+    },
+    {
+      "file": "bio/zoo/pdf/Zoology_English_Handwritten_Notes_Compact_Adjusted.pdf",
+      "sizeBytes": 122235,
+      "sha256": "321775ec66e8c11c38e2c053d8aea1b9c8c793869387edc211b2581c1f09d702"
+    },
+    {
+      "file": "bio/zoo/pdf/Zoology_Human_Reproduction_10_Handwritten_Images_Ordered.pdf",
+      "sizeBytes": 26355431,
+      "sha256": "b191a4e57510aa03d097b97133d9d0f2ec7735336e26a9d64e6e3ba00ca93e75"
+    },
+    {
+      "file": "bio/zoo/pdf/Zoology_Human_Reproduction_All_25_Handwritten_Images_Ordered.pdf",
+      "sizeBytes": 16945339,
+      "sha256": "b4877154723b5a462d098921fd1dbc64faf8af299334bd1133ae68654eb03870"
+    },
+    {
+      "file": "bio/zoo/pdf/Zoology_Reproduction_English_Handwritten_No_Branding.pdf",
+      "sizeBytes": 278892,
+      "sha256": "99d98ff62aab0556a67b8993a9f612ff5fa5bdcceee766c51bfb757c0326872f"
+    },
+    {
+      "file": "bio/zoo/pdf/Zoology_Reproduction_Tamil_Handwritten_No_Samacheer_Branding.pdf",
+      "sizeBytes": 16349810,
+      "sha256": "aceb4807c49311c5d69b5b08e4306dec2801b2af1cc40a942fb2d54e128118a9"
+    },
+    {
+      "file": "bio/zoo/video/ABO_மனித_இரத்த_வகைகள்.mp4",
+      "sizeBytes": 34779295,
+      "sha256": "333b7dfb2d128722e38054a9478c408ce7966305f23d1b1238a2b7cb35b5bba7"
+    },
+    {
+      "file": "bio/zoo/video/Asexual_Reproduction.mp4",
+      "sizeBytes": 32269141,
+      "sha256": "592b62cb96129c709fe23710270f49f3bb2c72d77b6397a59c19f3b27128c704"
+    },
+    {
+      "file": "bio/zoo/video/Assisted_Reproductive_Tech.mp4",
+      "sizeBytes": 40711602,
+      "sha256": "9a2a976eb91c7b7f86f293d709cde6e25455b8650b18ac3b2fc9fe071254cdeb"
+    },
+    {
+      "file": "bio/zoo/video/Biology_Olympiad_Journey.mp4",
+      "sizeBytes": 50767861,
+      "sha256": "6c14914368fc6e607652a26022b1bc29595241e0afd88af9a28284a113cb03fc"
+    },
+    {
+      "file": "bio/zoo/video/Blueprint_of_Inheritance.mp4",
+      "sizeBytes": 43511821,
+      "sha256": "2e28fc1581d22997d4da3159d8010bffcc7ff63e9e0e4853d4041765220993b5"
+    },
+    {
+      "file": "bio/zoo/video/Fertilization___Implantation.mp4",
+      "sizeBytes": 44863951,
+      "sha256": "92200276b6085b06d6196286546b0363e6b642952157b6ef60014e43d2f39ffa"
+    },
+    {
+      "file": "bio/zoo/video/Human_Blood_Groups.mp4",
+      "sizeBytes": 38771868,
+      "sha256": "cac8e81d778991c03d7a181cc5d68f78c85dd3fb1bd457ebc9bfe1bd59b901dd"
+    },
+    {
+      "file": "bio/zoo/video/Major_Reproductive_Events.mp4",
+      "sizeBytes": 26358902,
+      "sha256": "b6af7efa7295f1712e9cdc0366f22d0320f643ee5a658ba6341d3e7952b9c494"
+    },
+    {
+      "file": "bio/zoo/video/MTP_-_Class_12_Biology.mp4",
+      "sizeBytes": 30780820,
+      "sha256": "e8021db4fd40a49eeeb944e5dbb234e6dd8a3bcd45de241a53f809de4ef59366"
+    },
+    {
+      "file": "bio/zoo/video/Parthenogenesis.mp4",
+      "sizeBytes": 43440585,
+      "sha256": "f5b1763ce23178c5ca4af3cbeecb1c8ce1902828b5441652e985cfab4559a3f9"
+    },
+    {
+      "file": "bio/zoo/video/Population___Birth_Control.mp4",
+      "sizeBytes": 40174318,
+      "sha256": "2b67925499140ecc9637020313f6f6fd9f2ba7f2b6f0ddeb2105b50794dee0ee"
+    },
+    {
+      "file": "bio/zoo/video/Reproductive_Health_Needs.mp4",
+      "sizeBytes": 40090398,
+      "sha256": "4b5cc334ff9f120c58a896682a5ef961de3bd2971703ee759330b9feca2986a6"
+    },
+    {
+      "file": "bio/zoo/video/Rh_Factor_Genetics.mp4",
+      "sizeBytes": 38147386,
+      "sha256": "a04ed8ca98b1bed43f9528121b6d4357ba454e0d8fd60ed0b3f5690e567b1dd1"
+    },
+    {
+      "file": "bio/zoo/video/Rh_காரணி_மற்றும்_HDN_நோய்.mp4",
+      "sizeBytes": 22777289,
+      "sha256": "652501a00ff523c45268d92866b259b3efb804f3d82837fba2dd7a922c09f5d3"
+    },
+    {
+      "file": "bio/zoo/video/Sexual_Reproduction.mp4",
+      "sizeBytes": 23758345,
+      "sha256": "b3aae3baaf22c65f4b46e4dc0492e2f9a23acf0e0d2f4da1ea3ffa1b78adcd9d"
+    },
+    {
+      "file": "bio/zoo/video/Structure_of_the_Human_Ovum.mp4",
+      "sizeBytes": 11601986,
+      "sha256": "09e22b9c90e650e318dc30997ee502137dddb4fb909b4f7efea167646a5e95f4"
+    },
+    {
+      "file": "bio/zoo/video/The_Menstrual_Cycle.mp4",
+      "sizeBytes": 45039378,
+      "sha256": "2af3cad2f3c0fe1ac79ef6665c0292f9d668a15ddbd7944e6c0d4b8ec18abc23"
+    },
+    {
+      "file": "bio/zoo/video/WhatsApp Video 2026-10-25 at 14.42.36.mp4",
+      "sizeBytes": 45497051,
+      "sha256": "8571a4f0be36d7d6650093b286dfcfbcb65fb7e29d230bf59a0bee380955f51c"
+    },
+    {
+      "file": "bio/zoo/video/WhatsApp Video 2026-10-25 at 14.45.10.mp4",
+      "sizeBytes": 32269013,
+      "sha256": "1a56e5b1f3059af2257ffa82e92b63f905bf6b06d07566d11c0d4d196030c5cd"
+    },
+    {
+      "file": "bio/zoo/video/WhatsApp Video 2026-10-25 at 21.15.19.mp4",
+      "sizeBytes": 23758217,
+      "sha256": "70a33fbdd58df0c57a12cd720c26aef2d4fab4d99313912b3bd748964b95ce52"
+    },
+    {
+      "file": "bio/zoo/video/Zoology__ART_Part_2.mp4",
+      "sizeBytes": 36238328,
+      "sha256": "98a17ad2eb326a81c8dadb97fa8356df6f2cea425182672bcfb7cb415c4f8fc7"
+    },
+    {
+      "file": "bio/zoo/video/இனச்செல்_உருவாக்கம்.mp4",
+      "sizeBytes": 41623018,
+      "sha256": "2f23eb2378b2ca391eae1e8f3cc7e125160c837170a01f1d2ae5aee2ec716dac"
+    },
+    {
+      "file": "bio/zoo/video/இனப்பெருக்க_தொழில்நுட்பம்.mp4",
+      "sizeBytes": 30484517,
+      "sha256": "f788edba6ebf8723d763c89039ee566f461c97b1619aef420ac17574621fee99"
+    },
+    {
+      "file": "bio/zoo/video/இனப்பெருக்க_நலன் (2).mp4",
+      "sizeBytes": 50260735,
+      "sha256": "7ace60a241a70111196ad41832646e2ac48fa501e157856aab54faa6370dbbfc"
+    },
+    {
+      "file": "bio/zoo/video/இனப்பெருக்க_நலன் (3).mp4",
+      "sizeBytes": 50260735,
+      "sha256": "7ace60a241a70111196ad41832646e2ac48fa501e157856aab54faa6370dbbfc"
+    },
+    {
+      "file": "bio/zoo/video/இனப்பெருக்க_நலன்.mp4",
+      "sizeBytes": 42535778,
+      "sha256": "e104b028f209a1211160277a544cac414319d1854feff728d7921c4fe3078727"
+    },
+    {
+      "file": "bio/zoo/video/உயிரியல்__ART_-_பகுதி_2.mp4",
+      "sizeBytes": 42351491,
+      "sha256": "5ba7e82ebd026d02b2f36f62856fa3132be96d10b57b48ffd9d901e736fccaa9"
+    },
+    {
+      "file": "bio/zoo/video/கருவுறுதல்___கருப்பதித்தல்.mp4",
+      "sizeBytes": 31745621,
+      "sha256": "2a199714e69705d4c4762c99c8160be97438d1b0775f9e06bda2536366ad1c35"
+    },
+    {
+      "file": "bio/zoo/video/பாலிலி_இனப்பெருக்கம்.mp4",
+      "sizeBytes": 45497179,
+      "sha256": "dfbd461dc72dc4c7240570320636478dfcf3bf4336e2c9ab0c1a6b9df8ade825"
+    },
+    {
+      "file": "bio/zoo/video/பாலினப்_பெருக்கம்.mp4",
+      "sizeBytes": 49547487,
+      "sha256": "2503ddb9417427d5836489b685ed1f63904c68fc66f4123d3600be254db6b1dc"
+    },
+    {
+      "file": "bio/zoo/video/மக்கள்_தொகைப்_பெருக்கம்.mp4",
+      "sizeBytes": 37483321,
+      "sha256": "0892092e11cc6bdf065f4112dc48037325f111813d592344f0f766f88b22390b"
+    },
+    {
+      "file": "bio/zoo/video/மரபியல்__இரத்தம்_மற்றும்_பால்.mp4",
+      "sizeBytes": 36279587,
+      "sha256": "12a349b49e7f6a34bea30f5115850efe6976bcbdc12a2ff237d15564df43786a"
+    },
+    {
+      "file": "bio/zoo/video/மருத்துவ_கருக்கலைப்பு.mp4",
+      "sizeBytes": 23724077,
+      "sha256": "a18fa3b96e4bf5bee548edb73c1f9d3dcd1dfb073f87e1464aed9f8d7669cae0"
+    },
+    {
+      "file": "bio/zoo/video/மனித_அண்டகத்தின்_அமைப்பு.mp4",
+      "sizeBytes": 31905823,
+      "sha256": "43578656df953decc7f9bc4356951359c74af12515c39daa11e9141659bc2388"
+    },
+    {
+      "file": "bio/zoo/video/மனித_இனப்பெருக்க_நிகழ்வுகள்.mp4",
+      "sizeBytes": 31301979,
+      "sha256": "eece13dfb5bd084b8461279e45fc31472b67ce663eddda4f7ab8331fed9cd5de"
+    },
+    {
+      "file": "bio/zoo/video/மனித_விந்து_செல்லின்_அமைப்பு.mp4",
+      "sizeBytes": 34042189,
+      "sha256": "c3051bf5b2ba132b24c0c5a738d75a7ae58911aa12079f6a2d7aaab9e3de32fa"
+    },
+    {
+      "file": "bio/zoo/video/மாதவிடாய்_சுழற்சி.mp4",
+      "sizeBytes": 34840553,
+      "sha256": "3ce1f1c5e075c52f07a70d81309586c3756541416a675bf55cc1926c4871e48d"
+    },
+    {
+      "file": "che/pdf/Chapter_11_Notes_Clean_No_Misaligned_Lines.pdf",
+      "sizeBytes": 4717820,
+      "sha256": "7d7436c6525af628eca6f9d445aaa3fd64c14185ba0a97231d809ab7489c336f"
+    },
+    {
+      "file": "che/pdf/Chapter_6_Notes_Text_Layout_Repaired_With_Diagrams.pdf",
+      "sizeBytes": 2286296,
+      "sha256": "6a967653ec2bccfdcfb656ac40bf8718643544e7dea3ecf4c10a66b89df5ff4d"
+    },
+    {
+      "file": "che/pdf/Chemistry_Chapter_2_Original_Order.pdf",
+      "sizeBytes": 31407813,
+      "sha256": "467fd43f0b24b1e546f7a8cb26078cf7fdc4238a33c1260d1ce8d6df6ca97e07"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes (1).pdf",
+      "sizeBytes": 1756950,
+      "sha256": "afb333a754eec7fcada8292691543218c443a850fdcfe129ed1cb4e7313471ce"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes (2).pdf",
+      "sizeBytes": 18552514,
+      "sha256": "56a01aeb017eeda954418e695885e811c6e23d321ae9b84c1409c71fefc11d38"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes (3).pdf",
+      "sizeBytes": 18799794,
+      "sha256": "750f70f3fe3cd119694ee12de7fa2ce366db8f21add27d320f2595c92c21b534"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes (4).pdf",
+      "sizeBytes": 33104477,
+      "sha256": "52bc0bc8511607ca4ee9553b2a6f5429c5e189ec66a8ef5533e4395605dc49fa"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes_Chapter5.pdf",
+      "sizeBytes": 49990742,
+      "sha256": "8418fcc30d74993c5e2ee1a22323105faaaeece140b4b019e18cc36444bcb72d"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes_Chapter7.pdf",
+      "sizeBytes": 43161301,
+      "sha256": "620e820fe0d571a9378c28e7a2a928f0abc743aa606f6982974037835211e5de"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes_II.pdf",
+      "sizeBytes": 9058925,
+      "sha256": "035b052e3d32e821acbafc55f85d1692ba277dd8ba1ca88c64f8ec9f032b1407"
+    },
+    {
+      "file": "che/pdf/Complete_Handwritten_Notes.pdf",
+      "sizeBytes": 11660265,
+      "sha256": "c8e6e3f94182c5bd5a966ed23a1cf4dbde0f21ccd61b5cc6d1581d27b1f024c2"
+    },
+    {
+      "file": "che/pdf/DocScanner Nov 2, 2026 11-44 AM.pdf",
+      "sizeBytes": 13246031,
+      "sha256": "b15247ec5a2517977582df76b47f9a5aa4d0d7fde5e25ac3b57edc38b18136e5"
+    },
+    {
+      "file": "che/pdf/Metallurgy_Handwritten_Style_51_Pages.pdf",
+      "sizeBytes": 2276600,
+      "sha256": "14c8c582a43d14b84bb8013fe7eab9d13db1250b4b282802117e5fceaf55335e"
+    },
+    {
+      "file": "che/video/Class_12__Transition_Elements.mp4",
+      "sizeBytes": 30078820,
+      "sha256": "78b52842c2c97fe7b02be87d7727f392752d4c445b30165338920c2e097618fc"
+    },
+    {
+      "file": "che/video/p-Block_Elements_-_II.mp4",
+      "sizeBytes": 37956115,
+      "sha256": "6555b4c598e3f37d6cc002d28c23e38b111f7c1e6789be0149c1fe7c7a9f34fa"
+    },
+    {
+      "file": "che/video/அலகு_1__உலோகவியல்.mp4",
+      "sizeBytes": 34321715,
+      "sha256": "f75af269b0f68cbcfcfc5444d9191de39f55e6e88edb0f26eb19789f13c4624e"
+    },
+    {
+      "file": "che/video/அலகு_2__p-தொகுதி_தனிமங்கள்_I.mp4",
+      "sizeBytes": 28977724,
+      "sha256": "e4c3d5875fed55de2c8d848f8a3e64eec740c184666ccbf875f9ca247c8cfa8c"
+    },
+    {
+      "file": "che/video/வேதியியல்__அணைவு_வேதியியல்.mp4",
+      "sizeBytes": 28799749,
+      "sha256": "80f194d7129f6255ee6f327d23b89c72bda0844d94a539bbe623591d993db543"
+    },
+    {
+      "file": "computer sic/pdf/Algorithmic_Strategies_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 26201785,
+      "sha256": "2f23afded8e12bf967bc16599d492f62463f399f6f8c86170e9b946cddce4241"
+    },
+    {
+      "file": "computer sic/pdf/Data_Abstraction_10_Handwritten_Images.pdf",
+      "sizeBytes": 2631115,
+      "sha256": "2e175d77861239eecb65d6ae5ba98d2d000c348669e1541d63b99a51b0845c47"
+    },
+    {
+      "file": "computer sic/pdf/Data_Abstraction_All_10_Handwritten_Pages.pdf",
+      "sizeBytes": 23134224,
+      "sha256": "4c461876ec1ebd80b53030a5195c0c5b007c0eadd50b77e30b33d0e39bf470b0"
+    },
+    {
+      "file": "computer sic/pdf/DBMS_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2294949,
+      "sha256": "48f37a5a0343739dd093fe67b702e43fe9c470ed027e1137c5a289b506f07b10"
+    },
+    {
+      "file": "computer sic/pdf/Functions_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2124422,
+      "sha256": "f797a1c1818d1094834566f24b3cff43713f3fbb5ccf639d01862bc882faf3a0"
+    },
+    {
+      "file": "computer sic/pdf/Handwritten_Notes_All_10_Pages.pdf",
+      "sizeBytes": 2407345,
+      "sha256": "fab4d232b0f4e276656ef21ea37f1e896ef1566fe5282e521d0b785c8dffd304"
+    },
+    {
+      "file": "computer sic/pdf/Importing_CPP_Programs_in_Python_Handwritten_10_Pages.pdf",
+      "sizeBytes": 2242539,
+      "sha256": "647b608aeef9e6f40e107028b5e93fc627b6cd11a62ab8ce8c6ae7fb260e41be"
+    },
+    {
+      "file": "computer sic/pdf/Python_and_CSV_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2269198,
+      "sha256": "4330916784aeb77107dbb445e8581bb88b632b4cbb7bd5c18b72fb4d320493cf"
+    },
+    {
+      "file": "computer sic/pdf/Python_Classes_and_Objects_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2010433,
+      "sha256": "ec41a0c08a74c94015e6b11fb921ab03825ccaad61fccba33fa78a74e4292d59"
+    },
+    {
+      "file": "computer sic/pdf/Python_Control_Structures_10_Handwritten_Pages.pdf",
+      "sizeBytes": 31147230,
+      "sha256": "651c51e54c7e2a149f927686a8044c81cb8988dd7ace39ea96050a14771b2268"
+    },
+    {
+      "file": "computer sic/pdf/Python_Functions_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2572626,
+      "sha256": "88515822c6c7c82ae351b5700b0a2b8948eab4f9d190f15c0bdf74a3e3bdd297"
+    },
+    {
+      "file": "computer sic/pdf/Python_Lists_Tuples_Sets_Dictionary_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2339719,
+      "sha256": "a87a8849698a54d1c88a7008f1783382efb69972c03cadd3c9de7c7b15dee344"
+    },
+    {
+      "file": "computer sic/pdf/Python_Strings_and_String_Manipulations_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 31720078,
+      "sha256": "bdb8584e7da051e98c3d4041b7336661fadc7fff915b20d1e2882debd99eb1eb"
+    },
+    {
+      "file": "computer sic/pdf/Python_Variables_Operators_10_Handwritten_Pages.pdf",
+      "sizeBytes": 2341654,
+      "sha256": "ee0b6168cc5b3576cad9d438dbbbc8b0eaade3ba10fd2f0461068897f9e25df2"
+    },
+    {
+      "file": "computer sic/pdf/Scope_and_Modular_Programming_10_Handwritten_Pages.pdf",
+      "sizeBytes": 5559132,
+      "sha256": "97134daa00a7aaaa5efaa444039f6e4a4c4e5926468f103f190b456d3e8b356e"
+    },
+    {
+      "file": "computer sic/pdf/Scope_Handwritten_10_Images.pdf",
+      "sizeBytes": 29448514,
+      "sha256": "e6a7da487dec8d2e32636601a1520b7e52b2ffe0e968b6b70f7f890338e2e41b"
+    },
+    {
+      "file": "computer sic/pdf/SQL_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2224477,
+      "sha256": "80b10202a144b86658356ae45aa068c231e2b49322319d44aa8c4da559ef5fa7"
+    },
+    {
+      "file": "computer sic/pdf/SQLite_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2474422,
+      "sha256": "1ca72551945edaa0801c9a84f3c30f37a52bb463a922f2097271b1480da909f9"
+    },
+    {
+      "file": "computer sic/pdf/Tamil_Handwritten_Notes_10_Pages.pdf",
+      "sizeBytes": 2762708,
+      "sha256": "3ad825b02bdbc8dc92c3982a7a5df7f97b29dec904f8bc40d48b5b4b852e5638"
+    },
+    {
+      "file": "computer sic/video/12ஆம்_வகுப்பு__செயற்கூறுகள் (1).mp4",
+      "sizeBytes": 19197896,
+      "sha256": "bd9bf5166dc52b431f3efb1bd1f0ee0920422c3d6593254bf22c0f67b0733ba4"
+    },
+    {
+      "file": "computer sic/video/12ஆம்_வகுப்பு__செயற்கூறுகள்.mp4",
+      "sizeBytes": 29556607,
+      "sha256": "1dd289f12474452aaf1cbefb5d281bcfdc57f36921cb04f847d92d536efdd143"
+    },
+    {
+      "file": "computer sic/video/Functions_in_Programming.mp4",
+      "sizeBytes": 15140882,
+      "sha256": "80647831f215339c9e0ab9b8ef2ba7d954b3eb5de28fb20b07933193b93be5c9"
+    },
+    {
+      "file": "computer sic/video/Intro_to_Functions.mp4",
+      "sizeBytes": 21554748,
+      "sha256": "a10ad1b250bfb4bb77000e415752f7ffc4b26d7ae55263cca7609a9e206f4bc0"
+    },
+    {
+      "file": "computer sic/video/Mastering_Functions (1).mp4",
+      "sizeBytes": 21360881,
+      "sha256": "1f154790bde7f815f10b61d38baa16ca3b1110381a7d927d39e420f829547ce6"
+    },
+    {
+      "file": "computer sic/video/Mastering_Functions.mp4",
+      "sizeBytes": 46133363,
+      "sha256": "b40fcd72912ed6b48ead0d521af2a8661761e91841f4cb765a8cb8b4f4033058"
+    },
+    {
+      "file": "computer sic/video/Power_of_Functions!.mp4",
+      "sizeBytes": 36577979,
+      "sha256": "6ab679447615112afebfb334685d89c1786b67c451c6d3f9e5f8602c6def5225"
+    },
+    {
+      "file": "computer sic/video/கணினி_அறிவியல்.mp4",
+      "sizeBytes": 19155504,
+      "sha256": "48f9b079858c0a9aadb89a2676da191f84d05b02d5f5689ce4285f58e84d14c9"
+    },
+    {
+      "file": "computer sic/video/செயற்கூறுகள்_-_அறிமுகம்.mp4",
+      "sizeBytes": 23430253,
+      "sha256": "4789a0fe9881ba3357820b8d5fd47fbf1e9700db4a4bc84c6ea267f9ab1aa545"
+    },
+    {
+      "file": "english/video/VID-20260929-WA0033.mp4",
+      "sizeBytes": 55947310,
+      "sha256": "7adc3c51c51871e0fb9e8b68eb79db3bcf07e837dda6ac4485da4053bb0eb745"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0036.mp4",
+      "sizeBytes": 42492335,
+      "sha256": "37bbbd92e8c2a455035eb50a86bb3d47b3c1923e6939f2e5c4d41b7b8d5b501f"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0037.mp4",
+      "sizeBytes": 33640098,
+      "sha256": "d1ee045b9c22c6cd6b96625c0d7b9c29ef1cb7a09cc72c5e06c43ac92981cba7"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0038.mp4",
+      "sizeBytes": 41268906,
+      "sha256": "7a1793f35e08d82849a1fe4083d555f5e342db06633cf228a40c37848dbe3fce"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0041.mp4",
+      "sizeBytes": 63505034,
+      "sha256": "7b06da9f2cd46681358017ce626132f50a4d14ccb365e5ffdea734e10193e0ce"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0042.mp4",
+      "sizeBytes": 57918527,
+      "sha256": "be0a2d41ac7aa2d0fb453340e5aa2616c92026f202113ac11f1bbe6e8e80b203"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0043.mp4",
+      "sizeBytes": 74025899,
+      "sha256": "de7f6db909048ebe47453ccec2a4eb4350e99c16a4f95c65dc24c8c2a83dcf01"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0044.mp4",
+      "sizeBytes": 76521210,
+      "sha256": "468d49529df26b1b530bbe530ab70fa202c1a69b2bb9dd0f43495414d0d272f4"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0045.mp4",
+      "sizeBytes": 45329171,
+      "sha256": "dc12450f28e53c95cfebdbafab633e2c0c10ebb7a7602bb7730d2c51913aacba"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0046.mp4",
+      "sizeBytes": 47549810,
+      "sha256": "344e870c7c6758d2e910292b12bfca742557e4c2acbe05f2411baafb966789a7"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0050.mp4",
+      "sizeBytes": 38956931,
+      "sha256": "febdc4a259a6e77ab3958f9348e1618e8c31d5837fe1745e1a467b7e24723d08"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0054.mp4",
+      "sizeBytes": 50286308,
+      "sha256": "ee2a0a5e5345932e935bcb37f836fb44a2028b16f12c5f3e8c1881eb86e57d9d"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0055.mp4",
+      "sizeBytes": 51380844,
+      "sha256": "75de6bb4dcd8a63ffc64c3f7bba5a0f4997a46867829f5ca631376de07e3e16a"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0056.mp4",
+      "sizeBytes": 49250305,
+      "sha256": "b4a99f2abda364eb8d91d44dafd3dd0d0c6b2f9e7cb1751d80384f2aed421823"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0057.mp4",
+      "sizeBytes": 53988821,
+      "sha256": "ed270b670fd1e311db20f09004e5b9932a44d650c5d97e40070fc7a33f873f8f"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0058.mp4",
+      "sizeBytes": 57690335,
+      "sha256": "98881fce259ab9f5dc43a80549665e1c0d804217d2148f5f11bfa443be337294"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0059.mp4",
+      "sizeBytes": 67757668,
+      "sha256": "559cd4b578de15ced4b61e1d7f26bc0edd67f7ed2cbe4530d6dd06c80b342933"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0060.mp4",
+      "sizeBytes": 65621017,
+      "sha256": "c42b5299ff1271c56283da495f067a2d8a8d8010577b55e6b84fd3faea9a3739"
+    },
+    {
+      "file": "english/video/VID-20261006-WA0061.mp4",
+      "sizeBytes": 76961387,
+      "sha256": "e86b53d1f1afc2b64ba671c648a4589e32b69f1f2ed28d25fc3b957faa8a31b4"
+    },
+    {
+      "file": "maths/pdf/12th Tamil Full Textbook New Edition 2025-2026 Download PDF.pdf",
+      "sizeBytes": 14864832,
+      "sha256": "5ae78a79b61cf732ed6e1d0874b7f94e5fe505c84bed83537193cc4690921a69"
+    },
+    {
+      "file": "maths/pdf/Chapter_10_Handwritten_Notes.pdf",
+      "sizeBytes": 13350859,
+      "sha256": "cfb80af1ed14bd8069fa86cd214fe3261e5508a55c72413534de0baf15ef8602"
+    },
+    {
+      "file": "maths/pdf/Chapter_11_Handwritten_Notes.pdf",
+      "sizeBytes": 4334466,
+      "sha256": "27bacf8acf880c94bd2c3d6205d030edaaf91ecfc70cb31d21d8fcab1ddf7c0c"
+    },
+    {
+      "file": "maths/pdf/Chapter_12_Handwritten_Notes.pdf",
+      "sizeBytes": 4309267,
+      "sha256": "271d9f45d383d96db607ef9c982075769d2e374be1aa871913c7a93b5f8ac156"
+    },
+    {
+      "file": "maths/pdf/Chapter_3_Exercises_3.1_to_3.7_Handwritten_Ordered.pdf",
+      "sizeBytes": 39534086,
+      "sha256": "b2a38751c90f6ace608a17eed399a429b7caa0a894e46f1d8bcf0aab6662cecc"
+    },
+    {
+      "file": "maths/pdf/Chapter_5_Handwritten_Notes.pdf",
+      "sizeBytes": 1699869,
+      "sha256": "ed3f278e253bbfd38ea596ab073ea5b1fc9a1c7ec6170cb87d6281f31cbb5f0a"
+    },
+    {
+      "file": "maths/pdf/Chapter_6_Handwritten_Notes.pdf",
+      "sizeBytes": 1054515,
+      "sha256": "debb4da324b0219881f62bc616890607fe2b3d0ff6d08165bbf9fb9ee91da424"
+    },
+    {
+      "file": "maths/pdf/Chapter_7_Handwritten_Notes.pdf",
+      "sizeBytes": 22784215,
+      "sha256": "344b8ea7e3405f691c7c1ae907d953d4e6eb85620e9699d7b35bd8493074d585"
+    },
+    {
+      "file": "maths/pdf/Chapter_8_Handwritten_Notes.pdf",
+      "sizeBytes": 5699919,
+      "sha256": "5c2f0ff6cd80814dbdbab7feabe47657516649d434ae12df1d21cc65fee59a35"
+    },
+    {
+      "file": "maths/pdf/Chapter_9_Handwritten_Notes.pdf",
+      "sizeBytes": 10714303,
+      "sha256": "cae551bdddcd6929876e38984aa84b9882f0d570014875bbfa475f79ad715444"
+    },
+    {
+      "file": "maths/pdf/handwritten_exercises_1.5_to_1.8_complete (2).pdf",
+      "sizeBytes": 11498504,
+      "sha256": "f0a0cc43878c8c73642efb3ab93282ee8ec508e212d031228284964ca7d67900"
+    },
+    {
+      "file": "maths/pdf/Inverse_Trigonometric_Functions_Handwritten_Notes.pdf",
+      "sizeBytes": 86896,
+      "sha256": "f3bc3a5026bb8c58c4ebb783d0ba895722944303b155ddd5de69a1673f2125a7"
+    },
+    {
+      "file": "maths/video/Matrices___Determinants.mp4",
+      "sizeBytes": 33459790,
+      "sha256": "78e05c2ccf5f84316591f08f4311ae1593c54c80c30cf583e3b627b32e0ddb27"
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.35.40 PM.mp4",
+      "sizeBytes": 12689994,
+      "sha256": "8e011673553897e323eb64a04859d671a3af051ff780f5c31a21b26e4479f001"
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.37.26 PM.mp4",
+      "sizeBytes": 37447270,
+      "sha256": "e3991fa7ce066a52b33de1097d33ce054a11b1897f438b10985268e9db0c3fe2"
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.38.20 PM.mp4",
+      "sizeBytes": 28538426,
+      "sha256": "645741b9a193e11fad1a5a22e382865c8715adaa2e01fe120feaa6145ae9e58d"
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-26 at 2.39.17 PM (1).mp4",
+      "sizeBytes": 25458998,
+      "sha256": "18b2dc90735c99876ac9e2b25e1e4c9047abd4a118c7afbdd2b657f677313b8b"
+    },
+    {
+      "file": "maths/video/WhatsApp Video 2026-10-27 at 11.44.47 AM.mp4",
+      "sizeBytes": 22333342,
+      "sha256": "7095de7cc2ca7d59c80e74122a7a73b67310c72751b2869d8174de039c798106"
+    },
+    {
+      "file": "maths/video/அணிகள்_மற்றும்_பயன்பாடுகள்.mp4",
+      "sizeBytes": 30665635,
+      "sha256": "1618e606705a82bc94f06d9c2bea5adad9a3443f97e97af82847057e17566eec"
+    },
+    {
+      "file": "phy/video/12ஆம்_வகுப்பு__காந்தவியல்.mp4",
+      "sizeBytes": 36460462,
+      "sha256": "3448d4c5405d5b93ba467e8881282df21cb508698082f0400eb06ef182f96122"
+    },
+    {
+      "file": "phy/video/Alternating_Current.mp4",
+      "sizeBytes": 41576196,
+      "sha256": "1a569a9edbb03611101f5cbfd45608e4a5034c3406dd094e1d9b8e1f54c5f05a"
+    },
+    {
+      "file": "phy/video/Ampere_s_Circuital_Law.mp4",
+      "sizeBytes": 46947162,
+      "sha256": "6d6158e10abc97808993595c3964a59bb083e159246d459eb3b3565908e1de4c"
+    },
+    {
+      "file": "phy/video/Bipolar_Junction_Transistor.mp4",
+      "sizeBytes": 40963092,
+      "sha256": "6dac72024ea5288261f413e04d45f34d8c97608bce014bf36d49c3a16ebd74de"
+    },
+    {
+      "file": "phy/video/Capacitors_and_Capacitance.mp4",
+      "sizeBytes": 48309180,
+      "sha256": "5d8647e8d5127164b4ee3054ae253fd0c2f0633d804735d4e41a5018965fb786"
+    },
+    {
+      "file": "phy/video/Coulomb___Superposition.mp4",
+      "sizeBytes": 44747433,
+      "sha256": "9c6227952d6df5145d65aee84bda3db6ba94971ecff6f8a774d3651192a68263"
+    },
+    {
+      "file": "phy/video/Decoding_Boolean_Algebra.mp4",
+      "sizeBytes": 42701297,
+      "sha256": "a921e4726925d80e5d24dc3f45d30cfbe5f4e95bd425960be562e7339a348c7d"
+    },
+    {
+      "file": "phy/video/Decoding_Light_Spectra.mp4",
+      "sizeBytes": 43656121,
+      "sha256": "9c03c697b61987ca9ba0e2953478b30851152967b003bdb40bbb20dac97d886d"
+    },
+    {
+      "file": "phy/video/Decoding_the_Diode.mp4",
+      "sizeBytes": 45188896,
+      "sha256": "67b60ee70f1d9a6b40961f772462b98205bcc764d4adf9cec8894aa6defd6d5b"
+    },
+    {
+      "file": "phy/video/Demystifying_AC_Generators.mp4",
+      "sizeBytes": 42697345,
+      "sha256": "c08c086e2b7fffddf047c7ad0f1ae2f3da12c984b1f755f3766872272fde6456"
+    },
+    {
+      "file": "phy/video/Demystifying_Diffraction.mp4",
+      "sizeBytes": 45383767,
+      "sha256": "c58c97fa31a682f9f1beb9c9008bf3bf1fc36f63ddf868c1d145d40341a0e724"
+    },
+    {
+      "file": "phy/video/Demystifying_Electronics.mp4",
+      "sizeBytes": 41862028,
+      "sha256": "bf512ca5d1dc8a26137b456d1ba90219d4733e2fb1ef6c23fd7f133b01f4c786"
+    },
+    {
+      "file": "phy/video/Demystifying_Gauss_s_Law.mp4",
+      "sizeBytes": 37427212,
+      "sha256": "b05349fc1192b2eaab4c2b5097f79df3c6c5379a099a831d478a1ba24c997db2"
+    },
+    {
+      "file": "phy/video/Demystifying_Semiconductors.mp4",
+      "sizeBytes": 49229123,
+      "sha256": "812c453facc3924884d00a257fa58b8995e0a883d2c3041beabf8becb23f2b55"
+    },
+    {
+      "file": "phy/video/Demystifying_X-Rays.mp4",
+      "sizeBytes": 41672475,
+      "sha256": "54fd92ec53ac2e8a43489f2dc5fc9a729a50afe3e51dee78da2e599ba2fb2596"
+    },
+    {
+      "file": "phy/video/Digital_Electronics (1).mp4",
+      "sizeBytes": 28440339,
+      "sha256": "238b8c178c412250c2c8eb3dbfabd023d417bb8f602da3ab176bece1b5e46c1d"
+    },
+    {
+      "file": "phy/video/Digital_Electronics.mp4",
+      "sizeBytes": 47208459,
+      "sha256": "98c4ce10e90287829bce2e83bf59a170ec6a4f96bacf4da3c2cb614466e91916"
+    },
+    {
+      "file": "phy/video/Dual_Nature_of_Eddy_Currents.mp4",
+      "sizeBytes": 49589022,
+      "sha256": "e228dc8b08e0d695c9670f5498c2ede92d160d117cdc61a074004028d9e2abc6"
+    },
+    {
+      "file": "phy/video/Electric_Cells___Batteries.mp4",
+      "sizeBytes": 42466550,
+      "sha256": "31eb16292a6ced8d1898c6dcdba51aeaa2e44cdbd6e59e1157331d429e4d8c63"
+    },
+    {
+      "file": "phy/video/Electric_Current_Mystery.mp4",
+      "sizeBytes": 37863932,
+      "sha256": "fc4b591fc7d7b8aaa3796bb1fd1a6c6281bc8a5a637e012f09e7377e30ead403"
+    },
+    {
+      "file": "phy/video/Electric_Fields_Explained.mp4",
+      "sizeBytes": 37559095,
+      "sha256": "5508f816c1ba7dc0ae49a99acd9c0a7529ef23a4bddba24edb89632868c2d8e9"
+    },
+    {
+      "file": "phy/video/Electric_Potential___Energy.mp4",
+      "sizeBytes": 36189869,
+      "sha256": "bd61900a30e8ac3208fba433cb95685c1af19f833d34a9a221b3f96fc4e8e821"
+    },
+    {
+      "file": "phy/video/Electromagnetic_Induction.mp4",
+      "sizeBytes": 42381681,
+      "sha256": "563f8b27c2b5ee7475a7d839e41c9592eccdc47ff9763f4745e26a6264be891b"
+    },
+    {
+      "file": "phy/video/Electrostatics.mp4",
+      "sizeBytes": 52361031,
+      "sha256": "cf42a5a8a22bc4c0f1926eb0be6372994868c1746c97979e34e7974ea65c49ee"
+    },
+    {
+      "file": "phy/video/Energy_and_Power.mp4",
+      "sizeBytes": 41899887,
+      "sha256": "a250902199a522ad49f93aa01fe7d2b29e59aa5c2603927a06bb75ed87a07e27"
+    },
+    {
+      "file": "phy/video/Evolution_of_the_Atom.mp4",
+      "sizeBytes": 46252974,
+      "sha256": "c631fb006e7cc5b1263a1b20705a6d18bda9dd4dc5122005f38baf7f81970e9b"
+    },
+    {
+      "file": "phy/video/Heating_Effect_of_Current.mp4",
+      "sizeBytes": 66745323,
+      "sha256": "619697f41a1c574581065a7376e7b5e04199c4c529ba694592f7697512f6ea55"
+    },
+    {
+      "file": "phy/video/Inertia_of_Electricity.mp4",
+      "sizeBytes": 39628076,
+      "sha256": "0faf779def31e4f4c2390296c387f713d3a73f7bfaee637628eb6ee24b87b2cd"
+    },
+    {
+      "file": "phy/video/Intro_to_Magnetism.mp4",
+      "sizeBytes": 45813070,
+      "sha256": "2a03dd59ddb6428ecba72cea1a218f8f022c65f1242aced9de862407b91b6a0a"
+    },
+    {
+      "file": "phy/video/Journey_of_a_Light_Ray.mp4",
+      "sizeBytes": 39106405,
+      "sha256": "fa2f6db83e3d5c9279e5f8bfbb1bc64097c89fef724f02d6a3f09b1c05dca78b"
+    },
+    {
+      "file": "phy/video/Journey_of_a_Signal.mp4",
+      "sizeBytes": 47764647,
+      "sha256": "33b2d1547a886d0beb91d6fa4a265cfe5df045d2c9e8392c727e1020c8d1e985"
+    },
+    {
+      "file": "phy/video/LC_அலைவுகள்.mp4",
+      "sizeBytes": 28558961,
+      "sha256": "c35924b4cd518114348d85d356d2029b6892c87e9ea261e30a476467e8c84694"
+    },
+    {
+      "file": "phy/video/Life_of_an_Electric_Dipole.mp4",
+      "sizeBytes": 40716686,
+      "sha256": "7b9bf250ac352a7c2abae915ca281522fced74c3beee99c9b85635f484e1a7b9"
+    },
+    {
+      "file": "phy/video/Lorentz_Force_Explained.mp4",
+      "sizeBytes": 49002713,
+      "sha256": "3cede43544fedff65955dfe4e9554edccd483a8d4006b42ed0d6f2e0ace6e0c5"
+    },
+    {
+      "file": "phy/video/Magnetic_Effects_of_Current.mp4",
+      "sizeBytes": 38409781,
+      "sha256": "6fec8dcbbf456288309304577c98617d62739381c3b3e2e16b05d135413cf21c"
+    },
+    {
+      "file": "phy/video/Magnetic_Materials.mp4",
+      "sizeBytes": 46742009,
+      "sha256": "20b7dd12619253a8a0e023cf2ce9b1d0673f382c1295495d04a629c5f4d05ed9"
+    },
+    {
+      "file": "phy/video/Magnetic_Properties.mp4",
+      "sizeBytes": 48666240,
+      "sha256": "6e9d4b43efae0d8b495063a7e3928cbb124f27f970dadfb91bcfbdb32b5308e6"
+    },
+    {
+      "file": "phy/video/Magnetic_Torque___Energy.mp4",
+      "sizeBytes": 38664392,
+      "sha256": "3619c37eccce086929226493635ff5df8a28e15bdeb6b9cd38c33b7ccce05101"
+    },
+    {
+      "file": "phy/video/Mastering_Circuits.mp4",
+      "sizeBytes": 39764623,
+      "sha256": "6fad5b076f5bd22e3e7537124b56e225736fc4b3e12c5c2313d802fe35aeace9"
+    },
+    {
+      "file": "phy/video/Matter_Waves.mp4",
+      "sizeBytes": 35813804,
+      "sha256": "518a2d0e8113d531819475d5391c8e2418cd3c0de9fd69e58b4ab1b960e8c1c8"
+    },
+    {
+      "file": "phy/video/Maxwell_s_Missing_Piece (1).mp4",
+      "sizeBytes": 53897063,
+      "sha256": "f522729cfe56676aa76f097c833e1483a958f3bf0368564669550c17e20bd2f6"
+    },
+    {
+      "file": "phy/video/Maxwell_s_Missing_Piece.mp4",
+      "sizeBytes": 53897063,
+      "sha256": "f522729cfe56676aa76f097c833e1483a958f3bf0368564669550c17e20bd2f6"
+    },
+    {
+      "file": "phy/video/Mechanics_of_Polarisation.mp4",
+      "sizeBytes": 52805169,
+      "sha256": "9cef591763ad106a4004f9d638df6e8b54f94aeaafac6c2f0582f8942b32e424"
+    },
+    {
+      "file": "phy/video/Nanoscience___Nanotech.mp4",
+      "sizeBytes": 38257424,
+      "sha256": "3847dcd38004c60031a595bbf73d469192de7b2f53946532f3a208e6d5272404"
+    },
+    {
+      "file": "phy/video/Ohm_s_Law_and_Beyond.mp4",
+      "sizeBytes": 50149150,
+      "sha256": "76c0562f86dc71f6d85975a57123d9e6c3d8435d9f9c4fa2beb799a69e238415"
+    },
+    {
+      "file": "phy/video/Optical_Breakthroughs.mp4",
+      "sizeBytes": 46591038,
+      "sha256": "f4b43d993f9327805b9ee19eaae76c0fe1676702b5ea7877fab7ea654e14da01"
+    },
+    {
+      "file": "phy/video/Origin_of_Everyday_Forces.mp4",
+      "sizeBytes": 33934447,
+      "sha256": "13a15c6f5ccc396233ed5aa3a5bee0b3c4aea2267ccf67818d5be2b40b2e32f4"
+    },
+    {
+      "file": "phy/video/Photoelectric_Mystery.mp4",
+      "sizeBytes": 47786600,
+      "sha256": "0d04e5589c6593c7ec7d1fc5968d9236ce7497427b1f886512b2b6e167d64e67"
+    },
+    {
+      "file": "phy/video/Physics_in_Modern_Med.mp4",
+      "sizeBytes": 46062926,
+      "sha256": "965aa943b05769954dc681d8b9b6ace2912c20b7bc81ddd399153ddfdab9d1d1"
+    },
+    {
+      "file": "phy/video/Physics_of_Modulation.mp4",
+      "sizeBytes": 29447804,
+      "sha256": "c201ab0b5a3318ce802316742d424e558a36456d4acbaac7449171b745abe3a9"
+    },
+    {
+      "file": "phy/video/Physics_of_Reflection.mp4",
+      "sizeBytes": 33153811,
+      "sha256": "4bc86cea3280dda13c7a480c0db30b5bc02fdc076633b1a9fcf059bf0230e661"
+    },
+    {
+      "file": "phy/video/Physics_of_Thin_Lenses.mp4",
+      "sizeBytes": 30506556,
+      "sha256": "f47096e576f959451bfb62215e172805e88c0450b2873e75315f33cf624c30a6"
+    },
+    {
+      "file": "phy/video/Power_in_AC_Circuits.mp4",
+      "sizeBytes": 40488068,
+      "sha256": "d6796bf9b634435f9b80a23eda74510bb2fc19ab0c6d293cae692a3d58465610"
+    },
+    {
+      "file": "phy/video/Power_of_Eddy_Currents.mp4",
+      "sizeBytes": 62266783,
+      "sha256": "c3ec688462802361f4fbaa137a31247cc860a66654b8b3993763f00d27af97fe"
+    },
+    {
+      "file": "phy/video/Power_of_Points.mp4",
+      "sizeBytes": 45782214,
+      "sha256": "a1c350676dbef3a08b124cc66a23004384a988e0c8094e89b13234d586674e04"
+    },
+    {
+      "file": "phy/video/Power_of_Transformers.mp4",
+      "sizeBytes": 44664438,
+      "sha256": "d0a76d9a0d7abfec1ac36ebf92245820c0b383961c80f870c19df928c9a4b961"
+    },
+    {
+      "file": "phy/video/Producing_Induced_EMF.mp4",
+      "sizeBytes": 48404574,
+      "sha256": "4814d0934c6a8cc7ddeffe15553aac9014522cd705286667c04bc5b4a94682bf"
+    },
+    {
+      "file": "phy/video/Radioactivity_Explained.mp4",
+      "sizeBytes": 43857590,
+      "sha256": "df1fb56042ac670045fe2309668bf31c015a1ee30a9b72ccfaf4694d73b3034a"
+    },
+    {
+      "file": "phy/video/Robotics__Anatomy_to_Action.mp4",
+      "sizeBytes": 38856274,
+      "sha256": "5f173ed37c1ae1e60b14b765526698d1ede02d273772e8f4fb0a684ed1bb5600"
+    },
+    {
+      "file": "phy/video/Spherical_Mirrors.mp4",
+      "sizeBytes": 40665757,
+      "sha256": "ee77be2d4b7f8cb6acbaf4d8d5c629c4cef59ac112bee594b99df2f5da6b4d80"
+    },
+    {
+      "file": "phy/video/Spherical_Refraction.mp4",
+      "sizeBytes": 43741646,
+      "sha256": "8d21427d14b574f77bbe3bdde7a0da9bb878df29e62a0585169b7d238c7bd24f"
+    },
+    {
+      "file": "phy/video/Stars_to_Quarks.mp4",
+      "sizeBytes": 46075610,
+      "sha256": "8e1114aef1fa9cd70c28648dc848e023b095a7ff730b8e7c166b926e6d9b6a5f"
+    },
+    {
+      "file": "phy/video/Story_of_the_Electron.mp4",
+      "sizeBytes": 51380548,
+      "sha256": "a1074183a4bc4eebf984d884c130be16b7c1b026f8ceccd093578ecc7f329131"
+    },
+    {
+      "file": "phy/video/The_Alphabet_Soup_of_Magnetism.mp4",
+      "sizeBytes": 42140155,
+      "sha256": "b395ecc7ae0c4ba1f338d22a987a5ab3f0c6d5104f4979fd7c64aac6aa9f3bf8"
+    },
+    {
+      "file": "phy/video/The_Atomic_Paradox.mp4",
+      "sizeBytes": 42311363,
+      "sha256": "c1e0960d4d88793582d9aad2a21a8eddb5da442a9172ebb7cb8de3508d9d5c8a"
+    },
+    {
+      "file": "phy/video/The_Biot-Savart_Law.mp4",
+      "sizeBytes": 48807687,
+      "sha256": "0a5677216d81bbfefc051834c59c7285139aee20b2f01c30312d73a63d56216c"
+    },
+    {
+      "file": "phy/video/The_Center_of_Matter.mp4",
+      "sizeBytes": 48583337,
+      "sha256": "1d4ed13e35ede3e0c5e6eed8b93a22534381bdfb9f71fa187eceaed56fbd53d1"
+    },
+    {
+      "file": "phy/video/The_Diode_Explained.mp4",
+      "sizeBytes": 40877086,
+      "sha256": "a5feb16f66c5df93aa85858ddf1ddea19134dc90f4054a8cc1116e82e0192f3c"
+    },
+    {
+      "file": "phy/video/The_Invisible_Blueprint.mp4",
+      "sizeBytes": 61308058,
+      "sha256": "bf7095a6ebd471ff6c1540c81dec1190a71aa5afef59c5a567d055dedbf8c343"
+    },
+    {
+      "file": "phy/video/The_Invisible_Geometry.mp4",
+      "sizeBytes": 46513184,
+      "sha256": "1833d84e0e106acf4c95236bcf7505ffff3eef9eb0ef873442fac7f4ce314525"
+    },
+    {
+      "file": "phy/video/The_Invisible_Pendulum.mp4",
+      "sizeBytes": 36325528,
+      "sha256": "5b4a176546764e0bce2306fc2c5c971ec72748c43dc5414af6ce0aaee0963404"
+    },
+    {
+      "file": "phy/video/The_Logic_of_Hardware.mp4",
+      "sizeBytes": 36309894,
+      "sha256": "f25532f5ce781f29158aacdbe83637304a318743bb8a79aa0d1561b239eb7255"
+    },
+    {
+      "file": "phy/video/The_Magic_of_Refraction.mp4",
+      "sizeBytes": 48751225,
+      "sha256": "9840478a6c1fe6850c6d3b1b0d40a431ebef5c5b06a6f9eb8cd36ec4fc1efa18"
+    },
+    {
+      "file": "phy/video/The_Physics_of_Prisms.mp4",
+      "sizeBytes": 41663778,
+      "sha256": "ab404fa3dbf3b740063428674e31800a5d8a63a469e2bce175e3fecdba29116b"
+    },
+    {
+      "file": "phy/video/The_Scale_of_Connection.mp4",
+      "sizeBytes": 35720648,
+      "sha256": "45422afdc6e3dc5393a10296e1b66068615fed86e926c2ec72e3ea41b257f4ac"
+    },
+    {
+      "file": "phy/video/The_Vertical_Journey.mp4",
+      "sizeBytes": 33057723,
+      "sha256": "1166b6435ab6915094b5d6182168dcb055df10f3ac010301829caef8099199b6"
+    },
+    {
+      "file": "phy/video/Theories_on_Light.mp4",
+      "sizeBytes": 42133430,
+      "sha256": "e0cc6347fa2332f9e19bbf22e77af7642355101edb0eaffe85b8f8725c5fb391"
+    },
+    {
+      "file": "phy/video/Thermoelectric_Effect.mp4",
+      "sizeBytes": 40465728,
+      "sha256": "4da0cefb4ec389a06edc4fd077e17dffe3a332f0e8cd0f5fa407242ba886fc2f"
+    },
+    {
+      "file": "phy/video/Universe__Stars_to_Forces (1).mp4",
+      "sizeBytes": 34113009,
+      "sha256": "d24653f8e441e254678cb2b097ae19fe252f1987833bcada6ed18f0f50133eed"
+    },
+    {
+      "file": "phy/video/Universe__Stars_to_Forces.mp4",
+      "sizeBytes": 34113009,
+      "sha256": "d24653f8e441e254678cb2b097ae19fe252f1987833bcada6ed18f0f50133eed"
+    },
+    {
+      "file": "phy/video/Unlocking_Hysteresis.mp4",
+      "sizeBytes": 38982660,
+      "sha256": "df0efc95e0d2cb50b36023235f904f2e768467f24b4548c7189858d385eac249"
+    },
+    {
+      "file": "phy/video/Unlocking_the_Nucleus (1).mp4",
+      "sizeBytes": 39799760,
+      "sha256": "fbae0007607243d1abbfff6cd872829251b2a5683f37421bd800fcb25e2cb83f"
+    },
+    {
+      "file": "phy/video/Unlocking_the_Nucleus.mp4",
+      "sizeBytes": 39799760,
+      "sha256": "fbae0007607243d1abbfff6cd872829251b2a5683f37421bd800fcb25e2cb83f"
+    },
+    {
+      "file": "phy/video/Wave_Nature_of_Light.mp4",
+      "sizeBytes": 33879346,
+      "sha256": "be95eee9364b78290f68759aeb992c84eacbb6abfd1094538cb2603ee0889931"
+    },
+    {
+      "file": "phy/video/Wave_Optics___Interference.mp4",
+      "sizeBytes": 42975171,
+      "sha256": "1f26bb2df49c2fc840ed1376cf4394fe7d88442a6e1fca2d0feb20d2c38c63bc"
+    },
+    {
+      "file": "phy/video/Wave-Particle_Duality.mp4",
+      "sizeBytes": 43601214,
+      "sha256": "3ad14f2b97b15f56c17b65e2ce1360e48bd85cc1bc4dc4241293e2a5186036d7"
+    },
+    {
+      "file": "phy/video/X-கதிர்களின்_இயற்பியல்.mp4",
+      "sizeBytes": 34147067,
+      "sha256": "8cec57eaebe6da8fb0af0de87c28ddb3bf7784a415dd7c672a65f49823637b20"
+    },
+    {
+      "file": "phy/video/அணு_மாதிரிகளைக்_கண்டறிதல்.mp4",
+      "sizeBytes": 35765957,
+      "sha256": "19d04cad8b9996bd1afca2006115698d39bfdd5e10e0119a95433b48f64fbf18"
+    },
+    {
+      "file": "phy/video/அணுக்கரு_விசை.mp4",
+      "sizeBytes": 27884353,
+      "sha256": "e19257026ec4eb4b71d9f0187767cb58ed9fc6cf5d30d9bab78f0ded1ab445e1"
+    },
+    {
+      "file": "phy/video/அணுக்கரு_விசையின்_ரகசியங்கள்.mp4",
+      "sizeBytes": 34273518,
+      "sha256": "f4227895f75353f021678a60b6cf2c36901e50210d14436318584351a7f1ec61"
+    },
+    {
+      "file": "phy/video/அணுக்கருவின்_ரகசியங்கள்.mp4",
+      "sizeBytes": 37285861,
+      "sha256": "3a0de66ff0d75b5618bc283f9a657eeb37d5803e263190d93c02a1113192d903"
+    },
+    {
+      "file": "phy/video/அணுவினுள்_ஒரு_பயணம்.mp4",
+      "sizeBytes": 24059014,
+      "sha256": "cc1d431a11ebb882c04558329f24f6d1b599114bfc529579301717348addfb49"
+    },
+    {
+      "file": "phy/video/அணுவின்_அடிப்படைகள்.mp4",
+      "sizeBytes": 31541803,
+      "sha256": "61b1e50d51c07b3413beb9079695d4587d5cadadb827c132eefe79e4c47d53eb"
+    },
+    {
+      "file": "phy/video/அலகு_2__மின்னோட்டவியல்.mp4",
+      "sizeBytes": 27839525,
+      "sha256": "9cae19f69f8429f0acff6b1f9989838f73dc880e30eadc4fc522f8f876661d48"
+    },
+    {
+      "file": "phy/video/அலகு_5__மின்காந்த_அலைகள்.mp4",
+      "sizeBytes": 27912134,
+      "sha256": "53492c3906a431cdf2421e2cfc9eef5febac01b564f441f55ba70a13edf097be"
+    },
+    {
+      "file": "phy/video/ஆம்பியரின்_சுற்று_விதி.mp4",
+      "sizeBytes": 25545803,
+      "sha256": "168679bedff3eaca4fc812b2f77404d8dd2e92b12aef82ab9de0e46d1ccb4649"
+    },
+    {
+      "file": "phy/video/இயற்பியல்__நவீன_அடித்தளம்.mp4",
+      "sizeBytes": 27997102,
+      "sha256": "4b6f0c2665ca78a34fa110ba44b88b28ef281668f598143bf2e1cbfdee27191b"
+    },
+    {
+      "file": "phy/video/எந்திரனியல்_ஓர்_அறிமுகம்.mp4",
+      "sizeBytes": 29719942,
+      "sha256": "6c5b3533f5ad26373c345d06f8e7da4131cb9e93588858e86d846a8ef033be15"
+    },
+    {
+      "file": "phy/video/எலக்ட்ரானியலின்_அடிப்படைகள்.mp4",
+      "sizeBytes": 40877954,
+      "sha256": "6a86914491c5d09736d81487e8ede574ea7648b10325b08af6dd8b33b1443b7a"
+    },
+    {
+      "file": "phy/video/ஒளிக்கதிரின்_பயணம்.mp4",
+      "sizeBytes": 36560137,
+      "sha256": "adf20851ef3dfaf4ff4697f10dd031ddf02aead15d3cc6f16c04e88d32630817"
+    },
+    {
+      "file": "phy/video/ஒளித்_தளவிளைவின்_இயற்பியல்.mp4",
+      "sizeBytes": 24410054,
+      "sha256": "fd8e3036a169410bab65cc3259e05d72ac409575b8bf14e1dbc484acd53df43e"
+    },
+    {
+      "file": "phy/video/ஒளிமின்_விளைவு.mp4",
+      "sizeBytes": 35167103,
+      "sha256": "6e492df9b7cbaecc27f2d6127d725884e2b35c15b5440f1886478a901d064575"
+    },
+    {
+      "file": "phy/video/ஒளியியல்_கருவிகள்.mp4",
+      "sizeBytes": 38795070,
+      "sha256": "49a53823a96e7396eac807f770dddf70966f2c8fb952774fec7786b00b0fc686"
+    },
+    {
+      "file": "phy/video/ஒளியியல்_கொள்கைகள்.mp4",
+      "sizeBytes": 40341859,
+      "sha256": "50d7404aeb68b4ff1f17f5d739c912afebdd63a27e67a326d6fe5b17e2bbbcff"
+    },
+    {
+      "file": "phy/video/ஒளியின்_அலைத்தன்மை.mp4",
+      "sizeBytes": 26868530,
+      "sha256": "131cc1c1f1b4537b5597964c69aca66d68fae221e520fb1fb1bb73660ecba5c8"
+    },
+    {
+      "file": "phy/video/ஒளியின்_இயக்கவியல்.mp4",
+      "sizeBytes": 40593484,
+      "sha256": "d63a806e970658c9f9e309d737089246c2f21e8cf07e91e2e1b29f442b200c59"
+    },
+    {
+      "file": "phy/video/ஒளியின்_பயணம்.mp4",
+      "sizeBytes": 34063786,
+      "sha256": "dacf7ef9a493262c4fcb86b69d94f8a1e1728eacb1ea03070ca29b29201d878f"
+    },
+    {
+      "file": "phy/video/ஒளியின்_மர்மம்.mp4",
+      "sizeBytes": 25808588,
+      "sha256": "ed5e20b2c2b62ccc3ff19db6ff9e7272e59fb9d1af824793bb8b0199b4857ee9"
+    },
+    {
+      "file": "phy/video/ஓம்_விதி___மின்தடை.mp4",
+      "sizeBytes": 30274564,
+      "sha256": "311b2fd6e20645abe7be5b7b8203ddd7044adb66c3dc3353ec8c4fd3babbb876"
+    },
+    {
+      "file": "phy/video/கண்ணாடியின்_இயற்பியல்.mp4",
+      "sizeBytes": 27232200,
+      "sha256": "14dba35f03b495f4b0363f62b170ac2437f87b4b3c823152155a78b0f4d189b1"
+    },
+    {
+      "file": "phy/video/கண்ணுக்குத்_தெரியாத_அலைகள்.mp4",
+      "sizeBytes": 34141484,
+      "sha256": "69d48ae967ff97cf29e0f827216a5f86e7a820217543d8b507df9920cf8e0140"
+    },
+    {
+      "file": "phy/video/கதிரியக்கம்___அணுக்கரு_பிளவு.mp4",
+      "sizeBytes": 38239027,
+      "sha256": "4db44ffe7bf3377d1875c238e0db12a5e521f0c3bde5ff89faec5fdea93452f1"
+    },
+    {
+      "file": "phy/video/கதிர்வீச்சின்_இருமைப்_பண்பு.mp4",
+      "sizeBytes": 26885930,
+      "sha256": "ac3be75f617e481dccaee08c63233fc9966c50850253d1dca1bc3007818bc167"
+    },
+    {
+      "file": "phy/video/காந்த_விளைவுகள்.mp4",
+      "sizeBytes": 27975195,
+      "sha256": "d02713d43d34c1ce95112c7351590e01e98b31e7bde359e05a5fbb236735fa60"
+    },
+    {
+      "file": "phy/video/காந்தத்_தயக்கம்.mp4",
+      "sizeBytes": 34911266,
+      "sha256": "8f9ded61d03c2faefbc7bab48a1152f3613e9a2304f69a4aa7b7968b39fb18b5"
+    },
+    {
+      "file": "phy/video/காந்தப்_பண்புகளின்_உலகம்.mp4",
+      "sizeBytes": 25744836,
+      "sha256": "b5115f89d2e8ab36a8c8d71d7a4d7afeae4847ef12b6314737eaa55d8c66c58b"
+    },
+    {
+      "file": "phy/video/காந்தவியலின்_கூலும்_விதி.mp4",
+      "sizeBytes": 29196065,
+      "sha256": "b9df16439b46282554ff65087ae423f94c86a76c4484bfd53e47a0a07458f780"
+    },
+    {
+      "file": "phy/video/காந்தவியலின்_ரகசியங்கள் (1).mp4",
+      "sizeBytes": 28325079,
+      "sha256": "12e7d5867f2fd6407360b4ee6c34ecabf5e36e9bb76232ca24a232d436a53f31"
+    },
+    {
+      "file": "phy/video/காந்தவியலின்_ரகசியங்கள்.mp4",
+      "sizeBytes": 28325079,
+      "sha256": "12e7d5867f2fd6407360b4ee6c34ecabf5e36e9bb76232ca24a232d436a53f31"
+    },
+    {
+      "file": "phy/video/காந்தவியல்_-_ஓர்_அறிமுகம்.mp4",
+      "sizeBytes": 34816715,
+      "sha256": "fb8474f75afc58c1855d1c3b88c3202ce4cfb0d20aaeb90b134823135d84d20a"
+    },
+    {
+      "file": "phy/video/கிர்ச்சாஃப்_விதிகள்.mp4",
+      "sizeBytes": 30372529,
+      "sha256": "8ca8d879de6889dcabb194eeb08390f69c8ac69795b843ab1ad607a153a07559"
+    },
+    {
+      "file": "phy/video/கூலூம்_விதி___விசைகள்.mp4",
+      "sizeBytes": 41077971,
+      "sha256": "9131771fe901f92a5ada9bab1e4d5b93ff6faf4f78cab3bd8e2dfd362d34489c"
+    },
+    {
+      "file": "phy/video/கோளக_ஆடிகளின்_ரகசியம்.mp4",
+      "sizeBytes": 27475735,
+      "sha256": "7e3b1aa71f52b272bfa9b46a9d9879a7d72292f71471c7f6262b2cddacd8365c"
+    },
+    {
+      "file": "phy/video/கோளகப்பரப்பில்_ஒளிவிலகல்.mp4",
+      "sizeBytes": 24638774,
+      "sha256": "5c3a888e85681504bfb7f927895cd677b07495e8a812b7e401d8fb2d878e3339"
+    },
+    {
+      "file": "phy/video/சுழல்_மின்னோட்ட_ரகசியம்.mp4",
+      "sizeBytes": 29673562,
+      "sha256": "e37863f2a78fb70c0892e75b367b1c8d7d0973ec48847cb77ecc69a8dcd90de1"
+    },
+    {
+      "file": "phy/video/சுழித்திறன்_மின்னோட்டம்.mp4",
+      "sizeBytes": 31554225,
+      "sha256": "f93519fa326eedca0f2a05df503add9dbda392c2c6aaabf7a9e5ef643f38d9ab"
+    },
+    {
+      "file": "phy/video/டிஜிட்டல்_எலக்ட்ரானிக்ஸ்.mp4",
+      "sizeBytes": 30768726,
+      "sha256": "e0dfb976399eb35596ae0162373a7018acd267682d6a5d8ae017574b828f7764"
+    },
+    {
+      "file": "phy/video/டீ_மார்கனின்_தேற்றங்கள்.mp4",
+      "sizeBytes": 38334586,
+      "sha256": "c804df2b54579578a19fade22a1cc210012d30b4c3183c6065fae73030da5270"
+    },
+    {
+      "file": "phy/video/தகவல்_தொடர்பு_அமைப்புகள் (1).mp4",
+      "sizeBytes": 26135093,
+      "sha256": "71865dde46a172a531a5dc905c3ea71e301c7d0217edd8775ef53131a76f4f9b"
+    },
+    {
+      "file": "phy/video/தகவல்_தொடர்பு_அமைப்புகள்.mp4",
+      "sizeBytes": 35422601,
+      "sha256": "2163a8bfd7c8655d1e8c6739076eeaaccabb7d34d45773143a597fd49d3e06c1"
+    },
+    {
+      "file": "phy/video/தகவல்_தொடர்பு_இயற்பியல்.mp4",
+      "sizeBytes": 34297682,
+      "sha256": "30ec607b852e685c764a7763935f7558decd079fefa3d109dfa1fc19ab0e8eac"
+    },
+    {
+      "file": "phy/video/தலைப்பு_10.mp4",
+      "sizeBytes": 36941721,
+      "sha256": "e492b31ad2ded697a7393455b1d3e822b9b81eee0c8815e06eaa407f93580660"
+    },
+    {
+      "file": "phy/video/திருப்புவிசை___நிலை_ஆற்றல்.mp4",
+      "sizeBytes": 26646563,
+      "sha256": "3ab56b8d566dadd8886e51ab262328ddbbaf346896acd0b8950a884842dfebf4"
+    },
+    {
+      "file": "phy/video/நானோ_அறிவியல்___தொழில்நுட்பம்.mp4",
+      "sizeBytes": 44720895,
+      "sha256": "f87af888a09e22f3bfb8f8966247f108911b610145b20b93847ec6ca7e240fa5"
+    },
+    {
+      "file": "phy/video/நிலைமின்_பண்புகள் (1).mp4",
+      "sizeBytes": 36717974,
+      "sha256": "bff5415667b0b6552a9a6545111e40871b3c61c2afa1498a880513fd505b700f"
+    },
+    {
+      "file": "phy/video/நிலைமின்_பண்புகள்.mp4",
+      "sizeBytes": 36717974,
+      "sha256": "bff5415667b0b6552a9a6545111e40871b3c61c2afa1498a880513fd505b700f"
+    },
+    {
+      "file": "phy/video/நிலைமின்னியலின்_ரகசியங்கள்.mp4",
+      "sizeBytes": 32453441,
+      "sha256": "f3993567baa1c0bd9ec80704df07262f8f38a064522aff1d39fb05179c97a161"
+    },
+    {
+      "file": "phy/video/நிலைமின்னியல்_-_பகுதி_1.mp4",
+      "sizeBytes": 36109627,
+      "sha256": "e1b96a54a47e64b077bc573f788cc26259a45dda473e943eb27b47c1e872bb06"
+    },
+    {
+      "file": "phy/video/நுண்-இயந்திர_வரைபடம்__BJT.mp4",
+      "sizeBytes": 23995825,
+      "sha256": "01accc9e9392a5c3f154f9071cac5de7bb1d9eb97e27b3946ad800852edc0625"
+    },
+    {
+      "file": "phy/video/பண்பேற்றத்தின்_மர்மங்கள்.mp4",
+      "sizeBytes": 34101383,
+      "sha256": "49b3d40f13d539db23de00da4eb38a93394728a8d17086042fd4ecea5f9d8e4a"
+    },
+    {
+      "file": "phy/video/பயட்-சாவர்ட்_விதியின்_ரகசியம்.mp4",
+      "sizeBytes": 33013718,
+      "sha256": "ef0fc97f8655e41a3484c33d35467a87339ee0d2fb802696d489cc0f94f1a720"
+    },
+    {
+      "file": "phy/video/பருப்பொருள்_அலைகள்.mp4",
+      "sizeBytes": 36300263,
+      "sha256": "1390c17d9980ac85d87803a8af15c1bdc7255aadfd4bbaaa5cb7073306c70b1d"
+    },
+    {
+      "file": "phy/video/பிரபஞ்சத்தின்_கைரேகை.mp4",
+      "sizeBytes": 32628511,
+      "sha256": "2a85fb09a27c141750190e9f8ffef65ba5f9818f2c1d6d86016150b73fe7f995"
+    },
+    {
+      "file": "phy/video/பூலியன்_இயற்கணிதம்.mp4",
+      "sizeBytes": 29717958,
+      "sha256": "60572f8a722dc8e8af8b043d5151b03111e1771ca37b0ee30b35699896c7dae4"
+    },
+    {
+      "file": "phy/video/பேட்டரியின்_ரகசியங்கள்.mp4",
+      "sizeBytes": 30394516,
+      "sha256": "981c37aee09c138e61ad5ef660163cb49ce3ce38652c220e5efc0eb10ef2af7a"
+    },
+    {
+      "file": "phy/video/மருத்துவத்தில்_இயற்பியல்.mp4",
+      "sizeBytes": 35298743,
+      "sha256": "60af064a32a70928ab9330a7b3cfff93b0f283ffb9161617edef471d77089d7d"
+    },
+    {
+      "file": "phy/video/மாறுதிசை_மின்னியற்றிகள்.mp4",
+      "sizeBytes": 28827287,
+      "sha256": "6022426528ef4ede02410fbe165565092e285d6def744717ac89adc833f3d7ab"
+    },
+    {
+      "file": "phy/video/மாறுதிசை_மின்னோட்டம்.mp4",
+      "sizeBytes": 41894216,
+      "sha256": "8c602caa228d739acea2d15cdfed93e9faf1fc4f320b445b5d8a4a5d5d684c1d"
+    },
+    {
+      "file": "phy/video/மின்_இருமுனை__மாய_விசை.mp4",
+      "sizeBytes": 28580363,
+      "sha256": "95d9345a62a6118d5027bf94cdb03ffd5a91b9052efa77723a45261ad022f6aa"
+    },
+    {
+      "file": "phy/video/மின்காந்த_தூண்டல்_பயணம்.mp4",
+      "sizeBytes": 35560657,
+      "sha256": "6ff20fd273677e81e48e608c92e3578ac620f9e204ded481eb8d2dc4718be66c"
+    },
+    {
+      "file": "phy/video/மின்காந்தத்_தூண்டல்.mp4",
+      "sizeBytes": 33093768,
+      "sha256": "49cfc0a52ccd4396538e2b053077e1d7632c68735bb9a3012b448b1ddee1852c"
+    },
+    {
+      "file": "phy/video/மின்காந்தவியல்_ரகசியங்கள்.mp4",
+      "sizeBytes": 30702197,
+      "sha256": "cfc1cbeea7673615fbf4df0377c80bd6619ed4ae14b801a298b2e46a45f08362"
+    },
+    {
+      "file": "phy/video/மின்சாரம்_தூண்டும்_வழிகள்.mp4",
+      "sizeBytes": 23178144,
+      "sha256": "8a512eb431782187ddd6e8d4f0daddd00a8a52872188a633127020a3f37f145c"
+    },
+    {
+      "file": "phy/video/மின்சுற்றில்_ஆற்றல்___திறன்.mp4",
+      "sizeBytes": 31761025,
+      "sha256": "73dd8ccfd9c39c5e539d19c278dcc293cdabf63204c6c62ef5524cf8c9f7cdd5"
+    },
+    {
+      "file": "phy/video/மின்தேக்கிகளின்_மாயாஜாலம்.mp4",
+      "sizeBytes": 31093612,
+      "sha256": "d3d6940769de0f9e8e7f7638db9e5032adc0c07ae8055449473de3e4edc55418"
+    },
+    {
+      "file": "phy/video/மின்புலக்_கோடுகள்.mp4",
+      "sizeBytes": 33078258,
+      "sha256": "e1022c167267d5d5dd68eb6a3d43e4fee09387e223d476dcec98acb26626a54e"
+    },
+    {
+      "file": "phy/video/மின்மாற்றி__மின்திறன்_வலை.mp4",
+      "sizeBytes": 34085088,
+      "sha256": "092f63c7e31c94884add191676ef08152c9405978472d4af57156307b9489046"
+    },
+    {
+      "file": "phy/video/மின்னணு_தகவல்_தொடர்பு (1).mp4",
+      "sizeBytes": 27530144,
+      "sha256": "0dc15d42c06aa48e7c6bb52e93fe78d4d730fdbed0d8b82cd3e7f664310a6ba0"
+    },
+    {
+      "file": "phy/video/மின்னணு_தகவல்_தொடர்பு.mp4",
+      "sizeBytes": 27530144,
+      "sha256": "0dc15d42c06aa48e7c6bb52e93fe78d4d730fdbed0d8b82cd3e7f664310a6ba0"
+    },
+    {
+      "file": "phy/video/மின்னழுத்தம்_மற்றும்_ஆற்றல்.mp4",
+      "sizeBytes": 35141234,
+      "sha256": "59f40373325fff9472703c66bb65884d32de34b2761005af65a2f3004926e29a"
+    },
+    {
+      "file": "phy/video/மின்னோட்டத்தின்_ரகசியம்.mp4",
+      "sizeBytes": 22881157,
+      "sha256": "f93bf68ff8368f1c0b84afee3f1e2275c01c48cc969b4d804736778e6b9f129b"
+    },
+    {
+      "file": "phy/video/மெல்லிய_லென்ஸ்களின்_இயற்பியல்.mp4",
+      "sizeBytes": 32147519,
+      "sha256": "20354493ae52f5e3c601c08bd23afda845d135a98d9ef0b34bdc3284672b92ae"
+    },
+    {
+      "file": "phy/video/மேக்ஸ்வெல்லின்_சமன்பாடுகள்.mp4",
+      "sizeBytes": 32012871,
+      "sha256": "75505bd3a129fbe37ed9a9894a3720a6e258c7918cbe27c7860f893d68962d57"
+    },
+    {
+      "file": "phy/video/லாரன்ஸ்_விசை.mp4",
+      "sizeBytes": 42475939,
+      "sha256": "f07b701ee96699fe5d922df12d01e9896045cc33742b8b3f9012bc0ef198ed93"
+    },
+    {
+      "file": "phy/video/லோரென்ஸ்_விசை.mp4",
+      "sizeBytes": 33364085,
+      "sha256": "39a4928124226c84849c6163e6311942b84604de91ff4803d215fcad47ebb1eb"
+    },
+    {
+      "file": "phy/video/வாய்ப்புகளின்_இயற்பியல்.mp4",
+      "sizeBytes": 36577698,
+      "sha256": "11f63a52849969c3eee0209068e19a88b1f1a81f9c3163359215be92bbf60762"
+    },
+    {
+      "file": "phy/video/விண்மீன்_முதல்_குவார்க்_வரை.mp4",
+      "sizeBytes": 35944404,
+      "sha256": "1480f0e82264384acdc2a51e63c22f5d609e917e0d0566a2820c795333ddbf7a"
+    },
+    {
+      "file": "phy/video/விளிம்பு_விளைவின்_ரகசியங்கள்.mp4",
+      "sizeBytes": 33671779,
+      "sha256": "31b8d4c03f7a948d6425c983f9afe1f8c94606e02b5f095f6a01fe57ba2b7082"
+    },
+    {
+      "file": "phy/video/வெப்பத்தின்_ரகசியம்.mp4",
+      "sizeBytes": 33263136,
+      "sha256": "7b8c9a4a353e5e8021c24f59f54f72f13f45be12174daaee5c74819a0e521682"
+    },
+    {
+      "file": "phy/video/வெப்பமின்_சமச்சீர்_தன்மைகள்.mp4",
+      "sizeBytes": 28318435,
+      "sha256": "1d0ad79c1979d732febd894de8c43eb738b6ddd63101af401d95ba750fe61abe"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0031.mp4",
+      "sizeBytes": 40024021,
+      "sha256": "88c7b31312ba089beba77fdf1109d41bce70fb2f7d2f747b3127262ec0c0e69f"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0032.mp4",
+      "sizeBytes": 36380581,
+      "sha256": "01b9f37d09f9ccac011b5e5f8f579880811ea052b7a2f436d53ae401bfb6a4cc"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0033.mp4",
+      "sizeBytes": 50399239,
+      "sha256": "d4108f8588cc625212a24ce8dd39e2a6a898e54c2448214922fbdea4c0551d13"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0034.mp4",
+      "sizeBytes": 40486427,
+      "sha256": "83253f5da10ccd5c708dc73baa059379131eeb90f1072bebc21c9585221d7a0f"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0035.mp4",
+      "sizeBytes": 46124100,
+      "sha256": "3b338e6d2091b97dc2edb38f50d2b3e36af88bd858af2391d201eec8eb975810"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0039.mp4",
+      "sizeBytes": 39646198,
+      "sha256": "3b741ef883db8157bf5f9d081d1fd538211b649f369ef8ad79fbd87a74e966af"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0040.mp4",
+      "sizeBytes": 54016963,
+      "sha256": "9dc0b1187170f476c9bcf55fa07626ca99dd6d4c14fbf832e568c4994b053785"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0047.mp4",
+      "sizeBytes": 25118838,
+      "sha256": "baa866084e0951ab9006d20600dac33e01ebba930ebb51a6e6d4e8759eaf6552"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0048.mp4",
+      "sizeBytes": 38669858,
+      "sha256": "e4c3b5c45ac8e937c3b070baf006441c89945dbc26465cb11a758e21b191ed75"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0049.mp4",
+      "sizeBytes": 38939548,
+      "sha256": "ad9f7287b19758600def39bcc970085a5d83c017c42338e75235053d93a170ed"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0051.mp4",
+      "sizeBytes": 43592393,
+      "sha256": "7ae399f15e06649706179d123a4d4d4f1b07daa54e430b62eda867866cc64c48"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0052.mp4",
+      "sizeBytes": 41568182,
+      "sha256": "4fb8471dc5787b91949ffb9f445c97b8b731ca23677fc812b72babfbdc26fb15"
+    },
+    {
+      "file": "tamil/video/VID-20261006-WA0053.mp4",
+      "sizeBytes": 48133640,
+      "sha256": "0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2"
+    },
+    {
+      "file": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.04 (1).mp4",
+      "sizeBytes": 38669858,
+      "sha256": "e4c3b5c45ac8e937c3b070baf006441c89945dbc26465cb11a758e21b191ed75"
+    },
+    {
+      "file": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.04.mp4",
+      "sizeBytes": 38939548,
+      "sha256": "ad9f7287b19758600def39bcc970085a5d83c017c42338e75235053d93a170ed"
+    },
+    {
+      "file": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05 (1).mp4",
+      "sizeBytes": 40486427,
+      "sha256": "83253f5da10ccd5c708dc73baa059379131eeb90f1072bebc21c9585221d7a0f"
+    },
+    {
+      "file": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.05.mp4",
+      "sizeBytes": 48133640,
+      "sha256": "0f013cd32e47a7b78ac682dc1de9199f283b98d9e11e2954d7244081aa5a2ea2"
+    },
+    {
+      "file": "tamil/video/WhatsApp Video 2026-10-07 at 11.37.08.mp4",
+      "sizeBytes": 40250365,
+      "sha256": "fa12a2b1fc844718a6247a947af660426a27648caee51e1068834d30f12c59fe"
+    }
+  ],
+  "sourceChecks": "Full-folder SHA-256 checks, MP4 duration parsing, three source frames per new unique video, source-derived JPEG thumbnails and existing corrected-video title frames. Full narration and academic accuracy require teacher review.",
+  "chapterEvidence": [
+    {
+      "bookId": "12-physics-english-v2-0ce6704c",
+      "pdfPage": 3,
+      "printedPage": "III",
+      "chapters": {
+        "6": "Ray Optics",
+        "7": "Wave Optics",
+        "8": "Dual Nature of Radiation and Matter",
+        "9": "Atomic and Nuclear Physics",
+        "10": "Electronics and Communication",
+        "11": "Recent Developments in Physics"
+      }
+    },
+    {
+      "bookId": "12-physics-tamil-v2-fb1fa4de",
+      "pdfPages": [
+        210,
+        271,
+        273
+      ],
+      "chapter10": "எலக்ட்ரானியல் மற்றும் தகவல் தொடர்பு",
+      "chapter11": "இயற்பியலின் அண்மைக்கால வளர்ச்சிகள்"
+    }
+  ]
+}

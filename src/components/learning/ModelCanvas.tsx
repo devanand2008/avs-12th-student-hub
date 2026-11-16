@@ -15,6 +15,7 @@ interface Props {
   vectorScale?: number;
   hiddenPart?: string;
   exploded?: boolean;
+  generatorAngle?: number;
 }
 
 export default function ModelCanvas({
@@ -26,6 +27,7 @@ export default function ModelCanvas({
   vectorScale = 1,
   hiddenPart = "",
   exploded = false,
+  generatorAngle = 0,
 }: Props) {
   const host = useRef<HTMLDivElement>(null);
   const sceneKey = `${model}:${resetKey}`;
@@ -45,6 +47,7 @@ export default function ModelCanvas({
     exploded,
     focusSelected,
     wireframe,
+    generatorAngle,
   });
   const [failed, setFailed] = useState(false);
   useEffect(() => {
@@ -57,6 +60,7 @@ export default function ModelCanvas({
       exploded,
       focusSelected,
       wireframe,
+      generatorAngle,
     };
   }, [
     selected,
@@ -67,6 +71,7 @@ export default function ModelCanvas({
     exploded,
     focusSelected,
     wireframe,
+    generatorAngle,
   ]);
 
   useEffect(() => {
@@ -372,6 +377,7 @@ export default function ModelCanvas({
       scienceGeometry(model, group, meshes, sphere, link);
     meshes.forEach((mesh) => {
       mesh.userData.basePosition = mesh.position.clone();
+      mesh.userData.baseQuaternion = mesh.quaternion.clone();
     });
     const raycaster = new THREE.Raycaster();
     let pointerStart = { x: 0, y: 0 };
@@ -426,6 +432,8 @@ export default function ModelCanvas({
     });
     observer.observe(container);
     let previous = 0;
+    const rotorRotation = new THREE.Quaternion();
+    const rotorAxis = new THREE.Vector3(0, 1, 0);
     renderer.setAnimationLoop((time) => {
       if (!visible || document.hidden) {
         previous = time;
@@ -444,6 +452,7 @@ export default function ModelCanvas({
         preferences.current.exploded,
         preferences.current.focusSelected,
         preferences.current.wireframe,
+        preferences.current.generatorAngle,
       ]);
       if (fingerprint !== previousPreferences) {
         dirty = true;
@@ -451,6 +460,10 @@ export default function ModelCanvas({
       }
       if (!dirty) return;
       dirty = false;
+      rotorRotation.setFromAxisAngle(
+        rotorAxis,
+        THREE.MathUtils.degToRad(preferences.current.generatorAngle),
+      );
       meshes.forEach((mesh) => {
         mesh.visible =
           mesh.userData.part !== preferences.current.hiddenPart &&
@@ -470,11 +483,24 @@ export default function ModelCanvas({
             "coaxial-cable",
             "optical-fibre",
             "ethernet-plug",
+            "fcc",
+            "simple-cubic",
+            "sc-neighbours",
+            "square-planar",
+            "nucleosome",
           ].includes(model)
         ) {
           mesh.position
             .copy(mesh.userData.basePosition)
             .multiplyScalar(preferences.current.exploded ? 1.4 : 1);
+        }
+        if (mesh.userData.rotor) {
+          mesh.position
+            .copy(mesh.userData.basePosition)
+            .applyQuaternion(rotorRotation);
+          mesh.quaternion
+            .copy(mesh.userData.baseQuaternion)
+            .premultiply(rotorRotation);
         }
         if (mesh.userData.vectorShaft || mesh.userData.vectorTip) {
           const t = preferences.current.vectorScale;
@@ -512,6 +538,10 @@ export default function ModelCanvas({
       renderer.domElement.dataset.surfaceMesh = String(
         preferences.current.wireframe,
       );
+      if (model === "ac-generator")
+        renderer.domElement.dataset.coilAngle = String(
+          preferences.current.generatorAngle,
+        );
       renderer.domElement.dataset.cameraPosition = camera.position
         .toArray()
         .map((n) => n.toFixed(3))
