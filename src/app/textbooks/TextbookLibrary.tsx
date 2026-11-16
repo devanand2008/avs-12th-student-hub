@@ -11,6 +11,7 @@ import {
   Search,
 } from "lucide-react";
 import Sidebar from "@/components/layout/Sidebar";
+import SectionBadge from "@/components/ui/SectionBadge";
 import {
   filterTextbooks,
   textbookFileSize,
@@ -56,13 +57,18 @@ export default function TextbookLibrary({
           <div className="orb-animate-2 absolute -bottom-16 -left-16 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 space-y-3">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-bold text-cyan-200 backdrop-blur-md">
-              <BookOpen className="h-3.5 w-3.5 text-cyan-300" />
-              <span>TAMIL NADU STATE BOARD · CLASS 12</span>
-            </span>
-            <h1 className="font-heading text-3xl sm:text-4xl font-black tracking-tight text-white">
-              Official Class 12 SCERT Textbook Library
-            </h1>
+            <div className="flex items-center gap-3">
+              <SectionBadge type="textbooks" size="lg" />
+              <div>
+                <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-bold text-cyan-200 backdrop-blur-md">
+                  <BookOpen className="h-3.5 w-3.5 text-cyan-300" />
+                  <span>TAMIL NADU STATE BOARD · CLASS 12</span>
+                </span>
+                <h1 className="font-heading text-2xl sm:text-4xl font-black tracking-tight text-white mt-1">
+                  Official Class 12 SCERT Textbook Library
+                </h1>
+              </div>
+            </div>
             <p className="max-w-3xl text-xs sm:text-sm leading-relaxed text-blue-100/90">
               Tamil and English medium textbooks from SCERT Tamil Nadu, covering languages, science, commerce, arts and vocational subjects. Read inside the portal, open the original PDF, or download for offline study.
             </p>

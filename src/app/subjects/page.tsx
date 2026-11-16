@@ -4,11 +4,34 @@ import Sidebar from "@/components/layout/Sidebar";
 import { Chapter, Subject } from "@/types";
 import { CheckSquare, FileText, Layers, Sparkles, Video } from "lucide-react";
 import Link from "@/components/layout/IntentLink";
+import Image from "next/image";
+import SectionBadge, { SectionType } from "@/components/ui/SectionBadge";
 import { useEffect, useState } from "react";
 
 interface EnrichedSubject extends Subject {
   chapters: Chapter[];
 }
+
+const getSubjectMeta = (name: string) => {
+  const n = name.toLowerCase();
+  if (n.includes("physics"))
+    return { type: "physics" as SectionType, image: "/subject-images/physics.jpg" };
+  if (n.includes("chemistry"))
+    return { type: "chemistry" as SectionType, image: "/subject-images/chemistry.jpg" };
+  if (n.includes("math"))
+    return { type: "math" as SectionType, image: "/subject-images/mathematics.jpg" };
+  if (n.includes("computer"))
+    return { type: "computer" as SectionType, image: "/subject-images/computer-science.jpg" };
+  if (n.includes("botany"))
+    return { type: "biology" as SectionType, image: "/subject-images/botany.jpg" };
+  if (n.includes("zoology"))
+    return { type: "biology" as SectionType, image: "/subject-images/zoology.jpg" };
+  if (n.includes("tamil"))
+    return { type: "notes" as SectionType, image: "/subject-images/tamil.jpg" };
+  if (n.includes("english"))
+    return { type: "commerce" as SectionType, image: "/subject-images/english.jpg" };
+  return { type: "notes" as SectionType, image: "/subject-images/physics.jpg" };
+};
 
 const getSubjectTheme = (name: string, stream: string) => {
   const n = name.toLowerCase();
@@ -191,11 +214,19 @@ export default function SubjectsPage() {
               >
                 {/* Subject Header Banner */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-5 border-b border-slate-100 gap-4">
-                  <div className="flex items-start sm:items-center gap-3.5">
-                    <div
-                      className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${theme.iconBg} text-white flex items-center justify-center font-black text-sm shadow-md shrink-0`}
-                    >
-                      {subj.code || subj.name.slice(0, 3).toUpperCase()}
+                  <div className="flex items-start sm:items-center gap-4">
+                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-md shrink-0 border border-slate-200">
+                      <Image
+                        src={getSubjectMeta(subj.name).image}
+                        alt={subj.name}
+                        fill
+                        sizes="64px"
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <span className="absolute bottom-1 left-1.5 text-[9px] font-black text-white bg-black/60 px-1 py-0.5 rounded-xs tracking-wider">
+                        {subj.code || subj.name.slice(0, 3).toUpperCase()}
+                      </span>
                     </div>
                     <div>
                       <div className="flex items-center gap-2">

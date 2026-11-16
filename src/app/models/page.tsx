@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
+import SectionBadge from "@/components/ui/SectionBadge";
 import { useEffect, useState, useSyncExternalStore } from "react";
 
 const ModelCanvas = dynamic(() => import("@/components/learning/ModelCanvas"), {
@@ -156,22 +157,25 @@ export default function ModelsPage() {
         )}
         <fieldset disabled={!hydrated} className="contents">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-            <div>
-              <span className="eyebrow">
-                <Box size={15} /> A new perspective on learning
-              </span>
-              <h1 className="page-title">
-                Your 3D learning lab<span className="text-blue-600">.</span>
-              </h1>
-              <p className="page-description">
-                Turn abstract ideas into something you can explore.
-              </p>
-              <Link
-                href="/resources"
-                className="text-sm font-semibold text-blue-700"
-              >
-                Study Resources →
-              </Link>
+            <div className="flex items-start sm:items-center gap-3.5">
+              <SectionBadge type="lab" size="lg" />
+              <div>
+                <span className="eyebrow">
+                  <Box size={15} /> A new perspective on learning
+                </span>
+                <h1 className="page-title">
+                  Your 3D learning lab<span className="text-blue-600">.</span>
+                </h1>
+                <p className="page-description">
+                  Turn abstract ideas into something you can explore.
+                </p>
+                <Link
+                  href="/resources"
+                  className="text-sm font-semibold text-blue-700"
+                >
+                  Study Resources →
+                </Link>
+              </div>
             </div>
             <span className="status-pill">
               <span>{learningModels.length} interactive models</span>

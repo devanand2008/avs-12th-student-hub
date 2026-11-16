@@ -16,6 +16,7 @@ import {
 import { useEffect, useRef, useState } from "react";
 import Markdown from "react-markdown";
 import Link from "next/link";
+import SectionBadge from "@/components/ui/SectionBadge";
 
 interface Citation {
   subject: string;
@@ -284,8 +285,8 @@ export default function AIStudyHelperPage() {
           >
             <ArrowLeft size={20} />
           </Link>
-          <div className="hidden h-10 w-10 shrink-0 place-items-center rounded-2xl bg-blue-600 text-white sm:grid">
-            <Sparkles size={20} />
+          <div className="hidden sm:block shrink-0">
+            <SectionBadge type="ai" size="sm" />
           </div>
           <div className="min-w-0 flex-1">
             <h1 className="font-heading text-base font-extrabold tracking-tight text-slate-900 sm:text-xl">

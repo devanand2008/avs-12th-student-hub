@@ -134,6 +134,7 @@ export default function Navbar() {
       href: user ? "/dashboard" : "/",
       icon: Home,
       isActive: pathname === "/" || (user ? pathname === "/dashboard" : false),
+      color: "text-blue-600 bg-blue-50 border border-blue-200",
     },
     ...(user
       ? [
@@ -142,6 +143,7 @@ export default function Navbar() {
             href: "/dashboard",
             icon: Layers,
             isActive: pathname === "/dashboard",
+            color: "text-indigo-600 bg-indigo-50 border border-indigo-200",
           },
         ]
       : []),
@@ -150,12 +152,14 @@ export default function Navbar() {
       href: "/notes",
       icon: FileText,
       isActive: pathname.startsWith("/notes"),
+      color: "text-blue-600 bg-blue-50 border border-blue-200",
     },
     {
       label: "Videos",
       href: "/videos",
       icon: Video,
       isActive: pathname.startsWith("/videos"),
+      color: "text-purple-600 bg-purple-50 border border-purple-200",
     },
     {
       label: "MCQ",
@@ -164,12 +168,14 @@ export default function Navbar() {
       isActive:
         pathname.startsWith("/practice") ||
         pathname.startsWith("/textbook-practice"),
+      color: "text-emerald-600 bg-emerald-50 border border-emerald-200",
     },
     {
       label: "Textbooks",
       href: "/textbooks",
       icon: BookOpen,
       isActive: pathname.startsWith("/textbooks"),
+      color: "text-cyan-700 bg-cyan-50 border border-cyan-200",
     },
     {
       label: "AI Tutor",
@@ -178,6 +184,7 @@ export default function Navbar() {
       isActive:
         pathname.startsWith("/ai-helper") ||
         pathname.startsWith("/ai-study-tools"),
+      color: "text-violet-600 bg-violet-50 border border-violet-200",
     },
     {
       label: "3D Lab",
@@ -186,12 +193,14 @@ export default function Navbar() {
       isActive:
         pathname.startsWith("/models") ||
         pathname.startsWith("/interactive-3d"),
+      color: "text-rose-600 bg-rose-50 border border-rose-200",
     },
     {
       label: "Founder",
       href: "/founder",
       icon: GraduationCap,
       isActive: pathname.startsWith("/founder"),
+      color: "text-amber-700 bg-amber-50 border border-amber-200",
     },
     ...(user?.role === "admin"
       ? [
@@ -200,6 +209,7 @@ export default function Navbar() {
             href: "/admin",
             icon: ShieldCheck,
             isActive: pathname.startsWith("/admin"),
+            color: "text-blue-800 bg-blue-100 border border-blue-300",
           },
         ]
       : []),
@@ -497,17 +507,19 @@ export default function Navbar() {
                 key={`${item.label}:${item.href}`}
                 href={item.href}
                 data-active={item.isActive}
-                className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap inline-flex items-center gap-1.5 transition-all duration-150 shrink-0 select-none ${
+                className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap inline-flex items-center gap-1.5 transition-all duration-200 shrink-0 select-none ${
                   item.isActive
-                    ? "bg-[#142B63] text-white shadow-xs font-bold"
-                    : "bg-slate-100/90 text-slate-700 hover:bg-blue-50 hover:text-blue-700 active:scale-95"
+                    ? "bg-[#142B63] text-white shadow-sm font-bold ring-1 ring-blue-400/50"
+                    : "bg-white/95 border border-slate-200/90 text-slate-700 hover:bg-blue-50/80 hover:text-blue-700 hover:border-blue-300 active:scale-95 shadow-2xs"
                 }`}
               >
-                <Icon
-                  className={`w-3.5 h-3.5 shrink-0 ${
-                    item.isActive ? "text-cyan-300" : "text-slate-500"
+                <div
+                  className={`w-4 h-4 rounded-full flex items-center justify-center shrink-0 ${
+                    item.isActive ? "bg-white/20 text-cyan-300" : item.color
                   }`}
-                />
+                >
+                  <Icon className="w-2.5 h-2.5" />
+                </div>
                 <span>{item.label}</span>
               </Link>
             );

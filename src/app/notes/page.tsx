@@ -4,6 +4,7 @@ import Sidebar from "@/components/layout/Sidebar";
 import type { HandwrittenNote } from "@/types";
 import { ArrowUpRight, BookOpen, FileText, Search } from "lucide-react";
 import Link from "next/link";
+import SectionBadge from "@/components/ui/SectionBadge";
 import { useEffect, useMemo, useState } from "react";
 
 const getNoteColor = (title: string, topic: string = "") => {
@@ -128,18 +129,21 @@ export default function NotesPage() {
       <Sidebar />
       <main className="workspace min-w-0 flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-2 border border-blue-200 shadow-xs">
-              <FileText className="w-3.5 h-3.5" />
-              <span>FACULTY CURATED RESOURCES</span>
+          <div className="flex items-start sm:items-center gap-3.5">
+            <SectionBadge type="notes" size="lg" />
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-2 border border-blue-200 shadow-xs">
+                <FileText className="w-3.5 h-3.5" />
+                <span>FACULTY CURATED RESOURCES</span>
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-black text-[#142B63] font-heading tracking-tight">
+                Handwritten Notes & Formulas
+              </h1>
+              <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
+                Step-by-step derivations, neatly labeled diagrams, formula sheets,
+                and chapter resources supplied for your study.
+              </p>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-[#142B63] font-heading tracking-tight">
-              Handwritten Notes & Formulas
-            </h1>
-            <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-xl">
-              Step-by-step derivations, neatly labeled diagrams, formula sheets,
-              and chapter resources supplied for your study.
-            </p>
           </div>
           <span className="text-xs font-extrabold text-[#142B63] bg-blue-50 px-3.5 py-1.5 rounded-xl border border-blue-200 shadow-xs">
             {filtered.length} notes available

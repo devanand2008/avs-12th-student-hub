@@ -28,6 +28,7 @@ import { useEffect, useState } from "react";
 import InstallButton from "@/components/pwa/InstallButton";
 import StudentReadySummary from "@/components/practice/StudentReadySummary";
 import PointsCard from "@/components/learning/PointsCard";
+import SectionBadge, { SectionType } from "@/components/ui/SectionBadge";
 
 interface DashboardData {
   user: {
@@ -426,57 +427,51 @@ export default function DashboardPage() {
             {[
               {
                 label: "Handwritten Notes",
+                type: "notes" as SectionType,
                 text: "Read crisp, faculty-authored revision notes with formulas and derivations.",
-                icon: FileText,
                 href: "/notes",
                 badge: "Notes Reader",
-                color: "from-blue-600 to-cyan-600",
                 borderAccent: "hover:border-blue-400",
               },
               {
                 label: "Video Lessons & Audios",
+                type: "videos" as SectionType,
                 text: "Watch chapter video lectures and listen to NotebookLM audio summaries.",
-                icon: Video,
                 href: "/videos",
                 badge: "Media Studio",
-                color: "from-purple-600 to-pink-600",
                 borderAccent: "hover:border-purple-400",
               },
               {
                 label: "3D Interactive Lab",
+                type: "lab" as SectionType,
                 text: "Inspect interactive 3D structures, molecular models, and biological specimens.",
-                icon: Box,
                 href: "/models",
                 badge: "WebGL 3D",
-                color: "from-cyan-500 to-teal-600",
-                borderAccent: "hover:border-cyan-400",
+                borderAccent: "hover:border-rose-400",
               },
               {
                 label: "One-Mark Practice Hub",
+                type: "practice" as SectionType,
                 text: "Select a medium, subject, textbook and chapter to practise published questions.",
-                icon: Target,
                 href: "/textbook-practice",
                 badge: "Published questions",
-                color: "from-amber-500 to-orange-600",
-                borderAccent: "hover:border-amber-400",
+                borderAccent: "hover:border-emerald-400",
               },
               {
                 label: "AI Study Assistant",
+                type: "ai" as SectionType,
                 text: "Ask questions in English or Tamil with grounded syllabus citations.",
-                icon: Sparkles,
                 href: "/ai-helper",
                 badge: "Bilingual AI",
-                color: "from-fuchsia-600 to-purple-600",
-                borderAccent: "hover:border-fuchsia-400",
+                borderAccent: "hover:border-violet-400",
               },
               {
-                label: "Performance Analytics",
-                text: "Track your chapter accuracy, time speed, and board exam readiness score.",
-                icon: TrendingUp,
-                href: "/performance",
-                badge: "Detailed Metrics",
-                color: "from-emerald-600 to-teal-600",
-                borderAccent: "hover:border-emerald-400",
+                label: "Official Textbooks",
+                type: "textbooks" as SectionType,
+                text: "Browse and study from official Tamil Nadu State Board textbooks in Tamil & English.",
+                href: "/textbooks",
+                badge: "SCERT Digital",
+                borderAccent: "hover:border-cyan-400",
               },
             ].map((item) => (
               <Link
@@ -486,11 +481,7 @@ export default function DashboardPage() {
               >
                 <div>
                   <div className="flex items-center justify-between mb-3.5">
-                    <div
-                      className={`w-11 h-11 rounded-2xl bg-gradient-to-br ${item.color} text-white flex items-center justify-center shadow-md group-hover:scale-110 group-hover:rotate-3 transition-transform`}
-                    >
-                      <item.icon size={20} />
-                    </div>
+                    <SectionBadge type={item.type} size="md" />
                     <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">
                       {item.badge}
                     </span>

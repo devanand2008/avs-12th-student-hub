@@ -26,14 +26,26 @@ import Link from "@/components/layout/IntentLink";
 import BrandLogo from "@/components/layout/BrandLogo";
 import PromotionVideo from "@/components/PromotionVideo";
 import InstallButton from "@/components/pwa/InstallButton";
+import SectionBadge, { SectionType } from "@/components/ui/SectionBadge";
 import { pageMetadata, websiteStructuredData } from "@/lib/seo";
 
 export const metadata = pageMetadata("/");
 
 const FOUNDER_PORTFOLIO_URL = "https://dr-d-r-joshua-skillup.vercel.app/";
 
-const featureCards = [
+const featureCards: {
+  type: SectionType;
+  title: string;
+  tag: string;
+  icon: typeof FileText;
+  href: string;
+  action: string;
+  iconColor: string;
+  iconBg: string;
+  description: string;
+}[] = [
   {
+    type: "notes",
     title: "Handwritten Notes",
     tag: "A4 REVISION SHEETS",
     icon: FileText,
@@ -45,6 +57,7 @@ const featureCards = [
       "Handwritten derivations, formula summaries, diagrams, and problem steps in clean student-friendly format.",
   },
   {
+    type: "videos",
     title: "Video Lessons",
     tag: "260+ LESSON GUIDES",
     icon: Video,
@@ -56,6 +69,7 @@ const featureCards = [
       "Curated topic-by-topic video revisions breaking down core concepts for Physics, Chemistry, Biology and CS.",
   },
   {
+    type: "practice",
     title: "One-Mark MCQs",
     tag: "EXAM QUESTION BANK",
     icon: CheckSquare,
@@ -67,6 +81,7 @@ const featureCards = [
       "Official book-back one-mark tests with instant scoring, explanations, and repeated self-evaluation.",
   },
   {
+    type: "ai",
     title: "AI Study Tutor",
     tag: "24/7 BILINGUAL MENTOR",
     icon: Sparkles,
@@ -78,6 +93,7 @@ const featureCards = [
       "Ask study doubts anytime. Get step-by-step guidance in English, pure Tamil, or easy conversational Tanglish.",
   },
   {
+    type: "textbooks",
     title: "Tamil & English Textbooks",
     tag: "TN STATE BOARD",
     icon: BookOpen,
@@ -89,6 +105,7 @@ const featureCards = [
       "Complete Tamil Nadu State Board Class 12 textbooks with in-site responsive PDF viewer and zoom controls.",
   },
   {
+    type: "lab",
     title: "3D Learning Lab",
     tag: "INTERACTIVE VISUALS",
     icon: Box,
@@ -107,38 +124,53 @@ const studentJourneySteps = [
     title: "Choose Subject",
     desc: "Select from Physics, Chemistry, Biology, Math, Computer Science, and Arts.",
     icon: BookMarked,
+    badgeColor: "bg-blue-100 text-blue-700",
   },
   {
     step: "02",
     title: "Select Chapter",
     desc: "Browse state board unit-wise syllabus modules in Tamil or English medium.",
     icon: Layers,
+    badgeColor: "bg-indigo-100 text-indigo-700",
   },
   {
     step: "03",
     title: "Study Notes",
     desc: "Review concise handwritten notes, derivation steps, and key equations.",
     icon: FileText,
+    badgeColor: "bg-purple-100 text-purple-700",
   },
   {
     step: "04",
     title: "Watch Videos",
     desc: "Stream high-yield revision lessons with byte-range instant playback.",
     icon: Video,
+    badgeColor: "bg-pink-100 text-pink-700",
   },
   {
     step: "05",
     title: "Practice Questions",
     desc: "Solve book-back one-mark MCQs and measure your exam readiness.",
     icon: CheckSquare,
+    badgeColor: "bg-emerald-100 text-emerald-700",
   },
 ];
 
-const academicSubjects = [
+const academicSubjects: {
+  id: string;
+  name: string;
+  type: SectionType;
+  image: string;
+  tag: string;
+  color: string;
+  description: string;
+  href: string;
+}[] = [
   {
     id: "sub-physics",
     name: "Physics",
-    image: "physics",
+    type: "physics",
+    image: "/subject-images/physics.jpg",
     tag: "SCIENCE · CORE",
     color: "from-blue-600 to-cyan-500",
     description:
@@ -148,7 +180,8 @@ const academicSubjects = [
   {
     id: "sub-chemistry",
     name: "Chemistry",
-    image: "chemistry",
+    type: "chemistry",
+    image: "/subject-images/chemistry.jpg",
     tag: "SCIENCE · CORE",
     color: "from-emerald-500 to-teal-600",
     description:
@@ -158,7 +191,8 @@ const academicSubjects = [
   {
     id: "sub-biology",
     name: "Bio-Botany & Zoology",
-    image: "botany",
+    type: "biology",
+    image: "/subject-images/botany.jpg",
     tag: "BIO STREAM",
     color: "from-teal-500 to-emerald-600",
     description:
@@ -168,7 +202,8 @@ const academicSubjects = [
   {
     id: "sub-math",
     name: "Mathematics",
-    image: "maths",
+    type: "math",
+    image: "/subject-images/mathematics.jpg",
     tag: "SCIENCE · CORE",
     color: "from-amber-500 to-orange-600",
     description:
@@ -178,7 +213,8 @@ const academicSubjects = [
   {
     id: "sub-cs",
     name: "Computer Science",
-    image: "computer",
+    type: "computer",
+    image: "/subject-images/computer-science.jpg",
     tag: "TECH STREAM",
     color: "from-indigo-600 to-blue-600",
     description:
@@ -188,7 +224,8 @@ const academicSubjects = [
   {
     id: "sub-commerce",
     name: "Commerce & Accounts",
-    image: "english",
+    type: "commerce",
+    image: "/subject-images/english.jpg",
     tag: "COMMERCE STREAM",
     color: "from-cyan-600 to-blue-700",
     description:
@@ -324,46 +361,47 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featureCards.map((card) => {
-            const Icon = card.icon;
-            return (
-              <div
-                key={card.title}
-                className="group p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 hover:shadow-md transition-all flex flex-col justify-between"
-              >
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <div
-                      className={`w-11 h-11 rounded-xl flex items-center justify-center border ${card.iconBg} ${card.iconColor}`}
-                    >
-                      <Icon size={22} />
-                    </div>
-                    <span className="text-[10px] font-bold text-slate-500 tracking-wider">
-                      {card.tag}
-                    </span>
-                  </div>
+          {featureCards.map((card) => (
+            <div
+              key={card.title}
+              className="group relative p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden"
+            >
+              {/* Subtle top accent gradient */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 opacity-80" />
 
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <SectionBadge type={card.type} size="md" />
+                  <span className="text-[10px] font-black text-slate-500 bg-slate-100/80 px-2.5 py-1 rounded-full tracking-wider border border-slate-200/60 uppercase">
+                    {card.tag}
+                  </span>
+                </div>
+
+                <div>
+                  <h3 className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors">
                     {card.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-1.5">
                     {card.description}
                   </p>
                 </div>
-
-                <div className="pt-4 mt-4 border-t border-slate-100">
-                  <Link
-                    href={card.href}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 group-hover:text-blue-700 group-hover:translate-x-0.5 transition-transform"
-                  >
-                    <span>{card.action}</span>
-                    <ArrowRight size={13} />
-                  </Link>
-                </div>
               </div>
-            );
-          })}
+
+              <div className="pt-4 mt-5 border-t border-slate-100 flex items-center justify-between">
+                <Link
+                  href={card.href}
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 group-hover:text-blue-700 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>{card.action}</span>
+                  <ArrowRight size={14} />
+                </Link>
+                <span className="text-[10px] font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">
+                  Free Access
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -437,28 +475,50 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {academicSubjects.map((sub) => (
             <Link
               key={sub.id}
               href={sub.href}
-              className="p-4 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 hover:shadow-xs transition-all flex items-center justify-between group"
+              className="group overflow-hidden rounded-3xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
             >
-              <div>
-                <span className="text-[9px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-full uppercase">
-                  {sub.tag}
-                </span>
-                <h3 className="font-bold text-slate-900 text-base mt-1.5 group-hover:text-blue-600 transition-colors">
-                  {sub.name}
-                </h3>
-                <p className="text-xs text-slate-500 mt-1 line-clamp-1">
+              <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-900">
+                <Image
+                  src={sub.image}
+                  alt={sub.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
+                <div className="absolute top-3 left-3">
+                  <span className="text-[10px] font-black tracking-wider uppercase px-2.5 py-1 rounded-full bg-white/95 text-slate-900 shadow-xs backdrop-blur-xs">
+                    {sub.tag}
+                  </span>
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
+                  <div className="flex items-center gap-2">
+                    <SectionBadge type={sub.type} size="sm" />
+                    <h3 className="font-black text-lg text-white drop-shadow-xs">
+                      {sub.name}
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+                <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
                   {sub.description}
                 </p>
+
+                <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-600 group-hover:text-blue-700">
+                  <span>Explore Chapters & Notes</span>
+                  <ChevronRight
+                    size={16}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </div>
               </div>
-              <ChevronRight
-                size={18}
-                className="text-slate-400 group-hover:translate-x-1 group-hover:text-blue-600 transition-all shrink-0"
-              />
             </Link>
           ))}
         </div>

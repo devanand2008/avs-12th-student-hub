@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import SectionBadge from "@/components/ui/SectionBadge";
 import { useEffect, useState } from "react";
 import {
   getPracticeHistory,
@@ -136,19 +137,22 @@ export default function PracticeHubPage() {
           </p>
         )}
         {/* Header */}
-        <div>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-2 border border-blue-200 shadow-xs">
-            <CheckSquare className="w-3.5 h-3.5 text-blue-600" />
-            <span>TN CLASS 12 · ONE-MARK MCQ ENGINE</span>
+        <div className="flex items-start sm:items-center gap-3.5">
+          <SectionBadge type="practice" size="lg" />
+          <div>
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-xs font-bold text-blue-700 mb-2 border border-blue-200 shadow-xs">
+              <CheckSquare className="w-3.5 h-3.5 text-blue-600" />
+              <span>TN CLASS 12 · ONE-MARK MCQ ENGINE</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
+              Real-Time Practice & Timed Exams
+            </h1>
+            <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
+              Answer one text question at a time with separate A, B, C and D
+              choices. Practise with instant explanations or test yourself under
+              exam conditions using Book-In or Book-Out questions.
+            </p>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 font-heading tracking-tight">
-            Real-Time Practice & Timed Exams
-          </h1>
-          <p className="text-xs sm:text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
-            Answer one text question at a time with separate A, B, C and D
-            choices. Practise with instant explanations or test yourself under
-            exam conditions using Book-In or Book-Out questions.
-          </p>
         </div>
 
         {/* 1. SEPARATED BOOK-IN vs BOOK-OUT CATEGORY SELECTOR */}
