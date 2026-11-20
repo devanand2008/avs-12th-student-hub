@@ -62,6 +62,31 @@ export function scienceGeometry(
     );
     head.quaternion.setFromUnitVectors(v(0, 1, 0), direction);
   };
+  if (model === "serial-parallel") {
+    const lane = (y: number, z: number, color: number, part: string) => {
+      link(v(-2, y, z), v(2, y, z), color, part, 0.045);
+      ball(v(0.5, y, z), 0.13, 0xfbbf24, "bits");
+    };
+    lane(1.45, 0, 0x38bdf8, "serial");
+    for (let index = 0; index < 8; index++) {
+      lane(0.75 - index * 0.29, index * 0.13, 0xa78bfa, "parallel");
+    }
+    return;
+  }
+  if (model === "anther-section") {
+    sphere(v(), v(0.68, 0.65, 0.25), 0x34d399, "connective");
+    for (const side of [-1, 1]) {
+      for (const end of [-1, 1]) {
+        const x = side * 0.98, y = end * 0.78;
+        const wall = add(new THREE.TorusGeometry(0.64, 0.18, 14, 48), 0xfb7185, "wall", v(x, y, 0));
+        wall.scale.set(1.1, 1, 1.7);
+        for (const [dx, dy, dz] of [[-0.18, 0.12, 0.04], [0.17, 0.08, -0.06], [0, -0.18, 0.03]]) {
+          ball(v(x + dx, y + dy, dz), 0.12, 0xfbbf24, "pollen");
+        }
+      }
+    }
+    return;
+  }
   if (model === "sc-neighbours") {
     ball(v(), 0.35, 0xfb7185, "centre");
     for (const point of [

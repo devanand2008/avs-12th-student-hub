@@ -1,8 +1,8 @@
 {
-  "auditedAt": "2026-11-16T03:21:41.292Z",
-  "implemented": 45,
-  "threeDimensional": 33,
-  "newLessons": 30,
+  "auditedAt": "2026-11-20T08:37:31.341Z",
+  "implemented": 47,
+  "threeDimensional": 35,
+  "newLessons": 32,
   "animatedNewConcepts": 8,
   "books": 82,
   "subjects": 40,
@@ -22,6 +22,68 @@
     "nextBatch"
   ],
   "models": [
+    {
+      "id": "serial-parallel",
+      "title": "Serial and parallel data paths",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Count how many bit positions each interface can carry in the illustrated interval.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "This static snapshot counts data lanes only. Markers stand for bit positions, irrespective of their values. Clock, ground and control lines are omitted. Real transfer speeds depend on signalling rates.",
+      "pdfPage": 185,
+      "printedPage": 179,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "4eb8ca328cfde466e1ca1ef5e5dbc50bf25146400678cc4dd373e666f5074890",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "anther-section",
+      "title": "Anther cross-section and pollen sacs",
+      "subjectId": "tb-12-bio-botany-english-f15d4524",
+      "subject": "Bio-Botany",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapter": 1,
+      "chapterTitle": "Asexual and Sexual Reproduction in Plants",
+      "concept": "Locate four pollen sacs around the central connective and distinguish the pollen from the surrounding tissue.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "A thickened schematic section shows the four-sac arrangement before opening. Wall layers, vascular detail and individual pollen surface features are omitted. Colours and sizes are illustrative.",
+      "pdfPage": 13,
+      "printedPage": 7,
+      "sourceFile": "12th_Std_Biology_Botany_EM_Optimised.pdf",
+      "sourceSha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+      "pageTextSha256": "f434c9861eb127b1f31d331a13f2b11f55e60931c894f3c6a8dc0e9f8ade83ab",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
     {
       "id": "simple-cubic",
       "title": "Simple cubic unit cell",
@@ -2372,6 +2434,7 @@
           "inventoryTitle": "Asexual and Sexual Reproduction in Plants",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
+            "anther-section",
             "pollination",
             "embryo-sac"
           ],
@@ -2446,6 +2509,7 @@
         }
       ],
       "mappedModels": [
+        "anther-section",
         "mendel",
         "pollination",
         "ecosystem",
@@ -4034,6 +4098,7 @@
           "inventoryTitle": "XII CompApp English version CHAPTER 13",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
+            "serial-parallel",
             "coaxial-cable",
             "optical-fibre",
             "ethernet-plug",
@@ -4079,6 +4144,7 @@
         }
       ],
       "mappedModels": [
+        "serial-parallel",
         "coaxial-cable",
         "optical-fibre",
         "ethernet-plug",

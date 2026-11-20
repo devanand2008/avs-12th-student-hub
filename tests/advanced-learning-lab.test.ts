@@ -25,8 +25,8 @@ import resourceRows from "../src/lib/additional-materials-resources.json";
 import { materialId } from "../scripts/lib/material-inspection";
 
 test("every new lesson has a real book, checked source page, local concept check and honest limits", () => {
-  assert.equal(learningModels.length, 45);
-  assert.equal(advancedModels.length, 30);
+  assert.equal(learningModels.length, 47);
+  assert.equal(advancedModels.length, 32);
   assert.equal(
     new Set(learningModels.map((m) => m.id)).size,
     learningModels.length,
@@ -175,6 +175,16 @@ test("all new procedural structures generate meshes with matching selectable par
       );
     assert.ok(meshes.length < 150);
     const parts = (id: string) => meshes.filter((m) => m.userData.part === id);
+    if (lesson.id === "anther-section") {
+      assert.equal(parts("wall").length, 4);
+      for (const wall of parts("wall"))
+        assert.equal(parts("pollen").filter(grain => grain.position.distanceTo(wall.position) < 0.45).length, 3);
+    }
+    if (lesson.id === "serial-parallel") {
+      assert.equal(parts("serial").length, 1);
+      assert.equal(parts("parallel").length, 8);
+      assert.equal(parts("bits").length, 9);
+    }
     if (lesson.id === "simple-cubic") {
       assert.equal(parts("corners").length, 8);
       assert.equal(parts("edges").length, 12);
