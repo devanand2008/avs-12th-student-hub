@@ -3,12 +3,7 @@
 import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import Sidebar from "@/components/layout/Sidebar";
 import type { HandwrittenNote } from "@/types";
-import {
-  ArrowUpRight,
-  BookOpen,
-  FileText,
-  Search,
-} from "lucide-react";
+import { ArrowUpRight, BookOpen, FileText, Search } from "lucide-react";
 import Link from "next/link";
 import SectionBadge from "@/components/ui/SectionBadge";
 import { useEffect, useMemo, useState } from "react";
@@ -166,10 +161,7 @@ export default function NotesPage() {
               id: note.id,
               subject: note.subjectName || note.title,
               pages: note.pageCount,
-              href:
-                note.subjectName === "Mathematics"
-                  ? "/api/pdf/golden-formula-sheet"
-                  : `/api/notes/${encodeURIComponent(note.id)}/pdf`,
+              href: `/golden-materials/${encodeURIComponent(note.id)}`,
             }))}
         />
 
@@ -264,7 +256,11 @@ export default function NotesPage() {
               return (
                 <Link
                   key={note.id}
-                  href={"/notes/" + note.id}
+                  href={
+                    (note.sourceFile?.split("/").includes("main formul sheet")
+                      ? "/golden-materials/"
+                      : "/notes/") + note.id
+                  }
                   className={`info-card-capsule group relative flex flex-col justify-between rounded-3xl bg-white/95 border border-blue-100/90 p-5 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden ${theme.hoverBorder}`}
                 >
                   {/* Top gradient accent line */}

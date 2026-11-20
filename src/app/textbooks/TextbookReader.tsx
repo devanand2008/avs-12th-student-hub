@@ -33,10 +33,12 @@ export function PdfPages({
   url,
   title,
   initialPage = 1,
+  readerLabel = "Full textbook reader",
 }: {
   url: string;
   title: string;
   initialPage?: number;
+  readerLabel?: string;
 }) {
   const [pdf, setPdf] = useState<PDFDocumentProxy | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -191,7 +193,7 @@ export function PdfPages({
 
   return (
     <section
-      aria-label="Full textbook reader"
+      aria-label={readerLabel}
       className="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm"
     >
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 p-3 sm:p-4">
@@ -286,11 +288,10 @@ export function PdfPages({
         className="flex min-h-9 items-center gap-2 bg-blue-50/50 px-4 py-2 text-xs text-slate-600"
       >
         {loadError ? (
-          "Book loading failed"
+          "PDF loading failed"
         ) : !pdf ? (
           <>
-            <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> Loading your
-            textbook{progress ? ` (${progress}%)` : "…"}
+            <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> Loading PDF{progress ? ` (${progress}%)` : "…"}
           </>
         ) : pageError ? (
           "Page display failed"
@@ -300,7 +301,7 @@ export function PdfPages({
             {pageNumber}…
           </>
         ) : (
-          `Page ${pageNumber} of ${totalPages} · Full textbook`
+          `Page ${pageNumber} of ${totalPages} · ${readerLabel}`
         )}
       </div>
       <div

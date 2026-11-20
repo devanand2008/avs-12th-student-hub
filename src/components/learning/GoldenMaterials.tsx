@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BookOpen, FileText, Sparkles } from "lucide-react";
 import {
   mathsGoldenMaterial,
@@ -32,8 +33,8 @@ export default function GoldenMaterials({
               Golden Formula Sheets
             </h2>
             <p className="mt-2 text-sm leading-6 text-amber-50">
-              Keep key formulas close while you study. Open the original
-              revision PDF.
+              Keep key formulas close while you study. Read the revision PDF
+              inside Skill Up.
             </p>
           </div>
         </div>
@@ -46,12 +47,11 @@ export default function GoldenMaterials({
         }
       >
         {materials.map((material) => (
-          <a
+          <Link
             key={material.id}
             href={material.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Open ${material.subject} Golden Formula Sheet PDF (${material.pages} pages, new tab)`}
+            prefetch={false}
+            aria-label={`Open ${material.subject} Golden Formula Sheet PDF (${material.pages} pages)`}
             className="group relative flex min-w-0 flex-col overflow-hidden rounded-2xl border border-amber-200 bg-white p-5 text-slate-900 shadow-sm transition-shadow hover:shadow-lg hover:shadow-amber-900/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-700"
           >
             <div className="flex items-center justify-between gap-3">
@@ -72,7 +72,7 @@ export default function GoldenMaterials({
             <span className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-300 to-yellow-400 px-4 py-3 font-bold text-amber-950 group-hover:from-amber-400 group-hover:to-yellow-300">
               <BookOpen size={18} aria-hidden="true" /> Open PDF
             </span>
-          </a>
+          </Link>
         ))}
       </div>
     </section>
