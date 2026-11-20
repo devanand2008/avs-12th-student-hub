@@ -1,13 +1,9 @@
-import type { Metadata } from "next";
 import Link from "@/components/layout/IntentLink";
 import { ArrowLeft, BookOpen, CheckSquare, Sparkles, FileText, ArrowUpRight } from "lucide-react";
 import MathFormulaGame from "@/components/games/MathFormulaGame";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Class 12 Science & Maths Formula Arcade | SkillUp",
-  description:
-    "Play interactive formula games for Tamil Nadu Class 12: Mathematics, Physics, Chemistry, and Biology. Master laws, reactions, ratios, and formulas easily with speed recall, memory flip, and puzzles.",
-};
+export const metadata = pageMetadata("/math-game");
 
 export default function MathGamePage() {
   return (

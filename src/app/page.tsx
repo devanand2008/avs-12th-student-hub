@@ -74,8 +74,8 @@ const featureCards: {
     title: "One-Mark MCQs",
     tag: "EXAM QUESTION BANK",
     icon: CheckSquare,
-    href: "/practice",
-    action: "Start Practice",
+    href: "/class-12-one-mark-practice",
+    action: "Explore One-Mark Practice",
     iconColor: "text-emerald-600",
     iconBg: "bg-emerald-50 border-emerald-100",
     description:
@@ -269,17 +269,20 @@ export default function HomePage() {
 
           {/* Requested Headline */}
           <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#142B63] leading-[1.12]">
-            Learn Smarter. Score Higher.
+            Tamil Nadu Class 12 Study Hub
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2563EB] to-[#0EA5E9]">
-              Grow with SkillUp.
+              joshuaskillup
             </span>
           </h1>
 
           {/* Requested Subtitle */}
           <p className="mx-auto max-w-2xl text-sm sm:text-lg text-slate-600 leading-relaxed">
-            Your complete Class 12 learning companion for handwritten notes,
-            video lessons, textbooks, one-mark practice and AI-powered learning.
+            Revise with Samacheer Kalvi textbooks, handwritten notes, video
+            lessons and chapter-wise one-mark practice on Skill Up.
+          </p>
+          <p lang="ta" className="mx-auto max-w-2xl text-sm text-slate-600">
+            தமிழ்நாடு 12ஆம் வகுப்பு பாடநூல்கள், பாடக்குறிப்புகள் மற்றும் ஒரு மதிப்பெண் வினாப் பயிற்சி.
           </p>
 
           {/* Requested Actions: Start Learning & Explore Study Materials */}
@@ -318,7 +321,7 @@ export default function HomePage() {
             </div>
             <div className="p-3 rounded-2xl bg-white/80 border border-slate-200/80 shadow-2xs">
               <p className="text-lg sm:text-xl font-extrabold text-[#142B63]">
-                3,000+
+                Chapter-wise
               </p>
               <p className="text-[11px] text-slate-500 font-medium">
                 Book-Back MCQs

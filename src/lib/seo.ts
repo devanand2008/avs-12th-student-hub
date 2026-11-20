@@ -52,20 +52,26 @@ export const seoPages = {
     description:
       "Browse available Samacheer Kalvi Class 12 textbooks by subject, volume and medium on joshuaskillup. Find Tamil and English editions with an in-site reader.",
   },
+  "/class-12-one-mark-practice": {
+    title: "Tamil Nadu Class 12 Book-Back One-Mark Practice",
+    description:
+      "Prepare for Tamil Nadu Class 12 one-mark questions with chapter-wise book-back MCQ practice, Tamil and English textbooks, and previous-year question papers.",
+  },
   "/resources/guides": {
     title: "Open PDF References for Class 12",
     description:
       "Read authorised open educational PDF references for Mathematics, Statistics and Biology on joshuaskillup. See original sources, licences and subject availability.",
   },
   "/founder": {
-    title: "Dr. D. R. Joshua – Founder, SkillUp | Vice Principal, AVS Engineering College",
+    title:
+      "Dr. D. R. Joshua – Founder, SkillUp | Vice Principal, AVS Engineering College",
     description:
       "Learn about Dr. D. R. Joshua, Founder of SkillUp and Vice Principal of AVS Engineering College, Salem. Discover the vision behind Tamil Nadu Class 12's digital learning hub.",
   },
   "/math-game": {
-    title: "Class 12 Maths Formula Game & Practice Arcade",
+    title: "Class 12 Maths & Science Revision Games",
     description:
-      "Play interactive math formula games for Tamil Nadu Class 12 on joshuaskillup. Master Matrices, Calculus, Vectors, and Complex Numbers with Blitz and Memory Flip.",
+      "Revise Tamil Nadu Class 12 Maths, Physics, Chemistry and Biology with interactive formula recall, memory games and practice puzzles.",
   },
 } as const;
 

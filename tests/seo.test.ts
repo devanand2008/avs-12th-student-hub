@@ -44,6 +44,8 @@ test("public metadata opts into indexing and uses the production canonical and s
     "/ai-study-tools",
     "/textbooks",
     "/resources/guides",
+    "/class-12-one-mark-practice",
+    "/math-game",
   ] as const) {
     const metadata = pageMetadata(path);
     assert.deepEqual(metadata.robots, { index: true, follow: true });

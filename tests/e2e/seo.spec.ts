@@ -18,6 +18,8 @@ test("public pages expose accurate canonical metadata and private pages remain n
     "/ai-study-tools",
     "/textbooks",
     "/resources/guides",
+    "/class-12-one-mark-practice",
+    "/math-game",
   ] as const) {
     const response = await page.goto(path);
     expect(response?.status()).toBe(200);
@@ -110,11 +112,19 @@ test("Google discovery files and visible homepage work without invented dates or
   );
   await expect(page.locator('p[lang="ta"]')).toContainText("12ஆம் வகுப்பு");
   expect(structured.alternateName).toContain("Skill Up");
-  await expect(
-    page.getByText("joshuaskillup · Skill Up Class 12 Learning Portal", {
-      exact: true,
-    }),
-  ).toBeVisible();
+  const guide = page.getByRole("link", {
+    name: "Explore One-Mark Practice",
+    exact: true,
+  });
+  await expect(guide).toHaveAttribute("href", "/class-12-one-mark-practice");
+  await guide.click();
+  await expect(page.getByRole("heading", { level: 1 })).toContainText(
+    "Book-Back One-Mark Practice",
+  );
+  await page
+    .getByRole("link", { name: "Sign in to start book-back practice" })
+    .click();
+  await expect(page).toHaveURL(/\/login\?redirect=%2Ftextbook-practice/);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth > innerWidth,
