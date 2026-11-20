@@ -6,7 +6,10 @@ for (const [title, label, part] of [
 ]) {
   test(title + " renders and isolates a textbook component", async ({ page }) => {
     await page.goto("/models");
-    await page.getByLabel("Search models", { exact: true }).fill(title);
+    await expect(async () => {
+      await page.getByLabel("Search models", { exact: true }).fill(title);
+      await expect(page.locator(".model-option")).toHaveCount(1, { timeout: 1500 });
+    }).toPass({ timeout: 15000 });
     await page.locator(".model-option").click();
     await page.getByRole("button", { name: "Explore in 3D" }).click();
     const canvas = page.locator("canvas");
