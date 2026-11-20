@@ -62,6 +62,56 @@ export function scienceGeometry(
     );
     head.quaternion.setFromUnitVectors(v(0, 1, 0), direction);
   };
+  if (model === "pollen-wall") {
+    add(
+      new THREE.SphereGeometry(1.65, 48, 32, 0, Math.PI * 1.45),
+      0xf59e0b,
+      "exine",
+      v(),
+    );
+    add(
+      new THREE.SphereGeometry(1.45, 48, 32, 0, Math.PI * 1.65),
+      0x34d399,
+      "intine",
+      v(),
+    );
+    ball(v(), 1.24, 0xa78bfa, "cytoplasm");
+    group.rotation.y = Math.PI;
+    return;
+  }
+  if (model === "ethernet-pinouts") {
+    const green = 0x16a34a,
+      orange = 0xfb923c,
+      blue = 0x2563eb,
+      brown = 0x854d0e;
+    for (const [row, pair] of [
+      [green, orange],
+      [orange, green],
+    ].entries()) {
+      const [first, second] = pair;
+      const part = row === 0 ? "scheme-a" : "scheme-b";
+      [first, first, second, blue, blue, second, brown, brown].forEach(
+        (color, pin) => {
+          const x = (pin - 3.5) * 0.48,
+            y = row === 0 ? 1 : -1;
+          add(
+            new THREE.CylinderGeometry(0.16, 0.16, 1.5, 16),
+            color,
+            part,
+            v(x, y, 0),
+          );
+          if (pin % 2 === 0)
+            add(
+              new THREE.CylinderGeometry(0.165, 0.165, 0.42, 16),
+              0xffffff,
+              part,
+              v(x, y, 0),
+            );
+        },
+      );
+    }
+    return;
+  }
   if (model === "serial-parallel") {
     const lane = (y: number, z: number, color: number, part: string) => {
       link(v(-2, y, z), v(2, y, z), color, part, 0.045);
@@ -77,10 +127,20 @@ export function scienceGeometry(
     sphere(v(), v(0.68, 0.65, 0.25), 0x34d399, "connective");
     for (const side of [-1, 1]) {
       for (const end of [-1, 1]) {
-        const x = side * 0.98, y = end * 0.78;
-        const wall = add(new THREE.TorusGeometry(0.64, 0.18, 14, 48), 0xfb7185, "wall", v(x, y, 0));
+        const x = side * 0.98,
+          y = end * 0.78;
+        const wall = add(
+          new THREE.TorusGeometry(0.64, 0.18, 14, 48),
+          0xfb7185,
+          "wall",
+          v(x, y, 0),
+        );
         wall.scale.set(1.1, 1, 1.7);
-        for (const [dx, dy, dz] of [[-0.18, 0.12, 0.04], [0.17, 0.08, -0.06], [0, -0.18, 0.03]]) {
+        for (const [dx, dy, dz] of [
+          [-0.18, 0.12, 0.04],
+          [0.17, 0.08, -0.06],
+          [0, -0.18, 0.03],
+        ]) {
           ball(v(x + dx, y + dy, dz), 0.12, 0xfbbf24, "pollen");
         }
       }

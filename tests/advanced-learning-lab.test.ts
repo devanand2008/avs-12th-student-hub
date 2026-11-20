@@ -25,8 +25,8 @@ import resourceRows from "../src/lib/additional-materials-resources.json";
 import { materialId } from "../scripts/lib/material-inspection";
 
 test("every new lesson has a real book, checked source page, local concept check and honest limits", () => {
-  assert.equal(learningModels.length, 47);
-  assert.equal(advancedModels.length, 32);
+  assert.equal(learningModels.length, 49);
+  assert.equal(advancedModels.length, 34);
   assert.equal(
     new Set(learningModels.map((m) => m.id)).size,
     learningModels.length,

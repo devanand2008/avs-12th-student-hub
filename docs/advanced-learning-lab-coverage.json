@@ -1,8 +1,8 @@
 {
-  "auditedAt": "2026-11-20T08:37:31.341Z",
-  "implemented": 47,
-  "threeDimensional": 35,
-  "newLessons": 32,
+  "auditedAt": "2026-11-20T13:15:23.622Z",
+  "implemented": 49,
+  "threeDimensional": 37,
+  "newLessons": 34,
   "animatedNewConcepts": 8,
   "books": 82,
   "subjects": 40,
@@ -22,6 +22,68 @@
     "nextBatch"
   ],
   "models": [
+    {
+      "id": "pollen-wall",
+      "title": "Pollen grain wall cutaway",
+      "subjectId": "tb-12-bio-botany-english-f15d4524",
+      "subject": "Bio-Botany",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-bio-botany-english-f15d4524",
+      "chapter": 1,
+      "chapterTitle": "Asexual and Sexual Reproduction in Plants",
+      "concept": "Rotate the cutaway to locate the outer exine, inner intine and enclosed cytoplasm.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "The openings are viewing cuts. Surface sculpture, germ pores and cellular contents are omitted. Layer thicknesses are exaggerated.",
+      "pdfPage": 14,
+      "printedPage": 8,
+      "sourceFile": "12th_Std_Biology_Botany_EM_Optimised.pdf",
+      "sourceSha256": "8277d110e304aeee99a52bd1fe0afe15516c5f96c812b3bc142e4cc829aa1dc9",
+      "pageTextSha256": "36247d394d63ecc3198e75554d72961de2eb7e600e04c0633ea4a23899c5c857",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
+    {
+      "id": "ethernet-pinouts",
+      "title": "Ethernet wiring schemes A and B",
+      "subjectId": "tb-12-computer-applications-english-627c1490",
+      "subject": "Computer Applications",
+      "medium": "English",
+      "volume": null,
+      "bookId": "12-computer-applications-english-627c1490",
+      "chapter": 13,
+      "chapterTitle": "Network Cabling",
+      "concept": "Compare the eight conductor positions in T568A (upper row) and T568B (lower row). Count pins left to right in the front view.",
+      "type": "3d",
+      "status": "implemented",
+      "interactions": [
+        "rotate",
+        "zoom",
+        "select",
+        "hide selected",
+        "reset"
+      ],
+      "validation": "Source-checked simplified illustration",
+      "limitations": "This is a colour-order diagram. White bands represent striped conductors. Connector housings, twists and electrical signals are omitted.",
+      "pdfPage": 188,
+      "printedPage": 182,
+      "sourceFile": "12th Std Computer Applications English Medium.pdf",
+      "sourceSha256": "627617867418944b9dd30e953e03f8d53126931af93164629ffef62f5df6c8d6",
+      "pageTextSha256": "c2dfaabfb21aa96292058a9e32263fabf13a77e21b7db685e981a725e8933e78",
+      "scienceReference": "Local textbook source page",
+      "externalAssets": [],
+      "testStatus": "See execution receipts in report; registry audit is not a browser test"
+    },
     {
       "id": "serial-parallel",
       "title": "Serial and parallel data paths",
@@ -2434,6 +2496,7 @@
           "inventoryTitle": "Asexual and Sexual Reproduction in Plants",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
+            "pollen-wall",
             "anther-section",
             "pollination",
             "embryo-sac"
@@ -2509,6 +2572,7 @@
         }
       ],
       "mappedModels": [
+        "pollen-wall",
         "anther-section",
         "mendel",
         "pollination",
@@ -4098,6 +4162,7 @@
           "inventoryTitle": "XII CompApp English version CHAPTER 13",
           "titleStatus": "Provisional registry title; not source-certified by this model audit",
           "modelIds": [
+            "ethernet-pinouts",
             "serial-parallel",
             "coaxial-cable",
             "optical-fibre",
@@ -4144,6 +4209,7 @@
         }
       ],
       "mappedModels": [
+        "ethernet-pinouts",
         "serial-parallel",
         "coaxial-cable",
         "optical-fibre",

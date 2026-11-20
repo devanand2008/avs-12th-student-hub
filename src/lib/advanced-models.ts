@@ -60,6 +60,93 @@ const make = (
 });
 export const advancedModels: LabLesson[] = [
   make({
+    id: "pollen-wall",
+    title: "Pollen grain wall cutaway",
+    subject: "Bio-Botany",
+    bookId: "12-bio-botany-english-f15d4524",
+    chapter: "Asexual and Sexual Reproduction in Plants",
+    chapterNumber: 1,
+    pdfPage: 14,
+    printedPage: 8,
+    kind: "3d",
+    description:
+      "Rotate the cutaway to locate the outer exine, inner intine and enclosed cytoplasm.",
+    objective:
+      "Rotate the cutaway to locate the outer exine, inner intine and enclosed cytoplasm.",
+    limitations:
+      "The openings are viewing cuts. Surface sculpture, germ pores and cellular contents are omitted. Layer thicknesses are exaggerated.",
+    controls: ["rotate", "zoom", "select", "hide selected", "reset"],
+    stages: [],
+    parts: [
+      {
+        id: "exine",
+        name: "Exine",
+        color: "#f59e0b",
+        description: "Outer protective wall layer.",
+      },
+      {
+        id: "intine",
+        name: "Intine",
+        color: "#34d399",
+        description: "Thin inner wall beneath the exine.",
+      },
+      {
+        id: "cytoplasm",
+        name: "Cytoplasm",
+        color: "#a78bfa",
+        description: "Living contents enclosed by the pollen wall.",
+      },
+    ],
+    check: {
+      question: "Which wall layer lies immediately beneath the exine?",
+      options: ["Intine", "Cytoplasm", "Exine"],
+      answer: 0,
+      explanation: "Thin inner wall beneath the exine.",
+    },
+  }),
+  make({
+    id: "ethernet-pinouts",
+    title: "Ethernet wiring schemes A and B",
+    subject: "Computer Applications",
+    bookId: "12-computer-applications-english-627c1490",
+    chapter: "Network Cabling",
+    chapterNumber: 13,
+    pdfPage: 188,
+    printedPage: 182,
+    kind: "3d",
+    description:
+      "Compare the eight conductor positions in T568A (upper row) and T568B (lower row). Count pins left to right in the front view.",
+    objective:
+      "Compare the eight conductor positions in T568A (upper row) and T568B (lower row). Count pins left to right in the front view.",
+    limitations:
+      "This is a colour-order diagram. White bands represent striped conductors. Connector housings, twists and electrical signals are omitted.",
+    controls: ["rotate", "zoom", "select", "hide selected", "reset"],
+    stages: [],
+    parts: [
+      {
+        id: "scheme-a",
+        name: "T568A row",
+        color: "#34d399",
+        description:
+          "Left to right: white/green, green, white/orange, blue, white/blue, orange, white/brown, brown.",
+      },
+      {
+        id: "scheme-b",
+        name: "T568B row",
+        color: "#fb923c",
+        description:
+          "Left to right: white/orange, orange, white/green, blue, white/blue, green, white/brown, brown.",
+      },
+    ],
+    check: {
+      question: "Which pairs exchange positions between these two schemes?",
+      options: ["Green and orange", "Blue and brown", "Blue and green"],
+      answer: 0,
+      explanation:
+        "The green and orange pairs exchange positions. Blue and brown stay in place.",
+    },
+  }),
+  make({
     id: "serial-parallel",
     title: "Serial and parallel data paths",
     subject: "Computer Applications",
@@ -69,17 +156,45 @@ export const advancedModels: LabLesson[] = [
     pdfPage: 185,
     printedPage: 179,
     kind: "3d",
-    description: "Compare a single serial lane with eight parallel lanes during one transfer interval.",
-    objective: "Count how many bit positions each interface can carry in the illustrated interval.",
-    limitations: "This static snapshot counts data lanes only. Markers stand for bit positions, irrespective of their values. Clock, ground and control lines are omitted. Real transfer speeds depend on signalling rates.",
+    description:
+      "Compare a single serial lane with eight parallel lanes during one transfer interval.",
+    objective:
+      "Count how many bit positions each interface can carry in the illustrated interval.",
+    limitations:
+      "This static snapshot counts data lanes only. Markers stand for bit positions, irrespective of their values. Clock, ground and control lines are omitted. Real transfer speeds depend on signalling rates.",
     controls: ["rotate", "zoom", "select", "hide selected", "reset"],
     stages: [],
     parts: [
-      { id: "serial", name: "Serial data lane", color: "#38bdf8", description: "The upper path carries successive bits of the byte in sequence." },
-      { id: "parallel", name: "Eight parallel data lanes", color: "#a78bfa", description: "Each lower path carries a different bit of the same byte in this interval." },
-      { id: "bits", name: "Bits in one interval", color: "#fbbf24", description: "One gold marker sits on the serial lane. Eight markers line up across the parallel lanes at the same instant." },
+      {
+        id: "serial",
+        name: "Serial data lane",
+        color: "#38bdf8",
+        description:
+          "The upper path carries successive bits of the byte in sequence.",
+      },
+      {
+        id: "parallel",
+        name: "Eight parallel data lanes",
+        color: "#a78bfa",
+        description:
+          "Each lower path carries a different bit of the same byte in this interval.",
+      },
+      {
+        id: "bits",
+        name: "Bits in one interval",
+        color: "#fbbf24",
+        description:
+          "One gold marker sits on the serial lane. Eight markers line up across the parallel lanes at the same instant.",
+      },
     ],
-    check: { question: "At one bit per lane per interval, how many intervals carry one byte on the serial path?", options: ["One", "Eight", "Sixteen"], answer: 1, explanation: "A byte has eight bits. The single lane carries them one after another." },
+    check: {
+      question:
+        "At one bit per lane per interval, how many intervals carry one byte on the serial path?",
+      options: ["One", "Eight", "Sixteen"],
+      answer: 1,
+      explanation:
+        "A byte has eight bits. The single lane carries them one after another.",
+    },
   }),
   make({
     id: "anther-section",
@@ -91,17 +206,43 @@ export const advancedModels: LabLesson[] = [
     pdfPage: 13,
     printedPage: 7,
     kind: "3d",
-    description: "Look into a cut section of a typical anther and find the two pollen sacs in each lobe.",
-    objective: "Locate four pollen sacs around the central connective and distinguish the pollen from the surrounding tissue.",
-    limitations: "A thickened schematic section shows the four-sac arrangement before opening. Wall layers, vascular detail and individual pollen surface features are omitted. Colours and sizes are illustrative.",
+    description:
+      "Look into a cut section of a typical anther and find the two pollen sacs in each lobe.",
+    objective:
+      "Locate four pollen sacs around the central connective and distinguish the pollen from the surrounding tissue.",
+    limitations:
+      "A thickened schematic section shows the four-sac arrangement before opening. Wall layers, vascular detail and individual pollen surface features are omitted. Colours and sizes are illustrative.",
     controls: ["rotate", "zoom", "select", "hide selected", "reset"],
     stages: [],
     parts: [
-      { id: "wall", name: "Pollen sac walls", color: "#fb7185", description: "Each opening is a section through one pollen sac. Count two on each side of the connective." },
-      { id: "connective", name: "Connective tissue", color: "#34d399", description: "This central tissue joins the two lobes of the anther." },
-      { id: "pollen", name: "Pollen grains", color: "#fbbf24", description: "The gold grains occupy the cavities of the pollen sacs. Hide the grains to inspect the cavities." },
+      {
+        id: "wall",
+        name: "Pollen sac walls",
+        color: "#fb7185",
+        description:
+          "Each opening is a section through one pollen sac. Count two on each side of the connective.",
+      },
+      {
+        id: "connective",
+        name: "Connective tissue",
+        color: "#34d399",
+        description: "This central tissue joins the two lobes of the anther.",
+      },
+      {
+        id: "pollen",
+        name: "Pollen grains",
+        color: "#fbbf24",
+        description:
+          "The gold grains occupy the cavities of the pollen sacs. Hide the grains to inspect the cavities.",
+      },
     ],
-    check: { question: "How many pollen sacs does this typical four-sporangiate anther have in each lobe?", options: ["One", "Two", "Four"], answer: 1, explanation: "The four sacs form two pairs, one pair in each lobe." },
+    check: {
+      question:
+        "How many pollen sacs does this typical four-sporangiate anther have in each lobe?",
+      options: ["One", "Two", "Four"],
+      answer: 1,
+      explanation: "The four sacs form two pairs, one pair in each lobe.",
+    },
   }),
   make({
     id: "simple-cubic",

@@ -1,6 +1,8 @@
 import { test, expect } from "@playwright/test";
 
 for (const [title, label, part] of [
+  ["Pollen grain wall cutaway", "Intine", "intine"],
+  ["Ethernet wiring schemes A and B", "T568B row", "scheme-b"],
   ["Anther cross-section", "Pollen grains", "pollen"],
   ["Serial and parallel data paths", "Eight parallel data lanes", "parallel"],
 ]) {

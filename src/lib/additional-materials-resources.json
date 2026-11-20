@@ -8129,7 +8129,7 @@
       "sourceFile": "maths/pdf/main formul sheet/ChatGPT Image Nov 14, 2026, 12_56_56 PM-4.pdf",
       "sha256": "60b48b81531fb39e09d6797b8724502645d11e426fb1e1cae4f79fc1453bce61",
       "sizeBytes": 3421700,
-      "description": "Owner-supplied study resource. Class 12 Mathematics full golden formula sheet covering all 12 chapters across Volume 1 & Volume 2. Original PDF pages retained.",
+      "description": "Owner-supplied study resource. Class 12 Mathematics full golden formula sheet covering all 12 chapters across Volume 1 & Volume 2. Original PDF pages retained. Formulas await teacher review.",
       "isPublished": true,
       "sourceLabel": "Owner-supplied complete mathematics golden formula sheet",
       "updatedAt": "2026-11-16T10:50:00.000Z",
@@ -8139,6 +8139,60 @@
       "downloadAllowed": true,
       "pages": [],
       "pdfUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/60b48b81531fb39e09d6797b8724502645d11e426fb1e1cae4f79fc1453bce61.pdf"
+    }
+  },
+  {
+    "kind": "note",
+    "resource": {
+      "subjectId": "sub-chemistry",
+      "chapterId": "chem-ch-1",
+      "subjectName": "Chemistry",
+      "title": "Chemistry Golden Formula Sheet",
+      "topic": "Class 12 Chemistry revision",
+      "language": "English",
+      "description": "Owner-supplied revision sheets. Formulas and worked material await teacher review.",
+      "pageCount": 21,
+      "badge": "REVISION",
+      "id": "note-import-f7d4e49a36d60ba83828e4c2",
+      "sourceFile": "che/pdf/main formul sheet/TN-Class-12-Chemistry-A4.pdf",
+      "sizeBytes": 19063069,
+      "sha256": "4dfd65880a537ca183df01d5f08803da9709b3db74c9e22806cbf4d1ea6f79b5",
+      "pdfUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/4dfd65880a537ca183df01d5f08803da9709b3db74c9e22806cbf4d1ea6f79b5.pdf",
+      "titleTamil": "",
+      "academicYear": "2026-2027",
+      "sourceLabel": "Owner-supplied Golden PDF",
+      "updatedAt": "2026-11-20T13:13:39Z",
+      "viewsCount": 0,
+      "isPublished": true,
+      "downloadAllowed": true,
+      "pages": []
+    }
+  },
+  {
+    "kind": "note",
+    "resource": {
+      "subjectId": "tb-12-physics-english-v1-1b1de8f8",
+      "chapterId": "tb-12-physics-english-v1-1b1de8f8-ch-1",
+      "subjectName": "Physics",
+      "title": "Physics Golden Formula Sheet",
+      "topic": "Class 12 Physics revision",
+      "language": "English",
+      "description": "Owner-supplied revision sheets. Formulas and worked material await teacher review.",
+      "pageCount": 14,
+      "badge": "REVISION",
+      "id": "note-import-a215ddc26601141b3036e9c4",
+      "sourceFile": "phy/pdf/main formul sheet/TN-Class-12-Physics-A4.pdf",
+      "sizeBytes": 10628095,
+      "sha256": "6cc959027e9ce09cb75b70ac2bfea26f778deb202f00a34ad71afc60d92a5299",
+      "pdfUrl": "https://github.com/devanand2008/avs-12th-student-hub/releases/download/learning-materials-2026-10-25/6cc959027e9ce09cb75b70ac2bfea26f778deb202f00a34ad71afc60d92a5299.pdf",
+      "titleTamil": "",
+      "academicYear": "2026-2027",
+      "sourceLabel": "Owner-supplied Golden PDF",
+      "updatedAt": "2026-11-20T13:13:39Z",
+      "viewsCount": 0,
+      "isPublished": true,
+      "downloadAllowed": true,
+      "pages": []
     }
   }
 ]
