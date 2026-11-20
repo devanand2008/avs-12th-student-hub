@@ -1,3 +1,4 @@
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ResourceCard from "@/components/resources/ResourceCard";
@@ -110,6 +111,8 @@ export default async function ResourceList({
           </p>
         )}
       </header>
+      {(category === "learning-materials" || category === "question-papers" || category === "all") &&
+        (!filters.subject || filters.subject === "Mathematics") && <GoldenMaterials />}
       <form
         action={`/resources/${category}`}
         className="grid gap-4 rounded-3xl border border-blue-100 bg-white p-5 sm:grid-cols-2 lg:grid-cols-4"

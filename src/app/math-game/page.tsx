@@ -1,5 +1,5 @@
 import Link from "@/components/layout/IntentLink";
-import { ArrowLeft, BookOpen, CheckSquare, Sparkles, FileText, ArrowUpRight } from "lucide-react";
+import { ArrowLeft, BookOpen, CheckSquare, Sparkles, FileText } from "lucide-react";
 import MathFormulaGame from "@/components/games/MathFormulaGame";
 import { pageMetadata } from "@/lib/seo";
 
@@ -20,16 +20,6 @@ export default function MathGamePage() {
           </Link>
 
           <div className="flex items-center gap-2">
-            <a
-              href="/api/pdf/golden-formula-sheet"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3.5 py-1.5 bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-500 hover:to-yellow-600 text-slate-950 font-black rounded-xl text-xs flex items-center gap-1.5 shadow-xs transition-all active:scale-95"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Full Maths Golden Formula Sheet (12 Pages)</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
-            </a>
             <Link
               href="/notes"
               className="text-xs font-semibold text-blue-600 hover:text-blue-800 hidden md:inline-flex items-center gap-1"

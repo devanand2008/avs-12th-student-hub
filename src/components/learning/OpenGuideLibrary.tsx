@@ -1,4 +1,5 @@
 "use client";
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import { useState } from "react";
 import Link from "next/link";
 import { BookOpen, Download, ShieldCheck } from "lucide-react";
@@ -38,6 +39,7 @@ export default function OpenGuideLibrary() {
           கிடைக்காத பாடங்கள் கீழே தெளிவாகக் காட்டப்படும்.
         </p>
       </header>
+      {(subject === "all" || subject === "Mathematics") && <GoldenMaterials />}
       <div className="grid gap-4 rounded-2xl border bg-white p-5 sm:grid-cols-2">
         <label className="font-semibold">
           Subject

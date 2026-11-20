@@ -1,5 +1,6 @@
 "use client";
 
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import {
   Gamepad2,
@@ -23,7 +24,6 @@ import {
   FlaskConical,
   Dna,
   Calculator,
-  ExternalLink,
 } from "lucide-react";
 import {
   MATH_FORMULAS,
@@ -489,7 +489,7 @@ export default function MathFormulaGame() {
                   {theme.badge}
                 </span>
                 <span className="text-white/80 text-xs font-semibold">
-                  Tamil Nadu Class 12 · {theme.tamilName}
+                  Tamil Nadu Class 12 Ã‚Â· {theme.tamilName}
                 </span>
               </div>
               <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold font-heading text-white tracking-tight mt-1">
@@ -548,27 +548,7 @@ export default function MathFormulaGame() {
           </div>
         </div>
 
-        {/* Golden Material Quick Access Callout for Maths */}
-        {subject === "maths" && (
-          <div className="mt-4 p-3 bg-amber-400/20 backdrop-blur-md rounded-2xl border border-amber-400/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <div className="flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-amber-300 shrink-0" />
-              <span className="text-xs text-amber-100 font-semibold">
-                <strong>Official Golden Material:</strong> Class 12 Full Maths Golden Formula Sheet (12 Pages, Vol 1 & 2) is now available!
-              </span>
-            </div>
-            <a
-              href="/api/pdf/golden-formula-sheet"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-3.5 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs rounded-xl flex items-center gap-1.5 shadow-sm transition-all shrink-0 active:scale-95"
-            >
-              <BookOpen className="w-3.5 h-3.5" />
-              <span>Open Golden Sheet</span>
-              <ExternalLink className="w-3 h-3" />
-            </a>
-          </div>
-        )}
+        {subject === "maths" && <div className="mt-4"><GoldenMaterials /></div>}
 
         {/* Game Mode Navigation Tabs */}
         <div className="mt-5 flex flex-wrap items-center gap-2 pt-4 border-t border-white/10">

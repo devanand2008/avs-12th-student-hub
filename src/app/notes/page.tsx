@@ -1,5 +1,6 @@
 "use client";
 
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import Sidebar from "@/components/layout/Sidebar";
 import type { HandwrittenNote } from "@/types";
 import {
@@ -7,7 +8,6 @@ import {
   BookOpen,
   FileText,
   Search,
-  Sparkles,
 } from "lucide-react";
 import Link from "next/link";
 import SectionBadge from "@/components/ui/SectionBadge";
@@ -157,44 +157,21 @@ export default function NotesPage() {
           </span>
         </div>
 
-        {notes.some((note) =>
-          note.sourceFile?.split("/").includes("main formul sheet"),
-        ) && (
-          <section
-            aria-labelledby="golden-title"
-            className="rounded-3xl border border-amber-300 bg-amber-50 p-6"
-          >
-            <h2
-              id="golden-title"
-              className="flex items-center gap-2 text-xl font-bold text-amber-950"
-            >
-              <Sparkles aria-hidden="true" /> Golden Formula Sheets
-            </h2>
-            <div className="mt-4 flex flex-wrap gap-3">
-              {notes
-                .filter((note) =>
-                  note.sourceFile?.split("/").includes("main formul sheet"),
-                )
-                .map((note) => (
-                  <a
-                    key={note.id}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={
-                      note.subjectName === "Mathematics"
-                        ? "/api/pdf/golden-formula-sheet"
-                        : `/api/notes/${encodeURIComponent(note.id)}/pdf`
-                    }
-                    className="flex items-center gap-2 rounded-xl border border-amber-300 bg-white px-4 py-3 font-semibold text-amber-950 hover:bg-amber-100"
-                  >
-                    <FileText size={18} />
-                    {note.subjectName} · {note.pageCount} pages{" "}
-                    <ArrowUpRight size={16} />
-                  </a>
-                ))}
-            </div>
-          </section>
-        )}
+        <GoldenMaterials
+          materials={notes
+            .filter((note) =>
+              note.sourceFile?.split("/").includes("main formul sheet"),
+            )
+            .map((note) => ({
+              id: note.id,
+              subject: note.subjectName || note.title,
+              pages: note.pageCount,
+              href:
+                note.subjectName === "Mathematics"
+                  ? "/api/pdf/golden-formula-sheet"
+                  : `/api/notes/${encodeURIComponent(note.id)}/pdf`,
+            }))}
+        />
 
         {/* Filter Toolbar */}
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
@@ -315,7 +292,7 @@ export default function NotesPage() {
                     <div>
                       <div className="flex items-center gap-2 text-[11px] font-bold text-slate-400 mb-1">
                         <span>{note.language || "English"}</span>
-                        <span>·</span>
+                        <span>Ã‚Â·</span>
                         <span>{note.pageCount} Pages</span>
                       </div>
                       <h2 className="text-base font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-3">

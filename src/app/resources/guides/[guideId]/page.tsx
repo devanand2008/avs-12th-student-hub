@@ -1,3 +1,4 @@
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getSession } from "@/lib/auth";
@@ -67,6 +68,7 @@ export default async function Page({
           </p>
         </details>
       </section>
+      {g.subjects.includes("Mathematics") && <GoldenMaterials />}
       {session ? (
         <>
           <a

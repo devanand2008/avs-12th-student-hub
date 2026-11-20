@@ -1,3 +1,4 @@
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -56,6 +57,7 @@ export default async function ResourceDetail({
           {r.publisher} · {r.mediums.join(" / ")}
         </p>
       </header>
+      {r.subjects.includes("Mathematics") && r.category !== "video-lessons" && <GoldenMaterials />}
       {r.status === "temporary_unverified" && (
         <div className="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950">
           Temporary learning resource. Source relevance and availability may not

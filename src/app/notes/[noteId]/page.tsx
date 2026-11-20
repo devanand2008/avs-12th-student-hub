@@ -1,5 +1,6 @@
 "use client";
 
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import { fetchCurrentSession } from "@/lib/current-session-client";
 
 import { HandwrittenNote, NotePage } from "@/types";
@@ -318,6 +319,10 @@ export default function NoteViewerPage({ params }: PageProps) {
           </ul>
         </aside>
       ) : null}
+
+      {(note.subjectName === "Mathematics" || note.subjectId === "sub-maths" || note.sourceFile?.startsWith("maths/")) && (
+        <div className="mx-auto mt-4 w-full max-w-7xl px-4 sm:px-6"><GoldenMaterials /></div>
+      )}
 
       {/* Main Reader Viewport */}
       <div className="flex-1 flex flex-col lg:flex-row max-w-7xl mx-auto w-full p-4 sm:p-6 gap-6 items-start">

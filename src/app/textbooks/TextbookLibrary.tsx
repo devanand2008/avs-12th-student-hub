@@ -1,5 +1,6 @@
 "use client";
 
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
@@ -62,7 +63,7 @@ export default function TextbookLibrary({
               <div>
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-bold text-cyan-200 backdrop-blur-md">
                   <BookOpen className="h-3.5 w-3.5 text-cyan-300" />
-                  <span>TAMIL NADU STATE BOARD · CLASS 12</span>
+                  <span>TAMIL NADU STATE BOARD Â· CLASS 12</span>
                 </span>
                 <h1 className="font-heading text-2xl sm:text-4xl font-black tracking-tight text-white mt-1">
                   Official Class 12 SCERT Textbook Library
@@ -74,7 +75,7 @@ export default function TextbookLibrary({
             </p>
             <div className="flex flex-wrap gap-3 pt-2 text-xs text-blue-100 font-bold">
               <span className="rounded-xl bg-white/10 px-3 py-2 border border-white/15 backdrop-blur-md">
-                {subjects} subjects · {catalog.books.length} source records
+                {subjects} subjects Â· {catalog.books.length} source records
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-xl bg-emerald-500/20 px-3 py-2 border border-emerald-400/30 text-emerald-300">
                 <CheckCircle2 className="h-3.5 w-3.5 text-emerald-300" />{" "}
@@ -83,6 +84,8 @@ export default function TextbookLibrary({
             </div>
           </div>
         </div>
+
+        {books.some(book => book.subject === "Mathematics") && <GoldenMaterials />}
 
         {/* Filter & Search Bar */}
         <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-[1fr_200px_200px]">
@@ -177,7 +180,7 @@ export default function TextbookLibrary({
                     {textbookFileSize(book.sizeBytes)}
                   </span>
                   {book.pages && (
-                    <span className="text-slate-500 text-[11px]">· {book.pages} pages</span>
+                    <span className="text-slate-500 text-[11px]">Â· {book.pages} pages</span>
                   )}
                 </div>
 

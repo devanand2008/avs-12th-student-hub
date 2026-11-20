@@ -1,5 +1,6 @@
 "use client";
 
+import GoldenMaterials from "@/components/learning/GoldenMaterials";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import {
@@ -407,6 +408,7 @@ export default function TextbookReader({
             )}
           </div>
         </div>
+        {book.subject === "Mathematics" && <GoldenMaterials />}
         {book.localPath ? (
           <PdfPages
             url={book.localPath}
