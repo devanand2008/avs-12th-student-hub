@@ -108,6 +108,10 @@ export async function getSessionContext(): Promise<{
   };
 }
 
+export async function hasSessionCookie(): Promise<boolean> {
+  return Boolean((await cookies()).get(COOKIE_NAME)?.value);
+}
+
 export async function getSession(): Promise<SessionPayload | null> {
   return (await getSessionContext())?.session ?? null;
 }

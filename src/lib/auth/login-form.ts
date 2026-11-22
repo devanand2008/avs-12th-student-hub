@@ -8,6 +8,8 @@ export const loginMessages = {
   limited: "Too many login attempts. Please wait 1 minute before trying again.",
   session:
     "Your browser could not keep you signed in. Allow cookies for SkillUp and try again. If you opened this page from another app, open SkillUp directly in Chrome or Safari.",
+  invalidSession:
+    "Your sign-in session could not be verified. Please try signing in again.",
   unavailable: "Sign-in is temporarily unavailable. Please try again shortly.",
 } as const;
 

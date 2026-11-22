@@ -91,7 +91,7 @@ export async function POST(request: Request) {
       const target = session.mustChangePassword
         ? destination
         : redirect || destination;
-      return go("/auth/continue?" + new URLSearchParams({ redirect: target }));
+      return browserSignInResponse(target);
     }
 
     return NextResponse.json(
@@ -116,4 +116,42 @@ export async function POST(request: Request) {
       error instanceof BackendUnavailableError ? 503 : 500,
     );
   }
+}
+
+// Commit the first-party cookie on a normal document response before
+// navigating. This avoids relying on cookie handling inside a POST redirect.
+function browserSignInResponse(destination: string) {
+  const next = "/auth/continue?redirect=" + encodeURIComponent(destination);
+  return new NextResponse(
+    `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=${next}">
+  <title>Opening SkillUp</title>
+  <style>
+    body{margin:0;background:#eff5ff;color:#142b63;font:1rem system-ui,sans-serif}
+    main{max-width:24rem;margin:12vh auto;padding:2rem;text-align:center}
+    a{display:inline-block;padding:.75rem 1.25rem;border-radius:.75rem;background:#142b63;color:white}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Opening SkillUp</h1>
+    <a href="${next}">Continue to SkillUp</a>
+  </main>
+</body>
+</html>`,
+    {
+      headers: {
+        "Cache-Control": "private, no-store",
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Security-Policy":
+          "default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'",
+        "Referrer-Policy": "no-referrer",
+      },
+    },
+  );
 }

@@ -1,4 +1,4 @@
-import { getSession } from "@/lib/auth";
+import { getSession, hasSessionCookie } from "@/lib/auth";
 import { safeLoginRedirect } from "@/lib/auth/login-form";
 
 export async function GET(request: Request) {
@@ -14,7 +14,10 @@ export async function GET(request: Request) {
         ? "/change-password"
         : redirect || (session.role === "admin" ? "/admin" : "/dashboard");
     } else {
-      destination = retryLocation("session", redirect);
+      destination = retryLocation(
+        (await hasSessionCookie()) ? "invalidSession" : "session",
+        redirect,
+      );
     }
   } catch {
     destination = retryLocation("unavailable", redirect);

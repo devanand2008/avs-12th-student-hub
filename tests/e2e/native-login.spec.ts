@@ -39,9 +39,14 @@ test("native sign-in works without scripts and restores the requested page and q
   );
   await submit.click();
   const accepted = await result;
-  expect(accepted.status()).toBe(303);
-  expect(accepted.headers().location).toMatch(/^\/auth\/continue\?/);
+  expect(accepted.status()).toBe(200);
+  expect(accepted.headers()["content-type"]).toContain("text/html");
+  expect(accepted.headers().location).toBeUndefined();
   await expect(page).toHaveURL(/\/notes\?chapterId=maths-ch-1$/);
+  const cookie = (await page.context().cookies()).find(
+    (item) => item.name === "avs_session",
+  );
+  expect(cookie?.httpOnly).toBe(true);
   expect((await page.request.get("/api/auth/me")).status()).toBe(200);
   await page.reload();
   await expect(page).toHaveURL(/\/notes\?chapterId=maths-ch-1$/);
@@ -67,11 +72,28 @@ test("a browser that loses its saved session sees a cookie message", async ({
     form: { loginId: "AVSCS26-0001", password: "Student@2026" },
     maxRedirects: 0,
   });
-  expect(accepted.status()).toBe(303);
+  expect(accepted.status()).toBe(200);
   expect(accepted.headers()["set-cookie"]).toContain("avs_session=");
+  const handoff = (await accepted.text()).match(
+    /href="(\/auth\/continue\?[^"]+)"/,
+  )?.[1];
+  expect(handoff).toBeDefined();
   // Visit the handoff from the browser context, which lacks the API session cookie.
-  await page.goto(accepted.headers().location);
+  await page.goto(handoff!);
   await expect(page.getByRole("alert")).toContainText(
     "Your browser could not keep you signed in.",
+  );
+});
+
+test("an invalid session cookie is distinguished from a missing cookie", async ({
+  page,
+  baseURL,
+}) => {
+  await page
+    .context()
+    .addCookies([{ name: "avs_session", value: "invalid", url: baseURL! }]);
+  await page.goto("/auth/continue");
+  await expect(page.getByRole("alert")).toHaveText(
+    "Your sign-in session could not be verified. Please try signing in again.",
   );
 });
