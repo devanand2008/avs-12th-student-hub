@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { loginMessages, safeLoginRedirect } from "@/lib/auth/login-form";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import BrandLogo from "@/components/layout/BrandLogo";
 import { useStudentActivation } from "@/components/auth/useStudentActivation";
 import WelcomeGuide from "@/components/learning/WelcomeGuide";
@@ -33,18 +33,17 @@ export default function LoginForm({
   const requestedId = get("studentId") || requestedEmail || "";
   const isRegistered = Boolean(get("registered"));
 
-  const [id, setId] = useState(() =>
-    requestedId
-      ? requestedId
-      : showDemo && streamParam === "cs"
+  const demoStream =
+    showDemo && (streamParam === "cs" || streamParam === "bio");
+  const defaultId =
+    requestedId ||
+    (demoStream
+      ? streamParam === "cs"
         ? "AVSCS26-0001"
-        : showDemo && streamParam === "bio"
-          ? "AVSBIO26-0001"
-          : "",
-  );
-  const [password, setPassword] = useState(() =>
-    showDemo && ["cs", "bio"].includes(streamParam || "") ? "Student@2026" : "",
-  );
+        : "AVSBIO26-0001"
+      : "");
+  const idInput = useRef<HTMLInputElement>(null);
+  const passwordInput = useRef<HTMLInputElement>(null);
   const [visible, setVisible] = useState(false);
   const failure = get("error");
   const error =
@@ -54,8 +53,8 @@ export default function LoginForm({
   const redirect = safeLoginRedirect(get("redirect"));
 
   function fillDemo(demoId: string) {
-    setId(demoId);
-    setPassword("Student@2026");
+    if (idInput.current) idInput.current.value = demoId;
+    if (passwordInput.current) passwordInput.current.value = "Student@2026";
   }
 
   return (
@@ -146,8 +145,8 @@ export default function LoginForm({
                 name="loginId"
                 autoCapitalize="none"
                 spellCheck={false}
-                value={id}
-                onChange={(e) => setId(e.target.value)}
+                ref={idInput}
+                defaultValue={defaultId}
                 autoComplete="username"
                 type="text"
                 placeholder="e.g. yourname@gmail.com"
@@ -173,8 +172,8 @@ export default function LoginForm({
               <input
                 id="login-password"
                 name="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                ref={passwordInput}
+                defaultValue={demoStream ? "Student@2026" : ""}
                 type={visible ? "text" : "password"}
                 autoComplete="current-password"
                 placeholder="Enter your password"
