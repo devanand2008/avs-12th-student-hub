@@ -55,7 +55,12 @@ self.addEventListener("fetch", (event) => {
         url.pathname,
       )
     ) {
-      event.respondWith(fetch(event.request, { cache: "no-store" }));
+      event.respondWith(
+        fetch(event.request, { cache: "no-store" }).catch(async () => {
+          const offlinePage = await caches.match("/offline.html");
+          return offlinePage || Response.error();
+        }),
+      );
       return;
     }
     event.respondWith(
