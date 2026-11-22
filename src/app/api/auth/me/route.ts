@@ -2,10 +2,15 @@ import { getSessionContext } from "@/lib/auth";
 import { after, NextResponse } from "next/server";
 import { engagementRpc } from "@/lib/engagement";
 
+const headers = { "Cache-Control": "private, no-store", Vary: "Cookie" };
+
 export async function GET() {
   const context = await getSessionContext();
   if (!context) {
-    return NextResponse.json({ authenticated: false }, { status: 401 });
+    return NextResponse.json(
+      { authenticated: false },
+      { status: 401, headers },
+    );
   }
 
   const { session, student } = context;
@@ -18,24 +23,27 @@ export async function GET() {
     });
   }
 
-  return NextResponse.json({
-    authenticated: true,
-    user: {
-      id: session.userId,
-      role: session.role,
-      email: session.email,
-      studentId: student?.studentId || session.studentId,
-      studentName: student?.studentName || session.studentName,
-      stream: student?.stream || session.stream,
-      schoolName: student?.schoolName,
-      registerNumber: student?.registerNumber,
-      medium: student?.medium,
-      academicYear: student?.academicYear,
-      mustChangePassword: session.mustChangePassword,
-      canSetInitialPassword:
-        session.role === "student" &&
-        session.mustChangePassword &&
-        (session.initialPasswordSetupUntil || 0) > Date.now(),
+  return NextResponse.json(
+    {
+      authenticated: true,
+      user: {
+        id: session.userId,
+        role: session.role,
+        email: session.email,
+        studentId: student?.studentId || session.studentId,
+        studentName: student?.studentName || session.studentName,
+        stream: student?.stream || session.stream,
+        schoolName: student?.schoolName,
+        registerNumber: student?.registerNumber,
+        medium: student?.medium,
+        academicYear: student?.academicYear,
+        mustChangePassword: session.mustChangePassword,
+        canSetInitialPassword:
+          session.role === "student" &&
+          session.mustChangePassword &&
+          (session.initialPasswordSetupUntil || 0) > Date.now(),
+      },
     },
-  });
+    { headers },
+  );
 }

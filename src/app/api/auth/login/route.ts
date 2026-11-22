@@ -87,10 +87,12 @@ export async function POST(request: Request) {
       : authResult.user.role === "admin"
         ? "/admin"
         : "/dashboard";
-    if (form)
-      return go(
-        session.mustChangePassword ? destination : redirect || destination,
-      );
+    if (form) {
+      const target = session.mustChangePassword
+        ? destination
+        : redirect || destination;
+      return go("/auth/continue?" + new URLSearchParams({ redirect: target }));
+    }
 
     return NextResponse.json(
       {

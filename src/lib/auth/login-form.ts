@@ -6,6 +6,8 @@ export const loginMessages = {
   approval:
     "Your account is waiting for administrator approval. Ask your administrator to approve it and give you a temporary password.",
   limited: "Too many login attempts. Please wait 1 minute before trying again.",
+  session:
+    "Your browser could not keep you signed in. Allow cookies for SkillUp and try again. If you opened this page from another app, open SkillUp directly in Chrome or Safari.",
   unavailable: "Sign-in is temporarily unavailable. Please try again shortly.",
 } as const;
 
@@ -22,7 +24,7 @@ export function safeLoginRedirect(value: unknown): string | undefined {
   const url = new URL(value, "https://skillup.invalid");
   if (
     url.origin !== "https://skillup.invalid" ||
-    /^\/(login|register|api)(\/|$)/i.test(url.pathname) ||
+    /^\/(login|register|api|auth\/continue)(\/|$)/i.test(url.pathname) ||
     /^\/\//.test(url.pathname)
   )
     return;

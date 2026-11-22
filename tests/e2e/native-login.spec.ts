@@ -5,6 +5,15 @@ test.use({ javaScriptEnabled: false });
 test("native sign-in works without scripts and restores the requested page and query", async ({
   page,
 }) => {
+  const guest = await page.request.get("/notes?chapterId=maths-ch-1", {
+    maxRedirects: 0,
+  });
+  expect(guest.status()).toBe(307);
+  expect(guest.headers()["cache-control"]).toContain("no-store");
+  expect(guest.headers().vary).toMatch(/cookie/i);
+  const anonymous = await page.request.get("/api/auth/me");
+  expect(anonymous.status()).toBe(401);
+  expect(anonymous.headers()["cache-control"]).toContain("no-store");
   await page.goto("/notes?chapterId=maths-ch-1");
   const loginId = page.getByLabel("Email Address");
   const password = page.getByLabel("Password", { exact: true });
@@ -29,7 +38,9 @@ test("native sign-in works without scripts and restores the requested page and q
       response.request().method() === "POST",
   );
   await submit.click();
-  expect((await result).status()).toBe(303);
+  const accepted = await result;
+  expect(accepted.status()).toBe(303);
+  expect(accepted.headers().location).toMatch(/^\/auth\/continue\?/);
   await expect(page).toHaveURL(/\/notes\?chapterId=maths-ch-1$/);
   expect((await page.request.get("/api/auth/me")).status()).toBe(200);
   await page.reload();
@@ -44,4 +55,23 @@ test("native sign-in rejects an external destination", async ({ page }) => {
     .getByRole("button", { name: "Sign In to SkillUp", exact: true })
     .click();
   await expect(page).toHaveURL(/\/dashboard$/);
+});
+
+test("a browser that loses its saved session sees a cookie message", async ({
+  page,
+  request,
+  baseURL,
+}) => {
+  const accepted = await request.post("/api/auth/login", {
+    headers: { Origin: new URL(baseURL!).origin },
+    form: { loginId: "AVSCS26-0001", password: "Student@2026" },
+    maxRedirects: 0,
+  });
+  expect(accepted.status()).toBe(303);
+  expect(accepted.headers()["set-cookie"]).toContain("avs_session=");
+  // Visit the handoff from the browser context, which lacks the API session cookie.
+  await page.goto(accepted.headers().location);
+  await expect(page.getByRole("alert")).toContainText(
+    "Your browser could not keep you signed in.",
+  );
 });

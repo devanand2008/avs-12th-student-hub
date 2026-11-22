@@ -1,4 +1,4 @@
-const CACHE_NAME = "avs-public-shell-v5-speed";
+const CACHE_NAME = "avs-public-shell-v6-auth";
 const PRECACHE_ASSETS = [
   "/",
   "/offline.html",
@@ -7,25 +7,27 @@ const PRECACHE_ASSETS = [
   "/icon-192.png",
   "/icon-512.png",
   "/icon-maskable.png",
-  "/favicon.ico"
+  "/favicon.ico",
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_ASSETS))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_ASSETS)),
   );
   self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(
-        keys
-          .filter((key) => key.startsWith("avs-") && key !== CACHE_NAME)
-          .map((key) => caches.delete(key))
-      )
-    )
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(
+          keys
+            .filter((key) => key.startsWith("avs-") && key !== CACHE_NAME)
+            .map((key) => caches.delete(key)),
+        ),
+      ),
   );
   self.clients.claim();
 });
@@ -46,13 +48,23 @@ self.addEventListener("fetch", (event) => {
 
   // Handle HTML page navigation
   if (event.request.mode === "navigate") {
+    // Keep session-dependent navigations off the HTTP and offline caches.
+    if (
+      url.origin === self.location.origin &&
+      /^\/(?:login|auth|register|change-password|dashboard|admin|subjects|notes|videos|practice|textbook-practice|performance|leaderboard|profile|bookmarks|ai-helper|search|golden-materials)(?:\/|$)/.test(
+        url.pathname,
+      )
+    ) {
+      event.respondWith(fetch(event.request, { cache: "no-store" }));
+      return;
+    }
     event.respondWith(
       fetch(event.request).catch(async () => {
         const cachedPage = await caches.match(event.request);
         if (cachedPage) return cachedPage;
         const offlinePage = await caches.match("/offline.html");
         return offlinePage || Response.error();
-      })
+      }),
     );
     return;
   }
@@ -72,14 +84,15 @@ self.addEventListener("fetch", (event) => {
             if (response.ok) {
               const copy = response.clone();
               event.waitUntil(
-                caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy))
+                caches
+                  .open(CACHE_NAME)
+                  .then((cache) => cache.put(event.request, copy)),
               );
             }
             return response;
           })
           .catch(() => cached || Response.error());
-      })
+      }),
     );
   }
 });
-

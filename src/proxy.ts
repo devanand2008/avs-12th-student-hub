@@ -1,6 +1,12 @@
 import { decodeSession } from "@/lib/auth/session";
 import { NextResponse, type NextRequest } from "next/server";
 
+function privateSessionResponse(response: NextResponse) {
+  response.headers.set("Cache-Control", "private, no-store");
+  response.headers.append("Vary", "Cookie");
+  return response;
+}
+
 export function proxy(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const api = path.startsWith("/api/");
@@ -64,13 +70,15 @@ export function proxy(request: NextRequest) {
   const session = token ? decodeSession(token) : null;
   if (!session) {
     if (api)
-      return NextResponse.json(
-        { error: "Please sign in to continue." },
-        { status: 401 },
+      return privateSessionResponse(
+        NextResponse.json(
+          { error: "Please sign in to continue." },
+          { status: 401 },
+        ),
       );
     const url = new URL("/login", request.url);
     url.searchParams.set("redirect", path + request.nextUrl.search);
-    return NextResponse.redirect(url);
+    return privateSessionResponse(NextResponse.redirect(url));
   }
   if (
     (path === "/admin" ||
@@ -79,11 +87,15 @@ export function proxy(request: NextRequest) {
     session.role !== "admin"
   ) {
     if (api)
-      return NextResponse.json(
-        { error: "Admin authorization required" },
-        { status: 403 },
+      return privateSessionResponse(
+        NextResponse.json(
+          { error: "Admin authorization required" },
+          { status: 403 },
+        ),
       );
-    return NextResponse.redirect(new URL("/dashboard", request.url));
+    return privateSessionResponse(
+      NextResponse.redirect(new URL("/dashboard", request.url)),
+    );
   }
   if (
     session.mustChangePassword &&
@@ -91,15 +103,17 @@ export function proxy(request: NextRequest) {
     !["/api/auth/change-password", "/api/auth/logout"].includes(path)
   ) {
     if (api)
-      return NextResponse.json(
-        { error: "Please change your temporary password first." },
-        { status: 403 },
+      return privateSessionResponse(
+        NextResponse.json(
+          { error: "Please change your temporary password first." },
+          { status: 403 },
+        ),
       );
-    return NextResponse.redirect(new URL("/change-password", request.url));
+    return privateSessionResponse(
+      NextResponse.redirect(new URL("/change-password", request.url)),
+    );
   }
-  const response = NextResponse.next();
-  response.headers.set("Cache-Control", "private, no-store");
-  return response;
+  return privateSessionResponse(NextResponse.next());
 }
 export const config = {
   matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
