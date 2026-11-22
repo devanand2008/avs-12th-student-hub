@@ -409,6 +409,7 @@ test("login rejects bad credentials and opens an honest student dashboard", asyn
   await expect(
     page.getByText("Email or password is incorrect.", { exact: true }),
   ).toBeVisible();
+  await page.getByLabel("Email Address").fill("AVSCS26-0001");
   await page.getByLabel("Password", { exact: true }).fill("Student@2026");
   await page
     .getByRole("button", { name: "Sign In to SkillUp", exact: true })

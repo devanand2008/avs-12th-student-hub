@@ -18,6 +18,7 @@ import {
 export { decodeSession, encodeSession } from "./session";
 export type { SessionPayload } from "./session";
 
+import { loginMessages } from "./login-form";
 import { isSessionRevoked, revokeSession } from "./security-store";
 import { isPhoneVerified } from "./phone";
 import { isStudentActivated } from "./activation";
@@ -57,6 +58,7 @@ export async function createSession(
     secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
     path: "/",
+    maxAge: SESSION_DURATION_MS / 1000,
     expires: new Date(expiresAt),
   });
 
@@ -132,27 +134,26 @@ export async function authenticateUser(
 }> {
   const match = await getUserByLoginId(loginId);
   if (!match) {
-    return { success: false, error: "Email or password is incorrect." };
+    return { success: false, error: loginMessages.invalid };
   }
 
   const { user, student } = match;
   if (user.role === "student" && !student)
     return {
       success: false,
-      error:
-        "Please contact your administrator to restore your student profile.",
+      error: loginMessages.profile,
     };
 
   if (student && !student.activeStatus) {
     return {
       success: false,
-      error: "This account is inactive. Please contact your administrator.",
+      error: loginMessages.inactive,
     };
   }
 
   const isValid = await bcrypt.compare(plainPass, user.passwordHash);
   if (!isValid) {
-    return { success: false, error: "Email or password is incorrect." };
+    return { success: false, error: loginMessages.invalid };
   }
 
   return { success: true, user, student };

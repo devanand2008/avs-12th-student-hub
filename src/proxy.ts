@@ -7,9 +7,21 @@ export function proxy(request: NextRequest) {
   if (api && !["GET", "HEAD", "OPTIONS"].includes(request.method)) {
     const origin = request.headers.get("origin");
     const expected = process.env.APP_ORIGIN || request.nextUrl.origin;
+    const fetchSite = request.headers.get("sec-fetch-site");
+    const isLoginForm =
+      path === "/api/auth/login" &&
+      request.headers
+        .get("content-type")
+        ?.startsWith("application/x-www-form-urlencoded");
+    // Older browsers may send a Referer instead of an Origin on form submissions.
+    const sameOriginForm =
+      origin ||
+      fetchSite === "same-origin" ||
+      request.headers.get("referer")?.startsWith(expected + "/");
     if (
       (origin && origin !== expected) ||
-      request.headers.get("sec-fetch-site") === "cross-site"
+      fetchSite === "cross-site" ||
+      (isLoginForm && !sameOriginForm)
     ) {
       return NextResponse.json(
         { error: "This request must come from the learning hub." },
@@ -57,7 +69,7 @@ export function proxy(request: NextRequest) {
         { status: 401 },
       );
     const url = new URL("/login", request.url);
-    url.searchParams.set("redirect", path);
+    url.searchParams.set("redirect", path + request.nextUrl.search);
     return NextResponse.redirect(url);
   }
   if (
